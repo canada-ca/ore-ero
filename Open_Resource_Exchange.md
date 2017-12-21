@@ -9,7 +9,7 @@ Below you will find a list of recommended platforms by domain, based on standard
 
 More information about how these assessments are being done in the open can be found on our [Assessment Approach page](Assessments/Assessment%20Approach.md).
 
-If you are interested in a particular assessment, see [Assessment folder](https://github.com/canada-ca/Open_First_Whitepaper/tree/master/Assessments) for all completed Assessments against tools.
+If you are interested in a particular assessment, see [Assessment folder](Assessments) for all completed Assessments against tools.
 
 If you would like to submit a tool for assessment, please add a through a pull request using the [template](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/Assessments/Template.md).
 
