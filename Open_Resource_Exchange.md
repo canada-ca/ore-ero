@@ -7,7 +7,7 @@ It is recognized that different departments and organizations across the GC need
 This list will be regularly updated to ensure the most up-to-date list of tools are being offered to the community.
 Below you will find a list of recommended platforms by domain, based on standards co-developed by the community, with best of breed tools assessed against this criteria.
 
-More information about how these assessments are being done in the open can be found on our [Assessment Approach page](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/Assessments/Assessment%20Approach.md).
+More information about how these assessments are being done in the open can be found on our [Assessment Approach page](Assessments/Assessment%20Approach.md).
 
 If you are interested in a particular assessment, see [Assessment folder](https://github.com/canada-ca/Open_First_Whitepaper/tree/master/Assessments) for all completed Assessments against tools.
 
