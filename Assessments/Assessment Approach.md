@@ -24,5 +24,5 @@ Sample criteria can be found in the [assessment template](Template.md)
 **4. GC Governance:**
 
 - Following the completion of the collaborative process for assessment and consultations, recommendations for preferred open source platforms will be provided to the GC's Enterprise Architecture Review Board (EARB) for review.
-- If the recommendation for preferred platform is approved by EARB, it will be added to the list on the [Open Resource Exchange](../9_Open_Resource_Exchange.md).
+- If the recommendation for preferred platform is approved by EARB, it will be added to the list on the [Open Resource Exchange](../Open_Resource_Exchange.md).
 - Internal governance will continue to adopt preferred platforms within necessary GC Standards and Guidelines.
