@@ -11,7 +11,7 @@ More information about how these assessments are being done in the open can be f
 
 If you are interested in a particular assessment, see [Assessment folder](Assessments) for all completed Assessments against tools.
 
-If you would like to submit a tool for assessment, please add a through a pull request using the [template](https://github.com/canada-ca/Open_First_Whitepaper/blob/master/Assessments/Template.md).
+If you would like to submit a tool for assessment, please add a through a pull request using the [template](Assessments/Template.md).
 
 ### Web Development
 
