@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ore-ero" # the subpath of your site, e.g. /blog
 url: "https://canada-ca.github.io/ore-ero" # the base hostname & protocol for your site
 email: ore-ero@canada.ca
 twitter_username: ore-ero
