@@ -1,0 +1,94 @@
+</main>
+<aside class="gc-nttvs container">
+  <h2>{{ site.GCActivitiesInitiatives[page.lang] }}</h2>
+  <div id="gcwb_prts" class="wb-eqht row wb-init wb-eqht-inited" data-ajax-replace="https://cdn.canada.ca/gcweb-cdn-live/features/features-{{ page.lang }}.html"></div>
+</aside>
+
+{% if page.lang == 'fr' %}
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">Au sujet du gouvernement</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="https://www.canada.ca/fr/contact.html">Contactez-nous</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/min.html">Ministères et organismes</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/fonctionpublique.html">Fonction publique et force militaire</a></li>
+      <li><a href="https://www.canada.ca/fr/nouvelles.html">Nouvelles</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme/lois.html">Traités, lois et règlements</a></li>
+      <li><a href="https://www.canada.ca/fr/transparence/rapports.html">Rapports à l'échelle du gouvernement</a></li>
+      <li><a href="http://pm.gc.ca/fra">Premier ministre</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme.html">Comment le gouvernement fonctionne</a></li>
+      <li><a href="http://ouvert.canada.ca/">Gouvernement ouvert</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">À propos du site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/fr/sociaux.html">Médias sociaux</a></li>
+            <li><a href="https://www.canada.ca/fr/mobile.html">Applications mobiles</a></li>
+            <li><a href="https://www1.canada.ca/fr/nouveausite.html">À propos de Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/avis.html">Avis</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/confidentialite.html">Confidentialité</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Haut de la page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="./GCWeb/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% else %}
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">About government</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+      <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+      <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+      <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+      <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+      <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+      <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+      <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+      <li><a href="http://open.canada.ca/en/">Open government</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">About this site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.baseurl }}/assets/wet-boew/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endif %}
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="{{ site.baseurl }}/assets/wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="{{ site.baseurl }}/assets/wet-boew/js/theme.min.js"></script>
