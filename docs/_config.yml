@@ -64,3 +64,4 @@ TopicsMenu:
 
 # Build settings
 markdown: kramdown
+include: ["_pages"]

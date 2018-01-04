@@ -1,0 +1,45 @@
+name:
+  en: TBS
+  fr: SCT
+
+projects:
+  - name:
+      en: GCconnex
+      fr: GCconnex
+    desc:
+      en: GC digital collaboration platform (GCconnex and GCcollab)
+      fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
+    website:
+      en: https://github.com/gctools-outilsgc/gcconnex
+      fr: https://github.com/gctools-outilsgc/gcconnex
+    repoURL:
+      en: https://github.com/gctools-outilsgc/gcconnex
+      fr: https://github.com/gctools-outilsgc/gcconnex
+    otherDepts:
+      - spac-pspc
+    relatedTech:
+      - PHP
+      - MySQL
+      - Elgg
+    repoHost: Github
+    licence: GPLv2
+
+  - name:
+      en: Canadian Digital Service Website
+      fr: Site Web du service numérique canadien
+    desc:
+      en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
+      fr: digital.canada.ca et numerique.canada.ca sont publiés ῢ partir de ce repository.
+    website:
+      en: https://github.com/gctools-outilsgc/gcconnex
+      fr: https://github.com/gctools-outilsgc/gcconnex
+    repoURL:
+      en: https://github.com/gctools-outilsgc/gcconnex
+      fr: https://github.com/gctools-outilsgc/gcconnex
+    relatedTech:
+      - HTML
+      - Markdown
+      - YAML
+      - Jekyll
+    repoHost: Github
+    licence: MIT 

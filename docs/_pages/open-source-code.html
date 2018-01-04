@@ -1,0 +1,33 @@
+---
+layout: default
+ref: code
+lang: en
+---
+
+<table class="wb-tables table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Department</th>
+      <th>Project Name</th>
+      <th>Description</th>
+      <th>Licence</th>
+      <th>Repo</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    {% for depts in site.data.code %}
+    {% assign dept = depts[1] %}
+      {% for project in dept.projects %}
+      <tr>
+        <td>{{ dept.name.en }}</td>
+        <td>{{ project.name.en }}</td>
+        <td>{{ project.desc.en }}</td>
+        <td>{{ project.licence }}</td>
+        <td><a href="{{ project.repoURL.en }}" target="_blank">{{ project.repoHost }}</a></td>
+      <tr>
+      {% endfor %}
+    {% endfor %}
+
+  </tbody>
+</table>
