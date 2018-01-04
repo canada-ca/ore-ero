@@ -1,0 +1,24 @@
+---
+layout: default
+ref: index
+lang: fr
+---
+
+<div>
+
+  <h1>Échange de ressources ouvert</h1>
+
+  <ul>
+    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% for post in posts %}
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

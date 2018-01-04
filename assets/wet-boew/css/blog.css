@@ -1,0 +1,57 @@
+div.blog {
+      position: relative;
+
+   }
+  
+	.gray {
+	
+	background-color: #eeeeee;
+	padding-bottom: 15px;
+
+	
+	}
+   
+	h3.blog {
+     position: absolute;
+	 top: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+	 color: white;
+	 font-size: 5.5vw;
+	 font-weight: normal;
+	 padding-top: 5px;
+	
+	
+   }
+   @media screen and (min-width: 1800px) {
+  h3.blog {
+     font-size: 98px;
+  }
+  
+   
+}
+   
+   h4.blog {
+	 
+     position: absolute;
+	 top: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+	 color: white;
+	 font-size: 8.0vw;
+	 font-weight: normal;
+	
+   }
+   
+	p.blog {
+	 padding-top: 5px;
+	 font-size: 1.5vw;
+	 font-weight: normal;
+   }
+    @media screen and (min-width: 1800px) {
+  p.blog {
+     font-size: 24px;
+  }
+  

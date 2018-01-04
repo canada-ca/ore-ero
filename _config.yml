@@ -1,0 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://canada-ca.github.io/ore-ero" # the base hostname & protocol for your site
+email: ore-ero@canada.ca
+twitter_username: ore-ero
+github_username: canada-ca
+
+# Translations
+title:
+  en: Open Resource Exchange
+  fr: Échange de ressources ouvert
+description:
+  en: Canada.ca blog
+  fr: blogue de Canada.ca
+index:
+  en: index.html
+  fr: accueil.html
+home:
+  en: Home
+  fr: Accueil
+AllPosts:
+  en: Canada.ca blog
+  fr: blogue de Canada.ca
+language:
+  en: English
+  fr: Français
+SkipToMain:
+  en: Skip to main content
+  fr: Passer au contenu principal
+SkipToAbout:
+  en: Skip to "About this site"
+  fr: Passer à « À propos de ce site »
+LanguageSelection:
+  en: Language selection
+  fr: Sélection de la langue
+GCActivitiesInitiatives:
+  en: Government of Canada activities and initiatives
+  fr: Activités et initiatives du gouvernement du Canada
+GoC:
+  en: Government of Canada
+  fr: Gouvernement du Canada
+SearchAndMenus:
+  en: Search and menus
+  fr: Recherche et menus
+SearchWebsite:
+  en: Search website
+  fr: Recherchez le site Web
+SearchCanadaCa:
+  en: Search Canada.ca
+  fr: Rechercher dans Canada.ca
+Search:
+  en: Search
+  fr: Recherche
+TopicsMenu:
+  en: Topics menu
+  fr: Menu des sujets
+
+# Build settings
+markdown: kramdown
