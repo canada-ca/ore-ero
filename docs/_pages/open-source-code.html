@@ -5,6 +5,8 @@ lang: en
 permalink: /open-source-code.html
 ---
 
+<h1>Open Source Code</h1>
+
 <table class="wb-tables table table-striped table-hover">
   <thead>
     <tr>
@@ -26,7 +28,7 @@ permalink: /open-source-code.html
         <td>{{ project.desc.en }}</td>
         <td>{{ project.licence }}</td>
         <td><a href="{{ project.repoURL.en }}" target="_blank">{{ project.repoHost }}</a></td>
-      <tr>
+      </tr>
       {% endfor %}
     {% endfor %}
 
