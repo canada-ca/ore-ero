@@ -196,9 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Instructions : comment naviguer dans la carte",
 	"geo-tgllyr": "Basculer l'affichage de la couche",
 	"geo-hdnlyr": "Cette couche est présentement cachée.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBCT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBCT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=fr",
 	"geo-attrttl": "GéoGratis - Carte de base du Canada",
 	"geo-sel": "Sélectionnez",
@@ -219,10 +219,10 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Graphique légende couche cartographique.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Passer au version HTML simplifiée",
-	"wb-enable": "Passer au version standard",
-	"disable-notice-h": "Avis: Version HTML simplifiée",
-	"disable-notice": "Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaine fonctionalités peuvent être déactivées.",
+	"wb-disable": "Passer à la version HTML simplifiée",
+	"wb-enable": "Passer à la version standard",
+	"disable-notice-h": "Avis : Version HTML simplifiée",
+	"disable-notice": "Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaines fonctionnalités peuvent être déactivées.",
 
 	/* Dismissable content */
 	"dismiss": "Écarter",

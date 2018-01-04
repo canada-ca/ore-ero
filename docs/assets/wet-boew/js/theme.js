@@ -485,6 +485,15 @@ var componentName = "wb-data-json",
 			if ( !jsonType ) {
 				jsonType = "template";
 				applyTemplate( elm, itmSettings, content );
+
+				// Trigger wet
+				if ( itmSettings.trigger ) {
+					$elm
+						.find( wb.allSelectors )
+							.addClass( "wb-init" )
+							.filter( ":not(#" + elm.id + " .wb-init .wb-init)" )
+								.trigger( "timerpoke.wb" );
+				}
 			} else if ( jsonType === "replace" ) {
 				$elm.html( content );
 			} else if ( jsonType === "replacewith" ) {
@@ -513,13 +522,13 @@ var componentName = "wb-data-json",
 	// Apply the template as per the configuration
 	applyTemplate = function( elm, settings, content ) {
 
-		var mapping = settings.mapping,
-			mapping_len = mapping.length,
+		var mapping = settings.mapping || [ {} ],
+			mapping_len,
 			filterTrueness = settings.filter || [],
 			filterFaslseness = settings.filternot || [],
 			queryAll = settings.queryall,
 			i, i_len, i_cache,
-			j, j_cache,
+			j, j_cache, j_cache_attr,
 			basePntr,
 			clone, selElements,
 			cached_node,
@@ -532,9 +541,30 @@ var componentName = "wb-data-json",
 			template = settings.source ? document.querySelector( settings.source ) : elm.querySelector( "template" );
 
 		if ( !$.isArray( content ) ) {
-			content = [ content ];
+			if ( typeof content !== "object" ) {
+				content = [ content ];
+			} else {
+				content = $.map( content, function( val, index ) {
+					if ( typeof val === "object" && !$.isArray( val ) ) {
+						if ( !val[ "@id" ] ) {
+							val[ "@id" ] = index;
+						}
+					} else {
+						val = {
+							"@id": index,
+							"@value": val
+						};
+					}
+					return [ val ];
+				} );
+			}
 		}
 		i_len = content.length;
+
+		if ( !$.isArray( mapping ) ) {
+			mapping = [ mapping ];
+		}
+		mapping_len = mapping.length;
 
 		// Special support for adding row to a wb-table
 		// Condition must be meet:
@@ -562,6 +592,11 @@ var componentName = "wb-data-json",
 			return;
 		}
 
+		// Needed when executing sub-template that wasn't polyfill, like in IE11
+		if ( !template.content ) {
+			wb.tmplPolyfill( template );
+		}
+
 		if ( settings.appendto ) {
 			elmAppendTo = $( settings.appendto ).get( 0 );
 		}
@@ -583,9 +618,10 @@ var componentName = "wb-data-json",
 					selElements = clone.querySelectorAll( queryAll );
 				}
 
-				for ( j = 0; j < mapping_len; j += 1 ) {
+				for ( j = 0; j < mapping_len || j === 0; j += 1 ) {
 					j_cache = mapping[ j ];
 
+					// Get the node used to insert content
 					if ( selElements ) {
 						cached_node = selElements[ j ];
 					} else if ( j_cache.selector ) {
@@ -593,25 +629,36 @@ var componentName = "wb-data-json",
 					} else {
 						cached_node = clone;
 					}
+					j_cache_attr = j_cache.attr;
+					if ( j_cache_attr ) {
+						if ( !cached_node.hasAttribute( j_cache_attr ) ) {
+							cached_node.setAttribute( j_cache_attr, "" );
+						}
+						cached_node = cached_node.getAttributeNode( j_cache_attr );
+					}
 
-					if ( typeof j_cache === "string" ) {
+					// Get the value
+					if ( typeof i_cache === "string" ) {
+						cached_value = i_cache;
+					} else if ( typeof j_cache === "string" ) {
 						cached_value = jsonpointer.get( content, basePntr + j_cache );
 					} else {
-						if ( j_cache.attr ) {
-							cached_node =  cached_node.getAttributeNode( j_cache.attr );
-						}
-
-						cached_textContent = cached_node.textContent || "";
 						cached_value = jsonpointer.get( content, basePntr + j_cache.value );
-
-						if ( j_cache.placeholder ) {
-							cached_value = cached_textContent.replace( j_cache.placeholder, cached_value );
-						}
 					}
-					if ( !j_cache.isHTML ) {
-						cached_node.textContent = cached_value;
-					} else {
+
+					// Placeholder text replacement if any
+					if ( j_cache.placeholder ) {
+						cached_textContent = cached_node.textContent || "";
+						cached_value = cached_textContent.replace( j_cache.placeholder, cached_value );
+					}
+
+					// Set the value to the node
+					if ( $.isArray( cached_value ) ) {
+						applyTemplate( cached_node, j_cache, cached_value );
+					} else if ( j_cache.isHTML ) {
 						cached_node.innerHTML = cached_value;
+					} else {
+						cached_node.textContent = cached_value;
 					}
 				}
 
@@ -789,11 +836,36 @@ for ( s = 0; s !== selectorsLength; s += 1 ) {
 /*
  * Variable and function definitions.
  * These are global to the polyfill - meaning that they will be initialized once per page.
+ * This polyfill is mostly used to support <template> element in IE11
  */
 var componentName = "wb-template",
 	selector = "template",
 	initEvent = "wb-init." + componentName,
 	$document = wb.doc,
+
+	/**
+	 * @method polyfill
+	 * @param {DOM element} element that we need to apply the polyfill
+	 */
+	polyfill = function( elm ) {
+
+		if ( elm.content ) {
+			return;
+		}
+		var elPlate = elm,
+			qContent,
+			docContent;
+
+		qContent = elPlate.childNodes;
+		docContent = document.createDocumentFragment();
+
+		while ( qContent[ 0 ] ) {
+			docContent.appendChild( qContent[ 0 ] );
+		}
+
+		elPlate.content = docContent;
+
+	},
 
 	/**
 	 * @method init
@@ -808,26 +880,15 @@ var componentName = "wb-template",
 
 		if ( elm ) {
 
-			if ( !elm.content ) {
-
-				var elPlate = elm,
-					qContent,
-					docContent;
-
-				qContent = elPlate.childNodes;
-				docContent = document.createDocumentFragment();
-
-				while ( qContent[ 0 ] ) {
-					docContent.appendChild( qContent[ 0 ] );
-				}
-
-				elPlate.content = docContent;
-			}
+			polyfill( elm );
 
 			// Identify that initialization has completed
 			wb.ready( $( elm ), componentName );
 		}
 	};
+
+// Make it available of when template element is needed on the fly, like subtemplate support in IE11
+wb.tmplPolyfill = polyfill;
 
 // Bind the events of the polyfill
 $document.on( "timerpoke.wb " + initEvent, selector, init );
@@ -3291,25 +3352,25 @@ wb.add( selector );
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
-(function( $, document, wb ) {
+( function( $, document, wb ) {
 "use strict";
 
 var $document = wb.doc,
 	searchSelector = "#wb-srch-q",
-	$search = $(searchSelector),
+	$search = $( searchSelector ),
 	$searchDataList = $( "#" + $search.attr( "list" ) ),
 
 //Search Autocomplete
 	queryAutoComplete = function( query ) {
 		if ( query.length > 0 ) {
-			$( this ).trigger({
+			$( this ).trigger( {
 				type: "ajax-fetch.wb",
 				fetch: {
-					url: wb.pageUrlParts.protocol + "//clients1.google.com/complete/search?client=partner&sugexp=gsnos%2Cn%3D13&gs_rn=25&gs_ri=partner&partnerid=" + window.encodeURIComponent("008724028898028201144:knjjdikrhq0+lang:" + wb.lang) + "&types=t&ds=cse&cp=3&gs_id=b&hl=" + wb.lang + "&q=" + encodeURI( query ),
+					url: wb.pageUrlParts.protocol + "//clients1.google.com/complete/search?client=partner&sugexp=gsnos%2Cn%3D13&gs_rn=25&gs_ri=partner&partnerid=" + window.encodeURIComponent( "008724028898028201144:knjjdikrhq0+lang:" + wb.lang ) + "&types=t&ds=cse&cp=3&gs_id=b&hl=" + wb.lang + "&q=" + encodeURI( query ),
 					dataType: "jsonp",
 					jsonp: "callback"
 				}
-			});
+			} );
 		}
 	};
 
@@ -3319,7 +3380,7 @@ $document.on( "change keyup", searchSelector, function( event ) {
 		query = event.target.value,
 		which = event.which;
 
-	switch ( event.type ){
+	switch ( event.type ) {
 	case "change":
 		queryAutoComplete.call( target, query );
 		break;
@@ -3334,7 +3395,7 @@ $document.on( "change keyup", searchSelector, function( event ) {
 			}
 		}
 	}
-});
+} );
 
 //Processes the autocomplete API results
 $document.on( "ajax-fetched.wb", searchSelector, function( event ) {
@@ -3348,7 +3409,7 @@ $document.on( "ajax-fetched.wb", searchSelector, function( event ) {
 	for ( indIssue = 0; indIssue < lenSuggestions; indIssue += 1 ) {
 		issue = suggestions[ indIssue ];
 
-		options += "<option label=\"" + issue[0] + "\" value=\"" + issue[0] + "\"></option>";
+		options += "<option label=\"" + issue[ 0 ] + "\" value=\"" + issue[ 0 ] + "\"></option>";
 	}
 
 	if ( wb.ielt10 ) {
@@ -3358,22 +3419,21 @@ $document.on( "ajax-fetched.wb", searchSelector, function( event ) {
 	$searchDataList.append( options );
 
 	$search.trigger( "wb-update.wb-datalist" );
-});
+} );
 
-window["wb-data-ajax"] = {
+window[ "wb-data-ajax" ] = {
 	corsFallback: function( fetchObj ) {
-		fetchObj.url = fetchObj.url.replace(".html", ".htmlp");
+		fetchObj.url = fetchObj.url.replace( ".html", ".htmlp" );
 		return fetchObj;
 	}
 };
 
 //Report a problem form - reveal textbox when checkbox is selected
-$("[data-reveal]").change(function() {
-	var $elm = $(this),
-		selector = $elm.attr('data-reveal'),
-		$reveal = $elm.find(selector);
-	return ( $elm.is(':checked') ) ? $(selector).removeClass('hide') : $(selector).addClass('hide');
-});
+$( "[data-reveal]" ).change( function() {
+	var $elm = $( this ),
+		selector = $elm.attr( "data-reveal" );
+	return ( $elm.is( ":checked" ) ) ? $( selector ).removeClass( "hide" ) : $( selector ).addClass( "hide" );
+} );
 
 
-})( jQuery, document, wb );
+} )( jQuery, document, wb );
