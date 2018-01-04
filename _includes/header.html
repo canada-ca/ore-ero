@@ -1,102 +1,100 @@
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
+<!-- End Google Tag Manager -->
+
 <ul id="wb-tphp">
-<li class="wb-slc">
-<a class="wb-sl" href="#wb-cont">{{ site.SkipToMain[page.lang] }}</a>
-</li>
-<li class="wb-slc visible-sm visible-md visible-lg">
-<a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a>
-</li>
-</ul><header role="banner">
-<div id="wb-bnr" class="container">
-<section id="wb-lng" class="visible-md visible-lg text-right">
-<h2 class="wb-inv">{{ site.LanguageSelection[page.lang] }}</h2>
-<div class="row">
-<div class="col-md-12">
-<ul class="list-inline margin-bottom-none">
-
-  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for my_post in posts %}
-    {% if my_post.lang != page.lang %}
-      <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: post.baseurl }}">{{ site.language[my_post.lang] }}</a></li>
-    {% endif %}
-  {% endfor %}  
-
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for my_page in pages %}
-    {% if my_page.lang != page.lang %}
-      <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ site.language[my_page.lang] }}</a></li>
-    {% endif %}
-  {% endfor %}
-  
-
+  <li class="wb-slc">
+    <a class="wb-sl" href="#wb-cont">{{ site.SkipToMain[page.lang] }}</a>
+  </li>
+  <li class="wb-slc visible-sm visible-md visible-lg">
+    <a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a>
+  </li>
 </ul>
-</div>
-</div>
-</section>
-<div class="row">
-<div class="brand col-xs-8 col-sm-9 col-md-6">
-<a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data="{{ site.baseurl }}/assets/wet-boew/assets/sig-blk-{{ page.lang }}.svg"></object><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
-</div>
-<section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
-<h2>{{ site.SearchAndMenus[page.lang] }}</h2>
-<ul class="list-inline text-right chvrn">
-<li><a href="#mb-pnl" title="{{ site.SearchAndMenus[page.lang] }}" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">{{ site.SearchAndMenus[page.lang] }}</span></span></span></a></li>
-</ul>
-<div id="mb-pnl"></div>
-</section>
-<section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
-<h2>Search</h2>
-<form action="https://www.canada.ca/{{ page.lang }}/sr.html" method="get" name="cse-search-box" role="search" class="form-inline">
-<div class="form-group">
-<label for="wb-srch-q" class="wb-inv">{{ site.SearchWebsite[page.lang] }}</label>
-<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="{{ site.SearchCanadaCa[page.lang] }}">
-<datalist id="wb-srch-q-ac">
-<!--[if lte IE 9]><select><![endif]-->
-<!--[if lte IE 9]></select><![endif]-->
-</datalist>
-</div>
-<div class="form-group submit">
-<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">{{ site.Search[page.lang] }}</span></button>
-</div>
-</form>
-</section>
-</div>
-</div>
-<nav role="navigation" id="wb-sm" data-ajax-replace="https://cdn.canada.ca/gcweb-cdn-live/sitemenu/sitemenu-{{ page.lang }}.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-<div class="container nvbar">
-<h2>{{ site.TopicsMenu[page.lang] }}</h2>
-<div class="row">
-<ul class="list-inline menu">
-<li><a href="#">Jobs</a></li>
-<li><a href="#">Immigration</a></li>
-<li><a href="#">Travel</a></li>
-<li><a href="#">Business</a></li>
-<li><a href="#">Benefits</a></li>
-<li><a href="#">Health</a></li>
-<li><a href="#">Taxes</a></li>
-<li><a href="#">More services</a></li>
-</ul>
-</div>
-</div>
-</nav>
-<nav role="navigation" id="wb-bc" property="breadcrumb">
-<h2>{{ site.YouAreHere[page.lang] }}:</h2>
-<div class="container">
-<div class="row">
-<ol class="breadcrumb">
-<li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
-{% if page.ref != "index" %}
-  {% if page.lang == "en" %}
-    <li><a href="/">{{ site.AllPosts[page.lang] }}</a></li>
-  {% else %}
-    <li><a href="/accueil.html">{{ site.AllPosts[page.lang] }}</a></li>
-  {% endif %}
-{% endif %}
-</ol>
-</div>
-</div>
-</nav>
+<header role="banner">
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">{{ site.LanguageSelection[page.lang] }}</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+            {% for my_post in posts %}
+              {% if my_post.lang != page.lang %}
+                <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: post.baseurl }}">{{ site.language[my_post.lang] }}</a></li>
+              {% endif %}
+            {% endfor %}  
+
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for my_page in pages %}
+              {% if my_page.lang != page.lang %}
+                <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ site.language[my_page.lang] }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/en.html">
+          <object type="image/svg+xml" tabindex="-1" data="{{ site.baseurl }}/assets/wet-boew/assets/sig-blk-{{ page.lang }}.svg"></object>
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>{{ site.SearchAndMenus[page.lang] }}</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="{{ site.SearchAndMenus[page.lang] }}" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">{{ site.SearchAndMenus[page.lang] }}</span></span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+
+      <section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
+        <h2>Search</h2>
+        <form action="https://www.canada.ca/{{ page.lang }}/sr.html" method="get" name="cse-search-box" role="search" class="form-inline">
+          <div class="form-group">
+            <label for="wb-srch-q" class="wb-inv">{{ site.SearchWebsite[page.lang] }}</label>
+            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="{{ site.SearchCanadaCa[page.lang] }}">
+            <datalist id="wb-srch-q-ac">
+            <!--[if lte IE 9]><select><![endif]-->
+            <!--[if lte IE 9]></select><![endif]-->
+            </datalist>
+          </div>
+          <div class="form-group submit">
+            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">{{ site.Search[page.lang] }}</span></button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <nav role="navigation" id="wb-sm" data-ajax-replace="https://cdn.canada.ca/gcweb-cdn-live/sitemenu/sitemenu-{{ page.lang }}.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2>{{ site.TopicsMenu[page.lang] }}</h2>
+      <div class="row"></div>
+    </div>
+  </nav>
+
+  <nav role="navigation" id="wb-bc" property="breadcrumb">
+    <h2>{{ site.YouAreHere[page.lang] }}:</h2>
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
+          {% if page.ref != "index" %}
+            {% if page.lang == "en" %}
+              <li><a href="/">{{ site.AllPosts[page.lang] }}</a></li>
+            {% else %}
+              <li><a href="/accueil.html">{{ site.AllPosts[page.lang] }}</a></li>
+            {% endif %}
+          {% endif %}
+        </ol>
+      </div>
+    </div>
+  </nav>
 </header>
 
-
 <main role="main" property="mainContentOfPage" class="container">
-
