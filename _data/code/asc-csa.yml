@@ -1,0 +1,30 @@
+name:
+  en: Canadian Space Agency
+  fr: Agence spatiale canadienne
+
+releases:
+  - name:
+      en: Apogy
+      fr: Apogy
+    version: 0.5.14
+    dateUpdated: 2016-11-08
+    desc:
+      en: The one-stop-shop solution for operating robots, satellites and beyond
+      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
+    repositoryURL:
+      en: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy
+      fr: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy
+    vcs: git
+    licenses:
+      - name: EPLv1
+        URL:
+          en: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-en.txt
+          fr: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-fr.txt
+    tags:
+      - Robots
+      - Space
+    contact:
+      name: 
+      email: apogy@asc-csa.gc.ca
+    languages:
+      - Java

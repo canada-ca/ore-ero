@@ -1,0 +1,31 @@
+name:
+  en: Environment and Climate Change Canada
+  fr: Environnement et Changement climatique Canada
+
+releases:
+  - name:
+      en: METRo
+      fr: METRo
+    version: 3.3.2
+    dateUpdated: 2017-10-07
+    desc:
+      en: The Model of the Environment and Temperature of Roads (METRo) is a road forecast software.
+      fr: Le Modèle de l'Environnement et de la Température de la Route (METRo) est un logiciel de prévision de la température de la route.
+    repositoryURL:
+      en: https://framagit.org/metroprojects/metro
+      fr: https://framagit.org/metroprojects/metro
+    vcs: git
+    licenses:
+      - name: GPLv2
+        URL:
+          en: https://framagit.org/metroprojects/metro/blob/master/LICENSE
+          fr:
+    tags:
+      - Environment
+      - Temperature
+      - Roads
+    contact:
+      name: 
+      email: metro@ec.gc.ca
+    languages:
+      - Python
