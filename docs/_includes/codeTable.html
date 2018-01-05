@@ -1,0 +1,31 @@
+<table class="wb-tables table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Department</th>
+      <th>Project Name</th>
+      <th>Description</th>
+      <th>Licence</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    {% for orgs in site.data.code %}
+      {% assign org = orgs[1] %}
+      {% for release in org.releases %}
+      <tr>
+        <td>{{ org.name[page.lang] }}</td>
+        <td>{{ release.name[page.lang] }}</td>
+        <td>{{ release.desc[page.lang] }}</td>
+        <td>
+          {% for license in release.licenses %}
+            <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
+          {% endfor %}
+        </td> 
+        <td><a href="{{ release.repositoryURL[page.lang] }}" target="_blank">{{ release.vcs }}</a></td>
+      </tr>
+      {% endfor %}
+    {% endfor %}
+
+  </tbody>
+</table>
