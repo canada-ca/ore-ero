@@ -84,9 +84,9 @@
       <div class="row">
         <ol class="breadcrumb">
           <li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
-          {% if page.ref != "index" %}
+          {% if page.ref != "home" %}
             {% if page.lang == "en" %}
-              <li><a href="{{ site.baseurl }}/">{{ site.title[page.lang] }}</a></li>
+              <li><a href="{{ site.baseurl }}/home.html">{{ site.title[page.lang] }}</a></li>
             {% else %}
               <li><a href="{{ site.baseurl }}/accueil.html">{{ site.title[page.lang] }}</a></li>
             {% endif %}
