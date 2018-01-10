@@ -6,78 +6,95 @@ releases:
   - name:
       en: GCconnex
       fr: GCconnex
-    version: 1.0.0
-    dateUpdated: 2018-01-03
-    desc:
+    description:
       en: GC digital collaboration platform (GCconnex and GCcollab)
       fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
     repositoryURL:
       en: https://github.com/gctools-outilsgc/gcconnex
       fr: https://github.com/gctools-outilsgc/gcconnex
-    vcs: git
-    licenses:
-      - name: GPLv2
-        URL:
-          en: https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
-          fr:
+    permissions:
+      licenses:
+        - name: GPLv2
+          URL:
+            en: https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
+            fr: https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
+      usageType:
+        - openSource
+    laborHours: 1000
     tags:
-      - Collaboration
-      - Social
+      en:
+        - Collaboration
+        - Social
+      fr:
+        - Collaboration
+        - Social
     contact:
-      name:
       email: gcconnex@tbs-sct.gc.ca
+    # Optionnal  
+    version: 1.0.0
+    organization:
+      en: GCTools
+      fr: OutilsGC
+    status: Production
+    vcs: git
     languages:
       - PHP
       - MySQL
-      
+    date:
+      created: 2008
+      lastModified: 2018-01-03
+    relatedCode:
+      - name: Elgg
+        URL: https://github.com/Elgg/Elgg
+     
   - name:
       en: Canadian Digital Service Website
       fr: Site Web du service numérique canadien
-    version: 1.0.0
-    dateUpdated: 2018-01-03
-    desc:
+    description:
       en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
       fr: digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository.
     repositoryURL:
       en: https://github.com/cds-snc/digital-canada-ca
       fr: https://github.com/cds-snc/digital-canada-ca
-    vcs: git
-    licenses:
-      - name: MIT
-        URL:
-          en: https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
-          fr:
+    permissions:
+      licenses:
+        - name: MIT
+          URL:
+            en: https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
+            fr: https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
+      usageType:
+        - openSource
     tags:
-      - Website
+      en:
+        - Website
+      fr:
+        - Site Web
     contact:
-      name:
       email: cds@tbs-sct.gc.ca
-    languages:
-      - HTML
-      - Markdown
 
   - name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l’expérience Web (BOEW)
     version: 4.0.27
     dateUpdated: 2017-12-14
-    desc:
+    description:
       en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
       fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
     repositoryURL:
       en: https://github.com/wet-boew/wet-boew
       fr: https://github.com/wet-boew/wet-boew
-    vcs: git
-    licenses:
-      - name: MIT
-        URL:
-          en: https://github.com/wet-boew/wet-boew/blob/master/Licence-en.txt
-          fr: https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt
+    permissions:
+      licenses:
+        - name: MIT
+          URL:
+            en: https://github.com/wet-boew/wet-boew/blob/master/Licence-en.txt
+            fr: https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt
+      usageType:
+        - openSource
     tags:
-      - Frontend
+      en:
+        - Frontend
+      fr:
+        - Interface
     contact:
-      name:
       email: wet-boew@tbs-sct.gc.ca
-    languages:
-      - HTML
-      - Javascript
