@@ -1,5 +1,7 @@
 <div class="row">
-  <div class="col-md-3">
+
+<!-- Filters -->
+<div class="col-md-3">
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
@@ -7,7 +9,7 @@
         <label for="dt_department">Department</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value=""></option>
-          {% for depts in site.data.code %}
+          {% for depts in site.data.code | sort: "name" %}
             {% assign dept = depts[1] %}
             <option value="{{ dept.name[page.lang] }}">{{ dept.name[page.lang] }}</option>
           {% endfor %}
@@ -27,7 +29,7 @@
               {% endfor %}
             {% endfor %}
           {% endfor %}
-          {% assign license_array = license_array | group_by: "name"  %}
+          {% assign license_array = license_array | group_by: "name" | sort: "name" %}
           {% for license in license_array %}
             <option value="{{ license.name }}">{{ license.name }}</option>
           {% endfor %}
@@ -47,7 +49,7 @@
               {% endfor %}
             {% endfor %}
           {% endfor %}
-          {% assign tag_array = tag_array | group_by: "" %}
+          {% assign tag_array = tag_array | group_by: "" | sort: "name" %}
           {% for tag in tag_array %}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
           {% endfor %}
@@ -66,6 +68,8 @@
     </form>
   </details>
 </div>
+
+<!-- Data Table -->
 <div class="col-md-9">
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4], "visible": false}]}'>
     <thead>
@@ -86,7 +90,7 @@
         {% for release in dept.releases %}
         <tr>
           <td>{{ dept.name[page.lang] }}</td>
-          <td>{{ release.name[page.lang] }}</td>
+          <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify }}">{{ release.name[page.lang] }}</a></td>
           <td>{{ release.description[page.lang] }}</td>
           <td>
             {% for license in release.permissions.licenses %}
@@ -111,3 +115,19 @@
     </tbody>
   </table>
 </div>
+
+<!-- Modal Lightboxes -->
+{% for depts in site.data.code %}
+  {% assign dept = depts[1] %}
+  {% for release in dept.releases %}
+    <section id="{{ release.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+      <header class="modal-header">
+        <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
+      </header>
+      <div class="modal-body">
+        <p><strong>{{ release.description[page.lang] }}</strong></p>
+        <p>{{ release }}</p>
+      </div>
+    </section>
+  {% endfor %}
+{% endfor %}
