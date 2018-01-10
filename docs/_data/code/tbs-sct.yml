@@ -94,6 +94,7 @@ releases:
     tags:
       en:
         - Frontend
+        - Website
       fr:
         - Interface
     contact:
