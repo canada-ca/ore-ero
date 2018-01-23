@@ -24,27 +24,31 @@ tags:
 
 uses:
   - deptCode: tbs-sct
-    usageType:
+    users:
       - everyone
-    inBaseInstall: false
-    needApproval: true
+    nbUsers: 50
     contact:
       email: desktop@tbs-sct.gc.ca
     version: multiple
-    notes: 
+    upgradePolicy:
+    notes:
+      en:
+      fr:
     date:
       created: 2018-01-23
       lastModified: 2018-01-23
 
   - deptCode: abc-def
-    usageType:
+    users:
       - developers
-    inBaseInstall: true
-    needApproval: false
+    nbUsers: 100
     contact:
       email: contact@abc-def.gc.ca
     version: 7.5.4
-    notes: 
+    upgradePolicy: latest
+    notes:
+      en:
+      fr:
     date:
       created: 2018-01-23
       lastModified: 2018-01-02

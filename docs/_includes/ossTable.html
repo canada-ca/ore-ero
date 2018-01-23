@@ -5,26 +5,6 @@
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
-      <div class="form-group">
-        <label for="dt_department">Department</label>
-        <select class="form-control" id="dt_department" name="dt_department" data-column="1">
-          <option value=""></option>
-          {% assign dept_array = "" | split: ',' %}
-          {% for logiciels in site.data.logiciels_libres-open_source_software %}
-            {% assign oss = logiciels[1] %}
-            {% for dept in oss.uses %}
-              {% assign dept_array = dept_array | push: dept %}
-            {% endfor %}
-          {% endfor %}
-
-          {% assign dept_array = dept_array | group_by: "deptCode" %}
-          {% for dept in dept_array %}
-            {% assign dName = site.data.ministeres-departments | where: "code", dept.items[0].deptCode %}
-            <option value="{{ dName[0].name[page.lang] }}">{{ dName[0].name[page.lang] }}</option>
-          {% endfor %}
-
-        </select>
-      </div>
       
       <div class="form-group">
         <label for="dt_licence">Licence</label>
