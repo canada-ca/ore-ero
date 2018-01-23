@@ -1,7 +1,4 @@
-name:
-  en: Canadian Space Agency
-  fr: Agence spatiale canadienne
-
+deptCode: asc-csa
 releases:
   - name:
       en: Apogy

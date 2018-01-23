@@ -1,0 +1,14 @@
+- code: tbs-sct
+  name:
+    en: Treasury Board of Canada Secretariat
+    fr: Secrétariat du Conseil du Trésor du Canada
+
+- code: asc-csa
+  name:
+    en: Canadian Space Agency
+    fr: Agence spatiale canadienne
+
+- code: eccc
+  name:
+    en: Environment and Climate Change Canada
+    fr: Environnement et Changement climatique Canada
