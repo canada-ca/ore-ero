@@ -1,7 +1,4 @@
-name:
-  en: Environment and Climate Change Canada
-  fr: Environnement et Changement climatique Canada
-
+deptCode: eccc
 releases:
   - name:
       en: METRo

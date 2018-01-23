@@ -9,8 +9,7 @@
         <label for="dt_department">Department</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value=""></option>
-          {% for depts in site.data.code | sort: "name" %}
-            {% assign dept = depts[1] %}
+          {% for dept in site.data.ministeres-departments %}
             <option value="{{ dept.name[page.lang] }}">{{ dept.name[page.lang] }}</option>
           {% endfor %}
         </select>
@@ -89,7 +88,8 @@
         {% assign dept = depts[1] %}
         {% for release in dept.releases %}
         <tr>
-          <td>{{ dept.name[page.lang] }}</td>
+          {% assign dName = site.data.ministeres-departments | where: "code", dept.deptCode %}
+          <td>{{ dName[0].name[page.lang] }}</td>
           <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify }}">{{ release.name[page.lang] }}</a></td>
           <td>{{ release.description[page.lang] }}</td>
           <td>

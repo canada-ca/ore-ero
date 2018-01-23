@@ -1,7 +1,4 @@
-name:
-  en: Treasury Board of Canada Secretariat
-  fr: Secrétariat du Conseil du Trésor du Canada
-
+deptCode: tbs-sct
 releases:
   - name:
       en: GCconnex
