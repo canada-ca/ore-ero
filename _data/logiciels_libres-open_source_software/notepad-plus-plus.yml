@@ -1,0 +1,50 @@
+name:
+  en: Notepad++
+  fr: Notepad++
+description:
+  en: Text editor and Notepad replacement that runs in the Windows environment.
+  fr: Éditeur de textes et remplacement pour Notepad qui fonctionne dans l'environement Windows.
+homepageURL:
+  en: https://notepad-plus-plus.org
+  fr: https://notepad-plus-plus.org/fr
+licenses:
+  - name: GPLv2
+    URL:
+      en: https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE
+      fr: https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE
+tags:
+  en:
+    - Desktop
+    - Productivity
+    - Text editor
+  fr:
+    - Poste de travail
+    - Productivité
+    - Éditeur texte
+
+uses:
+  - deptCode: tbs-sct
+    usageType:
+      - everyone
+    inBaseInstall: false
+    needApproval: true
+    contact:
+      email: desktop@tbs-sct.gc.ca
+    version: multiple
+    notes: 
+    date:
+      created: 2018-01-23
+      lastModified: 2018-01-23
+
+  - deptCode: abc-def
+    usageType:
+      - developers
+    inBaseInstall: true
+    needApproval: false
+    contact:
+      email: contact@abc-def.gc.ca
+    version: 7.5.4
+    notes: 
+    date:
+      created: 2018-01-23
+      lastModified: 2018-01-02
