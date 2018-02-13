@@ -1,44 +1,59 @@
-deptCode: * [string] Department or agency code - https://github.com/canada-ca/ore-ero/blob/master/docs/_data/ministeres-departments.yml
-releases: [array] Contains objects representing each versioned source code release made available.
-  - name:
-      en: * [string] The name of the release in English. 
-      fr: * [string] Le nom de la version en français. 
-    description:
-      en: * [string] A one- or two-sentence description of the release.
-      fr: *
-    repositoryURL:
-      en: * [string] The URL of the public release repository for open source repositories.
-      fr: *
-    version: [string] The version for this release. For example, "1.0.0."
-    status: [string] The development status of the release. For example, "Production", "Beta"..
-    vcs: [string] A lowercase string with the name of the version control system that is being used for the release. For example, "git", "svn"..
-    permissions:
-      licenses:
-        - name: * [string] An abbreviation for the name of the license - Ex. 'GPL' or 'MIT'
-          URL:
-            en: * [string] The URL of the release license.
-            fr: *
-    laborHours: * [number] An estimate of total labor hours spent by your organization/component across all versions of this release. This includes labor performed by federal employees and contractors. 
-    tags:
-      en: * [array] An array of keywords that will be helpful in discovering and searching for the release.
-        - tag1-en
-        - tag2-en
-      fr: *
-        - tag1-fr
-        - tag2-fr
-    contact:
-      email: * [string] An email address to contact the release.
-      URL: [string] The URL to a website that can be used to reach the point of contact. For example, 'http://twitter.com/...'.
-      phone: [string] The phone number to contact a release.
-    organization:
-      en: [string] The organization or component within the agency that the releases listed belong to. For example, "GCTools", "Open Gov"..
-      fr:
-    languages: [array] A list of strings with the names of the programming languages in use on the release.
+--- 
+deptCode: "[mandatory] [string] Department or agency code - https://github.com/canada-ca/ore-ero/blob/master/docs/_data/ministeres-departments.yml"
+releases: 
+## * [array] Contains objects representing each versioned source code release made available.
+  - 
+    contact: 
+      URL: "[string] The URL to a website that can be used to reach the point of contact. For example, http://twitter.com/..."
+      email: "[mandatory] [string] An email address to contact the release."
+      phone: "[string] The phone number to contact a release."
+    date: 
+      created: "[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format."
+      lastModified: "[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format."
+    description: 
+      en: "[mandatory] [string] A one- or two-sentence description of the release."
+      fr: "[mandatory] [string] ~"
+    disclaimerText: "[string] Short paragraph that includes disclaimer language to accompany the release."
+    disclaimerURL: "[string] The URL where disclaimer language regarding the release can be found."
+    downloadURL: "[string] The URL where a distribution of the release can be found."
+    homepageURL: "[string] The URL of the public release homepage."
+    laborHours: "[mandatory] [number] An estimate of total labor hours spent by your organization/component across all versions of this release. This includes labor performed by federal employees and contractors."
+    languages:
+    ## [array] A list of strings with the names of the programming languages in use on the release.
       - lang1
       - lang2
-    date:
-      created: [string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.
-      lastModified: [string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format.
+    name: 
+      en: "[mandatory] [string] The name of the release in English."
+      fr: "[mandatory] [string] Le nom de la version en français."
+    partners:
+    ## [array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.
+      - 
+        email: "[string] The email address for the point of contact at the partner agency."
+        name: "[string] The acronym describing the partner agency."
+    permissions: 
+      licenses:
+      ## [mandatory] [array of objects] An object containing license details, if available.
+        - 
+          URL: 
+            en: "[mandatory] [string] The URL of the release license."
+            fr: ~
+          name: "[mandatory] [string] An abbreviation for the name of the license - For example, GPLv3, MIT, .."
+    repositoryURL: 
+      en: "[mandatory] [string] The URL of the public release repository for open source repositories."
+      fr: "[mandatory] [string] ~"
     reusedCode:
-      - name: Elgg
-        URL: https://github.com/Elgg/Elgg
+    ## [array] An array of government source code, libraries, frameworks, APIs, platforms or other software used in this release.
+      - 
+        URL: "[string] The URL where the software can be found."
+        name: "[string] The name of the software used in this release."
+    status: "[string] The development status of the release. For example, Production, Beta, .."
+    tags:
+      en:
+      ## [array] An array of keywords that will be helpful in discovering and searching for the release.
+        - tag1-en
+        - tag2-en
+      fr: 
+        - tag1-fr
+        - tag2-fr
+    vcs: "[string] A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, .."
+    version: "[string] The version for this release. For example, 1.0.0."
