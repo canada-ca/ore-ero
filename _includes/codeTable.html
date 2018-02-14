@@ -126,7 +126,25 @@
       </header>
       <div class="modal-body">
         <p><strong>{{ release.description[page.lang] }}</strong></p>
-        <p>{{ release }}</p>
+        <p>View source code:
+          <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
+              {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+          </a>
+        </p>
+        <p>View licence(s):
+          {% for license in release.permissions.licenses %}
+            <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
+          {% endfor %}
+        </p>
+        {% if release.contact.name != nil %}
+          <p>Contact name: {{ release.contact.name }}</p>
+        {% endif %}
+        <p>Contact email:
+          <a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a>
+        </p>
+        {% if release.contact.phone != nil %}
+          <p>Contact phone: {{ release.contact.phone }}</p>
+        {% endif %}
       </div>
     </section>
   {% endfor %}

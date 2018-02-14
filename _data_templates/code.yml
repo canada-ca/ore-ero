@@ -6,6 +6,7 @@ releases:
     contact: 
       URL: "[string] The URL to a website that can be used to reach the point of contact. For example, http://twitter.com/..."
       email: "[mandatory] [string] An email address to contact the release."
+      name: "[string] The name of a contact or department for the release."
       phone: "[string] The phone number to contact a release."
     date: 
       created: "[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format."
