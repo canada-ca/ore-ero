@@ -1,6 +1,6 @@
 <div class="row">
 
-<!-- Filters -->
+<!-- Filter dropdowns -->
 <div class="col-md-3">
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
@@ -39,7 +39,7 @@
       
       <div class="form-group">
         <label for="dt_tag">Tag</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="5">
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
           <option value=""></option>
           {% assign tag_array = "" | split: ',' %}
           {% for depts in site.data.code %}
@@ -79,9 +79,8 @@
         <th>Project Name</th>
         <th>Description</th>
         <th>Licence</th>
-        <th>Usage Type</th>
         <th>Tags</th>
-        <th>Code</th>
+        <th>Code Repo</th>
       </tr>
     </thead>
     <tbody>
@@ -99,7 +98,6 @@
               <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
             {% endfor %}
           </td>
-          <td>{{ release.permissions.usageType }}</td>
           <td>
             {% for tag in release.tags[page.lang] %}
               {{ tag }}&nbsp;
@@ -122,7 +120,7 @@
 {% for depts in site.data.code %}
   {% assign dept = depts[1] %}
   {% for release in dept.releases %}
-    <section id="{{ release.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+    <section id="{{ release.name[page.lang] | slugify: 'pretty' }}" class="mfp-hide modal-dialog modal-content overlay-def">
       <header class="modal-header">
         <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
       </header>

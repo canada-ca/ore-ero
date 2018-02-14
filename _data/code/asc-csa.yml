@@ -1,33 +1,38 @@
+--- 
 deptCode: asc-csa
-releases:
-  - name:
+releases: 
+  - 
+    contact: 
+      email: apogy@asc-csa.gc.ca
+    date: 
+      metadataLastUpdated: "2017-10-07"
+    description: 
+      en: "The one-stop-shop solution for operating robots, satellites and beyond"
+      fr: "Un logiciel polyvalent pour faire fonctionner des robots et des satellites"
+    languages: 
+      - Java
+    name: 
       en: Apogy
       fr: Apogy
-    version: 0.5.14
-    dateUpdated: 2016-11-08
-    description:
-      en: The one-stop-shop solution for operating robots, satellites and beyond
-      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
-    repositoryURL:
-      en: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy
-      fr: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy
-    vcs: git
-    permissions:
-      licenses:
-        - name: EPLv1
-          URL:
-            en: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-en.txt
-            fr: https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-fr.txt
-      usageType:
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-en.txt"
+            fr: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-fr.txt"
+          name: EPLv1
+      usageType: 
         - openSource
-    tags:
-      en:
+    repositoryURL: 
+      en: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy"
+      fr: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy"
+    tags: 
+      en: 
         - Robots
         - Space
-      fr:
+      fr: 
         - Robots
         - Espace
-    contact:
-      email: apogy@asc-csa.gc.ca
-    languages:
-      - Java
+    vcs: git
+    version: "0.5.14"
+

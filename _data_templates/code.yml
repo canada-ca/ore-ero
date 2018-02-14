@@ -10,6 +10,7 @@ releases:
     date: 
       created: "[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format."
       lastModified: "[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format."
+      metadataLastUpdated: "[string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format."
     description: 
       en: "[mandatory] [string] A one- or two-sentence description of the release."
       fr: "[mandatory] [string] ~"
@@ -17,7 +18,7 @@ releases:
     disclaimerURL: "[string] The URL where disclaimer language regarding the release can be found."
     downloadURL: "[string] The URL where a distribution of the release can be found."
     homepageURL: "[string] The URL of the public release homepage."
-    laborHours: "[mandatory] [number] An estimate of total labor hours spent by your organization/component across all versions of this release. This includes labor performed by federal employees and contractors."
+    laborHours: "[number] An estimate of total labor hours spent by your organization/component across all versions of this release. This includes labor performed by federal employees and contractors."
     languages:
     ## [array] A list of strings with the names of the programming languages in use on the release.
       - lang1
@@ -32,7 +33,7 @@ releases:
         name: "[string] The acronym describing the partner agency."
     permissions: 
       licenses:
-      ## [mandatory] [array of objects] An object containing license details, if available.
+      ## [mandatory] [array of objects] An object containing license details.
         - 
           URL: 
             en: "[mandatory] [string] The URL of the release license."
@@ -42,14 +43,14 @@ releases:
       en: "[mandatory] [string] The URL of the public release repository for open source repositories."
       fr: "[mandatory] [string] ~"
     reusedCode:
-    ## [array] An array of government source code, libraries, frameworks, APIs, platforms or other software used in this release.
+    ## [array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.
       - 
         URL: "[string] The URL where the software can be found."
         name: "[string] The name of the software used in this release."
     status: "[string] The development status of the release. For example, Production, Beta, .."
     tags:
       en:
-      ## [array] An array of keywords that will be helpful in discovering and searching for the release.
+      ## [mandatory] [array] An array of keywords that will be helpful in discovering and searching for the release.
         - tag1-en
         - tag2-en
       fr: 
