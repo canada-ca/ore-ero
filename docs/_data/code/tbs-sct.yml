@@ -87,7 +87,7 @@ releases:
       licenses: 
         - 
           URL: 
-            en: "https://github.com/wet-boew/wet-boew/blob/master/Licence-en.txt"
+            en: "https://github.com/wet-boew/wet-boew/blob/master/License-en.txt"
             fr: "https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt"
           name: MIT
       usageType: 
