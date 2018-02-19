@@ -37,18 +37,3 @@ uses:
     date:
       created: 2018-01-23
       lastModified: 2018-01-23
-
-  - deptCode: abc-def
-    users:
-      - developers
-    nbUsers: 100
-    contact:
-      email: contact@abc-def.gc.ca
-    version: 7.5.4
-    upgradePolicy: latest
-    notes:
-      en:
-      fr:
-    date:
-      created: 2018-01-23
-      lastModified: 2018-01-02
