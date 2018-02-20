@@ -54,6 +54,10 @@ Given that we are searching for defaults and standards most business critical ap
 
 The last remaining database, then, becomes PostgreSQL which also has optional enterprise support in the form of EnterpriseDB.
 
+## Infrastructure as a Service (IaaS)
+
+* [OpenStack](http://openstack.org/) ([Wikipedia page](https://en.wikipedia.org/wiki/OpenStack))
+
 ## Web Server
 
 - Viability with up and coming technologies (specifically containerization)
