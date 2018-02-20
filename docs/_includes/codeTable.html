@@ -91,7 +91,7 @@
         <tr>
           {% assign dName = site.data.ministeres-departments | where: "code", dept.deptCode %}
           <td>{{ dName[0].name[page.lang] }}</td>
-          <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify: 'pretty' }}">{{ release.name[page.lang] }}</a></td>
+          <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify }}">{{ release.name[page.lang] }}</a></td>
           <td>{{ release.description[page.lang] }}</td>
           <td>
             {% for license in release.permissions.licenses %}
@@ -120,7 +120,7 @@
 {% for depts in site.data.code %}
   {% assign dept = depts[1] %}
   {% for release in dept.releases %}
-    <section id="{{ release.name[page.lang] | slugify: 'pretty' }}" class="mfp-hide modal-dialog modal-content overlay-def">
+    <section id="{{ release.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
       <header class="modal-header">
         <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
       </header>
