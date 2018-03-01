@@ -1,0 +1,9 @@
+- code: on
+  name:
+    en: Ontario
+    fr: Ontario
+
+- code: qc
+  name:
+    en: Quebec
+    fr: Québec

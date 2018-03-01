@@ -19,7 +19,7 @@ tags:
     - Site web
 
 uses:
-  - deptCode: tbs-sct
+  - adminCode: tbs-sct
     orgs:
       - name:
           en: Open Gov
