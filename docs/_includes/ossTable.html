@@ -119,8 +119,8 @@
       <div class="modal-body">
         <ul>
           {% for use in oss.uses %}
-            {% assign dName = site.data.ministeres-departments | where: "code", use.deptCode %}
-              <li>{{ dName[0].name[page.lang] }}</li>
+            {% assign aName = site.data.administrations.federal | where: "code", use.adminCode %}
+              <li>{{ aName[0].name[page.lang] }}</li>
           {% endfor %}
         </ul>
         <p>{{ oss.uses }}</p>

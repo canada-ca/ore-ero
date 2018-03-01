@@ -23,7 +23,7 @@ tags:
     - Éditeur texte
 
 uses:
-  - deptCode: tbs-sct
+  - adminCode: tbs-sct
     users:
       - everyone
     nbUsers: 50
@@ -38,7 +38,7 @@ uses:
       created: 2018-01-23
       lastModified: 2018-01-23
 
-  - deptCode: abc-def
+  - adminCode: abc-def
     users:
       - developers
     nbUsers: 100

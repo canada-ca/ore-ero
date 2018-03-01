@@ -1,5 +1,5 @@
 --- 
-deptCode: asc-csa
+adminCode: asc-csa
 releases: 
   - 
     contact: 
@@ -35,4 +35,3 @@ releases:
         - Espace
     vcs: git
     version: "0.5.14"
-
