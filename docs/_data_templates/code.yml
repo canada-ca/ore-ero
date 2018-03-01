@@ -1,5 +1,5 @@
 --- 
-deptCode: "[mandatory] [string] Department or agency code - https://github.com/canada-ca/ore-ero/blob/master/docs/_data/ministeres-departments.yml"
+adminCode: "[mandatory] [string] Administration code - https://github.com/canada-ca/ore-ero/blob/master/docs/_data/administrations"
 releases: 
 ## * [array] Contains objects representing each versioned source code release made available.
   - 
