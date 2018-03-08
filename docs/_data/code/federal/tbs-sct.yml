@@ -26,8 +26,6 @@ releases:
             en: "https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt"
             fr: "https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt"
           name: GPLv2
-      usageType: 
-        - openSource
     relatedCode: 
       - 
         URL: "https://github.com/Elgg/Elgg"
@@ -62,8 +60,6 @@ releases:
             en: "https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt"
             fr: "https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt"
           name: MIT
-      usageType: 
-        - openSource
     repositoryURL: 
       en: "https://github.com/cds-snc/digital-canada-ca"
       fr: "https://github.com/cds-snc/digital-canada-ca"
