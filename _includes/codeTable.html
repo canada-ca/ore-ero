@@ -6,7 +6,7 @@
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-        <label for="dt_department">Department</label>
+        <label for="dt_department">Administration</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value=""></option>
           {% for fptms in site.data.code %}
@@ -115,7 +115,6 @@
                 <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
               {% endfor %}
             </td>
-            <td>{{ release.permissions.usageType }}</td>
             <td>
               {% for tag in release.tags[page.lang] %}
                 {{ tag }}&nbsp;
