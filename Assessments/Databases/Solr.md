@@ -1,3 +1,5 @@
+Note: Solr is a Search Engine not a Database, but it is commonly categorized with databases.
+
 | Guideline                                                    | Assessment against guideline       | Met |
 |--------------------------------------------------------------|---|---------------------------------|
 |**Open Standard**|
