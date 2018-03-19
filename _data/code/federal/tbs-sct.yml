@@ -98,4 +98,44 @@ releases:
       fr: 
         - Interface
     version: "4.0.27"
-
+  - 
+    contact: 
+      email: Christopher.Jaja@tbs-sct.gc.ca
+      name: "Christopher Jaja"
+    date: 
+      created: "2013"
+      metadataLastUpdated: "2018-03-19"
+    description: 
+      en: "Government of Canada CKAN Extension"
+      fr: "Extension à CKAN du Gouvernement du Canada"
+    languages: 
+      - Python
+    name: 
+      en: CKANext-Canada
+      fr: CKANext-Canada
+    organization: 
+      en: "Open Government"
+      fr: "Gouvernement Ouvert"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "#"
+            fr: "#"
+          name: NoLicence
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/open-data/ckanext-canada"
+      fr: "https://github.com/open-data/ckanext-canada"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Extension"
+        - "Data Catalogue"
+      fr: 
+        - "Extension CKAN"
+        - "Catalogue de données"
+    vcs: git
