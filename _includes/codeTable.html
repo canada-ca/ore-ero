@@ -19,7 +19,31 @@
             {% endfor %}
           {% endfor %}
         </select>
-        
+      </div>
+
+      <div class="form-group">
+        <label for="dt_licence">Organization</label>
+        <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
+          <option value=""></option>
+          {% assign org_array = "" | split: ',' %}
+          
+          {% for fptms in site.data.code %}
+            {% assign fptm = fptms[1] %}
+            {% for admins in fptm %}
+              {% assign admin = admins[1] %}
+              {% for release in admin.releases %}
+                {% if release.organization[page.lang] != nil %}
+                  {% assign org_array = org_array | push: release.organization[page.lang] %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+                    
+          {% assign org_array = org_array | sort %}
+          {% for org in org_array %}
+            <option value="{{ org }}">{{ org }}</option>
+          {% endfor %}
+        </select>
       </div>
       
       <div class="form-group">
@@ -87,7 +111,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4], "visible": false}]}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4, 5], "visible": false}]}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -95,6 +119,7 @@
         <th>Description</th>
         <th>Licence</th>
         <th>Tags</th>
+        <th>Organization</th>
         <th>Code Repo</th>
       </tr>
     </thead>
@@ -119,6 +144,9 @@
               {% for tag in release.tags[page.lang] %}
                 {{ tag }}&nbsp;
               {% endfor %}
+            </td>
+            <td>
+              {{ release.organization[page.lang] }}
             </td>
             <td>
               <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">

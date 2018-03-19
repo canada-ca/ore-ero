@@ -122,7 +122,7 @@ releases:
           URL: 
             en: "#"
             fr: "#"
-          name: NoLicence
+          name: ""
     relatedCode: 
       - 
         URL: "https://github.com/ckan/ckan"
