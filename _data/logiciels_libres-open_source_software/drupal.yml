@@ -1,39 +1,37 @@
-name:
+--- 
+description: 
+  en: "Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites."
+  fr: "Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web."
+homepageURL: 
+  en: "https://www.drupal.org/"
+  fr: "https://www.drupal.org/"
+licenses: 
+  - GPLv2
+name: 
   en: Drupal
   fr: Drupal
-description:
-  en: Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites.
-  fr: Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web.
-homepageURL:
-  en: https://www.drupal.org/
-  fr: https://www.drupal.org/
-licenses:
-  - name: GPLv2
-    URL:
-      en: 
-      fr: 
-tags:
-  en:
-    - Web site
-  fr:
-    - Site web
-
-uses:
-  - adminCode: tbs-sct
-    orgs:
-      - name:
-          en: Open Gov
-          fr: Gouv ouvert
-        users:
+tags: 
+  en: 
+    - "Web site"
+  fr: 
+    - "Site web"
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          URL: "https://github.com/canada-ca/ore-ero/issues"
+          email: christopher.jaja@tbs-sct.gc.ca
+          name: "Christopher Jaja"
+        dateSince: 2018-01-23
+        name: 
+          en: "Open Government Portal"
+          fr: "Portail du Gouvernement ouvert"
+        description: 
+          en: ~
+          fr: ~
+        relatedCode:
+          - "https://github.com/open-data/od"
+        users: 
           - public
-        nbUsers: 1000+
-        version: 8
-        upgradePolicy: stable
-        notes:
-          en:
-          fr:
-    contact:
-      email: open@tbs-sct.gc.ca
-    date:
-      created: 2018-01-23
-      lastModified: 2018-01-23

@@ -17,7 +17,7 @@
               {% assign license_array = license_array | push: license %}
             {% endfor %}
           {% endfor %}
-          {% assign license_array = license_array | group_by: "name" | sort: "name" %}
+          {% assign license_array = license_array | group_by: "" | sort: "name" %}
           {% for license in license_array %}
             <option value="{{ license.name }}">{{ license.name }}</option>
           {% endfor %}
@@ -85,11 +85,9 @@
               {{ tag }}&nbsp;
             {% endfor %}
           </td>
-          <td><a class="wb-lbx" title="{{ oss.name[page.lang] }}" href="#{{ oss.name[page.lang] | slugify }}_u">{{ oss.uses.size }}</a></td>
+          <td><a class="wb-lbx" title="{{ oss.name[page.lang] }}" href="#{{ oss.name[page.lang] | slugify }}_u">{{ oss.admininstrations.size }}</a></td>
           <td>
-            <a href="{{ oss.homepageURL[page.lang] }}" target="_blank">
-              {{ oss.homepageURL[page.lang] | remove: "https://" | rstrip }}
-            </a>
+            <a href="{{ oss.homepageURL[page.lang] }}" target="_blank">{{ oss.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
           </td>
         </tr>
       {% endfor %}
@@ -118,12 +116,12 @@
       </header>
       <div class="modal-body">
         <ul>
-          {% for use in oss.uses %}
+          {% for use in oss.admininstrations %}
             {% assign aName = site.data.administrations.federal | where: "code", use.adminCode %}
               <li>{{ aName[0].name[page.lang] }}</li>
           {% endfor %}
         </ul>
-        <p>{{ oss.uses }}</p>
+        <p>{{ oss.admininstrations }}</p>
       </div>
     </section>
 

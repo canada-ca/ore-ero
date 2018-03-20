@@ -1,0 +1,53 @@
+--- 
+description: 
+  en: "Transform your plain text into static websites and blogs"
+  fr: "Transformez votre texte brut en sites Web et blogs statiques"
+homepageURL: 
+  en: "https://jekyllrb.com/"
+  fr: "https://jekyllrb.com/"
+licenses: 
+  - MIT
+name: 
+  en: Jekyll
+  fr: Jekyll
+tags: 
+  en: 
+    - "Web site"
+  fr: 
+    - "Site web"
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        dateSince: 2018-01-23
+        contact: 
+          URL: https://github.com/canada-ca/ore-ero/issues
+          name: Sébastien Lemay
+          email: sebastien.lemay@tbs-sct.gc.ca
+        name: 
+          en: "Open Resource Exchange"
+          fr: "Échange de ressources ouvert"
+        description: 
+          en: "Github Pages"
+          fr: "Pages Github"
+        relatedCode:
+          - "https://github.com/canada-ca/ore-ero"
+        users: 
+          - public
+      - 
+        dateSince: 2018-03-16
+        contact: 
+          URL: https://github.com/gc-blockchain/gc-blockchain.github.io/issues
+          name: Sébastien Lemay
+          email: sebastien.lemay@tbs-sct.gc.ca
+        name: 
+          en: "GC Blockchain Hackathon"
+          fr: "Hackathon Blockchain GC"
+        description: 
+          en: "Github Pages"
+          fr: "Pages Github"
+        relatedCode:
+          - "https://github.com/gc-blockchain/gc-blockchain.github.io"
+        users: 
+          - public
