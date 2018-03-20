@@ -21,6 +21,14 @@
             
             {% for admins in fptm %}
               {% assign admin = admins[1] %}   
+              {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
+              {% if aName[0].name[page.lang] != nil %}
+                <option value="{{ aName[0].name[page.lang] }}">{{ aName[0].name[page.lang] }}</option>
+              {% endif %}
+            {% endfor %}
+            
+            {% for admins in fptm %}
+              {% assign admin = admins[1] %}   
               {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
               {% if aName[0].name[page.lang] != nil %}
                 <option value="{{ aName[0].name[page.lang] }}">{{ aName[0].name[page.lang] }}</option>
@@ -142,6 +150,11 @@
           {% for release in admin.releases %}
           <tr>
             {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+              <td>{{ aName[0].name[page.lang] }}</td>
+            {% endif %}
+            
+            {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
             {% if aName[0].name[page.lang] != nil %}
               <td>{{ aName[0].name[page.lang] }}</td>
             {% endif %}
