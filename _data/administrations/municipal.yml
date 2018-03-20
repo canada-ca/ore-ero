@@ -1,11 +1,11 @@
 - code: mtl_qc
   provinceCode: qc
   name:
-    en: Montreal
-    fr: Montréal
+    en: City of Montreal
+    fr: Ville de Montréal
 
 - code: ottawa_on
   provinceCode: on
   name:
-    en: Ottawa
-    fr: Ottawa
+    en: City of Ottawa
+    fr: Ville d'Ottawa

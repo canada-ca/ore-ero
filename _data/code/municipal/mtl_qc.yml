@@ -1,0 +1,40 @@
+--- 
+adminCode: mtl_qc
+releases: 
+  - 
+    contact: 
+      URL: https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
+    date: 
+      created: "2014-02-14"
+      metadataLastUpdated: "2018-03-20"
+    description: 
+      en: "City of Montreal CKAN Extension"
+      fr: "Extension CKAN de la ville de Montréal"
+    languages: 
+      - Python
+    name: 
+      en: CKAN-Extension-Territoire
+      fr: CKAN-Extension-Territoire
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-en.txt"
+            fr: "https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-fr.txt"
+          name: "MIT"
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/VilledeMontreal/CKAN-Extension-Territoire"
+      fr: "https://github.com/VilledeMontreal/CKAN-Extension-Territoire"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Extension"
+        - "Data Catalogue"
+      fr: 
+        - "Extension CKAN"
+        - "Catalogue de données"
+    vcs: git
