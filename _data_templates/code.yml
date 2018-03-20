@@ -4,8 +4,8 @@ releases:
 ## * [array] Contains objects representing each versioned source code release made available.
   - 
     contact: 
-      URL: "[string] The URL to a website that can be used to reach the point of contact. For example, http://twitter.com/..."
-      email: "[mandatory] [string] An email address to contact the release."
+      URL: "[mandatory] [string] The URL to a website that can be used to reach the point of contact. For example, http://twitter.com/..."
+      email: "[string] An email address to contact the release."
       name: "[string] The name of a contact or department for the release."
       phone: "[string] The phone number to contact a release."
     date: 
@@ -50,8 +50,8 @@ releases:
         name: "[string] The name of the software used in this release."
     status: "[string] The development status of the release. For example, Production, Beta, .."
     tags:
+    ## [mandatory] [array] An array of keywords that will be helpful in discovering and searching for the release.
       en:
-      ## [mandatory] [array] An array of keywords that will be helpful in discovering and searching for the release.
         - tag1-en
         - tag2-en
       fr: 
