@@ -13,6 +13,11 @@
     en: Environment and Climate Change Canada
     fr: Environnement et Changement climatique Canada
 
+- code: pch
+  name:
+    en: Canadian Heritage
+    fr: Patrimoine canadien
+
 - code: pco-bcp
   name:
     en: Privy Council Office
