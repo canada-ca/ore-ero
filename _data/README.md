@@ -104,7 +104,7 @@ If your open source software does'nt have a file under the [logiciels_libres-ope
    - **municipal**
 - **logiciels_libres-open_source_software**: Liste des logiciels libres utilisés par les administrations.
 
-### Open Standards - Toujours en développement
+### Open Standards - En développement
 
 Liste des normes ouvertes approuvées ou utilisées par les administrations.
 
@@ -180,4 +180,4 @@ Si votre administration est là, ajouter votre utilisation de logiciels libre, v
 ```
 
 ##### Votre logiciel open source doit être ajouté
-Si votre logiciel open source n'a pas de fichier dans le répertoire [logiciels_libres-open_source_software](logiciels_libres-open_source_software), vous devez créer un nouveau fichier pour le logiciel open source. Utilisez le modèle [ll-oss avec uniquement les champs obligatoires](../_ data_templates / ll-oss_mandatory.yml).
+Si votre logiciel open source n'a pas de fichier dans le répertoire [logiciels_libres-open_source_software](logiciels_libres-open_source_software), vous devez créer un nouveau fichier pour le logiciel open source. Utilisez le modèle [ll-oss template with only mandatory fields](../_data_templates/ll-oss_mandatory.yml).
