@@ -12,6 +12,8 @@ This site uses [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.
 
 Create [Issues](issues) if you have any questions, bugs or feature requests.
 
+________________
+
 ## Site Web pour l'Échange de ressources ouvert
 
 https://canada-ca.github.io/ore-ero/accueil.html
