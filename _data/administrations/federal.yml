@@ -12,3 +12,8 @@
   name:
     en: Environment and Climate Change Canada
     fr: Environnement et Changement climatique Canada
+
+- code: pco-bcp
+  name:
+    en: Privy Council Office
+    fr: Bureau du Conseil privé

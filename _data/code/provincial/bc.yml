@@ -13,8 +13,8 @@ releases:
     languages: 
       - Python
     name: 
-      en: devex
-      fr: devex
+      en: Devex
+      fr: Devex
     permissions: 
       licenses: 
         - 

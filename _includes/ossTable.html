@@ -77,7 +77,7 @@
           <td>{{ oss.description[page.lang] }}</td>
           <td>
             {% for license in oss.licenses %}
-              <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
+              {{ license }}&nbsp;
             {% endfor %}
           </td>
           <td>
