@@ -15,11 +15,8 @@ releases:
     description: 
       en: "[mandatory] [string] A one- or two-sentence description of the release."
       fr: "[mandatory] [string] ~"
-    disclaimerText: "[string] Short paragraph that includes disclaimer language to accompany the release."
-    disclaimerURL: "[string] The URL where disclaimer language regarding the release can be found."
     downloadURL: "[string] The URL where a distribution of the release can be found."
     homepageURL: "[string] The URL of the public release homepage."
-    laborHours: "[number] An estimate of total labor hours spent by your organization/component across all versions of this release. This includes labor performed by federal employees and contractors."
     languages:
     ## [array] A list of strings with the names of the programming languages in use on the release.
       - lang1
@@ -43,7 +40,7 @@ releases:
     repositoryURL: 
       en: "[mandatory] [string] The URL of the public release repository for open source repositories."
       fr: "[mandatory] [string] ~"
-    reusedCode:
+    relatedCode:
     ## [array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.
       - 
         URL: "[string] The URL where the software can be found."

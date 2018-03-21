@@ -4,9 +4,6 @@ releases:
   - 
     contact: 
       email: gcconnex@tbs-sct.gc.ca
-    date: 
-      created: "2008-01-01"
-      metadataLastUpdated: "2018-02-14"
     description: 
       en: "GC digital collaboration platform (GCconnex and GCcollab)"
       fr: "Plateforme de collaboration numérique du GC (GCconnex and GCcollab)"
@@ -45,8 +42,6 @@ releases:
   - 
     contact: 
       email: cds@tbs-sct.gc.ca
-    date: 
-      metadataLastUpdated: "2018-02-14"
     description: 
       en: "Both digital.canada.ca and numerique.canada.ca are published from this repository."
       fr: "digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository."
@@ -71,8 +66,6 @@ releases:
   - 
     contact: 
       email: wet-boew@tbs-sct.gc.ca
-    date: 
-      metadataLastUpdated: "2018-02-14"
     description: 
       en: "Building websites that are accessible, usable, interoperable, mobile friendly and multilingual"
       fr: "Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues"
@@ -134,8 +127,6 @@ releases:
     tags: 
       en: 
         - "CKAN Extension"
-        - "Data Catalogue"
       fr: 
         - "Extension CKAN"
-        - "Catalogue de données"
     vcs: git

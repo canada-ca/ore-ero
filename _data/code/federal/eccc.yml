@@ -4,8 +4,6 @@ releases:
   - 
     contact: 
       email: metro@ec.gc.ca
-    date: 
-      metadataLastUpdated: "2017-10-07"
     description: 
       en: "The Model of the Environment and Temperature of Roads (METRo) is a road forecast software."
       fr: "Le Modèle de l'Environnement et de la Température de la Route (METRo) est un logiciel de prévision de la température de la route."

@@ -4,8 +4,6 @@ releases:
   - 
     contact: 
       email: apogy@asc-csa.gc.ca
-    date: 
-      metadataLastUpdated: "2017-10-07"
     description: 
       en: "The one-stop-shop solution for operating robots, satellites and beyond"
       fr: "Un logiciel polyvalent pour faire fonctionner des robots et des satellites"

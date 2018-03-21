@@ -1,0 +1,27 @@
+--- 
+adminCode: abc-def
+releases: 
+  - 
+    contact: 
+      URL: https://www.example.com
+    description: 
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
+    name: 
+      en: "Example"
+      fr: "Exemple"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://example.com/repo/example/LICENCE-en"
+            fr: "https://example.com/repo/example/LICENCE-fr"
+          name: "LICENCE"
+    repositoryURL: 
+      en: "https://example.com/repo/example"
+      fr: "https://example.com/repo/example"
+    tags: 
+      en:
+        - "tag1-en"
+      fr: 
+        - "tag1-fr"
