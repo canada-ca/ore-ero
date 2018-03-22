@@ -1,20 +1,20 @@
 --- 
 description: 
-  en: "PHP: Hypertext Preprocessor, is a server-side scripting language designed for web development but also used as a general-purpose programming language."
-  fr: "PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation libre, principalement utilisÈ pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant Ègalement fonctionner comme n'importe quel langage interprÈtÈ de faÁon locale."
+  en: "A server-side scripting language designed for web development but also used as a general-purpose programming language."
+  fr: "Langage de script c√¥t√© serveur con√ßu pour le d√©veloppement Web mais √©galement utilis√© comme langage de programmation g√©n√©raliste."
 homepageURL:
   en: "https://php.net"
   fr: "https://php.net"
 licenses: 
-  - PHP License
+  - "PHP-License"
 name: 
-  en: PHP: Hypertext Preprocessor
-  fr: PHP: Hypertext Preprocessor
+  en: "PHP"
+  fr: "PHP"
 tags: 
   en:
-    - "PHP"
+    - "Programming language"
   fr: 
-    - "PHP"
+    - "langage de programmation"
 admininstrations: 
   - 
     adminCode: gac-amc
@@ -27,5 +27,4 @@ admininstrations:
           fr: "Divers"
         description: 
           en: "Used to server many Web sites."
-          fr: "UtilisÈ pour servir plusieur site Web."
-
+          fr: "Utilis√© pour servir plusieur site Web."

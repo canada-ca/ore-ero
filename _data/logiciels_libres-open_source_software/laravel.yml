@@ -1,7 +1,7 @@
 --- 
 description: 
-  en: "Laravel is a free, open-source PHP web framework intended for the development of web applications following the model–view–controller (MVC) architectural pattern."
-  fr: "Laravel est un framework web open-source écrit en PHP respectant le principe modèle-vue-contrôleur et entièrement développé en programmation orientée objet."
+  en: "PHP web framework intended for the development of web applications following the model–view–controller (MVC) architectural pattern."
+  fr: "Framework Web PHP destiné au développement d'applications Web suivant le modèle architectural MVC modèle-vue-contrôleur."
 homepageURL:
   en: "https://laravel.com"
   fr: "https://laravel.com"
@@ -14,11 +14,9 @@ tags:
   en:
     - "HTTP Server"
     - PHP
-    - Laravel
   fr: 
     - "Serveur HTTP"
     - PHP
-    - Laravel
 admininstrations: 
   - 
     adminCode: gac-amc

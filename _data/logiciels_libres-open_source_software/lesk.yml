@@ -1,26 +1,24 @@
 --- 
 description: 
-  en: "LESK: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application for the Internet or on an Intranet."
-  fr: "LESK: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application for the Internet or on an Intranet."
+  en: "Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application."
+  fr: "Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web."
 homepageURL:
   en: "https://lesk.it"
   fr: "https://lesk.it"
 licenses: 
   - GPLv3
 name: 
-  en: Laravel Enterprise Starter Kit
-  fr: Laravel Enterprise Starter Kit
+  en: LESK
+  fr: LESK
 tags: 
   en:
     - "HTTP Server"
     - PHP
     - Laravel
-    - LESK
   fr: 
     - "Serveur HTTP"
     - PHP
     - Laravel
-    - LESK
 admininstrations: 
   - 
     adminCode: gac-amc
