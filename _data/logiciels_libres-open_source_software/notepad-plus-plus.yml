@@ -35,4 +35,16 @@ admininstrations:
           fr: "Disponible pour tous les employés"
         users: 
           - employees
+  - 
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          URL: https://www.international.gc.ca/
+        name: 
+          en: "Available to all employees"
+          fr: "Disponible pour tous les employés"
+        description: 
+          en: "Must be requeted from the AppStore."
+          fr: "Disponible au AppStore."
 

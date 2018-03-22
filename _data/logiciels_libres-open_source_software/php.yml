@@ -1,0 +1,30 @@
+--- 
+description: 
+  en: "A server-side scripting language designed for web development but also used as a general-purpose programming language."
+  fr: "Langage de script côté serveur conçu pour le développement Web mais également utilisé comme langage de programmation généraliste."
+homepageURL:
+  en: "https://php.net"
+  fr: "https://php.net"
+licenses: 
+  - "PHP-License"
+name: 
+  en: "PHP"
+  fr: "PHP"
+tags: 
+  en:
+    - "Programming language"
+  fr: 
+    - "langage de programmation"
+admininstrations: 
+  - 
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          URL: https://www.international.gc.ca
+        name: 
+          en: "Misc"
+          fr: "Divers"
+        description: 
+          en: "Used to server many Web sites."
+          fr: "Utilisé pour servir plusieur site Web."

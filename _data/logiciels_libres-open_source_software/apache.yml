@@ -1,0 +1,30 @@
+--- 
+description: 
+  en: "The Apache HTTP Server is a free and open-source cross-platform web server."
+  fr: "Le logiciel libre Apache HTTP Server (Apache) est un serveur HTTP."
+homepageURL:
+  en: "https://httpd.apache.org"
+  fr: "https://httpd.apache.org"
+licenses: 
+  - Apache 2.0
+name: 
+  en: Apache HTTP Server
+  fr: Apache HTTP Server
+tags: 
+  en:
+    - "HTTP Server"
+  fr: 
+    - "Serveur HTTP"
+admininstrations: 
+  - 
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          URL: https://www.international.gc.ca
+        name: 
+          en: "Misc"
+          fr: "Divers"
+        description: 
+          en: "Used to server many Web sites."
+          fr: "Utilisé pour servir plusieur site Web."

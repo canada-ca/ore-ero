@@ -1,0 +1,32 @@
+--- 
+description: 
+  en: "PHP web framework intended for the development of web applications following the model–view–controller (MVC) architectural pattern."
+  fr: "Framework Web PHP destiné au développement d'applications Web suivant le modèle architectural MVC modèle-vue-contrôleur."
+homepageURL:
+  en: "https://laravel.com"
+  fr: "https://laravel.com"
+licenses: 
+  - MIT
+name: 
+  en: Laravel
+  fr: Laravel
+tags: 
+  en:
+    - "HTTP Server"
+    - PHP
+  fr: 
+    - "Serveur HTTP"
+    - PHP
+admininstrations: 
+  - 
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          URL: https://www.international.gc.ca
+        name: 
+          en: "Misc"
+          fr: "Divers"
+        description: 
+          en: "Used to server many Web sites."
+          fr: "Utilisé pour servir plusieur site Web."
