@@ -1,15 +1,15 @@
 --- 
 description: 
-  en: "The Apache HTTP Server is a free and open-source cross-platform web server."
-  fr: "Le logiciel libre Apache HTTP Server (Apache) est un serveur HTTP."
+  en: "Cross-platform web server"
+  fr: "Serveur Web multiplateforme"
 homepageURL:
   en: "https://httpd.apache.org"
   fr: "https://httpd.apache.org"
 licenses: 
-  - Apache 2.0
+  - Apache-2.0
 name: 
-  en: Apache HTTP Server
-  fr: Apache HTTP Server
+  en: Apache
+  fr: Apache
 tags: 
   en:
     - "HTTP Server"

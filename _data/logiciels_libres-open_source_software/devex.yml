@@ -6,7 +6,7 @@ homepageURL:
   en: "https://github.com/BCDevExchange/devex"
   fr: "https://github.com/BCDevExchange/devex"
 licenses: 
-  - Apache2-0
+  - Apache-2.0
 name: 
   en: Devex
   fr: Devex
