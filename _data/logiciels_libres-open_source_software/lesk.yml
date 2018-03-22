@@ -28,8 +28,8 @@ admininstrations:
       - 
         contact: 
           URL: https://www.international.gc.ca
-	  name: Terry O'Reilly
-	  email: terry.oreilly@international.gc.ca
+          name: Terry O'Reilly
+          email: terry.oreilly@international.gc.ca
         name: 
           en: "IMSC"
           fr: "IMSC"
@@ -39,8 +39,8 @@ admininstrations:
       - 
         contact: 
           URL: https://www.international.gc.ca
-	  name: Yves Cloutier
-	  email: yves.cloutier@international.gc.ca
+          name: Yves Cloutier
+          email: yves.cloutier@international.gc.ca
         name: 
           en: "CART"
           fr: "CART"
