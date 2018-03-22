@@ -1,0 +1,49 @@
+--- 
+description: 
+  en: "LESK: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application for the Internet or on an Intranet."
+  fr: "LESK: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application for the Internet or on an Intranet."
+homepageURL:
+  en: "https://lesk.it"
+  fr: "https://lesk.it"
+licenses: 
+  - GPLv3
+name: 
+  en: Laravel Enterprise Starter Kit
+  fr: Laravel Enterprise Starter Kit
+tags: 
+  en:
+    - "HTTP Server"
+    - PHP
+    - Laravel
+    - LESK
+  fr: 
+    - "Serveur HTTP"
+    - PHP
+    - Laravel
+    - LESK
+admininstrations: 
+  - 
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          URL: https://www.international.gc.ca
+	  name: Terry O'Reilly
+	  email: terry.oreilly@international.gc.ca
+        name: 
+          en: "IMSC"
+          fr: "IMSC"
+        description: 
+          en: "Information Management System Console."
+          fr: "Information Management System Console."
+      - 
+        contact: 
+          URL: https://www.international.gc.ca
+	  name: Yves Cloutier
+	  email: yves.cloutier@international.gc.ca
+        name: 
+          en: "CART"
+          fr: "CART"
+        description: 
+          en: "COSMOS and ROCA Admin and Reporting Tool."
+          fr: "COSMOS and ROCA Admin and Reporting Tool."
