@@ -21,6 +21,18 @@ tags:
     - Mobile
 admininstrations: 
   - 
+    adminCode: agr
+    uses: 
+      - 
+        contact: 
+          email: ""
+        name: 
+          en: "Available to developers"
+          fr: "Disponible pour les développeur"
+        description: 
+          en: ""
+          fr: ""
+  - 
     adminCode: pch
     uses: 
       - 

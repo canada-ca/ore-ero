@@ -1,17 +1,27 @@
-- code: tbs-sct
+- code: agr
   name:
-    en: Treasury Board of Canada Secretariat
-    fr: Secrétariat du Conseil du Trésor du Canada
+    en: Agriculture and Agri-Food Canada
+    fr: Agriculture et Agroalimentaire Canada
 
 - code: asc-csa
   name:
     en: Canadian Space Agency
     fr: Agence spatiale canadienne
 
+- code: csc-scc
+  name:
+    en: Correctional Service Canada
+    fr: Service correctionnel Canada
+
 - code: eccc
   name:
     en: Environment and Climate Change Canada
     fr: Environnement et Changement climatique Canada
+
+- code: gac-amc
+  name:
+    en: Global Affairs Canada
+    fr: Affaires mondiales Canada
 
 - code: pch
   name:
@@ -23,8 +33,7 @@
     en: Privy Council Office
     fr: Bureau du Conseil privé
 
-- code: gac-amc
+- code: tbs-sct
   name:
-    en: Global Affairs Canada
-    fr: Affaires mondiales Canada
-
+    en: Treasury Board of Canada Secretariat
+    fr: Secrétariat du Conseil du Trésor du Canada

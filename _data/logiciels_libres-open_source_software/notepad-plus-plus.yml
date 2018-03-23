@@ -21,20 +21,29 @@ tags:
     - "Éditeur texte"
 admininstrations: 
   - 
-    adminCode: tbs-sct
+    adminCode: agr
     uses: 
       - 
         contact: 
-          email: desktop@tbs-sct.gc.ca
-        dateSince: ~
+          email: ~
         description: 
-          en: "Must be requested"
-          fr: "Doit être demandé"
+          en: "Desktop"
+          fr: "Poste de travail"
         name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-        users: 
-          - employees
+          en: ~
+          fr: ~
+  - 
+    adminCode: csc-scc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        description: 
+          en: "Development Environment"
+          fr: "Environnement de développement"
+        name: 
+          en: ~
+          fr: ~
   - 
     adminCode: gac-amc
     uses: 
@@ -47,4 +56,15 @@ admininstrations:
         description: 
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
-
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: desktop@tbs-sct.gc.ca
+        description: 
+          en: "Must be requested"
+          fr: "Doit être demandé"
+        name: 
+          en: "Available to all employees"
+          fr: "Disponible pour tous les employés"
