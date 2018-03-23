@@ -13,8 +13,12 @@ name:
 tags: 
   en:
     - "Web browser"
+    - Desktop
+    - Mobile
   fr: 
     - "Navigateur Web"
+    - "Poste de travail"
+    - Mobile
 admininstrations: 
   - 
     adminCode: pch

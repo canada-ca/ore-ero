@@ -1,0 +1,42 @@
+--- 
+description: 
+  en: "Highly customizable web framework and CMS for building social apps"
+  fr: "Framework Web hautement personnalisable et CMS pour créer des applications sociales"
+homepageURL:
+  en: "https://elgg.org/"
+  fr: "https://elgg.org/"
+licenses: 
+  - MIT
+  - GPLv2
+name: 
+  en: Elgg
+  fr: Elgg
+tags: 
+  en:
+    - "Collaboration"
+    - "Social"
+  fr: 
+    - "Collaboration"
+    - "Sociale"
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
+        name: 
+          en: "GCcollab"
+          fr: "GCcollab"
+        description: 
+          en: "External social networking platform hosted by the Government of Canada"
+          fr: "Plateforme de réseautage social externe hébergée par le gouvernement du Canada"
+      - 
+        contact: 
+          URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
+        name: 
+          en: "GCconnex"
+          fr: "GCconnex"
+        description: 
+          en: "Internal social networking platform for the Government of Canada"
+          fr: "Plateforme de réseautage social interne pour le gouvernement du Canada"

@@ -1,0 +1,30 @@
+--- 
+description: 
+  en: "Instant messaging team chat"
+  fr: "Messagerie instantanée et clavardage d'équipe"
+homepageURL:
+  en: "https://rocket.chat/"
+  fr: "https://rocket.chat/"
+licenses: 
+  - MIT
+name: 
+  en: "Rocket.Chat"
+  fr: "Rocket.Chat"
+tags: 
+  en:
+    - "Instant messaging"
+  fr: 
+    - "Messagerie instantanée"
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: "mark.wooff@tbs-sct.gc.ca"
+        name: 
+          en: "GCcollab Message"
+          fr: "Message GCcollab"
+        description: 
+          en: "Messaging pilot"
+          fr: "Pilote Messagerie"

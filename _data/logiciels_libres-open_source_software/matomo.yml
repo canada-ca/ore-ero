@@ -1,0 +1,30 @@
+--- 
+description: 
+  en: "Web analytics Platform"
+  fr: "Plateforme analytique web"
+homepageURL:
+  en: "https://matomo.org/"
+  fr: "https://matomo.org/"
+licenses: 
+  - GPLv3
+name: 
+  en: "Matomo"
+  fr: "Matomo"
+tags: 
+  en:
+    - "Analytics"
+  fr: 
+    - "analytique"
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: "mark.wooff@tbs-sct.gc.ca"
+        name: 
+          en: "Misc"
+          fr: "Divers"
+        description: 
+          en: "Web analytics pilot"
+          fr: "Pilote analytique Web"

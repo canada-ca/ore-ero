@@ -1,0 +1,34 @@
+--- 
+description: 
+  en: "Edit text documents collaboratively in real-time"
+  fr: "Collaboration en temps réel sur des documents textes"
+homepageURL:
+  en: "http://etherpad.org/"
+  fr: "http://etherpad.org/"
+licenses: 
+  - Apache-2.0
+name: 
+  en: "Etherpad"
+  fr: "Etherpad"
+tags: 
+  en:
+    - Collaboration
+    - "Text editor"
+    - Productivity
+  fr: 
+    - Collaboration
+    - "Éditeur texte"
+    - Productivité
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: "mark.wooff@tbs-sct.gc.ca"
+        name: 
+          en: "GCcollab Docs"
+          fr: "Docs GCcollab"
+        description: 
+          en: "Integrated with GCcollab"
+          fr: "Intégré avec GCcollab"
