@@ -97,15 +97,15 @@ releases:
       name: "Christopher Jaja"
     date: 
       created: "2013"
-      metadataLastUpdated: "2018-03-19"
+      metadataLastUpdated: "2018-03-26"
     description: 
       en: "Government of Canada CKAN Extension"
       fr: "Extension à CKAN du Gouvernement du Canada"
     languages: 
       - Python
     name: 
-      en: CKANext-Canada
-      fr: CKANext-Canada
+      en: ckanext-canada
+      fr: ckanext-canada
     organization: 
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -113,9 +113,9 @@ releases:
       licenses: 
         - 
           URL: 
-            en: "#"
-            fr: "#"
-          name: ""
+            en: "https://github.com/open-data/ckanext-canada/blob/master/COPYING"
+            fr: "https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr"
+          name: "MIT"
     relatedCode: 
       - 
         URL: "https://github.com/ckan/ckan"
