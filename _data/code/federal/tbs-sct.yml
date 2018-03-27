@@ -97,15 +97,15 @@ releases:
       name: "Christopher Jaja"
     date: 
       created: "2013"
-      metadataLastUpdated: "2018-03-19"
+      metadataLastUpdated: "2018-03-26"
     description: 
       en: "Government of Canada CKAN Extension"
       fr: "Extension à CKAN du Gouvernement du Canada"
     languages: 
       - Python
     name: 
-      en: CKANext-Canada
-      fr: CKANext-Canada
+      en: ckanext-canada
+      fr: ckanext-canada
     organization: 
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -113,9 +113,9 @@ releases:
       licenses: 
         - 
           URL: 
-            en: "#"
-            fr: "#"
-          name: ""
+            en: "https://github.com/open-data/ckanext-canada/blob/master/COPYING"
+            fr: "https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr"
+          name: "MIT"
     relatedCode: 
       - 
         URL: "https://github.com/ckan/ckan"
@@ -123,6 +123,158 @@ releases:
     repositoryURL: 
       en: "https://github.com/open-data/ckanext-canada"
       fr: "https://github.com/open-data/ckanext-canada"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Extension"
+      fr: 
+        - "Extension CKAN"
+    vcs: git
+  - 
+    contact: 
+      email: Christopher.Jaja@tbs-sct.gc.ca
+      name: "Christopher Jaja"
+    date: 
+      created: "2016"
+      metadataLastUpdated: "2018-03-26"
+    description: 
+      en: "Store CKAN resources against multiple cloud providers"
+    languages: 
+      - Python
+    name: 
+      en: ckanext-cloudstorage
+      fr: ckanext-cloudstorage
+    organization: 
+      en: "Open Government"
+      fr: "Gouvernement Ouvert"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING"
+            fr: "https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr"
+          name: "MIT"
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/open-data/ckanext-cloudstorage"
+      fr: "https://github.com/open-data/ckanext-cloudstorage"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Extension"
+      fr: 
+        - "Extension CKAN"
+    vcs: git
+  - 
+    contact: 
+      email: Christopher.Jaja@tbs-sct.gc.ca
+      name: "Christopher Jaja"
+    date: 
+      created: "2013"
+      metadataLastUpdated: "2018-03-26"
+    description: 
+      en: "Easy, shareable custom CKAN schemas"
+    languages: 
+      - Python
+    name: 
+      en: ckanext-scheming
+      fr: ckanext-scheming
+    organization: 
+      en: "Open Government"
+      fr: "Gouvernement Ouvert"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/ckan/ckanext-scheming/blob/master/COPYING"
+            fr: "https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr"
+          name: "MIT"
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/open-data/ckanext-scheming"
+      fr: "https://github.com/open-data/ckanext-scheming"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Extension"
+      fr: 
+        - "Extension CKAN"
+    vcs: git
+  - 
+    contact: 
+      email: Christopher.Jaja@tbs-sct.gc.ca
+      name: "Christopher Jaja"
+    date: 
+      created: "2013"
+      metadataLastUpdated: "2018-03-26"
+    description: 
+      en: "Command line interface and Python module for accessing the CKAN Action API"
+    languages: 
+      - Python
+    name: 
+      en: ckanapi
+      fr: ckanapi
+    organization: 
+      en: "Open Government"
+      fr: "Gouvernement Ouvert"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/ckan/ckanapi/blob/master/COPYING"
+            fr: "https://github.com/ckan/ckanapi/blob/master/COPYING.fr"
+          name: "MIT"
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/ckan/ckanapi"
+      fr: "https://github.com/ckan/ckanapi"
+    status: Production
+    tags: 
+      en: 
+        - "CKAN Tool"
+      fr: 
+        - "Outil CKAN"
+    vcs: git
+  - 
+    contact: 
+      email: Christopher.Jaja@tbs-sct.gc.ca
+      name: "Christopher Jaja"
+    date: 
+      created: "2013"
+      metadataLastUpdated: "2018-03-26"
+    description: 
+      en: "Multilingual metadata fields for CKAN"
+    languages: 
+      - Python
+    name: 
+      en: ckanext-fluent
+      fr: ckanext-fluent
+    organization: 
+      en: "Open Government"
+      fr: "Gouvernement Ouvert"
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/ckan/ckanext-fluent/blob/master/COPYING"
+            fr: "https://github.com/ckan/ckanext-fluent/blob/master/COPYING.fr"
+          name: "MIT"
+    relatedCode: 
+      - 
+        URL: "https://github.com/ckan/ckan"
+        name: CKAN
+    repositoryURL: 
+      en: "https://github.com/ckan/ckanext-fluent"
+      fr: "https://github.com/ckan/ckanext-fluent"
     status: Production
     tags: 
       en: 
