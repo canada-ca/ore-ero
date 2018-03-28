@@ -6,7 +6,7 @@ homepageURL:
   en: "https://matomo.org/"
   fr: "https://matomo.org/"
 licenses: 
-  - GPLv3
+  - GPL-3.0
 name: 
   en: "Matomo"
   fr: "Matomo"

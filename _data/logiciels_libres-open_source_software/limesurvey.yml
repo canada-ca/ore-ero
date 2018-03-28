@@ -6,7 +6,7 @@ homepageURL:
   en: "https://www.limesurvey.org/"
   fr: "https://www.limesurvey.org/"
 licenses: 
-  - GPLv2
+  - GPL-2.0
 name: 
   en: LimeSurvey
   fr: LimeSurvey

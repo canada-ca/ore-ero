@@ -6,7 +6,7 @@ homepageURL:
   en: "https://www.mediawiki.org/wiki/MediaWiki"
   fr: "https://www.mediawiki.org/wiki/MediaWiki/fr"
 licenses: 
-  - GPLv2
+  - GPL-2.0
 name: 
   en: MediaWiki
   fr: MediaWiki

@@ -18,7 +18,7 @@ releases:
           URL: 
             en: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
             fr: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
-          name: GPLv2
+          name: GPL-2.0
     repositoryURL: 
       en: "https://framagit.org/metroprojects/metro"
       fr: "https://framagit.org/metroprojects/metro"

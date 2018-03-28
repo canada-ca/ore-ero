@@ -22,7 +22,7 @@ releases:
           URL: 
             en: "https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt"
             fr: "https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt"
-          name: GPLv2
+          name: GPL-2.0
     relatedCode: 
       - 
         URL: "https://github.com/Elgg/Elgg"

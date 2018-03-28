@@ -6,7 +6,7 @@ homepageURL:
   en: "https://www.drupal.org/"
   fr: "https://www.drupal.org/"
 licenses: 
-  - GPLv2
+  - GPL-2.0
 name: 
   en: Drupal
   fr: Drupal
