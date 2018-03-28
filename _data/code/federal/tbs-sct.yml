@@ -14,8 +14,8 @@ releases:
       en: GCconnex
       fr: GCconnex
     organization: 
-      en: GCTools
-      fr: OutilsGC
+      en: Digital Collaboration Division
+      fr: Division de la collaboration numérique
     permissions: 
       licenses: 
         - 
@@ -46,8 +46,11 @@ releases:
       en: "Both digital.canada.ca and numerique.canada.ca are published from this repository."
       fr: "digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository."
     name: 
-      en: "Canadian Digital Service Website"
-      fr: "Site Web du service numérique canadien"
+      en: "CDS Website"
+      fr: "Site Web SNC"
+    organization: 
+      en: Canadian Digital Services
+      fr: Services numériques Canadiens
     permissions: 
       licenses: 
         - 
