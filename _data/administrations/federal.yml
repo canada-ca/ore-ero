@@ -13,6 +13,11 @@
     en: Correctional Service Canada
     fr: Service correctionnel Canada
 
+- code: cse-cst
+  name:
+    en: Communications Security Establishment
+    fr: Centre de la sécurité des télécommunications
+
 - code: eccc
   name:
     en: Environment and Climate Change Canada
@@ -33,10 +38,20 @@
     en: Privy Council Office
     fr: Bureau du Conseil privé
 
+- code: rcmp-grc
+  name:
+    en: Royal Canadian Mounted Police
+    fr: Gendarmerie royale du Canada
+
 - code: tbs-sct
   name:
     en: Treasury Board of Canada Secretariat
     fr: Secrétariat du Conseil du Trésor du Canada
+
+- code: tpsgc-pwgsc
+  name:
+    en: Public Services and Procurement Canada
+    fr: Services publics et Approvisionnement Canada
     
 - code: ssc-spc
   name:

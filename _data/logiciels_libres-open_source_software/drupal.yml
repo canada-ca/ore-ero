@@ -3,8 +3,8 @@ description:
   en: "Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites."
   fr: "Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web."
 homepageURL: 
-  en: "https://www.drupal.org/"
-  fr: "https://www.drupal.org/"
+  en: "https://www.drupal.org"
+  fr: "https://www.drupal.org"
 licenses: 
   - GPL-2.0
 name: 
@@ -16,6 +16,34 @@ tags:
   fr: 
     - "Site web"
 admininstrations: 
+  - 
+    adminCode: cse-cst
+    uses: 
+      - 
+        contact: 
+          email: webmaster@cse-cst.gc.ca
+        name: 
+          en: "CSE Website"
+          fr: "Site Web du CST"
+        description: 
+          en: ~
+          fr: ~
+        users: 
+          - public
+  - 
+    adminCode: rcmp-grc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: "RCMP Website"
+          fr: "Site Web de la GRC"
+        description: 
+          en: ~
+          fr: ~
+        users: 
+          - public
   - 
     adminCode: tbs-sct
     uses: 
@@ -33,5 +61,19 @@ admininstrations:
           fr: ~
         relatedCode:
           - "https://github.com/open-data/od"
+        users: 
+          - public
+  - 
+    adminCode: tpsgc-pwgsc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: "Buyandsell.gc.ca"
+          fr: "Achatsetventes.gc.ca"
+        description: 
+          en: ~
+          fr: ~
         users: 
           - public
