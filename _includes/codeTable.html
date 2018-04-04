@@ -62,9 +62,9 @@
             {% endfor %}
           {% endfor %}
                     
-          {% assign org_array = org_array | sort %}
+          {% assign org_array = org_array | group_by: "" | sort: "name" %}
           {% for org in org_array %}
-            <option value="{{ org }}">{{ org }}</option>
+            <option value="{{ org.name }}">{{ org.name }}</option>
           {% endfor %}
         </select>
       </div>

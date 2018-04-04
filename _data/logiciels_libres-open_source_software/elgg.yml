@@ -7,7 +7,7 @@ homepageURL:
   fr: "https://elgg.org/"
 licenses: 
   - MIT
-  - GPLv2
+  - GPL-2.0
 name: 
   en: Elgg
   fr: Elgg
