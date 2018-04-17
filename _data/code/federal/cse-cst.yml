@@ -1,0 +1,64 @@
+--- 
+adminCode: cse-cst
+releases: 
+  - 
+    contact: 
+      email: spartacus@cse-cst.gc.ca
+    description: 
+      en: "Learning environment that aims in helping students learn the basis of assembly programming and operating system development"
+      fr: "Environnement visant à aider les étudiants à apprendre les bases de la programmation assembleur et du développement de systèmes d'exploitation. C'est un environnement portable et facile à apprendre"
+    languages: 
+      - Python
+    name: 
+      en: Spartacus
+      fr: Spartacus
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md"
+            fr: "https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md"
+          name: GPL-2.0
+    repositoryURL: 
+      en: "https://github.com/CommunicationsSecurityEstablishment/spartacus"
+      fr: "https://github.com/CommunicationsSecurityEstablishment/spartacus"
+    tags: 
+      en: 
+        - Learning
+        - Assembly programming
+        - Operating system development
+      fr: 
+        - Apprentissage
+        - Programmation assembleur
+        - Développement système d'exploitation
+    vcs: git
+    version: "2.0"
+  - 
+    contact: 
+      email: assemblyline@cse-cst.gc.ca
+    description: 
+      en: "Platform for the analysis of malicious files. It is designed to assist cyber defence teams to automate the analysis of files and to better use the time of security analysts"
+      fr: "Plateforme servant à l’analyse de fichiers malveillants, qui a été conçue pour aider les équipes de cyberdéfense à automatiser l’analyse des fichiers et à faire une meilleure utilisation du temps des analystes de la sécurité"
+    languages: 
+      - Python
+    name: 
+      en: Assemblyline
+      fr: Assemblyline
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://bitbucket.org/cse-assemblyline/assemblyline/src/809247f5e2aa43a727e8beadd6491f9cac193241/LICENSE.md?at=master&fileviewer=file-view-default"
+            fr: "https://bitbucket.org/cse-assemblyline/assemblyline/src/809247f5e2aa43a727e8beadd6491f9cac193241/LICENSE.md?at=master&fileviewer=file-view-default"
+          name: MIT
+    repositoryURL: 
+      en: "https://bitbucket.org/cse-assemblyline/assemblyline"
+      fr: "https://bitbucket.org/cse-assemblyline/assemblyline"
+    tags: 
+      en: 
+        - Malware detection
+        - File analysis
+      fr: 
+        - Détection de maliciels
+        - Analyse de fichiers
+    vcs: git
