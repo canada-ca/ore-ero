@@ -30,5 +30,18 @@ admininstrations:
           en: ~
           fr: ~
         description: 
+          en: "Development and deployment process"
+          fr: "Processus de développements et déploiements"
+
+  - 
+    adminCode: statcan
+    uses: 
+      - 
+        contact: 
+          email: "michael.goit@canada.ca"
+        name: 
+          en: ~
+          fr: ~
+        description: 
           en: "Digital Collaboration Division development and deployment"
           fr: "Développement et déploiement de la Division de la collaboration numérique"

@@ -53,6 +53,11 @@
     en: Shared Services Canada
     fr: Services Partagés du Canada
 
+- code: statcan
+  name:
+    en: Statistics Canada
+    fr: Statistique Canada
+
 - code: tbs-sct
   name:
     en: Treasury Board of Canada Secretariat
