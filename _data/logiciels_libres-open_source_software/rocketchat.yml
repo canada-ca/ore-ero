@@ -3,8 +3,8 @@ description:
   en: "Instant messaging team chat"
   fr: "Messagerie instantanée et clavardage d'équipe"
 homepageURL:
-  en: "https://rocket.chat/"
-  fr: "https://rocket.chat/"
+  en: "https://rocket.chat"
+  fr: "https://rocket.chat"
 licenses: 
   - MIT
 name: 
@@ -28,3 +28,15 @@ admininstrations:
         description: 
           en: "Messaging pilot"
           fr: "Pilote Messagerie"
+  - 
+    adminCode: ised-isde
+    uses: 
+      - 
+        contact: 
+          email: "andrew.pitt@canada.ca"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "Internal Messaging"
+          fr: "Messagerie interne"

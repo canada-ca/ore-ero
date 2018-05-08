@@ -28,6 +28,11 @@
     en: Global Affairs Canada
     fr: Affaires mondiales Canada
 
+- code: ised-isde
+  name:
+    en: Innovation, Science and Economic Development Canada
+    fr: Innovation, Sciences et Développement économique Canada
+
 - code: nrc-cnrc
   name:
     en: National Research Council Canada
