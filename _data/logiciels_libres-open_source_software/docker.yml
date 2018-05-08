@@ -1,0 +1,34 @@
+--- 
+description: 
+  en: "Performs operating-system-level virtualization also known as containerization"
+  fr: "Effectue une virtualisation au niveau du système d'exploitation, également appelée conteneurisation"
+homepageURL:
+  en: "https://www.docker.com/"
+  fr: "https://www.docker.com/"
+licenses: 
+  - Apache-2.0
+name: 
+  en: "Docker"
+  fr: "Docker"
+tags: 
+  en:
+    - "Container platform"
+    - Development
+    - Infrastructure
+  fr: 
+    - "Plate-forme de conteneur"
+    - Développement
+    - Infrastructure
+admininstrations: 
+  - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: "ilia.salem@tbs-sct.gc.ca"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "Digital Collaboration Division development and deployment"
+          fr: "Développement et déploiement de la Division de la collaboration numérique"
