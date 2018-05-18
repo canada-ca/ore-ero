@@ -1,0 +1,66 @@
+--- 
+description: 
+  en: "Used for blended learning, distance education, flipped classroom and other e-learning projects"
+  fr: "Utilisé pour l'apprentissage mixte, l'enseignement à distance, la classe inversée et d'autres projets d'apprentissage en ligne"
+homepageURL:
+  en: "https://moodle.org"
+  fr: "https://moodle.org"
+licenses: 
+  - GPL-3.0
+name: 
+  en: "Moodle"
+  fr: "Moodle"
+tags: 
+  en:
+    - "Learning Management System"
+  fr: 
+    - "plateforme d'apprentissage"
+admininstrations: 
+-
+    adminCode: cbsa-asfc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+-
+    adminCode: gac-amc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+-
+    adminCode: eccc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+-
+    adminCode: forces
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
