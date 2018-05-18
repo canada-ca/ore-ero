@@ -56,3 +56,15 @@ admininstrations:
         description: 
           en: "Digital Collaboration Division development and deployment"
           fr: "Développement et déploiement de la Division de la collaboration numérique"
+  - 
+    adminCode: nrcan
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"

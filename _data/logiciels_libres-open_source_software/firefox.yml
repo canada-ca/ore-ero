@@ -56,3 +56,27 @@ admininstrations:
         description: 
           en: "Must be requested. Restricted Internet access."
           fr: "Doit être demandé. Accès Internet restreint."
+  - 
+    adminCode: fin
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
+    adminCode: fintrac-canafe
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
