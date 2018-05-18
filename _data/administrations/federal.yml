@@ -58,6 +58,11 @@
     en: Fisheries and Oceans Canada
     fr: Pêches et Océans Canada
 
+- code: fintrac-canafe
+  name:
+    en: Financial Transactions and Reports Analysis Centre
+    fr: Centre d'analyse des opérations et déclarations financières
+
 - code: forces
   name:
     en: National Defence and the Canadian Armed Forces
