@@ -1,0 +1,58 @@
+--- 
+description: 
+  en: "Automates the non-human part of the software development process"
+  fr: "Automatise la partie non humaine du processus de développement logiciel"
+homepageURL:
+  en: "https://jenkins.io"
+  fr: "https://jenkins.io"
+licenses: 
+  - MIT
+name: 
+  en: "Jenkins"
+  fr: "Jenkins"
+tags: 
+  en:
+    - "Automation server"
+    - Development
+    - Infrastructure
+  fr: 
+    - "Serveur d'automatisation"
+    - Développement
+    - Infrastructure
+admininstrations: 
+-
+    adminCode: cbsa-asfc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+-
+    adminCode: fintrac-canafe
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+-
+    adminCode: statscan
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
