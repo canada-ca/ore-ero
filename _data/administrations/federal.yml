@@ -8,6 +8,21 @@
     en: Canadian Space Agency
     fr: Agence spatiale canadienne
 
+- code: bac-lac
+  name:
+    en: Library and Archives Canada
+    fr: Bibliothèque et Archives Canada
+
+- code: cbsa-asfc
+  name:
+    en: Canada Border Services Agency
+    fr: Agence des services frontaliers du Canada
+
+- code: cra-arc
+  name:
+    en: Canada Revenue Agency
+    fr: Agence du revenu du Canada
+
 - code: csc-scc
   name:
     en: Correctional Service Canada
@@ -18,24 +33,69 @@
     en: Communications Security Establishment
     fr: Centre de la sécurité des télécommunications
 
+- code: csps-efpc
+  name:
+    en: Canada School of Public Service
+    fr: École de la fonction publique du Canada
+
 - code: eccc
   name:
     en: Environment and Climate Change Canada
     fr: Environnement et Changement climatique Canada
+
+- code: elections
+  name:
+    en: Elections Canada
+    fr: Élections Canada
+
+- code: esdc-edsc
+  name:
+    en: Employment and Social Development Canada
+    fr: Emploi et Développement social Canada
+
+- code: dfo-mpo
+  name:
+    en: Fisheries and Oceans Canada
+    fr: Pêches et Océans Canada
+
+- code: forces
+  name:
+    en: National Defence and the Canadian Armed Forces
+    fr: Défense nationale et les Forces armées canadiennes
 
 - code: gac-amc
   name:
     en: Global Affairs Canada
     fr: Affaires mondiales Canada
 
+- code: hc-sc
+  name:
+    en: Health Canada
+    fr: Santé Canada
+
+- code: infrastructure
+  name:
+    en: Infrastructure Canada
+    fr: Infrastructure Canada
+
+- code: ircc
+  name:
+    en: Immigration, Refugees and Citizenship Canada
+    fr: Immigration, Réfugiés et Citoyenneté Canada
+
 - code: ised-isde
   name:
-    en: Innovation, Science and Economic Development Canada
-    fr: Innovation, Sciences et Développement économique Canada
+    en: Innovation, Science and Economic Development
+    fr: Innovation, Sciences et Développement économique
 
 - code: nrc-cnrc
   name:
     en: National Research Council Canada
+    fr: Ressources naturelles Canada
+
+- code: nrcan
+  name:
+    en: Natural Resources Canada
     fr: Conseil national de recherches Canada
 
 - code: pch
@@ -47,6 +107,17 @@
   name:
     en: Privy Council Office
     fr: Bureau du Conseil privé
+
+- code: phac-aspc
+  name:
+    en: Public Health Agency of Canada
+    fr: Commission de la fonction publique
+
+- code: psc-cfp
+  name:
+    en: Public Service Commission
+    fr: Public Service Commission
+
 
 - code: rcmp-grc
   name:
@@ -67,6 +138,11 @@
   name:
     en: Treasury Board of Canada Secretariat
     fr: Secrétariat du Conseil du Trésor du Canada
+
+- code: tc
+  name:
+    en: Transport Canada
+    fr: Transports Canada
 
 - code: tpsgc-pwgsc
   name:
