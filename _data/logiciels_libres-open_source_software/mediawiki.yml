@@ -39,3 +39,51 @@ admininstrations:
         description: 
           en: "External Government of Canada Wiki"
           fr: "Wiki externe du gouvernement du Canada"
+  - 
+    adminCode: agr
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
+    adminCode: csc-scc
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
+    adminCode: nrcan
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
+    adminCode: statscan
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"

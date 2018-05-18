@@ -58,6 +58,11 @@
     en: Fisheries and Oceans Canada
     fr: Pêches et Océans Canada
 
+- code: fin
+  name: 
+    en: Department of Finance Canada
+    fr: Ministère des Finances Canada
+
 - code: fintrac-canafe
   name:
     en: Financial Transactions and Reports Analysis Centre
