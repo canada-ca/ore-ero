@@ -101,12 +101,12 @@
 - code: nrc-cnrc
   name:
     en: National Research Council Canada
-    fr: Ressources naturelles Canada
-
+    fr: Conseil national de recherches Canada
+    
 - code: nrcan
   name:
     en: Natural Resources Canada
-    fr: Conseil national de recherches Canada
+    fr: Ressources naturelles Canada
 
 - code: pch
   name:
