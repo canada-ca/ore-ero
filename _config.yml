@@ -8,9 +8,10 @@
 # Site settings
 baseurl: "/ore-ero" # the subpath of your site, e.g. /blog
 url: "https://canada-ca.github.io/ore-ero" # the base hostname & protocol for your site
-email: ore-ero@canada.ca
-twitter_username: ore-ero
 github_username: canada-ca
+
+wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
+wet_cdts_version: "v4_0_28"
 
 # Translations
 title:
