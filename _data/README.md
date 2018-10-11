@@ -95,7 +95,7 @@ If your adminstration is there add your use of open source software under it, yo
 ##### Your open source software needs to be added
 If your open source software does'nt have a file under the [logiciels_libres-open_source_software](logiciels_libres-open_source_software) directory, you need to create a new file for the open source software.  Use the [ll-oss template with only mandatory fields](../_data_templates/ll-oss_mandatory.yml).
 
-________________
+______________________
 
 ## Données pour l'Échange de ressources ouvert
 
