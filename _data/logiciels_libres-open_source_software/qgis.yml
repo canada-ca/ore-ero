@@ -6,7 +6,7 @@ homepageURL:
   en: "https://qgis.org/en/site/"
   fr: "https://qgis.org/fr/site/"
 licenses: 
-  - GNU GPL
+  - GPL-2.0
 name: 
   en: QGIS
   fr: QGIS
