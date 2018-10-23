@@ -1,0 +1,30 @@
+--- 
+description: 
+  en: "A Free and Open Source Geographic Information System"
+  fr: "Système d'Information Géographique Libre et Open Source"
+homepageURL:
+  en: "https://qgis.org/en/site/"
+  fr: "https://qgis.org/fr/site/"
+licenses: 
+  - GNU GPL
+name: 
+  en: QGIS
+  fr: QGIS
+tags: 
+  en:
+    - "gis"
+  fr: 
+    - "sig"
+admininstrations: 
+  - 
+    adminCode: statcan
+    uses: 
+      - 
+        contact: 
+          URL: reginald.maltais2@canada.ca
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "Desktop geospatial information processing"
+          fr: "Système d'information géospatiale de bureau"
