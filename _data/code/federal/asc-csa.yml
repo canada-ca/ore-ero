@@ -20,8 +20,8 @@ releases:
             fr: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-fr.txt"
           name: EPL-1.0
     repositoryURL: 
-      en: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy"
-      fr: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy"
+      en: "https://gitlab.com/apogy/ca-gc-asc_csa-apogy-ots"
+      fr: "https://gitlab.com/apogy/ca-gc-asc_csa-apogy-ots"
     tags: 
       en: 
         - Robots
@@ -30,4 +30,4 @@ releases:
         - Robots
         - Espace
     vcs: git
-    version: "0.5.14"
+    version: "0.1.0"
