@@ -12,7 +12,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 See [data README file](_data) to learn how to contribute data about released open source code or open source software used by Canadian federal, provincial, territorial or municipal administration.
 
-This site uses [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.github.com/).  Create [Pull requests](pulls) to add functionnalities or fix bugs.
+This site uses [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.github.com/).
 
 Unless otherwise noted, the source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT Licence](LICENSE.txt).
 
@@ -37,7 +37,7 @@ Voir [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Voir le [fichier README des données](_data) pour savoir comment fournir des données sur le code source ouvert publié ou les logiciels libres utilisés par l'administration fédérale, provinciale, territoriale ou municipale du Canada.
 
-Ce site utilise [Jekyll](https://jekyllrb.com/) et [Github Pages](https://pages.github.com/). Créez des [requêtes Pull](pulls) pour ajouter des fonctionnalités ou corriger des bogues.
+Ce site utilise [Jekyll](https://jekyllrb.com/) et [Github Pages](https://pages.github.com/).
 
 Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](LICENSE.txt).
 
