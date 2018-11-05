@@ -1,0 +1,5 @@
+---
+permalink: /code.json
+---
+
+{{ site.data.code | jsonify }}
