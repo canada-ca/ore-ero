@@ -62,4 +62,4 @@ TopicsMenu:
 
 # Build settings
 markdown: kramdown
-include: ["_pages"]
+include: ["_pages", "_json"]
