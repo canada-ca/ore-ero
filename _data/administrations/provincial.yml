@@ -1,14 +1,14 @@
-- code: bc
+- code: "bc"
   name:
     en: Province of British Columbia
     fr: Province de la Colombie-Britannique
 
-- code: on
+- code: "on"
   name:
     en: Province of Ontario
     fr: Province de l'Ontario
 
-- code: qc
+- code: "qc"
   name:
     en: Province of Quebec
     fr: Province de Québec

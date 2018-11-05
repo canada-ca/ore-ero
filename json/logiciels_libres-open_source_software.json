@@ -1,0 +1,5 @@
+---
+permalink: /logiciels_libres-open_source_software.json
+---
+
+{{ site.data.logiciels_libres-open_source_software | jsonify }}
