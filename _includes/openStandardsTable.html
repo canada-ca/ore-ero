@@ -1,0 +1,116 @@
+<div class="row">
+
+<!-- Filters -->
+<div class="col-md-3">
+  <details open>
+    <summary><h4 class="h4">Filter Options</h4></summary>
+    <form class="wb-tables-filter" data-bind-to="dataset-filter">
+          
+      <div class="form-group">
+        <label for="dt_tag">Tag</label>
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
+          <option value=""></option>
+          {% assign tag_array = "" | split: ',' %}
+          {% for standards in site.data.normes_ouvertes-open_standards %}
+            {% assign standard = standards[1] %}
+            {% for tag in standard.tags[page.lang] %}
+              {% assign tag_array = tag_array | push: tag %}
+            {% endfor %}
+          {% endfor %}
+          {% assign tag_array = tag_array | group_by: "" | sort: "name" %}
+          {% for tag in tag_array %}
+            <option value="{{ tag.name }}">{{ tag.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-6">
+          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
+        </div>
+        <div class="col-xs-6">
+          <button type="reset" class="btn btn-default">Clear</button>
+        </div>
+      </div>
+      
+    </form>
+  </details>
+</div>
+
+<!-- Data Table -->
+<div class="col-md-9">
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3], "visible": false}], "paging": false}'>
+    <thead>
+      <tr>
+        <th>Standard</th>
+        <th>Description</th>
+        <th>Organization</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      {% for standards in site.data.normes_ouvertes-open_standards %}
+        {% assign standard = standards[1] %}
+        <tr>
+          <td><a class="wb-lbx" title="{{ standard.name[page.lang] }}" href="#{{ standard.name[page.lang] | slugify }}">{{ standard.name[page.lang] }}</a></td>
+          <td>{{ standard.description[page.lang] }}</td>
+          <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardsOrg }}</a></td>
+          <td>
+            {% for tag in oss.tags[page.lang] %}
+              {{ tag }}&nbsp;
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal Lightboxes -->
+{% for standards in site.data.normes_ouvertes-open_standards %}
+  {% assign standard = standards[1] %}
+
+  <section id="{{ standard.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+      <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
+    </header>
+    <div class="modal-body">
+      <p><strong>{{ standard.description[page.lang] }}</strong></p>
+      <p>Is being used by:</p>
+      {% for admin in standard.admininstrations %}
+        <div class="row">
+          {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+          <div class="col-md-7">
+            <strong>{{ aName[0].name[page.lang] }}</strong>
+          </div>
+          <div class="col-md-5">{{ admin.status }}</div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </section>
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
