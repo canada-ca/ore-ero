@@ -28,7 +28,7 @@ admininstrations:
         description: 
           en: "Desktop geospatial information processing"
           fr: "Système d'information géospatiale de bureau"
-    -
+  -
     adminCode: nrcan
     uses: 
       - 
