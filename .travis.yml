@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.6.0
+
+script: jekyll build
+
+sudo: false
