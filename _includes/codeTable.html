@@ -1,7 +1,7 @@
 <div class="row">
 
 <!-- Filter dropdowns -->
-<div class="col-md-3">
+<div class="col-md-2">
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
@@ -45,7 +45,7 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_licence">Organization</label>
+        <label for="dt_organization">Organization</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value=""></option>
           {% assign org_array = "" | split: ',' %}
@@ -119,6 +119,19 @@
         </select>
       </div>
       
+      <div class="form-group">
+        <label for="dt_type">Adminstration type</label>
+        <select class="form-control" id="dt_type" name="dt_type" data-column="7">
+          <option value=""></option>
+  
+          {% for fptms in site.data.code %}
+            {% assign fptm = fptms[0] %}
+            <option value="{{ fptm }}">{{ fptm }}</option>
+          {% endfor %}
+
+        </select>
+      </div>
+      
       <div class="row">
         <div class="col-xs-6">
           <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
@@ -134,7 +147,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4, 5], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4, 5], "visible": true}], "paging": false}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -144,6 +157,7 @@
         <th>Tags</th>
         <th>Organization</th>
         <th>Code Repo</th>
+        <th>Type</th>
       </tr>
     </thead>
     <tbody>
@@ -188,6 +202,9 @@
               <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
                 {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
               </a>
+            </td>
+            <td>
+              {{fptms[0]}}
             </td>
           </tr>
           {% endfor %}
