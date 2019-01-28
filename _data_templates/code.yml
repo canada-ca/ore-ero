@@ -4,38 +4,50 @@ releases:
 ## * [array] Contains objects representing each versioned source code release made available.
   - 
     contact: 
-      URL: "[mandatory] [string] The URL to a website that can be used to reach the point of contact. For example, http://twitter.com/..."
-      email: "[string] An email address to contact the release."
-      name: "[string] The name of a contact or department for the release."
+      URL: 
+        en: "[string] The URL to a website that can be used to reach the point of contact."
+        fr: "[string] ~"
+      email: "[mandatory] [string] An email address to contact the release."
+      name: "[string] The name of a contact or team for the release."
       phone: "[string] The phone number to contact a release."
     date: 
-      created: "[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format."
+      created: "[mandatory] [string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format."
       lastModified: "[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format."
-      metadataLastUpdated: "[string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format."
+      metadataLastUpdated: "[mandatory] [string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format."
     description: 
       en: "[mandatory] [string] A one- or two-sentence description of the release."
       fr: "[mandatory] [string] ~"
-    downloadURL: "[string] The URL where a distribution of the release can be found."
-    homepageURL: "[string] The URL of the public release homepage."
+    downloadURL: 
+      en: "[string] The URL where a distribution of the release can be found."
+      fr: "[string] ~"
+    homepageURL: 
+      en: "[string] The URL of the public release homepage."
+      fr: "[string] ~"
     languages:
     ## [array] A list of strings with the names of the programming languages in use on the release.
       - lang1
       - lang2
     name: 
       en: "[mandatory] [string] The name of the release in English."
-      fr: "[mandatory] [string] Le nom de la version en français."
+      fr: "[mandatory] [string] ~"
+    organization: 
+      en: "[string] [string] The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'."
+      fr: "[string] ~"
     partners:
     ## [array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.
       - 
+        URL: 
+          en: "[string] The URL to a website that can be used to reach the partner."
+          fr: "[string] ~"
         email: "[string] The email address for the point of contact at the partner agency."
-        name: "[string] The acronym describing the partner agency."
+        name: "[string] The name of the partner of the point of contact."
     permissions: 
       licenses:
       ## [mandatory] [array of objects] An object containing license details.
         - 
           URL: 
             en: "[mandatory] [string] The URL of the release license."
-            fr: ~
+            fr: "[mandatory] [string] ~"
           name: "[mandatory] [string] An abbreviation for the name of the license - For example, GPLv3, MIT, .."
     repositoryURL: 
       en: "[mandatory] [string] The URL of the public release repository for open source repositories."
@@ -55,4 +67,5 @@ releases:
         - tag1-fr
         - tag2-fr
     vcs: "[string] A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, .."
-    version: "[string] The version for this release. For example, 1.0.0."
+    version: "[string] The version for this release. For example, 1.0.0"
+schemaVersion: "[mandatory] [string] The version of the ORE data schema for Code used. For example, 1.0"
