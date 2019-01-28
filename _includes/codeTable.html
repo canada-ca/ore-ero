@@ -6,6 +6,17 @@
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
+        <label for="dt_govLevel">Level of government</label>
+        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+          <option value=""></option>
+          {% for fptms in site.data.code %}
+            {% assign fptm = fptms[0] %}
+            <option value="{{ fptm | capitalize  }}">{{ fptm | capitalize }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="dt_department">Administration</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value=""></option>
@@ -119,19 +130,6 @@
         </select>
       </div>
       
-      <div class="form-group">
-        <label for="dt_type">Adminstration type</label>
-        <select class="form-control" id="dt_type" name="dt_type" data-column="7">
-          <option value=""></option>
-  
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[0] %}
-            <option value="{{ fptm }}">{{ fptm }}</option>
-          {% endfor %}
-
-        </select>
-      </div>
-      
       <div class="row">
         <div class="col-xs-6">
           <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
@@ -157,7 +155,7 @@
         <th>Tags</th>
         <th>Organization</th>
         <th>Code Repo</th>
-        <th>Type</th>
+        <th>Level</th>
       </tr>
     </thead>
     <tbody>
@@ -204,7 +202,7 @@
               </a>
             </td>
             <td>
-              {{fptms[0]}}
+              {{fptms[0] | capitalize}}
             </td>
           </tr>
           {% endfor %}
