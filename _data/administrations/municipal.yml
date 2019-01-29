@@ -9,3 +9,9 @@
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
+
+- code: edmonton_ab
+  provinceCode: "ab"
+  name:
+    en: City of Edmonton
+    fr: Ville d'Edmonton

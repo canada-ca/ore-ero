@@ -1,0 +1,32 @@
+--- 
+adminCode: edmonton_ab
+releases: 
+  - 
+    contact: 
+      URL: https://github.com/yeg-relief/youcanbenefit/issues
+    date: 
+      created: "2016-06-16"
+    description: 
+      en: "YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies."
+      fr: "YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d'avantages sociaux pour les personnes moins fortunées et leurs alliés."
+    languages: 
+      - Javascript
+    name: 
+      en: YouCanBenefit
+      fr: YouCanBenefit
+    permissions: 
+      licenses: 
+        - 
+          URL: 
+            en: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
+          name: "MIT"
+    repositoryURL: 
+      en: "https://github.com/yeg-relief/youcanbenefit"
+      fr: "https://github.com/yeg-relief/youcanbenefit"
+    status: Production
+    tags: 
+      en: 
+        - "Social Benefits"
+      fr: 
+        - "Avantages Sociaux"
+    vcs: git
