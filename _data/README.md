@@ -30,20 +30,22 @@ You can copy the following at the bottom of the file, and change the informtion 
 ```
   - 
     contact: 
-      URL: https://www.example.com
+      email: "abc@xyz.com"
+    date: 
+      created: "YYYY-MM-DD"
+      metadataLastUpdated: "YYYY-MM-DD"  
     description: 
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
     name: 
       en: "Example"
       fr: "Exemple"
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://example.com/repo/example/LICENCE-en"
-            fr: "https://example.com/repo/example/LICENCE-fr"
-          name: "LICENCE"
+    licenses:
+      - 
+        URL: 
+          en: "https://example.com/repo/example/LICENCE-en"
+          fr: "https://example.com/repo/example/LICENCE-fr"
+        spdxID: "XYZ-1.0"
     repositoryURL: 
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
@@ -52,6 +54,8 @@ You can copy the following at the bottom of the file, and change the informtion 
         - "tag1-en"
       fr: 
         - "tag1-fr"
+
+
 ```
 
 ##### Your administration needs to be added
@@ -121,20 +125,22 @@ Vous pouvez copier ce qui suit en bas du fichier et modifier les informations po
 ```
   - 
     contact: 
-      URL: https://www.example.com
+      email: "abc@xyz.com"
+    date: 
+      created: "YYYY-MM-DD"
+      metadataLastUpdated: "YYYY-MM-DD"  
     description: 
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
     name: 
       en: "Example"
       fr: "Exemple"
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://example.com/repo/example/LICENCE-en"
-            fr: "https://example.com/repo/example/LICENCE-fr"
-          name: "LICENCE"
+    licenses:
+      - 
+        URL: 
+          en: "https://example.com/repo/example/LICENCE-en"
+          fr: "https://example.com/repo/example/LICENCE-fr"
+        spdxID: "XYZ-1.0"
     repositoryURL: 
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
@@ -143,6 +149,8 @@ Vous pouvez copier ce qui suit en bas du fichier et modifier les informations po
         - "tag1-en"
       fr: 
         - "tag1-fr"
+
+
 ```
 
 ##### Votre administration doit être ajouté
