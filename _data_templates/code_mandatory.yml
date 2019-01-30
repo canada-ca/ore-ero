@@ -1,22 +1,27 @@
 --- 
+schemaVersion:
 adminCode: abc-def
 releases: 
   - 
     contact: 
-      URL: https://www.example.com
+      email: "abc@xyz.com "
+    date: 
+      created: "YYYY-MM-DD "
+      metadataLastUpdated: "YYYY-MM-DD "  
     description: 
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
     name: 
       en: "Example"
       fr: "Exemple"
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://example.com/repo/example/LICENCE-en"
-            fr: "https://example.com/repo/example/LICENCE-fr"
-          name: "LICENCE"
+    licenses:
+      - 
+        URL: 
+          en: "https://example.com/repo/example/LICENCE-en"
+          fr: "https://example.com/repo/example/LICENCE-fr"
+        name: 
+          en: "Example"
+          fr: "Exemple"
     repositoryURL: 
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
