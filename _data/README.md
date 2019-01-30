@@ -30,10 +30,10 @@ You can copy the following at the bottom of the file, and change the informtion 
 ```
   - 
     contact: 
-      email: "abc@xyz.com "
+      email: "abc@xyz.com"
     date: 
-      created: "YYYY-MM-DD "
-      metadataLastUpdated: "YYYY-MM-DD "  
+      created: "YYYY-MM-DD"
+      metadataLastUpdated: "YYYY-MM-DD"  
     description: 
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
@@ -45,9 +45,7 @@ You can copy the following at the bottom of the file, and change the informtion 
         URL: 
           en: "https://example.com/repo/example/LICENCE-en"
           fr: "https://example.com/repo/example/LICENCE-fr"
-        name: 
-          en: "Example"
-          fr: "Exemple"
+        spdxID: "XYZ-1.0"
     repositoryURL: 
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
@@ -56,6 +54,7 @@ You can copy the following at the bottom of the file, and change the informtion 
         - "tag1-en"
       fr: 
         - "tag1-fr"
+
 
 ```
 
@@ -126,10 +125,10 @@ Vous pouvez copier ce qui suit en bas du fichier et modifier les informations po
 ```
   - 
     contact: 
-      email: "abc@xyz.com "
+      email: "abc@xyz.com"
     date: 
-      created: "YYYY-MM-DD "
-      metadataLastUpdated: "YYYY-MM-DD "  
+      created: "YYYY-MM-DD"
+      metadataLastUpdated: "YYYY-MM-DD"  
     description: 
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
@@ -141,9 +140,7 @@ Vous pouvez copier ce qui suit en bas du fichier et modifier les informations po
         URL: 
           en: "https://example.com/repo/example/LICENCE-en"
           fr: "https://example.com/repo/example/LICENCE-fr"
-        name: 
-          en: "Example"
-          fr: "Exemple"
+        spdxID: "XYZ-1.0"
     repositoryURL: 
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
@@ -152,6 +149,7 @@ Vous pouvez copier ce qui suit en bas du fichier et modifier les informations po
         - "tag1-en"
       fr: 
         - "tag1-fr"
+
 
 ```
 
