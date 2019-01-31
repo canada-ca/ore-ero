@@ -55,8 +55,12 @@ releases:
     relatedCode:
     ## [array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.
       - 
-        URL: "[string] The URL where the software can be found."
-        name: "[string] The name of the software used in this release."
+        URL: 
+          en: "[string] The URL where the software can be found."
+          fr: "[string] ~"
+        name: 
+          en: "[string] The name of the software used in this release."
+          fr: "[string] ~"
     status: "[string] The development status of the release. For example, Production, Beta, .."
     tags:
     ## [mandatory] [array] An array of keywords that will be helpful in discovering and searching for the release.
