@@ -48,7 +48,7 @@ releases:
         URL: 
           en: "[mandatory] [string] The URL of the release license."
           fr: "[mandatory] [string] ~"
-        name: "[mandatory] [string] An abbreviation for the name of the license - For example, GPLv3, MIT, .."
+        spdxID: "[mandatory] [string] SPDX License identifier - https://spdx.org/licenses/"
     repositoryURL: 
       en: "[mandatory] [string] The URL of the public release repository for open source repositories."
       fr: "[mandatory] [string] ~"
