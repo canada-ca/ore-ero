@@ -1,0 +1,35 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;  
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+button{
+    background-color: inherit !important;  
+    border: white; 
+}
+
+.mandatory {
+    background-color:white !important;
+}
+
+.twentyFive{
+    padding-left: 25px !important;
+}
+
+.fifty{
+    padding-left: 50px !important;
+}
+
+.seventyFive{
+    padding-left: 75px !important;
+}
+
+.hundred{
+    padding-left: 100px !important;
+}
