@@ -1,0 +1,525 @@
+{% if page.lang == 'en' %}
+<div>
+    <table>
+    <col width="25%">
+    <col width="75%">
+    <thead>
+        <tr>
+            <th>Field Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class = "mandatory">schemaVersion</td>
+            <td>[string] The version of the ORE data schema for Code used. For example, 1.0</td>
+        </tr>
+
+        <tr>
+            <td class = "mandatory">admin Code</td>
+            <td>[string] Administration code - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</td>
+        </tr>
+
+        <tr>
+            <td> releases <button id="releaseBtn" class=" fa fa-caret-down"></button></td>
+            <td>[array] Contains objects representing each versioned source code release made available.</td>
+        
+            <tr id="contactReleases" class="releaseColl collapse">
+                <td class = "mandatory twentyFive">contact<button id="contactBtn" class ="mandatory fa fa-caret-down"></button></td>
+                <td > -- </td>
+
+                <tr id="urlContact" class="contactColl collapse">
+                    <td class = "fifty"> URL <button id="urlContactBtn" class ="fa fa-caret-down"></button></td>
+                    <td>--</td>
+
+                    <tr id="enUrlContact" class="urlContactColl collapse">
+                        <td class = "seventyFive">en</td>
+                        <td class = "seventyFive">[string] The URL to a website that can be used to reach the point of contact.</td>
+                    </tr>
+
+                    <tr id="frUrlContact" class="urlContactColl collapse">
+                        <td class = "seventyFive">fr</td>
+                        <td class = "seventyFive">[string]~</td>
+                    </tr>
+                </tr>
+
+                <tr id="emailContact" class="contactColl collapse">
+                    <td class = "mandatory fifty"> email </td>
+                    <td>[string] An email address to contact the release.</td>
+                </tr>
+
+                <tr id="nameContact" class="contactColl collapse">
+                    <td class = "fifty"> name </td>
+                    <td>[string] The name of a contact or department for the release.</td>
+                </tr>
+
+                <tr id="phoneContact" class="contactColl collapse">
+                    <td class = "fifty"> phone </td>
+                    <td>[string] The phone number to contact a release.</td>
+                </tr>
+            </tr>  
+        </tr>
+
+        <tr id="dateReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive"> date <button id="dateBtn" class="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="createdDate" class="dateColl collapse">
+                <td class = "mandatory fifty"> created </td>
+                <td>[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.</td>
+            </tr>
+
+            <tr id="lastModifiedDate" class="dateColl collapse">
+                <td class = "fifty"> lastModified </td>
+                <td>[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</td>
+            </tr>
+
+            <tr id="metaLastUpdatedDate" class="dateColl collapse">
+                <td class = "mandatory fifty"> metaLastUpdated </td>
+                <td>[string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</td>
+            </tr>
+        </tr>
+
+        <tr id="descReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">description<button id="descBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enDesc" class="descColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] A one- or two-sentence description of the release.</td>
+            </tr>
+
+            <tr id="frDesc" class="descColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] ~</td>
+            </tr>
+        </tr>
+
+        <tr id="downloadUrlReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> downloadURL</td>
+            <td >[string] The URL where a distribution of the release can be found.</td>
+        </tr>
+
+        <tr id="homePageUrlReleases" class="releaseColl collapse">
+            <td class = "twentyFive">homepageURL</td>
+            <td >[string] The URL of the public release homepage.</td>
+        </tr>
+
+        <tr id="languagesReleases" class="releaseColl collapse">
+            <td class = "twentyFive">languages</td>
+            <td >[array] A list of strings with the names of the programming languages in use on the release. [lang1, lang2]</td>
+        </tr>
+
+        <tr id="nameReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">name<button id="nameBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enName" class="nameColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] The name of the release in English.</td>
+            </tr>
+
+            <tr id="frName" class="nameColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] Le nom de la version en français.</td>
+            </tr>
+        </tr>
+
+        <tr id="organizationReleases" class="releaseColl collapse">
+            <td class = "twentyFive">organization<button id="organizationBtn" class ="fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enOrganization" class="organizationColl collapse">
+                <td class = "fifty"> en </td>
+                <td>[string] [string] The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'.</td>
+            </tr>
+
+            <tr id="frOrganization" class="organizationColl collapse">
+                <td class = "fifty"> fr </td>
+                <td>[string]</td>
+            </tr>
+        </tr>
+
+        <tr id="partnerReleases" class="releaseColl collapse">
+            <td class = "twentyFive">partner<button id="partnerBtn" class="fa fa-caret-down"></button></td>
+            <td >[array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</td>
+
+
+            <tr id="urlPartner" class="partnerColl collapse">
+                <td class = "fifty"> URL <button id="urlPartnerBtn" class ="fa fa-caret-down"></button></td>
+                <td>--</td>
+
+                <tr id="enUrlPartner" class="urlPartnerColl collapse">
+                    <td class = "seventyFive">en</td>
+                    <td class = "seventyFive">[string] The URL to a website that can be used to reach the partner.</td>
+                </tr>
+
+                <tr id="frUrlPartner" class="urlPartnerColl collapse">
+                    <td class = "seventyFive">fr</td>
+                    <td class = "seventyFive">[string] ~</td>
+                </tr>
+            </tr>
+
+            <tr id="emailPartner" class="partnerColl collapse">
+                <td class = "fifty"> email </td>
+                <td>[string] The email address for the point of contact at the partner agency.</td>
+            </tr>
+
+            <tr id="namePartner" class="partnerColl collapse">
+                <td class = "fifty"> name </td>
+                <td>[string] The name of the partner of the point of contact.</td>
+            </tr>
+
+        </tr>
+
+        <tr id="licensesReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive"> licenses <button id="licensesBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td>[array of objects] An object containing license details.</td>
+
+            <tr id="urlLicenses" class="licensesColl collapse">
+                <td class= "mandatory fifty"> URL <button id="urlLicensesBtn" class ="mandatory fa fa-caret-down"></button></td>
+                <td>--</td>
+
+                <tr id="urlLicensesEn" class="urlLicensesColl collapse">
+                <td class = "mandatory seventyFive"> en </td>
+                <td>[string] The URL of the release license.</td>
+                </tr>
+
+                <tr id="urlLicensesFr" class="urlLicensesColl collapse">
+                    <td class = "mandatory seventyFive"> fr </td>
+                    <td>~</td>
+                </tr>
+
+            </tr>
+            <tr id="urlLicensesName" class="licensesColl collapse">
+                <td class = "mandatory fifty"> name </td>
+                <td>[string] An abbreviation for the name of the license - For example, GPLv3, MIT, ..</td>
+            </tr>
+        </tr>
+
+        <tr id="reposUrlReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">repositoryURL<button id="reposUrlBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enReposUrl" class="reposUrlColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] The URL of the public release repository for open source release repositories.</td>
+            </tr>
+
+            <tr id="frReposUrl" class="reposUrlColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] ~</td>
+            </tr>
+        </tr>
+
+        <tr id="relatedCodeReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> relatedCode <button id="relatedCodeBtn" class="fa fa-caret-down"></button></td>
+            <td>[array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.</td>
+
+            <tr id="relatedCodeURL" class="relatedCodeColl collapse">
+                <td class = "fifty"> URL </td>
+                <td>[string] The URL where the software can be found.</td>
+            </tr>
+
+            <tr id="relatedCodeName" class="relatedCodeColl collapse">
+                <td class = "fifty"> name </td>
+                <td>[string] The name of the software used in this release.</td>
+            </tr>
+        </tr>
+
+        <tr id="statusReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> status </td>
+            <td >[string] The development status of the release. For example, Production, Beta, ..</td>
+        </tr>
+
+        <tr id="tagsReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">tags<button id="tagsReleasesBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td>[array] An array of keywords that will be helpful in discovering and searching for the release.</td>
+
+            <tr id="enTagsReleases" class="tagsReleasesColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[tag1-en, tag2-en]</td>
+            </tr>
+
+            <tr id="frTagsReleases" class="tagsReleasesColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[tag1-fr, tag2-fr]</td>
+            </tr>
+        </tr>
+
+        <tr id="vcsReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> vcs </td>
+            <td >[string] A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, ..</td>
+        </tr>
+
+        <tr id="versionReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> version </td>
+            <td>[string] The version for this release. For example, 1.0.0.</td>
+        </tr>
+    </tbody>
+    </table>
+</div><br>
+
+{% else %}
+
+<div>
+    <table>
+    <col width="25%">
+    <col width="75%">
+    <thead>
+        <tr>
+            <th>Nom du champ</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class = "mandatory">schemaVersion</td>
+            <td>[string] La version du schéma de données ORE pour le code utilisé. Par exemple, 1.0</td>
+        </tr>
+
+        <tr>
+            <td class = "mandatory">admin Code</td>
+            <td>[string] Le code d'administration - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</td>
+        </tr>
+
+        <tr>
+            <td> releases <button id="releaseBtn" class=" fa fa-caret-down"></button></td>
+            <td>[array] Contient des objets représentant chaque version de code source mise à disposition.</td>
+        
+            <tr id="contactReleases" class="releaseColl collapse">
+                <td class = "mandatory twentyFive">contact<button id="contactBtn" class ="mandatory fa fa-caret-down"></button></td>
+                <td > -- </td>
+
+                <tr id="urlContact" class="contactColl collapse">
+                    <td class = "fifty"> URL <button id="urlContactBtn" class ="fa fa-caret-down"></button></td>
+                    <td>--</td>
+
+                    <tr id="enUrlContact" class="urlContactColl collapse">
+                        <td class = "seventyFive">en</td>
+                        <td>[string] ~ </td>
+                    </tr>
+
+                    <tr id="frUrlContact" class="urlContactColl collapse">
+                        <td class = "seventyFive">fr</td>
+                        <td>[string] L'URL d'un site Web pouvant etre utilisé pour atteindre le contact</td>
+                    </tr>
+                </tr>
+
+                <tr id="emailContact" class="contactColl collapse">
+                    <td class = "mandatory fifty"> email </td>
+                    <td>[string] L'adresse courriel pour contacter la "release".</td>
+                </tr>
+
+                <tr id="nameContact" class="contactColl collapse">
+                    <td class = "fifty"> name </td>
+                    <td>[string] Le nom d'un contact ou d'un département pour la "release"</td>
+                </tr>
+
+                <tr id="phoneContact" class="contactColl collapse">
+                    <td class = "fifty"> phone </td>
+                    <td>[string] Le numéro de téléphone pour contacter une "release".</td>
+                </tr>
+            </tr>  
+        </tr>
+
+        <tr id="dateReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive"> date <button id="dateBtn" class="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="createdDate" class="dateColl collapse">
+                <td class = "mandatory fifty"> created </td>
+                <td>[string] La date de la "release" lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.</td>
+            </tr>
+
+            <tr id="lastModifiedDate" class="dateColl collapse">
+                <td class = "fifty"> lastModified </td>
+                <td>[string] La date de la "release" lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.</td>
+            </tr>
+
+            <tr id="metaLastUpdatedDate" class="dateColl collapse">
+                <td class = "mandatory fifty"> metaLastUpdated </td>
+                <td>[string] La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.</td>
+            </tr>
+        </tr>
+
+        <tr id="descReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">description<button id="descBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enDesc" class="descColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] ~ </td>
+            </tr>
+
+            <tr id="frDesc" class="descColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] Description en une ou deux phrases de "release"</td>
+            </tr>
+        </tr>
+
+        <tr id="downloadUrlReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> downloadURL</td>
+            <td >[string] L'URL où une distribution de la "release" peut être trouvée.</td>
+        </tr>
+
+        <tr id="homePageUrlReleases" class="releaseColl collapse">
+            <td class = "twentyFive">homepageURL</td>
+            <td >[string] L'URL de la page d'accueil de "release" publique.</td>
+        </tr>
+
+        <tr id="languagesReleases" class="releaseColl collapse">
+            <td class = "twentyFive">languages</td>
+            <td >[array] Une lsite de chaîne avec les noms de langages de programmation utilisés dans la version. [lang1, lang2]</td>
+        </tr>
+
+        <tr id="nameReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">name<button id="nameBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enName" class="nameColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] ~ </td>
+            </tr>
+
+            <tr id="frName" class="nameColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] Le nom de la "release" en français.</td>
+            </tr>
+        </tr>
+
+        <tr id="organizationReleases" class="releaseColl collapse">
+            <td class = "twentyFive">organization<button id="organizationBtn" class ="fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enOrganization" class="organizationColl collapse">
+                <td class = "fifty"> en </td>
+                <td>[string] ~</td>
+            </tr>
+
+            <tr id="frOrganization" class="organizationColl collapse">
+                <td class = "fifty"> fr </td>
+                <td>[string] L'organization ou la composante du département de l'agence à laquelle la release appartient. Par exemple, "CDS" ou "Gouvernement ouvert".</td>
+            </tr>
+        </tr>
+
+        <tr id="partnerReleases" class="releaseColl collapse">
+            <td class = "twentyFive">partner<button id="partnerBtn" class="fa fa-caret-down"></button></td>
+            <td >[array] Un tableau d'objets comprenant un acronyme pour chaque agence partenaire de la "release" et l'adresse courriel de cette agence.</td>
+
+
+            <tr id="urlPartner" class="partnerColl collapse">
+                <td class = "fifty"> URL <button id="urlPartnerBtn" class ="fa fa-caret-down"></button></td>
+                <td>--</td>
+
+                <tr id="enUrlPartner" class="urlPartnerColl collapse">
+                    <td class = "seventyFive">en</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <tr id="frUrlPartner" class="urlPartnerColl collapse">
+                    <td class = "seventyFive">fr</td>
+                    <td>[string] L'URL d'un site Web qui peut être utilisé pour atteindre le partenaire.</td>
+                </tr>
+            </tr>
+
+            <tr id="emailPartner" class="partnerColl collapse">
+                <td class = "fifty"> email </td>
+                <td>[string] L'adresse courriel du contact de l'agence partenaire.</td>
+            </tr>
+            
+            <tr id="namePartner" class="partnerColl collapse">
+                <td class = "fifty"> name </td>
+                <td>[string] Le nom du partenaire de contact.</td>
+            </tr>
+
+        </tr>
+
+        <tr id="licensesReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive"> licenses <button id="licensesBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td>[array of objects] Un objet contenant les détails de la license.</td>
+
+            <tr id="urlLicenses" class="licensesColl collapse">
+                <td class= "mandatory fifty"> URL <button id="urlLicensesBtn" class ="mandatory fa fa-caret-down"></button></td>
+                <td>--</td>
+
+                <tr id="urlLicensesEn" class="urlLicensesColl collapse">
+                <td class = "mandatory seventyFive"> en </td>
+                <td>[string] ~ </td>
+                </tr>
+
+                <tr id="urlLicensesFr" class="urlLicensesColl collapse">
+                    <td class = "mandatory seventyFive"> fr </td>
+                    <td> L'URL de la license de "release" </td>
+                </tr>
+
+            </tr>
+            <tr id="urlLicensesName" class="licensesColl collapse">
+                <td class = "mandatory fifty"> name </td>
+                <td>[string] Abréviation du nom de la license - Par exemple, GPLv3, MIT, ..</td>
+            </tr>
+        </tr>
+
+        <tr id="reposUrlReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">repositoryURL<button id="reposUrlBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td > -- </td>
+
+            <tr id="enReposUrl" class="reposUrlColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[string] ~ </td>
+            </tr>
+
+            <tr id="frReposUrl" class="reposUrlColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[string] ~ </td>
+            </tr>
+        </tr>
+
+        <tr id="relatedCodeReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> relatedCode <button id="relatedCodeBtn" class="fa fa-caret-down"></button></td>
+            <td>[array] Un ensemble de code source, de bibliothèques, de frameworks, d'API, de plateformes ou d'autres logiciels utilisés dans cette "release".</td>
+
+            <tr id="relatedCodeURL" class="relatedCodeColl collapse">
+                <td class = "fifty"> URL </td>
+                <td>[string] L'URL où le logiciel peut être trouvé.</td>
+            </tr>
+
+            <tr id="relatedCodeName" class="relatedCodeColl collapse">
+                <td class = "fifty"> name </td>
+                <td>[string] Le nom du logiciel utilisé dans cette "release".</td>
+            </tr>
+        </tr>
+
+        <tr id="statusReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> status </td>
+            <td >[string] Le statut de développement de la version. Par exemple, Production, Beta, ..</td>
+        </tr>
+
+        <tr id="tagsReleases" class="releaseColl collapse">
+            <td class = "mandatory twentyFive">tags<button id="tagsReleasesBtn" class ="mandatory fa fa-caret-down"></button></td>
+            <td>[array] Un ensemble de mots clés qui seront utiles pour la decouverte et la recherche de la "release".</td>
+
+            <tr id="enTagsReleases" class="tagsReleasesColl collapse">
+                <td class = "mandatory fifty"> en </td>
+                <td>[tag1-en, tag2-en]</td>
+            </tr>
+
+            <tr id="frTagsReleases" class="tagsReleasesColl collapse">
+                <td class = "mandatory fifty"> fr </td>
+                <td>[tag1-fr, tag2-fr]</td>
+            </tr>
+        </tr>
+
+        <tr id="vcsReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> vcs </td>
+            <td >[string] Une chaîne en miniscule contenant le nom de la version du système de contrôle qui est utilisée pour la "release". Par exemple, git, svn, ..</td>
+        </tr>
+
+        <tr id="versionReleases" class="releaseColl collapse">
+            <td class = "twentyFive"> version </td>
+            <td>[string] La version de cette "release"</td>
+        </tr>
+    </tbody>
+    </table>
+</div><br>
+{% endif %}
