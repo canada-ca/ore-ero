@@ -91,14 +91,14 @@
             {% for admins in fptm %}
               {% assign admin = admins[1] %}
               {% for release in admin.releases %}
-                {% for license in release.permissions.licenses %}
-                  {% assign license_array = license_array | push: license %}
+                {% for license in release.licenses %}
+                  {% assign license_array = license_array | push: license.spdxID %}
                 {% endfor %}
               {% endfor %}
             {% endfor %}
           {% endfor %}
                     
-          {% assign license_array = license_array | group_by: "name" | sort: "name" %}
+          {% assign license_array = license_array | group_by: "" | sort: "name" %}
           {% for license in license_array %}
             <option value="{{ license.name }}">{{ license.name }}</option>
           {% endfor %}
@@ -184,8 +184,8 @@
             <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify }}">{{ release.name[page.lang] }}</a></td>
             <td>{{ release.description[page.lang] }}</td>
             <td>
-              {% for license in release.permissions.licenses %}
-                <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
+              {% for license in release.licenses %}
+                <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
               {% endfor %}
             </td>
             <td>
@@ -231,8 +231,8 @@
           </a>
         </p>
         <p>Licence(s):
-          {% for license in release.permissions.licenses %}
-            <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.name }}</a>&nbsp;
+          {% for license in release.licenses %}
+            <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
           {% endfor %}
         </p>
         <h3>Contact</h3>
