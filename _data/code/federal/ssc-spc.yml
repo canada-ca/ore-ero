@@ -1,9 +1,13 @@
 --- 
+schemaVersion: "1.0"
 adminCode: ssc-spc
 releases: 
   - 
     contact: 
       email: Peter.Silva@canada.ca
+    date: 
+      created: "2013-10-06"
+      metadataLastUpdated: "2019-01-31"
     description: 
       en: "Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always"
       fr: "Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam"
@@ -13,13 +17,12 @@ releases:
     name: 
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
-            fr: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
-          name: GPL-2.0
+    licenses: 
+      - 
+        URL: 
+          en: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
+          fr: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
+        spdxID: GPL-2.0
     repositoryURL: 
       en: "https://github.com/MetPX/sarracenia"
       fr: "https://github.com/MetPX/sarracenia"
@@ -33,5 +36,3 @@ releases:
         - Données
         - Communication
     vcs: git
-    version: "2.18"
-

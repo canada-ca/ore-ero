@@ -1,9 +1,13 @@
 --- 
+schemaVersion: "1.0"
 adminCode: eccc
 releases: 
   - 
     contact: 
       email: metro@ec.gc.ca
+    date: 
+      created: "2006-08-28"
+      metadataLastUpdated: "2019-01-31"
     description: 
       en: "The Model of the Environment and Temperature of Roads (METRo) is a road forecast software."
       fr: "Le Modèle de l'Environnement et de la Température de la Route (METRo) est un logiciel de prévision de la température de la route."
@@ -12,13 +16,12 @@ releases:
     name: 
       en: METRo
       fr: METRo
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
-            fr: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
-          name: GPL-2.0
+    licenses: 
+      - 
+        URL: 
+          en: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
+          fr: "https://framagit.org/metroprojects/metro/blob/master/LICENSE"
+        spdxID: GPL-2.0
     repositoryURL: 
       en: "https://framagit.org/metroprojects/metro"
       fr: "https://framagit.org/metroprojects/metro"
@@ -32,5 +35,3 @@ releases:
         - Température
         - Routes
     vcs: git
-    version: "3.3.2"
-

@@ -1,9 +1,13 @@
 --- 
+schemaVersion: "1.0"
 adminCode: tc
 releases: 
   - 
     contact: 
       email: thomas.gohard@tc.gc.ca
+    date: 
+      created: "2018-10-21"
+      metadataLastUpdated: "2019-01-18"
     description: 
       en: "Vehicle safety recalls Amazon Alexa Skill."
       fr: "Skill Amazon Alexa pour les rappels de sécurité pour les véhicules."
@@ -12,13 +16,12 @@ releases:
     name: 
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE"
-            fr: "https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE"
-          name: MIT
+    licenses: 
+      - 
+        URL: 
+          en: "https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE"
+          fr: "https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE"
+        spdxID: MIT
     repositoryURL: 
       en: "https://github.com/tc-ca/alexa-gc-recalls"
       fr: "https://github.com/tc-ca/alexa-gc-recalls"
@@ -34,5 +37,3 @@ releases:
         - Véhicules
         - Alexa
     vcs: git
-    version: "1.0"
-

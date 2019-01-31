@@ -1,9 +1,13 @@
 --- 
+schemaVersion: "1.0"
 adminCode: asc-csa
 releases: 
   - 
     contact: 
-      email: apogy@asc-csa.gc.ca
+      URL: https://projects.eclipse.org/projects/technology.apogy/contact
+    date: 
+      created: "2015-09-28"
+      metadataLastUpdated: "2019-01-31"
     description: 
       en: "The one-stop-shop solution for operating robots, satellites and beyond"
       fr: "Un logiciel polyvalent pour faire fonctionner des robots et des satellites"
@@ -12,16 +16,15 @@ releases:
     name: 
       en: Apogy
       fr: Apogy
-    permissions: 
-      licenses: 
-        - 
-          URL: 
-            en: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-en.txt"
-            fr: "https://bitbucket.org/apogy/ca.gc.asc_csa.apogy/src/747025c088c08234105d84ebbf931b2d3100bcea/License-fr.txt"
-          name: EPL-1.0
+    licenses: 
+      - 
+        URL: 
+          en: "https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE"
+          fr: "https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE"
+        spdxID: EPL-1.0
     repositoryURL: 
-      en: "https://gitlab.com/apogy/ca-gc-asc_csa-apogy-ots"
-      fr: "https://gitlab.com/apogy/ca-gc-asc_csa-apogy-ots"
+      en: "https://git.eclipse.org/c/apogy/apogy.git"
+      fr: "https://git.eclipse.org/c/apogy/apogy.git"
     tags: 
       en: 
         - Robots
@@ -30,4 +33,3 @@ releases:
         - Robots
         - Espace
     vcs: git
-    version: "0.1.0"
