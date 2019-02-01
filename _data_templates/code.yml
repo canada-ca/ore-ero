@@ -32,7 +32,7 @@ releases:
       en: "[mandatory] [string] The name of the release in English."
       fr: "[mandatory] [string] ~"
     organization: 
-      en: "[string] [string] The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'."
+      en: "[string] The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'."
       fr: "[string] ~"
     partners:
     ## [array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.
