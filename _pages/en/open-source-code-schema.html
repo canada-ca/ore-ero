@@ -8,6 +8,300 @@ permalink: /open-source-code-schema.html
 <h1>Metadata Schema for Open Source Code</h1>
 <p>The metadata schema for the <a href="open-source-code.html">Open Source Code</a> section.</p>
 <p>Data files are hosted on <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.
-<p>Mandatory fields are marked in dark blue</p>
+<p>Mandatory fields are marked in dark blue.</p>
 
-{% include oscSchemaData.html %}
+
+<ul class="list-unstyled">
+    <li>
+    <details> 
+        <summary>Field Name</summary>
+        <p>Description</p> 
+    </details>
+    </li>  
+            
+    <li>
+    <details> 
+        <summary class="bg-primary">schemaVersion</summary>
+        <p>[string] The version of the ORE data schema for Code used. For example, 1.0</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details> 
+        <summary class="bg-primary"> adminCode </summary>
+        <p>[string] Administration code - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details>   
+        <summary class="bg-primary"> releases </summary>
+        <p>[array] Contains objects representing each versioned source code release made available.</p>            
+
+        <li>
+        <details> 
+            <summary class="bg-primary">contact</summary>
+            
+            <details>
+                <summary>URL</summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The URL to a website that can be used to reach the point of contact.</p>
+                </details>
+
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+            </details>
+    
+            <details>
+                <summary class="bg-primary">email</summary>
+                <p>[string] An email address to contact the release.</p>
+            </details>
+
+            <details>
+                <summary>name</summary>
+                <p>[string] The name of a contact or team for the release.</p>
+            </details>
+
+            <details>
+                <summary>phone</summary>
+                <p>[string] The phone number to contact a release.</p>
+            </details>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> date </summary>
+            <details>
+                <summary class="bg-primary">created</summary>
+                <p>[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.</p>
+            </details>
+
+            <details>
+                <summary>lastModified</summary>
+                <p>[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</p>
+            </details>
+
+            <details>
+                <summary class="bg-primary">metaLastUpdated</summary>
+                <p>[string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> description </summary>
+            <details>
+                <summary>en</summary>
+                <p>[string] A one- or two-sentence description of the release.</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[string] ~</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> downloadURL </summary>
+            <details>
+                <summary>en</summary>
+                <p>[string] The URL where a distribution of the release can be found.</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[string] ~</p>
+            </details>
+        </details> 
+        </li>
+                
+        <li>
+        <details> 
+            <summary> homepageURL </summary>
+            <details>
+                <summary>en</summary>
+                <p>[string] The URL of the public release homepage.</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[string] ~</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> languages </summary>
+            <p>[array] A list of strings with the names of the programming languages in use on the release [lang1, lang2]</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> name </summary>
+            <details>
+                <summary>en</summary>
+                <p>[string] The name of the release in English.</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[string] ~</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> organization </summary>
+            <details>
+                <summary>en</summary>
+                <p>[string] The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'.</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[string] ~</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary>partner</summary>
+            <p>[array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</p>
+            <details>
+                <summary>URL</summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The URL to a website that can be used to reach the partner.</p>
+                </details>
+
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+            </details>
+    
+            <details>
+                <summary>email</summary>
+                <p>[string] The email address for the point of contact at the partner agency.</p>
+            </details>
+
+            <details>
+                <summary>name</summary>
+                <p>[string] The name of the partner of the point of contact.</p>
+            </details>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary">licenses</summary>
+            <p>[array of objects] An object containing license details.</p>
+            <details>
+                <summary>URL</summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The URL of the release license.</p>
+                </details>
+
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+            </details>
+    
+            <details>
+                <summary>spdxID</summary>
+                <p>[string] SPDX License identifier - https://spdx.org/licenses/.</p>
+            </details>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> repositoryURL </summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The URL of the public release repository for open source repositories.</p>
+                </details>
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> relatedCode </summary>
+            <p>[array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.</p>
+            <details>
+                <summary>Url</summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The URL where the software can be found.</p>
+                </details>
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+            </details>
+    
+            <details>
+                <summary>name</summary>
+                <details>
+                    <summary>en</summary>
+                    <p>[string] The name of the software used in this release.</p>
+                </details>
+                <details>
+                    <summary>fr</summary>
+                    <p>[string] ~</p>
+                </details>
+            </details>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> status </summary>
+            <p>[string] The development status of the release. For example, Production, Beta, ..</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> tags </summary>
+            <p>[array] An array of keywords that will be helpful in discovering and searching for the release.</p>
+            <details>
+                <summary>en</summary>
+                <p>[tag1-en, tag2-en]</p>
+            </details>
+            <details>
+                <summary>fr</summary>
+                <p>[tag1-fr, tag2-fr]</p>
+            </details>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> vcs </summary>
+            <p>[string] A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, ..</p>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> version </summary>
+            <p>[string] The version for this release. For example, 1.0.0.</p>
+        </details> 
+        </li>  
+            
+    </details>
+    </li>  
+</ul>
