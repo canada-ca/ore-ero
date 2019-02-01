@@ -246,7 +246,7 @@
           <p><a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a></p>
         {% endif %}
         {% if release.contact.URL != nil %}
-          <p><a href="{{ release.contact.URL }}" target="_blank">{{ release.contact.URL }}</a></p>
+          <p><a href="{{ release.contact.URL[page.lang] }}" target="_blank">{{ release.contact.URL[page.lang] }}</a></p>
         {% endif %}
         </div>
       </section>
