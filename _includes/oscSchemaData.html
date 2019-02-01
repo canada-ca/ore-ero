@@ -1,0 +1,850 @@
+{% if page.lang == 'en' %}
+<ul class="list-unstyled">
+    <li>
+    <details> 
+        <summary>Field Name</summary>
+        <p>Description</p> 
+    </details>
+    </li>  
+            
+    <li>
+    <details> 
+        <summary class="bg-primary">schemaVersion</summary>
+        <p>[string] The version of the ORE data schema for Code used. For example, 1.0</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details> 
+        <summary class="bg-primary"> adminCode </summary>
+        <p>[string] Administration code - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details>   
+        <summary class="bg-primary"> releases </summary>
+        <p>[array] Contains objects representing each versioned source code release made available.</p>            
+
+        <li>
+        <details> 
+            <summary class="bg-primary">contact</summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>The URL to a website that can be used to reach the point of contact.</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <tr class="bg-primary">
+                    <td>email</td>
+                    <td>[string] An email address to contact the release.</td>
+                </tr>
+
+                <tr>
+                    <td>name</td>
+                    <td>[string] The name of a contact or team for the release.</td>
+                </tr>
+
+                <tr>
+                    <td>phone</td>
+                    <td>[string] The phone number to contact a release.</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> date </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-primary">
+                    <td>created</td>
+                    <td>[string] The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.</td>
+                </tr>
+                <tr>
+                    <td>lastModified</td>
+                    <td>[string] The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>metaLastUpdated</td>
+                    <td>[string] The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> description </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] A one- or two-sentence description of the release.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> downloadURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The URL where a distribution of the release can be found.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>
+                
+        <li>
+        <details> 
+            <summary> homepageURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The URL of the public release homepage.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> languages </summary>
+            <p>[array] A list of strings with the names of the programming languages in use on the release [lang1, lang2]</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> name </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The name of the release in English.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> organization </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The organization or component within the department of agency to which the release belong. For example, 'CDS'</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary>partner</summary>
+            <p>[array] An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>The URL to a website that can be used to reach the partner.</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <tr>
+                    <td>email</td>
+                    <td>The email address for the point of contact at the partner agency.</td>
+                </tr>
+
+                <tr>
+                    <td>name</td>
+                    <td>[string] The name of the partner of the point of contact.</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary">licenses</summary>
+            <p>[array of objects] An object containing license details.</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>The URL of the release license.</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <tr>
+                    <td>spdxId</td>
+                    <td>[string] SPDX License identifier - https://spdx.org/licenses/.</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> repositoryURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The URL of the public release repository for open source repositories.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> relatedCode </summary>
+            <p>[array] An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.</p>
+            <table class="table">
+            <thead>
+                    <tr>    
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Url</td>
+                        <td> -- </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="text-center">en</td>
+                        <td>[string] The URL where the software can be found.</td>
+                    </tr>
+    
+                    <td class="text-center">fr</td>
+                        <td>[string] ~</td>
+                    </tr>
+    
+                    <tr>
+                        <td>name</td>
+                        <td>--</td>
+                    </tr>
+     
+                    <tr>
+                        <td class="text-center">en</td>
+                        <td>[string] The name of the software used in this release.</td>
+                    </tr>
+    
+                    <td class="text-center">fr</td>
+                        <td>[string] ~</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> status </summary>
+            <p>[string] The development status of the release. For example, Production, Beta, ..</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> tags </summary>
+            <p>[array] An array of keywords that will be helpful in discovering and searching for the release.</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[tag1-en, tag2-en]</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[tag1-fr, tag2-fr]</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> vcs </summary>
+            <p>[string] A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, ..</p>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> version </summary>
+            <p>[string] The version for this release. For example, 1.0.0.</p>
+        </details> 
+        </li>  
+            
+    </details>
+    </li>  
+</ul>
+
+{% else %}
+
+<ul class="list-unstyled">
+    <li>
+    <details> 
+        <summary>Nom du champ</summary>
+        <p>Description</p> 
+    </details>
+    </li>  
+            
+    <li>
+    <details> 
+        <summary class="bg-primary">schemaVersion</summary>
+        <p>[string] La version du schéma de données ORE pour le code utilisé. Par exemple, 1.0</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details> 
+        <summary class="bg-primary"> adminCode </summary>
+        <p>[string] Le code d'administration - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details>   
+        <summary class="bg-primary"> releases </summary>
+        <p>[array] Contient des objets représentant chaque version de code source mise à disposition.</p>            
+
+        <li>
+        <details> 
+            <summary class="bg-primary">contact</summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] L'URL d'un site Web pouvant etre utilisé pour atteindre le contact</td>
+                </tr>
+
+                <tr class="bg-primary">
+                    <td>email</td>
+                    <td>[string] L'adresse courriel pour contacter la "release.</td>
+                </tr>
+
+                <tr>
+                    <td>name</td>
+                    <td>[string] Le nom d'un contact ou d'un département pour la "release".</td>
+                </tr>
+
+                <tr>
+                    <td>phone</td>
+                    <td>[string] Le numéro de téléphone pour contacter une "release".</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> date </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-primary">
+                    <td>created</td>
+                    <td>[string] La date de la "release" lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.</td>
+                </tr>
+                <tr>
+                    <td>lastModified</td>
+                    <td>[string] La date de la "release" lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.</td>
+                </tr>
+                <tr class="bg-primary">
+                    <td>metaLastUpdated</td>
+                    <td>[string] La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> description </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] ~</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] Description en une ou deux phrases de "release"</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> downloadURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] ~</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] L'URL où une distribution de la "release" peut être trouvée</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>
+                
+        <li>
+        <details> 
+            <summary> homepageURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] ~</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] L'URL de la page d'accueil de "release" publique.</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> languages </summary>
+            <p>[array] Une lsite de chaîne avec les noms de langages de programmation utilisés dans la version. [lang1, lang2]</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> name </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] ~</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] Le nom de la "release" en français.</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary> organization </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] L'organization ou la composante du département de l'agence à laquelle la release appartient. Par exemple, "CDS" ou "Gouvernement ouvert".</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] ~</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary>partner</summary>
+            <p>[array] Un tableau d'objets comprenant un acronyme pour chaque agence partenaire de la "release" et l'adresse courriel de cette agence.</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] L'URL d'un site Web qui peut être utilisé pour atteindre le partenaire.</td>
+                </tr>
+
+                <tr>
+                    <td>email</td>
+                    <td>[string] L'adresse courriel du contact de l'agence partenaire.</td>
+                </tr>
+
+                <tr>
+                    <td>name</td>
+                    <td>[string] Le nom du partenaire de contact.</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary">licenses</summary>
+            <p>[array of objects] Un objet contenant les détails de la license.</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Url</td>
+                    <td> -- </td>
+                </tr>
+
+                <tr>
+                    <td class="text-center">en</td>
+                    <td>[string] ~</td>
+                </tr>
+
+                <td class="text-center">fr</td>
+                    <td>[string] L'URL de la license de "release</td>
+                </tr>
+
+                <tr>
+                    <td>spdxId</td>
+                    <td>[string] identifiant de license SPDX - https://spdx.org/licenses/.</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </details>
+        </li>
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> repositoryURL </summary>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[string] The URL of the public release repository for open source repositories.</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[string] L'URL du répertoire de la "release" publique pour les répertoires sources ouverts.</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+
+        <li>
+        <details> 
+            <summary> relatedCode </summary>
+            <p>[array] Un ensemble de code source, de bibliothèques, de frameworks, d'API, de plateformes ou d'autres logiciels utilisés dans cette "release".</p>
+            <table class="table">
+            <thead>
+                    <tr>    
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Url</td>
+                        <td> -- </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="text-center">en</td>
+                        <td>[string] L'URL où le logiciel peut être trouvé.</td>
+                    </tr>
+    
+                    <td class="text-center">fr</td>
+                        <td>[string] ~</td>
+                    </tr>
+    
+                    <tr>
+                        <td>name</td>
+                        <td>--</td>
+                    </tr>
+        
+                    <tr>
+                        <td class="text-center">en</td>
+                        <td>[string] ~</td>
+                    </tr>
+    
+                    <td class="text-center">fr</td>
+                        <td>[string] Le nom du logiciel utilisé dans cette "release"</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> status </summary>
+            <p>[string] Le statut de développement de la version. Par exemple, Production, Beta, ..</p>
+        </details> 
+        </li>  
+
+        <li>
+        <details> 
+            <summary class="bg-primary"> tags </summary>
+            <p>[array] Un ensemble de mots clés qui seront utiles pour la decouverte et la recherche de la "release".</p>
+            <table class="table">
+            <thead>
+                <tr>    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>en</td>
+                    <td>[tag1-en, tag2-en]</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>[tag1-fr, tag2-fr]</td>
+                </tr>
+            </tbody>
+            </table>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> vcs </summary>
+            <p>[string] Une chaîne en miniscule contenant le nom de la version du système de contrôle qui est utilisée pour la "release". Par exemple, git, svn, ..</p>
+        </details> 
+        </li>  
+
+        <li> 
+        <details> 
+            <summary> version </summary>
+            <p>[string] La version de cette "release". Par exemple, 1.0.0.</p>
+        </details> 
+        </li>  
+            
+    </details>
+    </li>  
+</ul>    
+{% endif %}
