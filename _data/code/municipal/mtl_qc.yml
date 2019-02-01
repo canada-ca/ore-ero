@@ -4,7 +4,9 @@ adminCode: mtl_qc
 releases: 
   - 
     contact: 
-      URL: https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
+      URL: 
+        en: https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
+        fr: https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
     date: 
       created: "2014-02-14"
       metadataLastUpdated: "2019-01-29"

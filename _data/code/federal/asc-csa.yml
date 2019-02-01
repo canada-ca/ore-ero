@@ -4,7 +4,9 @@ adminCode: asc-csa
 releases: 
   - 
     contact: 
-      URL: https://projects.eclipse.org/projects/technology.apogy/contact
+      URL:
+        en: https://projects.eclipse.org/projects/technology.apogy/contact
+        fr: https://projects.eclipse.org/projects/technology.apogy/contact
     date: 
       created: "2015-09-28"
       metadataLastUpdated: "2019-01-31"
