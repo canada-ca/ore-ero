@@ -4,7 +4,9 @@ adminCode: edmonton_ab
 releases: 
   - 
     contact: 
-      URL: https://github.com/yeg-relief/youcanbenefit/issues
+      URL: 
+        en: https://github.com/yeg-relief/youcanbenefit/issues
+        fr: https://github.com/yeg-relief/youcanbenefit/issues
     date: 
       created: "2016-06-16"
       metadataLastUpdated: "2019-01-29"

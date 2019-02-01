@@ -4,7 +4,9 @@ adminCode: bc
 releases: 
   - 
     contact: 
-      URL: https://github.com/BCDevExchange/devex/issues
+      URL: 
+        en: https://github.com/BCDevExchange/devex/issues
+        fr: https://github.com/BCDevExchange/devex/issues
       email: bcdevexchange@gov.bc.ca
     date: 
       created: "2016-10-23"
