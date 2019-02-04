@@ -11,7 +11,7 @@
     <a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a>
   </li>
 </ul>
-<header role="banner">
+<header>
   <div id="wb-bnr" class="container">
     <section id="wb-lng" class="visible-md visible-lg text-right">
       <h2 class="wb-inv">{{ site.LanguageSelection[page.lang] }}</h2>
@@ -39,7 +39,7 @@
     <div class="row">
       <div class="brand col-xs-8 col-sm-9 col-md-6">
         <a href="https://www.canada.ca/en.html">
-          <object type="image/svg+xml" tabindex="-1" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/sig-blk-{{ page.lang }}.svg"></object>
+          <img src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/sig-blk-{{ page.lang }}.svg" alt="">
           <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
         </a>
       </div>
@@ -71,14 +71,14 @@
     </div>
   </div>
 
-  <nav role="navigation" id="wb-sm" data-ajax-replace="https://cdn.canada.ca/gcweb-cdn-live/sitemenu/sitemenu-{{ page.lang }}.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+  <nav id="wb-sm" data-ajax-replace="https://cdn.canada.ca/gcweb-cdn-live/sitemenu/sitemenu-{{ page.lang }}.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
     <div class="container nvbar">
       <h2>{{ site.TopicsMenu[page.lang] }}</h2>
       <div class="row"></div>
     </div>
   </nav>
 
-  <nav role="navigation" id="wb-bc" property="breadcrumb">
+  <nav id="wb-bc" property="breadcrumb">
     <h2>{{ site.YouAreHere[page.lang] }}:</h2>
     <div class="container">
       <div class="row">
@@ -97,4 +97,4 @@
   </nav>
 </header>
 
-<main role="main" property="mainContentOfPage" class="container">
+<main property="mainContentOfPage" class="container">
