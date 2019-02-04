@@ -156,6 +156,16 @@
         <th>Organization</th>
         <th>Code Repo</th>
         <th>Level</th>
+        <th>Langage</th>
+        <th>Admin Code</th>
+        <th>Status</th>
+        <th>Vcs</th>
+        <th>Related Code</th>
+        <th>Download URL</th>
+        <th>Version</th>
+        <th>Repository URL</th>
+        <th>Home Page URL</th>
+        <th>Date</th>
       </tr>
     </thead>
     <tbody>
@@ -209,10 +219,9 @@
                 {{ langauge }}&nbsp;
                 {% endfor %}
             </td>
-
             <td>
-                {% for adminCodee in admin.adminCode %}
-                {{ adminCodee }}&nbsp;
+                {% for adminCode in admin.adminCode %}
+                {{ adminCode }}&nbsp;
                 {% endfor %}
             </td>
             <td>
