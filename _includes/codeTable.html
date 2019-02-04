@@ -143,7 +143,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14,15,16,17], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14,15,16], "visible": false}], "paging": false}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -154,16 +154,16 @@
         <th>Organization</th>
         <th>Code Repo</th>
         <th>Level</th>
+        <th>Download URL</th>
+        <th>Home Page URL</th>
         <th>Langage</th>
-        <th>Admin Code</th>
+        <th>Related Code</th>
         <th>Status</th>
         <th>Vcs</th>
-        <th>Related Code</th>
-        <th>Download URL</th>
-        <th>Version</th>
-        <th>Repository URL</th>
-        <th>Home Page URL</th>
-        <th>Date</th>
+        <th>Version</th> 
+        <th>Creation Date</th> 
+        <th>MetaData Last Updated</th> 
+
       </tr>
     </thead>
     <tbody>
@@ -213,54 +213,39 @@
               {{fptms[0] | capitalize}}
             </td>
             <td>
+              <a href= "{{ release.downloadURL[page.lang] }}" target="_blank"> 
+                {{ release.downloadURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }} 
+              </a>
+            </td>
+            <td>
+              <a href= "{{ release.homepageURL[page.lang] }}" target="_blank"> 
+                {{ release.homepageURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip}} 
+              </a>
+            </td>
+            <td>
                 {% for langauge in release.languages %}
                 {{ langauge }}&nbsp;
                 {% endfor %}
             </td>
             <td>
-                {% for adminCode in admin.adminCode %}
-                {{ adminCode }}&nbsp;
-                {% endfor %}
-            </td>
-            <td>
-                {% for status in release.status %}
-                {{ status }}&nbsp;
-                {% endfor %}
-            </td>
-            <td>
-                {% for vcs in release.vcs %}
-                {{ vcs }}&nbsp;
-                {% endfor %}
-            </td>
-            <td>
                 {% for relatedCode in release.relatedCode %}
-                {{ relatedCode }}&nbsp;
+                <a href= "{{ relatedCode.URL[page.lang] }}"> {{ relatedCode.name[page.lang] }} </a>
                 {% endfor %}
             </td>
             <td>
-                {% for downloadURL in release.downloadURL %}
-                {{ downloadURL }}&nbsp;
-                {% endfor %}
+                {{ release.status }}&nbsp;
             </td>
             <td>
-                {% for version in release.version %}
-                {{ version }}&nbsp;
-                {% endfor %}
+                {{ release.vcs }}&nbsp;
             </td>
             <td>
-                {% for repositoryURL in release.repositoryURL %}
-                {{ repositoryURL }}&nbsp;
-                {% endfor %}
+                {{ release.version }}&nbsp;
             </td>
             <td>
-                {% for homepageURL in release.homepageURL %}
-                {{ homepageURL }}&nbsp;
-                {% endfor %}
+                {{ release.date.created }}&nbsp;
             </td>
             <td>
-                {% for date in release.date %}
-                {{ date }}&nbsp;
-                {% endfor %}
+                {{ release.date.metadataLastUpdated }}&nbsp;
             </td>
           </tr>
           {% endfor %}
