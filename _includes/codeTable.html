@@ -4,7 +4,7 @@
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-        <label for="dt_govLevel">Level of government</label>
+        <label for="dt_govLevel">Level of Government</label>
         <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
           <option value=""></option>
           {% for fptms in site.data.code %}
@@ -143,7 +143,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14,15,16], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": false}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -153,16 +153,14 @@
         <th>Tags</th>
         <th>Organization</th>
         <th>Code Repo</th>
-        <th>Level</th>
-        <th>Download URL</th>
-        <th>Home Page URL</th>
+        <th>Level of Government</th>
         <th>Langage</th>
         <th>Related Code</th>
         <th>Status</th>
         <th>Vcs</th>
         <th>Version</th> 
-        <th>Creation Date</th> 
-        <th>MetaData Last Updated</th> 
+        <th>Created</th> 
+        <th>Metadata Last Updated</th> 
 
       </tr>
     </thead>
@@ -213,39 +211,29 @@
               {{fptms[0] | capitalize}}
             </td>
             <td>
-              <a href= "{{ release.downloadURL[page.lang] }}" target="_blank"> 
-                {{ release.downloadURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }} 
-              </a>
-            </td>
-            <td>
-              <a href= "{{ release.homepageURL[page.lang] }}" target="_blank"> 
-                {{ release.homepageURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip}} 
-              </a>
-            </td>
-            <td>
-                {% for langauge in release.languages %}
+              {% for langauge in release.languages %}
                 {{ langauge }}&nbsp;
-                {% endfor %}
+              {% endfor %}
             </td>
             <td>
-                {% for relatedCode in release.relatedCode %}
-                <a href= "{{ relatedCode.URL[page.lang] }}"> {{ relatedCode.name[page.lang] }} </a>
-                {% endfor %}
+              {% for relatedCode in release.relatedCode %}
+                <a href= "{{ relatedCode.URL[page.lang] }}">{{ relatedCode.name[page.lang] }}</a>
+              {% endfor %}
             </td>
             <td>
                 {{ release.status }}&nbsp;
             </td>
             <td>
-                {{ release.vcs }}&nbsp;
+              {{ release.vcs }}&nbsp;
             </td>
             <td>
-                {{ release.version }}&nbsp;
+              {{ release.version }}&nbsp;
             </td>
             <td>
-                {{ release.date.created }}&nbsp;
+              {{ release.date.created }}&nbsp;
             </td>
             <td>
-                {{ release.date.metadataLastUpdated }}&nbsp;
+              {{ release.date.metadataLastUpdated }}&nbsp;
             </td>
           </tr>
           {% endfor %}
