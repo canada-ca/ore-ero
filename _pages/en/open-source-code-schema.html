@@ -91,6 +91,7 @@ permalink: /open-source-code-schema.html
                         <p>The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
+                    <li>
                     <details>
                         <summary><span class="bg-primary">metadataLastUpdated</span> [string]</summary>
                         <p>The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</p>
@@ -106,13 +107,13 @@ permalink: /open-source-code-schema.html
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>A one- or two-sentence description of the release.</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>~</p>
                     </details>
                 </ul>
@@ -160,23 +161,23 @@ permalink: /open-source-code-schema.html
             <li>
             <details> 
                 <summary>languages [array]</summary>
-                <p>A list of strings with the names of the programming languages in use on the release [lang1, lang2]</p>
+                <p>A list of strings with the names of the programming languages in use on the release.</p>
             </details>
             </li>
 
             <li>
             <details> 
-                <summary><span class="bg-primary">name</span> [string]</summary>
+                <summary><span class="bg-primary">name</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>The name of the release in English.</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>~</p>
                     </details>
                 </ul>
@@ -204,7 +205,7 @@ permalink: /open-source-code-schema.html
 
             <li>
             <details> 
-                <summary>Partner [array]</summary>
+                <summary>partners [array]</summary>
                 <p>An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</p>
                 <ul class="list-unstyled">
                     <li>
@@ -244,22 +245,22 @@ permalink: /open-source-code-schema.html
 
             <li>
             <details> 
-                <summary><span class="bg-primary">licenses</span> [array of objects]</summary>
-                <p>An object containing license details.</p>
+                <summary><span class="bg-primary">licenses</span> [array]</summary>
+                <p>An array of objects containing license details.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>URL [array]</summary>
+                        <summary><span class="bg-primary">URL</span> [array]</summary>
                         <ul class="list-unstyled">
                             <li>
                             <details>
-                                <summary>en [string]</summary>
+                                <summary><span class="bg-primary">en</span> [string]</summary>
                                 <p>The URL of the release license.</p>
                             </details>
                             </li>
                             <li>
                             <details>
-                                <summary>fr [string]</summary>
+                                <summary><span class="bg-primary">fr</span> [string]</summary>
                                 <p>~</p>
                             </details>
                             </li>
@@ -268,7 +269,7 @@ permalink: /open-source-code-schema.html
                     </li>
                     <li>
                     <details>
-                        <summary>spdxID [string]</summary>
+                        <summary><span class="bg-primary">spdxID</span> [string]</summary>
                         <p>SPDX License identifier - https://spdx.org/licenses/</p>
                     </details>
                     </li>
@@ -278,17 +279,17 @@ permalink: /open-source-code-schema.html
 
             <li>
             <details> 
-                <summary><span class="bg-primary">repositoryCode</span> [array]</summary>
+                <summary><span class="bg-primary">repositoryURL</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>The URL of the public release repository for open source repositories.</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>~</p>
                     </details>
                 </ul>
@@ -343,14 +344,14 @@ permalink: /open-source-code-schema.html
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
-                        <p>[tag1-en, tag2-en]</p>
+                        <summary><span class="bg-primary">en</span> [array]</summary>
+                        <p>A list of strings</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
-                        <p>[tag1-en, tag2-en]</p>
+                        <summary><span class="bg-primary">fr</span> [array]</summary>
+                        <p>~</p>
                     </details>
                 </ul>
             </details>

@@ -10,7 +10,6 @@ permalink: /code-source-ouvert-schema.html
 <p>Les données utilisées pour générer cette liste est hébergé sur <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.</p>
 <p>Les champs obligatoires sont marqués en bleu foncé.</p>
 
-
 <ul class="list-unstyled">
     <li>
     <details> 
@@ -92,6 +91,7 @@ permalink: /code-source-ouvert-schema.html
                         <p>La date de la "release" lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.</p>
                     </details>
                     </li>
+                    <li>
                     <details>
                         <summary><span class="bg-primary">metadataLastUpdated</span> [string]</summary>
                         <p>La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.</p>
@@ -107,13 +107,13 @@ permalink: /code-source-ouvert-schema.html
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>~</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>Description en une ou deux phrases de "release"</p>
                     </details>
                 </ul>
@@ -161,23 +161,23 @@ permalink: /code-source-ouvert-schema.html
             <li>
             <details> 
                 <summary>languages [array]</summary>
-                <p>Une lsite de chaîne avec les noms de langages de programmation utilisés dans la version. [lang1, lang2]</p>
+                <p>Une liste de chaîne avec les noms de langages de programmation utilisés dans la version. [lang1, lang2]</p>
             </details>
             </li>
 
             <li>
             <details> 
-                <summary><span class="bg-primary">name</span> [string]</summary>
+                <summary><span class="bg-primary">name</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>~</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>Le nom de la "release" en français.</p>
                     </details>
                 </ul>
@@ -205,7 +205,7 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details> 
-                <summary>Partner [array]</summary>
+                <summary>Partners [array]</summary>
                 <p>Un tableau d'objets comprenant un acronyme pour chaque agence partenaire de la "release" et l'adresse courriel de cette agence.</p>
                 <ul class="list-unstyled">
                     <li>
@@ -245,22 +245,22 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details> 
-                <summary><span class="bg-primary">licenses</span> [array of objects]</summary>
-                <p>Un objet contenant les détails de la license.</p>
+                <summary><span class="bg-primary">licenses</span> [array]</summary>
+                <p>Un ensemble d'objet contenant les détails de la license.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>URL [array]</summary>
+                        <summary><span class="bg-primary">URL</span> [array]</summary>
                         <ul class="list-unstyled">
                             <li>
                             <details>
-                                <summary>en [string]</summary>
+                                <summary><span class="bg-primary">en</span> [string]</summary>
                                 <p>~</p>
                             </details>
                             </li>
                             <li>
                             <details>
-                                <summary>fr [string]</summary>
+                                <summary><span class="bg-primary">fr</span> [string]</summary>
                                 <p>L'URL de la license de "release"</p>
                             </details>
                             </li>
@@ -269,7 +269,7 @@ permalink: /code-source-ouvert-schema.html
                     </li>
                     <li>
                     <details>
-                        <summary>spdxID [string]</summary>
+                        <summary><span class="bg-primary">spdxID</span> [string]</summary>
                         <p>Identifiant de licence SPDX - https://spdx.org/licenses/</p>
                     </details>
                     </li>
@@ -279,17 +279,17 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details> 
-                <summary><span class="bg-primary">repositoryCode</span> [array]</summary>
+                <summary><span class="bg-primary">repositoryURL</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
                         <p>~</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
                         <p>L'URL du répertoire de la "release" publique pour les répertoires sources ouverts.</p>
                     </details>
                 </ul>
@@ -344,14 +344,14 @@ permalink: /code-source-ouvert-schema.html
                 <ul class="list-unstyled">
                     <li>
                     <details>
-                        <summary>en [string]</summary>
-                        <p>[tag1-en, tag2-en]</p>
+                        <summary><span class="bg-primary">en</span> [string]</summary>
+                        <p>Une liste de strings</p>
                     </details>
                     </li>
                     <li>
                     <details>
-                        <summary>fr [string]</summary>
-                        <p>[tag1-en, tag2-en]</p>
+                        <summary><span class="bg-primary">fr</span> [string]</summary>
+                        <p>Une liste de strings</p>
                     </details>
                 </ul>
             </details>
