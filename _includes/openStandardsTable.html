@@ -9,7 +9,7 @@
       <div class="form-group">
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
-          <option value=""></option>
+          <option value="">&nbsp;</option>
           {% assign tag_array = "" | split: ',' %}
           {% for standards in site.data.normes_ouvertes-open_standards %}
             {% assign standard = standards[1] %}
@@ -94,7 +94,7 @@
 
 {% endfor %}
 
-
+</div>
 
 
 
