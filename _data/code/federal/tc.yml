@@ -37,3 +37,36 @@ releases:
         - Véhicules
         - Alexa
     vcs: git
+  - 
+    contact: 
+      email: Heather.MacKeen@tc.gc.ca
+    date: 
+      created: "2018-10-14"
+      metadataLastUpdated: "2018-10-29"
+    description: 
+      en: "The Reference Centre is .net WPF application that was designed for Transport Canada Inspectors to quickly retrieve documents stored on a network drive that was setup with Windows Sync (Always Available Offline)."
+      fr: "Le Centre de référence est une application WPF .net conçue pour permettre aux inspecteurs de Transports Canada de récupérer rapidement les documents stockés sur un lecteur réseau configuré avec Windows Sync.."
+    languages: 
+      - C#
+    name: 
+      en: reference-center
+      fr: reference-center
+    licenses: 
+      - 
+        URL: 
+          en: "https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE"
+          fr: "https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE"
+        spdxID: MIT
+    repositoryURL: 
+      en: "https://github.com/tc-ca/Reference-Centre"
+      fr: "https://github.com/tc-ca/Reference-Centre"
+    tags: 
+      en: 
+        - Files
+        - Sync
+        - Network
+      fr: 
+        - Fichiers
+        - Synchronisation
+        - Réseau
+    vcs: git
