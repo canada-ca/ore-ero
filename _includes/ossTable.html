@@ -9,7 +9,7 @@
       <div class="form-group">
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
-          <option value=""></option>
+          <option value="">&nbsp;</option>
           {% assign license_array = "" | split: ',' %}
           {% for logiciels in site.data.logiciels_libres-open_source_software %}
             {% assign oss = logiciels[1] %}
@@ -27,7 +27,7 @@
       <div class="form-group">
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
-          <option value=""></option>
+          <option value="">&nbsp;</option>
           {% assign tag_array = "" | split: ',' %}
           {% for logiciels in site.data.logiciels_libres-open_source_software %}
             {% assign oss = logiciels[1] %}
@@ -127,10 +127,7 @@
 
 {% endfor %}
 
-
-
-
-
+</div>
 
 
 
