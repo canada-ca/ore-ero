@@ -9,34 +9,85 @@ permalink: /open-source-code-orgs.html
 <ul class="list-unstyled">
    <li>
       <details>
-         <summary>Federal and Provincial</summary>
+         <summary>Federal</summary>
          <div class="list-group">
-            <a href="https://github.com/tc-ca/alexa-gc-recalls" class="list-group-item">@alexa-gc-recalls</a>
-            <a href="https://git.eclipse.org/c/apogy/apogy.git" class="list-group-item ">@Apogy</a>
-            <a href="https://bitbucket.org/cse-assemblyline/assemblyline" class="list-group-item">@Assemblyline</a>
-            <a href="https://github.com/wet-boew/wet-boew" class="list-group-item">@Boîte à outils de l’expérience Web (BOEW)</a>
-            <a href="https://github.com/ckan/ckanapi" class="list-group-item ">@ckanapi</a>
-            <a href="https://github.com/open-data/ckanext-canada" class="list-group-item">@ckanext-canada</a>
-            <a href="https://github.com/open-data/ckanext-cloudstorage" class="list-group-item">@ckanext-cloudstorage</a>
-            <a href="https://github.com/ckan/ckanext-fluent" class="list-group-item ">@ckanext-fluent</a>
-            <a href="https://github.com/open-data/ckanext-scheming" class="list-group-item">@ckanext-scheming</a>
-            <a href="https://github.com/nrc-cnrc/EGSnrc" class="list-group-item">@EGSnrc</a>
-            <a href="https://github.com/gctools-outilsgc/gcconnex" class="list-group-item ">@AGCconnex</a>
-            <a href="https://github.com/MetPX/sarracenia" class="list-group-item">@MetPX-Sarracenia</a>
-            <a href="https://framagit.org/metroprojects/metro" class="list-group-item">@METRo</a>
-            <a href="https://github.com/cds-snc/digital-canada-ca" class="list-group-item ">@Site Web SNC</a>
-            <a href="https://github.com/CommunicationsSecurityEstablishment/spartacus" class="list-group-item">@Spartacus</a>
-            <a href="https://github.com/BCDevExchange/devex" class="list-group-item">@Devex</a>
+           {% for fptms in site.data.code %}
+        {% assign fptm = fptms[1] %}
+        {% for admins in fptm %}
+          {% assign admin = admins[1] %}
+          {% for release in admin.releases %}
+          {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+          {% if aName[0].name[page.lang] != nil %}
+          <ul class="list-group">
+          <li class="list-group-item">
+          {% assign my_link =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+          <a href="{{ release.repositoryURL[page.lang] | remove: my_link[2]}}" target="_blank">
+                  {% assign my_array =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+                  {{my_array[1]}}
+              </a>
+              </li>
+              </ul>
+              {% endif %}
+              {% endfor %}
+        {% endfor %}
+      {% endfor %}
+
+         </div>
+      </details>
+   </li>
+    <li>
+      <details>
+         <summary>Provincial</summary>
+         <div class="list-group">
+           {% for fptms in site.data.code %}
+        {% assign fptm = fptms[1] %}
+        {% for admins in fptm %}
+          {% assign admin = admins[1] %}
+          {% for release in admin.releases %}
+          {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+         <ul class="list-group">
+          <li class="list-group-item">
+          {% assign my_link =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+          <a href="{{ release.repositoryURL[page.lang] | remove: my_link[2]}}" target="_blank">
+                  {% assign my_array =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+                  {{my_array[1] }}
+              </a>
+              </li>
+              </ul>
+              {% endif %}
+              {% endfor %}
+        {% endfor %}
+      {% endfor %}
+
          </div>
       </details>
    </li>
    <li>
       <details>
       <summary>Municipal</summary>
-      <div class="list-group">
-         <a href="https://github.com/VilledeMontreal/CKAN-Extension-Territoire" class="list-group-item">@CKAN-Extension-Territoire</a>
-         <a href="https://github.com/yeg-relief/youcanbenefit" class="list-group-item ">@YouCanBenefit</a>
-      </div>
+     <div class="list-group">
+           {% for fptms in site.data.code %}
+        {% assign fptm = fptms[1] %}
+        {% for admins in fptm %}
+          {% assign admin = admins[1] %}
+          {% for release in admin.releases %}
+          {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+          <ul class="list-group">
+          <li class="list-group-item">
+          {% assign my_link =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+          <a href="{{ release.repositoryURL[page.lang] | remove: my_link[2]}}" target="_blank">
+                  {% assign my_array =  release.repositoryURL[page.lang] | remove: "https://"| split: "/" %}
+                  {{my_array[1]}}
+              </a>
+              </li>
+              </ul>
+              {% endif %}
+              {% endfor %}
+        {% endfor %}
+      {% endfor %}
+         </div>
       <details>
    </li>
 </ul>
