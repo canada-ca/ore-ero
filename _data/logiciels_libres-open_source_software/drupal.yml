@@ -141,8 +141,21 @@ admininstrations:
     adminCode: statscan
     uses: 
       - 
-        contact: 
+        contact:
           email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
+    adminCode: tc
+    uses: 
+      - 
+        contact:
+          name: "Irina Krasteleva"
+          email: "irina.krasteleva@tc.gc.ca"
         name: 
           en: ~
           fr: ~

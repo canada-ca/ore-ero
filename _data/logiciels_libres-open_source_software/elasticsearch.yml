@@ -1,0 +1,31 @@
+---
+description: 
+  en: "Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases."
+  fr: "Elasticsearch est un moteur de recherche et d'analyse RESTful distribué, conçu pour répondre à une multitude de cas d'utilisation."
+homepageURL: 
+  en: "https://www.elastic.co/products/elasticsearch"
+  fr: "https://www.elastic.co/fr/products/elasticsearch"
+licenses: 
+  - Apache-2.0
+name: 
+  en: Elasticsearch
+  fr: Elasticsearch
+tags: 
+  en: 
+    - "Web site"
+  fr: 
+    - "Site web"
+admininstrations: 
+  - 
+    adminCode: tc
+    uses: 
+      - 
+        contact:
+          name: "Irina Krasteleva"
+          email: "irina.krasteleva@tc.gc.ca"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
