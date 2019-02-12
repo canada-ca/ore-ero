@@ -2,6 +2,6 @@ language: ruby
 rvm:
   - 2.6.0
 
-script: jekyll build  &&  htmlproofer --check_html --disable-external --allow-hash-href ./_site
+script: jekyll build  &&  htmlproofer --check_html --disable-external --allow-hash-href ./_site --url-ignore "/#.*/"
 
 sudo: false
