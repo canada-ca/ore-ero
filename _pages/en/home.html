@@ -46,6 +46,11 @@ permalink: home.html
   <div class="col-md-4 col-xs-12 pull-right">
     <section class="lnkbx">
       <h2>Latest Open Source Codes</h2>
+      {% assign dates = "" | split: "," %}
+      {% assign lastUpdated_array = "" | split: "," %}
+      {% assign projectName_array = "" | split: "," %}
+      {% assign repoUrl_array = "" | split: "," %}
+      
       <ul>
         <li><a href="#">[Project name]</a></li>
         <li><a href="#">[Project name]</a></li>
