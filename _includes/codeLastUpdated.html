@@ -1,0 +1,78 @@
+{% assign dates = "" | split: "," %}
+{% assign lastUpdated_array = "" | split: "," %}
+{% assign projectName_array = "" | split: "," %}
+{% assign repoUrl_array = "" | split: "," %}
+
+{% for fptms in site.data.code %}
+  {% assign fptm = fptms[1] %}
+  {% for admins in fptm %}
+    {% assign admin = admins[1] %}
+    {% for release in admin.releases %}
+      {% for date in release.date.metadataLastUpdated %}
+        {% assign d = date | date:"%Y%j" %}
+        {% assign dates = dates | push: d %}
+      {% endfor %}              
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+{% assign dates = dates | join: "," %}  
+{% assign dates_array = dates | split: "," %}
+{% assign dates_array = dates_array | uniq %}
+
+{% assign lastUpdated = dates_array | first %}
+{% for date in dates_array %}
+  {% if date >= lastUpdated %}  
+    {% assign lastUpdated = date %}
+  {% endif %}
+{% endfor %}
+{% assign lastUpdated_array = lastUpdated_array  | push: lastUpdated %}
+
+
+{% for i in (1..2) %}
+  {% assign dates_array_prime = "" | split: "," %}
+  {% for date in dates_array %}
+    {% if date != lastUpdated %}
+      {% assign dates_array_prime = dates_array_prime  | push: date %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign lastUpdatedPrime = dates_array_prime | first %}
+  {% for date in dates_array_prime %}
+    {% if date >= lastUpdatedPrime %}  
+      {% assign lastUpdatedPrime = date %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign lastUpdated_array = lastUpdated_array  | push: lastUpdatedPrime %}
+  {% assign dates_array = dates_array_prime %}
+  {% assign lastUpdated = lastUpdatedPrime %}
+{% endfor %}
+
+{% for lastUpdatedValue in lastUpdated_array %}
+  {% for fptms in site.data.code %}
+  {% assign fptm = fptms[1] %}
+  {% for admins in fptm %}
+    {% assign admin = admins[1] %}
+    {% for release in admin.releases %} 
+      {% for date in release.date.metadataLastUpdated %}
+        {% assign d = date | date:"%Y%j" %}
+        {% if d == lastUpdatedValue %}
+          {% assign projectName_array = projectName_array | push: release.name[page.lang] %}
+          {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}   
+        {% endif %} 
+      {% endfor %}   
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}  
+
+{% assign repo0 = repoUrl_array[0] %}
+{% assign repo1 = repoUrl_array[1] %}
+{% assign repo2 = repoUrl_array[2] %}
+
+<ul>
+  <li><a href="{{ repo0 }}" target="_blank">{{ projectName_array[0] }}</a></li>
+  <li><a href="{{ repo1 }}" target="_blank">{{ projectName_array[1] }}</a></li>
+  <li><a href="{{ repo2 }}" target="_blank">{{ projectName_array[2] }}</a></li>
+</ul>
