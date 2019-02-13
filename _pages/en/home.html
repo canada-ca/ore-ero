@@ -115,10 +115,14 @@ permalink: home.html
         {% endfor %}
       {% endfor %}  
 
+      {% assign repo0 = repoUrl_array[0] %}
+      {% assign repo1 = repoUrl_array[1] %}
+      {% assign repo2 = repoUrl_array[2] %}
+
       <ul>
-        <li><a href="#">[Project name]</a></li>
-        <li><a href="#">[Project name]</a></li>
-        <li><a href="#">[Project name]</a></li>
+        <li><a href="{{ repo0 }}" target="_blank">{{ projectName_array[0] }}</a></li>
+        <li><a href="{{ repo1 }}" target="_blank">{{ projectName_array[1] }}</a></li>
+        <li><a href="{{ repo2 }}" target="_blank">{{ projectName_array[2] }}</a></li>
       </ul>
     </section>
 
