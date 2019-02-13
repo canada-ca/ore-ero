@@ -68,6 +68,14 @@ permalink: home.html
       {% assign dates_array = dates | split: "," %}
       {% assign dates_array = dates_array | uniq %}
 
+      {% assign lastUpdated = dates_array | first %}
+      {% for date in dates_array %}
+        {% if date >= lastUpdated %}  
+          {% assign lastUpdated = date %}
+        {% endif %}
+      {% endfor %}
+      {% assign lastUpdated_array = lastUpdated_array  | push: lastUpdated %}
+
       <ul>
         <li><a href="#">[Project name]</a></li>
         <li><a href="#">[Project name]</a></li>
