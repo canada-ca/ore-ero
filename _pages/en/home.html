@@ -50,6 +50,19 @@ permalink: home.html
       {% assign lastUpdated_array = "" | split: "," %}
       {% assign projectName_array = "" | split: "," %}
       {% assign repoUrl_array = "" | split: "," %}
+
+      {% for fptms in site.data.code %}
+        {% assign fptm = fptms[1] %}
+        {% for admins in fptm %}
+          {% assign admin = admins[1] %}
+          {% for release in admin.releases %}
+            {% for date in release.date.metadataLastUpdated %}
+              {% assign d = date | date:"%Y%j" %}
+              {% assign dates = dates | push: d %}
+            {% endfor %}              
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
       
       <ul>
         <li><a href="#">[Project name]</a></li>
