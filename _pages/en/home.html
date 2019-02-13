@@ -63,7 +63,11 @@ permalink: home.html
           {% endfor %}
         {% endfor %}
       {% endfor %}
-      
+
+      {% assign dates = dates | join: "," %}  
+      {% assign dates_array = dates | split: "," %}
+      {% assign dates_array = dates_array | uniq %}
+
       <ul>
         <li><a href="#">[Project name]</a></li>
         <li><a href="#">[Project name]</a></li>
