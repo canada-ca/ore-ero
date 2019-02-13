@@ -223,7 +223,7 @@
               {% endfor %}
             </td>
             <td>
-                {{ release.status }}&nbsp;
+              {{ release.status }}&nbsp;
             </td>
             <td>
               {{ release.vcs }}&nbsp;
@@ -258,6 +258,25 @@
         </header>
         <div class="modal-body">
           <p><strong>{{ release.description[page.lang] }}</strong></p>
+          <p>Level of Government: {{fptms[0] | capitalize}}</p>
+          {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+          {% if aName[0].name[page.lang] != nil %}
+            <p>Administration: {{ aName[0].name[page.lang] }}</p>
+          {% endif %}
+          
+          {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
+          {% if aName[0].name[page.lang] != nil %}
+            <p>Administration: {{ aName[0].name[page.lang] }}</p>
+          {% endif %}
+          
+          {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
+          {% if aName[0].name[page.lang] != nil %}
+            <p>Administration: {{ aName[0].name[page.lang] }}</p>
+          {% endif %}
+
+        {% if release.organization[page.lang] != nil %}
+          <p>Organization: {{ release.organization[page.lang] }}</p>
+        {% endif %}
         <p>Source code:
           <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
               {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
@@ -268,6 +287,28 @@
             <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
           {% endfor %}
         </p>
+        <p>Tag(s): 
+          {% for tag in release.tags[page.lang] %}
+            {{ tag }}
+          {% endfor %}
+        </p>
+        <p>Language(s): 
+          {% for langauge in release.languages %}
+            {{ langauge }}
+          {% endfor %}
+        </p>
+        {% if release.status != nil %}
+          <p>Version: {{ release.status }}</p>
+        {% endif %}
+        {% if release.vcs != nil %}
+          <p>Version: {{ release.vcs }}</p>
+        {% endif %}
+        {% if release.version != nil %}
+          <p>Version: {{ release.version }}</p>
+        {% endif %}
+        <p>Created: {{ release.date.created }}</p>
+        <p>Last Updated: {{ release.date.metadataLastUpdated }}</p>
+
         <h3>Contact</h3>
         {% if release.contact.name != nil %}
           <p>{{ release.contact.name }}</p>
