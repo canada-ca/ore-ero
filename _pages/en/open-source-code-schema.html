@@ -7,66 +7,60 @@ permalink: /open-source-code-schema.html
 
 <h1 property="name" id="wb-cont">Metadata Schema for Open Source Code</h1>
 <p>The metadata schema for the <a href="open-source-code.html">Open Source Code</a> section.</p>
-<p>Data files are hosted on <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.
-<p>Mandatory fields are marked in dark blue.</p>
+<p>Data files are hosted on <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.</p>
+
+<h2>Version 1.0</h2>
+<p>Mandatory fields are marked with "<span class="bg-primary">mandatory</span>".</p>
+<p>We've created an <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/code_mandatory.yml" target="_blank">example file</a> with only mandatory fields you can use to get started.</p>
 
 <ul class="list-unstyled">
     <li>
-    <details> 
-        <summary><span class="bg-primary">schemaVersion</span> [string]</summary>
-        <p>The version of the ORE data schema for Code used. For example, 1.0</p>
+    <details open> 
+        <summary>schemaVersion <span class="bg-primary">mandatory</span> [string]</summary>
+        <p>The version of the ORE data schema for Code used.</p>
     </details> 
     </li>  
     
     <li>
-    <details> 
-        <summary><span class="bg-primary">adminCode</span> [string]</summary>
+    <details open> 
+        <summary>adminCode <span class="bg-primary">mandatory</span> [string]</summary>
         <p>Administration code - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</p>
-    </details> 
+    </details>
     </li>  
     
     <li>
-    <details>   
-        <summary><span class="bg-primary">releases</span> [array]</summary>
+    <details open>   
+        <summary>releases <span class="bg-primary">mandatory</span> [array]</summary>
         <p>Contains objects representing each versioned source code release made available.</p>            
         <ul class="list-unstyled">
             <li>
-            <details> 
-                <summary><span class="bg-primary">contact</span> [array]</summary>
+            <details open> 
+                <summary>contact <span class="bg-primary">mandatory</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
-                    <details>
+                    <details open>
                         <summary>URL [array]</summary>
-                        <ul class="list-unstyled">
-                            <li>
-                            <details>
-                                <summary>en [string]</summary>
-                                <p>The URL to a website that can be used to reach the point of contact.</p>
-                            </details>
-                            </li>
-                            <li>
-                            <details>
-                                <summary>fr [string]</summary>
-                                <p>~</p>
-                            </details>
-                            </li>
+                        <p>French and English URL that can be used to reach the point of contact.</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
-                    <details>
-                        <summary><span class="bg-primary">email</span> [string]</summary>
+                    <details open>
+                        <summary>email <span class="bg-primary">mandatory</span> [string]</summary>
                         <p>An email address to contact the release.</p>
                     </details>
                     </li>
                     <li>
-                    <details>
+                    <details open>
                         <summary>name [string]</summary>
                         <p>The name of a contact or team for the release.</p>
                     </details>
                     </li>
                     <li>
-                    <details>
+                    <details open>
                         <summary>phone [string]</summary>
                         <p>The phone number to contact a release.</p>
                     </details>
@@ -76,24 +70,24 @@ permalink: /open-source-code-schema.html
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">date</span> [array]</summary>
+            <details open> 
+                <summary>date <span class="bg-primary">mandatory</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
-                    <details>
-                        <summary><span class="bg-primary">created</span> [string]</summary>
+                    <details open>
+                        <summary>created <span class="bg-primary">mandatory</span> [string]</summary>
                         <p>The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
                     <li>
-                    <details>
+                    <details open>
                         <summary>lastModified [string]</summary>
                         <p>The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
                     <li>
-                    <details>
-                        <summary><span class="bg-primary">metadataLastUpdated</span> [string]</summary>
+                    <details open>
+                        <summary>metadataLastUpdated <span class="bg-primary">mandatory</span> [string]</summary>
                         <p>The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
@@ -102,141 +96,96 @@ permalink: /open-source-code-schema.html
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">description</span> [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">en</span> [string]</summary>
-                        <p>A one- or two-sentence description of the release.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">fr</span> [string]</summary>
-                        <p>~</p>
-                    </details>
+            <details open> 
+                <summary>description <span class="bg-primary">mandatory</span> [array]</summary>
+                <p>French and English description of the release.</p>
+                <ul>
+                    <li>en <span class="bg-primary">mandatory</span> [string]</li>
+                    <li>fr <span class="bg-primary">mandatory</span> [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>downloadURL [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary>en [string]</summary>
-                        <p>The URL where a distribution of the release can be found.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary>fr [string]</summary>
-                        <p>~</p>
-                    </details>
+                <p>French and English URL where a distribution of the release can be found.</p>
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>homepageURL [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary>en [string]</summary>
-                        <p>The URL of the public release homepage.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary>fr [string]</summary>
-                        <p>~</p>
-                    </details>
+                <p>French and English  URL of the release homepage.</p>
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>languages [array]</summary>
                 <p>A list of strings with the names of the programming languages in use on the release.</p>
             </details>
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">name</span> [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">en</span> [string]</summary>
-                        <p>The name of the release in English.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">fr</span> [string]</summary>
-                        <p>~</p>
-                    </details>
+            <details open> 
+                <summary>name <span class="bg-primary">mandatory</span> [array]</summary>
+                <p>French and English name of the release.</p>
+                <ul>
+                    <li>en <span class="bg-primary">mandatory</span> [string]</li>
+                    <li>fr <span class="bg-primary">mandatory</span> [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>organization [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary>en [string]</summary>
-                        <p>The organization or component within the department of agency to which the release belong. For example, 'CDS' or 'Open Government'.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary>fr [string]</summary>
-                        <p>~</p>
-                    </details>
+                <p>French and English name or organization or component within the department of agency to which the release belong.</p>
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>partners [array]</summary>
                 <p>An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</p>
                 <ul class="list-unstyled">
                     <li>
-                    <details>
+                    <details open>
                         <summary>URL [array]</summary>
-                        <ul class="list-unstyled">
-                            <li>
-                            <details>
-                                <summary>en [string]</summary>
-                                <p>The URL to a website that can be used to reach the partner.</p>
-                            </details>
-                            </li>
-                            <li>
-                            <details>
-                                <summary>fr [string]</summary>
-                                <p>~</p>
-                            </details>
-                            </li>
+                        <p>French and English URL to a website that can be used to reach the partner.</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
-                    <details>
+                    <details open>
                         <summary>email [string]</summary>
-                        <p>The email address for the point of contact at the partner agency.</p>
+                        <p>The email address for the point of contact of the partner.</p>
                     </details>
                     </li>
                     <li>
-                    <details>
-                        <summary>name [string]</summary>
-                        <p>The name of the partner of the point of contact.</p>
+                    <details open>
+                        <summary>name [array]</summary>
+                        <p>French and English name of the partner.</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
                     </details>
                     </li>
                 </ul>
@@ -244,32 +193,23 @@ permalink: /open-source-code-schema.html
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">licenses</span> [array]</summary>
+            <details open> 
+                <summary>licenses <span class="bg-primary">mandatory</span> [array]</summary>
                 <p>An array of objects containing license details.</p>
                 <ul class="list-unstyled">
                     <li>
-                    <details>
-                        <summary><span class="bg-primary">URL</span> [array]</summary>
-                        <ul class="list-unstyled">
-                            <li>
-                            <details>
-                                <summary><span class="bg-primary">en</span> [string]</summary>
-                                <p>The URL of the release license.</p>
-                            </details>
-                            </li>
-                            <li>
-                            <details>
-                                <summary><span class="bg-primary">fr</span> [string]</summary>
-                                <p>~</p>
-                            </details>
-                            </li>
+                    <details open>
+                        <summary>URL <span class="bg-primary">mandatory</span> [array]</summary>
+                        <p>French and English URL of the release license.</p>
+                        <ul>
+                            <li>en <span class="bg-primary">mandatory</span> [string]</li>
+                            <li>fr <span class="bg-primary">mandatory</span> [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
-                    <details>
-                        <summary><span class="bg-primary">spdxID</span> [string]</summary>
+                    <details open>
+                        <summary>spdxID <span class="bg-primary">mandatory</span> [string]</summary>
                         <p>SPDX License identifier - https://spdx.org/licenses/</p>
                     </details>
                     </li>
@@ -278,52 +218,39 @@ permalink: /open-source-code-schema.html
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">repositoryURL</span> [array]</summary>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">en</span> [string]</summary>
-                        <p>The URL of the public release repository for open source repositories.</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">fr</span> [string]</summary>
-                        <p>~</p>
-                    </details>
+            <details open> 
+                <summary>repositoryURL<span class="bg-primary">mandatory</span> [array]</summary>
+                <p>French and English URL of the public release repository for open source repositories.</p>
+                <ul>
+                    <li>en<span class="bg-primary">mandatory</span> [string]</li>
+                    <li>fr<span class="bg-primary">mandatory</span> [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>relatedCode [array]</summary>
                 <p>An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.</p>
                 <ul class="list-unstyled">
                     <li>
-                    <details>
+                    <details open>
                         <summary>URL [array]</summary>
-                        <ul class="list-unstyled">
-                            <li>
-                            <details>
-                                <summary>en [string]</summary>
-                                <p>The URL where the software can be found.</p>
-                            </details>
-                            </li>
-                            <li>
-                            <details>
-                                <summary>fr [string]</summary>
-                                <p>~</p>
-                            </details>
-                            </li>
+                        <p>French and English URL where the software can be found.</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
-                    <details>
-                        <summary>name [string]</summary>
-                        <p>The name of the software used in this release.</p>
+                    <details open>
+                        <summary>name [array]</summary>
+                        <p>French and English name of the software used in this release.</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
                     </details>
                     </li>
                 </ul>
@@ -331,41 +258,32 @@ permalink: /open-source-code-schema.html
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>status [string]</summary>
                 <p>The development status of the release. For example, Production, Beta, ..</p>
             </details>
             </li>
 
             <li>
-            <details> 
-                <summary><span class="bg-primary">tags</span> [array]</summary>
-                <p>An array of keywords that will be helpful in discovering and searching for the release.</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">en</span> [array]</summary>
-                        <p>A list of strings</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary><span class="bg-primary">fr</span> [array]</summary>
-                        <p>~</p>
-                    </details>
+            <details open> 
+                <summary>tags <span class="bg-primary">mandatory</span> [array]</summary>
+                <p>French and English keywords that will be helpful in discovering and searching for the release.</p>
+                <ul>
+                    <li>en <span class="bg-primary">mandatory</span> [array] A list of English keywords</li>
+                    <li>fr <span class="bg-primary">mandatory</span> [array] A list of French keywords</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>vcs [string]</summary>
                 <p>A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, ..</p>
             </details>
             </li>
 
             <li>
-            <details> 
+            <details open> 
                 <summary>version [string]</summary>
                 <p>The version for this release. For example, 1.0.0</p>
             </details>
