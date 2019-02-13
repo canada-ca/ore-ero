@@ -6,7 +6,7 @@ permalink: /open-source-code-schema.html
 ---
 
 <h1 property="name" id="wb-cont">Metadata Schema for Open Source Code</h1>
-<p>The metadata schema for the <a href="open-source-code.html">Open Source Code</a> section.</p>
+<p>The metadata schema for <a href="open-source-code.html">Open Source Code</a>.</p>
 <p>Data files are hosted on <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.</p>
 
 <h2>Version 1.0</h2>
@@ -17,21 +17,21 @@ permalink: /open-source-code-schema.html
     <li>
     <details open> 
         <summary>schemaVersion <span class="bg-primary">mandatory</span> [string]</summary>
-        <p>The version of the ORE data schema for Code used.</p>
+        <p>The version of the ORE metadata schema for open source code.</p>
     </details> 
     </li>  
     
     <li>
     <details open> 
         <summary>adminCode <span class="bg-primary">mandatory</span> [string]</summary>
-        <p>Administration code - https://github.com/canada-ca/ore-ero/blob/master/_data/administrations</p>
+        <p>Administration code from this <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations)">data file</a></p>
     </details>
     </li>  
     
     <li>
     <details open>   
         <summary>releases <span class="bg-primary">mandatory</span> [array]</summary>
-        <p>Contains objects representing each versioned source code release made available.</p>            
+        <p>Contains objects representing each project or source code available.</p>            
         <ul class="list-unstyled">
             <li>
             <details open> 
@@ -50,19 +50,19 @@ permalink: /open-source-code-schema.html
                     <li>
                     <details open>
                         <summary>email <span class="bg-primary">mandatory</span> [string]</summary>
-                        <p>An email address to contact the release.</p>
+                        <p>An email address to contact the project.</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>name [string]</summary>
-                        <p>The name of a contact or team for the release.</p>
+                        <p>The name of a contact or team for the project.</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>phone [string]</summary>
-                        <p>The phone number to contact a release.</p>
+                        <p>The phone number to contact the project.</p>
                     </details>
                     </li>
                 </ul>
@@ -76,19 +76,19 @@ permalink: /open-source-code-schema.html
                     <li>
                     <details open>
                         <summary>created <span class="bg-primary">mandatory</span> [string]</summary>
-                        <p>The date the release was originally created, in YYYY-MM-DD or ISO 8601 format.</p>
+                        <p>The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>lastModified [string]</summary>
-                        <p>The date the release was modified, in YYYY-MM-DD or ISO 8601 format.</p>
+                        <p>The date the project was modified, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>metadataLastUpdated <span class="bg-primary">mandatory</span> [string]</summary>
-                        <p>The date the metadata of the release was last updated, in YYYY-MM-DD or ISO 8601 format.</p>
+                        <p>The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.</p>
                     </details>
                     </li>
                 </ul>
@@ -98,7 +98,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>description <span class="bg-primary">mandatory</span> [array]</summary>
-                <p>French and English description of the release.</p>
+                <p>French and English description of the project or source code.</p>
                 <ul>
                     <li>en <span class="bg-primary">mandatory</span> [string]</li>
                     <li>fr <span class="bg-primary">mandatory</span> [string]</li>
@@ -109,7 +109,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>downloadURL [array]</summary>
-                <p>French and English URL where a distribution of the release can be found.</p>
+                <p>French and English URL where a distribution of the project can be found.</p>
                 <ul>
                     <li>en [string]</li>
                     <li>fr [string]</li>
@@ -120,7 +120,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>homepageURL [array]</summary>
-                <p>French and English  URL of the release homepage.</p>
+                <p>French and English  URL of the project homepage.</p>
                 <ul>
                     <li>en [string]</li>
                     <li>fr [string]</li>
@@ -131,14 +131,14 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>languages [array]</summary>
-                <p>A list of strings with the names of the programming languages in use on the release.</p>
+                <p>A list of strings with the names of the programming languages used in the project.</p>
             </details>
             </li>
 
             <li>
             <details open> 
                 <summary>name <span class="bg-primary">mandatory</span> [array]</summary>
-                <p>French and English name of the release.</p>
+                <p>French and English name of the project or source code.</p>
                 <ul>
                     <li>en <span class="bg-primary">mandatory</span> [string]</li>
                     <li>fr <span class="bg-primary">mandatory</span> [string]</li>
@@ -149,7 +149,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>organization [array]</summary>
-                <p>French and English name or organization or component within the department of agency to which the release belong.</p>
+                <p>French and English name of organization or component within the department or agency to which the project belongs.</p>
                 <ul>
                     <li>en [string]</li>
                     <li>fr [string]</li>
@@ -160,7 +160,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>partners [array]</summary>
-                <p>An array of objects including an acronym for each agency partnering on the release and the contact email at such agency.</p>
+                <p>An array of objects for information about groups partnering on the project.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
@@ -200,7 +200,7 @@ permalink: /open-source-code-schema.html
                     <li>
                     <details open>
                         <summary>URL <span class="bg-primary">mandatory</span> [array]</summary>
-                        <p>French and English URL of the release license.</p>
+                        <p>French and English URL of the license.</p>
                         <ul>
                             <li>en <span class="bg-primary">mandatory</span> [string]</li>
                             <li>fr <span class="bg-primary">mandatory</span> [string]</li>
@@ -219,11 +219,11 @@ permalink: /open-source-code-schema.html
 
             <li>
             <details open> 
-                <summary>repositoryURL<span class="bg-primary">mandatory</span> [array]</summary>
-                <p>French and English URL of the public release repository for open source repositories.</p>
+                <summary>repositoryURL <span class="bg-primary">mandatory</span> [array]</summary>
+                <p>French and English URL of the public repository of the project.</p>
                 <ul>
-                    <li>en<span class="bg-primary">mandatory</span> [string]</li>
-                    <li>fr<span class="bg-primary">mandatory</span> [string]</li>
+                    <li>en <span class="bg-primary">mandatory</span> [string]</li>
+                    <li>fr <span class="bg-primary">mandatory</span> [string]</li>
                 </ul>
             </details>
             </li>
@@ -231,7 +231,7 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>relatedCode [array]</summary>
-                <p>An array of source code, libraries, frameworks, APIs, platforms or other software used in this release.</p>
+                <p>An array of source code, libraries, frameworks, APIs, platforms or other software used in this project.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
@@ -246,7 +246,7 @@ permalink: /open-source-code-schema.html
                     <li>
                     <details open>
                         <summary>name [array]</summary>
-                        <p>French and English name of the software used in this release.</p>
+                        <p>French and English name of the software used in this project.</p>
                         <ul>
                             <li>en [string]</li>
                             <li>fr [string]</li>
@@ -260,14 +260,14 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>status [string]</summary>
-                <p>The development status of the release. For example, Production, Beta, ..</p>
+                <p>The development status of the project. For example, Production, Beta, ..</p>
             </details>
             </li>
 
             <li>
             <details open> 
                 <summary>tags <span class="bg-primary">mandatory</span> [array]</summary>
-                <p>French and English keywords that will be helpful in discovering and searching for the release.</p>
+                <p>French and English keywords that will be helpful in discovering and searching for the project.</p>
                 <ul>
                     <li>en <span class="bg-primary">mandatory</span> [array] A list of English keywords</li>
                     <li>fr <span class="bg-primary">mandatory</span> [array] A list of French keywords</li>
@@ -278,14 +278,14 @@ permalink: /open-source-code-schema.html
             <li>
             <details open> 
                 <summary>vcs [string]</summary>
-                <p>A lowercase string with the name of the version control system that is being used for the release. For example, git, svn, ..</p>
+                <p>A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..</p>
             </details>
             </li>
 
             <li>
             <details open> 
                 <summary>version [string]</summary>
-                <p>The version for this release. For example, 1.0.0</p>
+                <p>The latest version for this project. For example, 1.0.0</p>
             </details>
             </li>
         </ul>

@@ -6,8 +6,8 @@ permalink: /code-source-ouvert-schema.html
 ---
 
 <h1 property="name" id="wb-cont">Schéma de métadonnées pour code source ouvert</h1>
-<p>Le schéma de métadonnées pour la section <a href="code-source-ouvert.html">Code source ouvert</a>.</p>
-<p>Les données utilisées pour générer cette liste est hébergé sur <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.</p>
+<p>Le schéma de métadonnées pour le <a href="code-source-ouvert.html">Code source ouvert</a>.</p>
+<p>Les données sont hébergés sur <a href="https://github.com/canada-ca/ore-ero/tree/master/_data" target="_blank">GitHub</a>.</p>
 
 <h2> Version 1.0</h2>
 <p>Les champs obligatoires sont marqués avec "<span class="bg-primary">obligatoire</span>".</p>
@@ -35,7 +35,7 @@ permalink: /code-source-ouvert-schema.html
         <ul class="list-unstyled">
             <li>
             <details open> 
-                <summary><span class="bg-primary">contact</span> [array]</summary>
+                <summary>contact <span class="bg-primary">obligatoire</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
@@ -49,7 +49,7 @@ permalink: /code-source-ouvert-schema.html
                     </li>
                     <li>
                     <details open>
-                        <summary><span class="bg-primary">email</span> [string]</summary>
+                        <summary>email <span class="bg-primary">obligatoire</span> [string]</summary>
                         <p>L'adresse courriel pour contacter la "release"</p>
                     </details>
                     </li>
@@ -71,11 +71,11 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">date</span> [array]</summary>
+                <summary>date <span class="bg-primary">obligatoire</span> [array]</summary>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
-                        <summary><span class="bg-primary">created</span> [string]</summary>
+                        <summary>created <span class="bg-primary">obligatoire</span> [string]</summary>
                         <p>La date de la "release" lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.</p>
                     </details>
                     </li>
@@ -87,7 +87,7 @@ permalink: /code-source-ouvert-schema.html
                     </li>
                     <li>
                     <details open>
-                        <summary><span class="bg-primary">metadataLastUpdated</span> [string]</summary>
+                        <summary>metadataLastUpdated <span class="bg-primary">obligatoire</span> [string]</summary>
                         <p>La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.</p>
                     </details>
                     </li>
@@ -97,11 +97,11 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">description</span> [array]</summary>
+                <summary>description <span class="bg-primary">obligatoire</span> [array]</summary>
                 <p>Description anglaise et française du "release"</p>
                 <ul>
-                    <li><span class="bg-primary">en</span> [string]</li>
-                    <li><span class="bg-primary">fr</span> [string]</li>
+                    <li>en <span class="bg-primary">obligatoire</span> [string]</li>
+                    <li>fr <span class="bg-primary">obligatoire</span> [string]</li>
                 </ul>
             </details>
             </li>
@@ -137,11 +137,11 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">name</span> [array]</summary>
+                <summary>name <span class="bg-primary">obligatoire</span> [array]</summary>
                 <p>Le nom de la "release" en anglais et français.</p>
                 <ul>
-                    <li><span class="bg-primary">en</span> [string]</li>
-                    <li><span class="bg-primary">fr</span> [string]</li>
+                    <li>en <span class="bg-primary">obligatoire</span> [string]</li>
+                    <li>fr <span class="bg-primary">obligatoire</span> [string]</li>
                 </ul>
             </details>
             </li>
@@ -194,22 +194,22 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">licenses</span> [array]</summary>
+                <summary>licenses <span class="bg-primary">obligatoire</span> [array]</summary>
                 <p>Un ensemble d'objet contenant les détails de la license.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
-                        <summary><span class="bg-primary">URL</span> [array]</summary>
+                        <summary>URL <span class="bg-primary">obligatoire</span> [array]</summary>
                         <p>L'URL de la license de "release"</p>
                         <ul>
-                            <li><span class="bg-primary">en</span> [string]</li>
-                            <li><span class="bg-primary">fr</span> [string]</li>
+                            <li>en <span class="bg-primary">obligatoire</span> [string]</li>
+                            <li>fr <span class="bg-primary">obligatoire</span> [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
                     <details open>
-                        <summary><span class="bg-primary">spdxID</span> [string]</summary>
+                        <summary>spdxID <span class="bg-primary">obligatoire</span> [string]</summary>
                         <p>Identifiant de licence SPDX - https://spdx.org/licenses/</p>
                     </details>
                     </li>
@@ -219,11 +219,11 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">repositoryURL</span> [array]</summary>
+                <summary>repositoryURL <span class="bg-primary">obligatoire</span> [array]</summary>
                 <p>L'URL du répertoire de la "release" publique pour les répertoires sources ouverts.</p>
                 <ul>
-                    <li><span class="bg-primary">en</span> [string]</li>
-                    <li><span class="bg-primary">fr</span> [string]</li>
+                    <li>en <span class="bg-primary">obligatoire</span> [string]</li>
+                    <li>fr <span class="bg-primary">obligatoire</span> [string]</li>
                 </ul>
             </details>
             </li>
@@ -266,11 +266,11 @@ permalink: /code-source-ouvert-schema.html
 
             <li>
             <details open> 
-                <summary><span class="bg-primary">tags</span> [array]</summary>
+                <summary>tags <span class="bg-primary">obligatoire</span> [array]</summary>
                 <p>Un ensemble de mots clés qui seront utiles pour la decouverte et la recherche de la "release".</p>
                 <ul>
-                    <li><span class="bg-primary">en</span> [array] Une liste de mots clés en anglais</li>
-                    <li><span class="bg-primary">fr</span> [array] Une liste de mots clés en français</li>
+                    <li>en <span class="bg-primary">obligatoire</span> [array] Une liste de mots clés en anglais</li>
+                    <li>fr <span class="bg-primary">obligatoire</span> [array] Une liste de mots clés en français</li>
                 </ul>
             </details>
             </li>
