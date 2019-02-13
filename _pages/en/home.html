@@ -97,6 +97,23 @@ permalink: home.html
         {% assign lastUpdated = lastUpdatedPrime %}
       {% endfor %}
 
+      {% for lastUpdatedValue in lastUpdated_array %}
+        {% for fptms in site.data.code %}
+        {% assign fptm = fptms[1] %}
+        {% for admins in fptm %}
+          {% assign admin = admins[1] %}
+          {% for release in admin.releases %} 
+            {% for date in release.date.metadataLastUpdated %}
+              {% assign d = date | date:"%Y%j" %}
+              {% if d == lastUpdatedValue %}
+                {% assign projectName_array = projectName_array | push: release.name[page.lang] %}
+                {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}   
+              {% endif %} 
+            {% endfor %}   
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}  
 
       <ul>
         <li><a href="#">[Project name]</a></li>
