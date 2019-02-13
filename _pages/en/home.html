@@ -84,6 +84,17 @@ permalink: home.html
             {% assign dates_array_prime = dates_array_prime  | push: date %}
           {% endif %}
         {% endfor %}
+
+        {% assign lastUpdatedPrime = dates_array_prime | first %}
+        {% for date in dates_array_prime %}
+          {% if date >= lastUpdatedPrime %}  
+            {% assign lastUpdatedPrime = date %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign lastUpdated_array = lastUpdated_array  | push: lastUpdatedPrime %}
+        {% assign dates_array = dates_array_prime %}
+        {% assign lastUpdated = lastUpdatedPrime %}
       {% endfor %}
 
 
