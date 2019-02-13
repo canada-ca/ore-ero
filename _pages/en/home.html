@@ -76,6 +76,17 @@ permalink: home.html
       {% endfor %}
       {% assign lastUpdated_array = lastUpdated_array  | push: lastUpdated %}
 
+
+      {% for i in (1..2) %}
+        {% assign dates_array_prime = "" | split: "," %}
+        {% for date in dates_array %}
+          {% if date != lastUpdated %}
+            {% assign dates_array_prime = dates_array_prime  | push: date %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+
       <ul>
         <li><a href="#">[Project name]</a></li>
         <li><a href="#">[Project name]</a></li>
