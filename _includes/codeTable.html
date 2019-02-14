@@ -298,10 +298,10 @@
           {% endfor %}
         </p>
         {% if release.status != nil %}
-          <p>Version: {{ release.status }}</p>
+          <p>Status: {{ release.status }}</p>
         {% endif %}
         {% if release.vcs != nil %}
-          <p>Version: {{ release.vcs }}</p>
+          <p>Version Control System: {{ release.vcs }}</p>
         {% endif %}
         {% if release.version != nil %}
           <p>Version: {{ release.version }}</p>
