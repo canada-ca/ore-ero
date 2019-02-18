@@ -5,25 +5,47 @@ lang: en
 permalink: /docs.html
 ---
 
-<h1 property="name" id="wb-cont">Open Resource Exchange Data</h1>
+<h1 property="name" id="wb-cont">Documentation</h1>
 
-<h3 class="h5">Directory structure</h3>
+<h2>Directory structure</h2>
 
 <ul>
-    <li>Administrations: List of Canadian federal, provincial, territorial and municipal administrations. Used to lookup bilingual names.</li>
-    <li>code: List of released open source code by administrations. Sub-folders contain data files. One file per administration.</li>
+    <li><h3 class="h5">Administrations</h3> List of Canadian federal, provincial, territorial and municipal administrations. Used to lookup bilingual names.</li>
+    <li><h3 class="h5">code</h3> List of released open source code by administrations. Sub-folders contain data files. One file per administration.</li>
     <ul>
         <li>federal</li>
         <li>provincial</li>    
         <li>municipal</li>    
     </ul>
-    <li>open_source_software: List of open source software used by administrations.</li>
+    <li><h3 class="h5">open_source_software</h3> List of open source software used by administrations.</li>
 </ul>
 
-<h3 class="h5">How to add your data</h3>
+<h2>How to add your data</h2>
 
 <ul>
-    <li><a href="./open-source-code-schema.html">Adding Open Source Code</a></li>
-    <li><a href="./open-source-software-schema.html">Adding Open Source Software</a></li>
-    <li><a href="./open-standards-schema.html">Adding Open Standards</a></li>
+    <li><h3 class="h5">Adding you administration</h3></li>
+    <ul>
+        <li>In the <a href="https://github.com/VilledeMontreal/ore-ero/tree/master/_data/administrations">administrations</a> directory add your adminstration in the 
+            <a href="https://github.com/VilledeMontreal/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
+            <a href="https://github.com/VilledeMontreal/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> or 
+            <a href="https://github.com/VilledeMontreal/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a> file.
+        </li>
+    </ul>
+    <li><h3 class="h5">Adding Open Source Code</h3></li>
+    <ul>
+        <li><h4 class="h5">Your administration is already there:</h4>
+            If there is already a file for your adminstration under the <a href="https://github.com/VilledeMontreal/ore-ero/tree/master/_data/code">code</a> directory, you need to edit that file to add your released open source code.
+            <br><br>
+            You can copy the contents of the file from the following <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/code_mandatory.yml">example</a>, and change the informtion for your code. These are only the mandatory fields. 
+            For more informations, click <a href="./open-source-code-schema.html">here</a> to see the Metadata Schema for Open Source Code.
+        </li>
+
+        <li><h4 class="h5">Your administration needs to be added:</h4>
+            If your adminstration doesn't have a file under the 
+            <a href="https://github.com/VilledeMontreal/ore-ero/tree/master/_data/code">code</a> directory, you need to create a new file for your administration. Use the 
+            <a href="https://github.com/VilledeMontreal/ore-ero/blob/master/_data_templates/code_mandatory.yml">code template with only mandatory fields</a>.
+        </li>
+    </ul>
+    <li><h3 class="h5">Adding Open Source Software</h3></li>
+    <li><h3 class="h5">Adding Open Standards</h3></li>
 </ul>
