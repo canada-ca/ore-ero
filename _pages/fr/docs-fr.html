@@ -1,0 +1,126 @@
+---
+layout: default
+ref: Docs
+lang: fr
+permalink: /docs-fr.html
+---
+
+<h1 property="name" id="wb-cont">Documentation</h1>
+
+<h2>Structure du répertoire</h2>
+
+<ul>
+    <li><h3 class="h5">Administrations</h3> Liste des administrations fédérale, provinciales, territoriales et municipales du Canada. Utilisé pour rechercher les noms bilingues.</li>
+    <li><h3 class="h5">code</h3> Liste des codes sources ouverts publiés par les administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.</li>
+    <ul>
+        <li>federal</li>
+        <li>provincial</li>    
+        <li>municipal</li>    
+    </ul>
+    <li><h3 class="h5">open_source_software</h3> Liste des logiciels libres utilisés par les administrations.</li>
+</ul>
+
+<h2>Open Standards - En développement</h2>
+<p>
+    Liste des normes ouvertes approuvées ou utilisées par les administrations.
+</p>
+
+<h2>Comment ajouter vos données</h2>
+<h3 class="h4">Ajout de codes Open Source</h3>
+
+<h4 class="h5">Votre administration est déjà là</h4>
+<p>
+    S'il existe déjà un fichier pour votre administration sous le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> vous devez modifier ce fichier pour ajouter votre code source ouvert.
+</p>
+
+<p>
+    Vous pouvez copier ce qui suit en bas du fichier et modifier les informations pour votre code. Ce ne sont que les champs obligatoires.
+</p>
+
+<div class="well">
+    -<br>
+    &nbsp;&nbsp;&nbsp;contact:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: "abc@xyz.com"<br>
+    &nbsp;&nbsp;&nbsp;date:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;created: "YYYY-MM-DD"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metadataLastUpdated: "YYYY-MM-DD"<br>
+    &nbsp;&nbsp;&nbsp;description:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."<br>
+    &nbsp;&nbsp;&nbsp;name:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Example"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Exemple"<br>
+    &nbsp;&nbsp;&nbsp;licenses:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "https://example.com/repo/example/LICENCE-en"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "https://example.com/repo/example/LICENCE-fr"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spdxID: "XYZ-1.0"<br>
+    &nbsp;&nbsp;&nbsp;repositoryURL:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "https://example.com/repo/example"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "https://example.com/repo/example"<br>
+    &nbsp;&nbsp;&nbsp;tags:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp; "tag1-en"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; :<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp; "tag1-fr"<br>
+</div>
+
+<p>
+    Pour plus d'informations, cliquez <a href="./code-source-ouvert-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.
+</p>
+
+<h4 class="h5">Votre administration doit être ajouté:</h4>
+<p>
+    Si votre administration n'a pas de fichier sous le répertoire [code] (code), vous devez créer un nouveau fichier pour votre administration. Utilisez le [modèle de code avec uniquement les champs obligatoires] (../_ data_templates / code_mandatory.yml).
+</p>
+
+<h3 class="h4">Ajout de logiciels Open Source</h3>
+<h4 class="h5">Le logiciel est déjà là</h4>
+<p>
+    S'il existe déjà un fichier pour le logiciel libre que vous utilisez dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a>, 
+    vous devez vérifier si votre administration est déjà répertoriée comme utilisant le logiciel libre.
+</p>
+
+<p>
+    Si ce n'est pas le cas, vous pouvez copier ce qui suit au bas du fichier, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.
+</p>
+<div class="well">
+    -<br>
+    adminCode: abc-def<br>
+    uses:<br>
+    &nbsp;&nbsp;&nbsp;-<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL: https://www.example.com<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Example use"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Exemple d'utilisation"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Etiam rutrum, tellus nec egestas blandit."<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Vestibulum fringilla vel purus nec iaculis."<br>
+</div>
+<p>
+    Si votre administration est là, ajouter votre utilisation de logiciels libre, vous pouvez copier ce qui suit, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.
+</p>
+
+<div class="well">
+    &nbsp;&nbsp;&nbsp;-<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL: https://www.example.com<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Example use"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Exemple d'utilisation"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en: "Etiam rutrum, tellus nec egestas blandit."<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr&nbsp; : "Vestibulum fringilla vel purus nec iaculis."<br>
+</div>
+
+<p>
+    Pour plus d'informations, cliquez <a href="./logiciels-libres-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.
+</p>
+
+<h4 class="h5">Votre logiciel open source doit être ajouté</h4>
+<p>
+    Si votre logiciel open source n'a pas de fichier dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a>
+    vous devez créer un nouveau fichier pour le logiciel open source. Utilisez le modèle <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/ll-oss_mandatory.yml">ll-oss template with only mandatory fields</a>.
+</p>
