@@ -32,6 +32,15 @@ admininstrations:
         name: 
           en: ~
           fr: ~
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
   - 
     adminCode: csc-scc
     uses: 
@@ -68,18 +77,6 @@ admininstrations:
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
-  - 
-    adminCode: arg
-    uses: 
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
   - 
     adminCode: csc-scc
     uses: 
