@@ -88,6 +88,16 @@ admininstrations:
         description: 
           en: "APM data"
           fr: "Données du APM"
+
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
   - 
     adminCode: asc-csa
     uses: 
@@ -101,19 +111,7 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: csc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: gac-amc
+    adminCode: csc-scc
     uses: 
       - 
         contact: 
@@ -173,7 +171,7 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: ic
+    adminCode: infrastructure
     uses: 
       - 
         contact: 
@@ -221,7 +219,7 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: nrc-crnc
+    adminCode: nrc-cnrc
     uses: 
       - 
         contact: 
@@ -305,7 +303,7 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: statscan
+    adminCode: statcan
     uses: 
       - 
         contact: 

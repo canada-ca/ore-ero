@@ -76,7 +76,7 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: statscan
+    adminCode: statcan
     uses: 
       - 
         contact: 
