@@ -1,0 +1,350 @@
+---
+layout: default
+ref: formValidation
+lang: en
+permalink: /open-source-code-form-validation.html
+---
+
+<h1 property="name" id="wb-cont">Form with validation for open source code</h1>
+<div class="wb-frmvld">
+	<form action="#" method="get" id="validation">
+
+<legend><span class="field-name"> Version of the metadata schema</span></legend>
+	<div class="form-group">
+		<label for="shemaVersion" class="required"><span class="field-name">schemaVersion</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="shemaVersion" name="shemaVersion" required="required">
+				<option></option>
+				<option value="dr">1.0</option>
+			</select>
+	</div>
+        
+<legend><span class="field-name"> Administration code</span></legend>
+	<div class="form-group">
+		<label for="adminCode" class="required"><span class="field-name">adminCode</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="adminCode" name="adminCode" required="required">
+				<option></option>
+                <!-- Federal adminCode -->
+				<option>agr</option>
+				<option >asc-csa</option>
+				<option>bac-lac</option>
+				<option>cbsa-asfc</option>
+                <option >cra-arc</option>
+				<option>csc-scc</option>
+				<option>cse-cst</option>
+                <option>csps-efpc</option>
+                <option>eccc</option>
+                <option>elections</option>
+                <option>esdc-edsc</option>
+                <option>dfo-mpo</option>
+                <option>fin</option>
+                <option>fintrac-canafe</option>
+                <option>forces</option>
+                <option>gac-amc</option>
+                <option>hc-sc</option>
+                <option>infrastructure</option>
+                <option>ircc</option>
+                <option>ised-isde</option>
+                <option>nrc-cnrc</option>
+                <option>nrcan</option>
+                <option>pch</option>
+                <option>pco-bcp</option>
+                <option>phac-aspc</option>
+                <option>psc-cfp</option>
+                <option>rcmp-grc</option>
+                <option>ssc-spc</option>
+                <option>statcan</option>
+                <option>tbs-sct</option>   
+                <option>tc</option>
+                <option>tpsgc-pwgsc</option>
+                <!--provincial adminCode -->
+                <option>bc</option>
+                <option>on</option>
+                <option>qc</option>
+                <!--Municipal adminCode -->
+                <option>mtl_qc</option>
+                <option>ottawa_on</option>
+                <option>edmonton_ab</option>
+			</select>
+    </div>
+
+
+<legend><span class="field-name">Contact or team for the project</span></legend>
+	<h3>contact: </h3>	
+		<div class="form-group">
+			<label for="urlContact"><span class="field-name">URL</span></label>
+			<input class="form-control" id="urlContact" name="urlContact" type="url" />
+		</div>
+        <div class="form-group">
+			<label for="emailContact" class="required" ><span class="field-name">email </span><strong class="required">(required)</strong></label>
+			<input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
+		</div>
+        <div class="form-group">
+			<label for="nameContact"><span class="field-name">name</span></label>
+			<input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+		</div>
+        <div class="form-group">
+			<label for="phone"><span class="field-name">phone</span> </label>
+			<input class="form-control" id="phone" name="phone" type="tel"  data-rule-phoneUS="true" />
+		</div>
+
+<legend><span class="field-name"> Date of the project</span></legend>
+	<h3>date: </h3>
+		 <div class="form-group">
+			<label for="dateCreated" class="required"><span class="field-name">created</span><strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+			<input class="form-control" id="dateCreated" name="dateCreated" type="date" data-rule-dateISO="true" required="required" />
+		</div>
+        <div class="form-group">
+			<label for="dateLastModified"><span class="field-name">lastModified</span><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+			<input class="form-control" id="dateLastModified" name="dateLastModified" type="date" data-rule-dateISO="true" />
+		</div>
+         <div class="form-group">
+			<label for="dateLastUpdated" class="required"><span class="field-name">metadataLastUpdated</span><strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+			<input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
+		</div>
+
+<legend><span class="field-name">Description of the project</span></legend>
+	<div class="form-group">
+		<label for="description" class="required"><span class="field-name">description</span><strong class="required">(required)</strong></label>
+		<input class="form-control" id="description" name="description" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
+	</div>
+
+<legend><span class="field-name">URL of the project download</span></legend>
+	<div class="form-group">
+		<label for="downloadURL"><span class="field-name">downloadURL</span></label>
+		<input class="form-control" id="downloadURL" name="downloadURL" type="url" />
+	</div>
+
+<legend><span class="field-name">URL of the project homepage</span></legend>
+	<div class="form-group">
+		<label for="homepageURL"><span class="field-name">homepageURL</span></label>
+		<input class="form-control" id="homepageURL" name="homepageURL" type="url" />
+	</div>
+
+<legend><span class="field-name">Programming languages used in the project</span></legend>
+	<label for="language"><span class="field-name">languages</span></label>
+
+		<div class="checkbox">
+			<label><input type="checkbox" value="Assembly">Assembly</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="C">C</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="C#">C#</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="C++">C++</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="ColdFusion">ColdFusion</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="CSS">CSS</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Docker">Docker</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Fortran">Fortran</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Go">Go</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="HTML">HTML</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="IDL">IDL</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Java">Java</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="JavaScript">JavaScript</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="JSON">JSON</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Kafka">Kafka</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="m4">m4</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Makefile">Makefile</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Markdown">Markdown</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="MATLAB">MATLAB</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="MongoDB">MongoDB</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Objective-C">Objective-C</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="OpenEdge ABL">OpenEdge ABL</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Oracle PL/SQL">Oracle PL/SQL</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Perl">Perl</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="PHP">PHP</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="PowerShell">PowerShell</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Python">Python</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="R">R</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Ruby">Ruby</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Salt">Salt</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="SAS">SAS</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="SASS">SASS</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Shell">Shell</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="SourcePawn">SourcePawn</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="SQL">SQL</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Swift">Swift</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="TypeScript">TypeScript</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="Visual Basic">Visual Basic</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="XML">XML</label>
+		</div>
+
+<legend><span class="field-name">Name of the project</span></legend>
+	<div class="form-group">
+		<label for="projectName" class="required"><span class="field-name">name</span><strong class="required">(required)</strong></label>
+		<input class="form-control" id="projectName" name="projectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
+	</div>
+
+<legend><span class="field-name">Organization within the department or agency to which the project belongs</span></legend>
+	<div class="form-group">
+		<label for="organization" ><span class="field-name">organization</span></label>
+		<input class="form-control" id="organization" name="organization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+	</div>
+
+<legend ><span class="field-name">Groups partnering on the project</span></legend>
+	<h3>partners: </h3>
+	<div class="form-group">
+		<label for="urlPartner"><span class="field-name">URL</span></label>
+		<input class="form-control" id="urlPartner" name="urlPartner" type="url" />
+	</div>
+	<div class="form-group">
+		<label for="emailPartner"><span class="field-name">Email </span></label>
+		<input class="form-control" id="emailPartner" name="emailPartner" type="email"/>
+	</div>
+	<div class="form-group">
+		<label for="namePartner"><span class="field-name">Name</span></label>
+		<input class="form-control" id="namePartner" name="namePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+	</div>
+
+<legend><span class="field-name">License details</span></legend>
+	<h3>license: </h3>
+	
+        <div class="form-group">
+			<label for="urlLicense" class="required" ><span class="field-name">URL </span><strong class="required">(required)</strong></label>
+			<input class="form-control" id="urlLicense" name="urlLicense" type="url" required="required" />
+		</div>
+		<div class="form-group">
+			<label for="spdxID" class="required" ><span class="field-name">spdxID </span><strong class="required">(required)</strong></label>
+			<input class="form-control" id="spdxID" name="spdxID" type="text" type="text" required="required" />
+		</div>
+
+<legend><span class="field-name"> URL of the public repository of the project</span></legend>
+	<div class="form-group">
+		<label for="repoUrl" class="required"><span class="field-name">repositoryURL</span><strong class="required">(required)</strong></label>
+		<input class="form-control" id="repoUrl" name="repoUrl" type="url" required="required" />
+	</div>
+
+<legend><span class="field-name">Platforms or other software used in this project</span></legend>		
+	<h3>relatedCode: </h3>
+		<div class="form-group">
+			<label for="urlRelatedCode"><span class="field-name">URL</span></label>
+			<input class="form-control" id="urlRelatedCode" name="urlRelatedCode" type="url" />
+		</div>
+        <div class="form-group">
+			<label for="nameRelatedCode"><span class="field-name">name</span></label>
+			<input class="form-control" id="nameRelatedCode" name="nameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+		</div>
+
+
+<legend><span class="field-name"> Development status of the project</span></legend>
+	<div class="form-group">
+		<label for="status"><span class="field-name">status</span> </label>
+		<select class="form-control" id="status" name="status">
+			<option></option>
+			<option>Pre-alpha</option>
+			<option>Alpha</option>
+			<option>Beta</option>
+			<option>Release candidate</option>
+			<option>Release to manufacturing (RTM)</option>
+			<option>Release to web (RTW)</option>
+			<option>General availability (GA)</option>
+			<option>Production</option>
+		</select>
+	</div>
+
+<legend><span class="field-name">keywords that will be helpful in discovering and searching for the project</span></legend>
+	<h3>tags: </h3>
+		<div class="form-group">
+			<label for="tag1" class="required" ><span class="field-name">tag1</span><strong class="required">(required)</strong></label>
+			<input class="form-control" id="tag1" name="tag1" type="text" required="required" />
+		</div>
+        <div class="form-group">
+			<label for="tag2" class="required" ><span class="field-name">tag2</span><strong class="required">(required)</strong></label>
+			<input class="form-control" id="tag2" name="tag2" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
+		</div>
+		<div class="form-group">
+			<label for="tag3"><span class="field-name">tag3</span></label>
+			<input class="form-control" id="tag3" name="tag3" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+		</div>
+		<div class="form-group">
+			<label for="tag4"><span class="field-name">tag4</span></label>
+			<input class="form-control" id="tag4" name="tag4" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+		</div>
+
+<legend><span class="field-name">Name of the version control system used in this project</span></legend>
+	<div class="form-group">
+		<label for="vcs"><span class="field-name">vcs</span></label>
+		<input class="form-control" id="vcs" name="vcs" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+	</div>
+		
+<legend><span class="field-name">Latest version for this project</span></legend>
+	<div class="form-group">
+		<label for="versionProject"><span class="field-name">version</span></label>
+		<input class="form-control" id="versionProject" name="versionProject" type="text" />
+	</div>
+
+	</form>
+</div>
+
