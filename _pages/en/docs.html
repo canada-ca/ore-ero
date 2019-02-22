@@ -1,0 +1,139 @@
+---
+layout: default
+ref: Docs
+lang: en
+permalink: /en/docs.html
+---
+
+<h1 property="name" id="wb-cont">Documentation</h1>
+
+<h2>Directory structure</h2>
+
+<ul>
+    <li><h3>administrations</h3> List of Canadian federal, provincial, territorial and municipal administrations. Used to lookup bilingual names.</li>
+    <li><h3>code</h3> List of released open source code by administrations. Sub-folders contain data files. One file per administration.</li>
+    <ul>
+        <li>federal</li>
+        <li>provincial</li>    
+        <li>municipal</li>    
+    </ul>
+    <li><h3>logiciels_libres-open_source_software</h3> List of open source software used by administrations.</li>
+    <li><h3>normes_ouvertes-open_standards</h3> List open standards endorsed or used by administrations.</li>
+</ul>
+
+<h2>How to add your data</h2>
+<h3>Adding your administration</h3>
+<p>
+    In the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> directory add your adminstration in the 
+    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
+    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> or 
+    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a> file.
+</p>
+
+<h3>Adding Open Source Code</h3>
+<h4>Your administration is already there:</h4>
+<p>
+    If there is already a file for your adminstration under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you need to edit that file to add your released open source code.
+</p>
+
+<p>
+    You can copy the following at the bottom of the file, and change the informtion for your code. These are only the mandatory fields.
+</p>
+
+<pre>
+  <code>
+  - 
+    contact: 
+      email: "abc@xyz.com"
+    date: 
+      created: "YYYY-MM-DD"
+      metadataLastUpdated: "YYYY-MM-DD"  
+    description: 
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
+    name: 
+      en: "Example"
+      fr: "Exemple"
+    licenses:
+      - 
+        URL: 
+          en: "https://example.com/repo/example/LICENCE-en"
+          fr: "https://example.com/repo/example/LICENCE-fr"
+        spdxID: "XYZ-1.0"
+    repositoryURL: 
+      en: "https://example.com/repo/example"
+      fr: "https://example.com/repo/example"
+    tags: 
+      en: 
+        - "tag1-en"
+      fr: 
+        - "tag1-fr"
+  </code>
+</pre>
+
+<p>
+    For more informations, click <a href="./open-source-code-schema.html">here</a> to see the Metadata Schema for Open Source Code.
+</p>
+
+<h4>Your administration needs to be added:</h4>
+<p>
+    If your adminstration doesn't have a file under the 
+    <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you need to create a new file for your administration. Use the 
+    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/code_mandatory.yml">code template with only mandatory fields</a>.
+</p>
+
+<h3>Adding Open Source Software</h3>
+<h4>The software is already there</h4>
+<p>
+    If there is already a file for the open source software you are using under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a> directory, 
+    you need to check if your adminstration is already listed as using the open source software.
+</p>
+
+<p>
+    If not, you can copy the following at the bottom of the file, and change the informtion for your adminstration and use of the open source software. These are only the mandatory fields.
+</p>
+
+<pre>
+  <code>
+  - 
+    adminCode: abc-def
+    uses: 
+      - 
+        contact: 
+          URL: https://www.example.com
+        name: 
+          en: "Example use"
+          fr: "Exemple d'utilisation"
+        description: 
+          en: "Etiam rutrum, tellus nec egestas blandit."
+          fr: "Vestibulum fringilla vel purus nec iaculis."
+  </code>
+</pre>
+
+<p>
+    If your adminstration is there add your use of open source software under it, you can copy the following, and change the informtion for your adminstration and use of the open source software. These are only the mandatory fields.
+</p>
+
+<pre>
+  <code>
+      - 
+        contact: 
+          URL: https://www.example.com
+        name: 
+          en: "Example use"
+          fr: "Exemple d'utilisation"
+        description: 
+          en: "Etiam rutrum, tellus nec egestas blandit."
+          fr: "Vestibulum fringilla vel purus nec iaculis."
+  </code>
+</pre>
+
+<p>
+    For more informations, click <a href="./open-source-software-schema.html">here</a> to see the Metadata Schema for Open Source Software.
+</p>
+
+<h4>Your open source software needs to be added</h4>
+<p>
+    If your open source software does'nt have a file under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a> directory, 
+    you need to create a new file for the open source software. Use the <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/ll-oss_mandatory.yml">ll-oss template with only mandatory fields</a>.
+</p>
