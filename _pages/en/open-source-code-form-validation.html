@@ -7,7 +7,7 @@ permalink: /en/open-source-code-form-validation.html
 
 <h1 property="name" id="wb-cont">Form with validation for open source code</h1>
 <div class="wb-frmvld">
-	<form action="#" method="get" id="validation">
+<form action="#" method="get" id="validation">
 
 <legend><span class="field-name"> Version of the metadata schema</span></legend>
 	<div class="form-group">
@@ -22,50 +22,15 @@ permalink: /en/open-source-code-form-validation.html
 	<div class="form-group">
 		<label for="adminCode" class="required"><span class="field-name">adminCode</span> <strong class="required">(required)</strong></label>
 			<select class="form-control" id="adminCode" name="adminCode" required="required">
-				<option></option>
-                <!-- Federal adminCode -->
-				<option>agr</option>
-				<option >asc-csa</option>
-				<option>bac-lac</option>
-				<option>cbsa-asfc</option>
-                <option >cra-arc</option>
-				<option>csc-scc</option>
-				<option>cse-cst</option>
-                <option>csps-efpc</option>
-                <option>eccc</option>
-                <option>elections</option>
-                <option>esdc-edsc</option>
-                <option>dfo-mpo</option>
-                <option>fin</option>
-                <option>fintrac-canafe</option>
-                <option>forces</option>
-                <option>gac-amc</option>
-                <option>hc-sc</option>
-                <option>infrastructure</option>
-                <option>ircc</option>
-                <option>ised-isde</option>
-                <option>nrc-cnrc</option>
-                <option>nrcan</option>
-                <option>pch</option>
-                <option>pco-bcp</option>
-                <option>phac-aspc</option>
-                <option>psc-cfp</option>
-                <option>rcmp-grc</option>
-                <option>ssc-spc</option>
-                <option>statcan</option>
-                <option>tbs-sct</option>   
-                <option>tc</option>
-                <option>tpsgc-pwgsc</option>
-                <!--provincial adminCode -->
-                <option>bc</option>
-                <option>on</option>
-                <option>qc</option>
-                <!--Municipal adminCode -->
-                <option>mtl_qc</option>
-                <option>ottawa_on</option>
-                <option>edmonton_ab</option>
+        <option>&nbsp;</option>
+        {% for adminsLevel in site.data.administrations %}
+          {% assign adminsInfo = adminsLevel[1]%}
+          {% for adminInfo in adminsInfo %}
+            <option>{{ adminInfo.code }}</option>
+          {% endfor %}
+        {% endfor %}
 			</select>
-    </div>
+  </div>
 
 
 <legend><span class="field-name">Contact or team for the project</span></legend>
@@ -122,124 +87,28 @@ permalink: /en/open-source-code-form-validation.html
 
 <legend><span class="field-name">Programming languages used in the project</span></legend>
 	<label for="language"><span class="field-name">languages</span></label>
+  {% assign languages_array = "" | split: "," %}
+  {% for fptms in site.data.code %}
+  {% assign fptm = fptms[1] %}
+  {% for admins in fptm %}
+    {% assign admin = admins[1] %}
+    {% for release in admin.releases %}
+      {% for language in release.languages %}
+        {% assign languages_array = languages_array  | push: language %}
+      {% endfor %}
+    {% endfor %}
+    {% endfor %}
+  {% endfor %}
+  
+  {% assign languages_array = languages_array | uniq  %}
+  {% for language in languages_array %}
+    <div class="checkbox">
+      <label><input type="checkbox" value="{{ language }}"> {{ language  }}</label>
+    </div>
+  {% endfor %}
 
-		<div class="checkbox">
-			<label><input type="checkbox" value="Assembly">Assembly</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="C">C</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="C#">C#</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="C++">C++</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="ColdFusion">ColdFusion</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="CSS">CSS</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Docker">Docker</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Fortran">Fortran</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Go">Go</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="HTML">HTML</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="IDL">IDL</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Java">Java</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="JavaScript">JavaScript</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="JSON">JSON</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Kafka">Kafka</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="m4">m4</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Makefile">Makefile</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Markdown">Markdown</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="MATLAB">MATLAB</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="MongoDB">MongoDB</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Objective-C">Objective-C</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="OpenEdge ABL">OpenEdge ABL</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Oracle PL/SQL">Oracle PL/SQL</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Perl">Perl</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="PHP">PHP</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="PowerShell">PowerShell</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Python">Python</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="R">R</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Ruby">Ruby</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Salt">Salt</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="SAS">SAS</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="SASS">SASS</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Shell">Shell</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="SourcePawn">SourcePawn</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="SQL">SQL</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Swift">Swift</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="TypeScript">TypeScript</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="Visual Basic">Visual Basic</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="XML">XML</label>
-		</div>
+  <div id="languages"></div>
+  <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">Add more languages</button>
 
 <legend><span class="field-name">Name of the project</span></legend>
 	<div class="form-group">
@@ -297,41 +166,40 @@ permalink: /en/open-source-code-form-validation.html
 			<input class="form-control" id="nameRelatedCode" name="nameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
 		</div>
 
-
 <legend><span class="field-name"> Development status of the project</span></legend>
 	<div class="form-group">
-		<label for="status"><span class="field-name">status</span> </label>
+    <label for="status"><span class="field-name">status</span></label>
+      {% assign statuses_array = "" | split: "," %}
+      {% for fptms in site.data.code %}
+      {% assign fptm = fptms[1] %}
+      {% for admins in fptm %}
+        {% assign admin = admins[1] %}
+        {% for release in admin.releases %}
+          {% if release.status != nil %}
+            {% assign statuses_array = statuses_array  | push: release.status %}
+          {% endif %}
+        {% endfor %}
+        {% endfor %}
+      {% endfor %}
 		<select class="form-control" id="status" name="status">
-			<option></option>
-			<option>Pre-alpha</option>
-			<option>Alpha</option>
-			<option>Beta</option>
-			<option>Release candidate</option>
-			<option>Release to manufacturing (RTM)</option>
-			<option>Release to web (RTW)</option>
-			<option>General availability (GA)</option>
-			<option>Production</option>
+      <option>&nbsp;</option>
+      {% assign statuses_array = statuses_array | uniq  %}
+      {% for status in statuses_array %}
+        <option>{{ status }}</option>
+      {% endfor %}
 		</select>
 	</div>
 
 <legend><span class="field-name">keywords that will be helpful in discovering and searching for the project</span></legend>
 	<h3>tags: </h3>
-		<div class="form-group">
-			<label for="tag1" class="required" ><span class="field-name">tag1</span><strong class="required">(required)</strong></label>
-			<input class="form-control" id="tag1" name="tag1" type="text" required="required" />
-		</div>
-        <div class="form-group">
-			<label for="tag2" class="required" ><span class="field-name">tag2</span><strong class="required">(required)</strong></label>
-			<input class="form-control" id="tag2" name="tag2" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
-		</div>
-		<div class="form-group">
-			<label for="tag3"><span class="field-name">tag3</span></label>
-			<input class="form-control" id="tag3" name="tag3" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
-		</div>
-		<div class="form-group">
-			<label for="tag4"><span class="field-name">tag4</span></label>
-			<input class="form-control" id="tag4" name="tag4" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
-		</div>
+  <div id="tags">    
+    <div class="form-group">
+      <label for="tag" class="required" ><span class="field-name">tag</span><strong class="required">(required)</strong></label>
+      <input class="form-control" id="tag" name="tag" type="text" required="required" />
+    </div>
+  </div>
+  <button type="button" class="btn btn-default" onclick = "addMoreTags()">Add more tags</button>
+
 
 <legend><span class="field-name">Name of the version control system used in this project</span></legend>
 	<div class="form-group">
@@ -345,6 +213,40 @@ permalink: /en/open-source-code-form-validation.html
 		<input class="form-control" id="versionProject" name="versionProject" type="text" />
 	</div>
 
-	</form>
+</form>
 </div>
+
+<script>
+    function addMoreLanguages(){
+    let div = document.createElement("DIV");
+    let label = document.createElement("LABEL");
+    let input = document.createElement("INPUT");
+
+    document.getElementById("languages").appendChild(div).appendChild(label);
+    document.getElementById("languages").appendChild(div).appendChild(input);
+
+    div.setAttribute("class", "form-group");
+    label.setAttribute("for", "language");
+    input.setAttribute("class", "form-control");
+    input.setAttribute("id", "language");
+    input.setAttribute("name", "language");
+    input.setAttribute("type", "text");
+  }
+
+  function addMoreTags(){
+    let div = document.createElement("DIV");
+    let label = document.createElement("LABEL");
+    let input = document.createElement("INPUT");
+
+    document.getElementById("tags").appendChild(div).appendChild(label);
+    document.getElementById("tags").appendChild(div).appendChild(input);
+
+    div.setAttribute("class", "form-group");
+    label.setAttribute("for", "tag");
+    input.setAttribute("class", "form-control");
+    input.setAttribute("id", "tag");
+    input.setAttribute("name", "tag");
+    input.setAttribute("type", "text");
+  }
+</script>
 
