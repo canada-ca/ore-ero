@@ -10,81 +10,93 @@ permalink: /en/open-source-code-form-validation.html
 
 <div class="wb-frmvld">
 <form action="#" method="get" id="validation">
-<legend><span class="field-name"> Version of the metadata schema</span></legend>
+<h2>Version of the metadata schema</h2>
 	<div class="form-group">      
-    <label for="shemaVersion" class="required"><span class="field-name">schemaVersion</span></label>
+    <label for="shemaVersion" class="required">schemaVersion</label>
     <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
 	</div>
         
-<legend><span class="field-name"> Administration code</span></legend>
+<h2>Administration code</h2>
 	<div class="form-group">
-		<label for="adminCode" class="required"><span class="field-name">adminCode</span> <strong class="required">(required)</strong></label>
-			<select class="form-control" id="adminCode" name="adminCode" required="required">
-        <option value="">&nbsp;</option>
-        {% for adminsLevel in site.data.administrations %}
-          {% assign adminsInfo = adminsLevel[1]%}
-          {% for adminInfo in adminsInfo %}
-            <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
-          {% endfor %}
+		<label for="adminCode" class="required">adminCode <strong class="required">(required)</strong></label>
+    <select class="form-control" id="adminCode" name="adminCode" required="required">
+      <option value="">&nbsp;</option>
+      {% for adminsLevel in site.data.administrations %}
+        {% assign adminsInfo = adminsLevel[1]%}
+        {% for adminInfo in adminsInfo %}
+          <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
         {% endfor %}
-			</select>
+      {% endfor %}
+    </select>
   </div>
 
+<h2>Contact or team for the project</h2>
+<h3>contact:</h3>
+  <div class="form-group">
+    <label for="enUrlContact">URL</label>
+    <input class="form-control" id="enUrlContact" name="enUrlContact" type="url" placeholder="enURL"/>
 
-<legend><span class="field-name">Contact or team for the project</span></legend>
-	<h3>contact: </h3>	
-		<div class="form-group">
-			<label for="urlContact"><span class="field-name">URL</span></label>
-			<input class="form-control" id="urlContact" name="urlContact" type="url" />
-		</div>
-        <div class="form-group">
-			<label for="emailContact" class="required" ><span class="field-name">email </span> <strong class="required">(required)</strong></label>
-			<input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
-		</div>
-        <div class="form-group">
-			<label for="nameContact"><span class="field-name">name</span></label>
-			<input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
-		</div>
-        <div class="form-group">
-			<label for="phone"><span class="field-name">phone</span> </label>
-			<input class="form-control" id="phone" name="phone" type="tel"  data-rule-phoneUS="true" />
-		</div>
+    <label for="frUrlContact"></label>
+    <input class="form-control" id="frUrlContact" name="frUrlContact" type="url" placeholder="frURL"/>
+  </div>
 
-<legend><span class="field-name"> Date of the project</span></legend>
-	<h3>date: </h3>
-		 <div class="form-group">
-			<label for="dateCreated" class="required"><span class="field-name">created</span> <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-			<input class="form-control" id="dateCreated" name="dateCreated" type="date" data-rule-dateISO="true" required="required" />
-		</div>
-        <div class="form-group">
-			<label for="dateLastModified"><span class="field-name">lastModified</span><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-			<input class="form-control" id="dateLastModified" name="dateLastModified" type="date" data-rule-dateISO="true" />
-		</div>
-         <div class="form-group">
-			<label for="dateLastUpdated" class="required"><span class="field-name">metadataLastUpdated</span> <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-			<input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
-		</div>
+  <div class="form-group">
+    <label for="emailContact" class="required" >email <strong class="required">(required)</strong></label>
+    <input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
+  </div>
+  <div class="form-group">
+    <label for="nameContact">name</span></label>
+    <input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+  </div>
+      <div class="form-group">
+    <label for="phone">phone</span> </label>
+    <input class="form-control" id="phone" name="phone" type="tel"  data-rule-phoneUS="true" />
+  </div>
 
-<legend><span class="field-name">Description of the project</span></legend>
+<h2>Date of the project</h2>
+<h3>date:</h3>
+  <div class="form-group">
+    <label for="dateCreated" class="required">created <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+    <input class="form-control" id="dateCreated" name="dateCreated" type="date" data-rule-dateISO="true" required="required" />
+  </div>
+  <div class="form-group">
+    <label for="dateLastModified">lastModified <span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+    <input class="form-control" id="dateLastModified" name="dateLastModified" type="date" data-rule-dateISO="true" />
+  </div>
+  <div class="form-group">
+    <label for="dateLastUpdated" class="required">metadataLastUpdated <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+    <input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
+  </div>
+
+<h2>Description of the project</h2>
 	<div class="form-group">
-		<label for="description" class="required"><span class="field-name">description</span> <strong class="required">(required)</strong></label>
-		<input class="form-control" id="description" name="description" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
-	</div>
+		<label for="enDescription" class="required">description <strong class="required">(required)</strong></label>
+		<input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="enDescription"/>
+  
+    <label for="frDescription"></label>
+		<input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="frDescription"/>
+  </div>
 
-<legend><span class="field-name">URL of the project download</span></legend>
-	<div class="form-group">
-		<label for="downloadURL"><span class="field-name">downloadURL</span></label>
-		<input class="form-control" id="downloadURL" name="downloadURL" type="url" />
-	</div>
+<h2>URL of the project download</h2>
+  <div class="form-group">
+    <label for="enDownloadUrl">downloadURL</label>
+    <input class="form-control" id="enDownloadUrl" name="enDownloadUrl" type="url" placeholder="enURL"/>
 
-<legend><span class="field-name">URL of the project homepage</span></legend>
-	<div class="form-group">
-		<label for="homepageURL"><span class="field-name">homepageURL</span></label>
-		<input class="form-control" id="homepageURL" name="homepageURL" type="url" />
-	</div>
+    <label for="frDownloadUrl" ></span></label>
+    <input class="form-control" id="frDownloadUrl" name="frDownloadUrl" type="url" placeholder="frURL"/>
+  </div>
 
-<legend><span class="field-name">Programming languages used in the project</span></legend>
-	<label for="language"><span class="field-name">languages</span></label>
+<h2>URL of the project homepage</h2>
+  <div class="form-group">
+    <label for="enHomepageURL">downloadURL</label>
+    <input class="form-control" id="enHomepageURL" name="homepageURL" type="url" placeholder="enURL"/>
+
+    <label for="frHomepageURL" ></span></label>
+    <input class="form-control" id="frHomepageURL" name="homepageURL" type="url" placeholder="frURL"/>
+  </div>
+
+<h2>Programming languages used in the project</h2>
+	<label for="language">languages</label>
   {% assign languages_array = "" | split: "," %}
   {% for fptms in site.data.code %}
   {% assign fptm = fptms[1] %}
@@ -108,65 +120,88 @@ permalink: /en/open-source-code-form-validation.html
   <div id="languages"></div>
   <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">Add more languages</button>
 
-<legend><span class="field-name">Name of the project</span></legend>
+<h2>Name of the project</h2>
 	<div class="form-group">
-		<label for="projectName" class="required"><span class="field-name">name</span> <strong class="required">(required)</strong></label>
-		<input class="form-control" id="projectName" name="projectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
-	</div>
+		<label for="enProjectName" class="required">name <strong class="required">(required)</strong></label>
+		<input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="enName"/>
+    
+    <label for="frProjectName"></label>
+		<input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="frName" />
+  </div>
 
-<legend><span class="field-name">Organization within the department or agency to which the project belongs</span></legend>
-	<div class="form-group">
-		<label for="organization" ><span class="field-name">organization</span></label>
-		<input class="form-control" id="organization" name="organization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
-	</div>
+<h2>Organization within the department or agency to which the project belongs</h2>
+  <div class="form-group">
+    <label for="enOrganization">organization</label>
+    <input class="form-control" id="enOrganization" name="enOrganization" type="text" placeholder="enOrganization" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
 
-<legend ><span class="field-name">Groups partnering on the project</span></legend>
-	<h3>partners: </h3>
+    <label for="frOrganization"></label>
+    <input class="form-control" id="frOrganization" name="frOrganization" type="text" placeholder="frOrganization" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+  </div>
+
+<h2>Groups partnering on the project</h2>
+<h3>partner:</h3>
+  <div class="form-group">
+    <label for="enUrlPartner">downloadURL</label>
+    <input class="form-control" id="enUrlPartner" name="enUrlPartner" type="url" placeholder="enURL"/>
+
+    <label for="frUrlPartner"></label>
+    <input class="form-control" id="frUrlPartner" name="enUrlPartner" type="url" placeholder="frURL"/>
+  </div>
 	<div class="form-group">
-		<label for="urlPartner"><span class="field-name">URL</span></label>
-		<input class="form-control" id="urlPartner" name="urlPartner" type="url" />
-	</div>
-	<div class="form-group">
-		<label for="emailPartner"><span class="field-name">Email </span></label>
+		<label for="emailPartner">Email</label>
 		<input class="form-control" id="emailPartner" name="emailPartner" type="email"/>
 	</div>
 	<div class="form-group">
-		<label for="namePartner"><span class="field-name">Name</span></label>
-		<input class="form-control" id="namePartner" name="namePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+		<label for="enNamePartner">Name</label>
+    <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="enName"/>
+    
+    <label for="frNamePartner"></label>
+    <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="frName"/>
 	</div>
 
-<legend><span class="field-name">License details</span></legend>
-	<h3>license: </h3>
-	
-        <div class="form-group">
-			<label for="urlLicense" class="required" ><span class="field-name">URL </span> <strong class="required">(required)</strong></label>
-			<input class="form-control" id="urlLicense" name="urlLicense" type="url" required="required" />
-		</div>
-		<div class="form-group">
-			<label for="spdxID" class="required" ><span class="field-name">spdxID </span> <strong class="required">(required)</strong></label>
-			<input class="form-control" id="spdxID" name="spdxID" type="text"  required="required" />
-		</div>
+<h2>License details</h2>
+<h3>licenses:</h3>	
+  <div class="form-group">
+    <label for="enUrlLicense" class="required" >URL <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enUrlLicense" name="enUrlLicense" type="url" required="required" placeholder="enURL"/>
 
-<legend><span class="field-name"> URL of the public repository of the project</span></legend>
+    <label for="frUrlLicense"></label>
+    <input class="form-control" id="frUrlLicense" name="frUrlLicense" type="url" required="required" placeholder="frURL"/>
+  </div>
+  <div class="form-group">
+    <label for="spdxID" class="required" >spdxID <strong class="required">(required)</strong></label>
+    <input class="form-control" id="spdxID" name="spdxID" type="text"  required="required"/>
+  </div>
+
+<h2> URL of the public repository of the project</h2>
 	<div class="form-group">
-		<label for="repoUrl" class="required"><span class="field-name">repositoryURL</span> <strong class="required">(required)</strong></label>
-		<input class="form-control" id="repoUrl" name="repoUrl" type="url" required="required" />
+		<label for="enRepoUrl" class="required">repositoryURL <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enRepoUrl" name="enRepoUrl" type="url" required="required" placeholder="enURL"/>
+    
+    <label for="repoUrl"></label>
+		<input class="form-control" id="frRepoUrl" name="frRepoUrl" type="url" required="required" placeholder="frUrl"/>
 	</div>
 
-<legend><span class="field-name">Platforms or other software used in this project</span></legend>		
-	<h3>relatedCode: </h3>
-		<div class="form-group">
-			<label for="urlRelatedCode"><span class="field-name">URL</span></label>
-			<input class="form-control" id="urlRelatedCode" name="urlRelatedCode" type="url" />
-		</div>
-        <div class="form-group">
-			<label for="nameRelatedCode"><span class="field-name">name</span></label>
-			<input class="form-control" id="nameRelatedCode" name="nameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
-		</div>
+<h2>Platforms or other software used in this project</h2>	
+<h3>relatedCode:</h3>
+  <div class="form-group">
+    <label for="enUrlRelatedCode">URL</label>
+    <input class="form-control" id="enUrlRelatedCode" name="enUrlRelatedCode" type="url" placeholder="enURL"/>
+    
+    <label for="frUrlRelatedCode"></label>
+    <input class="form-control" id="frUrlRelatedCode" name="urlRelatedCode" type="url" placeholder="frURL"/>
+  </div>
+  <div class="form-group">
+    <label for="enNameRelatedCode">name</label>
+    <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="enName"/>
+    
+    <label for="frNameRelatedCode"></label>
+    <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="frName"/>
+  </div>
 
-<legend><span class="field-name"> Development status of the project</span></legend>
+<h2>Development status of the project</h2>
 	<div class="form-group">
-    <label for="status"><span class="field-name">status</span></label>
+    <label for="status">status</label>
       {% assign statuses_array = "" | split: "," %}
       {% for fptms in site.data.code %}
       {% assign fptm = fptms[1] %}
@@ -180,34 +215,32 @@ permalink: /en/open-source-code-form-validation.html
         {% endfor %}
       {% endfor %}
 		<select class="form-control" id="status" name="status">
-      <option>&nbsp;</option>
+      <option value="">&nbsp;</option>
       {% assign statuses_array = statuses_array | uniq  %}
       {% for status in statuses_array %}
-        <option>{{ status }}</option>
+        <option value="{{ status }}">{{ status }}</option>
       {% endfor %}
 		</select>
 	</div>
 
-<legend><span class="field-name">keywords that will be helpful in discovering and searching for the project</span></legend>
-	<h3>tags: </h3>
-  <div id="tags">    
-    <div class="form-group">
-      <label for="tag" class="required" ><span class="field-name">tag</span> <strong class="required">(required)</strong></label>
-      <input class="form-control" id="tag" name="tag" type="text" required="required" />
-    </div>
+<h2>keywords that will be helpful in discovering and searching for the project</h2>
+  <div id="tags" class="form-group">
+    <label for="enTag" class="required" >tag <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enTag" name="tag" type="text" required="required" placeholder="enTag"/>
+    <label for="frTag"></label>
+    <input class="form-control" id="frTag" name="frTag" type="text" required="required" placeholder="frTag"/>
   </div>
   <button type="button" class="btn btn-default" onclick = "addMoreTags()">Add more tags</button>
 
-
-<legend><span class="field-name">Name of the version control system used in this project</span></legend>
+<h2>Name of the version control system used in this project</h2>
 	<div class="form-group">
-		<label for="vcs"><span class="field-name">vcs</span></label>
+		<label for="vcs">vcs</label>
 		<input class="form-control" id="vcs" name="vcs" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
 	</div>
 		
-<legend><span class="field-name">Latest version for this project</span></legend>
+<h2>Latest version for this project</h2>
 	<div class="form-group">
-		<label for="versionProject"><span class="field-name">version</span></label>
+		<label for="versionProject">version</label>
 		<input class="form-control" id="versionProject" name="versionProject" type="text" />
 	</div>
 
@@ -215,36 +248,35 @@ permalink: /en/open-source-code-form-validation.html
 </div>
 
 <script>
-    function addMoreLanguages(){
-    let div = document.createElement("DIV");
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
 
-    document.getElementById("languages").appendChild(div).appendChild(label);
-    document.getElementById("languages").appendChild(div).appendChild(input);
+function addMoreLanguages(){
+  let label = document.createElement("LABEL");
+  let input = document.createElement("INPUT");
+  let element = document.getElementById("languages");
 
-    div.setAttribute("class", "form-group");
-    label.setAttribute("for", "language");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "language");
-    input.setAttribute("name", "language");
-    input.setAttribute("type", "text");
-  }
+  element.appendChild(label);
+  element.appendChild(input);
 
-  function addMoreTags(){
-    let div = document.createElement("DIV");
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
+  element.setAttribute("class", "form-group");
+  label.setAttribute("for", "language");
+  input.setAttribute("class", "form-control");
+  input.setAttribute("id", "language");
+  input.setAttribute("name", "language");
+  input.setAttribute("type", "text");
+}
+function addMoreTags(){
+  let label = document.createElement("LABEL");
+  let input = document.createElement("INPUT");
 
-    document.getElementById("tags").appendChild(div).appendChild(label);
-    document.getElementById("tags").appendChild(div).appendChild(input);
+  document.getElementById("tags").appendChild(label);
+  document.getElementById("tags").appendChild(input);
 
-    div.setAttribute("class", "form-group");
-    label.setAttribute("for", "tag");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "tag");
-    input.setAttribute("name", "tag");
-    input.setAttribute("type", "text");
-  }
+  label.setAttribute("for", "tag");
+  input.setAttribute("class", "form-control");
+  input.setAttribute("id", "tag");
+  input.setAttribute("name", "tag");
+  input.setAttribute("type", "text");
+}
+
 </script>
 
