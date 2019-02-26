@@ -6,27 +6,25 @@ permalink: /en/open-source-code-form-validation.html
 ---
 
 <h1 property="name" id="wb-cont">Form with validation for open source code</h1>
+<p>Click <a href="open-source-code-schema.html">here</a> to know more informations about the metadata schema for open source code.</p>
+
 <div class="wb-frmvld">
 <form action="#" method="get" id="validation">
-
 <legend><span class="field-name"> Version of the metadata schema</span></legend>
-	<div class="form-group">
-		<label for="shemaVersion" class="required"><span class="field-name">schemaVersion</span> <strong class="required">(required)</strong></label>
-			<select class="form-control" id="shemaVersion" name="shemaVersion" required="required">
-				<option></option>
-				<option value="dr">1.0</option>
-			</select>
+	<div class="form-group">      
+    <label for="shemaVersion" class="required"><span class="field-name">schemaVersion</span></label>
+    <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
 	</div>
         
 <legend><span class="field-name"> Administration code</span></legend>
 	<div class="form-group">
 		<label for="adminCode" class="required"><span class="field-name">adminCode</span> <strong class="required">(required)</strong></label>
 			<select class="form-control" id="adminCode" name="adminCode" required="required">
-        <option>&nbsp;</option>
+        <option value="">&nbsp;</option>
         {% for adminsLevel in site.data.administrations %}
           {% assign adminsInfo = adminsLevel[1]%}
           {% for adminInfo in adminsInfo %}
-            <option>{{ adminInfo.code }}</option>
+            <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
           {% endfor %}
         {% endfor %}
 			</select>
@@ -40,7 +38,7 @@ permalink: /en/open-source-code-form-validation.html
 			<input class="form-control" id="urlContact" name="urlContact" type="url" />
 		</div>
         <div class="form-group">
-			<label for="emailContact" class="required" ><span class="field-name">email </span><strong class="required">(required)</strong></label>
+			<label for="emailContact" class="required" ><span class="field-name">email </span> <strong class="required">(required)</strong></label>
 			<input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
 		</div>
         <div class="form-group">
@@ -55,7 +53,7 @@ permalink: /en/open-source-code-form-validation.html
 <legend><span class="field-name"> Date of the project</span></legend>
 	<h3>date: </h3>
 		 <div class="form-group">
-			<label for="dateCreated" class="required"><span class="field-name">created</span><strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+			<label for="dateCreated" class="required"><span class="field-name">created</span> <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
 			<input class="form-control" id="dateCreated" name="dateCreated" type="date" data-rule-dateISO="true" required="required" />
 		</div>
         <div class="form-group">
@@ -63,13 +61,13 @@ permalink: /en/open-source-code-form-validation.html
 			<input class="form-control" id="dateLastModified" name="dateLastModified" type="date" data-rule-dateISO="true" />
 		</div>
          <div class="form-group">
-			<label for="dateLastUpdated" class="required"><span class="field-name">metadataLastUpdated</span><strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+			<label for="dateLastUpdated" class="required"><span class="field-name">metadataLastUpdated</span> <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
 			<input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
 		</div>
 
 <legend><span class="field-name">Description of the project</span></legend>
 	<div class="form-group">
-		<label for="description" class="required"><span class="field-name">description</span><strong class="required">(required)</strong></label>
+		<label for="description" class="required"><span class="field-name">description</span> <strong class="required">(required)</strong></label>
 		<input class="form-control" id="description" name="description" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
 	</div>
 
@@ -112,7 +110,7 @@ permalink: /en/open-source-code-form-validation.html
 
 <legend><span class="field-name">Name of the project</span></legend>
 	<div class="form-group">
-		<label for="projectName" class="required"><span class="field-name">name</span><strong class="required">(required)</strong></label>
+		<label for="projectName" class="required"><span class="field-name">name</span> <strong class="required">(required)</strong></label>
 		<input class="form-control" id="projectName" name="projectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" />
 	</div>
 
@@ -141,17 +139,17 @@ permalink: /en/open-source-code-form-validation.html
 	<h3>license: </h3>
 	
         <div class="form-group">
-			<label for="urlLicense" class="required" ><span class="field-name">URL </span><strong class="required">(required)</strong></label>
+			<label for="urlLicense" class="required" ><span class="field-name">URL </span> <strong class="required">(required)</strong></label>
 			<input class="form-control" id="urlLicense" name="urlLicense" type="url" required="required" />
 		</div>
 		<div class="form-group">
-			<label for="spdxID" class="required" ><span class="field-name">spdxID </span><strong class="required">(required)</strong></label>
+			<label for="spdxID" class="required" ><span class="field-name">spdxID </span> <strong class="required">(required)</strong></label>
 			<input class="form-control" id="spdxID" name="spdxID" type="text"  required="required" />
 		</div>
 
 <legend><span class="field-name"> URL of the public repository of the project</span></legend>
 	<div class="form-group">
-		<label for="repoUrl" class="required"><span class="field-name">repositoryURL</span><strong class="required">(required)</strong></label>
+		<label for="repoUrl" class="required"><span class="field-name">repositoryURL</span> <strong class="required">(required)</strong></label>
 		<input class="form-control" id="repoUrl" name="repoUrl" type="url" required="required" />
 	</div>
 
@@ -194,7 +192,7 @@ permalink: /en/open-source-code-form-validation.html
 	<h3>tags: </h3>
   <div id="tags">    
     <div class="form-group">
-      <label for="tag" class="required" ><span class="field-name">tag</span><strong class="required">(required)</strong></label>
+      <label for="tag" class="required" ><span class="field-name">tag</span> <strong class="required">(required)</strong></label>
       <input class="form-control" id="tag" name="tag" type="text" required="required" />
     </div>
   </div>
