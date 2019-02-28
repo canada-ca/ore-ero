@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<head>
+ <title>Open Source Code Groups</title>
+</head>
 <ul class="list-unstyled">
    <li>
       <details>
@@ -31,23 +35,31 @@
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                <div class="list-group">
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
                         <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[2] }} 
                             </li>
                         </ul>
+                    </a>    
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
+                <div class="list-group">
                 {% elsif org_name.size == 4  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
-                    <option value="{{ org_name[3] }}">{{ org_name[3] }} </option>
-                    </a>
-                        <ul>
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                    <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[3] }} 
                             </li>
                         </ul>
+                    </a>
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
                 {% endif %}
             {% endfor %}            
          </div>
@@ -86,25 +98,33 @@
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                <div class="list-group">
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
                         <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[2] }} 
                             </li>
                         </ul>
+                    </a>    
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
+                <div class="list-group">
                 {% elsif org_name.size == 4  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
-                    <option value="{{ org_name[3] }}">{{ org_name[3] }} </option>
-                    </a>
-                        <ul>
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                    <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[3] }} 
                             </li>
                         </ul>
+                    </a>
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}            
          </div>
       </details>
 
@@ -141,25 +161,33 @@
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                <div class="list-group">
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
                         <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[2] }} 
                             </li>
                         </ul>
+                    </a>    
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
+                <div class="list-group">
                 {% elsif org_name.size == 4  %}
-                    <a href="{{ "https://" | append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
-                    <option value="{{ org_name[3] }}">{{ org_name[3] }} </option>
-                    </a>
-                        <ul>
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                    <ul>
                             <li>
-                                <option value="{{  org_name[0] }}">{{  org_name[0]  }} </option>
+                                {{ org_name[3] }} 
                             </li>
                         </ul>
+                    </a>
+                        <ul class="lst-none"> 
+                            {{ org_name[0] }} 
+                        </ul>
+                </div>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}            
          </div>
       </details>
    </li>
