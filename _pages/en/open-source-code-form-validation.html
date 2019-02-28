@@ -33,13 +33,13 @@ permalink: /en/open-source-code-form-validation.html
 <h2>Contact or team for the project</h2>
 <h3>contact:</h3>
   <div class="form-group">
-    <label for="enUrlContact">URL</label>
-    <input class="form-control" id="enUrlContact" name="enUrlContact" type="url" placeholder="enURL"/>
-
-    <label for="frUrlContact"></label>
-    <input class="form-control" id="frUrlContact" name="frUrlContact" type="url" placeholder="frURL"/>
+    <label for="enUrlContact">English URL</label>
+    <input class="form-control" id="enUrlContact" name="enUrlContact" type="url" required="required"/>
   </div>
-
+  <div>
+    <label for="frUrlContact">French URL</label>
+    <input class="form-control" id="frUrlContact" name="frUrlContact" type="url" required="required"/>
+  </div>
   <div class="form-group">
     <label for="emailContact" class="required" >email <strong class="required">(required)</strong></label>
     <input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
@@ -70,33 +70,33 @@ permalink: /en/open-source-code-form-validation.html
 
 <h2>Description of the project</h2>
 	<div class="form-group">
-		<label for="enDescription" class="required">description <strong class="required">(required)</strong></label>
-		<input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="enDescription"/>
+		<label for="enDescription" class="required">English description <strong class="required">(required)</strong></label>
+		<input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
   
-    <label for="frDescription"></label>
-		<input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="frDescription"/>
+    <label for="frDescription" class="required">French Description <strong class="required">(required)</strong></label>
+		<input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
   </div>
 
 <h2>URL of the project download</h2>
   <div class="form-group">
-    <label for="enDownloadUrl">downloadURL</label>
-    <input class="form-control" id="enDownloadUrl" name="enDownloadUrl" type="url" placeholder="enURL"/>
+    <label for="enDownloadUrl">English downloadURL</label>
+    <input class="form-control" id="enDownloadUrl" name="enDownloadUrl" type="url"/>
 
-    <label for="frDownloadUrl" ></label>
-    <input class="form-control" id="frDownloadUrl" name="frDownloadUrl" type="url" placeholder="frURL"/>
+    <label for="frDownloadUrl">French downloadURL</label>
+    <input class="form-control" id="frDownloadUrl" name="frDownloadUrl" type="url"/>
   </div>
 
 <h2>URL of the project homepage</h2>
   <div class="form-group">
-    <label for="enHomepageURL">downloadURL</label>
-    <input class="form-control" id="enHomepageURL" name="homepageURL" type="url" placeholder="enURL"/>
+    <label for="enHomepageURL">English downloadURL</label>
+    <input class="form-control" id="enHomepageURL" name="homepageURL" type="url"/>
 
-    <label for="frHomepageURL"></label>
-    <input class="form-control" id="frHomepageURL" name="homepageURL" type="url" placeholder="frURL"/>
+    <label for="frHomepageURL">French downloadURL</label>
+    <input class="form-control" id="frHomepageURL" name="homepageURL" type="url"/>
   </div>
 
 <h2>Programming languages used in the project</h2>
-	<label for="language">languages</label>
+	<label>languages</label>
   {% assign languages_array = "" | split: "," %}
   {% for fptms in site.data.code %}
   {% assign fptm = fptms[1] %}
@@ -113,7 +113,7 @@ permalink: /en/open-source-code-form-validation.html
   {% assign languages_array = languages_array | uniq  %}
   {% for language in languages_array %}
     <div class="checkbox">
-      <label><input type="checkbox" value="{{ language }}"> {{ language  }}</label>
+      <label><input type="checkbox" value="{{ language }}"> {{ language  }} </label>
     </div>
   {% endfor %}
 
@@ -122,51 +122,51 @@ permalink: /en/open-source-code-form-validation.html
 
 <h2>Name of the project</h2>
 	<div class="form-group">
-		<label for="enProjectName" class="required">name <strong class="required">(required)</strong></label>
-		<input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="enName"/>
+		<label for="enProjectName" class="required">English name <strong class="required">(required)</strong></label>
+		<input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
     
-    <label for="frProjectName"></label>
-		<input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" placeholder="frName" />
+    <label for="frProjectName" class="required">French name <strong class="required">(required)</strong></label>
+		<input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
   </div>
 
 <h2>Organization within the department or agency to which the project belongs</h2>
   <div class="form-group">
-    <label for="enOrganization">organization</label>
-    <input class="form-control" id="enOrganization" name="enOrganization" type="text" placeholder="enOrganization" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+    <label for="enOrganization">English organization</label>
+    <input class="form-control" id="enOrganization" name="enOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
 
-    <label for="frOrganization"></label>
-    <input class="form-control" id="frOrganization" name="frOrganization" type="text" placeholder="frOrganization" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+    <label for="frOrganization">French organization</label>
+    <input class="form-control" id="frOrganization" name="frOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
   </div>
 
 <h2>Groups partnering on the project</h2>
 <h3>partner:</h3>
   <div class="form-group">
-    <label for="enUrlPartner">downloadURL</label>
-    <input class="form-control" id="enUrlPartner" name="enUrlPartner" type="url" placeholder="enURL"/>
+    <label for="enUrlPartner">English URL</label>
+    <input class="form-control" id="enUrlPartner" name="enUrlPartner" type="url"/>
 
-    <label for="frUrlPartner"></label>
-    <input class="form-control" id="frUrlPartner" name="enUrlPartner" type="url" placeholder="frURL"/>
+    <label for="frUrlPartner">French URL</label>
+    <input class="form-control" id="frUrlPartner" name="enUrlPartner" type="url"/>
   </div>
 	<div class="form-group">
 		<label for="emailPartner">Email</label>
 		<input class="form-control" id="emailPartner" name="emailPartner" type="email"/>
 	</div>
 	<div class="form-group">
-		<label for="enNamePartner">Name</label>
-    <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="enName"/>
+		<label for="enNamePartner">English Name</label>
+    <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
     
-    <label for="frNamePartner"></label>
-    <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="frName"/>
+    <label for="frNamePartner">French Name</label>
+    <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
 	</div>
 
 <h2>License details</h2>
 <h3>licenses:</h3>	
   <div class="form-group">
-    <label for="enUrlLicense" class="required" >URL <strong class="required">(required)</strong></label>
-    <input class="form-control" id="enUrlLicense" name="enUrlLicense" type="url" required="required" placeholder="enURL"/>
+    <label for="enUrlLicense" class="required" >English URL <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enUrlLicense" name="enUrlLicense" type="url" required="required"/>
 
-    <label for="frUrlLicense"></label>
-    <input class="form-control" id="frUrlLicense" name="frUrlLicense" type="url" required="required" placeholder="frURL"/>
+    <label for="frUrlLicense" class="required">French URL <strong class="required">(required)</strong></label>
+    <input class="form-control" id="frUrlLicense" name="frUrlLicense" type="url" required="required"/>
   </div>
   <div class="form-group">
     <label for="spdxID" class="required" >spdxID <strong class="required">(required)</strong></label>
@@ -175,28 +175,28 @@ permalink: /en/open-source-code-form-validation.html
 
 <h2> URL of the public repository of the project</h2>
 	<div class="form-group">
-		<label for="enRepoUrl" class="required">repositoryURL <strong class="required">(required)</strong></label>
-    <input class="form-control" id="enRepoUrl" name="enRepoUrl" type="url" required="required" placeholder="enURL"/>
+		<label for="enRepoUrl" class="required">English repositoryURL <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enRepoUrl" name="enRepoUrl" type="url" required="required"/>
     
-    <label for="repoUrl"></label>
-		<input class="form-control" id="frRepoUrl" name="frRepoUrl" type="url" required="required" placeholder="frUrl"/>
+    <label for="frRepoUrl" class="required">French repositoryURL <strong class="required">(required)</strong></label>
+		<input class="form-control" id="frRepoUrl" name="frRepoUrl" type="url" required="required"/>
 	</div>
 
 <h2>Platforms or other software used in this project</h2>	
 <h3>relatedCode:</h3>
   <div class="form-group">
-    <label for="enUrlRelatedCode">URL</label>
-    <input class="form-control" id="enUrlRelatedCode" name="enUrlRelatedCode" type="url" placeholder="enURL"/>
+    <label for="enUrlRelatedCode">English URL</label>
+    <input class="form-control" id="enUrlRelatedCode" name="enUrlRelatedCode" type="url"/>
     
-    <label for="frUrlRelatedCode"></label>
-    <input class="form-control" id="frUrlRelatedCode" name="urlRelatedCode" type="url" placeholder="frURL"/>
+    <label for="frUrlRelatedCode">French URL</label>
+    <input class="form-control" id="frUrlRelatedCode" name="urlRelatedCode" type="url"/>
   </div>
   <div class="form-group">
-    <label for="enNameRelatedCode">name</label>
-    <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="enName"/>
+    <label for="enNameRelatedCode">English name</label>
+    <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
     
-    <label for="frNameRelatedCode"></label>
-    <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="frName"/>
+    <label for="frNameRelatedCode">French name</label>
+    <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
   </div>
 
 <h2>Development status of the project</h2>
@@ -225,10 +225,10 @@ permalink: /en/open-source-code-form-validation.html
 
 <h2>keywords that will be helpful in discovering and searching for the project</h2>
   <div id="tags" class="form-group">
-    <label for="enTag" class="required" >tag <strong class="required">(required)</strong></label>
-    <input class="form-control" id="enTag" name="tag" type="text" required="required" placeholder="enTag"/>
-    <label for="frTag"></label>
-    <input class="form-control" id="frTag" name="frTag" type="text" required="required" placeholder="frTag"/>
+    <label for="enTag" class="required">English tag <strong class="required">(required)</strong></label>
+    <input class="form-control" id="enTag" name="tag" type="text" required="required"/>
+    <label for="frTag" class="required">French tag <strong class="required">(required)</strong></label>
+    <input class="form-control" id="frTag" name="frTag" type="text" required="required"/>
   </div>
   <button type="button" class="btn btn-default" onclick = "addMoreTags()">Add more tags</button>
 
