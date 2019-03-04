@@ -59,6 +59,53 @@ Search:
 TopicsMenu:
   en: Topics menu
   fr: Menu des sujets
+FilterOptions:
+  en: Filter Options
+  fr: Options De Filtrage
+LevelOfGovernment:
+  en: Level of government
+  fr: Niveau de gouvernement
+Organization:
+  en: Organization
+  fr: Organisation
+License:
+  en: License
+  fr: Licence
+Tag: 
+  en: Tag
+  fr: Étiquette
+Filter:
+  en: Filter
+  fr: Filtrer
+Clear:
+  en: Clear
+  fr: Effacer
+ProjectName:
+  en: Project Name
+  fr: Nom Du Projet
+CodeLanguage:
+  en: Language
+  fr: Langage
+RelatedCode:
+  en: Related Code
+  fr: Code Associé
+Status:
+  en: Status
+  fr: Statut
+CodeCreated:
+  en: Created
+  fr: Créé
+MetadataLastUpdatedCode:
+  en: Metadata Last Updated
+  fr: Dernière mise à jour de Métadonnées
+ContactPhoneCode:
+  en: Contact phone
+  fr: Numéro du contact
+VersionControlSystemCode:
+  en: Version Control System
+  fr: Système de contrôle de version
+  
+
 
 # Build settings
 markdown: kramdown
