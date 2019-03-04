@@ -3,10 +3,10 @@
 <!-- Filter dropdowns -->
 <div class="col-md-3">
   <details open>
-    <summary><h4 class="h4">Filter Options</h4></summary>
+    <summary><h4 class="h4">{{ site.FilterOptions[page.lang] }}</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-        <label for="dt_govLevel">Level of Government</label>
+        <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
         <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
           <option value="">&nbsp;</option>
           {% for fptms in site.data.code %}
@@ -56,7 +56,7 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_organization">Organization</label>
+        <label for="dt_organization">{{ site.Organization[page.lang] }}</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value="">&nbsp;</option>
           {% assign org_array = "" | split: ',' %}
@@ -81,7 +81,7 @@
       </div>
       
       <div class="form-group">
-        <label for="dt_license">License</label>
+        <label for="dt_license">{{ site.License[page.lang] }}</label>
         <select class="form-control" id="dt_license" name="dt_license" data-column="3">
           <option value="">&nbsp;</option>
           {% assign license_array = "" | split: ',' %}
@@ -106,7 +106,7 @@
       </div>
       
       <div class="form-group">
-        <label for="dt_tag">Tag</label>
+        <label for="dt_tag">{{ site.Tag[page.lang] }}</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
           <option value="">&nbsp;</option>
           {% assign tag_array = "" | split: ',' %}
@@ -132,10 +132,10 @@
       
       <div class="row">
         <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
+          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.Filter[page.lang] }}</button>
         </div>
         <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">Clear</button>
+          <button type="reset" class="btn btn-default">{{ site.Clear[page.lang] }}</button>
         </div>
       </div>
       
@@ -149,21 +149,20 @@
     <thead>
       <tr>
         <th>Administration</th>
-        <th>Project Name</th>
+        <th>{{ site.ProjectName[page.lang] }}</th>
         <th>Description</th>
-        <th>License</th>
-        <th>Tags</th>
-        <th>Organization</th>
+        <th>{{ site.License[page.lang] }}</th>
+        <th>{{ site.Tag[page.lang] }}</th>
+        <th>{{ site.Organization[page.lang] }}</th>
         <th>Code Repo</th>
-        <th>Level of Government</th>
-        <th>Langage</th>
-        <th>Related Code</th>
-        <th>Status</th>
+        <th>{{ site.LevelOfGovernment[page.lang] }}</th>
+        <th>{{ site.Language[page.lang] }}</th>
+        <th>{{ site.RelatedCode[page.lang] }}</th>
+        <th>{{ site.Status[page.lang] }}</th>
         <th>Vcs</th>
         <th>Version</th> 
-        <th>Created</th> 
-        <th>Metadata Last Updated</th> 
-
+        <th>{{ site.CodeCreated[page.lang] }}</th> 
+        <th>{{ site.MetadataLastUpdatedCode[page.lang] }}</th> 
       </tr>
     </thead>
     <tbody>
@@ -258,7 +257,7 @@
         </header>
         <div class="modal-body">
           <p><strong>{{ release.description[page.lang] }}</strong></p>
-          <p>Level of Government: {{fptms[0] | capitalize}}</p>
+          <p>{{ site.LevelOfGovernment[page.lang] }}: {{fptms[0] | capitalize}}</p>
           {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
           {% if aName[0].name[page.lang] != nil %}
             <p>Administration: {{ aName[0].name[page.lang] }}</p>
@@ -275,30 +274,30 @@
           {% endif %}
 
         {% if release.organization[page.lang] != nil %}
-          <p>Organization: {{ release.organization[page.lang] }}</p>
+          <p>{{ site.Organization[page.lang] }}: {{ release.organization[page.lang] }}</p>
         {% endif %}
         <p>Source code:
           <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
               {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
           </a>
         </p>
-        <p>License(s):
+        <p>{{ site.License[page.lang] }}(s):
           {% for license in release.licenses %}
             <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
           {% endfor %}
         </p>
-        <p>Tag(s): 
+        <p>{{ site.Tag[page.lang] }}(s): 
           {% for tag in release.tags[page.lang] %}
             {{ tag }}
           {% endfor %}
         </p>
-        <p>Language(s): 
+        <p>{{ site.CodeLanguage[page.lang] }}(s): 
           {% for langauge in release.languages %}
             {{ langauge }}
           {% endfor %}
         </p>
         {% if release.status != nil %}
-          <p>Status: {{ release.status }}</p>
+          <p>{{ site.Status[page.lang] }}: {{ release.status }}</p>
         {% endif %}
         {% if release.vcs != nil %}
           <p>Version Control System: {{ release.vcs }}</p>
@@ -306,15 +305,15 @@
         {% if release.version != nil %}
           <p>Version: {{ release.version }}</p>
         {% endif %}
-        <p>Created: {{ release.date.created }}</p>
-        <p>Last Updated: {{ release.date.metadataLastUpdated }}</p>
+        <p>{{ site.CodeCreated[page.lang] }}: {{ release.date.created }}</p>
+        <p>{{ site.MetadataLastUpdatedCode[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
 
         <h3>Contact</h3>
         {% if release.contact.name != nil %}
           <p>{{ release.contact.name }}</p>
         {% endif %}
         {% if release.contact.phone != nil %}
-          <p>Contact phone: {{ release.contact.phone }}</p>
+          <p>{{ site.ContactPhoneCode[page.lang] }}: {{ release.contact.phone }}</p>
         {% endif %}
         {% if release.contact.email != nil %}
           <p><a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a></p>
