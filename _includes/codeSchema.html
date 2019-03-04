@@ -1,0 +1,280 @@
+<ul class="list-unstyled">
+    <li>
+    <details open> 
+        <summary>schemaVersion <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+        <p>{{ site.SchemaVersionCodeDesc[page.lang] }}</p>
+    </details> 
+    </li>  
+    
+    <li>
+    <details open> 
+        <summary>adminCode <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+        <p>{{ site.AdminCodeDesc[page.lang] }}</p>
+    </details>
+    </li>  
+    
+    <li>
+    <details open>   
+        <summary>releases <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+        <p>{{ site.RealeasesCodeDesc[page.lang] }}</p>
+        <ul class="list-unstyled">
+            <li>
+            <details open> 
+                <summary>contact <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <ul class="list-unstyled">
+                    <li>
+                    <details open>
+                        <summary>URL [array]</summary>
+                        <p>{{ site.URLContactCodeDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>email <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+                        <p>{{ site.EmailContactCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>name [string]</summary>
+                        <p>{{ site.NameContactCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>phone [string]</summary>
+                        <p>{{ site.PhoneContactCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>date <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <ul class="list-unstyled">
+                    <li>
+                    <details open>
+                        <summary>created <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+                        <p>{{ site.DateCreatedCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>lastModified [string]</summary>
+                        <p>{{ site.LastModifiedCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>metadataLastUpdated <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+                        <p>{{ site.MetaDataLastUpdatedCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <p>{{ site.DescriptionCodeDesc[page.lang] }}</p>
+                <ul>
+                    <li>en <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>fr <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>downloadURL [array]</summary>
+                <p>{{ site.DownloadURLCodeDesc[page.lang] }}</p>
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>homepageURL [array]</summary>
+                <p>{{ site.HomepageURLCodeDesc[page.lang] }}</p>
+
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>languages [array]</summary>
+                <p>{{ site.LanguagesCodeDesc[page.lang] }}</p>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>name <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <p>{{ site.NameCodeDesc[page.lang] }}</p>
+                <ul>
+                    <li>en <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>fr <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>organization [array]</summary>
+                <p>{{ site.OrganizationCodeDesc[page.lang] }}</p>
+                <ul>
+                    <li>en [string]</li>
+                    <li>fr [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>partners [array]</summary>
+                <p>{{ site.PartnersCodeDesc[page.lang] }}</p>
+                <ul class="list-unstyled">
+                    <li>
+                    <details open>
+                        <summary>URL [array]</summary>
+                        <p>{{ site.URLPartnersCodeDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>email [string]</summary>
+                        <p>{{ site.EmailPartnersCodeDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>name [array]</summary>
+                        <p>{{ site.NamePartnersCodeDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>licenses <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <p>{{ site.LicensesDesc[page.lang] }}</p>
+                <ul class="list-unstyled">
+                    <li>
+                    <details open>
+                        <summary>URL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                        <p>{{ site.URLLicensesDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                            <li>fr <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>spdxID <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+                        <p>{{ site.SpdxIDLicensesDesc[page.lang] }}</p>
+                    </details>
+                    </li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>repositoryURL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <p>{{ site.RepositoryURLDesc[page.lang] }}</p>
+                <ul>
+                    <li>en <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>fr <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>relatedCode [array]</summary>
+                <p>{{ site.RelatedCodeDesc[page.lang] }}</p>
+                <ul class="list-unstyled">
+                    <li>
+                    <details open>
+                        <summary>URL [array]</summary>
+                        <p>{{ site.URLRelatedCodeDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li>
+                    <details open>
+                        <summary>name [array]</summary>
+                        <p>{{ site.NameRelatedCodeDesc[page.lang] }}</p>
+                        <ul>
+                            <li>en [string]</li>
+                            <li>fr [string]</li>
+                        </ul>
+                    </details>
+                    </li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>status [string]</summary>
+                <p>{{ site.StatusCodeDesc[page.lang] }}</p>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>tags <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <p>{{ site.TagsCodeDesc[page.lang] }}</p>
+                <ul>
+                    <li>en <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array] A list of English keywords</li>
+                    <li>fr <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array] A list of French keywords</li>
+                </ul>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>vcs [string]</summary>
+                <p>{{ site.VcsCodeDesc[page.lang] }}</p>
+            </details>
+            </li>
+
+            <li>
+            <details open> 
+                <summary>version [string]</summary>
+                <p>{{ site.VersionCodeDesc[page.lang] }}</p>
+            </details>
+            </li>
+        </ul>
+    </details>
+    </li>
+</ul>
