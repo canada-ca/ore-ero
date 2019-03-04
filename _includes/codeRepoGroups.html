@@ -33,35 +33,25 @@
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
-                        <ul>
-                            <li>
-                                {{ org_name[2] }} 
-                            </li>
-                        </ul>
-                    </a>    
-                    <ul class="list-unstyled">
-                        <li>
-                            {{ org_name[0] }}
-                        </li> 
-                    </ul>
-                </div>
-                {% elsif org_name.size == 4  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
                     <ul>
                         <li>
-                            {{ org_name[3] }} 
-                        </li>
+                            {{ org_name[0] }}
+                        </li> 
                     </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                    <ul class="list-unstyled">
+                    <ul>
                         <li>
                             {{ org_name[0] }}
                         </li> 
                     </ul>
-                </div>
                 {% endif %}
             {% endfor %}            
          </div>
@@ -100,37 +90,27 @@
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
-                        <ul>
-                            <li>
-                                {{ org_name[2] }} 
-                            </li>
-                        </ul>
-                    </a>    
-                    <ul class="list-unstyled">
-                        <li>
-                            {{ org_name[0] }}
-                        </li> 
-                    </ul>
-                </div>
-                {% elsif org_name.size == 4  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
                     <ul>
                         <li>
-                            {{ org_name[3] }} 
-                        </li>
+                            {{ org_name[0] }}
+                        </li> 
                     </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                    <ul class="list-unstyled">
+                    <ul>
                         <li>
                             {{ org_name[0] }}
                         </li> 
                     </ul>
-                </div>
                 {% endif %}
-            {% endfor %}            
+            {% endfor %}         
          </div>
       </details>
 
@@ -162,42 +142,31 @@
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
-            
             {% assign repo_array = repo_array | sort: "name" | uniq %}
             {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                 {% if org_name.size == 3  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" class="list-group-item" target="_blank">
-                        <ul>
-                            <li>
-                                {{ org_name[2] }} 
-                            </li>
-                        </ul>
-                    </a>    
-                    <ul class="list-unstyled">
-                        <li>
-                            {{ org_name[0] }}
-                        </li> 
-                    </ul>
-                </div>
-                {% elsif org_name.size == 4  %}
-                <div class="list-group">
-                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
                     <ul>
                         <li>
-                            {{ org_name[3] }} 
-                        </li>
+                            {{ org_name[0] }}
+                        </li> 
                     </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                    <ul class="list-unstyled">
+                    <ul>
                         <li>
                             {{ org_name[0] }}
                         </li> 
                     </ul>
-                </div>
                 {% endif %}
-            {% endfor %}               
+            {% endfor %}         
          </div>
       </details>
    </li>
