@@ -1,3 +1,5 @@
+<div class="row">
+
 <ul class="list-unstyled">
    <li>
       <details>
@@ -15,10 +17,10 @@
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
                                     {% assign repo_array = repo_array | push: org_url %}
                                 {% endif %}
                             {% endif %}
@@ -26,23 +28,35 @@
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
-            
-            {% assign repo_array = repo_array | sort: "name" | uniq %}
+           
+           {% assign repo_array = repo_array | sort: "name" | uniq %}
             {% for repo in repo_array %}
-                {% assign org_name =  repo | remove: "https://"  | split: "/" %}
-                {% assign org_size =  org_name | size %}
-                {% if org_size == 2  %}
-                <a href="{{ "https://" | append: repo }}" target="_blank">
-                    <option value="{{ org_name[1] }}">{{ org_name[1] }} </option>
+                {% assign org_name =  repo | split: "/" %}
+                {% if org_name.size == 3  %}
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                {% elsif org_size == 3  %}
-                    <a href="{{ "https://" | append: repo }}" target="_blank">  
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}            
          </div>
       </details>
+
    </li>
    <li>
       <details>
@@ -60,10 +74,10 @@
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
                                     {% assign repo_array = repo_array | push: org_url %}
                                 {% endif %}
                             {% endif %}
@@ -74,20 +88,32 @@
             
             {% assign repo_array = repo_array | sort: "name" | uniq %}
             {% for repo in repo_array %}
-                {% assign org_name =  repo | remove: "https://"  | split: "/" %}
-                {% assign org_size =  org_name | size %}
-                {% if org_size == 2  %}
-                <a href="{{ "https://" | append: repo }}" target="_blank">
-                    <option value="{{ org_name[1] }}">{{ org_name[1] }} </option>
+                {% assign org_name =  repo | split: "/" %}
+                {% if org_name.size == 3  %}
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                {% elsif org_size == 3  %}
-                    <a href="{{ "https://" | append: repo }}" target="_blank">  
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}         
          </div>
       </details>
+
    </li>
    <li>
       <details>
@@ -105,10 +131,10 @@
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[0] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[2]  %}
                                     {% assign repo_array = repo_array | push: org_url %}
                                 {% endif %}
                             {% endif %}
@@ -116,22 +142,34 @@
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
-            
             {% assign repo_array = repo_array | sort: "name" | uniq %}
             {% for repo in repo_array %}
-                {% assign org_name =  repo | remove: "https://"  | split: "/" %}
-                {% assign org_size =  org_name | size %}
-                {% if org_size == 2  %}
-                <a href="{{ "https://" | append: repo }}" target="_blank">
-                    <option value="{{ org_name[1] }}">{{ org_name[1] }} </option>
+                {% assign org_name =  repo | split: "/" %}
+                {% if org_name.size == 3  %}
+                <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] }}" target="_blank">
+                    {{ org_name[2] }} 
+                </a>    
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
+               
+                {% elsif org_name.size == 4  %}
+               
+                    <a href="{{"https://"| append: org_name[1] | append: "/" | append: org_name[2] | append: "/" | append: org_name[3] }}" target="_blank">
+                        {{ org_name[3] }} 
                     </a>
-                {% elsif org_size == 3  %}
-                    <a href="{{ "https://" | append: repo }}" target="_blank">  
-                    <option value="{{ org_name[2] }}">{{ org_name[2] }} </option>
-                    </a>
+                    <ul>
+                        <li>
+                            {{ org_name[0] }}
+                        </li> 
+                    </ul>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}         
          </div>
       </details>
    </li>
 </ul>
+
+</div>
