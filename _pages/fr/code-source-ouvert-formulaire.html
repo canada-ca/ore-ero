@@ -1,22 +1,22 @@
 ---
 layout: default
-ref: formValidation
-lang: en
-permalink: /en/open-source-code-form-validation.html
+ref: codeForm
+lang: fr
+permalink: /fr/code-source-ouvert-formulaire.html
 ---
 
-<h1 property="name" id="wb-cont">Form with validation for open source code</h1>
-<p>Click <a href="open-source-code-schema.html">here</a> to know more informations about the metadata schema for open source code.</p>
+<h1 property="name" id="wb-cont">Formulaire avec validation du code source ouvert</h1>
+<p>Appuyez <a href="code-source-ouvert-schema.html">ici</a> pour en savoir plus sur le schéma de métadonnées pour le code source ouvert.</p>
 
 <div class="wb-frmvld">
 <form action="#" method="get" id="validation">
-<h2>Version of the metadata schema</h2>
+<h2>Version du schéma de métadonnées</h2>
 	<div class="form-group">      
     <label for="shemaVersion" class="required">schemaVersion</label>
     <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
 	</div>
         
-<h2>Administration code</h2>
+<h2>Code d'administration</h2>
 	<div class="form-group">
 		<label for="adminCode" class="required">adminCode <strong class="required">(required)</strong></label>
     <select class="form-control" id="adminCode" name="adminCode" required="required">
@@ -30,7 +30,7 @@ permalink: /en/open-source-code-form-validation.html
     </select>
   </div>
 
-<h2>Contact or team for the project</h2>
+<h2>Contact ou équipe du projet</h2>
 <h3>contact:</h3>
   <div class="form-group">
     <label for="enUrlContact">English URL</label>
@@ -53,7 +53,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="phone" name="phone" type="tel"  data-rule-phoneUS="true" />
   </div>
 
-<h2>Date of the project</h2>
+<h2>Date du projet</h2>
 <h3>date:</h3>
   <div class="form-group">
     <label for="dateCreated" class="required">created <strong class="required">(required)</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
@@ -68,7 +68,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
   </div>
 
-<h2>Description of the project</h2>
+<h2>Description du project</h2>
 	<div class="form-group">
 		<label for="enDescription" class="required">English description <strong class="required">(required)</strong></label>
 		<input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
@@ -77,7 +77,7 @@ permalink: /en/open-source-code-form-validation.html
 		<input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
   </div>
 
-<h2>URL of the project download</h2>
+<h2>URL du téléchargement du projet</h2>
   <div class="form-group">
     <label for="enDownloadUrl">English downloadURL</label>
     <input class="form-control" id="enDownloadUrl" name="enDownloadUrl" type="url"/>
@@ -86,7 +86,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="frDownloadUrl" name="frDownloadUrl" type="url"/>
   </div>
 
-<h2>URL of the project homepage</h2>
+<h2>URL de la page d'acceuil du projet</h2>
   <div class="form-group">
     <label for="enHomepageURL">English downloadURL</label>
     <input class="form-control" id="enHomepageURL" name="homepageURL" type="url"/>
@@ -95,7 +95,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="frHomepageURL" name="homepageURL" type="url"/>
   </div>
 
-<h2>Programming languages used in the project</h2>
+<h2>Langages de programmation utilisés dans le projet</h2>
 	<label>languages</label>
   {% assign languages_array = "" | split: "," %}
   {% for fptms in site.data.code %}
@@ -120,7 +120,7 @@ permalink: /en/open-source-code-form-validation.html
   <div id="languages"></div>
   <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">Add more languages</button>
 
-<h2>Name of the project</h2>
+<h2>Nom du projet</h2>
 	<div class="form-group">
 		<label for="enProjectName" class="required">English name <strong class="required">(required)</strong></label>
 		<input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
@@ -129,7 +129,7 @@ permalink: /en/open-source-code-form-validation.html
 		<input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
   </div>
 
-<h2>Organization within the department or agency to which the project belongs</h2>
+<h2>Organisation du departement ou de l'agence auquel le projet appartient</h2>
   <div class="form-group">
     <label for="enOrganization">English organization</label>
     <input class="form-control" id="enOrganization" name="enOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
@@ -138,7 +138,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="frOrganization" name="frOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
   </div>
 
-<h2>Groups partnering on the project</h2>
+<h2>Groupes partenaires sur le projet</h2>
 <h3>partner:</h3>
   <div class="form-group">
     <label for="enUrlPartner">English URL</label>
@@ -159,7 +159,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
 	</div>
 
-<h2>License details</h2>
+<h2>Détails de la licence</h2>
 <h3>licenses:</h3>	
   <div class="form-group">
     <label for="enUrlLicense" class="required" >English URL <strong class="required">(required)</strong></label>
@@ -173,7 +173,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="spdxID" name="spdxID" type="text"  required="required"/>
   </div>
 
-<h2> URL of the public repository of the project</h2>
+<h2>URL du répertoire public du projet</h2>
 	<div class="form-group">
 		<label for="enRepoUrl" class="required">English repositoryURL <strong class="required">(required)</strong></label>
     <input class="form-control" id="enRepoUrl" name="enRepoUrl" type="url" required="required"/>
@@ -182,7 +182,7 @@ permalink: /en/open-source-code-form-validation.html
 		<input class="form-control" id="frRepoUrl" name="frRepoUrl" type="url" required="required"/>
 	</div>
 
-<h2>Platforms or other software used in this project</h2>	
+<h2>Plateformes ou autres logiciels utilisés dans ce projet</h2>	
 <h3>relatedCode:</h3>
   <div class="form-group">
     <label for="enUrlRelatedCode">English URL</label>
@@ -199,7 +199,7 @@ permalink: /en/open-source-code-form-validation.html
     <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
   </div>
 
-<h2>Development status of the project</h2>
+<h2>Statut de développement du projet</h2>
 	<div class="form-group">
     <label for="status">status</label>
       {% assign statuses_array = "" | split: "," %}
@@ -223,7 +223,7 @@ permalink: /en/open-source-code-form-validation.html
 		</select>
 	</div>
 
-<h2>keywords that will be helpful in discovering and searching for the project</h2>
+<h2>Mots clés utiles pour la découverte et la recherche du projet</h2>
   <div id="tags" class="form-group">
     <label for="enTag" class="required">English tag <strong class="required">(required)</strong></label>
     <input class="form-control" id="enTag" name="tag" type="text" required="required"/>
@@ -232,13 +232,13 @@ permalink: /en/open-source-code-form-validation.html
   </div>
   <button type="button" class="btn btn-default" onclick = "addMoreTags()">Add more tags</button>
 
-<h2>Name of the version control system used in this project</h2>
+<h2>Nom du système de contrôle de version utilisé dans ce projet</h2>
 	<div class="form-group">
 		<label for="vcs">vcs</label>
 		<input class="form-control" id="vcs" name="vcs" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
 	</div>
 		
-<h2>Latest version for this project</h2>
+<h2>Dernière version du projet</h2>
 	<div class="form-group">
 		<label for="versionProject">version</label>
 		<input class="form-control" id="versionProject" name="versionProject" type="text" />
@@ -248,7 +248,6 @@ permalink: /en/open-source-code-form-validation.html
 </div>
 
 <script>
-
 function addMoreLanguages(){
   let label = document.createElement("LABEL");
   let input = document.createElement("INPUT");
@@ -277,6 +276,4 @@ function addMoreTags(){
   input.setAttribute("name", "tag");
   input.setAttribute("type", "text");
 }
-
 </script>
-
