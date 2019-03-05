@@ -200,7 +200,60 @@ VcsCodeDesc:
 VersionCodeDesc:
   en: The latest version for this project. For example, 1.0.0
   fr: La version de cette "release". Par  exemple, 1.0.0
-
+SchemaVersionCodeForm:
+  en: Version of the metadata schema
+  fr: Version du schéma de métadonnées
+AdminCodeForm:
+  en: Administration code
+  fr: Code d'administration
+ContactCodeForm:
+  en: Contact or team for the project
+  fr: Contact ou équipe du projet
+DateCodeForm:
+  en: Date of the project
+  fr: Date du projet
+DescriptionCodeForm:
+  en: Description of the project
+  fr: Description du project
+DownloadURLCodeForm:
+  en: URL of the project download
+  fr: URL du téléchargement du projet
+HomePageURLCodeForm:
+  en: URL of the project homepage
+  fr: URL de la page d'acceuil du projet
+LanguagesCodeForm:
+  en: Programming languages used in the project
+  fr: Langages de programmation utilisés dans le projet
+NameCodeForm:
+  en: Name of the project
+  fr: Nom du projet
+OrganizationCodeForm:
+  en: Organization within the department or agency to which the project belongs
+  fr: Organisation du departement ou de l'agence auquel le projet appartient
+PartnerCodeForm:
+  en: Groups partnering on the project
+  fr: Groupes partenaires sur le projet
+LicenseCodeForm:
+  en: License details
+  fr: Détails de la licence
+RepoURLCodeForm:
+  en: URL of the public repository of the project
+  fr: URL du répertoire public du projet
+RelatedCodeForm:
+  en: Platforms or other software used in this project
+  fr: Plateformes ou autres logiciels utilisés dans ce projet
+StatusCodeForm:
+  en: Development status of the project
+  fr: Statut de développement du projet
+TagsCodeForm:
+  en: keywords that will be helpful in discovering and searching for the project
+  fr: Mots clés utiles pour la découverte et la recherche du projet
+VcsCodeForm:
+  en: Name of the version control system used in this project
+  fr: Nom du système de contrôle de version utilisé dans ce projet
+VersionCodeForm:
+  en: Latest version for this project
+  fr: Dernière version du projet
 
 
 # Build settings
