@@ -36,3 +36,29 @@ releases:
         - Données
         - Communication
     vcs: git
+  - 
+    contact: 
+      email: "john.bain2@canada.ca"
+    date: 
+      created: "2018-12-09"
+      metadataLastUpdated: "2019-03-06"  
+    description: 
+      en: "Enterprise architecture models"
+      fr: "Modèles d'architecture d'entreprise"
+    name: 
+      en: "GC Architecture"
+      fr: "Architecture GC"
+    licenses:
+      - 
+        URL: 
+          en: "https://github.com/canada-ca/architecture/blob/master/LICENSE"
+          fr: "https://github.com/canada-ca/architecture/blob/master/LICENSE"
+        spdxID: "MIT"
+    repositoryURL: 
+      en: "https://github.com/canada-ca/architecture"
+      fr: "https://github.com/canada-ca/architecture"
+    tags: 
+      en: 
+        - "Architecture"
+      fr: 
+        - "Architecture"
