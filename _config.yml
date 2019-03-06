@@ -107,9 +107,6 @@ VersionControlSystemCode:
 MandatoryField:
   en: Mandatory
   fr: Obligatoire
-RequiredField:
-  en: required
-  fr: requis
 SchemaVersionCodeDesc:
   en: The version of the ORE metadata schema for open source code.
   fr: La version du schéma de données ORE pour le code utilisé.
