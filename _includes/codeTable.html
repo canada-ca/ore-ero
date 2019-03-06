@@ -145,7 +145,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>Administration</th>
@@ -188,7 +188,7 @@
               <td>{{ aName[0].name[page.lang] }}</td>
             {% endif %}
             
-            <td><a class="wb-lbx" title="{{ release.name[page.lang] }}" href="#{{ release.name[page.lang] | slugify }}">{{ release.name[page.lang] }}</a></td>
+            <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
             <td>{{ release.description[page.lang] }}</td>
             <td>
               {% for license in release.licenses %}
@@ -245,13 +245,14 @@
   </table>
 </div>
 
+
 <!-- Modal Lightboxes -->
 {% for fptms in site.data.code %}
   {% assign fptm = fptms[1] %}
   {% for admins in fptm %}
     {% assign admin = admins[1] %}
     {% for release in admin.releases %}
-      <section id="{{ release.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+      <section id="{{ release.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
         <header class="modal-header">
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
