@@ -193,26 +193,31 @@
   <h2>{{ site.StatusCodeForm[page.lang] }}</h2>
     <div class="form-group">
       <label for="status">status</label>
-        {% assign statuses_array = "" | split: "," %}
-        {% for fptms in site.data.code %}
-        {% assign fptm = fptms[1] %}
-        {% for admins in fptm %}
-          {% assign admin = admins[1] %}
-          {% for release in admin.releases %}
-            {% if release.status != nil %}
-              {% assign statuses_array = statuses_array  | push: release.status %}
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        {% endfor %}
       <select class="form-control" id="status" name="status">
         <option value="">&nbsp;</option>
-        {% assign statuses_array = statuses_array | uniq  %}
-        {% for status in statuses_array %}
-          <option value="{{ status }}">{{ status }}</option>
+        <option value="Alpha">Alpha</option>
+        <option value="Beta">Beta</option>
+        <option value="Maintained">Maintained</option>
+        <option value="Deprecated">Deprecated</option>
+        <option value="Retired">Retired</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="adminCode" class="required">adminCode <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <select class="form-control" id="adminCode" name="adminCode" required="required">
+        <option value="">&nbsp;</option>
+        {% for adminsLevel in site.data.administrations %}
+          {% assign adminsInfo = adminsLevel[1]%}
+          {% for adminInfo in adminsInfo %}
+            <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
+          {% endfor %}
         {% endfor %}
       </select>
     </div>
+    
+
+
   
   <h2>{{ site.TagsCodeDesc[page.lang] | split: "." }}</h2>
     <div id="tags" class="form-group">
