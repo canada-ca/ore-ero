@@ -117,7 +117,7 @@ RealeasesCodeDesc:
   en: Contains objects representing each project or source code available.
   fr: Contient des objets représentant chaque version de code source mise à disposition.
 URLContactCodeDesc:
-  en: French and English URL that can be used to reach the point of contact.
+  en: English and French URL that can be used to reach the point of contact.
   fr: Un URL anglais et français pouvant etre utilisé pour atteindre le contact
 EmailContactCodeDesc:
   en: An email address to contact the project.
@@ -138,61 +138,61 @@ MetaDataLastUpdatedCodeDesc:
   en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
   fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
 DescriptionCodeDesc:
-  en: French and English description of the project or source code.
+  en: English and French description of the project or source code.
   fr: Description anglaise et française du "release"
 DownloadURLCodeDesc:
-  en: French and English URL where a distribution of the project can be found.
+  en: English and French URL where a distribution of the project can be found.
   fr: URL en français ou en anglais où une distribution de la "release" peut être trouvée.
 HomepageURLCodeDesc:
-  en: French and English  URL of the project homepage.
+  en: English and French  URL of the project homepage.
   fr: L'URL de la page d'accueil de "release" publique.
 LanguagesCodeDesc:
   en: A list of strings with the names of the programming languages used in the project.
   fr: Une liste de chaîne avec les noms de langages de programmation utilisés dans la version. [lang1, lang2]
 NameCodeDesc:
-  en: French and English name of the project or source code.
+  en: English and French name of the project or source code.
   fr: Le nom de la "release" en anglais et français.
 OrganizationCodeDesc:
-  en: French and English name of organization or component within the department or agency to which the project belongs.
+  en: English and French name of organization or component within the department or agency to which the project belongs.
   fr: L'organization ou la composante du département de l'agence à laquelle la release appartient. Par exemple, "CDS" ou "Gouvernement ouvert".
 PartnersCodeDesc:
   en: An array of objects for information about groups partnering on the project.
   fr: Un tableau d'objets comprenant un acronyme pour chaque agence partenaire de la "release" et l'adresse courriel de cette agence.
 URLPartnersCodeDesc:
-  en: French and English URL to a website that can be used to reach the partner.
+  en: English and French URL to a website that can be used to reach the partner.
   fr: L'URL d'un site Web qui peut être utilisé pour atteindre le partenaire.
 EmailPartnersCodeDesc:
   en: The email address for the point of contact of the partner.
   fr: L'adresse courriel du contact du partenaire.
 NamePartnersCodeDesc:
-  en: French and English name of the partner.
+  en: English and French name of the partner.
   fr: Nom anglais et français du partenaire.
 LicensesDesc:
   en: An array of objects containing license details.
   fr: Un ensemble d'objet contenant les détails de la license.
 URLLicensesDesc:
-  en: French and English URL of the license.
+  en: English and French URL of the license.
   fr: L'URL de la license de "release"
 SpdxIDLicencesDesc:
   en: SPDX License identifier - https://spdx.org/licenses/
   fr: Identifiant de licence SPDX - https://spdx.org/licenses/
 RepositoryURLDesc:
-  en: French and English URL of the public repository of the project.
+  en: English and French URL of the public repository of the project.
   fr: L'URL du répertoire de la "release" publique pour les répertoires sources ouverts.
 RelatedCodeDesc:
   en: An array of source code, libraries, frameworks, APIs, platforms or other software used in this project.
   fr: Un ensemble de code source, de bibliothèques, de frameworks, d'API, de plateformes ou d'autres logiciels utilisés dans cette "release".
 URLRelatedCodeDesc:
-  en: French and English URL where the software can be found.
+  en: English and French URL where the software can be found.
   fr: L'URL où le logiciel peut être trouvé.
 NameRelatedCodeDesc:
-  en: French and English name of the software used in this project.
+  en: English and French name of the software used in this project.
   fr: Le nom anglais et français du logiciel utilisé dans cette "release".
 StatusCodeDesc:
   en: The development status of the project. For example, Production, Beta, ..
   fr: Le statut de développement de la version. Par exemple, Production, Beta, ..
 TagsCodeDesc:
-  en: French and English keywords that will be helpful in discovering and searching for the project.
+  en: English and French keywords that will be helpful in discovering and searching for the project.
   fr: Un ensemble de mots clés qui seront utiles pour la decouverte et la recherche de la "release".
 VcsCodeDesc:
   en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
@@ -200,7 +200,36 @@ VcsCodeDesc:
 VersionCodeDesc:
   en: The latest version for this project. For example, 1.0.0
   fr: La version de cette "release". Par  exemple, 1.0.0
-
+SchemaVersionCodeForm:
+  en: Version of the ORE metadata schema
+  fr: Version du schéma de métadonnées ERO
+AdminCodeForm:
+  en: Administration code
+  fr: Code d'administration
+ContactCodeForm:
+  en: Informations of a contact or team for the project
+  fr: Informations d'un contact ou d'une équipe pour le projet
+DateCodeForm:
+  en: Date of the project
+  fr: Date du projet
+LanguagesCodeForm:
+  en: Programming languages used in the project
+  fr: Langages de programmation utilisés dans le projet
+PartnerCodeForm:
+  en: Informations about groups partnering on the project
+  fr: Informations sur les groupes partenaires du projet
+LicenseCodeForm:
+  en: License details
+  fr: Détails de la licence
+RelatedCodeForm:
+  en: Platforms or other software used in this project
+  fr: Plateformes ou autres logiciels utilisés dans ce projet
+StatusCodeForm:
+  en: Development status of the project
+  fr: Statut de développement du projet
+VcsCodeForm:
+  en: Name of the version control system used in this project
+  fr: Nom du système de contrôle de version utilisé dans ce projet
 
 
 # Build settings
