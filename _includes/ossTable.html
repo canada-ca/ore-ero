@@ -57,7 +57,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>Software</th>
@@ -73,7 +73,7 @@
       {% for logiciels in site.data.logiciels_libres-open_source_software %}
         {% assign oss = logiciels[1] %}
         <tr>
-          <td><a class="wb-lbx" title="{{ oss.name[page.lang] }}" href="#{{ oss.name[page.lang] | slugify }}">{{ oss.name[page.lang] }}</a></td>
+          <td><a href="#{{ oss.name[page.lang] | slugify }}" aria-controls="{{ oss.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ oss.name[page.lang] }}</a></td>
           <td>{{ oss.description[page.lang] }}</td>
           <td>
             {% for license in oss.licenses %}
@@ -100,7 +100,7 @@
 {% for logiciels in site.data.logiciels_libres-open_source_software %}
   {% assign oss = logiciels[1] %}
   
-    <section id="{{ oss.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+    <section id="{{ oss.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
       <header class="modal-header">
         <h2 class="modal-title">{{ oss.name[page.lang] }}</h2>
       </header>
