@@ -202,22 +202,6 @@
         <option value="Retired">Retired</option>
       </select>
     </div>
-
-    <div class="form-group">
-      <label for="adminCode" class="required">adminCode <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <select class="form-control" id="adminCode" name="adminCode" required="required">
-        <option value="">&nbsp;</option>
-        {% for adminsLevel in site.data.administrations %}
-          {% assign adminsInfo = adminsLevel[1]%}
-          {% for adminInfo in adminsInfo %}
-            <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
-          {% endfor %}
-        {% endfor %}
-      </select>
-    </div>
-    
-
-
   
   <h2>{{ site.TagsCodeDesc[page.lang] | split: "." }}</h2>
     <div id="tags" class="form-group">
