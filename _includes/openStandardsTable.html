@@ -39,7 +39,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3], "visible": false}], "paging": false}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>Standard</th>
@@ -53,7 +53,7 @@
       {% for standards in site.data.normes_ouvertes-open_standards %}
         {% assign standard = standards[1] %}
         <tr>
-          <td><a class="wb-lbx" title="{{ standard.name[page.lang] }}" href="#{{ standard.name[page.lang] | slugify }}">{{ standard.name[page.lang] }}</a></td>
+          <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
           <td>{{ standard.description[page.lang] }}</td>
           <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardsOrg }}</a></td>
           <td>
@@ -72,7 +72,7 @@
 {% for standards in site.data.normes_ouvertes-open_standards %}
   {% assign standard = standards[1] %}
 
-  <section id="{{ standard.name[page.lang] | slugify }}" class="mfp-hide modal-dialog modal-content overlay-def">
+  <section id="{{ standard.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
     <header class="modal-header">
       <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
     </header>
