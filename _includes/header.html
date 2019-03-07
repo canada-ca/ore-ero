@@ -91,6 +91,22 @@
               <li><a href="./index.html">{{ site.title[page.lang] }}</a></li>
             {% endif %}
           {% endif %}
+
+          {% if page.ref == "codeGroups" %}
+            {% if page.lang == "en" %}
+              <li><a href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+            {% else %}
+              <li><a href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+            {% endif %}
+          {% endif %}
+
+          {% if page.ref == "codeSchema" %}
+            {% if page.lang == "en" %}
+              <li><a href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+            {% else %}
+              <li><a href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+            {% endif %}
+          {% endif %}
         </ol>
       </div>
     </div>
