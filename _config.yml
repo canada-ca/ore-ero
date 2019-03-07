@@ -59,6 +59,9 @@ Search:
 TopicsMenu:
   en: Topics menu
   fr: Menu des sujets
+OpenSourceCode:
+  en: Open Source Code
+  fr: Code source ouvert
 FilterOptions:
   en: Filter Options
   fr: Options de filtrage
