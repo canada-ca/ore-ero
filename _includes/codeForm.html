@@ -197,9 +197,9 @@
         <option value="">&nbsp;</option>
         <option value="Alpha">Alpha</option>
         <option value="Beta">Beta</option>
-        <option value="Maintained">Maintained</option>
-        <option value="Deprecated">Deprecated</option>
-        <option value="Retired">Retired</option>
+        <option value="Maintained">{{ site.MaitainedStatus[page.lang] }}</option>
+        <option value="Deprecated">{{ site.DeprecatedStatus[page.lang] }}</option>
+        <option value="Retired">{{ site.RetiredStatus[page.lang] }}</option>
       </select>
     </div>
   
