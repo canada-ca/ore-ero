@@ -193,24 +193,13 @@
   <h2>{{ site.StatusCodeForm[page.lang] }}</h2>
     <div class="form-group">
       <label for="status">status</label>
-        {% assign statuses_array = "" | split: "," %}
-        {% for fptms in site.data.code %}
-        {% assign fptm = fptms[1] %}
-        {% for admins in fptm %}
-          {% assign admin = admins[1] %}
-          {% for release in admin.releases %}
-            {% if release.status != nil %}
-              {% assign statuses_array = statuses_array  | push: release.status %}
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        {% endfor %}
       <select class="form-control" id="status" name="status">
         <option value="">&nbsp;</option>
-        {% assign statuses_array = statuses_array | uniq  %}
-        {% for status in statuses_array %}
-          <option value="{{ status }}">{{ status }}</option>
-        {% endfor %}
+        <option value="Alpha">Alpha</option>
+        <option value="Beta">Beta</option>
+        <option value="Maintained">{{ site.MaitainedStatus[page.lang] }}</option>
+        <option value="Deprecated">{{ site.DeprecatedStatus[page.lang] }}</option>
+        <option value="Retired">{{ site.RetiredStatus[page.lang] }}</option>
       </select>
     </div>
   
