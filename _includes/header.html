@@ -42,26 +42,9 @@
       <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
         <h2>{{ site.SearchAndMenus[page.lang] }}</h2>
         <ul class="list-inline text-right chvrn">
-          <li><a href="#mb-pnl" title="{{ site.SearchAndMenus[page.lang] }}" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">{{ site.SearchAndMenus[page.lang] }}</span></span></span></a></li>
+          <li><a href="#mb-pnl" title="{{ site.SearchAndMenus[page.lang] }}" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">{{ site.SearchAndMenus[page.lang] }}</span></span></a></li>
         </ul>
         <div id="mb-pnl"></div>
-      </section>
-
-      <section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
-        <h2>Search</h2>
-        <form action="https://www.canada.ca/{{ page.lang }}/sr.html" method="get" name="cse-search-box" role="search" class="form-inline">
-          <div class="form-group">
-            <label for="wb-srch-q" class="wb-inv">{{ site.SearchWebsite[page.lang] }}</label>
-            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="{{ site.SearchCanadaCa[page.lang] }}">
-            <datalist id="wb-srch-q-ac">
-            <!--[if lte IE 9]><select><![endif]-->
-            <!--[if lte IE 9]></select><![endif]-->
-            </datalist>
-          </div>
-          <div class="form-group submit">
-            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">{{ site.Search[page.lang] }}</span></button>
-          </div>
-        </form>
       </section>
     </div>
   </div>
