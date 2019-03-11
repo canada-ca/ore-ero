@@ -45,8 +45,8 @@ GoC:
   en: Government of Canada
   fr: Gouvernement du Canada
 SearchAndMenus:
-  en: Search and menus
-  fr: Recherche et menus
+  en: Menus
+  fr: Menus
 SearchWebsite:
   en: Search website
   fr: Recherchez le site Web
@@ -192,8 +192,8 @@ NameRelatedCodeDesc:
   en: English and French name of the software used in this project.
   fr: Le nom anglais et français du logiciel utilisé dans cette "release".
 StatusCodeDesc:
-  en: The development status of the project. For example, Production, Beta, ..
-  fr: Le statut de développement de la version. Par exemple, Production, Beta, ..
+  en: The development status of the project. For example, Alpha, Beta, Maintained, deprecated, retired
+  fr: Le statut de développement de la version. Par exemple, Alpha, Beta, Maintenu, Déprécié, Retraité
 TagsCodeDesc:
   en: English and French keywords that will be helpful in discovering and searching for the project.
   fr: Un ensemble de mots clés qui seront utiles pour la decouverte et la recherche de la "release".
@@ -233,7 +233,16 @@ StatusCodeForm:
 VcsCodeForm:
   en: Name of the version control system used in this project
   fr: Nom du système de contrôle de version utilisé dans ce projet
-
+MaitainedStatus:
+  en: Maintained
+  fr: Maintenu
+DeprecatedStatus:
+  en: Deprecated
+  fr: Déprécié
+RetiredStatus:
+  en: Retired
+  fr: Retraité
+  
 
 # Build settings
 markdown: kramdown
