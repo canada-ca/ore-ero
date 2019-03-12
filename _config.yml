@@ -62,6 +62,15 @@ TopicsMenu:
 OpenSourceCode:
   en: Open Source Code
   fr: Code source ouvert
+OpenSourceSoftware:
+  en: Open Source Software
+  fr: Logiciels libres
+OpenStandards:
+  en: Open Standards
+  fr: Normes ouvertes
+OpenSourceCodeGroups:
+  en: Open Source Code Groups
+  fr: Groupes de code source ouvert
 FilterOptions:
   en: Filter Options
   fr: Options de filtrage
