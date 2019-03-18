@@ -93,9 +93,13 @@
 <script>
 
   var selectedAdminCode = "";
+  var dataCode; 
 
   $('#adminCode').change(function() {
     selectedAdminCode = document.getElementById("adminCode").value;
+    sendReq("https://canada-ca.github.io/ore-ero/code.json", function processResponse(response){
+      dataCode = JSON.parse(response);    
+    });
   });
 
   function sendReq(url, callbackFunction){
