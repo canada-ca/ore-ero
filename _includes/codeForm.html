@@ -24,8 +24,8 @@
   <h2>{{ site.NameCodeDesc[page.lang] | split: "." }}</h2>
   <div class="form-group">
     <label for="enProjectName" class="required">English name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-    <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" list="enlistOfAdminProjects"/>
-    <datalist id = "enlistOfAdminProjects"></datalist>
+    <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" list="enListOfAdminProjects"/>
+    <datalist id = "enListOfAdminProjects"></datalist>
 
     <label for="frProjectName" class="required">French name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     <input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
