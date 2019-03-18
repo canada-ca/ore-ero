@@ -116,12 +116,16 @@
 
   $('#enProjectName').change(function(){
     var pName = document.getElementById("enProjectName").value;
-    
-    dataCode.federal[selectedAdminCode].releases.forEach(function(project){
-      if(project.name["en"] == pName){
-        console.log("The URL of the chosen project" + project.repositoryURL["en"]);
-      }
-    });
+
+    if(selectedAdminCode == "")
+      console.log("Choose an admin");
+    else{
+      dataCode.federal[selectedAdminCode].releases.forEach(function(project){
+        if(project.name["en"] == pName){
+          console.log("The URL of the chosen project" + project.repositoryURL["en"]);
+        }
+      });
+    }
   })
 
   function sendReq(url, callbackFunction){
