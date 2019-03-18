@@ -98,7 +98,19 @@
   $('#adminCode').change(function() {
     selectedAdminCode = document.getElementById("adminCode").value;
     sendReq("https://canada-ca.github.io/ore-ero/code.json", function processResponse(response){
-      dataCode = JSON.parse(response);    
+      dataCode = JSON.parse(response);
+
+      let element = document.getElementById("enlistOfAdminProjects");
+      if(dataCode.federal[chosenCodeAdmin] === undefined)
+        console.log("The selected administration does not exist in _data.");
+      else{
+        dataCode.federal[chosenCodeAdmin].releases.forEach(function(project){
+          let option = document.createElement("OPTION");
+          element.appendChild(option);
+          option.setAttribute("label", project.name["en"]);
+          option.setAttribute("value", project.name["en"]);
+        });
+      }
     });
   });
 
