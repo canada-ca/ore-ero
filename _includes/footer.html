@@ -122,6 +122,15 @@
     else{
       dataCode.federal[selectedAdminCode].releases.forEach(function(project){
         if(project.name["en"] == pName){
+          document.getElementById("emailContact").value = project.contact.email;
+          document.getElementById("dateCreated").value = project.date.created;
+          document.getElementById("dateLastUpdated").value = project.date.metadataLastUpdated;
+          document.getElementById("enDescription").value = project.description["en"];
+          document.getElementById("frDescription").value = project.description["fr"];
+          document.getElementById("enRepoUrl").value = project.repositoryURL["en"];
+          document.getElementById("frRepoUrl").value = project.repositoryURL["fr"];
+
+
           console.log("The URL of the chosen project" + project.repositoryURL["en"]);
         }
       });
