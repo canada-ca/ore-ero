@@ -91,7 +91,13 @@
 <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 <script>
-  
+
+  var selectedAdminCode = "";
+
+  $('#adminCode').change(function() {
+    selectedAdminCode = document.getElementById("adminCode").value;
+  });
+
   function sendReq(url, callbackFunction){
     var xmlhttp;
 
