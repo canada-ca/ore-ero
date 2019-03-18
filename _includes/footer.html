@@ -90,3 +90,24 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
 <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+<script>
+  
+  function sendReq(url, callbackFunction){
+    var xmlhttp;
+
+    if (window.ActiveXObject)
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    else if (window.XMLHttpRequest)
+      xmlhttp = new XMLHttpRequest();
+    
+    xmlhttp.onreadystatechange = function(){
+      if (xmlhttp.readyState==4 && xmlhttp.status=='200'){
+            if (callbackFunction) callbackFunction(xmlhttp.responseText);
+      }
+    }
+
+    xmlhttp.open("GET",url,true);
+    xmlhttp.send();
+  }
+
+</script>
