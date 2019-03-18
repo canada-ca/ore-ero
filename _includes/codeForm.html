@@ -21,6 +21,17 @@
       </select>
     </div>
   
+  <h2>{{ site.NameCodeDesc[page.lang] | split: "." }}</h2>
+  <div class="form-group">
+    <label for="enProjectName" class="required">English name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+    <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required" list="enlistOfAdminProjects"/>
+    <datalist id = "enlistOfAdminProjects"></datalist>
+
+    <label for="frProjectName" class="required">French name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+    <input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
+
+  </div>
+
   <h2>{{ site.ContactCodeForm[page.lang] }}</h2>
   <h3>contact:</h3>
     <div class="form-group">
@@ -110,15 +121,6 @@
   
     <div id="languages"></div>
     <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">Add more languages</button>
-  
-  <h2>{{ site.NameCodeDesc[page.lang] | split: "." }}</h2>
-    <div class="form-group">
-      <label for="enProjectName" class="required">English name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
-      
-      <label for="frProjectName" class="required">French name <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
-    </div>
   
   <h2>{{ site.OrganizationCodeDesc[page.lang] | split: "." }}</h2>
     <div class="form-group">
