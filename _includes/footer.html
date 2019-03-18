@@ -116,6 +116,16 @@
     });
   });
 
+  $('#enProjectName').change(function(){
+    var pName = document.getElementById("enProjectName").value;
+    
+    dataCode.federal[chosenCodeAdmin].releases.forEach(function(project){
+      if(project.name["en"] == pName){
+        console.log("The URL of the chosen project" + project.repositoryURL["en"]);
+      }
+    });
+  })
+
   function sendReq(url, callbackFunction){
     var xmlhttp;
 
