@@ -210,11 +210,11 @@
     </div>
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
-    <div id="tags" class="form-group">
+    <div id="tagsEN" class="form-group">
       <label for="enTag" class="required">{{ site.TagsCodeEN[page.lang] }}<strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
       <input class="form-control" id="enTag" name="tag" type="text" required="required"/>
     </div>
-    <div id="tags" class="form-group">
+    <div id="tagsFR" class="form-group">
       <label for="frTag" class="required">{{ site.TagsCodeFR[page.lang] }}<strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
       <input class="form-control" id="frTag" name="frTag" type="text" required="required"/>
     </div>
@@ -255,8 +255,8 @@
     let label = document.createElement("LABEL");
     let input = document.createElement("INPUT");
   
-    document.getElementById("tags").appendChild(label);
-    document.getElementById("tags").appendChild(input);
+    document.getElementById("tagsEN").appendChild(label);
+    document.getElementById("tagsEN").appendChild(input);
   
     label.setAttribute("for", "tag");
     input.setAttribute("class", "form-control");
