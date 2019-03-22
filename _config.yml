@@ -108,8 +108,11 @@ CodeCreated:
   en: Created
   fr: Créé
 LastUpdatedCode:
-  en: Last Updated
+  en: Last updated
   fr: Dernière mise à jour
+LastModifiedCode:
+  en: Last modified
+  fr: Dernière modification
 ContactPhoneCode:
   en: Contact phone
   fr: Numéro du contact
@@ -237,8 +240,8 @@ PartnersCodeDesc:
   en: An array of objects for information about groups partnering on the project.
   fr: Un Tableau d'objets pour des informations sur les groupes partenaires du projet.
 URLPartnersCodeDesc:
-  en: English and French URL to a website that can be used to reach the partner.
-  fr: URL en anglais et en français d'un site Web qui peut être utilisé pour atteindre le partenaire.
+  en: The english and french URL to a website that can be used to reach the partner.
+  fr: L'URL en anglais et en français d'un site Web qui peut être utilisé pour atteindre le partenaire.
 EmailPartnersCodeDesc:
   en: The email address for the point of contact of the partner.
   fr: L'adresse courriel du contact du partenaire.

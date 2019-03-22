@@ -39,7 +39,7 @@
       <input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
     </div>
         <div class="form-group">
-      <label for="phone">{{ site.PhoneContactCode[page.lang] }}</label>
+      <label for="phone">{{ site.ContactPhoneCode[page.lang] }}</label>
       <input class="form-control" id="phone" name="phone" type="tel"  data-rule-phoneUS="true" />
     </div>
   
@@ -196,7 +196,7 @@
       <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
     </div>
   
-  <h2>{{ site.StatusCodeForm[page.lang] }}</h2>
+  <h2>{{ site.StatusCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="status">{{ site.StatusName[page.lang] }}</label>
       <select class="form-control" id="status" name="status">
