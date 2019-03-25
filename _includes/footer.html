@@ -101,6 +101,20 @@
     $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
   }
 
+  function fillFields(project){
+    $("#emailContact").val(project.contact.email);
+    $("#dateCreated").val(project.date.created);
+    $("#dateLastUpdated").val(project.date.metadataLastUpdated);
+    $("#enDescription").val(project.description["en"]);
+    $("#frDescription").val(project.description["fr"]);
+    $("#enProjectName").val(project.name["en"]);
+    $("#frProjectName").val(project.name["fr"]);
+    $("#enUrlLicense").val(project.licenses[0].URL["en"]);
+    $("#frUrlLicense").val(project.licenses[0].URL["fr"]);
+    $("#spdxID").val(project.licenses[0].spdxID);
+    $("#enRepoUrl").val(project.repositoryURL["en"]);
+    $("#frRepoUrl").val(project.repositoryURL["fr"]);
+  }
 
 
 </script>
