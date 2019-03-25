@@ -140,7 +140,17 @@
             }
           })
 
+          $('#selectedPro').change(function(){
+            var pName = $("#selectedPro").val();
 
+            arraySections.forEach(function(section){
+              if(section !== undefined){
+                section.releases.forEach(function(project){    
+                  if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
+                });
+              }
+            })
+          });
       });
     });
   });
