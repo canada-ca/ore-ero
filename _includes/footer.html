@@ -95,4 +95,12 @@
   var enPathName = "/ore-ero/en/open-source-code-form.html";
   var arraySections = Array();
 
+  function buildProjectField(project){
+    (pathNameUrl == enPathName) ? 
+    $('<option label="' + project.name[ "en"] + '" value="' + project.name["en"] + '"></option>').appendTo("#listProjects"):
+    $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
+  }
+
+
+
 </script>
