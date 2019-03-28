@@ -102,8 +102,7 @@
     $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
   }
 
-  function fillFields(project){
-
+  function checkExistingData(project){
     if(project.contact.URL === undefined)project.contact.URL = "";
 
     if(project.downloadURL === undefined) project.downloadURL = "";
@@ -122,6 +121,11 @@
       project.relatedCode[0].URL = "";
       project.relatedCode[0].name = "";
     } 
+  }
+
+  function fillFields(project){
+
+    checkExistingData(project)
 
     var datas_form = {
       "shemaVersion" : "1.0",
@@ -178,9 +182,11 @@
 
     $("#status").val(project.status);
 
-    project.languages.forEach(function(language){
-      $('.' + language).attr('checked', true);
-    })
+    if(project.languages !== undefined){
+      project.languages.forEach(function(language){
+        $('.' + language).attr('checked', true);
+      })
+    }
   }
 
   $(document).ready(function(){
