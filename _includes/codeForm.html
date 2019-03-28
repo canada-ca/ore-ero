@@ -132,7 +132,7 @@
       </div>
     {% endfor %}
   
-    <div id="languages"></div>
+    <div id="languages" class="form-group"></div>
     <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
   
   <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
@@ -260,19 +260,9 @@
   
   <script>
   function addMoreLanguages(){
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
-    let element = document.getElementById("languages");
-  
-    element.appendChild(label);
-    element.appendChild(input);
-  
-    element.setAttribute("class", "form-group");
-    label.setAttribute("for", "language");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "language");
-    input.setAttribute("name", "language");
-    input.setAttribute("type", "text");
+
+    $('<label for="language"></label> <input class="form-control" id="language" name="language" type="text">').appendTo("#languages");
+
   }
   function addMoreTags(){
     let label = document.createElement("LABEL");
