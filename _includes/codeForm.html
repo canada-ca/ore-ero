@@ -127,8 +127,8 @@
     
     {% assign languages_array = languages_array | uniq  %}
     {% for language in languages_array %}
-      <div class="checkbox">
-        <label><input type="checkbox" value="{{ language }}"> {{ language  }} </label>
+      <div class="checkbox" >
+        <label><input class="{{ language }}" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
       </div>
     {% endfor %}
   
