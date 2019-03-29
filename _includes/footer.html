@@ -104,7 +104,16 @@
       $('#lang' + jLang ).focus();
     }
   function addMoreTags(){
-
+    if(iTags == 0){
+      $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text" required="">').appendTo("#tagsEN");
+      $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text" required="">').appendTo("#tagsFR");
+      $('#enTag' + iTags ).focus();
+    } else{
+      $('<label for="enTag"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
+      $('<label for="enTag"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
+      $('#enTag' + iTags ).focus();
+    }
+    iTags++;
   }
 
   function resetInputs(){
