@@ -234,15 +234,13 @@
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
     <div id="tagsEN" class="form-group">
-      <label for="enTag" class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="enTag" name="tag" type="text" required="required"/>
+      <label for="enTag0" class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     </div>
     <div id="tagsFR" class="form-group">
-      <label for="frTag" class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="frTag" name="frTag" type="text" required="required"/>
+      <label for="frTag0" class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     </div>
     <button type="button" class="btn btn-default" onclick = "addMoreTags()">{{ site.AddMoreTags[page.lang] }}</button>
-  
+    
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="vcs">{{ site.VcsName[page.lang] }}</label>
@@ -257,25 +255,4 @@
   
   </form>
   </div>
-  
-  <script>
-  function addMoreLanguages(){
-
-    $('<label for="language"></label> <input class="form-control" id="language" name="language" type="text">').appendTo("#languages");
-
-  }
-  function addMoreTags(){
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
-  
-    document.getElementById("tagsEN").appendChild(label);
-    document.getElementById("tagsEN").appendChild(input);
-  
-    label.setAttribute("for", "tag");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "tag");
-    input.setAttribute("name", "tag");
-    input.setAttribute("type", "text");
-  }
-  </script>
   
