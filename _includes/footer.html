@@ -90,11 +90,32 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
 
 <script>
+
+  var jLang = 0 ;
+  var iTags = 0;
   var selectedAdminCode = "";
   var pathNameUrl = window.location.pathname;
   var enPathName = "/ore-ero/en/open-source-code-form.html";
   var arraySections = Array();
   var pName = "";
+
+  function addMoreLanguages(){
+      $('<label for="language"></label> <input class="form-control" id="lang' + jLang + '" id="lang' + jLang + '" type="text">').appendTo("#languages");
+      $('#lang' + jLang ).focus();
+    }
+  function addMoreTags(){
+
+  }
+
+  function resetInputs(){
+    $(":checked").attr('checked', false);
+    for(var i = 0 ; i <= iTags; i++){
+      $("#enTag"+i).detach();
+      $("#frTag"+i).detach();
+    }
+    iTags = 0;
+    jLang = 0;
+  }
 
   function buildProjectField(project){
     (pathNameUrl == enPathName) ? 
@@ -187,19 +208,38 @@
         $('.' + language).attr('checked', true);
       })
     }
+
+    if(project.tags !== undefined){
+      project.tags["en"].forEach(function(tag){
+        (iTags == 0)?
+          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN"):
+          $('<label for="enTag"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        iTags++;
+      })
+
+      iTags = 0;
+
+      project.tags["fr"].forEach(function(tag){
+        (iTags == 0)?
+          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR"):
+          $('<label for="efrTag"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
+        iTags++;
+      })
+    }
   }
 
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
-      
+   
         $('#selectedProject').empty();
         arraySections.length = 0;
         selectedAdminCode = $("#adminCode").val();
-        $('#validation')[0].reset();
-        $(":checked").attr('checked', false);
-        $('#adminCode').val(selectedAdminCode)
+        $(':input').val('');
+        $('#shemaVersion').val('1.0');
+        resetInputs();
 
+        $('#adminCode').val(selectedAdminCode)
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
@@ -210,6 +250,8 @@
         $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
         $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
 
+        $('#selectedPro').focus();
+
         arraySections.forEach(function(section){
           if(section !== undefined){
             section.releases.forEach(function(project){    
@@ -219,9 +261,10 @@
         })
 
         $('#selectedPro').change(function(){
-          $(":checked").attr('checked', false);
-          pName = $("#selectedPro").val();
 
+          resetInputs();
+
+          pName = $("#selectedPro").val();
           arraySections.forEach(function(section){
             if(section !== undefined){
               section.releases.forEach(function(project){    
