@@ -88,7 +88,8 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-
+<script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
+<script src="https://unpkg.com/isomorphic-git"></script>
 <script>
 
   var jLang = 0 ;
@@ -299,4 +300,170 @@
     });
   });
 
+
+
+ // clean up filesystem
+ $(document).ready(function(){
+    $("#clear").click(function(){
+      window.fs = new LightningFS('fs', { wipe: true })
+      git.plugins.set('fs', window.fs)
+      window.pfs = window.fs.promises
+      console.log("clear")
+      });
+  });
+
+  // Initialize isomorphic-git with a file system
+  window.fs = new LightningFS('fs')
+  git.plugins.set('fs', window.fs)
+  // I prefer using the Promisified version honestly
+  window.pfs = window.fs.promises
+
+  async function start() {
+    // Pick a directory
+    window.dir = '/tutorial'
+    console.log(dir);
+    await pfs.mkdir(dir);
+    // Behold - it is empty!
+    await pfs.readdir(dir);
+
+    console.log("start1")
+  }
+
+  $(document).ready(function(){
+    $("#start").click(function(){
+      start();
+      console.log("start2")
+      });
+  });
+  
+  async function clone() {
+    await git.clone({
+      dir,
+      corsProxy: 'https://cors.isomorphic-git.org',
+      url: 'https://github.com/canada-ca/ore-ero.git',
+      ref: 'master',
+      singleBranch: true,
+      depth: 10
+    });
+
+    // Now it should not be empty...
+    await pfs.readdir(dir);
+    console.log(dir)
+  }
+
+  $(document).ready(function(){
+    $("#clone").click(function(){
+      clone();
+      console.log("clone2")
+      });
+  });
+
+  async function log() {
+    await git.log({dir});
+    console.log(await git.log({dir}))
+    console.log("log1");
+  }
+
+  $(document).ready(function(){
+    $("#log").click(function(){
+      log();
+      console.log("log2")
+      });
+  });
+
+  async function status() {
+    await git.status({dir, filepath: 'README.md'});
+    console.log(await git.status({dir, filepath: 'README.md'}))
+    console.log("sstatus");
+  }
+
+  $(document).ready(function(){
+    $("#status").click(function(){
+      status();
+      console.log("status2")
+      });
+  });
+
+  async function createNewFile() {
+    await pfs.writeFile(`${dir}/newfile.txt`, 'Hello World', 'utf8')
+    await git.status({dir, filepath: 'newfile.txt'})
+
+    console.log( await git.status({dir, filepath: 'newfile.txt'}))
+
+    console.log("createNewFile");
+  }
+
+  $(document).ready(function(){
+    $("#createNewFile").click(function(){
+      createNewFile();
+      console.log("createNewFile1")
+      });
+  });
+  
+  async function addFile() {
+    await git.add({dir, filepath: 'newfile.txt'})
+    await git.status({dir, filepath: 'newfile.txt'})
+
+    console.log( await git.status({dir, filepath: 'newfile.txt'}))
+
+    console.log("add");
+  }
+
+  $(document).ready(function(){
+    $("#addFile").click(function(){
+      addFile();
+      console.log("add2")
+      });
+  });
+  
+
+  async function commit() {
+    let sha = await git.commit({
+      dir,
+      message: 'Deleteeeee package.jsonff and overwrite README.',
+      author: {
+        name: 'Mr. Test',
+        email: 'bassam.ajam95@gmail.com'
+      }
+    })
+
+    sha
+    console.log("commit");
+  }
+
+  $(document).ready(function(){
+    $("#commit").click(function(){
+      commit();
+      console.log("commit2")
+      });
+  });
+
+
+  async function returnCommit() {
+    commits = await git.log({dir, depth: 1})
+    console.log(commits[0]);
+    git.push({username: 'BassamAjam', password:'490f05905c2eb92cccf948efc3d707a6703f4bc8'});
+
+    console.log("return commit1");
+  }
+
+  $(document).ready(function(){
+    $("#return").click(function(){
+      returnCommit();
+      console.log("returnCommiit1")
+      });
+  });
+
+
+  async function pushh() {
+    await git.push({username: 'BassamAjam', token: '490f05905c2eb92cccf948efc3d707a6703f4bc8'});
+    console.log("pushh");
+  }
+
+  $(document).ready(function(){
+    $("#push").click(function(){
+      //pushh();
+      console.log("push2")
+      });
+  });
 </script>
