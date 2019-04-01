@@ -105,23 +105,30 @@
     }
   function addMoreTags(){
     if(iTags == 0){
+      $("#tagsEN label:first").attr("for", "enTag0");
+      $("#tagsFR label:first").attr("for", "frTag0");
       $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text" required="">').appendTo("#tagsEN");
       $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text" required="">').appendTo("#tagsFR");
       $('#enTag' + iTags ).focus();
     } else{
-      $('<label for="enTag"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
-      $('<label for="enTag"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
+      $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
+      $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
       $('#enTag' + iTags ).focus();
     }
     iTags++;
   }
 
-  function resetInputs(){
+  function removeTags(){
     $(":checked").attr('checked', false);
     for(var i = 0 ; i <= iTags; i++){
       $("#enTag"+i).detach();
       $("#frTag"+i).detach();
+      if(i !=0 ){
+        $("#tagsEN").find('label[for =enTag'+i+']').detach();
+        $("#tagsFR").find('label[for =frTag'+i+']').detach();
+      }
     }
+
     iTags = 0;
     jLang = 0;
   }
@@ -220,18 +227,24 @@
 
     if(project.tags !== undefined){
       project.tags["en"].forEach(function(tag){
-        (iTags == 0)?
-          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN"):
-          $('<label for="enTag"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        if(iTags == 0){
+          $("#tagsEN label:first").attr("for", "enTag0");
+          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        }else{
+          $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        }
         iTags++;
       })
 
       iTags = 0;
 
       project.tags["fr"].forEach(function(tag){
-        (iTags == 0)?
-          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR"):
-          $('<label for="efrTag"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
+        if(iTags == 0){
+          $("#tagsFR label:first").attr("for", "frTag0");
+          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");       
+        }else{
+          $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
+        }
         iTags++;
       })
     }
@@ -246,7 +259,7 @@
         selectedAdminCode = $("#adminCode").val();
         $(':input').val('');
         $('#shemaVersion').val('1.0');
-        resetInputs();
+        removeTags();
 
         $('#adminCode').val(selectedAdminCode)
         var federal = result.federal[selectedAdminCode];
@@ -271,7 +284,7 @@
 
         $('#selectedPro').change(function(){
 
-          resetInputs();
+          removeTags();
 
           pName = $("#selectedPro").val();
           arraySections.forEach(function(section){
