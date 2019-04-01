@@ -6,7 +6,7 @@ homepageURL:
   en: "https://example.com/"
   fr: "https://example.com/"
 licenses: 
-  - LICENCE
+  - "XYZ-1.0"
 name: 
   en: Example
   fr: Exemple
@@ -21,10 +21,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://www.example.com
-        name: 
-          en: "Example use"
-          fr: "Exemple d'utilisation"
+          email: "abc@xyz.com"
+        date: 
+          started: "YYYY-MM-DD"
+          metadataLastUpdated: "YYYY-MM-DD"
         description: 
           en: "Etiam rutrum, tellus nec egestas blandit."
           fr: "Vestibulum fringilla vel purus nec iaculis."
+        name: 
+          en: "Example use"
+          fr: "Exemple d'utilisation"
