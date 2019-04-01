@@ -55,19 +55,15 @@
       <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
       <ul role="menu" aria-orientation="vertical">
         {% if page.lang == "en" %}
-          <li role="presentation"><a role="menuitem" href="./index.html">{{ site.title[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./open-source-software.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./open-standards.html">{{ site.OpenStandards[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
-          <li role="presentation"><a role="menuitem" href="./open-source-code-groups.html">{{ site.OpenSourceCodeGroups[page.lang] }}</a></li>
         {% else %}
-          <li role="presentation"><a role="menuitem" href="./index.html">{{ site.title[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./logiciels-libres.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./normes-ouvertes.html">{{ site.OpenStandards[page.lang] }}</a></li>
           <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
-          <li role="presentation"><a role="menuitem" href="./code-source-ouvert-groupes.html">{{ site.OpenSourceCodeGroups[page.lang] }}</a></li>
         {% endif %}
       </ul>
     </div>
