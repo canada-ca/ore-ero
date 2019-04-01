@@ -12,15 +12,38 @@
       <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
       <select class="form-control" id="adminCode" name="adminCode" required="required">
         <option value="">&nbsp;</option>
-        {% for adminsLevel in site.data.administrations %}
-          {% assign adminsInfo = adminsLevel[1]%}
-          {% for adminInfo in adminsInfo %}
-            <option value = "{{ adminInfo.code }}">{{ adminInfo.name[page.lang] }}</option>
+        {% assign admin_array = "" | split: ',' %}
+        {% for fptms in site.data.code %}
+          {% assign fptm = fptms[1] %}
+          {% for admins in fptm %}
+            {% assign admin = admins[1] %}   
+            {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+              <option value="{{ aName[0].code }}">{{ aName[0].name[page.lang] }}</option>
+            {% endif %}
+          {% endfor %}
+          
+          {% for admins in fptm %}
+            {% assign admin = admins[1] %}   
+            {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+              <option value="{{ aName[0].code }}">{{ aName[0].name[page.lang] }}</option>
+            {% endif %}
+          {% endfor %}
+          
+          {% for admins in fptm %}
+            {% assign admin = admins[1] %}   
+            {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
+            {% if aName[0].name[page.lang] != nil %}
+              <option value="{{ aName[0].code }}">{{ aName[0].name[page.lang] }}</option>
+            {% endif %}
           {% endfor %}
         {% endfor %}
       </select>
     </div>
   
+  <div id="selectedProject" class="form-group"></div>
+
   <h2>{{ site.ContactCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="enUrlContact">{{ site.URLContactCodeEN[page.lang] }}</label>
@@ -104,12 +127,12 @@
     
     {% assign languages_array = languages_array | uniq  %}
     {% for language in languages_array %}
-      <div class="checkbox">
-        <label><input type="checkbox" value="{{ language }}"> {{ language  }} </label>
+      <div class="checkbox" >
+        <label><input class="{{ language }}" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
       </div>
     {% endfor %}
   
-    <div id="languages"></div>
+    <div id="languages" class="form-group"></div>
     <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
   
   <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
@@ -211,15 +234,13 @@
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
     <div id="tagsEN" class="form-group">
-      <label for="enTag" class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="enTag" name="tag" type="text" required="required"/>
+      <label class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     </div>
     <div id="tagsFR" class="form-group">
-      <label for="frTag" class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="frTag" name="frTag" type="text" required="required"/>
+      <label class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     </div>
     <button type="button" class="btn btn-default" onclick = "addMoreTags()">{{ site.AddMoreTags[page.lang] }}</button>
-  
+    
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="vcs">{{ site.VcsName[page.lang] }}</label>
@@ -234,35 +255,4 @@
   
   </form>
   </div>
-  
-  <script>
-  function addMoreLanguages(){
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
-    let element = document.getElementById("languages");
-  
-    element.appendChild(label);
-    element.appendChild(input);
-  
-    element.setAttribute("class", "form-group");
-    label.setAttribute("for", "language");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "language");
-    input.setAttribute("name", "language");
-    input.setAttribute("type", "text");
-  }
-  function addMoreTags(){
-    let label = document.createElement("LABEL");
-    let input = document.createElement("INPUT");
-  
-    document.getElementById("tagsEN").appendChild(label);
-    document.getElementById("tagsEN").appendChild(input);
-  
-    label.setAttribute("for", "tag");
-    input.setAttribute("class", "form-control");
-    input.setAttribute("id", "tag");
-    input.setAttribute("name", "tag");
-    input.setAttribute("type", "text");
-  }
-  </script>
   

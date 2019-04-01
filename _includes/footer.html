@@ -88,3 +88,215 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
+
+<script>
+
+  var jLang = 0 ;
+  var iTags = 0;
+  var selectedAdminCode = "";
+  var pathNameUrl = window.location.pathname;
+  var enPathName = "/ore-ero/en/open-source-code-form.html";
+  var arraySections = Array();
+  var pName = "";
+
+  function addMoreLanguages(){
+      $('<label for="language"></label> <input class="form-control" id="lang' + jLang + '" id="lang' + jLang + '" type="text">').appendTo("#languages");
+      $('#lang' + jLang ).focus();
+    }
+  function addMoreTags(){
+    if(iTags == 0){
+      $("#tagsEN label:first").attr("for", "enTag0");
+      $("#tagsFR label:first").attr("for", "frTag0");
+      $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text" required="">').appendTo("#tagsEN");
+      $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text" required="">').appendTo("#tagsFR");
+      $('#enTag' + iTags ).focus();
+    } else{
+      $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
+      $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
+      $('#enTag' + iTags ).focus();
+    }
+    iTags++;
+  }
+
+  function removeTags(){
+    $(":checked").attr('checked', false);
+    for(var i = 0 ; i <= iTags; i++){
+      $("#enTag"+i).detach();
+      $("#frTag"+i).detach();
+      if(i !=0 ){
+        $("#tagsEN").find('label[for =enTag'+i+']').detach();
+        $("#tagsFR").find('label[for =frTag'+i+']').detach();
+      }
+    }
+
+    iTags = 0;
+    jLang = 0;
+  }
+
+  function buildProjectField(project){
+    (pathNameUrl == enPathName) ? 
+    $('<option label="' + project.name[ "en"] + '" value="' + project.name["en"] + '"></option>').appendTo("#listProjects"):
+    $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
+  }
+
+  function checkExistingData(project){
+    if(project.contact.URL === undefined)project.contact.URL = "";
+
+    if(project.downloadURL === undefined) project.downloadURL = "";
+
+    if(project.homepageURL === undefined) project.homepageURL = "";
+
+    if(project.organization === undefined) project.organization = "";
+
+    if(project.partners === undefined) project.partners = [];
+    if(project.partners.URL === undefined) project.partners.URL = "";
+    if(project.partners.name === undefined) project.partners.name = "";
+
+    if(project.relatedCode === undefined) {
+      project.relatedCode = [];
+      project.relatedCode[0] = [];
+      project.relatedCode[0].URL = "";
+      project.relatedCode[0].name = "";
+    } 
+  }
+
+  function fillFields(project){
+
+    checkExistingData(project)
+
+    var datas_form = {
+      "shemaVersion" : "1.0",
+      "selectedPro" : pName,
+      "enUrlContact" : project.contact.URL["en"],
+      "frUrlContact" : project.contact.URL["fr"],
+      "emailContact" : project.contact.email,
+      "nameContact" : project.contact.name,
+      "phone" : project.contact.phone,
+      "dateCreated" : project.date.created,
+      "dateLastModified" : project.date.lastModified,
+      "dateLastUpdated" : project.date.metadataLastUpdated,
+      
+      "enDescription" : project.description["en"],
+      "frDescription" : project.description["fr"],
+      
+      "enDownloadUrl" : project.downloadURL["en"],
+      "frDownloadUrl" : project.downloadURL["fr"],
+
+      "enHomepageURL" : project.homepageURL["en"],
+      "frHomepageURL" : project.homepageURL["fr"],
+
+      "enProjectName" : project.name["en"],
+      "frProjectName" : project.name["fr"],
+
+      "enOrganization" : project.organization["en"],
+      "frOrganization" : project.organization["fr"],
+
+      "enUrlPartner" : project.partners.URL["en"],
+      "frUrlPartner" : project.partners.URL["fr"],
+      "emailPartner" : project.partners.email,
+      "enNamePartner" : project.partners.name["en"],
+      "frNamePartner" : project.partners.name["fr"],
+
+      "enUrlLicense" : project.licenses[0].URL["en"],
+      "frUrlLicense" : project.licenses[0].URL["fr"],
+      "spdxID" : project.licenses[0].spdxID,
+
+      "enRepoUrl" : project.repositoryURL["en"],
+      "frRepoUrl" : project.repositoryURL["fr"],
+
+      "enUrlRelatedCode" : project.relatedCode[0].URL["en"],
+      "frUrlRelatedCode" : project.relatedCode[0].URL["fr"],
+      "enNameRelatedCode" : project.relatedCode[0].name["en"],
+      "frNameRelatedCode" : project.relatedCode[0].name["fr"],
+
+      "vcs" : project.vcs,
+      "versionProject" : project.version
+    }
+    
+    $("#validation").find('input').val(function(){
+      return datas_form[this.id];
+    });
+
+    $("#status").val(project.status);
+
+    if(project.languages !== undefined){
+      project.languages.forEach(function(language){
+        $('.' + language).attr('checked', true);
+      })
+    }
+
+    if(project.tags !== undefined){
+      project.tags["en"].forEach(function(tag){
+        if(iTags == 0){
+          $("#tagsEN label:first").attr("for", "enTag0");
+          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        }else{
+          $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
+        }
+        iTags++;
+      })
+
+      iTags = 0;
+
+      project.tags["fr"].forEach(function(tag){
+        if(iTags == 0){
+          $("#tagsFR label:first").attr("for", "frTag0");
+          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");       
+        }else{
+          $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
+        }
+        iTags++;
+      })
+    }
+  }
+
+  $(document).ready(function(){
+    $("#adminCode").change(function(){
+      $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
+   
+        $('#selectedProject').empty();
+        arraySections.length = 0;
+        selectedAdminCode = $("#adminCode").val();
+        $(':input').val('');
+        $('#shemaVersion').val('1.0');
+        removeTags();
+
+        $('#adminCode').val(selectedAdminCode)
+        var federal = result.federal[selectedAdminCode];
+        var provincial = result.provincial[selectedAdminCode];
+        var municipal = result.municipal[selectedAdminCode];
+        
+        arraySections.push(federal, provincial, municipal);
+
+        (pathNameUrl == enPathName)?
+        $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
+        $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
+
+        $('#selectedPro').focus();
+
+        arraySections.forEach(function(section){
+          if(section !== undefined){
+            section.releases.forEach(function(project){    
+              buildProjectField(project);
+            });
+          }
+        })
+
+        $('#selectedPro').change(function(){
+
+          removeTags();
+
+          pName = $("#selectedPro").val();
+          arraySections.forEach(function(section){
+            if(section !== undefined){
+              section.releases.forEach(function(project){    
+                if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
+              });
+            }
+          })
+        });
+      });
+    });
+  });
+
+</script>
