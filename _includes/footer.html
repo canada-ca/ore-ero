@@ -358,6 +358,33 @@
       });
   });
 
+
+  async function config() {
+
+    let value = await git.config({
+      dir: '/',
+      path: '/tutorial/newfile.txt',
+
+      value: ''
+    })
+
+    console.log(value);
+    console.log("config1");
+  }
+
+  $(document).ready(function(){
+    $("#config").click(function(){
+      config();
+      console.log("config2")
+      });
+  });
+
+
+
+
+
+
+
   async function log() {
     await git.log({dir});
     console.log(await git.log({dir}))
@@ -385,6 +412,10 @@
   });
 
   async function createNewFile() {
+    // await pfs.writeFile(`${dir}/README.md`, 'Very short README', 'utf8')
+    // await git.status({dir, filepath: 'README.md'})
+
+
     await pfs.writeFile(`${dir}/newfile.txt`, 'Hello World', 'utf8')
     await git.status({dir, filepath: 'newfile.txt'})
 
@@ -401,6 +432,10 @@
   });
   
   async function addFile() {
+    // await git.add({dir, filepath: 'README.md'})
+    // await git.status({dir, filepath: 'README.md'})
+    // console.log( await git.status({dir, filepath: 'README.md'}))
+
     await git.add({dir, filepath: 'newfile.txt'})
     await git.status({dir, filepath: 'newfile.txt'})
 
@@ -467,7 +502,7 @@
       
     console.log(pushResponse);
     console.log("pushh");
-  }
+    }
 
   $(document).ready(function(){
     $("#push").click(function(){
