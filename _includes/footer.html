@@ -359,31 +359,6 @@
   });
 
 
-  async function config() {
-
-    let value = await git.config({
-      dir: '/',
-      path: '/tutorial/newfile.txt',
-
-      value: ''
-    })
-
-    console.log(value);
-    console.log("config1");
-  }
-
-  $(document).ready(function(){
-    $("#config").click(function(){
-      config();
-      console.log("config2")
-      });
-  });
-
-
-
-
-
-
 
   async function log() {
     await git.log({dir});
