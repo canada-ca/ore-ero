@@ -340,7 +340,7 @@
     await git.clone({
       dir,
       corsProxy: 'https://cors.isomorphic-git.org',
-      url: 'https://github.com/canada-ca/ore-ero.git',
+      url: 'https://github.com/VilledeMontreal/ore-ero.git',
       ref: 'master',
       singleBranch: true,
       depth: 10
@@ -357,6 +357,33 @@
       console.log("clone2")
       });
   });
+
+
+  async function config() {
+
+    let value = await git.config({
+      dir: '/',
+      path: '/tutorial/newfile.txt',
+
+      value: ''
+    })
+
+    console.log(value);
+    console.log("config1");
+  }
+
+  $(document).ready(function(){
+    $("#config").click(function(){
+      config();
+      console.log("config2")
+      });
+  });
+
+
+
+
+
+
 
   async function log() {
     await git.log({dir});
@@ -385,6 +412,10 @@
   });
 
   async function createNewFile() {
+    // await pfs.writeFile(`${dir}/README.md`, 'Very short README', 'utf8')
+    // await git.status({dir, filepath: 'README.md'})
+
+
     await pfs.writeFile(`${dir}/newfile.txt`, 'Hello World', 'utf8')
     await git.status({dir, filepath: 'newfile.txt'})
 
@@ -401,6 +432,10 @@
   });
   
   async function addFile() {
+    // await git.add({dir, filepath: 'README.md'})
+    // await git.status({dir, filepath: 'README.md'})
+    // console.log( await git.status({dir, filepath: 'README.md'}))
+
     await git.add({dir, filepath: 'newfile.txt'})
     await git.status({dir, filepath: 'newfile.txt'})
 
@@ -442,7 +477,7 @@
   async function returnCommit() {
     commits = await git.log({dir, depth: 1})
     console.log(commits[0]);
-    git.push({username: 'BassamAjam', password:'490f05905c2eb92cccf948efc3d707a6703f4bc8'});
+    //git.push({username: 'BassamAjam', password:'490f05905c2eb92cccf948efc3d707a6703f4bc8'});
 
     console.log("return commit1");
   }
@@ -456,13 +491,21 @@
 
 
   async function pushh() {
-    await git.push({username: 'BassamAjam', token: '490f05905c2eb92cccf948efc3d707a6703f4bc8'});
+    let pushResponse = await git.push({
+    dir: '/',
+    ref: 'master',
+    remoteRef: 'master',
+    remote: 'origin',
+    token: '490f05905c2eb92cccf948efc3d707a6703f4bc8'
+    });
+
+    console.log(pushResponse);
     console.log("pushh");
-  }
+    }
 
   $(document).ready(function(){
     $("#push").click(function(){
-      //pushh();
+      pushh();
       console.log("push2")
       });
   });
