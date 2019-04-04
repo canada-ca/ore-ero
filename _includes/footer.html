@@ -340,7 +340,7 @@
     await git.clone({
       dir,
       corsProxy: 'https://cors.isomorphic-git.org',
-      url: 'https://github.com/VilledeMontreal/ore-ero',
+      url: 'https://github.com/VilledeMontreal/ore-ero.git',
       ref: 'master',
       singleBranch: true,
       depth: 10
@@ -466,13 +466,13 @@
 
   async function pushh() {
     let pushResponse  = await git.push({
-     
-      dir: '/',
+      username: 'BassamAjam',
+      token: 'fcc802b82e9a080b2218663e40c5779445534300',
+      dir,
       corsProxy: 'https://cors.isomorphic-git.org',
-      url: 'https://github.com/VilledeMontreal/ore-ero',
+      url: 'https://github.com/VilledeMontreal/ore-ero.git',
       ref: 'master',
-      username: 'imadeDev',
-      token: '2ebd9f656089a7ab2af53500453003ed0e8310d1'
+
       });
       
     console.log(pushResponse);
