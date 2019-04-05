@@ -389,10 +389,10 @@
     // await git.status({dir, filepath: 'README.md'})
 
 
-    await pfs.writeFile(`${dir}/newfile.txt`, 'Hello World', 'utf8')
-    await git.status({dir, filepath: 'newfile.txt'})
+    await pfs.writeFile(`${dir}/test.txt`, 'Hello World', 'utf8')
+    await git.status({dir, filepath: 'test.txt'})
 
-    console.log( await git.status({dir, filepath: 'newfile.txt'}))
+    console.log( await git.status({dir, filepath: 'test.txt'}))
 
     console.log("createNewFile");
   }
@@ -405,14 +405,11 @@
   });
   
   async function addFile() {
-    // await git.add({dir, filepath: 'README.md'})
-    // await git.status({dir, filepath: 'README.md'})
-    // console.log( await git.status({dir, filepath: 'README.md'}))
 
-    await git.add({dir, filepath: 'newfile.txt'})
-    await git.status({dir, filepath: 'newfile.txt'})
+    await git.add({dir, filepath: 'test.txt'})
+    await git.status({dir, filepath: 'test.txt'})
 
-    console.log( await git.status({dir, filepath: 'newfile.txt'}))
+    console.log( await git.status({dir, filepath: 'test.txt'}))
 
     console.log("add");
   }
@@ -428,7 +425,7 @@
   async function commit() {
     let sha = await git.commit({
       dir,
-      message: 'Deleteeeee package.jsonff and overwrite README.',
+      message: 'test: push test.txt from browser to github repo',
       author: {
         name: 'Mr. Test',
         email: 'bassam.ajam95@gmail.com'
@@ -478,7 +475,7 @@
 
   $(document).ready(function(){
     $("#push").click(function(){
-      pushh();
+      //pushh();
       console.log("push2")
       });
   });
