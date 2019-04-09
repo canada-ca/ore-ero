@@ -43,7 +43,8 @@ ${[...document.querySelectorAll("#tagsFR input")]
     vcs: ${$("#vcs").val()}
 `;
   console.log(content);
-  FileWriter.append(
+  let fileWriter = new FileWriter(USERNAME, REPO_NAME);
+  fileWriter.append(
     "_data/code/municipal/" + $("#adminCode").val() + ".yml",
     content
   ).then(result => {

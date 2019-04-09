@@ -1,14 +1,26 @@
 
-const FileWriter = {
-    _base: 'https://raw.githubusercontent.com/j-rewerts/ore-ero/master',
+class FileWriter {
 
-    get: (file) => {
-        return fetch(`${FileWriter._base}/${file}`)
-          .then(res => res.text())
-    },
+    constructor(user, repo, branch='master') {
+        this._user = user;
+        this._repo = repo;
+        this._branch = branch
+        this._base = `https://raw.githubusercontent.com/${this._user}/${this._repo}/${this._branch}`
+    }
 
-    append: (file, content) => {
-        return FileWriter.get(file).then((currentContent) => {
+    get = (file) => {
+        return fetch(`${this._base}/${file}`)
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`Failed getting ${this._base}/${file}`);
+                }
+                return res;
+            })
+            .then(res => res.text())
+    }
+
+    append = (file, content) => {
+        return this.get(file).then((currentContent) => {
             return currentContent + content;
         });
     }
