@@ -90,6 +90,8 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
 <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
 <script src="https://unpkg.com/isomorphic-git"></script>
+<script src="/ore-ero/assets/js/git-file-manager.js"></script>
+<script src="/ore-ero/assets/js/index.js"></script>
 <script>
 
   var jLang = 0 ;
@@ -479,35 +481,4 @@
       console.log("push2")
       });
   });
-
-  $(document).ready(function(){
-    $('#prbotSubmit').click(function(){
-      console.log('prbot to the rescue!');
-      // VilledeMontreal
-      const config = {
-        body: JSON.stringify({
-          user: 'j-rewerts',
-          repo: 'ore-ero',
-          title: 'New project for ' + $('#adminCode :selected').text(),
-          description: 'Authored by: ' + $('#emailContact').val() + '\n'
-            + 'Project: ***' + $('#enProjectName').val() + '***\n'
-            + $('#enDescription').val() + '\n',
-          commit: 'Committed by ' + $('#emailContact').val(),
-          files: [
-            {
-              path: '_data/code/municipal/' + $('#adminCode').val(),
-              content: 'Pretend this is the content of the PR.'
-            }
-          ]
-        }),
-        method: 'POST'
-      };
-      const url = 'https://canada-pr-bot.herokuapp.com/';
-      fetch(url, config).then(result => {
-        console.log(result);
-      }).catch(err => {
-        console.error(err);
-      })
-    });
-  })
 </script>
