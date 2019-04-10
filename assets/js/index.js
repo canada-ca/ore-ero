@@ -1,6 +1,10 @@
 // Put code in here.
 // Embed this at the bottom of the body.
 
+function getSelectedOrgType() {
+  return $("#adminCode :selected").parent().attr('label').toLowerCase();
+}
+
 $("#prbotSubmit").click(function() {
   console.log("prbot to the rescue!");
   let content =
@@ -44,10 +48,9 @@ ${[...document.querySelectorAll("#tagsFR input")]
 `;
   console.log(content);
   let fileWriter = new FileWriter(USERNAME, REPO_NAME);
-  fileWriter.append(
-    "_data/code/municipal/" + $("#adminCode").val() + ".yml",
-    content
-  ).then(result => {
+  let file = `_data/code/${getSelectedOrgType()}/${$("#adminCode").val()}.yml`;
+  fileWriter.append(file, content)
+    .then(result => {
     const config = {
       body: JSON.stringify({
         user: "j-rewerts",
@@ -65,7 +68,7 @@ ${[...document.querySelectorAll("#tagsFR input")]
         commit: "Committed by " + $("#emailContact").val(),
         files: [
           {
-            path: "_data/code/municipal/" + $("#adminCode").val() + ".yml",
+            path: file,
             content: result
           }
         ]
