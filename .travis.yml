@@ -8,7 +8,7 @@ jdk:
 install:
 - bundle install 
 - pip install --user html5validator
-- pip install yamale
+- pip install --user yamale
 
 script: 
 - bundle exec jekyll build 
