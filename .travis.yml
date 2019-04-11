@@ -8,10 +8,12 @@ jdk:
 install:
 - bundle install 
 - pip install --user html5validator
+- pip install yamale
 
 script: 
 - bundle exec jekyll build 
 - htmlproofer --disable-external --allow-hash-href ./_site
 - html5validator --root _site/
+- yamale _data/code
 
 sudo: false
