@@ -15,6 +15,6 @@ script:
 - htmlproofer --disable-external --allow-hash-href ./_site
 - html5validator --root _site/
 - yamale -s schemaOcs.yaml _data/code
-- yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
+
 
 sudo: false
