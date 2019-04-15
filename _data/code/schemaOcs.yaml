@@ -1,0 +1,67 @@
+--- 
+schemaVersion: str()
+adminCode: str()
+releases: 
+  - 
+    contact: 
+      URL: 
+        en: str(required=False)
+        fr: str(required=False)
+      email: str(required=False)
+      name: 
+        en: str(required=False)
+        fr: str(required=False)
+      phone: str(required=False)
+    date: 
+      created: str()
+      lastModified: str(required=False) 
+      metadataLastUpdated: str()
+    description: 
+      en: str()
+      fr: str()
+    downloadURL:
+      en: str(required=False)
+      fr: str(required=False)
+    homepageURL:
+      en: str(required=False)
+      fr: str(required=False)
+    languages: 
+             - str(required=False)
+    name: 
+      en: str()
+      fr: str()
+    organization:
+      en: str(required=False)
+      fr: str(required=False)
+    partners:
+      URL: 
+        en: str(required=False)
+        fr: str(required=False)
+      email: str(required=False)
+      name: 
+        en: str(required=False)
+        fr: str(required=False)
+    licenses:
+      - 
+        URL: 
+          en: str()
+          fr: str()
+        spdxID: str()
+    repositoryURL: 
+      en: str()
+      fr: str()
+    relatedCode:
+      URL: 
+        en: str(required=False)
+        fr: str(required=False)
+      name: 
+        en: str(required=False)
+        fr: str(required=False)
+    status: str(required=False)
+    tags: 
+      en:
+        - str()
+      fr: 
+        - str()
+    status: str(required=False)
+    version: str(required=False)
