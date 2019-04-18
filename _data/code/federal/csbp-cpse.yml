@@ -1,0 +1,38 @@
+--- 
+schemaVersion: "1.0"
+adminCode: csbp-cpse
+releases: 
+  - 
+    contact: 
+      URL:
+        en: https://github.com/csbp-cpse
+        fr: https://github.com/csbp-cpse
+    date: 
+      created: "2016-11-25"
+      metadataLastUpdated: "2019-04-18"
+    description: 
+      en: "Repository of exploratory and experimental open projects. "
+      fr: "Répertoire de projets ouverts, exploratoires et expérimentaux."
+    languages: 
+      - Python
+      - JavaScript
+    name: 
+      en: csbp
+      fr: cpse
+    licenses: 
+      - 
+        URL: 
+          en: "https://github.com/CSBP-CPSE/SLA-ZTA/blob/master/LICENSE.md"
+          fr: "https://github.com/CSBP-CPSE/SLA-ZTA/blob/master/LICENSE.md"
+        spdxID: EPL-1.0
+    repositoryURL: 
+      en: "https://github.com/CSBP-CPSE/SLA-ZTA"
+      fr: "https://github.com/CSBP-CPSE/SLA-ZTA"
+    tags: 
+      en: 
+        - Open Data
+        - Open Street Map
+      fr: 
+        - Open Data
+        - Open Street Map
+vcs: git
