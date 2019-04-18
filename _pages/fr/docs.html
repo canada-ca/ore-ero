@@ -15,6 +15,13 @@ permalink: fr/docs.html
       </header>
       <div class="panel-body">
         <ul class="list-unstyled">
+          <li><a href="#Comment_ajouter_vos_donnees">Comment ajouter vos données</a>
+            <ul>
+              <li><a href="#Ajouter_votre_administration">Ajouter votre administration</a></li>
+              <li><a href="#Ajouter_du_code_source_ouvert">Ajouter du code source ouvert</a></li>
+              <li><a href="#Ajouter_des_logiciels_libres">Ajouter des logiciels libres</a></li>
+            </ul>
+          </li>
           <li><a href="#Structure_du_repertoire">Structure du répertoire</a>
             <ul>
               <li><a href="#administrations">Administrations</a></li>
@@ -23,53 +30,28 @@ permalink: fr/docs.html
               <li><a href="#normes_ouvertes-open_standards">Normes_ouvertes-open_standards</a></li>
             </ul>
           </li>
-          <li><a href="#Comment_ajouter_vos_donnees">Comment ajouter vos données</a>
-            <ul>
-              <li><a href="#Ajouter_votre_administration">Ajouter votre administration</a></li>
-              <li><a href="#Ajout_de_codes_Open_Source">Ajout de codes Open Source</a></li>
-              <li><a href="#Ajout_de_logiciels_Open_Source">Ajout de logiciels Open Source</a></li>
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-<h2 id="Structure_du_repertoire">Structure du répertoire</h2>
-
-   <h3 id="administrations">Administrations</h3> 
-    <p>Liste des administrations fédérale, provinciales, territoriales et municipales du Canada. Utilisé pour rechercher les noms bilingues.</p>
-   <h3 id="code">Code</h3>
-    <p>Liste des codes sources ouverts publiés par les administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.</p>
-      <ul>
-          <li>federal</li>
-          <li>provincial</li>    
-          <li>municipal</li>    
-      </ul>
-   <h3 id="logiciels_libres-open_source_software">Logiciels_libres-open_source_software</h3>
-    <p>Liste des logiciels libres utilisés par les administrations.</p>
-   <h3 id="normes_ouvertes-open_standards">Normes_ouvertes-open_standards</h3> 
-    <p>Liste des normes ouvertes approuvées ou utilisées par les administrations.</p>
-
 <h2 id="Comment_ajouter_vos_donnees">Comment ajouter vos données</h2>
+
 <h3 id="Ajouter_votre_administration">Ajouter votre administration</h3>
 <p>
-    Dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> ajouter votre administration dans le fichier 
-    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
-    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> ou 
-    <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a>.
+  Dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> ajouter votre administration dans le fichier 
+  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
+  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> ou 
+  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a>.
 </p>
 
-<h3 id="Ajout_de_codes_Open_Source">Ajout de codes Open Source</h3>
+<h3 id="Ajouter_du_code_source_ouvert">Ajouter du code source ouvert</h3>
+
 <h4 id="Votre_administration_est_deja_la">Votre administration est déjà là</h4>
-<p>
-    S'il existe déjà un fichier pour votre administration sous le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> vous devez modifier ce fichier pour ajouter votre code source ouvert.
-</p>
+<p>S'il existe déjà un fichier pour votre administration sous le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> vous pouvez modifier ce fichier pour ajouter votre code source ouvert.</p>
 
-<p>
-    Vous pouvez copier ce qui suit en bas du fichier et modifier les informations pour votre code. Ce ne sont que les champs obligatoires.
-</p>
+<p>Vous pouvez copier ce qui suit en bas du fichier et modifier les informations pour votre code. Ce ne sont que les champs obligatoires.</p>
 
 <pre>
   <code>
@@ -103,8 +85,8 @@ permalink: fr/docs.html
 </pre>
 
 <p>
-    Pour plus d'informations, cliquez <a href="./code-source-ouvert-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert. 
-    Si vous êtes intéressé à contribuer avec nous, veuillez remplir <a href="./code-source-ouvert-formulaire.html">le formulaire de code source ouvert</a>.
+  Pour plus d'informations, cliquez <a href="./code-source-ouvert-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.
+  Si vous êtes intéressé à contribuer avec nous, veuillez remplir <a href="./code-source-ouvert-formulaire.html">le formulaire de code source ouvert</a>.
 </p>
 
 <h4 id="Votre_administration_doit_etre_ajoute">Votre administration doit être ajouté:</h4>
@@ -114,16 +96,12 @@ permalink: fr/docs.html
     Utilisez le <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/code_mandatory.yml">modèle de code avec uniquement les champs obligatoires</a>.
 </p>
 
-<h3 id="Ajout_de_logiciels_Open_Source">Ajout de logiciels Open Source</h3>
-<h4 id="Le_logiciel_est_deja_la">Le logiciel est déjà là</h4>
-<p>
-    S'il existe déjà un fichier pour le logiciel libre que vous utilisez dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a>, 
-    vous devez vérifier si votre administration est déjà répertoriée comme utilisant le logiciel libre.
-</p>
+<h3 id="Ajouter_des_logiciels_libres">Ajouter des logiciels libres</h3>
 
-<p>
-    Si ce n'est pas le cas, vous pouvez copier ce qui suit au bas du fichier, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.
-</p>
+<h4 id="Le_logiciel_est_deja_la">Le logiciel est déjà là</h4>
+<p>S'il existe déjà un fichier pour le logiciel libre que vous utilisez dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a>, vous devez vérifier si votre administration est déjà répertoriée comme utilisant le logiciel libre.</p>
+
+<p>Si ce n'est pas le cas, vous pouvez copier ce qui suit au bas du fichier, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.</p>
 
 <pre>
   <code>
@@ -142,9 +120,7 @@ permalink: fr/docs.html
   </code>
 </pre>
 
-<p>
-    Si votre administration est là, ajouter votre utilisation de logiciels libre, vous pouvez copier ce qui suit, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.
-</p>
+<p>Si votre administration est là, ajouter votre utilisation de logiciels libre, vous pouvez copier ce qui suit, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.</p>
 
 <pre>
   <code>
@@ -160,12 +136,29 @@ permalink: fr/docs.html
   </code>
 </pre>
 
-<p>
-    Pour plus d'informations, cliquez <a href="./logiciels-libres-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.
-</p>
+<p>Pour plus d'informations, cliquez <a href="./logiciels-libres-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.</p>
 
 <h4 id="Votre_logiciel_open_source_doit_etre_ajoute">Votre logiciel open source doit être ajouté</h4>
 <p>
     Si votre logiciel open source n'a pas de fichier dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a>
     vous devez créer un nouveau fichier pour le logiciel open source. Utilisez le modèle <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/ll-oss_mandatory.yml">ll-oss template with only mandatory fields</a>.
 </p>
+
+<h2 id="Structure_du_repertoire">Structure du répertoire</h2>
+
+<h3 id="administrations">Administrations</h3> 
+<p>Liste des administrations fédérale, provinciales, territoriales et municipales du Canada. Utilisé pour rechercher les noms bilingues.</p>
+
+<h3 id="code">Code</h3>
+<p>Liste des codes sources ouverts publiés par les administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.</p>
+<ul>
+  <li>federal</li>
+  <li>provincial</li>    
+  <li>municipal</li>    
+</ul>
+
+<h3 id="logiciels_libres-open_source_software">Logiciels_libres-open_source_software</h3>
+<p>Liste des logiciels libres utilisés par les administrations.</p>
+
+<h3 id="normes_ouvertes-open_standards">Normes_ouvertes-open_standards</h3> 
+<p>Liste des normes ouvertes approuvées ou utilisées par les administrations.</p>
