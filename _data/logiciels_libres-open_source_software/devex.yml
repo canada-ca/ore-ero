@@ -22,6 +22,7 @@ admininstrations:
       - 
         contact: 
           URL: https://github.com/canada-ca/devex/issues
+          email: ~
         name: 
           en: "GC Developer Exchange"
           fr: "Échange de développeurs du GC"

@@ -24,6 +24,7 @@ admininstrations:
       - 
         contact: 
           URL: https://www.international.gc.ca
+          email: ~
         name: 
           en: "Misc"
           fr: "Divers"
