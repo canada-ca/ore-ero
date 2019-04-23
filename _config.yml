@@ -386,9 +386,6 @@ DeprecatedStatus:
 RetiredStatus:
   en: Retired
   fr: Retraité
-UsersOssName:
-  en: Users
-  fr: Utilisateurs
 UsersOssDesc:
   en: The users who used the project.
   fr: Les utilisateurs qui ont utilisés le projet.
