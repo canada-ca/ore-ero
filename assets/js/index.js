@@ -9,7 +9,8 @@ $("#prbotSubmit").click(function() {
   console.log("prbot to the rescue!");
   let content =
     "" +
-    `  -
+    `releases:
+  -
     contact: 
       URL: 
         en: ${$("#enUrlContact").val()}
@@ -47,10 +48,9 @@ ${[...document.querySelectorAll("#tagsFR input")]
     vcs: ${$("#vcs").val()}
 `;
   console.log(content);
-  let fileWriter = new FileWriter(USERNAME, REPO_NAME);
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$("#adminCode").val()}.yml`;
-  fileWriter.append(file, content)
-    .then(result => {
+  fileWriter.merge(file, content, "releases", "name.en").then(result => {
     const config = {
       body: JSON.stringify({
         user: "j-rewerts",
@@ -69,7 +69,7 @@ ${[...document.querySelectorAll("#tagsFR input")]
         files: [
           {
             path: file,
-            content: result
+            content: YAML.stringify(result, {keepBlobsInJSON: false})
           }
         ]
       }),
