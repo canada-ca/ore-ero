@@ -51,8 +51,8 @@ ${[...document.querySelectorAll("#tagsFR input")]
   fileWriter.merge(file, content, "releases", "name.en").then(result => {
     const config = {
       body: JSON.stringify({
-        user: "j-rewerts",
-        repo: "ore-ero",
+        user: USERNAME,
+        repo: REPO_NAME,
         title: "Updated code for " + $("#adminCode :selected").text(),
         description:
           "Authored by: " +
@@ -73,16 +73,15 @@ ${[...document.querySelectorAll("#tagsFR input")]
       }),
       method: "POST"
     };
-    const url = "https://canada-pr-bot.herokuapp.com/";
-    return fetch(url, config);
+    return fetch(PRBOT_URL, config);
   }).catch(err => {
     if (err.status == 404) {
       // We need to create the file for this organization, as it doesn't yet exist.
       let header = `schemaVersion: "1.0"\nadminCode: ${$("#adminCode").val()}\n`
       const config = {
         body: JSON.stringify({
-          user: "j-rewerts",
-          repo: "ore-ero",
+          user: USERNAME,
+          repo: REPO_NAME,
           title: "Created code file for " + $("#adminCode :selected").text(),
           description:
             "Authored by: " +
@@ -103,8 +102,7 @@ ${[...document.querySelectorAll("#tagsFR input")]
         }),
         method: "POST"
       };
-      const url = "https://canada-pr-bot.herokuapp.com/";
-      return fetch(url, config);
+      return fetch(PRBOT_URL, config);
     }
     else {
       throw err;
