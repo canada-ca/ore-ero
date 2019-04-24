@@ -10,6 +10,7 @@ baseurl: "/ore-ero" # the subpath of your site, e.g. /blog
 url: "https://canada-ca.github.io/ore-ero" # the base hostname & protocol for your site
 github_username: canada-ca
 github_repository: ore-ero
+prbot_url: "https://canada-pr-bot.herokuapp.com/"
 
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_30"
