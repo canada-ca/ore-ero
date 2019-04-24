@@ -1,6 +1,12 @@
 
 class FileWriter {
 
+    /**
+     * Helps make reading and writing text files in GitHub easier.
+     * @param {String} user The username where the repo is hosted (canada-ca).
+     * @param {String} repo The name of the repository (ore-ero).
+     * @param {String} [branch=master] The branch to work on.
+     */
     constructor(user, repo, branch='master') {
         this._user = user;
         this._repo = repo;
@@ -8,6 +14,11 @@ class FileWriter {
         this._base = `https://raw.githubusercontent.com/${this._user}/${this._repo}/${this._branch}`
     }
 
+    /**
+     * Read a file hosted in GitHub.
+     * @param {String} file The file to read.
+     * @return {Promise<String>} Resolves with the text of the file.
+     */
     get(file) {
         return fetch(`${this._base}/${file}`)
             .then(res => {
@@ -19,6 +30,11 @@ class FileWriter {
             .then(res => res.text())
     }
 
+    /**
+     * Appends text to a file hosted in GitHub.
+     * @param {String} file The file to append to.
+     * @param {String} content The content to append.
+     */
     append(file, content) {
         return this.get(file).then((currentContent) => {
             return currentContent + content;
@@ -27,6 +43,13 @@ class FileWriter {
 }
 
 class YamlWriter extends FileWriter {
+
+    /**
+     * Helps make reading and writing YAML files in GitHub easier.
+     * @param {String} user The username where the repo is hosted (canada-ca).
+     * @param {String} repo The name of the repository (ore-ero).
+     * @param {String} [branch=master] The branch to work on.
+     */
     constructor(user, repo, branch='master') {
         super(user, repo, branch);
     }

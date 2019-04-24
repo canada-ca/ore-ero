@@ -6,7 +6,6 @@ function getSelectedOrgType() {
 }
 
 $("#prbotSubmit").click(function() {
-  console.log("prbot to the rescue!");
   let content =
     "" +
     `releases:
@@ -47,7 +46,6 @@ ${[...document.querySelectorAll("#tagsFR input")]
   .join("\n")}
     vcs: ${$("#vcs").val()}
 `;
-  console.log(content);
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$("#adminCode").val()}.yml`;
   fileWriter.merge(file, content, "releases", "name.en").then(result => {
