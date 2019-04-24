@@ -5,7 +5,7 @@ function getSelectedOrgType() {
   return $("#adminCode :selected").parent().attr('label').toLowerCase();
 }
 
-$("#prbotSubmit").click(function() {
+$("#prbotSubmit").click(function () {
   let content =
     "" +
     `releases:
@@ -36,14 +36,14 @@ $("#prbotSubmit").click(function() {
     tags: 
       en: 
 ${[...document.querySelectorAll("#tagsEN input")]
-  .map(child => child.value)
-  .map(tag => '        - "' + tag + '"')
-  .join("\n")}
+      .map(child => child.value)
+      .map(tag => '        - "' + tag + '"')
+      .join("\n")}
       fr: 
 ${[...document.querySelectorAll("#tagsFR input")]
-  .map(child => child.value)
-  .map(tag => '        - "' + tag + '"')
-  .join("\n")}
+      .map(child => child.value)
+      .map(tag => '        - "' + tag + '"')
+      .join("\n")}
     vcs: ${$("#vcs").val()}
 `;
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -67,7 +67,7 @@ ${[...document.querySelectorAll("#tagsFR input")]
         files: [
           {
             path: file,
-            content: YAML.stringify(result, {keepBlobsInJSON: false})
+            content: YAML.stringify(result, { keepBlobsInJSON: false })
           }
         ]
       }),
