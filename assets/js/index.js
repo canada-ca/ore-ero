@@ -64,6 +64,10 @@ ${[...document.querySelectorAll("#tagsFR input")]
           $("#enDescription").val() +
           "\n",
         commit: "Committed by " + $("#emailContact").val(),
+        author: {
+          name: $("#nameContact").val(),
+          email: $("#emailContact").val()
+        },
         files: [
           {
             path: file,
@@ -93,6 +97,10 @@ ${[...document.querySelectorAll("#tagsFR input")]
             $("#enDescription").val() +
             "\n",
           commit: "Committed by " + $("#emailContact").val(),
+          author: {
+            name: $("#nameContact").val(),
+            email: $("#emailContact").val()
+          },
           files: [
             {
               path: file,
