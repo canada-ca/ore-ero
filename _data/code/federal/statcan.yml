@@ -1,0 +1,30 @@
+--- 
+schemaVersion: "1.0"
+adminCode: statcan
+releases: 
+  - 
+    contact: 
+      URL: "https://github.com/CSBP-CPSE/OpenTabulate/issues"
+    date: 
+      created: "2018-01-07"
+      metadataLastUpdated: "2019-04-18"  
+    description: 
+      en: "Centralize, process, and clean data"
+      fr: "Centraliser, traiter et nettoyer les données"
+    name: 
+      en: "OpenTabulate"
+      fr: "OpenTabulate"
+    licenses:
+      - 
+        URL: 
+          en: "https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md"
+          fr: "https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md"
+        spdxID: "MIT"
+    repositoryURL: 
+      en: "https://github.com/CSBP-CPSE/OpenTabulate"
+      fr: "https://github.com/CSBP-CPSE/OpenTabulate"
+    tags: 
+      en: 
+        - "Data"
+      fr: 
+        - "Données"

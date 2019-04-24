@@ -6,7 +6,11 @@ homepageURL:
   en: "https://example.com/"
   fr: "https://example.com/"
 licenses: 
-  - "XYZ-1.0"
+  - 
+    URL: 
+      en: "https://example.com/repo/example/LICENCE-en"
+      fr: "https://example.com/repo/example/LICENCE-fr"
+    spdxID: "XYZ-1.0"
 name: 
   en: Example
   fr: Exemple
