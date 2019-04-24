@@ -53,7 +53,7 @@ ${[...document.querySelectorAll("#tagsFR input")]
       body: JSON.stringify({
         user: "j-rewerts",
         repo: "ore-ero",
-        title: "New project for " + $("#adminCode :selected").text(),
+        title: "Updated code for " + $("#adminCode :selected").text(),
         description:
           "Authored by: " +
           $("#emailContact").val() +
@@ -75,5 +75,39 @@ ${[...document.querySelectorAll("#tagsFR input")]
     };
     const url = "https://canada-pr-bot.herokuapp.com/";
     return fetch(url, config);
+  }).catch(err => {
+    if (err.status == 404) {
+      // We need to create the file for this organization, as it doesn't yet exist.
+      let header = `schemaVersion: "1.0"\nadminCode: ${$("#adminCode").val()}\n`
+      const config = {
+        body: JSON.stringify({
+          user: "j-rewerts",
+          repo: "ore-ero",
+          title: "Created code file for " + $("#adminCode :selected").text(),
+          description:
+            "Authored by: " +
+            $("#emailContact").val() +
+            "\n" +
+            "Project: ***" +
+            $("#enProjectName").val() +
+            "***\n" +
+            $("#enDescription").val() +
+            "\n",
+          commit: "Committed by " + $("#emailContact").val(),
+          files: [
+            {
+              path: file,
+              content: header + content
+            }
+          ]
+        }),
+        method: "POST"
+      };
+      const url = "https://canada-pr-bot.herokuapp.com/";
+      return fetch(url, config);
+    }
+    else {
+      throw err;
+    }
   });
 });

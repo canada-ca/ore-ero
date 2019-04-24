@@ -22,8 +22,11 @@ class FileWriter {
   get(file) {
     return fetch(`${this._base}/${file}`)
       .then(res => {
-        if (!res.ok) {
-          throw new Error(`Failed getting ${this._base}/${file}`);
+        if (!res.ok && res.status == 404) {
+          throw res;
+        }
+        else if (!res.ok) {
+          throw new Error(`Failed getting ${this._base}/${file}`)
         }
         return res;
       })
