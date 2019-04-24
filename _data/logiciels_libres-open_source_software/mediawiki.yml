@@ -24,7 +24,6 @@ admininstrations:
       - 
         contact: 
           URL: https://github.com/gctools-outilsgc/gcpedia/issues
-          email: ~
         name: 
           en: "GCpedia"
           fr: "GCpedia"

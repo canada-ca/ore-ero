@@ -25,7 +25,6 @@ admininstrations:
       - 
         contact: 
           URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
-          email: ~
         name: 
           en: "GCcollab"
           fr: "GCcollab"

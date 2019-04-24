@@ -24,7 +24,7 @@ admininstrations:
           URL: 
             en: str(required=False)
             fr: str(required=False)
-          email: any(str(), null())
+          email: str()
           name: 
             en: str(required=False)
             fr: str(required=False)
