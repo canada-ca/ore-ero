@@ -7,6 +7,7 @@ releases:
       URL:
         en: https://projects.eclipse.org/projects/technology.apogy/contact
         fr: https://projects.eclipse.org/projects/technology.apogy/contact
+      email: apogy-dev@eclipse.org
     date: 
       created: "2015-09-28"
       metadataLastUpdated: "2019-01-31"
