@@ -1,0 +1,39 @@
+--- 
+description: 
+  en: str()
+  fr: str()
+homepageURL:
+  en: str()
+  fr: str()
+licenses: 
+  - str()
+name: 
+  en: str()
+  fr: str()
+tags: 
+  en:
+    - str()
+  fr: 
+    - str()
+admininstrations: 
+  - 
+    adminCode: str()
+    uses: 
+      - 
+        contact: 
+          URL: 
+            en: str(required=False)
+            fr: str(required=False)
+          email: str()
+          name: 
+            en: str(required=False)
+            fr: str(required=False)
+        date: 
+          started: str(required=False)
+          metadataLastUpdated: str(required=False)
+        description: 
+          en: str(required=False)
+          fr: str(required=False)
+        name: 
+          en: str(required=False)
+          fr: str(required=False)
