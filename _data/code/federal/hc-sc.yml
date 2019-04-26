@@ -1,0 +1,33 @@
+schemaVersion: "1.0"
+adminCode: hc-sc
+releases:
+  -
+    contact: 
+      URL: 
+        en: https://www.edmonton.ca/
+        fr: https://www.edmonton.ca/
+    date: 
+      created: 2019-04-04
+      metadataLastUpdated: 2019-04-26
+    description: 
+      en: dsfkjsadfkhasdf
+      fr: salkdjfnaksljdnfkljasdnfkljasbndasdkljfnasdf
+    name: 
+      en: Pleaseignorethis
+      fr: Pleaseignorethis
+    licenses: 
+      - 
+        URL: 
+          en: https://www.edmonton.ca/
+          fr: https://www.edmonton.ca/
+          spdxID: mit
+    repositoryURL: 
+      en: https://www.edmonton.ca/
+      fr: https://www.edmonton.ca/
+    status: Deprecated
+    tags: 
+      en: 
+        - "test"
+      fr: 
+        - "test"
+    vcs: git
