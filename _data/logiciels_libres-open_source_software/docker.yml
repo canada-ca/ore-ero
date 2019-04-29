@@ -21,18 +21,6 @@ tags:
     - Infrastructure
 admininstrations: 
   - 
-    adminCode: ised-isde
-    uses: 
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "Development"
-          fr: "Développement"
-  - 
     adminCode: statcan
     uses: 
       - 
@@ -44,6 +32,18 @@ admininstrations:
         description: 
           en: "Development and deployment process"
           fr: "Processus de développements et déploiements"
+  - 
+    adminCode: ised-isde
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "Development"
+          fr: "Développement"
   - 
     adminCode: tbs-sct
     uses: 

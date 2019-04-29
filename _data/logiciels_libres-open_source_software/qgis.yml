@@ -21,7 +21,7 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: reginald.maltais2@canada.ca
+          email: "reginald.maltais2@canada.ca"
         name: 
           en: ~
           fr: ~
@@ -33,10 +33,10 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: ""
+          email: ~
         name: 
           en: "Desktop geospatial information"
           fr: "Système d'information géospatiale"
         description: 
-          en: "GeoConnections: data source review and testing."
-          fr: "GéoConnexions: examen et test de la source de données."
+          en: "GeoConnections - data source review and testing."
+          fr: "GéoConnexions - examen et test de la source de données."
