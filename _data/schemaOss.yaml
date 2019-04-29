@@ -29,11 +29,11 @@ admininstrations:
             en: str(required=False)
             fr: str(required=False)
         date: 
-          started: str(required=False)
-          metadataLastUpdated: str(required=False)
+          started: str()
+          metadataLastUpdated: str()
         description: 
-          en: str(required=False)
-          fr: str(required=False)
+          en: str()
+          fr: str()
         name: 
-          en: str(required=False)
-          fr: str(required=False)
+          en: str()
+          fr: str()
