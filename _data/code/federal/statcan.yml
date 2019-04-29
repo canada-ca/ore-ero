@@ -5,6 +5,7 @@ releases:
   - 
     contact: 
       URL: "https://github.com/CSBP-CPSE/OpenTabulate/issues"
+      email: ~
     date: 
       created: "2018-01-07"
       metadataLastUpdated: "2019-04-18"  

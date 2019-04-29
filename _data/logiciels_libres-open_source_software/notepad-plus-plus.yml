@@ -21,18 +21,6 @@ tags:
     - "Éditeur texte"
 admininstrations: 
   - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
     adminCode: gac-amc
     uses: 
       - 
@@ -45,6 +33,18 @@ admininstrations:
         description: 
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
+  - 
+    adminCode: agr
+    uses: 
+      - 
+        contact: 
+          email: ~
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
   - 
     adminCode: tbs-sct
     uses: 
