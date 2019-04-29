@@ -24,6 +24,7 @@ admininstrations:
       - 
         contact: 
           URL: https://www.international.gc.ca
+          email: sebastien.routier@international.gc.ca
         name: 
           en: "Misc"
           fr: "Divers"

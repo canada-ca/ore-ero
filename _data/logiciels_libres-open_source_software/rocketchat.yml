@@ -21,7 +21,7 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: "mark.wooff@tbs-sct.gc.ca"
+          email: "ilia.salem@tbs-sct.gc.ca"
         name: 
           en: "GCcollab Message"
           fr: "Message GCcollab"
@@ -33,7 +33,7 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: "andrew.pitt@canada.ca"
+          email: ~
         name: 
           en: ~
           fr: ~

@@ -25,7 +25,7 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: "andrew.pitt@canada.ca"
+          email: ~
         name: 
           en: ~
           fr: ~
