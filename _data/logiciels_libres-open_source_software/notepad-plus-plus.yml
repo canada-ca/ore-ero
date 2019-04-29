@@ -21,17 +21,21 @@ tags:
     - "Éditeur texte"
 admininstrations: 
   - 
-    adminCode: agr
+    adminCode: gac-amc
     uses: 
       - 
         contact: 
-          email: ~
-        description: 
-          en: "Desktop"
-          fr: "Poste de travail"
+          URL: https://www.international.gc.ca/
+          email: sebastien.routier@international.gc.ca
         name: 
-          en: ~
-          fr: ~
+          en: "Available to all employees"
+          fr: "Disponible pour tous les employés"
+        description: 
+          en: "Must be requeted from the AppStore."
+          fr: "Disponible au AppStore."
+  - 
+    adminCode: agr
+    uses: 
       - 
         contact: 
           email: ~
@@ -42,35 +46,11 @@ admininstrations:
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: csc-scc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        description: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        name: 
-          en: ~
-          fr: ~
-  - 
-    adminCode: gac-amc
-    uses: 
-      - 
-        contact: 
-          URL: https://www.international.gc.ca/
-        name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-        description: 
-          en: "Must be requeted from the AppStore."
-          fr: "Disponible au AppStore."
-  - 
     adminCode: tbs-sct
     uses: 
       - 
         contact: 
-          email: desktop@tbs-sct.gc.ca
+          email: ~
         description: 
           en: "Must be requested"
           fr: "Doit être demandé"
@@ -84,8 +64,8 @@ admininstrations:
         contact: 
           email: ~
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"

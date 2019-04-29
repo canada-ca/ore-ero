@@ -327,10 +327,11 @@ releases:
           fr: "https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt"
         spdxID: "MIT"
     partners:
-      email: "renatabianca.tomazeli@ville.montreal.qc.ca"
-      name: 
-        en: "City of Montreal" 
-        fr: "Ville de Montréal"
+      -
+        email: "renatabianca.tomazeli@ville.montreal.qc.ca"
+        name: 
+          en: "City of Montreal" 
+          fr: "Ville de Montréal"
     repositoryURL: 
       en: "https://github.com/canada-ca/ore-ero"
       fr: "https://github.com/canada-ca/ore-ero"
