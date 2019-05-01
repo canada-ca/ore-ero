@@ -17,7 +17,7 @@ tags:
     - str()
 admininstrations: 
   - 
-    adminCode: str()
+    adminCode:  str()
     uses: 
       - 
         contact: 
