@@ -24,16 +24,16 @@ admininstrations:
           URL: 
             en: str(required=False)
             fr: str(required=False)
-          email: str()
+          email: any(str(), null())
           name: 
             en: str(required=False)
             fr: str(required=False)
         date: 
-          started: str()
-          metadataLastUpdated: str()
+          started: any(str(), null())
+          metadataLastUpdated: any(str(), null())
         description: 
-          en: str()
-          fr: str()
+          en: any(str(), null())
+          fr: any(str(), null())
         name: 
-          en: str()
-          fr: str()
+          en: any(str(), null())
+          fr: any(str(), null())
