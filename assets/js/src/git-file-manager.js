@@ -2,7 +2,6 @@
 
 /* exported FileWriter */
 class FileWriter {
-
   /**
    * Helps make reading and writing text files in GitHub easier.
    * @param {String} user The username where the repo is hosted (canada-ca).
@@ -12,8 +11,10 @@ class FileWriter {
   constructor(user, repo, branch = 'master') {
     this._user = user;
     this._repo = repo;
-    this._branch = branch
-    this._base = `https://raw.githubusercontent.com/${this._user}/${this._repo}/${this._branch}`
+    this._branch = branch;
+    this._base = `https://raw.githubusercontent.com/${this._user}/${
+      this._repo
+    }/${this._branch}`;
   }
 
   /**
@@ -26,13 +27,12 @@ class FileWriter {
       .then(res => {
         if (!res.ok && res.status == 404) {
           throw res;
-        }
-        else if (!res.ok) {
-          throw new Error(`Failed getting ${this._base}/${file}`)
+        } else if (!res.ok) {
+          throw new Error(`Failed getting ${this._base}/${file}`);
         }
         return res;
       })
-      .then(res => res.text())
+      .then(res => res.text());
   }
 
   /**
@@ -41,7 +41,7 @@ class FileWriter {
    * @param {String} content The content to append.
    */
   append(file, content) {
-    return this.get(file).then((currentContent) => {
+    return this.get(file).then(currentContent => {
       return currentContent + content;
     });
   }
@@ -49,7 +49,6 @@ class FileWriter {
 
 /* exported YamlWriter */
 class YamlWriter extends FileWriter {
-
   /**
    * Helps make reading and writing YAML files in GitHub easier.
    * @param {String} user The username where the repo is hosted (canada-ca).
@@ -72,12 +71,12 @@ class YamlWriter extends FileWriter {
   }
 
   /**
-   * 
+   *
    * @param {String} file The file to merge on.
    * @param {String} contents The contents to merge into file.
    * @param {String} propPath The path to the property you want to merge.
-   * @param {String} onValue The property to treat as the id. If this is 
-   * the same in both, then we overwrite the object. If it exists in 
+   * @param {String} onValue The property to treat as the id. If this is
+   * the same in both, then we overwrite the object. If it exists in
    * contents but not file, we simply add it into propPath.
    * @return {Promise<Object>} A Promise that resolves with the merged file.
    */
@@ -107,6 +106,6 @@ class YamlWriter extends FileWriter {
 
       DeepObject.set(result, propPath, items);
       return result;
-    })
+    });
   }
 }

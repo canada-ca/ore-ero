@@ -6,7 +6,7 @@
 const DeepObject = {
   /**
    * Attempts to get the object at path.
-   * @param {Object} obj The Object to try to find 
+   * @param {Object} obj The Object to try to find.
    */
   get: (obj, path, defaultValue) => {
     if (typeof path === 'number') {
@@ -23,7 +23,7 @@ const DeepObject = {
     }
 
     return path.reduce((accumulator, currentValue) => {
-      return accumulator[currentValue]
+      return accumulator[currentValue];
     }, obj);
   },
   /**
@@ -44,4 +44,4 @@ const DeepObject = {
 
     obj[path[i]] = value;
   }
-}
+};
