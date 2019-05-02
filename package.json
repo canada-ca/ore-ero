@@ -1,0 +1,29 @@
+{
+  "name": "ore-ero",
+  "version": "1.0.0",
+  "description": "Open Resource Exchange - Échange de ressources ouvert",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint assets/js/src/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canada-ca/ore-ero.git"
+  },
+  "keywords": [
+    "jekyll",
+    "github",
+    "pages",
+    "javascript"
+  ],
+  "author": "smellems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canada-ca/ore-ero/issues"
+  },
+  "homepage": "https://github.com/canada-ca/ore-ero#readme",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  }
+}
