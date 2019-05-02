@@ -26,6 +26,9 @@ admininstrations:
         contact: 
           URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCcollab"
           fr: "GCcollab"
@@ -36,6 +39,9 @@ admininstrations:
         contact: 
           URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCconnex"
           fr: "GCconnex"

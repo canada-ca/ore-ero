@@ -26,6 +26,9 @@ admininstrations:
       - 
         contact: 
           email: "sebastien.lemay@canada.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Available to all employees (self service)"
           fr: "Disponible pour tous les employés (libre service)"
@@ -38,6 +41,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Available to developers"
           fr: "Disponible pour les développeur"
@@ -50,6 +56,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -62,6 +71,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -74,6 +86,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~

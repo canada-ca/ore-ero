@@ -22,6 +22,9 @@ admininstrations:
       - 
         contact: 
           email: "reginald.maltais2@canada.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -34,6 +37,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Desktop geospatial information"
           fr: "Système d'information géospatiale"

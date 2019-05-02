@@ -22,6 +22,9 @@ admininstrations:
       - 
         contact: 
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCcollab Message"
           fr: "Message GCcollab"
@@ -34,6 +37,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
