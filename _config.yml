@@ -388,12 +388,24 @@ DeprecatedStatus:
 RetiredStatus:
   en: Retired
   fr: Retraité
-UsersOssName:
-  en: Users
-  fr: Utilisateurs
 UsersOssDesc:
   en: The users who used the project.
   fr: Les utilisateurs qui ont utilisés le projet.
+SchemaVersionOssDesc:
+  en: The version of the ORE metadata schema for open source software.
+  fr: La version du schéma de métadonnées ORE pour les logiciels libres.
+NameUsesOss:
+  en: Name of the project activity
+  fr: Nom de l'activité du projet.
+DescriptionUsesOss:
+  en: Description of the project activity
+  fr: Description de l'activité du projet.
+NameUsesOssDesc:
+  en: The domain name of the project activity.
+  fr: Le nom du domaine de l'activité du projet.
+DescriptionUsesOssDesc:
+  en: A one or two sentence description of the project activity.
+  fr: Une description du domaine de l'activité du projet.
 
 # Build settings
 markdown: kramdown
