@@ -16,7 +16,6 @@ releases:
       fr: "Extension du schéma de données utilisée dans open.alberta.ca"
     languages: 
       - Python
-      - PLpgSQL 
     name: 
       en: ckanext-ab_scheming
       fr: ckanext-ab_scheming
@@ -50,7 +49,6 @@ releases:
       fr: "Extension Ckan développée pour être utilisée dans open.alberta.ca"
     languages: 
       - Python
-      - HTML 
     name: 
       en: ckanext-open_alberta
       fr: ckanext-open_alberta
@@ -70,7 +68,7 @@ releases:
       fr: 
         - "Extension CKAN"
     vcs: git
-   - 
+  - 
     contact: 
       URL: 
         en: "https://github.com/abgov/ckanext-geomapviewer/issues"
