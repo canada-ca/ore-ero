@@ -1,5 +1,13 @@
 <ul class="list-unstyled">
     <li>
+        <details open> 
+            <summary>schemaVersion <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+            <h5>{{ site.SchemaVersionCode[page.lang] }}</h5>
+            <p>{{ site.SchemaVersionOssDesc[page.lang] }}</p>
+        </details> 
+        </li>  
+    <li>
+        
     <details open> 
         <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
         <h5>{{ site.DescriptionName[page.lang] }}</h5>
@@ -90,8 +98,7 @@
             <li>
             <details open>
                 <summary>uses <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <h5>site uses header</h5>
-                <p>site uses descr</p>
+                <p>Informations about software users.</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
@@ -160,8 +167,8 @@
                     <li>
                     <details open> 
                         <summary>name <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                        <h5>{{ site.ProjectName[page.lang] }}</h5>
-                        <p>{{ site.NameCodeDesc[page.lang] }}</p>
+                        <h5>{{ site.NameUsesOss[page.lang] }}</h5>
+                        <p>{{ site.NameUsesOssDesc[page.lang] }}</p>
                         <ul>
                             <li>{{ site.NameCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
                             <li>{{ site.NameCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
@@ -172,8 +179,8 @@
                     <li>
                     <details open> 
                         <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                        <h5>{{ site.DescriptionName[page.lang] }}</h5>
-                        <p>{{ site.DescriptionCodeDesc[page.lang] }}</p>
+                        <h5> {{ site.DescriptionUsesOss[page.lang] }} </h5>
+                        <p>{{ site.DescriptionUsesOssDesc[page.lang] }}</p>
                         <ul>
                             <li>{{ site.DescriptionCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
                             <li>{{ site.DescriptionCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>

@@ -17,6 +17,18 @@ tags:
     - "Noyau de système d'exploitation"
 admininstrations: 
   - 
+    adminCode: tbs-sct
+    uses: 
+      - 
+        contact: 
+          email: "ilia.salem@tbs-sct.gc.ca"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
     adminCode: agr
     uses: 
       - 
@@ -315,18 +327,6 @@ admininstrations:
           fr: "Données du APM"
   - 
     adminCode: tc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: tbs-sct
     uses: 
       - 
         contact: 
