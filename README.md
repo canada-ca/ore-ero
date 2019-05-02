@@ -27,6 +27,19 @@ To test your changes locally, run `jekyll serve`. For example using Docker:
 Site will be available at: http://localhost:4000/ore-ero/
 ______________________
 
+#### Javascript
+
+If you're working on Javascript in the `/assets/js/src` folder, make sure your code follows the style guidelines. We use ES Lint for checking code style. Ensure you have a recent version of Node.js (>=10.15.3). Run the following to install dependencies. 
+
+``` bash
+npm install
+```
+
+Now when you want to know if your code is following the guidelines, run 
+``` bash
+npm run lint
+```
+
 ## Échange de ressources ouvert
 
 https://canada-ca.github.io/ore-ero/fr/index.html
