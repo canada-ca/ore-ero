@@ -1,4 +1,6 @@
+/* global YAML DeepObject */
 
+/* exported FileWriter */
 class FileWriter {
 
   /**
@@ -45,6 +47,7 @@ class FileWriter {
   }
 }
 
+/* exported YamlWriter */
 class YamlWriter extends FileWriter {
 
   /**

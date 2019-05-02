@@ -2,7 +2,8 @@
 // https://github.com/mariocasciaro/object-path
 // @author j-rewerts
 
-DeepObject = {
+/* exported DeepObject */
+const DeepObject = {
   /**
    * Attempts to get the object at path.
    * @param {Object} obj The Object to try to find 

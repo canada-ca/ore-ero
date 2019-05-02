@@ -1,5 +1,6 @@
 // Put code in here.
 // Embed this at the bottom of the body.
+/* global $ YamlWriter USERNAME REPO_NAME YAML PRBOT_URL */
 
 function getSelectedOrgType() {
   return $("#adminCode :selected").parent().attr('label').toLowerCase();
