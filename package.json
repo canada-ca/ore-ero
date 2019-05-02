@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint assets/js/src/**",
+    "prettify": "eslint assets/js/src/** --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0"
   }
 }
