@@ -23,7 +23,7 @@
     "url": "https://github.com/canada-ca/ore-ero/issues"
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^5.16.0"
   }
 }
