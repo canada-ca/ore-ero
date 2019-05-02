@@ -26,6 +26,9 @@ admininstrations:
       - 
         contact: 
           email: "mark.wooff@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCcollab Docs"
           fr: "Docs GCcollab"

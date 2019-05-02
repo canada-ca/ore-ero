@@ -27,6 +27,9 @@ admininstrations:
         contact: 
           URL: https://www.international.gc.ca/
           email: sebastien.routier@international.gc.ca
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -39,6 +42,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -51,6 +57,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         description: 
           en: "Must be requested"
           fr: "Doit être demandé"
@@ -63,6 +72,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "Development Environment"
           fr: "Environnement de développement"
@@ -75,6 +87,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -87,6 +102,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~

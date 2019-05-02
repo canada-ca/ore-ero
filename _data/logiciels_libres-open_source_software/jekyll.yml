@@ -20,13 +20,15 @@ admininstrations:
     adminCode: tbs-sct
     uses: 
       - 
-        dateSince: 2018-01-23
         contact: 
           URL: https://github.com/canada-ca/ore-ero/issues
           email: "sebastien.lemay@tbs-sct.gc.ca"
         name: 
           en: "Open Resource Exchange"
           fr: "Échange de ressources ouvert"
+        date: 
+          started: "2018-01-23"
+          metadataLastUpdated: ~
         description: 
           en: "Github Pages"
           fr: "Pages Github"

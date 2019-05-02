@@ -25,6 +25,9 @@ admininstrations:
         contact: 
           URL: https://github.com/gctools-outilsgc/gcpedia/issues
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCpedia"
           fr: "GCpedia"
@@ -35,6 +38,9 @@ admininstrations:
         contact: 
           URL: https://github.com/gctools-outilsgc/gcpedia/issues
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: "GCcollab Wiki"
           fr: "Wiki GCcollab"
@@ -47,6 +53,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -59,6 +68,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -71,6 +83,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
@@ -83,6 +98,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: ~
         name: 
           en: ~
           fr: ~
