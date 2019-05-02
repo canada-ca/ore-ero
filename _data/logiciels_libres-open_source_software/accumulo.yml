@@ -1,5 +1,5 @@
 --- 
-description: A store of values/keys sorted and distributed
+description: 
   en: "Accumulo is a sorted, distributed key/value store  that provides robust, scalable data storage and retrieval."
   fr: "Accumulo est un magasin clé/valeur trié et distribué qui fournit un stockage et une récupération de données robustes et évolutifs."
 homepageURL:
