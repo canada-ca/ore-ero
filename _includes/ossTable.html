@@ -14,7 +14,7 @@
           {% for logiciels in site.data.logiciels_libres-open_source_software %}
             {% assign oss = logiciels[1] %}
             {% for license in oss.licenses %}
-              {% assign license_array = license_array | push: license %}
+              {% assign license_array = license_array | push: license.spdxID %}
             {% endfor %}
           {% endfor %}
           {% assign license_array = license_array | group_by: "" | sort: "name" %}
@@ -77,7 +77,7 @@
           <td>{{ oss.description[page.lang] }}</td>
           <td>
             {% for license in oss.licenses %}
-              <a href="https://choosealicense.com/licenses/{{ license | downcase }}/" target="_blank">{{ license }}</a>&nbsp;
+              <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
             {% endfor %}
           </td>
           <td>
