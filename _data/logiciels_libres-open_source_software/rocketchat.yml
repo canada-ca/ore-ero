@@ -11,7 +11,7 @@ licenses:
     URL: 
       en: "https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE"
       fr: "https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE"
-    spdxID: "MIT "
+    spdxID: "MIT"
 name: 
   en: "Rocket.Chat"
   fr: "Rocket.Chat"
