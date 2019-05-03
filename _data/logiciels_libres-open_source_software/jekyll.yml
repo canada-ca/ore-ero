@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Transform your plain text into static websites and blogs"
   fr: "Transformez votre texte brut en sites Web et blogs statiques"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://jekyllrb.com/"
   fr: "https://jekyllrb.com/"
 licenses: 
-  - MIT
+  - 
+    URL: 
+      en: "https://github.com/jekyll/jekyll/blob/master/LICENSE"
+      fr: "https://github.com/jekyll/jekyll/blob/master/LICENSE"
+    spdxID: "MIT"
 name: 
   en: Jekyll
   fr: Jekyll

@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites."
   fr: "Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web."
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.drupal.org"
   fr: "https://www.drupal.org"
 licenses: 
-  - GPL-2.0
+  - 
+    URL: 
+      en: "https://www.drupal.org/about/licensing#drupal-license"
+      fr: "https://www.drupal.org/about/licensing#drupal-license"
+    spdxID: "GPL-2.0"
 name: 
   en: Drupal
   fr: Drupal
