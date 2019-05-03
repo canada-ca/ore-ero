@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "The Linux kernel is a Unix-like computer operating system kernel"
   fr: "Le noyau Linux est un noyau de système d'exploitation de type UNIX"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.linux.org"
   fr: "https://www.linux.org"
 licenses: 
-  - GPL-2.0
+  - 
+    URL: 
+      en: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
+      fr: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
+    spdxID: "GPL-2.0"
 name: 
   en: "Linux"
   fr: "Linux"

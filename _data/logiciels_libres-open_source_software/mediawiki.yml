@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Wiki package written in PHP, originally for use on Wikipedia"
   fr: "Ensemble Wiki développé à l’origine pour Wikipédia"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.mediawiki.org/wiki/MediaWiki"
   fr: "https://www.mediawiki.org/wiki/MediaWiki/fr"
 licenses: 
-  - GPL-2.0
+  - 
+    URL: 
+      en: "https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix"
+      fr: "https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix"
+    spdxID: "GPL-2.0"
 name: 
   en: MediaWiki
   fr: MediaWiki
