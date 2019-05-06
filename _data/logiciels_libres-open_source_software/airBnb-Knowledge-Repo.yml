@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "A platform for data scientists and other technical professions."
   fr: "Une plateforme pour les scientifiques de données et d'autres professions techniques."
