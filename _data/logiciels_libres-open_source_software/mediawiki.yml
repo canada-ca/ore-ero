@@ -32,7 +32,7 @@ admininstrations:
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCpedia"
           fr: "GCpedia"
@@ -45,7 +45,7 @@ admininstrations:
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCcollab Wiki"
           fr: "Wiki GCcollab"
@@ -60,7 +60,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -75,7 +75,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -90,7 +90,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -105,7 +105,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

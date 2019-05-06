@@ -40,7 +40,7 @@ admininstrations:
           email: terry.oreilly@international.gc.ca
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "IMSC"
           fr: "IMSC"
@@ -54,7 +54,7 @@ admininstrations:
           email: yves.cloutier@international.gc.ca
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "CART"
           fr: "CART"

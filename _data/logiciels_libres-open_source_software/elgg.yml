@@ -37,7 +37,7 @@ admininstrations:
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCcollab"
           fr: "GCcollab"
@@ -50,7 +50,7 @@ admininstrations:
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCconnex"
           fr: "GCconnex"

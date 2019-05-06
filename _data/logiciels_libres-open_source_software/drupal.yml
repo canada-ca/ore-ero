@@ -29,7 +29,7 @@ admininstrations:
           email: webmaster@cse-cst.gc.ca
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "CSE Website"
           fr: "Site Web du CST"
@@ -46,7 +46,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "RCMP Website"
           fr: "Site Web de la GRC"
@@ -65,7 +65,7 @@ admininstrations:
           name: "Christopher Jaja"
         date: 
           started: "2018-01-23"
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Open Government Portal"
           fr: "Portail du Gouvernement ouvert"
@@ -84,7 +84,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Buyandsell.gc.ca"
           fr: "Achatsetventes.gc.ca"
@@ -101,7 +101,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -116,7 +116,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -131,7 +131,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -146,7 +146,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -161,7 +161,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -176,7 +176,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -192,7 +192,7 @@ admininstrations:
           email: "irina.krasteleva@tc.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
