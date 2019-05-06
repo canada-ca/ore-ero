@@ -34,7 +34,7 @@ admininstrations:
           email: sebastien.routier@international.gc.ca
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -49,7 +49,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -64,7 +64,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         description: 
           en: "Must be requested"
           fr: "Doit être demandé"
@@ -79,7 +79,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Development Environment"
           fr: "Environnement de développement"
@@ -94,7 +94,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -109,7 +109,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

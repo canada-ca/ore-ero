@@ -33,7 +33,7 @@ admininstrations:
           email: "michael.goit@canada.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -48,7 +48,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -63,7 +63,7 @@ admininstrations:
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -78,7 +78,7 @@ admininstrations:
           email: ~
         date: 
           started: ~
-          metadataLastUpdated: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
