@@ -1,0 +1,37 @@
+--- 
+description: 
+  en: "Airflow is a platform to programmatically author, schedule and monitor workflows."
+  fr: "~"
+homepageURL:
+  en: "https://airflow.apache.org/"
+  fr: "https://airflow.apache.org/" 
+licenses: 
+  - 
+    URL: 
+      en: "https://github.com/apache/airflow/blob/master/LICENSE"
+      fr: "https://github.com/apache/airflow/blob/master/LICENSE"
+    spdxID: "Apache-2.0"
+name: 
+  en: AirFlow
+  fr: AirFlow
+tags: 
+  en:
+    - "Data integration"
+  fr: 
+    - "Intégration de données"
+admininstrations: 
+  - 
+    adminCode: mtl_qc
+    uses: 
+      - 
+        contact: 
+          email: "libre@ville.montreal.qc.ca"
+        date: 
+          started: "2017-06-30"
+          metadataLastUpdated: "2017-06-30"
+        description: 
+          en: "Business Intelligence."
+          fr: "Intelligence d'affaires."
+        name: 
+          en: "Content flow management software."
+          fr: "Logiciels de gestion de flux de contenus."
