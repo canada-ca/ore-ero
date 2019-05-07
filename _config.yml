@@ -388,9 +388,6 @@ DeprecatedStatus:
 RetiredStatus:
   en: Retired
   fr: Retraité
-UsersOssDesc:
-  en: The users who used the project.
-  fr: Les utilisateurs qui ont utilisés le projet.
 SchemaVersionOssDesc:
   en: The version of the ORE metadata schema for open source software.
   fr: La version du schéma de métadonnées ORE pour les logiciels libres.
