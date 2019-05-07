@@ -17,8 +17,7 @@ permalink: /en/docs.html
         <ul class="list-unstyled">
           <li><a href="#how_to_add_your_data">How to add your data</a>
             <ul>
-              <li><a href="#adding_your_administration">Adding your administration</a></li>
-              <li><a href="#adding_open_source_code">Adding_open_source_code</a></li>
+              <li><a href="#adding_open_source_code">Adding/Updating Open Source Code</a></li>
               <li><a href="#adding_open_source_software">Adding open source software</a></li>
             </ul>
           </li>
@@ -38,63 +37,53 @@ permalink: /en/docs.html
   
 <h2 id="how_to_add_your_data">How to add your data</h2>
 
-<h3 id="adding_your_administration">Adding your administration</h3>
-<p>
-  In the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> directory add your adminstration in the 
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> or 
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a> file.
-</p>
+<h3 id="adding_open_source_code">Adding/Updating Open Source Code</h3>
+<p>By submitting one of the following forms, your change will be uploaded automatically in our <a href="https://github.com/canada-ca/ore-ero">GitHub repository</a>.</p>
 
-<h3 id="adding_open_source_code">Adding Open Source Code</h3>
+<h4>Your adminstration does not exist:</h4>
+<p>Here is the <a href="#">Open Source Code Admin Form</a> to add your new administration to the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> directory and your new project to the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory.</p>
 
-<h4 id="your_administration_is_already_there">Your administration is already there:</h4>
-<p>If there is already a file for your adminstration under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you can edit that file to add your open source code.</p>
+<h4>Your administration exists:</h4>
+<p>Here is the <a href="./open-source-code-form.html">Open Source Code Form</a> to select an administration and to add or modify a project.</p>
 
-<p>You can copy the following at the bottom of the file, and change the informtion for your code. These are only the mandatory fields.</p>
+<p>Here is an example of how will be the project informations structure in YAML format. These are only the mandatory fields.</p>
 
 <pre>
   <code>
-  - 
-    contact: 
-      email: "abc@xyz.com"
-    date: 
-      created: "YYYY-MM-DD"
-      metadataLastUpdated: "YYYY-MM-DD"  
-    description: 
-      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
-    name: 
-      en: "Example"
-      fr: "Exemple"
-    licenses:
-      - 
-        URL: 
-          en: "https://example.com/repo/example/LICENCE-en"
-          fr: "https://example.com/repo/example/LICENCE-fr"
-        spdxID: "XYZ-1.0"
-    repositoryURL: 
-      en: "https://example.com/repo/example"
-      fr: "https://example.com/repo/example"
-    tags: 
-      en: 
-        - "tag1-en"
-      fr: 
-        - "tag1-fr"
+  --- 
+  schemaVersion: "1.0"
+  adminCode: abc-def
+  releases: 
+    - 
+      contact: 
+        email: "abc@xyz.com"
+      date: 
+        created: "YYYY-MM-DD"
+        metadataLastUpdated: "YYYY-MM-DD"  
+      description: 
+        en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
+      name: 
+        en: "Example"
+        fr: "Exemple"
+      licenses:
+        - 
+          URL: 
+            en: "https://example.com/repo/example/LICENCE-en"
+            fr: "https://example.com/repo/example/LICENCE-fr"
+          spdxID: "XYZ-1.0"
+      repositoryURL: 
+        en: "https://example.com/repo/example"
+        fr: "https://example.com/repo/example"
+      tags: 
+        en:
+          - "tag1-en"
+        fr: 
+          - "tag1-fr"
   </code>
 </pre>
 
-<p>
-  For more informations, click <a href="./open-source-code-schema.html">here</a> to see the Metadata Schema for Open Source Code.
-  If you are interested to contribute with us, fill out <a href="./open-source-code-form.html">the open source code form</a>.
-</p>
-
-<h4 id="your_administration_needs_to_be_added">Your administration needs to be added:</h4>
-<p>
-  If your adminstration doesn't have a file under the 
-  <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you need to create a new file for your administration. Use the 
-  <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/code_mandatory.yml">code template with only mandatory fields</a>.
-</p>
+<p>For more informations, click <a href="./open-source-code-schema.html">here</a> to see the Metadata Schema for Open Source Code.</p>
 
 <h3 id="adding_open_source_software">Adding Open Source Software</h3>
 
