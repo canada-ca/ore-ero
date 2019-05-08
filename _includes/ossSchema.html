@@ -220,24 +220,16 @@
                     </li>
 
                     <li>
-                    <details open>
-                        <summary>users [array]</summary>
-                        <p>{{ site.UsersOssDesc[page.lang] }}</p>
+                    <details open> 
+                        <summary>status [string]</summary>
+                        <h5>{{ site.StatusName[page.lang] }}</h5>
+                        <p>{{ site.StatusCodeDesc[page.lang] }}</p>
                     </details>
                     </li>
-
                 </ul>
             </details>
             </li>
         </ul>
-    </details>
-    </li>
-
-    <li>
-    <details open> 
-        <summary>version [string]</summary>
-        <h5>{{ site.VersionName[page.lang] }}</h5>
-        <p>{{ site.VersionCodeDesc[page.lang] }}</p>
     </details>
     </li>
 </ul>
