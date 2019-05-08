@@ -24,6 +24,8 @@ To test your changes locally, run `jekyll serve`. For example using Docker:
 
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
 
+Note: For PowerShell users, replace the parentheses with brackets (Change ```$(pwd)``` to ```${pwd}```)
+
 Site will be available at: http://localhost:4000/ore-ero/
 ______________________
 
@@ -61,5 +63,7 @@ Sauf indication contraire, le code source de ce projet est protégé par le droi
 Pour tester vos modifications localement, exécuter `jekyll serve`. Par exemple avec Docker:
 
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
+
+Remarque: pour les utilisateurs de PowerShell, remplacez les parenthèses par des crochets (Modifiez ```$(pwd)``` en ```${pwd}```)
 
 Le site sera disponible au: http://localhost:4000/ore-ero/
