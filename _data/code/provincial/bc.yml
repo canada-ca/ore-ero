@@ -1,37 +1,68 @@
---- 
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 adminCode: bc
-releases: 
-  - 
-    contact: 
-      URL: 
-        en: https://github.com/BCDevExchange/devex/issues
-        fr: https://github.com/BCDevExchange/devex/issues
-      email: bcdevexchange@gov.bc.ca
-    date: 
-      created: "2016-10-23"
-      metadataLastUpdated: "2019-01-29"
-    description: 
-      en: "B.C. Developer Exchange Application"
-      fr: "Application Échange de développeurs C.-B."
-    languages: 
-      - Python
-    name: 
-      en: Devex
-      fr: Devex
-    licenses: 
-      - 
-        URL: 
-          en: "https://github.com/BCDevExchange/devex/blob/develop/LICENSE"
-          fr: "https://github.com/BCDevExchange/devex/blob/develop/LICENSE"
-        spdxID: "Apache-2.0"
-    repositoryURL: 
-      en: "https://github.com/BCDevExchange/devex"
-      fr: "https://github.com/BCDevExchange/devex"
-    status: Production
-    tags: 
-      en: 
-        - "Developer Exchange"
-      fr: 
-        - "Échange de développeurs"
-    vcs: git
+releases:
+    -
+        contact:
+            URL:
+                en: 'https://github.com/BCDevExchange/devex/issues'
+                fr: 'https://github.com/BCDevExchange/devex/issues'
+            email: bcdevexchange@gov.bc.ca
+        date:
+            created: '2016-10-23'
+            metadataLastUpdated: '2019-01-29'
+        description:
+            en: 'B.C. Developer Exchange Application'
+            fr: 'Application Échange de développeurs C.-B.'
+        languages:
+            - Python
+        name:
+            en: Devex
+            fr: Devex
+        licenses:
+            -
+                URL:
+                    en: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
+                    fr: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
+                spdxID: Apache-2.0
+        repositoryURL:
+            en: 'https://github.com/BCDevExchange/devex'
+            fr: 'https://github.com/BCDevExchange/devex'
+        status: Production
+        tags:
+            en:
+                - 'Developer Exchange'
+            fr:
+                - 'Échange de développeurs'
+        vcs: git
+    -
+        contact:
+            URL:
+                en: null
+                fr: null
+        date:
+            created: 2015-04-29T00:00:00.000Z
+            metadataLastUpdated: 2019-05-08T00:00:00.000Z
+        description:
+            en: GroundwaterWellsandAquifersapplicationfortheMinistryofEnvironment
+            fr: GroundwaterWellsandAquifersapplicationfortheMinistryofEnvironment
+        name:
+            en: gwells
+            fr: gwells
+        licenses:
+            -
+                URL:
+                    en: 'https://github.com/bcgov/gwells/blob/release/LICENSE'
+                    fr: 'https://github.com/bcgov/gwells/blob/release/LICENSE'
+                    spdxID: Apache-2.0
+        repositoryURL:
+            en: 'https://github.com/bcgov/gwells'
+            fr: 'https://github.com/bcgov/gwells'
+        status: ""
+        tags:
+            en:
+                - groundwater-data
+                - vuejs
+            fr:
+                - groundwater-data
+                - vuejs
+        vcs: null
