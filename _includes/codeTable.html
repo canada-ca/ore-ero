@@ -234,7 +234,7 @@
               {{ release.date.created }}&nbsp;
             </td>
             <td>
-              {{ release.date.metadataLastUpdated }}&nbsp;
+              {{ "today" | date: "%Y-%m-%d" }}&nbsp;
             </td>
           </tr>
           {% endfor %}
@@ -307,7 +307,7 @@
           <p>Version: {{ release.version }}</p>
         {% endif %}
         <p>{{ site.CodeCreated[page.lang] }}: {{ release.date.created }}</p>
-        <p>{{ site.LastUpdatedCode[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
+        <p>{{ site.LastUpdatedCode[page.lang] }}: {{ "today" | date: "%Y-%m-%d" }}</p>
 
         <h3>Contact</h3>
         {% if release.contact.name != nil %}
