@@ -250,16 +250,3 @@
     <button id="prbotSubmit" type="button" class="btn btn-default">Submit</button>
   </form>
   </div>
-  
-<script>
-var date = new Date();
-var day = date.getDate();
-var month = date.getMonth() + 1;
-var year = date.getFullYear();
-
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day;
-
-var today = year + "-" + month + "-" + day;       
-document.getElementById("dateLastUpdated").value = today;
-  </script>
