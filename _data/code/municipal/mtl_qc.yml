@@ -1,5 +1,6 @@
 schemaVersion: '1.0'
 adminCode: mtl_qc
+
 releases:
     -
         contact:
@@ -44,3 +45,4 @@ releases:
                 - 'Extension CKAN'
                 - 'Catalogue de données'
         vcs: git
+

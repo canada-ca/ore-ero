@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites."
   fr: "Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web."
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.drupal.org"
   fr: "https://www.drupal.org"
 licenses: 
-  - GPL-2.0
+  - 
+    URL: 
+      en: "https://www.drupal.org/about/licensing#drupal-license"
+      fr: "https://www.drupal.org/about/licensing#drupal-license"
+    spdxID: "GPL-2.0"
 name: 
   en: Drupal
   fr: Drupal
@@ -22,6 +27,9 @@ admininstrations:
       - 
         contact: 
           email: webmaster@cse-cst.gc.ca
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "CSE Website"
           fr: "Site Web du CST"
@@ -36,6 +44,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "RCMP Website"
           fr: "Site Web de la GRC"
@@ -52,7 +63,9 @@ admininstrations:
           URL: "https://github.com/canada-ca/ore-ero/issues"
           email: christopher.jaja@tbs-sct.gc.ca
           name: "Christopher Jaja"
-        dateSince: 2018-01-23
+        date: 
+          started: "2018-01-23"
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Open Government Portal"
           fr: "Portail du Gouvernement ouvert"
@@ -69,6 +82,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Buyandsell.gc.ca"
           fr: "Achatsetventes.gc.ca"
@@ -83,6 +99,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -95,6 +114,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -107,6 +129,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -119,6 +144,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -131,6 +159,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -143,6 +174,9 @@ admininstrations:
       - 
         contact:
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -156,6 +190,9 @@ admininstrations:
         contact:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

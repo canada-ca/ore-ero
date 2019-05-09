@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Performs operating-system-level virtualization also known as containerization"
   fr: "Effectue une virtualisation au niveau du système d'exploitation, également appelée conteneurisation"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.docker.com"
   fr: "https://www.docker.com"
 licenses: 
-  - Apache-2.0
+  - 
+    URL: 
+      en: "https://www.docker.com/legal/components-licenses"
+      fr: "https://www.docker.com/legal/components-licenses"
+    spdxID: "Apache-2.0"
 name: 
   en: "Docker"
   fr: "Docker"
@@ -21,23 +26,14 @@ tags:
     - Infrastructure
 admininstrations: 
   - 
-    adminCode: ised-isde
-    uses: 
-      - 
-        contact: 
-          email: "andrew.pitt@canada.ca"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "Development"
-          fr: "Développement"
-  - 
     adminCode: statcan
     uses: 
       - 
         contact: 
           email: "michael.goit@canada.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -45,11 +41,29 @@ admininstrations:
           en: "Development and deployment process"
           fr: "Processus de développements et déploiements"
   - 
+    adminCode: ised-isde
+    uses: 
+      - 
+        contact: 
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "Development"
+          fr: "Développement"
+  - 
     adminCode: tbs-sct
     uses: 
       - 
         contact: 
           email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -62,6 +76,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

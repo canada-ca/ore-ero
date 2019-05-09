@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Instant messaging team chat"
   fr: "Messagerie instantanée et clavardage d'équipe"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://rocket.chat"
   fr: "https://rocket.chat"
 licenses: 
-  - MIT
+  - 
+    URL: 
+      en: "https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE"
+      fr: "https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE"
+    spdxID: "MIT"
 name: 
   en: "Rocket.Chat"
   fr: "Rocket.Chat"
@@ -21,7 +26,10 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: "mark.wooff@tbs-sct.gc.ca"
+          email: "ilia.salem@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCcollab Message"
           fr: "Message GCcollab"
@@ -33,7 +41,10 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: "andrew.pitt@canada.ca"
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

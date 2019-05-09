@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Edit text documents collaboratively in real-time"
   fr: "Collaboration en temps réel sur des documents textes"
@@ -6,7 +7,11 @@ homepageURL:
   en: "http://etherpad.org/"
   fr: "http://etherpad.org/"
 licenses: 
-  - Apache-2.0
+  - 
+    URL: 
+      en: "https://github.com/ether/etherpad-lite/blob/develop/LICENSE"
+      fr: "https://github.com/ether/etherpad-lite/blob/develop/LICENSE"
+    spdxID: "Apache-2.0"
 name: 
   en: "Etherpad"
   fr: "Etherpad"
@@ -26,6 +31,9 @@ admininstrations:
       - 
         contact: 
           email: "mark.wooff@tbs-sct.gc.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "GCcollab Docs"
           fr: "Docs GCcollab"

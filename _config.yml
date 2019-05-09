@@ -9,6 +9,8 @@
 baseurl: "/ore-ero" # the subpath of your site, e.g. /blog
 url: "https://canada-ca.github.io/ore-ero" # the base hostname & protocol for your site
 github_username: canada-ca
+github_repository: ore-ero
+prbot_url: "https://canada-pr-bot.herokuapp.com/"
 
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_30"
@@ -386,7 +388,21 @@ DeprecatedStatus:
 RetiredStatus:
   en: Retired
   fr: Retraité
-  
+SchemaVersionOssDesc:
+  en: The version of the ORE metadata schema for open source software.
+  fr: La version du schéma de métadonnées ORE pour les logiciels libres.
+NameUsesOss:
+  en: Name of the project activity
+  fr: Nom de l'activité du projet.
+DescriptionUsesOss:
+  en: Description of the project activity
+  fr: Description de l'activité du projet.
+NameUsesOssDesc:
+  en: The domain name of the project activity.
+  fr: Le nom du domaine de l'activité du projet.
+DescriptionUsesOssDesc:
+  en: A one or two sentence description of the project activity.
+  fr: Une description du domaine de l'activité du projet.
 
 # Build settings
 markdown: kramdown

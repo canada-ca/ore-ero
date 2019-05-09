@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Text editor and Notepad replacement that runs in the Windows environment."
   fr: "Éditeur de textes et remplacement pour Notepad qui fonctionne dans l'environement Windows."
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://notepad-plus-plus.org"
   fr: "https://notepad-plus-plus.org/fr"
 licenses: 
-  - GPL-2.0
+  - 
+    URL: 
+      en: "https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html"
+      fr: "https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html"
+    spdxID: "GPL-2.0"
 name: 
   en: Notepad++
   fr: Notepad++
@@ -21,44 +26,15 @@ tags:
     - "Éditeur texte"
 admininstrations: 
   - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ~
-        description: 
-          en: "Desktop"
-          fr: "Poste de travail"
-        name: 
-          en: ~
-          fr: ~
-      - 
-        contact: 
-          email: ~
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: csc-scc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        description: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        name: 
-          en: ~
-          fr: ~
-  - 
     adminCode: gac-amc
     uses: 
       - 
         contact: 
           URL: https://www.international.gc.ca/
+          email: sebastien.routier@international.gc.ca
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -66,11 +42,29 @@ admininstrations:
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
   - 
+    adminCode: agr
+    uses: 
+      - 
+        contact: 
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
+        name: 
+          en: ~
+          fr: ~
+        description: 
+          en: "APM data"
+          fr: "Données du APM"
+  - 
     adminCode: tbs-sct
     uses: 
       - 
         contact: 
-          email: desktop@tbs-sct.gc.ca
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         description: 
           en: "Must be requested"
           fr: "Doit être demandé"
@@ -83,9 +77,12 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -95,6 +92,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -107,6 +107,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

@@ -1,4 +1,5 @@
 --- 
+schemaVersion: "1.0"
 description: 
   en: "Web browser developed by Mozilla Foundation"
   fr: "Navigateur Web développé par la Fondation Mozilla"
@@ -6,7 +7,11 @@ homepageURL:
   en: "https://www.mozilla.org/en-US/firefox/"
   fr: "https://www.mozilla.org/fr/firefox/"
 licenses: 
-  - MPL-2.0
+  - 
+    URL: 
+      en: "https://www.mozilla.org/en-US/MPL/2.0/FAQ/"
+      fr: "https://www.mozilla.org/en-US/MPL/2.0/FAQ/"
+    spdxID: "MPL-2.0"
 name: 
   en: Firefox
   fr: Firefox
@@ -21,23 +26,14 @@ tags:
     - Mobile
 admininstrations: 
   - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ""
-        name: 
-          en: "Available to developers"
-          fr: "Disponible pour les développeur"
-        description: 
-          en: ""
-          fr: ""
-  - 
     adminCode: pch
     uses: 
       - 
         contact: 
-          email: ""
+          email: "sebastien.lemay@canada.ca"
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Available to all employees (self service)"
           fr: "Disponible pour tous les employés (libre service)"
@@ -45,11 +41,29 @@ admininstrations:
           en: "Upgraded to latest ESR version every month."
           fr: "Mises à jours mensuelles à la dernière version ESR."
   - 
+    adminCode: agr
+    uses: 
+      - 
+        contact: 
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
+        name: 
+          en: "Available to developers"
+          fr: "Disponible pour les développeur"
+        description: 
+          en: ""
+          fr: ""
+  - 
     adminCode: tbs-sct
     uses: 
       - 
         contact: 
-          email: ""
+          email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -62,6 +76,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~
@@ -74,6 +91,9 @@ admininstrations:
       - 
         contact: 
           email: ~
+        date: 
+          started: ~
+          metadataLastUpdated: "2019-05-06"
         name: 
           en: ~
           fr: ~

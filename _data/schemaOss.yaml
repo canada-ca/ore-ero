@@ -1,0 +1,44 @@
+--- 
+schemaVersion: str()
+description: 
+  en: str()
+  fr: str()
+homepageURL:
+  en: str()
+  fr: str()
+licenses: 
+  - 
+    URL: 
+      en: str()
+      fr: str()
+    spdxID: str()
+name: 
+  en: str()
+  fr: str()
+tags: 
+  en:
+    - str()
+  fr: 
+    - str()
+admininstrations: 
+  - 
+    adminCode:  str()
+    uses: 
+      - 
+        contact: 
+          URL: 
+            en: str(required=False)
+            fr: str(required=False)
+          email: any(str(), null())
+          name: 
+            en: str(required=False)
+            fr: str(required=False)
+        date: 
+          started: any(str(), null())
+          metadataLastUpdated: any(str(), null())
+        description: 
+          en: any(str(), null())
+          fr: any(str(), null())
+        name: 
+          en: any(str(), null())
+          fr: any(str(), null())
