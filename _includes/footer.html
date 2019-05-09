@@ -146,6 +146,13 @@
   function fillFields(project){
 
     checkExistingData(project)
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+    var today = year + "-" + month + "-" + day;       
 
     var datas_form = {
       "shemaVersion" : "1.0",
@@ -157,7 +164,7 @@
       "phone" : project.contact.phone,
       "dateCreated" : project.date.created,
       "dateLastModified" : project.date.lastModified,
-      "dateLastUpdated" : project.date.metadataLastUpdated,
+      "dateLastUpdated" : today,
       
       "enDescription" : project.description["en"],
       "frDescription" : project.description["fr"],
