@@ -54,7 +54,7 @@
     </div>
     <div class="form-group">
       <label for="nameContact">{{ site.NameContactCode[page.lang] }}</label>
-      <input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
+      <input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true" />
     </div>
         <div class="form-group">
       <label for="phone">{{ site.ContactPhoneCode[page.lang] }}</label>
@@ -78,11 +78,11 @@
   <h2>{{ site.DescriptionCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="enDescription" class="required">{{ site.DescriptionCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
+      <input class="form-control" id="enDescription" name="enDescription" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true" required="required"/>
     </div>
     <div class="form-group">
       <label for="frDescription" class="required">{{ site.DescriptionCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
+      <input class="form-control" id="frDescription" name="frDescription" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="false" required="required"/>
     </div>
   
   <h2>{{ site.DownloadURLCodeDesc[page.lang] }}</h2>
@@ -133,21 +133,21 @@
   <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="enProjectName" class="required">{{ site.NameCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
+      <input class="form-control" id="enProjectName" name="enProjectName" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true" required="required"/>
     </div>
     <div class="form-group">
       <label for="frProjectName" class="required">{{ site.NameCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" required="required"/>
+      <input class="form-control" id="frProjectName" name="frProjectName" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="false" required="required"/>
     </div>
   
   <h2>{{ site.OrganizationCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="enOrganization">{{ site.OrganizationCodeEN[page.lang] }}</label>
-      <input class="form-control" id="enOrganization" name="enOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="enOrganization" name="enOrganization" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true"/>
     </div>
     <div class="form-group">
       <label for="frOrganization">{{ site.OrganizationCodeFR[page.lang] }}</label>
-      <input class="form-control" id="frOrganization" name="frOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="frOrganization" name="frOrganization" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="false"/>
     </div>
   
   <h2>{{ site.PartnersCodeDesc[page.lang] }}</h2>
@@ -165,11 +165,11 @@
     </div>
     <div class="form-group">
       <label for="enNamePartner">{{ site.NamePartnersCodeEN[page.lang] }}</label>
-      <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true"/>
     </div>
     <div class="form-group">  
       <label for="frNamePartner">{{ site.NamePartnersCodeFR[page.lang] }}</label>
-      <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="false"/>
     </div>
   
   <h2>{{ site.LicensesCodeDesc[page.lang] }}</h2>
@@ -207,11 +207,11 @@
     </div>
     <div class="form-group">
       <label for="enNameRelatedCode">{{ site.NameRelatedCodeEN[page.lang] }}</label>
-      <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-letterswithbasicpunc="true"/>
     </div>
     <div class="form-group">
       <label for="frNameRelatedCode">{{ site.NameRelatedCodeFR[page.lang] }}</label>
-      <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true"/>
+      <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="false"/>
     </div>
   
   <h2>{{ site.StatusCodeDesc[page.lang] }}</h2>
