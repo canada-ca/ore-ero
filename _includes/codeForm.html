@@ -6,8 +6,6 @@
       <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
     </div>
 
-  
-
   <h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
   <div class="form-group">
     <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
@@ -49,11 +47,11 @@
       <input class="form-control" id="frUrlContact" name="frUrlContact" type="url"/>
     </div>
     <div class="form-group">
-      <label for="emailContact" class="required" > {{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <label for="emailContact" class="required"> {{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
       <input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
     </div>
     <div class="form-group">
-      <label for="nameContact">{{ site.NameContactCode[page.lang] }}</label>
+      <label for="nameContact" class="required">{{ site.NameContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
       <input class="form-control" id="nameContact" name="nameContact" type="text" pattern="[A-Za-z\s]" data-rule-lettersonly="true" />
     </div>
         <div class="form-group">
