@@ -73,16 +73,15 @@ class YamlWriter extends FileWriter {
   /**
    *
    * @param {String} file The file to merge on.
-   * @param {String} contents The contents to merge into file.
+   * @param {Object} newObject The contents to merge into file.
    * @param {String} propPath The path to the property you want to merge.
    * @param {String} onValue The property to treat as the id. If this is
    * the same in both, then we overwrite the object. If it exists in
    * contents but not file, we simply add it into propPath.
    * @return {Promise<Object>} A Promise that resolves with the merged file.
    */
-  merge(file, contents, propPath, onValue) {
-    let newObjectFile = YAML.parse(contents);
-    let newObjects = DeepObject.get(newObjectFile, propPath);
+  merge(file, newObject, propPath, onValue) {
+    let newObjects = DeepObject.get(newObject, propPath);
 
     // Get an Object of the new ids using the onValue
     let newIds = {};

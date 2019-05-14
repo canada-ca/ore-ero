@@ -9,51 +9,66 @@ function getSelectedOrgType() {
     .toLowerCase();
 }
 
+function getCodeObject() {
+  let codeObject = {
+    release: [
+      {
+        contact: {
+          URL: {
+            en: $('#enUrlContact').val(),
+            fr: $('#frUrlContact').val()
+          }
+        },
+        date: {
+          created: $('#dateCreated').val(),
+          metadataLastUpdated: $('#dateLastUpdated').val()
+        },
+        description: {
+          en: $('#enDescription').val(),
+          fr: $('#frDescription').val()
+        },
+        name: {
+          en: $('#enProjectName').val(),
+          fr: $('#frProjectName').val()
+        },
+        licenses: [],
+        repositoryURL: {
+          en: $('#enRepoUrl').val(),
+          fr: $('#frRepoUrl').val()
+        },
+        status: $('#status :selected').text(),
+        tags: {
+          en: [],
+          fr: []
+        },
+        vcs: $('#vcs').val()
+      }
+    ]
+  };
+
+  codeObject.release[0].licenses.push({
+    URL: {
+      en: $('#enUrlLicense').val(),
+      fr: $('#frUrlLicense').val(),
+      spdxID: $('#spdxID').val()
+    }
+  });
+
+  // Append all of our tags
+  codeObject.release[0].tags.en.push(
+    ...document.querySelectorAll('#tagsEN input').map(child => child.value)
+  );
+  codeObject.release[0].tags.fr.push(
+    ...document.querySelectorAll('#tagsFR input').map(child => child.value)
+  );
+}
+
 $('#prbotSubmit').click(function() {
-  let content =
-    '' +
-    `releases:
-  -
-    contact: 
-      URL: 
-        en: ${$('#enUrlContact').val()}
-        fr: ${$('#frUrlContact').val()}
-    date: 
-      created: ${$('#dateCreated').val()}
-      metadataLastUpdated: ${$('#dateLastUpdated').val()}
-    description: 
-      en: ${$('#enDescription').val()}
-      fr: ${$('#frDescription').val()}
-    name: 
-      en: ${$('#enProjectName').val()}
-      fr: ${$('#frProjectName').val()}
-    licenses: 
-      - 
-        URL: 
-          en: ${$('#enUrlLicense').val()}
-          fr: ${$('#frUrlLicense').val()}
-          spdxID: ${$('#spdxID').val()}
-    repositoryURL: 
-      en: ${$('#enRepoUrl').val()}
-      fr: ${$('#frRepoUrl').val()}
-    status: ${$('#status :selected').text()}
-    tags: 
-      en: 
-${[...document.querySelectorAll('#tagsEN input')]
-  .map(child => child.value)
-  .map(tag => '        - "' + tag + '"')
-  .join('\n')}
-      fr: 
-${[...document.querySelectorAll('#tagsFR input')]
-  .map(child => child.value)
-  .map(tag => '        - "' + tag + '"')
-  .join('\n')}
-    vcs: ${$('#vcs').val()}
-`;
+  let codeObject = getCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
   fileWriter
-    .merge(file, content, 'releases', 'name.en')
+    .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
       const config = {
         body: JSON.stringify({
