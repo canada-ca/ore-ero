@@ -15,7 +15,11 @@ prbot_url: "https://canada-pr-bot.herokuapp.com/"
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_30"
 
-# Translations
+# Build settings
+markdown: kramdown
+include: ["_pages", "_json"]
+
+# General Translations
 title:
   en: Open Resource Exchange
   fr: Échange de ressources ouvert
@@ -124,49 +128,67 @@ VersionControlSystemCode:
 MandatoryField:
   en: Mandatory
   fr: Obligatoire
+
+# Open Source Code (Schema and Form)
 SchemaVersionCode:
-  en: Version of the ORE metadata schema
-  fr: Version du schéma de métadonnées ERO  
+  en: ORE metadata schema version
+  fr: Version du schéma de métadonnées de l'ERO  
 SchemaVersionCodeDesc:
-  en: The version of the ORE metadata schema for open source code.
-  fr: La version du schéma de métadonnées ORE pour code soure ouvert.
+  en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
+  fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
 AdminCode:
   en: Administration code
   fr: Code d'administration
 AdminCodeDesc:
-  en: The Administration code from this <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data file</a>.
-  fr: le code d'administration à partir de ce <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a>.
+  en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
+  fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
 RealeasesCodeDesc:
-  en: Contains objects representing each project or source code available.
-  fr: Contient des objets représentant chaque version de code source mise à disposition.
-URLContactCodeDesc:
-  en: English and French URL that can be used to reach the point of contact.
-  fr: URL en anglais et en français utilisé pour atteindre le point de contact.
-URLContactCodeEN:
-  en: URL of the contact in english
-  fr: URL du contact en anglais
-URLContactCodeFR:
-  en: URL of the contact in french
-  fr: URL du contact en francais
+  en: Information for each project or source code published.
+  fr: Informations pour chaque projet ou code source publié.
+
+ContactCodeDesc:
+  en: Contact information for the project.
+  fr: Coordonnées des contacts pour le projet.
+
 URLContactName:
-  en: URL of the contact
-  fr: URL du contact
-EmailContactCodeDesc:
-  en: An email address of the contact. It must be an email address of where the contact can be directly reached.
-  fr: Une adresse email du contact. Il doit s'agir d'une adresse électronique indiquant où le contact peut être directement contacté.
+  en: URL
+  fr: URL
+URLContactCodeDesc:
+  en: English and French URLs that can be used to contact the project.
+  fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
+URLContactCodeEN:
+  en: English URL
+  fr: URL anglais
+URLContactCodeFR:
+  en: French URL
+  fr: URL français
+
 EmailContactCode:
-  en: Email address of the contact
-  fr: Adresse courriel du contact
-NameContactCodeDesc:
-  en: The name of a contact or team for the project.
-  fr: Le nom d'un contact ou l'équipe du projet.
+  en: Email
+  fr: Courriel
+EmailContactCodeDesc:
+  en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+  fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+
 NameContactCode:
-  en: Name of the contact
-  fr: Nom du contact
+  en: Name
+  fr: Nom
+NameContactCodeDesc:
+  en: The name of a contact for the project.
+  fr: Le nom de la personne-ressource pour le projet.
+
+PhoneContactCode:
+  en: Phone number
+  fr: Numéro de téléphone
 PhoneContactCodeDesc:
-  en: The phone number to contact a release.
-  fr: Le numéro de téléphone pour contacter le responsable du projet.
-DateCreatedCodeDesc:
+  en: Phone number to contact the project.
+  fr: Numéro de téléphone pour contacter le projet.
+
+DateCodeDesc:
+  en: Dates describing the project.
+  fr: Dates décrivant le projet.
+
+CreatedCodeDesc:
   en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
 LastModifiedCodeDesc:
@@ -175,219 +197,218 @@ LastModifiedCodeDesc:
 MetaDataLastUpdatedCodeDesc:
   en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
   fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
+
+DescriptionName:
+  en: Description
+  fr: Description
 DescriptionCodeDesc:
   en: A one or two sentence description of the project.
   fr: Une description en une ou deux phrases du projet.
 DescriptionCodeEN:
-  en: Description in english
+  en: English description
   fr: Description en anglais
 DescriptionCodeFR:
-  en: Description in french
+  en: French description
   fr: Description en francais
-DescriptionName:
-  en: Description of the project
-  fr: Description du projet
-DownloadURLCodeDesc:
-  en: The english and french URL where a distribution of the project can be found.
-  fr: L'URL en francais et en anglais où une distribution du projet peut être trouvée.
-DownloadURLCodeEN:
-  en: Download URL in english
-  fr: URL de téléchargement en anglais 
-DownloadURLCodeFR:
-  en: Download URL in french
-  fr: URL de téléchargement en francais
+
 DownloadName:
   en: Download URL 
   fr: URL de téléchargement 
-HomepageURLCodeDesc:
-  en: The english and french  URL of the project homepage.
-  fr: L'URL en anglais et en français de la page d'accueil.
-HomepageURLCodeEN:
-  en: Homepage URL in english
-  fr: URL de la page d'accueil en anglais
-HomepageURLCodeFR:
-  en: Homepage URL in french
-  fr: URL de la page d'accueil en francais
+DownloadURLCodeDesc:
+  en: The english and french URLs where a distribution of the project can be found.
+  fr: Les URLs en francais et en anglais où une distribution du projet peut être trouvée.
+DownloadURLCodeEN:
+  en: English download URL
+  fr: URL de téléchargement en anglais 
+DownloadURLCodeFR:
+  en: French download URL
+  fr: URL de téléchargement en francais
+
 HomepageURLName:
   en: Homepage URL  
   fr: URL de la page d'accueil
-LanguagesCodeDesc:
-  en: A list of the programming languages used in the project.
-  fr: Une liste des langages de programmation utilisés dans la projet.
-NameCodeDesc:
-  en: The name of the project.
-  fr: Le nom du projet.
-NameCodeEN:
-  en: Name of the project in english
-  fr: Nom du projet en anglais
-NameCodeFR:
-  en: Name of the project in french
-  fr: Nom du projet en français
-ProjectName:
-  en: Name of the project
-  fr: Nom du projet
-OrganizationCodeDesc:
-  en: The english and french name of the organization to which the project belongs.
-  fr: Le nom de l'organisation en francais et en anglais à laquelle le projet appartient.
-OrganizationCodeEN:
-  en: Name of the organization in english
-  fr: Nom de l'organisation en anglais
-OrganizationCodeFR:
-  en: Name of the organization in french
-  fr: Nom de l'organisation en francais
-OrganizationName:
-  en: Name of the organization
-  fr: Nom de l'organisation 
-PartnersCodeDesc:
-  en: An array of objects for information about groups partnering on the project.
-  fr: Un Tableau d'objets pour des informations sur les groupes partenaires du projet.
-URLPartnersCodeDesc:
-  en: The english and french URL to a website that can be used to reach the partner.
-  fr: L'URL en anglais et en français d'un site Web qui peut être utilisé pour atteindre le partenaire.
-EmailPartnersCodeDesc:
-  en: The email address for the point of contact of the partner.
-  fr: L'adresse courriel du contact du partenaire.
-EmailPartnersCode:
-  en: Email address of partner
-  fr: Adresse courriel du partenaire
-NamePartnersCodeDesc:
-  en: The english and french name of the partner.
-  fr: Le nom du partenaire en anglais et en français.
-URLPartnersCodeEN:
-  en: URL of partner in english
-  fr: URL du partenaire en anglais
-URLPartnersCodeFR:
-  en: URL of partner in french
-  fr: URL du partenaire en francais
-URLPartnersName:
-  en: URL of partner 
-  fr: URL du partenaire
-NamePartnersCodeEN:
-  en: Name of the partner in english
-  fr: Nom du partenaire en anglais
-NamePartnersCodeFR:
-  en: Name of the partner in french
-  fr: Nom du partenaire en francais
-PartnersName:
-  en: Name of partner 
-  fr: Nom du partenaire
-LicensesCodeDesc:
-  en: An array of objects containing license details.
-  fr: Un ensemble d'objet contenant les détails de la licence.
-URLLicensesCodeDesc:
-  en: The english and french URL of license.
-  fr: L'URL de la licence en anglais et en francais.
-URLLicensesCodeDescEN:
-  en: URL of license in english
-  fr: URL de la licence en anglais
-URLLicensesCodeDescFR:
-  en: URL of license in french
-  fr: URL de la licence en francais
-URLLicensesName:
-  en: URL of license
-  fr: URL de la licence 
-SpdxIDLicencesCodeDesc:
-  en: The SPDX License identifier - <a href="https://spdx.org/licenses/">List of licenses</a>.
-  fr: L'identifiant de licence SPDX - <a href="https://spdx.org/licenses/">Liste des licences</a>.
-SpdxIDLicencesName:
-  en: SPDX License identifier 
-  fr: Identifiant de licence SPDX 
-RepositoryURLCodeDesc:
-  en: The english and french URL of the public repository of the project.
-  fr: L'URL en anglais et en francais du répertoire publique du projet.
-RepositoryURLCodeEN:
-  en: URL of the repository in english
-  fr: URL du répertoire en anglais
-RepositoryURLCodeFR:
-  en: URL of the repository in french
-  fr: URL du répertoire en francais
-RepositoryURLName:
-  en: URL of the repository
-  fr: URL du répertoire
-RelatedCodeDesc:
-  en: An array of source code, libraries, frameworks, APIs, platforms or other software used in this project.
-  fr: Un ensemble de code source, des bibliothèques, des frameworks, d'API, des plateformes ou d'autres logiciels utilisés dans ce projet.
-URLRelatedCodeDesc:
-  en: The english and french URL of the platform.
-  fr: L'URL de plateforme en anglais et en francais.
-URLRelatedCodeName:
-  en: URL of platforms and frameworks
-  fr: URL des Plateformes et des frameworks
-URLRelatedCodeEN:
-  en: URL of the platform in english
-  fr: URL de plateforme en anglais
-URLRelatedCodeFR:
-  en: URL of the platform in french
-  fr: URL de plateforme en francais
-NameRelatedCodeDesc:
-  en: The english and french name of the platform.
-  fr: Le nom de plateforme en anglais et en francais.
-RelatedCodeName:
-  en: Name of platforms and frameworks
-  fr: Nom des plateformes et des frameworks
-NameRelatedCodeEN:
-  en: Name of the platform in english
-  fr: Nom de plateforme en anglais
-NameRelatedCodeFR:
-  en: Name of the platform in french
-  fr: Nom de plateforme en francais
-StatusCodeDesc:
-  en: The development status of the project. For example, Alpha, Beta, Maintained, deprecated, retired.
-  fr: Le statut de développement de la version. Par exemple, Alpha, Beta, Maintenu, Déprécié, Retraité.
-TagsCodeDesc:
-  en: A useful set of keywords to distinguish the various projects.
-  fr: Un ensemble de mots clés utiles pour distinguer les différents projets.
-TagsName:
-  en: Tags of the various projects
-  fr: Étiquettes des différents projets
-TagsCodeEN:
-  en: List of English keywords
-  fr: Liste de mots-clés en anglais
-TagsCodeFR:
-  en: list of French keywords
-  fr: Liste de mots-clés en français
-AddMoreTags:
-  en: Add more tags
-  fr: Ajouter plus de tags
-VcsCodeDesc:
-  en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
-  fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ..
-VcsName:
-  en: Name of the version control system 
-  fr: Nom du système de contrôle de version 
-VersionCodeDesc:
-  en: The latest version for this project. For example, 1.0.0.
-  fr: La version de ce projet. Par  exemple, 1.0.0.
-VersionName:
-  en: The latest version 
-  fr: La dernière version
-ContactCodeDesc:
-  en: The informations of a contact or team for the project.
-  fr: Les informations d'un contact ou d'une équipe pour le projet.
-DateCodeDesc:
-  en: A date object describing the project.
-  fr: Un objet date décrivant le projet.
+HomepageURLCodeDesc:
+  en: The English and French URLs of the project homepage.
+  fr: Les URLs en français et en anglais de la page d'accueil.
+HomepageURLCodeEN:
+  en: English homepage URL
+  fr: URL de la page d'accueil en anglais
+HomepageURLCodeFR:
+  en: French homepage URL
+  fr: URL de la page d'accueil en francais
+
 LanguagesName:
   en: Programming languages
   fr: Langages de programmation
-AddMoreLanguages:
-  en: Add more languages
-  fr: Ajouter plus de langues
-RelatedCodeForm:
-  en: The platforms or other software used in this project
-  fr: Les plateformes ou autres logiciels utilisés dans ce projet
-StatusName:
-  en: Development status of the project
-  fr: Statut de développement du projet
-MaitainedStatus:
-  en: Maintained
-  fr: Maintenu
-DeprecatedStatus:
-  en: Deprecated
-  fr: Déprécié
-RetiredStatus:
-  en: Retired
-  fr: Retraité
+LanguagesCodeDesc:
+  en: A list of the programming languages used in the project.
+  fr: Une liste des langages de programmation utilisés dans la projet.
+
+ProjectName:
+  en: Name
+  fr: Nom
+NameCodeDesc:
+  en: The English and French name of the project.
+  fr: Le nom du projet en français et en anglais.
+NameCodeEN:
+  en: English project name
+  fr: Nom du projet en anglais
+NameCodeFR:
+  en: French project name
+  fr: Nom du projet en français
+
+OrganizationName:
+  en: Organization
+  fr: Organisation
+OrganizationCodeDesc:
+  en: The English and French name of the organization or team to which the project belongs.
+  fr: Le nom de l'organisation ou l'équipe en francais et en anglais à laquelle le projet appartient.
+OrganizationCodeEN:
+  en: English organization name
+  fr: Nom de l'organisation en anglais
+OrganizationCodeFR:
+  en: French organization name
+  fr: Nom de l'organisation en français
+
+PartnersCodeDesc:
+  en: Information about each group partnering on the project.
+  fr: Renseignements sur chaque groupe partenaire du projet.
+
+URLPartnersName:
+  en: URL
+  fr: URL
+URLPartnersCodeDesc:
+  en: The english and french URL to a website about the partner.
+  fr: L'URL en anglais et en français d'un site Web à propos du partenaire.
+URLPartnersCodeEN:
+  en: English URL of partner
+  fr: URL du partenaire en anglais
+URLPartnersCodeFR:
+  en: French URL of partner
+  fr: URL du partenaire en francais
+
+EmailPartnersCode:
+  en: Email
+  fr: Courriel
+EmailPartnersCodeDesc:
+  en: The email address to contact the partner.
+  fr: L'adresse courriel pour contacter le partenaire.
+
+PartnersName:
+  en: Name
+  fr: Nom
+NamePartnersCodeDesc:
+  en: The english and french name of the partner.
+  fr: Le nom du partenaire en anglais et en français.
+NamePartnersCodeEN:
+  en: English name of partner
+  fr: Nom du partenaire en anglais
+NamePartnersCodeFR:
+  en: French name of partner
+  fr: Nom du partenaire en francais
+
+LicensesCodeDesc:
+  en: Information about each licence for the project.
+  fr: Renseignements sur chaque licence pour le projet.
+
+URLLicensesName:
+  en: URL
+  fr: URL
+URLLicensesCodeDesc:
+  en: The English and French URLs of licence.
+  fr: L'URL de la licence en français et en anglais.
+URLLicensesCodeDescEN:
+  en: English licence URL
+  fr: URL de la licence en anglais
+URLLicensesCodeDescFR:
+  en: French licence URL
+  fr: URL de la licence en francais
+
+SpdxIDLicencesName:
+  en: SPDX License identifier 
+  fr: Identifiant de licence SPDX 
+SpdxIDLicencesCodeDesc:
+  en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
+  fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
+
+RepositoryURLName:
+  en: Code repository URL
+  fr: URL du dépôt de code
+RepositoryURLCodeDesc:
+  en: The English and French URLs of the public repository of the project, where the code is hosted.
+  fr: Les URL en français et en anglais du dépôt public du projet, où le code est hébergé.
+RepositoryURLCodeEN:
+  en: English repository URL
+  fr: URL du dépôt en anglais
+RepositoryURLCodeFR:
+  en: French repository URL
+  fr: URL du dépôt en francais
+
+RelatedCodeDesc:
+  en: Information about each library, framework, API or other related software used in this project.
+  fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+
+URLRelatedCodeName:
+  en: URL
+  fr: URL
+URLRelatedCodeDesc:
+  en: The english and french URLs of related software.
+  fr: L'URL anglais et francais d'un logiciel connexe.
+URLRelatedCodeEN:
+  en: English URL of related software
+  fr: URL anglais d'un logiciel connexe
+URLRelatedCodeFR:
+  en: French URL of related software
+  fr: URL francais d'un logiciel connexe
+
+RelatedCodeName:
+  en: Name
+  fr: Nom
+NameRelatedCodeDesc:
+  en: The english and french name of related software.
+  fr: Le nom d'un logiciel connexe en anglais et en francais.
+NameRelatedCodeEN:
+  en: Name of related software in english
+  fr: Nom d'un logiciel connexe en anglais
+NameRelatedCodeFR:
+  en: Name of related software in french
+  fr: Nom d'un logiciel connexe en francais
+
+StatusCodeName:
+  en: Development status
+  fr: Statut du développement
+StatusCodeDesc:
+  en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
+  fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
+
+TagsName:
+  en: Tags
+  fr: Étiquettes
+TagsCodeDesc:
+  en: A useful set of keywords to distinguish the various projects.
+  fr: Un ensemble de mots clés utiles pour distinguer les différents projets.
+TagsCodeEN:
+  en: List of English tags
+  fr: Liste d'étiquettes en anglais
+TagsCodeFR:
+  en: list of French tags
+  fr: Liste d'étiquettes en français
+
+VcsName:
+  en: Version control system
+  fr: Système de contrôle de version
+VcsCodeDesc:
+  en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
+  fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ..
+
+VersionName:
+  en: The latest version 
+  fr: La dernière version
+VersionCodeDesc:
+  en: The latest version for this project. For example, 1.0.0.
+  fr: La version de ce projet. Par  exemple, 1.0.0.
+
+# Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:
   en: The version of the ORE metadata schema for open source software.
   fr: La version du schéma de métadonnées ORE pour les logiciels libres.
@@ -404,6 +425,27 @@ DescriptionUsesOssDesc:
   en: A one or two sentence description of the project activity.
   fr: Une description du domaine de l'activité du projet.
 
-# Build settings
-markdown: kramdown
-include: ["_pages", "_json"]
+# Other translations
+AddMoreTags:
+  en: Add more tags
+  fr: Ajouter plus de tags
+
+AddMoreLanguages:
+  en: Add more languages
+  fr: Ajouter plus de langues
+RelatedCodeForm:
+  en: The platforms or other software used in this project
+  fr: Les plateformes ou autres logiciels utilisés dans ce projet
+
+StatusName:
+  en: Development status of the project
+  fr: Statut de développement du projet
+MaitainedStatus:
+  en: Maintained
+  fr: Maintenu
+DeprecatedStatus:
+  en: Deprecated
+  fr: Déprécié
+RetiredStatus:
+  en: Retired
+  fr: Retraité
