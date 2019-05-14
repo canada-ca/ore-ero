@@ -128,7 +128,7 @@ $('#prbotSubmit').click(function() {
             files: [
               {
                 path: file,
-                content: header + content
+                content: header + JSON.stringify(codeObject)
               }
             ]
           }),
