@@ -247,6 +247,15 @@
       <label for="versionProject">{{ site.VersionName[page.lang] }}</label>
       <input class="form-control" id="versionProject" name="versionProject" type="text" />
     </div>
-    <button id="prbotSubmit" type="button" class="btn btn-default">Submit</button>
+  
+  <button id="prbotSubmit" type="button" class="btn btn-primary">Submit</button>
+
+  <h3 id="prbotSubmitAlertInProgress" class="alert alert-warning" style='display: none'>
+    <p>{{ site.FormSubmissionInProgress[page.lang]}}</p>
+  </h3>
+
+  <h3 id="prbotSubmitAlertFail" class="alert alert-danger" style='display: none'>
+    <p>{{ site.FormSubmissionFail[page.lang]}}</p>
+  </h3>
   </form>
   </div>
