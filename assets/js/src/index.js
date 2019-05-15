@@ -51,13 +51,7 @@ function toggleAlert(option) {
   }
 }
 
-$('#prbotSubmit').click(function() {
-  if (validateRequired()) {
-    console.log("Form input is good")
-    toggleAlert(ALERT_IN_PROGRESS)
-  } else {
-    console.log("Bad form input")
-  }
+function submitForm() {
   let content =
     '' +
     `releases:
@@ -172,4 +166,14 @@ ${[...document.querySelectorAll('#tagsFR input')]
         throw err;
       }
     });
+}
+
+$('#prbotSubmit').click(function() {
+  if (validateRequired()) {
+    console.log("Form input is good");
+    toggleAlert(ALERT_IN_PROGRESS);
+    submitForm();
+  } else {
+    console.log("Bad form input");
+  }
 });
