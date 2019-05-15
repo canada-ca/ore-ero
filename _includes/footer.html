@@ -83,7 +83,7 @@
   var pName = "";
 
   function addMoreLanguages(){
-      $('<label for="language"></label> <input class="form-control" id="lang' + jLang + '" type="text">').appendTo("#languages");
+      $('<label for="language"></label> <input class="form-control" datafor="languages" id="lang' + jLang + '" type="text">').appendTo("#languages");
       $('#lang' + jLang ).focus();
     }
   function addMoreTags(){
