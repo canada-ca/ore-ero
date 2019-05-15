@@ -14,7 +14,7 @@ function getCodeObject() {
   let codeObject = {
     schemaVersion: $('#schemaVersion').val(),
     adminCode: $('#adminCode').val(),
-    release: [
+    releases: [
       {
         contact: {
           email: $('#emailContact').val()
