@@ -10,14 +10,14 @@ function getSelectedOrgType() {
 }
 
 function getCodeObject() {
+  // Required fields are included first.
   let codeObject = {
+    schemaVersion: $('#schemaVersion').val(),
+    adminCode: $('#adminCode').val(),
     release: [
       {
         contact: {
-          URL: {
-            en: $('#enUrlContact').val(),
-            fr: $('#frUrlContact').val()
-          }
+          email: $('#emailContact').val()
         },
         date: {
           created: $('#dateCreated').val(),
@@ -31,36 +31,36 @@ function getCodeObject() {
           en: $('#enProjectName').val(),
           fr: $('#frProjectName').val()
         },
-        licenses: [],
+        licenses: [
+          {
+            URL: {
+              en: $('#enUrlLicense').val(),
+              fr: $('#frUrlLicense').val()
+            },
+            spdxID: $('#spdxID').val()
+          }
+        ],
         repositoryURL: {
           en: $('#enRepoUrl').val(),
           fr: $('#frRepoUrl').val()
         },
         status: $('#status :selected').text(),
         tags: {
-          en: [],
-          fr: []
+          en: [
+            ...document
+              .querySelectorAll('#tagsEN input')
+              .map(child => child.value)
+          ],
+          fr: [
+            ...document
+              .querySelectorAll('#tagsFR input')
+              .map(child => child.value)
+          ]
         },
         vcs: $('#vcs').val()
       }
     ]
   };
-
-  codeObject.release[0].licenses.push({
-    URL: {
-      en: $('#enUrlLicense').val(),
-      fr: $('#frUrlLicense').val(),
-      spdxID: $('#spdxID').val()
-    }
-  });
-
-  // Append all of our tags
-  codeObject.release[0].tags.en.push(
-    ...document.querySelectorAll('#tagsEN input').map(child => child.value)
-  );
-  codeObject.release[0].tags.fr.push(
-    ...document.querySelectorAll('#tagsFR input').map(child => child.value)
-  );
 }
 
 $('#prbotSubmit').click(function() {
