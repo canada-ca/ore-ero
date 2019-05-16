@@ -251,15 +251,17 @@
   <button id="prbotSubmit" type="button" class="btn btn-primary">Submit</button>
   <button id="codeFormReset" type="reset" class="btn btn-default">Reset</button>
 
-  <h3 id="prbotSubmitAlertInProgress" class="alert alert-warning" style='display: none'>
-    <p>{{ site.FormSubmissionInProgress[page.lang]}}</p>
-  </h3>
-  <h3 id="prbotSubmitAlertFail" class="alert alert-danger" style='display: none'>
-    <p>{{ site.FormSubmissionFail[page.lang]}}</p>
-  </h3>
-  <h3 id="prbotSubmitAlertSuccess" class="alert alert-success" style='display: none'>
-    <p>{{ site.FormSubmissionSuccess[page.lang]}}</p>
-  </h3>
+  <div style='margin-top: 10px'>
+    <div id="prbotSubmitAlertInProgress" class="alert alert-warning" style='display: none'>
+      <h3>{{ site.FormSubmissionInProgress[page.lang]}}</h3>
+    </div>
+    <div id="prbotSubmitAlertFail" class="alert alert-danger" style='display: none'>
+      <h3>{{ site.FormSubmissionFail[page.lang]}}</h3>
+    </div>
+    <div id="prbotSubmitAlertSuccess" class="alert alert-success" style='display: none'>
+      <h3>{{ site.FormSubmissionSuccess[page.lang]}}</h3>
+    </div>
+  </div>
 
   </form>
   </div>
