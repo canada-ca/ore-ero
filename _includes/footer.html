@@ -247,8 +247,6 @@
         $('#selectedProject').empty();
         arraySections.length = 0;
         selectedAdminCode = $("#adminCode").val();
-        $(':input').val('');
-        $('#shemaVersion').val('1.0');
         removeTags();
 
         $('#adminCode').val(selectedAdminCode)
@@ -256,21 +254,26 @@
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
         
-        arraySections.push(federal, provincial, municipal);
-
-        (pathNameUrl == enPathName)?
-        $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
-        $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
-
-        $('#selectedPro').focus();
+        if(federal === undefined && provincial === undefined ){
+          arraySections.push(municipal);
+        }else if(federal === undefined && municipal === undefined){
+          arraySections.push(provincial);
+        }else{
+          arraySections.push(federal);
+        }
 
         arraySections.forEach(function(section){
           if(section !== undefined){
+            (pathNameUrl == enPathName)?
+            $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
+            $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
+      
             section.releases.forEach(function(project){    
               buildProjectField(project);
             });
           }
         })
+        $('#selectedPro').focus();
 
         $('#selectedPro').change(function(){
 
@@ -285,6 +288,7 @@
             }
           })
         });
+        
       });
     });
   });
