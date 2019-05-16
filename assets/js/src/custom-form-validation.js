@@ -4,24 +4,24 @@
  */
 
 const lettersSpaceError = {
-    en: 'Letters with spaces only please.',
-    fr: 'Les lettres avec des espaces seulement s\'il vous plaît.'
-}
+  en: 'Letters with spaces only please.',
+  fr: "Les lettres avec des espaces seulement s'il vous plaît."
+};
 const alphanumericSpaceError = {
-    en: 'Letters and numbers with spaces only please.',
-    fr: 'Les lettres et les chiffres avec des espaces seulement s\'il vous plaît.'
-}
+  en: 'Letters and numbers with spaces only please.',
+  fr: "Les lettres et les chiffres avec des espaces seulement s'il vous plaît."
+};
 const namesError = {
-    en: 'Please enter a valid name.',
-    fr: 'S\'il vous plaît d\'entrer un nom valide.'
-}
+  en: 'Please enter a valid name.',
+  fr: "S'il vous plaît d'entrer un nom valide."
+};
 const phoneError = {
-    en: 'Please enter a valid phone number.',
-    fr: 'S\'il vous plaît entrer un numéro de téléphone valide.'
-}
+  en: 'Please enter a valid phone number.',
+  fr: "S'il vous plaît entrer un numéro de téléphone valide."
+};
 
 $(document).on('wb-ready.wb', function() {
-let lang = document.documentElement.lang
+  let lang = document.documentElement.lang;
   if (jQuery.validator && window.jQuery.validator !== 'undefined') {
     /**
      * Letters with spaces. Usage: data-rule-letters-space
@@ -59,23 +59,23 @@ let lang = document.documentElement.lang
       jQuery.validator.format(lettersSpaceError[lang])
     );
 
-     /**
+    /**
      * Alphanumeric with spaces French inclusive accents. Usage: data-rule-alphanum-space-en-fr
      */
     jQuery.validator.addMethod(
-        'alphanum-space-en-fr',
-        function(value) {
-          if (value) {
-            if (value.match(/^[0-9a-zàâçéèêëîïôûùüÿñæœ\s]+$/i)) {
-              return true;
-            } else {
-              return false;
-            }
+      'alphanum-space-en-fr',
+      function(value) {
+        if (value) {
+          if (value.match(/^[0-9a-zàâçéèêëîïôûùüÿñæœ\s]+$/i)) {
+            return true;
+          } else {
+            return false;
           }
-          return true;
-        },
-        jQuery.validator.format(alphanumericSpaceError[lang])
-      );
+        }
+        return true;
+      },
+      jQuery.validator.format(alphanumericSpaceError[lang])
+    );
 
     /**
      * Names including French accents. Usage: data-rule-names-en-fr
@@ -99,18 +99,18 @@ let lang = document.documentElement.lang
      * Custom phone regex. Usage: data-rule-custom-phone
      */
     jQuery.validator.addMethod(
-        'custom-phone',
-        function(value) {
-          if (value) {
-            if (value.match(/^[0-9]{3}[\s]*-[\s]*[0-9]{3}[\s]*-[\s]*[0-9]{4}$/)) {
-              return true;
-            } else {
-              return false;
-            }
+      'custom-phone',
+      function(value) {
+        if (value) {
+          if (value.match(/^[0-9]{3}[\s]*-[\s]*[0-9]{3}[\s]*-[\s]*[0-9]{4}$/)) {
+            return true;
+          } else {
+            return false;
           }
-          return true;
-        },
-        jQuery.validator.format(phoneError[lang])
-      );
+        }
+        return true;
+      },
+      jQuery.validator.format(phoneError[lang])
+    );
   }
 });
