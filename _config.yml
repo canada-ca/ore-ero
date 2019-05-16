@@ -414,6 +414,9 @@ FormSubmissionInProgress:
 FormSubmissionFail:
   en: Something went wrong! Unable to submit form.
   fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
+FormSubmissionSuccess:
+  en: Form was submitted!
+  fr: Le formulaire a été soumis!
 
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:

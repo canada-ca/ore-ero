@@ -11,43 +11,50 @@ function getSelectedOrgType() {
 
 /**
  * Validates the required fields in the codeForm
- * @returns {Boolean} true/false if the form is valid/invalid
+ * WET uses the JQuery plugin (https://jqueryvalidation.org/) for their form validation
+ * @return {Boolean} true/false if the form is valid/invalid
  */
 function validateRequired() {
-  let form = document.getElementById('validation')
-  let elements = form.elements
-  let validator = $('#validation').validate()
-  let isValid = true
+  let form = document.getElementById('validation');
+  let elements = form.elements;
+  let validator = $('#validation').validate();
+  let isValid = true;
   for (let i = 0; i < elements.length; i++) {
-    let currentElement = elements[i]
+    let currentElement = elements[i];
     if (currentElement.required) {
       if (!validator.element('#' + currentElement.id)) {
-        isValid = false
+        isValid = false;
       }
     }
   }
   if (!isValid) {
-    window.scrollTo(0, 0)
+    // Jump to top of form to see error messages
+    location.href = '#wb-cont';
   }
-  return isValid
+  return isValid;
 }
 
 const ALERT_IN_PROGRESS = 0;
 const ALERT_FAIL = 1;
-const ALERT_OFF = 2;
+const ALERT_SUCCESS = 2;
+const ALERT_OFF = 3;
 
 function toggleAlert(option) {
-  let alertInProgress = document.getElementById('prbotSubmitAlertInProgress')
-  let alertFail = document.getElementById('prbotSubmitAlertFail')
+  let alertInProgress = document.getElementById('prbotSubmitAlertInProgress');
+  let alertFail = document.getElementById('prbotSubmitAlertFail');
+  let alertSuccess = document.getElementById('prbotSubmitAlertSuccess');
   if (option == ALERT_IN_PROGRESS) {
-    alertInProgress.style.display = 'block'
+    alertInProgress.style.display = 'block';
   } else if (option == ALERT_FAIL) {
-    alertFail.style.display = 'block'
+    alertFail.style.display = 'block';
+  } else if (option == ALERT_SUCCESS) {
+    alertSuccess.style.display = 'block';
   } else if (option == ALERT_OFF) {
-    alertInProgress.style.display = 'none'
-    alertFail.style.display = 'none'
+    alertInProgress.style.display = 'none';
+    alertFail.style.display = 'none';
+    alertSuccess.style.display = 'none';
   } else {
-    console.log("Invalid option")
+    console.log('Invalid alert option');
   }
 }
 
@@ -165,15 +172,26 @@ ${[...document.querySelectorAll('#tagsFR input')]
       } else {
         throw err;
       }
+    })
+    .then(response => {
+      if (response.status != 200) {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_FAIL);
+      } else {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_SUCCESS);
+        // Redirect to home page
+        setTimeout(function() {
+          window.location.href = './index.html';
+        }, 2000);
+      }
     });
 }
 
 $('#prbotSubmit').click(function() {
+  // Progress only when form input is valid
   if (validateRequired()) {
-    console.log("Form input is good");
     toggleAlert(ALERT_IN_PROGRESS);
     submitForm();
-  } else {
-    console.log("Bad form input");
   }
 });
