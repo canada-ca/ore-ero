@@ -59,8 +59,8 @@ function toggleAlert(option) {
 }
 
 function submitForm() {
-  let submitButton = document.getElementById('prbotSubmit')
-  let resetButton = document.getElementById('codeFormReset')
+  let submitButton = document.getElementById('prbotSubmit');
+  let resetButton = document.getElementById('codeFormReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
   let content =
