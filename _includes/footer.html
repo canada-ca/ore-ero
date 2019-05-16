@@ -79,7 +79,6 @@
   var selectedAdminCode = "";
   var pathNameUrl = window.location.pathname;
   var enPathName = "/ore-ero/en/open-source-code-form.html";
-  var arraySections = Array();
   var pName = "";
 
   function addMoreLanguages(){
@@ -240,55 +239,57 @@
     }
   }
 
+  function displayListOrgProject(organization){
+    (pathNameUrl == enPathName)?
+    $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
+    $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
+
+    organization.releases.forEach(function(project){    
+      buildProjectField(project);
+    });
+  }
+
+  function getProjectFields(organization){
+    pName = $("#selectedPro").val();
+    organization.releases.forEach(function(project){    
+      if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
+    });
+  }
+
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
    
         $('#selectedProject').empty();
-        arraySections.length = 0;
         selectedAdminCode = $("#adminCode").val();
         removeTags();
 
-        $('#adminCode').val(selectedAdminCode)
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
-        
-        if(federal === undefined && provincial === undefined ){
-          arraySections.push(municipal);
-        }else if(federal === undefined && municipal === undefined){
-          arraySections.push(provincial);
-        }else{
-          arraySections.push(federal);
+       
+        if( municipal !== undefined){
+            displayListOrgProject(municipal);
+        } else if( provincial !== undefined){
+            displayListOrgProject(provincial);
+        } else if( federal !== undefined){
+            displayListOrgProject(federal);
         }
-
-        arraySections.forEach(function(section){
-          if(section !== undefined){
-            (pathNameUrl == enPathName)?
-            $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
-            $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
       
-            section.releases.forEach(function(project){    
-              buildProjectField(project);
-            });
-          }
-        })
         $('#selectedPro').focus();
-
+        
         $('#selectedPro').change(function(){
-
           removeTags();
 
-          pName = $("#selectedPro").val();
-          arraySections.forEach(function(section){
-            if(section !== undefined){
-              section.releases.forEach(function(project){    
-                if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
-              });
-            }
-          })
+          if( municipal !== undefined){
+              getProjectFields(municipal);        
+          } else if( provincial !== undefined){
+              getProjectFields(provincial);
+          } else if( federal !== undefined){
+              getProjectFields(federal);
+          }
+          
         });
-        
       });
     });
   });
