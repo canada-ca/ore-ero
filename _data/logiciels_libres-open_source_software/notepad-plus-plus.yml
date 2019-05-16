@@ -30,11 +30,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://www.international.gc.ca/
+          URL: 
+            en: "https://www.international.gc.ca/"
+            fr: "https://www.international.gc.ca/"
           email: sebastien.routier@international.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
@@ -42,17 +44,17 @@ admininstrations:
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
   - 
-    adminCode: agr
+    adminCode: aafc-aac
     uses: 
       - 
         contact: 
-          email: ~
+          email: aafc.info.aac@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "APM data"
+          fr: "Données du APM"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -61,10 +63,10 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         description: 
           en: "Must be requested"
           fr: "Doit être demandé"
@@ -76,10 +78,10 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: webmaster@csc-scc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "Development Environment"
           fr: "Environnement de développement"
@@ -91,28 +93,14 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email:  webmaster.webmestre@fin.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
+ 

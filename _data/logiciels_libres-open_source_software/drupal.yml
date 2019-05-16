@@ -28,14 +28,14 @@ admininstrations:
         contact: 
           email: webmaster@cse-cst.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "CSE Website"
           fr: "Site Web du CST"
         description: 
-          en: ~
-          fr: ~
+          en: "CST Website Creation"
+          fr: "Création de site Web du CST"
         users: 
           - public
   - 
@@ -43,16 +43,16 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: physec-secmat@rcmp-grc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "RCMP Website"
           fr: "Site Web de la GRC"
         description: 
-          en: ~
-          fr: ~
+          en: "RCMP Website Creation"
+          fr: "Création de site Web de la GRC"
         users: 
           - public
   - 
@@ -60,20 +60,27 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: "https://github.com/canada-ca/ore-ero/issues"
+          URL:
+            en: "https://github.com/canada-ca/ore-ero/issues"
+            fr: "https://github.com/canada-ca/ore-ero/issues"
           email: christopher.jaja@tbs-sct.gc.ca
           name: "Christopher Jaja"
         date: 
-          started: "2018-01-23"
+          created: "2018-01-23"
           metadataLastUpdated: "2019-05-06"
         name: 
           en: "Open Government Portal"
           fr: "Portail du Gouvernement ouvert"
         description: 
-          en: ~
-          fr: ~
+          en: "Open Government Portal creation" 
+          fr: "Création du Portail du Gouvernement ouvert"
         relatedCode:
-          - "https://github.com/open-data/od"
+          URL:
+            en: "https://github.com/open-data/od"
+            fr: "https://github.com/open-data/od"
+          name:
+            en: "open data"
+            fr: "données ouvertes"
         users: 
           - public
   - 
@@ -81,16 +88,16 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: https://buyandsell.gc.ca/contact-us
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "Buyandsell.gc.ca"
-          fr: "Achatsetventes.gc.ca"
+          fr: "Buyandsell.gc.ca"
         description: 
-          en: ~
-          fr: ~
+          en: "Access Government of Canada Tenders"
+          fr: "Accéder aux appels d'offres du gouvernement du Canada"
         users: 
           - public
   - 
@@ -98,13 +105,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: contact@cbsa.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -113,13 +120,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: asc.webmestre-webmaster.csa@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -128,29 +135,14 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: guidelines-lignesdirectrices@fintrac-canafe.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
+          en: "Development Environment"
+          fr: "Environnement de développement"
+        description:  
           en: "APM data"
           fr: "Données du APM"
   - 
@@ -158,13 +150,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: info@pco-bcp.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -173,13 +165,13 @@ admininstrations:
     uses: 
       - 
         contact:
-          email: ~
+          email: reginald.maltais2@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -191,11 +183,11 @@ admininstrations:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"

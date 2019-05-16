@@ -28,26 +28,26 @@ admininstrations:
         contact: 
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: agr
+    adminCode: aafc-aac
     uses: 
       - 
         contact: 
-          email: ~
+          email: aafc.info.aac@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -56,28 +56,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: contact@cbsa.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: cra-arc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -86,13 +71,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: csps.registrar-registraire.efpc@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -101,40 +86,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: PCH.info-info.PCH@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: gac-amc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -143,13 +101,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: asc.webmestre-webmaster.csa@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -158,13 +116,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: webmaster@csc-scc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -173,118 +131,43 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: media@hrsdc-rhdcc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: dfo-mpo
+    adminCode: INFC
     uses: 
       - 
         contact: 
-          email: ~
+          email: infc.info.infc@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
   - 
-    adminCode: hc-sc
+    adminCode: dnd-mdn
     uses: 
       - 
         contact: 
-          email: ~
+          email:  information@forces.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: ircc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: infrastructure
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: ised-isde
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: bac-lac
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: forces
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -293,28 +176,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email:  info@nrc-cnrc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -323,13 +191,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: info@elections.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -338,58 +206,28 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email:  info@pco-bcp.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
-  - 
-    adminCode: phac-aspc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: psc-cfp
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
+  
     adminCode: rcmp-grc
     uses: 
       - 
         contact: 
-          email: ~
+          email: physec-secmat@rcmp-grc.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -398,13 +236,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          email: ~
+          email: reginald.maltais2@canada.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
@@ -412,14 +250,15 @@ admininstrations:
     adminCode: tc
     uses: 
       - 
-        contact: 
-          email: ~
+        contact:
+          name: "Irina Krasteleva"
+          email: "irina.krasteleva@tc.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          created: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"

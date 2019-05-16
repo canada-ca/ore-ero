@@ -28,7 +28,7 @@ admininstrations:
         contact: 
           email: "abc@xyz.com"
         date: 
-          started: "YYYY-MM-DD"
+          created: "YYYY-MM-DD"
           metadataLastUpdated: "YYYY-MM-DD"
         description: 
           en: "Etiam rutrum, tellus nec egestas blandit."

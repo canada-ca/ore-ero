@@ -28,7 +28,7 @@ admininstrations:
         contact: 
           email: "libre@ville.montreal.qc.ca"
         date: 
-          started: "2019-01-31"
+          created: "2019-01-31"
           metadataLastUpdated: "2019-05-06"
         description: 
           en: "Data managment."

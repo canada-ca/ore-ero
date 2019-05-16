@@ -1,4 +1,4 @@
-- code: agr
+- code: aafc-aac
   name:
     en: Agriculture and Agri-Food Canada
     fr: Agriculture et Agroalimentaire Canada
@@ -8,7 +8,7 @@
     en: Canadian Space Agency
     fr: Agence spatiale canadienne
 
-- code: bac-lac
+- code: lac-bac
   name:
     en: Library and Archives Canada
     fr: Bibliothèque et Archives Canada
@@ -68,7 +68,7 @@
     en: Financial Transactions and Reports Analysis Centre
     fr: Centre d'analyse des opérations et déclarations financières
 
-- code: forces
+- code: dnd-mdn
   name:
     en: National Defence and the Canadian Armed Forces
     fr: Défense nationale et les Forces armées canadiennes
@@ -83,7 +83,7 @@
     en: Health Canada
     fr: Santé Canada
 
-- code: infrastructure
+- code: infc
   name:
     en: Infrastructure Canada
     fr: Infrastructure Canada
