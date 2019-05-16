@@ -123,8 +123,8 @@ LastModifiedCode:
   en: Last modified
   fr: Dernière modification
 ContactPhoneCode:
-  en: Contact phone
-  fr: Numéro du contact
+  en: "Contact phone (###-###-####)"
+  fr: "Numéro du contact (###-###-####)"
 VersionControlSystemCode:
   en: Version Control System
   fr: Système de contrôle de version
