@@ -408,9 +408,9 @@ VersionCodeDesc:
   en: The latest version for this project. For example, 1.0.0.
   fr: La version de ce projet. Par  exemple, 1.0.0.
 
-GitHubAccount:
-  en: Information about your Github account
-  fr: Des informations sur votre compte Github
+InformationAboutSubmitter:
+  en: Information about submitter
+  fr: Des informations sur le déposant
 
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:
