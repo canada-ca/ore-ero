@@ -91,7 +91,7 @@ Lorsque vous voulez savoir si votre code suit les directives de style, exécutez
 npm run lint
 ```
 
-Nous utilisons [Prettier] (https://www.npmjs.com/package/prettier) pour le formatage du code. Pour formater automatiquement votre code, exécutez
+Nous utilisons [Prettier](https://www.npmjs.com/package/prettier) pour le formatage du code. Pour formater automatiquement votre code, exécutez
 ```bash
 npm run prettify
 ```
