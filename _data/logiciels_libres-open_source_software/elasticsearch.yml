@@ -22,29 +22,13 @@ tags:
     - "Site web"
 admininstrations: 
   - 
-    adminCode: tc
-    uses: 
-      - 
-        contact:
-          name: "Irina Krasteleva"
-          email: "irina.krasteleva@tc.gc.ca"
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
     adminCode: mtl_qc
     uses: 
       - 
         contact: 
           email: "libre@ville.montreal.qc.ca"
         date: 
-          created: "2017-06-30"
+          started: "2017-06-30"
           metadataLastUpdated: "2019-05-10"
         description: 
           en: "Information managment."
