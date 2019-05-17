@@ -411,6 +411,16 @@ VersionCodeDesc:
 InformationAboutSubmitter:
   en: Information about submitter
   fr: Des informations sur le déposant
+  
+FormSubmissionInProgress:
+  en: The form is being submitted...
+  fr: Le formulaire est en cours de soumission...
+FormSubmissionFail:
+  en: Something went wrong! Unable to submit form.
+  fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
+FormSubmissionSuccess:
+  en: Form was submitted!
+  fr: Le formulaire a été soumis!
 
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:
