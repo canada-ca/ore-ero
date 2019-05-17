@@ -250,6 +250,10 @@
     });
   }
 
+  $(document).ready(function() {
+    addMoreTags();
+  });
+
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
