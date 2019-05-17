@@ -62,17 +62,17 @@ ${[...document.querySelectorAll('#tagsFR input')]
           title: 'Updated code for ' + $('#adminCode :selected').text(),
           description:
             'Authored by: ' +
-            $('#gitHubEmail').val() +
+            $('#submitterEmail').val() +
             '\n' +
             'Project: ***' +
             $('#enProjectName').val() +
             '***\n' +
             $('#enDescription').val() +
             '\n',
-          commit: 'Committed by ' + $('#gitHubEmail').val(),
+          commit: 'Committed by ' + $('#submitterEmail').val(),
           author: {
-            name: $('#gitHubUsername').val(),
-            email: $('#gitHubEmail').val()
+            name: $('#submitterUsername').val(),
+            email: $('#submitterEmail').val()
           },
           files: [
             {
@@ -98,17 +98,17 @@ ${[...document.querySelectorAll('#tagsFR input')]
             title: 'Created code file for ' + $('#adminCode :selected').text(),
             description:
               'Authored by: ' +
-              $('#gitHubEmail').val() +
+              $('#submitterEmail').val() +
               '\n' +
               'Project: ***' +
               $('#enProjectName').val() +
               '***\n' +
               $('#enDescription').val() +
               '\n',
-            commit: 'Committed by ' + $('#gitHubEmail').val(),
+            commit: 'Committed by ' + $('#submitterEmail').val(),
             author: {
-              name: $('#gitHubUsername').val(),
-              email: $('#gitHubEmail').val()
+              name: $('#submitterUsername').val(),
+              email: $('#submitterEmail').val()
             },
             files: [
               {
