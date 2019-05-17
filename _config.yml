@@ -408,6 +408,16 @@ VersionCodeDesc:
   en: The latest version for this project. For example, 1.0.0.
   fr: La version de ce projet. Par  exemple, 1.0.0.
 
+FormSubmissionInProgress:
+  en: The form is being submitted...
+  fr: Le formulaire est en cours de soumission...
+FormSubmissionFail:
+  en: Something went wrong! Unable to submit form.
+  fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
+FormSubmissionSuccess:
+  en: Form was submitted!
+  fr: Le formulaire a été soumis!
+
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:
   en: The version of the ORE metadata schema for open source software.
