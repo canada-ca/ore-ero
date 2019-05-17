@@ -247,6 +247,16 @@
       <label for="versionProject">{{ site.VersionName[page.lang] }}</label>
       <input class="form-control" id="versionProject" name="versionProject" type="text" />
     </div>
+
+  <h2>{{ site.InformationAboutSubmitter[page.lang] }}</h2>
+    <div class="form-group">
+      <label for="gitHubUsername" class="required">{{ site.NameContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="gitHubUsername" name="gitHubUsername" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="gitHubEmail" class="required">{{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="gitHubEmail" name="gitHubEmail" type="email" required="required"/>
+    </div>
   
   <button id="prbotSubmit" type="button" class="btn btn-primary">Submit</button>
   <button id="codeFormReset" type="reset" class="btn btn-default">Reset</button>
