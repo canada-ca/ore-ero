@@ -228,14 +228,12 @@
     </div>
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
-    <div id="tagsEN" class="form-group">
-      <label class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+    <div id="tags">
+      <div id="tagsEN" class="form-group"></div>
+      <div id="tagsFR" class="form-group"></div>
     </div>
-    <div id="tagsFR" class="form-group">
-      <label class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-    </div>
-    <button type="button" class="btn btn-default" onclick = "addMoreTags()">{{ site.AddMoreTags[page.lang] }}</button>
-    
+    <body onload="addMoreTags()">
+
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="vcs">{{ site.VcsName[page.lang] }}</label>
