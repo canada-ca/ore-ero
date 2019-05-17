@@ -44,6 +44,11 @@ Now when you want to know if your code is following the guidelines, run
 npm run lint
 ```
 
+We use [Prettier](https://www.npmjs.com/package/prettier) for code formatting. To automatically format your code, run
+```bash
+npm run prettify
+```
+
 ## Échange de ressources ouvert
 
 https://canada-ca.github.io/ore-ero/fr/index.html
@@ -71,3 +76,22 @@ Remarques:
 - Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: `--watch` et `--force_polling` à la fin de la commande ci-dessus
 
 Le site sera disponible au: http://localhost:4000/ore-ero/
+______________________
+
+#### Javascript
+
+Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances. 
+
+``` bash
+npm install
+```
+
+Lorsque vous voulez savoir si votre code suit les directives de style, exécutez
+``` bash
+npm run lint
+```
+
+Nous utilisons [Prettier] (https://www.npmjs.com/package/prettier) pour le formatage du code. Pour formater automatiquement votre code, exécutez
+```bash
+npm run prettify
+```
