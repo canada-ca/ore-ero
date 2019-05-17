@@ -6,8 +6,6 @@
       <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
     </div>
 
-  
-
   <h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
   <div class="form-group">
     <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
@@ -127,8 +125,8 @@
       </div>
     {% endfor %}
   
-    <div id="languages" class="form-group"></div>
-    <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
+    <div id="codeLanguages" class="form-group"></div>
+    <button type="button" class="btn btn-primary" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
   
   <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
     <div class="form-group">
@@ -233,8 +231,6 @@
       <div id="tagsFR" class="form-group"></div>
     </div>
  
-
-
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="vcs">{{ site.VcsName[page.lang] }}</label>
