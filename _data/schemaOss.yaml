@@ -30,9 +30,7 @@ admininstrations:
             en: str(required=False)
             fr: str(required=False)
           email: str()
-          name: 
-            en: str(required=False)
-            fr: str(required=False)
+          name: str(required=False) 
         date: 
           started: str()
           metadataLastUpdated: str()
