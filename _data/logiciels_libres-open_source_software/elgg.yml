@@ -33,11 +33,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
+          URL: 
+            en: "https://github.com/gctools-outilsgc/gcconnex/issues"
+            fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "GCcollab"
           fr: "GCcollab"
@@ -46,11 +48,13 @@ admininstrations:
           fr: "Plateforme de réseautage social externe hébergée par le gouvernement du Canada"
       - 
         contact: 
-          URL: "https://github.com/gctools-outilsgc/gcconnex/issues"
+          URL: 
+          en: "https://github.com/gctools-outilsgc/gcconnex/issues"
+          fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "GCconnex"
           fr: "GCconnex"

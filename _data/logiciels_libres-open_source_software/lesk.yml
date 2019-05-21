@@ -35,12 +35,14 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://www.international.gc.ca
+          URL: 
+            en: "https://www.international.gc.ca"
+            fr: "https://www.international.gc.ca"
           name: Terry O'Reilly
           email: terry.oreilly@international.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
           en: "IMSC"
           fr: "IMSC"
@@ -49,12 +51,14 @@ admininstrations:
           fr: "Information Management System Console."
       - 
         contact: 
-          URL: https://www.international.gc.ca
-          name: Yves Cloutier
+          URL: 
+            en: "https://www.international.gc.ca"
+            fr: "https://www.international.gc.ca"
+          name: Yves Cloutier 
           email: yves.cloutier@international.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-15"
         name: 
           en: "CART"
           fr: "CART"

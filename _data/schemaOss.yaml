@@ -29,16 +29,25 @@ admininstrations:
           URL: 
             en: str(required=False)
             fr: str(required=False)
-          email: any(str(), null())
+          email: str()
+          name: str(required=False) 
+        date: 
+          started: str()
+          metadataLastUpdated: str()
+        description: 
+          en: str()
+          fr: str()
+        name: 
+          en: str()
+          fr: str()
+        relatedCode:
+          URL: 
+            en: str(required=False)
+            fr: str(required=False)
           name: 
             en: str(required=False)
             fr: str(required=False)
-        date: 
-          started: any(str(), null())
-          metadataLastUpdated: any(str(), null())
-        description: 
-          en: any(str(), null())
-          fr: any(str(), null())
-        name: 
-          en: any(str(), null())
-          fr: any(str(), null())
+        status: str(required=False)
+        users:
+             - str(required=False)
+
