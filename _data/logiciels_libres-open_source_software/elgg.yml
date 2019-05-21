@@ -38,7 +38,7 @@ admininstrations:
             fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-13"
         name: 
           en: "GCcollab"
@@ -53,7 +53,7 @@ admininstrations:
           fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-13"
         name: 
           en: "GCconnex"

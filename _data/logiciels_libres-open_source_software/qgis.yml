@@ -28,7 +28,7 @@ admininstrations:
         contact: 
           email: "reginald.maltais2@canada.ca"
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-16"
         name: 
           en: "Geographic Information Systems (GIS)"

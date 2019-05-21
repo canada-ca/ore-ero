@@ -32,7 +32,7 @@ admininstrations:
         contact: 
           email: "sebastien.lemay@canada.ca"
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-13"
         name: 
           en: "Available to all employees (self service)"
@@ -40,63 +40,3 @@ admininstrations:
         description: 
           en: "Upgraded to latest ESR version every month."
           fr: "Mises à jours mensuelles à la dernière version ESR."
-  - 
-    adminCode: aafc-aac
-    uses: 
-      - 
-        contact: 
-          email: aafc.info.aac@canada.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Available to developers"
-          fr: "Disponible pour les développeur"
-        description: 
-          en: "Available to developers"
-          fr: "Available to developers"
-  - 
-    adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
-          email: questions@tbs-sct.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-        description: 
-          en: "Must be requested. Restricted Internet access."
-          fr: "Doit être demandé. Accès Internet restreint."
-  - 
-    adminCode: fin
-    uses: 
-      - 
-        contact: 
-          email: webmaster.webmestre@fin.gc.ca
-        date: 
-          created: "2019-05-13"
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fintrac-canafe
-    uses: 
-      - 
-        contact: 
-          email: guidelines-lignesdirectrices@fintrac-canafe.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"

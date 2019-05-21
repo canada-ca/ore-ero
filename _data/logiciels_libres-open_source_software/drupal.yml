@@ -28,7 +28,7 @@ admininstrations:
         contact: 
           email: webmaster@cse-cst.gc.ca
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-13"
         name: 
           en: "CSE Website"
@@ -36,23 +36,6 @@ admininstrations:
         description: 
           en: "CST Website Creation"
           fr: "Création de site Web du CST"
-        users: 
-          - public
-  - 
-    adminCode: rcmp-grc
-    uses: 
-      - 
-        contact: 
-          email: physec-secmat@rcmp-grc.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "RCMP Website"
-          fr: "Site Web de la GRC"
-        description: 
-          en: "RCMP Website Creation"
-          fr: "Création de site Web de la GRC"
         users: 
           - public
   - 
@@ -66,7 +49,7 @@ admininstrations:
           email: christopher.jaja@tbs-sct.gc.ca
           name: "Christopher Jaja"
         date: 
-          created: "2018-01-23"
+          started: "2018-01-23"
           metadataLastUpdated: "2019-05-06"
         name: 
           en: "Open Government Portal"
@@ -83,98 +66,7 @@ admininstrations:
             fr: "données ouvertes"
         users: 
           - public
-  - 
-    adminCode: tpsgc-pwgsc
-    uses: 
-      - 
-        contact: 
-          email: https://buyandsell.gc.ca/contact-us
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Buyandsell.gc.ca"
-          fr: "Buyandsell.gc.ca"
-        description: 
-          en: "Access Government of Canada Tenders"
-          fr: "Accéder aux appels d'offres du gouvernement du Canada"
-        users: 
-          - public
-  - 
-    adminCode: cbsa-asfc
-    uses: 
-      - 
-        contact: 
-          email: contact@cbsa.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: asc-csa
-    uses: 
-      - 
-        contact: 
-          email: asc.webmestre-webmaster.csa@canada.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fintrac-canafe
-    uses: 
-      - 
-        contact: 
-          email: guidelines-lignesdirectrices@fintrac-canafe.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description:  
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: pco-bcp
-    uses: 
-      - 
-        contact: 
-          email: info@pco-bcp.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: statscan
-    uses: 
-      - 
-        contact:
-          email: reginald.maltais2@canada.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
+
   - 
     adminCode: tc
     uses: 
@@ -183,7 +75,7 @@ admininstrations:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-13"
         name: 
           en: "Development Environment"

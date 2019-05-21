@@ -34,8 +34,7 @@ admininstrations:
             en: str(required=False)
             fr: str(required=False)
         date: 
-          created: str()
-          lastModified: str(required=False)
+          started: str()
           metadataLastUpdated: str()
         description: 
           en: str()

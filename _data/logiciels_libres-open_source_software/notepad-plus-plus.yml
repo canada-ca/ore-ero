@@ -35,7 +35,7 @@ admininstrations:
             fr: "https://www.international.gc.ca/"
           email: sebastien.routier@international.gc.ca
         date: 
-          created: "2019-05-06"
+          started: "2019-05-06"
           metadataLastUpdated: "2019-05-16"
         name: 
           en: "Available to all employees"
@@ -43,64 +43,4 @@ admininstrations:
         description: 
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
-  - 
-    adminCode: aafc-aac
-    uses: 
-      - 
-        contact: 
-          email: aafc.info.aac@canada.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        name: 
-          en: "APM data"
-          fr: "Données du APM"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
-          email: "ilia.salem@tbs-sct.gc.ca"
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        description: 
-          en: "Must be requested"
-          fr: "Doit être demandé"
-        name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-  - 
-    adminCode: csc-scc
-    uses: 
-      - 
-        contact: 
-          email: webmaster@csc-scc.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fin
-    uses: 
-      - 
-        contact: 
-          email:  webmaster.webmestre@fin.gc.ca
-        date: 
-          created: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
- 
+  
