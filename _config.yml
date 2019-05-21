@@ -113,6 +113,9 @@ Status:
 CodeCreated:
   en: Created
   fr: Créé
+CodeStarted:
+  en: Started
+  fr: Lancé
 LastUpdatedCode:
   en: Last updated
   fr: Dernière mise à jour
@@ -191,6 +194,9 @@ DateCodeDesc:
 CreatedCodeDesc:
   en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
+StartedCodeDesc:
+  en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
+  fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
 LastModifiedCodeDesc:
   en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.
