@@ -113,6 +113,9 @@ Status:
 CodeCreated:
   en: Created
   fr: Créé
+CodeStarted:
+  en: Started
+  fr: Lancé
 LastUpdatedCode:
   en: Last updated
   fr: Dernière mise à jour
@@ -191,6 +194,9 @@ DateCodeDesc:
 CreatedCodeDesc:
   en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
+StartedCodeDesc:
+  en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
+  fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
 LastModifiedCodeDesc:
   en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.
@@ -391,7 +397,7 @@ TagsCodeEN:
   en: List of English tags
   fr: Liste d'étiquettes en anglais
 TagsCodeFR:
-  en: list of French tags
+  en: List of French tags
   fr: Liste d'étiquettes en français
 
 VcsName:
@@ -407,6 +413,20 @@ VersionName:
 VersionCodeDesc:
   en: The latest version for this project. For example, 1.0.0.
   fr: La version de ce projet. Par  exemple, 1.0.0.
+
+InformationAboutSubmitter:
+  en: Information about submitter
+  fr: Des informations sur le déposant
+  
+FormSubmissionInProgress:
+  en: The form is being submitted...
+  fr: Le formulaire est en cours de soumission...
+FormSubmissionFail:
+  en: Something went wrong! Unable to submit form.
+  fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
+FormSubmissionSuccess:
+  en: Form was submitted!
+  fr: Le formulaire a été soumis!
 
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:
