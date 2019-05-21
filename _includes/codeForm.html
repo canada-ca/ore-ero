@@ -6,8 +6,6 @@
       <input class="form-control" id="shemaVersion" name="shemaVersion" type="text" readonly="readonly" required="required" value="1.0"/>
     </div>
 
-  
-
   <h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
   <div class="form-group">
     <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
@@ -127,8 +125,8 @@
       </div>
     {% endfor %}
   
-    <div id="languages" class="form-group"></div>
-    <button type="button" class="btn btn-default" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
+    <div id="codeLanguages" class="form-group"></div>
+    <button type="button" class="btn btn-primary" onclick = "addMoreLanguages()">{{ site.AddMoreLanguages[page.lang] }}</button>
   
   <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
     <div class="form-group">
@@ -228,14 +226,11 @@
     </div>
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
-    <div id="tagsEN" class="form-group">
-      <label class="required">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+    <div id="tags">
+      <div id="tagsEN" class="form-group"></div>
+      <div id="tagsFR" class="form-group"></div>
     </div>
-    <div id="tagsFR" class="form-group">
-      <label class="required">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-    </div>
-    <button type="button" class="btn btn-default" onclick = "addMoreTags()">{{ site.AddMoreTags[page.lang] }}</button>
-    
+ 
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>
     <div class="form-group">
       <label for="vcs">{{ site.VcsName[page.lang] }}</label>
@@ -250,12 +245,12 @@
 
   <h2>{{ site.InformationAboutSubmitter[page.lang] }}</h2>
     <div class="form-group">
-      <label for="gitHubUsername" class="required">{{ site.NameContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="gitHubUsername" name="gitHubUsername" type="text" pattern="[A-Za-z\s]" required="required"/>
+      <label for="submitterUsername" class="required">{{ site.NameContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="submitterUsername" name="submitterUsername" type="text" pattern="[A-Za-z\s]" required="required"/>
     </div>
     <div class="form-group">
-      <label for="gitHubEmail" class="required">{{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-      <input class="form-control" id="gitHubEmail" name="gitHubEmail" type="email" required="required"/>
+      <label for="submitterEmail" class="required">{{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="submitterEmail" name="submitterEmail" type="email" required="required"/>
     </div>
   
   <button id="prbotSubmit" type="button" class="btn btn-primary">Submit</button>

@@ -74,45 +74,52 @@
   const USERNAME = "{{ site.github_username }}";
   const PRBOT_URL = "{{ site.prbot_url }}";
 
-  var jLang = 0 ;
-  var iTags = 0;
   var selectedAdminCode = "";
   var pathNameUrl = window.location.pathname;
   var enPathName = "/ore-ero/en/open-source-code-form.html";
   var pName = "";
 
   function addMoreLanguages(){
-      $('<label for="language"></label> <input class="form-control" id="lang' + jLang + '" id="lang' + jLang + '" type="text">').appendTo("#languages");
-      $('#lang' + jLang ).focus();
-    }
-  function addMoreTags(){
-    if(iTags == 0){
-      $("#tagsEN label:first").attr("for", "enTag0");
-      $("#tagsFR label:first").attr("for", "frTag0");
-      $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text" required="">').appendTo("#tagsEN");
-      $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text" required="">').appendTo("#tagsFR");
-      $('#enTag' + iTags ).focus();
-    } else{
-      $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
-      $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
-      $('#enTag' + iTags ).focus();
-    }
-    iTags++;
+    $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+          <input type="text" name="language" class="form-control" required="required">
+          <div class="input-group-btn"> 
+            <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+          </div>
+        </div>`).appendTo("#codeLanguages");
+
+    $(document).ready(function() {
+      $(this).parents(".control-group").remove();
+    });
   }
 
-  function removeTags(){
-    $(":checked").attr('checked', false);
-    for(var i = 0 ; i <= iTags; i++){
-      $("#enTag"+i).detach();
-      $("#frTag"+i).detach();
-      if(i !=0 ){
-        $("#tagsEN").find('label[for =enTag'+i+']').detach();
-        $("#tagsFR").find('label[for =frTag'+i+']').detach();
-      }
-    }
+  function addMoreTags(){
+    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).appendTo("#tagsEN");
+    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).appendTo("#tagsFR");
+    
+    $(`<div class="input-group control-group after-add-more col-xs-2">
+        <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
+       </div>`).insertAfter("#tags");
 
-    iTags = 0;
-    jLang = 0;
+    $(`<div class="copy hide">
+        <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+          <input type="text" id="tag" name="tag" class="form-control" required="required">
+          <div class="input-group-btn"> 
+            <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+          </div>
+        </div>
+       </div>`).appendTo("#tags");
+      
+    $(document).ready(function() {
+      $(".add-more").click(function(){
+          var html = $(".copy").html();
+          $(html).appendTo("#tagsEN");
+          $(html).appendTo("#tagsFR");
+      });
+
+      $("body").on("click",".remove",function(){ 
+          $(this).parents(".control-group").remove();
+      });
+    });
   }
 
   function buildProjectField(project){
@@ -216,25 +223,21 @@
 
     if(project.tags !== undefined){
       project.tags["en"].forEach(function(tag){
-        if(iTags == 0){
-          $("#tagsEN label:first").attr("for", "enTag0");
-          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
-        }else{
-          $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
-        }
-        iTags++;
+        $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tag" name="enTag" value="${tag}" class="form-control" required="required">
+            <div class="input-group-btn"> 
+             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+           </div>
+          </div>`).appendTo("#tagsEN");
       })
 
-      iTags = 0;
-
       project.tags["fr"].forEach(function(tag){
-        if(iTags == 0){
-          $("#tagsFR label:first").attr("for", "frTag0");
-          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");       
-        }else{
-          $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
-        }
-        iTags++;
+        $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tag" name="tag" value="${tag}" class="form-control" required="required">
+            <div class="input-group-btn"> 
+             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+            </div>
+           </div>`).appendTo("#tagsFR");
       })
     }
   }
@@ -256,13 +259,16 @@
     });
   }
 
+  $(document).ready(function() {
+    addMoreTags();
+  });
+
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
    
         $('#selectedProject').empty();
         selectedAdminCode = $("#adminCode").val();
-        removeTags();
 
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
@@ -279,7 +285,9 @@
         $('#selectedPro').focus();
         
         $('#selectedPro').change(function(){
-          removeTags();
+
+          $("#tagsEN").find('.control-group').detach();
+          $("#tagsFR").find('.control-group').detach();
 
           if( municipal !== undefined){
               getProjectFields(municipal);        
