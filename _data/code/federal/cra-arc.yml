@@ -1,0 +1,33 @@
+schemaVersion: "1.0"
+adminCode: cra-arc
+releases:
+  -
+    contact: 
+      URL: 
+        en: 
+        fr: 
+    date: 
+      created: 2019-05-02
+      metadataLastUpdated: 2019-05-14
+    description: 
+      en: descEN
+      fr: descFR
+    name: 
+      en: nameEN
+      fr: nameFR
+    licenses: 
+      - 
+        URL: 
+          en: https://opensource.org/licenses/MIT/en
+          fr: https://opensource.org/licenses/MIT/fr
+          spdxID: https://spdx.org/licenses/
+    repositoryURL: 
+      en: http://www.google.com
+      fr: http://www.google.ca
+    status:  
+    tags: 
+      en: 
+
+      fr: 
+
+    vcs: 
