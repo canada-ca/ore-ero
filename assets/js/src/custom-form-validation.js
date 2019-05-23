@@ -5,19 +5,19 @@
 
 const lettersSpaceError = {
   en: 'Letters with spaces only please.',
-  fr: "Les lettres avec des espaces seulement s'il vous plaît."
+  fr: 'Veuillez fournir seulement les lettres avec des espaces.'
 };
 const alphanumericSpaceError = {
   en: 'Letters and numbers with spaces only please.',
-  fr: "Les lettres et les chiffres avec des espaces seulement s'il vous plaît."
+  fr: 'Veuillez fournir seulement des lettres et des chiffres avec des espaces.'
 };
 const namesError = {
   en: 'Please enter a valid name.',
-  fr: "S'il vous plaît d'entrer un nom valide."
+  fr: 'Veuillez fournir un nom valide.'
 };
 const phoneError = {
   en: 'Please enter a valid phone number.',
-  fr: "S'il vous plaît entrer un numéro de téléphone valide."
+  fr: 'Veuillez fournir un numéro de téléphone valide.'
 };
 
 $(document).on('wb-ready.wb', function() {
