@@ -227,8 +227,26 @@
   
   <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
     <div id="tags">
-      <div id="tagsEN" class="form-group"></div>
-      <div id="tagsFR" class="form-group"></div>
+      <div id="tagsEN" class="form-group">
+        <div>
+          <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tagEN" name="tagEN" class="form-control" required="required">
+            <div class="input-group-btn">
+              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div id="tagsFR" class="form-group">
+        <div>
+          <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tagFR" name="tagFR" class="form-control" required="required">
+            <div class="input-group-btn">
+              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+            </div>
+          </div>
+         </div>
+      </div>
     </div>
  
   <h2>{{ site.VcsCodeDesc[page.lang] }}</h2>

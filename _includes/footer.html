@@ -83,7 +83,7 @@
   function addMoreLanguages(){
     $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
           <input type="text" name="language" class="form-control" required="required">
-          <div class="input-group-btn"> 
+          <div class="input-group-btn">
             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
           </div>
         </div>`).appendTo("#codeLanguages");
@@ -94,9 +94,9 @@
   }
 
   function addMoreTags(){
-    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).appendTo("#tagsEN");
-    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).appendTo("#tagsFR");
-    
+    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
+    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
+
     $(`<div class="input-group control-group after-add-more col-xs-2">
         <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
        </div>`).insertAfter("#tags");
@@ -104,12 +104,12 @@
     $(`<div class="copy hide">
         <div class="control-group input-group col-xs-2" style="margin-top:10px" >
           <input type="text" id="tag" name="tag" class="form-control" required="required">
-          <div class="input-group-btn"> 
+          <div class="input-group-btn">
             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
           </div>
         </div>
        </div>`).appendTo("#tags");
-      
+
     $(document).ready(function() {
       $(".add-more").click(function(){
           var html = $(".copy").html();
