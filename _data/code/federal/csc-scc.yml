@@ -1,0 +1,33 @@
+schemaVersion: "1.0"
+adminCode: csc-scc
+releases:
+  -
+    contact: 
+      URL: 
+        en: undefined
+        fr: undefined
+    date: 
+      created: undefined
+      metadataLastUpdated: undefined
+    description: 
+      en: undefined
+      fr: undefined
+    name: 
+      en: undefined
+      fr: undefined
+    licenses: 
+      - 
+        URL: 
+          en: undefined
+          fr: undefined
+          spdxID: undefined
+    repositoryURL: 
+      en: undefined
+      fr: undefined
+    status: 
+    tags: 
+      en: 
+
+      fr: 
+
+    vcs: undefined
