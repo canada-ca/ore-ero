@@ -1,0 +1,38 @@
+---
+          schemaVersion: "1.0"
+          description:
+            en: test
+            fr: test
+          homepageURL:
+            en: 
+            fr: 
+          licenses:
+            -
+              URL:
+                en: https://github.com/apache/httpd
+                fr: https://github.com/apache/httpd
+              spdxID: apahe-2.0
+          name:
+            en: test
+            fr: test
+          tags:
+            en:
+                  - "test"
+            fr:
+                  - "test"
+admininstrations:
+  -
+    adminCode: asc-csa
+    uses:
+      -
+        contact:
+          URL:
+            en: 
+            fr: 
+            email: imade1984@gmail.com
+        date:
+          started: 2019-05-24
+          metadataLastUpdated: 2019-05-24
+        name:
+          en: 
+          phone: 
