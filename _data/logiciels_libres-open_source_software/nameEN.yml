@@ -1,0 +1,52 @@
+---
+schemaVersion: "1.0"
+description:
+  en: descEN
+  fr: descFR
+homepageURL:
+  en: http://www.google.com/homepage
+  fr: http://www.google.ca/accueil
+licenses:
+  -
+    URL:
+      en: https://opensource.org/licenses/MIT/en
+      fr: https://opensource.org/licenses/MIT/fr
+    spdxID: licence
+name:
+  en: nameEN
+  fr: nameFR
+tags:
+  en:
+    - "tagEN"
+  fr:
+    - "tagFR"
+admininstrations:
+  -
+    adminCode: mtl_qc
+    uses:
+      -
+        contact:
+          URL:
+            en: https://github.com/fredericlestage-vdm
+            fr: https://github.com/fredericlestage-vdm
+          email: frederic.lestage@ville.montreal.qc.ca
+          name: Frédéric Lestage
+        date:
+          started: "2019-05-02"
+          metadataLastUpdated: "2019-05-21"
+        description:
+          en: undefined
+          fr: undefined
+        name:
+          en: Nom du domaine de l'activité du projet (en anglais).
+          fr: Nom du domaine de l'activité du projet (en english).
+        relatedCode:
+          URL:
+            en: 
+            fr: 
+          name:
+            en: 
+            fr: 
+        status: Maintained
+        users:
+            - public
