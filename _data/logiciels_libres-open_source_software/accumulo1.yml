@@ -1,0 +1,52 @@
+---
+schemaVersion: "1.0"
+description:
+  en: descEN
+  fr: descFR
+homepageURL:
+  en: https://accumulo.apache.org/
+  fr: https://accumulo.apache.org/
+licenses:
+  -
+    URL:
+      en: https://opensource.org/licenses/MIT/en
+      fr: https://opensource.org/licenses/MIT/fr
+    spdxID: licence
+name:
+  en: Accumulo1
+  fr: Accumulo1
+tags:
+  en:
+    - "tagEN"
+  fr:
+    - "tagFR"
+admininstrations:
+  -
+    adminCode: tpsgc-pwgsc
+    uses:
+      -
+        contact:
+          URL:
+            en: 
+            fr: 
+          email: libre@ville.montreal.qc.ca
+          name: 
+        date:
+          started: "2019-01-31"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: undefined
+          fr: undefined
+        name:
+          en: Nom du domaine de l'activité du projet (en anglais).
+          fr: Nom du domaine de l'activité du projet (en français).
+        relatedCode:
+          URL:
+            en: 
+            fr: 
+          name:
+            en: 
+            fr: 
+        status: 
+        users:
+            - 
