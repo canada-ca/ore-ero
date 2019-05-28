@@ -93,10 +93,11 @@ class YamlWriter extends FileWriter {
       let items = DeepObject.get(result, propPath);
 
       // Update the object if there's a match.
-      for (let item of items) {
+      for (let i = 0; i < items.length; i++) {
+        let item = items[i];
         let id = DeepObject.get(item, onValue);
         if (newIds[id]) {
-          item = newIds[id];
+          items.splice(i, 1, newIds[id]);
           delete newIds[id];
         }
       }
