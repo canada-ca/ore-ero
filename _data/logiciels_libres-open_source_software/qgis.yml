@@ -28,26 +28,12 @@ admininstrations:
         contact: 
           email: "reginald.maltais2@canada.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
-          en: ~
-          fr: ~
+          en: "Geographic Information Systems (GIS)"
+          fr: "Systèmes d'information géographique (SIG)"
         description: 
           en: "Desktop geospatial information processing"
           fr: "Système d'information géospatiale de bureau"
-  -
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Desktop geospatial information"
-          fr: "Système d'information géospatiale"
-        description: 
-          en: "GeoConnections - data source review and testing."
-          fr: "GéoConnexions - examen et test de la source de données."
+ 

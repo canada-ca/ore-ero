@@ -28,31 +28,14 @@ admininstrations:
         contact: 
           email: webmaster@cse-cst.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "CSE Website"
           fr: "Site Web du CST"
         description: 
-          en: ~
-          fr: ~
-        users: 
-          - public
-  - 
-    adminCode: rcmp-grc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "RCMP Website"
-          fr: "Site Web de la GRC"
-        description: 
-          en: ~
-          fr: ~
+          en: "CST Website Creation"
+          fr: "Création de site Web du CST"
         users: 
           - public
   - 
@@ -60,7 +43,9 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: "https://github.com/canada-ca/ore-ero/issues"
+          URL:
+            en: "https://github.com/canada-ca/ore-ero/issues"
+            fr: "https://github.com/canada-ca/ore-ero/issues"
           email: christopher.jaja@tbs-sct.gc.ca
           name: "Christopher Jaja"
         date: 
@@ -70,119 +55,17 @@ admininstrations:
           en: "Open Government Portal"
           fr: "Portail du Gouvernement ouvert"
         description: 
-          en: ~
-          fr: ~
+          en: "Drupal 8 install profile for open.canada.ca" 
+          fr: "Profil d'installation de Drupal 8 pour open.canada.ca"
         relatedCode:
-          - "https://github.com/open-data/od"
+          URL:
+            en: "https://github.com/open-data/od"
+            fr: "https://github.com/open-data/od"
+          name:
+            en: "open data"
+            fr: "données ouvertes"
         users: 
           - public
-  - 
-    adminCode: tpsgc-pwgsc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Buyandsell.gc.ca"
-          fr: "Achatsetventes.gc.ca"
-        description: 
-          en: ~
-          fr: ~
-        users: 
-          - public
-  - 
-    adminCode: cbsa-asfc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: asc-csa
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fintrac-canafe
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: pco-bcp
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: statscan
-    uses: 
-      - 
-        contact:
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
   - 
     adminCode: tc
     uses: 
@@ -191,11 +74,11 @@ admininstrations:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"

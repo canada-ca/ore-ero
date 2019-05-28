@@ -30,89 +30,17 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://www.international.gc.ca/
+          URL: 
+            en: "https://www.international.gc.ca/"
+            fr: "https://www.international.gc.ca/"
           email: sebastien.routier@international.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "Available to all employees"
           fr: "Disponible pour tous les employés"
         description: 
           en: "Must be requeted from the AppStore."
           fr: "Disponible au AppStore."
-  - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        description: 
-          en: "Must be requested"
-          fr: "Doit être demandé"
-        name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-  - 
-    adminCode: csc-scc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Development Environment"
-          fr: "Environnement de développement"
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fin
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
+  

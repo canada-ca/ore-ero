@@ -28,26 +28,12 @@ admininstrations:
         contact: 
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "GCcollab Message"
           fr: "Message GCcollab"
         description: 
           en: "Messaging pilot"
           fr: "Pilote Messagerie"
-  - 
-    adminCode: ised-isde
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "Internal Messaging"
-          fr: "Messagerie interne"
+ 

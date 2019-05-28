@@ -32,29 +32,15 @@ admininstrations:
         contact: 
           email: "michael.goit@canada.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development and deployment"
+          fr: "Développements et Déploiements"
         description: 
           en: "Development and deployment process"
           fr: "Processus de développements et déploiements"
-  - 
-    adminCode: ised-isde
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "Development"
-          fr: "Développement"
+  
   - 
     adminCode: tbs-sct
     uses: 
@@ -62,26 +48,11 @@ admininstrations:
         contact: 
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development and deployment"
+          fr: "Développements et Déploiements"
         description: 
           en: "Digital Collaboration Division development and deployment"
           fr: "Développement et déploiement de la Division de la collaboration numérique"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"

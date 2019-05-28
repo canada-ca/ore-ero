@@ -32,71 +32,11 @@ admininstrations:
         contact: 
           email: "sebastien.lemay@canada.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
           en: "Available to all employees (self service)"
           fr: "Disponible pour tous les employés (libre service)"
         description: 
           en: "Upgraded to latest ESR version every month."
           fr: "Mises à jours mensuelles à la dernière version ESR."
-  - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Available to developers"
-          fr: "Disponible pour les développeur"
-        description: 
-          en: ""
-          fr: ""
-  - 
-    adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: "Available to all employees"
-          fr: "Disponible pour tous les employés"
-        description: 
-          en: "Must be requested. Restricted Internet access."
-          fr: "Doit être demandé. Accès Internet restreint."
-  - 
-    adminCode: fin
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: fintrac-canafe
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
