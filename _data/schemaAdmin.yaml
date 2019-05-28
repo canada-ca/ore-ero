@@ -1,3 +1,4 @@
+---
 - code: str()
   provinceCode: enum('ab', 'bc', 'mb', 'nb', 'nl', 'nt', 'ns', 'nu', 'on', 'pe', 'qc', 'sk', 'yt', required=False)
   name:
