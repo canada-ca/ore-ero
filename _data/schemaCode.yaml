@@ -26,7 +26,7 @@ releases:
       en: str(required=False)
       fr: str(required=False)
     languages: 
-             - str(required=False)
+      - str(required=False)
     name: 
       en: str()
       fr: str()
@@ -58,7 +58,6 @@ releases:
         name: 
           en: str(required=False)
           fr: str(required=False)
-    status: str(required=False)
     tags: 
       en:
         - str()
