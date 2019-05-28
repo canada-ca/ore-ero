@@ -45,16 +45,12 @@ function getCodeObject() {
           fr: $('#frRepoUrl').val()
         },
         tags: {
-          en: [
-            ...document
-              .querySelectorAll('#tagsEN input')
-              .map(child => child.value)
-          ],
-          fr: [
-            ...document
-              .querySelectorAll('#tagsFR input')
-              .map(child => child.value)
-          ]
+          en: [...document.querySelectorAll('#tagsEN input')].map(
+            child => child.value
+          ),
+          fr: [...document.querySelectorAll('#tagsFR input')].map(
+            child => child.value
+          )
         },
         vcs: $('#vcs').val()
       }
@@ -112,7 +108,11 @@ function getCodeObject() {
   }
 
   // languages
-  const languages = $('input[datafor="languages"]').map(input => input.val());
+  let languages = $(
+    'input[datafor="languages"]:checked, input[datafor="languages"][type="text"]'
+  )
+    .toArray()
+    .map(input => input.value);
   if (languages.length > 0) {
     codeObject.releases[0].languages = languages;
   }
