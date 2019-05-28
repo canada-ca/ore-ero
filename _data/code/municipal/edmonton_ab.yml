@@ -1,37 +1,99 @@
---- 
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 adminCode: edmonton_ab
-releases: 
-  - 
-    contact: 
-      URL: 
-        en: https://github.com/yeg-relief/youcanbenefit/issues
-        fr: https://github.com/yeg-relief/youcanbenefit/issues
-      email: jaredrewerts@gmail.com
-    date: 
-      created: "2016-06-16"
-      metadataLastUpdated: "2019-01-29"
-    description: 
-      en: "YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies."
-      fr: "YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d'avantages sociaux pour les personnes moins fortunées et leurs alliés."
-    languages: 
-      - Javascript
-    name: 
-      en: YouCanBenefit
-      fr: YouCanBenefit
-    licenses: 
-      - 
-        URL: 
-          en: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
-          fr: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
-        spdxID: "MIT"
-    repositoryURL: 
-      en: "https://github.com/yeg-relief/youcanbenefit"
-      fr: "https://github.com/yeg-relief/youcanbenefit"
-    status: Production
-    tags: 
-      en: 
-        - "Social Benefits"
-      fr: 
-        - "Avantages Sociaux"
-    vcs: git
+releases:
+    -
+        contact:
+            URL:
+                en: 'https://github.com/yeg-relief/youcanbenefit/issues'
+                fr: 'https://github.com/yeg-relief/youcanbenefit/issues'
+            email: jaredrewerts@gmail.com
+        date:
+            created: '2016-06-16'
+            metadataLastUpdated: '2019-01-29'
+        description:
+            en: 'YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies.'
+            fr: 'YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d''avantages sociaux pour les personnes moins fortunées et leurs alliés.'
+        languages:
+            - Javascript
+        name:
+            en: YouCanBenefit
+            fr: YouCanBenefit
+        licenses:
+            -
+                URL:
+                    en: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
+                    fr: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
+                spdxID: MIT
+        repositoryURL:
+            en: 'https://github.com/yeg-relief/youcanbenefit'
+            fr: 'https://github.com/yeg-relief/youcanbenefit'
+        status: Production
+        tags:
+            en:
+                - 'Social Benefits'
+            fr:
+                - 'Avantages Sociaux'
+        vcs: git
+    -
+        contact:
+            email: jared.rewerts@edmonton.ca
+            URL:
+                en: 'https://edmonton.ca'
+                fr: 'https://edmonton.ca'
+            name: jrewerts
+        date:
+            created: '2019-05-01'
+            metadataLastUpdated: '2019-05-16'
+            lastModified: '2019-05-28'
+        description:
+            en: Filler
+            fr: filler
+        name:
+            en: Edmonton
+            fr: Edmonton
+        licenses:
+            -
+                URL:
+                    en: 'https://edmonton.ca'
+                    fr: 'https://edmonton.ca'
+                spdxID: MIT
+        repositoryURL:
+            en: 'https://edmonton.ca'
+            fr: 'https://edmonton.ca'
+        tags:
+            en:
+                - Tag1
+                - Tag2
+                - Tag3
+            fr:
+                - Tag1
+                - Tag2
+                - Tag3
+        vcs: git
+        downloadURL:
+            en: 'https://edmonton.ca'
+            fr: 'https://edmonton.ca'
+        homepageURL:
+            en: 'https://edmonton.ca'
+            fr: 'https://edmonton.ca'
+        languages:
+            - Python
+            - C
+            - MySQL
+            - OtherLang
+            - AnotherLang
+        organization:
+            en: YEG
+            fr: YEG
+        partners:
+            URL:
+                en: 'https://edmonton.ca'
+                fr: 'https://edmonton.ca'
+            email: stuff@edmonton.ca
+        relatedCode:
+            -
+                URL:
+                    en: Stuff
+                    fr: 'https://edmonton.ca'
+        status: Maintained
+        version: v1.2.3
