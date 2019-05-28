@@ -10,6 +10,7 @@ install:
 - pip install --user html5validator
 - pip install --user yamale
 - npm install
+- pip install --user yamllint
 
 script: 
 - bundle exec jekyll build 
@@ -19,6 +20,7 @@ script:
 - yamale -s schemaAdmin.yaml _data/administrations
 - yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
 - npm run lint
+- yamllint -d configYamlLint.yml _data
 
 
 sudo: false
