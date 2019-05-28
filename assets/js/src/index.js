@@ -77,7 +77,7 @@ function getCodeObject() {
 
   // contact.phone
   if ($('#phone').val()) {
-    codeObject.releases[0].contact.name = $('#phone').val();
+    codeObject.releases[0].contact.phone = $('#phone').val();
   }
 
   // date.lastModified
