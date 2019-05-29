@@ -130,7 +130,7 @@ ${[...document.querySelectorAll('#tagsFR input')]
           files: [
             {
               path: file,
-              content: YAML.stringify(result, { keepBlobsInJSON: false })
+              content: jsyaml.dump(result, { schema: jsyaml.JSON_SCHEMA })
             }
           ]
         }),

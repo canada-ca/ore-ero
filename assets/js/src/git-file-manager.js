@@ -66,7 +66,7 @@ class YamlWriter extends FileWriter {
    */
   get(file) {
     return FileWriter.prototype.get.call(this, file).then(content => {
-      return YAML.parse(content);
+      return jsyaml.load(content, { schema: jsyaml.JSON_SCHEMA } );
     });
   }
 
@@ -81,7 +81,7 @@ class YamlWriter extends FileWriter {
    * @return {Promise<Object>} A Promise that resolves with the merged file.
    */
   merge(file, contents, propPath, onValue) {
-    let newObjectFile = YAML.parse(contents);
+    let newObjectFile = jsyaml.load(contents, { schema: jsyaml.JSON_SCHEMA } );
     let newObjects = DeepObject.get(newObjectFile, propPath);
 
     // Get an Object of the new ids using the onValue
