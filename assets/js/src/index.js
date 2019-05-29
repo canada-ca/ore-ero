@@ -109,7 +109,7 @@ function getCodeObject() {
 
   // languages
   let languages = $(
-    'input[datafor="languages"]:checked, input[datafor="languages"][type="text"]'
+    'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]'
   )
     .toArray()
     .map(input => input.value);
