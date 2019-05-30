@@ -145,7 +145,7 @@ AdminCode:
 AdminCodeDesc:
   en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
   fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
-RealeasesCodeDesc:
+RealeasesDesc:
   en: Information for each project or source code published.
   fr: Informations pour chaque projet ou code source publié.
 
@@ -350,33 +350,33 @@ RepositoryURLFR:
   en: French repository URL
   fr: URL du dépôt en francais
 
-RelatedDesc:
+RelatedCodeDesc:
   en: Information about each library, framework, API or other related software used in this project.
   fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
 
-URLRelatedName:
+URLRelatedCodeName:
   en: URL
   fr: URL
-URLRelatedDesc:
+URLRelatedCodeDesc:
   en: The english and french URLs of related software.
   fr: L'URL anglais et francais d'un logiciel connexe.
-URLRelatedEN:
+URLRelatedCodeEN:
   en: English URL of related software
   fr: URL anglais d'un logiciel connexe
-URLRelatedFR:
+URLRelatedCodeFR:
   en: French URL of related software
   fr: URL francais d'un logiciel connexe
 
-RelatedName:
+RelatedCodeName:
   en: Name
   fr: Nom
-NameRelatedDesc:
+NameRelatedCodeDesc:
   en: The english and french name of related software.
   fr: Le nom d'un logiciel connexe en anglais et en francais.
-NameRelatedEN:
+NameRelatedCodeEN:
   en: Name of related software in english
   fr: Nom d'un logiciel connexe en anglais
-NameRelatedFR:
+NameRelatedCodeFR:
   en: Name of related software in french
   fr: Nom d'un logiciel connexe en francais
 
@@ -403,7 +403,7 @@ TagsFR:
 VcsName:
   en: Version control system
   fr: Système de contrôle de version
-VcsCodeDesc:
+VcsDesc:
   en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
   fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ..
 
