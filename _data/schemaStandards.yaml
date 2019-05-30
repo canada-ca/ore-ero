@@ -1,0 +1,42 @@
+---
+schemaVersion: str()
+administrations:
+  -
+    adminCode: str()
+    contact:
+      URL:
+        en: str(required=False)
+        fr: str(required=False)
+      email: str()
+      name:
+        en: str(required=False)
+        fr: str(required=False)
+      phone: str(required=False)
+    references:
+      -
+        URL:
+          en: str()
+          fr: str()
+        name:
+          en: str()
+          fr: str()
+    status: str()
+date:
+  created: str()
+  metadataLastUpdated: str()
+description:
+  en: str()
+  fr: str()
+name:
+  en: str()
+  fr: str()
+specURL:
+  en: str()
+  fr: str()
+standardCode: str()
+standardsOrg: str()
+tags:
+  en:
+    - str()
+  fr:
+    - str()

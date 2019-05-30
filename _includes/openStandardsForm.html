@@ -1,0 +1,30 @@
+<div class="wb-frmvld">
+  <form action="#" method="get" id="validation">
+
+    {% include form_schemaVersion.html %}
+
+    {% include form_adminCode.html %}
+
+    {% include form_contactDescription.html %}
+
+    <!-- references -->
+
+    {% include form_dateDescription.html created=true lastModified=false metadata=true %}
+
+    {% include form_description.html %}
+
+    {% include form_projectName.html %}
+
+    <!-- specURL -->
+
+    <!-- standardCode -->
+
+    <!-- standardsOrg -->
+
+  <button id="prbotSubmitStandard" type="button" class="btn btn-primary">Submit</button>
+  <button id="standardFormReset" type="reset" class="btn btn-default">Reset</button>
+
+  {% include form_submitAlert.html %}
+
+  </form>
+</div>
