@@ -22,7 +22,7 @@ tags:
     - str()
 admininstrations: 
   - 
-    adminCode:  str()
+    adminCode: str()
     uses: 
       - 
         contact: 
@@ -48,6 +48,5 @@ admininstrations:
             en: str(required=False)
             fr: str(required=False)
         status: str(required=False)
-        users:
-             - str(required=False)
-
+        users: 
+          - str(required=False)

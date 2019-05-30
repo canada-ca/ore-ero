@@ -128,7 +128,7 @@ releases:
       en: "http://catalogue.data.gov.bc.ca"
       fr: "http://catalogue.data.gov.bc.ca"
     languages: 
-      -  Python 
+      - Python 
     name: 
       en: ckanext-bcgov
       fr: ckanext-bcgov
@@ -149,4 +149,3 @@ releases:
         - "Catalogue de données"
     vcs: git
     version: "1.7.18"
-    

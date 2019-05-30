@@ -1,37 +1,41 @@
---- 
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 adminCode: edmonton_ab
-releases: 
-  - 
-    contact: 
-      URL: 
-        en: https://github.com/yeg-relief/youcanbenefit/issues
-        fr: https://github.com/yeg-relief/youcanbenefit/issues
-      email: jaredrewerts@gmail.com
-    date: 
-      created: "2016-06-16"
-      metadataLastUpdated: "2019-01-29"
-    description: 
-      en: "YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies."
-      fr: "YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d'avantages sociaux pour les personnes moins fortunées et leurs alliés."
-    languages: 
-      - Javascript
-    name: 
-      en: YouCanBenefit
-      fr: YouCanBenefit
-    licenses: 
-      - 
-        URL: 
-          en: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
-          fr: "https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE"
-        spdxID: "MIT"
-    repositoryURL: 
-      en: "https://github.com/yeg-relief/youcanbenefit"
-      fr: "https://github.com/yeg-relief/youcanbenefit"
-    status: Production
-    tags: 
-      en: 
-        - "Social Benefits"
-      fr: 
-        - "Avantages Sociaux"
-    vcs: git
+releases:
+    -
+        contact:
+            email: jared.rewerts@edmonton.ca
+            URL:
+                en: 'https://github.com/yeg-relief/youcanbenefit/issues'
+                fr: 'https://github.com/yeg-relief/youcanbenefit/issues'
+            name: 'Jared Rewerts'
+            phone: 780-667-8058
+        date:
+            created: '2016-06-16'
+            metadataLastUpdated: '2019-05-28'
+            lastModified: '2019-05-28'
+        description:
+            en: 'YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies.'
+            fr: 'YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d''avantages sociaux pour les personnes moins fortunées et leurs alliés.'
+        name:
+            en: YouCanBenefit
+            fr: YouCanBenefit
+        licenses:
+            -
+                URL:
+                    en: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
+                    fr: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
+                spdxID: MIT
+        repositoryURL:
+            en: 'https://github.com/yeg-relief/youcanbenefit'
+            fr: 'https://github.com/yeg-relief/youcanbenefit'
+        tags:
+            en:
+                - 'Social Benefits'
+            fr:
+                - 'Avantages Sociaux'
+        vcs: git
+        languages:
+            - JavaScript
+            - TypeScript
+        status: Maintained
+        version: 1.0.91

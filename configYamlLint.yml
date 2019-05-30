@@ -1,0 +1,12 @@
+# This is my first, very own configuration file for yamllint!
+# It extends the default conf by adjusting some options.
+
+extends: default
+
+rules:
+  # 80 chars should be enough, but don't fail if a line is longer
+  line-length:
+    max: 400
+    level: warning
+  trailing-spaces: disable  # don't bother me with this rule
+  new-line-at-end-of-file: disable # don't bother me with this rule
