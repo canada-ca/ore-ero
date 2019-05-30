@@ -264,8 +264,6 @@ function submitFormCode() {
   resetButton.disabled = true;
 
   let codeObject = getCodeObject();
-
-  let codeObject = getCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
   fileWriter
