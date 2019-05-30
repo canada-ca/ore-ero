@@ -58,7 +58,6 @@ releases:
         name:
           en: str(required=False)
           fr: str(required=False)
-    status: str(required=False)
     tags:
       en:
         - str()
