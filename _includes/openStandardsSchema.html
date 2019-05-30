@@ -1,0 +1,159 @@
+<ul class="list-unstyled">
+  <li>
+    <details open>
+      <summary>date <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+      <p>{{ site.DateCodeDesc[page.lang] }}</p>
+      <ul class="list-unstyled">
+        <li>
+          <details open>
+            <summary>started <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+            <h5>{{ site.CodeStarted[page.lang] }}</h5>
+            <p>{{ site.StartedCodeDesc[page.lang] }}</p>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>metadataLastUpdated <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+            <h5>{{ site.LastUpdatedCode[page.lang] }}</h5>
+            <p>{{ site.MetaDataLastUpdatedCodeDesc[page.lang] }}</p>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+      <h5> {{ site.DescriptionUsesOss[page.lang] }} </h5>
+      <p>{{ site.DescriptionUsesOssDesc[page.lang] }}</p>
+      <ul>
+        <li>{{ site.DescriptionCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+        <li>{{ site.DescriptionCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>name [array]</summary>
+      <h5>{{ site.RelatedCodeName[page.lang] }}</h5>
+      <p>{{ site.NameRelatedCodeDesc[page.lang] }}</p>
+      <ul>
+        <li>{{ site.NameRelatedCodeEN[page.lang] }} [string]</li>
+        <li>{{ site.NameRelatedCodeFR[page.lang] }} [string]</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>specURL [string]</summary>
+      <h5>{{ site.SpecURL[page.lang] }}</h5>
+      <p>{{ site.SpecURLDesc[page.lang] }}</p>
+      <ul>
+        <li>{{ site.SpecURLEN[page.lang] }} [string]</li>
+        <li>{{ site.SpecURLFR[page.lang] }} [string]</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>standard Code <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+      <h5>{{ site.StandardCode[page.lang] }}</h5>
+      <p>{{ site.StandardCodeDesc[page.lang] }}</p>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>standard organisation <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+      <h5>{{ site.StandardOrg[page.lang] }}</h5>
+      <p>{{ site.StandardOrgDesc[page.lang] }}</p>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>tags <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+      <h5>{{ site.TagsName[page.lang] }}</h5>
+      <p>{{ site.TagsCodeDesc[page.lang] }}</p>
+      <ul>
+        <li>{{ site.TagsCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
+        <li>{{ site.TagsCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>administrations <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+      <p>site administrations descriptions</p>
+      <ul class="list-unstyled">
+        <li>
+          <details open>
+            <summary>adminCode <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+            <h5>{{ site.AdminCode[page.lang] }}</h5>
+            <p>{{ site.AdminCodeDesc[page.lang] }}</p>
+          </details>
+        </li>
+
+        <li>
+          <details open>
+            <summary>contact <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+            <p>{{ site.ContactCodeDesc[page.lang] }}</p>
+            <ul class="list-unstyled">
+              <li>
+                <details open>
+                  <summary>email <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+                  <h5>{{ site.EmailContactCode[page.lang] }}</h5>
+                  <p>{{ site.EmailContactCodeDesc[page.lang] }}</p>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details open>
+            <summary>references <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+            <p>Informations about the references</p>
+            <ul class="list-unstyled">
+              <li>
+              <details open>
+                <summary>URL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                <h5>{{ site.URLLicensesName[page.lang] }}</h5>
+                <p>{{ site.URLLicensesCodeDesc[page.lang] }}</p>
+                <ul>
+                  <li>{{ site.URLLicensesCodeDescEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                  <li>{{ site.URLLicensesCodeDescFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                </ul>
+              </details>
+              </li>
+              <li>
+                <details open>
+                  <summary>name <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+                  <h5>{{ site.ProjectName[page.lang] }}</h5>
+                  <p>{{ site.NameCodeDesc[page.lang] }}</p>
+                  <ul>
+                    <li>{{ site.URLLicensesCodeDescEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>{{ site.URLLicensesCodeDescFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details open>
+            <summary>status <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
+            <h5>{{ site.Status[page.lang] }}</h5>
+            <p>{{ site.StatusDesc[page.lang] }}</p>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </li>
+</ul>

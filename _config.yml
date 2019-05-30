@@ -428,22 +428,102 @@ FormSubmissionSuccess:
   en: Form was submitted!
   fr: Le formulaire a été soumis!
 
-# Open Soruce Software (Schema and Form)
+# Open Source Software (Schema and Form)
 SchemaVersionOssDesc:
   en: The version of the ORE metadata schema for open source software.
   fr: La version du schéma de métadonnées ORE pour les logiciels libres.
-NameUsesOss:
-  en: Name of the project activity
-  fr: Nom de l'activité du projet.
-DescriptionUsesOss:
-  en: Description of the project activity
-  fr: Description de l'activité du projet.
 NameUsesOssDesc:
   en: The domain name of the project activity.
   fr: Le nom du domaine de l'activité du projet.
 DescriptionUsesOssDesc:
   en: A one or two sentence description of the project activity.
   fr: Une description du domaine de l'activité du projet.
+DescriptionUsesOssDescEN:
+  en: A one or two sentence description of the project activity (in english).
+  fr: Une description du domaine de l'activité du projet (en anglais).
+DescriptionUsesOssDescFR:
+  en: A one or two sentence description of the project activity (in french).
+  fr: Une description du domaine de l'activité du projet (en français).
+NameUsesOss:
+  en: Name of the project activity
+  fr: Nom de l'activité du projet.
+NameUsesOssDescEN:
+  en: The domain name of the project activity (in english).
+  fr: Le nom du domaine de l'activité du projet (en anglais).
+NameUsesOssDescFR:
+  en: The domain name of the project activity (in french).
+  fr: Le nom du domaine de l'activité du projet (en français).
+Users:
+  en: Users
+  fr: Utilisateurs
+UsersDesc:
+  en: The general public of the software
+  fr: Le public général du logiciel
+
+# Open standards
+SpecURL:
+  en: Specification URL
+  fr: URL de spécification
+SpecURLDesc:
+  en: The specification URL for the standard
+  fr: l'url de spécification pour la norme
+SpecURLEN:
+  en: The english specification URL
+  fr: L'url de spécification anglais
+SpecURLFR:
+  en: The french specification URL
+  fr: L'url de spécification français
+StandardCode:
+  en: Standard Code
+  fr: Code de la norme
+StandardCodeDesc:
+  en: The standard's code
+  fr: Le code de la norme
+StandardOrg:
+  en: Standard Organization
+  fr: Organisation de la norme
+StandardOrgDesc:
+  en: The standard organization
+  fr: L'organisation de la norme
+StatusDesc:
+  en: The status of the standard
+  fr: le status de la norme
+ReferencesURL:
+  en: Reference
+  fr: Référence
+ReferencesURLEN:
+  en: Reference URL in english
+  fr: URL de référence anglais
+ReferencesURLFR:
+  en: Reference URL in french
+  fr: URL de référence en français
+ReferencesNameEN:
+  en: Reference name in english
+  fr: Nom de référence en anglais
+ReferencesNameFR:
+  en: Reference name in french
+  fr: Nom de référence en français
+statusValue:
+  en: Status of the standard
+  fr: Status de la norme
+specURL:
+  en: Specification URL
+  fr: URL de la spécification
+specURLEN:
+  en: Specification URL in english
+  fr: URL de la spécification en anglais
+specURLFR:
+  en: Specification URL in french
+  fr: URL de la spécification en français
+StandardCodeValue:
+  en: Code standard value
+  fr: Code de la norme
+StandardsOrg:
+  en: Organization standard's name
+  fr: Nom de l'organisation de la norme
+standardsOrgValue:
+  en: Organization standard name value
+  fr: Nom de l'organisation de la norme
 
 # Other translations
 AddMoreTags:

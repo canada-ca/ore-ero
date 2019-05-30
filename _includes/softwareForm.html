@@ -18,15 +18,36 @@
 
   {% include form_dateDescription.html created=true lastModified=false metadata=true %}
 
-  <!-- Use description -->
+  <h2>{{ site.DescriptionUsesOss[page.lang] }}</h2>
+    <div class="form-group">
+      <label for="useDescriptionEN" class="required">{{ site.DescriptionUsesOssDescEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="useDescriptionEN" name="useDescriptionEN" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="useDescriptionFR" class="required">{{ site.DescriptionUsesOssDescFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="useDescriptionFR" name="useDescriptionFR" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
 
-  <!-- Use name -->
+  <h2>{{ site.NameUsesOss[page.lang] }}</h2>
+    <div class="form-group">
+      <label for="enUseName" class="required">{{ site.NameUsesOssDescEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="enUseName" name="enUseName" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="frUseName" class="required">{{ site.NameUsesOssDescFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+      <input class="form-control" id="frUseName" name="frUseName" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
 
   {% include form_relatedCode.html %}
 
   {% include form_status.html %}
 
-  <!-- users -->
+  <!-- TODO add the user selection as an array -->
+  <h2>{{ site.Users[page.lang] }}</h2>
+    <div class="form-group">
+      <label for="users">{{ site.UsersDesc[page.lang] }}</label>
+      <input class="form-control" id="users" name="users" type="text" pattern="[A-Za-z\s]" />
+    </div>
 
   <button id="prbotSubmitSoftware" type="button" class="btn btn-primary">Submit</button>
   <button id="softwareFormReset" type="reset" class="btn btn-default">Reset</button>
