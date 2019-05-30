@@ -66,7 +66,7 @@ class YamlWriter extends FileWriter {
    */
   get(file) {
     return FileWriter.prototype.get.call(this, file).then(content => {
-      return jsyaml.load(content, { schema: jsyaml.JSON_SCHEMA } );
+      return jsyaml.load(content, { schema: jsyaml.JSON_SCHEMA });
     });
   }
 

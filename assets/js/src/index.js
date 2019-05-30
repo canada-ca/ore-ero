@@ -1,6 +1,6 @@
 // Put code in here.
 // Embed this at the bottom of the body.
-/* global $ YamlWriter USERNAME REPO_NAME YAML PRBOT_URL */
+/* global $ YamlWriter USERNAME REPO_NAME jsyaml PRBOT_URL */
 
 function getSelectedOrgType() {
   return $('#adminCode :selected')
