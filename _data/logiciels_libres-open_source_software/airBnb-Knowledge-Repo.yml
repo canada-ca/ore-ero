@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "A platform for data scientists and other technical professions."
   fr: "Une plateforme pour les scientifiques de données et d'autres professions techniques."
 homepageURL:
   en: "https://airbnb.io/projects/knowledge-repo/"
   fr: "https://airbnb.io/projects/knowledge-repo/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://github.com/airbnb/knowledge-repo/blob/master/LICENSE"
       fr: "https://github.com/airbnb/knowledge-repo/blob/master/LICENSE"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: AirBnb Knowledge Repo
   fr: AirBnb Knowledge Repo
-tags: 
+tags:
   en:
     - "Sharing knowledge"
-  fr: 
+  fr:
     - "Partage des connaissances"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2019-01-31"
           metadataLastUpdated: "2019-05-06"
-        description: 
+        description:
           en: "Business Intelligence."
           fr: "Intelligence d'affaires."
-        name: 
+        name:
           en: "Document Management Software."
           fr: "Logiciels de gestion documentaire."

@@ -133,10 +133,10 @@ MandatoryField:
   fr: Obligatoire
 
 # Open Source Code (Schema and Form)
-SchemaVersionCode:
+SchemaVersion:
   en: ORE metadata schema version
   fr: Version du schéma de métadonnées de l'ERO
-SchemaVersionCodeDesc:
+SchemaVersionDesc:
   en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
   fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
 AdminCode:
@@ -149,27 +149,27 @@ RealeasesCodeDesc:
   en: Information for each project or source code published.
   fr: Informations pour chaque projet ou code source publié.
 
-ContactCodeDesc:
+ContactDesc:
   en: Contact information for the project.
   fr: Coordonnées des contacts pour le projet.
 
 URLContactName:
   en: URL
   fr: URL
-URLContactCodeDesc:
+URLContactDesc:
   en: English and French URLs that can be used to contact the project.
   fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
-URLContactCodeEN:
+URLContactEN:
   en: English URL
   fr: URL anglais
-URLContactCodeFR:
+URLContactFR:
   en: French URL
   fr: URL français
 
-EmailContactCode:
+EmailContact:
   en: Email
   fr: Courriel
-EmailContactCodeDesc:
+EmailContactDesc:
   en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
   fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
 
@@ -191,16 +191,16 @@ DateDesc:
   en: Dates describing the project.
   fr: Dates décrivant le projet.
 
-CreatedCodeDesc:
+CreatedDesc:
   en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
-StartedCodeDesc:
+StartedDesc:
   en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
-LastModifiedCodeDesc:
+LastModifiedDesc:
   en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
   fr: La date du projet lorsqu'elle a été modifiée, au format AAAa-MM-JJ ou ISO 8601.
-MetaDataLastUpdatedCodeDesc:
+MetaDataLastUpdatedDesc:
   en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
   fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
 
@@ -220,13 +220,13 @@ DescriptionFR:
 DownloadName:
   en: Download URL
   fr: URL de téléchargement
-DownloadURLCodeDesc:
+DownloadURLDesc:
   en: The english and french URLs where a distribution of the project can be found.
   fr: Les URLs en francais et en anglais où une distribution du projet peut être trouvée.
-DownloadURLCodeEN:
+DownloadURLEN:
   en: English download URL
   fr: URL de téléchargement en anglais
-DownloadURLCodeFR:
+DownloadURLFR:
   en: French download URL
   fr: URL de téléchargement en francais
 
@@ -246,7 +246,7 @@ HomepageURLFR:
 LanguagesName:
   en: Programming languages
   fr: Langages de programmation
-LanguagesCodeDesc:
+LanguagesDesc:
   en: A list of the programming languages used in the project.
   fr: Une liste des langages de programmation utilisés dans la projet.
 
@@ -266,54 +266,54 @@ NameFR:
 OrganizationName:
   en: Organization
   fr: Organisation
-OrganizationCodeDesc:
+OrganizationDesc:
   en: The English and French name of the organization or team to which the project belongs.
   fr: Le nom de l'organisation ou l'équipe en francais et en anglais à laquelle le projet appartient.
-OrganizationCodeEN:
+OrganizationEN:
   en: English organization name
   fr: Nom de l'organisation en anglais
-OrganizationCodeFR:
+OrganizationFR:
   en: French organization name
   fr: Nom de l'organisation en français
 
-PartnersCodeDesc:
+PartnersDesc:
   en: Information about each group partnering on the project.
   fr: Renseignements sur chaque groupe partenaire du projet.
 
 URLPartnersName:
   en: URL
   fr: URL
-URLPartnersCodeDesc:
+URLPartnersDesc:
   en: The english and french URL to a website about the partner.
   fr: L'URL en anglais et en français d'un site Web à propos du partenaire.
-URLPartnersCodeEN:
+URLPartnersEN:
   en: English URL of partner
   fr: URL du partenaire en anglais
-URLPartnersCodeFR:
+URLPartnersFR:
   en: French URL of partner
   fr: URL du partenaire en francais
 
-EmailPartnersCode:
+EmailPartners:
   en: Email
   fr: Courriel
-EmailPartnersCodeDesc:
+EmailPartnersDesc:
   en: The email address to contact the partner.
   fr: L'adresse courriel pour contacter le partenaire.
 
 PartnersName:
   en: Name
   fr: Nom
-NamePartnersCodeDesc:
+NamePartnersDesc:
   en: The english and french name of the partner.
   fr: Le nom du partenaire en anglais et en français.
-NamePartnersCodeEN:
+NamePartnersEN:
   en: English name of partner
   fr: Nom du partenaire en anglais
-NamePartnersCodeFR:
+NamePartnersFR:
   en: French name of partner
   fr: Nom du partenaire en francais
 
-LicensesCodeDesc:
+LicensesDesc:
   en: Information about each licence for the project.
   fr: Renseignements sur chaque licence pour le projet.
 
@@ -340,17 +340,17 @@ SpdxIDLicencesDesc:
 RepositoryURLName:
   en: Code repository URL
   fr: URL du dépôt de code
-RepositoryURLCodeDesc:
+RepositoryURLDesc:
   en: The English and French URLs of the public repository of the project, where the code is hosted.
   fr: Les URL en français et en anglais du dépôt public du projet, où le code est hébergé.
-RepositoryURLCodeEN:
+RepositoryURLEN:
   en: English repository URL
   fr: URL du dépôt en anglais
-RepositoryURLCodeFR:
+RepositoryURLFR:
   en: French repository URL
   fr: URL du dépôt en francais
 
-RelatedCodeDesc:
+RelatedDesc:
   en: Information about each library, framework, API or other related software used in this project.
   fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
 
@@ -410,7 +410,7 @@ VcsCodeDesc:
 VersionName:
   en: The latest version
   fr: La dernière version
-VersionCodeDesc:
+VersionDesc:
   en: The latest version for this project. For example, 1.0.0.
   fr: La version de ce projet. Par  exemple, 1.0.0.
 

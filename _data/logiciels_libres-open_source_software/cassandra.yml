@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Apache Cassandra is a highly-scalable partitioned row store."
   fr: "~"
 homepageURL:
   en: "http://cassandra.apache.org/"
   fr: "http://cassandra.apache.org/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://github.com/apache/cassandra/blob/trunk/LICENSE.txt"
       fr: "https://github.com/apache/cassandra/blob/trunk/LICENSE.txt"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: Cassandra
   fr: Cassandra
-tags: 
+tags:
   en:
     - "Data base"
-  fr: 
+  fr:
     - "Base de données"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2019-01-31"
           metadataLastUpdated: "2019-05-10"
-        description: 
+        description:
           en: "Data managment."
           fr: "Gestion des données."
-        name: 
+        name:
           en: "Software Database Management Systems."
           fr: "Logiciels de systèmes de gestion de base de données."

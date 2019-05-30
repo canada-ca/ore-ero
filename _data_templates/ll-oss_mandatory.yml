@@ -1,38 +1,38 @@
 --- 
 schemaVersion: "1.0"
-description: 
+description:
   en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
 homepageURL:
   en: "https://example.com/"
   fr: "https://example.com/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://example.com/repo/example/LICENCE-en"
       fr: "https://example.com/repo/example/LICENCE-fr"
     spdxID: "XYZ-1.0"
-name: 
+name:
   en: Example
   fr: Exemple
-tags: 
+tags:
   en:
     - "tag1-en"
-  fr: 
+  fr:
     - "tag1-fr"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: abc-def
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "abc@xyz.com"
-        date: 
+        date:
           started: "YYYY-MM-DD"
           metadataLastUpdated: "YYYY-MM-DD"
-        description: 
+        description:
           en: "Etiam rutrum, tellus nec egestas blandit."
           fr: "Vestibulum fringilla vel purus nec iaculis."
-        name: 
+        name:
           en: "Example use"
           fr: "Exemple d'utilisation"

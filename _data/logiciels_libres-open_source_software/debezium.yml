@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Debezium is an open source distributed platform for change data capture."
   fr: "Debezium est une platforme distribuée d'une ressource ouverte pour la capture de données modifiées."
 homepageURL:
   en: "https://debezium.io/"
-  fr: "https://debezium.io/" 
-licenses: 
-  - 
-    URL: 
+  fr: "https://debezium.io/"
+licenses:
+  -
+    URL:
       en: "https://github.com/debezium/debezium/blob/master/LICENSE.txt"
       fr: "https://github.com/debezium/debezium/blob/master/LICENSE.txt"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: Debezium
   fr: Debezium
-tags: 
+tags:
   en:
     - "Incremental management of data"
-  fr: 
+  fr:
     - "Gestion incrementale des données"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2017-06-30"
           metadataLastUpdated: "2019-05-10"
-        description: 
+        description:
           en: "Data managment."
           fr: "Gestion des données."
-        name: 
+        name:
           en: "Software Database Management Systems."
           fr: "Logiciels de systèmes de gestion de base de données."

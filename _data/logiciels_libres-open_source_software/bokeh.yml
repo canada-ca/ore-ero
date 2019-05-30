@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Bokeh is an interactive visualization library that targets modern web browsers for presentation."
   fr: "Bokeh est une bibliothèque de visualisation interactive qui cible les navigateurs Web modernes à des fins de présentation."
 homepageURL:
   en: "http://bokeh.pydata.org/en/latest/"
-  fr: "http://bokeh.pydata.org/en/latest/" 
-licenses: 
-  - 
-    URL: 
+  fr: "http://bokeh.pydata.org/en/latest/"
+licenses:
+  -
+    URL:
       en: "https://github.com/bokeh/bokeh/blob/master/LICENSE.txt"
       fr: "https://github.com/bokeh/bokeh/blob/master/LICENSE.txt"
     spdxID: "BSD 3-Clause"
-name: 
+name:
   en: Bokeh
   fr: Bokeh
-tags: 
+tags:
   en:
     - "Visualisation"
-  fr: 
+  fr:
     - "Visualisation"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2017-06-30"
           metadataLastUpdated: "2019-05-06"
-        description: 
+        description:
           en: "Business Intelligence."
           fr: "Intelligence d'affaires."
-        name: 
+        name:
           en: "Imaging software or graphics software."
           fr: "Logiciels d'imagerie ou logiciels graphiques."

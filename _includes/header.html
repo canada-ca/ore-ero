@@ -18,7 +18,7 @@
               {% if my_post.lang != page.lang %}
                 <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: '..' }}">{{ site.language[my_post.lang] }}</a></li>
               {% endif %}
-            {% endfor %}  
+            {% endfor %}
 
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
             {% for my_page in pages %}
@@ -100,7 +100,7 @@
         </ol>
     </div>
   </nav>
-  
+
 </header>
 
 <main property="mainContentOfPage" class="container">

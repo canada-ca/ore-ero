@@ -45,7 +45,7 @@
                 {% elsif grp_name.size == 3  %}
                     <a href="{{"https://"| append: grp_name[2] | append: "/" |  append: grp_name[1] | append: "/" |  append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
 
-                {%endif%}   
+                {%endif%}
                 {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                     {% if repo contains {{grp}} %}
@@ -105,7 +105,7 @@
                 {% elsif grp_name.size == 3  %}
                     <a href="{{"https://"| append: grp_name[2] | append: "/" |  append: grp_name[1] | append: "/" |  append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
 
-                {%endif%}   
+                {%endif%}
                 {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                     {% if repo contains {{grp}} %}
@@ -165,7 +165,7 @@
                 {% elsif grp_name.size == 3  %}
                     <a href="{{"https://"| append: grp_name[2] | append: "/" |  append: grp_name[1] | append: "/" |  append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
 
-                {%endif%}   
+                {%endif%}
                 {% for repo in repo_array %}
                 {% assign org_name =  repo | split: "/" %}
                     {% if repo contains {{grp}} %}

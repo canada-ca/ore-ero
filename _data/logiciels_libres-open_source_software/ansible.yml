@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Ansible is an IT automation tool."
   fr: "Ansible est un outil d'automatisation informatique."
 homepageURL:
   en: "https://www.ansible.com/"
-  fr: "https://www.ansible.com/" 
-licenses: 
-  - 
-    URL: 
+  fr: "https://www.ansible.com/"
+licenses:
+  -
+    URL:
       en: "https://github.com/ansible/ansible/blob/devel/COPYING"
       fr: "https://github.com/ansible/ansible/blob/devel/COPYING"
     spdxID: "GPL-3.0"
-name: 
+name:
   en: Ansible
   fr: Ansible
-tags: 
+tags:
   en:
     - "Application platform"
-  fr: 
+  fr:
     - "Plateforme applicative"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2017-06-30"
           metadataLastUpdated: "2019-05-06"
-        description: 
+        description:
           en: "Application Management."
           fr: "Gestion applicative."
-        name: 
+        name:
           en: "Application Server Software."
           fr: "Logiciels serveur d'applications."

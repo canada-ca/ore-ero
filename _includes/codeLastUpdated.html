@@ -11,18 +11,18 @@
       {% for date in release.date.metadataLastUpdated %}
         {% assign d = date | date:"%Y%j" %}
         {% assign dates = dates | push: d %}
-      {% endfor %}              
+      {% endfor %}
     {% endfor %}
   {% endfor %}
 {% endfor %}
 
-{% assign dates = dates | join: "," %}  
+{% assign dates = dates | join: "," %}
 {% assign dates_array = dates | split: "," %}
 {% assign dates_array = dates_array | uniq %}
 
 {% assign lastUpdated = dates_array | first %}
 {% for date in dates_array %}
-  {% if date >= lastUpdated %}  
+  {% if date >= lastUpdated %}
     {% assign lastUpdated = date %}
   {% endif %}
 {% endfor %}
@@ -39,7 +39,7 @@
 
   {% assign lastUpdatedPrime = dates_array_prime | first %}
   {% for date in dates_array_prime %}
-    {% if date >= lastUpdatedPrime %}  
+    {% if date >= lastUpdatedPrime %}
       {% assign lastUpdatedPrime = date %}
     {% endif %}
   {% endfor %}
@@ -54,18 +54,18 @@
   {% assign fptm = fptms[1] %}
   {% for admins in fptm %}
     {% assign admin = admins[1] %}
-    {% for release in admin.releases %} 
+    {% for release in admin.releases %}
       {% for date in release.date.metadataLastUpdated %}
         {% assign d = date | date:"%Y%j" %}
         {% if d == lastUpdatedValue %}
           {% assign projectName_array = projectName_array | push: release.name[page.lang] %}
-          {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}   
-        {% endif %} 
-      {% endfor %}   
+          {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}
+        {% endif %}
+      {% endfor %}
       {% endfor %}
     {% endfor %}
   {% endfor %}
-{% endfor %}  
+{% endfor %}
 
 {% assign repo0 = repoUrl_array[0] %}
 {% assign repo1 = repoUrl_array[1] %}

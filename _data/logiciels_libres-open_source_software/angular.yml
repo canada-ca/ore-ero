@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "A framework for mobile and desktop applications."
   fr: "Un framework pour les applications mobiles et bureaux."
 homepageURL:
   en: "https://angular.io/"
-  fr: "https://angular.io/" 
-licenses: 
-  - 
-    URL: 
+  fr: "https://angular.io/"
+licenses:
+  -
+    URL:
       en: "https://github.com/angular/angular/blob/master/LICENSE"
       fr: "https://github.com/angular/angular/blob/master/LICENSE"
     spdxID: "MIT"
-name: 
+name:
   en: Angular
   fr: Angular
-tags: 
+tags:
   en:
     - "software framework"
-  fr: 
+  fr:
     - "Cadriciel"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2017-06-30"
           metadataLastUpdated: "2019-05-06"
-        description: 
+        description:
           en: "Developpement."
           fr: "Développement."
-        name: 
+        name:
           en: "Development environment software."
           fr: "Logiciels environnement de développement."

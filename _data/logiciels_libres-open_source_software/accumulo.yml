@@ -1,38 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Accumulo is a sorted, distributed key/value store  that provides robust, scalable data storage and retrieval."
   fr: "Accumulo est un magasin clé/valeur trié et distribué qui fournit un stockage et une récupération de données robustes et évolutifs."
 homepageURL:
   en: "https://accumulo.apache.org/"
   fr: "https://accumulo.apache.org/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://github.com/apache/accumulo/blob/master/LICENSE"
       fr: "https://github.com/apache/accumulo/blob/master/LICENSE"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: Accumulo
   fr: Accumulo
-tags: 
+tags:
   en:
     - "Application"
-  fr: 
+  fr:
     - "Application"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
+        date:
           started: "2019-01-31"
           metadataLastUpdated: "2019-05-06"
-        description: 
+        description:
           en: "Data managment."
           fr: "Gestion des données."
-        name: 
+        name:
           en: "Software Database Management Systems."
           fr: "Logiciels de systèmes de gestion de base de données."
