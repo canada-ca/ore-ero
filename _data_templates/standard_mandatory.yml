@@ -1,0 +1,35 @@
+---
+schemaVersion: "1.0"
+administrations:
+  -
+    adminCode: abc-def
+    contact:
+      email: "abc@xyz.com"
+    references:
+      -
+        URL:
+          en: "http://www.example.com/"
+          fr: "http://www.example.ca/"
+        name:
+          en: "Example"
+          fr: "Example"
+    status: "Status"
+date:
+  created: "YYYY-MM-DD"
+  metadataLastUpdated: "YYYY-MM-DD"
+description:
+  en: "Example"
+  fr: "Example"
+name:
+  en: "Example"
+  fr: "Example"
+specURL:
+  en: "http://www.google.com/"
+  fr: "http://www.google.ca"
+standardCode: ABC
+standardsOrg: DEF
+tags:
+  en:
+    - "tag1-en"
+  fr:
+    - "tag1-fr"
