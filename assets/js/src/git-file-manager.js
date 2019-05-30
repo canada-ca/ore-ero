@@ -1,4 +1,4 @@
-/* global YAML DeepObject */
+/* global jsyaml DeepObject */
 
 /* exported FileWriter */
 class FileWriter {
