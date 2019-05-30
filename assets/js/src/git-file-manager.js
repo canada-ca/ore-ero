@@ -80,14 +80,9 @@ class YamlWriter extends FileWriter {
    * contents but not file, we simply add it into propPath.
    * @return {Promise<Object>} A Promise that resolves with the merged file.
    */
-<<<<<<< HEAD
   merge(file, contents, propPath, onValue) {
     let newObjectFile = jsyaml.load(contents, { schema: jsyaml.JSON_SCHEMA } );
     let newObjects = DeepObject.get(newObjectFile, propPath);
-=======
-  merge(file, newObject, propPath, onValue) {
-    let newObjects = DeepObject.get(newObject, propPath);
->>>>>>> upstream/master
 
     // Get an Object of the new ids using the onValue
     let newIds = {};
