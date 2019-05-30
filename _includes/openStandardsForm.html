@@ -10,15 +10,15 @@
     <h2>{{ site.ReferencesURL[page.lang] }}</h2>
       <div class="form-group">
         <label for="enReferencesURL" class="required">{{ site.ReferencesURLEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-        <input class="form-control" id="enReferencesURL" name="enReferencesURL" type="url"required="required" />
+        <input class="form-control" id="enReferencesURL" name="enReferencesURL" type="url" required="required" />
       </div>
       <div class="form-group">
         <label for="frReferencesURL" class="required">{{ site.ReferencesURLFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-        <input class="form-control" id="frReferencesURL" name="frReferencesURL" type="url"required="required" />
+        <input class="form-control" id="frReferencesURL" name="frReferencesURL" type="url" required="required" />
       </div>
       <div class="form-group">
         <label for="enReferencesName" class="required">{{ site.ReferencesNameEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-        <input class="form-control" id="enReferencesName" name="ReferencesName" type="text"required="required" />
+        <input class="form-control" id="enReferencesName" name="ReferencesName" type="text" required="required" />
       </div>
       <div class="form-group">
         <label for="frReferencesName" class="required">{{ site.ReferencesNameFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
@@ -28,7 +28,7 @@
     <h2>{{ site.Status[page.lang] }}</h2>
       <div class="form-group">
         <label for="status" class="required">{{ site.statusValue[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-        <input class="form-control" id="status" name="status" type="text"required="required" />
+        <input class="form-control" id="status" name="status" type="text" required="required" />
       </div>
 
     {% include form_dateDescription.html created=true lastModified=false metadata=true %}
