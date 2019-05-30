@@ -1,53 +1,52 @@
---- 
+---
 schemaVersion: str()
-description: 
+description:
   en: str()
   fr: str()
 homepageURL:
   en: str()
   fr: str()
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: str()
       fr: str()
     spdxID: str()
-name: 
+name:
   en: str()
   fr: str()
-tags: 
+tags:
   en:
     - str()
-  fr: 
+  fr:
     - str()
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode:  str()
-    uses: 
-      - 
-        contact: 
-          URL: 
+    uses:
+      -
+        contact:
+          URL:
             en: str(required=False)
             fr: str(required=False)
           email: str()
-          name: str(required=False) 
-        date: 
+          name: str(required=False)
+        date:
           started: str()
           metadataLastUpdated: str()
-        description: 
+        description:
           en: str()
           fr: str()
-        name: 
+        name:
           en: str()
           fr: str()
         relatedCode:
-          URL: 
+          URL:
             en: str(required=False)
             fr: str(required=False)
-          name: 
+          name:
             en: str(required=False)
             fr: str(required=False)
         status: str(required=False)
         users:
              - str(required=False)
-

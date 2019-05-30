@@ -1,0 +1,13 @@
+<h2>{{ site.LicensesDesc[page.lang] }}</h2>
+<div class="form-group">
+  <label for="enUrlLicense" class="required" >{{ site.URLLicensesDescEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+  <input class="form-control" id="enUrlLicense" name="enUrlLicense" type="url" required="required"/>
+</div>
+<div class="form-group">
+  <label for="frUrlLicense" class="required">{{ site.URLLicensesDescFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+  <input class="form-control" id="frUrlLicense" name="frUrlLicense" type="url" required="required"/>
+</div>
+<div class="form-group">
+  <label for="spdxID" class="required" >{{ site.SpdxIDLicencesDesc[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+  <input class="form-control" id="spdxID" name="spdxID" type="text"  required="required"/>
+</div>

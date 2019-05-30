@@ -1,0 +1,21 @@
+<h2>{{ site.ContactDesc[page.lang] }}</h2>
+<div class="form-group">
+  <label for="enUrlContact">{{ site.URLContactEN[page.lang] }}</label>
+  <input class="form-control" id="enUrlContact" name="enUrlContact" type="url"/>
+</div>
+<div class="form-group">
+  <label for="frUrlContact">{{ site.URLContactFR[page.lang] }}</label>
+  <input class="form-control" id="frUrlContact" name="frUrlContact" type="url"/>
+</div>
+<div class="form-group">
+  <label for="emailContact" class="required" > {{ site.EmailContact[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+  <input class="form-control" id="emailContact" name="emailContact" type="email" required="required" />
+</div>
+<div class="form-group">
+  <label for="nameContact">{{ site.NameContact[page.lang] }}</label>
+  <input class="form-control" id="nameContact" name="nameContact" type="text" data-rule-names-en-fr="true" />
+</div>
+    <div class="form-group">
+  <label for="phone">{{ site.ContactPhone[page.lang] }}</label>
+  <input class="form-control" id="phone" name="phone" type="tel"  data-rule-custom-phone="true" />
+</div>

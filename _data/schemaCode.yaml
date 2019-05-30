@@ -1,22 +1,22 @@
---- 
+---
 schemaVersion: str()
 adminCode: str()
-releases: 
-  - 
-    contact: 
-      URL: 
+releases:
+  -
+    contact:
+      URL:
         en: str(required=False)
         fr: str(required=False)
       email: str()
-      name: 
+      name:
         en: str(required=False)
         fr: str(required=False)
       phone: str(required=False)
-    date: 
+    date:
       created: str()
-      lastModified: str(required=False) 
+      lastModified: str(required=False)
       metadataLastUpdated: str()
-    description: 
+    description:
       en: str()
       fr: str()
     downloadURL:
@@ -25,44 +25,44 @@ releases:
     homepageURL:
       en: str(required=False)
       fr: str(required=False)
-    languages: 
-             - str(required=False)
-    name: 
+    languages:
+      - str(required=False)
+    name:
       en: str()
       fr: str()
     organization:
       en: str(required=False)
       fr: str(required=False)
     partners:
-      URL: 
+      URL:
         en: str(required=False)
         fr: str(required=False)
       email: str(required=False)
-      name: 
+      name:
         en: str(required=False)
         fr: str(required=False)
     licenses:
-      - 
-        URL: 
+      -
+        URL:
           en: str()
           fr: str()
         spdxID: str()
-    repositoryURL: 
+    repositoryURL:
       en: str()
       fr: str()
     relatedCode:
       -
-        URL: 
+        URL:
           en: str(required=False)
           fr: str(required=False)
-        name: 
+        name:
           en: str(required=False)
           fr: str(required=False)
     status: str(required=False)
-    tags: 
+    tags:
       en:
         - str()
-      fr: 
+      fr:
         - str()
     status: str(required=False)
     version: str(required=False)

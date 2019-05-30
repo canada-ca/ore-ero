@@ -1,60 +1,60 @@
 <ul class="list-unstyled">
     <li>
-    <details open> 
+    <details open>
         <summary>schemaVersion <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-        <h5>{{ site.SchemaVersionCode[page.lang] }}</h5>
+        <h5>{{ site.SchemaVersion[page.lang] }}</h5>
         <p>{{ site.SchemaVersionCodeDesc[page.lang] }}</p>
-    </details> 
-    </li>  
-    
+    </details>
+    </li>
+
     <li>
-    <details open> 
+    <details open>
         <summary>adminCode <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
         <h5>{{ site.AdminCode[page.lang] }}</h5>
         <p>{{ site.AdminCodeDesc[page.lang] }}</p>
     </details>
-    </li>  
-    
+    </li>
+
     <li>
-    <details open>   
+    <details open>
         <summary>releases <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
         <p>{{ site.RealeasesCodeDesc[page.lang] }}</p>
         <ul class="list-unstyled">
             <li>
-            <details open> 
+            <details open>
                 <summary>contact <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.ContactCodeDesc[page.lang] }}</p>
+                <p>{{ site.ContactDesc[page.lang] }}</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
                         <summary>URL [array]</summary>
                         <h5>{{ site.URLContactName[page.lang] }}</h5>
-                        <p>{{ site.URLContactCodeDesc[page.lang] }}</p>
+                        <p>{{ site.URLContactDesc[page.lang] }}</p>
                         <ul>
-                            <li>{{ site.URLContactCodeEN[page.lang] }} [string]</li>
-                            <li>{{ site.URLContactCodeFR[page.lang] }} [string]</li>
+                            <li>{{ site.URLContactEN[page.lang] }} [string]</li>
+                            <li>{{ site.URLContactFR[page.lang] }} [string]</li>
                         </ul>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>email <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.EmailContactCode[page.lang] }}</h5>
-                        <p>{{ site.EmailContactCodeDesc[page.lang] }}</p>
+                        <h5>{{ site.EmailContact[page.lang] }}</h5>
+                        <p>{{ site.EmailContactDesc[page.lang] }}</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>name [string]</summary>
-                        <h5>{{ site.NameContactCode[page.lang] }}</h5>
-                        <p>{{ site.NameContactCodeDesc[page.lang] }}</p>
+                        <h5>{{ site.NameContace[page.lang] }}</h5>
+                        <p>{{ site.NameContactDesc[page.lang] }}</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>phone [string]</summary>
-                        <h5>{{ site.PhoneContactCode[page.lang] }}</h5>
-                        <p>{{ site.PhoneContactCodeDesc[page.lang] }}</p>
+                        <h5>{{ site.PhoneContact[page.lang] }}</h5>
+                        <p>{{ site.PhoneContactDesc[page.lang] }}</p>
                     </details>
                     </li>
                 </ul>
@@ -62,28 +62,28 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>date <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.DateCodeDesc[page.lang] }}</p>
+                <p>{{ site.DateDesc[page.lang] }}</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
                         <summary>created <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.CodeCreated[page.lang] }}</h5>
+                        <h5>{{ site.Created[page.lang] }}</h5>
                         <p>{{ site.CreatedCodeDesc[page.lang] }}</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>lastModified [string]</summary>
-                        <h5>{{ site.LastModifiedCode[page.lang] }}</h5>
+                        <h5>{{ site.LastModified[page.lang] }}</h5>
                         <p>{{ site.LastModifiedCodeDesc[page.lang] }}</p>
                     </details>
                     </li>
                     <li>
                     <details open>
                         <summary>metadataLastUpdated <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.LastUpdatedCode[page.lang] }}</h5>
+                        <h5>{{ site.LastUpdated[page.lang] }}</h5>
                         <p>{{ site.MetaDataLastUpdatedCodeDesc[page.lang] }}</p>
                     </details>
                     </li>
@@ -92,19 +92,19 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
                 <h5>{{ site.DescriptionName[page.lang] }}</h5>
-                <p>{{ site.DescriptionCodeDesc[page.lang] }}</p>
+                <p>{{ site.DescriptionDesc[page.lang] }}</p>
                 <ul>
-                    <li>{{ site.DescriptionCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                    <li>{{ site.DescriptionCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>{{ site.DescriptionEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>{{ site.DescriptionFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>downloadURL [array]</summary>
                 <h5>{{ site.DownloadName[page.lang] }}</h5>
                 <p>{{ site.DownloadURLCodeDesc[page.lang] }}</p>
@@ -116,20 +116,20 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>homepageURL [array]</summary>
                 <h5>{{ site.HomepageURLName[page.lang] }}</h5>
-                <p>{{ site.HomepageURLCodeDesc[page.lang] }}</p>
+                <p>{{ site.HomepageURLDesc[page.lang] }}</p>
 
                 <ul>
-                    <li>{{ site.HomepageURLCodeEN[page.lang] }} [string]</li>
-                    <li>{{ site.HomepageURLCodeFR[page.lang] }} [string]</li>
+                    <li>{{ site.HomepageURLEN[page.lang] }} [string]</li>
+                    <li>{{ site.HomepageURLFR[page.lang] }} [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>languages [array]</summary>
                 <h5>{{ site.LanguagesName[page.lang] }}</h5>
                 <p>{{ site.LanguagesCodeDesc[page.lang] }}</p>
@@ -137,19 +137,19 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>name <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
                 <h5>{{ site.ProjectName[page.lang] }}</h5>
-                <p>{{ site.NameCodeDesc[page.lang] }}</p>
+                <p>{{ site.NameDesc[page.lang] }}</p>
                 <ul>
-                    <li>{{ site.NameCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                    <li>{{ site.NameCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>{{ site.NameEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                    <li>{{ site.NameFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>organization [array]</summary>
                 <h5>{{ site.OrganizationName[page.lang] }}</h5>
                 <p>{{ site.OrganizationCodeDesc[page.lang] }}</p>
@@ -161,7 +161,7 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>partners [array]</summary>
                 <p>{{ site.PartnersCodeDesc[page.lang] }}</p>
                 <ul class="list-unstyled">
@@ -199,18 +199,18 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>licenses <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.LicensesCodeDesc[page.lang] }}</p>
+                <p>{{ site.LicensesDesc[page.lang] }}</p>
                 <ul class="list-unstyled">
                     <li>
                     <details open>
                         <summary>URL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
                         <h5>{{ site.URLLicensesName[page.lang] }}</h5>
-                        <p>{{ site.URLLicensesCodeDesc[page.lang] }}</p>
+                        <p>{{ site.URLLicensesDesc[page.lang] }}</p>
                         <ul>
-                            <li>{{ site.URLLicensesCodeDescEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                            <li>{{ site.URLLicensesCodeDescFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                            <li>{{ site.URLLicensesDescEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
+                            <li>{{ site.URLLicensesDescFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
                         </ul>
                     </details>
                     </li>
@@ -218,7 +218,7 @@
                     <details open>
                         <summary>spdxID <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
                         <h5>{{ site.SpdxIDLicencesName[page.lang] }}</h5>
-                        <p>{{ site.SpdxIDLicencesCodeDesc[page.lang] }}</p>
+                        <p>{{ site.SpdxIDLicencesDesc[page.lang] }}</p>
                     </details>
                     </li>
                 </ul>
@@ -226,7 +226,7 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>repositoryURL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
                 <h5>{{ site.RepositoryURLName[page.lang] }}</h5>
                 <p>{{ site.RepositoryURLCodeDesc[page.lang] }}</p>
@@ -238,7 +238,7 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>relatedCode [array]</summary>
                 <p>{{ site.RelatedCodeDesc[page.lang] }}</p>
                 <ul class="list-unstyled">
@@ -269,27 +269,27 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>status [string]</summary>
-                <h5>{{ site.StatusCodeName[page.lang] }}</h5>
+                <h5>{{ site.StatusName[page.lang] }}</h5>
                 <p>{{ site.StatusCodeDesc[page.lang] }}</p>
             </details>
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>tags <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
                 <h5>{{ site.TagsName[page.lang] }}</h5>
-                <p>{{ site.TagsCodeDesc[page.lang] }}</p>
+                <p>{{ site.TagsDesc[page.lang] }}</p>
                 <ul>
-                    <li>{{ site.TagsCodeEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
-                    <li>{{ site.TagsCodeFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
+                    <li>{{ site.TagsEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
+                    <li>{{ site.TagsFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
                 </ul>
             </details>
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>vcs [string]</summary>
                 <h5>{{ site.VcsName[page.lang] }}</h5>
                 <p>{{ site.VcsCodeDesc[page.lang] }}</p>
@@ -297,7 +297,7 @@
             </li>
 
             <li>
-            <details open> 
+            <details open>
                 <summary>version [string]</summary>
                 <h5>{{ site.VersionName[page.lang] }}</h5>
                 <p>{{ site.VersionCodeDesc[page.lang] }}</p>

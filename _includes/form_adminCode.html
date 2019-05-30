@@ -1,0 +1,28 @@
+<h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
+<div class="form-group">
+  <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+  <select class="form-control" id="adminCode" name="adminCode" required="required">
+    <option value="">&nbsp;</option>
+    <optgroup label="Federal">
+      {% for org in site.data.administrations.federal %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+    <optgroup label="Provincial">
+      {% for org in site.data.administrations.provincial %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+    <optgroup label="Municipal">
+      {% for org in site.data.administrations.municipal %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+  </select>
+</div>

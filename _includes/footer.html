@@ -94,8 +94,8 @@
   }
 
   function addMoreTags(){
-    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
-    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
+    $(`<label class="required" for="tagEN">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
+    $(`<label class="required" for="tagFR">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
 
     $(`<div class="input-group control-group after-add-more col-xs-2">
         <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
@@ -117,14 +117,14 @@
           $(html).appendTo("#tagsFR");
       });
 
-      $("body").on("click",".remove",function(){ 
+      $("body").on("click",".remove",function(){
           $(this).parents(".control-group").remove();
       });
     });
   }
 
   function buildProjectField(project){
-    (pathNameUrl == enPathName) ? 
+    (pathNameUrl == enPathName) ?
     $('<option label="' + project.name[ "en"] + '" value="' + project.name["en"] + '"></option>').appendTo("#listProjects"):
     $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
   }
@@ -147,7 +147,7 @@
       project.relatedCode[0] = [];
       project.relatedCode[0].URL = "";
       project.relatedCode[0].name = "";
-    } 
+    }
   }
 
   function fillFields(project){
@@ -159,7 +159,7 @@
     var year = date.getFullYear();
     if (month < 10) month = "0" + month;
     if (day < 10) day = "0" + day;
-    var today = year + "-" + month + "-" + day;       
+    var today = year + "-" + month + "-" + day;
 
     var datas_form = {
       "shemaVersion" : "1.0",
@@ -172,10 +172,10 @@
       "dateCreated" : project.date.created,
       "dateLastModified" : project.date.lastModified,
       "dateLastUpdated" : today,
-      
+
       "enDescription" : project.description["en"],
       "frDescription" : project.description["fr"],
-      
+
       "enDownloadUrl" : project.downloadURL["en"],
       "frDownloadUrl" : project.downloadURL["fr"],
 
@@ -209,7 +209,7 @@
       "vcs" : project.vcs,
       "versionProject" : project.version
     }
-    
+
     $("#validation").find('input').val(function(){
       return datas_form[this.id];
     });
@@ -226,7 +226,7 @@
       project.tags["en"].forEach(function(tag){
         $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
             <input type="text" id="tag" name="enTag" value="${tag}" class="form-control" required="required">
-            <div class="input-group-btn"> 
+            <div class="input-group-btn">
              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
            </div>
           </div>`).appendTo("#tagsEN");
@@ -235,7 +235,7 @@
       project.tags["fr"].forEach(function(tag){
         $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
             <input type="text" id="tag" name="tag" value="${tag}" class="form-control" required="required">
-            <div class="input-group-btn"> 
+            <div class="input-group-btn">
              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
            </div>`).appendTo("#tagsFR");
@@ -245,17 +245,17 @@
 
   function displayListOrgProject(organization){
     (pathNameUrl == enPathName)?
-    $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
+    $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"):
     $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
 
-    organization.releases.forEach(function(project){    
+    organization.releases.forEach(function(project){
       buildProjectField(project);
     });
   }
 
   function getProjectFields(organization){
     pName = $("#selectedPro").val();
-    organization.releases.forEach(function(project){    
+    organization.releases.forEach(function(project){
       if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
     });
   }
@@ -267,14 +267,14 @@
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
-   
+
         $('#selectedProject').empty();
         selectedAdminCode = $("#adminCode").val();
 
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
-       
+
         if( municipal !== undefined){
             displayListOrgProject(municipal);
         } else if( provincial !== undefined){
@@ -282,22 +282,22 @@
         } else if( federal !== undefined){
             displayListOrgProject(federal);
         }
-      
+
         $('#selectedPro').focus();
-        
+
         $('#selectedPro').change(function(){
 
           $("#tagsEN").find('.control-group').detach();
           $("#tagsFR").find('.control-group').detach();
 
           if( municipal !== undefined){
-              getProjectFields(municipal);        
+              getProjectFields(municipal);
           } else if( provincial !== undefined){
               getProjectFields(provincial);
           } else if( federal !== undefined){
               getProjectFields(federal);
           }
-          
+
         });
       });
     });

@@ -1,0 +1,12 @@
+<h2>{{ site.StatusDesc[page.lang] }}</h2>
+<div class="form-group">
+  <label for="status">{{ site.StatusName[page.lang] }}</label>
+  <select class="form-control" id="status" name="status">
+    <option value="">&nbsp;</option>
+    <option value="Alpha">Alpha</option>
+    <option value="Beta">Beta</option>
+    <option value="Maintained">{{ site.MaitainedStatus[page.lang] }}</option>
+    <option value="Deprecated">{{ site.DeprecatedStatus[page.lang] }}</option>
+    <option value="Retired">{{ site.RetiredStatus[page.lang] }}</option>
+  </select>
+</div>
