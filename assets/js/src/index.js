@@ -387,11 +387,11 @@ ${[...document.querySelectorAll('#tagsEN input')]
   .map(tag => '    - "' + tag + '"')
   .join('\n')}
   fr:
-  ${[...document.querySelectorAll('#tagsFR input')]
+${[...document.querySelectorAll('#tagsFR input')]
   .map(child => child.value)
   .map(tag => '    - "' + tag + '"')
   .join('\n')}
-`
+`;
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/logiciels_libres-open_source_software/${$('#enProjectName')
     .val()
@@ -445,17 +445,17 @@ ${[...document.querySelectorAll('#tagsEN input')]
               '***\n' +
               $('#enDescription').val() +
               '\n',
-              commit: 'Commited by ' + $('#submitterEmail').val(),
-              author: {
-                name: $('#submitterUsername').val(),
-                email: $('#submitterEmail').val()
-              },
-              files: [
-                {
-                  path: file,
-                  content: YAML.stringify(content, { keeBlobsInJSON: false })
-                }
-              ]
+            commit: 'Commited by ' + $('#submitterEmail').val(),
+            author: {
+              name: $('#submitterUsername').val(),
+              email: $('#submitterEmail').val()
+            },
+            files: [
+              {
+                path: file,
+                content: YAML.stringify(content, { keeBlobsInJSON: false })
+              }
+            ]
           }),
           method: 'POST'
         };
@@ -478,7 +478,7 @@ ${[...document.querySelectorAll('#tagsEN input')]
           window.location.href = './index.html';
         }, 2000);
       }
-    })
+    });
 }
 
 $('#prbotSubmitCode').click(function() {
@@ -491,11 +491,11 @@ $('#prbotSubmitCode').click(function() {
 
 $('prbotSubmitCode').click(function() {
   // Progress only when form input is valid
-  if (validationRequired()) {
+  if (validateRequired()) {
     submitActions();
     submitFormSoftware();
   }
-})
+});
 
 function submitActions() {
   toggleAlert(ALERT_OFF);
