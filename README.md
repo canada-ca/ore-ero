@@ -98,4 +98,4 @@ Nous utilisons [Prettier](https://www.npmjs.com/package/prettier) pour le format
 npm run prettify
 ```
 
-Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml] (https://github.com/nodeca/js-yaml).
+Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).
