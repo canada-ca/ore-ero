@@ -1,22 +1,22 @@
 <div class="wb-frmvld">
   <form action="#" method="get" id="validation">
-  {% include form_schemaVersion.html %}
+  {% include form/schemaVersion.html %}
 
-  {% include form_description.html %}
+  {% include form/description.html %}
 
-  {% include form_homepageURL.html %}
+  {% include form/homepageURL.html %}
 
-  {% include form_licenses.html %}
+  {% include form/licenses.html %}
 
-  {% include form_projectName.html %}
+  {% include form/projectName.html %}
 
-  {% include form_tags.html %}
+  {% include form/tags.html %}
 
-  {% include form_adminCode.html %}
+  {% include form/adminCode.html %}
 
-  {% include form_contactDescription.html %}
+  {% include form/contactDescription.html %}
 
-  {% include form_dateDescription.html created=true lastModified=false metadata=true %}
+  {% include form/dateDescription.html created=true lastModified=false metadata=true %}
 
   <h2>{{ site.DescriptionUsesOss[page.lang] }}</h2>
     <div class="form-group">
@@ -38,9 +38,9 @@
       <input class="form-control" id="frUseName" name="frUseName" type="text" pattern="[A-Za-z\s]" required="required"/>
     </div>
 
-  {% include form_relatedCode.html %}
+  {% include form/relatedCode.html %}
 
-  {% include form_status.html %}
+  {% include form/status.html %}
 
   <!-- TODO add the user selection as an array -->
   <h2>{{ site.Users[page.lang] }}</h2>
@@ -49,12 +49,12 @@
       <input class="form-control" id="users" name="users" type="text" pattern="[A-Za-z\s]" />
     </div>
 
-  {% include form_submitterInfo.html %}
+  {% include form/submitterInfo.html %}
 
   <button id="prbotSubmitSoftware" type="button" class="btn btn-primary">Submit</button>
   <button id="softwareFormReset" type="reset" class="btn btn-default">Reset</button>
 
-  {% include form_submitAlert.html %}
+  {% include form/submitAlert.html %}
 
   </form>
 </div>

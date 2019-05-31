@@ -1,11 +1,11 @@
 <div class="wb-frmvld">
   <form action="#" method="get" id="validation">
 
-    {% include form_schemaVersion.html %}
+    {% include form/schemaVersion.html %}
 
-    {% include form_adminCode.html %}
+    {% include form/adminCode.html %}
 
-    {% include form_contactDescription.html %}
+    {% include form/contactDescription.html %}
 
     <h2>{{ site.ReferencesURL[page.lang] }}</h2>
       <div class="form-group">
@@ -31,11 +31,11 @@
         <input class="form-control" id="status" name="status" type="text" required="required" />
       </div>
 
-    {% include form_dateDescription.html created=true lastModified=false metadata=true %}
+    {% include form/dateDescription.html created=true lastModified=false metadata=true %}
 
-    {% include form_description.html %}
+    {% include form/description.html %}
 
-    {% include form_projectName.html %}
+    {% include form/projectName.html %}
 
     <h2>{{ site.specURL[page.lang] }}</h2>
       <div class="form-group">
@@ -59,12 +59,12 @@
         <input class="form-control" id="standardsOrg" name="standardsOrg" type="text" required="required" />
       </div>
 
-    {% include form_submitterInfo.html %}
+    {% include form/submitterInfo.html %}
 
   <button id="prbotSubmitStandard" type="button" class="btn btn-primary">Submit</button>
   <button id="standardFormReset" type="reset" class="btn btn-default">Reset</button>
 
-  {% include form_submitAlert.html %}
+  {% include form/submitAlert.html %}
 
   </form>
 </div>

@@ -1,49 +1,49 @@
 <div class="wb-frmvld">
   <form action="#" method="get" id="validation">
-  {% include form_schemaVersion.html %}
+  {% include form/schemaVersion.html %}
 
-  {% include form_adminCode.html %}
+  {% include form/adminCode.html %}
 
   <div id="selectedProject" class="form-group"></div>
 
-  {% include form_contactDescription.html %}
+  {% include form/contactDescription.html %}
 
-  {% include form_dateDescription.html created=true lastModified=true metadata=true %}
+  {% include form/dateDescription.html created=true lastModified=true metadata=true %}
 
-  {% include form_description.html %}
+  {% include form/description.html %}
 
-  {% include form_downloadURL.html %}
+  {% include form/downloadURL.html %}
 
-  {% include form_homepageURL.html %}
+  {% include form/homepageURL.html %}
 
-  {% include form_languages.html %}
+  {% include form/languages.html %}
 
-  {% include form_projectName.html %}
+  {% include form/projectName.html %}
 
-  {% include form_organization.html %}
+  {% include form/organization.html %}
 
-  {% include form_partners.html %}
+  {% include form/partners.html %}
 
-  {% include form_licenses.html %}
+  {% include form/licenses.html %}
 
-  {% include form_repoURL.html %}
+  {% include form/repoURL.html %}
 
-  {% include form_relatedCode.html %}
+  {% include form/relatedCode.html %}
 
-  {% include form_status.html %}
+  {% include form/status.html %}
 
-  {% include form_tags.html %}
+  {% include form/tags.html %}
 
-  {% include form_vcs.html %}
+  {% include form/vcs.html %}
 
-  {% include form_version.html %}
+  {% include form/version.html %}
 
-  {% include form_submitterInfo.html %}
+  {% include form/submitterInfo.html %}
 
   <button id="prbotSubmitCode" type="button" class="btn btn-primary">Submit</button>
   <button id="codeFormReset" type="reset" class="btn btn-default">Reset</button>
 
-  {% include form_submitAlert.html %}
+  {% include form/submitAlert.html %}
 
   </form>
 </div>
