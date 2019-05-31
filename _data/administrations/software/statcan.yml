@@ -1,0 +1,32 @@
+admininstration: statcan
+softwares:
+  -
+    name: docker
+    uses:
+      -
+        contact:
+          email: "michael.goit@canada.ca"
+        date:
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
+        name:
+          en: "Development and deployment"
+          fr: "Développements et Déploiements"
+        description:
+          en: "Development and deployment process"
+          fr: "Processus de développements et déploiements"
+  -
+    name: qgis
+    uses:
+      -
+        contact:
+          email: "reginald.maltais2@canada.ca"
+        date:
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
+        name:
+          en: "Geographic Information Systems (GIS)"
+          fr: "Systèmes d'information géographique (SIG)"
+        description:
+          en: "Desktop geospatial information processing"
+          fr: "Système d'information géospatiale de bureau"

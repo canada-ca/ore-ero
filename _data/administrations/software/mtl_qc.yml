@@ -1,0 +1,137 @@
+admininstration:  mtl_qc
+softwares:
+  -
+    name: accumulo
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2019-01-31"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Data managment."
+          fr: "Gestion des données."
+        name:
+          en: "Software Database Management Systems."
+          fr: "Logiciels de systèmes de gestion de base de données."
+  -
+    name: airBnb-Knowledge-Repo
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2019-01-31"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Business Intelligence."
+          fr: "Intelligence d'affaires."
+        name:
+          en: "Document Management Software."
+          fr: "Logiciels de gestion documentaire."
+  -
+    name: airFlow
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Business Intelligence."
+          fr: "Intelligence d'affaires."
+        name:
+          en: "Content flow management software."
+          fr: "Logiciels de gestion de flux de contenus."
+  -
+    name: angular
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Developpement."
+          fr: "Développement."
+        name:
+          en: "Development environment software."
+          fr: "Logiciels environnement de développement."
+  -
+    name: ansible
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Application Management."
+          fr: "Gestion applicative."
+        name:
+          en: "Application Server Software."
+          fr: "Logiciels serveur d'applications."
+  -
+    name: bokeh
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-06"
+        description:
+          en: "Business Intelligence."
+          fr: "Intelligence d'affaires."
+        name:
+          en: "Imaging software or graphics software."
+          fr: "Logiciels d'imagerie ou logiciels graphiques."
+  -
+    name: cassandra
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2019-01-31"
+          metadataLastUpdated: "2019-05-10"
+        description:
+          en: "Data managment."
+          fr: "Gestion des données."
+        name:
+          en: "Software Database Management Systems."
+          fr: "Logiciels de systèmes de gestion de base de données."
+  -
+    name: debezium
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-10"
+        description:
+          en: "Data managment."
+          fr: "Gestion des données."
+        name:
+          en: "Software Database Management Systems."
+          fr: "Logiciels de systèmes de gestion de base de données."
+  -
+    name: elasticsearch
+    uses:
+      -
+        contact:
+          email: "libre@ville.montreal.qc.ca"
+        date:
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-10"
+        description:
+          en: "Information managment."
+          fr: "Gestion de l'information."
+        name:
+          en: "Data mining software (data mining)."
+          fr: "Logiciels d'extraction de données (data mining)."
