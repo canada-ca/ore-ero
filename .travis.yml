@@ -19,6 +19,7 @@ script:
 - yamale -s schemaCode.yaml _data/code
 - yamale -s schemaAdmin.yaml _data/administrations
 - yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
+- yamale -s schemaAdminUseOfSoftware.yaml _data/administrationsUsesOfSoftware
 - npm run lint
 - yamllint -d configYamlLint.yml _data
 
