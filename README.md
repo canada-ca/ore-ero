@@ -49,6 +49,8 @@ We use [Prettier](https://www.npmjs.com/package/prettier) for code formatting. T
 npm run prettify
 ```
 
+YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
+
 ## Échange de ressources ouvert
 
 https://canada-ca.github.io/ore-ero/fr/index.html
@@ -95,3 +97,5 @@ Nous utilisons [Prettier](https://www.npmjs.com/package/prettier) pour le format
 ```bash
 npm run prettify
 ```
+
+Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).

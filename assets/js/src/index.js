@@ -1,6 +1,6 @@
 // Put code in here.
 // Embed this at the bottom of the body.
-/* global $ YamlWriter USERNAME REPO_NAME YAML PRBOT_URL */
+/* global $ YamlWriter USERNAME REPO_NAME jsyaml PRBOT_URL */
 
 function getSelectedOrgType() {
   return $('#adminCode :selected')
@@ -291,7 +291,7 @@ function submitForm() {
           files: [
             {
               path: file,
-              content: YAML.stringify(result, { keepBlobsInJSON: false })
+              content: jsyaml.dump(result, { schema: jsyaml.JSON_SCHEMA })
             }
           ]
         }),
