@@ -1,5 +1,5 @@
 ---
-admininstration: mtl_qc
+administration: mtl_qc
 softwares:
   -
     name: accumulo

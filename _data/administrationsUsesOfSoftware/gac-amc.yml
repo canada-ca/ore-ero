@@ -1,5 +1,5 @@
 ---
-admininstration: gac-amc
+administration: gac-amc
 softwares:
   -
     name: apache
