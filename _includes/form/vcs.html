@@ -1,5 +1,3 @@
 <h2>{{ site.VcsDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="vcs">{{ site.VcsName[page.lang] }}</label>
-  <input class="form-control" id="vcs" name="vcs" type="text" data-rule-alphanum-space-en-fr="true" />
-</div>
+{% capture vcsText %}{{ site.VcsName[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="vcs" text=vcsText rule="data-rule-alphanum-space-en-fr"}

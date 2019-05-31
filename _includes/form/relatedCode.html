@@ -1,17 +1,12 @@
 <h2>{{ site.RelatedCodeDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enUrlRelatedCode">{{ site.URLRelatedCodeEN[page.lang] }}</label>
-  <input class="form-control" id="enUrlRelatedCode" name="enUrlRelatedCode" type="url"/>
-</div>
-<div class="form-group">
-  <label for="frUrlRelatedCode">{{ site.URLRelatedCodeFR[page.lang] }}</label>
-  <input class="form-control" id="frUrlRelatedCode" name="urlRelatedCode" type="url"/>
-</div>
-<div class="form-group">
-  <label for="enNameRelatedCode">{{ site.NameRelatedCodeEN[page.lang] }}</label>
-  <input class="form-control" id="enNameRelatedCode" name="enNameRelatedCode" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
-<div class="form-group">
-  <label for="frNameRelatedCode">{{ site.NameRelatedCodeFR[page.lang] }}</label>
-  <input class="form-control" id="frNameRelatedCode" name="enNameRelatedCode" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
+{% capture enUrlRelatedCodeText %}{{ site.URLRelatedCodeEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enUrlRelatedCode" text=enUrlRelatedCodeText type="url" %}
+
+{% capture frUrlRelatedCodeText %}{{ site.URLRelatedCodeFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frUrlRelatedCode" text=frUrlRelatedCodeText type="url" %}
+
+{% capture EnNameRelatedCodeText %}{{ site.NameRelatedCodeEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="EnNameRelatedCode" text=EnNameRelatedCodeText type="url" rule="data-rule-alphanum-space-en-fr" %}
+
+{% capture frNameRelatedCodeText %}{{ site.NameRelatedCodeFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frNameRelatedCode" text=frNameRelatedCodeText type="url" rule="data-rule-alphanum-space-en-fr" %}

@@ -1,21 +1,15 @@
 <h2>{{ site.PartnersDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enUrlPartner">{{ site.URLPartnersEN[page.lang] }}</label>
-  <input class="form-control" id="enUrlPartner" name="enUrlPartner" type="url"/>
-</div>
-<div class="form-group">
-  <label for="frUrlPartner">{{ site.URLPartnersFR[page.lang] }}</label>
-  <input class="form-control" id="frUrlPartner" name="enUrlPartner" type="url"/>
-</div>
-<div class="form-group">
-  <label for="emailPartner">{{ site.EmailPartners[page.lang] }}</label>
-  <input class="form-control" id="emailPartner" name="emailPartner" type="email"/>
-</div>
-<div class="form-group">
-  <label for="enNamePartner">{{ site.NamePartnersEN[page.lang] }}</label>
-  <input class="form-control" id="enNamePartner" name="enNamePartner" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
-<div class="form-group">
-  <label for="frNamePartner">{{ site.NamePartnersFR[page.lang] }}</label>
-  <input class="form-control" id="frNamePartner" name="frNamePartner" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
+{% capture enUrlPartnerText %}{{ site.URLPartnersEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enUrlPartner" text=enUrlPartnerText type="url" %}
+
+{% capture frUrlPartnerText %}{{ site.URLPartnersFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frUrlPartner" text=frUrlPartnerText type="url" %}
+
+{% capture emailPartnerText %}{{ site.EmailPartners[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="emailPartner" text=emailPartnerText type="email" %}
+
+{% capture enNamePartnerText %}{{ site.NamePartnersEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enNamePartner" text=enNamePartnerText rule="data-rule-alphanum-space-en-fr" %}
+
+{% capture frNamePartnerText %}{{ site.NamePartnersFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frNamePartner" text=frNamePartnerText rule="data-rule-alphanum-space-en-fr" %}

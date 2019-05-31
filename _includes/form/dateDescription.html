@@ -1,19 +1,15 @@
 <h2>{{ site.DateDesc[page.lang] }}</h2>
 {% if include.created %}
-  <div class="form-group">
-    <label for="dateCreated" class="required">{{ site.Created[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-    <input class="form-control" id="dateCreated" name="dateCreated" type="date" data-rule-dateISO="true" required="required" />
-  </div>
+  {% capture createdText %}{{ site.Created[page.lang] }} {% endcapture %}
+  {% include form/components/input.html id="dateCreated" text=createdText required=true type="date" rule="data-rule-dateISO" %}
 {% endif %}
+
 {% if include.lastModified %}
-<div class="form-group">
-  <label for="dateLastModified">{{ site.LastModified[page.lang] }}<span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-  <input class="form-control" id="dateLastModified" name="dateLastModified" type="date" data-rule-dateISO="true" />
-</div>
+  {% capture lastModifiedText %}{{ site.LastModified[page.lang] }} {% endcapture %}
+  {% include form/components/input.html id="dateLastModified" text=lastModifiedText required=true type="date" rule="data-rule-dateISO" %}
 {% endif %}
+
 {% if include.metadata %}
-<div class="form-group">
-  <label for="dateLastUpdated" class="required">{{ site.LastUpdated[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong><span class="datepicker-format"> (YYYY-MM-DD)</span></label>
-  <input class="form-control" id="dateLastUpdated" name="dateLastUpdated" type="date" data-rule-dateISO="true" required="required"/>
-</div>
+  {% capture lastUpdatedText %}{{ site.LastUpdated[page.lang] }} {% endcapture %}
+  {% include form/components/input.html id="dateLastUpdated" text=lastUpdatedText required=true type="date" rule="data-rule-dateISO" %}
 {% endif %}

@@ -1,9 +1,6 @@
 <h2>{{ site.DescriptionDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enDescription" class="required">{{ site.DescriptionEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="enDescription" name="enDescription" type="text" required="required"/>
-</div>
-<div class="form-group">
-  <label for="frDescription" class="required">{{ site.DescriptionFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="frDescription" name="frDescription" type="text" required="required"/>
-</div>
+{% capture dfgsdgsdfgsdfgsdfg %}{{ site.DescriptionEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enDescription" text=dfgsdgsdfgsdfgsdfg required=true %}
+
+{% capture fdghshgjhytejj %}{{ site.DescriptionFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frDescription" text=fdghshgjhytejj required=true %}

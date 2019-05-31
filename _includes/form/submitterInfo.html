@@ -1,9 +1,6 @@
 <h2>{{ site.InformationAboutSubmitter[page.lang] }}</h2>
-<div class="form-group">
-  <label for="submitterUsername" class="required">{{ site.NameContact[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="submitterUsername" name="submitterUsername" type="text" pattern="[A-Za-z\s]" required="required"/>
-</div>
-<div class="form-group">
-  <label for="submitterEmail" class="required">{{ site.EmailContact[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="submitterEmail" name="submitterEmail" type="email" required="required"/>
-</div>
+{% capture submitterUsernameText %}{{ site.NameContact[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="submitterUsername" text=submitterUsernameText required=true rule="data-rule-alphanum-space-en-fr"}
+
+{% capture submitterEmailText %}{{ site.EmailContact[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="submitterEmail" text=submitterEmailText type="email" required=true %}

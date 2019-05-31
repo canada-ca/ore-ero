@@ -1,5 +1,3 @@
 <h2>{{ site.VersionDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="versionProject">{{ site.VersionName[page.lang] }}</label>
-  <input class="form-control" id="versionProject" name="versionProject" type="text" />
-</div>
+{% capture versionProjectText %}{{ site.VersionName[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="versionProject" text=versionProjectText %}

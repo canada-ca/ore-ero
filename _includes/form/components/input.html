@@ -1,0 +1,21 @@
+<div class="form-group">
+  <label
+    for="{{ include.id }}"
+    {% if include.required %} class="required" {% endif %}
+  >{{ include.text }}
+    {%- if include.required -%}
+      <strong class="required">({{ site.MandatoryField[page.lang] }})</strong>
+    {%- endif -%}
+    {%- if include.type == "date" -%}
+      <span class="datepicker-format"> (YYYY-MM-DD)</span>
+    {%- endif -%}
+  </label>
+  <input
+    class="form-control"
+    id="{{ include.id }}"
+    name="{{ include.id }}"
+    type="{{ include.type | default: "text" }}"
+    {% if include.required %} required="required" {% endif %}
+    {% if include.rule %} {{ include.rule }}="true" {% endif %}
+  />
+</div>

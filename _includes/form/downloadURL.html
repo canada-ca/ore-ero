@@ -1,9 +1,6 @@
 <h2>{{ site.DownloadURLDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enDownloadUrl">{{ site.DownloadURLEN[page.lang] }}</label>
-  <input class="form-control" id="enDownloadUrl" name="enDownloadUrl" type="url"/>
-</div>
-<div class="form-group">
-  <label for="frDownloadUrl">{{ site.DownloadURLFR[page.lang] }}</label>
-  <input class="form-control" id="frDownloadUrl" name="frDownloadUrl" type="url"/>
-</div>
+{% capture enDownloadUrlText %}{{ site.DownloadURLEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enDownloadUrl" text=enDownloadUrlText type="url" %}
+
+{% capture frDownloadUrlText %}{{ site.DownloadURLFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frDownloadUrl" text=frDownloadUrlText type="url" %}

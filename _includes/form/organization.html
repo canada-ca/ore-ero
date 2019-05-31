@@ -1,9 +1,5 @@
 <h2>{{ site.OrganizationDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enOrganization">{{ site.OrganizationEN[page.lang] }}</label>
-  <input class="form-control" id="enOrganization" name="enOrganization" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
-<div class="form-group">
-  <label for="frOrganization">{{ site.OrganizationFR[page.lang] }}</label>
-  <input class="form-control" id="frOrganization" name="frOrganization" type="text" data-rule-alphanum-space-en-fr="true"/>
-</div>
+{% capture enOrganizationText %}{{ site.OrganizationEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enOrganization" text=enOrganizationText rule="data-rule-alphanum-space-en-fr" %}
+{% capture frOrganizationText %}{{ site.OrganizationFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frOrganization" text=frOrganizationText rule="data-rule-alphanum-space-en-fr" %}

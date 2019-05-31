@@ -1,9 +1,6 @@
 <h2>{{ site.RepositoryURLDesc[page.lang] }}</h2>
-<div class="form-group">
-  <label for="enRepoUrl" class="required">{{ site.RepositoryURLEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="enRepoUrl" name="enRepoUrl" type="url" required="required"/>
-</div>
-<div class="form-group">
-  <label for="frRepoUrl" class="required">{{ site.RepositoryURLFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
-  <input class="form-control" id="frRepoUrl" name="frRepoUrl" type="url" required="required"/>
-</div>
+{% capture enRepoUrlText %}{{ site.RepositoryURLEN[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="enRepoUrl" text=enRepoUrlText type="url" required=true}
+
+{% capture frRepoUrlText %}{{ site.RepositoryURLFR[page.lang]}} {% endcapture %}
+{% include form/components/input.html id="frRepoUrl" text=frRepoUrlText type="url" required=true}
