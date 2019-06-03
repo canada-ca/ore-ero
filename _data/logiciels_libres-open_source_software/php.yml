@@ -26,11 +26,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://www.international.gc.ca
+          URL: 
+            en: "https://www.international.gc.ca"
+            fr: "https://www.international.gc.ca"
           email: sebastien.routier@international.gc.ca
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "Misc"
           fr: "Divers"

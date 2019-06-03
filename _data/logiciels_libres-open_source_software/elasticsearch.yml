@@ -29,11 +29,28 @@ admininstrations:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-13"
         name: 
-          en: ~
-          fr: ~
+          en: "Development Environment"
+          fr: "Environnement de développement"
         description: 
           en: "APM data"
           fr: "Données du APM"
+  - 
+    adminCode: mtl_qc
+    uses: 
+      - 
+        contact: 
+          email: "libre@ville.montreal.qc.ca"
+        date: 
+          started: "2017-06-30"
+          metadataLastUpdated: "2019-05-10"
+        description: 
+          en: "Information managment."
+          fr: "Gestion de l'information."
+        name: 
+          en: "Data mining software (data mining)."
+          fr: "Logiciels d'extraction de données (data mining)."
+  
+  

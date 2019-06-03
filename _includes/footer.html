@@ -64,56 +64,63 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-<script type="text/javascript" src="../assets/js/lib/yaml.min.js"></script>
+<script type="text/javascript" src="../assets/js/lib/js-yaml.js"></script>
 <script type="text/javascript" src="../assets/js/src/deep-object.js"></script>
 <script type="text/javascript" src="../assets/js/src/git-file-manager.js"></script>
 <script type="text/javascript" src="../assets/js/src/index.js"></script>
+<script type="text/javascript" src="../assets/js/src/custom-form-validation.js"></script>
 <script>
 
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
   const PRBOT_URL = "{{ site.prbot_url }}";
 
-  var jLang = 0 ;
-  var iTags = 0;
   var selectedAdminCode = "";
   var pathNameUrl = window.location.pathname;
   var enPathName = "/ore-ero/en/open-source-code-form.html";
-  var arraySections = Array();
   var pName = "";
 
   function addMoreLanguages(){
-      $('<label for="language"></label> <input class="form-control" id="lang' + jLang + '" id="lang' + jLang + '" type="text">').appendTo("#languages");
-      $('#lang' + jLang ).focus();
-    }
-  function addMoreTags(){
-    if(iTags == 0){
-      $("#tagsEN label:first").attr("for", "enTag0");
-      $("#tagsFR label:first").attr("for", "frTag0");
-      $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text" required="">').appendTo("#tagsEN");
-      $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text" required="">').appendTo("#tagsFR");
-      $('#enTag' + iTags ).focus();
-    } else{
-      $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" type="text">').appendTo("#tagsEN");
-      $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" type="text">').appendTo("#tagsFR");
-      $('#enTag' + iTags ).focus();
-    }
-    iTags++;
+    $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+          <input type="text" id="${'_' + Math.random().toString(36).substr(2, 9)}" name="language" data-for="languages" class="form-control" required="required">
+          <div class="input-group-btn">
+            <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+          </div>
+        </div>`).appendTo("#codeLanguages");
+
+    $(document).ready(function() {
+      $(this).parents(".control-group").remove();
+    });
   }
 
-  function removeTags(){
-    $(":checked").attr('checked', false);
-    for(var i = 0 ; i <= iTags; i++){
-      $("#enTag"+i).detach();
-      $("#frTag"+i).detach();
-      if(i !=0 ){
-        $("#tagsEN").find('label[for =enTag'+i+']').detach();
-        $("#tagsFR").find('label[for =frTag'+i+']').detach();
-      }
-    }
+  function addMoreTags(){
+    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
+    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
 
-    iTags = 0;
-    jLang = 0;
+    $(`<div class="input-group control-group after-add-more col-xs-2">
+        <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
+       </div>`).insertAfter("#tags");
+
+    $(`<div class="copy hide">
+        <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+          <input type="text" id="tag" name="tag" class="form-control" required="required">
+          <div class="input-group-btn">
+            <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+          </div>
+        </div>
+       </div>`).appendTo("#tags");
+
+    $(document).ready(function() {
+      $(".add-more").click(function(){
+          var html = $(".copy").html();
+          $(html).appendTo("#tagsEN");
+          $(html).appendTo("#tagsFR");
+      });
+
+      $("body").on("click",".remove",function(){ 
+          $(this).parents(".control-group").remove();
+      });
+    });
   }
 
   function buildProjectField(project){
@@ -204,6 +211,9 @@
     }
     
     $("#validation").find('input').val(function(){
+      if (!datas_form[this.id] && this.type === 'checkbox') {
+        return this.value;
+      }
       return datas_form[this.id];
     });
 
@@ -217,73 +227,80 @@
 
     if(project.tags !== undefined){
       project.tags["en"].forEach(function(tag){
-        if(iTags == 0){
-          $("#tagsEN label:first").attr("for", "enTag0");
-          $('<input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
-        }else{
-          $('<label for="enTag' + iTags + '"></label> <input class="form-control" id="enTag' + iTags + '" name="enTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsEN");
-        }
-        iTags++;
+        $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tag" name="enTag" value="${tag}" class="form-control" required="required">
+            <div class="input-group-btn"> 
+             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+           </div>
+          </div>`).appendTo("#tagsEN");
       })
 
-      iTags = 0;
-
       project.tags["fr"].forEach(function(tag){
-        if(iTags == 0){
-          $("#tagsFR label:first").attr("for", "frTag0");
-          $('<input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");       
-        }else{
-          $('<label for="frTag' + iTags + '"></label> <input class="form-control" id="frTag' + iTags + '" name="frTag' + iTags + '" value="' + tag + '" type="text" required="">').appendTo("#tagsFR");        
-        }
-        iTags++;
+        $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+            <input type="text" id="tag" name="tag" value="${tag}" class="form-control" required="required">
+            <div class="input-group-btn"> 
+             <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+            </div>
+           </div>`).appendTo("#tagsFR");
       })
     }
   }
+
+  function displayListOrgProject(organization){
+    (pathNameUrl == enPathName)?
+    $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
+    $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
+
+    organization.releases.forEach(function(project){    
+      buildProjectField(project);
+    });
+  }
+
+  function getProjectFields(organization){
+    pName = $("#selectedPro").val();
+    organization.releases.forEach(function(project){    
+      if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
+    });
+  }
+
+  $(document).ready(function() {
+    addMoreTags();
+  });
 
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
    
         $('#selectedProject').empty();
-        arraySections.length = 0;
         selectedAdminCode = $("#adminCode").val();
-        $(':input').val('');
-        $('#shemaVersion').val('1.0');
-        removeTags();
 
-        $('#adminCode').val(selectedAdminCode)
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
-        
-        arraySections.push(federal, provincial, municipal);
-
-        (pathNameUrl == enPathName)?
-        $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
-        $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
-
+       
+        if( municipal !== undefined){
+            displayListOrgProject(municipal);
+        } else if( provincial !== undefined){
+            displayListOrgProject(provincial);
+        } else if( federal !== undefined){
+            displayListOrgProject(federal);
+        }
+      
         $('#selectedPro').focus();
-
-        arraySections.forEach(function(section){
-          if(section !== undefined){
-            section.releases.forEach(function(project){    
-              buildProjectField(project);
-            });
-          }
-        })
-
+        
         $('#selectedPro').change(function(){
 
-          removeTags();
+          $("#tagsEN").find('.control-group').detach();
+          $("#tagsFR").find('.control-group').detach();
 
-          pName = $("#selectedPro").val();
-          arraySections.forEach(function(section){
-            if(section !== undefined){
-              section.releases.forEach(function(project){    
-                if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
-              });
-            }
-          })
+          if( municipal !== undefined){
+              getProjectFields(municipal);        
+          } else if( provincial !== undefined){
+              getProjectFields(provincial);
+          } else if( federal !== undefined){
+              getProjectFields(federal);
+          }
+          
         });
       });
     });

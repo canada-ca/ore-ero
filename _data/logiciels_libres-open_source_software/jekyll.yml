@@ -26,7 +26,9 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://github.com/canada-ca/ore-ero/issues
+          URL:
+            en: "https://github.com/canada-ca/ore-ero/issues"
+            fr: "https://github.com/canada-ca/ore-ero/issues"
           email: "sebastien.lemay@tbs-sct.gc.ca"
         name: 
           en: "Open Resource Exchange"
@@ -38,6 +40,7 @@ admininstrations:
           en: "Github Pages"
           fr: "Pages Github"
         relatedCode:
-          - "https://github.com/canada-ca/ore-ero"
+          en: "https://github.com/canada-ca/ore-ero"
+          fr: "https://github.com/canada-ca/ore-ero"
         users: 
           - public

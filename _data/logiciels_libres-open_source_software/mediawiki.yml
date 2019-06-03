@@ -28,11 +28,13 @@ admininstrations:
     uses: 
       - 
         contact: 
-          URL: https://github.com/gctools-outilsgc/gcpedia/issues
+          URL: 
+            en: "https://github.com/gctools-outilsgc/gcpedia/issues" 
+            fr: "https://github.com/gctools-outilsgc/gcpedia/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "GCpedia"
           fr: "GCpedia"
@@ -41,74 +43,17 @@ admininstrations:
           fr: "Wiki interne du gouvernement du Canada"
       - 
         contact: 
-          URL: https://github.com/gctools-outilsgc/gcpedia/issues
+          URL: 
+            en: "https://github.com/gctools-outilsgc/gcpedia/issues" 
+            fr: "https://github.com/gctools-outilsgc/gcpedia/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
         date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
+          started: "2019-05-06"
+          metadataLastUpdated: "2019-05-16"
         name: 
           en: "GCcollab Wiki"
           fr: "Wiki GCcollab"
         description: 
           en: "External Government of Canada Wiki"
           fr: "Wiki externe du gouvernement du Canada"
-  - 
-    adminCode: agr
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: csc-scc
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: nrcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
-  - 
-    adminCode: statcan
-    uses: 
-      - 
-        contact: 
-          email: ~
-        date: 
-          started: ~
-          metadataLastUpdated: "2019-05-06"
-        name: 
-          en: ~
-          fr: ~
-        description: 
-          en: "APM data"
-          fr: "Données du APM"
+  

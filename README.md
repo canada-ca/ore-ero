@@ -25,8 +25,8 @@ To test your changes locally, run `jekyll serve`. For example using Docker:
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
 
 Notes:
-- For PowerShell users, replace the parentheses with brackets (Change ```$(pwd)``` to ```${pwd}```)
-- If Jekyll is not automatically regenerating the site after files are modified, add the build command flags: ```--watch``` and ```--force_polling``` to the end of the above command
+- For PowerShell users, replace the parentheses with brackets (Change `$(pwd)` to `${pwd}`)
+- If Jekyll is not automatically regenerating the site after files are modified, add the build command flags: `--watch` and `--force_polling` to the end of the above command
 
 Site will be available at: http://localhost:4000/ore-ero/
 ______________________
@@ -43,6 +43,13 @@ Now when you want to know if your code is following the guidelines, run
 ``` bash
 npm run lint
 ```
+
+We use [Prettier](https://www.npmjs.com/package/prettier) for code formatting. To automatically format your code, run
+```bash
+npm run prettify
+```
+
+YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
 
 ## Échange de ressources ouvert
 
@@ -67,7 +74,28 @@ Pour tester vos modifications localement, exécuter `jekyll serve`. Par exemple 
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
 
 Remarques:
-- Pour les utilisateurs de PowerShell, remplacez les parenthèses par des crochets (Modifiez ```$(pwd)``` en ```${pwd}```)
-- Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: ```--watch``` et ```--force_polling``` à la fin de la commande ci-dessus
+- Pour les utilisateurs de PowerShell, remplacez les parenthèses par des crochets (Modifiez `$(pwd)` en `${pwd}`)
+- Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: `--watch` et `--force_polling` à la fin de la commande ci-dessus
 
 Le site sera disponible au: http://localhost:4000/ore-ero/
+______________________
+
+#### Javascript
+
+Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances. 
+
+``` bash
+npm install
+```
+
+Lorsque vous voulez savoir si votre code suit les directives de style, exécutez
+``` bash
+npm run lint
+```
+
+Nous utilisons [Prettier](https://www.npmjs.com/package/prettier) pour le formatage du code. Pour formater automatiquement votre code, exécutez
+```bash
+npm run prettify
+```
+
+Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).
