@@ -1,309 +1,45 @@
 <ul class="list-unstyled">
-    <li>
+  {% include schema/schemaVersion.html %}
+
+  {% include schema/adminCode.html %}
+
+  <li>
     <details open>
-        <summary>schemaVersion <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-        <h5>{{ site.SchemaVersion[page.lang] }}</h5>
-        <p>{{ site.SchemaVersionDesc[page.lang] }}</p>
+      <summary>releases <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+      <p>{{ site.RealeasesDesc[page.lang] }}</p>
+      <ul class="list-unstyled">
+        {% include schema/contact.html %}
+
+        {% include schema/date.html created=true modified=true metadata=true %}
+
+        {% include schema/description.html %}
+
+        {% include schema/downloadURL.html %}
+
+        {% include schema/homepageURL.html %}
+
+        {% include schema/languages.html %}
+
+        {% include schema/projectName.html %}
+
+        {% include schema/organization.html %}
+
+        {% include schema/partners.html %}
+
+        {% include schema/licenses.html %}
+
+        {% include schema/repositoryURL.html %}
+
+        {% include schema/relatedCode.html %}
+
+        {% include schema/status.html %}
+
+        {% include schema/tags.html %}
+
+        {% include schema/vcs.html %}
+
+        {% include schema/version.html %}
+      </ul>
     </details>
-    </li>
-
-    <li>
-    <details open>
-        <summary>adminCode <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-        <h5>{{ site.AdminCode[page.lang] }}</h5>
-        <p>{{ site.AdminCodeDesc[page.lang] }}</p>
-    </details>
-    </li>
-
-    <li>
-    <details open>
-        <summary>releases <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-        <p>{{ site.RealeasesDesc[page.lang] }}</p>
-        <ul class="list-unstyled">
-            <li>
-            <details open>
-                <summary>contact <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.ContactDesc[page.lang] }}</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details open>
-                        <summary>URL [array]</summary>
-                        <h5>{{ site.URLContactName[page.lang] }}</h5>
-                        <p>{{ site.URLContactDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.URLContactEN[page.lang] }} [string]</li>
-                            <li>{{ site.URLContactFR[page.lang] }} [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>email <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.EmailContact[page.lang] }}</h5>
-                        <p>{{ site.EmailContactDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>name [string]</summary>
-                        <h5>{{ site.NameContact[page.lang] }}</h5>
-                        <p>{{ site.NameContactDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>phone [string]</summary>
-                        <h5>{{ site.PhoneContact[page.lang] }}</h5>
-                        <p>{{ site.PhoneContactDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>date <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.DateDesc[page.lang] }}</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details open>
-                        <summary>created <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.Created[page.lang] }}</h5>
-                        <p>{{ site.CreatedDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>lastModified [string]</summary>
-                        <h5>{{ site.LastModified[page.lang] }}</h5>
-                        <p>{{ site.LastModifiedDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>metadataLastUpdated <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.LastUpdated[page.lang] }}</h5>
-                        <p>{{ site.MetaDataLastUpdatedDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>description <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <h5>{{ site.DescriptionName[page.lang] }}</h5>
-                <p>{{ site.DescriptionDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.DescriptionEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                    <li>{{ site.DescriptionFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>downloadURL [array]</summary>
-                <h5>{{ site.DownloadName[page.lang] }}</h5>
-                <p>{{ site.DownloadURLDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.DownloadURLEN[page.lang] }} [string]</li>
-                    <li>{{ site.DownloadURLFR[page.lang] }} [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>homepageURL [array]</summary>
-                <h5>{{ site.HomepageURLName[page.lang] }}</h5>
-                <p>{{ site.HomepageURLDesc[page.lang] }}</p>
-
-                <ul>
-                    <li>{{ site.HomepageURLEN[page.lang] }} [string]</li>
-                    <li>{{ site.HomepageURLFR[page.lang] }} [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>languages [array]</summary>
-                <h5>{{ site.LanguagesName[page.lang] }}</h5>
-                <p>{{ site.LanguagesDesc[page.lang] }}</p>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>name <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <h5>{{ site.ProjectName[page.lang] }}</h5>
-                <p>{{ site.NameDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.NameEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                    <li>{{ site.NameFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>organization [array]</summary>
-                <h5>{{ site.OrganizationName[page.lang] }}</h5>
-                <p>{{ site.OrganizationDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.OrganizationEN[page.lang] }} [string]</li>
-                    <li>{{ site.OrganizationFR[page.lang] }} [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>partners [array]</summary>
-                <p>{{ site.PartnersDesc[page.lang] }}</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details open>
-                        <summary>URL [array]</summary>
-                        <h5>{{ site.URLPartnersName[page.lang] }}</h5>
-                        <p>{{ site.URLPartnersDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.URLPartnersEN[page.lang] }} [string]</li>
-                            <li>{{ site.URLPartnersFR[page.lang] }} [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>email [string]</summary>
-                        <h5>{{ site.EmailPartners[page.lang] }}</h5>
-                        <p>{{ site.EmailPartnersDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>name [array]</summary>
-                        <h5>{{ site.PartnersName[page.lang] }}</h5>
-                        <p>{{ site.NamePartnersDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.NamePartnersEN[page.lang] }} [string]</li>
-                            <li>{{ site.NamePartnersFR[page.lang] }} [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>licenses <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <p>{{ site.LicensesDesc[page.lang] }}</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details open>
-                        <summary>URL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                        <h5>{{ site.URLLicensesName[page.lang] }}</h5>
-                        <p>{{ site.URLLicensesDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.URLLicensesDescEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                            <li>{{ site.URLLicensesDescFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>spdxID <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
-                        <h5>{{ site.SpdxIDLicencesName[page.lang] }}</h5>
-                        <p>{{ site.SpdxIDLicencesDesc[page.lang] }}</p>
-                    </details>
-                    </li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>repositoryURL <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <h5>{{ site.RepositoryURLName[page.lang] }}</h5>
-                <p>{{ site.RepositoryURLDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.RepositoryURLEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                    <li>{{ site.RepositoryURLFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>relatedCode [array]</summary>
-                <p>{{ site.RelatedCodeDesc[page.lang] }}</p>
-                <ul class="list-unstyled">
-                    <li>
-                    <details open>
-                        <summary>URL [array]</summary>
-                        <h5>{{ site.URLRelatedCodeName[page.lang] }}</h5>
-                        <p>{{ site.URLRelatedCodeDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.URLRelatedCodeEN[page.lang] }} [string]</li>
-                            <li>{{ site.URLRelatedCodeFR[page.lang] }} [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li>
-                    <details open>
-                        <summary>name [array]</summary>
-                        <h5>{{ site.RelatedCodeName[page.lang] }}</h5>
-                        <p>{{ site.NameRelatedCodeDesc[page.lang] }}</p>
-                        <ul>
-                            <li>{{ site.NameRelatedCodeEN[page.lang] }} [string]</li>
-                            <li>{{ site.NameRelatedCodeFR[page.lang] }} [string]</li>
-                        </ul>
-                    </details>
-                    </li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>status [string]</summary>
-                <h5>{{ site.StatusName[page.lang] }}</h5>
-                <p>{{ site.StatusDesc[page.lang] }}</p>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>tags <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
-                <h5>{{ site.TagsName[page.lang] }}</h5>
-                <p>{{ site.TagsDesc[page.lang] }}</p>
-                <ul>
-                    <li>{{ site.TagsEN[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
-                    <li>{{ site.TagsFR[page.lang] }} <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</li>
-                </ul>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>vcs [string]</summary>
-                <h5>{{ site.VcsName[page.lang] }}</h5>
-                <p>{{ site.VcsDesc[page.lang] }}</p>
-            </details>
-            </li>
-
-            <li>
-            <details open>
-                <summary>version [string]</summary>
-                <h5>{{ site.VersionName[page.lang] }}</h5>
-                <p>{{ site.VersionDesc[page.lang] }}</p>
-            </details>
-            </li>
-        </ul>
-    </details>
-    </li>
+  </li>
 </ul>

@@ -1,6 +1,6 @@
 <h2>{{ site.InformationAboutSubmitter[page.lang] }}</h2>
 {% capture submitterUsernameText %}{{ site.NameContact[page.lang]}} {% endcapture %}
-{% include form/components/input.html id="submitterUsername" text=submitterUsernameText required=true rule="data-rule-alphanum-space-en-fr"}
+{% include form/components/input.html id="submitterUsername" text=submitterUsernameText required=true rule="data-rule-alphanum-space-en-fr" %}
 
 {% capture submitterEmailText %}{{ site.EmailContact[page.lang]}} {% endcapture %}
 {% include form/components/input.html id="submitterEmail" text=submitterEmailText type="email" required=true %}

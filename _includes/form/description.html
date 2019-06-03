@@ -1,6 +1,6 @@
 <h2>{{ site.DescriptionDesc[page.lang] }}</h2>
-{% capture dfgsdgsdfgsdfgsdfg %}{{ site.DescriptionEN[page.lang] }} {% endcapture %}
-{% include form/components/input.html id="enDescription" text=dfgsdgsdfgsdfgsdfg required=true %}
+{% capture descriptionENText %}{{ site.DescriptionEN[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="enDescription" text=descriptionENText required=true %}
 
-{% capture fdghshgjhytejj %}{{ site.DescriptionFR[page.lang] }} {% endcapture %}
-{% include form/components/input.html id="frDescription" text=fdghshgjhytejj required=true %}
+{% capture descriptionFRText %}{{ site.DescriptionFR[page.lang] }} {% endcapture %}
+{% include form/components/input.html id="frDescription" text=descriptionFRText required=true %}

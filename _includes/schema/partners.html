@@ -1,0 +1,37 @@
+<li>
+  <details open>
+    <summary>partners [array]</summary>
+    <p>{{ site.PartnersDesc[page.lang] }}</p>
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary>URL [array]</summary>
+          <h5>{{ site.URLPartnersName[page.lang] }}</h5>
+          <p>{{ site.URLPartnersDesc[page.lang] }}</p>
+          <ul>
+            <li>{{ site.URLPartnersEN[page.lang] }} [string]</li>
+            <li>{{ site.URLPartnersFR[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details open>
+          <summary>email [string]</summary>
+          <h5>{{ site.EmailPartners[page.lang] }}</h5>
+          <p>{{ site.EmailPartnersDesc[page.lang] }}</p>
+        </details>
+      </li>
+      <li>
+        <details open>
+          <summary>name [array]</summary>
+          <h5>{{ site.PartnersName[page.lang] }}</h5>
+          <p>{{ site.NamePartnersDesc[page.lang] }}</p>
+          <ul>
+            <li>{{ site.NamePartnersEN[page.lang] }} [string]</li>
+            <li>{{ site.NamePartnersFR[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </details>
+</li>

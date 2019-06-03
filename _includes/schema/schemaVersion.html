@@ -1,0 +1,2 @@
+{% capture schemaVersionTitle %}{{ site.SchemaVersion[page.lang] }}{% endcapture %}{% capture schemaVersionDesc %}{{ site.SchemaVersionDesc[page.lang] }}{% endcapture %}
+{% include schema/components/element.html label="schemaVersion" title=schemaVersionTitle description=schemaVersionDesc required=true type="string" %}

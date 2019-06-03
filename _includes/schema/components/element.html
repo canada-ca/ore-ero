@@ -1,0 +1,7 @@
+<li>
+  <details open>
+    <summary>{{ include.label }} {% if include.required %}<span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> {% endif %}[{{ include.type }}]</summary>
+    <h5>{{ include.title }}</h5>
+    <p>{{ include.description }}</p>
+  </details>
+</li>

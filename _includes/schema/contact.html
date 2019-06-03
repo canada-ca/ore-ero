@@ -1,0 +1,27 @@
+<li>
+  <details open>
+    <summary>contact <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
+    <p>{{ site.ContactDesc[page.lang] }}</p>
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary>URL [array]</summary>
+          <h5>{{ site.URLContactName[page.lang] }}</h5>
+          <p>{{ site.URLContactDesc[page.lang] }}</p>
+          <ul>
+            <li>{{ site.URLContactEN[page.lang] }} [string]</li>
+            <li>{{ site.URLContactFR[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+      {% capture emailContactTitle %}{{ site.EmailContact[page.lang] }}{% endcapture %}{% capture emailContactDesc %}{{ site.EmailContactDesc[page.lang] }}{% endcapture %}
+      {% include schema/components/element.html label="email" title=emailContactTitle description=emailContactDesc required=true type="string" %}
+
+      {% capture NameContactTitle %}{{ site.NameContact[page.lang] }}{% endcapture %}{% capture NameContactDesc %}{{ site.NameContactDesc[page.lang] }}{% endcapture %}
+      {% include schema/components/element.html label="name" title=NameContactTitle description=NameContactDesc required=true type="string" %}
+
+      {% capture phoneContactTitle %}{{ site.PhoneContact[page.lang] }}{% endcapture %}{% capture phoneContactDesc %}{{ site.PhoneContactDesc[page.lang] }}{% endcapture %}
+      {% include schema/components/element.html label="phone" title=phoneContactTitle description=phoneContactDesc required=false type="string" %}
+    </ul>
+  </details>
+</li>

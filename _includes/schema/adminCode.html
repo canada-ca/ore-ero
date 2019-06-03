@@ -1,0 +1,2 @@
+{% capture adminCodeTitle %}{{ site.AdminCode[page.lang] }}{% endcapture %}{% capture adminCodeDesc %}{{ site.AdminCodeDesc[page.lang] }}{% endcapture %}
+{% include schema/components/element.html label="adminCode" title=adminCodeTitle description=adminCodeDesc required=true type="string" %}

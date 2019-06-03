@@ -1,0 +1,30 @@
+<li>
+  <details open>
+    <summary>relatedCode [array]</summary>
+    <p>{{ site.RelatedCodeDesc[page.lang] }}</p>
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary>URL [array]</summary>
+          <h5>{{ site.URLRelatedCodeName[page.lang] }}</h5>
+          <p>{{ site.URLRelatedCodeDesc[page.lang] }}</p>
+          <ul>
+            <li>{{ site.URLRelatedCodeEN[page.lang] }} [string]</li>
+            <li>{{ site.URLRelatedCodeFR[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details open>
+          <summary>name [array]</summary>
+          <h5>{{ site.RelatedCodeName[page.lang] }}</h5>
+          <p>{{ site.NameRelatedCodeDesc[page.lang] }}</p>
+          <ul>
+            <li>{{ site.NameRelatedCodeEN[page.lang] }} [string]</li>
+            <li>{{ site.NameRelatedCodeFR[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </details>
+</li>
