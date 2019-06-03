@@ -6,7 +6,7 @@
 {% include form/components/input.html id="frUrlContact" text=frURLContactText type="url" %}
 
 {% capture emailContactText %}{{ site.EmailContact[page.lang] }} {% endcapture %}
-{% include form/components/input.html id="emailContact" text=emailContactText type="url" required=true %}
+{% include form/components/input.html id="emailContact" text=emailContactText type="email" required=true %}
 
 {% capture nameContactText %}{{ site.NameContact[page.lang] }} {% endcapture %}
 {% include form/components/input.html id="nameContact" text=nameContactText rule="data-rule-names-en-fr" %}
