@@ -23,9 +23,9 @@
             <summary>uses <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
             <p>Informations about software users.</p>
             <ul class="list-unstyled">
-              <li>{% include schema/contact.html %}</li>
+              {% include schema/contact.html %}
 
-              <li>{% include schema/date.html created=true modified=false metadata=true %}</li>
+              {% include schema/date.html created=true modified=false metadata=true %}
 
               <li>
                 <details open>
