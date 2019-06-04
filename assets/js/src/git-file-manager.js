@@ -1,4 +1,4 @@
-/* global YAML DeepObject */
+/* global jsyaml DeepObject */
 
 /* exported FileWriter */
 class FileWriter {
@@ -66,7 +66,7 @@ class YamlWriter extends FileWriter {
    */
   get(file) {
     return FileWriter.prototype.get.call(this, file).then(content => {
-      return YAML.parse(content);
+      return jsyaml.load(content, { schema: jsyaml.JSON_SCHEMA });
     });
   }
 
