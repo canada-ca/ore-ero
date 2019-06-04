@@ -1,8 +1,8 @@
 <div class="wb-frmvld">
     <form action="#" method="get" id="validation">
-    <h2>Level Of Government</h2>
+    <h2>{{ site.LevelOfGovernment[page.lang] }}</h2>
     <div class="form-group">
-        <label for="orgLevel" class="required">Level of government <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <label for="orgLevel" class="required">{{ site.LevelOfGovernment[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <select class="form-control" id="orgLevel" name="orgLevel" required="required">
             <option value="">&nbsp;</option>
             <option value="federal" disabled>Federal</option>
@@ -11,9 +11,9 @@
         </select>
     </div>
 
-    <h2>Admin Code</h2>
+    <h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
     <div class="form-group">      
-        <label for="adminCode" class="required">Admin Code <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <input class="form-control" id="adminCode" name="adminCode" type="text" required="required"/>
     </div>
     
