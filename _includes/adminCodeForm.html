@@ -1,5 +1,16 @@
 <div class="wb-frmvld">
     <form action="#" method="get" id="validation">
+    <h2>Level Of Government</h2>
+    <div class="form-group">
+        <label for="orgLevel" class="required">Level of government <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <select class="form-control" id="orgLevel" name="orgLevel" required="required">
+            <option value="">&nbsp;</option>
+            <option value="federal" disabled>Federal</option>
+            <option value="provincial" disabled>Provincial</option>
+            <option value="municipal" selected>Municipal</option>
+        </select>
+    </div>
+
     <h2>Admin Code</h2>
     <div class="form-group">      
         <label for="adminCode" class="required">Admin Code <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>

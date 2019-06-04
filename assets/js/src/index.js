@@ -377,7 +377,7 @@ function submitAdminForm() {
 
   let adminCodeObject = getAdminCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/administrations/municipal.yml`;
+  let file = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
     .mergeAdminFile(file, adminCodeObject, '', 'code')
@@ -386,7 +386,7 @@ function submitAdminForm() {
         body: JSON.stringify({
           user: USERNAME,
           repo: REPO_NAME,
-          title: 'Updated a municipale file',
+          title: `Updated the ${$('#orgLevel').val()} file`,
           description:
             'Authored by: ' +
             $('#submitterEmail').val() +
@@ -426,7 +426,7 @@ function submitAdminForm() {
             files: [
               {
                 path: file,
-                content: header + JSON.stringify(adminCodeObject)
+                content: JSON.stringify(adminCodeObject)
               }
             ]
           }),
