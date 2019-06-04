@@ -114,7 +114,7 @@ class YamlWriter extends FileWriter {
 
     // Get an Object of the new ids using the onValue
     let newIds = {};
-      newIds[DeepObject.get(newObjects, onValue)] = newObjects;
+    newIds[DeepObject.get(newObjects, onValue)] = newObjects;
 
     return this.get(file).then(result => {
       let items = DeepObject.get(result, propPath);
