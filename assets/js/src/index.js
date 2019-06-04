@@ -10,7 +10,6 @@ function getSelectedOrgType() {
 }
 
 function getAdminCodeObject() {
-
   let adminCodeObject = {
     code: $('#adminCode').val(),
     provinceCode: $('#provinceCode').val(),
@@ -21,7 +20,6 @@ function getAdminCodeObject() {
   };
   return adminCodeObject;
 }
-
 
 function getCodeObject() {
   // Required fields are included first.
@@ -387,10 +385,7 @@ function submitAdminForm() {
           user: USERNAME,
           repo: REPO_NAME,
           title: `Updated the ${$('#orgLevel').val()} file`,
-          description:
-            'Authored by: ' +
-            $('#submitterEmail').val() +
-            '\n',
+          description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
           commit: 'Committed by ' + $('#submitterEmail').val(),
           author: {
             name: $('#submitterUsername').val(),
@@ -414,10 +409,7 @@ function submitAdminForm() {
             user: USERNAME,
             repo: REPO_NAME,
             title: 'Created an administration file',
-            description:
-              'Authored by: ' +
-              $('#submitterEmail').val() +
-              '\n',
+            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
             commit: 'Committed by ' + $('#submitterEmail').val(),
             author: {
               name: $('#submitterUsername').val(),
@@ -453,7 +445,6 @@ function submitAdminForm() {
       }
     });
 }
-
 
 $('#prbotSubmit').click(function() {
   // Progress only when form input is valid
