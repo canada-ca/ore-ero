@@ -94,11 +94,8 @@
   }
 
   function addMoreTags(){
-    $(`<label class="required" for="tagEN">{{ site.TagsEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
-    $(`<label class="required" for="tagFR">{{ site.TagsFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
-
     $(`<div class="input-group control-group after-add-more col-xs-2">
-        <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
+        <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.AddMoreTags[page.lang] }}</button>
        </div>`).insertAfter("#tags");
 
     $(`<div class="copy hide">
