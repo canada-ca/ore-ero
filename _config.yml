@@ -435,6 +435,9 @@ SchemaVersionOssDesc:
 NameUsesOssDesc:
   en: The domain name of the project activity.
   fr: Le nom du domaine de l'activité du projet.
+DescriptionUsesOss:
+  en: Description of the project activity.
+  fr: La description du domaine de l'activité du projet.
 DescriptionUsesOssDesc:
   en: A one or two sentence description of the project activity.
   fr: Une description du domaine de l'activité du projet.

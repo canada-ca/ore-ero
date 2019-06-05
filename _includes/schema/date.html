@@ -3,7 +3,7 @@
     <summary>date <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [array]</summary>
     <p>{{ site.DateDesc[page.lang] }}</p>
     <ul class="list-unstyled">
-      {%- if layout.created -%}
+      {%- if include.created -%}
       <li>
         <details open>
           <summary>created <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
@@ -12,7 +12,7 @@
         </details>
       </li>
       {%- endif -%}
-      {%- if layout.modified -%}
+      {%- if include.modified -%}
       <li>
         <details open>
           <summary>lastModified [string]</summary>
@@ -21,7 +21,7 @@
         </details>
       </li>
       {%- endif -%}
-      {%- if layout.metadate -%}
+      {%- if include.metadata -%}
       <li>
         <details open>
           <summary>metadataLastUpdated <span class="bg-primary">{{ site.MandatoryField[page.lang] }}</span> [string]</summary>
