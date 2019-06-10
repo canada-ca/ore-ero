@@ -1,0 +1,35 @@
+---
+
+id: code
+
+formGroups:
+  - preset: schemaVersion
+  - preset: adminCode
+  - preset: contact
+  - preset: dates
+  - preset: description
+  - { widget: string-i18n, title: DownloadUrl, type: url }
+  - { widget: string-i18n, title: HomepageUrl, type: url }
+  - preset: languages
+  - { widget: string-i18n, title: ProjectName, rule: alphanum-space }
+  - { widget: string-i18n, title: Organization, rule: alphanum-space }
+  - widget: group
+    title: Partner
+    required: false
+    fields:
+      - { widget: string-i18n, title: Url, type: url }
+      - widget: email
+      - { widget: string-i18n, title: Name, rule: alphanum-space }
+  - preset: licenses
+  - { widget: string-i18n, title: RepositoryUrl, type: url }
+  - widget: group
+    title: RelatedCode
+    required: false
+    fields:
+      - { widget: string-i18n, title: Url, type: url }
+      - { widget: string-i18n, title: Name, rule: alphanum-space }
+  - preset: status
+  - preset: tags
+  - { widget: string, title: Vcs, required: false, rule: alphanum-space }
+  - { widget: string, title: VersionProject, required: false }
+  - preset: submitter

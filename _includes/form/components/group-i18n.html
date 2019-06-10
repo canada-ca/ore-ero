@@ -1,0 +1,11 @@
+<div class="form-group">
+  {% capture name %}en{{ include.title }}{% endcapture %}
+  {% include form/components/label.html name=name required=include.required label=include.labelen %}
+  {% include form/components/input.html name=name type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
+</div>
+
+<div class="form-group">
+  {% capture name %}fr{{ include.title }}{% endcapture %}
+  {% include form/components/label.html name=name required=include.required label=include.labelfr %}
+  {% include form/components/input.html name=name type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
+</div>

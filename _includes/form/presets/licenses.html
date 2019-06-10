@@ -1,0 +1,4 @@
+{% include form/string-i18n.html id='presets' title='Licenses' type="url" %}
+
+{% capture label %}{{ site.data.i18n.form.presets.Licenses.label.spdxID[page.lang] }}{% endcapture %}
+{% include form/components/group.html name="spdxID" label=label %}
