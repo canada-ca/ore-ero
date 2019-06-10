@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="wb-frmvld">
+  <form action="#" method="get" id="validation">
+
+    {% for formGroup in site.data.forms[page.config].formGroups %}
+      <div>
+        {% if formGroup.preset %}
+          {% case formGroup.preset %}
+            {% when 'adminCode' %}
+              {% include form/presets/adminCode.html %}
+            {% when 'contact' %}
+              {% include form/presets/contact.html %}
+            {% when 'dates' %}
+              {% include form/presets/dates.html %}
+            {% when 'description' %}
+              {% include form/presets/description.html %}
+            {% when 'languages' %}
+              {% include form/presets/languages.html %}
+            {% when 'licenses' %}
+              {% include form/presets/licenses.html %}
+            {% when 'name' %}
+              {% include form/presets/name.html %}
+            {% when 'schemaVersion' %}
+              {% include form/presets/schemaVersion.html %}
+            {% when 'status' %}
+              {% include form/presets/status.html %}
+            {% when 'submitter' %}
+              {% include form/presets/submitter.html %}
+            {% when 'tags' %}
+              {% include form/presets/tags.html %}
+            {% else %}
+              {% if page.lang == 'en' %}
+                <p>Throw <span style="color: red;">ERROR</span> (<strong>preset</strong> not found).</p>
+              {% else %}
+                <p>Retour <span style="color: red;">ERREUR</span> (<strong>preset</strong> non trouvé).</p>
+              {% endif %}
+          {% endcase %}
+        {% else %}
+          {% capture id %}{{ site.data.forms[page.config].id }}{% endcapture %}
+          {% case formGroup.widget %}
+            {% when 'group' %}
+              {% include form/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required %}
+            {% when 'list' %}
+              {% include form/list.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
+            {% when 'string' %}
+              {% include form/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
+            {% when 'string-i18n' %}
+              {% include form/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
+            {% else %}
+              {% if page.lang == 'en' %}
+                <p>Throw <span style="color: red;">ERROR</span> (<strong>widget</strong> not found).</p>
+              {% else %}
+                <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget</strong> non trouvé).</p>
+              {% endif %}
+          {% endcase %}
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <button id="prbotSubmit{{ page.id }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.Submit[page.lang] }}</button>
+    <button id="formReset" type="reset" class="btn btn-default">{{ site.data.i18n.form.Reset[page.lang] }}</button>
+
+    <div style="margin-top: 10px">
+      <div id="prbotSubmitAlertInProgress" class="alert alert-warning" style="display: none">
+        <b>{{ site.data.i18n.form.alert.Progress[page.lang] }}</b>
+      </div>
+      <div id="prbotSubmitAlertFail" class="alert alert-danger" style="display: none">
+        <b>{{ site.data.i18n.form.alert.Fail[page.lang ]}}</b>
+      </div>
+      <div id="prbotSubmitAlertSuccess" class="alert alert-success" style="display: none">
+        <b>{{ site.data.i18n.form.alert.Success[page.lang] }}</b>
+      </div>
+    </div>
+
+  </form>
+</div>
