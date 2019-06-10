@@ -1,0 +1,10 @@
+<input
+  class="form-control"
+  id="{{ include.name }}"
+  name="{{ include.name }}"
+  type="{{ include.type | default: "text" }}"
+  {% if include.required == nil or include.required %} required="required"{% endif %}
+  {% if include.value %} value="{{ include.value }}"{% endif %}
+  {% if include.readonly %} readonly="readonly"{% endif %}
+  {% if include.rule %} {{ site.data.forms.rules[include.rule] }}="true"{% endif %}
+/>

@@ -1,0 +1,29 @@
+<h2>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</h2>
+
+{% for field in include.fields %}
+  {% capture title %}{{ field.title }}{{ include.title }}{% endcapture %}
+
+  {% if field.required == nil %}
+    {% assign required = include.required %}
+  {% else %}
+    {% assign required = field.required %}
+  {% endif %}
+
+  {% case field.widget %}
+    {% when 'string' %}
+      {% capture label %}{{ site.data.i18n.form[include.id][include.title].labels[field.title][page.lang] }}{% endcapture %}
+      {% include form/components/group.html id=field.id title=title label=label required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
+    {% when 'string-i18n' %}
+      {% capture labelfr %}{{ site.data.i18n.form[include.id][include.title].labels[field.title].en[page.lang] }}{% endcapture %}
+      {% capture labelen %}{{ site.data.i18n.form[include.id][include.title].labels[field.title].en[page.lang] }}{% endcapture %}
+      {% include form/components/group-i18n.html id=field.id title=title labelen=labelen labelfr=labelfr required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
+    {% when 'email' %}
+      {% include form/presets/components/email.html title=include.title required=required %}
+    {% else %}
+      {% if page.lang == 'en' %}
+        <p>Throw <span style="color: red;">ERROR</span> (<strong>widget</strong> not found).</p>
+      {% else %}
+        <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget</strong> non trouvé).</p>
+      {% endif %}
+  {% endcase %}
+{% endfor %}
