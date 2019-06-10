@@ -28,6 +28,5 @@ List of presets:
 
 List of widgets
  - group (using fields, used to hierarchly group fields together under)
- - list (using fields, same a group, but the subset of fields can be added multiple times)
  - string (default single text input)
  - string-i18n (Two text inputs, one for EN and the other one for FR)
