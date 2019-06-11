@@ -1,0 +1,3 @@
+schemaVersion: "1.0"
+adminCode: pch
+{"schemaVersion":"1.0","adminCode":"pch","releases":[{"contact":{"email":"frederic.lestage@ville.montreal.qc.ca"},"date":{"created":"2019-12-31","metadataLastUpdated":"2019-12-31","lastModified":"2019-12-31"},"description":{"en":"descEN","fr":"descFR"},"name":{"en":"nameEN","fr":"nameFR"},"licenses":[{"URL":{},"spdxID":"fred"}],"repositoryURL":{},"tags":{"en":["tagEN"],"fr":["tagFR"]},"status":"Alpha"}]}
