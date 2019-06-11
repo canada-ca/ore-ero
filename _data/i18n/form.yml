@@ -1,0 +1,249 @@
+---
+# Submit and Reset
+Submit:
+  en: Submit
+  fr: Soumettre
+Reset:
+  en: Reset
+  fr: Réinitialiser
+
+# Alerts
+alert:
+  Progress:
+    en: The form is being submitted...
+    fr: Le formulaire est en cours de soumission...
+  Fail:
+    en: Something went wrong! Unable to submit form.
+    fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
+  Success:
+    en: Form was submitted!
+    fr: Le formulaire a été soumis !
+
+# Generic
+email:
+  en: Email
+  fr: Courriel
+name:
+  en: Name
+  fr: Nom
+url:
+  en:
+    en: English URL
+    fr: URL anglais
+  fr:
+    en: French URL
+    fr: URL français
+
+# Presets
+presets:
+  AdminCode:
+    title:
+      en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
+      fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
+    label:
+      en: Administration code
+      fr: Code d'administration
+  Contact:
+    title:
+      en: Contact information for the project.
+      fr: Coordonnées des contacts pour le projet.
+    phone:
+      en: Contact number (###-###-####)
+      fr: Numéro du contact (###-###-####)
+  Date:
+    title:
+      en: Dates describing the project.
+      fr: Dates décrivant le projet.
+    labels:
+      created:
+        en: Created
+        fr: Créé
+      modified:
+        en: Last modified
+        fr: Dernière modification
+      updated:
+        en: Last updated
+        fr: Dernière mise à jour
+  Description:
+    title:
+      en: A one or two sentence description of the project.
+      fr: Une description en une ou deux phrases du projet.
+    label:
+      en:
+        en: English description
+        fr: Description en anglais
+      fr:
+        en: French description
+        fr: Description en francais
+  Languages:
+    title:
+      en: A list of the programming languages used in the project.
+      fr: Une liste des langages de programmation utilisés dans la projet.
+    label:
+      en: Programming languages
+      fr: Langages de programmation
+    add:
+      en: Add more languages
+      fr: Ajouter plus de langues
+  Licenses:
+    title:
+      en: Information about each licence for the project.
+      fr: Renseignements sur chaque licence pour le projet.
+    label:
+      en:
+        en: English licence URL
+        fr: URL de la licence en anglais
+      fr:
+        en: French licence URL
+        fr: URL de la licence en francais
+      spdxID:
+        en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
+        fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
+  SchemaVersion:
+    title:
+      en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
+      fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
+    label:
+      en: ORE metadata schema version
+      fr: Version du schéma de métadonnées de l'ERO
+  Status:
+    title:
+      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
+      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
+    label:
+      en: Development status of the project
+      fr: Statut de développement du projet
+    values:
+      alpha:
+        en: Alpha
+        fr: Alpha
+      beta:
+        en: Beta
+        fr: Beta
+      maintained:
+        en: Maintained
+        fr: Maintenu
+      deprecated:
+        en: Deprecated
+        fr: Déprécié
+      retired:
+        en: Retired
+        fr: Retraité
+  Submitter:
+    title:
+      en: Information about submitter
+      fr: Des informations sur le déposant
+
+
+# Code form specifics
+code:
+  DownloadUrl:
+    title:
+      en: The english and french URLs where a distribution of the project can be found.
+      fr: Les URLs en francais et en anglais où une distribution du projet peut être trouvée.
+    label:
+      en:
+        en: English download URL
+        fr: URL de téléchargement en anglais
+      fr:
+        en: French download URL
+        fr: URL de téléchargement en francais
+  HomepageUrl:
+    title:
+      en: The English and French URLs of the project homepage.
+      fr: Les URLs en français et en anglais de la page d'accueil.
+    label:
+      en:
+        en: English homepage URL
+        fr: URL de la page d'accueil en anglais
+      fr:
+        en: French homepage URL
+        fr: URL de la page d'accueil en francais
+  ProjectName:
+    title:
+      en: The English and French name of the project.
+      fr: Le nom du projet en français et en anglais.
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+  Organization:
+    title:
+      en: The English and French name of the organization or team to which the project belongs.
+      fr: Le nom de l'organisation ou l'équipe en francais et en anglais à laquelle le projet appartient.
+    label:
+      en:
+        en: English organization name
+        fr: Nom de l'organisation en anglais
+      fr:
+        en: French organization name
+        fr: Nom de l'organisation en français
+  Partner:
+    title:
+      en: Information about each group partnering on the project.
+      fr: Renseignements sur chaque groupe partenaire du projet.
+    labels:
+      Url:
+        en:
+          en: English URL of partner
+          fr: URL du partenaire en anglais
+        fr:
+          en: French URL of partner
+          fr: URL du partenaire en francais
+      Name:
+        en:
+          en: English name of partner
+          fr: Nom du partenaire en anglais
+        fr:
+          en: French name of partner
+          fr: Nom du partenaire en francais
+  RepositoryUrl:
+    title:
+      en: The English and French URLs of the public repository of the project, where the code is hosted.
+      fr: Les URL en français et en anglais du dépôt public du projet, où le code est hébergé.
+    label:
+      en:
+        en: English repository URL
+        fr: URL du dépôt en anglais
+      fr:
+        en: French repository URL
+        fr: URL du dépôt en francais
+  RelatedCode:
+    title:
+      en: Information about each library, framework, API or other related software used in this project.
+      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+    labels:
+      Url:
+        en:
+          en: English URL of related software
+          fr: URL anglais d'un logiciel connexe
+        fr:
+          en: French URL of related software
+          fr: URL francais d'un logiciel connexe
+      Name:
+        en:
+          en: Name of related software in english
+          fr: Nom d'un logiciel connexe en anglais
+        fr:
+          en: Name of related software in french
+          fr: Nom d'un logiciel connexe en francais
+  Vcs:
+    title:
+      en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
+      fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ..
+    label:
+      en: Version control system
+      fr: Système de contrôle de version
+  VersionProject:
+    title:
+      en: The latest version for this project. For example, 1.0.0.
+      fr: La version de ce projet. Par  exemple, 1.0.0.
+    label:
+      en: The latest version
+      fr: La dernière version
+
+# Software form specifics
+# ...

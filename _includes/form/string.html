@@ -1,0 +1,3 @@
+<h2>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</h2>
+{% capture label %}{{ site.data.i18n.form[include.id][include.title].label[page.lang] }}{% endcapture %}
+{% include form/components/group.html name=include.title label=label required=include.required type=include.type value=include.value readonly=include.readonly rule=include.rule %}

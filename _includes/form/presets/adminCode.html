@@ -1,0 +1,35 @@
+<h2>{{ site.data.i18n.form.presets.AdminCode.title[page.lang] }}</h2>
+<div class="form-group">
+
+  {% assign name="adminCode" %}
+
+  {% capture label %}{{ site.data.i18n.form.presets.AdminCode.label[page.lang] }}{% endcapture %}
+  {% include form/components/label.html name=name label=label %}
+
+  <select class="form-control" id="{{ name }}" name="{{ name }}" required="required">
+    <option value="">&nbsp;</option>
+    <optgroup label="Federal">
+      {% for org in site.data.administrations.federal %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+    <optgroup label="Provincial">
+      {% for org in site.data.administrations.provincial %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+    <optgroup label="Municipal">
+      {% for org in site.data.administrations.municipal %}
+        {% if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+  </select>
+</div>
+
+<div id="selectedProject" class="form-group"></div>

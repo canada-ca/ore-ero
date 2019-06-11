@@ -1,0 +1,62 @@
+<div class="wb-frmvld">
+    <form action="#" method="get" id="validation">
+    <h2>{{ site.LevelOfGovernment[page.lang] }}</h2>
+    <div class="form-group">
+        <label for="orgLevel" class="required">{{ site.LevelOfGovernment[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <select class="form-control" id="orgLevel" name="orgLevel" required="required">
+            <option value="">&nbsp;</option>
+            <option value="federal" disabled>Federal</option>
+            <option value="provincial" disabled>Provincial</option>
+            <option value="municipal" selected>Municipal</option>
+        </select>
+    </div>
+
+    <h2>{{ site.AdminCodeDesc[page.lang] }}</h2>
+    <div class="form-group">      
+        <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="adminCode" name="adminCode" type="text" required="required"/>
+    </div>
+    
+    <h2>Province Code</h2>
+    <div class="form-group">      
+        <label for="provinceCode" class="required">Province Code <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="provinceCode" name="provinceCode" type="text" required="required"/>
+    </div>
+    
+    <h2>{{ site.NameCodeDesc[page.lang] }}</h2>
+    <div class="form-group">
+        <label for="enOrganisationName" class="required">{{ site.NameCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="enOrganisationName" name="enOrganisationName" type="text" data-rule-alphanum-space-en-fr="true" required="required"/>
+    </div>
+    <div class="form-group">
+        <label for="frOrganisationName" class="required">{{ site.NameCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="frOrganisationName" name="frOrganisationName" type="text" data-rule-alphanum-space-en-fr="true" required="required"/>
+    </div>
+    
+    <h2>{{ site.InformationAboutSubmitter[page.lang] }}</h2>
+    <div class="form-group">
+        <label for="submitterUsername" class="required">{{ site.NameContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="submitterUsername" name="submitterUsername" type="text" pattern="[A-Za-z\s]" required="required"/>
+    </div>
+    <div class="form-group">
+        <label for="submitterEmail" class="required">{{ site.EmailContactCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <input class="form-control" id="submitterEmail" name="submitterEmail" type="email" required="required"/>
+    </div>
+    
+    <button id="adminPrbotSubmit" type="button" class="btn btn-primary">Submit</button>
+    <button id="adminCodeFormReset" type="reset" class="btn btn-default">Reset</button>
+    
+    <div style="margin-top: 10px">
+        <div id="prbotSubmitAlertInProgress" class="alert alert-warning" style="display: none">
+        <b>{{ site.FormSubmissionInProgress[page.lang]}}</b>
+        </div>
+        <div id="prbotSubmitAlertFail" class="alert alert-danger" style="display: none">
+        <b>{{ site.FormSubmissionFail[page.lang]}}</b>
+        </div>
+        <div id="prbotSubmitAlertSuccess" class="alert alert-success" style="display: none">
+        <b>{{ site.FormSubmissionSuccess[page.lang]}}</b>
+        </div>
+    </div>
+    </form>
+</div>
+    
