@@ -2,7 +2,7 @@
 
 template for forms.
 
-```
+```yaml
 ---
 
 id: 'string' # The name of the top level id in the translation _data/i18n/form.yml (one per type of form) REQUIRED
