@@ -1,0 +1,30 @@
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: apogy-dev@eclipse.org
+    date:
+      created: 2019-06-28
+      metadataLastUpdated: 2019-06-11
+    description:
+      en: The English description should change
+      fr: >-
+        Un logiciel polyvalent pour faire fonctionner des robots et des
+        satellites
+    name:
+      en: '123456'
+      fr: '123456'
+    licenses:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.com'
+        spdxID: mit
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    tags:
+      en:
+        - tag
+      fr:
+        - atag
+    status: "\_"
