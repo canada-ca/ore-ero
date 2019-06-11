@@ -5,7 +5,7 @@ Documentation about Template for form pages.
 ```yaml
 ---
 
-id: 'string' # The name of the top level id in the translation _data/i18n/form.yml (one per type of form) REQUIRED
+id: 'string'              # The name of the top level id in the translation _data/i18n/form.yml (one per type of form) REQUIRED
 
 fieldgroups:              # [Array] of groups and fields
   - preset: 'string'      # One of the presets already made (see list below for available presets) REQUIRED
@@ -79,7 +79,7 @@ A group of fields for the info about the submitter.
 List of widgets
  - group
  - string
- - string-i18n (Two text inputs, one for EN and the other one for FR)
+ - string-i18n
 
 **group**
 
