@@ -108,4 +108,31 @@ class YamlWriter extends FileWriter {
       return result;
     });
   }
+
+  mergeAdminFile(file, newObject, propPath, onValue) {
+    let newObjects = DeepObject.get(newObject, propPath);
+
+    // Get an Object of the new ids using the onValue
+    let newIds = {};
+    newIds[DeepObject.get(newObjects, onValue)] = newObjects;
+
+    return this.get(file).then(result => {
+      let items = DeepObject.get(result, propPath);
+
+      // Update the object if there's a match.
+      for (let i = 0; i < items.length; i++) {
+        let item = items[i];
+        let id = DeepObject.get(item, onValue);
+        if (newIds[id]) {
+          items.splice(i, 1, newIds[id]);
+          delete newIds[id];
+        }
+      }
+      // Or add as a new one.
+      items = items.concat(Object.values(newIds));
+
+      DeepObject.set(result, propPath, items);
+      return items;
+    });
+  }
 }
