@@ -7,4 +7,4 @@
 {% include form/components/group.html name="dateLastModified" type="date" label=label required=false rule="dateISO" %}
 
 {% capture label %}{{ site.data.i18n.form.presets.Date.labels.updated[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="dateLastUpdated" type="date" label=label rule="dateISO" %}
+{% include form/components/group.html name="dateLastUpdated" type="date" label=label rule="dateISO" readonly=true %}
