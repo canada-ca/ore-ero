@@ -20,6 +20,7 @@ fieldgroups:              # [Array] of groups and fields
 ```
 
 ## Presets
+Presets are widgets that follow a specific format and parameters, they are meant to be used as is. They're also meant for a same component that can be used between different forms without modification.
 
 List of presets:
  - components/email
@@ -75,6 +76,7 @@ A dropdown menu for the version of the current element (alpha, beta, maintained,
 A group of fields for the info about the submitter.
 
 ## Widgets
+Widgets are generic components.
 
 List of widgets
  - group
