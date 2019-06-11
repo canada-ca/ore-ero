@@ -63,8 +63,7 @@ function getCodeObject() {
           fr: [...document.querySelectorAll('#tagsFR input')].map(
             child => child.value
           )
-        },
-        vcs: $('#vcs').val()
+        }
       }
     ]
   };
@@ -319,9 +318,6 @@ function submitForm() {
     .catch(err => {
       if (err.status == 404) {
         // We need to create the file for this organization, as it doesn't yet exist.
-        let header = `schemaVersion: "1.0"\nadminCode: ${$(
-          '#adminCode'
-        ).val()}\n`;
         const config = {
           body: JSON.stringify({
             user: USERNAME,
@@ -344,7 +340,7 @@ function submitForm() {
             files: [
               {
                 path: file,
-                content: header + JSON.stringify(codeObject)
+                content: jsyaml.dump(codeObject, { schema: jsyaml.JSON_SCHEMA })
               }
             ]
           }),
