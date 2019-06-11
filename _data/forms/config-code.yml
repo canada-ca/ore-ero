@@ -11,9 +11,11 @@ formGroups:
   - widget: string-i18n
     title: DownloadUrl
     type: url
+    required: false
   - widget: string-i18n
     title: HomepageUrl
     type: url
+    required: false
   - preset: languages
   - widget: string-i18n
     title: ProjectName
@@ -21,6 +23,7 @@ formGroups:
   - widget: string-i18n
     title: Organization
     rule: alphanum-space
+    required: false
   - widget: group
     title: Partner
     required: false
