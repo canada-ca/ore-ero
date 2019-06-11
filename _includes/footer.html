@@ -153,16 +153,8 @@
   function fillFields(project){
 
     checkExistingData(project)
-    var date = new Date();
-    var day = date.getDate();
-    var month = date.getMonth() + 1;
-    var year = date.getFullYear();
-    if (month < 10) month = "0" + month;
-    if (day < 10) day = "0" + day;
-    var today = year + "-" + month + "-" + day;       
-
     var datas_form = {
-      "shemaVersion" : "1.0",
+      "schemaVersion" : "1.0",
       "selectedPro" : pName,
       "enUrlContact" : project.contact.URL["en"],
       "frUrlContact" : project.contact.URL["fr"],
@@ -171,7 +163,7 @@
       "phone" : project.contact.phone,
       "dateCreated" : project.date.created,
       "dateLastModified" : project.date.lastModified,
-      "dateLastUpdated" : today,
+      "dateLastUpdated" : getTodayDate(),
       
       "enDescription" : project.description["en"],
       "frDescription" : project.description["fr"],
@@ -245,6 +237,21 @@
       })
     }
   }
+  
+  function getTodayDate(){
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+    var today = year + "-" + month + "-" + day;
+    return today;
+  }
+  
+  $(document).ready(function() {
+    $("#dateLastUpdated").val(getTodayDate());
+  });
 
   function displayListOrgProject(organization){
     (pathNameUrl == enPathName)?

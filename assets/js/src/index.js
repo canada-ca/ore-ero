@@ -46,15 +46,15 @@ function getCodeObject() {
         licenses: [
           {
             URL: {
-              en: $('#enUrlLicense').val(),
-              fr: $('#frUrlLicense').val()
+              en: $('#enLicenses').val(),
+              fr: $('#frLicenses').val()
             },
             spdxID: $('#spdxID').val()
           }
         ],
         repositoryURL: {
-          en: $('#enRepoUrl').val(),
-          fr: $('#frRepoUrl').val()
+          en: $('#enRepositoryUrl').val(),
+          fr: $('#frRepositoryUrl').val()
         },
         tags: {
           en: [...document.querySelectorAll('#tagsEN input')].map(
@@ -178,7 +178,7 @@ function getCodeObject() {
   // relatedCode TODO: support multiple relatedCode fields
   if (
     $('#enUrlRelatedCode').val() ||
-    $('#frUrlRelatedCode').val() ||
+    $('#enUrlRelatedCode').val() ||
     $('#enNameRelatedCode').val() ||
     $('#frNameRelatedCode').val()
   ) {
@@ -213,8 +213,13 @@ function getCodeObject() {
   }
 
   // version
-  if ($('#versionProject').val()) {
-    codeObject.releases[0].version = $('#versionProject').val();
+  if ($('#VersionProject').val()) {
+    codeObject.releases[0].version = $('#VersionProject').val();
+  }
+
+  // vcs
+  if ($('#Vcs').val()) {
+    codeObject.releases[0].vcs = $('#Vcs').val();
   }
 
   return codeObject;
@@ -270,8 +275,8 @@ function toggleAlert(option) {
 }
 
 function submitForm() {
-  let submitButton = document.getElementById('prbotSubmit');
-  let resetButton = document.getElementById('codeFormReset');
+  let submitButton = document.getElementById('prbotSubmitcode');
+  let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
@@ -369,7 +374,7 @@ function submitForm() {
 
 function submitAdminForm() {
   let submitButton = document.getElementById('adminPrbotSubmit');
-  let resetButton = document.getElementById('adminCodeFormReset');
+  let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
@@ -446,7 +451,7 @@ function submitAdminForm() {
     });
 }
 
-$('#prbotSubmit').click(function() {
+$('#prbotSubmitcode').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
