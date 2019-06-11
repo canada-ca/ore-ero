@@ -1,15 +1,15 @@
 <h2>{{ site.data.i18n.form.presets.Contact.title[page.lang] }}</h2>
 
 {% capture label %}{{ site.data.i18n.form.url.en[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="enUrlContact" type="url" label=label %}
+{% include form/components/group.html name="enUrlContact" type="url" label=label required=false %}
 
 {% capture label %}{{ site.data.i18n.form.url.fr[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="frUrlContact" type="url" label=label %}
+{% include form/components/group.html name="frUrlContact" type="url" label=label required=false %}
 
 {% include form/presets/components/email.html title="Contact" %}
 
 {% capture label %}{{ site.data.i18n.form.name[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="nameContact" label=label rule="names" %}
+{% include form/components/group.html name="nameContact" label=label rule="names" required=false %}
 
 {% capture label %}{{ site.data.i18n.form.presets.Contact.phone[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="phone" type="tel" label=label rule="phone" %}
+{% include form/components/group.html name="phone" type="tel" label=label rule="phone" required=false %}
