@@ -49,13 +49,13 @@ formGroups:
       - widget: string-i18n
         title: Name
         rule: alphanum-space
-  - preset: status
   - preset: tags
+  - preset: status
+  - widget: string
+    title: VersionProject
+    required: false
   - widget: string
     title: Vcs
     required: false
     rule: alphanum-space
-  - widget: string
-    title: VersionProject
-    required: false
   - preset: submitter
