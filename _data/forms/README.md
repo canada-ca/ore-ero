@@ -14,7 +14,7 @@ fieldgroups: # [Array] of groups and fields
     type: 'string' # The type of input OPTIONAL - Default: text
     required: boolean # If the field is required or not OPTIONAL - Default: true
     rule: 'string' # The id of the special rule for input validation (see _data/forms/rules.yml) OPTIONAL - Default: none
-    fields: # [Array] of fields (use it whit the group widget) OPTIONAL - Default: nil
+    fields: # [Array] of fields (use it with the group widget) OPTIONAL - Default: nil
       - widget: 'string' # Same as above
       - ...
 ```
