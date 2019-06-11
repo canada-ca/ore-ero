@@ -1,0 +1,3 @@
+schemaVersion: "1.0"
+adminCode: lac-bac
+{"schemaVersion":"1.0","adminCode":"lac-bac","releases":[{"contact":{"email":"test@gmail.com"},"date":{"created":"2019-06-11","metadataLastUpdated":"2019-06-11"},"description":{"en":"test","fr":"test"},"name":{"en":"test","fr":"test"},"licenses":[{"URL":{"en":"https://canada-ca.github.io/ore-ero/en/open-source-code-form.html","fr":"https://canada-ca.github.io/ore-ero/en/open-source-code-form.html"},"spdxID":"test"}],"repositoryURL":{"en":"https://canada-ca.github.io/ore-ero/en/open-source-code-form.html","fr":"https://canada-ca.github.io/ore-ero/en/open-source-code-form.html"},"tags":{"en":["test"],"fr":["test"]},"vcs":"git","status":" ","version":"1.0"}]}
