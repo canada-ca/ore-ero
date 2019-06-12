@@ -1,0 +1,27 @@
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+    date:
+      created: 2019-12-31
+      metadataLastUpdated: 2019-06-12
+    description:
+      en: it's a description with'apostrophes
+      fr: C'est une description avec une apostro'phe
+    name:
+      en: nameEN
+      fr: fredFR
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: licence
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - tagEN
+      fr:
+        - tagFR
