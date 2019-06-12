@@ -1,0 +1,28 @@
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: xyz@abc.com
+    date:
+      created: 2019-06-07
+      metadataLastUpdated: 2019-06-12
+    description:
+      en: test
+      fr: test
+    name:
+      en: test
+      fr: test
+    licenses:
+      - URL:
+          en: 'https://canada-ca.github.io/ore-ero/en/index.html'
+          fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+        spdxID: mit
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    tags:
+      en:
+        - tag
+      fr:
+        - tag
+    status: "\_"
