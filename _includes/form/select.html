@@ -1,0 +1,10 @@
+<h2>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</h2>
+<div class="form-group">
+  <label for="{{ include.title }}"{% if include.required %} class="required"{% endif %}>{{ site.data.i18n.form[include.id][include.title].label[page.lang] }}{% if include.required %} <strong class="required">({{ site.data.i18n.form.required[page.lang] }})</strong>{% endif %}</label>
+  <select class="form-control" id="{{ include.title }}" name="{{ include.title }}"{% if include.required %} required="required"{% endif %}>
+    <option value="">&nbsp;</option>
+    {% for include.options %}
+      <option value="{{ option.value }}">{{ site.data.i18n.form[include.id][include.title].options[option.label][page.lang] }}</option>
+    {% endfor %}
+  </select>
+</div>

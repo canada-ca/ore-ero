@@ -17,6 +17,9 @@ fieldgroups:              # [Array] of groups and fields
     fields:               # [Array] of fields (use it with the group widget) OPTIONAL - Default: nil
       - widget: 'string'  # Same as above
       - ...
+    options:              # [Array] of options (use it with the select widget) OPTIONAL - Default: nil
+      - value: 'string'   # The value of the option .val()
+        label: 'string'   # The label id for traduction (from _data/i18n/form/[id][title].options[label])
 ```
 
 ## Presets
