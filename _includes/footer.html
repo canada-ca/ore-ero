@@ -94,21 +94,14 @@
   }
 
   function addMoreTags(){
-    $(`<label class="required" for="tag">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsEN");
-    $(`<label class="required" for="tag">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`).prependTo("#tagsFR");
-
-    $(`<div class="input-group control-group after-add-more col-xs-2">
-        <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
-       </div>`).insertAfter("#tags");
-
     $(`<div class="copy hide">
-        <div class="control-group input-group col-xs-2" style="margin-top:10px" >
-          <input type="text" id="tag" name="tag" class="form-control" required="required">
-          <div class="input-group-btn">
-            <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
-          </div>
-        </div>
-       </div>`).appendTo("#tags");
+    <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+      <input type="text" id="tag" name="tag" class="form-control">
+      <div class="input-group-btn">
+        <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+      </div>
+    </div>
+    </div>`).appendTo("#tags");
 
     $(document).ready(function() {
       $(".add-more").click(function(){
@@ -117,14 +110,14 @@
           $(html).appendTo("#tagsFR");
       });
 
-      $("body").on("click",".remove",function(){ 
+      $("body").on("click",".remove",function(){
           $(this).parents(".control-group").remove();
       });
     });
   }
 
   function buildProjectField(project){
-    (pathNameUrl == enPathName) ? 
+    (pathNameUrl == enPathName) ?
     $('<option label="' + project.name[ "en"] + '" value="' + project.name["en"] + '"></option>').appendTo("#listProjects"):
     $('<option label="' + project.name[ "fr"] + '" value="' + project.name["fr"] + '"></option>').appendTo("#listProjects");
   }
@@ -147,7 +140,7 @@
       project.relatedCode[0] = [];
       project.relatedCode[0].URL = "";
       project.relatedCode[0].name = "";
-    } 
+    }
   }
 
   function fillFields(project){
@@ -164,10 +157,10 @@
       "dateCreated" : project.date.created,
       "dateLastModified" : project.date.lastModified,
       "dateLastUpdated" : getTodayDate(),
-      
+
       "enDescription" : project.description["en"],
       "frDescription" : project.description["fr"],
-      
+
       "enDownloadUrl" : project.downloadURL["en"],
       "frDownloadUrl" : project.downloadURL["fr"],
 
@@ -186,12 +179,12 @@
       "enNamePartner" : project.partners.name["en"],
       "frNamePartner" : project.partners.name["fr"],
 
-      "enUrlLicense" : project.licenses[0].URL["en"],
-      "frUrlLicense" : project.licenses[0].URL["fr"],
+      "enLicenses" : project.licenses[0].URL["en"],
+      "frLicenses" : project.licenses[0].URL["fr"],
       "spdxID" : project.licenses[0].spdxID,
 
-      "enRepoUrl" : project.repositoryURL["en"],
-      "frRepoUrl" : project.repositoryURL["fr"],
+      "enRepositoryUrl" : project.repositoryURL["en"],
+      "frRepositoryUrl" : project.repositoryURL["fr"],
 
       "enUrlRelatedCode" : project.relatedCode[0].URL["en"],
       "frUrlRelatedCode" : project.relatedCode[0].URL["fr"],
@@ -201,7 +194,7 @@
       "vcs" : project.vcs,
       "versionProject" : project.version
     }
-    
+
     $("#validation").find('input').val(function(){
       if (!datas_form[this.id] && this.type === 'checkbox') {
         return this.value;
@@ -220,8 +213,8 @@
     if(project.tags !== undefined){
       project.tags["en"].forEach(function(tag){
         $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
-            <input type="text" id="tag" name="enTag" value="${tag}" class="form-control" required="required">
-            <div class="input-group-btn"> 
+            <input type="text" id="tag" name="tag" value="${tag}" class="form-control" required="required">
+            <div class="input-group-btn">
              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
            </div>
           </div>`).appendTo("#tagsEN");
@@ -230,14 +223,14 @@
       project.tags["fr"].forEach(function(tag){
         $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
             <input type="text" id="tag" name="tag" value="${tag}" class="form-control" required="required">
-            <div class="input-group-btn"> 
+            <div class="input-group-btn">
              <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
            </div>`).appendTo("#tagsFR");
       })
     }
   }
-  
+
   function getTodayDate(){
     var date = new Date();
     var day = date.getDate();

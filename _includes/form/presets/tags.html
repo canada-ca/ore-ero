@@ -1,23 +1,18 @@
 <h2>{{ site.TagsCodeDesc[page.lang] }}</h2>
 <div id="tags">
   <div id="tagsEN" class="form-group">
-    <div>
-      <div class="control-group input-group col-xs-2" style="margin-top:10px" >
-        <input type="text" id="tagEN" name="tagEN" class="form-control" required="required">
-        <div class="input-group-btn">
-          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
-        </div>
-      </div>
+    <label class="required" for="tagEN">{{ site.TagsCodeEN[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+    <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+      <input type="text" id="tagEN" name="tagEN" class="form-control" required="required">
     </div>
   </div>
   <div id="tagsFR" class="form-group">
-    <div>
-      <div class="control-group input-group col-xs-2" style="margin-top:10px" >
-        <input type="text" id="tagFR" name="tagFR" class="form-control" required="required">
-        <div class="input-group-btn">
-          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
-        </div>
-      </div>
+    <label class="required" for="tagFR">{{ site.TagsCodeFR[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>`
+    <div class="control-group input-group col-xs-2" style="margin-top:10px" >
+      <input type="text" id="tagFR" name="tagFR" class="form-control" required="required">
     </div>
   </div>
 </div>
+<div class="input-group control-group after-add-more col-xs-2">
+  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Add more tags</button>
+  </div>
