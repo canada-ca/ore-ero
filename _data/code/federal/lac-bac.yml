@@ -1,0 +1,30 @@
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: libre@ville.montreal.qc.ca
+    date:
+      created: 2019-06-07
+      metadataLastUpdated: 2019-06-12
+    description:
+      en: descEN
+      fr: descFR
+    name:
+      en: nameEN
+      fr: nameFR
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: licence
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - dsfagfdg
+        - sdfgdfg
+      fr:
+        - fdagadfg
+        - adfgdafga
+        - adfgERHAHFD
