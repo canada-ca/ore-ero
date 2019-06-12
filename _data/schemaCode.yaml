@@ -13,9 +13,9 @@ releases:
         fr: str(required=False)
       phone: str(required=False)
     date:
-      created: date()
-      lastModified: date(required=False)
-      metadataLastUpdated: date()
+      created: day()
+      lastModified: day(required=False)
+      metadataLastUpdated: day()
     description:
       en: str()
       fr: str()
