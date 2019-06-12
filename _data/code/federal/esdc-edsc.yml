@@ -6,8 +6,8 @@ releases:
     contact:
       email: "calvin.rodo@hrsdc-rhdcc.gc.ca"
     date:
-      created: "2019-02-13"
-      metadataLastUpdated: "2019-02-21"
+      created: 2019-02-13
+      metadataLastUpdated: 2019-02-21
     description:
       en: "A dashboard to show expose metrics on software projects at ESDC"
       fr: "Un tableau de bord pour afficher les métriques d'exposition sur les projets logiciels d'EDSC"
@@ -32,8 +32,8 @@ releases:
     contact:
       email: "calvin.rodo@hrsdc-rhdcc.gc.ca"
     date:
-      created: "2019-02-13"
-      metadataLastUpdated: "2019-02-21"
+      created: 2019-02-13
+      metadataLastUpdated: 2019-02-21
     description:
       en: "A .Net test app for the Code Coverage reporting dashboard"
       fr: "Une application de test .Net pour le tableau de bord de rapports de couverture de code"
