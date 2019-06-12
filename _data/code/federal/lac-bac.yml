@@ -1,0 +1,57 @@
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: xyz@abc.com
+      URL:
+        en: 'https://canada-ca.github.io/ore-ero/en/index.html'
+        fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+      name: test
+      phone: 123-456-7890
+    date:
+      created: 2019-06-07
+      metadataLastUpdated: 2019-06-12
+      lastModified: 2019-06-03
+    description:
+      en: test
+      fr: test
+    name:
+      en: test
+      fr: test
+    licenses:
+      - URL:
+          en: 'https://canada-ca.github.io/ore-ero/en/index.html'
+          fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+        spdxID: mit
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    tags:
+      en:
+        - tag
+        - test
+      fr:
+        - tag
+        - test
+    downloadURL:
+      en: 'https://canada-ca.github.io/ore-ero/en/index.html'
+      fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+    languages:
+      - Java
+      - C
+      - test
+    organization:
+      en: test
+      fr: test
+    partners:
+      URL:
+        en: 'https://canada-ca.github.io/ore-ero/en/index.html'
+        fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+      email: xyz@abc.com
+    relatedCode:
+      - URL:
+          en: test
+          fr: 'https://canada-ca.github.io/ore-ero/en/index.html'
+    status: Alpha
+    version: '1.0'
+    vcs: git
