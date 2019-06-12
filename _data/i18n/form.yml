@@ -20,6 +20,9 @@ alert:
     fr: Le formulaire a été soumis !
 
 # Generic
+required:
+  en: Mandatory
+  fr: Obligatoire
 email:
   en: Email
   fr: Courriel
@@ -99,6 +102,70 @@ presets:
       spdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
+  OrgLevel:
+    title:
+      en: Level of government
+      fr: Niveau de gouvernement
+    label:
+      en: Level of government
+      fr: Niveau de gouvernement
+    options:
+      federal:
+        en: Federal
+        fr: Fédéral
+      provincial:
+        en: Provincial
+        fr: Provincial
+      municipal:
+        en: Municipal
+        fr: Municipal
+  ProvinceCode:
+    title:
+      en: Province Code
+      fr: Code de la province
+    label:
+      en: Province Code
+      fr: Code de la province
+    options:
+      ab:
+        en: Alberta
+        fr: Alberta
+      bc:
+        en: British Columbia
+        fr: Colombie-Britanique
+      mb:
+        en: Manitoba
+        fr: Manitoba
+      nb:
+        en: New Brunswick
+        fr: Nouveau-Brunswick
+      nl:
+        en: Newfoundland and Labrador
+        fr: Terre-Neuve-et-Labrador
+      nt:
+        en: Northwest Territories
+        fr: Territoires du Nord-Ouest
+      ns:
+        en: Nova Scotia
+        fr: Nouvelle-Écosse
+      nu:
+        en: Nunavut
+        fr: Nunavut
+      ont:
+        en: Ontario
+        fr: Ontario
+      pe:
+        en: Prince Edward Island
+        fr: Île-du-Prince-Édouard
+      qc:
+        en: Quebec
+        fr: Québec
+      sk:
+        en: Saskatchewan
+        fr: Saskatchewan
+      yt:
+        en: Yukon
+        fr: Yukon
   SchemaVersion:
     title:
       en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
@@ -245,5 +312,18 @@ code:
       en: The latest version
       fr: La dernière version
 
+# Admin
+admin:
+  Name:
+    title:
+      en: Name of the Organization
+      fr: Nom de l'organisation
+    label:
+      en:
+        en: Name in english
+        fr: Nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
 # Software form specifics
 # ...

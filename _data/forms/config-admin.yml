@@ -1,0 +1,10 @@
+---
+
+id: admin
+
+formGroups:
+  - preset: orgLevel
+  - preset: provinceCode
+  - widget: string-i18n
+    title: Name
+    rule: alphanum-space

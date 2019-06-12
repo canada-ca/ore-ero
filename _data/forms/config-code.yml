@@ -58,4 +58,3 @@ formGroups:
     title: Vcs
     required: false
     rule: alphanum-space
-  - preset: submitter
