@@ -370,7 +370,7 @@ function submitForm() {
 
 function submitAdminForm() {
   let submitButton = document.getElementById('adminPrbotSubmit');
-  let resetButton = document.getElementById('formReset');
+  let resetButton = document.getElementById('adminCodeFormReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 

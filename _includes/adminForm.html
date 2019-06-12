@@ -5,9 +5,10 @@
         <label for="orgLevel" class="required">{{ site.LevelOfGovernment[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <select class="form-control" id="orgLevel" name="orgLevel" required="required">
             <option value="">&nbsp;</option>
-            <option value="federal" disabled>Federal</option>
-            <option value="provincial" disabled>Provincial</option>
-            <option value="municipal" selected>Municipal</option>
+            <option value="federal">{{ site.Federal[page.lang] }}</option>
+            <option value="provincial">{{ site.Provincial[page.lang] }}</option>
+            <option value="municipal" selected>{{ site.Municipal[page.lang] }}</option>
+            <option value="aboriginal">{{ site.Aboriginal[page.lang] }}</option>
         </select>
     </div>
 
@@ -17,9 +18,9 @@
         <input class="form-control" id="adminCode" name="adminCode" type="text" required="required"/>
     </div>
     
-    <h2>Province Code</h2>
+    <h2>{{ site.ProvinceCode[page.lang] }}</h2>
     <div class="form-group">      
-        <label for="provinceCode" class="required">Province Code <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <label for="provinceCode" class="required">{{ site.ProvinceCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <input class="form-control" id="provinceCode" name="provinceCode" type="text" required="required"/>
     </div>
     
