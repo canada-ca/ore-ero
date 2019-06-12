@@ -1,41 +1,41 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Cross-platform web server"
   fr: "Serveur Web multiplateforme"
 homepageURL:
   en: "https://httpd.apache.org"
   fr: "https://httpd.apache.org"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://www.apache.org/licenses/LICENSE-2.0.txt"
       fr: "https://www.apache.org/licenses/LICENSE-2.0.txt"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: Apache
   fr: Apache
-tags: 
+tags:
   en:
     - "HTTP Server"
-  fr: 
+  fr:
     - "Serveur HTTP"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: gac-amc
-    uses: 
-      - 
-        contact: 
-          URL: 
+    uses:
+      -
+        contact:
+          URL:
           en: "https://www.international.gc.ca"
           fr: "https://www.international.gc.ca"
           email: sebastien.routier@international.gc.ca
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-16
+        name:
           en: "Misc"
           fr: "Divers"
-        description: 
+        description:
           en: "Used to server many Web sites."
           fr: "Utilisé pour servir plusieur site Web."
