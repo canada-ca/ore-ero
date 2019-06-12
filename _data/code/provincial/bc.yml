@@ -9,8 +9,8 @@ releases:
         fr: https://github.com/BCDevExchange/devex/issues
       email: bcdevexchange@gov.bc.ca
     date: 
-      created: "2016-10-23"
-      metadataLastUpdated: "2019-01-29"
+      created: 2016-10-23
+      metadataLastUpdated: 2019-01-29
     description: 
       en: "B.C. Developer Exchange Application"
       fr: "Application Échange de développeurs C.-B."
@@ -43,8 +43,8 @@ releases:
         fr: https://github.com/bcgov/gwells/issues
       email: todd.wilson@gov.bc.ca
     date: 
-      created: "2015-04-29"
-      metadataLastUpdated: "2019-05-10"
+      created: 2015-04-29
+      metadataLastUpdated: 2019-05-10
     description: 
       en: "Groundwater Wells and Aquifers application for the Ministry of Environment."
       fr: "Application de puits d'eau souterraine et d'aquifères pour le ministère de l'environnement."
@@ -81,8 +81,8 @@ releases:
         fr: https://github.com/bcgov/devhub-app-web/issues
       email: todd.wilson@gov.bc.ca
     date: 
-      created: "2017-10-20"
-      metadataLastUpdated: "2019-05-10"
+      created: 2017-10-20
+      metadataLastUpdated: 2019-05-10
     description: 
       en: "Web application for the DevHub."
       fr: "Application Web pour le DevHub."
@@ -119,8 +119,8 @@ releases:
         fr: https://github.com/bcgov/ckanext-bcgov/issues
       email: NRSApplications@gov.bc.ca
     date: 
-      created: "2014-03-20"
-      metadataLastUpdated: "2019-05-10"
+      created: 2014-03-20
+      metadataLastUpdated: 2019-05-10
     description: 
       en: "BC Data Catalogue source code."
       fr: "Code source du catalogue de données BC."
