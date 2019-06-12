@@ -180,7 +180,7 @@ presets:
     label:
       en: Development status of the project
       fr: Statut de développement du projet
-    values:
+    options:
       alpha:
         en: Alpha
         fr: Alpha
