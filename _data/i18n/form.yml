@@ -201,7 +201,6 @@ presets:
       en: Information about submitter
       fr: Des informations sur le déposant
 
-
 # Code form specifics
 code:
   DownloadUrl:
@@ -312,7 +311,7 @@ code:
       en: The latest version
       fr: La dernière version
 
-# Admin
+# Admin form specifics
 admin:
   Name:
     title:
