@@ -11,22 +11,29 @@
     <label for="adminCode" class="required">{{ site.AdminCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
     <select class="form-control" id="adminCode" name="adminCode" required="required">
       <option value="">&nbsp;</option>
-      <optgroup label="Federal">
+      <optgroup label={{ site.Federal[page.lang] }}>
         {% for org in site.data.administrations.federal %}
           {% if org.name[page.lang] != nil %}
             <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {% endif %}
         {% endfor %}
       </optgroup>
-      <optgroup label="Provincial">
+      <optgroup label={{ site.Provincial[page.lang] }}>
         {% for org in site.data.administrations.provincial %}
           {% if org.name[page.lang] != nil %}
             <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {% endif %}
         {% endfor %}
       </optgroup>
-      <optgroup label="Municipal">
+      <optgroup label={{ site.Municipal[page.lang] }}>
         {% for org in site.data.administrations.municipal %}
+          {% if org.name[page.lang] != nil %}
+            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {% endif %}
+        {% endfor %}
+      </optgroup>
+      <optgroup label={{ site.Aboriginal[page.lang] }}>
+        {% for org in site.data.administrations.aboriginal %}
           {% if org.name[page.lang] != nil %}
             <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {% endif %}
@@ -121,7 +128,7 @@
     {% assign languages_array = languages_array | uniq  %}
     {% for language in languages_array %}
       <div class="checkbox" >
-        <label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
+        <label><input class="{{ language }}" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
       </div>
     {% endfor %}
   
