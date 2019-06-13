@@ -131,6 +131,18 @@ VersionControlSystemCode:
 MandatoryField:
   en: Mandatory
   fr: Obligatoire
+Federal:
+  en: Federal
+  fr: Fédéral
+Provincial:
+  en: Provincial
+  fr: Provincial
+Municipal:
+  en: Municipal
+  fr: Municipal
+Aboriginal:
+  en: Aboriginal
+  fr: Aborigène
 
 # Open Source Code (Schema and Form)
 SchemaVersionCode:
@@ -145,6 +157,9 @@ AdminCode:
 AdminCodeDesc:
   en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
   fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
+ProvinceCode:
+  en: Province Code
+  fr: Code de province
 RealeasesCodeDesc:
   en: Information for each project or source code published.
   fr: Informations pour chaque projet ou code source publié.
