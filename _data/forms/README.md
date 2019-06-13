@@ -124,16 +124,13 @@ name: # The [name] used in page config
     title:
       en: The english title
       fr: The french title
-    label:
-      en: The english label
-      fr: The french label
-    options:
-      option no1: # One for each options
-        en: The english option no.1
-        fr: The french option no.1
-      option no2:
-        en: The english option no.2
-        fr: The french option no.2
+    labels:
+      Title no1: # One for each fields.title
+        en: The english label no.1
+        fr: The french title no.1
+      Title no2:
+        en: The english label no.2
+        fr: The french label no.2
       ...
 ```
 
@@ -144,13 +141,16 @@ name: # The [name] used in page config
     title:
       en: The english title
       fr: The french title
-    labels:
-      Title no1: # One for each fields.title
-        en: The english label no.1
-        fr: The french title no.1
-      Title no2:
-        en: The english label no.2
-        fr: The french label no.2
+    label:
+      en: The english label
+      fr: The french label
+    options:
+      option no1: # One for each options
+        en: The english option no.1
+        fr: The french option no.1
+      option no2:
+        en: The english option no.2
+        fr: The french option no.2
       ...
 ```
 
