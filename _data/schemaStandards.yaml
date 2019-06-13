@@ -1,0 +1,34 @@
+---
+date:
+  created: day()
+  metadataLastUpdated: day()
+description:
+  en: str()
+  fr: str()
+name:
+  en: str()
+  fr: str()
+specURL:
+  en: str()
+  fr: str()
+standardCode: str()
+standardsOrg: str()
+tags:
+  en:
+  - str()
+  fr:
+  - str()
+administrations:
+  -
+    adminCode: str()
+    contact:
+      email: str()
+    references:
+      -
+        URL:
+          en: str()
+          fr: str()
+        name:
+          en: str()
+          fr: str()
+    status: str()
