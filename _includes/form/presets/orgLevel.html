@@ -3,6 +3,7 @@
     {%- capture label -%}{{ site.data.i18n.form.presets.OrgLevel.label[page.lang] }}{%- endcapture -%}
     {% include form/components/label.html name="orgLevel" required=true label=label %}
   <select class="form-control" id="orgLevel" name="orgLevel" required="required">
+    <option value="">&nbsp;</option>
     <option value="municipal" selected>{{ site.data.i18n.form.presets.OrgLevel.options.municipal[page.lang] }}</option>
     <option value="provincial" disabled>{{ site.data.i18n.form.presets.OrgLevel.options.provincial[page.lang] }}</option>
     <option value="federal" disabled>{{ site.data.i18n.form.presets.OrgLevel.options.federal[page.lang] }}</option>
