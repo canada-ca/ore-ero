@@ -1,0 +1,57 @@
+schemaVersion: '''1.0'''
+adminCode: lac-bac
+releases:
+  - contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+      URL:
+        en: 'https://github.com/fredericlestage-vdm'
+        fr: 'https://github.com/fredericlestage-vdm'
+      name: Frédéric Lestage
+      phone: 123-456-7890
+    date:
+      created: '''2019-12-31'''
+      metadataLastUpdated: '''2019-06-13'''
+      lastModified: '''2019-12-31'''
+    description:
+      en: descEN
+      fr: descFR
+    name:
+      en: nameEN
+      fr: nameFR
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: licence
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - tagEN
+      fr:
+        - tagFR
+    downloadURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    organization:
+      en: org
+      fr: org
+    partners:
+      URL:
+        en: 'http://www.google.com'
+        fr: 'http://www.google.com'
+      email: partner@email.com
+      name:
+        en: partner
+        fr: partner
+    relatedCode:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.com'
+        name:
+          en: related
+          fr: related
+    status: Beta
+    version: 7.6.0.3
+    vcs: git
