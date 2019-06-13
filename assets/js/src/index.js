@@ -32,8 +32,12 @@ function getCodeObject() {
           email: $('#emailContact').val()
         },
         date: {
-          created: $('#dateCreated').val(),
-          metadataLastUpdated: $('#dateLastUpdated').val()
+          created: $('#dateCreated')
+            .val()
+            .toString(),
+          metadataLastUpdated: $('#dateLastUpdated')
+            .val()
+            .toString()
         },
         description: {
           en: $('#enDescription').val(),
@@ -57,12 +61,8 @@ function getCodeObject() {
           fr: $('#frRepositoryUrl').val()
         },
         tags: {
-          en: [...document.querySelectorAll('#tagsEN input')].map(
-            child => child.value
-          ),
-          fr: [...document.querySelectorAll('#tagsFR input')].map(
-            child => child.value
-          )
+          en: getTags([...document.querySelectorAll('#tagsEN input')]),
+          fr: getTags([...document.querySelectorAll('#tagsFR input')])
         }
       }
     ]
@@ -93,7 +93,9 @@ function getCodeObject() {
 
   // date.lastModified
   if ($('#dateLastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#dateLastModified').val();
+    codeObject.releases[0].date.lastModified = $('#dateLastModified')
+      .val()
+      .toString();
   }
 
   // downloadURL
@@ -165,19 +167,19 @@ function getCodeObject() {
   }
   // partners.name
   if ($('#enNamePartner').val() || $('#frNamePartner').val()) {
-    codeObject.releases[0].name = {};
+    codeObject.releases[0].partners.name = {};
   }
   if ($('#enNamePartner').val()) {
-    codeObject.releases[0].name.en = $('#enNamePartner').val();
+    codeObject.releases[0].partners.name.en = $('#enNamePartner').val();
   }
   if ($('#frNamePartner').val()) {
-    codeObject.releases[0].name.fr = $('#frNamePartner').val();
+    codeObject.releases[0].partners.name.fr = $('#frNamePartner').val();
   }
 
   // relatedCode TODO: support multiple relatedCode fields
   if (
     $('#enUrlRelatedCode').val() ||
-    $('#enUrlRelatedCode').val() ||
+    $('#frUrlRelatedCode').val() ||
     $('#enNameRelatedCode').val() ||
     $('#frNameRelatedCode').val()
   ) {
@@ -195,20 +197,22 @@ function getCodeObject() {
   }
   // relatedCode.name
   if ($('#enNameRelatedCode').val() || $('#frNameRelatedCode').val()) {
-    codeObject.releases[0].relatedCode[0].URL = {};
+    codeObject.releases[0].relatedCode[0].name = {};
   }
   if ($('#enNameRelatedCode').val()) {
-    codeObject.releases[0].relatedCode[0].URL.en = $(
+    codeObject.releases[0].relatedCode[0].name.en = $(
       '#enNameRelatedCode'
     ).val();
   }
-  if ($('#frUrlRelatedCode').val()) {
-    codeObject.releases[0].relatedCode[0].URL.fr = $('#frUrlRelatedCode').val();
+  if ($('#frNameRelatedCode').val()) {
+    codeObject.releases[0].relatedCode[0].name.fr = $(
+      '#frNameRelatedCode'
+    ).val();
   }
 
   // status
-  if ($('#status :selected').text()) {
-    codeObject.releases[0].status = $('#status :selected').text();
+  if ($('#status :selected').val() != '') {
+    codeObject.releases[0].status = $('#status :selected').val();
   }
 
   // version
@@ -222,6 +226,14 @@ function getCodeObject() {
   }
 
   return codeObject;
+}
+
+function getTags(query) {
+  return $(query)
+    .map(function() {
+      return this.value ? this.value : null;
+    })
+    .get();
 }
 
 /**
@@ -307,7 +319,10 @@ function submitForm() {
           files: [
             {
               path: file,
-              content: jsyaml.dump(result, { schema: jsyaml.JSON_SCHEMA })
+              content: jsyaml.dump(result, {
+                schema: jsyaml.JSON_SCHEMA,
+                lineWidth: 160
+              })
             }
           ]
         }),
@@ -340,7 +355,10 @@ function submitForm() {
             files: [
               {
                 path: file,
-                content: jsyaml.dump(codeObject, { schema: jsyaml.JSON_SCHEMA })
+                content: jsyaml.dump(codeObject, {
+                  schema: jsyaml.JSON_SCHEMA,
+                  lineWidth: 160
+                })
               }
             ]
           }),

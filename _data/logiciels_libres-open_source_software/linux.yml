@@ -1,39 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "The Linux kernel is a Unix-like computer operating system kernel"
   fr: "Le noyau Linux est un noyau de système d'exploitation de type UNIX"
 homepageURL:
   en: "https://www.linux.org"
   fr: "https://www.linux.org"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
       fr: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
     spdxID: "GPL-2.0"
-name: 
+name:
   en: "Linux"
   fr: "Linux"
-tags: 
+tags:
   en:
     - "Operating system kernel"
-  fr: 
+  fr:
     - "Noyau de système d'exploitation"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "ilia.salem@tbs-sct.gc.ca"
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-15"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-15
+        name:
           en: "Development Environment"
           fr: "Environnement de développement"
-        description: 
+        description:
           en: "APM data"
           fr: "Données du APM"
- 
