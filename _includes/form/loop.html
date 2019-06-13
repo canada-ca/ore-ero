@@ -20,8 +20,6 @@
         {% include form/presets/provinceCode.html %}
       {% when 'schemaVersion' %}
         {% include form/presets/schemaVersion.html %}
-      {% when 'status' %}
-        {% include form/presets/status.html %}
       {% when 'submitter' %}
         {% include form/presets/submitter.html %}
       {% when 'tags' %}
@@ -38,10 +36,10 @@
     {% case formGroup.widget %}
       {% when 'group' %}
         {% include form/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required %}
-      {% when 'string' %}
-        {% include form/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
       {% when 'select' %}
         {% include form/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options %}
+      {% when 'string' %}
+        {% include form/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
       {% when 'string-i18n' %}
         {% include form/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
       {% else %}

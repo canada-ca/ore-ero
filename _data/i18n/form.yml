@@ -119,53 +119,6 @@ presets:
       municipal:
         en: Municipal
         fr: Municipal
-  ProvinceCode:
-    title:
-      en: Province Code
-      fr: Code de la province
-    label:
-      en: Province Code
-      fr: Code de la province
-    options:
-      ab:
-        en: Alberta
-        fr: Alberta
-      bc:
-        en: British Columbia
-        fr: Colombie-Britanique
-      mb:
-        en: Manitoba
-        fr: Manitoba
-      nb:
-        en: New Brunswick
-        fr: Nouveau-Brunswick
-      nl:
-        en: Newfoundland and Labrador
-        fr: Terre-Neuve-et-Labrador
-      nt:
-        en: Northwest Territories
-        fr: Territoires du Nord-Ouest
-      ns:
-        en: Nova Scotia
-        fr: Nouvelle-Écosse
-      nu:
-        en: Nunavut
-        fr: Nunavut
-      ont:
-        en: Ontario
-        fr: Ontario
-      pe:
-        en: Prince Edward Island
-        fr: Île-du-Prince-Édouard
-      qc:
-        en: Quebec
-        fr: Québec
-      sk:
-        en: Saskatchewan
-        fr: Saskatchewan
-      yt:
-        en: Yukon
-        fr: Yukon
   SchemaVersion:
     title:
       en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
@@ -173,29 +126,6 @@ presets:
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
-  Status:
-    title:
-      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
-      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
-    label:
-      en: Development status of the project
-      fr: Statut de développement du projet
-    options:
-      alpha:
-        en: Alpha
-        fr: Alpha
-      beta:
-        en: Beta
-        fr: Beta
-      maintained:
-        en: Maintained
-        fr: Maintenu
-      deprecated:
-        en: Deprecated
-        fr: Déprécié
-      retired:
-        en: Retired
-        fr: Retraité
   Submitter:
     title:
       en: Information about submitter
@@ -296,6 +226,29 @@ code:
         fr:
           en: Name of related software in french
           fr: Nom d'un logiciel connexe en francais
+  Status:
+    title:
+      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
+      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
+    label:
+      en: Development status of the project
+      fr: Statut de développement du projet
+    options:
+      alpha:
+        en: Alpha
+        fr: Alpha
+      beta:
+        en: Beta
+        fr: Beta
+      maintained:
+        en: Maintained
+        fr: Maintenu
+      deprecated:
+        en: Deprecated
+        fr: Déprécié
+      retired:
+        en: Retired
+        fr: Retraité
   Vcs:
     title:
       en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
@@ -324,6 +277,53 @@ admin:
       fr:
         en: Name in french
         fr: Nom en français
+  ProvinceCode:
+    title:
+      en: Province Code
+      fr: Code de la province
+    label:
+      en: Province Code
+      fr: Code de la province
+    options:
+      ab:
+        en: Alberta
+        fr: Alberta
+      bc:
+        en: British Columbia
+        fr: Colombie-Britanique
+      mb:
+        en: Manitoba
+        fr: Manitoba
+      nb:
+        en: New Brunswick
+        fr: Nouveau-Brunswick
+      nl:
+        en: Newfoundland and Labrador
+        fr: Terre-Neuve-et-Labrador
+      nt:
+        en: Northwest Territories
+        fr: Territoires du Nord-Ouest
+      ns:
+        en: Nova Scotia
+        fr: Nouvelle-Écosse
+      nu:
+        en: Nunavut
+        fr: Nunavut
+      "on": # on is a yaml/liquid/jekyll keyword and thus must be escaped
+        en: Ontario
+        fr: Ontario
+      pe:
+        en: Prince Edward Island
+        fr: Île-du-Prince-Édouard
+      qc:
+        en: Quebec
+        fr: Québec
+      sk:
+        en: Saskatchewan
+        fr: Saskatchewan
+      yt:
+        en: Yukon
+        fr: Yukon
 
 # Software form specifics
 # ...
