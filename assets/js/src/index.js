@@ -286,7 +286,7 @@ function toggleAlert(option) {
 }
 
 function submitForm() {
-  let submitButton = document.getElementById('prbotSubmitcode');
+  let submitButton = document.getElementById('prbotSubmitcodeForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
@@ -385,8 +385,8 @@ function submitForm() {
 }
 
 function submitAdminForm() {
-  let submitButton = document.getElementById('adminPrbotSubmit');
-  let resetButton = document.getElementById('adminCodeFormReset');
+  let submitButton = document.getElementById('prbotSubmitadminForm');
+  let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
@@ -467,7 +467,7 @@ function submitAdminForm() {
     });
 }
 
-$('#prbotSubmitcode').click(function() {
+$('#prbotSubmitcodeForm').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
@@ -477,7 +477,7 @@ $('#prbotSubmitcode').click(function() {
   }
 });
 
-$('#adminPrbotSubmit').click(function() {
+$('#prbotSubmitadminForm').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
