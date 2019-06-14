@@ -53,7 +53,7 @@ formGroups:
   - widget: select
     title: Status
     required: false
-    options: [ alpha, beta, maintained, deprecated, retired ]
+    options: [alpha, beta, maintained, deprecated, retired]
   - widget: string
     title: VersionProject
     required: false
