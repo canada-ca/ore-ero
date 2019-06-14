@@ -15,9 +15,9 @@ standardCode: str()
 standardsOrg: str()
 tags:
   en:
-  - str()
+    - str()
   fr:
-  - str()
+    - str()
 administrations:
   -
     adminCode: str()
