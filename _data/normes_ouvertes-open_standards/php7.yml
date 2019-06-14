@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2019-06-05'
+  metadataLastUpdated: '2019-06-14'
+description:
+  en: descEN
+  fr: descFR
+name:
+  en: !<tag:yaml.org,2002:js/undefined> ''
+  fr: !<tag:yaml.org,2002:js/undefined> ''
+specUrl:
+  en: !<tag:yaml.org,2002:js/undefined> ''
+  fr: !<tag:yaml.org,2002:js/undefined> ''
+standardCode: PHP7
+standardsOrg: FRED
+tags:
+  en:
+    - Server
+  fr:
+    - Serveur
+administrations:
+  - adminCode: lac-bac
+    contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+      URL:
+        en: 'https://github.com/fredericlestage-vdm'
+        fr: 'https://github.com/fredericlestage-vdm'
+      name: Frédéric Lestage
+    references:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        name:
+          en: ref en
+          fr: ref fr
+    status: Alpha
