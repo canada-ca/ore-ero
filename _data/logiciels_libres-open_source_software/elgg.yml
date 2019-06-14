@@ -1,63 +1,63 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Highly customizable web framework and CMS for building social apps"
   fr: "Framework Web hautement personnalisable et CMS pour créer des applications sociales"
 homepageURL:
   en: "https://elgg.org/"
   fr: "https://elgg.org/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "http://learn.elgg.org/en/2.0/intro/license.html"
       fr: "http://learn.elgg.org/en/2.0/intro/license.html"
     spdxID: "MIT"
-  - 
-    URL: 
+  -
+    URL:
       en: "http://learn.elgg.org/en/2.0/intro/license.html"
       fr: "http://learn.elgg.org/en/2.0/intro/license.html"
     spdxID: "GPL-2.0"
-name: 
+name:
   en: Elgg
   fr: Elgg
-tags: 
+tags:
   en:
     - "Collaboration"
     - "Social"
-  fr: 
+  fr:
     - "Collaboration"
     - "Sociale"
-admininstrations: 
-  - 
+admininstrations:
+  -
     adminCode: tbs-sct
-    uses: 
-      - 
-        contact: 
-          URL: 
+    uses:
+      -
+        contact:
+          URL:
             en: "https://github.com/gctools-outilsgc/gcconnex/issues"
             fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-13
+        name:
           en: "GCcollab"
           fr: "GCcollab"
-        description: 
+        description:
           en: "External social networking platform hosted by the Government of Canada"
           fr: "Plateforme de réseautage social externe hébergée par le gouvernement du Canada"
-      - 
-        contact: 
-          URL: 
+      -
+        contact:
+          URL:
           en: "https://github.com/gctools-outilsgc/gcconnex/issues"
           fr: "https://github.com/gctools-outilsgc/gcconnex/issues"
           email: "ilia.salem@tbs-sct.gc.ca"
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-13
+        name:
           en: "GCconnex"
           fr: "GCconnex"
-        description: 
+        description:
           en: "Internal social networking platform for the Government of Canada"
           fr: "Plateforme de réseautage social interne pour le gouvernement du Canada"
