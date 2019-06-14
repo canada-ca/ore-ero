@@ -1,0 +1,29 @@
+---
+schemaVersion: '1.0'
+adminCode: test (please remove)
+releases:
+  - contact:
+      email: jianx.wee@edmonton.ca
+    date:
+      created: '2019-06-14'
+      metadataLastUpdated: '2019-06-14'
+      lastModified: '2019-06-14'
+    description:
+      en: Test
+      fr: Test
+    name:
+      en: Test
+      fr: Test
+    licenses:
+      - URL:
+          en: 'https://www.test.com'
+          fr: 'https://www.test.com'
+        spdxID: asd
+    repositoryURL:
+      en: 'https://www.test.com'
+      fr: 'https://www.test.com'
+    tags:
+      en:
+        - Test
+      fr:
+        - Test
