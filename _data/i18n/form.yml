@@ -61,6 +61,9 @@ presets:
       created:
         en: Created
         fr: Créé
+      started:
+        en: Started
+        fr: Débuté
       modified:
         en: Last modified
         fr: Dernière modification
@@ -130,6 +133,29 @@ presets:
     title:
       en: Information about submitter
       fr: Des informations sur le déposant
+  Status:
+    title:
+      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
+      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
+    label:
+      en: Development status of the project
+      fr: Statut de développement du projet
+    options:
+      alpha:
+        en: Alpha
+        fr: Alpha
+      beta:
+        en: Beta
+        fr: Beta
+      maintained:
+        en: Maintained
+        fr: Maintenu
+      deprecated:
+        en: Deprecated
+        fr: Déprécié
+      retired:
+        en: Retired
+        fr: Retraité
 
 # Code form specifics
 code:
@@ -226,29 +252,6 @@ code:
         fr:
           en: Name of related software in french
           fr: Nom d'un logiciel connexe en francais
-  Status:
-    title:
-      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
-      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
-    label:
-      en: Development status of the project
-      fr: Statut de développement du projet
-    options:
-      alpha:
-        en: Alpha
-        fr: Alpha
-      beta:
-        en: Beta
-        fr: Beta
-      maintained:
-        en: Maintained
-        fr: Maintenu
-      deprecated:
-        en: Deprecated
-        fr: Déprécié
-      retired:
-        en: Retired
-        fr: Retraité
   Vcs:
     title:
       en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
@@ -382,3 +385,70 @@ admin:
       yt:
         en: Yukon
         fr: Yukon
+
+# Software form specifics
+oss:
+
+  HomepageUrl:
+    title:
+      en: The English and French URLs of the project homepage.
+      fr: Les URLs en français et en anglais de la page d'accueil.
+    label:
+      en:
+        en: English homepage URL
+        fr: URL de la page d'accueil en anglais
+      fr:
+        en: French homepage URL
+        fr: URL de la page d'accueil en francais
+  ProjectName:
+    title:
+      en: The English and French name of the project.
+      fr: Le nom du projet en français et en anglais.
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+  RelatedCode:
+    title:
+      en: Information about each library, framework, API or other related software used in this project.
+      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+    labels:
+      Url:
+        en:
+          en: English URL of related software
+          fr: URL anglais d'un logiciel connexe
+        fr:
+          en: French URL of related software
+          fr: URL francais d'un logiciel connexe
+      Name:
+        en:
+          en: Name of related software in english
+          fr: Nom d'un logiciel connexe en anglais
+        fr:
+          en: Name of related software in french
+          fr: Nom d'un logiciel connexe en francais
+  UseName:
+    title:
+      en: The English and French name of the project activity.
+      fr: Le nom du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity name
+        fr: Nom du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity name
+        fr: Nom du domaine de l'activité du projet en français
+  UseDescription:
+    title:
+      en: The English and French description of the project activity.
+      fr: La description du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity description
+        fr: description du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity description
+        fr: description du domaine de l'activité du projet en français
