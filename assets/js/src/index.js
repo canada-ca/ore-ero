@@ -32,8 +32,12 @@ function getCodeObject() {
           email: $('#emailContact').val()
         },
         date: {
-          created: $('#dateCreated').val(),
-          metadataLastUpdated: $('#dateLastUpdated').val()
+          created: $('#dateCreated')
+            .val()
+            .toString(),
+          metadataLastUpdated: $('#dateLastUpdated')
+            .val()
+            .toString()
         },
         description: {
           en: $('#enDescription').val(),
@@ -89,7 +93,9 @@ function getCodeObject() {
 
   // date.lastModified
   if ($('#dateLastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#dateLastModified').val();
+    codeObject.releases[0].date.lastModified = $('#dateLastModified')
+      .val()
+      .toString();
   }
 
   // downloadURL
