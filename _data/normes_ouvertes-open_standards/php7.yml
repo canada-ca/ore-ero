@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2019-06-06'
+  metadataLastUpdated: '2019-06-14'
+description:
+  en: descEN
+  fr: descFR
+name:
+  en: PHP 7 EN
+  fr: PHP 7 FR
+specUrl:
+  en: 'http://www.google.com'
+  fr: 'http://www.google.ca'
+standardCode: PHP7
+standardsOrg: FRED
+tags:
+  en:
+    - tagEN
+    - Robots
+  fr:
+    - tagFR
+    - fhsgh
+administrations:
+  - adminCode: cbsa-asfc
+    contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+      URL:
+        en: 'https://github.com/fredericlestage-vdm'
+        fr: 'https://github.com/fredericlestage-vdm'
+      name: Frédéric Lestage
+    references:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        name:
+          en: ref en
+          fr: ref fr
+    status: Beta
