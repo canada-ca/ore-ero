@@ -11,11 +11,11 @@ function getSelectedOrgType() {
 
 function getAdminObject() {
   let adminObject = {
-    code: $('#adminCode').val(),
-    provinceCode: $('#provinceCode').val(),
+    code: $('#newCodeAdmin').val(),
+    provinceCode: $('#ProvinceCode').val(),
     name: {
-      en: $('#enOrganisationName').val(),
-      fr: $('#frOrganisationName').val()
+      en: $('#enName').val(),
+      fr: $('#frName').val()
     }
   };
   return adminObject;
@@ -211,7 +211,7 @@ function getCodeObject() {
   }
 
   // status
-  if ($('#status :selected').val() != '') {
+  if ($('#Status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
   }
 
@@ -467,13 +467,25 @@ function submitAdminForm() {
     });
 }
 
+function submitFormAdminCodeForm(){
+  console.log("adminCodeForm")
+}
+
 $('#prbotSubmitcodeForm').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
     toggleAlert(ALERT_IN_PROGRESS);
     window.scrollTo(0, document.body.scrollHeight);
-    submitForm();
+
+    if($("#enName").val()){
+      console.log("admin exists")
+      submitFormAdminCodeForm();
+    }else{
+      console.log("admin does not exist")
+      submitForm();
+    }
+  
   }
 });
 
