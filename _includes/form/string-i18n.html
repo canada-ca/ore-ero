@@ -1,4 +1,4 @@
 <h2>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</h2>
 {% capture labelfr %}{{ site.data.i18n.form[include.id][include.title].label.en[page.lang] }}{% endcapture %}
-{% capture labelen %}{{ site.data.i18n.form[include.id][include.title].label.en[page.lang] }}{% endcapture %}
+{% capture labelen %}{{ site.data.i18n.form[include.id][include.title].label.fr[page.lang] }}{% endcapture %}
 {% include form/components/group-i18n.html id=include.id title=include.title labelen=labelen labelfr=labelfr required=include.required type=include.type value=include.value readonly=include.readonly rule=include.rule %}
