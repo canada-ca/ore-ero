@@ -264,6 +264,64 @@ code:
       en: The latest version
       fr: La dernière version
 
+# Standards form specifics
+standards:
+  Name:
+    title:
+      en: Name of the Standard
+      fr: Nom du standard
+    label:
+      en:
+        en: Name in English
+        fr: nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
+  SpecURL:
+    title:
+      en: URL of the specification
+      fr: Url de la spécification
+    label:
+      en:
+        en: English url
+        fr: Url anglais
+      fr:
+        en: French URL
+        fr: Url français
+  StandardCode:
+    title:
+      en: Code for the Standard
+      fr: Code du standard
+    label:
+      en: Code
+      fr: Code
+  StandardOrg:
+    title:
+      en: Name of the organisation supporting the standard
+      fr: Nom de l'organisation supportant le standard
+    label:
+      en: Name
+      fr: Nom
+  Reference:
+    title:
+      en: Reference for the standard
+      fr: Référence pour le standard
+    labels:
+      Url:
+        en:
+          en: URL for the reference in english
+          fr: Url de la référence en anglais
+        fr:
+          en: URL for the reference in french
+          fr: Url de la référence en français
+      Name:
+        en:
+          en: Name of the reference in english
+          fr: Nom de la référence en anglais
+        fr:
+          en: Name of the reference in french
+          fr: Nom de la référence en français
+
 # Admin form specifics
 admin:
   Name:
@@ -324,6 +382,3 @@ admin:
       yt:
         en: Yukon
         fr: Yukon
-
-# Software form specifics
-# ...
