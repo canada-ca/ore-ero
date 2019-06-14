@@ -5,9 +5,9 @@
       {% when 'adminCode' %}
         {% include form/presets/adminCode.html %}
       {% when 'contact' %}
-        {% include form/presets/contact.html %}
+        {% include form/presets/contact.html phone=formGroup.phone %}
       {% when 'dates' %}
-        {% include form/presets/dates.html %}
+        {% include form/presets/dates.html created=formGroup.created started=formGroup.started modified=formGroup.modified metadata=formGroup.metadata %}
       {% when 'description' %}
         {% include form/presets/description.html %}
       {% when 'languages' %}
@@ -20,15 +20,17 @@
         {% include form/presets/provinceCode.html %}
       {% when 'schemaVersion' %}
         {% include form/presets/schemaVersion.html %}
+      {% when 'status' %}
+        {% include form/presets/status.html %}
       {% when 'submitter' %}
         {% include form/presets/submitter.html %}
       {% when 'tags' %}
         {% include form/presets/tags.html %}
       {% else %}
         {% if page.lang == 'en' %}
-          <p>Throw <span style="color: red;">ERROR</span> (<strong>preset</strong> not found).</p>
+          <p>Throw <span style="color: red;">ERROR</span> (<strong>preset {{ formGroup.preset }}</strong> not found).</p>
         {% else %}
-          <p>Retour <span style="color: red;">ERREUR</span> (<strong>preset</strong> non trouvé).</p>
+          <p>Retour <span style="color: red;">ERREUR</span> (<strong>preset {{ formGroup.preset }}</strong> non trouvé).</p>
         {% endif %}
     {% endcase %}
   {% else %}
@@ -44,9 +46,9 @@
         {% include form/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
       {% else %}
         {% if page.lang == 'en' %}
-          <p>Throw <span style="color: red;">ERROR</span> (<strong>widget</strong> not found).</p>
+          <p>Throw <span style="color: red;">ERROR</span> (<strong>widget {{ formGroup.widget }}</strong> not found).</p>
         {% else %}
-          <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget</strong> non trouvé).</p>
+          <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget {{ formGroup.widget }}</strong> non trouvé).</p>
         {% endif %}
     {% endcase %}
   {% endif %}
