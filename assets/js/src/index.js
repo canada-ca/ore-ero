@@ -9,8 +9,8 @@ function getSelectedOrgType() {
     .toLowerCase();
 }
 
-function getAdminCodeObject() {
-  let adminCodeObject = {
+function getAdminObject() {
+  let adminObject = {
     code: $('#adminCode').val(),
     provinceCode: $('#provinceCode').val(),
     name: {
@@ -18,7 +18,7 @@ function getAdminCodeObject() {
       fr: $('#frOrganisationName').val()
     }
   };
-  return adminCodeObject;
+  return adminObject;
 }
 
 function getCodeObject() {
@@ -32,12 +32,8 @@ function getCodeObject() {
           email: $('#emailContact').val()
         },
         date: {
-          created: $('#dateCreated')
-            .val()
-            .toString(),
-          metadataLastUpdated: $('#dateLastUpdated')
-            .val()
-            .toString()
+          created: $('#dateCreated').val(),
+          metadataLastUpdated: $('#dateLastUpdated').val()
         },
         description: {
           en: $('#enDescription').val(),
@@ -93,9 +89,7 @@ function getCodeObject() {
 
   // date.lastModified
   if ($('#dateLastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#dateLastModified')
-      .val()
-      .toString();
+    codeObject.releases[0].date.lastModified = $('#dateLastModified').val();
   }
 
   // downloadURL
@@ -319,10 +313,7 @@ function submitForm() {
           files: [
             {
               path: file,
-              content: jsyaml.dump(result, {
-                schema: jsyaml.JSON_SCHEMA,
-                lineWidth: 160
-              })
+              content: jsyaml.dump(result, { lineWidth: 160 })
             }
           ]
         }),
@@ -355,10 +346,11 @@ function submitForm() {
             files: [
               {
                 path: file,
-                content: jsyaml.dump(codeObject, {
-                  schema: jsyaml.JSON_SCHEMA,
-                  lineWidth: 160
-                })
+                content:
+                  '---\n' +
+                  jsyaml.dump(codeObject, {
+                    lineWidth: 160
+                  })
               }
             ]
           }),
@@ -392,12 +384,12 @@ function submitAdminForm() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let adminCodeObject = getAdminCodeObject();
+  let adminObject = getAdminObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
-    .mergeAdminFile(file, adminCodeObject, '', 'code')
+    .mergeAdminFile(file, adminObject, '', 'code')
     .then(result => {
       const config = {
         body: JSON.stringify({
@@ -413,7 +405,7 @@ function submitAdminForm() {
           files: [
             {
               path: file,
-              content: jsyaml.dump(result, { schema: jsyaml.JSON_SCHEMA })
+              content: jsyaml.dump(result)
             }
           ]
         }),
@@ -437,7 +429,11 @@ function submitAdminForm() {
             files: [
               {
                 path: file,
-                content: JSON.stringify(adminCodeObject)
+                content:
+                  '---\n' +
+                  jsyaml.dump(adminObject, {
+                    lineWidth: 160
+                  })
               }
             ]
           }),
