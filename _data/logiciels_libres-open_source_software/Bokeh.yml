@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test test
+homepageURL:
+  en: !<tag:yaml.org,2002:js/undefined> ''
+  fr: !<tag:yaml.org,2002:js/undefined> ''
+licenses:
+  - URL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    spdxID: mit
+name:
+  en: Bokeh
+  fr: Bokeh
+tags:
+  en:
+    - Visualisation
+  fr:
+    - tag
+admininstrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: test@abc.com
+        date:
+          started: '2019-06-04'
+          metadataLastUpdated: '2019-06-17'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
