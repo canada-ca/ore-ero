@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2015-09-28'
+  metadataLastUpdated: '2019-06-17'
+description:
+  en: 'The one-stop-shop solution for operating robots, satellites and beyond'
+  fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
+name:
+  en: utf en
+  fr: utf fr
+specURL:
+  en: 'http://www.google.com'
+  fr: 'http://www.google.com'
+standardCode: TYURTU
+standardsOrg: name
+tags:
+  en:
+    - Robots
+    - Space
+  fr:
+    - Robots
+    - Espace
+admininstrations:
+  - adminCode: lac-bac
+    contact:
+      email: apogy-dev@eclipse.org
+      URL:
+        en: 'https://projects.eclipse.org/projects/technology.apogy/contact'
+        fr: 'https://projects.eclipse.org/projects/technology.apogy/contact'
+      name: Frédéric Lestage
+    references:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.com'
+        name:
+          en: ref en
+          fr: ref fr
+    status: Beta
