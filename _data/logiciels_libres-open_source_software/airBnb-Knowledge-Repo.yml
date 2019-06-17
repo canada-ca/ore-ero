@@ -20,7 +20,7 @@ tags:
     - "Sharing knowledge"
   fr:
     - "Partage des connaissances"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

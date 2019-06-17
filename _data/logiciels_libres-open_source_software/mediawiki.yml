@@ -22,7 +22,7 @@ tags:
   fr:
     - "Wiki"
     - "Site web"
-admininstrations:
+administrations:
   -
     adminCode: tbs-sct
     uses:

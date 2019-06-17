@@ -20,7 +20,7 @@ tags:
     - "Data base"
   fr:
     - "Base de données"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

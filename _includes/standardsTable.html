@@ -79,7 +79,7 @@
     <div class="modal-body">
       <p><strong>{{ standard.description[page.lang] }}</strong></p>
       <p>Is being used by:</p>
-      {% for admin in standard.admininstrations %}
+      {% for admin in standard.administrations %}
         <div class="row">
           {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
           <div class="col-md-7">
