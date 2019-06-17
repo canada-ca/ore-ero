@@ -7,7 +7,7 @@ formGroups:
   - widget: select
     title: ProvinceCode
     required: false
-    options: [ab, bc, mb, nb, nl, nt, ns, nu, "on", pe, qc, sk, yt]  # on is a yaml/liquid/jekyll keyword and thus must be escaped
+    options: [ab, bc, mb, nb, nl, nt, ns, nu, "on", pe, qc, sk, yt] # on is a yaml/liquid/jekyll keyword and thus must be escaped
   - widget: string-i18n
     title: Name
     rule: alphanum-space

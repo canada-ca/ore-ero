@@ -367,7 +367,7 @@ admin:
       nu:
         en: Nunavut
         fr: Nunavut
-      "on":  # on is a yaml/liquid/jekyll keyword and thus must be escaped
+      "on": # on is a yaml/liquid/jekyll keyword and thus must be escaped
         en: Ontario
         fr: Ontario
       pe:
