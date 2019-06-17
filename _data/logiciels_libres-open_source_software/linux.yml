@@ -20,7 +20,7 @@ tags:
     - "Operating system kernel"
   fr:
     - "Noyau de système d'exploitation"
-admininstrations:
+administrations:
   -
     adminCode: tbs-sct
     uses:

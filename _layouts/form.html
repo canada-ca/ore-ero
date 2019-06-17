@@ -11,7 +11,7 @@ layout: default
 
     {% include form/presets/submitter.html %}
 
-    <button id="prbotSubmit{{ page.id }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.Submit[page.lang] }}</button>
+    <button id="prbotSubmit{{ page.ref }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.Submit[page.lang] }}</button>
     <button id="formReset" type="reset" class="btn btn-default">{{ site.data.i18n.form.Reset[page.lang] }}</button>
 
     <div style="margin-top: 10px">

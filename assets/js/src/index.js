@@ -245,15 +245,17 @@ function getStandardsObject() {
       fr: $('#frDescription').val()
     },
     name: {
-      en: $('#enProjectName').val(),
-      fr: $('#frProjectName').val()
+      en: $('#enName').val(),
+      fr: $('#frName').val()
     },
-    specUrl: {
-      en: $('#enSpecUrl').val(),
-      fr: $('#frSpecUrl').val()
+    specURL: {
+      en: $('#enSpecURL').val(),
+      fr: $('#frSpecURL').val()
     },
-    standardCode: $('#StandardCode'),
-    standardsOrg: $('#StandardOrg'),
+    standardCode: $('#StandardCode')
+      .val()
+      .toUpperCase(),
+    standardsOrg: $('#StandardOrg').val(),
     tags: {
       en: getTags([...document.querySelectorAll('#tagsEN input')]),
       fr: getTags([...document.querySelectorAll('#tagsFR input')])
@@ -267,16 +269,16 @@ function getStandardsObject() {
         references: [
           {
             URL: {
-              en: $('#enUrlReference'),
-              fr: $('#frUrlReference')
+              en: $('#enUrlReference').val(),
+              fr: $('#frUrlReference').val()
             },
             name: {
-              en: $('#enNameReference'),
-              fr: $('#frNameReference')
+              en: $('#enNameReference').val(),
+              fr: $('#frNameReference').val()
             }
           }
         ],
-        status: $('#status')
+        status: $('#status').val()
       }
     ]
   };
@@ -354,7 +356,7 @@ function toggleAlert(option) {
   }
 }
 
-function submitForm() {
+function submitCodeForm() {
   let submitButton = document.getElementById('prbotSubmitcode');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
@@ -542,20 +544,22 @@ function submitStandardsForm() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
+  let name = $('#StandardCode')
+    .val()
+    .toLowerCase();
+
   let standardsObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${$(
-    '#standardCode'
-  ).val()}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${name}.yml`;
 
   fileWriter
-    .mergeAdminFile(file, standardsObject, '', 'code')
+    .merge(file, standardsObject, 'administrations', 'adminCode')
     .then(result => {
       const config = {
         body: JSON.stringify({
           user: USERNAME,
           repo: REPO_NAME,
-          title: `Updated the ${$('#standardCode').val()} standard file`,
+          title: `Updated the ${name} standard file`,
           description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
           commit: 'Committed by ' + $('#submitterEmail').val(),
           author: {
@@ -579,7 +583,7 @@ function submitStandardsForm() {
           body: JSON.stringify({
             user: USERNAME,
             repo: REPO_NAME,
-            title: 'Created the standard file for' + $('#standardCode').val(),
+            title: 'Created the standard file for ' + name,
             description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
             commit: 'Committed by ' + $('#submitterEmail').val(),
             author: {
@@ -627,7 +631,7 @@ $('#prbotSubmitcode').click(function() {
     toggleAlert(ALERT_OFF);
     toggleAlert(ALERT_IN_PROGRESS);
     window.scrollTo(0, document.body.scrollHeight);
-    submitForm();
+    submitCodeForm();
   }
 });
 

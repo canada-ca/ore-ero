@@ -1,6 +1,6 @@
 ---
-schemaVersio: '1.0'
-admininstrations:
+schemaVersion: '1.0'
+administrations:
   -
     adminCode: tbs-sct
     contact:

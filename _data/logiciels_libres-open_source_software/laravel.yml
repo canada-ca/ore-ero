@@ -22,7 +22,7 @@ tags:
   fr:
     - "Serveur HTTP"
     - PHP
-admininstrations:
+administrations:
   -
     adminCode: gac-amc
     uses:

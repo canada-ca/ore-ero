@@ -24,7 +24,7 @@ tags:
     - "Plate-forme de conteneur"
     - Développement
     - Infrastructure
-admininstrations:
+administrations:
   -
     adminCode: statcan
     uses:

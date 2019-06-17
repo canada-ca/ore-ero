@@ -24,7 +24,7 @@ tags:
     - Collaboration
     - "Éditeur texte"
     - Productivité
-admininstrations:
+administrations:
   -
     adminCode: tbs-sct
     uses:
