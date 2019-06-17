@@ -50,10 +50,7 @@ formGroups:
         title: Name
         rule: alphanum-space
   - preset: tags
-  - widget: select
-    title: Status
-    required: false
-    options: [alpha, beta, maintained, deprecated, retired]
+  - preset: status
   - widget: string
     title: VersionProject
     required: false

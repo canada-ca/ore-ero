@@ -29,7 +29,7 @@ tags:
     - "Serveur HTTP"
     - PHP
     - Laravel
-admininstrations:
+administrations:
   -
     adminCode: gac-amc
     uses:

@@ -56,9 +56,20 @@ Select field for the associated admin code (see the list in `_data/administratio
 
 A group of fields for the preferred contact for the project.
 
+Parameters:
+ - `phone: boolean # OPTIONAL - Default: true` Wether to display the phone field of not.
+
 **dates**
 
 A group of fields for the created, last modified and last updated dates.
+
+Parameters:
+ - `created: boolean # OPTIONAL - Default: false` Displays the dateCreated field.
+ - `started: boolean # OPTIONAL - Default: false` Displays the dateStarted field.
+ - `modified: boolean # OPTIONAL - Default: false` Displays the dateLastModified field.
+ - `metadata: boolean # OPTIONAL - Default: false` Displays the dateLastUpdated field.
+
+*You must specify at least one of the parameters to true, otherwise, the group will be empty, displaying only the title.*
 
 **description**
 

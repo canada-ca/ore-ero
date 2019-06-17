@@ -20,7 +20,7 @@ tags:
     - "Application platform"
   fr:
     - "Plateforme applicative"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

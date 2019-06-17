@@ -20,7 +20,7 @@ tags:
     - "Programming language"
   fr:
     - "langage de programmation"
-admininstrations:
+administrations:
   -
     adminCode: gac-amc
     uses:

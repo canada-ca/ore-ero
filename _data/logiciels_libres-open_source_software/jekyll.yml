@@ -20,7 +20,7 @@ tags:
     - "Web site"
   fr:
     - "Site web"
-admininstrations:
+administrations:
   -
     adminCode: tbs-sct
     uses:
