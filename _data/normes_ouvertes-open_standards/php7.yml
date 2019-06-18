@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2019-06-12'
+  metadataLastUpdated: '2019-06-18'
+description:
+  en: descEN
+  fr: descFR
+name:
+  en: php 7 en
+  fr: php 7 fr
+specURL:
+  en: 'http://www.google.com'
+  fr: 'http://www.google.com'
+standardCode: PHP7
+standardsOrg: fred
+tags:
+  en:
+    - server
+    - php
+  fr:
+    - server
+    - php
+administrations:
+  - adminCode: aafc-aac
+    contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+    references:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.com'
+        name:
+          en: ref en
+          fr: ref fr
+    status: mandatory-gc
