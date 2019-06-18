@@ -467,8 +467,8 @@ function submitAdminForm() {
     });
 }
 
-function submitFormAdminCodeForm(){
-  console.log("adminCodeForm")
+function submitFormAdminCodeForm() {
+  console.log('adminCodeForm');
 }
 
 $('#prbotSubmitcodeForm').click(function() {
@@ -478,14 +478,13 @@ $('#prbotSubmitcodeForm').click(function() {
     toggleAlert(ALERT_IN_PROGRESS);
     window.scrollTo(0, document.body.scrollHeight);
 
-    if($("#enName").val()){
-      console.log("admin exists")
+    if ($('#enName').val()) {
+      console.log('admin exists');
       submitFormAdminCodeForm();
-    }else{
-      console.log("admin does not exist")
+    } else {
+      console.log('admin does not exist');
       submitForm();
     }
-  
   }
 });
 
