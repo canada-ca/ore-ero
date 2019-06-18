@@ -1,4 +1,10 @@
-/* global $ YamlWriter USERNAME REPO_NAME jsyaml PRBOT_URL */
+/*
+  global $
+  YamlWriter jsyaml
+  USERNAME REPO_NAME PRBOT_URL
+  validateRequired toggleAlert getTags
+  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+*/
 
 function getSelectedOrgType() {
   return $('#adminCode :selected')

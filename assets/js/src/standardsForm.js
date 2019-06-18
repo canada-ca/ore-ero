@@ -1,3 +1,11 @@
+/*
+  global $
+  YamlWriter jsyaml
+  USERNAME REPO_NAME PRBOT_URL
+  validateRequired toggleAlert getTags
+  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+*/
+
 const section = $('.page-standardsForm #StandardCodeSelect');
 const admin = $('.page-standardsForm #adminCode');
 
@@ -231,7 +239,7 @@ function selectStandard() {
 
         $('#adminCode').focus();
       } else if (value == '') {
-        $('#schemaVersion').val('');
+        $('#schemaVersion').val('1.0');
         $('#StandardCode').val('');
         $('#enName').val('');
         $('#frName').val('');
@@ -248,7 +256,8 @@ function selectStandard() {
       } else {
         alert('Error retrieving the data');
       }
-    });
+    }
+  );
 }
 
 function selectAdmin() {
@@ -259,26 +268,56 @@ function selectAdmin() {
     function(result) {
       if (result[standard]) {
         for (let i = 0; i < result[standard]['administrations'].length; i++) {
-          if(result[standard]['administrations'][i]['adminCode'] == administration) {
-            if(result[standard]['administrations'][i]['contact']['URL']) {
-              if(result[standard]['administrations'][i]['contact']['URL']['en'])
-                $('#enUrlContact').val(result[standard]['administrations'][i]['contact']['URL']['en']);
-              if(result[standard]['administrations'][i]['contact']['URL']['fr'])
-                $('#frUrlContact').val(result[standard]['administrations'][i]['contact']['URL']['fr']);
+          if (
+            result[standard]['administrations'][i]['adminCode'] ==
+            administration
+          ) {
+            if (result[standard]['administrations'][i]['contact']['URL']) {
+              if (
+                result[standard]['administrations'][i]['contact']['URL']['en']
+              )
+                $('#enUrlContact').val(
+                  result[standard]['administrations'][i]['contact']['URL']['en']
+                );
+              if (
+                result[standard]['administrations'][i]['contact']['URL']['fr']
+              )
+                $('#frUrlContact').val(
+                  result[standard]['administrations'][i]['contact']['URL']['fr']
+                );
             }
             if (result[standard]['administrations'][i]['contact']['email'])
-              $('#emailContact').val(result[standard]['administrations'][i]['contact']['email']);
+              $('#emailContact').val(
+                result[standard]['administrations'][i]['contact']['email']
+              );
             if (result[standard]['administrations'][i]['contact']['name'])
-              $('#nameContact').val(result[standard]['administrations'][i]['contact']['name']);
-            $('#enUrlReference').val(result[standard]['administrations'][i]['references'][0]['URL']['en']);
-            $('#frUrlReference').val(result[standard]['administrations'][i]['references'][0]['URL']['fr']);
-            $('#enNameReference').val(result[standard]['administrations'][i]['references'][0]['name']['en']);
-            $('#frNameReference').val(result[standard]['administrations'][i]['references'][0]['name']['fr']);
+              $('#nameContact').val(
+                result[standard]['administrations'][i]['contact']['name']
+              );
+            $('#enUrlReference').val(
+              result[standard]['administrations'][i]['references'][0]['URL'][
+                'en'
+              ]
+            );
+            $('#frUrlReference').val(
+              result[standard]['administrations'][i]['references'][0]['URL'][
+                'fr'
+              ]
+            );
+            $('#enNameReference').val(
+              result[standard]['administrations'][i]['references'][0]['name'][
+                'en'
+              ]
+            );
+            $('#frNameReference').val(
+              result[standard]['administrations'][i]['references'][0]['name'][
+                'fr'
+              ]
+            );
 
             $('#Status').val(result[standard]['administrations'][i]['status']);
             break;
           } else {
-            console.log('admin not found in standard');
             $('#enUrlContact').val('');
             $('#frUrlContact').val('');
             $('#emailContact').val('');
