@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test
+homepageURL:
+  en: 'https://angular.io'
+  fr: 'https://angular.io'
+licenses:
+  - URL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    spdxID: test
+name:
+  en: TEST
+  fr: TEST
+tags:
+  en:
+    - test
+    - test1
+  fr:
+    - test
+    - test1
+administrations:
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: test@abc.com
+        date:
+          started: '2019-06-03'
+          metadataLastUpdated: '2019-06-18'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
