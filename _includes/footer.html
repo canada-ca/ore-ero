@@ -69,6 +69,10 @@
 <script type="text/javascript" src="../assets/js/src/git-file-manager.js"></script>
 <script type="text/javascript" src="../assets/js/src/index.js"></script>
 <script type="text/javascript" src="../assets/js/src/custom-form-validation.js"></script>
+<script type="text/javascript" src="../assets/js/src/utils.js"></script>
+{% if page.ref == "standardsForm" %}
+  <script type="text/javascript" src="../assets/js/src/standardsForm.js"></script>
+{% endif %}
 <script>
 
   const REPO_NAME = "{{ site.github_repository }}";
@@ -241,24 +245,20 @@
     var today = year + "-" + month + "-" + day;
     return today;
   }
-  
-  $(document).ready(function() {
-    $("#dateLastUpdated").val(getTodayDate());
-  });
 
   function displayListOrgProject(organization){
     (pathNameUrl == enPathName)?
     $('<label for="selectedPro">Select a project </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject"): 
     $('<label for="selectedPro">Sélectionner un projet </label> <input class="form-control" id="selectedPro" name="selectedPro" type="text" list="listProjects"/><datalist id = "listProjects"></datalist>').appendTo("#selectedProject");
 
-    organization.releases.forEach(function(project){    
+    organization.releases.forEach(function(project){
       buildProjectField(project);
     });
   }
 
   function getProjectFields(organization){
     pName = $("#selectedPro").val();
-    organization.releases.forEach(function(project){    
+    organization.releases.forEach(function(project){
       if(project.name["en"] == pName || project.name["fr"] == pName) fillFields(project);
     });
   }
@@ -270,14 +270,14 @@
   $(document).ready(function(){
     $("#adminCode").change(function(){
       $.getJSON("https://canada-ca.github.io/ore-ero/code.json", function(result){
-   
+
         $('#selectedProject').empty();
         selectedAdminCode = $("#adminCode").val();
 
         var federal = result.federal[selectedAdminCode];
         var provincial = result.provincial[selectedAdminCode];
         var municipal = result.municipal[selectedAdminCode];
-       
+
         if( municipal !== undefined){
             displayListOrgProject(municipal);
         } else if( provincial !== undefined){
@@ -285,22 +285,22 @@
         } else if( federal !== undefined){
             displayListOrgProject(federal);
         }
-      
+
         $('#selectedPro').focus();
-        
+
         $('#selectedPro').change(function(){
 
           $("#tagsEN").find('.control-group').detach();
           $("#tagsFR").find('.control-group').detach();
 
           if( municipal !== undefined){
-              getProjectFields(municipal);        
+              getProjectFields(municipal);
           } else if( provincial !== undefined){
               getProjectFields(provincial);
           } else if( federal !== undefined){
               getProjectFields(federal);
           }
-          
+
         });
       });
     });

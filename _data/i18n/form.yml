@@ -269,6 +269,13 @@ code:
 
 # Standards form specifics
 standards:
+  emailContact:
+    title:
+      en: Email for the reference
+      fr: Le courriel de la référence
+    label:
+      en: Email
+      fr: Courriel
   Name:
     title:
       en: Name of the Standard
@@ -296,8 +303,8 @@ standards:
       en: Code for the Standard
       fr: Code du standard
     label:
-      en: Code
-      fr: Code
+      en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
+      fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
   StandardOrg:
     title:
       en: Name of the organisation supporting the standard
@@ -305,6 +312,13 @@ standards:
     label:
       en: Name
       fr: Nom
+  Status:
+    title:
+      en: The status of the standard
+      fr: Le status du standard
+    label:
+      en: Status
+      fr: Status
   Reference:
     title:
       en: Reference for the standard

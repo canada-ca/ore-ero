@@ -1,0 +1,16 @@
+<h2>{{ site.data.i18n.form.standards.StandardCode.title[page.lang] }}</h2>
+<div class="form-group">
+  {% assign title="StandardCode" %}
+  {% capture label %}{{ site.data.i18n.form.standards.StandardCode.label[page.lang] }}{% endcapture %}
+  {% include form/components/label.html name=title required=include.required label=label %}
+  <div>
+    {% include form/components/input.html name=title type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule style="display: inline-block;" %}
+    <select class="form-control" id="{{ title }}Select" name="{{ title }}" style="display: inline-block;">
+      <option value="">&nbsp;</option>
+      {% for standards in site.data.normes_ouvertes-open_standards %}
+        {% assign standard = standards[1] %}
+        <option value="{{ standard.standardCode }}">{{ standard.standardCode }}</option>
+      {% endfor %}
+    </select>
+  </div>
+</div>
