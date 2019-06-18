@@ -4,23 +4,26 @@ id: standards
 
 formGroups:
   - preset: schemaVersion
-  - preset: dates
-    created: true
-    metadata: true
-  - preset: description
+  - preset: selectStandard
   - widget: string-i18n
     title: Name
     rule: alphanum-space
+  - preset: description
+  - preset: dates
+    created: true
+    metadata: true
   - widget: string-i18n
     title: SpecURL
     type: url
   - widget: string
-    title: StandardCode
-  - widget: string
     title: StandardOrg
   - preset: tags
   - preset: adminCode
-  - preset: contact
+  - widget: string
+    type: email
+    title: emailContact
+    required: false
+    phone: false
   - widget: group
     title: Reference
     fields:
@@ -29,5 +32,6 @@ formGroups:
         type: url
       - widget: string-i18n
         title: Name
-        rule: alphanum-space
-  - preset: status
+        rule: names
+  - widget: string
+    title: Status
