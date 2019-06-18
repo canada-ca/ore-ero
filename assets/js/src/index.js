@@ -356,7 +356,6 @@ function toggleAlert(option) {
   }
 }
 
-
 function submitCodeForm() {
   let submitButton = document.getElementById('prbotSubmitcodeForm');
   let resetButton = document.getElementById('formReset');
@@ -543,7 +542,6 @@ function submitFormAdminCodeForm() {
   console.log('adminCodeForm');
 }
 
-$('#prbotSubmitcodeForm').click(function() {
 function submitStandardsForm() {
   let submitButton = document.getElementById('prbotSubmitstandardsForm');
   let resetButton = document.getElementById('formReset');
