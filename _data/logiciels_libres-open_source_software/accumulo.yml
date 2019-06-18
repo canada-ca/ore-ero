@@ -20,7 +20,7 @@ tags:
     - "Application"
   fr:
     - "Application"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

@@ -24,7 +24,7 @@ tags:
     - "Navigateur Web"
     - "Poste de travail"
     - Mobile
-admininstrations:
+administrations:
   -
     adminCode: pch
     uses:

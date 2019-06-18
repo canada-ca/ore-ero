@@ -20,7 +20,7 @@ tags:
     - "Data integration"
   fr:
     - "Intégration de données"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

@@ -20,7 +20,7 @@ tags:
     - "gis"
   fr:
     - "sig"
-admininstrations:
+administrations:
   -
     adminCode: statcan
     uses:

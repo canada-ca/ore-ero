@@ -20,7 +20,7 @@ tags:
     - "Incremental management of data"
   fr:
     - "Gestion incrementale des données"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

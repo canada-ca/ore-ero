@@ -1,7 +1,7 @@
 ---
-admininstrations:
-  -
-    adminCode: tbs-sct
+schemaVersion: '1.0'
+administrations:
+  - adminCode: tbs-sct
     contact:
       email: ~
     references:
@@ -13,8 +13,7 @@ admininstrations:
           en: "Standard on Web Interoperability"
           fr: "Norme sur l’interopérabilité du Web"
     status: mandatory-gc
-  -
-    adminCode: bac-lac
+  - adminCode: bac-lac
     contact:
       email: ~
     references:

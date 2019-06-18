@@ -20,7 +20,7 @@ tags:
     - "Visualisation"
   fr:
     - "Visualisation"
-admininstrations:
+administrations:
   -
     adminCode: mtl_qc
     uses:

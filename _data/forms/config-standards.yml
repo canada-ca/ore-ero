@@ -5,6 +5,8 @@ id: standards
 formGroups:
   - preset: schemaVersion
   - preset: dates
+    created: true
+    metadata: true
   - preset: description
   - widget: string-i18n
     title: Name

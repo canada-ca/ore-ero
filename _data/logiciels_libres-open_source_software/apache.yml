@@ -20,7 +20,7 @@ tags:
     - "HTTP Server"
   fr:
     - "Serveur HTTP"
-admininstrations:
+administrations:
   -
     adminCode: gac-amc
     uses:

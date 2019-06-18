@@ -32,12 +32,8 @@ function getCodeObject() {
           email: $('#emailContact').val()
         },
         date: {
-          created: $('#dateCreated')
-            .val()
-            .toString(),
-          metadataLastUpdated: $('#dateLastUpdated')
-            .val()
-            .toString()
+          created: $('#dateCreated').val(),
+          metadataLastUpdated: $('#dateLastUpdated').val()
         },
         description: {
           en: $('#enDescription').val(),
@@ -236,6 +232,81 @@ function getTags(query) {
     .get();
 }
 
+function getStandardsObject() {
+  // Required fields are included first.
+  let standardsObject = {
+    schemaVersion: $('#schemaVersion').val(),
+    date: {
+      created: $('#dateCreated').val(),
+      metadataLastUpdated: $('#dateLastUpdated').val()
+    },
+    description: {
+      en: $('#enDescription').val(),
+      fr: $('#frDescription').val()
+    },
+    name: {
+      en: $('#enName').val(),
+      fr: $('#frName').val()
+    },
+    specURL: {
+      en: $('#enSpecURL').val(),
+      fr: $('#frSpecURL').val()
+    },
+    standardCode: $('#StandardCode')
+      .val()
+      .toUpperCase(),
+    standardsOrg: $('#StandardOrg').val(),
+    tags: {
+      en: getTags([...document.querySelectorAll('#tagsEN input')]),
+      fr: getTags([...document.querySelectorAll('#tagsFR input')])
+    },
+    administrations: [
+      {
+        adminCode: $('#adminCode').val(),
+        contact: {
+          email: $('#emailContact').val()
+        },
+        references: [
+          {
+            URL: {
+              en: $('#enUrlReference').val(),
+              fr: $('#frUrlReference').val()
+            },
+            name: {
+              en: $('#enNameReference').val(),
+              fr: $('#frNameReference').val()
+            }
+          }
+        ],
+        status: $('#status').val()
+      }
+    ]
+  };
+
+  // Then we handle all optional fields.
+
+  // contact.URL
+  if ($('#frUrlContact').val() || $('#enUrlContact').val()) {
+    standardsObject.administrations[0].contact.URL = {};
+  }
+  if ($('#enUrlContact').val()) {
+    standardsObject.administrations[0].contact.URL.en = $(
+      '#enUrlContact'
+    ).val();
+  }
+  if ($('#frUrlContact').val()) {
+    standardsObject.administrations[0].contact.URL.fr = $(
+      '#frUrlContact'
+    ).val();
+  }
+
+  if ($('#nameContact').val()) {
+    standardsObject.administrations[0].contact.name = $('#nameContact').val();
+  }
+
+  return standardsObject;
+}
+
 /**
  * Validates the required fields in the codeForm
  * WET uses the JQuery plugin (https://jqueryvalidation.org/) for their form validation
@@ -285,7 +356,8 @@ function toggleAlert(option) {
   }
 }
 
-function submitForm() {
+
+function submitCodeForm() {
   let submitButton = document.getElementById('prbotSubmitcodeForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
@@ -411,7 +483,7 @@ function submitAdminForm() {
           files: [
             {
               path: file,
-              content: jsyaml.dump(result)
+              content: jsyaml.dump(result, { lineWidth: 160 })
             }
           ]
         }),
@@ -472,6 +544,94 @@ function submitFormAdminCodeForm() {
 }
 
 $('#prbotSubmitcodeForm').click(function() {
+function submitStandardsForm() {
+  let submitButton = document.getElementById('prbotSubmitstandardsForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let name = $('#StandardCode')
+    .val()
+    .toLowerCase();
+
+  let standardsObject = getStandardsObject();
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let file = `_data/normes_ouvertes-open_standards/${name}.yml`;
+
+  fileWriter
+    .merge(file, standardsObject, 'administrations', 'adminCode')
+    .then(result => {
+      const config = {
+        body: JSON.stringify({
+          user: USERNAME,
+          repo: REPO_NAME,
+          title: `Updated the ${name} standard file`,
+          description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+          commit: 'Committed by ' + $('#submitterEmail').val(),
+          author: {
+            name: $('#submitterUsername').val(),
+            email: $('#submitterEmail').val()
+          },
+          files: [
+            {
+              path: file,
+              content: jsyaml.dump(result, { lineWidth: 160 })
+            }
+          ]
+        }),
+        method: 'POST'
+      };
+      return fetch(PRBOT_URL, config);
+    })
+    .catch(err => {
+      if (err.status == 404) {
+        const config = {
+          body: JSON.stringify({
+            user: USERNAME,
+            repo: REPO_NAME,
+            title: 'Created the standard file for ' + name,
+            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+            commit: 'Committed by ' + $('#submitterEmail').val(),
+            author: {
+              name: $('#submitterUsername').val(),
+              email: $('#submitterEmail').val()
+            },
+            files: [
+              {
+                path: file,
+                content:
+                  '---\n' +
+                  jsyaml.dump(standardsObject, {
+                    lineWidth: 160
+                  })
+              }
+            ]
+          }),
+          method: 'POST'
+        };
+        return fetch(PRBOT_URL, config);
+      } else {
+        throw err;
+      }
+    })
+    .then(response => {
+      if (response.status != 200) {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_FAIL);
+        submitButton.disabled = false;
+        resetButton.disabled = false;
+      } else {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_SUCCESS);
+        // Redirect to home page
+        setTimeout(function() {
+          window.location.href = './index.html';
+        }, 2000);
+      }
+    });
+}
+
+$('#prbotSubmitcodeForm').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
@@ -483,7 +643,7 @@ $('#prbotSubmitcodeForm').click(function() {
       submitFormAdminCodeForm();
     } else {
       console.log('admin does not exist');
-      submitForm();
+      submitCodeForm();
     }
   }
 });
@@ -495,5 +655,15 @@ $('#prbotSubmitadminForm').click(function() {
     toggleAlert(ALERT_IN_PROGRESS);
     window.scrollTo(0, document.body.scrollHeight);
     submitAdminForm();
+  }
+});
+
+$('#prbotSubmitstandardsForm').click(function() {
+  // Progress only when form input is valid
+  if (validateRequired()) {
+    toggleAlert(ALERT_OFF);
+    toggleAlert(ALERT_IN_PROGRESS);
+    window.scrollTo(0, document.body.scrollHeight);
+    submitStandardsForm();
   }
 });
