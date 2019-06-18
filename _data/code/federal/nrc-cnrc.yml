@@ -13,9 +13,7 @@ releases:
       fr: "Boîte à outils pour effectuer une simulation de Monte Carlo du transport du rayonnement ionisant à travers la matière"
     languages:
       - C++
-    name:
-      en: EGSnrc
-      fr: EGSnrc
+    name: EGSnrc
     licenses:
       -
         URL:

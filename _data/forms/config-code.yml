@@ -5,9 +5,20 @@ id: code
 formGroups:
   - preset: schemaVersion
   - preset: adminCode
+  - widget: string
+    title: ProjectName
+    rule: alphanum-space
+  - preset: description
   - preset: contact
   - preset: dates
-  - preset: description
+    created: true
+    modified: true
+    metadata: true
+  - preset: licenses
+  - preset: tags
+  - widget: string-i18n
+    title: RepositoryUrl
+    type: url
   - widget: string-i18n
     title: DownloadUrl
     type: url
@@ -17,9 +28,6 @@ formGroups:
     type: url
     required: false
   - preset: languages
-  - widget: string-i18n
-    title: ProjectName
-    rule: alphanum-space
   - widget: string-i18n
     title: Organization
     rule: alphanum-space
@@ -35,10 +43,6 @@ formGroups:
       - widget: string-i18n
         title: Name
         rule: alphanum-space
-  - preset: licenses
-  - widget: string-i18n
-    title: RepositoryUrl
-    type: url
   - widget: group
     title: RelatedCode
     required: false
@@ -49,7 +53,6 @@ formGroups:
       - widget: string-i18n
         title: Name
         rule: alphanum-space
-  - preset: tags
   - preset: status
   - widget: string
     title: VersionProject

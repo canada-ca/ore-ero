@@ -14,9 +14,7 @@ releases:
     languages:
       - PHP
       - MySQL
-    name:
-      en: GCconnex
-      fr: GCconnex
+    name: GCconnex
     organization:
       en: Digital Enablement Division
       fr: Division de la mobilisation numérique
@@ -51,9 +49,7 @@ releases:
     description:
       en: "Both digital.canada.ca and numerique.canada.ca are published from this repository."
       fr: "digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository."
-    name:
-      en: "CDS Website"
-      fr: "Site Web SNC"
+    name: "CDS Website"
     organization:
       en: Canadian Digital Services
       fr: Services numériques Canadiens
@@ -79,11 +75,9 @@ releases:
       created: 2013-08-11
       metadataLastUpdated: 2019-01-31
     description:
-      en: "Building websites that are accessible, usable, interoperable, mobile friendly and multilingual"
-      fr: "Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues"
-    name:
-      en: "Web Experience Toolkit (WET)"
-      fr: "Boîte à outils de l’expérience Web (BOEW)"
+      en: "Web experience toolkit (WET) for building websites that are accessible, usable, interoperable, mobile friendly and multilingual"
+      fr: "Boîte à outils de l'expérience Web (BOEW) pour construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues"
+    name: WET-BOEW
     licenses:
       -
         URL:
@@ -113,9 +107,7 @@ releases:
       fr: "Extension à CKAN du Gouvernement du Canada"
     languages:
       - Python
-    name:
-      en: ckanext-canada
-      fr: ckanext-canada
+    name: ckanext-canada
     organization:
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -155,9 +147,7 @@ releases:
       fr: "Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique."
     languages:
       - Python
-    name:
-      en: ckanext-cloudstorage
-      fr: ckanext-cloudstorage
+    name: ckanext-cloudstorage
     organization:
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -196,9 +186,7 @@ releases:
       en: "Easy, shareable custom CKAN schemas"
     languages:
       - Python
-    name:
-      en: ckanext-scheming
-      fr: ckanext-scheming
+    name: ckanext-scheming
     organization:
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -237,9 +225,7 @@ releases:
       en: "Command line interface and Python module for accessing the CKAN Action API"
     languages:
       - Python
-    name:
-      en: ckanapi
-      fr: ckanapi
+    name: ckanapi
     organization:
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -278,9 +264,7 @@ releases:
       en: "Multilingual metadata fields for CKAN"
     languages:
       - Python
-    name:
-      en: ckanext-fluent
-      fr: ckanext-fluent
+    name: ckanext-fluent
     organization:
       en: "Open Government"
       fr: "Gouvernement Ouvert"
@@ -315,11 +299,9 @@ releases:
       created: 2017-12-31
       metadataLastUpdated: 2019-03-06
     description:
-      en: "This Website and all the data."
-      fr: "Ce site Web et toutes les données."
-    name:
-      en: "Open Resource Exchange"
-      fr: "Échange de Ressource Ouvert"
+      en: "Open Resource exchange website (the one you are currently browsing) and all the data."
+      fr: "Échange de ressource ouvert (le site web que vous naviguez présentement) et toutes les données."
+    name: Ore-Ero
     licenses:
       -
         URL:

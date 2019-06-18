@@ -12,9 +12,7 @@ releases:
     description:
       en: "Centralize, process, and clean data"
       fr: "Centraliser, traiter et nettoyer les données"
-    name:
-      en: "OpenTabulate"
-      fr: "OpenTabulate"
+    name: "OpenTabulate"
     licenses:
       -
         URL:

@@ -13,9 +13,7 @@ releases:
       fr: "Skill Amazon Alexa pour les rappels de sécurité pour les véhicules."
     languages:
       - JavaScript
-    name:
-      en: alexa-gc-recalls
-      fr: alexa-gc-recalls
+    name: alexa-gc-recalls
     licenses:
       -
         URL:
@@ -49,9 +47,7 @@ releases:
       fr: "Le Centre de référence est une application WPF .net conçue pour permettre aux inspecteurs de Transports Canada de récupérer rapidement les documents stockés sur un lecteur réseau configuré avec Windows Sync."
     languages:
       - C#
-    name:
-      en: reference-center
-      fr: reference-center
+    name: reference-center
     licenses:
       -
         URL:

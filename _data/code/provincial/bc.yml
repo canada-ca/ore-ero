@@ -16,9 +16,7 @@ releases:
       fr: "Application Échange de développeurs C.-B."
     languages: 
       - Python
-    name: 
-      en: Devex
-      fr: Devex
+    name: Devex
     licenses: 
       - 
         URL: 
@@ -53,9 +51,7 @@ releases:
       fr: "https://apps.nrs.gov.bc.ca/gwells/"
     languages: 
       - JavaScript
-    name: 
-      en: gwells
-      fr: gwells
+    name: gwells
     licenses: 
       - 
         URL: 
@@ -91,9 +87,7 @@ releases:
       fr: "https://developer.gov.bc.ca/"
     languages: 
       - JavaScript
-    name: 
-      en: devhub-app-web
-      fr: devhub-app-web
+    name: devhub-app-web
     licenses: 
       - 
         URL: 
@@ -129,9 +123,7 @@ releases:
       fr: "http://catalogue.data.gov.bc.ca"
     languages: 
       - Python 
-    name: 
-      en: ckanext-bcgov
-      fr: ckanext-bcgov
+    name: ckanext-bcgov
     licenses: 
       - 
         URL: 

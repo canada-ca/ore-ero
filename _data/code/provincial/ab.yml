@@ -16,9 +16,7 @@ releases:
       fr: "Extension du schéma de données utilisée dans open.alberta.ca"
     languages:
       - Python
-    name:
-      en: ckanext-ab_scheming
-      fr: ckanext-ab_scheming
+    name: ckanext-ab_scheming
     licenses:
       -
         URL:
@@ -49,9 +47,7 @@ releases:
       fr: "Extension Ckan développée pour être utilisée dans open.alberta.ca"
     languages:
       - Python
-    name:
-      en: ckanext-open_alberta
-      fr: ckanext-open_alberta
+    name: ckanext-open_alberta
     licenses:
       -
         URL:
@@ -82,9 +78,7 @@ releases:
       fr: "Extension Ckan de la carte géographique"
     languages:
       - Python
-    name:
-      en: ckanext-geomapviewer
-      fr: ckanext-geomapviewer
+    name: ckanext-geomapviewer
     licenses:
       -
         URL:

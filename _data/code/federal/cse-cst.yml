@@ -16,9 +16,7 @@ releases:
       fr: "Environnement visant à aider les étudiants à apprendre les bases de la programmation assembleur et du développement de systèmes d'exploitation. C'est un environnement portable et facile à apprendre"
     languages:
       - Python
-    name:
-      en: Spartacus
-      fr: Spartacus
+    name: Spartacus
     licenses:
       -
         URL:
@@ -49,9 +47,7 @@ releases:
       fr: "Plateforme servant à l’analyse de fichiers malveillants, qui a été conçue pour aider les équipes de cyberdéfense à automatiser l’analyse des fichiers et à faire une meilleure utilisation du temps des analystes de la sécurité"
     languages:
       - Python
-    name:
-      en: Assemblyline
-      fr: Assemblyline
+    name: Assemblyline
     licenses:
       -
         URL:
