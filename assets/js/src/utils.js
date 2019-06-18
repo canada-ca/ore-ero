@@ -1,3 +1,5 @@
+/* exported getTags validateRequired toggleAlert */
+
 function getTags(query) {
   return $(query)
     .map(function() {
