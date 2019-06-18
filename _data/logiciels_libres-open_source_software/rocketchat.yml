@@ -20,7 +20,7 @@ tags:
     - "Instant messaging"
   fr:
     - "Messagerie instantanée"
-admininstrations:
+administrations:
   -
     adminCode: tbs-sct
     uses:

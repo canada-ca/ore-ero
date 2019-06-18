@@ -20,7 +20,7 @@ tags:
     - str()
   fr:
     - str()
-admininstrations:
+administrations:
   -
     adminCode: str()
     uses:

@@ -24,7 +24,7 @@ tags:
     - "Poste de travail"
     - Productivité
     - "Éditeur texte"
-admininstrations:
+administrations:
   -
     adminCode: gac-amc
     uses:

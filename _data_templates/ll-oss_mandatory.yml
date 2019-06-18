@@ -20,7 +20,7 @@ tags:
     - "tag1-en"
   fr:
     - "tag1-fr"
-admininstrations:
+administrations:
   -
     adminCode: abc-def
     uses:

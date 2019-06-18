@@ -11,5 +11,7 @@
 {% capture label %}{{ site.data.i18n.form.name[page.lang] }}{% endcapture %}
 {% include form/components/group.html name="nameContact" label=label rule="names" required=false %}
 
+{% if include.phone == nil or include.phone == true  %}
 {% capture label %}{{ site.data.i18n.form.presets.Contact.phone[page.lang] }}{% endcapture %}
 {% include form/components/group.html name="phone" type="tel" label=label rule="phone" required=false %}
+{% endif %}
