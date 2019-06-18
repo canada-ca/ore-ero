@@ -7,4 +7,5 @@
   {% if include.value %} value="{{ include.value }}"{% endif %}
   {% if include.readonly %} readonly="readonly"{% endif %}
   {% if include.rule %} {{ site.data.forms.rules[include.rule] }}="true"{% endif %}
+  {% if include.style %} style="{{ include.style }}"{% endif %}
 />

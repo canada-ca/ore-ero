@@ -1,20 +1,21 @@
 <h2>{{ site.data.i18n.form.presets.Date.title[page.lang] }}</h2>
 {% if include.created %}
-{% capture label %}{{ site.data.i18n.form.presets.Date.labels.created[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="dateCreated" type="date" label=label rule="dateISO" %}
+  {% capture label %}{{ site.data.i18n.form.presets.Date.labels.created[page.lang] }}{% endcapture %}
+  {% include form/components/group.html name="dateCreated" type="date" label=label rule="dateISO" %}
 {% endif %}
 
 {% if include.started %}
-{% capture label %}{{ site.data.i18n.form.presets.Date.labels.started[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="dateStarted" type="date" label=label rule="dateISO" %}
+  {% capture label %}{{ site.data.i18n.form.presets.Date.labels.started[page.lang] }}{% endcapture %}
+  {% include form/components/group.html name="dateStarted" type="date" label=label rule="dateISO" %}
 {% endif %}
 
 {% if include.modified %}
-{% capture label %}{{ site.data.i18n.form.presets.Date.labels.modified[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="dateLastModified" type="date" label=label required=false rule="dateISO" %}
+  {% capture label %}{{ site.data.i18n.form.presets.Date.labels.modified[page.lang] }}{% endcapture %}
+  {% include form/components/group.html name="dateLastModified" type="date" label=label required=false rule="dateISO" %}
 {% endif %}
 
 {% if include.metadata %}
-{% capture label %}{{ site.data.i18n.form.presets.Date.labels.updated[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="dateLastUpdated" type="date" label=label rule="dateISO" readonly=true %}
+  {% capture label %}{{ site.data.i18n.form.presets.Date.labels.updated[page.lang] }}{% endcapture %}
+  {% capture now %}{{ "now" | date: "%Y-%m-%d" }}{% endcapture %}
+  {% include form/components/group.html name="dateLastUpdated" type="date" label=label rule="dateISO" readonly=true value=now %}
 {% endif %}

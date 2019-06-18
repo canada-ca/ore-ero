@@ -26,6 +26,8 @@
         {% include form/presets/submitter.html %}
       {% when 'tags' %}
         {% include form/presets/tags.html %}
+      {% when 'selectStandard' %}
+        {% include form/presets/selectStandard.html %}
       {% else %}
         {% if page.lang == 'en' %}
           <p>Throw <span style="color: red;">ERROR</span> (<strong>preset {{ formGroup.preset }}</strong> not found).</p>
