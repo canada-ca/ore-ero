@@ -5,9 +5,7 @@ id: code
 formGroups:
   - preset: schemaVersion
   - preset: adminCode
-  - widget: string
-    title: ProjectName
-    rule: alphanum-space
+  - preset: selectCode
   - preset: description
   - preset: contact
   - preset: dates
