@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags
+  validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
 */
 
@@ -237,13 +237,13 @@ function submitCodeForm() {
   fileWriter
     .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
-      const config = getConfigUpdate(result);
+      const config = getConfigUpdate(result, file);
       return fetch(PRBOT_URL, config);
     })
     .catch(err => {
       if (err.status == 404) {
         // We need to create the file for this organization, as it doesn't yet exist.
-        const config = getConfigNew();
+        const config = getConfigNew(codeObject, file);
         return fetch(PRBOT_URL, config);
       } else {
         throw err;
@@ -266,7 +266,7 @@ function submitCodeForm() {
     });
 }
 
-function getConfigUpdate(result) {
+function getConfigUpdate(result, file) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -297,7 +297,7 @@ function getConfigUpdate(result) {
   };
 }
 
-function getConfigNew(result) {
+function getConfigNew(codeObject, file) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -335,14 +335,23 @@ function getConfigNew(result) {
 function selectAdmin() {
   let admin = adminObj.val();
   $('.additional-option').remove();
-  if(admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(result) {
+  if (admin != '') {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
-      if(orgLevel == undefined) {
+      if (orgLevel == undefined) {
         $('#ProjectNameSelect').prop('disabled', true);
       } else {
         orgLevel.releases.forEach(function(release) {
-          $('<option class="additional-option" value="' + release.name.en + '">' + release.name.en + (release.version ? ' (' + release.version + ')' : '') + '</option>').appendTo('#ProjectNameSelect');
+          $(
+            '<option class="additional-option" value="' +
+              release.name.en +
+              '">' +
+              release.name.en +
+              (release.version ? ' (' + release.version + ')' : '') +
+              '</option>'
+          ).appendTo('#ProjectNameSelect');
         });
         $('#ProjectNameSelect').prop('disabled', false);
       }
@@ -356,14 +365,16 @@ function selectAdmin() {
 function selectCode() {
   let admin = adminObj.val();
   let code = codeObj.val();
-  if(code != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(result) {
+  if (code != '') {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
-      if(orgLevel == undefined) {
+      if (orgLevel == undefined) {
         resetFields();
       } else {
         for (let i = 0; i < orgLevel.releases.length; i++) {
-          if(orgLevel.releases[i].name.en == code) {
+          if (orgLevel.releases[i].name.en == code) {
             addValueToFields(orgLevel.releases[i]);
             break;
           } else resetFields();
@@ -395,16 +406,12 @@ function addValueToFields(obj) {
   $('#frDescription').val(obj.description.fr);
 
   if (obj.contact.url) {
-    if (obj.contact.URL.en)
-      $('#enUrlContact').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr)
-      $('#frUrlContact').val(obj.contact.URL.fr);
+    if (obj.contact.URL.en) $('#enUrlContact').val(obj.contact.URL.en);
+    if (obj.contact.URL.fr) $('#frUrlContact').val(obj.contact.URL.fr);
   }
   $('#emailContact').val(obj.contact.email);
-  if (obj.contact.name)
-    $('#nameContact').val(obj.contact.name);
-  if (obj.contact.phone)
-    $('#phone').val(obj.contact.phone);
+  if (obj.contact.name) $('#nameContact').val(obj.contact.name);
+  if (obj.contact.phone) $('#phone').val(obj.contact.phone);
 
   $('#dateCreated').val(obj.date.created);
   $('#dateLastModified').val(obj.date.metadataLastUpdated);
@@ -419,47 +426,36 @@ function addValueToFields(obj) {
   $('#frRepositoryUrl').val(obj.repositoryURL.fr);
 
   if (obj.downloadURL) {
-    if (obj.downloadURL.en)
-      $('#enDownloadUrl').val(obj.downloadURL.en);
-    if (obj.downloadURL.fr)
-      $('#frDownloadUrl').val(obj.downloadURL.fr);
+    if (obj.downloadURL.en) $('#enDownloadUrl').val(obj.downloadURL.en);
+    if (obj.downloadURL.fr) $('#frDownloadUrl').val(obj.downloadURL.fr);
   }
 
   if (obj.homepageURL) {
-    if (obj.homepageURL.en)
-      $('#enHomepageUrl').val(obj.homepageURL.en);
-    if (obj.homepageURL.fr)
-      $('#frHomepageUrl').val(obj.homepageURL.fr);
+    if (obj.homepageURL.en) $('#enHomepageUrl').val(obj.homepageURL.en);
+    if (obj.homepageURL.fr) $('#frHomepageUrl').val(obj.homepageURL.fr);
   }
 
   resetLanguages();
-  if(obj.languages != undefined) {
-    obj.languages.forEach(function (language) {
+  if (obj.languages != undefined) {
+    obj.languages.forEach(function(language) {
       $('#codeLanguage .' + language).attr('checked', true);
     });
   }
 
   if (obj.organizations) {
-    if (obj.organizations.en)
-      $('#enOrganization').val(obj.organizations.en);
-    if (obj.organizations.fr)
-      $('#frOrganization').val(obj.organizations.fr);
+    if (obj.organizations.en) $('#enOrganization').val(obj.organizations.en);
+    if (obj.organizations.fr) $('#frOrganization').val(obj.organizations.fr);
   }
 
   if (obj.partners) {
     if (obj.partners.URL) {
-      if (obj.partners.URL.en)
-        $('#enUrlPartner').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr)
-        $('#frUrlPartner').val(obj.partners.URL.fr);
+      if (obj.partners.URL.en) $('#enUrlPartner').val(obj.partners.URL.en);
+      if (obj.partners.URL.fr) $('#frUrlPartner').val(obj.partners.URL.fr);
     }
-    if (obj.partners.email)
-      $('#emailPartner').val(obj.partners.email);
+    if (obj.partners.email) $('#emailPartner').val(obj.partners.email);
     if (obj.partners.name) {
-      if (obj.partners.name.en)
-        $('#enNamePartner').val(obj.partners.name.en);
-      if (obj.partners.name.fr)
-        $('#frNamePartner').val(obj.partners.name.fr);
+      if (obj.partners.name.en) $('#enNamePartner').val(obj.partners.name.en);
+      if (obj.partners.name.fr) $('#frNamePartner').val(obj.partners.name.fr);
     }
   }
 
@@ -478,11 +474,8 @@ function addValueToFields(obj) {
     }
   }
 
-  if (obj.status)
-    $('#status').val(obj.status);
-
-  if (obj.version)
-    $('#VersionProject').val(obj.version);
+  if (obj.status) $('#status').val(obj.status);
+  if (obj.version) $('#VersionProject').val(obj.version);
 }
 
 function resetFields() {
@@ -523,7 +516,7 @@ function resetFields() {
 }
 
 function resetLanguages() {
-  $('#codeLanguages input[type="checkbox"]').each(function (i, input) {
+  $('#codeLanguages input[type="checkbox"]').each(function(i, input) {
     $(input).attr('checked', false);
   });
 }

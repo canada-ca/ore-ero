@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags
+  validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
 */
 
@@ -120,12 +120,12 @@ function submitStandardsForm() {
   fileWriter
     .merge(file, standardsObject, 'administrations', 'adminCode')
     .then(result => {
-      const config = getConfigUpdate(result)
+      const config = getConfigUpdate(result);
       return fetch(PRBOT_URL, config);
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = getConfigNew(result);
+        const config = getConfigNew(standardsObject, file);
         return fetch(PRBOT_URL, config);
       } else {
         throw err;
@@ -148,7 +148,7 @@ function submitStandardsForm() {
     });
 }
 
-function getConfigUpdate(result) {
+function getConfigUpdate(result, file) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -171,7 +171,7 @@ function getConfigUpdate(result) {
   };
 }
 
-function getConfigNew(result) {
+function getConfigNew(standardsObject, file) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -200,16 +200,19 @@ function getConfigNew(result) {
 
 function selectStandard() {
   let value = standardObj.val().toLowerCase();
-  $.getJSON('https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json', function(result) {
-    if (result[value]) {
-      addValueToFieldsStandard(result[value]);
-      $('#adminCode').focus();
-    } else if (value == '') {
-      resetFieldsStandard();
-    } else {
-      alert('Error retrieving the data');
+  $.getJSON(
+    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
+    function(result) {
+      if (result[value]) {
+        addValueToFieldsStandard(result[value]);
+        $('#adminCode').focus();
+      } else if (value == '') {
+        resetFieldsStandard();
+      } else {
+        alert('Error retrieving the data');
+      }
     }
-  });
+  );
 }
 
 function addValueToFieldsStandard(obj) {
@@ -245,20 +248,26 @@ function resetFieldsStandard() {
 function selectAdmin() {
   let standard = standardObj.val().toLowerCase();
   let administration = adminObj.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json', function(result) {
-    if (result[standard]) {
-      for (let i = 0; i < result[standard]['administrations'].length; i++) {
-        if (result[standard]['administrations'][i]['adminCode'] == administration) {
-          addValueToFieldsAdmin(result[standard]['administrations'][i])
-          break;
-        } else {
-          resetFieldsAdmin();
+  $.getJSON(
+    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
+    function(result) {
+      if (result[standard]) {
+        for (let i = 0; i < result[standard]['administrations'].length; i++) {
+          if (
+            result[standard]['administrations'][i]['adminCode'] ==
+            administration
+          ) {
+            addValueToFieldsAdmin(result[standard]['administrations'][i]);
+            break;
+          } else {
+            resetFieldsAdmin();
+          }
         }
+      } else {
+        console.log('standard empty of not found');
       }
-    } else {
-      console.log('standard empty of not found');
     }
-  });
+  );
 }
 
 function addValueToFieldsAdmin(obj) {
@@ -269,18 +278,16 @@ function addValueToFieldsAdmin(obj) {
       $('#frUrlContact').val(obj['contact']['URL']['fr']);
   }
 
-  if (obj['contact']['email'])
-    $('#emailContact').val(obj['contact']['email']);
+  if (obj['contact']['email']) $('#emailContact').val(obj['contact']['email']);
 
-  if (obj['contact']['name'])
-    $('#nameContact').val(obj['contact']['name']);
+  if (obj['contact']['name']) $('#nameContact').val(obj['contact']['name']);
 
   $('#enUrlReference').val(obj['references'][0]['URL']['en']);
   $('#frUrlReference').val(obj['references'][0]['URL']['fr']);
   $('#enNameReference').val(obj['references'][0]['name']['en']);
   $('#frNameReference').val(obj['references'][0]['name']['fr']);
 
-  $('#Status').val(result[standard]['administrations'][i]['status']);
+  $('#Status').val(obj['status']);
 }
 
 function resetFieldsAdmin() {

@@ -20,13 +20,19 @@ function addTags(obj) {
     let index = 0;
     obj['tags']['en'].forEach(function(tag) {
       if (index == 0) $('#tagEN').val(tag);
-      else tagObject('tagEN' + index, tag).addClass('additional-tag').appendTo('#tagsEN');
+      else
+        tagObject('tagEN' + index, tag)
+          .addClass('additional-tag')
+          .appendTo('#tagsEN');
       index++;
     });
     index = 0;
     obj['tags']['fr'].forEach(function(tag) {
       if (index == 0) $('#tagFR').val(tag);
-      else tagObject('tagFR' + index, tag).addClass('additional-tag').appendTo('#tagsFR');
+      else
+        tagObject('tagFR' + index, tag)
+          .addClass('additional-tag')
+          .appendTo('#tagsFR');
       index++;
     });
   } else {
