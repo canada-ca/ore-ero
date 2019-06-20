@@ -1,7 +1,7 @@
 <div class="form-group hide">
+  {% assign title = "ProjectName" %}
   {% capture label %}{{ site.data.i18n.form.code.ProjectName.select[page.lang] }}{% endcapture %}
   {% include form/components/label.html name=title required=false label=label %}
-  {% assign title = "ProjectName" %}
   <select class="form-control" id="{{ title }}Select" name="{{ title }}" disabled >
     <option value="">&nbsp;</option>
   </select>
