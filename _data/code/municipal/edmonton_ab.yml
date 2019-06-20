@@ -17,7 +17,9 @@ releases:
         description:
             en: 'YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies.'
             fr: 'YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d''avantages sociaux pour les personnes moins fortunées et leurs alliés.'
-        name: YouCanBenefit
+        name:
+            en: YouCanBenefit
+            fr: YouCanBenefit
         licenses:
             -
                 URL:

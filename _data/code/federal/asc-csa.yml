@@ -16,7 +16,9 @@ releases:
       fr: "Un logiciel polyvalent pour faire fonctionner des robots et des satellites"
     languages:
       - Java
-    name: Apogy
+    name:
+      en: Apogy
+      fr: Apogy
     licenses:
       -
         URL:

@@ -27,7 +27,9 @@ releases:
       fr: str(required=False)
     languages:
       - str(required=False)
-    name: str()
+    name:
+      en: str()
+      fr: str()
     organization:
       en: str(required=False)
       fr: str(required=False)

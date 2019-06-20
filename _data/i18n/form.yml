@@ -398,7 +398,6 @@ admin:
 
 # Software form specifics
 oss:
-
   HomepageUrl:
     title:
       en: The English and French URLs of the project homepage.
@@ -415,8 +414,8 @@ oss:
       en: The English and French name of the project.
       fr: Le nom du projet en français et en anglais.
     label:
-        en: English project name
-        fr: Nom du projet en anglais
+      en: English project name
+      fr: Nom du projet en anglais
   RelatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.

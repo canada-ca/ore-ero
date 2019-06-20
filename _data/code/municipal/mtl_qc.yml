@@ -16,7 +16,9 @@ releases:
       fr: "Extension CKAN de la ville de Montréal"
     languages:
       - Python
-    name: CKAN-Extension-Territoire
+    name:
+      en: CKAN-Extension-Territoire
+      fr: CKAN-Extension-Territoire
     licenses:
       -
         URL:

@@ -14,7 +14,9 @@ releases:
     languages:
       - Python
       - C
-    name: MetPX-Sarracenia
+    name:
+      en: MetPX-Sarracenia
+      fr: MetPX-Sarracenia
     licenses:
       -
         URL:
@@ -43,7 +45,9 @@ releases:
     description:
       en: "Enterprise architecture models"
       fr: "Modèles d'architecture d'entreprise"
-    name: "GC Architecture"
+    name:
+      en: "GC Architecture"
+      fr: "Architecture GC"
     licenses:
       -
         URL:
