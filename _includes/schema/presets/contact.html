@@ -1,0 +1,33 @@
+<li>
+  <details open>
+    <summary>contact <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span> [array]</summary>
+    <p>{{ site.data.i18n.form.presets.Contact.description[page.lang] }}</p>
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary>URL [array]</summary>
+          <h5>URL</h5>
+          <p>{{ site.data.i18n.form.presets.Contact.URL.description[page.lang] }}</p>
+          <ul>
+            <li>{{ site.data.i18n.form.url.en[page.lang] }} [string]</li>
+            <li>{{ site.data.i18n.form.url.fr[page.lang] }} [string]</li>
+          </ul>
+        </details>
+      </li>
+
+      {% capture labelEmail %}{{ site.data.i18n.form.email[page.lang] }}{% endcapture %}
+      {% capture descriptionEmail %}{{ site.data.i18n.form.presets.Contact.email.description[page.lang] }}{% endcapture %}
+      {% include schema/components/li.html schemaTitle="email" label=labelEmail description=descriptionEmail %}
+
+      {% capture labelName %}{{ site.data.i18n.form.name[page.lang] }}{% endcapture %}
+      {% capture descriptionName %}{{ site.data.i18n.form.presets.Contact.name.description[page.lang] }}{% endcapture %}
+      {% include schema/components/li.html schemaTitle="name" label=labelName description=descriptionName %}
+
+      {% if include.phone == nil or include.phone == true  %}
+        {% capture labelPhone %}{{ site.data.i18n.form.phone[page.lang] }}{% endcapture %}
+        {% capture descriptionPhone %}{{ site.data.i18n.form.presets.Contact.phone.description[page.lang] }}{% endcapture %}
+        {% include schema/components/li.html schemaTitle="phone" label=labelPhone description=descriptionPhone %}
+      {% endif %}
+    </ul>
+  </details>
+</li>

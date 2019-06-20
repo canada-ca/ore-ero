@@ -29,6 +29,9 @@ email:
 name:
   en: Name
   fr: Nom
+phone:
+  en: Phone number
+  fr: Numéro de téléphone
 url:
   en:
     en: English URL
@@ -46,15 +49,40 @@ presets:
     label:
       en: Administration code
       fr: Code d'administration
+    description:
+      en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
+      fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
   Contact:
     title:
+      en: Contact information for the project.
+      fr: Coordonnées des contacts pour le projet.
+    description:
       en: Contact information for the project.
       fr: Coordonnées des contacts pour le projet.
     phone:
       en: Contact number (###-###-####)
       fr: Numéro du contact (###-###-####)
+    email:
+      description:
+        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+    name:
+      description:
+        en: The name of a contact for the project.
+        fr: Le nom de la personne-ressource pour le projet.
+    phone:
+      description:
+        en: Phone number to contact the project.
+        fr: Numéro de téléphone pour contacter le projet.
+    URL:
+      description:
+        en: English and French URLs that can be used to contact the project.
+        fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
   Date:
     title:
+      en: Dates describing the project.
+      fr: Dates décrivant le projet.
+    description:
       en: Dates describing the project.
       fr: Dates décrivant le projet.
     labels:
@@ -70,6 +98,19 @@ presets:
       updated:
         en: Last updated
         fr: Dernière mise à jour
+    descriptions:
+      created:
+        en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
+      started:
+        en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
+      modified:
+        en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été modifiée, au format AAAA-MM-JJ ou ISO 8601.
+      updated:
+        en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   Description:
     title:
       en: A one or two sentence description of the project.
@@ -129,6 +170,9 @@ presets:
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
+    description:
+      en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
+      fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
   Submitter:
     title:
       en: Information about submitter

@@ -1,0 +1,31 @@
+<li>
+  <details open>
+    <summary>date <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span> [array]</summary>
+    <p>{{ site.data.i18n.form.presets.Date.description[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {% if include.created %}
+        {% capture labelCreated %}{{ site.data.i18n.form.presets.Date.labels.created[page.lang] }}{% endcapture %}
+        {% capture descriptionCreated %}{{ site.data.i18n.form.presets.Date.descriptions.created[page.lang] }}{% endcapture %}
+        {% include schema/components/li.html schemaTitle="created" label=labelCreated description=descriptionCreated %}
+      {% endif %}
+
+      {% if include.started %}
+        {% capture labelStarted %}{{ site.data.i18n.form.presets.Date.labels.started[page.lang] }}{% endcapture %}
+        {% capture descriptionStarted %}{{ site.data.i18n.form.presets.Date.descriptions.started[page.lang] }}{% endcapture %}
+        {% include schema/components/li.html schemaTitle="started" label=labelStarted description=descriptionStarted %}
+      {% endif %}
+
+      {% if include.modified %}
+        {% capture labelModified %}{{ site.data.i18n.form.presets.Date.labels.modified[page.lang] }}{% endcapture %}
+        {% capture descriptionModified %}{{ site.data.i18n.form.presets.Date.descriptions.modified[page.lang] }}{% endcapture %}
+        {% include schema/components/li.html schemaTitle="lastModified" label=labelModified description=descriptionModified %}
+      {% endif %}
+
+      {% if include.metadata %}
+        {% capture labelMetadata %}{{ site.data.i18n.form.presets.Date.labels.updated[page.lang] }}{% endcapture %}
+        {% capture descriptionMetadata %}{{ site.data.i18n.form.presets.Date.descriptions.updated[page.lang] }}{% endcapture %}
+        {% include schema/components/li.html schemaTitle="metadataLastUpdated" label=labelMetadata description=descriptionMetadata %}
+      {% endif %}
+    </ul>
+  </details>
+</li>

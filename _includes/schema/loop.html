@@ -1,0 +1,58 @@
+<ul class="list-unstyled">
+  {% for formGroup in site.data.forms[page.config].formGroups %}
+    {% if formGroup.preset %}
+      {% case formGroup.preset %}
+        {% when 'adminCode' %}
+          {% include schema/presets/adminCode.html %}
+        {% when 'contact' %}
+          {% include schema/presets/contact.html phone=formGroup.phone %}
+        {% when 'dates' %}
+          {% include schema/presets/dates.html created=formGroup.created started=formGroup.started modified=formGroup.modified metadata=formGroup.metadata %}
+        {% when 'description' %}
+          {% include schema/presets/description.html %}
+        {% when 'languages' %}
+          {% include schema/presets/languages.html %}
+        {% when 'licenses' %}
+          {% include schema/presets/licenses.html %}
+        {% when 'orgLevel' %}
+          {% include schema/presets/orgLevel.html %}
+        {% when 'provinceCode' %}
+          {% include schema/presets/provinceCode.html %}
+        {% when 'schemaVersion' %}
+          {% include schema/presets/schemaVersion.html %}
+        {% when 'status' %}
+          {% include schema/presets/status.html %}
+        {% when 'submitter' %}
+          {% include schema/presets/submitter.html %}
+        {% when 'tags' %}
+          {% include schema/presets/tags.html %}
+        {% when 'selectStandard' %}
+          {% include schema/presets/selectStandard.html %}
+        {% else %}
+          {% if page.lang == 'en' %}
+            <p>Throw <span style="color: red;">ERROR</span> (<strong>preset {{ formGroup.preset }}</strong> not found).</p>
+          {% else %}
+            <p>Retour <span style="color: red;">ERREUR</span> (<strong>preset {{ formGroup.preset }}</strong> non trouvé).</p>
+          {% endif %}
+      {% endcase %}
+    {% else %}
+      {% capture id %}{{ site.data.forms[page.config].id }}{% endcapture %}
+      {% case formGroup.widget %}
+        {% when 'group' %}
+          {% include schema/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required %}
+        {% when 'select' %}
+          {% include schema/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options %}
+        {% when 'string' %}
+          {% include schema/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
+        {% when 'string-i18n' %}
+          {% include schema/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required %}
+        {% else %}
+          {% if page.lang == 'en' %}
+            <p>Throw <span style="color: red;">ERROR</span> (<strong>widget {{ formGroup.widget }}</strong> not found).</p>
+          {% else %}
+            <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget {{ formGroup.widget }}</strong> non trouvé).</p>
+          {% endif %}
+      {% endcase %}
+    {% endif %}
+  {% endfor %}
+</ul>
