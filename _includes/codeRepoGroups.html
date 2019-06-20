@@ -12,18 +12,18 @@
                     {% assign admin = admins[1] %}
                     {% for release in admin.releases %}
                         {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-                        {% if aName[0].name != nil %}
+                        {% if aName[0].name[page.lang] != nil %}
                             {% if release.repositoryURL[page.lang] != nil %}
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
 
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% assign groups_array = groups_array | push: grp_url %}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0] %}
 
                                     {% assign repo_array = repo_array | push: org_url %}
@@ -72,18 +72,18 @@
                     {% assign admin = admins[1] %}
                     {% for release in admin.releases %}
                         {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-                        {% if aName[0].name != nil %}
+                        {% if aName[0].name[page.lang] != nil %}
                             {% if release.repositoryURL[page.lang] != nil %}
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
 
-                                     {% assign org_url =  aName[0].name | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                     {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% assign groups_array = groups_array | push: grp_url %}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0] %}
 
                                     {% assign repo_array = repo_array | push: org_url %}
@@ -132,18 +132,18 @@
                     {% assign admin = admins[1] %}
                     {% for release in admin.releases %}
                         {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-                        {% if aName[0].name != nil %}
+                        {% if aName[0].name[page.lang] != nil %}
                             {% if release.repositoryURL[page.lang] != nil %}
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
 
-                                     {% assign org_url =  aName[0].name | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                     {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% assign groups_array = groups_array | push: grp_url %}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0] %}
 
                                     {% assign repo_array = repo_array | push: org_url %}
@@ -192,18 +192,18 @@
                     {% assign admin = admins[1] %}
                     {% for release in admin.releases %}
                         {% assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode %}
-                        {% if aName[0].name != nil %}
+                        {% if aName[0].name[page.lang] != nil %}
                             {% if release.repositoryURL[page.lang] != nil %}
                                 {% assign repo_url =  release.repositoryURL[page.lang] | remove: "https://"  | split: "/" %}
                                 {% assign repo_size =  repo_url | size %}
                                 {% if repo_size == 3  %}
 
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign repo_array = repo_array | push: org_url%}
                                     {% assign groups_array = groups_array | push: grp_url %}
                                     {% elsif repo_size == 4  %}
-                                    {% assign org_url =  aName[0].name | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
+                                    {% assign org_url =  aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0]  %}
                                     {% assign grp_url =  repo_url[2] | append: "/" |  append: repo_url[1] | append: "/" |  append: repo_url[0] %}
 
                                     {% assign repo_array = repo_array | push: org_url %}

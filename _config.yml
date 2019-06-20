@@ -233,20 +233,20 @@ DescriptionCodeFR:
   fr: Description en francais
 
 DownloadName:
-  en: Download URL 
-  fr: URL de téléchargement 
+  en: Download URL
+  fr: URL de téléchargement
 DownloadURLCodeDesc:
   en: The english and french URLs where a distribution of the project can be found.
   fr: Les URLs en francais et en anglais où une distribution du projet peut être trouvée.
 DownloadURLCodeEN:
   en: English download URL
-  fr: URL de téléchargement en anglais 
+  fr: URL de téléchargement en anglais
 DownloadURLCodeFR:
   en: French download URL
   fr: URL de téléchargement en francais
 
 HomepageURLName:
-  en: Homepage URL  
+  en: Homepage URL
   fr: URL de la page d'accueil
 HomepageURLCodeDesc:
   en: The English and French URLs of the project homepage.
@@ -269,14 +269,8 @@ ProjectName:
   en: Name
   fr: Nom
 NameCodeDesc:
-  en: The English and French name of the project.
-  fr: Le nom du projet en français et en anglais.
-NameCodeEN:
-  en: English project name
-  fr: Nom du projet en anglais
-NameCodeFR:
-  en: French project name
-  fr: Nom du projet en français
+  en: The name of the project.
+  fr: Le nom du projet.
 
 OrganizationName:
   en: Organization
