@@ -1,4 +1,4 @@
-/* exported getTags addMoreTags addTags resetTags */
+/* exported getTags addTags resetTags */
 
 function getTags(query) {
   return $(query)
@@ -16,7 +16,7 @@ function addMoreTags() {
 
 function addTags(obj) {
   if (obj['tags']) {
-    $('.additional-tag').remove();
+    resetTags();
     let index = 0;
     obj['tags']['en'].forEach(function(tag) {
       if (index == 0) $('#tagEN').val(tag);
@@ -56,6 +56,7 @@ function tagObject(id, value) {
 }
 
 $(document).ready(function() {
+  addMoreTags();
   $('.add-more').click(function() {
     var html = $('.copy').html();
     $(html).appendTo('#tagsEN');

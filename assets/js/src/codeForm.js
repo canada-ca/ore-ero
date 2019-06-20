@@ -20,7 +20,7 @@ $(document).ready(function() {
     selectCode();
   });
 
-  $('#prbotSubmitcode').click(function() {
+  $('#prbotSubmitcodeForm').click(function() {
     // Progress only when form input is valid
     if (validateRequired()) {
       toggleAlert(ALERT_OFF);
@@ -226,7 +226,7 @@ function getSelectedOrgType() {
 }
 
 function submitCodeForm() {
-  let submitButton = document.getElementById('prbotSubmitcode');
+  let submitButton = document.getElementById('prbotSubmitcodeForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
@@ -333,6 +333,7 @@ function getConfigNew(codeObject, file) {
 }
 
 function selectAdmin() {
+  let lang = $('html').attr('lang');
   let admin = adminObj.val();
   $('.additional-option').remove();
   if (admin != '') {
@@ -346,16 +347,15 @@ function selectAdmin() {
         orgLevel.releases.forEach(function(release) {
           $(
             '<option class="additional-option" value="' +
-              release.name.en +
+              release.name[lang] +
               '">' +
-              release.name.en +
+              release.name[lang] +
               (release.version ? ' (' + release.version + ')' : '') +
               '</option>'
           ).appendTo('#ProjectNameSelect');
         });
         $('#ProjectNameSelect').prop('disabled', false);
       }
-      $('#ProjectName').focus();
     });
   } else {
     $('#ProjectNameSelect').prop('disabled', true);
@@ -363,6 +363,7 @@ function selectAdmin() {
 }
 
 function selectCode() {
+  let lang = $('html').attr('lang');
   let admin = adminObj.val();
   let code = codeObj.val();
   if (code != '') {
@@ -374,7 +375,7 @@ function selectCode() {
         resetFields();
       } else {
         for (let i = 0; i < orgLevel.releases.length; i++) {
-          if (orgLevel.releases[i].name.en == code) {
+          if (orgLevel.releases[i].name[lang] == code) {
             addValueToFields(orgLevel.releases[i]);
             break;
           } else resetFields();
@@ -401,7 +402,8 @@ function getOrgLevel(result, admin) {
 }
 
 function addValueToFields(obj) {
-  $('#ProjectName').val(obj.name.en);
+  $('#enProjectName').val(obj.name.en);
+  $('#frProjectName').val(obj.name.fr);
   $('#enDescription').val(obj.description.en);
   $('#frDescription').val(obj.description.fr);
 
@@ -476,10 +478,12 @@ function addValueToFields(obj) {
 
   if (obj.status) $('#status').val(obj.status);
   if (obj.version) $('#VersionProject').val(obj.version);
+  if (obj.vcs) $('#Vcs').val(obj.vcs);
 }
 
 function resetFields() {
-  $('#ProjectName').val('');
+  $('#enProjectName').val('');
+  $('#frProjectName').val('');
   $('#enDescription').val('');
   $('#frDescription').val('');
   $('#enUrlContact').val('');
@@ -513,6 +517,7 @@ function resetFields() {
   $('#enNameRelatedCode').val('');
   $('#status').val('');
   $('#VersionProject').val('');
+  $('#Vcs').val('');
 }
 
 function resetLanguages() {

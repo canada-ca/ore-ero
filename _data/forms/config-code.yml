@@ -9,7 +9,9 @@ formGroups:
   - preset: description
   - preset: contact
   - preset: dates
-  - preset: description
+    created: true
+    modified: true
+    metadata: true
   - widget: string-i18n
     title: DownloadUrl
     type: url
@@ -19,9 +21,6 @@ formGroups:
     type: url
     required: false
   - preset: languages
-  - widget: string-i18n
-    title: ProjectName
-    rule: alphanum-space
   - widget: string-i18n
     title: Organization
     rule: alphanum-space
