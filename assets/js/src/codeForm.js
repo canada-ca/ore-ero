@@ -21,6 +21,7 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitcode').click(function() {
+    // Progress only when form input is valid
     if (validateRequired()) {
       toggleAlert(ALERT_OFF);
       toggleAlert(ALERT_IN_PROGRESS);
@@ -47,7 +48,10 @@ function getCodeObject() {
           en: $('#enDescription').val(),
           fr: $('#frDescription').val()
         },
-        name: $('#ProjectName').val(),
+        name: {
+          en: $('#enProjectName').val(),
+          fr: $('#frProjectName').val()
+        },
         licenses: [
           {
             URL: {
@@ -231,13 +235,14 @@ function submitCodeForm() {
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
   fileWriter
-    .merge(file, codeObject, 'releases', 'name')
+    .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
       const config = getConfigUpdate(result, file);
       return fetch(PRBOT_URL, config);
     })
     .catch(err => {
       if (err.status == 404) {
+        // We need to create the file for this organization, as it doesn't yet exist.
         const config = getConfigNew(codeObject, file);
         return fetch(PRBOT_URL, config);
       } else {
@@ -253,6 +258,7 @@ function submitCodeForm() {
       } else {
         toggleAlert(ALERT_OFF);
         toggleAlert(ALERT_SUCCESS);
+        // Redirect to home page
         setTimeout(function() {
           window.location.href = './index.html';
         }, 2000);
@@ -271,7 +277,7 @@ function getConfigUpdate(result, file) {
         $('#submitterEmail').val() +
         '\n' +
         'Project: ***' +
-        $('#ProjectName').val() +
+        $('#enProjectName').val() +
         '***\n' +
         $('#enDescription').val() +
         '\n',
@@ -302,7 +308,7 @@ function getConfigNew(codeObject, file) {
         $('#submitterEmail').val() +
         '\n' +
         'Project: ***' +
-        $('#ProjectName').val() +
+        $('#enProjectName').val() +
         '***\n' +
         $('#enDescription').val() +
         '\n',
@@ -340,9 +346,9 @@ function selectAdmin() {
         orgLevel.releases.forEach(function(release) {
           $(
             '<option class="additional-option" value="' +
-              release.name +
+              release.name.en +
               '">' +
-              release.name +
+              release.name.en +
               (release.version ? ' (' + release.version + ')' : '') +
               '</option>'
           ).appendTo('#ProjectNameSelect');
@@ -368,7 +374,7 @@ function selectCode() {
         resetFields();
       } else {
         for (let i = 0; i < orgLevel.releases.length; i++) {
-          if (orgLevel.releases[i].name == code) {
+          if (orgLevel.releases[i].name.en == code) {
             addValueToFields(orgLevel.releases[i]);
             break;
           } else resetFields();
@@ -395,7 +401,7 @@ function getOrgLevel(result, admin) {
 }
 
 function addValueToFields(obj) {
-  $('#ProjectName').val(obj.name);
+  $('#ProjectName').val(obj.name.en);
   $('#enDescription').val(obj.description.en);
   $('#frDescription').val(obj.description.fr);
 
