@@ -18,12 +18,8 @@ formGroups:
   - widget: string
     title: StandardOrg
   - preset: tags
+  - preset: hr
   - preset: adminCode
-  - widget: string
-    type: email
-    title: emailContact
-    required: false
-    phone: false
   - widget: group
     title: Reference
     fields:
@@ -35,3 +31,7 @@ formGroups:
         rule: names
   - widget: string
     title: Status
+  - widget: string
+    type: email
+    title: emailContact
+    required: false
