@@ -1,0 +1,49 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test test
+homepageURL:
+  en: 'https://test.com'
+  fr: 'https://test.com'
+licenses:
+  - URL:
+      en: 'https://test.com'
+      fr: 'https://test.com'
+    spdxID: mit
+name:
+  en: TEST
+  fr: TEST
+tags:
+  en:
+    - test
+    - tag2
+  fr:
+    - test
+    - tag2
+administrations:
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: test@abc.com
+          URL:
+            en: 'https://test.com'
+            fr: 'https://test.com'
+          name: test
+        date:
+          started: '2019-06-03'
+          metadataLastUpdated: '2019-06-20'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        relatedCode:
+          - URL:
+              en: 'https://test.com'
+              fr: 'https://test.com'
+            name:
+              en: test
+              fr: test
+        status: Alpha
