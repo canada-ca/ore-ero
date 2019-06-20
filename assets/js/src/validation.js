@@ -1,12 +1,4 @@
-/* exported getTags validateRequired toggleAlert */
-
-function getTags(query) {
-  return $(query)
-    .map(function() {
-      return this.value ? this.value : null;
-    })
-    .get();
-}
+/* exported validateRequired toggleAlert */
 
 /**
  * Validates the required fields in the codeForm

@@ -227,15 +227,18 @@ code:
         fr: URL de la page d'accueil en francais
   ProjectName:
     title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
+      en: The name of the project.
+      fr: Le nom du projet.
     label:
       en:
-        en: English project name
-        fr: Nom du projet en anglais
+        en: The english name of the project (Enter an name to create a new project or select one to updated it)
+        fr: Le nom du projet en anglais
       fr:
-        en: French project name
-        fr: Nom du projet en français
+        en: The name of the project in french
+        fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
+    select:
+      en: If you wish to update an already existing code, please select it below
+      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   Organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
@@ -446,7 +449,6 @@ admin:
 
 # Software form specifics
 oss:
-
   HomepageUrl:
     title:
       en: The English and French URLs of the project homepage.
@@ -463,12 +465,8 @@ oss:
       en: The English and French name of the project.
       fr: Le nom du projet en français et en anglais.
     label:
-      en:
-        en: English project name
-        fr: Nom du projet en anglais
-      fr:
-        en: French project name
-        fr: Nom du projet en français
+      en: English project name
+      fr: Nom du projet en anglais
   RelatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
