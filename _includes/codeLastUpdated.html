@@ -24,7 +24,7 @@
       {% for release in admin.releases %}
         {% assign d = release.date.metadataLastUpdated | date : '%s' %}
         {% if d == lastUpdated %}
-          {% assign projectName_array = projectName_array | push: release.name %}
+          {% assign projectName_array = projectName_array | push: release.name[page.lang] %}
           {% assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] %}
         {% endif %}
       {% endfor %}
