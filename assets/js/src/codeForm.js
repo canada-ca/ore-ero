@@ -342,7 +342,11 @@ function selectAdmin() {
     ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
-        $('#ProjectNameSelect').prop('disabled', true);
+        $('#ProjectNameSelect')
+          .prop('disabled', true)
+          .parent()
+          .addClass('hide');
+        resetFields();
       } else {
         orgLevel.releases.forEach(function(release) {
           $(
@@ -354,7 +358,10 @@ function selectAdmin() {
               '</option>'
           ).appendTo('#ProjectNameSelect');
         });
-        $('#ProjectNameSelect').prop('disabled', false);
+        $('#ProjectNameSelect')
+          .prop('disabled', false)
+          .parent()
+          .removeClass('hide');
       }
     });
   } else {

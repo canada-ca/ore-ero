@@ -1,32 +1,22 @@
+<div class="form-group hide">
+  {% capture label %}{{ site.data.i18n.form.code.ProjectName.select[page.lang] }}{% endcapture %}
+  {% include form/components/label.html name=title required=false label=label %}
+  {% assign title = "ProjectName" %}
+  <select class="form-control" id="{{ title }}Select" name="{{ title }}" disabled >
+    <option value="">&nbsp;</option>
+  </select>
+</div>
+
 <h2>{{ site.data.i18n.form.code.ProjectName.title[page.lang] }}</h2>
-{% assign title = "ProjectName" %}
 <div class="form-group">
   {% assign titleEn="enProjectName" %}
   {% capture labelEn %}{{ site.data.i18n.form.code.ProjectName.label.en[page.lang] }}{% endcapture %}
   {% include form/components/label.html name=titleEn required=include.required label=labelEn %}
-  {% if page.lang == "en" %}
-  <div>
-    {% include form/components/input.html name=titleEn type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule style="display: inline-block;" %}
-    <select class="form-control" id="{{ title }}Select" name="{{ title }}" style="display: inline-block;" disabled>
-      <option value="">&nbsp;</option>
-    </select>
-  </div>
-  {% else %}
   {% include form/components/input.html name=titleEn type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
-  {% endif %}
 </div>
 <div class="form-group">
-    {% assign titleFr="frProjectName" %}
+  {% assign titleFr="frProjectName" %}
   {% capture labelFr %}{{ site.data.i18n.form.code.ProjectName.label.fr[page.lang] }}{% endcapture %}
   {% include form/components/label.html name=titleFr required=include.required label=labelFr %}
-  {% if page.lang == "fr" %}
-  <div>
-    {% include form/components/input.html name=titleFr type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule style="display: inline-block;" %}
-    <select class="form-control" id="{{ title }}Select" name="{{ title }}" style="display: inline-block;" disabled>
-      <option value="">&nbsp;</option>
-    </select>
-  </div>
-  {% else %}
   {% include form/components/input.html name=titleFr type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
-  {% endif %}
 </div>

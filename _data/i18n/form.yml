@@ -192,6 +192,9 @@ code:
       fr:
         en: The name of the project in french
         fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
+    select:
+      en: If you wish to update an already existing code, please select it below
+      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   Organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
