@@ -1,38 +1,93 @@
---- 
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 adminCode: asc-csa
-releases: 
-  - 
-    contact: 
+releases:
+  - contact:
       URL:
-        en: https://projects.eclipse.org/projects/technology.apogy/contact
-        fr: https://projects.eclipse.org/projects/technology.apogy/contact
+        en: 'https://projects.eclipse.org/projects/technology.apogy/contact'
+        fr: 'https://projects.eclipse.org/projects/technology.apogy/contact'
       email: apogy-dev@eclipse.org
-    date: 
-      created: "2015-09-28"
-      metadataLastUpdated: "2019-01-31"
-    description: 
-      en: "The one-stop-shop solution for operating robots, satellites and beyond"
-      fr: "Un logiciel polyvalent pour faire fonctionner des robots et des satellites"
-    languages: 
+    date:
+      created: '2015-09-28'
+      metadataLastUpdated: '2019-01-31'
+    description:
+      en: 'The one-stop-shop solution for operating robots, satellites and beyond'
+      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
+    languages:
       - Java
-    name: 
+    name:
       en: Apogy
       fr: Apogy
-    licenses: 
-      - 
-        URL: 
-          en: "https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE"
-          fr: "https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE"
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
         spdxID: EPL-1.0
-    repositoryURL: 
-      en: "https://git.eclipse.org/c/apogy/apogy.git"
-      fr: "https://git.eclipse.org/c/apogy/apogy.git"
-    tags: 
-      en: 
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
         - Robots
         - Space
-      fr: 
+      fr:
         - Robots
         - Espace
+    vcs: git
+  - contact:
+      email: frederic.lestage@ville.montreal.qc.ca
+      URL:
+        en: 'https://github.com/fredericlestage-vdm'
+        fr: 'https://github.com/fredericlestage-vdm'
+      name: Frédéric Lestage
+      phone: 123-456-7890
+    date:
+      created: '2019-06-06'
+      metadataLastUpdated: '2019-06-20'
+      lastModified: '2019-06-14'
+    description:
+      en: descEN
+      fr: descFR
+    name:
+      en: nameEN
+      fr: nameFR
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: licence
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - tagEN
+      fr:
+        - tagFR
+    downloadURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.com'
+    languages:
+      - Python
+      - C++
+      - jquery
+    organization:
+      en: org
+      fr: org
+    partners:
+      URL:
+        en: 'http://www.google.com'
+        fr: 'http://www.google.com'
+      email: partner@email.com
+      name:
+        en: partner
+        fr: partner
+    relatedCode:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.com'
+        name:
+          en: related
+          fr: related
+    status: Alpha
+    version: '1.0'
     vcs: git
