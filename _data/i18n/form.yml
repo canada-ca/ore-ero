@@ -355,6 +355,13 @@ admin:
       fr:
         en: Name in french
         fr: Nom en français
+  newAdminCode:
+    title:
+      en: New Administration Code
+      fr: Nouveau code d'administration
+    label:
+      en: New Administration Code 
+      fr: Nouveau code d'administration
   ProvinceCode:
     title:
       en: Province Code
