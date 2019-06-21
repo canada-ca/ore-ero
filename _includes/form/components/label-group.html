@@ -1,5 +1,4 @@
-<label
-  for="{{ include.title }}{{ include.group }}"
-  {% if include.required == nil or include.required %} class="required"{% endif %}
+<label for="{{ include.title }}{{ include.group }}"
+  {%- if include.required == nil or include.required %} class="required"{% endif -%}
 >{{ site.data.i18n.form[include.id][include.title].labels[include.group][page.lang] }}
-{% if include.required == nil or include.required %} <strong class="required">({{ site.data.i18n.form.required[page.lang] }})</strong>{% endif %}</label>
+{%- if include.required == nil or include.required %} <strong class="required">({{ site.data.i18n.form.required[page.lang] }})</strong>{% endif %}</label>

@@ -1,10 +1,10 @@
-{% assign title = "ProjectName" %}
-<div class="form-group hide">
-  {% include form/components/label-group.html id=include.id title=title group="Select" %}
+{%- assign title = "ProjectName" -%}
+<div class="form-group hide"­­>
+  {%- include form/components/label-group.html id=include.id title=title group="Select" -%}
   <select class="form-control" id="{{ title }}Select" name="{{ title }}Select" disabled >
     <option value="">&nbsp;</option>
   </select>
 </div>
 
-{% include form/components/title.html id=include.id title=title %}
-{% include form/components/group-i18n.html id=include.id title=title %}
+{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/group-i18n.html id=include.id title=title -%}

@@ -1,12 +1,10 @@
-{% assign title = "Contact" %}
-{% include form/components/title.html id=include.id title=title %}
+{%- assign title = "Contact" -%}
+{%- include form/components/title.html id=include.id title=title -%}
 
-{% include form/components/group-i18n-group.html id=include.id title=title group="URL" %}
+{%- include form/components/group-i18n-group.html id=include.id title=title group="URL" required=false -%}
+{%- include form/components/group-group.html id=include.id title=title group="Email" -%}
+{%- include form/components/group-group.html id=include.id title=title group="Name" required=false -%}
 
-{% include form/components/group-group.html id=include.id title=title group="Email" %}
-
-{% include form/components/group-group.html id=include.id title=title group="Name" required=false %}
-
-{% if include.phone == nil or include.phone == true  %}
-  {% include form/components/group-group.html id=include.id title=title group="Phone" type="tel" required=false rule="phone" %}
-{% endif %}
+{%- if include.phone == nil or include.phone == true -%}
+  {%- include form/components/group-group.html id=include.id title=title group="Phone" type="tel" required=false rule="phone" -%}
+{%- endif -%}

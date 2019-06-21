@@ -1,14 +1,14 @@
-{% assign title = "Tags" %}
-{% include form/components/title.html id=include.id title=title %}
+{%- assign title = "Tags" -%}
+{%- include form/components/title.html id=include.id title=title -%}
 <div id="tags">
   <div id="tagsEN" class="form-group">
-    {% include form/components/label-i18n.html id=include.id title=title lang="en" %}
+    {%- include form/components/label-i18n.html id=include.id title=title lang="en" -%}
     <div class="control-group input-group col-xs-2" style="margin-top:10px" >
       <input type="text" id="enTags" name="enTags" class="form-control" required="required">
     </div>
   </div>
   <div id="tagsFR" class="form-group">
-    {% include form/components/label-i18n.html id=include.id title=title lang="fr" %}
+    {%- include form/components/label-i18n.html id=include.id title=title lang="fr" -%}
     <div class="control-group input-group col-xs-2" style="margin-top:10px" >
       <input type="text" id="frTags" name="frTags" class="form-control" required="required">
     </div>

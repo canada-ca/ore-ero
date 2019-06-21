@@ -1,7 +1,7 @@
-{% include form/presets/hr.html %}
+{%- include form/presets/hr.html -%}
 
-{% assign title = "Submitter" %}
-{% include form/components/title.html id=include.idPreset title=title %}
+{%- assign title = "Submitter" -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 
-{% include form/components/group-group.html id=include.idPreset title=title group="Username" rule="alphanum-space" %}
-{% include form/components/group-group.html id=include.idPreset title=title group="Email" type="email" %}
+{%- include form/components/group-group.html id=include.idPreset title=title group="Username" rule="alphanum-space" -%}
+{%- include form/components/group-group.html id=include.idPreset title=title group="Email" type="email" -%}

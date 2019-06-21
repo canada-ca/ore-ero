@@ -1,28 +1,28 @@
-{% assign title = "Languages" %}
-{% include form/components/title.html id=include.id title=title %}
+{%- assign title = "Languages" -%}
+{%- include form/components/title.html id=include.id title=title -%}
 
 <div class="form-group">
-  {% include form/components/label.html id=include.id title=title required=false %}
-  {% assign languages_array = "" | split: "," %}
-  {% for fptms in site.data.code %}
-  {% assign fptm = fptms[1] %}
-  {% for admins in fptm %}
-    {% assign admin = admins[1] %}
-    {% for release in admin.releases %}
-      {% for language in release.languages %}
-        {% assign languages_array = languages_array  | push: language %}
-      {% endfor %}
-    {% endfor %}
-    {% endfor %}
-  {% endfor %}
+  {%- include form/components/label.html id=include.id title=title required=false -%}
+  {%- assign languages_array = "" | split: "," -%}
+  {%- for fptms in site.data.code -%}
+  {%- assign fptm = fptms[1] -%}
+  {%- for admins in fptm -%}
+    {%- assign admin = admins[1] -%}
+    {%- for release in admin.releases -%}
+      {%- for language in release.languages -%}
+        {%- assign languages_array = languages_array  | push: language -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- endfor -%}
+  {%- endfor -%}
 
   <div id="Languages" class="form-group">
-    {% assign languages_array = languages_array | uniq  %}
-    {% for language in languages_array %}
+    {%- assign languages_array = languages_array | uniq  -%}
+    {%- for language in languages_array -%}
       <div class="checkbox" >
         <label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
       </div>
-    {% endfor %}
+    {%- endfor -%}
   </div>
   <button type="button" class="btn btn-primary" onclick = "addMoreLanguages()">{{ site.data.i18n.form.presets.Languages.button[page.lang] }}</button>
 </div>

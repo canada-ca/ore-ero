@@ -1,25 +1,25 @@
-{% include form/components/title.html id=include.id title=include.title %}
+{%- include form/components/title.html id=include.id title=include.title -%}
 
-{% for field in include.fields %}
+{%- for field in include.fields -%}
 
-  {% if field.required == nil %}
-    {% assign required = include.required %}
-  {% else %}
-    {% assign required = field.required %}
-  {% endif %}
+  {%- if field.required == nil -%}
+    {%- assign required = include.required -%}
+  {%- else -%}
+    {%- assign required = field.required -%}
+  {%- endif -%}
 
-  {% case field.widget %}
-    {% when 'string' %}
-      {% include form/components/group-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
-    {% when 'string-i18n' %}
-      {% include form/components/group-i18n-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
-    {% when 'select' %}
-      {% include form/select.html id=include.id title=include.title required=required options=options %}
-    {% else %}
-      {% if page.lang == 'en' %}
+  {%- case field.widget -%}
+    {%- when 'string' -%}
+      {%- include form/components/group-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule -%}
+    {%- when 'string-i18n' -%}
+      {%- include form/components/group-i18n-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule -%}
+    {%- when 'select' -%}
+      {%- include form/select.html id=include.id title=include.title required=required options=options -%}
+    {%- else -%}
+      {%- if page.lang == 'en' -%}
         <p>Throw <span style="color: red;">ERROR</span> (<strong>widget</strong> not found).</p>
-      {% else %}
+      {%- else -%}
         <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget</strong> non trouvé).</p>
-      {% endif %}
-  {% endcase %}
-{% endfor %}
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}

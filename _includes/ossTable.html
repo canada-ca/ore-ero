@@ -10,17 +10,17 @@
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
           <option value="">&nbsp;</option>
-          {% assign license_array = "" | split: ',' %}
-          {% for logiciels in site.data.logiciels_libres-open_source_software %}
-            {% assign oss = logiciels[1] %}
-            {% for license in oss.licenses %}
-              {% assign license_array = license_array | push: license.spdxID %}
-            {% endfor %}
-          {% endfor %}
-          {% assign license_array = license_array | group_by: "" | sort: "name" %}
-          {% for license in license_array %}
+          {%- assign license_array = "" | split: ',' -%}
+          {%- for logiciels in site.data.logiciels_libres-open_source_software -%}
+            {%- assign oss = logiciels[1] -%}
+            {%- for license in oss.licenses -%}
+              {%- assign license_array = license_array | push: license.spdxID -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign license_array = license_array | group_by: "" | sort: "name" -%}
+          {%- for license in license_array -%}
             <option value="{{ license.name }}">{{ license.name }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
 
@@ -28,17 +28,17 @@
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
           <option value="">&nbsp;</option>
-          {% assign tag_array = "" | split: ',' %}
-          {% for logiciels in site.data.logiciels_libres-open_source_software %}
-            {% assign oss = logiciels[1] %}
-            {% for tag in oss.tags[page.lang] %}
-              {% assign tag_array = tag_array | push: tag %}
-            {% endfor %}
-          {% endfor %}
-          {% assign tag_array = tag_array | group_by: "" | sort: "name" %}
-          {% for tag in tag_array %}
+          {%- assign tag_array = "" | split: ',' -%}
+          {%- for logiciels in site.data.logiciels_libres-open_source_software -%}
+            {%- assign oss = logiciels[1] -%}
+            {%- for tag in oss.tags[page.lang] -%}
+              {%- assign tag_array = tag_array | push: tag -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign tag_array = tag_array | group_by: "" | sort: "name" -%}
+          {%- for tag in tag_array -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
 
@@ -70,35 +70,35 @@
     </thead>
     <tbody>
 
-      {% for logiciels in site.data.logiciels_libres-open_source_software %}
-        {% assign oss = logiciels[1] %}
+      {%- for logiciels in site.data.logiciels_libres-open_source_software -%}
+        {%- assign oss = logiciels[1] -%}
         <tr>
           <td><a href="#{{ oss.name[page.lang] | slugify }}" aria-controls="{{ oss.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ oss.name[page.lang] }}</a></td>
           <td>{{ oss.description[page.lang] }}</td>
           <td>
-            {% for license in oss.licenses %}
+            {%- for license in oss.licenses -%}
               <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
-            {% endfor %}
+            {%- endfor -%}
           </td>
           <td>
-            {% for tag in oss.tags[page.lang] %}
+            {%- for tag in oss.tags[page.lang] -%}
               {{ tag }}&nbsp;
-            {% endfor %}
+            {%- endfor -%}
           </td>
           <td>{{ oss.administrations.size }}</td>
           <td>
             <a href="{{ oss.homepageURL[page.lang] }}" target="_blank">{{ oss.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
           </td>
         </tr>
-      {% endfor %}
+      {%- endfor -%}
 
     </tbody>
   </table>
 </div>
 
 <!-- Modal Lightboxes -->
-{% for logiciels in site.data.logiciels_libres-open_source_software %}
-  {% assign oss = logiciels[1] %}
+{%- for logiciels in site.data.logiciels_libres-open_source_software -%}
+  {%- assign oss = logiciels[1] -%}
 
     <section id="{{ oss.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
       <header class="modal-header">
@@ -107,25 +107,25 @@
       <div class="modal-body">
         <p><strong>{{ oss.description[page.lang] }}</strong></p>
         <p>Is being used by:</p>
-        {% for admin in oss.administrations %}
+        {%- for admin in oss.administrations -%}
           <div class="row">
-            {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+            {%- assign aName = site.data.administrations.federal | where: "code", admin.adminCode -%}
             <div class="col-md-7">
               <strong>{{ aName[0].name[page.lang] }}</strong>
             </div>
-            {% for use in admin.uses %}
-              {% if use.contact.email != nil %}
+            {%- for use in admin.uses -%}
+              {%- if use.contact.email != nil -%}
                 <div class="col-md-5">{{ use.contact.email }}</div>
-              {% endif %}
-            {% endfor %}
+              {%- endif -%}
+            {%- endfor -%}
           </div>
-        {% endfor %}
+        {%- endfor -%}
 
         <!--<p>{{ oss }}</p>-->
       </div>
     </section>
 
-{% endfor %}
+{%- endfor -%}
 
 </div>
 
