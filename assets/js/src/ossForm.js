@@ -283,7 +283,7 @@ function addValueToFieldsOss(obj) {
   $('#frHomepageUrl').val(obj['homepageURL']['fr']);
   $('#enLicenses').val(obj['licenses'][0]['URL']['en']);
   $('#frLicenses').val(obj['licenses'][0]['URL']['fr']);
-  $('#spdxID').val(obj['spdxID']);
+  $('#spdxID').val(obj['licenses'][0]['spdxID']);
   addTags(obj);
 }
 
