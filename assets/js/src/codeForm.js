@@ -4,6 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getAdminObject
 */
 
 const codeObj = $('.page-codeForm #ProjectNameSelect');
@@ -234,8 +235,13 @@ function submitFormAdminCodeForm() {
   let codeObject = getCodeObject();
   let adminObject = getAdminObject();
 
+  let submitButton = document.getElementById('prbotSubmitcodeForm');
+  let resetButton = document.getElementById('formReset');
+
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let codeFile = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
+  let codeFile = `_data/code/${getSelectedOrgType()}/${$(
+    '#adminCode'
+  ).val()}.yml`;
   let adminFile = `_data/administrations/municipal.yml`;
 
   fileWriter
@@ -248,7 +254,11 @@ function submitFormAdminCodeForm() {
             body: JSON.stringify({
               user: USERNAME,
               repo: REPO_NAME,
-              title: 'Updated code for ' + $('#adminCode :selected').text() + ' and administrations for ' + $('#orgLevel').val(),
+              title:
+                'Updated code for ' +
+                $('#adminCode :selected').text() +
+                ' and administrations for ' +
+                $('#orgLevel').val(),
               description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
               commit: 'Committed by ' + $('#submitterEmail').val(),
               author: {
@@ -269,7 +279,7 @@ function submitFormAdminCodeForm() {
             method: 'POST'
           };
           return fetch(PRBOT_URL, config);
-        })
+        });
     })
     .catch(err => {
       if (err.status == 404) {
