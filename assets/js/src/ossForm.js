@@ -328,37 +328,37 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['administrations']['uses']['contact']['URL']) {
-    if (obj['administrations']['uses']['contact']['URL']['en'])
-      $('#enUrlContact').val(obj['administrations']['uses']['contact']['URL']['en']);
-    if (obj['administrations']['uses']['contact']['URL']['fr'])
-      $('#frUrlContact').val(obj['administrations']['uses']['contact']['URL']['fr']);
+  if (obj['uses']['contact']['URL']) {
+    if (obj['uses']['contact']['URL']['en'])
+      $('#enUrlContact').val(obj['uses']['contact']['URL']['en']);
+    if (obj['uses']['contact']['URL']['fr'])
+      $('#frUrlContact').val(obj['uses']['contact']['URL']['fr']);
   }
-  if (obj['administrations']['uses']['contact']['email']) $('#emailContact').val(obj['contact']['email']);
-  if (obj['administrations']['uses']['contact']['name']) $('#nameContact').val(obj['contact']['name']);
+  if (obj['uses']['contact']['email']) $('#emailContact').val(obj['contact']['email']);
+  if (obj['uses']['contact']['name']) $('#nameContact').val(obj['contact']['name']);
 
-  $('#dateStarted').val(obj['administrations']['uses']['date']['started']);
-  $('#dateLastUpdated').val(obj['administrations']['uses']['date']['metadataLastUpdated']);
-  $('#enUseName').val(obj['administrations']['uses']['name']['en']);
-  $('#frUseName').val(obj['administrations']['uses']['name']['fr']);
-  $('#enUseDescription').val(obj['administrations']['uses']['description']['en']);
-  $('#frUseDescription').val(obj['administrations']['uses']['description']['fr']);
+  $('#dateStarted').val(obj['uses']['date']['started']);
+  $('#dateLastUpdated').val(obj['uses']['date']['metadataLastUpdated']);
+  $('#enUseName').val(obj['uses']['name']['en']);
+  $('#frUseName').val(obj['uses']['name']['fr']);
+  $('#enUseDescription').val(obj['uses']['description']['en']);
+  $('#frUseDescription').val(obj['uses']['description']['fr']);
 
-  if (obj['administrations']['uses']['relatedCode']['URL']) {
-    if (obj['administrations']['uses']['relatedCode']['URL']['en'])
-      $('#enUrlRelatedCode').val(obj['administrations']['uses']['relatedCode']['URL']['en']);
-    if (obj['administrations']['uses']['relatedCode']['URL']['fr'])
-      $('#frUrlRelatedCode').val(obj['administrations']['uses']['relatedCode']['URL']['fr']);
-  }
-
-  if (obj['administrations']['uses']['relatedCode']['name']) {
-    if (obj['administrations']['uses']['relatedCode']['name']['en'])
-      $('#enNameRelatedCode').val(obj['administrations']['uses']['relatedCode']['name']['en']);
-    if (obj['administrations']['uses']['relatedCode']['name']['fr'])
-      $('#frNameRelatedCode').val(obj['administrations']['uses']['relatedCode']['name']['fr']);
+  if (obj['uses']['relatedCode']['URL']) {
+    if (obj['uses']['relatedCode']['URL']['en'])
+      $('#enUrlRelatedCode').val(obj['uses']['relatedCode']['URL']['en']);
+    if (obj['uses']['relatedCode']['URL']['fr'])
+      $('#frUrlRelatedCode').val(obj['uses']['relatedCode']['URL']['fr']);
   }
 
-  if (obj['administrations']['uses']['status']) $('#status').val(obj['administrations']['uses']['status']);
+  if (obj['uses']['relatedCode']['name']) {
+    if (obj['uses']['relatedCode']['name']['en'])
+      $('#enNameRelatedCode').val(obj['uses']['relatedCode']['name']['en']);
+    if (obj['uses']['relatedCode']['name']['fr'])
+      $('#frNameRelatedCode').val(obj['uses']['relatedCode']['name']['fr']);
+  }
+
+  if (obj['uses']['status']) $('#status').val(obj['uses']['status']);
 }
 
 function resetFieldsAdmin() {
