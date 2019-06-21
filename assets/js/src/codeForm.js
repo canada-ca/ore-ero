@@ -10,6 +10,18 @@
 const codeObj = $('.page-codeForm #ProjectNameSelect');
 const adminObj = $('.page-codeForm #adminCode');
 
+function addNewAdmin() {
+  $('#newAdmin').removeClass('hide');
+  $('#adminCode').removeAttr('required');  
+  $('label[for="adminCode"]').removeClass("required");
+}
+
+function removeNewAdmin() {
+  $('#newAdmin').addClass('hide');
+  $('#adminCode').attr('required','required');  
+  $('label[for="adminCode"]').addClass("required");
+}
+
 $(document).ready(function() {
   adminObj.focus();
 
