@@ -257,7 +257,6 @@ function getConfigNew(ossObject, file) {
 
 function selectOss() {
   let value = ossObj.val().toLowerCase();
-  console.log(value);
   $.getJSON(
     'https://canada-ca.github.io/ore-ero/logiciels_libres-open_source_software.json',
     function(result) {
@@ -301,4 +300,80 @@ function resetFieldsOss() {
   $('#enProjectName').focus();
   $('#frProjectName').focus();
   resetTags();
+}
+
+function selectAdmin() {
+  let oss = ossObj.val().toLowerCase();
+  let administration = adminObj.val();
+  $.getJSON(
+    'https://canada-ca.github.io/ore-ero/logiciels_libres-open_source_software.json',
+    function(result) {
+      if (result[oss]) {
+        for (let i = 0; i < result[oss]['administrations'].length; i++) {
+          if (
+            result[oss]['administrations'][i]['adminCode'] ==
+            administration
+          ) {
+            addValueToFieldsAdmin(result[oss]['administrations'][i]);
+            break;
+          } else {
+            resetFieldsAdmin();
+          }
+        }
+      } else {
+        console.log('standard empty of not found');
+      }
+    }
+  );
+}
+
+function addValueToFieldsAdmin(obj) {
+  if (obj['administrations']['uses']['contact']['URL']) {
+    if (obj['administrations']['uses']['contact']['URL']['en'])
+      $('#enUrlContact').val(obj['administrations']['uses']['contact']['URL']['en']);
+    if (obj['administrations']['uses']['contact']['URL']['fr'])
+      $('#frUrlContact').val(obj['administrations']['uses']['contact']['URL']['fr']);
+  }
+  if (obj['administrations']['uses']['contact']['email']) $('#emailContact').val(obj['contact']['email']);
+  if (obj['administrations']['uses']['contact']['name']) $('#nameContact').val(obj['contact']['name']);
+
+  $('#dateStarted').val(obj['administrations']['uses']['date']['started']);
+  $('#dateLastUpdated').val(obj['administrations']['uses']['date']['metadataLastUpdated']);
+  $('#enUseName').val(obj['administrations']['uses']['name']['en']);
+  $('#frUseName').val(obj['administrations']['uses']['name']['fr']);
+  $('#enUseDescription').val(obj['administrations']['uses']['description']['en']);
+  $('#frUseDescription').val(obj['administrations']['uses']['description']['fr']);
+
+  if (obj['administrations']['uses']['relatedCode']['URL']) {
+    if (obj['administrations']['uses']['relatedCode']['URL']['en'])
+      $('#enUrlRelatedCode').val(obj['administrations']['uses']['relatedCode']['URL']['en']);
+    if (obj['administrations']['uses']['relatedCode']['URL']['fr'])
+      $('#frUrlRelatedCode').val(obj['administrations']['uses']['relatedCode']['URL']['fr']);
+  }
+
+  if (obj['administrations']['uses']['relatedCode']['name']) {
+    if (obj['administrations']['uses']['relatedCode']['name']['en'])
+      $('#enNameRelatedCode').val(obj['administrations']['uses']['relatedCode']['name']['en']);
+    if (obj['administrations']['uses']['relatedCode']['name']['fr'])
+      $('#frNameRelatedCode').val(obj['administrations']['uses']['relatedCode']['name']['fr']);
+  }
+
+  if (obj['administrations']['uses']['status']) $('#status').val(obj['administrations']['uses']['status']);
+}
+
+function resetFieldsAdmin() {
+  $('#enUrlContact').val('');
+  $('#frUrlContact').val('');
+  $('#emailContact').val('');
+  $('#nameContact').val('');
+  $('#dateStarted').val('');
+  $('#enUseName').val('');
+  $('#frUseName').val('');
+  $('#enUseDescription').val('');
+  $('#frUseDescription').val('');
+  $('#enUrlRelatedCode').val('');
+  $('#frUrlRelatedCode').val('');
+  $('#enNameRelatedCode').val('');
+  $('#frNameRelatedCode').val('');
+  $('#status').val('');
 }

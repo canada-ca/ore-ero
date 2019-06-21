@@ -271,13 +271,6 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['contact']['URL']) {
-    if (obj['contact']['URL']['en'])
-      $('#enUrlContact').val(obj['contact']['URL']['en']);
-    if (obj['contact']['URL']['fr'])
-      $('#frUrlContact').val(obj['contact']['URL']['fr']);
-  }
-
   if (obj['contact']['email']) $('#emailContact').val(obj['contact']['email']);
 
   if (obj['contact']['name']) $('#nameContact').val(obj['contact']['name']);
