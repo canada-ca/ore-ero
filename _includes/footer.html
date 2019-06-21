@@ -67,13 +67,16 @@
 <script type="text/javascript" src="../assets/js/lib/js-yaml.js"></script>
 <script type="text/javascript" src="../assets/js/src/deep-object.js"></script>
 <script type="text/javascript" src="../assets/js/src/git-file-manager.js"></script>
-<script type="text/javascript" src="../assets/js/src/index.js"></script>
 <script type="text/javascript" src="../assets/js/src/custom-form-validation.js"></script>
 <script type="text/javascript" src="../assets/js/src/validation.js"></script>
 <script type="text/javascript" src="../assets/js/src/tags.js"></script>
 <script type="text/javascript" src="../assets/js/src/programmingLanguages.js"></script>
+{% if page.ref == "adminForm" %}
+  <script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
+{% endif %}
 {% if page.ref == "codeForm" %}
   <script type="text/javascript" src="../assets/js/src/codeForm.js"></script>
+  <script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
 {% endif %}
 {% if page.ref == "standardsForm" %}
   <script type="text/javascript" src="../assets/js/src/standardsForm.js"></script>

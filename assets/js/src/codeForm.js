@@ -4,6 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getAdminObject
 */
 
 const codeObj = $('.page-codeForm #ProjectNameSelect');
@@ -26,7 +27,12 @@ $(document).ready(function() {
       toggleAlert(ALERT_OFF);
       toggleAlert(ALERT_IN_PROGRESS);
       window.scrollTo(0, document.body.scrollHeight);
-      submitCodeForm();
+
+      if ($('#newAdminCode').val()) {
+        submitFormAdminCodeForm();
+      } else {
+        submitCodeForm();
+      }
     }
   });
 });
@@ -223,6 +229,104 @@ function getSelectedOrgType() {
     .parent()
     .attr('label')
     .toLowerCase();
+}
+
+function submitFormAdminCodeForm() {
+  let codeObject = getCodeObject();
+  let adminObject = getAdminObject();
+
+  let submitButton = document.getElementById('prbotSubmitcodeForm');
+  let resetButton = document.getElementById('formReset');
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let codeFile = `_data/code/${getSelectedOrgType()}/${$(
+    '#adminCode'
+  ).val()}.yml`;
+  let adminFile = `_data/administrations/municipal.yml`;
+
+  fileWriter
+    .merge(codeFile, codeObject, 'releases', 'name.en')
+    .then(resultCode => {
+      fileWriter
+        .mergeAdminFile(adminFile, adminObject, '', 'code')
+        .then(resultAdmin => {
+          const config = {
+            body: JSON.stringify({
+              user: USERNAME,
+              repo: REPO_NAME,
+              title:
+                'Updated code for ' +
+                $('#adminCode :selected').text() +
+                ' and administrations for ' +
+                $('#orgLevel').val(),
+              description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+              commit: 'Committed by ' + $('#submitterEmail').val(),
+              author: {
+                name: $('#submitterUsername').val(),
+                email: $('#submitterEmail').val()
+              },
+              files: [
+                {
+                  path: codeFile,
+                  content: jsyaml.dump(resultCode, { lineWidth: 160 })
+                },
+                {
+                  path: adminFile,
+                  content: jsyaml.dump(resultAdmin, { lineWidth: 160 })
+                }
+              ]
+            }),
+            method: 'POST'
+          };
+          return fetch(PRBOT_URL, config);
+        });
+    })
+    .catch(err => {
+      if (err.status == 404) {
+        const config = {
+          body: JSON.stringify({
+            user: USERNAME,
+            repo: REPO_NAME,
+            title: 'Created a code and an administration file',
+            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+            commit: 'Committed by ' + $('#submitterEmail').val(),
+            author: {
+              name: $('#submitterUsername').val(),
+              email: $('#submitterEmail').val()
+            },
+            files: [
+              {
+                path: codeFile,
+                content: '---\n' + jsyaml.dump(codeObject, { lineWidth: 160 })
+              },
+              {
+                path: adminFile,
+                content: '---\n' + jsyaml.dump(adminObject, { lineWidth: 160 })
+              }
+            ]
+          }),
+          method: 'POST'
+        };
+        return fetch(PRBOT_URL, config);
+      } else {
+        throw err;
+      }
+    })
+    .then(response => {
+      if (response.status != 200) {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_FAIL);
+        submitButton.disabled = false;
+        resetButton.disabled = false;
+      } else {
+        toggleAlert(ALERT_OFF);
+        toggleAlert(ALERT_SUCCESS);
+        // Redirect to home page
+        setTimeout(function() {
+          window.location.href = './index.html';
+        }, 2000);
+      }
+    });
 }
 
 function submitCodeForm() {
