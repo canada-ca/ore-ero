@@ -14,7 +14,7 @@
       {% capture label %}{{ site.data.i18n.form[include.id][include.title].labels[field.title][page.lang] }}{% endcapture %}
       {% include form/components/group.html id=field.id title=title label=label required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
     {% when 'string-i18n' %}
-      {% capture labelfr %}{{ site.data.i18n.form[include.id][include.title].labels[field.title].en[page.lang] }}{% endcapture %}
+      {% capture labelfr %}{{ site.data.i18n.form[include.id][include.title].labels[field.title].fr[page.lang] }}{% endcapture %}
       {% capture labelen %}{{ site.data.i18n.form[include.id][include.title].labels[field.title].en[page.lang] }}{% endcapture %}
       {% include form/components/group-i18n.html id=field.id title=title labelen=labelen labelfr=labelfr required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
     {% when 'email' %}

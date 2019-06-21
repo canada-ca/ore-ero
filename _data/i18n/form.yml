@@ -183,15 +183,18 @@ code:
         fr: URL de la page d'accueil en francais
   ProjectName:
     title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
+      en: The name of the project.
+      fr: Le nom du projet.
     label:
       en:
-        en: English project name
-        fr: Nom du projet en anglais
+        en: The english name of the project (Enter an name to create a new project or select one to updated it)
+        fr: Le nom du projet en anglais
       fr:
-        en: French project name
-        fr: Nom du projet en français
+        en: The name of the project in french
+        fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
+    select:
+      en: If you wish to update an already existing code, please select it below
+      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   Organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
@@ -269,6 +272,13 @@ code:
 
 # Standards form specifics
 standards:
+  emailContact:
+    title:
+      en: Email for the reference
+      fr: Le courriel de la référence
+    label:
+      en: Email
+      fr: Courriel
   Name:
     title:
       en: Name of the Standard
@@ -296,8 +306,8 @@ standards:
       en: Code for the Standard
       fr: Code du standard
     label:
-      en: Code
-      fr: Code
+      en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
+      fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
   StandardOrg:
     title:
       en: Name of the organisation supporting the standard
@@ -305,6 +315,13 @@ standards:
     label:
       en: Name
       fr: Nom
+  Status:
+    title:
+      en: The status of the standard
+      fr: Le status du standard
+    label:
+      en: Status
+      fr: Status
   Reference:
     title:
       en: Reference for the standard
@@ -338,7 +355,7 @@ admin:
       fr:
         en: Name in french
         fr: Nom en français
-  newCodeAdmin:
+  newAdminCode:
     title:
       en: New Administration Code
       fr: Nouveau code d'administration
@@ -395,7 +412,6 @@ admin:
 
 # Software form specifics
 oss:
-
   HomepageUrl:
     title:
       en: The English and French URLs of the project homepage.
@@ -412,12 +428,8 @@ oss:
       en: The English and French name of the project.
       fr: Le nom du projet en français et en anglais.
     label:
-      en:
-        en: English project name
-        fr: Nom du projet en anglais
-      fr:
-        en: French project name
-        fr: Nom du projet en français
+      en: English project name
+      fr: Nom du projet en anglais
   RelatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
