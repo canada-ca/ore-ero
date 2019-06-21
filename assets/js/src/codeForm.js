@@ -2,13 +2,13 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags addTags
-  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getTags resetTags addTags
+  submitInit submitConclusion
   getAdminObject
 */
 
 const codeObj = $('.page-codeForm #ProjectNameSelect');
-const adminObj = $('.page-codeForm #adminCode');
+const adminObj = $('.page-codeForm #AdminCode');
 
 $(document).ready(function() {
   adminObj.focus();
@@ -22,33 +22,22 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitcodeForm').click(function() {
-    // Progress only when form input is valid
-    if (validateRequired()) {
-      toggleAlert(ALERT_OFF);
-      toggleAlert(ALERT_IN_PROGRESS);
-      window.scrollTo(0, document.body.scrollHeight);
-
-      if ($('#newAdminCode').val()) {
-        submitFormAdminCodeForm();
-      } else {
-        submitCodeForm();
-      }
-    }
+    if (submitInit()) submitCodeForm();
   });
 });
 
 function getCodeObject() {
   let codeObject = {
-    schemaVersion: $('#schemaVersion').val(),
-    adminCode: $('#adminCode').val(),
+    schemaVersion: $('#SchemaVersion').val(),
+    adminCode: $('#AdminCode').val(),
     releases: [
       {
         contact: {
-          email: $('#emailContact').val()
+          email: $('#ContactEmail').val()
         },
         date: {
-          created: $('#dateCreated').val(),
-          metadataLastUpdated: $('#dateLastUpdated').val()
+          created: $('#DateCreated').val(),
+          metadataLastUpdated: $('#DateUpdated').val()
         },
         description: {
           en: $('#enDescription').val(),
@@ -61,10 +50,10 @@ function getCodeObject() {
         licenses: [
           {
             URL: {
-              en: $('#enLicenses').val(),
-              fr: $('#frLicenses').val()
+              en: $('#enLicensesURL').val(),
+              fr: $('#frLicensesURL').val()
             },
-            spdxID: $('#spdxID').val()
+            spdxID: $('#LicensesSpdxID').val()
           }
         ],
         repositoryURL: {
@@ -79,26 +68,26 @@ function getCodeObject() {
     ]
   };
 
-  if ($('#frUrlContact').val() || $('#enUrlContact').val()) {
+  if ($('#frContactURL').val() || $('#enContactURL').val()) {
     codeObject.releases[0].contact.URL = {};
   }
-  if ($('#enUrlContact').val()) {
-    codeObject.releases[0].contact.URL.en = $('#enUrlContact').val();
+  if ($('#enContactURL').val()) {
+    codeObject.releases[0].contact.URL.en = $('#enContactURL').val();
   }
-  if ($('#frUrlContact').val()) {
-    codeObject.releases[0].contact.URL.fr = $('#frUrlContact').val();
-  }
-
-  if ($('#nameContact').val()) {
-    codeObject.releases[0].contact.name = $('#nameContact').val();
+  if ($('#frContactURL').val()) {
+    codeObject.releases[0].contact.URL.fr = $('#frContactURL').val();
   }
 
-  if ($('#phone').val()) {
-    codeObject.releases[0].contact.phone = $('#phone').val();
+  if ($('#ContactName').val()) {
+    codeObject.releases[0].contact.name = $('#ContactName').val();
   }
 
-  if ($('#dateLastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#dateLastModified')
+  if ($('#ContactPhone').val()) {
+    codeObject.releases[0].contact.phone = $('#ContactPhone').val();
+  }
+
+  if ($('#DateModified').val()) {
+    codeObject.releases[0].date.lastModified = $('#DateModified')
       .val()
       .toString();
   }
@@ -113,14 +102,14 @@ function getCodeObject() {
     codeObject.releases[0].downloadURL.fr = $('#frDownloadUrl').val();
   }
 
-  if ($('#enHomepageURL').val() || $('#frHomepageURL').val()) {
+  if ($('#enHomepageUrl').val() || $('#frHomepageUrl').val()) {
     codeObject.releases[0].homepageURL = {};
   }
-  if ($('#enHomepageURL').val()) {
-    codeObject.releases[0].homepageURL.en = $('#enHomepageURL').val();
+  if ($('#enHomepageUrl').val()) {
+    codeObject.releases[0].homepageURL.en = $('#enHomepageUrl').val();
   }
-  if ($('#frHomepageURL').val()) {
-    codeObject.releases[0].homepageURL.fr = $('#frHomepageURL').val();
+  if ($('#frHomepageUrl').val()) {
+    codeObject.releases[0].homepageURL.fr = $('#frHomepageUrl').val();
   }
 
   let languages = $(
@@ -143,74 +132,74 @@ function getCodeObject() {
   }
 
   if (
-    $('#enUrlPartner').val() ||
-    $('#frUrlPartner').val() ||
-    $('#emailPartner').val() ||
-    $('#enNamePartner').val() ||
-    $('#frNamePartner').val()
+    $('#enPartnerUrl').val() ||
+    $('#frPartnerUrl').val() ||
+    $('#PartnerEmail').val() ||
+    $('#enPartnerName').val() ||
+    $('#frPartnerName').val()
   ) {
     codeObject.releases[0].partners = {};
   }
 
-  if ($('#enUrlPartner').val() || $('#frUrlPartner').val()) {
+  if ($('#enPartnerUrl').val() || $('#frPartnerUrl').val()) {
     codeObject.releases[0].partners.URL = {};
   }
-  if ($('#enUrlPartner').val()) {
-    codeObject.releases[0].partners.URL.en = $('#enUrlPartner').val();
+  if ($('#enPartnerUrl').val()) {
+    codeObject.releases[0].partners.URL.en = $('#enPartnerUrl').val();
   }
-  if ($('#frUrlPartner').val()) {
-    codeObject.releases[0].partners.URL.fr = $('#frUrlPartner').val();
-  }
-
-  if ($('#emailPartner').val()) {
-    codeObject.releases[0].partners.email = $('#emailPartner').val();
+  if ($('#frPartnerUrl').val()) {
+    codeObject.releases[0].partners.URL.fr = $('#frPartnerUrl').val();
   }
 
-  if ($('#enNamePartner').val() || $('#frNamePartner').val()) {
+  if ($('#PartnerEmail').val()) {
+    codeObject.releases[0].partners.email = $('#PartnerEmail').val();
+  }
+
+  if ($('#enPartnerName').val() || $('#frPartnerName').val()) {
     codeObject.releases[0].partners.name = {};
   }
-  if ($('#enNamePartner').val()) {
-    codeObject.releases[0].partners.name.en = $('#enNamePartner').val();
+  if ($('#enPartnerName').val()) {
+    codeObject.releases[0].partners.name.en = $('#enPartnerName').val();
   }
-  if ($('#frNamePartner').val()) {
-    codeObject.releases[0].partners.name.fr = $('#frNamePartner').val();
+  if ($('#frPartnerName').val()) {
+    codeObject.releases[0].partners.name.fr = $('#frPartnerName').val();
   }
 
   if (
-    $('#enUrlRelatedCode').val() ||
-    $('#frUrlRelatedCode').val() ||
-    $('#enNameRelatedCode').val() ||
-    $('#frNameRelatedCode').val()
+    $('enRelatedCodeUrl').val() ||
+    $('#frRelatedCodeUrl').val() ||
+    $('#enRelatedCodeName').val() ||
+    $('#frRelatedCodeName').val()
   ) {
     codeObject.releases[0].relatedCode = [{}];
   }
 
-  if ($('#enUrlRelatedCode').val() || $('#frUrlRelatedCode').val()) {
+  if ($('enRelatedCodeUrl').val() || $('#frRelatedCodeUrl').val()) {
     codeObject.releases[0].relatedCode[0].URL = {};
   }
-  if ($('#enUrlRelatedCode').val()) {
-    codeObject.releases[0].relatedCode[0].URL.en = $('#enUrlRelatedCode').val();
+  if ($('enRelatedCodeUrl').val()) {
+    codeObject.releases[0].relatedCode[0].URL.en = $('enRelatedCodeUrl').val();
   }
-  if ($('#frUrlRelatedCode').val()) {
-    codeObject.releases[0].relatedCode[0].URL.fr = $('#frUrlRelatedCode').val();
+  if ($('#frRelatedCodeUrl').val()) {
+    codeObject.releases[0].relatedCode[0].URL.fr = $('#frRelatedCodeUrl').val();
   }
 
-  if ($('#enNameRelatedCode').val() || $('#frNameRelatedCode').val()) {
+  if ($('#enRelatedCodeName').val() || $('#frRelatedCodeName').val()) {
     codeObject.releases[0].relatedCode[0].name = {};
   }
-  if ($('#enNameRelatedCode').val()) {
+  if ($('#enRelatedCodeName').val()) {
     codeObject.releases[0].relatedCode[0].name.en = $(
-      '#enNameRelatedCode'
+      '#enRelatedCodeName'
     ).val();
   }
-  if ($('#frNameRelatedCode').val()) {
+  if ($('#frRelatedCodeName').val()) {
     codeObject.releases[0].relatedCode[0].name.fr = $(
-      '#frNameRelatedCode'
+      '#frRelatedCodeName'
     ).val();
   }
 
-  if ($('#status :selected').val() != '') {
-    codeObject.releases[0].status = $('#status :selected').val();
+  if ($('#Status :selected').val() != '') {
+    codeObject.releases[0].status = $('#Status :selected').val();
   }
 
   if ($('#VersionProject').val()) {
@@ -225,7 +214,7 @@ function getCodeObject() {
 }
 
 function getSelectedOrgType() {
-  return $('#adminCode :selected')
+  return $('#AdminCode :selected')
     .parent()
     .attr('label')
     .toLowerCase();
@@ -237,10 +226,12 @@ function submitFormAdminCodeForm() {
 
   let submitButton = document.getElementById('prbotSubmitcodeForm');
   let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let codeFile = `_data/code/${getSelectedOrgType()}/${$(
-    '#adminCode'
+    '#AdminCode'
   ).val()}.yml`;
   let adminFile = `_data/administrations/municipal.yml`;
 
@@ -256,14 +247,14 @@ function submitFormAdminCodeForm() {
               repo: REPO_NAME,
               title:
                 'Updated code for ' +
-                $('#adminCode :selected').text() +
+                $('#AdminCode :selected').text() +
                 ' and administrations for ' +
-                $('#orgLevel').val(),
-              description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-              commit: 'Committed by ' + $('#submitterEmail').val(),
+                $('#OrgLevel').val(),
+              description: 'Authored by: ' + $('#SubmitterEmail').val() + '\n',
+              commit: 'Committed by ' + $('#SubmitterEmail').val(),
               author: {
-                name: $('#submitterUsername').val(),
-                email: $('#submitterEmail').val()
+                name: $('#SubmitterUsername').val(),
+                email: $('#SubmitterEmail').val()
               },
               files: [
                 {
@@ -287,12 +278,16 @@ function submitFormAdminCodeForm() {
           body: JSON.stringify({
             user: USERNAME,
             repo: REPO_NAME,
-            title: 'Created a code and an administration file',
-            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-            commit: 'Committed by ' + $('#submitterEmail').val(),
+            title:
+              'Created a code file for ' +
+              $('#AdminCode :selected').text() +
+              'and an administration file for' +
+              $('#OrgLevel').val(),
+            description: 'Authored by: ' + $('#SubmitterEmail').val() + '\n',
+            commit: 'Committed by ' + $('#SubmitterEmail').val(),
             author: {
-              name: $('#submitterUsername').val(),
-              email: $('#submitterEmail').val()
+              name: $('#SubmitterUsername').val(),
+              email: $('#SubmitterEmail').val()
             },
             files: [
               {
@@ -313,19 +308,7 @@ function submitFormAdminCodeForm() {
       }
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response, submitButton, resetButton);
     });
 }
 
@@ -337,7 +320,7 @@ function submitCodeForm() {
 
   let codeObject = getCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
+  let file = `_data/code/${getSelectedOrgType()}/${$('#AdminCode').val()}.yml`;
   fileWriter
     .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
@@ -354,19 +337,7 @@ function submitCodeForm() {
       }
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response);
     });
 }
 
@@ -375,20 +346,20 @@ function getConfigUpdate(result, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Updated code for ' + $('#adminCode :selected').text(),
+      title: 'Updated code for ' + $('#AdminCode :selected').text(),
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#SubmitterEmail').val() +
         '\n' +
         'Project: ***' +
         $('#enProjectName').val() +
         '***\n' +
         $('#enDescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#SubmitterEmail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#SubmitterUsername').val(),
+        email: $('#SubmitterEmail').val()
       },
       files: [
         {
@@ -406,20 +377,20 @@ function getConfigNew(codeObject, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created code file for ' + $('#adminCode :selected').text(),
+      title: 'Created code file for ' + $('#AdminCode :selected').text(),
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#SubmitterEmail').val() +
         '\n' +
         'Project: ***' +
         $('#enProjectName').val() +
         '***\n' +
         $('#enDescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#SubmitterEmail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#SubmitterUsername').val(),
+        email: $('#SubmitterEmail').val()
       },
       files: [
         {
@@ -519,19 +490,19 @@ function addValueToFields(obj) {
   $('#frDescription').val(obj.description.fr);
 
   if (obj.contact.url) {
-    if (obj.contact.URL.en) $('#enUrlContact').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#frUrlContact').val(obj.contact.URL.fr);
+    if (obj.contact.URL.en) $('#enContactURL').val(obj.contact.URL.en);
+    if (obj.contact.URL.fr) $('#frContactURL').val(obj.contact.URL.fr);
   }
-  $('#emailContact').val(obj.contact.email);
-  if (obj.contact.name) $('#nameContact').val(obj.contact.name);
-  if (obj.contact.phone) $('#phone').val(obj.contact.phone);
+  $('#ContactEmail').val(obj.contact.email);
+  if (obj.contact.name) $('#ContactName').val(obj.contact.name);
+  if (obj.contact.phone) $('#ContactPhone').val(obj.contact.phone);
 
-  $('#dateCreated').val(obj.date.created);
-  $('#dateLastModified').val(obj.date.metadataLastUpdated);
+  $('#DateCreated').val(obj.date.created);
+  $('#DateModified').val(obj.date.metadataLastUpdated);
 
-  $('#enLicenses').val(obj.licenses[0].URL.en);
-  $('#frLicenses').val(obj.licenses[0].URL.fr);
-  $('#spdxID').val(obj.licenses[0].spdxID);
+  $('#enLicensesURL').val(obj.licenses[0].URL.en);
+  $('#frLicensesURL').val(obj.licenses[0].URL.fr);
+  $('#LicensesSpdxID').val(obj.licenses[0].spdxID);
 
   addTags(obj);
 
@@ -562,32 +533,32 @@ function addValueToFields(obj) {
 
   if (obj.partners) {
     if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enUrlPartner').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frUrlPartner').val(obj.partners.URL.fr);
+      if (obj.partners.URL.en) $('#enPartnerUrl').val(obj.partners.URL.en);
+      if (obj.partners.URL.fr) $('#frPartnerUrl').val(obj.partners.URL.fr);
     }
-    if (obj.partners.email) $('#emailPartner').val(obj.partners.email);
+    if (obj.partners.email) $('#PartnerEmail').val(obj.partners.email);
     if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enNamePartner').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frNamePartner').val(obj.partners.name.fr);
+      if (obj.partners.name.en) $('#enPartnerName').val(obj.partners.name.en);
+      if (obj.partners.name.fr) $('#frPartnerName').val(obj.partners.name.fr);
     }
   }
 
   if (obj.relatedCode) {
     if (obj.relatedCode[0].URL) {
       if (obj.relatedCode[0].URL.en)
-        $('#enUrlRelatedCode').val(obj.relatedCode[0].URL.en);
+        $('enRelatedCodeUrl').val(obj.relatedCode[0].URL.en);
       if (obj.relatedCode[0].URL.fr)
-        $('#frUrlRelatedCode').val(obj.relatedCode[0].URL.fr);
+        $('#frRelatedCodeUrl').val(obj.relatedCode[0].URL.fr);
     }
     if (obj.relatedCode[0].name) {
       if (obj.relatedCode[0].name.en)
-        $('#enNameRelatedCode').val(obj.relatedCode[0].name.en);
+        $('#enRelatedCodeName').val(obj.relatedCode[0].name.en);
       if (obj.relatedCode[0].name.fr)
-        $('#enNameRelatedCode').val(obj.relatedCode[0].name.fr);
+        $('#frRelatedCodeName').val(obj.relatedCode[0].name.fr);
     }
   }
 
-  if (obj.status) $('#status').val(obj.status);
+  if (obj.status) $('#Status').val(obj.status);
   if (obj.version) $('#VersionProject').val(obj.version);
   if (obj.vcs) $('#Vcs').val(obj.vcs);
 }
@@ -597,16 +568,16 @@ function resetFields() {
   $('#frProjectName').val('');
   $('#enDescription').val('');
   $('#frDescription').val('');
-  $('#enUrlContact').val('');
-  $('#frUrlContact').val('');
-  $('#emailContact').val('');
-  $('#nameContact').val('');
-  $('#phone').val('');
-  $('#dateCreated').val('');
-  $('#dateLastModified').val('');
-  $('#enLicenses').val('');
-  $('#frLicenses').val('');
-  $('#spdxID').val('');
+  $('#enContactURL').val('');
+  $('#frContactURL').val('');
+  $('#ContactEmail').val('');
+  $('#ContactName').val('');
+  $('#ContactPhone').val('');
+  $('#DateCreated').val('');
+  $('#DateModified').val('');
+  $('#enLicensesURL').val('');
+  $('#frLicensesURL').val('');
+  $('#LicensesSpdxID').val('');
   resetTags();
   $('#enRepositoryUrl').val('');
   $('#frRepositoryUrl').val('');
@@ -617,16 +588,16 @@ function resetFields() {
   resetLanguages();
   $('#enOrganization').val('');
   $('#frOrganization').val('');
-  $('#enUrlPartner').val('');
-  $('#frUrlPartner').val('');
-  $('#emailPartner').val('');
-  $('#enNamePartner').val('');
-  $('#frNamePartner').val('');
-  $('#enUrlRelatedCode').val('');
-  $('#frUrlRelatedCode').val('');
-  $('#enNameRelatedCode').val('');
-  $('#enNameRelatedCode').val('');
-  $('#status').val('');
+  $('#enPartnerUrl').val('');
+  $('#frPartnerUrl').val('');
+  $('#PartnerEmail').val('');
+  $('#enPartnerName').val('');
+  $('#frPartnerName').val('');
+  $('enRelatedCodeUrl').val('');
+  $('#frRelatedCodeUrl').val('');
+  $('#enRelatedCodeName').val('');
+  $('#frRelatedCodeName').val('');
+  $('#Status').val('');
   $('#VersionProject').val('');
   $('#Vcs').val('');
 }

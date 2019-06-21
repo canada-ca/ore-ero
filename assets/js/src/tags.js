@@ -19,7 +19,7 @@ function addTags(obj) {
     resetTags();
     let index = 0;
     obj['tags']['en'].forEach(function(tag) {
-      if (index == 0) $('#tagEN').val(tag);
+      if (index == 0) $('#enTags').val(tag);
       else
         tagObject('tagEN' + index, tag)
           .addClass('additional-tag')
@@ -28,7 +28,7 @@ function addTags(obj) {
     });
     index = 0;
     obj['tags']['fr'].forEach(function(tag) {
-      if (index == 0) $('#tagFR').val(tag);
+      if (index == 0) $('#frTags').val(tag);
       else
         tagObject('tagFR' + index, tag)
           .addClass('additional-tag')

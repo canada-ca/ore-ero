@@ -2,8 +2,8 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags addTags
-  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getTags resetTags addTags
+  submitInit submitConclusion
 */
 
 const standardObj = $('.page-standardsForm #StandardCodeSelect');
@@ -22,13 +22,7 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitstandardsForm').click(function() {
-    // Progress only when form input is valid
-    if (validateRequired()) {
-      toggleAlert(ALERT_OFF);
-      toggleAlert(ALERT_IN_PROGRESS);
-      window.scrollTo(0, document.body.scrollHeight);
-      submitStandardsForm();
-    }
+    if (submitInit()) submitStandardsForm();
   });
 });
 
@@ -132,19 +126,7 @@ function submitStandardsForm() {
       }
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response, submitButton, resetButton);
     });
 }
 
