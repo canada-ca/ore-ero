@@ -1,7 +1,6 @@
-<h2>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</h2>
+{% include form/components/title.html id=include.id title=include.title %}
 <div class="form-group">
-  {%- capture label -%}{{ site.data.i18n.form[include.id][include.title].label[page.lang] }}{%- endcapture -%}
-  {% include form/components/label.html name=include.title required=include.required label=label %}
+  {% include form/components/label.html id=include.id title=include.title require=include.required %}
   <select class="form-control" id="{{ include.title }}" name="{{ include.title }}"{% if include.required == nil or include.required %} required="required"{% endif %}>
     <option value="">&nbsp;</option>
     {% for option in include.options %}

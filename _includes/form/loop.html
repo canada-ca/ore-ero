@@ -33,7 +33,7 @@
       {% when 'selectCode' %}
         {% include form/presets/selectCode.html id=id %}
       {% when 'hr' %}
-        {% include form/presets/components/hr.html %}
+        {% include form/presets/hr.html %}
       {% else %}
         {% if page.lang == 'en' %}
           <p>Throw <span style="color: red;">ERROR</span> (<strong>preset {{ formGroup.preset }}</strong> not found).</p>

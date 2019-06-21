@@ -49,14 +49,8 @@ presets:
     label:
       en: Administration code
       fr: Code d'administration
-    description:
-      en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
-      fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
   Contact:
     title:
-      en: Contact information for the project.
-      fr: Coordonnées des contacts pour le projet.
-    description:
       en: Contact information for the project.
       fr: Coordonnées des contacts pour le projet.
     labels:
@@ -67,23 +61,20 @@ presets:
         en: Contact number (###-###-####)
         fr: Numéro du contact (###-###-####)
     descriptions:
-      email:
-        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
-        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
-      name:
-        en: The name of a contact for the project.
-        fr: Le nom de la personne-ressource pour le projet.
-      phone:
-        en: Phone number to contact the project.
-        fr: Numéro de téléphone pour contacter le projet.
       URL:
         en: English and French URLs that can be used to contact the project.
         fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
+      Email:
+        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+      Name:
+        en: The name of a contact for the project.
+        fr: Le nom de la personne-ressource pour le projet.
+      Phone:
+        en: Phone number to contact the project.
+        fr: Numéro de téléphone pour contacter le projet.
   Date:
     title:
-      en: Dates describing the project.
-      fr: Dates décrivant le projet.
-    description:
       en: Dates describing the project.
       fr: Dates décrivant le projet.
     labels:
@@ -123,9 +114,6 @@ presets:
       fr:
         en: French description
         fr: Description en francais
-    name:
-      en: Description
-      fr: Description
   Languages:
     title:
       en: A list of the programming languages used in the project.
@@ -133,21 +121,21 @@ presets:
     label:
       en: Programming languages
       fr: Langages de programmation
-    add:
+    button:
       en: Add more languages
       fr: Ajouter plus de langues
   Licenses:
     title:
       en: Information about each licence for the project.
       fr: Renseignements sur chaque licence pour le projet.
-    label:
-      en:
-        en: English licence URL
-        fr: URL de la licence en anglais
-      fr:
-        en: French licence URL
-        fr: URL de la licence en francais
     labels:
+      URL:
+        en:
+          en: English licence URL
+          fr: URL de la licence en anglais
+        fr:
+          en: French licence URL
+          fr: URL de la licence en francais
       SpdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
@@ -285,6 +273,7 @@ code:
         fr:
           en: French URL of partner
           fr: URL du partenaire en francais
+      Email: *email
       Name:
         en:
           en: English name of partner
@@ -336,6 +325,68 @@ code:
     label:
       en: The latest version
       fr: La dernière version
+
+# Software form specifics
+oss:
+  HomepageUrl:
+    title:
+      en: The English and French URLs of the project homepage.
+      fr: Les URLs en français et en anglais de la page d'accueil.
+    label:
+      en:
+        en: English homepage URL
+        fr: URL de la page d'accueil en anglais
+      fr:
+        en: French homepage URL
+        fr: URL de la page d'accueil en francais
+  ProjectName:
+    title:
+      en: The English and French name of the project.
+      fr: Le nom du projet en français et en anglais.
+    label:
+      en: English project name
+      fr: Nom du projet en anglais
+  RelatedCode:
+    title:
+      en: Information about each library, framework, API or other related software used in this project.
+      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+    labels:
+      Url:
+        en:
+          en: English URL of related software
+          fr: URL anglais d'un logiciel connexe
+        fr:
+          en: French URL of related software
+          fr: URL francais d'un logiciel connexe
+      Name:
+        en:
+          en: Name of related software in english
+          fr: Nom d'un logiciel connexe en anglais
+        fr:
+          en: Name of related software in french
+          fr: Nom d'un logiciel connexe en francais
+  UseName:
+    title:
+      en: The English and French name of the project activity.
+      fr: Le nom du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity name
+        fr: Nom du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity name
+        fr: Nom du domaine de l'activité du projet en français
+  UseDescription:
+    title:
+      en: The English and French description of the project activity.
+      fr: La description du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity description
+        fr: description du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity description
+        fr: description du domaine de l'activité du projet en français
 
 # Standards form specifics
 standards:
@@ -427,7 +478,7 @@ admin:
       en: New Administration Code
       fr: Nouveau code d'administration
     label:
-      en: New Administration Code 
+      en: New Administration Code
       fr: Nouveau code d'administration
   ProvinceCode:
     title:
@@ -476,65 +527,3 @@ admin:
       yt:
         en: Yukon
         fr: Yukon
-
-# Software form specifics
-oss:
-  HomepageUrl:
-    title:
-      en: The English and French URLs of the project homepage.
-      fr: Les URLs en français et en anglais de la page d'accueil.
-    label:
-      en:
-        en: English homepage URL
-        fr: URL de la page d'accueil en anglais
-      fr:
-        en: French homepage URL
-        fr: URL de la page d'accueil en francais
-  ProjectName:
-    title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
-    label:
-      en: English project name
-      fr: Nom du projet en anglais
-  RelatedCode:
-    title:
-      en: Information about each library, framework, API or other related software used in this project.
-      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
-    labels:
-      Url:
-        en:
-          en: English URL of related software
-          fr: URL anglais d'un logiciel connexe
-        fr:
-          en: French URL of related software
-          fr: URL francais d'un logiciel connexe
-      Name:
-        en:
-          en: Name of related software in english
-          fr: Nom d'un logiciel connexe en anglais
-        fr:
-          en: Name of related software in french
-          fr: Nom d'un logiciel connexe en francais
-  UseName:
-    title:
-      en: The English and French name of the project activity.
-      fr: Le nom du domaine de l'activité du projet en français et en anglais.
-    label:
-      en:
-        en: English project activity name
-        fr: Nom du domaine de l'activité du projet en anglais
-      fr:
-        en: French project activity name
-        fr: Nom du domaine de l'activité du projet en français
-  UseDescription:
-    title:
-      en: The English and French description of the project activity.
-      fr: La description du domaine de l'activité du projet en français et en anglais.
-    label:
-      en:
-        en: English project activity description
-        fr: description du domaine de l'activité du projet en anglais
-      fr:
-        en: French project activity description
-        fr: description du domaine de l'activité du projet en français

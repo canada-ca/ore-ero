@@ -12,7 +12,7 @@ function addMoreLanguages() {
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
-      </div>`).appendTo('#codeLanguages');
+      </div>`).appendTo('#Languages');
 
   $(document).ready(function() {
     $(this)

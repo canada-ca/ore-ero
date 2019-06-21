@@ -31,7 +31,9 @@ formGroups:
       - widget: string-i18n
         title: Url
         type: url
-      - widget: email
+      - widget: string
+        title: Email
+        type: email
       - widget: string-i18n
         title: Name
         rule: alphanum-space
