@@ -1,12 +1,10 @@
-<h2>{{ site.data.i18n.form.presets.AdminCode.title[page.lang] }}</h2>
+{% assign title = "AdminCode" %}
+{% include form/components/title.html id=include.id title=title %}
 <div class="form-group">
 
-  {% assign name="adminCode" %}
+  {% include form/components/label.html id=include.id title=title %}
 
-  {% capture label %}{{ site.data.i18n.form.presets.AdminCode.label[page.lang] }}{% endcapture %}
-  {% include form/components/label.html name=name label=label %}
-
-  <select class="form-control" id="{{ name }}" name="{{ name }}" required="required">
+  <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
     <option value="">&nbsp;</option>
     <optgroup label={{ site.data.i18n.administrations.Federal.en }}>
       {% for org in site.data.administrations.federal %}

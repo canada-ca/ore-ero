@@ -1,8 +1,8 @@
-<h2>{{ site.data.i18n.form.presets.OrgLevel.title[page.lang] }}</h2>
+{% assign title = "OrgLevel" %}
+{% include form/components/title.html id=include.id title=title %}
 <div class="form-group">
-    {%- capture label -%}{{ site.data.i18n.form.presets.OrgLevel.label[page.lang] }}{%- endcapture -%}
-    {% include form/components/label.html name="orgLevel" required=true label=label %}
-  <select class="form-control" id="orgLevel" name="orgLevel" required="required">
+    {% include form/components/label.html id=include.id title=title %}
+  <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
     <option value="">&nbsp;</option>
     <option value="municipal" selected>{{ site.data.i18n.form.presets.OrgLevel.options.municipal[page.lang] }}</option>
     <option value="provincial" disabled>{{ site.data.i18n.form.presets.OrgLevel.options.provincial[page.lang] }}</option>

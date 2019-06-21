@@ -1,9 +1,7 @@
 {% include form/presets/components/hr.html %}
 
-<h2>{{ site.data.i18n.form.presets.Submitter.title[page.lang] }}</h2>
+{% assign title = "Submitter" %}
+{% include form/components/title.html id=include.idPreset title=title %}
 
-{% capture label %}{{ site.data.i18n.form.name[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="submitterUsername" label=label rule="alphanum-space" %}
-
-{% capture label %}{{ site.data.i18n.form.email[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="submitterEmail" label=label type="email" %}
+{% include form/components/group-group.html id=include.idPreset title=title group="Username" rule="alphanum-space" %}
+{% include form/components/group-group.html id=include.idPreset title=title group="Email" type="email" %}

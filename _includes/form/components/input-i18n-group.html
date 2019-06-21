@@ -1,7 +1,7 @@
 <input
   class="form-control"
-  id="{{ include.title }}"
-  name="{{ include.title }}"
+  id="{{ include.lang }}{{ include.title }}{{ include.group }}"
+  name="{{ include.lang }}{{ include.title }}{{ include.group }}"
   type="{{ include.type | default: "text" }}"
   {% if include.required == nil or include.required %} required="required"{% endif %}
   {% if include.value %} value="{{ include.value }}"{% endif %}

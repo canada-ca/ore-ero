@@ -1,0 +1,11 @@
+<div class="form-group">
+  {% assign lang = "en" %}
+  {% include form/components/label-i18n-group.html id=include.id title=include.title required=include.required lang=lang group=include.group %}
+  {% include form/components/input-i18n-group.html id=include.it title=include.title required=include.required lang=lang group=include.group value=include.value readonly=include.readonly rule=include.rule %}
+</div>
+
+<div class="form-group">
+  {% assign lang = "fr" %}
+  {% include form/components/label-i18n-group.html id=include.id title=include.title required=include.required lang=lang group=include.group %}
+  {% include form/components/input-i18n-group.html id=include.it title=include.title required=include.required lang=lang group=include.group value=include.value readonly=include.readonly rule=include.rule %}
+</div>

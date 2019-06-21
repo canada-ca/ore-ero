@@ -23,16 +23,16 @@ alert:
 required:
   en: Mandatory
   fr: Obligatoire
-email:
+email: &email
   en: Email
   fr: Courriel
-name:
+name: &name
   en: Name
   fr: Nom
-phone:
+phone: &phone
   en: Phone number
   fr: Numéro de téléphone
-url:
+url: &url
   en:
     en: English URL
     fr: URL anglais
@@ -59,23 +59,24 @@ presets:
     description:
       en: Contact information for the project.
       fr: Coordonnées des contacts pour le projet.
-    phone:
-      en: Contact number (###-###-####)
-      fr: Numéro du contact (###-###-####)
-    email:
-      description:
+    labels:
+      URL: *url
+      Email: *email
+      Name: *name
+      Phone:
+        en: Contact number (###-###-####)
+        fr: Numéro du contact (###-###-####)
+    descriptions:
+      email:
         en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
         fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
-    name:
-      description:
+      name:
         en: The name of a contact for the project.
         fr: Le nom de la personne-ressource pour le projet.
-    phone:
-      description:
+      phone:
         en: Phone number to contact the project.
         fr: Numéro de téléphone pour contacter le projet.
-    URL:
-      description:
+      URL:
         en: English and French URLs that can be used to contact the project.
         fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
   Date:
@@ -86,29 +87,29 @@ presets:
       en: Dates describing the project.
       fr: Dates décrivant le projet.
     labels:
-      created:
+      Created:
         en: Created
         fr: Créé
-      started:
+      Started:
         en: Started
         fr: Débuté
-      modified:
+      Modified:
         en: Last modified
         fr: Dernière modification
-      updated:
+      Updated:
         en: Last updated
         fr: Dernière mise à jour
     descriptions:
-      created:
+      Created:
         en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
         fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
-      started:
+      Started:
         en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
         fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
-      modified:
+      Modified:
         en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
         fr: La date du projet lorsqu'elle a été modifiée, au format AAAA-MM-JJ ou ISO 8601.
-      updated:
+      Updated:
         en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
         fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   Description:
@@ -122,6 +123,9 @@ presets:
       fr:
         en: French description
         fr: Description en francais
+    name:
+      en: Description
+      fr: Description
   Languages:
     title:
       en: A list of the programming languages used in the project.
@@ -143,7 +147,8 @@ presets:
       fr:
         en: French licence URL
         fr: URL de la licence en francais
-      spdxID:
+    labels:
+      SpdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
   OrgLevel:
@@ -177,6 +182,9 @@ presets:
     title:
       en: Information about submitter
       fr: Des informations sur le déposant
+    labels:
+      Username: *name
+      Email: *email
   Status:
     title:
       en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
@@ -200,6 +208,20 @@ presets:
       retired:
         en: Retired
         fr: Retraité
+  Tags:
+    title:
+      en: A useful set of keywords to distinguish the various projects.
+      fr: Un ensemble de mots clés utiles pour distinguer les différents projets.
+    label:
+      en:
+        en: List of English tags
+        fr: Liste d'étiquettes en anglais
+      fr:
+        en: List of French tags
+        fr: Liste d'étiquettes en français
+    button:
+      en: Add more tags
+      fr: Ajouter d'autres étiquettes
 
 # Code form specifics
 code:
@@ -236,9 +258,10 @@ code:
       fr:
         en: The name of the project in french
         fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
-    select:
-      en: If you wish to update an already existing code, please select it below
-      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+    labels:
+      Select:
+        en: If you wish to update an already existing code, please select it below
+        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   Organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.

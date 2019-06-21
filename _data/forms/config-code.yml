@@ -11,7 +11,6 @@ formGroups:
   - preset: dates
     created: true
     modified: true
-    metadata: true
   - widget: string-i18n
     title: DownloadUrl
     type: url

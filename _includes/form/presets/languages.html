@@ -1,6 +1,8 @@
-<h2>{{ site.data.i18n.form.presets.Languages.title[page.lang] }}</h2>
+{% assign title = "Languages" %}
+{% include form/components/title.html id=include.id title=title %}
+
 <div class="form-group">
-  <label>{{ site.data.i18n.form.presets.Languages.label[page.lang] }}</label>
+  {% include form/components/label.html id=include.id title=title required=false %}
   {% assign languages_array = "" | split: "," %}
   {% for fptms in site.data.code %}
   {% assign fptm = fptms[1] %}
@@ -14,7 +16,7 @@
     {% endfor %}
   {% endfor %}
 
-  <div id="codeLanguages" class="form-group">
+  <div id="Languages" class="form-group">
     {% assign languages_array = languages_array | uniq  %}
     {% for language in languages_array %}
       <div class="checkbox" >

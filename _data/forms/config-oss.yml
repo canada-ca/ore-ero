@@ -18,7 +18,6 @@ formGroups:
     phone: false
   - preset: dates
     started: true
-    metadata: true
   - widget: string-i18n
     title: UseName
     rule: alphanum-space
