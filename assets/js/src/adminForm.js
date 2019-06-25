@@ -8,11 +8,11 @@
 
 function getAdminObject() {
   let adminObject = {
-    code: $('#adminCode').val(),
-    provinceCode: $('#provinceCode').val(),
+    code: $('#newAdminCode').val(),
+    provinceCode: $('#ProvinceCode').val(),
     name: {
-      en: $('#enOrganisationName').val(),
-      fr: $('#frOrganisationName').val()
+      en: $('#enName').val(),
+      fr: $('#frName').val()
     }
   };
   return adminObject;
@@ -21,8 +21,8 @@ function getAdminObject() {
 
 
 function submitAdminForm() {
-  let submitButton = document.getElementById('adminPrbotSubmit');
-  let resetButton = document.getElementById('adminCodeFormReset');
+  let submitButton = document.getElementById('prbotSubmitadminForm');
+  let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
@@ -103,7 +103,7 @@ function submitAdminForm() {
     });
 }
 
-$('#adminPrbotSubmit').click(function() {
+$('#prbotSubmitadminForm').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
     toggleAlert(ALERT_OFF);
