@@ -80,7 +80,7 @@ function getOssObject() {
             name: {
               en: $('#enUseName').val(),
               fr: $('#frUseName').val()
-            },
+            }
           }
         ]
       }
@@ -94,10 +94,14 @@ function getOssObject() {
     ossObject.administrations[0].uses[0].contact.URL = {};
   }
   if ($('#enUrlContact').val()) {
-    ossObject.administrations[0].uses[0].contact.URL.en = $('#enUrlContact').val();
+    ossObject.administrations[0].uses[0].contact.URL.en = $(
+      '#enUrlContact'
+    ).val();
   }
   if ($('#frUrlContact').val()) {
-    ossObject.administrations[0].uses[0].contact.URL.fr = $('#frUrlContact').val();
+    ossObject.administrations[0].uses[0].contact.URL.fr = $(
+      '#frUrlContact'
+    ).val();
   }
 
   // contact.name, TODO: update to match schema
@@ -119,10 +123,14 @@ function getOssObject() {
     ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
   }
   if ($('#enUrlRelatedCode').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $('#enUrlRelatedCode').val();
+    ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $(
+      '#enUrlRelatedCode'
+    ).val();
   }
   if ($('#frUrlRelatedCode').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $('#frUrlRelatedCode').val();
+    ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $(
+      '#frUrlRelatedCode'
+    ).val();
   }
   // relatedCode.name
   if ($('#enNameRelatedCode').val() || $('#frNameRelatedCode').val()) {
@@ -155,7 +163,9 @@ function submitFormOss() {
 
   let ossObject = getOssObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let ProjectName =$('#enProjectName').val().toLowerCase();
+  let ProjectName = $('#enProjectName')
+    .val()
+    .toLowerCase();
   let file = `_data/logiciels_libres-open_source_software/${ProjectName}.yml`;
   fileWriter
     .merge(file, ossObject, 'administrations', 'adminCode')
@@ -190,6 +200,7 @@ function submitFormOss() {
 }
 
 function getConfigUpdate(result, file) {
+  let ProjectName = $('#enProjectName');
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -221,11 +232,12 @@ function getConfigUpdate(result, file) {
 }
 
 function getConfigNew(ossObject, file) {
+  let ProjectName = $('#enProjectName');
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the software file for ' + ProjectName ,
+      title: 'Created the software file for ' + ProjectName,
       description:
         'Authored by: ' +
         $('#submitterEmail').val() +
@@ -311,8 +323,7 @@ function selectAdmin() {
       if (result[oss]) {
         for (let i = 0; i < result[oss]['administrations'].length; i++) {
           if (
-            result[oss]['administrations'][i]['adminCode'] ==
-            administration
+            result[oss]['administrations'][i]['adminCode'] == administration
           ) {
             addValueToFieldsAdmin(result[oss]['administrations'][i]);
             break;
@@ -334,8 +345,10 @@ function addValueToFieldsAdmin(obj) {
     if (obj['uses']['contact']['URL']['fr'])
       $('#frUrlContact').val(obj['uses'][0]['contact']['URL']['fr']);
   }
-  if (obj['uses'][0]['contact']['email']) $('#emailContact').val(obj['uses'][0]['contact']['email']);
-  if (obj['uses'][0]['contact']['name']) $('#nameContact').val(obj['uses'][0]['contact']['name']);
+  if (obj['uses'][0]['contact']['email'])
+    $('#emailContact').val(obj['uses'][0]['contact']['email']);
+  if (obj['uses'][0]['contact']['name'])
+    $('#nameContact').val(obj['uses'][0]['contact']['name']);
 
   $('#dateStarted').val(obj['uses'][0]['date']['started']);
   $('#dateLastUpdated').val(obj['uses'][0]['date']['metadataLastUpdated']);
@@ -344,12 +357,12 @@ function addValueToFieldsAdmin(obj) {
   $('#enUseDescription').val(obj['uses'][0]['description']['en']);
   $('#frUseDescription').val(obj['uses'][0]['description']['fr']);
 
-  if (obj['uses'][0]['relatedCode']){
-  if (obj['uses'][0]['relatedCode']['URL']) {
-    if (obj['uses'][0]['relatedCode']['URL']['en'])
-      $('#enUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['en']);
-    if (obj['uses'][0]['relatedCode']['URL']['fr'])
-      $('#frUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['fr']);
+  if (obj['uses'][0]['relatedCode']) {
+    if (obj['uses'][0]['relatedCode']['URL']) {
+      if (obj['uses'][0]['relatedCode']['URL']['en'])
+        $('#enUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['en']);
+      if (obj['uses'][0]['relatedCode']['URL']['fr'])
+        $('#frUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['fr']);
     }
   }
   if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);

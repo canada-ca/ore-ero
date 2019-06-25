@@ -18,8 +18,6 @@ function getAdminObject() {
   return adminObject;
 }
 
-
-
 function submitAdminForm() {
   let submitButton = document.getElementById('prbotSubmitadminForm');
   let resetButton = document.getElementById('formReset');
