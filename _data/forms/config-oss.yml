@@ -4,15 +4,14 @@ id: oss
 
 formGroups:
   - preset: schemaVersion
+  - preset: selectOss
   - preset: description
   - widget: string-i18n
     title: HomepageUrl
     type: url
   - preset: licenses
-  - widget: string-i18n
-    title: ProjectName
-    rule: alphanum-space
   - preset: tags
+  - preset: hr
   - preset: adminCode
   - preset: contact
     phone: false
