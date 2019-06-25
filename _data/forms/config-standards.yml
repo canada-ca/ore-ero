@@ -1,0 +1,37 @@
+---
+
+id: standards
+
+formGroups:
+  - preset: schemaVersion
+  - preset: selectStandard
+  - widget: string-i18n
+    title: Name
+    rule: alphanum-space
+  - preset: description
+  - preset: dates
+    created: true
+    metadata: true
+  - widget: string-i18n
+    title: SpecURL
+    type: url
+  - widget: string
+    title: StandardOrg
+  - preset: tags
+  - preset: hr
+  - preset: adminCode
+  - widget: group
+    title: Reference
+    fields:
+      - widget: string-i18n
+        title: Url
+        type: url
+      - widget: string-i18n
+        title: Name
+        rule: names
+  - widget: string
+    title: Status
+  - widget: string
+    type: email
+    title: emailContact
+    required: false

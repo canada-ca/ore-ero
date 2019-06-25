@@ -1,0 +1,37 @@
+---
+
+id: oss
+
+formGroups:
+  - preset: schemaVersion
+  - preset: selectOss
+  - preset: description
+  - widget: string-i18n
+    title: HomepageUrl
+    type: url
+  - preset: licenses
+  - preset: tags
+  - preset: hr
+  - preset: adminCode
+  - preset: contact
+    phone: false
+  - preset: dates
+    started: true
+    metadata: true
+  - widget: string-i18n
+    title: UseName
+    rule: alphanum-space
+  - widget: string-i18n
+    title: UseDescription
+    rule: alphanum-space
+  - widget: group
+    title: RelatedCode
+    required: false
+    fields:
+      - widget: string-i18n
+        title: Url
+        type: url
+      - widget: string-i18n
+        title: Name
+        rule: alphanum-space
+  - preset: status

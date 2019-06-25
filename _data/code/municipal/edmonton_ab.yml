@@ -1,3 +1,4 @@
+---
 schemaVersion: '1.0'
 adminCode: edmonton_ab
 releases:
@@ -10,9 +11,9 @@ releases:
             name: 'Jared Rewerts'
             phone: 780-667-8058
         date:
-            created: '2016-06-16'
-            metadataLastUpdated: '2019-05-28'
-            lastModified: '2019-05-28'
+            created: 2016-06-16
+            metadataLastUpdated: 2019-05-28
+            lastModified: 2019-05-28
         description:
             en: 'YouCanBenefit is a web application that increases social benefit program discoverability for people of lesser means and their allies.'
             fr: 'YouCanBenefit est une application Web qui augmente la découvrabilité des programmes d''avantages sociaux pour les personnes moins fortunées et leurs alliés.'

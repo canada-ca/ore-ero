@@ -5,7 +5,7 @@
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
-      
+
       <div class="form-group">
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
@@ -23,7 +23,7 @@
           {% endfor %}
         </select>
       </div>
-      
+
       <div class="form-group">
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
@@ -41,7 +41,7 @@
           {% endfor %}
         </select>
       </div>
-      
+
       <div class="row">
         <div class="col-xs-6">
           <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
@@ -50,7 +50,7 @@
           <button type="reset" class="btn btn-default">Clear</button>
         </div>
       </div>
-      
+
     </form>
   </details>
 </div>
@@ -69,7 +69,7 @@
       </tr>
     </thead>
     <tbody>
-      
+
       {% for logiciels in site.data.logiciels_libres-open_source_software %}
         {% assign oss = logiciels[1] %}
         <tr>
@@ -85,7 +85,7 @@
               {{ tag }}&nbsp;
             {% endfor %}
           </td>
-          <td>{{ oss.admininstrations.size }}</td>
+          <td>{{ oss.administrations.size }}</td>
           <td>
             <a href="{{ oss.homepageURL[page.lang] }}" target="_blank">{{ oss.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
           </td>
@@ -99,7 +99,7 @@
 <!-- Modal Lightboxes -->
 {% for logiciels in site.data.logiciels_libres-open_source_software %}
   {% assign oss = logiciels[1] %}
-  
+
     <section id="{{ oss.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
       <header class="modal-header">
         <h2 class="modal-title">{{ oss.name[page.lang] }}</h2>
@@ -107,7 +107,7 @@
       <div class="modal-body">
         <p><strong>{{ oss.description[page.lang] }}</strong></p>
         <p>Is being used by:</p>
-        {% for admin in oss.admininstrations %}
+        {% for admin in oss.administrations %}
           <div class="row">
             {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
             <div class="col-md-7">
@@ -120,7 +120,7 @@
             {% endfor %}
           </div>
         {% endfor %}
-        
+
         <!--<p>{{ oss }}</p>-->
       </div>
     </section>

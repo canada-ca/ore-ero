@@ -8,28 +8,28 @@
 
   <select class="form-control" id="{{ name }}" name="{{ name }}" required="required">
     <option value="">&nbsp;</option>
-    <optgroup label={{ site.Federal[page.lang] }}>
+    <optgroup label={{ site.data.i18n.administrations.Federal.en }}>
       {% for org in site.data.administrations.federal %}
         {% if org.name[page.lang] != nil %}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {% endif %}
       {% endfor %}
     </optgroup>
-    <optgroup label={{ site.Provincial[page.lang] }}>
+    <optgroup label={{ site.data.i18n.administrations.Provincial.en }}>
       {% for org in site.data.administrations.provincial %}
         {% if org.name[page.lang] != nil %}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {% endif %}
       {% endfor %}
     </optgroup>
-    <optgroup label={{ site.Municipal[page.lang] }}>
+    <optgroup label={{ site.data.i18n.administrations.Municipal.en }}>
       {% for org in site.data.administrations.municipal %}
         {% if org.name[page.lang] != nil %}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {% endif %}
       {% endfor %}
     </optgroup>
-    <optgroup label={{ site.Aboriginal[page.lang] }}>
+    <optgroup label={{ site.data.i18n.administrations.Aboriginal.en }}>
       {% for org in site.data.administrations.aboriginal %}
         {% if org.name[page.lang] != nil %}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
@@ -38,5 +38,3 @@
     </optgroup>
   </select>
 </div>
-
-<div id="selectedProject" class="form-group"></div>

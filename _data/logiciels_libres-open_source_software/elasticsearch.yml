@@ -1,56 +1,54 @@
 ---
 schemaVersion: "1.0"
-description: 
+description:
   en: "Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases."
   fr: "Elasticsearch est un moteur de recherche et d'analyse RESTful distribué, conçu pour répondre à une multitude de cas d'utilisation."
-homepageURL: 
+homepageURL:
   en: "https://www.elastic.co/products/elasticsearch"
   fr: "https://www.elastic.co/fr/products/elasticsearch"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html"
       fr: "https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html"
     spdxID: "Apache-2.0"
-name: 
+name:
   en: Elasticsearch
   fr: Elasticsearch
-tags: 
-  en: 
+tags:
+  en:
     - "Web site"
-  fr: 
+  fr:
     - "Site web"
-admininstrations: 
-  - 
+administrations:
+  -
     adminCode: tc
-    uses: 
-      - 
+    uses:
+      -
         contact:
           name: "Irina Krasteleva"
           email: "irina.krasteleva@tc.gc.ca"
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-13"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-13
+        name:
           en: "Development Environment"
           fr: "Environnement de développement"
-        description: 
+        description:
           en: "APM data"
           fr: "Données du APM"
-  - 
+  -
     adminCode: mtl_qc
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "libre@ville.montreal.qc.ca"
-        date: 
-          started: "2017-06-30"
-          metadataLastUpdated: "2019-05-10"
-        description: 
+        date:
+          started: 2017-06-30
+          metadataLastUpdated: 2019-05-10
+        description:
           en: "Information managment."
           fr: "Gestion de l'information."
-        name: 
+        name:
           en: "Data mining software (data mining)."
           fr: "Logiciels d'extraction de données (data mining)."
-  
-  

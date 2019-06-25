@@ -1,39 +1,38 @@
---- 
+---
 schemaVersion: "1.0"
-description: 
+description:
   en: "A Free and Open Source Geographic Information System"
   fr: "Système d'Information Géographique Libre et Open Source"
 homepageURL:
   en: "https://qgis.org/en/site/"
   fr: "https://qgis.org/fr/site/"
-licenses: 
-  - 
-    URL: 
+licenses:
+  -
+    URL:
       en: "https://github.com/qgis/QGIS/blob/master/COPYING"
       fr: "https://github.com/qgis/QGIS/blob/master/COPYING"
     spdxID: "GPL-2.0"
-name: 
+name:
   en: QGIS
   fr: QGIS
-tags: 
+tags:
   en:
     - "gis"
-  fr: 
+  fr:
     - "sig"
-admininstrations: 
-  - 
+administrations:
+  -
     adminCode: statcan
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           email: "reginald.maltais2@canada.ca"
-        date: 
-          started: "2019-05-06"
-          metadataLastUpdated: "2019-05-16"
-        name: 
+        date:
+          started: 2019-05-06
+          metadataLastUpdated: 2019-05-16
+        name:
           en: "Geographic Information Systems (GIS)"
           fr: "Systèmes d'information géographique (SIG)"
-        description: 
+        description:
           en: "Desktop geospatial information processing"
           fr: "Système d'information géospatiale de bureau"
- 

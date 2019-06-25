@@ -20,6 +20,9 @@ alert:
     fr: Le formulaire a été soumis !
 
 # Generic
+required:
+  en: Mandatory
+  fr: Obligatoire
 email:
   en: Email
   fr: Courriel
@@ -58,6 +61,9 @@ presets:
       created:
         en: Created
         fr: Créé
+      started:
+        en: Started
+        fr: Débuté
       modified:
         en: Last modified
         fr: Dernière modification
@@ -99,6 +105,23 @@ presets:
       spdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
+  OrgLevel:
+    title:
+      en: Level of government
+      fr: Niveau de gouvernement
+    label:
+      en: Level of government
+      fr: Niveau de gouvernement
+    options:
+      federal:
+        en: Federal
+        fr: Fédéral
+      provincial:
+        en: Provincial
+        fr: Provincial
+      municipal:
+        en: Municipal
+        fr: Municipal
   SchemaVersion:
     title:
       en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
@@ -106,6 +129,10 @@ presets:
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
+  Submitter:
+    title:
+      en: Information about submitter
+      fr: Des informations sur le déposant
   Status:
     title:
       en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
@@ -113,7 +140,7 @@ presets:
     label:
       en: Development status of the project
       fr: Statut de développement du projet
-    values:
+    options:
       alpha:
         en: Alpha
         fr: Alpha
@@ -129,11 +156,6 @@ presets:
       retired:
         en: Retired
         fr: Retraité
-  Submitter:
-    title:
-      en: Information about submitter
-      fr: Des informations sur le déposant
-
 
 # Code form specifics
 code:
@@ -161,15 +183,18 @@ code:
         fr: URL de la page d'accueil en francais
   ProjectName:
     title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
+      en: The name of the project.
+      fr: Le nom du projet.
     label:
       en:
-        en: English project name
-        fr: Nom du projet en anglais
+        en: The english name of the project (Enter an name to create a new project or select one to updated it)
+        fr: Le nom du projet en anglais
       fr:
-        en: French project name
-        fr: Nom du projet en français
+        en: The name of the project in french
+        fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
+    select:
+      en: If you wish to update an already existing code, please select it below
+      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   Organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
@@ -245,5 +270,204 @@ code:
       en: The latest version
       fr: La dernière version
 
+# Standards form specifics
+standards:
+  emailContact:
+    title:
+      en: Email for the reference
+      fr: Le courriel de la référence
+    label:
+      en: Email
+      fr: Courriel
+  Name:
+    title:
+      en: Name of the Standard
+      fr: Nom du standard
+    label:
+      en:
+        en: Name in English
+        fr: nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
+  SpecURL:
+    title:
+      en: URL of the specification
+      fr: Url de la spécification
+    label:
+      en:
+        en: English url
+        fr: Url anglais
+      fr:
+        en: French URL
+        fr: Url français
+  StandardCode:
+    title:
+      en: Code for the Standard
+      fr: Code du standard
+    label:
+      en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
+      fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
+  StandardOrg:
+    title:
+      en: Name of the organisation supporting the standard
+      fr: Nom de l'organisation supportant le standard
+    label:
+      en: Name
+      fr: Nom
+  Status:
+    title:
+      en: The status of the standard
+      fr: Le status du standard
+    label:
+      en: Status
+      fr: Status
+  Reference:
+    title:
+      en: Reference for the standard
+      fr: Référence pour le standard
+    labels:
+      Url:
+        en:
+          en: URL for the reference in english
+          fr: Url de la référence en anglais
+        fr:
+          en: URL for the reference in french
+          fr: Url de la référence en français
+      Name:
+        en:
+          en: Name of the reference in english
+          fr: Nom de la référence en anglais
+        fr:
+          en: Name of the reference in french
+          fr: Nom de la référence en français
+
+# Admin form specifics
+admin:
+  Name:
+    title:
+      en: Name of the Organization
+      fr: Nom de l'organisation
+    label:
+      en:
+        en: Name in english
+        fr: Nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
+  newAdminCode:
+    title:
+      en: New Administration Code
+      fr: Nouveau code d'administration
+    label:
+      en: New Administration Code 
+      fr: Nouveau code d'administration
+  ProvinceCode:
+    title:
+      en: Province Code
+      fr: Code de la province
+    label:
+      en: Province Code
+      fr: Code de la province
+    options:
+      ab:
+        en: Alberta
+        fr: Alberta
+      bc:
+        en: British Columbia
+        fr: Colombie-Britanique
+      mb:
+        en: Manitoba
+        fr: Manitoba
+      nb:
+        en: New Brunswick
+        fr: Nouveau-Brunswick
+      nl:
+        en: Newfoundland and Labrador
+        fr: Terre-Neuve-et-Labrador
+      nt:
+        en: Northwest Territories
+        fr: Territoires du Nord-Ouest
+      ns:
+        en: Nova Scotia
+        fr: Nouvelle-Écosse
+      nu:
+        en: Nunavut
+        fr: Nunavut
+      "on":  # on is a yaml/liquid/jekyll keyword and thus must be escaped
+        en: Ontario
+        fr: Ontario
+      pe:
+        en: Prince Edward Island
+        fr: Île-du-Prince-Édouard
+      qc:
+        en: Quebec
+        fr: Québec
+      sk:
+        en: Saskatchewan
+        fr: Saskatchewan
+      yt:
+        en: Yukon
+        fr: Yukon
+
 # Software form specifics
-# ...
+oss:
+  HomepageUrl:
+    title:
+      en: The English and French URLs of the project homepage.
+      fr: Les URLs en français et en anglais de la page d'accueil.
+    label:
+      en:
+        en: English homepage URL
+        fr: URL de la page d'accueil en anglais
+      fr:
+        en: French homepage URL
+        fr: URL de la page d'accueil en francais
+  ProjectName:
+    title:
+      en: The English and French name of the project.
+      fr: Le nom du projet en français et en anglais.
+    label:
+      en: English project name
+      fr: Nom du projet en anglais
+  RelatedCode:
+    title:
+      en: Information about each library, framework, API or other related software used in this project.
+      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+    labels:
+      Url:
+        en:
+          en: English URL of related software
+          fr: URL anglais d'un logiciel connexe
+        fr:
+          en: French URL of related software
+          fr: URL francais d'un logiciel connexe
+      Name:
+        en:
+          en: Name of related software in english
+          fr: Nom d'un logiciel connexe en anglais
+        fr:
+          en: Name of related software in french
+          fr: Nom d'un logiciel connexe en francais
+  UseName:
+    title:
+      en: The English and French name of the project activity.
+      fr: Le nom du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity name
+        fr: Nom du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity name
+        fr: Nom du domaine de l'activité du projet en français
+  UseDescription:
+    title:
+      en: The English and French description of the project activity.
+      fr: La description du domaine de l'activité du projet en français et en anglais.
+    label:
+      en:
+        en: English project activity description
+        fr: description du domaine de l'activité du projet en anglais
+      fr:
+        en: French project activity description
+        fr: description du domaine de l'activité du projet en français
