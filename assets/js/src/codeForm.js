@@ -291,54 +291,54 @@ function submitFormAdminCodeForm() {
             method: 'POST'
           };
           return fetch(PRBOT_URL, config);
-        });
-    })
-    .catch(err => {
-      if (err.status == 404) {
-        const config = {
-          body: JSON.stringify({
-            user: USERNAME,
-            repo: REPO_NAME,
-            title: 'Created a code and an administration file',
-            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-            commit: 'Committed by ' + $('#submitterEmail').val(),
-            author: {
-              name: $('#submitterUsername').val(),
-              email: $('#submitterEmail').val()
-            },
-            files: [
-              {
-                path: codeFile,
-                content: '---\n' + jsyaml.dump(codeObject, { lineWidth: 160 })
+        })
+        .catch(err => {
+        if (err.status == 404) {
+          const config = {
+            body: JSON.stringify({
+              user: USERNAME,
+              repo: REPO_NAME,
+              title: 'Created a code and an administration file',
+              description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+              commit: 'Committed by ' + $('#submitterEmail').val(),
+              author: {
+                name: $('#submitterUsername').val(),
+                email: $('#submitterEmail').val()
               },
-              {
-                path: adminFile,
-                content: '---\n' + jsyaml.dump(adminObject, { lineWidth: 160 })
-              }
-            ]
-          }),
-          method: 'POST'
-        };
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+              files: [
+                {
+                  path: codeFile,
+                  content: '---\n' + jsyaml.dump(codeObject, { lineWidth: 160 })
+                },
+                {
+                  path: adminFile,
+                  content: '---\n' + jsyaml.dump(adminObject, { lineWidth: 160 })
+                }
+              ]
+            }),
+            method: 'POST'
+          };
+          return fetch(PRBOT_URL, config);
+        } else {
+          throw err;
+        }
+      })
+      .then(response => {
+        if (response.status != 200) {
+          toggleAlert(ALERT_OFF);
+          toggleAlert(ALERT_FAIL);
+          submitButton.disabled = false;
+          resetButton.disabled = false;
+        } else {
+          toggleAlert(ALERT_OFF);
+          toggleAlert(ALERT_SUCCESS);
+          // Redirect to home page
+          setTimeout(function() {
+            window.location.href = './index.html';
+          }, 2000);
+        }
+      })
     })
-    .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
-    });
 }
 
 function submitCodeForm() {
