@@ -27,7 +27,7 @@ $(document).ready(function() {
       toggleAlert(ALERT_OFF);
       toggleAlert(ALERT_IN_PROGRESS);
       window.scrollTo(0, document.body.scrollHeight);
-      submitStandardsForm();
+      submitFormOss();
     }
   });
 });

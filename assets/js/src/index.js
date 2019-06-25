@@ -103,8 +103,6 @@ function submitAdminForm() {
     });
 }
 
-
-
 $('#adminPrbotSubmit').click(function() {
   // Progress only when form input is valid
   if (validateRequired()) {
@@ -112,15 +110,5 @@ $('#adminPrbotSubmit').click(function() {
     toggleAlert(ALERT_IN_PROGRESS);
     window.scrollTo(0, document.body.scrollHeight);
     submitAdminForm();
-  }
-});
-
-$('#prbotSubmitossForm').click(function() {
-  // Progress only when form input is valid
-  if (validateRequired()) {
-    toggleAlert(ALERT_OFF);
-    toggleAlert(ALERT_IN_PROGRESS);
-    window.scrollTo(0, document.body.scrollHeight);
-    submitFormOss();
   }
 });
