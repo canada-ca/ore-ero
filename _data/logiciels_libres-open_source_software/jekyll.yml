@@ -1,25 +1,25 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "Transform your plain text into static websites and blogs"
-  fr: "Transformez votre texte brut en sites Web et blogs statiques"
+  en: Transform your plain text into static websites and blogs
+  fr: Transformez votre texte brut en sites Web et blogs statiques
 homepageURL:
-  en: "https://jekyllrb.com/"
-  fr: "https://jekyllrb.com/"
+  en: https://jekyllrb.com/
+  fr: https://jekyllrb.com/
 licenses:
   -
     URL:
-      en: "https://github.com/jekyll/jekyll/blob/master/LICENSE"
-      fr: "https://github.com/jekyll/jekyll/blob/master/LICENSE"
-    spdxID: "MIT"
+      en: https://github.com/jekyll/jekyll/blob/master/LICENSE
+      fr: https://github.com/jekyll/jekyll/blob/master/LICENSE
+    spdxID: MIT
 name:
   en: Jekyll
   fr: Jekyll
 tags:
   en:
-    - "Web site"
+    - Web site
   fr:
-    - "Site web"
+    - Site web
 administrations:
   -
     adminCode: tbs-sct
@@ -27,20 +27,20 @@ administrations:
       -
         contact:
           URL:
-            en: "https://github.com/canada-ca/ore-ero/issues"
-            fr: "https://github.com/canada-ca/ore-ero/issues"
-          email: "sebastien.lemay@tbs-sct.gc.ca"
+            en: https://github.com/canada-ca/ore-ero/issues
+            fr: https://github.com/canada-ca/ore-ero/issues
+          email: sebastien.lemay@tbs-sct.gc.ca
         name:
-          en: "Open Resource Exchange"
-          fr: "Échange de ressources ouvert"
+          en: Open Resource Exchange
+          fr: Échange de ressources ouvert
         date:
-          started: 2018-01-23
-          metadataLastUpdated: 2019-05-06
+          started: '2018-01-23'
+          metadataLastUpdated: '2019-05-06'
         description:
-          en: "Github Pages"
-          fr: "Pages Github"
+          en: Github Pages
+          fr: Pages Github
         relatedCode:
-          en: "https://github.com/canada-ca/ore-ero"
-          fr: "https://github.com/canada-ca/ore-ero"
+          en: https://github.com/canada-ca/ore-ero
+          fr: https://github.com/canada-ca/ore-ero
         users:
           - public

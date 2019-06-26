@@ -1,38 +1,38 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "A framework for mobile and desktop applications."
-  fr: "Un framework pour les applications mobiles et bureaux."
+  en: A framework for mobile and desktop applications.
+  fr: Un framework pour les applications mobiles et bureaux.
 homepageURL:
-  en: "https://angular.io/"
-  fr: "https://angular.io/"
+  en: https://angular.io/
+  fr: https://angular.io/
 licenses:
   -
     URL:
-      en: "https://github.com/angular/angular/blob/master/LICENSE"
-      fr: "https://github.com/angular/angular/blob/master/LICENSE"
-    spdxID: "MIT"
+      en: https://github.com/angular/angular/blob/master/LICENSE
+      fr: https://github.com/angular/angular/blob/master/LICENSE
+    spdxID: MIT
 name:
   en: Angular
   fr: Angular
 tags:
   en:
-    - "software framework"
+    - software framework
   fr:
-    - "Cadriciel"
+    - Cadriciel
 administrations:
   -
     adminCode: mtl_qc
     uses:
       -
         contact:
-          email: "libre@ville.montreal.qc.ca"
+          email: libre@ville.montreal.qc.ca
         date:
-          started: 2017-06-30
-          metadataLastUpdated: 2019-05-06
+          started: '2017-06-30'
+          metadataLastUpdated: '2019-05-06'
         description:
-          en: "Developpement."
-          fr: "Développement."
+          en: Developpement.
+          fr: Développement.
         name:
-          en: "Development environment software."
-          fr: "Logiciels environnement de développement."
+          en: Development environment software.
+          fr: Logiciels environnement de développement.

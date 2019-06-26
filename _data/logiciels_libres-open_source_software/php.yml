@@ -1,25 +1,25 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "A server-side scripting language designed for web development but also used as a general-purpose programming language."
-  fr: "Langage de script côté serveur conçu pour le développement Web mais également utilisé comme langage de programmation généraliste."
+  en: A server-side scripting language designed for web development but also used as a general-purpose programming language.
+  fr: Langage de script côté serveur conçu pour le développement Web mais également utilisé comme langage de programmation généraliste.
 homepageURL:
-  en: "https://php.net"
-  fr: "https://php.net"
+  en: https://php.net
+  fr: https://php.net
 licenses:
   -
     URL:
-      en: "https://php.net/license/index.php"
-      fr: "https://php.net/license/index.php"
-    spdxID: "PHP-License"
+      en: https://php.net/license/index.php
+      fr: https://php.net/license/index.php
+    spdxID: PHP-License
 name:
-  en: "PHP"
-  fr: "PHP"
+  en: PHP
+  fr: PHP
 tags:
   en:
-    - "Programming language"
+    - Programming language
   fr:
-    - "langage de programmation"
+    - langage de programmation
 administrations:
   -
     adminCode: gac-amc
@@ -27,15 +27,15 @@ administrations:
       -
         contact:
           URL:
-            en: "https://www.international.gc.ca"
-            fr: "https://www.international.gc.ca"
+            en: https://www.international.gc.ca
+            fr: https://www.international.gc.ca
           email: sebastien.routier@international.gc.ca
         date:
-          started: 2019-05-06
-          metadataLastUpdated: 2019-05-16
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-16'
         name:
-          en: "Misc"
-          fr: "Divers"
+          en: Misc
+          fr: Divers
         description:
-          en: "Used to server many Web sites."
-          fr: "Utilisé pour servir plusieur site Web."
+          en: Used to server many Web sites.
+          fr: Utilisé pour servir plusieur site Web.
