@@ -5,33 +5,32 @@ id: oss
 formGroups:
   - preset: schemaVersion
   - preset: description
-  - widget: string-i18n
-    title: HomepageUrl
-    type: url
+  - preset: homepageUrl
   - preset: licenses
   - widget: string-i18n
-    title: ProjectName
+    title: name
     rule: alphanum-space
   - preset: tags
+  - preset: empty
+    start: true
+    title: administrations
   - preset: adminCode
+  - preset: empty
+    start: true
+    title: uses
   - preset: contact
     phone: false
   - preset: dates
     started: true
   - widget: string-i18n
-    title: UseName
+    title: name
+    prepend: use
     rule: alphanum-space
   - widget: string-i18n
-    title: UseDescription
+    title: description
+    prepend: use
     rule: alphanum-space
-  - widget: group
-    title: RelatedCode
-    required: false
-    fields:
-      - widget: string-i18n
-        title: Url
-        type: url
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
+  - preset: relatedCode
   - preset: status
+  - preset: empty
+  - preset: empty

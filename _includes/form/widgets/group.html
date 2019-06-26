@@ -14,7 +14,7 @@
     {%- when 'string-i18n' -%}
       {%- include form/components/group-i18n-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule -%}
     {%- when 'select' -%}
-      {%- include form/select.html id=include.id title=include.title required=required options=options -%}
+      {%- include form/widgets/select.html id=include.id title=include.title required=required options=options -%}
     {%- else -%}
       {%- if page.lang == 'en' -%}
         <p>Throw <span style="color: red;">ERROR</span> (<strong>widget</strong> not found).</p>

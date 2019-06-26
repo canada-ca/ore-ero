@@ -1,17 +1,19 @@
 {%- for formGroup in site.data.forms[page.config].formGroups -%}
 {%- capture id -%}{{ site.data.forms[page.config].id }}{%- endcapture -%}
-{%- assign idPreset=include.idPreset -%}
+{%- assign idPreset = include.idPreset -%}
 <div>
   {%- if formGroup.preset -%}
     {%- case formGroup.preset -%}
       {%- when 'adminCode' -%}
         {%- include form/presets/adminCode.html id=idPreset -%}
       {%- when 'contact' -%}
-        {%- include form/presets/contact.html id=idPreset phone=formGroup.phone -%}
+        {%- include form/presets/contact.html id=idPreset phone=formGroup.phone required=formGroup.required -%}
       {%- when 'dates' -%}
         {%- include form/presets/dates.html id=idPreset created=formGroup.created started=formGroup.started modified=formGroup.modified -%}
       {%- when 'description' -%}
         {%- include form/presets/description.html id=idPreset -%}
+      {%- when 'homepageUrl' -%}
+        {%- include form/presets/homepageUrl.html id=idPreset -%}
       {%- when 'languages' -%}
         {%- include form/presets/languages.html id=idPreset -%}
       {%- when 'licenses' -%}
@@ -20,6 +22,8 @@
         {%- include form/presets/orgLevel.html id=idPreset -%}
       {%- when 'provinceCode' -%}
         {%- include form/presets/provinceCode.html id=idPreset -%}
+      {%- when 'relatedCode' -%}
+        {% include form/presets/relatedCode.html id=idPreset -%}
       {%- when 'schemaVersion' -%}
         {%- include form/presets/schemaVersion.html id=idPreset -%}
       {%- when 'status' -%}
@@ -34,6 +38,7 @@
         {%- include form/presets/selectCode.html id=id -%}
       {%- when 'hr' -%}
         {%- include form/presets/hr.html -%}
+      {%- when 'empty' -%}
       {%- else -%}
         {%- if page.lang == 'en' -%}
           <p>Throw <span style="color: red;">ERROR</span> (<strong>preset {{ formGroup.preset }}</strong> not found).</p>
@@ -44,13 +49,13 @@
   {%- else -%}
     {%- case formGroup.widget -%}
       {%- when 'group' -%}
-        {%- include form/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required -%}
+        {%- include form/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required -%}
       {%- when 'select' -%}
-        {%- include form/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options -%}
+        {%- include form/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options -%}
       {%- when 'string' -%}
-        {%- include form/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required -%}
+        {%- include form/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required -%}
       {%- when 'string-i18n' -%}
-        {%- include form/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required -%}
+        {%- include form/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend -%}
       {%- else -%}
         {%- if page.lang == 'en' -%}
           <p>Throw <span style="color: red;">ERROR</span> (<strong>widget {{ formGroup.widget }}</strong> not found).</p>
