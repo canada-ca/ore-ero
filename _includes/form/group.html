@@ -10,6 +10,8 @@
   {% endif %}
 
   {% case field.widget %}
+    {% when 'select' %}
+      {% include form/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options %}
     {% when 'string' %}
       {% capture label %}{{ site.data.i18n.form[include.id][include.title].labels[field.title][page.lang] }}{% endcapture %}
       {% include form/components/group.html id=field.id title=title label=label required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}

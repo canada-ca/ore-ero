@@ -6,35 +6,38 @@
   {% capture label %}{{ site.data.i18n.form.presets.AdminCode.label[page.lang] }}{% endcapture %}
   {% include form/components/label.html name=name label=label %}
 
-  <select class="form-control" id="{{ name }}" name="{{ name }}" required="required">
-    <option value="">&nbsp;</option>
-    <optgroup label={{ site.data.i18n.administrations.Federal.en }}>
-      {% for org in site.data.administrations.federal %}
-        {% if org.name[page.lang] != nil %}
-          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-        {% endif %}
-      {% endfor %}
-    </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Provincial.en }}>
-      {% for org in site.data.administrations.provincial %}
-        {% if org.name[page.lang] != nil %}
-          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-        {% endif %}
-      {% endfor %}
-    </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Municipal.en }}>
-      {% for org in site.data.administrations.municipal %}
-        {% if org.name[page.lang] != nil %}
-          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-        {% endif %}
-      {% endfor %}
-    </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Aboriginal.en }}>
-      {% for org in site.data.administrations.aboriginal %}
-        {% if org.name[page.lang] != nil %}
-          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-        {% endif %}
-      {% endfor %}
-    </optgroup>
-  </select>
+  <div>
+    <select class="form-control" id="{{ name }}" name="{{ name }}" required="required" style= "display:inline">
+      <option value="">&nbsp;</option>
+      <optgroup label={{ site.data.i18n.administrations.Federal.en }}>
+        {% for org in site.data.administrations.federal %}
+          {% if org.name[page.lang] != nil %}
+            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {% endif %}
+        {% endfor %}
+      </optgroup>
+      <optgroup label={{ site.data.i18n.administrations.Provincial.en }}>
+        {% for org in site.data.administrations.provincial %}
+          {% if org.name[page.lang] != nil %}
+            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {% endif %}
+        {% endfor %}
+      </optgroup>
+      <optgroup label={{ site.data.i18n.administrations.Municipal.en }}>
+        {% for org in site.data.administrations.municipal %}
+          {% if org.name[page.lang] != nil %}
+            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {% endif %}
+        {% endfor %}
+      </optgroup>
+      <optgroup label={{ site.data.i18n.administrations.Aboriginal.en }}>
+        {% for org in site.data.administrations.aboriginal %}
+          {% if org.name[page.lang] != nil %}
+            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {% endif %}
+        {% endfor %}
+      </optgroup>
+    </select>
+    <button type="button" class="btn btn-primary" id = "newAmdminButton"><i class="glyphicon glyphicon-plus"></i> Add new administration</button>
+  </div>
 </div>
