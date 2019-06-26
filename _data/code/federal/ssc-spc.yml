@@ -1,16 +1,15 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 adminCode: ssc-spc
 releases:
-  -
-    contact:
+  - contact:
       email: Peter.Silva@canada.ca
     date:
-      created: 2013-10-06
-      metadataLastUpdated: 2019-01-31
+      created: '2013-10-06'
+      metadataLastUpdated: '2019-01-31'
     description:
-      en: "Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always"
-      fr: "Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam"
+      en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
+      fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
     languages:
       - Python
       - C
@@ -18,14 +17,13 @@ releases:
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
     licenses:
-      -
-        URL:
-          en: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
-          fr: "https://github.com/MetPX/sarracenia/blob/master/LICENSE"
+      - URL:
+          en: https://github.com/MetPX/sarracenia/blob/master/LICENSE
+          fr: https://github.com/MetPX/sarracenia/blob/master/LICENSE
         spdxID: GPL-2.0
     repositoryURL:
-      en: "https://github.com/MetPX/sarracenia"
-      fr: "https://github.com/MetPX/sarracenia"
+      en: https://github.com/MetPX/sarracenia
+      fr: https://github.com/MetPX/sarracenia
     tags:
       en:
         - Environment
@@ -36,29 +34,28 @@ releases:
         - Données
         - Communication
     vcs: git
-  -
-    contact:
-      email: "john.bain2@canada.ca"
+
+  - contact:
+      email: john.bain2@canada.ca
     date:
-      created: 2018-12-09
-      metadataLastUpdated: 2019-03-06
+      created: '2018-12-09'
+      metadataLastUpdated: '2019-03-06'
     description:
-      en: "Enterprise architecture models"
-      fr: "Modèles d'architecture d'entreprise"
+      en: Enterprise architecture models
+      fr: Modèles d'architecture d'entreprise
     name:
-      en: "GC Architecture"
-      fr: "Architecture GC"
+      en: GC Architecture
+      fr: Architecture GC
     licenses:
-      -
-        URL:
-          en: "https://github.com/canada-ca/architecture/blob/master/LICENSE"
-          fr: "https://github.com/canada-ca/architecture/blob/master/LICENSE"
-        spdxID: "MIT"
+      - URL:
+          en: https://github.com/canada-ca/architecture/blob/master/LICENSE
+          fr: https://github.com/canada-ca/architecture/blob/master/LICENSE
+        spdxID: MIT
     repositoryURL:
-      en: "https://github.com/canada-ca/architecture"
-      fr: "https://github.com/canada-ca/architecture"
+      en: https://github.com/canada-ca/architecture
+      fr: https://github.com/canada-ca/architecture
     tags:
       en:
-        - "Architecture"
+        - Architecture
       fr:
-        - "Architecture"
+        - Architecture

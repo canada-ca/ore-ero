@@ -60,7 +60,7 @@
     fr: Pêches et Océans Canada
 
 - code: fin
-  name: 
+  name:
     en: Department of Finance Canada
     fr: Ministère des Finances Canada
 
@@ -103,7 +103,7 @@
   name:
     en: National Research Council Canada
     fr: Conseil national de recherches Canada
-    
+
 - code: nrcan
   name:
     en: Natural Resources Canada
@@ -159,4 +159,3 @@
   name:
     en: Public Services and Procurement Canada
     fr: Services publics et Approvisionnement Canada
-   

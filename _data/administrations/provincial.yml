@@ -1,65 +1,65 @@
 ---
-- code: "bc"
+- code: bc
   name:
     en: Province of British Columbia
     fr: Province de la Colombie-Britannique
 
-- code: "on"
+- code: "on" # Quotes required because "on" is a yaml keyword
   name:
     en: Province of Ontario
     fr: Province de l'Ontario
 
-- code: "qc"
+- code: qc
   name:
     en: Province of Quebec
     fr: Province de Québec
 
-- code: "ab"
+- code: ab
   name:
     en: Province of Alberta
     fr: Province de l'Alberta
 
-- code: "pe"
+- code: pe
   name:
     en: Province of Prince Edward Island
-    fr: Province de l'Île-du-Prince-Édouard 
+    fr: Province de l'Île-du-Prince-Édouard
 
-- code: "mb"
+- code: mb
   name:
     en: Province of Manitoba
     fr: Province du Manitoba
 
-- code: "nb"
+- code: nb
   name:
     en: Province of New Brunswick
     fr: Province du Nouveau-Brunswick
 
-- code: "ns"
+- code: ns
   name:
     en: Province of Nova Scotia
     fr: Province de la Nouvelle-Écosse
 
-- code: "sk"
+- code: sk
   name:
     en: Province of Saskatchewan
-    fr: Province de la Saskatchewan 
+    fr: Province de la Saskatchewan
 
-- code: "nl"
+- code: nl
   name:
     en: Province of Newfoundland and Labrador
     fr: Province du Terre-Neuve-et-Labrador
 
-- code: "nu"
+- code: nu
   name:
     en: Territory of Nunavut
     fr: Territoire du Nunavut
 
-- code: "nt"
+- code: nt
   name:
     en: Territory of Northwest Territories
     fr: Territoire des Territoires du Nord-Ouest
 
-- code: "yt"
+- code: yt
   name:
     en: Territory of Yukon
     fr: Territoire du Yukon
