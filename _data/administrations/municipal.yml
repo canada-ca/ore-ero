@@ -6,7 +6,7 @@
     fr: Ville de Montréal
 
 - code: ottawa_on
-  provinceCode: "on" # Requires quotes since "on" is a reserved keyword for yaml
+  provinceCode: 'on' # Requires quotes since "on" is a reserved keyword for yaml
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
