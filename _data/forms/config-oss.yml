@@ -4,6 +4,7 @@ id: oss
 
 formGroups:
   - preset: schemaVersion
+  - preset: selectOss
   - preset: description
   - preset: homepageUrl
   - preset: licenses
@@ -22,10 +23,6 @@ formGroups:
     phone: false
   - preset: dates
     started: true
-  - widget: string-i18n
-    title: name
-    prepend: use
-    rule: alphanum-space
   - widget: string-i18n
     title: description
     prepend: use

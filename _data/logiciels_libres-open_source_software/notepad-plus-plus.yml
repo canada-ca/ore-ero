@@ -13,8 +13,8 @@ licenses:
       fr: "https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html"
     spdxID: "GPL-2.0"
 name:
-  en: Notepad++
-  fr: Notepad++
+  en: Notepad-plus-plus
+  fr: Notepad-plus-plus
 tags:
   en:
     - Desktop
