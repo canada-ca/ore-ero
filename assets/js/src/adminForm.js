@@ -7,11 +7,11 @@
 
 function getAdminObject() {
   let adminObject = {
-    code: $('#NewAdminCode').val(),
-    provinceCode: $('#ProvinceCode').val(),
+    code: $('#newAdminCode').val(),
+    provinceCode: $('#provinceCode').val(),
     name: {
-      en: $('#enName').val(),
-      fr: $('#frName').val()
+      en: $('#enname').val(),
+      fr: $('#frname').val()
     }
   };
 
@@ -26,7 +26,7 @@ function submitAdminForm() {
 
   let adminObject = getAdminObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/administrations/${$('#OrgLevel').val()}.yml`;
+  let file = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
     .mergeAdminFile(file, adminObject, '', 'code')
@@ -52,12 +52,12 @@ function getConfigUpdate(result, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated the ${$('#OrgLevel').val()} file`,
-      description: 'Authored by: ' + $('#SubmitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#SubmitterEmail').val(),
+      title: `Updated the ${$('#orgLevel').val()} file`,
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#SubmitterUsername').val(),
-        email: $('#SubmitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -76,11 +76,11 @@ function getConfigNew(adminObject, file) {
       user: USERNAME,
       repo: REPO_NAME,
       title: 'Created an administration file',
-      description: 'Authored by: ' + $('#SubmitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#SubmitterEmail').val(),
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#SubmitterUsername').val(),
-        email: $('#SubmitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {

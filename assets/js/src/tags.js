@@ -10,7 +10,7 @@ function getTags(query) {
 
 function addMoreTags() {
   let wrapper = $('<div class="copy hide"></div>');
-  tagObject('copy', '').appendTo(wrapper);
+  tagObject('copy' + Math.random(), '').appendTo(wrapper);
   wrapper.appendTo('#tags');
 }
 
@@ -21,7 +21,7 @@ function addTags(obj) {
     obj['tags']['en'].forEach(function(tag) {
       if (index == 0) $('#enTags').val(tag);
       else
-        tagObject('tagEN' + index, tag)
+        tagObject('enTags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsEN');
       index++;
@@ -30,7 +30,7 @@ function addTags(obj) {
     obj['tags']['fr'].forEach(function(tag) {
       if (index == 0) $('#frTags').val(tag);
       else
-        tagObject('tagFR' + index, tag)
+        tagObject('frTags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsFR');
       index++;
@@ -41,8 +41,8 @@ function addTags(obj) {
 }
 
 function resetTags() {
-  $('#tagEN').val('');
-  $('#tagFR').val('');
+  $('#enTags').val('');
+  $('#frTags').val('');
   $('.additional-tag').remove();
 }
 

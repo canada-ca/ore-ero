@@ -3,7 +3,7 @@
 <div class="form-group">
   {%- include form/components/label.html id=include.id title=title -%}
   <div>
-    {%- include form/components/input.html name=title type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule style="display: inline-block;" -%}
+    {%- include form/components/input.html id=include.id title=title style="display: inline-block;" -%}
     <select class="form-control" id="{{ title }}select" name="{{ title }}select" style="display: inline-block;">
       <option value="">&nbsp;</option>
       {%- for standards in site.data.normes_ouvertes-open_standards -%}
