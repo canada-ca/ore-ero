@@ -32,8 +32,8 @@ administrations:
           email: str()
           name: str(required=False)
         date:
-          started: day()
-          metadataLastUpdated: day()
+          started: str()
+          metadataLastUpdated: str()
         description:
           en: str()
           fr: str()
