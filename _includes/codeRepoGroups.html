@@ -2,7 +2,7 @@
 <ul class="list-unstyled">
    <li>
         <details>
-            <summary>{{ site.Federal[page.lang] }}</summary>
+            <summary>{{ site.data.i18n.administrations.federal[page.lang] }}</summary>
             <div class="list-group">
             {%- assign repo_array = "" | split: ','-%}
             {%- assign groups_array = "" | split: ','-%}
@@ -62,7 +62,7 @@
    </li>
    <li>
         <details>
-        <summary>{{ site.Provincial[page.lang] }}</summary>
+        <summary>{{ site.data.i18n.administrations.provincial[page.lang] }}</summary>
         <div class="list-group">
             {%- assign repo_array = "" | split: ',' -%}
             {%- assign groups_array = "" | split: ',' -%}
@@ -122,7 +122,7 @@
    </li>
    <li>
         <details>
-            <summary>{{ site.Municipal[page.lang] }}</summary>
+            <summary>{{ site.data.i18n.administrations.municipal[page.lang] }}</summary>
                 <div class="list-group">
             {%- assign repo_array = "" | split: ','-%}
             {%- assign groups_array = "" | split: ','-%}
@@ -182,7 +182,7 @@
    </li>
    <li>
         <details>
-            <summary>{{ site.Aboriginal[page.lang] }}</summary>
+            <summary>{{ site.data.i18n.administrations.aboriginal[page.lang] }}</summary>
                 <div class="list-group">
             {%- assign repo_array = "" | split: ','-%}
             {%- assign groups_array = "" | split: ','-%}

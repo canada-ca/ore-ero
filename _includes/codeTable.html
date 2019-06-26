@@ -9,10 +9,10 @@
         <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
         <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
           <option value="">&nbsp;</option>
-          <option value="federal">{{ site.Federal[page.lang] }}</option>
-          <option value="provincial">{{ site.Provincial[page.lang] }}</option>
-          <option value="municipal">{{ site.Municipal[page.lang] }}</option>
-          <option value="aboriginal">{{ site.Aboriginal[page.lang] }}</option>
+          {%- for govLevels in site.data.i18n.administrations -%}
+          {%- assign govLevel = govLevels[1] -%}
+          <option value="{{ govLevel.value }}">{{ govLevel[page.lang] }}</option>
+          {%- endfor -%}
         </select>
       </div>
 

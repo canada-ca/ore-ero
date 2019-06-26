@@ -178,16 +178,6 @@ presets:
     label:
       en: Level of government
       fr: Niveau de gouvernement
-    options:
-      federal:
-        en: Federal
-        fr: Fédéral
-      provincial:
-        en: Provincial
-        fr: Provincial
-      municipal:
-        en: Municipal
-        fr: Municipal
   relatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
@@ -273,6 +263,24 @@ presets:
 
 # Code form specifics
 code:
+  name:
+    title:
+      en: The name of the project.
+      fr: Le nom du projet.
+    label:
+      en:
+        en: The english name of the project
+        fr: Le nom du projet en anglais
+      fr:
+        en: The name of the project in french
+        fr: Le nom du projet en français
+      schema:
+        en: Project name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update an already existing code, please select it below
+        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   downloadUrl:
     title:
       en: The english and french URLs where a distribution of the project can be found.
@@ -287,21 +295,6 @@ code:
       schema:
         en: Download URL
         fr: URL de téléchargement
-  projectName:
-    title:
-      en: The name of the project.
-      fr: Le nom du projet.
-    label:
-      en:
-        en: The english name of the project (Enter an name to create a new project or select one to updated it)
-        fr: Le nom du projet en anglais
-      fr:
-        en: The name of the project in french
-        fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
-    labels:
-      select:
-        en: If you wish to update an already existing code, please select it below
-        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
   organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
@@ -430,13 +423,6 @@ oss:
 
 # Standards form specifics
 standards:
-  emailContact:
-    title:
-      en: Email for the reference
-      fr: Le courriel de la référence
-    label:
-      en: Email
-      fr: Courriel
   name:
     title:
       en: Name of the Standard

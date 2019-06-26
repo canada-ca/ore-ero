@@ -7,28 +7,28 @@
 
   <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
     <option value="">&nbsp;</option>
-    <optgroup label={{ site.data.i18n.administrations.Federal.en }}>
-      {%- for org in site.data.administrations.federal- %}
+    <optgroup data-value="{{ site.data.i18n.administrations.federal.value }}" label="{{ site.data.i18n.administrations.federal[page.lang] }}">
+      {%- for org in site.data.administrations.federal -%}
         {%- if org.name[page.lang] != nil -%}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {%- endif -%}
       {% endfor %}
     </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Provincial.en }}>
+    <optgroup data-value="{{ site.data.i18n.administrations.provincial.value }}" label="{{ site.data.i18n.administrations.provincial[page.lang] }}">
       {%- for org in site.data.administrations.provincial -%}
         {%- if org.name[page.lang] != nil -%}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {%- endif -%}
       {%- endfor -%}
     </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Municipal.en }}>
+    <optgroup data-value="{{ site.data.i18n.administrations.municipal.value }}" label="{{ site.data.i18n.administrations.municipal[page.lang] }}">
       {%- for org in site.data.administrations.municipal -%}
         {%- if org.name[page.lang] != nil- %}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
         {%- endif -%}
       {%- endfor -%}
     </optgroup>
-    <optgroup label={{ site.data.i18n.administrations.Aboriginal.en }}>
+    <optgroup data-value="{{ site.data.i18n.administrations.aboriginal.value }}" label="{{ site.data.i18n.administrations.aboriginal[page.lang] }}">
       {%- for org in site.data.administrations.aboriginal -%}
         {%- if org.name[page.lang] != nil -%}
           <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>

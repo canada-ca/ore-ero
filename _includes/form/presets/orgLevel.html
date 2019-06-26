@@ -7,8 +7,9 @@
 
   <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
     <option value="">&nbsp;</option>
-    <option value="municipal" selected>{{ site.data.i18n.form.presets.OrgLevel.options.municipal[page.lang] }}</option>
-    <option value="provincial" disabled>{{ site.data.i18n.form.presets.OrgLevel.options.provincial[page.lang] }}</option>
-    <option value="federal" disabled>{{ site.data.i18n.form.presets.OrgLevel.options.federal[page.lang] }}</option>
+    <option value="{{ site.data.i18n.administrations.municipal.value }}" selected>{{ site.data.i18n.administrations.municipal[page.lang] }}</option>
+    <option value="{{ site.data.i18n.administrations.aboriginal.value }}">{{ site.data.i18n.administrations.aboriginal[page.lang] }}</option>
+    <option value="{{ site.data.i18n.administrations.provincial.value }}" disabled>{{ site.data.i18n.administrations.provincial[page.lang] }}</option>
+    <option value="{{ site.data.i18n.administrations.federal.value }}" disabled>{{ site.data.i18n.administrations.federal[page.lang] }}</option>
   </select>
 </div>
