@@ -1,0 +1,38 @@
+<div id="newAdmin" class="hide" style = "position:relative; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; padding-left: 20px">
+  <h2 style="text-align: center; margin-top:10px">New Administration </h2>
+  <button id="removeNewAdminButton" style = "position: absolute; top: 10px; right: 10px;" class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+  {% for field in include.fields %}
+
+    {% if field.required == nil %}
+      {% assign required = include.required %}
+    {% else %}
+      {% assign required = field.required %}
+    {% endif %}
+    {% if field.widget %}
+      {% case field.widget %}
+        {% when 'select' %}
+          {% include form/select.html id='admin' title=field.title required=field.required options=field.options %}
+        {% when 'string' %}
+          {% capture label %}{{ site.data.i18n.form["admin"][field.title].label[page.lang] }}{% endcapture %}
+          {% include form/string.html id='admin' title=field.title label=label required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
+        {% when 'string-i18n' %}
+          {% capture labelfr %}{{ site.data.i18n.form["admin"][field.title].label.fr[page.lang] }}{% endcapture %}
+          {% capture labelen %}{{ site.data.i18n.form["admin"][field.title].label.en[page.lang] }}{% endcapture %}
+          {% include form/string-i18n.html id='admin' title=field.title labelen=labelen labelfr=labelfr required=required type=field.type value=field.value readonly=field.readonly rule=field.rule %}
+        {% when 'email' %}
+          {% include form/presets/components/email.html title=field.title required=required %}
+        {% else %}
+          {% if page.lang == 'en' %}
+            <p>Throw <span style="color: red;">ERROR</span> (<strong>widget {{ field.widget }}test</strong> not found).</p>
+          {% else %}
+            <p>Retour <span style="color: red;">ERREUR</span> (<strong>widget {{ field.widget }}</strong> non trouvé).</p>
+          {% endif %}
+      {% endcase %}
+    {% else %}
+      {% case field.preset %}
+        {% when 'orgLevel' %}
+          {% include form/presets/orgLevel.html %}
+      {% endcase %}
+    {% endif %}
+  {% endfor %}
+</div>
