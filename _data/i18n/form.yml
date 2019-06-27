@@ -56,6 +56,9 @@ presets:
     label:
       en: Administration code
       fr: Code d'administration
+    button:
+      en: Add new administration
+      fr: Ajouter une nouvelle administration
   contact:
     title:
       en: Contact information for the project.
@@ -178,6 +181,14 @@ presets:
     label:
       en: Level of government
       fr: Niveau de gouvernement
+  provinceSelect: &provinceSelect
+    title:
+      en: Province Code
+      fr: Code de la province
+    label:
+      en: Province
+      fr: Province
+  province: *provinceSelect # Simplifies schema build
   relatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
@@ -501,7 +512,18 @@ standards:
 
 # Admin form specifics
 admin:
-  name:
+  newAdmin:
+    title:
+      en: New Administration
+      fr: Nouvelle administration
+  newAdminCode: &newAdminCode
+    title:
+      en: Administration Code
+      fr: Code de l'administration
+    label:
+      en: The code for the new administration
+      fr: Le code de la nouvelle administration
+  newAdminName: &newAdminName
     title:
       en: Name of the Organization
       fr: Nom de l'organisation
@@ -512,57 +534,10 @@ admin:
       fr:
         en: Name in french
         fr: Nom en français
-  newAdminCode:
+      schema: *name
+  code: *newAdminCode # simplifies schema build
+  name: *newAdminName # simplifies schema build
+  administrations: # simplifies schema build
     title:
-      en: New Administration Code
-      fr: Nouveau code d'administration
-    label:
-      en: New Administration Code
-      fr: Nouveau code d'administration
-  provinceCode:
-    title:
-      en: Province Code
-      fr: Code de la province
-    label:
-      en: Province Code
-      fr: Code de la province
-    options:
-      ab:
-        en: Alberta
-        fr: Alberta
-      bc:
-        en: British Columbia
-        fr: Colombie-Britanique
-      mb:
-        en: Manitoba
-        fr: Manitoba
-      nb:
-        en: New Brunswick
-        fr: Nouveau-Brunswick
-      nl:
-        en: Newfoundland and Labrador
-        fr: Terre-Neuve-et-Labrador
-      nt:
-        en: Northwest Territories
-        fr: Territoires du Nord-Ouest
-      ns:
-        en: Nova Scotia
-        fr: Nouvelle-Écosse
-      nu:
-        en: Nunavut
-        fr: Nunavut
-      "on":  # on is a yaml/liquid/jekyll keyword and thus must be escaped
-        en: Ontario
-        fr: Ontario
-      pe:
-        en: Prince Edward Island
-        fr: Île-du-Prince-Édouard
-      qc:
-        en: Quebec
-        fr: Québec
-      sk:
-        en: Saskatchewan
-        fr: Saskatchewan
-      yt:
-        en: Yukon
-        fr: Yukon
+      en: The list of administrations for a specific organization level (corresponding with the file name)
+      fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)

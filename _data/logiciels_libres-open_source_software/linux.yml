@@ -1,38 +1,38 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "The Linux kernel is a Unix-like computer operating system kernel"
-  fr: "Le noyau Linux est un noyau de système d'exploitation de type UNIX"
+  en: The Linux kernel is a Unix-like computer operating system kernel
+  fr: Le noyau Linux est un noyau de système d'exploitation de type UNIX
 homepageURL:
-  en: "https://www.linux.org"
-  fr: "https://www.linux.org"
+  en: https://www.linux.org
+  fr: https://www.linux.org
 licenses:
   -
     URL:
-      en: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
-      fr: "https://www.kernel.org/doc/html/v4.17/process/license-rules.html"
-    spdxID: "GPL-2.0"
+      en: https://www.kernel.org/doc/html/v4.17/process/license-rules.html
+      fr: https://www.kernel.org/doc/html/v4.17/process/license-rules.html
+    spdxID: GPL-2.0
 name:
-  en: "Linux"
-  fr: "Linux"
+  en: Linux
+  fr: Linux
 tags:
   en:
-    - "Operating system kernel"
+    - Operating system kernel
   fr:
-    - "Noyau de système d'exploitation"
+    - Noyau de système d'exploitation
 administrations:
   -
     adminCode: tbs-sct
     uses:
       -
         contact:
-          email: "ilia.salem@tbs-sct.gc.ca"
+          email: ilia.salem@tbs-sct.gc.ca
         date:
-          started: 2019-05-06
-          metadataLastUpdated: 2019-05-15
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-15'
         name:
-          en: "Development Environment"
-          fr: "Environnement de développement"
+          en: Development Environment
+          fr: Environnement de développement
         description:
-          en: "APM data"
-          fr: "Données du APM"
+          en: APM data
+          fr: Données du APM

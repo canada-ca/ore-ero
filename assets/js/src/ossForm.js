@@ -200,7 +200,7 @@ function submitFormOss() {
 }
 
 function getConfigUpdate(result, file) {
-  let ProjectName = $('#enProjectName');
+  let ProjectName = $('#enProjectName').val();
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -232,7 +232,7 @@ function getConfigUpdate(result, file) {
 }
 
 function getConfigNew(ossObject, file) {
-  let ProjectName = $('#enProjectName');
+  let ProjectName = $('#enProjectName').val();
   return {
     body: JSON.stringify({
       user: USERNAME,

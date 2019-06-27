@@ -19,8 +19,9 @@
         {%- when 'licenses' -%}
           {%- include schema/presets/licenses.html id=idPreset -%}
         {%- when 'orgLevel' -%}
-        {%- when 'provinceCode' -%}
-          {%- include schema/presets/provinceCode.html id=idPreset -%}
+          {%- include schema/presets/orgLevel.html id=idPreset -%}
+        {%- when 'provinceSelect' -%}
+          {%- include schema/presets/provinceSelect.html id=idPreset -%}
         {%- when 'relatedCode' -%}
           {%- include schema/presets/relatedCode.html id=idPreset -%}
         {%- when 'schemaVersion' -%}
@@ -28,12 +29,14 @@
         {%- when 'status' -%}
           {%- include schema/presets/status.html id=idPreset -%}
         {%- when 'submitter' -%}
-          {%- include schema/presets/submitter.html id=idPreset -%}
         {%- when 'tags' -%}
           {%- include schema/presets/tags.html id=idPreset -%}
         {%- when 'selectStandard' -%}
         {%- when 'selectCode' -%}
           {%- include schema/presets/selectCode.html id=idPreset -%}
+        {%- when 'selectOss' -%}
+        {%- when 'newAdmin' -%}
+          {%- include schema/presets/newAdmin.html id=idPreset -%}
         {%- when 'hr' -%}
         {%- when 'empty' -%}
           {% if formGroup.start %}

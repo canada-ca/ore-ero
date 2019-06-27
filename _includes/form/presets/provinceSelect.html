@@ -1,0 +1,15 @@
+{%- assign title = "provinceSelect" -%}
+{%- include form/components/title.html id=include.id title=title -%}
+
+<div class="form-group">
+
+  {%- include form/components/label.html id=include.id title=title -%}
+
+  <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
+    <option value="">&nbsp;</option>
+    {%- for provinces in site.data.i18n.provinces -%}
+    {%- assign province = provinces[1] -%}
+      <option value="{{ province.value }}">{{ province[page.lang] }}</option>
+    {%- endfor -%}
+  </select>
+</div>

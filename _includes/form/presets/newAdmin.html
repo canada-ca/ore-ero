@@ -1,0 +1,13 @@
+{%- assign titleAdmin = "newAdmin" -%}
+{%- assign id = "admin" -%}
+<div id="{{ titleAdmin }}" {% if include.optional %}class="hide" style="position:relative; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; padding-left: 20px"{% endif %}>
+  {%- if include.optional -%}
+    {% include form/components/title.html id=id title=titleAdmin styles="text-align: center; margin-top:10px" %}
+    <button id="removeNewAdminButton" style = "position: absolute; top: 10px; right: 10px;" class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+  {%- endif -%}
+
+  {%- include form/presets/orgLevel.html id=include.id -%}
+  {%- include form/widgets/string.html id=id title="newAdminCode" rule="names" -%}
+  {%- include form/presets/provinceSelect.html id=include.id -%}
+  {%- include form/widgets/string-i18n.html id=id title="newAdminName" rule="alphanum-space" -%}
+</div>

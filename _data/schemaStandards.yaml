@@ -1,8 +1,8 @@
 ---
 schemaVersion: str()
 date:
-  created: day()
-  metadataLastUpdated: day()
+  created: str()
+  metadataLastUpdated: str()
 description:
   en: str()
   fr: str()

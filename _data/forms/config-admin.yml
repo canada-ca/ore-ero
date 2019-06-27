@@ -3,12 +3,4 @@
 id: admin
 
 formGroups:
-  - preset: orgLevel
-  - widget: string
-    title: newAdminCode
-  - widget: select
-    title: provinceCode
-    options: [ab, bc, mb, nb, nl, nt, ns, nu, "on", pe, qc, sk, yt] # on is a yaml/liquid/jekyll keyword and thus must be escaped
-  - widget: string-i18n
-    title: name
-    rule: alphanum-space
+  - preset: newAdmin

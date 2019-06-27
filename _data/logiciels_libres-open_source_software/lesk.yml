@@ -1,32 +1,32 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application."
-  fr: "Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web."
+  en: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application.
+  fr: Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web.
 homepageURL:
-  en: "https://lesk.it"
-  fr: "https://lesk.it"
+  en: https://lesk.it
+  fr: https://lesk.it
 licenses:
   -
     URL:
-      en: "http://lesk.it/license.html"
-      fr: "http://lesk.it/license.html"
-    spdxID: "GPL-3.0"
+      en: http://lesk.it/license.html
+      fr: http://lesk.it/license.html
+    spdxID: GPL-3.0
   -
     URL:
-      en: "http://lesk.it/license.html"
-      fr: "http://lesk.it/license.html"
-    spdxID: "Apache-2.0"
+      en: http://lesk.it/license.html
+      fr: http://lesk.it/license.html
+    spdxID: Apache-2.0
 name:
   en: LESK
   fr: LESK
 tags:
   en:
-    - "HTTP Server"
+    - HTTP Server
     - PHP
     - Laravel
   fr:
-    - "Serveur HTTP"
+    - Serveur HTTP
     - PHP
     - Laravel
 administrations:
@@ -36,32 +36,32 @@ administrations:
       -
         contact:
           URL:
-            en: "https://www.international.gc.ca"
-            fr: "https://www.international.gc.ca"
+            en: https://www.international.gc.ca
+            fr: https://www.international.gc.ca
           name: Terry O'Reilly
           email: terry.oreilly@international.gc.ca
         date:
-          started: 2019-05-06
-          metadataLastUpdated: 2019-05-15
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-15'
         name:
-          en: "IMSC"
-          fr: "IMSC"
+          en: IMSC
+          fr: IMSC
         description:
-          en: "Information Management System Console."
-          fr: "Information Management System Console."
+          en: Information Management System Console.
+          fr: Information Management System Console.
       -
         contact:
           URL:
-            en: "https://www.international.gc.ca"
-            fr: "https://www.international.gc.ca"
+            en: https://www.international.gc.ca
+            fr: https://www.international.gc.ca
           name: Yves Cloutier
           email: yves.cloutier@international.gc.ca
         date:
-          started: 2019-05-06
-          metadataLastUpdated: 2019-05-15
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-15'
         name:
-          en: "CART"
-          fr: "CART"
+          en: CART
+          fr: CART
         description:
-          en: "COSMOS and ROCA Admin and Reporting Tool."
-          fr: "COSMOS and ROCA Admin and Reporting Tool."
+          en: COSMOS and ROCA Admin and Reporting Tool.
+          fr: COSMOS and ROCA Admin and Reporting Tool.

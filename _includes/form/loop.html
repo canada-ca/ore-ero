@@ -20,8 +20,8 @@
         {%- include form/presets/licenses.html id=idPreset -%}
       {%- when 'orgLevel' -%}
         {%- include form/presets/orgLevel.html id=idPreset -%}
-      {%- when 'provinceCode' -%}
-        {%- include form/presets/provinceCode.html id=idPreset -%}
+      {%- when 'provinceSelect' -%}
+        {%- include form/presets/provinceSelect.html id=idPreset -%}
       {%- when 'relatedCode' -%}
         {% include form/presets/relatedCode.html id=idPreset -%}
       {%- when 'schemaVersion' -%}
@@ -36,6 +36,10 @@
         {%- include form/presets/selectStandard.html id=id -%}
       {%- when 'selectCode' -%}
         {%- include form/presets/selectCode.html id=id -%}
+      {% when 'selectOss' %}
+        {% include form/presets/selectOss.html id=id %}
+      {% when 'newAdmin' %}
+        {% include form/presets/newAdmin.html id=idPreset %}
       {%- when 'hr' -%}
         {%- include form/presets/hr.html -%}
       {%- when 'empty' -%}

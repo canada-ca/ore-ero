@@ -11,8 +11,6 @@ const codeObj = $('.page-codeForm #nameselect');
 const adminObj = $('.page-codeForm #adminCode');
 
 $(document).ready(function() {
-  adminObj.focus();
-
   adminObj.change(function() {
     selectAdmin();
   });
@@ -21,8 +19,23 @@ $(document).ready(function() {
     selectCode();
   });
 
+  $('#newAmdminButton').click(function() {
+    $('#newAdmin').removeClass('hide');
+    $('#adminCode').removeAttr('required');
+    $('label[for="adminCode"]').removeClass('required');
+  });
+
+  $('#removeNewAdminButton').click(function() {
+    $('#newAdmin').addClass('hide');
+    $('#adminCode').attr('required', 'required');
+    $('label[for="adminCode"]').addClass('required');
+  });
+
   $('#prbotSubmitcodeForm').click(function() {
-    if (submitInit()) submitCodeForm();
+    if (submitInit()) {
+      if ($('#newAdminCode').val()) submitFormAdminCodeForm();
+      else submitCodeForm();
+    }
   });
 });
 
@@ -241,20 +254,30 @@ function submitFormAdminCodeForm() {
       fileWriter
         .mergeAdminFile(adminFile, adminObject, '', 'code')
         .then(resultAdmin => {
-          const config = getConfigUpdateAdmin(codeFile, resultCode, adminFile, resultAdmin);
+          const config = getConfigUpdateAdmin(
+            codeFile,
+            resultCode,
+            adminFile,
+            resultAdmin
+          );
           return fetch(PRBOT_URL, config);
+        })
+        .catch(err => {
+          if (err.status == 404) {
+            const config = getConfigNewAdmin(
+              codeFile,
+              codeObject,
+              adminFile,
+              adminObject
+            );
+            return fetch(PRBOT_URL, config);
+          } else {
+            throw err;
+          }
+        })
+        .then(response => {
+          submitConclusion(response, submitButton, resetButton);
         });
-    })
-    .catch(err => {
-      if (err.status == 404) {
-        const config = getConfigNewAdmin(codeFile, codeObject, adminFile, adminObject);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
-    })
-    .then(response => {
-      submitConclusion(response, submitButton, resetButton);
     });
 }
 

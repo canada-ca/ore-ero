@@ -1,38 +1,38 @@
 ---
-schemaVersion: "1.0"
+schemaVersion: '1.0'
 description:
-  en: "A Free and Open Source Geographic Information System"
-  fr: "Système d'Information Géographique Libre et Open Source"
+  en: A Free and Open Source Geographic Information System
+  fr: Système d'Information Géographique Libre et Open Source
 homepageURL:
-  en: "https://qgis.org/en/site/"
-  fr: "https://qgis.org/fr/site/"
+  en: https://qgis.org/en/site/
+  fr: https://qgis.org/fr/site/
 licenses:
   -
     URL:
-      en: "https://github.com/qgis/QGIS/blob/master/COPYING"
-      fr: "https://github.com/qgis/QGIS/blob/master/COPYING"
-    spdxID: "GPL-2.0"
+      en: https://github.com/qgis/QGIS/blob/master/COPYING
+      fr: https://github.com/qgis/QGIS/blob/master/COPYING
+    spdxID: GPL-2.0
 name:
   en: QGIS
   fr: QGIS
 tags:
   en:
-    - "gis"
+    - gis
   fr:
-    - "sig"
+    - sig
 administrations:
   -
     adminCode: statcan
     uses:
       -
         contact:
-          email: "reginald.maltais2@canada.ca"
+          email: reginald.maltais2@canada.ca
         date:
-          started: 2019-05-06
-          metadataLastUpdated: 2019-05-16
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-16'
         name:
-          en: "Geographic Information Systems (GIS)"
-          fr: "Systèmes d'information géographique (SIG)"
+          en: Geographic Information Systems (GIS)
+          fr: Systèmes d'information géographique (SIG)
         description:
-          en: "Desktop geospatial information processing"
-          fr: "Système d'information géospatiale de bureau"
+          en: Desktop geospatial information processing
+          fr: Système d'information géospatiale de bureau
