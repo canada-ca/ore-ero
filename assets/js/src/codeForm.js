@@ -243,32 +243,23 @@ function submitFormAdminCodeForm() {
   let adminObject = getAdminObject();
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let codeFile = `_data/code/${getSelectedOrgType()}/${$(
-    '#adminCode'
+  let codeFile = `_data/code/${$('#orgLevel').val()}/${$(
+    '#newAdminCode'
   ).val()}.yml`;
-  let adminFile = `_data/administrations/municipal.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
-    .merge(codeFile, codeObject, 'releases', 'name.en')
-    .then(resultCode => {
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(resultAdmin => {
       fileWriter
-        .mergeAdminFile(adminFile, adminObject, '', 'code')
-        .then(resultAdmin => {
-          const config = getConfigUpdateAdmin(
-            codeFile,
-            resultCode,
-            adminFile,
-            resultAdmin
-          );
-          return fetch(PRBOT_URL, config);
-        })
+        .merge(codeFile, codeObject, 'releases', 'name.en')
         .catch(err => {
           if (err.status == 404) {
             const config = getConfigNewAdmin(
               codeFile,
               codeObject,
               adminFile,
-              adminObject
+              resultAdmin
             );
             return fetch(PRBOT_URL, config);
           } else {
@@ -281,47 +272,17 @@ function submitFormAdminCodeForm() {
     });
 }
 
-function getConfigUpdateAdmin(codeFile, resultCode, adminFile, resultAdmin) {
+function getConfigNewAdmin(codeFile, codeObject, adminFile, resultAdmin) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
       title:
-        'Updated code for ' +
-        $('#adminCode :selected').text() +
-        ' and administrations for ' +
-        $('#OrgLevel').val(),
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: codeFile,
-          content: jsyaml.dump(resultCode, { lineWidth: 160 })
-        },
-        {
-          path: adminFile,
-          content: jsyaml.dump(resultAdmin, { lineWidth: 160 })
-        }
-      ]
-    }),
-    method: 'POST'
-  };
-}
-
-function getConfigNewAdmin(codeFile, codeObject, adminFile, adminObject) {
-  return {
-    body: JSON.stringify({
-      user: USERNAME,
-      repo: REPO_NAME,
-      title:
-        'Created a code file for ' +
-        $('#adminCode :selected').text() +
-        'and an administration file for' +
-        $('#OrgLevel').val(),
+        'Created code for ' +
+        $('#enName').val() +
+        ' and updated ' +
+        $('#orgLevel').val() +
+        ' for administrations file',
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -335,7 +296,7 @@ function getConfigNewAdmin(codeFile, codeObject, adminFile, adminObject) {
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(resultAdmin, { lineWidth: 160 })
         }
       ]
     }),
