@@ -1,0 +1,28 @@
+---
+schemaVersion: '1.0'
+adminCode: ''
+releases:
+  - contact:
+      email: apogy-dev@eclipse.org
+    date:
+      created: '2019-01-01'
+      metadataLastUpdated: '2019-06-27'
+    description:
+      en: pp
+      fr: pp
+    name:
+      en: QW
+      fr: efd
+    licenses:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: EPL-1.0
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - Robots
+      fr:
+        - Robots
