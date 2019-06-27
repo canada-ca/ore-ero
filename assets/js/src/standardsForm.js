@@ -24,6 +24,11 @@ $(document).ready(function() {
   $('#prbotSubmitstandardsForm').click(function() {
     if (submitInit()) submitStandardsForm();
   });
+
+  $('#formReset').click(function() {
+    $('#validation').trigger('reset');
+    resetTags();
+  });
 });
 
 function getStandardsObject() {

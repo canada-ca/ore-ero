@@ -8,9 +8,6 @@ formGroups:
   - preset: description
   - preset: homepageUrl
   - preset: licenses
-  - widget: string-i18n
-    title: name
-    rule: alphanum-space
   - preset: tags
   - preset: empty
     start: true

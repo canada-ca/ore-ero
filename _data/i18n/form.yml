@@ -127,7 +127,7 @@ presets:
       schema:
         en: Description
         fr: Description
-  homepageUrl:
+  homepageURL:
     title:
       en: The English and French URLs of the project homepage.
       fr: Les URLs en français et en anglais de la page d'accueil.
@@ -398,6 +398,10 @@ oss:
       schema:
         en: Project Name
         fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update an existing software, please select it below
+        fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
   usename:
     title:
       en: The domain name of the project activity.
@@ -412,7 +416,7 @@ oss:
       schema:
         en: Name of the project activity
         fr: Nom de l'activité du projet.
-  usedescription:
+  description:
     title:
       en: The English and French description of the project activity.
       fr: La description du domaine de l'activité du projet en français et en anglais.

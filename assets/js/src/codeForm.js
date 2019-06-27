@@ -19,23 +19,17 @@ $(document).ready(function() {
     selectCode();
   });
 
-  $('#newAmdminButton').click(function() {
-    $('#newAdmin').removeClass('hide');
-    $('#adminCode').removeAttr('required');
-    $('label[for="adminCode"]').removeClass('required');
-  });
-
-  $('#removeNewAdminButton').click(function() {
-    $('#newAdmin').addClass('hide');
-    $('#adminCode').attr('required', 'required');
-    $('label[for="adminCode"]').addClass('required');
-  });
-
   $('#prbotSubmitcodeForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val()) submitFormAdminCodeForm();
       else submitCodeForm();
     }
+  });
+
+  $('#formReset').click(function() {
+    $('#validation').trigger('reset');
+    resetTags();
+    resetLanguages();
   });
 });
 

@@ -5,6 +5,12 @@
   submitInit submitConclusion
 */
 
+$(document).ready(function() {
+  $('#prbotSubmitadminForm').click(function() {
+    if (submitInit()) submitAdminForm();
+  });
+});
+
 function getAdminObject() {
   let adminObject = {
     code: $('#newAdminCode').val(),
@@ -96,7 +102,3 @@ function getConfigNew(adminObject, file) {
     method: 'POST'
   };
 }
-
-$('#prbotSubmitadminForm').click(function() {
-  if (submitInit()) submitAdminForm();
-});

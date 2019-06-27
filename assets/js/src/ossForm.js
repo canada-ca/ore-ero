@@ -6,11 +6,11 @@
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
 */
 
-const ossObj = $('.page-ossForm #ProjectNameSelect');
+const ossObj = $('.page-ossForm #nameselect');
 const adminObj = $('.page-ossForm #adminCode');
 
 $(document).ready(function() {
-  $('#enProjectName').focus();
+  $('#enname').focus();
 
   ossObj.change(function() {
     selectOss();
@@ -30,6 +30,11 @@ $(document).ready(function() {
       submitFormOss();
     }
   });
+
+  $('#formReset').click(function() {
+    $('#validation').trigger('reset');
+    resetTags();
+  });
 });
 
 function getOssObject() {
@@ -37,25 +42,25 @@ function getOssObject() {
   let ossObject = {
     schemaVersion: $('#schemaVersion').val(),
     description: {
-      en: $('#enDescription').val(),
-      fr: $('#frDescription').val()
+      en: $('#endescription').val(),
+      fr: $('#frdescription').val()
     },
     homepageURL: {
-      en: $('#enHomepageUrl').val(),
-      fr: $('#frHomepageUrl').val()
+      en: $('#enhomepageURL').val(),
+      fr: $('#frhomepageURL').val()
     },
     licenses: [
       {
         URL: {
-          en: $('#enLicenses').val(),
-          fr: $('#frLicenses').val()
+          en: $('#enlicensesURL').val(),
+          fr: $('#frlicensesURL').val()
         },
-        spdxID: $('#spdxID').val()
+        spdxID: $('licensesspdxID').val()
       }
     ],
     name: {
-      en: $('#enProjectName').val(),
-      fr: $('#frProjectName').val()
+      en: $('#enname').val(),
+      fr: $('#frname').val()
     },
     tags: {
       en: getTags([...document.querySelectorAll('#tagsEN input')]),
@@ -67,15 +72,15 @@ function getOssObject() {
         uses: [
           {
             contact: {
-              email: $('#emailContact').val()
+              email: $('#contactemail').val()
             },
             date: {
-              started: $('#dateStarted').val(),
-              metadataLastUpdated: $('#dateLastUpdated').val()
+              started: $('#datestarted').val(),
+              metadataLastUpdated: $('#datemetadataLastUpdated').val()
             },
             description: {
-              en: $('#enUseDescription').val(),
-              fr: $('#enUseDescription').val()
+              en: $('#useendescription').val(),
+              fr: $('#usefrdescription').val()
             },
             name: {
               en: $('#enUseName').val(),
@@ -90,60 +95,60 @@ function getOssObject() {
   // Then we handle all optional fields.
 
   // contact.URL
-  if ($('#frUrlContact').val() || $('#enUrlContact').val()) {
+  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL = {};
   }
-  if ($('#enUrlContact').val()) {
+  if ($('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL.en = $(
-      '#enUrlContact'
+      '#encontactURL'
     ).val();
   }
-  if ($('#frUrlContact').val()) {
+  if ($('#frcontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL.fr = $(
-      '#frUrlContact'
+      '#frcontactURL'
     ).val();
   }
 
   // contact.name, TODO: update to match schema
-  if ($('#nameContact').val()) {
-    ossObject.administrations[0].uses[0].contact.name = $('#nameContact').val();
+  if ($('#contactname').val()) {
+    ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
 
   // relatedCode TODO: support multiple relatedCode fields
   if (
-    $('#enUrlRelatedCode').val() ||
-    $('#frUrlRelatedCode').val() ||
-    $('#enNameRelatedCode').val() ||
-    $('#frNameRelatedCode').val()
+    $('#enrelatedCodeURL').val() ||
+    $('#frrelatedCodeURL').val() ||
+    $('#enrelatedCodename').val() ||
+    $('#frrelatedCodename').val()
   ) {
     ossObject.administrations[0].uses[0].relatedCode = [{}];
   }
   // relatedCode.URL
-  if ($('#enUrlRelatedCode').val() || $('#frUrlRelatedCode').val()) {
+  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
   }
-  if ($('#enUrlRelatedCode').val()) {
+  if ($('#enrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $(
-      '#enUrlRelatedCode'
+      '#enrelatedCodeURL'
     ).val();
   }
-  if ($('#frUrlRelatedCode').val()) {
+  if ($('#frrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $(
-      '#frUrlRelatedCode'
+      '#frrelatedCodeURL'
     ).val();
   }
   // relatedCode.name
-  if ($('#enNameRelatedCode').val() || $('#frNameRelatedCode').val()) {
+  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name = {};
   }
-  if ($('#enNameRelatedCode').val()) {
+  if ($('#enrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name.en = $(
-      '#enNameRelatedCode'
+      '#enrelatedCodename'
     ).val();
   }
-  if ($('#frNameRelatedCode').val()) {
+  if ($('#frrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name.fr = $(
-      '#frNameRelatedCode'
+      '#frrelatedCodename'
     ).val();
   }
 
@@ -163,7 +168,7 @@ function submitFormOss() {
 
   let ossObject = getOssObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let ProjectName = $('#enProjectName')
+  let ProjectName = $('#enname')
     .val()
     .toLowerCase();
   let file = `_data/logiciels_libres-open_source_software/${ProjectName}.yml`;
@@ -200,7 +205,7 @@ function submitFormOss() {
 }
 
 function getConfigUpdate(result, file) {
-  let ProjectName = $('#enProjectName').val();
+  let ProjectName = $('#enname').val();
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -208,17 +213,17 @@ function getConfigUpdate(result, file) {
       title: `Updated software for ${ProjectName} `,
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#submitteremail').val() +
         '\n' +
         'Project: ***' +
-        $('#enProjectName').val() +
+        $('#enname').val() +
         '***\n' +
-        $('#enDescription').val() +
+        $('#endescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -232,7 +237,7 @@ function getConfigUpdate(result, file) {
 }
 
 function getConfigNew(ossObject, file) {
-  let ProjectName = $('#enProjectName').val();
+  let ProjectName = $('#enname').val();
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -240,17 +245,17 @@ function getConfigNew(ossObject, file) {
       title: 'Created the software file for ' + ProjectName,
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#submitteremail').val() +
         '\n' +
         'Project: ***' +
-        $('#enProjectName').val() +
+        $('#enname').val() +
         '***\n' +
-        $('#enDescription').val() +
+        $('#endescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -286,31 +291,31 @@ function selectOss() {
 
 function addValueToFieldsOss(obj) {
   $('#schemaVersion').val(obj['schemaVersion']);
-  $('#enProjectName').val(obj['name']['en']);
-  $('#frProjectName').val(obj['name']['fr']);
-  $('#enDescription').val(obj['description']['en']);
-  $('#frDescription').val(obj['description']['fr']);
-  $('#enHomepageUrl').val(obj['homepageURL']['en']);
-  $('#frHomepageUrl').val(obj['homepageURL']['fr']);
-  $('#enLicenses').val(obj['licenses'][0]['URL']['en']);
-  $('#frLicenses').val(obj['licenses'][0]['URL']['fr']);
-  $('#spdxID').val(obj['licenses'][0]['spdxID']);
+  $('#enname').val(obj['name']['en']);
+  $('#frname').val(obj['name']['fr']);
+  $('#endescription').val(obj['description']['en']);
+  $('#frdescription').val(obj['description']['fr']);
+  $('#enhomepageURL').val(obj['homepageURL']['en']);
+  $('#frhomepageURL').val(obj['homepageURL']['fr']);
+  $('#enlicensesURL').val(obj['licenses'][0]['URL']['en']);
+  $('#frlicensesURL').val(obj['licenses'][0]['URL']['fr']);
+  $('licensesspdxID').val(obj['licenses'][0]['spdxID']);
   addTags(obj);
 }
 
 function resetFieldsOss() {
   $('#schemaVersion').val('1.0');
-  $('#enProjectName').val('');
-  $('#frProjectName').val('');
-  $('#enDescription').val('');
-  $('#frDescription').val('');
-  $('#enHomepageUrl').val('');
-  $('#frHomepageUrl').val('');
-  $('#enLicenses').val('');
-  $('#frLicenses').val('');
-  $('#spdxID').val('');
-  $('#enProjectName').focus();
-  $('#frProjectName').focus();
+  $('#enname').val('');
+  $('#frname').val('');
+  $('#endescription').val('');
+  $('#frdescription').val('');
+  $('#enhomepageURL').val('');
+  $('#frhomepageURL').val('');
+  $('#enlicensesURL').val('');
+  $('#frlicensesURL').val('');
+  $('licensesspdxID').val('');
+  $('#enname').focus();
+  $('#frname').focus();
   resetTags();
 }
 
@@ -341,46 +346,48 @@ function selectAdmin() {
 function addValueToFieldsAdmin(obj) {
   if (obj['uses'][0]['contact']['URL']) {
     if (obj['uses'][0]['contact']['URL']['en'])
-      $('#enUrlContact').val(obj['uses'][0]['contact']['URL']['en']);
+      $('#encontactURL').val(obj['uses'][0]['contact']['URL']['en']);
     if (obj['uses']['contact']['URL']['fr'])
-      $('#frUrlContact').val(obj['uses'][0]['contact']['URL']['fr']);
+      $('#frcontactURL').val(obj['uses'][0]['contact']['URL']['fr']);
   }
   if (obj['uses'][0]['contact']['email'])
-    $('#emailContact').val(obj['uses'][0]['contact']['email']);
+    $('#contactemail').val(obj['uses'][0]['contact']['email']);
   if (obj['uses'][0]['contact']['name'])
-    $('#nameContact').val(obj['uses'][0]['contact']['name']);
+    $('#contactname').val(obj['uses'][0]['contact']['name']);
 
-  $('#dateStarted').val(obj['uses'][0]['date']['started']);
-  $('#dateLastUpdated').val(obj['uses'][0]['date']['metadataLastUpdated']);
+  $('#datestarted').val(obj['uses'][0]['date']['started']);
+  $('#datemetadataLastUpdated').val(
+    obj['uses'][0]['date']['metadataLastUpdated']
+  );
   $('#enUseName').val(obj['uses'][0]['name']['en']);
   $('#frUseName').val(obj['uses'][0]['name']['fr']);
-  $('#enUseDescription').val(obj['uses'][0]['description']['en']);
-  $('#frUseDescription').val(obj['uses'][0]['description']['fr']);
+  $('#useendescription').val(obj['uses'][0]['description']['en']);
+  $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
 
   if (obj['uses'][0]['relatedCode']) {
     if (obj['uses'][0]['relatedCode']['URL']) {
       if (obj['uses'][0]['relatedCode']['URL']['en'])
-        $('#enUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['en']);
+        $('#enrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['en']);
       if (obj['uses'][0]['relatedCode']['URL']['fr'])
-        $('#frUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['fr']);
+        $('#frrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['fr']);
     }
   }
   if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
 }
 
 function resetFieldsAdmin() {
-  $('#enUrlContact').val('');
-  $('#frUrlContact').val('');
-  $('#emailContact').val('');
-  $('#nameContact').val('');
-  $('#dateStarted').val('');
+  $('#encontactURL').val('');
+  $('#frcontactURL').val('');
+  $('#contactemail').val('');
+  $('#contactname').val('');
+  $('#datestarted').val('');
   $('#enUseName').val('');
   $('#frUseName').val('');
-  $('#enUseDescription').val('');
-  $('#frUseDescription').val('');
-  $('#enUrlRelatedCode').val('');
-  $('#frUrlRelatedCode').val('');
-  $('#enNameRelatedCode').val('');
-  $('#frNameRelatedCode').val('');
+  $('#useendescription').val('');
+  $('#usefrdescription').val('');
+  $('#enrelatedCodeURL').val('');
+  $('#frrelatedCodeURL').val('');
+  $('#enrelatedCodename').val('');
+  $('#frrelatedCodename').val('');
   $('#status').val('');
 }
