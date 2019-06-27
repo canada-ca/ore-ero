@@ -251,54 +251,28 @@ function submitFormAdminCodeForm() {
   let resetButton = document.getElementById('formReset');
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let codeFile = `_data/code/${getSelectedOrgType()}/${$(
-    '#adminCode'
+  let codeFile = `_data/code/${$('#orgLevel').val()}/${$(
+    '#newAdminCode'
   ).val()}.yml`;
-  let adminFile = `_data/administrations/municipal.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
-    .merge(codeFile, codeObject, 'releases', 'name.en')
-    .then(resultCode => {
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(resultAdmin => {
       fileWriter
-        .mergeAdminFile(adminFile, adminObject, '', 'code')
-        .then(resultAdmin => {
-          const config = {
-            body: JSON.stringify({
-              user: USERNAME,
-              repo: REPO_NAME,
-              title:
-                'Updated code for ' +
-                $('#adminCode :selected').text() +
-                ' and administrations for ' +
-                $('#orgLevel').val(),
-              description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-              commit: 'Committed by ' + $('#submitterEmail').val(),
-              author: {
-                name: $('#submitterUsername').val(),
-                email: $('#submitterEmail').val()
-              },
-              files: [
-                {
-                  path: codeFile,
-                  content: jsyaml.dump(resultCode, { lineWidth: 160 })
-                },
-                {
-                  path: adminFile,
-                  content: jsyaml.dump(resultAdmin, { lineWidth: 160 })
-                }
-              ]
-            }),
-            method: 'POST'
-          };
-          return fetch(PRBOT_URL, config);
-        })
+        .merge(codeFile, codeObject, 'releases', 'name.en')
         .catch(err => {
           if (err.status == 404) {
             const config = {
               body: JSON.stringify({
                 user: USERNAME,
                 repo: REPO_NAME,
-                title: 'Created a code and an administration file',
+                title:
+                  'Created code for ' +
+                  $('#enName').val() +
+                  ' and updated ' +
+                  $('#orgLevel').val() +
+                  ' for administrations file',
                 description:
                   'Authored by: ' + $('#submitterEmail').val() + '\n',
                 commit: 'Committed by ' + $('#submitterEmail').val(),
@@ -315,7 +289,7 @@ function submitFormAdminCodeForm() {
                   {
                     path: adminFile,
                     content:
-                      '---\n' + jsyaml.dump(adminObject, { lineWidth: 160 })
+                      '---\n' + jsyaml.dump(resultAdmin, { lineWidth: 160 })
                   }
                 ]
               }),
