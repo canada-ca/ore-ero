@@ -2,7 +2,7 @@
 {%- include form/components/title.html id=include.id title=title -%}
 
 <div class="form-group">
-  {%- include form/components/label.html id=include.id title=title required=false -%}
+  <label>{{ site.data.i18n.form[include.id][title].label[page.lang] }}</label>
   {%- assign languages_array = "" | split: "," -%}
   {%- for fptms in site.data.code -%}
   {%- assign fptm = fptms[1] -%}
