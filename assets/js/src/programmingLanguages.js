@@ -1,4 +1,4 @@
-/* exported addMoreLanguages */
+/* exported addMoreLanguages getLanguages */
 
 function addMoreLanguages() {
   $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
@@ -19,4 +19,12 @@ function addMoreLanguages() {
       .parents('.control-group')
       .remove();
   });
+}
+
+function getLanguages() {
+  return $(
+    'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]'
+  )
+    .toArray()
+    .map(input => input.value);
 }

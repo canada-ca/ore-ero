@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags
+  getTags resetTags addTags getLanguages
   submitInit submitConclusion
   getAdminObject
 */
@@ -119,11 +119,7 @@ function getCodeObject() {
     codeObject.releases[0].homepageURL.fr = $('#frhomepageUrl').val();
   }
 
-  let languages = $(
-    'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]'
-  )
-    .toArray()
-    .map(input => input.value);
+  let languages = getLanguages();
   if (languages.length > 0) {
     codeObject.releases[0].languages = languages;
   }
