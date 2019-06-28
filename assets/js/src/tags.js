@@ -19,18 +19,18 @@ function addTags(obj) {
     resetTags();
     let index = 0;
     obj['tags']['en'].forEach(function(tag) {
-      if (index == 0) $('#enTags').val(tag);
+      if (index == 0) $('#entags').val(tag);
       else
-        tagObject('enTags' + index, tag)
+        tagObject('entags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsEN');
       index++;
     });
     index = 0;
     obj['tags']['fr'].forEach(function(tag) {
-      if (index == 0) $('#frTags').val(tag);
+      if (index == 0) $('#frtags').val(tag);
       else
-        tagObject('frTags' + index, tag)
+        tagObject('frtags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsFR');
       index++;
@@ -41,8 +41,8 @@ function addTags(obj) {
 }
 
 function resetTags() {
-  $('#enTags').val('');
-  $('#frTags').val('');
+  $('#entags').val('');
+  $('#frtags').val('');
   $('.additional-tag').remove();
 }
 

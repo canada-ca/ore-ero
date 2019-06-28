@@ -188,7 +188,7 @@ presets:
     label:
       en: Province
       fr: Province
-  province: *provinceSelect # Simplifies schema build
+  province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
@@ -539,9 +539,9 @@ admin:
         en: Name in french
         fr: Nom en français
       schema: *name
-  code: *newAdminCode # simplifies schema build
-  name: *newAdminName # simplifies schema build
-  administrations: # simplifies schema build
+  code: *newAdminCode  # simplifies schema build
+  name: *newAdminName  # simplifies schema build
+  administrations:  # simplifies schema build
     title:
       en: The list of administrations for a specific organization level (corresponding with the file name)
       fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)

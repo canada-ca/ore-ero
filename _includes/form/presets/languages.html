@@ -16,7 +16,7 @@
     {%- endfor -%}
   {%- endfor -%}
 
-  <div id="Languages" class="form-group">
+  <div id="{{ title }}" class="form-group">
     {%- assign languages_array = languages_array | uniq  -%}
     {%- for language in languages_array -%}
       <div class="checkbox" >

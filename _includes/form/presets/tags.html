@@ -4,13 +4,13 @@
   <div id="tagsEN" class="form-group">
     {%- include form/components/label-i18n.html id=include.id title=title lang="en" -%}
     <div class="control-group input-group col-xs-2" style="margin-top:10px" >
-      <input type="text" id="enTags" name="enTags" class="form-control" required="required">
+      <input type="text" id="en{{ title }}" name="en{{ title }}" class="form-control" required="required">
     </div>
   </div>
   <div id="tagsFR" class="form-group">
     {%- include form/components/label-i18n.html id=include.id title=title lang="fr" -%}
     <div class="control-group input-group col-xs-2" style="margin-top:10px" >
-      <input type="text" id="frTags" name="frTags" class="form-control" required="required">
+      <input type="text" id="fr{{ title }}" name="fr{{ title }}" class="form-control" required="required">
     </div>
   </div>
 </div>

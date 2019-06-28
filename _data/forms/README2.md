@@ -568,4 +568,3 @@ The `get[form id]Object()` method is the function that takes all the values from
 
 #### addValuesToFields / resetFields
 When pulling data from github (when the user select an already existing project or administration), this method fill the fetched data in the inputs. The reset field does just the opposite, if the suer choose to change the select back to its default null value, we need to remove the values we added to the fields, but not necessarily for all the fields in the form since they can be separated in sections (i.e. selecting an existing software or administration in the software form do not change the same fields and reseting one does not mean the other also need reseting).
-

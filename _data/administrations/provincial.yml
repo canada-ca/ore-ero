@@ -4,7 +4,7 @@
     en: Province of British Columbia
     fr: Province de la Colombie-Britannique
 
-- code: 'on' # Quotes required because "on" is a yaml keyword
+- code: 'on'  # Quotes required because "on" is a yaml keyword
   name:
     en: Province of Ontario
     fr: Province de l'Ontario
