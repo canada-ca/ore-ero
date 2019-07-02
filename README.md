@@ -51,6 +51,29 @@ npm run prettify
 
 YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
 
+### Release
+
+The core site is a GitHub Pages site, so it's updated whenever code is merged into master. We also depend on an external service called PRB0t to allow users to submit pull requests to ORE without having a GitHub account.
+
+#### Updating PRB0t
+
+This service is hosted in [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). We currently use Heroku's [git-based](https://devcenter.heroku.com/articles/git) method of updating the application. To do this, you will need Git and the Heroku CLI installed.
+
+First, clone PRB0t to your machine.
+``` bash
+git clone https://github.com/PRB0t/PRB0t
+```
+
+Next, add our app as a remote git repository.
+``` bash
+heroku git:remote -a canada-pr-bot
+```
+
+And finally, push your changes.
+``` bash
+git push heroku master
+```
+
 ## Échange de ressources ouvert
 
 https://canada-ca.github.io/ore-ero/fr/index.html
@@ -99,3 +122,26 @@ npm run prettify
 ```
 
 Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).
+
+### Libération
+
+Le site principal est un site GitHub Pages. Il est donc mis à jour chaque fois que le code est fusionné dans le fichier maître. Nous dépendons également d'un service externe appelé PRB0t pour permettre aux utilisateurs de soumettre des demandes d'extraction à ORE sans avoir de compte GitHub.
+
+#### Mise à jour PRB0t
+
+Ce service est hébergé sur [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). Nous utilisons actuellement la méthode de mise à jour de l'application basée sur [Git](https://devcenter.heroku.com/articles/git) de Heroku. Pour ce faire, vous devez avoir installé Git et la CLI Heroku.
+
+Commencez par cloner PRB0t sur votre machine.
+``` bash
+git clone https://github.com/PRB0t/PRB0t
+```
+
+Ensuite, ajoutez notre application en tant que référentiel git distant.
+``` bash
+heroku git:remote -a canada-pr-bot
+```
+
+Et enfin, poussez vos modifications.
+``` bash
+git push heroku master
+```
