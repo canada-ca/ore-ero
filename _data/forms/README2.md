@@ -531,11 +531,124 @@ So `[page.config]` translates to, in this case, `config-example`, which will con
 Here be dragons. Components are even more generic than widgets and were created solely for the purpose of less duplication of code. But in order to make it simple, it became a bit complicated underneath, and if you don't need to debug, you can skip this section and go directly to translations.
 
 ## Translations
-Test
+The translations for the forms and schema are located in `_data/i18n/form.yml` and are separated in sections for more generic translations as well as first-level groups for each of the forms. 
 
-A note on widget which are already done and presets in case smth changes.
+#### Yaml Variables
+As a useful note, it is possible to create variables in Yaml files. Use `&variable` for instanciation and `*variable` for using. In this particular case, it's used to declare and use generic values (name, email, URL, etc.). But the neat thing is that it can act as a string or as an object, so we can easily wrap translations inside a single variable. Here's an example of what it looks like in the files:
+```yaml
+name: &name
+  en: Name
+  fr: Nom
+[...]
+example:
+  label: *name
+```
+Is the equivalent of:
+```yaml
+example:
+  label:
+    en: Name
+    fr: Nom
+```
+But allows us not to have duplicate translations.
 
-How to translate widgets & include data in schema
+### Presets
+All the presets translations are already included and should you modify any of the presets files (`_includes/[form/schema]/presets/`), you should also verify the translations.
+
+If you create a new preset, you must add it under the presets first-level group, unless you specified a different parameter in the loop (`includes/[form/schema]/loop.html`).
+ - In general, the preset includes specifies "presets" as an id: `{% include file.yml id=idPreset %}`
+ - However, you can use `id` instead of `idPreset` to use the id defined in the config page. This will mean that you must put the translations under the equivalent first-level element named after the `id` instead of "preset".
+
+### Translations for Widgets
+Here's how to translate each widget:
+ - For each widget, add a second-level element (under the first-level named after `id`) and name it as the value you put under `title` in the config file. The title should be the same as the value in the schema page as it is included as is in the schema page.
+```yaml
+first-level:  # either preset, admin, code, oss, standard, etc...
+  example:  # replace example with the title value of the widget
+    [...]
+```
+ - You will also need to, bear with me it might be confusing, add a title element under it. Don't confuse it with the second-level element, where title should be replaced with the title value of the current widget. This title is a third-level element named title which will hold the english and french value for the title. This value appears in the form page as a section's title and as the section description in the schema page:
+```yaml
+first-level:
+  example:
+    title:
+      en: Example
+      fr: Exemple
+```
+ - Each widget also have other specific elements that need to be added and are described in their specific sections below
+
+#### String Widget
+For a string widget, follow this template:
+```yaml
+first-level:
+  example:
+    title:
+      en: Example
+      fr: Exemple
+    label:
+      en: The english label
+      fr: The french label
+```
+
+#### String-i18n Widget
+For a string-i18n widget, follow this template:
+```yaml
+first-level:
+  example:
+    title:
+      en: Example
+      fr: Exemple
+    labels:
+      en:
+        en: The english label for the english page
+        fr: The french label for the english page
+      fr:
+        en: The english label for the french page
+        fr: The french label for the french page
+      schema:
+        en: The generic english label for the schema (without specificity for either english of french)
+        fr: The generic french label for the schema (without specificity for either english of french)
+```
+
+#### Select
+For a select widget, follow this template:
+```yaml
+first-level:
+	example:
+	  title:
+	    en: Example
+	    fr: Exemple
+	  options:
+	    option-name:  # where option-name is the value added in the options array in the config file
+	      en: Option
+	      fr: Option
+	    [...]
+```
+#### Group
+For a group widget, the values under `labels` depends on the fields' widget type, follow this template:
+```yaml
+first-level:
+  title:
+    en: Example
+    fr: Exemple
+  labels:
+    string:  # replace string with the title of a string widget
+      en: The english value for the label
+      fr: The french value for the label
+    string-i18n:  # replace string-i18n with the title of a string-i18n widget
+      en:
+        en: The english value for the english page
+        fr: Then french value for the english page
+      fr:
+        en: The english value for the french page
+        fr: The french value for the french page
+  titles:
+    widget-name:  # replace widget-name with each widget names
+      # The title is used for the schema page
+      en: Widget Name
+      fr: Nom du widget
+    [...]
+```
 
 ## JavaScript
 Each form needs its own custom JavaScript to submit that you need to create.
@@ -548,7 +661,7 @@ The link to the scripts are added in the footer which is located in `_includes/f
 At the very bottom is a inline script declaring some constants that are used in other scripts files. They are `REPO_NAME`, `USERNAME`, and `PRBOT_URL` and their values are taken from the `_config.yml` and pulled through Jekyll/Liquid. Just before is where are added the scripts for the forms. Next up, we add the script only on its particular form page with a simple `if` using the page `ref` (declared in the page header).
 
 ### PRB0T
-[PRB0T](https://github.com/PRB0t/PRB0t) is an open source solution we [forked](https://github.com/j-rewerts/PRB0t) and customized to fit our specific needs. It's what we use with the form to submit changes. What's actually going on is that we merge the necessary files with the new content pulled from the form, and then we submit a pull request in the gitub repo.
+[PRB0T](https://github.com/PRB0t/PRB0t) is an open source solution we [forked](https://github.com/j-rewerts/PRB0t) and customized to fit our specific needs. It's what we use with the form to submit changes. What's actually going on is that we merge the necessary files with the new content pulled from the form, and then we submit a pull request in the Gitub repo.
 
 ### Javascript files
 At the beginning of the file is a comment that tells eslint that the function does exists and its just located in another file, so it won't throw errors and fail the build.
