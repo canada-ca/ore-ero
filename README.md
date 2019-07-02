@@ -51,6 +51,25 @@ npm run prettify
 
 YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
 
+#### PRB0t - Docker
+
+You can choose to run PRB0t locally using Docker if you like. First, you need to generate a personal access token.
+
+1. In your github account, navigate to settings/Developer settings/Personal access tokens
+1. Click Generate a new token, you only need to select the repo option
+
+Note: the token allows the communication between this api and your github repo. It's the equivalent of logging in as the API to your github account.
+
+Now run the following, replacing `{YOUR GITHUB TOKEN}` with your own token.
+
+```bash
+docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} jrewerts/prb0t:v1.0.1
+```
+
+Now change prbot_url in `_config.yml` to `localhost:3000/`.
+
+Now when you fill out our forms, it'll submit the pull request using PRB0t running in your Docker container!
+
 ### Release
 
 The core site is a GitHub Pages site, so it's updated whenever code is merged into master. We also depend on an external service called PRB0t to allow users to submit pull requests to ORE without having a GitHub account.
@@ -122,6 +141,25 @@ npm run prettify
 ```
 
 Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).
+
+#### PRB0t - Docker
+
+Vous pouvez choisir d'exécuter PRB0t localement à l'aide de Docker si vous le souhaitez. Tout d'abord, vous devez générer un jeton d'accès personnel.
+
+1. Dans votre compte github, accédez à Paramètres / Paramètres du développeur / Jetons d'accès personnel.
+1. Cliquez sur Générer un nouveau jeton, il vous suffit de sélectionner l'option Repo.
+
+Remarque: le jeton permet la communication entre cette api et votre dépôt Github. C'est l'équivalent de se connecter en tant qu'API à votre compte github.
+
+Maintenant, lancez ce qui suit, en remplaçant "{YOUR GITHUB TOKEN}" par votre propre jeton.
+
+```bash
+docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} jrewerts/prb0t:v1.0.1
+```
+
+Maintenant, remplacez prbot_url dans `_config.yml` par `localhost:3000/`.
+
+Maintenant, lorsque vous remplissez nos formulaires, il soumet la demande d'extraction à l'aide de PRB0t s'exécutant dans votre conteneur Docker!
 
 ### Libération
 
