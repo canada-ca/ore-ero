@@ -14,15 +14,12 @@
       {%- endfor -%}
     {%- endfor -%}
     {%- endfor -%}
-  {%- endfor -%}
-
+  {%- endfor %}
   <div id="{{ title }}" class="form-group">
     {%- assign languages_array = languages_array | uniq  -%}
-    {%- for language in languages_array -%}
-      <div class="checkbox" >
-        <label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label>
-      </div>
-    {%- endfor -%}
+    {%- for language in languages_array %}
+    <div class="checkbox"><label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label></div>
+    {%- endfor %}
   </div>
   <button type="button" class="btn btn-primary" onclick="addMoreLanguages()"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form.[include.id][title].button[page.lang] }}</button>
 </div>

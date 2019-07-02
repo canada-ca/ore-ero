@@ -3,16 +3,12 @@ layout: default
 ---
 
 {{ content }}
-
 <div class="wb-frmvld">
   <form action="#" method="get" id="validation">
+{%- assign idPreset = "presets" %}
 
-    {%- assign idPreset = "presets" -%}
-
-    {%- include form/loop.html idPreset=idPreset -%}
-
-    {%- include form/presets/submitter.html idPreset=idPreset -%}
-
+{% include form/loop.html idPreset=idPreset %}
+{%- include form/presets/submitter.html idPreset=idPreset %}
     <button id="prbotSubmit{{ page.ref }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.submit[page.lang] }}</button>
     <button id="formReset" type="reset" class="btn btn-default">{{ site.data.i18n.form.reset[page.lang] }}</button>
 

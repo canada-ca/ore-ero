@@ -1,10 +1,8 @@
-{%- assign title = "orgLevel" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{% assign title = "orgLevel" %}
+{% include form/components/title.html id=include.id title=title -%}
 
 <div class="form-group">
-
-  {%- include form/components/label.html id=include.id title=title -%}
-
+  {% include form/components/label.html id=include.id title=title %}
   <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
     <option value="">&nbsp;</option>
     <option value="{{ site.data.i18n.administrations.municipal.value }}" selected>{{ site.data.i18n.administrations.municipal[page.lang] }}</option>

@@ -1,11 +1,8 @@
 <ul id="wb-tphp">
-  <li class="wb-slc">
-    <a class="wb-sl" href="#wb-cont">{{ site.SkipToMain[page.lang] }}</a>
-  </li>
-  <li class="wb-slc visible-sm visible-md visible-lg">
-    <a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a>
-  </li>
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">{{ site.SkipToMain[page.lang] }}</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">{{ site.SkipToAbout[page.lang] }}</a></li>
 </ul>
+
 <header>
   <div id="wb-bnr" class="container">
     <section id="wb-lng" class="visible-md visible-lg text-right">
@@ -13,19 +10,19 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="list-inline margin-bottom-none">
-            {%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
-            {%- for my_post in posts -%}
-              {%- if my_post.lang != page.lang -%}
-                <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: '..' }}">{{ site.language[my_post.lang] }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
+          {%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
+          {%- for my_post in posts -%}
+            {%- if my_post.lang != page.lang %}
+            <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: '..' }}">{{ site.language[my_post.lang] }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
 
-            {%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
-            {%- for my_page in pages -%}
-              {%- if my_page.lang != page.lang -%}
-                <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: '..' }}">{{ site.language[my_page.lang] }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
+          {%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
+          {%- for my_page in pages -%}
+            {%- if my_page.lang != page.lang %}
+            <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: '..' }}">{{ site.language[my_page.lang] }}</a></li>
+            {%- endif -%}
+          {%- endfor %}
           </ul>
         </div>
       </div>
@@ -54,17 +51,17 @@
       <h2 class="wb-inv">Menu</h2>
       <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
       <ul role="menu" aria-orientation="vertical">
-        {%- if page.lang == "en" -%}
-          <li role="presentation"><a role="menuitem" href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./open-source-software.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./open-standards.html">{{ site.OpenStandards[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
-        {%- else -%}
-          <li role="presentation"><a role="menuitem" href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./logiciels-libres.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./normes-ouvertes.html">{{ site.OpenStandards[page.lang] }}</a></li>
-          <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
-        {%- endif -%}
+      {%- if page.lang == "en" -%}
+        <li role="presentation"><a role="menuitem" href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./open-source-software.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./open-standards.html">{{ site.OpenStandards[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
+      {%- else -%}
+        <li role="presentation"><a role="menuitem" href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./logiciels-libres.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./normes-ouvertes.html">{{ site.OpenStandards[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="./docs.html">Documentation</a></li>
+      {%- endif %}
       </ul>
     </div>
   </nav>
@@ -72,35 +69,34 @@
   <nav id="wb-bc" property="breadcrumb">
     <h2>{{ site.YouAreHere[page.lang] }}:</h2>
     <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
-          {%- if page.ref != "home" -%}
-            {%- if page.lang == "en" -%}
-              <li><a href="./index.html">{{ site.title[page.lang] }}</a></li>
-            {%- else -%}
-              <li><a href="./index.html">{{ site.title[page.lang] }}</a></li>
-            {%- endif -%}
+      <ol class="breadcrumb">
+        <li><a href="https://www.canada.ca/{{ page.lang }}.html">{{ site.home[page.lang] }}</a></li>
+        {% if page.ref != "home" -%}
+          {%- if page.lang == "en" -%}
+        <li><a href="./index.html">{{ site.title[page.lang] }}</a></li>
+          {%- else -%}
+        <li><a href="./index.html">{{ site.title[page.lang] }}</a></li>
           {%- endif -%}
+        {%- endif -%}
 
-          {%- if page.ref == "codeGroups" or page.ref == "codeSchema" or page.ref == "codeForm" -%}
-            {%- if page.lang == "en" -%}
-              <li><a href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
-            {%- else -%}
-              <li><a href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
-            {%- endif -%}
+        {% if page.ref == "codeGroups" or page.ref == "codeSchema" or page.ref == "codeForm" -%}
+          {%- if page.lang == "en" -%}
+        <li><a href="./open-source-code.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
+          {%- else -%}
+        <li><a href="./code-source-ouvert.html">{{ site.OpenSourceCode[page.lang] }}</a></li>
           {%- endif -%}
+        {%- endif -%}
 
-          {%- if page.ref == "ossSchema" -%}
-            {%- if page.lang == "en" -%}
-              <li><a href="./open-source-software.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
-            {%- else -%}
-              <li><a href="./logiciels-libres.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
-            {%- endif -%}
+        {% if page.ref == "ossSchema" -%}
+          {%- if page.lang == "en" -%}
+        <li><a href="./open-source-software.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
+          {%- else -%}
+        <li><a href="./logiciels-libres.html">{{ site.OpenSourceSoftware[page.lang] }}</a></li>
           {%- endif -%}
-        </ol>
+        {%- endif %}
+      </ol>
     </div>
   </nav>
-
 </header>
 
 <main property="mainContentOfPage" class="container">

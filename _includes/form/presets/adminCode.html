@@ -1,38 +1,35 @@
-{%- assign title = "adminCode" -%}
+{%- assign title = "adminCode" %}
 {%- include form/components/title.html id=include.id title=title -%}
-
 <div class="form-group">
-
-  {%- include form/components/label.html id=include.id title=title -%}
-
+  {% include form/components/label.html id=include.id title=title %}
   <div class="form-group" style="display: flex;">
     <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
       <option value="">&nbsp;</option>
       <optgroup data-value="{{ site.data.i18n.administrations.federal.value }}" label="{{ site.data.i18n.administrations.federal[page.lang] }}">
         {%- for org in site.data.administrations.federal -%}
-          {%- if org.name[page.lang] != nil -%}
-            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {%- if org.name[page.lang] != nil %}
+        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {%- endif -%}
         {% endfor %}
       </optgroup>
       <optgroup data-value="{{ site.data.i18n.administrations.provincial.value }}" label="{{ site.data.i18n.administrations.provincial[page.lang] }}">
         {%- for org in site.data.administrations.provincial -%}
-          {%- if org.name[page.lang] != nil -%}
-            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {%- if org.name[page.lang] != nil %}
+        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {%- endif -%}
         {%- endfor -%}
       </optgroup>
       <optgroup data-value="{{ site.data.i18n.administrations.municipal.value }}" label="{{ site.data.i18n.administrations.municipal[page.lang] }}">
         {%- for org in site.data.administrations.municipal -%}
-          {%- if org.name[page.lang] != nil- %}
-            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {%- if org.name[page.lang] != nil %}
+        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {%- endif -%}
         {%- endfor -%}
       </optgroup>
       <optgroup data-value="{{ site.data.i18n.administrations.aboriginal.value }}" label="{{ site.data.i18n.administrations.aboriginal[page.lang] }}">
         {%- for org in site.data.administrations.aboriginal -%}
-          {%- if org.name[page.lang] != nil -%}
-            <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+          {%- if org.name[page.lang] != nil %}
+        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
           {%- endif -%}
         {%- endfor -%}
       </optgroup>
@@ -41,4 +38,4 @@
   </div>
 </div>
 
-{%- include form/presets/newAdmin.html id=include.id optional=true -%}
+{% include form/presets/newAdmin.html id=include.id optional=true -%}

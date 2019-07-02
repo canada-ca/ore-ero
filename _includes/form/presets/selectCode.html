@@ -1,11 +1,11 @@
-{%- assign title = "name" -%}
+{% assign title = "name" -%}
 {%- assign group = "select" -%}
-<div class="form-group"­­>
-  {%- include form/components/label-group.html id=include.id title=title group="select" -%}
+<div class="form-group hide"­­>
+  {% include form/components/label-group.html id=include.id title=title group="select" %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}" disabled>
     <option value="">&nbsp;</option>
   </select>
 </div>
 
-{%- include form/components/title.html id=include.id title=title -%}
-{%- include form/components/group-i18n.html id=include.id title=title -%}
+{% include form/components/title.html id=include.id title=title -%}
+{% include form/components/group-i18n.html id=include.id title=title -%}
