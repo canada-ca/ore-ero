@@ -63,7 +63,7 @@ Note: the token allows the communication between this api and your github repo. 
 Now run the following, replacing `{YOUR GITHUB TOKEN}` with your own token.
 
 ```bash
-docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST=http://0.0.0.0:4000/ jrewerts/prb0t:v1.0.1
+docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST_NAME=* jrewerts/prb0t:v1.0.1
 ```
 
 Now change prbot_url in `_config.yml` to `http://localhost:3000/`.
@@ -154,7 +154,7 @@ Remarque: le jeton permet la communication entre cette api et votre dépôt Gith
 Maintenant, lancez ce qui suit, en remplaçant "{YOUR GITHUB TOKEN}" par votre propre jeton.
 
 ```bash
-docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST=http://0.0.0.0:4000/ jrewerts/prb0t:v1.0.1
+docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST_NAME=* jrewerts/prb0t:v1.0.1
 ```
 
 Maintenant, remplacez prbot_url dans `_config.yml` par `http://localhost:3000/`.
