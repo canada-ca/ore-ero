@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2019-01-01'
+  metadataLastUpdated: '2019-07-02'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+name:
+  en: Frederic
+  fr: Frédéric
+specURL:
+  en: 'http://www.google.com/specification'
+  fr: 'http://www.google.ca/specification'
+standardCode: FRED
+standardsOrg: Frédéric Lestage inc
+tags:
+  en:
+    - TagEN
+    - fredEN
+  fr:
+    - TagFR
+    - fredFR
+administrations:
+  - adminCode: pco-bcp
+    contact:
+      email: frederic.lestage@montreal.ca
+      URL:
+        en: 'http://www.google.com/contact'
+        fr: 'http://www.google.ca/contact'
+      name: Frédéric Lestage
+    references:
+      - URL:
+          en: 'http://www.google.com/reference'
+          fr: 'http://www.google.ca/reference'
+        name:
+          en: ref name
+          fr: nom ref
+    status: generic gc
