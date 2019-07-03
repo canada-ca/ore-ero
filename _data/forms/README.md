@@ -409,13 +409,13 @@ This widget takes one additional parameter in addition to the ones available to 
  - `fields`: An array of widgets and their own parameters to display in the same logical group.
 ```yaml
   - widget: group
-	title: example
-	fields:
-	  - widget: string
-	    title: test1
-	  - widget: string-i18n
-	    title: test2
-	  [...]
+    title: example
+    fields:
+      - widget: string
+        title: test1
+      - widget: string-i18n
+        title: test2
+      [...]
 ```
 The widgets declaration under fields acts the same way as if they were declared as top-level fieldGroups.
 
@@ -614,15 +614,15 @@ first-level:
 For a select widget, follow this template:
 ```yaml
 first-level:
-	example:
-	  title:
-	    en: Example
-	    fr: Exemple
-	  options:
-	    option-name:  # where option-name is the value added in the options array in the config file
-	      en: Option
-	      fr: Option
-	    [...]
+    example:
+      title:
+        en: Example
+        fr: Exemple
+      options:
+        option-name:  # where option-name is the value added in the options array in the config file
+          en: Option
+          fr: Option
+        [...]
 ```
 #### Group
 For a group widget, the values under `labels` depends on the fields' widget type, follow this template:
@@ -681,3 +681,4 @@ The `get[form id]Object()` method is the function that takes all the values from
 
 #### addValuesToFields / resetFields
 When pulling data from github (when the user select an already existing project or administration), this method fill the fetched data in the inputs. The reset field does just the opposite, if the suer choose to change the select back to its default null value, we need to remove the values we added to the fields, but not necessarily for all the fields in the form since they can be separated in sections (i.e. selecting an existing software or administration in the software form do not change the same fields and reseting one does not mean the other also need reseting).
+
