@@ -36,5 +36,5 @@ formGroups:
     title: status
   - preset: contact
     phone: false
-    required: false
+    required: true
   - preset: empty

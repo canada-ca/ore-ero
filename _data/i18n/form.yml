@@ -470,6 +470,10 @@ standards:
     label:
       en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
       fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
+    labels:
+      select:
+        en: If you wish to update an existing standard, please select it below
+        fr: Si vous souhaitez mettre à jour un standard existant, svp le sélectionner ci-dessous
   standardOrg:
     title:
       en: Name of the organisation supporting the standard

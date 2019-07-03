@@ -108,18 +108,18 @@ function submitStandardsForm() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let name = $('#standardCode')
-    .val()
-    .toLowerCase();
-
   let standardsObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${name}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${standardsObject.standardCode.toLowerCase()}.yml`;
 
   fileWriter
     .merge(file, standardsObject, 'administrations', 'adminCode')
     .then(result => {
-      const config = getConfigUpdate(result);
+      const config = getConfigUpdate(
+        result,
+        file,
+        standardsObject.standardCode
+      );
       return fetch(PRBOT_URL, config);
     })
     .catch(err => {
@@ -135,12 +135,12 @@ function submitStandardsForm() {
     });
 }
 
-function getConfigUpdate(result, file) {
+function getConfigUpdate(result, file, code) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated the ${name} standard file`,
+      title: `Updated the ${code} standard file`,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -163,7 +163,7 @@ function getConfigNew(standardsObject, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the standard file for ' + name,
+      title: 'Created the standard file for ' + standardsObject.standardCode,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -251,7 +251,7 @@ function selectAdmin() {
           }
         }
       } else {
-        console.log('standard empty of not found');
+        resetFieldsAdmin();
       }
     }
   );

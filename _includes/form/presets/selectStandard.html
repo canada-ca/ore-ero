@@ -1,15 +1,15 @@
-{%- assign title = "standardCode" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{% assign title = "standardCode" -%}
+{% assign group = "select" -%}
 <div class="form-group">
-  {%- include form/components/label.html id=include.id title=title -%}
-  <div>
-    {%- include form/components/input.html id=include.id title=title style="display: inline-block;" -%}
-    <select class="form-control" id="{{ title }}select" name="{{ title }}select" style="display: inline-block;">
-      <option value="">&nbsp;</option>
-      {%- for standards in site.data.normes_ouvertes-open_standards -%}
-        {%- assign standard = standards[1] -%}
-        <option value="{{ standard.standardCode }}">{{ standard.standardCode }}</option>
-      {%- endfor -%}
-    </select>
-  </div>
+  {% include form/components/label-group.html id=include.id title=title group=group required=false %}
+  <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
+    <option value="">&nbsp;</option>
+    {%- for standards in site.data.normes_ouvertes-open_standards -%}
+      {%- assign standard = standards[1] %}
+      <option value="{{ standard.standardCode }}">{{ standard.standardCode }}</option>
+    {%- endfor %}
+  </select>
 </div>
+
+{% include form/components/title.html id=include.id title=title -%}
+{% include form/components/group.html id=include.id title=title -%}
