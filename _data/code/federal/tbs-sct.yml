@@ -79,7 +79,7 @@ releases:
       fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
     name:
       en: Web Experience Toolkit (WET)
-      fr: Boîte à outils de l’expérience Web (BOEW)
+      fr: Boîte à outils de l'expérience Web (BOEW)
     licenses:
       - URL:
           en: https://github.com/wet-boew/wet-boew/blob/master/License-en.txt

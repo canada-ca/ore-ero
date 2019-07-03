@@ -10,7 +10,7 @@ administrations:
           fr: https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875
         name:
           en: Standard on Web Interoperability
-          fr: Norme sur l’interopérabilité du Web
+          fr: Norme sur l'interopérabilité du Web
     status: mandatory-gc
 date:
   created: '2018-01-23'
