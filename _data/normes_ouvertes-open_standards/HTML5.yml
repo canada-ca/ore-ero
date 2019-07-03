@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2018-01-23'
+  metadataLastUpdated: '2019-07-03'
+description:
+  en: HTML5 is a markup language used for structuring and presenting content on the Web. It is the fifth and current major version of the HTML standard.
+  fr: >-
+    HTML5 est un langage de balisage utilisé pour structurer et présenter du contenu sur le Web. C'est la cinquième et dernière version majeure de la norme
+    HTML.
+name:
+  en: HyperText Markup Language 5
+  fr: HyperText Markup Language 5
+specURL:
+  en: 'https://www.w3.org/TR/html5/'
+  fr: 'https://www.w3.org/TR/html5/'
+standardCode: HTML5
+standardsOrg: W3C
+tags:
+  en:
+    - Web
+  fr:
+    - Web
+administrations:
+  - adminCode: aafc-aac
+    contact:
+      email: frederic.lestage@montreal.ca
+      URL:
+        en: 'http://www.google.com/contact'
+        fr: 'http://www.google.ca/contact'
+      name: contact
+    references:
+      - URL:
+          en: 'http://www.google.com/ref'
+          fr: 'http://www.google.ca/reference'
+        name:
+          en: ref name
+          fr: nom ref
+    status: general gc
