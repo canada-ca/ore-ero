@@ -12,7 +12,7 @@ administrations:
           en: Standard on Web Interoperability
           fr: Norme sur l’interopérabilité du Web
     status: mandatory-gc
-  - adminCode: bac-lac
+  - adminCode: lac-bac
     contact:
       email: ~
     references:
