@@ -4,15 +4,18 @@
   name:
     en: City of Montreal
     fr: Ville de Montréal
-
 - code: ottawa_on
-  provinceCode: 'on' # Requires quotes since "on" is a reserved keyword for yaml
+  provinceCode: 'on'
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
-
 - code: edmonton_ab
   provinceCode: ab
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: fred-lest
+  provinceCode: !<tag:yaml.org,2002:js/undefined> ''
+  name:
+    en: HyperText Markup Language 5
+    fr: HyperText Markup Language 5
