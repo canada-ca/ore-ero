@@ -4,6 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTags resetTags addTags
   submitInit submitConclusion
+  getAdminObject
 */
 
 const standardObj = $('.page-standardsForm #standardCodeselect');
@@ -22,7 +23,10 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitstandardsForm').click(function() {
-    if (submitInit()) submitStandardsForm();
+    if (submitInit()) {
+      if ($('#newAdminCode').val() != '') submitStandardsFormNewAdmin();
+      else submitStandardsForm();
+    }
   });
 
   $('#formReset').click(function() {
@@ -60,7 +64,10 @@ function getStandardsObject() {
     },
     administrations: [
       {
-        adminCode: $('#adminCode').val(),
+        adminCode:
+          $('#adminCode').val() == ''
+            ? $('#newAdminCode').val()
+            : $('#adminCode').val(),
         contact: {
           email: $('#contactemail').val()
         },
@@ -108,27 +115,22 @@ function submitStandardsForm() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let standardsObject = getStandardsObject();
+  let standardObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${standardsObject.standardCode.toLowerCase()}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardCode.toLowerCase()}.yml`;
 
   fileWriter
-    .merge(file, standardsObject, 'administrations', 'adminCode')
+    .merge(file, standardObject, 'administrations', 'adminCode')
     .then(result => {
-      const config = getConfigUpdate(
-        result,
-        file,
-        standardsObject.standardCode
+      return fetch(
+        PRBOT_URL,
+        getConfigUpdate(result, file, standardObject.standardCode)
       );
-      return fetch(PRBOT_URL, config);
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = getConfigNew(standardsObject, file);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(PRBOT_URL, getConfigNew(standardObject, file));
+      } else throw err;
     })
     .then(response => {
       submitConclusion(response, submitButton, resetButton);
@@ -150,7 +152,7 @@ function getConfigUpdate(result, file, code) {
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -173,11 +175,144 @@ function getConfigNew(standardsObject, file) {
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(standardsObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(standardsObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function submitStandardsFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitstandardsForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let standardObject = getStandardsObject();
+  let adminObject = getAdminObject();
+
+  let standardName = standardObject.standardCode.toLowerCase();
+  let adminName = $('#newAdminCode').val();
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let standardFile = `_data/normes_ouvertes-open_standards/${standardName}.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
+
+  fileWriter
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(adminResult => {
+      fileWriter
+        .merge(standardFile, standardObject, 'administrations', 'adminCode')
+        .then(standardResult => {
+          return fetch(
+            PRBOT_URL,
+            getConfigUpdateStandardNewAdmin(
+              standardName,
+              adminName,
+              standardFile,
+              adminFile,
+              standardResult,
+              adminResult
+            )
+          );
+        })
+        .catch(err => {
+          if (err.status == 404) {
+            return fetch(
+              PRBOT_URL,
+              getConfigNewStandardNewAdmin(
+                standardName,
+                adminName,
+                standardFile,
+                adminFile,
+                standardObject,
+                adminResult
+              )
+            );
+          } else throw err;
+        })
+        .then(response => {
+          submitConclusion(response, submitButton, resetButton);
+        });
+    })
+    .catch(err => {
+      if (err.status == 404) console.log('File not Found');
+      else throw err;
+    });
+}
+
+function getConfigUpdateStandardNewAdmin(
+  standardName,
+  adminName,
+  standardFile,
+  adminFile,
+  standardResult,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Updated standard file for ' +
+        standardName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: standardFile,
+          content: '---\n' + jsyaml.dump(standardResult)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function getConfigNewStandardNewAdmin(
+  standardName,
+  adminName,
+  standardFile,
+  adminFile,
+  standardObject,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Creaded standard file for ' +
+        standardName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: standardFile,
+          content: '---\n' + jsyaml.dump(standardObject)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),

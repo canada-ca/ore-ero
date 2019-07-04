@@ -1,3 +1,5 @@
+/* exported getAdminObject */
+
 /*
   global $
   YamlWriter jsyaml
@@ -14,10 +16,10 @@ $(document).ready(function() {
 function getAdminObject() {
   let adminObject = {
     code: $('#newAdminCode').val(),
-    provinceCode: $('#provinceCode').val(),
+    provinceCode: $('#provinceSelect').val(),
     name: {
-      en: $('#enname').val(),
-      fr: $('#frname').val()
+      en: $('#ennewAdminName').val(),
+      fr: $('#frnewAdminName').val()
     }
   };
 
@@ -37,16 +39,12 @@ function submitAdminForm() {
   fileWriter
     .mergeAdminFile(file, adminObject, '', 'code')
     .then(result => {
-      const config = getConfigUpdate(result, file);
-      return fetch(PRBOT_URL, config);
+      return fetch(PRBOT_URL, getConfigUpdate(result, file));
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = getConfigNew(adminObject, file);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(PRBOT_URL, getConfigNew(adminObject, file));
+      } else throw err;
     })
     .then(response => {
       submitConclusion(response, submitButton, resetButton);

@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $('#prbotSubmitcodeForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val()) submitFormAdminCodeForm();
+      if ($('#newAdminCode').val() != '') submitFormAdminCodeForm();
       else submitCodeForm();
     }
   });
@@ -36,7 +36,10 @@ $(document).ready(function() {
 function getCodeObject() {
   let codeObject = {
     schemaVersion: $('#schemaVersion').val(),
-    adminCode: $('#adminCode').val(),
+    adminCode:
+      $('#adminCode').val() == ''
+        ? $('#newAdminCode').val()
+        : $('#adminCode').val(),
     releases: [
       {
         contact: {
@@ -217,10 +220,12 @@ function getCodeObject() {
 }
 
 function getSelectedOrgType() {
-  return $('#adminCode :selected')
-    .parent()
-    .attr('label')
-    .toLowerCase();
+  if ($('#adminCode').val() != '')
+    return $('#adminCode :selected')
+      .parent()
+      .attr('label')
+      .toLowerCase();
+  else return $('#orgLevel').val();
 }
 
 function submitFormAdminCodeForm() {
@@ -245,16 +250,11 @@ function submitFormAdminCodeForm() {
         .merge(codeFile, codeObject, 'releases', 'name.en')
         .catch(err => {
           if (err.status == 404) {
-            const config = getConfigNewAdmin(
-              codeFile,
-              codeObject,
-              adminFile,
-              resultAdmin
+            return fetch(
+              PRBOT_URL,
+              getConfigNewAdmin(codeFile, codeObject, adminFile, resultAdmin)
             );
-            return fetch(PRBOT_URL, config);
-          } else {
-            throw err;
-          }
+          } else throw err;
         })
         .then(response => {
           submitConclusion(response, submitButton, resetButton);
@@ -311,11 +311,8 @@ function submitCodeForm() {
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = getConfigNew(codeObject, file);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(PRBOT_URL, getConfigNew(codeObject, file));
+      } else throw err;
     })
     .then(response => {
       submitConclusion(response);

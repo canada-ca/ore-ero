@@ -349,7 +349,7 @@ Then, add a call to your new preset in the form loop (`_includes/form/loop.html`
     {%- when '[preset]' -%}
       {%- include form/presets/[preset].html id=idPreset [parameter=formGroup.value] -%}
 ```
-Keep the `id=idPreset` parameter and value intact since they will be used for the translations. remove `[parameter=formGroup.]` if you don't need to specify other parameters (this should be the case a majority of the time), or replace it with your own custom parameter, where `value` has the same value as what you will add in the config file, and for the sake of consistency, `parameter` should also match `value`.  what `formGroup` is simply the name given of each iterated element in the loop (`for formGroup in formGroups`) For example:
+Keep the `id=idPreset` parameter and value intact since they will be used for the translations. remove `[parameter=formGroup.]` if you don't need to specify other parameters (this should be the case a majority of the time), or replace it with your own custom parameter, where `value` has the same value as what you will add in the config file, and for the sake of consistency, `parameter` should also match `value`.  What `formGroup` is simply the name given of each iterated element in the loop (`for formGroup in formGroups`) For example:
 ```html
 {%- when 'example' -%}
   {%- include form/presets/example.html id=idPreset test=formGroup.test -%}
