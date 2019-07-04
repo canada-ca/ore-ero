@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test
+homepageURL:
+  en: 'http://test.com'
+  fr: 'http://test.com'
+licenses:
+  - URL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    spdxID: MIT
+name:
+  en: test
+  fr: test
+tags:
+  en:
+    - tag1
+    - tag2
+  fr:
+    - tag1
+    - tag2
+administrations:
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-18'
+          metadataLastUpdated: '2019-07-04'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Beta
