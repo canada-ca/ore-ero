@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+date:
+  created: '2018-12-31'
+  metadataLastUpdated: '2019-07-04'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+name:
+  en: Frederic
+  fr: Frédéric
+specURL:
+  en: 'http://www.google.com'
+  fr: 'https://www.w3.org/TR/html5/'
+standardCode: FRED
+standardsOrg: Frédéric Lestage inc
+tags:
+  en:
+    - Web
+  fr:
+    - TagFR
+administrations:
+  - adminCode: ''
+    contact:
+      email: frederic.lestage@montreal.ca
+      URL:
+        en: 'http://www.google.com/contact'
+        fr: 'http://www.google.ca/contact'
+      name: contact
+    references:
+      - URL:
+          en: 'http://www.google.com/ref'
+          fr: 'http://www.google.ca/reference'
+        name:
+          en: ref name
+          fr: nom ref
+    status: general gc
