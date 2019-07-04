@@ -5,7 +5,16 @@
   <details open>
     <summary><h4 class="h4">Filter Options</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
-
+      <div class="form-group">
+          <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
+          <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="6">
+            <option value="">&nbsp;</option>
+            <option value="federal">{{ site.Federal[page.lang] }}</option>
+            <option value="provincial">{{ site.Provincial[page.lang] }}</option>
+            <option value="municipal">{{ site.Municipal[page.lang] }}</option>
+            <option value="aboriginal">{{ site.Aboriginal[page.lang] }}</option>
+          </select>
+      </div>
       <div class="form-group">
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
@@ -42,22 +51,21 @@
         </select>
       </div>
 
-      <div class="row">
+    <div class="row">
         <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
+          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.Filter[page.lang] }}</button>
         </div>
         <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">Clear</button>
+          <button type="reset" class="btn btn-default">{{ site.Clear[page.lang] }}</button>
         </div>
-      </div>
-
+    </div>
     </form>
   </details>
 </div>
 
 <!-- Data Table -->
 <div class="col-md-9">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5], "visible": false}], "paging": true}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>Software</th>
@@ -66,6 +74,7 @@
         <th>Tags</th>
         <th>Usage</th>
         <th>Homepage</th>
+        <th>Level of government</th>
       </tr>
     </thead>
     <tbody>
@@ -89,9 +98,28 @@
           <td>
             <a href="{{ oss.homepageURL[page.lang] }}" target="_blank">{{ oss.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
           </td>
+          <td>
+            {% for administration in oss.administrations %}
+            {% assign aName = site.data.administrations.federal | where: "code", administration.adminCode %}
+              {% if aName[0].name[page.lang] != nil %}
+                {{ site.Federal[page.lang] }}
+              {% endif %}
+            {% assign aName = site.data.administrations.provincial | where: "code", administration.adminCode %}
+              {% if aName[0].name[page.lang] != nil %}
+                {{ site.Provincial[page.lang] }}
+              {% endif %}
+            {% assign aName = site.data.administrations.municipal | where: "code", administration.adminCode %}
+              {% if aName[0].name[page.lang] != nil %}
+                {{ site.Municipal[page.lang] }}
+              {% endif %}
+            {% assign aName = site.data.administrations.aboriginal | where: "code", administration.adminCode %}
+              {% if aName[0].name[page.lang] != nil %}
+                {{ site.Aboriginal[page.lang] }}
+              {% endif %}
+            {% endfor %}
+          </td>
         </tr>
       {% endfor %}
-
     </tbody>
   </table>
 </div>
@@ -109,9 +137,15 @@
         <p>Is being used by:</p>
         {% for admin in oss.administrations %}
           <div class="row">
-            {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
+            {% assign aNameFederal = site.data.administrations.federal | where: "code", admin.adminCode %}
+            {% assign aNameProvincial = site.data.administrations.provincial | where: "code", admin.adminCode %}
+            {% assign aNameMunicipal = site.data.administrations.municipal | where: "code", admin.adminCode %}
+            {% assign aNameAboriginal = site.data.administrations.aboriginal | where: "code", admin.adminCode %}
             <div class="col-md-7">
-              <strong>{{ aName[0].name[page.lang] }}</strong>
+              <strong>{{ aNameFederal[0].name[page.lang] }}</strong>
+              <strong>{{ aNameProvincial[0].name[page.lang] }}</strong>
+              <strong>{{ aNameMunicipal[0].name[page.lang] }}</strong>
+              <strong>{{ aNameAboriginal[0].name[page.lang] }}</strong>
             </div>
             {% for use in admin.uses %}
               {% if use.contact.email != nil %}
