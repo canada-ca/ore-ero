@@ -1,6 +1,0 @@
----
-
-id: admin
-
-formGroups:
-  - preset: newAdmin
