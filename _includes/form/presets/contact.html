@@ -8,7 +8,7 @@
 {%- else -%}
   {% assign required = false -%}
 {%- endif -%}
-{%- include form/components/group-group.html id=include.id title=title group="email" required=required -%}
+{%- include form/components/group-group.html id=include.id title=title group="email" required=required type="email" -%}
 
 {%- include form/components/group-group.html id=include.id title=title group="name" required=false -%}
 

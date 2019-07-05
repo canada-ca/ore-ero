@@ -291,7 +291,17 @@ function getConfigNewAdmin(
         $('#orgLevel').val() +
         ' administrations file with new administration ' +
         adminName,
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      description:
+        'Authored by: ' +
+        $('#submitteremail').val() +
+        '\n' +
+        'Project: ***' +
+        codeName +
+        '***\n' +
+        $('#endescription').val() +
+        ' and updated administration for ' +
+        adminName +
+        '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
