@@ -283,6 +283,8 @@ function selectOss() {
       } else if (value == '') {
         resetFieldsOss();
       } else {
+        console.log(value);
+        console.log(result);
         alert('Error retrieving the data');
       }
     }

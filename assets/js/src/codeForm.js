@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTags resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
-  getAdminObject
+  getAdminObject getAdminCode
 */
 
 const codeObj = $('.page-codeForm #nameselect');
@@ -36,10 +36,7 @@ $(document).ready(function() {
 function getCodeObject() {
   let codeObject = {
     schemaVersion: $('#schemaVersion').val(),
-    adminCode:
-      $('#adminCode').val() == ''
-        ? $('#newAdminCode').val()
-        : $('#adminCode').val(),
+    adminCode: getAdminCode(),
     releases: [
       {
         contact: {
@@ -442,7 +439,10 @@ function selectAdmin() {
       }
     });
   } else {
-    $('#nameselect').prop('disabled', true);
+    $('#nameselect')
+      .prop('disabled', true)
+      .parent()
+      .addClass('hide');
     resetFields();
   }
 }

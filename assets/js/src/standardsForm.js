@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTags resetTags addTags
   submitInit submitConclusion
-  getAdminObject
+  getAdminObject getAdminCode
 */
 
 const standardObj = $('.page-standardsForm #standardCodeselect');
@@ -64,10 +64,7 @@ function getStandardsObject() {
     },
     administrations: [
       {
-        adminCode:
-          $('#adminCode').val() == ''
-            ? $('#newAdminCode').val()
-            : $('#adminCode').val(),
+        adminCode: getAdminCode(),
         contact: {
           email: $('#contactemail').val()
         },

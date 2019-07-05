@@ -1,4 +1,4 @@
-/* exported getAdminObject */
+/* exported getAdminObject getAdminCode */
 
 /*
   global $
@@ -7,27 +7,58 @@
   submitInit submitConclusion
 */
 
+var newAdminON = false;
+
 $(document).ready(function() {
   $('#prbotSubmitadminForm').click(function() {
     if (submitInit()) submitAdminForm();
   });
 
-  $(document).ready(function() {
-    $('#newAdminButton').click(function() {
-      $('#newAdmin').removeClass('hide');
-      $('#adminCode').removeAttr('required');
-      $('label[for="adminCode"]').removeClass('required');
-      $('label[for="adminCode"] strong').addClass('hide');
-    });
+  $('#newAdminButton').click(function() {
+    if (!newAdminON) showNewAdminForm();
+    else hideNewAdminForm();
+  });
 
-    $('#removeNewAdminButton').click(function() {
-      $('#newAdmin').addClass('hide');
-      $('#adminCode').attr('required', 'required');
-      $('label[for="adminCode"]').addClass('required');
-      $('label[for="adminCode"] strong').removeClass('hide');
-    });
+  $('#removeNewAdminButton').click(function() {
+    hideNewAdminForm();
+  });
+
+  $('#adminCode').change(function() {
+    if (newAdminON) {
+      hideNewAdminForm();
+    }
   });
 });
+
+function showNewAdminForm() {
+  $('#newAdmin').removeClass('hide');
+  $('#adminCode').removeAttr('required');
+  $('label[for="adminCode"]').removeClass('required');
+  $('label[for="adminCode"] strong').addClass('hide');
+  $('#adminCode')
+    .prop('selectedIndex', 0)
+    .change();
+
+  newAdminON = true;
+}
+
+function hideNewAdminForm() {
+  $('#newAdmin').addClass('hide');
+  $('#adminCode').attr('required', 'required');
+  $('label[for="adminCode"]').addClass('required');
+  $('label[for="adminCode"] strong').removeClass('hide');
+
+  newAdminON = false;
+  resetNewAdminForm();
+}
+
+function resetNewAdminForm() {
+  $('#orgLevel').prop('selectedIndex', 1);
+  $('#newAdminCode').val('');
+  $('#provinceSelect').prop('selectIndex', 0);
+  $('#ennewAdminName').val('');
+  $('#frnewAdminName').val('');
+}
 
 function getAdminObject() {
   let adminObject = {
@@ -40,6 +71,12 @@ function getAdminObject() {
   };
 
   return adminObject;
+}
+
+function getAdminCode() {
+  $('#adminCode').val() == ''
+    ? $('#newAdminCode').val()
+    : $('#adminCode').val();
 }
 
 function submitAdminForm() {

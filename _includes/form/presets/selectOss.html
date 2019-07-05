@@ -6,7 +6,7 @@
     <option value="">&nbsp;</option>
     {%- for oss in site.data.logiciels_libres-open_source_software -%}
     {%- assign software = oss[1] %}
-    <option class="additional-option" value="{{ software.name[page.lang] }}">{{ software.name[page.lang] }}</option>
+    <option class="additional-option" value="{{ software.name[page.lang] | downcase }}">{{ software.name[page.lang] }}</option>
     {%- endfor %}
   </select>
 </div>
