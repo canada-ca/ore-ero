@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags getLanguages
+  getTags resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject
 */
@@ -112,14 +112,14 @@ function getCodeObject() {
     codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
   }
 
-  if ($('#enhomepageUrl').val() || $('#frhomepageUrl').val()) {
+  if ($('#enhomepageURL').val() || $('#frhomepageURL').val()) {
     codeObject.releases[0].homepageURL = {};
   }
-  if ($('#enhomepageUrl').val()) {
-    codeObject.releases[0].homepageURL.en = $('#enhomepageUrl').val();
+  if ($('#enhomepageURL').val()) {
+    codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
   }
-  if ($('#frhomepageUrl').val()) {
-    codeObject.releases[0].homepageURL.fr = $('#frhomepageUrl').val();
+  if ($('#frhomepageURL').val()) {
+    codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
   }
 
   let languages = getLanguages();
@@ -172,7 +172,7 @@ function getCodeObject() {
   }
 
   if (
-    $('enrelatedCodeURL').val() ||
+    $('#enrelatedCodeURL').val() ||
     $('#frrelatedCodeURL').val() ||
     $('#enrelatedCodename').val() ||
     $('#frrelatedCodename').val()
@@ -180,11 +180,11 @@ function getCodeObject() {
     codeObject.releases[0].relatedCode = [{}];
   }
 
-  if ($('enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
+  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
     codeObject.releases[0].relatedCode[0].URL = {};
   }
-  if ($('enrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL.en = $('enrelatedCodeURL').val();
+  if ($('#enrelatedCodeURL').val()) {
+    codeObject.releases[0].relatedCode[0].URL.en = $('#enrelatedCodeURL').val();
   }
   if ($('#frrelatedCodeURL').val()) {
     codeObject.releases[0].relatedCode[0].URL.fr = $('#frrelatedCodeURL').val();
@@ -237,11 +237,14 @@ function submitFormAdminCodeForm() {
   let codeObject = getCodeObject();
   let adminObject = getAdminObject();
 
+  let codeName = codeObject.releases[0].name.en;
+  let adminName = $('#newAdminCode').val();
+
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let codeFile = `_data/code/${$('#orgLevel').val()}/${$(
     '#newAdminCode'
   ).val()}.yml`;
-  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
+  let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
@@ -252,7 +255,14 @@ function submitFormAdminCodeForm() {
           if (err.status == 404) {
             return fetch(
               PRBOT_URL,
-              getConfigNewAdmin(codeFile, codeObject, adminFile, resultAdmin)
+              getConfigNewAdmin(
+                codeName,
+                adminName,
+                codeFile,
+                codeObject,
+                adminFile,
+                resultAdmin
+              )
             );
           } else throw err;
         })
@@ -262,17 +272,25 @@ function submitFormAdminCodeForm() {
     });
 }
 
-function getConfigNewAdmin(codeFile, codeObject, adminFile, resultAdmin) {
+function getConfigNewAdmin(
+  codeName,
+  adminName,
+  codeFile,
+  codeObject,
+  adminFile,
+  resultAdmin
+) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
       title:
         'Created code for ' +
-        $('#enName').val() +
+        codeName +
         ' and updated ' +
         $('#orgLevel').val() +
-        ' for administrations file',
+        ' administrations file with new administration ' +
+        adminName,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -342,7 +360,7 @@ function getConfigUpdate(result, file) {
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -373,11 +391,7 @@ function getConfigNew(codeObject, file) {
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(codeObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(codeObject)
         }
       ]
     }),
@@ -494,14 +508,14 @@ function addValueToFields(obj) {
   }
 
   if (obj.homepageURL) {
-    if (obj.homepageURL.en) $('#enhomepageUrl').val(obj.homepageURL.en);
-    if (obj.homepageURL.fr) $('#frhomepageUrl').val(obj.homepageURL.fr);
+    if (obj.homepageURL.en) $('#enhomepageURL').val(obj.homepageURL.en);
+    if (obj.homepageURL.fr) $('#frhomepageURL').val(obj.homepageURL.fr);
   }
 
   resetLanguages();
   if (obj.languages != undefined) {
     obj.languages.forEach(function(language) {
-      $('#languages .' + language).attr('checked', true);
+      selectLanguage(language);
     });
   }
 
@@ -525,7 +539,7 @@ function addValueToFields(obj) {
   if (obj.relatedCode) {
     if (obj.relatedCode[0].URL) {
       if (obj.relatedCode[0].URL.en)
-        $('enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
+        $('#enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
       if (obj.relatedCode[0].URL.fr)
         $('#frrelatedCodeURL').val(obj.relatedCode[0].URL.fr);
     }
@@ -562,8 +576,8 @@ function resetFields() {
   $('#frrepositoryUrl').val('');
   $('#endownloadUrl').val('');
   $('#frdownloadUrl').val('');
-  $('#enhomepageUrl').val('');
-  $('#frhomepageUrl').val('');
+  $('#enhomepageURL').val('');
+  $('#frhomepageURL').val('');
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
@@ -572,17 +586,11 @@ function resetFields() {
   $('#partneremail').val('');
   $('#enpartnername').val('');
   $('#frpartnername').val('');
-  $('enrelatedCodeURL').val('');
+  $('#enrelatedCodeURL').val('');
   $('#frrelatedCodeURL').val('');
   $('#enrelatedCodename').val('');
   $('#frrelatedCodename').val('');
   $('#status').val('');
   $('#version').val('');
   $('#vcs').val('');
-}
-
-function resetLanguages() {
-  $('#languages input[type="checkbox"]').each(function(i, input) {
-    $(input).attr('checked', false);
-  });
 }

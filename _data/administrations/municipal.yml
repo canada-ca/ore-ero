@@ -4,13 +4,11 @@
   name:
     en: City of Montreal
     fr: Ville de Montréal
-
 - code: ottawa_on
-  provinceCode: 'on'  # Requires quotes since "on" is a reserved keyword for yaml
+  provinceCode: 'on'
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
-
 - code: edmonton_ab
   provinceCode: ab
   name:
