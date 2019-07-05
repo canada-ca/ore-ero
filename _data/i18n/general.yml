@@ -1,8 +1,8 @@
 ---
 head:
-  title: &title
-    en: Open Resource Exchange
-    fr: Échange de ressources ouvert
+  title:
+    en: &title_en Open Resource Exchange
+    fr: &title_fr Échange de ressources ouvert
   description:
     en: Open source software used and released by Canadian public administrations
     fr: Logiciels libres utilisés et diffusés par les administrations publiques Canadiennes
@@ -25,41 +25,43 @@ head:
     en: You are here
     fr: Vous êtes ici
 
-  nav:
-    home: *title
-      link:
-        en: ./index.html
-        fr: ./index.html
-    code:
-      en: Open Source Code
-      fr: Code source ouvert
-      link:
-        en: ./open-source-code.html
-        fr: ./code-source-ouvert.html
-    oss:
-      en: Open Source Software
-      fr: Logiciels libres
-      link:
-        en: ./open-source-software.html
-        fr: ./logiciels-libres.html
-    standards:
-      en: Open Standards
-      fr: Normes ouvertes
-      link:
-        en: ./open-standards.html
-        fr: ./normes-ouvertes.html
-    doc:
-      en: Documentation
-      fr: Documentation
-      link:
-        en: ./docs.html
-        fr: ./docs.html
-    Canada:
-      en: Government of Canada
-      fr: Gouvernement du Canada
-      link:
-        en: https://www.canada.ca/en.html
-        fr: https://www.canada.ca/fr.html
+nav:
+  home:
+    en: *title_en
+    fr: *title_fr
+    link:
+      en: ./index.html
+      fr: ./index.html
+  code:
+    en: Open Source Code
+    fr: Code source ouvert
+    link:
+      en: ./open-source-code.html
+      fr: ./code-source-ouvert.html
+  oss:
+    en: Open Source Software
+    fr: Logiciels libres
+    link:
+      en: ./open-source-software.html
+      fr: ./logiciels-libres.html
+  standards:
+    en: Open Standards
+    fr: Normes ouvertes
+    link:
+      en: ./open-standards.html
+      fr: ./normes-ouvertes.html
+  doc:
+    en: Documentation
+    fr: Documentation
+    link:
+      en: ./docs.html
+      fr: ./docs.html
+  Canada:
+    en: Government of Canada
+    fr: Gouvernement du Canada
+    link:
+      en: https://www.canada.ca/en.html
+      fr: https://www.canada.ca/fr.html
 
 footer:
   AboutGovernment:
