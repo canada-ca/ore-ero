@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  en: 'Accumulo is a sorted, distributed key/value store  that provides robust, scalable data storage and retrieval.'
+  fr: Accumulo est un magasin clé/valeur trié et distribué qui fournit un stockage et une récupération de données robustes et évolutifs.
+homepageURL:
+  en: 'https://accumulo.apache.org/'
+  fr: 'https://accumulo.apache.org/'
+licenses:
+  - URL:
+      en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+      fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+    spdxID: Apache-2.0
+name:
+  en: Accumulo
+  fr: Accumulo
+tags:
+  en:
+    - Application
+  fr:
+    - Application
+administrations:
+  - adminCode: test
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-05'
+          metadataLastUpdated: '2019-07-05'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Alpha
