@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Performs operating-system-level virtualization also known as containerization
+  fr: 'Effectue une virtualisation au niveau du système d''exploitation, également appelée conteneurisation'
+homepageURL:
+  en: 'https://www.docker.com'
+  fr: 'https://www.docker.com'
+licenses:
+  - URL:
+      en: 'https://www.docker.com/legal/components-licenses'
+      fr: 'https://www.docker.com/legal/components-licenses'
+    spdxID: Apache-2.0
+name:
+  en: Docker
+  fr: Docker
+tags:
+  en:
+    - Container platform
+    - Development
+    - Infrastructure
+  fr:
+    - Plate-forme de conteneur
+    - Développement
+    - Infrastructure
+administrations:
+  - adminCode: ''
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-04'
+          metadataLastUpdated: '2019-07-05'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Beta
