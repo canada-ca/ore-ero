@@ -1,0 +1,61 @@
+---
+schemaVersion: '1.0'
+adminCode: FRED
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+      URL:
+        en: 'http://www.google.com/contact'
+        fr: 'http://www.google.ca/contact'
+      name: contact
+      phone: 123-456-7890
+    date:
+      created: '2015-12-31'
+      metadataLastUpdated: '2019-07-05'
+      lastModified: '2018-12-29'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licenses:
+      - URL:
+          en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+          fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
+    downloadURL:
+      en: 'http://www.google.com/download'
+      fr: 'http://www.google.ca'
+    homepageURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    organization:
+      en: organization
+      fr: organisation
+    partners:
+      URL:
+        en: 'http://www.google.com/partner'
+        fr: 'http://www.google.ca'
+      email: partner@montreal.ca
+      name:
+        en: partner
+        fr: partenaire
+    relatedCode:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        name:
+          en: relié
+          fr: relié
+    status: Maintained
+    version: v1.345
+    vcs: git
