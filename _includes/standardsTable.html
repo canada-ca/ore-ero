@@ -3,18 +3,19 @@
 <!-- Filters -->
 <div class="col-md-3">
   <details open>
-    <summary><h4 class="h4">Filter Options</h4></summary>
+    <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-          <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
-          <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="4">
-            <option value="">&nbsp;</option>
-            <option value="federal">{{ site.Federal[page.lang] }}</option>
-            <option value="provincial">{{ site.Provincial[page.lang] }}</option>
-            <option value="municipal">{{ site.Municipal[page.lang] }}</option>
-            <option value="aboriginal">{{ site.Aboriginal[page.lang] }}</option>
-          </select>
+        <label for="dt_govLevel">{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</label>
+        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+          <option value="">&nbsp;</option>
+          {%- for govLevels in site.data.i18n.administrations -%}
+          {%- assign govLevel = govLevels[1] -%}
+          <option value="{{ govLevel.value }}">{{ govLevel[page.lang] }}</option>
+          {%- endfor -%}
+        </select>
       </div>
+
       <div class="form-group">
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
@@ -35,12 +36,13 @@
 
       <div class="row">
         <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.Filter[page.lang] }}</button>
+          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
         </div>
         <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">{{ site.Clear[page.lang] }}</button>
+          <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
         </div>
-    </div>
+      </div>
+
     </form>
   </details>
 </div>
@@ -50,6 +52,7 @@
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4], "visible": false}], "paging": true}'>
     <thead>
       <tr>
+        <!-- TODO:Translations, maybe use those from the form file -->
         <th>Standard</th>
         <th>Description</th>
         <th>Organization</th>
@@ -74,19 +77,19 @@
             {% for administration in standard.administrations %}
             {% assign aName = site.data.administrations.federal | where: "code", administration.adminCode %}
               {% if aName[0].name[page.lang] != nil %}
-                {{ site.Federal[page.lang] }}
+                {{ site.data.i18n.administrations.federal[page.lang] }}
               {% endif %}
             {% assign aName = site.data.administrations.provincial | where: "code", administration.adminCode %}
               {% if aName[0].name[page.lang] != nil %}
-                {{ site.Provincial[page.lang] }}
+                {{ site.data.i18n.administrations.provincial[page.lang] }}
               {% endif %}
             {% assign aName = site.data.administrations.municipal | where: "code", administration.adminCode %}
               {% if aName[0].name[page.lang] != nil %}
-                {{ site.Municipal[page.lang] }}
+                {{ site.data.i18n.administrations.municipal[page.lang] }}
               {% endif %}
             {% assign aName = site.data.administrations.aboriginal | where: "code", administration.adminCode %}
               {% if aName[0].name[page.lang] != nil %}
-                {{ site.Aboriginal[page.lang] }}
+                {{ site.data.i18n.administrations.aboriginal[page.lang] }}
               {% endif %}
             {% endfor %}
           </td>

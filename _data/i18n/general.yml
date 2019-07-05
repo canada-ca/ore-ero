@@ -1,0 +1,102 @@
+---
+head:
+  title: &title
+    en: Open Resource Exchange
+    fr: Échange de ressources ouvert
+  description:
+    en: Open source software used and released by Canadian public administrations
+    fr: Logiciels libres utilisés et diffusés par les administrations publiques Canadiennes
+  home:
+    en: Home
+    fr: Accueil
+  skipToMain:
+    en: Skip to main content
+    fr: Passer au contenu principal
+  skipToAbout:
+    en: Skip to "About this site"
+    fr: Passer à « À propos de ce site »
+  languageSelection:
+    en: Language selection
+    fr: Sélection de la langue
+  searchAndMenus:
+    en: Menus
+    fr: Menus
+  youarehere:
+    en: You are here
+    fr: Vous êtes ici
+
+  nav:
+    home: *title
+      link:
+        en: ./index.html
+        fr: ./index.html
+    code:
+      en: Open Source Code
+      fr: Code source ouvert
+      link:
+        en: ./open-source-code.html
+        fr: ./code-source-ouvert.html
+    oss:
+      en: Open Source Software
+      fr: Logiciels libres
+      link:
+        en: ./open-source-software.html
+        fr: ./logiciels-libres.html
+    standards:
+      en: Open Standards
+      fr: Normes ouvertes
+      link:
+        en: ./open-standards.html
+        fr: ./normes-ouvertes.html
+    doc:
+      en: Documentation
+      fr: Documentation
+      link:
+        en: ./docs.html
+        fr: ./docs.html
+    Canada:
+      en: Government of Canada
+      fr: Gouvernement du Canada
+      link:
+        en: https://www.canada.ca/en.html
+        fr: https://www.canada.ca/fr.html
+
+footer:
+  AboutGovernment:
+    en: About government
+    fr: Au sujet du gouvernement
+  AboutSite:
+    en: About this site
+    fr: À propos du site
+  Nav:
+    Canada:
+      en:
+        link: https://www.canada.ca/en.html
+        title: Canada.ca
+      fr:
+        link: https://www.canada.ca/fr.html
+        title: Canada.ca
+    Terms:
+      en:
+        link: https://www.canada.ca/en/transparency/terms.html
+        title: Terms and conditions
+      fr:
+        link: https://www.canada.ca/fr/transparence/avis.html
+        title: Avis
+    Privacy:
+      en:
+        link: https://www.canada.ca/en/transparency/privacy.html
+        title: Privacy
+      fr:
+        link: https://www.canada.ca/fr/transparence/confidentialite.html
+        title: Confidentialité
+  TopOfPage:
+    en: Top of Page
+    fr: Haut de la page
+  Logo:
+    en: Symbol of the Government of Canada
+    fr: Symbole du gouvernement du Canada
+
+language:
+  en: English
+  fr: Français

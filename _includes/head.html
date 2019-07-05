@@ -2,10 +2,10 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.i18n.general.head.title[page.lang] | escape }}{% endif %}</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <!-- Meta data -->
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.i18n.general.head.description[page.lang] }}{% endif %}">
   <!-- Meta data-->
   <!--[if gte IE 9 | !IE ]><!-->
   <link href="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/favicon.ico" rel="icon" type="image/x-icon">
