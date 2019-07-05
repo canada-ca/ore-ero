@@ -31,10 +31,10 @@ nu:
   en: Nunavut
   fr: Nunavut
   value: nu
-"on":  # on is a yaml/liquid/jekyll keyword and thus must be escaped
+'on':
   en: Ontario
   fr: Ontario
-  value: "on"
+  value: 'on'
 pe:
   en: Prince Edward Island
   fr: Île-du-Prince-Édouard
