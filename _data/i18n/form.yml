@@ -44,8 +44,11 @@ presets:
       en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
       fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
     label:
-      en: Administration code
-      fr: Code d'administration
+      en: Publiv administration
+      fr: Administration publique
+    add:
+      en: New administration
+      fr: Nouvelle administration
   Contact:
     title:
       en: Contact information for the project.
@@ -113,6 +116,9 @@ presets:
       en: Level of government
       fr: Niveau de gouvernement
     options:
+      aboriginal:
+        en: Aboriginal
+        fr: autochtone
       federal:
         en: Federal
         fr: Fédéral
@@ -346,8 +352,8 @@ standards:
 admin:
   Name:
     title:
-      en: Name of the Organization
-      fr: Nom de l'organisation
+      en: Administration Name
+      fr: Nom de l'administration
     label:
       en:
         en: Name in english
@@ -367,8 +373,8 @@ admin:
       en: Province Code
       fr: Code de la province
     label:
-      en: Province Code
-      fr: Code de la province
+      en: Province
+      fr: Province
     options:
       ab:
         en: Alberta
