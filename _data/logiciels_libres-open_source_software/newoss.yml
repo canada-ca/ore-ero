@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test test
+  fr: test test
+homepageURL:
+  en: 'http://test.com'
+  fr: 'http://test.com'
+licenses:
+  - URL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    spdxID: spdxID
+name:
+  en: newoss
+  fr: newoss
+tags:
+  en:
+    - tag1
+    - tag2
+  fr:
+    - tag1
+    - tag2
+administrations:
+  - adminCode: yt
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-13'
+          metadataLastUpdated: '2019-07-08'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Alpha
