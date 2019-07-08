@@ -117,8 +117,8 @@ presets:
       fr: Niveau de gouvernement
     options:
       aboriginal:
-        en : Aboriginal
-        fr : Aborigène
+        en: Aboriginal
+        fr: autochtone
       federal:
         en: Federal
         fr: Fédéral
