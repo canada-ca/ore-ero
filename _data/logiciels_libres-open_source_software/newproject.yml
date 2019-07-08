@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test
+homepageURL:
+  en: 'http://test.com'
+  fr: 'http://test.com'
+licenses:
+  - URL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    spdxID: mit
+name:
+  en: newproject
+  fr: newproject
+tags:
+  en:
+    - tag1
+    - tag2
+  fr:
+    - tag1
+    - tag2
+administrations:
+  - adminCode: new-admin
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-20'
+          metadataLastUpdated: '2019-07-08'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Beta
