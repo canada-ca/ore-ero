@@ -6,7 +6,7 @@ formGroups:
   - preset: schemaVersion
   - preset: selectOss
   - preset: description
-  - preset: homepageUrl
+  - preset: homepageURL
   - preset: licenses
   - preset: tags
   - preset: empty

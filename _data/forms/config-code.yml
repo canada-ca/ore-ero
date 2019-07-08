@@ -19,7 +19,7 @@ formGroups:
     title: downloadUrl
     type: url
     required: false
-  - preset: homepageUrl
+  - preset: homepageURL
   - preset: languages
   - widget: string-i18n
     title: organization
