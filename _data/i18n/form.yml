@@ -44,8 +44,8 @@ presets:
       en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
       fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
     label:
-      en: Administration
-      fr: Administration
+      en: Publiv administration
+      fr: Administration publique
     add:
       en: New administration
       fr: Nouvelle administration
