@@ -1,16 +1,14 @@
----
 schemaVersion: '1.0'
 description:
   en: Performs operating-system-level virtualization also known as containerization
-  fr: Effectue une virtualisation au niveau du système d'exploitation, également appelée conteneurisation
+  fr: 'Effectue une virtualisation au niveau du système d''exploitation, également appelée conteneurisation'
 homepageURL:
-  en: https://www.docker.com
-  fr: https://www.docker.com
+  en: 'https://www.docker.com'
+  fr: 'https://www.docker.com'
 licenses:
-  -
-    URL:
-      en: https://www.docker.com/legal/components-licenses
-      fr: https://www.docker.com/legal/components-licenses
+  - URL:
+      en: 'https://www.docker.com/legal/components-licenses'
+      fr: 'https://www.docker.com/legal/components-licenses'
     spdxID: Apache-2.0
 name:
   en: Docker
@@ -25,11 +23,9 @@ tags:
     - Développement
     - Infrastructure
 administrations:
-  -
-    adminCode: statcan
+  - adminCode: statcan
     uses:
-      -
-        contact:
+      - contact:
           email: michael.goit@canada.ca
         date:
           started: '2019-05-06'
@@ -40,11 +36,9 @@ administrations:
         description:
           en: Development and deployment process
           fr: Processus de développements et déploiements
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
@@ -55,3 +49,28 @@ administrations:
         description:
           en: Digital Collaboration Division development and deployment
           fr: Développement et déploiement de la Division de la collaboration numérique
+  - adminCode: new-adm
+    uses:
+      - contact:
+          email: test@gmail.com
+          URL:
+            en: 'http://test.com'
+            fr: 'http://test.com'
+          name: test
+        date:
+          started: '2019-06-19'
+          metadataLastUpdated: '2019-07-08'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        relatedCode:
+          - URL:
+              en: 'http://test.com'
+              fr: 'http://test.com'
+            name:
+              en: test
+              fr: test
+        status: Alpha
