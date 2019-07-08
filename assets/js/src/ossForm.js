@@ -4,13 +4,26 @@
   USERNAME REPO_NAME PRBOT_URL
   validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getAdminObject
 */
 
 const ossObj = $('.page-ossForm #ProjectNameSelect');
 const adminObj = $('.page-ossForm #adminCode');
 
+$('#newAmdminButton').click(function() {
+  $('#newAdmin').removeClass('hide');
+  $('#adminCode').removeAttr('required');
+  $('label[for="adminCode"]').removeClass('required');
+});
+
+$('#removeNewAdminButton').click(function() {
+  $('#newAdmin').addClass('hide');
+  $('#adminCode').attr('required', 'required');
+  $('label[for="adminCode"]').addClass('required');
+});
+
 $(document).ready(function() {
-  $('#enProjectName').focus();
+  ossObj.focus();
 
   ossObj.change(function() {
     selectOss();
@@ -27,7 +40,11 @@ $(document).ready(function() {
       toggleAlert(ALERT_OFF);
       toggleAlert(ALERT_IN_PROGRESS);
       window.scrollTo(0, document.body.scrollHeight);
-      submitFormOss();
+      if ($('#newAdminCode').val()) {
+        submitFormAdminOssForm();
+      } else {
+        submitFormOss();
+      }
     }
   });
 });
@@ -63,7 +80,10 @@ function getOssObject() {
     },
     administrations: [
       {
-        adminCode: $('#adminCode').val(),
+        adminCode:
+          $('#adminCode').val() == ''
+            ? $('#newAdminCode').val()
+            : $('#adminCode').val(),
         uses: [
           {
             contact: {
@@ -155,6 +175,81 @@ function getOssObject() {
   return ossObject;
 }
 
+function submitFormAdminOssForm() {
+  let ossObject = getOssObject();
+  let adminObject = getAdminObject();
+
+  let submitButton = document.getElementById('prbotSubmitossForm');
+  let resetButton = document.getElementById('formReset');
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let ProjectNameNew = $('#enProjectName')
+    .val()
+    .toLowerCase();
+
+  let ossFile = `_data/logiciels_libres-open_source_software/${ProjectNameNew}.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
+
+  fileWriter
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(resultAdmin => {
+      fileWriter
+        .merge(ossFile, ossObject, 'administrations', 'adminCode')
+        .catch(err => {
+          if (err.status == 404) {
+            const config = {
+              body: JSON.stringify({
+                user: USERNAME,
+                repo: REPO_NAME,
+                title:
+                  'Created oss for ' +
+                  $('#enProjectName').val() +
+                  ' and updated ' +
+                  $('#orgLevel').val() +
+                  ' for administrations file',
+                description:
+                  'Authored by: ' + $('#submitterEmail').val() + '\n',
+                commit: 'Committed by ' + $('#submitterEmail').val(),
+                author: {
+                  name: $('#submitterUsername').val(),
+                  email: $('#submitterEmail').val()
+                },
+                files: [
+                  {
+                    path: ossFile,
+                    content:
+                      '---\n' + jsyaml.dump(ossObject, { lineWidth: 160 })
+                  },
+                  {
+                    path: adminFile,
+                    content:
+                      '---\n' + jsyaml.dump(resultAdmin, { lineWidth: 160 })
+                  }
+                ]
+              }),
+              method: 'POST'
+            };
+            return fetch(PRBOT_URL, config);
+          } else {
+            throw err;
+          }
+        })
+        .then(response => {
+          if (response.status != 200) {
+            toggleAlert(ALERT_OFF);
+            toggleAlert(ALERT_FAIL);
+            submitButton.disabled = false;
+            resetButton.disabled = false;
+          } else {
+            toggleAlert(ALERT_OFF);
+            toggleAlert(ALERT_SUCCESS);
+            // Redirect to home page
+            setTimeout(function() {
+              window.location.href = './index.html';
+            }, 2000);
+          }
+        });
+    });
+}
 function submitFormOss() {
   let submitButton = document.getElementById('prbotSubmitossForm');
   let resetButton = document.getElementById('formReset');
