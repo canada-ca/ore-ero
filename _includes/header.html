@@ -65,7 +65,7 @@
       <ol class="breadcrumb">
         <li><a href="{{ site.data.i18n.general.nav.Canada.link[page.lang] }}">{{ site.data.i18n.general.head.home[page.lang] }}</a></li>
         {% if page.ref != "home" -%}
-          <li><a href="{{ site.data.i18n.general.nav.home.link }}">{{ site.data.i18n.general.nav.home[page.lang] }}</a></li>
+          <li><a href="{{ site.data.i18n.general.nav.home.link[page.lang] }}">{{ site.data.i18n.general.nav.home[page.lang] }}</a></li>
         {%- endif -%}
 
         {% if page.ref == "codeGroups" or page.ref == "codeSchema" or page.ref == "codeForm" -%}
