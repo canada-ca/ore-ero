@@ -1,4 +1,3 @@
----
 schemaVersion: '1.0'
 adminCode: tbs-sct
 releases:
@@ -21,15 +20,15 @@ releases:
       fr: Division de la mobilisation numérique
     licenses:
       - URL:
-          en: https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
-          fr: https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
+          en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
+          fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
         spdxID: GPL-2.0
     relatedCode:
-      - URL: https://github.com/Elgg/Elgg
+      - URL: 'https://github.com/Elgg/Elgg'
         name: Elgg
     repositoryURL:
-      en: https://github.com/gctools-outilsgc/gcconnex
-      fr: https://github.com/gctools-outilsgc/gcconnex
+      en: 'https://github.com/gctools-outilsgc/gcconnex'
+      fr: 'https://github.com/gctools-outilsgc/gcconnex'
     status: Production
     tags:
       en:
@@ -39,7 +38,6 @@ releases:
         - Collaboration
         - Social
     vcs: git
-
   - contact:
       email: cds-snc@tbs-sct.gc.ca
     date:
@@ -56,38 +54,37 @@ releases:
       fr: Services numériques Canadiens
     licenses:
       - URL:
-          en: https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
-          fr: https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
+          en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
+          fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/cds-snc/digital-canada-ca
-      fr: https://github.com/cds-snc/digital-canada-ca
+      en: 'https://github.com/cds-snc/digital-canada-ca'
+      fr: 'https://github.com/cds-snc/digital-canada-ca'
     tags:
       en:
         - Website
       fr:
         - Site Web
     vcs: git
-
   - contact:
       email: wet-boew@tbs-sct.gc.ca
     date:
       created: '2013-08-11'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
-      fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+      en: 'Building websites that are accessible, usable, interoperable, mobile friendly and multilingual'
+      fr: 'Construire des sites Web accessibles, faciles d''emploi, interopérables, optimisés pour les appareils mobiles et multilingues'
     name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l’expérience Web (BOEW)
     licenses:
       - URL:
-          en: https://github.com/wet-boew/wet-boew/blob/master/License-en.txt
-          fr: https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt
+          en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
+          fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/wet-boew/wet-boew
-      fr: https://github.com/wet-boew/wet-boew
+      en: 'https://github.com/wet-boew/wet-boew'
+      fr: 'https://github.com/wet-boew/wet-boew'
     tags:
       en:
         - Frontend
@@ -96,7 +93,6 @@ releases:
         - Interface
         - Site Web
     vcs: git
-
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -116,19 +112,19 @@ releases:
       fr: Gouvernement Ouvert
     licenses:
       - URL:
-          en: https://github.com/open-data/ckanext-canada/blob/master/COPYING
-          fr: https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr
+          en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
+          fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
         spdxID: MIT
     relatedCode:
       - URL:
-          en: https://github.com/ckan/ckan
-          fr: https://github.com/ckan/ckan
+          en: 'https://github.com/ckan/ckan'
+          fr: 'https://github.com/ckan/ckan'
         name:
           en: CKAN
           fr: CKAN
     repositoryURL:
-      en: https://github.com/open-data/ckanext-canada
-      fr: https://github.com/open-data/ckanext-canada
+      en: 'https://github.com/open-data/ckanext-canada'
+      fr: 'https://github.com/open-data/ckanext-canada'
     status: Production
     tags:
       en:
@@ -136,7 +132,6 @@ releases:
       fr:
         - Extension CKAN
     vcs: git
-
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -156,19 +151,19 @@ releases:
       fr: Gouvernement Ouvert
     licenses:
       - URL:
-          en: https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING
-          fr: https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr
+          en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'
+          fr: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr'
         spdxID: MIT
     relatedCode:
       - URL:
-          en: https://github.com/ckan/ckan
-          fr: https://github.com/ckan/ckan
+          en: 'https://github.com/ckan/ckan'
+          fr: 'https://github.com/ckan/ckan'
         name:
           en: CKAN
           fr: CKAN
     repositoryURL:
-      en: https://github.com/open-data/ckanext-cloudstorage
-      fr: https://github.com/open-data/ckanext-cloudstorage
+      en: 'https://github.com/open-data/ckanext-cloudstorage'
+      fr: 'https://github.com/open-data/ckanext-cloudstorage'
     status: Production
     tags:
       en:
@@ -176,7 +171,6 @@ releases:
       fr:
         - Extension CKAN
     vcs: git
-
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -184,7 +178,7 @@ releases:
       created: '2013-09-08'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Easy, shareable custom CKAN schemas
+      en: 'Easy, shareable custom CKAN schemas'
     languages:
       - Python
     name:
@@ -195,19 +189,19 @@ releases:
       fr: Gouvernement Ouvert
     licenses:
       - URL:
-          en: https://github.com/ckan/ckanext-scheming/blob/master/COPYING
-          fr: https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr
+          en: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING'
+          fr: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr'
         spdxID: MIT
     relatedCode:
       - URL:
-          en: https://github.com/ckan/ckan
-          fr: https://github.com/ckan/ckan
+          en: 'https://github.com/ckan/ckan'
+          fr: 'https://github.com/ckan/ckan'
         name:
           en: CKAN
           fr: CKAN
     repositoryURL:
-      en: https://github.com/open-data/ckanext-scheming
-      fr: https://github.com/open-data/ckanext-scheming
+      en: 'https://github.com/open-data/ckanext-scheming'
+      fr: 'https://github.com/open-data/ckanext-scheming'
     status: Production
     tags:
       en:
@@ -215,7 +209,6 @@ releases:
       fr:
         - Extension CKAN
     vcs: git
-
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -234,19 +227,19 @@ releases:
       fr: Gouvernement Ouvert
     licenses:
       - URL:
-          en: https://github.com/ckan/ckanapi/blob/master/COPYING
-          fr: https://github.com/ckan/ckanapi/blob/master/COPYING.fr
+          en: 'https://github.com/ckan/ckanapi/blob/master/COPYING'
+          fr: 'https://github.com/ckan/ckanapi/blob/master/COPYING.fr'
         spdxID: MIT
     relatedCode:
       - URL:
-          en: https://github.com/ckan/ckan
-          fr: https://github.com/ckan/ckan
+          en: 'https://github.com/ckan/ckan'
+          fr: 'https://github.com/ckan/ckan'
         name:
           en: CKAN
           fr: CKAN
     repositoryURL:
-      en: https://github.com/ckan/ckanapi
-      fr: https://github.com/ckan/ckanapi
+      en: 'https://github.com/ckan/ckanapi'
+      fr: 'https://github.com/ckan/ckanapi'
     status: Production
     tags:
       en:
@@ -254,7 +247,6 @@ releases:
       fr:
         - Outil CKAN
     vcs: git
-
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -273,19 +265,19 @@ releases:
       fr: Gouvernement Ouvert
     licenses:
       - URL:
-          en: https://github.com/ckan/ckanext-fluent/blob/master/COPYING
-          fr: https://github.com/ckan/ckanext-fluent/blob/master/COPYING.fr
+          en: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING'
+          fr: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING.fr'
         spdxID: MIT
     relatedCode:
       - URL:
-          en: https://github.com/ckan/ckan
-          fr: https://github.com/ckan/ckan
+          en: 'https://github.com/ckan/ckan'
+          fr: 'https://github.com/ckan/ckan'
         name:
           en: CKAN
           fr: CKAN
     repositoryURL:
-      en: https://github.com/ckan/ckanext-fluent
-      fr: https://github.com/ckan/ckanext-fluent
+      en: 'https://github.com/ckan/ckanext-fluent'
+      fr: 'https://github.com/ckan/ckanext-fluent'
     status: Production
     tags:
       en:
@@ -293,12 +285,12 @@ releases:
       fr:
         - Extension CKAN
     vcs: git
-
   - contact:
-      email: sebastien.lemay@canada.ca
+      email: sebastien.lemay@hrsdc-rhdcc.gc.ca
     date:
       created: '2017-12-31'
-      metadataLastUpdated: '2019-03-06'
+      metadataLastUpdated: '2019-07-09'
+      lastModified: '2019-03-06'
     description:
       en: This Website and all the data.
       fr: Ce site Web et toutes les données.
@@ -307,18 +299,12 @@ releases:
       fr: Échange de Ressource Ouvert
     licenses:
       - URL:
-          en: https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt
-          fr: https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt
+          en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
+          fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
         spdxID: MIT
-    partners:
-      -
-        email: renatabianca.tomazeli@ville.montreal.qc.ca
-        name:
-          en: City of Montreal
-          fr: Ville de Montréal
     repositoryURL:
-      en: https://github.com/canada-ca/ore-ero
-      fr: https://github.com/canada-ca/ore-ero
+      en: 'https://github.com/canada-ca/ore-ero'
+      fr: 'https://github.com/canada-ca/ore-ero'
     tags:
       en:
         - Website
