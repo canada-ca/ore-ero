@@ -41,7 +41,7 @@ $(document).ready(function() {
       toggleAlert(ALERT_IN_PROGRESS);
       window.scrollTo(0, document.body.scrollHeight);
       if ($('#newAdminCode').val()) {
-        submitSoftwareFormNweAdmin();
+        submitSoftwareFormNewAdmin();
       } else {
         submitFormOss();
       }
@@ -175,7 +175,7 @@ function getOssObject() {
   return ossObject;
 }
 
-function submitSoftwareFormNweAdmin() {
+function submitSoftwareFormNewAdmin() {
   let submitButton = document.getElementById('prbotSubmitossForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
