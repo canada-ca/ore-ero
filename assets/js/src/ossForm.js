@@ -4,13 +4,26 @@
   USERNAME REPO_NAME PRBOT_URL
   validateRequired toggleAlert getTags resetTags addTags
   ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getAdminObject
 */
 
 const ossObj = $('.page-ossForm #ProjectNameSelect');
 const adminObj = $('.page-ossForm #adminCode');
 
+$('#newAmdminButton').click(function() {
+  $('#newAdmin').removeClass('hide');
+  $('#adminCode').removeAttr('required');
+  $('label[for="adminCode"]').removeClass('required');
+});
+
+$('#removeNewAdminButton').click(function() {
+  $('#newAdmin').addClass('hide');
+  $('#adminCode').attr('required', 'required');
+  $('label[for="adminCode"]').addClass('required');
+});
+
 $(document).ready(function() {
-  $('#enProjectName').focus();
+  ossObj.focus();
 
   ossObj.change(function() {
     selectOss();
@@ -27,7 +40,11 @@ $(document).ready(function() {
       toggleAlert(ALERT_OFF);
       toggleAlert(ALERT_IN_PROGRESS);
       window.scrollTo(0, document.body.scrollHeight);
-      submitFormOss();
+      if ($('#newAdminCode').val()) {
+        submitSoftwareFormNewAdmin();
+      } else {
+        submitFormOss();
+      }
     }
   });
 });
@@ -63,7 +80,10 @@ function getOssObject() {
     },
     administrations: [
       {
-        adminCode: $('#adminCode').val(),
+        adminCode:
+          $('#adminCode').val() == ''
+            ? $('#newAdminCode').val()
+            : $('#adminCode').val(),
         uses: [
           {
             contact: {
@@ -155,20 +175,166 @@ function getOssObject() {
   return ossObject;
 }
 
+function submitSoftwareFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitossForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let softwareObject = getOssObject();
+  let adminObject = getAdminObject();
+  let softwareName = $('#enProjectName')
+    .val()
+    .toLowerCase();
+  let adminName = $('#newAdminCode').val();
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let softwareFile = `_data/logiciels_libres-open_source_software/${softwareName}.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
+
+  fileWriter
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(adminResult => {
+      fileWriter
+        .merge(softwareFile, softwareObject, 'administrations', 'adminCode')
+        .then(softwareResult => {
+          return fetch(
+            PRBOT_URL,
+            getConfigUpdateSoftwareNewAdmin(
+              softwareName,
+              adminName,
+              softwareFile,
+              adminFile,
+              softwareResult,
+              adminResult
+            )
+          );
+        })
+        .catch(err => {
+          if (err.status == 404) {
+            return fetch(
+              PRBOT_URL,
+              getConfigNewSoftwareNewAdmin(
+                softwareName,
+                adminName,
+                softwareFile,
+                adminFile,
+                softwareObject,
+                adminResult
+              )
+            );
+          } else throw err;
+        })
+        .then(response => {
+          if (response.status != 200) {
+            toggleAlert(ALERT_OFF);
+            toggleAlert(ALERT_FAIL);
+            submitButton.disabled = false;
+            resetButton.disabled = false;
+          } else {
+            toggleAlert(ALERT_OFF);
+            toggleAlert(ALERT_SUCCESS);
+            // Redirect to home page
+            setTimeout(function() {
+              window.location.href = './index.html';
+            }, 2000);
+          }
+        });
+    });
+}
+
+function getConfigUpdateSoftwareNewAdmin(
+  softwareName,
+  adminName,
+  softwareFile,
+  adminFile,
+  softwareResult,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Updated software file for ' +
+        softwareName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+      commit: 'Committed by ' + $('#submitterEmail').val(),
+      author: {
+        name: $('#submitterUsername').val(),
+        email: $('#submitterEmail').val()
+      },
+      files: [
+        {
+          path: softwareFile,
+          content: '---\n' + jsyaml.dump(softwareResult)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function getConfigNewSoftwareNewAdmin(
+  softwareName,
+  adminName,
+  softwareFile,
+  adminFile,
+  softwareObject,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Creaded software file for ' +
+        softwareName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
+      commit: 'Committed by ' + $('#submitterEmail').val(),
+      author: {
+        name: $('#submitterUsername').val(),
+        email: $('#submitterEmail').val()
+      },
+      files: [
+        {
+          path: softwareFile,
+          content: '---\n' + jsyaml.dump(softwareObject)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
 function submitFormOss() {
   let submitButton = document.getElementById('prbotSubmitossForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let ossObject = getOssObject();
+  let softwareObject = getOssObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enProjectName')
     .val()
     .toLowerCase();
   let file = `_data/logiciels_libres-open_source_software/${ProjectName}.yml`;
   fileWriter
-    .merge(file, ossObject, 'administrations', 'adminCode')
+    .merge(file, softwareObject, 'administrations', 'adminCode')
     .then(result => {
       const config = getConfigUpdate(result, file);
       return fetch(PRBOT_URL, config);
@@ -176,7 +342,7 @@ function submitFormOss() {
     .catch(err => {
       if (err.status == 404) {
         // We need to create the file for this organization, as it doesn't yet exist.
-        const config = getConfigNew(ossObject, file);
+        const config = getConfigNew(softwareObject, file);
         return fetch(PRBOT_URL, config);
       } else {
         throw err;
@@ -205,7 +371,7 @@ function getConfigUpdate(result, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated software for ${ProjectName} `,
+      title: `Updated the ${ProjectName} software file`,
       description:
         'Authored by: ' +
         $('#submitterEmail').val() +
@@ -231,7 +397,7 @@ function getConfigUpdate(result, file) {
   };
 }
 
-function getConfigNew(ossObject, file) {
+function getConfigNew(softwareObject, file) {
   let ProjectName = $('#enProjectName').val();
   return {
     body: JSON.stringify({
@@ -257,7 +423,7 @@ function getConfigNew(ossObject, file) {
           path: file,
           content:
             '---\n' +
-            jsyaml.dump(ossObject, {
+            jsyaml.dump(softwareObject, {
               lineWidth: 160
             })
         }
