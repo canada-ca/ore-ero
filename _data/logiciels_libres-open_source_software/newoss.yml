@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test
+homepageURL:
+  en: 'http://test.com'
+  fr: 'http://test.com'
+licenses:
+  - URL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    spdxID: SPDXID
+name:
+  en: newOss
+  fr: newOss
+tags:
+  en:
+    - TAG1
+  fr:
+    - TAG1
+administrations:
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: test@gmail.com
+        date:
+          started: '2019-06-13'
+          metadataLastUpdated: '2019-07-09'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        status: Alpha
