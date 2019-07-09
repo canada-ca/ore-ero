@@ -416,7 +416,7 @@ oss:
       schema:
         en: Name of the project activity
         fr: Nom de l'activité du projet.
-  description:
+  usedescription:
     title:
       en: The English and French description of the project activity.
       fr: La description du domaine de l'activité du projet en français et en anglais.

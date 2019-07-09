@@ -78,8 +78,8 @@ function getOssObject() {
               fr: $('#usefrdescription').val()
             },
             name: {
-              en: $('#enUseName').val(),
-              fr: $('#frUseName').val()
+              en: $('#enusename').val(),
+              fr: $('#frusename').val()
             }
           }
         ]
@@ -483,8 +483,8 @@ function addValueToFieldsAdmin(obj) {
   $('#datemetadataLastUpdated').val(
     obj['uses'][0]['date']['metadataLastUpdated']
   );
-  $('#enUseName').val(obj['uses'][0]['name']['en']);
-  $('#frUseName').val(obj['uses'][0]['name']['fr']);
+  $('#enusename').val(obj['uses'][0]['name']['en']);
+  $('#frusename').val(obj['uses'][0]['name']['fr']);
   $('#useendescription').val(obj['uses'][0]['description']['en']);
   $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
 
@@ -505,8 +505,8 @@ function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
-  $('#enUseName').val('');
-  $('#frUseName').val('');
+  $('#enusename').val('');
+  $('#frusename').val('');
   $('#useendescription').val('');
   $('#usefrdescription').val('');
   $('#enrelatedCodeURL').val('');
