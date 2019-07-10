@@ -50,7 +50,7 @@ function getOssObject() {
           en: $('#enlicensesURL').val(),
           fr: $('#frlicensesURL').val()
         },
-        spdxID: $('licensesspdxID').val()
+        spdxID: $('#licensesspdxID').val()
       }
     ],
     name: {
@@ -423,7 +423,7 @@ function addValueToFieldsOss(obj) {
   $('#frhomepageURL').val(obj['homepageURL']['fr']);
   $('#enlicensesURL').val(obj['licenses'][0]['URL']['en']);
   $('#frlicensesURL').val(obj['licenses'][0]['URL']['fr']);
-  $('licensesspdxID').val(obj['licenses'][0]['spdxID']);
+  $('#licensesspdxID').val(obj['licenses'][0]['spdxID']);
   addTags(obj);
 }
 
@@ -437,7 +437,7 @@ function resetFieldsOss() {
   $('#frhomepageURL').val('');
   $('#enlicensesURL').val('');
   $('#frlicensesURL').val('');
-  $('licensesspdxID').val('');
+  $('#licensesspdxID').val('');
   $('#enname').focus();
   $('#frname').focus();
   resetTags();

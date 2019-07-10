@@ -7,7 +7,7 @@
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
         <label for="dt_govLevel">{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</label>
-        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="4">
           <option value="">&nbsp;</option>
           {%- for govLevels in site.data.i18n.administrations -%}
           {%- assign govLevel = govLevels[1] -%}
