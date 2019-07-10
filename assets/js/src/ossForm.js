@@ -238,11 +238,11 @@ function getConfigUpdateSoftwareNewAdmin(
         ' and created ' +
         adminName +
         ' in administration file',
-      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -277,11 +277,11 @@ function getConfigNewSoftwareNewAdmin(
         ' and created ' +
         adminName +
         ' in administration file',
-      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -405,8 +405,6 @@ function selectOss() {
       } else if (value == '') {
         resetFieldsOss();
       } else {
-        console.log(value);
-        console.log(result);
         alert('Error retrieving the data');
       }
     }

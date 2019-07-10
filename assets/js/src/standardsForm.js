@@ -11,8 +11,6 @@ const standardObj = $('.page-standardsForm #standardCodeselect');
 const adminObj = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
-  $('#standardCode').focus();
-
   standardObj.change(function() {
     selectStandard();
     if (adminObj.val() != '') selectAdmin();
@@ -360,7 +358,6 @@ function resetFieldsStandard() {
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#standardOrg').val('');
-  $('#standardCode').focus();
   resetTags();
 }
 
