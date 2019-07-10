@@ -74,7 +74,7 @@ function getAdminObject() {
 }
 
 function getAdminCode() {
-  $('#adminCode').val() == ''
+  return $('#adminCode').val() == ''
     ? $('#newAdminCode').val()
     : $('#adminCode').val();
 }
