@@ -2,8 +2,7 @@
 schemaVersion: str()
 adminCode: str()
 releases:
-  -
-    contact:
+  - contact:
       URL:
         en: str(required=False)
         fr: str(required=False)
@@ -40,8 +39,7 @@ releases:
         en: str(required=False)
         fr: str(required=False)
     licenses:
-      -
-        URL:
+      - URL:
           en: str()
           fr: str()
         spdxID: str()
@@ -49,8 +47,7 @@ releases:
       en: str()
       fr: str()
     relatedCode:
-      -
-        URL:
+      - URL:
           en: str(required=False)
           fr: str(required=False)
         name:

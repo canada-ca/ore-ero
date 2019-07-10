@@ -4,8 +4,8 @@ adminCode: cse-cst
 releases:
   - contact:
       URL:
-        en: https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
-        fr: https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
+        en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
+        fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
       email: media@cse-cst.gc.ca
     date:
       created: '2016-02-28'
@@ -20,12 +20,12 @@ releases:
       fr: Spartacus
     licenses:
       - URL:
-          en: https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
-          fr: https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
+          en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
+          fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
         spdxID: GPL-2.0
     repositoryURL:
-      en: https://github.com/CommunicationsSecurityEstablishment/spartacus
-      fr: https://github.com/CommunicationsSecurityEstablishment/spartacus
+      en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
+      fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
     tags:
       en:
         - Learning
@@ -36,7 +36,6 @@ releases:
         - Programmation assembleur
         - Développement système d'exploitation
     vcs: git
-
   - contact:
       email: assemblyline@cse-cst.gc.ca
     date:
@@ -52,12 +51,12 @@ releases:
       fr: Assemblyline
     licenses:
       - URL:
-          en: https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default
-          fr: https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default
+          en: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
+          fr: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
         spdxID: MIT
     repositoryURL:
-      en: https://bitbucket.org/cse-assemblyline/assemblyline
-      fr: https://bitbucket.org/cse-assemblyline/assemblyline
+      en: 'https://bitbucket.org/cse-assemblyline/assemblyline'
+      fr: 'https://bitbucket.org/cse-assemblyline/assemblyline'
     tags:
       en:
         - Malware detection
