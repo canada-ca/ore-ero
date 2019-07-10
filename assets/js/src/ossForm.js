@@ -314,11 +314,11 @@ function submitFormOss() {
   fileWriter
     .merge(file, softwareObject, 'administrations', 'adminCode')
     .then(result => {
-      return fetch(PRBOT_URL, getConfigUpdate(result, file));
+      return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(softwareObject, file));
+        return fetch(PRBOT_URL, getConfigNew(softwareObject, file, ProjectName));
       } else throw err;
     })
     .then(response => {
@@ -326,8 +326,7 @@ function submitFormOss() {
     });
 }
 
-function getConfigUpdate(result, file) {
-  let ProjectName = $('#enname').val();
+function getConfigUpdate(result, file, ProjectName) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -358,8 +357,7 @@ function getConfigUpdate(result, file) {
   };
 }
 
-function getConfigNew(softwareObject, file) {
-  let ProjectName = $('#enProjectName').val();
+function getConfigNew(softwareObject, file, ProjectName) {
   return {
     body: JSON.stringify({
       user: USERNAME,
