@@ -1,7 +1,4 @@
 ---
-date:
-  created: YYYY-MM-DD
-  metadataLastUpdated: YYYY-MM-DD
 description:
   en: "Example"
   fr: "Exemple"
@@ -11,8 +8,9 @@ name:
 specURL:
   en: "http://www.example.com/en"
   fr: "http://www.exemple.com/fr"
-standardCode: "CODE"
-standardsOrg: "CODE"
+standardsOrg:
+  en: Example
+  fr: Exemple
 tags:
   en:
   - "Example"
@@ -23,6 +21,9 @@ administrations:
     adminCode: abc-def
     contact:
       email: "adc@xyz.com"
+    date:
+      started: YYYY-MM-DD
+      metadataLastUpdated: YYYY-MM-DD
     references:
       -
         URL:
