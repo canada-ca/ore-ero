@@ -318,7 +318,10 @@ function submitFormOss() {
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(softwareObject, file, ProjectName));
+        return fetch(
+          PRBOT_URL,
+          getConfigNew(softwareObject, file, ProjectName)
+        );
       } else throw err;
     })
     .then(response => {
