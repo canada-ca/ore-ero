@@ -9,11 +9,14 @@ formGroups:
     title: name
     rule: alphanum-space
   - preset: description
+  - preset: dates
+    created: true
+    metadata: true
   - widget: string-i18n
     title: specURL
     type: url
-  - widget: string-i18n
-    title: standardsOrg
+  - widget: string
+    title: standardOrg
   - preset: tags
   - preset: hr
   - preset: empty
@@ -29,12 +32,9 @@ formGroups:
       - widget: string-i18n
         title: name
         rule: names
+  - widget: string
+    title: status
   - preset: contact
     phone: false
     required: true
-  - preset: dates
-    created: true
-    metadata: true
-  - widget: string
-    title: status
   - preset: empty
