@@ -468,8 +468,8 @@ standards:
       en: Code for the Standard
       fr: Code du standard
     label:
-      en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
-      fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
+      en: Enter a code to create a new entry.
+      fr: Entrez un code pour créer une nouvelle entrée.
     labels:
       select:
         en: If you wish to update an existing standard, please select it below

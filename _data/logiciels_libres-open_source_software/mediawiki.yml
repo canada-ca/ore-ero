@@ -4,13 +4,12 @@ description:
   en: Wiki package written in PHP, originally for use on Wikipedia
   fr: Ensemble Wiki développé à l'origine pour Wikipédia
 homepageURL:
-  en: https://www.mediawiki.org/wiki/MediaWiki
-  fr: https://www.mediawiki.org/wiki/MediaWiki/fr
+  en: 'https://www.mediawiki.org/wiki/MediaWiki'
+  fr: 'https://www.mediawiki.org/wiki/MediaWiki/fr'
 licenses:
-  -
-    URL:
-      en: https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix
-      fr: https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix
+  - URL:
+      en: 'https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix'
+      fr: 'https://www.mediawiki.org/wiki/Topic:Tg9b5hes4ue3vdix'
     spdxID: GPL-2.0
 name:
   en: MediaWiki
@@ -23,14 +22,12 @@ tags:
     - Wiki
     - Site web
 administrations:
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           URL:
-            en: https://github.com/gctools-outilsgc/gcpedia/issues
-            fr: https://github.com/gctools-outilsgc/gcpedia/issues
+            en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+            fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
@@ -41,11 +38,10 @@ administrations:
         description:
           en: Internal Government of Canada Wiki
           fr: Wiki interne du gouvernement du Canada
-      -
-        contact:
+      - contact:
           URL:
-            en: https://github.com/gctools-outilsgc/gcpedia/issues
-            fr: https://github.com/gctools-outilsgc/gcpedia/issues
+            en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
+            fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
