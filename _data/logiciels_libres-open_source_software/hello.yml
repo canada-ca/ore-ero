@@ -1,0 +1,49 @@
+---
+schemaVersion: '1.0'
+description:
+  en: test
+  fr: test
+homepageURL:
+  en: 'http://test.com'
+  fr: 'http://test.com'
+licenses:
+  - URL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    spdxID: 'SPDX '
+name:
+  en: hello
+  fr: hello
+tags:
+  en:
+    - tag1
+    - tag2
+  fr:
+    - tag1
+    - tag2
+administrations:
+  - adminCode: asc-csa
+    uses:
+      - contact:
+          email: test@gmail.com
+          URL:
+            en: 'http://test.com'
+            fr: 'http://test.com'
+          name: test
+        date:
+          started: '2019-06-12'
+          metadataLastUpdated: '2019-07-10'
+        description:
+          en: test
+          fr: test
+        name:
+          en: test
+          fr: test
+        relatedCode:
+          - URL:
+              en: 'http://test.com'
+              fr: 'http://test.com'
+            name:
+              en: test
+              fr: test
+        status: Alpha
