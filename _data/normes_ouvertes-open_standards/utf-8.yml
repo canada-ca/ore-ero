@@ -3,22 +3,22 @@ schemaVersion: '1.0'
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: ~
+      email: null
     references:
       - URL:
-          en: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875
-          fr: https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
         name:
           en: Standard on Web Interoperability
-          fr: Norme sur l’interopérabilité du Web
+          fr: Norme sur l'interopérabilité du Web
     status: mandatory-gc
   - adminCode: lac-bac
     contact:
-      email: ~
+      email: null
     references:
       - URL:
-          en: http://www.bac-lac.gc.ca/eng/services/government-information-resources/guidelines/Pages/guidelines-file-formats-transferring-information-resources-enduring-value.aspx
-          fr: http://www.bac-lac.gc.ca/fra/services/gestion-ressources-documentaires-gouvernement/lignes-directrices/Pages/lignes-directrices-formats-fichier-transferers-ressources-documentaires.aspx
+          en: 'http://www.lac-bac.gc.ca/eng/services/government-information-resources/guidelines/Pages/guidelines-file-formats-transferring-information-resources-enduring-value.aspx'
+          fr: 'http://www.lac-bac.gc.ca/fra/services/gestion-ressources-documentaires-gouvernement/lignes-directrices/Pages/lignes-directrices-formats-fichier-transferers-ressources-documentaires.aspx'
         name:
           en: Guidelines on File Formats for Transferring Information Resources of Enduring Value
           fr: Lignes directrices sur les formats de fichier à utiliser pour transférer des ressources documentaires
@@ -33,8 +33,8 @@ name:
   en: Unicode Transformation Format 8
   fr: Unicode Transformation Format 8
 specURL:
-  en: https://tools.ietf.org/html/rfc3629
-  fr: https://tools.ietf.org/html/rfc3629
+  en: 'https://tools.ietf.org/html/rfc3629'
+  fr: 'https://tools.ietf.org/html/rfc3629'
 standardCode: UTF-8
 standardsOrg: IETF
 tags:

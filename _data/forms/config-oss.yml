@@ -6,43 +6,29 @@ formGroups:
   - preset: schemaVersion
   - preset: selectOss
   - preset: description
-  - widget: string-i18n
-    title: HomepageUrl
-    type: url
+  - preset: homepageURL
   - preset: licenses
   - preset: tags
-  - preset: hr
+  - preset: empty
+    start: true
+    title: administrations
   - preset: adminCode
-  - preset: newAdmin
-    fields:
-      - preset: orgLevel
-      - widget: string
-        title: newAdminCode
-      - widget: select
-        title: ProvinceCode
-        options: [ab, bc, mb, nb, nl, nt, ns, nu, "on", pe, qc, sk, yt] # on is a yaml/liquid/jekyll keyword and thus must be escaped
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
+  - preset: empty
+    start: true
+    title: uses
   - preset: contact
     phone: false
   - preset: dates
     started: true
-    metadata: true
   - widget: string-i18n
-    title: UseName
+    title: description
+    prepend: use
     rule: alphanum-space
   - widget: string-i18n
-    title: UseDescription
+    title: name
+    prepend: use
     rule: alphanum-space
-  - widget: group
-    title: RelatedCode
-    required: false
-    fields:
-      - widget: string-i18n
-        title: Url
-        type: url
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
+  - preset: relatedCode
   - preset: status
+  - preset: empty
+  - preset: empty

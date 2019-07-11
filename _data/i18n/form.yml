@@ -1,21 +1,21 @@
 ---
 # Submit and Reset
-Submit:
+submit:
   en: Submit
   fr: Soumettre
-Reset:
+reset:
   en: Reset
   fr: Réinitialiser
 
 # Alerts
 alert:
-  Progress:
+  progress:
     en: The form is being submitted...
     fr: Le formulaire est en cours de soumission...
-  Fail:
+  fail:
     en: Something went wrong! Unable to submit form.
     fr: Quelque chose s'est mal passé! Impossible de soumettre le formulaire.
-  Success:
+  success:
     en: Form was submitted!
     fr: Le formulaire a été soumis !
 
@@ -23,40 +23,67 @@ alert:
 required:
   en: Mandatory
   fr: Obligatoire
-email:
+email: &email
   en: Email
   fr: Courriel
-name:
+name: &name
   en: Name
   fr: Nom
-url:
+phone: &phone
+  en: Phone number
+  fr: Numéro de téléphone
+URL: &url
   en:
     en: English URL
     fr: URL anglais
   fr:
     en: French URL
     fr: URL français
+  schema: &url_generic
+    en: URL
+    fr: URL
+administrations: &administrations
+  title:
+    en: Software administrations descriptions
+    fr: Description des administrations du logiciel
 
 # Presets
 presets:
-  AdminCode:
+  adminCode:
     title:
       en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
       fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
     label:
-      en: Publiv administration
+      en: Public administration
       fr: Administration publique
-    add:
-      en: New administration
-      fr: Nouvelle administration
-  Contact:
+    button:
+      en: Add new administration
+      fr: Ajouter une nouvelle administration
+  contact:
     title:
       en: Contact information for the project.
       fr: Coordonnées des contacts pour le projet.
-    phone:
-      en: Contact number (###-###-####)
-      fr: Numéro du contact (###-###-####)
-  Date:
+    labels:
+      URL: *url
+      email: *email
+      name: *name
+      phone:
+        en: Contact number (###-###-####)
+        fr: Numéro du contact (###-###-####)
+    titles:
+      URL:
+        en: English and French URLs that can be used to contact the project.
+        fr: URLs en français et en anglais qui peuvent être utilisés pour contacter le projet.
+      email:
+        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+      name:
+        en: The name of a contact for the project.
+        fr: Le nom de la personne-ressource pour le projet.
+      phone:
+        en: Phone number to contact the project.
+        fr: Numéro de téléphone pour contacter le projet.
+  date:
     title:
       en: Dates describing the project.
       fr: Dates décrivant le projet.
@@ -67,13 +94,26 @@ presets:
       started:
         en: Started
         fr: Débuté
-      modified:
+      lastModified:
         en: Last modified
         fr: Dernière modification
-      updated:
+      metadataLastUpdated:
         en: Last updated
         fr: Dernière mise à jour
-  Description:
+    titles:
+      created:
+        en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
+      started:
+        en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
+      lastModified:
+        en: The date the project was modified, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été modifiée, au format AAAA-MM-JJ ou ISO 8601.
+      metadataLastUpdated:
+        en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
+  description:
     title:
       en: A one or two sentence description of the project.
       fr: Une description en une ou deux phrases du projet.
@@ -84,62 +124,114 @@ presets:
       fr:
         en: French description
         fr: Description en francais
-  Languages:
+      schema:
+        en: Description
+        fr: Description
+  homepageURL:
+    title:
+      en: The English and French URLs of the project homepage.
+      fr: Les URLs en français et en anglais de la page d'accueil.
+    label:
+      en:
+        en: English homepage URL
+        fr: URL de la page d'accueil en anglais
+      fr:
+        en: French homepage URL
+        fr: URL de la page d'accueil en francais
+      schema:
+        en: Homepage URL
+        fr: URL de la page d'accueil
+  languages:
     title:
       en: A list of the programming languages used in the project.
       fr: Une liste des langages de programmation utilisés dans la projet.
     label:
       en: Programming languages
       fr: Langages de programmation
-    add:
+    button:
       en: Add more languages
       fr: Ajouter plus de langues
-  Licenses:
+  licenses:
     title:
       en: Information about each licence for the project.
       fr: Renseignements sur chaque licence pour le projet.
-    label:
-      en:
-        en: English licence URL
-        fr: URL de la licence en anglais
-      fr:
-        en: French licence URL
-        fr: URL de la licence en francais
+    labels:
+      URL:
+        en:
+          en: English licence URL
+          fr: URL de la licence en anglais
+        fr:
+          en: French licence URL
+          fr: URL de la licence en francais
+        schema: *url_generic
       spdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
-  OrgLevel:
+    titles:
+      URL:
+        en: The English and French URLs of licence.
+        fr: L'URL de la licence en français et en anglais.
+      spdxID:
+        en: SPDX License identifier
+        fr: Identifiant de licence SPDX
+  orgLevel:
     title:
       en: Level of government
       fr: Niveau de gouvernement
     label:
       en: Level of government
       fr: Niveau de gouvernement
-    options:
-      aboriginal:
-        en: Aboriginal
-        fr: Aborigène
-      federal:
-        en: Federal
-        fr: Fédéral
-      provincial:
-        en: Provincial
-        fr: Provincial
-      municipal:
-        en: Municipal
-        fr: Municipal
-  SchemaVersion:
+  provinceSelect: &provinceSelect
+    title:
+      en: Province
+      fr: province
+    label:
+      en: Province
+      fr: Province
+  province: *provinceSelect  # Simplifies schema build
+  relatedCode:
+    title:
+      en: Information about each library, framework, API or other related software used in this project.
+      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+    labels:
+      URL:
+        en:
+          en: English URL of related software
+          fr: URL anglais d'un logiciel connexe
+        fr:
+          en: French URL of related software
+          fr: URL francais d'un logiciel connexe
+        schema: *url_generic
+      name:
+        en:
+          en: Name of related software in english
+          fr: Nom d'un logiciel connexe en anglais
+        fr:
+          en: Name of related software in french
+          fr: Nom d'un logiciel connexe en francais
+        schema: *name
+    titles:
+      URL:
+        en: The english and french URLs of related software.
+        fr: L'URL anglais et francais d'un logiciel connexe.
+      name:
+        en: The english and french name of related software.
+        fr: Le nom d'un logiciel connexe en anglais et en francais.
+  schemaVersion:
     title:
       en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
       fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
-  Submitter:
+  submitter:
     title:
       en: Information about submitter
       fr: Des informations sur le déposant
-  Status:
+    labels:
+      username: *name
+      email: *email
+  status:
     title:
       en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
       fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
@@ -162,10 +254,45 @@ presets:
       retired:
         en: Retired
         fr: Retraité
+  tags:
+    title:
+      en: A useful set of keywords to distinguish the various projects.
+      fr: Un ensemble de mots clés utiles pour distinguer les différents projets.
+    label:
+      en:
+        en: List of English tags
+        fr: Liste d'étiquettes en anglais
+      fr:
+        en: List of French tags
+        fr: Liste d'étiquettes en français
+      schema:
+        en: Tags
+        fr: Étiquettes
+    button:
+      en: Add more tags
+      fr: Ajouter d'autres étiquettes
 
 # Code form specifics
 code:
-  DownloadUrl:
+  name:
+    title:
+      en: The name of the project.
+      fr: Le nom du projet.
+    label:
+      en:
+        en: The english name of the project
+        fr: Le nom du projet en anglais
+      fr:
+        en: The name of the project in french
+        fr: Le nom du projet en français
+      schema:
+        en: Project name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update an already existing code, please select it below
+        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+  downloadUrl:
     title:
       en: The english and french URLs where a distribution of the project can be found.
       fr: Les URLs en francais et en anglais où une distribution du projet peut être trouvée.
@@ -176,32 +303,10 @@ code:
       fr:
         en: French download URL
         fr: URL de téléchargement en francais
-  HomepageUrl:
-    title:
-      en: The English and French URLs of the project homepage.
-      fr: Les URLs en français et en anglais de la page d'accueil.
-    label:
-      en:
-        en: English homepage URL
-        fr: URL de la page d'accueil en anglais
-      fr:
-        en: French homepage URL
-        fr: URL de la page d'accueil en francais
-  ProjectName:
-    title:
-      en: The name of the project.
-      fr: Le nom du projet.
-    label:
-      en:
-        en: The english name of the project (Enter an name to create a new project or select one to updated it)
-        fr: Le nom du projet en anglais
-      fr:
-        en: The name of the project in french
-        fr: Le nom du projet en français (Entrez un nom pour créer un nouveau projet ou sélectionner un déjà existant pour le mettre à jour)
-    select:
-      en: If you wish to update an already existing code, please select it below
-      fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
-  Organization:
+      schema:
+        en: Download URL
+        fr: URL de téléchargement
+  organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
       fr: Le nom de l'organisation ou l'équipe en francais et en anglais à laquelle le projet appartient.
@@ -212,26 +317,39 @@ code:
       fr:
         en: French organization name
         fr: Nom de l'organisation en français
-  Partner:
+      schema:
+        en: Organization
+        fr: Organisation
+  partner:
     title:
       en: Information about each group partnering on the project.
       fr: Renseignements sur chaque groupe partenaire du projet.
     labels:
-      Url:
+      URL:
         en:
           en: English URL of partner
           fr: URL du partenaire en anglais
         fr:
           en: French URL of partner
           fr: URL du partenaire en francais
-      Name:
+        schema: *url_generic
+      email: *email
+      name:
         en:
           en: English name of partner
           fr: Nom du partenaire en anglais
         fr:
           en: French name of partner
           fr: Nom du partenaire en francais
-  RepositoryUrl:
+        schema: *name
+    titles:
+      URL:
+        en: The english and french URL to a website about the partner.
+        fr: L'URL en anglais et en français d'un site Web à propos du partenaire.
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
+  repositoryUrl:
     title:
       en: The English and French URLs of the public repository of the project, where the code is hosted.
       fr: Les URL en français et en anglais du dépôt public du projet, où le code est hébergé.
@@ -242,231 +360,63 @@ code:
       fr:
         en: French repository URL
         fr: URL du dépôt en francais
-  RelatedCode:
+      schema:
+        en: Code Repository URL
+        fr: URL du dépôt de code
+  vcs:
     title:
-      en: Information about each library, framework, API or other related software used in this project.
-      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
-    labels:
-      Url:
-        en:
-          en: English URL of related software
-          fr: URL anglais d'un logiciel connexe
-        fr:
-          en: French URL of related software
-          fr: URL francais d'un logiciel connexe
-      Name:
-        en:
-          en: Name of related software in english
-          fr: Nom d'un logiciel connexe en anglais
-        fr:
-          en: Name of related software in french
-          fr: Nom d'un logiciel connexe en francais
-  Vcs:
-    title:
-      en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ..
-      fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ..
+      en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ...
+      fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ...
     label:
       en: Version control system
       fr: Système de contrôle de version
-  VersionProject:
+  version:
     title:
       en: The latest version for this project. For example, 1.0.0.
       fr: La version de ce projet. Par  exemple, 1.0.0.
     label:
       en: The latest version
       fr: La dernière version
-
-# Standards form specifics
-standards:
-  emailContact:
+  releases:
     title:
-      en: Email for the reference
-      fr: Le courriel de la référence
-    label:
-      en: Email
-      fr: Courriel
-  Name:
-    title:
-      en: Name of the Standard
-      fr: Nom du standard
-    label:
-      en:
-        en: Name in English
-        fr: nom en anglais
-      fr:
-        en: Name in french
-        fr: Nom en français
-  SpecURL:
-    title:
-      en: URL of the specification
-      fr: Url de la spécification
-    label:
-      en:
-        en: English url
-        fr: Url anglais
-      fr:
-        en: French URL
-        fr: Url français
-  StandardCode:
-    title:
-      en: Code for the Standard
-      fr: Code du standard
-    label:
-      en: Enter a code to create a new entry, or select one from the drop-down field to update an existing one.
-      fr: Entrez un code pour créer une nouvelle entrée, ou sélectionner un code déjà existant depuis le menu déroulant.
-  StandardOrg:
-    title:
-      en: Name of the organisation supporting the standard
-      fr: Nom de l'organisation supportant le standard
-    label:
-      en: Name
-      fr: Nom
-  Status:
-    title:
-      en: The status of the standard
-      fr: Le status du standard
-    label:
-      en: Status
-      fr: Status
-  Reference:
-    title:
-      en: Reference for the standard
-      fr: Référence pour le standard
-    labels:
-      Url:
-        en:
-          en: URL for the reference in english
-          fr: Url de la référence en anglais
-        fr:
-          en: URL for the reference in french
-          fr: Url de la référence en français
-      Name:
-        en:
-          en: Name of the reference in english
-          fr: Nom de la référence en anglais
-        fr:
-          en: Name of the reference in french
-          fr: Nom de la référence en français
-
-# Admin form specifics
-admin:
-  Name:
-    title:
-      en: Administration Name
-      fr: Nom de l'administration
-    label:
-      en:
-        en: Name in english
-        fr: Nom en anglais
-      fr:
-        en: Name in french
-        fr: Nom en français
-  newAdminCode:
-    title:
-      en: New Administration Code
-      fr: Nouveau code d'administration
-    label:
-      en: New Administration Code 
-      fr: Nouveau code d'administration
-  ProvinceCode:
-    title:
-      en: Province Code
-      fr: Code de la province
-    label:
-      en: Province
-      fr: Province
-    options:
-      ab:
-        en: Alberta
-        fr: Alberta
-      bc:
-        en: British Columbia
-        fr: Colombie-Britanique
-      mb:
-        en: Manitoba
-        fr: Manitoba
-      nb:
-        en: New Brunswick
-        fr: Nouveau-Brunswick
-      nl:
-        en: Newfoundland and Labrador
-        fr: Terre-Neuve-et-Labrador
-      nt:
-        en: Northwest Territories
-        fr: Territoires du Nord-Ouest
-      ns:
-        en: Nova Scotia
-        fr: Nouvelle-Écosse
-      nu:
-        en: Nunavut
-        fr: Nunavut
-      "on":  # on is a yaml/liquid/jekyll keyword and thus must be escaped
-        en: Ontario
-        fr: Ontario
-      pe:
-        en: Prince Edward Island
-        fr: Île-du-Prince-Édouard
-      qc:
-        en: Quebec
-        fr: Québec
-      sk:
-        en: Saskatchewan
-        fr: Saskatchewan
-      yt:
-        en: Yukon
-        fr: Yukon
+      en: Information for each project or source code published.
+      fr: Informations pour chaque projet ou code source publié.
 
 # Software form specifics
 oss:
-  HomepageUrl:
-    title:
-      en: The English and French URLs of the project homepage.
-      fr: Les URLs en français et en anglais de la page d'accueil.
-    label:
-      en:
-        en: English homepage URL
-        fr: URL de la page d'accueil en anglais
-      fr:
-        en: French homepage URL
-        fr: URL de la page d'accueil en francais
-  ProjectName:
+  name:
     title:
       en: The English and French name of the project.
       fr: Le nom du projet en français et en anglais.
     label:
-      en: English project name
-      fr: Nom du projet en anglais
-  RelatedCode:
-    title:
-      en: Information about each library, framework, API or other related software used in this project.
-      fr: Informations sur chaque bibliothèque, plate-forme, API ou autre logiciel connexe utilisé dans ce projet.
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
     labels:
-      Url:
-        en:
-          en: English URL of related software
-          fr: URL anglais d'un logiciel connexe
-        fr:
-          en: French URL of related software
-          fr: URL francais d'un logiciel connexe
-      Name:
-        en:
-          en: Name of related software in english
-          fr: Nom d'un logiciel connexe en anglais
-        fr:
-          en: Name of related software in french
-          fr: Nom d'un logiciel connexe en francais
-  UseName:
+      select:
+        en: If you wish to update an existing software, please select it below
+        fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
+  usename:
     title:
-      en: The English and French name of the project activity.
-      fr: Le nom du domaine de l'activité du projet en français et en anglais.
+      en: The domain name of the project activity.
+      fr: Le nom du domaine de l'activité du projet.
     label:
       en:
-        en: English project activity name
-        fr: Nom du domaine de l'activité du projet en anglais
+        en: English use name
+        fr: Nom de l'utilisation en anglais
       fr:
-        en: French project activity name
-        fr: Nom du domaine de l'activité du projet en français
-  UseDescription:
+        en: French use name
+        fr: Nom de l'utilisation en français
+      schema:
+        en: Name of the project activity
+        fr: Nom de l'activité du projet.
+  usedescription:
     title:
       en: The English and French description of the project activity.
       fr: La description du domaine de l'activité du projet en français et en anglais.
@@ -477,3 +427,125 @@ oss:
       fr:
         en: French project activity description
         fr: description du domaine de l'activité du projet en français
+      schema:
+        en: Description of the project activity
+        fr: Description de l'activité du projet.
+  administrations: *administrations
+  uses:
+    title:
+      en: Informations about software users.
+      fr: Information à propos des utilisateurs du logiciel
+
+# Standards form specifics
+standards:
+  name:
+    title:
+      en: Name of the Standard
+      fr: Nom du standard
+    label:
+      en:
+        en: Name in English
+        fr: nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
+  specURL:
+    title:
+      en: URL of the specification
+      fr: Url de la spécification
+    label:
+      en:
+        en: English url
+        fr: Url anglais
+      fr:
+        en: French URL
+        fr: Url français
+      schema:
+        en: Specification URL
+        fr: Url de la spécification
+  standardCode:
+    title:
+      en: Code for the Standard
+      fr: Code du standard
+    label:
+      en: Enter a code to create a new entry.
+      fr: Entrez un code pour créer une nouvelle entrée.
+    labels:
+      select:
+        en: If you wish to update an existing standard, please select it below
+        fr: Si vous souhaitez mettre à jour un standard existant, svp le sélectionner ci-dessous
+  standardOrg:
+    title:
+      en: Name of the organisation supporting the standard
+      fr: Nom de l'organisation supportant le standard
+    label:
+      en: Name
+      fr: Nom
+  status:
+    title:
+      en: The status of the standard
+      fr: Le status du standard
+    label:
+      en: Status
+      fr: Status
+  reference:
+    title:
+      en: Reference for the standard
+      fr: Référence pour le standard
+    labels:
+      URL:
+        en:
+          en: URL for the reference in english
+          fr: Url de la référence en anglais
+        fr:
+          en: URL for the reference in french
+          fr: Url de la référence en français
+        schema: *url_generic
+      name:
+        en:
+          en: Name of the reference in english
+          fr: Nom de la référence en anglais
+        fr:
+          en: Name of the reference in french
+          fr: Nom de la référence en français
+        schema: *name
+    titles:
+      URL:
+        en: The English and French URLs of the reference.
+        fr: L'URL de la référence en français et en anglais.
+      name:
+        en: The English and French name of the reference.
+        fr: Le nom de la référence en français et en anglais.
+  administrations: *administrations
+
+# Admin form specifics
+admin:
+  newAdmin:
+    title:
+      en: New Administration
+      fr: Nouvelle administration
+  newAdminCode: &newAdminCode
+    title:
+      en: Administration Code
+      fr: Code de l'administration
+    label:
+      en: The code for the new administration
+      fr: Le code de la nouvelle administration
+  newAdminName: &newAdminName
+    title:
+      en: Administration Name
+      fr: Nom de l'administration
+    label:
+      en:
+        en: Name in english
+        fr: Nom en anglais
+      fr:
+        en: Name in french
+        fr: Nom en français
+      schema: *name
+  code: *newAdminCode  # simplifies schema build
+  name: *newAdminName  # simplifies schema build
+  administrations:  # simplifies schema build
+    title:
+      en: The list of administrations for a specific organization level (corresponding with the file name)
+      fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)

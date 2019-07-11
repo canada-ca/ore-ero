@@ -1,0 +1,14 @@
+{%- capture path -%}{{ include.prepend }}{{ include.title }}{%- endcapture -%}
+<li>
+  <details open>
+    <summary>{{ include.title }}
+      {%- if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [array]
+    </summary>
+    <h5>{{ site.data.i18n.form[include.id][path].label.schema[page.lang] }}</h5>
+    <p>{{ site.data.i18n.form[include.id][path].title[page.lang] }}</p>
+    <ul>
+      <li>{{ site.data.i18n.form[include.id][path].label.en[page.lang] }}{% if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]</li>
+      <li>{{ site.data.i18n.form[include.id][path].label.fr[page.lang] }}{% if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]</li>
+    </ul>
+  </details>
+</li>

@@ -1,4 +1,5 @@
-{% include form/string-i18n.html id='presets' title='Licenses' type="url" %}
+{%- assign title = "licenses" -%}
+{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/group-i18n-group.html id=include.id title=title group="URL" type="url" -%}
 
-{% capture label %}{{ site.data.i18n.form.presets.Licenses.label.spdxID[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="spdxID" label=label %}
+{%- include form/components/group-group.html id=include.id title=title group="spdxID" -%}

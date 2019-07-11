@@ -1,0 +1,49 @@
+---
+filterOptions:
+  en: Filter Options
+  fr: Options de filtrage
+levelOfGovernment:
+  en: Level of government
+  fr: Niveau de gouvernement
+organization:
+  en: Organization
+  fr: Organisation
+license:
+  en: License
+  fr: Licence
+tag:
+  en: Tag
+  fr: Étiquette
+filter:
+  en: Filter
+  fr: Filtrer
+clear:
+  en: Clear
+  fr: Effacer
+projectName:
+  en: Project Name
+  fr: Nom du projet
+language:
+  en: Language
+  fr: Langage
+relatedCode:
+  en: Related Code
+  fr: Code Associé
+status:
+  en: Status
+  fr: Statut
+created:
+  en: Created
+  fr: Créé
+lastUpdated:
+  en: Last updated
+  fr: Dernière mise à jour
+metadataLastUpdated:
+  fr: Last updated metadata
+  en: Dernière fois que les métadatas on été mises à jour
+contactPhone:
+  en: Contact phone (###-###-####)
+  fr: Numéro du contact (###-###-####)
+administrations:
+  en: Administrations
+  fr: Administrations

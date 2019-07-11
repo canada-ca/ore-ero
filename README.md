@@ -33,13 +33,13 @@ ______________________
 
 #### Javascript
 
-If you're working on Javascript in the `/assets/js/src` folder, make sure your code follows the style guidelines. We use ES Lint for checking code style. Ensure you have a recent version of Node.js (>=10.15.3). Run the following to install dependencies. 
+If you're working on Javascript in the `/assets/js/src` folder, make sure your code follows the style guidelines. We use ES Lint for checking code style. Ensure you have a recent version of Node.js (>=10.15.3). Run the following to install dependencies.
 
 ``` bash
 npm install
 ```
 
-Now when you want to know if your code is following the guidelines, run 
+Now when you want to know if your code is following the guidelines, run
 ``` bash
 npm run lint
 ```
@@ -124,7 +124,7 @@ ______________________
 
 #### Javascript
 
-Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances. 
+Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances.
 
 ``` bash
 npm install

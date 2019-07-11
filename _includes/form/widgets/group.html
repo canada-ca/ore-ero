@@ -1,0 +1,19 @@
+{%- include form/components/title.html id=include.id title=include.title prepend=include.prepend -%}
+
+{%- for field in include.fields -%}
+
+  {%- if field.required == nil -%}
+    {%- assign required = include.required -%}
+  {%- else -%}
+    {%- assign required = field.required -%}
+  {%- endif -%}
+
+  {%- case field.widget -%}
+    {%- when 'string' -%}
+      {%- include form/components/group-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule prepend=include.prepend -%}
+    {%- when 'string-i18n' -%}
+      {%- include form/components/group-i18n-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule prepend=include.prepend -%}
+    {%- when 'select' -%}
+      {%- include form/widgets/select.html id=include.id title=include.title required=required options=options -%}
+  {%- endcase -%}
+{%- endfor -%}
