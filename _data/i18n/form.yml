@@ -430,6 +430,13 @@ oss:
       schema:
         en: Description of the project activity
         fr: Description de l'activité du projet.
+  users:
+    title:
+      en: Project Users
+      fr: Utilisateurs tu projet
+    label:
+      en: Group using the project
+      fr: Les groupes qui utilisent le projet
   administrations: *administrations
   uses:
     title:
