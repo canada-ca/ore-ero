@@ -501,7 +501,7 @@ function addValueToFields(obj) {
   if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.metadataLastUpdated);
+  $('#datelastModified').val(obj.date.datelastModified);
 
   $('#enlicensesURL').val(obj.licenses[0].URL.en);
   $('#frlicensesURL').val(obj.licenses[0].URL.fr);

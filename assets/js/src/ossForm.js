@@ -479,9 +479,6 @@ function addValueToFieldsAdmin(obj) {
     $('#contactname').val(obj['uses'][0]['contact']['name']);
 
   $('#datestarted').val(obj['uses'][0]['date']['started']);
-  $('#datemetadataLastUpdated').val(
-    obj['uses'][0]['date']['metadataLastUpdated']
-  );
   $('#useenname').val(obj['uses'][0]['name']['en']);
   $('#usefrname').val(obj['uses'][0]['name']['fr']);
   $('#useendescription').val(obj['uses'][0]['description']['en']);
