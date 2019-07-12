@@ -2,16 +2,15 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags addTags
-  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getTags resetTags addTags
+  submitInit submitConclusion
+  getAdminObject getAdminCode
 */
 
-const ossObj = $('.page-ossForm #ProjectNameSelect');
+const ossObj = $('.page-ossForm #nameselect');
 const adminObj = $('.page-ossForm #adminCode');
 
 $(document).ready(function() {
-  $('#enProjectName').focus();
-
   ossObj.change(function() {
     selectOss();
     if (adminObj.val() != '') selectAdmin();
@@ -22,40 +21,41 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitossForm').click(function() {
-    // Progress only when form input is valid
-    if (validateRequired()) {
-      toggleAlert(ALERT_OFF);
-      toggleAlert(ALERT_IN_PROGRESS);
-      window.scrollTo(0, document.body.scrollHeight);
-      submitFormOss();
+    if (submitInit()) {
+      if ($('#newAdminCode').val() != '') submitSoftwareFormNewAdmin();
+      else submitFormOss();
     }
+  });
+
+  $('#formReset').click(function() {
+    $('#validation').trigger('reset');
+    resetTags();
   });
 });
 
 function getOssObject() {
-  // Required fields are included first.
   let ossObject = {
     schemaVersion: $('#schemaVersion').val(),
     description: {
-      en: $('#enDescription').val(),
-      fr: $('#frDescription').val()
+      en: $('#endescription').val(),
+      fr: $('#frdescription').val()
     },
     homepageURL: {
-      en: $('#enHomepageUrl').val(),
-      fr: $('#frHomepageUrl').val()
+      en: $('#enhomepageURL').val(),
+      fr: $('#frhomepageURL').val()
     },
     licenses: [
       {
         URL: {
-          en: $('#enLicenses').val(),
-          fr: $('#frLicenses').val()
+          en: $('#enlicensesURL').val(),
+          fr: $('#frlicensesURL').val()
         },
-        spdxID: $('#spdxID').val()
+        spdxID: $('#licensesspdxID').val()
       }
     ],
     name: {
-      en: $('#enProjectName').val(),
-      fr: $('#frProjectName').val()
+      en: $('#enname').val(),
+      fr: $('#frname').val()
     },
     tags: {
       en: getTags([...document.querySelectorAll('#tagsEN input')]),
@@ -63,23 +63,23 @@ function getOssObject() {
     },
     administrations: [
       {
-        adminCode: $('#adminCode').val(),
+        adminCode: getAdminCode(),
         uses: [
           {
             contact: {
-              email: $('#emailContact').val()
+              email: $('#contactemail').val()
             },
             date: {
-              started: $('#dateStarted').val(),
-              metadataLastUpdated: $('#dateLastUpdated').val()
+              started: $('#datestarted').val(),
+              metadataLastUpdated: $('#datemetadataLastUpdated').val()
             },
             description: {
-              en: $('#enUseDescription').val(),
-              fr: $('#enUseDescription').val()
+              en: $('#useendescription').val(),
+              fr: $('#usefrdescription').val()
             },
             name: {
-              en: $('#enUseName').val(),
-              fr: $('#frUseName').val()
+              en: $('#useenname').val(),
+              fr: $('#usefrname').val()
             }
           }
         ]
@@ -90,60 +90,60 @@ function getOssObject() {
   // Then we handle all optional fields.
 
   // contact.URL
-  if ($('#frUrlContact').val() || $('#enUrlContact').val()) {
+  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL = {};
   }
-  if ($('#enUrlContact').val()) {
+  if ($('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL.en = $(
-      '#enUrlContact'
+      '#encontactURL'
     ).val();
   }
-  if ($('#frUrlContact').val()) {
+  if ($('#frcontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL.fr = $(
-      '#frUrlContact'
+      '#frcontactURL'
     ).val();
   }
 
   // contact.name, TODO: update to match schema
-  if ($('#nameContact').val()) {
-    ossObject.administrations[0].uses[0].contact.name = $('#nameContact').val();
+  if ($('#contactname').val()) {
+    ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
 
   // relatedCode TODO: support multiple relatedCode fields
   if (
-    $('#enUrlRelatedCode').val() ||
-    $('#frUrlRelatedCode').val() ||
-    $('#enNameRelatedCode').val() ||
-    $('#frNameRelatedCode').val()
+    $('#enrelatedCodeURL').val() ||
+    $('#frrelatedCodeURL').val() ||
+    $('#enrelatedCodename').val() ||
+    $('#frrelatedCodename').val()
   ) {
     ossObject.administrations[0].uses[0].relatedCode = [{}];
   }
   // relatedCode.URL
-  if ($('#enUrlRelatedCode').val() || $('#frUrlRelatedCode').val()) {
+  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
   }
-  if ($('#enUrlRelatedCode').val()) {
+  if ($('#enrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $(
-      '#enUrlRelatedCode'
+      '#enrelatedCodeURL'
     ).val();
   }
-  if ($('#frUrlRelatedCode').val()) {
+  if ($('#frrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $(
-      '#frUrlRelatedCode'
+      '#frrelatedCodeURL'
     ).val();
   }
   // relatedCode.name
-  if ($('#enNameRelatedCode').val() || $('#frNameRelatedCode').val()) {
+  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name = {};
   }
-  if ($('#enNameRelatedCode').val()) {
+  if ($('#enrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name.en = $(
-      '#enNameRelatedCode'
+      '#enrelatedCodename'
     ).val();
   }
-  if ($('#frNameRelatedCode').val()) {
+  if ($('#frrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name.fr = $(
-      '#frNameRelatedCode'
+      '#frrelatedCodename'
     ).val();
   }
 
@@ -155,70 +155,199 @@ function getOssObject() {
   return ossObject;
 }
 
+function getSelectedOrgType() {
+  if ($('#adminCode').val() != '')
+    return $('#adminCode :selected')
+      .parent()
+      .attr('label')
+      .toLowerCase();
+  else return $('#orgLevel').val();
+}
+
+function submitSoftwareFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitossForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let softwareObject = getOssObject();
+  let adminObject = getAdminObject();
+  let softwareName = $('#enname')
+    .val()
+    .toLowerCase();
+  let adminName = $('#newAdminCode').val();
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let softwareFile = `_data/logiciels_libres-open_source_software/${softwareName}.yml`;
+  let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
+
+  fileWriter
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(adminResult => {
+      fileWriter
+        .merge(softwareFile, softwareObject, 'administrations', 'adminCode')
+        .then(softwareResult => {
+          return fetch(
+            PRBOT_URL,
+            getConfigUpdateSoftwareNewAdmin(
+              softwareName,
+              adminName,
+              softwareFile,
+              adminFile,
+              softwareResult,
+              adminResult
+            )
+          );
+        })
+        .catch(err => {
+          if (err.status == 404) {
+            return fetch(
+              PRBOT_URL,
+              getConfigNewSoftwareNewAdmin(
+                softwareName,
+                adminName,
+                softwareFile,
+                adminFile,
+                softwareObject,
+                adminResult
+              )
+            );
+          } else throw err;
+        })
+        .then(response => {
+          submitConclusion(response, submitButton, resetButton);
+        });
+    });
+}
+
+function getConfigUpdateSoftwareNewAdmin(
+  softwareName,
+  adminName,
+  softwareFile,
+  adminFile,
+  softwareResult,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Updated software file for ' +
+        softwareName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: softwareFile,
+          content: '---\n' + jsyaml.dump(softwareResult)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function getConfigNewSoftwareNewAdmin(
+  softwareName,
+  adminName,
+  softwareFile,
+  adminFile,
+  softwareObject,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Creaded software file for ' +
+        softwareName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: softwareFile,
+          content: '---\n' + jsyaml.dump(softwareObject)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
 function submitFormOss() {
   let submitButton = document.getElementById('prbotSubmitossForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let ossObject = getOssObject();
+  let softwareObject = getOssObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let ProjectName = $('#enProjectName')
+  let ProjectName = $('#enname')
     .val()
     .toLowerCase();
   let file = `_data/logiciels_libres-open_source_software/${ProjectName}.yml`;
+
   fileWriter
-    .merge(file, ossObject, 'administrations', 'adminCode')
+    .merge(file, softwareObject, 'administrations', 'adminCode')
     .then(result => {
-      const config = getConfigUpdate(result, file);
-      return fetch(PRBOT_URL, config);
+      return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
     })
     .catch(err => {
       if (err.status == 404) {
-        // We need to create the file for this organization, as it doesn't yet exist.
-        const config = getConfigNew(ossObject, file);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(
+          PRBOT_URL,
+          getConfigNew(softwareObject, file, ProjectName)
+        );
+      } else throw err;
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response, submitButton, resetButton);
     });
 }
 
-function getConfigUpdate(result, file) {
-  let ProjectName = $('#enProjectName').val();
+function getConfigUpdate(result, file, ProjectName) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated software for ${ProjectName} `,
+      title: `Updated the ${ProjectName} software file`,
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#submitteremail').val() +
         '\n' +
         'Project: ***' +
-        $('#enProjectName').val() +
+        $('#enname').val() +
         '***\n' +
-        $('#enDescription').val() +
+        $('#endescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
@@ -231,8 +360,7 @@ function getConfigUpdate(result, file) {
   };
 }
 
-function getConfigNew(ossObject, file) {
-  let ProjectName = $('#enProjectName').val();
+function getConfigNew(softwareObject, file, ProjectName) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -240,24 +368,24 @@ function getConfigNew(ossObject, file) {
       title: 'Created the software file for ' + ProjectName,
       description:
         'Authored by: ' +
-        $('#submitterEmail').val() +
+        $('#submitteremail').val() +
         '\n' +
         'Project: ***' +
-        $('#enProjectName').val() +
+        $('#enname').val() +
         '***\n' +
-        $('#enDescription').val() +
+        $('#endescription').val() +
         '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
           path: file,
           content:
             '---\n' +
-            jsyaml.dump(ossObject, {
+            jsyaml.dump(softwareObject, {
               lineWidth: 160
             })
         }
@@ -286,31 +414,31 @@ function selectOss() {
 
 function addValueToFieldsOss(obj) {
   $('#schemaVersion').val(obj['schemaVersion']);
-  $('#enProjectName').val(obj['name']['en']);
-  $('#frProjectName').val(obj['name']['fr']);
-  $('#enDescription').val(obj['description']['en']);
-  $('#frDescription').val(obj['description']['fr']);
-  $('#enHomepageUrl').val(obj['homepageURL']['en']);
-  $('#frHomepageUrl').val(obj['homepageURL']['fr']);
-  $('#enLicenses').val(obj['licenses'][0]['URL']['en']);
-  $('#frLicenses').val(obj['licenses'][0]['URL']['fr']);
-  $('#spdxID').val(obj['licenses'][0]['spdxID']);
+  $('#enname').val(obj['name']['en']);
+  $('#frname').val(obj['name']['fr']);
+  $('#endescription').val(obj['description']['en']);
+  $('#frdescription').val(obj['description']['fr']);
+  $('#enhomepageURL').val(obj['homepageURL']['en']);
+  $('#frhomepageURL').val(obj['homepageURL']['fr']);
+  $('#enlicensesURL').val(obj['licenses'][0]['URL']['en']);
+  $('#frlicensesURL').val(obj['licenses'][0]['URL']['fr']);
+  $('#licensesspdxID').val(obj['licenses'][0]['spdxID']);
   addTags(obj);
 }
 
 function resetFieldsOss() {
   $('#schemaVersion').val('1.0');
-  $('#enProjectName').val('');
-  $('#frProjectName').val('');
-  $('#enDescription').val('');
-  $('#frDescription').val('');
-  $('#enHomepageUrl').val('');
-  $('#frHomepageUrl').val('');
-  $('#enLicenses').val('');
-  $('#frLicenses').val('');
-  $('#spdxID').val('');
-  $('#enProjectName').focus();
-  $('#frProjectName').focus();
+  $('#enname').val('');
+  $('#frname').val('');
+  $('#endescription').val('');
+  $('#frdescription').val('');
+  $('#enhomepageURL').val('');
+  $('#frhomepageURL').val('');
+  $('#enlicensesURL').val('');
+  $('#frlicensesURL').val('');
+  $('#licensesspdxID').val('');
+  $('#enname').focus();
+  $('#frname').focus();
   resetTags();
 }
 
@@ -341,46 +469,48 @@ function selectAdmin() {
 function addValueToFieldsAdmin(obj) {
   if (obj['uses'][0]['contact']['URL']) {
     if (obj['uses'][0]['contact']['URL']['en'])
-      $('#enUrlContact').val(obj['uses'][0]['contact']['URL']['en']);
+      $('#encontactURL').val(obj['uses'][0]['contact']['URL']['en']);
     if (obj['uses']['contact']['URL']['fr'])
-      $('#frUrlContact').val(obj['uses'][0]['contact']['URL']['fr']);
+      $('#frcontactURL').val(obj['uses'][0]['contact']['URL']['fr']);
   }
   if (obj['uses'][0]['contact']['email'])
-    $('#emailContact').val(obj['uses'][0]['contact']['email']);
+    $('#contactemail').val(obj['uses'][0]['contact']['email']);
   if (obj['uses'][0]['contact']['name'])
-    $('#nameContact').val(obj['uses'][0]['contact']['name']);
+    $('#contactname').val(obj['uses'][0]['contact']['name']);
 
-  $('#dateStarted').val(obj['uses'][0]['date']['started']);
-  $('#dateLastUpdated').val(obj['uses'][0]['date']['metadataLastUpdated']);
-  $('#enUseName').val(obj['uses'][0]['name']['en']);
-  $('#frUseName').val(obj['uses'][0]['name']['fr']);
-  $('#enUseDescription').val(obj['uses'][0]['description']['en']);
-  $('#frUseDescription').val(obj['uses'][0]['description']['fr']);
+  $('#datestarted').val(obj['uses'][0]['date']['started']);
+  $('#datemetadataLastUpdated').val(
+    obj['uses'][0]['date']['metadataLastUpdated']
+  );
+  $('#useenname').val(obj['uses'][0]['name']['en']);
+  $('#usefrname').val(obj['uses'][0]['name']['fr']);
+  $('#useendescription').val(obj['uses'][0]['description']['en']);
+  $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
 
   if (obj['uses'][0]['relatedCode']) {
     if (obj['uses'][0]['relatedCode']['URL']) {
       if (obj['uses'][0]['relatedCode']['URL']['en'])
-        $('#enUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['en']);
+        $('#enrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['en']);
       if (obj['uses'][0]['relatedCode']['URL']['fr'])
-        $('#frUrlRelatedCode').val(obj['uses'][0]['relatedCode']['URL']['fr']);
+        $('#frrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['fr']);
     }
   }
   if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
 }
 
 function resetFieldsAdmin() {
-  $('#enUrlContact').val('');
-  $('#frUrlContact').val('');
-  $('#emailContact').val('');
-  $('#nameContact').val('');
-  $('#dateStarted').val('');
-  $('#enUseName').val('');
-  $('#frUseName').val('');
-  $('#enUseDescription').val('');
-  $('#frUseDescription').val('');
-  $('#enUrlRelatedCode').val('');
-  $('#frUrlRelatedCode').val('');
-  $('#enNameRelatedCode').val('');
-  $('#frNameRelatedCode').val('');
+  $('#encontactURL').val('');
+  $('#frcontactURL').val('');
+  $('#contactemail').val('');
+  $('#contactname').val('');
+  $('#datestarted').val('');
+  $('#useenname').val('');
+  $('#usefrname').val('');
+  $('#useendescription').val('');
+  $('#usefrdescription').val('');
+  $('#enrelatedCodeURL').val('');
+  $('#frrelatedCodeURL').val('');
+  $('#enrelatedCodename').val('');
+  $('#frrelatedCodename').val('');
   $('#status').val('');
 }
