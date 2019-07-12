@@ -36,10 +36,6 @@ $(document).ready(function() {
 function getStandardsObject() {
   let standardsObject = {
     schemaVersion: $('#schemaVersion').val(),
-    date: {
-      created: $('#datecreated').val(),
-      metadataLastUpdated: $('#datemetadataLastUpdated').val()
-    },
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -78,6 +74,10 @@ function getStandardsObject() {
             }
           }
         ],
+        date: {
+          created: $('#datecreated').val(),
+          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+        },
         status: $('#status').val()
       }
     ]
