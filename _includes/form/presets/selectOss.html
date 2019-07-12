@@ -1,26 +1,15 @@
+{%- assign title = "name" -%}
+{%- assign group = "select" -%}
 <div class="form-group">
-  {% assign title = "ProjectNameSelect" %}
-  {% capture label %}{{ site.data.i18n.form.code.ProjectName.select[page.lang] }}{% endcapture %}
-  {% include form/components/label.html name=title required=false label=label %}
-  <select class="form-control" id="{{ title }}" name="{{ title }}" >
+  {% include form/components/label-group.html id=include.id title=title group=group required=false %}
+  <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
-    {% for oss in site.data.logiciels_libres-open_source_software %}
-      {% assign software = oss[1] %}
-      <option class="additional-option" value="{{ software.name[page.lang] }}">{{ software.name[page.lang] }}</option>
-    {% endfor %}
+    {%- for oss in site.data.logiciels_libres-open_source_software -%}
+    {%- assign software = oss[1] %}
+    <option class="additional-option" value="{{ software.name[page.lang] | downcase }}">{{ software.name[page.lang] }}</option>
+    {%- endfor %}
   </select>
 </div>
 
-<h2>{{ site.data.i18n.form.code.ProjectName.title[page.lang] }}</h2>
-<div class="form-group">
-  {% assign titleEn="enProjectName" %}
-  {% capture labelEn %}{{ site.data.i18n.form.code.ProjectName.label.en[page.lang] }}{% endcapture %}
-  {% include form/components/label.html name=titleEn required=include.required label=labelEn %}
-  {% include form/components/input.html name=titleEn type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
-</div>
-<div class="form-group">
-  {% assign titleFr="frProjectName" %}
-  {% capture labelFr %}{{ site.data.i18n.form.code.ProjectName.label.fr[page.lang] }}{% endcapture %}
-  {% include form/components/label.html name=titleFr required=include.required label=labelFr %}
-  {% include form/components/input.html name=titleFr type=include.type required=include.required value=include.value readonly=include.readonly rule=include.rule %}
-</div>
+{% include form/components/title.html id=include.id title=title -%}
+{% include form/components/group-i18n.html id=include.id title=title -%}

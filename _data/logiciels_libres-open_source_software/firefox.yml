@@ -4,13 +4,12 @@ description:
   en: Web browser developed by Mozilla Foundation
   fr: Navigateur Web développé par la Fondation Mozilla
 homepageURL:
-  en: https://www.mozilla.org/en-US/firefox/
-  fr: https://www.mozilla.org/fr/firefox/
+  en: 'https://www.mozilla.org/en-US/firefox/'
+  fr: 'https://www.mozilla.org/fr/firefox/'
 licenses:
-  -
-    URL:
-      en: https://www.mozilla.org/en-US/MPL/2.0/FAQ/
-      fr: https://www.mozilla.org/en-US/MPL/2.0/FAQ/
+  - URL:
+      en: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
+      fr: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
     spdxID: MPL-2.0
 name:
   en: Firefox
@@ -25,11 +24,9 @@ tags:
     - Poste de travail
     - Mobile
 administrations:
-  -
-    adminCode: pch
+  - adminCode: pch
     uses:
-      -
-        contact:
+      - contact:
           email: sebastien.lemay@canada.ca
         date:
           started: '2019-05-06'
