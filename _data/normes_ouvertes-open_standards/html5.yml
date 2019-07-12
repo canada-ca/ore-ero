@@ -3,14 +3,14 @@ schemaVersion: '1.0'
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: ~
+      email: null
     references:
       - URL:
-          en: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875
-          fr: https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
         name:
           en: Standard on Web Interoperability
-          fr: Norme sur l’interopérabilité du Web
+          fr: Norme sur l'interopérabilité du Web
     status: mandatory-gc
 date:
   created: '2018-01-23'
@@ -22,8 +22,8 @@ name:
   en: HyperText Markup Language 5
   fr: HyperText Markup Language 5
 specURL:
-  en: https://www.w3.org/TR/html5/
-  fr: https://www.w3.org/TR/html5/
+  en: 'https://www.w3.org/TR/html5/'
+  fr: 'https://www.w3.org/TR/html5/'
 standardCode: HTML5
 standardsOrg: W3C
 tags:

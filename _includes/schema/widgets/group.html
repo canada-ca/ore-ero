@@ -1,0 +1,27 @@
+<li>
+  <details open>
+    <summary>{{ include.title }}
+      {%- if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [array]
+    </summary>
+    <p>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- for field in include.fields -%}
+
+        {%- if field.required == nil -%}
+          {%- assign required = include.required -%}
+        {%- else -%}
+          {%- assign required = field.required -%}
+        {%- endif -%}
+
+        {%- case field.widget -%}
+          {%- when 'string' -%}
+            {%- include schema/components/li-group.html id=include.id title=include.title group=field.title required=required value=field.value readonly=field.readonly rule=field.rule -%}
+          {%- when 'string-i18n' -%}
+            {%- include schema/components/li-i18n-group.html id=include.id title=include.title group=field.title required=required value=field.value readonly=field.readonly rule=field.rule -%}
+          {%- when 'select' -%}
+            {%- include schema/select.html id=include.id title=include.title required=required options=options -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    </ul>
+  </details>
+</li>
