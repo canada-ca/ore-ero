@@ -20,8 +20,7 @@ tags:
   fr:
     - str()
 administrations:
-  -
-    adminCode: str()
+  - adminCode: str()
     contact:
       URL:
         en: str(required=False)
@@ -29,8 +28,7 @@ administrations:
       email: str()
       name: str(required=False)
     references:
-      -
-        URL:
+      - URL:
           en: str()
           fr: str()
         name:

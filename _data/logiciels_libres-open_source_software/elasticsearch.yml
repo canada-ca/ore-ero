@@ -4,13 +4,12 @@ description:
   en: Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.
   fr: Elasticsearch est un moteur de recherche et d'analyse RESTful distribué, conçu pour répondre à une multitude de cas d'utilisation.
 homepageURL:
-  en: https://www.elastic.co/products/elasticsearch
-  fr: https://www.elastic.co/fr/products/elasticsearch
+  en: 'https://www.elastic.co/products/elasticsearch'
+  fr: 'https://www.elastic.co/fr/products/elasticsearch'
 licenses:
-  -
-    URL:
-      en: https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html
-      fr: https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html
+  - URL:
+      en: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
+      fr: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
     spdxID: Apache-2.0
 name:
   en: Elasticsearch
@@ -21,11 +20,9 @@ tags:
   fr:
     - Site web
 administrations:
-  -
-    adminCode: tc
+  - adminCode: tc
     uses:
-      -
-        contact:
+      - contact:
           name: Irina Krasteleva
           email: irina.krasteleva@tc.gc.ca
         date:
@@ -37,11 +34,9 @@ administrations:
         description:
           en: APM data
           fr: Données du APM
-  -
-    adminCode: mtl_qc
+  - adminCode: mtl_qc
     uses:
-      -
-        contact:
+      - contact:
           email: libre@ville.montreal.qc.ca
         date:
           started: '2017-06-30'
