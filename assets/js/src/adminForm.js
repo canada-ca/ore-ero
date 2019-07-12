@@ -1,21 +1,82 @@
+/* exported getAdminObject getAdminCode */
+
 /*
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert
-  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  submitInit submitConclusion
 */
+
+var newAdminON = false;
+
+$(document).ready(function() {
+  $('#prbotSubmitadminForm').click(function() {
+    if (submitInit()) submitAdminForm();
+  });
+
+  $('#newAdminButton').click(function() {
+    if (!newAdminON) showNewAdminForm();
+    else hideNewAdminForm();
+  });
+
+  $('#removeNewAdminButton').click(function() {
+    hideNewAdminForm();
+  });
+
+  $('#adminCode').change(function() {
+    if (newAdminON) {
+      hideNewAdminForm();
+    }
+  });
+});
+
+function showNewAdminForm() {
+  $('#newAdmin').removeClass('hide');
+  $('#adminCode').removeAttr('required');
+  $('label[for="adminCode"]').removeClass('required');
+  $('label[for="adminCode"] strong').addClass('hide');
+  $('#adminCode')
+    .prop('selectedIndex', 0)
+    .change();
+
+  newAdminON = true;
+}
+
+function hideNewAdminForm() {
+  $('#newAdmin').addClass('hide');
+  $('#adminCode').attr('required', 'required');
+  $('label[for="adminCode"]').addClass('required');
+  $('label[for="adminCode"] strong').removeClass('hide');
+
+  newAdminON = false;
+  resetNewAdminForm();
+}
+
+function resetNewAdminForm() {
+  $('#orgLevel').prop('selectedIndex', 1);
+  $('#newAdminCode').val('');
+  $('#provinceSelect').prop('selectIndex', 0);
+  $('#ennewAdminName').val('');
+  $('#frnewAdminName').val('');
+}
 
 function getAdminObject() {
   let adminObject = {
     code: $('#newAdminCode').val(),
-    provinceCode: $('#ProvinceCode').val(),
+    provinceCode: $('#provinceSelect').val(),
     name: {
-      en: $('#enName').val(),
-      fr: $('#frName').val()
+      en: $('#ennewAdminName').val(),
+      fr: $('#frnewAdminName').val()
     }
   };
+
   return adminObject;
+}
+
+function getAdminCode() {
+  return $('#adminCode').val() == ''
+    ? $('#newAdminCode').val()
+    : $('#adminCode').val();
 }
 
 function submitAdminForm() {
@@ -31,82 +92,64 @@ function submitAdminForm() {
   fileWriter
     .mergeAdminFile(file, adminObject, '', 'code')
     .then(result => {
-      const config = {
-        body: JSON.stringify({
-          user: USERNAME,
-          repo: REPO_NAME,
-          title: `Updated the ${$('#orgLevel').val()} file`,
-          description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-          commit: 'Committed by ' + $('#submitterEmail').val(),
-          author: {
-            name: $('#submitterUsername').val(),
-            email: $('#submitterEmail').val()
-          },
-          files: [
-            {
-              path: file,
-              content: jsyaml.dump(result, { lineWidth: 160 })
-            }
-          ]
-        }),
-        method: 'POST'
-      };
-      return fetch(PRBOT_URL, config);
+      return fetch(PRBOT_URL, getConfigUpdate(result, file));
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = {
-          body: JSON.stringify({
-            user: USERNAME,
-            repo: REPO_NAME,
-            title: 'Created an administration file',
-            description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-            commit: 'Committed by ' + $('#submitterEmail').val(),
-            author: {
-              name: $('#submitterUsername').val(),
-              email: $('#submitterEmail').val()
-            },
-            files: [
-              {
-                path: file,
-                content:
-                  '---\n' +
-                  jsyaml.dump(adminObject, {
-                    lineWidth: 160
-                  })
-              }
-            ]
-          }),
-          method: 'POST'
-        };
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(PRBOT_URL, getConfigNew(adminObject, file));
+      } else throw err;
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response, submitButton, resetButton);
     });
 }
 
-$('#prbotSubmitadminForm').click(function() {
-  // Progress only when form input is valid
-  if (validateRequired()) {
-    toggleAlert(ALERT_OFF);
-    toggleAlert(ALERT_IN_PROGRESS);
-    window.scrollTo(0, document.body.scrollHeight);
-    submitAdminForm();
-  }
-});
+function getConfigUpdate(result, file) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title: `Updated the ${$('#orgLevel').val()} file`,
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: file,
+          content: jsyaml.dump(result, { lineWidth: 160 })
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function getConfigNew(adminObject, file) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title: 'Created an administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: file,
+          content:
+            '---\n' +
+            jsyaml.dump(adminObject, {
+              lineWidth: 160
+            })
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}

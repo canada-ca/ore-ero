@@ -1,12 +1,12 @@
-<h2>{{ site.data.i18n.form.presets.Status.title[page.lang] }}</h2>
+{%- assign title = "status" -%}
+{%- include form/components/title.html id=include.id title=title -%}
 <div class="form-group">
-  <label for="status">{{ site.data.i18n.form.presets.Status.label[page.lang] }}</label>
-  <select class="form-control" id="status" name="status">
+  {%- include form/components/label.html id=include.id title=title required=false -%}
+  <select class="form-control" id="{{ title }}" name="{{ title }}">
     <option value="">&nbsp;</option>
-    <option value="Alpha">{{ site.data.i18n.form.presets.Status.options.alpha[page.lang] }}</option>
-    <option value="Beta">{{ site.data.i18n.form.presets.Status.options.beta[page.lang] }}</option>
-    <option value="Maintained">{{ site.data.i18n.form.presets.Status.options.maintained[page.lang] }}</option>
-    <option value="Deprecated">{{ site.data.i18n.form.presets.Status.options.deprecated[page.lang] }}</option>
-    <option value="Retired">{{ site.data.i18n.form.presets.Status.options.retired[page.lang] }}</option>
+    {%- for options in site.data.i18n.form[include.id][title].options -%}
+      {%- assign option = options[1] -%}
+      <option value="{{ option.en }}">{{ option[page.lang] }}</option>
+    {%- endfor -%}
   </select>
 </div>

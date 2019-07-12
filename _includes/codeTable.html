@@ -3,256 +3,243 @@
 <!-- Filter dropdowns -->
 <div class="col-md-3">
   <details open>
-    <summary><h4 class="h4">{{ site.FilterOptions[page.lang] }}</h4></summary>
+    <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-        <label for="dt_govLevel">{{ site.LevelOfGovernment[page.lang] }}</label>
+        <label for="dt_govLevel">{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</label>
         <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
           <option value="">&nbsp;</option>
-          <option value="federal">{{ site.Federal[page.lang] }}</option>
-          <option value="provincial">{{ site.Provincial[page.lang] }}</option>
-          <option value="municipal">{{ site.Municipal[page.lang] }}</option>
-          <option value="aboriginal">{{ site.Aboriginal[page.lang] }}</option>
+          {%- for govLevels in site.data.i18n.administrations -%}
+          {%- assign govLevel = govLevels[1] -%}
+          <option value="{{ govLevel.value }}">{{ govLevel[page.lang] }}</option>
+          {%- endfor -%}
         </select>
       </div>
 
       <div class="form-group">
-        <label for="dt_department">Administration</label>
+        <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
-          {% assign admin_array = "" | split: ',' %}
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-            
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-            
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
+          {%- assign admin_array = "" | split: ',' -%}
+          {%- for fptms in site.data.code -%}
+            {%- assign fptm = fptms[1] -%}
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- assign aName = site.data.administrations.federal | where: "code", admin.adminCode -%}
+              {%- if aName[0].name[page.lang] != nil -%}
+                {%- assign admin_array = admin_array | push: aName[0].name[page.lang] -%}
+              {%- endif -%}
+            {%- endfor -%}
 
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}   
-              {% assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode %}
-              {% if aName[0].name[page.lang] != nil %}
-                {% assign admin_array = admin_array | push: aName[0].name[page.lang] %}
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-          
-          {% assign admin_array = admin_array | sort %}
-          {% for admin in admin_array %}
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- assign aName = site.data.administrations.provincial | where: "code", admin.adminCode -%}
+              {%- if aName[0].name[page.lang] != nil -%}
+                {%- assign admin_array = admin_array | push: aName[0].name[page.lang] -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- assign aName = site.data.administrations.municipal | where: "code", admin.adminCode -%}
+              {%- if aName[0].name[page.lang] != nil -%}
+                {%- assign admin_array = admin_array | push: aName[0].name[page.lang] -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode -%}
+              {%- if aName[0].name[page.lang] != nil -%}
+                {%- assign admin_array = admin_array | push: aName[0].name[page.lang] -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+
+          {%- assign admin_array = admin_array | sort -%}
+          {%- for admin in admin_array -%}
             <option value="{{ admin }}">{{ admin }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
 
       <div class="form-group">
-        <label for="dt_organization">{{ site.Organization[page.lang] }}</label>
+        <label for="dt_organization">{{ site.data.i18n.tables.organization[page.lang] }}</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value="">&nbsp;</option>
-          {% assign org_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% if release.organization[page.lang] != nil %}
-                  {% assign org_array = org_array | push: release.organization[page.lang] %}
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endfor %}
-                    
-          {% assign org_array = org_array | group_by: "" | sort: "name" %}
-          {% for org in org_array %}
+          {%- assign org_array = "" | split: ',' -%}
+
+          {%- for fptms in site.data.code -%}
+            {%- assign fptm = fptms[1] -%}
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- for release in admin.releases -%}
+                {%- if release.organization[page.lang] != nil -%}
+                  {%- assign org_array = org_array | push: release.organization[page.lang] -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+
+          {%- assign org_array = org_array | group_by: "" | sort: "name" -%}
+          {%- for org in org_array -%}
             <option value="{{ org.name }}">{{ org.name }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
-      
+
       <div class="form-group">
-        <label for="dt_license">{{ site.License[page.lang] }}</label>
+        <label for="dt_license">{{ site.data.i18n.tables.license[page.lang] }}</label>
         <select class="form-control" id="dt_license" name="dt_license" data-column="3">
           <option value="">&nbsp;</option>
-          {% assign license_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% for license in release.licenses %}
-                  {% assign license_array = license_array | push: license.spdxID %}
-                {% endfor %}
-              {% endfor %}
-            {% endfor %}
-          {% endfor %}
-                    
-          {% assign license_array = license_array | group_by: "" | sort: "name" %}
-          {% for license in license_array %}
+          {%- assign license_array = "" | split: ',' -%}
+
+          {%- for fptms in site.data.code -%}
+            {%- assign fptm = fptms[1] -%}
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- for release in admin.releases -%}
+                {%- for license in release.licenses -%}
+                  {%- assign license_array = license_array | push: license.spdxID -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+
+          {%- assign license_array = license_array | group_by: "" | sort: "name" -%}
+          {%- for license in license_array -%}
             <option value="{{ license.name }}">{{ license.name }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
-      
+
       <div class="form-group">
-        <label for="dt_tag">{{ site.Tag[page.lang] }}</label>
+        <label for="dt_tag">{{ site.data.i18n.tables.tag[page.lang] }}</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
           <option value="">&nbsp;</option>
-          {% assign tag_array = "" | split: ',' %}
-          
-          {% for fptms in site.data.code %}
-            {% assign fptm = fptms[1] %}
-            {% for admins in fptm %}
-              {% assign admin = admins[1] %}
-              {% for release in admin.releases %}
-                {% for tag in release.tags[page.lang] %}
-                  {% assign tag_array = tag_array | push: tag %}
-                {% endfor %}
-              {% endfor %}
-            {% endfor %}
-          {% endfor %}
-          
-          {% assign tag_array = tag_array | group_by: "" | sort: "name" %}
-          {% for tag in tag_array %}
+          {%- assign tag_array = "" | split: ',' -%}
+
+          {%- for fptms in site.data.code -%}
+            {%- assign fptm = fptms[1] -%}
+            {%- for admins in fptm -%}
+              {%- assign admin = admins[1] -%}
+              {%- for release in admin.releases -%}
+                {%- for tag in release.tags[page.lang] -%}
+                  {%- assign tag_array = tag_array | push: tag -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+
+          {%- assign tag_array = tag_array | group_by: "" | sort: "name" -%}
+          {%- for tag in tag_array -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
-          {% endfor %}
+          {%- endfor -%}
         </select>
       </div>
-      
+
       <div class="row">
         <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.Filter[page.lang] }}</button>
+          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
         </div>
         <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">{{ site.Clear[page.lang] }}</button>
+          <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
         </div>
       </div>
-      
+
     </form>
   </details>
 </div>
 
 <!-- Data Table -->
-<div class="col-md-9">
+<div class="col-md-9" style="margin-bottom: 20px;">
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": true}'>
     <thead>
+      <!-- TODO: Better the translations, maybe use those from the form file -->
       <tr>
         <th>Administration</th>
-        <th>{{ site.ProjectName[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
         <th>Description</th>
-        <th>{{ site.License[page.lang] }}</th>
-        <th>{{ site.Tag[page.lang] }}</th>
-        <th>{{ site.Organization[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.license[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.organization[page.lang] }}</th>
         <th>Code Repo</th>
-        <th>{{ site.LevelOfGovernment[page.lang] }}</th>
-        <th>{{ site.Language[page.lang] }}</th>
-        <th>{{ site.RelatedCode[page.lang] }}</th>
-        <th>{{ site.Status[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</th>
+        <th>{{ site.data.i18n.general.language[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.relatedCode[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.status[page.lang] }}</th>
         <th>Vcs</th>
-        <th>Version</th> 
-        <th>{{ site.CodeCreated[page.lang] }}</th> 
-        <th>{{ site.MetadataLastUpdatedCode[page.lang] }}</th> 
+        <th>Version</th>
+        <th>{{ site.data.i18n.tables.created[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.metadataLastUpdated[page.lang] }}</th>
       </tr>
     </thead>
     <tbody>
-      
-      {% for fptms in site.data.code %}
-        {% assign fptm = fptms[1] %}
-        {% for admins in fptm %}
-          {% assign admin = admins[1] %}
-          {% for release in admin.releases %}
-          <tr>
-            {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
-            {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
-            {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
-              <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
 
-            {% assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode %}
-            {% if aName[0].name[page.lang] != nil %}
+      {%- for fptms in site.data.code -%}
+        {%- assign fptm = fptms[1] -%}
+        {%- for admins in fptm -%}
+          {%- assign admin = admins[1] -%}
+          {%- for release in admin.releases -%}
+          <tr>
+            {%- assign aName = site.data.administrations.federal | where: "code", admin.adminCode -%}
+            {%- if aName[0].name[page.lang] != nil -%}
               <td>{{ aName[0].name[page.lang] }}</td>
-            {% endif %}
-            
+            {%- endif -%}
+
+            {%- assign aName = site.data.administrations.provincial | where: "code", admin.adminCode -%}
+            {%- if aName[0].name[page.lang] != nil -%}
+              <td>{{ aName[0].name[page.lang] }}</td>
+            {%- endif -%}
+
+            {%- assign aName = site.data.administrations.municipal | where: "code", admin.adminCode -%}
+            {%- if aName[0].name[page.lang] != nil -%}
+              <td>{{ aName[0].name[page.lang] }}</td>
+            {%- endif -%}
+
+            {%- assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode -%}
+            {%- if aName[0].name[page.lang] != nil -%}
+              <td>{{ aName[0].name[page.lang] }}</td>
+            {%- endif -%}
+
             <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
             <td>{{ release.description[page.lang] }}</td>
             <td>
-              {% for license in release.licenses %}
+              {%- for license in release.licenses -%}
                 <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
-              {% endfor %}
+              {%- endfor -%}
             </td>
             <td>
-              {% for tag in release.tags[page.lang] %}
+              {%- for tag in release.tags[page.lang] -%}
                 {{ tag }}&nbsp;
-              {% endfor %}
+              {%- endfor -%}
             </td>
-            <td>
-              {{ release.organization[page.lang] }}
-            </td>
+            <td>{{ release.organization[page.lang] }}</td>
             <td>
               <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
                 {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
               </a>
             </td>
+            <td>{{fptms[0] | capitalize}}</td>
             <td>
-              {{fptms[0] | capitalize}}
+              {%- for languages in release.languages -%}
+                {{ languages }}&nbsp;
+              {%- endfor -%}
             </td>
             <td>
-              {% for langauge in release.languages %}
-                {{ langauge }}&nbsp;
-              {% endfor %}
-            </td>
-            <td>
-              {% for relatedCode in release.relatedCode %}
+              {%- for relatedCode in release.relatedCode -%}
                 <a href= "{{ relatedCode.URL[page.lang] }}">{{ relatedCode.name[page.lang] }}</a>
-              {% endfor %}
+              {%- endfor -%}
             </td>
-            <td>
-              {{ release.status }}&nbsp;
-            </td>
-            <td>
-              {{ release.vcs }}&nbsp;
-            </td>
-            <td>
-              {{ release.version }}&nbsp;
-            </td>
-            <td>
-              {{ release.date.created }}&nbsp;
-            </td>
-            <td>
-              {{ release.date.metadataLastUpdated }}&nbsp;
-            </td>
+            <td>{{ release.status }}&nbsp;</td>
+            <td>{{ release.vcs }}&nbsp;</td>
+            <td>{{ release.version }}&nbsp;</td>
+            <td>{{ release.date.created }}&nbsp;</td>
+            <td>{{ release.date.metadataLastUpdated }}&nbsp;</td>
           </tr>
-          {% endfor %}
-        {% endfor %}
-      {% endfor %}
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endfor -%}
 
     </tbody>
   </table>
@@ -260,90 +247,90 @@
 
 
 <!-- Modal Lightboxes -->
-{% for fptms in site.data.code %}
-  {% assign fptm = fptms[1] %}
-  {% for admins in fptm %}
-    {% assign admin = admins[1] %}
-    {% for release in admin.releases %}
+{%- for fptms in site.data.code -%}
+  {%- assign fptm = fptms[1] -%}
+  {%- for admins in fptm -%}
+    {%- assign admin = admins[1] -%}
+    {%- for release in admin.releases -%}
       <section id="{{ release.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
         <header class="modal-header">
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
         <div class="modal-body">
           <p><strong>{{ release.description[page.lang] }}</strong></p>
-          <p>{{ site.LevelOfGovernment[page.lang] }}: {{fptms[0] | capitalize}}</p>
-          {% assign aName = site.data.administrations.federal | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
+          <p>{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}: {{fptms[0] | capitalize}}</p>
+          {%- assign aName = site.data.administrations.federal | where: "code", admin.adminCode -%}
+          {%- if aName[0].name[page.lang] != nil -%}
             <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
-          
-          {% assign aName = site.data.administrations.provincial | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
-            <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
-          
-          {% assign aName = site.data.administrations.municipal | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
-            <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
+          {%- endif -%}
 
-          {% assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode %}
-          {% if aName[0].name[page.lang] != nil %}
+          {%- assign aName = site.data.administrations.provincial | where: "code", admin.adminCode -%}
+          {%- if aName[0].name[page.lang] != nil -%}
             <p>Administration: {{ aName[0].name[page.lang] }}</p>
-          {% endif %}
+          {%- endif -%}
 
-        {% if release.organization[page.lang] != nil %}
-          <p>{{ site.Organization[page.lang] }}: {{ release.organization[page.lang] }}</p>
-        {% endif %}
+          {%- assign aName = site.data.administrations.municipal | where: "code", admin.adminCode -%}
+          {%- if aName[0].name[page.lang] != nil -%}
+            <p>Administration: {{ aName[0].name[page.lang] }}</p>
+          {%- endif -%}
+
+          {%- assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode -%}
+          {%- if aName[0].name[page.lang] != nil -%}
+            <p>Administration: {{ aName[0].name[page.lang] }}</p>
+          {%- endif -%}
+
+        {%- if release.organization[page.lang] != nil -%}
+          <p>{{ site.data.i18n.tables.organization[page.lang] }}: {{ release.organization[page.lang] }}</p>
+        {%- endif -%}
         <p>Source code:
           <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
               {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
           </a>
         </p>
-        <p>{{ site.License[page.lang] }}(s):
-          {% for license in release.licenses %}
+        <p>{{ site.data.i18n.tables.license[page.lang] }}(s):
+          {%- for license in release.licenses -%}
             <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
-          {% endfor %}
+          {%- endfor -%}
         </p>
-        <p>{{ site.Tag[page.lang] }}(s): 
-          {% for tag in release.tags[page.lang] %}
+        <p>{{ site.data.i18n.tables.tag[page.lang] }}(s):
+          {%- for tag in release.tags[page.lang] -%}
             {{ tag }}
-          {% endfor %}
+          {%- endfor -%}
         </p>
-        <p>{{ site.CodeLanguage[page.lang] }}(s): 
-          {% for langauge in release.languages %}
-            {{ langauge }}
-          {% endfor %}
+        <p>{{ site.data.i18n.tables.language[page.lang] }}(s):
+          {%- for languages in release.languages -%}
+            {{ languages }}
+          {%- endfor -%}
         </p>
-        {% if release.status != nil %}
-          <p>{{ site.Status[page.lang] }}: {{ release.status }}</p>
-        {% endif %}
-        {% if release.vcs != nil %}
+        {%- if release.status != nil -%}
+          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
+        {%- endif -%}
+        {%- if release.vcs != nil -%}
           <p>Version Control System: {{ release.vcs }}</p>
-        {% endif %}
-        {% if release.version != nil %}
+        {%- endif -%}
+        {%- if release.version != nil -%}
           <p>Version: {{ release.version }}</p>
-        {% endif %}
-        <p>{{ site.CodeCreated[page.lang] }}: {{ release.date.created }}</p>
-        <p>{{ site.LastUpdatedCode[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
+        {%- endif -%}
+        <p>{{ site.data.i18n.tables.created[page.lang] }}: {{ release.date.created }}</p>
+        <p>{{ site.data.i18n.tables.lastUpdated[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
 
         <h3>Contact</h3>
-        {% if release.contact.name != nil %}
+        {%- if release.contact.name != nil -%}
           <p>{{ release.contact.name }}</p>
-        {% endif %}
-        {% if release.contact.phone != nil %}
-          <p>{{ site.ContactPhoneCode[page.lang] }}: {{ release.contact.phone }}</p>
-        {% endif %}
-        {% if release.contact.email != nil %}
+        {%- endif -%}
+        {%- if release.contact.phone != nil -%}
+          <p>{{ site.data.i18n.tables.contactPhone[page.lang] }}: {{ release.contact.phone }}</p>
+        {%- endif -%}
+        {%- if release.contact.email != nil -%}
           <p><a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a></p>
-        {% endif %}
-        {% if release.contact.URL != nil %}
+        {%- endif -%}
+        {%- if release.contact.URL != nil -%}
           <p><a href="{{ release.contact.URL[page.lang] }}" target="_blank">{{ release.contact.URL[page.lang] }}</a></p>
-        {% endif %}
+        {%- endif -%}
         </div>
       </section>
-    {% endfor %}
-  {% endfor %}
-{% endfor %}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor -%}
 
 </div>
