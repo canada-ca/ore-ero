@@ -4,13 +4,12 @@ description:
   en: A Free and Open Source Geographic Information System
   fr: Système d'Information Géographique Libre et Open Source
 homepageURL:
-  en: https://qgis.org/en/site/
-  fr: https://qgis.org/fr/site/
+  en: 'https://qgis.org/en/site/'
+  fr: 'https://qgis.org/fr/site/'
 licenses:
-  -
-    URL:
-      en: https://github.com/qgis/QGIS/blob/master/COPYING
-      fr: https://github.com/qgis/QGIS/blob/master/COPYING
+  - URL:
+      en: 'https://github.com/qgis/QGIS/blob/master/COPYING'
+      fr: 'https://github.com/qgis/QGIS/blob/master/COPYING'
     spdxID: GPL-2.0
 name:
   en: QGIS
@@ -21,11 +20,9 @@ tags:
   fr:
     - sig
 administrations:
-  -
-    adminCode: statcan
+  - adminCode: statcan
     uses:
-      -
-        contact:
+      - contact:
           email: reginald.maltais2@canada.ca
         date:
           started: '2019-05-06'

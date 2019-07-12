@@ -1,16 +1,15 @@
---- 
+---
 schemaVersion: '1.0'
 description:
   en: Airflow is a platform to programmatically author, schedule and monitor workflows.
   fr: Airflow est une plate-forme permettant de créer, planifier et surveiller par programme des flux de travail.
 homepageURL:
-  en: https://airflow.apache.org/
-  fr: https://airflow.apache.org/
+  en: 'https://airflow.apache.org/'
+  fr: 'https://airflow.apache.org/'
 licenses:
-  -
-    URL:
-      en: https://github.com/apache/airflow/blob/master/LICENSE
-      fr: https://github.com/apache/airflow/blob/master/LICENSE
+  - URL:
+      en: 'https://github.com/apache/airflow/blob/master/LICENSE'
+      fr: 'https://github.com/apache/airflow/blob/master/LICENSE'
     spdxID: Apache-2.0
 name:
   en: AirFlow
@@ -21,11 +20,9 @@ tags:
   fr:
     - Intégration de données
 administrations:
-  -
-    adminCode: mtl_qc
+  - adminCode: mtl_qc
     uses:
-      -
-        contact:
+      - contact:
           email: libre@ville.montreal.qc.ca
         date:
           started: '2017-06-30'
