@@ -23,11 +23,9 @@ formGroups:
   - widget: string-i18n
     title: description
     prepend: use
-    rule: alphanum-space
   - widget: string-i18n
     title: name
     prepend: use
-    rule: alphanum-space
   - preset: relatedCode
   - preset: status
   - preset: empty
