@@ -34,6 +34,7 @@ $(document).ready(function() {
 });
 
 function getOssObject() {
+  // Handles mandatory fields
   let ossObject = {
     schemaVersion: $('#schemaVersion').val(),
     description: {
@@ -44,15 +45,7 @@ function getOssObject() {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
-    licenses: [
-      {
-        URL: {
-          en: $('#enlicensesURL').val(),
-          fr: $('#frlicensesURL').val()
-        },
-        spdxID: $('#licensesspdxID').val()
-      }
-    ],
+    licenses: [],
     name: {
       en: $('#enname').val(),
       fr: $('#frname').val()
@@ -87,9 +80,20 @@ function getOssObject() {
     ]
   };
 
-  // Then we handle all optional fields.
+  // Handle more-groups
+  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    ossObject.licenses[i] = {
+      URL: {
+        en: $('#enlicensesURL' + id).val(),
+        fr: $('#frlicensesURL' + id).val()
+      },
+      spdxID: $('#licensesspdxID' + id).val()
+    };
+  });
 
-  // contact.URL
+  // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL = {};
   }
@@ -104,12 +108,10 @@ function getOssObject() {
     ).val();
   }
 
-  // contact.name, TODO: update to match schema
   if ($('#contactname').val()) {
     ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
 
-  // relatedCode TODO: support multiple relatedCode fields
   if (
     $('#enrelatedCodeURL').val() ||
     $('#frrelatedCodeURL').val() ||
@@ -118,7 +120,6 @@ function getOssObject() {
   ) {
     ossObject.administrations[0].uses[0].relatedCode = [{}];
   }
-  // relatedCode.URL
   if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
   }
@@ -132,7 +133,6 @@ function getOssObject() {
       '#frrelatedCodeURL'
     ).val();
   }
-  // relatedCode.name
   if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
     ossObject.administrations[0].uses[0].relatedCode[0].name = {};
   }
@@ -147,9 +147,13 @@ function getOssObject() {
     ).val();
   }
 
-  // status
   if ($('#status :selected').val() != '') {
     ossObject.administrations[0].uses[0].status = $('#status :selected').val();
+  }
+
+  if ($('#users').val() != '') {
+    ossObject.administrations[0].uses[0].users = [];
+    ossObject.administrations[0].uses[0].users[0] = $('#users').val();
   }
 
   return ossObject;

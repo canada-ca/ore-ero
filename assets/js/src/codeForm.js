@@ -34,6 +34,7 @@ $(document).ready(function() {
 });
 
 function getCodeObject() {
+  // Handles mandatory fields
   let codeObject = {
     schemaVersion: $('#schemaVersion').val(),
     adminCode: getAdminCode(),
@@ -54,15 +55,7 @@ function getCodeObject() {
           en: $('#enname').val(),
           fr: $('#frname').val()
         },
-        licenses: [
-          {
-            URL: {
-              en: $('#enlicensesURL').val(),
-              fr: $('#frlicensesURL').val()
-            },
-            spdxID: $('#licensesspdxID').val()
-          }
-        ],
+        licenses: [],
         repositoryURL: {
           en: $('#enrepositoryUrl').val(),
           fr: $('#frrepositoryUrl').val()
@@ -75,6 +68,20 @@ function getCodeObject() {
     ]
   };
 
+  // Handle more-groups
+  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    codeObject.releases[0].licenses[i] = {
+      URL: {
+        en: $('#enlicensesURL' + id).val(),
+        fr: $('#frlicensesURL' + id).val()
+      },
+      spdxID: $('#licensesspdxID' + id).val()
+    };
+  });
+
+  // Handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeObject.releases[0].contact.URL = {};
   }
@@ -134,72 +141,102 @@ function getCodeObject() {
     codeObject.releases[0].organization.fr = $('#frorganization').val();
   }
 
-  if (
-    $('#enpartnerURL').val() ||
-    $('#frpartnerURL').val() ||
-    $('#partneremail').val() ||
-    $('#enpartnername').val() ||
-    $('#frpartnername').val()
-  ) {
-    codeObject.releases[0].partners = {};
-  }
+  $('#addMorepartners ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if (
+      $('#enpartnersURL' + id).val() ||
+      $('#frpartnersURL' + id).val() ||
+      $('#partnersemail' + id).val() ||
+      $('#enpartnersname' + id).val() ||
+      $('#frpartnersname' + id).val()
+    ) {
+      if (codeObject.releases[0].partners == undefined)
+        codeObject.releases[0].partners = [];
+      codeObject.releases[0].partners[i] = {};
+    }
 
-  if ($('#enpartnerURL').val() || $('#frpartnerURL').val()) {
-    codeObject.releases[0].partners.URL = {};
-  }
-  if ($('#enpartnerURL').val()) {
-    codeObject.releases[0].partners.URL.en = $('#enpartnerURL').val();
-  }
-  if ($('#frpartnerURL').val()) {
-    codeObject.releases[0].partners.URL.fr = $('#frpartnerURL').val();
-  }
+    if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL = {};
+    }
+    if ($('#enpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL.en = $(
+        '#enpartnersURL' + id
+      ).val();
+    }
+    if ($('#frpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL.fr = $(
+        '#frpartnersURL' + id
+      ).val();
+    }
 
-  if ($('#partneremail').val()) {
-    codeObject.releases[0].partners.email = $('#partneremail').val();
-  }
+    if ($('#partnersemail' + id).val()) {
+      codeObject.releases[0].partners[i].email = $('#partnersemail' + id).val();
+    }
 
-  if ($('#enpartnername').val() || $('#frpartnername').val()) {
-    codeObject.releases[0].partners.name = {};
-  }
-  if ($('#enpartnername').val()) {
-    codeObject.releases[0].partners.name.en = $('#enpartnername').val();
-  }
-  if ($('#frpartnername').val()) {
-    codeObject.releases[0].partners.name.fr = $('#frpartnername').val();
-  }
+    if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name = {};
+    }
+    if ($('#enpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name.en = $(
+        '#enpartnersname' + id
+      ).val();
+    }
+    if ($('#frpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name.fr = $(
+        '#frpartnersname' + id
+      ).val();
+    }
+  });
 
-  if (
-    $('#enrelatedCodeURL').val() ||
-    $('#frrelatedCodeURL').val() ||
-    $('#enrelatedCodename').val() ||
-    $('#frrelatedCodename').val()
-  ) {
-    codeObject.releases[0].relatedCode = [{}];
-  }
+  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val() ||
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      if (codeObject.releases[0].relatedCode == undefined)
+        codeObject.releases[0].relatedCode = [];
+      codeObject.releases[0].relatedCode[i] = {};
+    }
 
-  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL = {};
-  }
-  if ($('#enrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL.en = $('#enrelatedCodeURL').val();
-  }
-  if ($('#frrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL.fr = $('#frrelatedCodeURL').val();
-  }
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val()
+    ) {
+      codeObject.releases[0].relatedCode[i].URL = {};
+    }
+    if ($('#enrelatedCodeURL' + id).val()) {
+      codeObject.releases[0].relatedCode[i].URL.en = $(
+        '#enrelatedCodeURL' + id
+      ).val();
+    }
+    if ($('#frrelatedCodeURL' + id).val()) {
+      codeObject.releases[0].relatedCode[i].URL.fr = $(
+        '#frrelatedCodeURL' + id
+      ).val();
+    }
 
-  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name = {};
-  }
-  if ($('#enrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name.en = $(
-      '#enrelatedCodename'
-    ).val();
-  }
-  if ($('#frrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name.fr = $(
-      '#frrelatedCodename'
-    ).val();
-  }
+    if (
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      codeObject.releases[0].relatedCode[i].name = {};
+    }
+    if ($('#enrelatedCodename' + id).val()) {
+      codeObject.releases[0].relatedCode[i].name.en = $(
+        '#enrelatedCodename' + id
+      ).val();
+    }
+    if ($('#frrelatedCodename' + id).val()) {
+      codeObject.releases[0].relatedCode[i].name.fr = $(
+        '#frrelatedCodename' + id
+      ).val();
+    }
+  });
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
@@ -536,13 +573,13 @@ function addValueToFields(obj) {
 
   if (obj.partners) {
     if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enpartnerURL').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frpartnerURL').val(obj.partners.URL.fr);
+      if (obj.partners.URL.en) $('#enpartnersURL').val(obj.partners.URL.en);
+      if (obj.partners.URL.fr) $('#frpartnersURL').val(obj.partners.URL.fr);
     }
-    if (obj.partners.email) $('#partneremail').val(obj.partners.email);
+    if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
     if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enpartnername').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frpartnername').val(obj.partners.name.fr);
+      if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
+      if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
     }
   }
 
@@ -591,11 +628,11 @@ function resetFields() {
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
-  $('#enpartnerURL').val('');
-  $('#frpartnerURL').val('');
-  $('#partneremail').val('');
-  $('#enpartnername').val('');
-  $('#frpartnername').val('');
+  $('#enpartnersURL').val('');
+  $('#frpartnersURL').val('');
+  $('#partnersemail').val('');
+  $('#enpartnersname').val('');
+  $('#frpartnersname').val('');
   $('#enrelatedCodeURL').val('');
   $('#frrelatedCodeURL').val('');
   $('#enrelatedCodename').val('');

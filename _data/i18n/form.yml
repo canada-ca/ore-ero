@@ -320,7 +320,7 @@ code:
       schema:
         en: Organization
         fr: Organisation
-  partner:
+  partners:
     title:
       en: Information about each group partnering on the project.
       fr: Renseignements sur chaque groupe partenaire du projet.

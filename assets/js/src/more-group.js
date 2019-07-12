@@ -67,8 +67,10 @@ function addElement(obj) {
         if ($(this).attr('id')) $(this).attr('id', $(this).attr('id') + index);
         if ($(this).attr('name'))
           $(this).attr('name', $(this).attr('name') + index);
-    });
-  })
+        $(this).val('');
+      });
+  });
+
   $(ul).append(li);
 }
 
