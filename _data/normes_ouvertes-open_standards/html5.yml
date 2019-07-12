@@ -3,27 +3,46 @@ schemaVersion: '1.0'
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: ~
+      email: null
     references:
       - URL:
-          en: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875
-          fr: https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
         name:
           en: Standard on Web Interoperability
-          fr: Norme sur l’interopérabilité du Web
+          fr: Norme sur l'interopérabilité du Web
     status: mandatory-gc
+  - adminCode: lac-bac
+    contact:
+      email: test@gmail.com
+    references:
+      - URL:
+          en: 'http://test.com'
+          fr: 'http://test.com'
+        name:
+          en: test
+          fr: test
+    date:
+      created: '2017-12-06'
+      metadataLastUpdated: '2019-07-12'
+    status: test
 date:
   created: '2018-01-23'
   metadataLastUpdated: '2018-11-15'
 description:
-  en: HTML5 is a markup language used for structuring and presenting content on the Web. It is the fifth and current major version of the HTML standard.
-  fr: HTML5 est un langage de balisage utilisé pour structurer et présenter du contenu sur le Web. C'est la cinquième et dernière version majeure de la norme HTML.
+  en: >-
+    HTML5 is a markup language used for structuring and presenting content on
+    the Web. It is the fifth and current major version of the HTML standard.
+  fr: >-
+    HTML5 est un langage de balisage utilisé pour structurer et présenter du
+    contenu sur le Web. C'est la cinquième et dernière version majeure de la
+    norme HTML.
 name:
   en: HyperText Markup Language 5
   fr: HyperText Markup Language 5
 specURL:
-  en: https://www.w3.org/TR/html5/
-  fr: https://www.w3.org/TR/html5/
+  en: 'https://www.w3.org/TR/html5/'
+  fr: 'https://www.w3.org/TR/html5/'
 standardCode: HTML5
 standardsOrg: W3C
 tags:
