@@ -17,12 +17,12 @@ releases:
       fr: METRo
     licenses:
       - URL:
-          en: https://framagit.org/metroprojects/metro/blob/master/LICENSE
-          fr: https://framagit.org/metroprojects/metro/blob/master/LICENSE
+          en: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
+          fr: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
         spdxID: GPL-2.0
     repositoryURL:
-      en: https://framagit.org/metroprojects/metro
-      fr: https://framagit.org/metroprojects/metro
+      en: 'https://framagit.org/metroprojects/metro'
+      fr: 'https://framagit.org/metroprojects/metro'
     tags:
       en:
         - Environment

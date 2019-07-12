@@ -1,4 +1,4 @@
-/* exported validateRequired toggleAlert */
+/* exported validateRequired submitInit submitConclusion */
 
 /**
  * Validates the required fields in the codeForm
@@ -47,4 +47,30 @@ function toggleAlert(option) {
   } else {
     console.log('Invalid alert option');
   }
+}
+
+function submitConclusion(response, submitButton, resetButton) {
+  if (response.status != 200) {
+    toggleAlert(ALERT_OFF);
+    toggleAlert(ALERT_FAIL);
+    submitButton.disabled = false;
+    resetButton.disabled = false;
+  } else {
+    toggleAlert(ALERT_OFF);
+    toggleAlert(ALERT_SUCCESS);
+    // Redirect to home page
+    setTimeout(function() {
+      window.location.href = './index.html';
+    }, 2000);
+  }
+}
+
+function submitInit() {
+  let valid = validateRequired();
+  if (valid) {
+    toggleAlert(ALERT_OFF);
+    toggleAlert(ALERT_IN_PROGRESS);
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+  return valid;
 }

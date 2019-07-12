@@ -4,13 +4,12 @@ description:
   en: Instant messaging team chat
   fr: Messagerie instantanée et clavardage d'équipe
 homepageURL:
-  en: https://rocket.chat
-  fr: https://rocket.chat
+  en: 'https://rocket.chat'
+  fr: 'https://rocket.chat'
 licenses:
-  -
-    URL:
-      en: https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE
-      fr: https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE
+  - URL:
+      en: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
+      fr: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
     spdxID: MIT
 name:
   en: Rocketchat
@@ -21,11 +20,9 @@ tags:
   fr:
     - Messagerie instantanée
 administrations:
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
