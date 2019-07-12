@@ -119,7 +119,7 @@ function getConfigUpdate(result, file) {
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -142,11 +142,7 @@ function getConfigNew(adminObject, file) {
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(adminObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),
