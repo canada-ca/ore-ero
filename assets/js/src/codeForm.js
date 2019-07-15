@@ -2,9 +2,10 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags getLanguages selectLanguage resetLanguages
+  getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
+  addMoreLicenses
 */
 
 const codeObj = $('.page-codeForm #nameselect');
@@ -34,8 +35,9 @@ $(document).ready(function() {
 });
 
 function getCodeObject() {
+  // Handles mandatory fields
   let codeObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     adminCode: getAdminCode(),
     releases: [
       {
@@ -54,27 +56,23 @@ function getCodeObject() {
           en: $('#enname').val(),
           fr: $('#frname').val()
         },
-        licenses: [
-          {
-            URL: {
-              en: $('#enlicensesURL').val(),
-              fr: $('#frlicensesURL').val()
-            },
-            spdxID: $('#licensesspdxID').val()
-          }
-        ],
+        licenses: [],
         repositoryURL: {
           en: $('#enrepositoryUrl').val(),
           fr: $('#frrepositoryUrl').val()
         },
         tags: {
-          en: getTags([...document.querySelectorAll('#tagsEN input')]),
-          fr: getTags([...document.querySelectorAll('#tagsFR input')])
+          en: getTagsEN(),
+          fr: getTagsFR()
         }
       }
     ]
   };
 
+  // Handle more-groups
+  addMoreLicenses(codeObject.releases[0]);
+
+  // Handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeObject.releases[0].contact.URL = {};
   }
@@ -134,39 +132,54 @@ function getCodeObject() {
     codeObject.releases[0].organization.fr = $('#frorganization').val();
   }
 
-  if (
-    $('#enpartnerURL').val() ||
-    $('#frpartnerURL').val() ||
-    $('#partneremail').val() ||
-    $('#enpartnername').val() ||
-    $('#frpartnername').val()
-  ) {
-    codeObject.releases[0].partners = {};
-  }
+  // Optional more-group
+  $('#addMorepartners ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if (
+      $('#enpartnersURL' + id).val() ||
+      $('#frpartnersURL' + id).val() ||
+      $('#partnersemail' + id).val() ||
+      $('#enpartnersname' + id).val() ||
+      $('#frpartnersname' + id).val()
+    ) {
+      if (codeObject.releases[0].partners == undefined)
+        codeObject.releases[0].partners = [];
+      codeObject.releases[0].partners[i] = {};
+    }
 
-  if ($('#enpartnerURL').val() || $('#frpartnerURL').val()) {
-    codeObject.releases[0].partners.URL = {};
-  }
-  if ($('#enpartnerURL').val()) {
-    codeObject.releases[0].partners.URL.en = $('#enpartnerURL').val();
-  }
-  if ($('#frpartnerURL').val()) {
-    codeObject.releases[0].partners.URL.fr = $('#frpartnerURL').val();
-  }
+    if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL = {};
+    }
+    if ($('#enpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL.en = $(
+        '#enpartnersURL' + id
+      ).val();
+    }
+    if ($('#frpartnersURL' + id).val()) {
+      codeObject.releases[0].partners[i].URL.fr = $(
+        '#frpartnersURL' + id
+      ).val();
+    }
 
-  if ($('#partneremail').val()) {
-    codeObject.releases[0].partners.email = $('#partneremail').val();
-  }
+    if ($('#partnersemail' + id).val()) {
+      codeObject.releases[0].partners[i].email = $('#partnersemail' + id).val();
+    }
 
-  if ($('#enpartnername').val() || $('#frpartnername').val()) {
-    codeObject.releases[0].partners.name = {};
-  }
-  if ($('#enpartnername').val()) {
-    codeObject.releases[0].partners.name.en = $('#enpartnername').val();
-  }
-  if ($('#frpartnername').val()) {
-    codeObject.releases[0].partners.name.fr = $('#frpartnername').val();
-  }
+    if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name = {};
+    }
+    if ($('#enpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name.en = $(
+        '#enpartnersname' + id
+      ).val();
+    }
+    if ($('#frpartnersname' + id).val()) {
+      codeObject.releases[0].partners[i].name.fr = $(
+        '#frpartnersname' + id
+      ).val();
+    }
+  });
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
@@ -266,11 +279,11 @@ function getConfigNewAdmin(
       files: [
         {
           path: codeFile,
-          content: '---\n' + jsyaml.dump(codeObject, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(codeObject)
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(resultAdmin, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(resultAdmin)
         }
       ]
     }),
@@ -460,7 +473,7 @@ function addValueToFields(obj) {
   if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.metadataLastUpdated);
+  $('#datelastModified').val(obj.date.datelastModified);
 
   $('#enlicensesURL').val(obj.licenses[0].URL.en);
   $('#frlicensesURL').val(obj.licenses[0].URL.fr);
@@ -495,13 +508,13 @@ function addValueToFields(obj) {
 
   if (obj.partners) {
     if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enpartnerURL').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frpartnerURL').val(obj.partners.URL.fr);
+      if (obj.partners.URL.en) $('#enpartnersURL').val(obj.partners.URL.en);
+      if (obj.partners.URL.fr) $('#frpartnersURL').val(obj.partners.URL.fr);
     }
-    if (obj.partners.email) $('#partneremail').val(obj.partners.email);
+    if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
     if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enpartnername').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frpartnername').val(obj.partners.name.fr);
+      if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
+      if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
     }
   }
 
@@ -533,10 +546,10 @@ function resetFields() {
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
-  $('#enpartnerURL').val('');
-  $('#frpartnerURL').val('');
-  $('#partneremail').val('');
-  $('#enpartnername').val('');
-  $('#frpartnername').val('');
+  $('#enpartnersURL').val('');
+  $('#frpartnersURL').val('');
+  $('#partnersemail').val('');
+  $('#enpartnersname').val('');
+  $('#frpartnersname').val('');
   $('#status').val('');
 }

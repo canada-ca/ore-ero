@@ -1,4 +1,6 @@
+{%- if include.more %}<div class="add-more-group" id="addMore{{ include.title }}" data-title="{{ include.title }}">{% endif -%}
 {%- include form/components/title.html id=include.id title=include.title prepend=include.prepend -%}
+{%- if include.more %}<div class="add-more-content">{% endif -%}
 
 {%- for field in include.fields -%}
 
@@ -17,3 +19,4 @@
       {%- include form/widgets/select.html id=include.id title=include.title required=required options=options -%}
   {%- endcase -%}
 {%- endfor -%}
+{%- if include.more -%}</div></div>{%- endif %}
