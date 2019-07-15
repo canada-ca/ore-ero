@@ -39,7 +39,9 @@ specURL:
   en: 'https://tools.ietf.org/html/rfc3629'
   fr: 'https://tools.ietf.org/html/rfc3629'
 standardCode: UTF-8
-standardsOrg: IETF
+standardsOrg:
+  en: IETF
+  fr: IETF
 tags:
   en:
     - Web

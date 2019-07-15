@@ -25,7 +25,9 @@ specURL:
   en: 'https://www.w3.org/TR/html5/'
   fr: 'https://www.w3.org/TR/html5/'
 standardCode: HTML5
-standardsOrg: W3C
+standardsOrg:
+  en: W3C
+  fr: W3C
 tags:
   en:
     - Web
