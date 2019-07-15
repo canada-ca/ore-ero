@@ -187,14 +187,6 @@ function getCodeObject() {
     codeObject.releases[0].status = $('#status :selected').val();
   }
 
-  if ($('#version').val()) {
-    codeObject.releases[0].version = $('#version').val();
-  }
-
-  if ($('#vcs').val()) {
-    codeObject.releases[0].vcs = $('#vcs').val();
-  }
-
   return codeObject;
 }
 
@@ -544,8 +536,6 @@ function addValueToFields(obj) {
   }
 
   if (obj.status) $('#status').val(obj.status);
-  if (obj.version) $('#version').val(obj.version);
-  if (obj.vcs) $('#vcs').val(obj.vcs);
 }
 
 function resetFields() {
@@ -583,6 +573,4 @@ function resetFields() {
   $('#enrelatedCodename').val('');
   $('#frrelatedCodename').val('');
   $('#status').val('');
-  $('#version').val('');
-  $('#vcs').val('');
 }

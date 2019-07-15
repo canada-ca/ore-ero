@@ -32,9 +32,7 @@ releases:
         - Social Benefits
       fr:
         - Avantages sociaux
-    vcs: git
     languages:
       - JavaScript
       - TypeScript
     status: Maintained
-    version: 1.0.91

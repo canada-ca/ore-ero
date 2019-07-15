@@ -32,7 +32,6 @@ releases:
         - Developer Exchange
       fr:
         - Échange de développeurs
-    vcs: git
   - contact:
       URL:
         en: 'https://github.com/bcgov/gwells/issues'
@@ -66,8 +65,6 @@ releases:
         - groundwater-data
       fr:
         - données-eaux souterraines
-    vcs: git
-    version: 1.54.0
   - contact:
       URL:
         en: 'https://github.com/bcgov/devhub-app-web/issues'
@@ -101,8 +98,6 @@ releases:
         - DevHub App Web
       fr:
         - DevHub App Web
-    vcs: git
-    version: 2.7.0
   - contact:
       URL:
         en: 'https://github.com/bcgov/ckanext-bcgov/issues'
@@ -136,5 +131,3 @@ releases:
         - Data Catalogue
       fr:
         - Catalogue de données
-    vcs: git
-    version: 1.7.18

@@ -34,7 +34,6 @@ releases:
         - Rappels
         - Véhicules
         - Alexa
-    vcs: git
   - contact:
       email: Heather.MacKeen@tc.gc.ca
       name: Heather MacKeen
@@ -66,4 +65,3 @@ releases:
         - Fichiers
         - Synchronisation
         - Réseau
-    vcs: git
