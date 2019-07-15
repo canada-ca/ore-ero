@@ -66,23 +66,29 @@ function getStandardsObject() {
         contact: {
           email: $('#contactemail').val()
         },
-        references: [
-          {
-            URL: {
-              en: $('#enreferenceURL').val(),
-              fr: $('#frreferenceURL').val()
-            },
-            name: {
-              en: $('#enreferencename').val(),
-              fr: $('#frreferencename').val()
-            }
-          }
-        ],
+        references: [],
         status: $('#status').val()
       }
     ]
   };
 
+  // Handles more-groups
+  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    standardsObject.administrations[0].references[i] = {
+      URL: {
+        en: $('#enreferenceURL' + id).val(),
+        fr: $('#frreferenceURL' + id).val()
+      },
+      name: {
+        en: $('#enreferencename' + id).val(),
+        fr: $('#frreferencename' + id).val()
+      }
+    };
+  });
+
+  // Handles optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     standardsObject.administrations[0].contact.URL = {};
   }
