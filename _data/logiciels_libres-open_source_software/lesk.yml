@@ -4,18 +4,16 @@ description:
   en: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application.
   fr: Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web.
 homepageURL:
-  en: https://lesk.it
-  fr: https://lesk.it
+  en: 'https://lesk.it'
+  fr: 'https://lesk.it'
 licenses:
-  -
-    URL:
-      en: http://lesk.it/license.html
-      fr: http://lesk.it/license.html
+  - URL:
+      en: 'http://lesk.it/license.html'
+      fr: 'http://lesk.it/license.html'
     spdxID: GPL-3.0
-  -
-    URL:
-      en: http://lesk.it/license.html
-      fr: http://lesk.it/license.html
+  - URL:
+      en: 'http://lesk.it/license.html'
+      fr: 'http://lesk.it/license.html'
     spdxID: Apache-2.0
 name:
   en: LESK
@@ -30,14 +28,12 @@ tags:
     - PHP
     - Laravel
 administrations:
-  -
-    adminCode: gac-amc
+  - adminCode: gac-amc
     uses:
-      -
-        contact:
+      - contact:
           URL:
-            en: https://www.international.gc.ca
-            fr: https://www.international.gc.ca
+            en: 'https://www.international.gc.ca'
+            fr: 'https://www.international.gc.ca'
           name: Terry O'Reilly
           email: terry.oreilly@international.gc.ca
         date:
@@ -49,11 +45,10 @@ administrations:
         description:
           en: Information Management System Console.
           fr: Information Management System Console.
-      -
-        contact:
+      - contact:
           URL:
-            en: https://www.international.gc.ca
-            fr: https://www.international.gc.ca
+            en: 'https://www.international.gc.ca'
+            fr: 'https://www.international.gc.ca'
           name: Yves Cloutier
           email: yves.cloutier@international.gc.ca
         date:

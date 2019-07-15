@@ -1,0 +1,11 @@
+{%- assign title = "relatedCode" -%}
+<li>
+  <details open>
+    <summary>{{ title }} [array]</summary>
+    <p>{{ site.data.i18n.form[include.id][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- include schema/components/li-i18n-group.html id=include.id title=title group="URL" required=false -%}
+      {%- include schema/components/li-i18n-group.html id=include.id title=title group="name" required=false -%}
+    </ul>
+  </details>
+</li>

@@ -1,17 +1,17 @@
-<h2>{{ site.data.i18n.form.presets.Contact.title[page.lang] }}</h2>
+{%- assign title = "contact" -%}
+{%- include form/components/title.html id=include.id title=title -%}
 
-{% capture label %}{{ site.data.i18n.form.url.en[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="enUrlContact" type="url" label=label required=false %}
+{%- include form/components/group-i18n-group.html id=include.id title=title group="URL" required=false -%}
 
-{% capture label %}{{ site.data.i18n.form.url.fr[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="frUrlContact" type="url" label=label required=false %}
+{%- if include.required == nil or include.required == true -%}
+  {% assign required = true -%}
+{%- else -%}
+  {% assign required = false -%}
+{%- endif -%}
+{%- include form/components/group-group.html id=include.id title=title group="email" required=required type="email" -%}
 
-{% include form/presets/components/email.html title="Contact" %}
+{%- include form/components/group-group.html id=include.id title=title group="name" required=false -%}
 
-{% capture label %}{{ site.data.i18n.form.name[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="nameContact" label=label rule="names" required=false %}
-
-{% if include.phone == nil or include.phone == true  %}
-{% capture label %}{{ site.data.i18n.form.presets.Contact.phone[page.lang] }}{% endcapture %}
-{% include form/components/group.html name="phone" type="tel" label=label rule="phone" required=false %}
-{% endif %}
+{%- if include.phone == nil or include.phone == true -%}
+  {%- include form/components/group-group.html id=include.id title=title group="phone" type="tel" required=false rule="phone" -%}
+{%- endif -%}

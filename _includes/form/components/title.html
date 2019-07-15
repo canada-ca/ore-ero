@@ -1,0 +1,2 @@
+{%- capture path -%}{{ include.prepend }}{{ include.title }}{%- endcapture -%}
+<h2{% if include.styles %} style="{{ include.styles }}"{% endif %}>{{ site.data.i18n.form.[include.id][path].title[page.lang] }}</h2>

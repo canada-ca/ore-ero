@@ -4,13 +4,12 @@ description:
   en: The Linux kernel is a Unix-like computer operating system kernel
   fr: Le noyau Linux est un noyau de système d'exploitation de type UNIX
 homepageURL:
-  en: https://www.linux.org
-  fr: https://www.linux.org
+  en: 'https://www.linux.org'
+  fr: 'https://www.linux.org'
 licenses:
-  -
-    URL:
-      en: https://www.kernel.org/doc/html/v4.17/process/license-rules.html
-      fr: https://www.kernel.org/doc/html/v4.17/process/license-rules.html
+  - URL:
+      en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
+      fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
     spdxID: GPL-2.0
 name:
   en: Linux
@@ -21,11 +20,9 @@ tags:
   fr:
     - Noyau de système d'exploitation
 administrations:
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
