@@ -1,0 +1,9 @@
+<li>
+  <details open>
+    <summary>{{ include.title }}
+      {%- if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]
+    </summary>
+    <h5>{{ site.data.i18n.form[include.id][include.title].label[page.lang] }}</h5>
+    <p>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</p>
+  </details>
+</li>
