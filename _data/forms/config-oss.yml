@@ -28,5 +28,9 @@ formGroups:
     prepend: use
   - preset: relatedCode
   - preset: status
+  - widget: string
+    title: users
+    required: false
+    more: true
   - preset: empty
   - preset: empty

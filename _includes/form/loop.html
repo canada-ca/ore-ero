@@ -4,6 +4,9 @@
 
 <div class="form-element">
 {% if formGroup.preset -%}
+{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
+<div class="form-element-preset{% if formGroup.preset == 'licenses' or formGroup.preset == 'relatedCode' %} form-group-more{% endif %}" id="formgroup_preset_{{ formGroup.preset }}">
+{%- endif -%}
   {%- case formGroup.preset -%}
     {%- when 'adminCode' -%}
       {% include form/presets/adminCode.html id=idPreset -%}
@@ -46,17 +49,22 @@
     {%- when 'empty' -%}
       <!-- empty -->
   {%- endcase -%}
+{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
+</div>
+{%- endif -%}
 {% else %}
+<div class="form-group-widget{% if formGroup.more %} form-group-more{% endif %}" id="formgroup_widget_{% if formGroup.prepend != '' %}{{ formGroup.prepend }}{% endif %}{{ formGroup.title }}">
   {%- case formGroup.widget -%}
     {%- when 'group' -%}
-      {% include form/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required prepend=formGroup.prepend -%}
+      {% include form/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
     {%- when 'select' -%}
-      {% include form/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options prepend=formGroup.prepend -%}
+      {% include form/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options prepend=formGroup.prepend more=formGroup.more -%}
     {%- when 'string' -%}
-      {% include form/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend -%}
+      {% include form/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
     {%- when 'string-i18n' -%}
-      {% include form/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend -%}
+      {% include form/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
   {%- endcase -%}
+</div>
 {%- endif -%}
 </div>
 
