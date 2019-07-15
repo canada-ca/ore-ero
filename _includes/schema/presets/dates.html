@@ -1,0 +1,22 @@
+{%- assign title = "date" -%}
+<li>
+  <details open>
+    <summary>{{ title }} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span> [array]</summary>
+    <p>{{ site.data.i18n.form.[include.id][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- if include.created -%}
+        {%- include schema/components/li-group.html id=include.id title=title group="created" -%}
+      {%- endif -%}
+
+      {%- if include.started -%}
+        {%- include schema/components/li-group.html id=include.id title=title group="started" -%}
+      {%- endif -%}
+
+      {%- if include.modified -%}
+        {%- include schema/components/li-group.html id=include.id title=title group="lastModified" required=false -%}
+      {%- endif -%}
+
+      {%- include schema/components/li-group.html id=include.id title=title group="metadataLastUpdated" -%}
+    </ul>
+  </details>
+</li>

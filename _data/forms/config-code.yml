@@ -5,68 +5,52 @@ id: code
 formGroups:
   - preset: schemaVersion
   - preset: adminCode
-  - preset: newAdmin
-    fields:
-      - preset: orgLevel
-      - widget: string
-        title: newAdminCode
-      - widget: select
-        title: ProvinceCode
-        options: [ab, bc, mb, nb, nl, nt, ns, nu, "on", pe, qc, sk, yt] # on is a yaml/liquid/jekyll keyword and thus must be escaped
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
   - preset: selectCode
+  - preset: empty
+    start: true
+    title: releases
   - preset: description
   - preset: contact
   - preset: dates
     created: true
     modified: true
-    metadata: true
+    updated: true
   - widget: string-i18n
-    title: DownloadUrl
+    title: downloadUrl
     type: url
     required: false
-  - widget: string-i18n
-    title: HomepageUrl
-    type: url
-    required: false
+  - preset: homepageURL
   - preset: languages
   - widget: string-i18n
-    title: Organization
+    title: organization
     rule: alphanum-space
     required: false
   - widget: group
-    title: Partner
+    title: partners
     required: false
+    more: true
     fields:
       - widget: string-i18n
-        title: Url
+        title: URL
         type: url
-      - widget: email
+      - widget: string
+        title: email
+        type: email
       - widget: string-i18n
-        title: Name
+        title: name
         rule: alphanum-space
   - preset: licenses
   - widget: string-i18n
-    title: RepositoryUrl
+    title: repositoryUrl
     type: url
-  - widget: group
-    title: RelatedCode
-    required: false
-    fields:
-      - widget: string-i18n
-        title: Url
-        type: url
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
+  - preset: relatedCode
   - preset: tags
   - preset: status
   - widget: string
-    title: VersionProject
+    title: version
     required: false
   - widget: string
-    title: Vcs
+    title: vcs
     required: false
     rule: alphanum-space
+  - preset: empty

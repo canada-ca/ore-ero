@@ -4,13 +4,12 @@ description:
   en: Content management system (CMS) written in PHP. Drupal provides a back-end framework for web sites.
   fr: Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une plateforme back-end pour des sites Web.
 homepageURL:
-  en: https://www.drupal.org
-  fr: https://www.drupal.org
+  en: 'https://www.drupal.org'
+  fr: 'https://www.drupal.org'
 licenses:
-  -
-    URL:
-      en: https://www.drupal.org/about/licensing#drupal-license
-      fr: https://www.drupal.org/about/licensing#drupal-license
+  - URL:
+      en: 'https://www.drupal.org/about/licensing#drupal-license'
+      fr: 'https://www.drupal.org/about/licensing#drupal-license'
     spdxID: GPL-2.0
 name:
   en: Drupal
@@ -21,11 +20,9 @@ tags:
   fr:
     - Site web
 administrations:
-  -
-    adminCode: cse-cst
+  - adminCode: cse-cst
     uses:
-      -
-        contact:
+      - contact:
           email: webmaster@cse-cst.gc.ca
         date:
           started: '2019-05-06'
@@ -38,14 +35,12 @@ administrations:
           fr: Création de site Web du CST
         users:
           - public
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           URL:
-            en: https://github.com/canada-ca/ore-ero/issues
-            fr: https://github.com/canada-ca/ore-ero/issues
+            en: 'https://github.com/canada-ca/ore-ero/issues'
+            fr: 'https://github.com/canada-ca/ore-ero/issues'
           email: christopher.jaja@tbs-sct.gc.ca
           name: Christopher Jaja
         date:
@@ -59,18 +54,16 @@ administrations:
           fr: Profil d'installation de Drupal 8 pour open.canada.ca
         relatedCode:
           URL:
-            en: https://github.com/open-data/od
-            fr: https://github.com/open-data/od
+            en: 'https://github.com/open-data/od'
+            fr: 'https://github.com/open-data/od'
           name:
             en: open data
             fr: données ouvertes
         users:
           - public
-  -
-    adminCode: tc
+  - adminCode: tc
     uses:
-      -
-        contact:
+      - contact:
           name: Irina Krasteleva
           email: irina.krasteleva@tc.gc.ca
         date:

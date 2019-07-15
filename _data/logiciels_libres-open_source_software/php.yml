@@ -4,13 +4,12 @@ description:
   en: A server-side scripting language designed for web development but also used as a general-purpose programming language.
   fr: Langage de script côté serveur conçu pour le développement Web mais également utilisé comme langage de programmation généraliste.
 homepageURL:
-  en: https://php.net
-  fr: https://php.net
+  en: 'https://php.net'
+  fr: 'https://php.net'
 licenses:
-  -
-    URL:
-      en: https://php.net/license/index.php
-      fr: https://php.net/license/index.php
+  - URL:
+      en: 'https://php.net/license/index.php'
+      fr: 'https://php.net/license/index.php'
     spdxID: PHP-License
 name:
   en: PHP
@@ -21,14 +20,12 @@ tags:
   fr:
     - langage de programmation
 administrations:
-  -
-    adminCode: gac-amc
+  - adminCode: gac-amc
     uses:
-      -
-        contact:
+      - contact:
           URL:
-            en: https://www.international.gc.ca
-            fr: https://www.international.gc.ca
+            en: 'https://www.international.gc.ca'
+            fr: 'https://www.international.gc.ca'
           email: sebastien.routier@international.gc.ca
         date:
           started: '2019-05-06'

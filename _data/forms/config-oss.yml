@@ -6,32 +6,31 @@ formGroups:
   - preset: schemaVersion
   - preset: selectOss
   - preset: description
-  - widget: string-i18n
-    title: HomepageUrl
-    type: url
+  - preset: homepageURL
   - preset: licenses
   - preset: tags
-  - preset: hr
+  - preset: empty
+    start: true
+    title: administrations
   - preset: adminCode
+  - preset: empty
+    start: true
+    title: uses
   - preset: contact
     phone: false
   - preset: dates
     started: true
-    metadata: true
   - widget: string-i18n
-    title: UseName
-    rule: alphanum-space
+    title: description
+    prepend: use
   - widget: string-i18n
-    title: UseDescription
-    rule: alphanum-space
-  - widget: group
-    title: RelatedCode
-    required: false
-    fields:
-      - widget: string-i18n
-        title: Url
-        type: url
-      - widget: string-i18n
-        title: Name
-        rule: alphanum-space
+    title: name
+    prepend: use
+  - preset: relatedCode
   - preset: status
+  - widget: string
+    title: users
+    required: false
+    more: true
+  - preset: empty
+  - preset: empty

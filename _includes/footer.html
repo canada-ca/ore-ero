@@ -1,60 +1,31 @@
 </main>
 
-{% if page.lang == 'fr' %}
 <footer id="wb-info">
   <!--<nav class="container wb-navcurr">
-    <h2 class="wb-inv">Au sujet du gouvernement</h2>
+    <h2 class="wb-inv">{{ site.data.i18n.general.footer.AboutGovernment[page.lang] }}</h2>
     ...
   </nav>-->
   <div class="brand">
     <div class="container">
       <div class="row">
         <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
-          <h2 class="wb-inv">À propos du site</h2>
+          <h2 class="wb-inv">{{ site.data.i18n.general.footer.AboutSite[page.lang] }}</h2>
           <ul>
-            <li><a href="https://www.canada.ca/fr.html" target="_blank">Canada.ca</a></li>
-            <li><a href="https://www.canada.ca/fr/transparence/avis.html" target="_blank">Avis</a></li>
-            <li><a href="https://www.canada.ca/fr/transparence/confidentialite.html" target="_blank">Confidentialité</a></li>
+            <li><a href="{{ site.data.i18n.general.footer.Nav.Canada[page.lang].link }}" target="_blank">{{ site.data.i18n.general.footer.Nav.Canada[page.lang].title }}</a></li>
+            <li><a href="{{ site.data.i18n.general.footer.Nav.Terms[page.lang].link }}" target="_blank">{{ site.data.i18n.general.footer.Nav.Terms[page.lang].title }}</a></li>
+            <li><a href="{{ site.data.i18n.general.footer.Nav.Privacy[page.lang].link }}" target="_blank">{{ site.data.i18n.general.footer.Nav.Privacy[page.lang].title }}</a></li>
           </ul>
         </nav>
         <div class="col-xs-6 visible-sm visible-xs tofpg">
-          <a href="#wb-cont">Haut de la page <span class="glyphicon glyphicon-chevron-up"></span></a>
+          <a href="#wb-cont">{{ site.data.i18n.general.footer.TopOfPage[page.lang] }} <span class="glyphicon glyphicon-chevron-up"></span></a>
         </div>
         <div class="col-xs-6 col-md-3 col-lg-2 text-right">
-          <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"></object>
+          <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="{{ site.data.i18n.general.footer.Logo[page.lang] }}"></object>
         </div>
       </div>
     </div>
   </div>
 </footer>
-{% else %}
-<footer id="wb-info">
-  <!--<nav class="container wb-navcurr">
-    <h2 class="wb-inv">About government</h2>
-    ...
-  </nav>-->
-  <div class="brand">
-    <div class="container">
-      <div class="row">
-        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
-          <h2 class="wb-inv">About this site</h2>
-          <ul>
-            <li><a href="https://www.canada.ca/en.html" target="_blank">Canada.ca</a></li>
-            <li><a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a></li>
-            <li><a href="https://www.canada.ca/en/transparency/privacy.html" target="_blank">Privacy</a></li>
-          </ul>
-        </nav>
-        <div class="col-xs-6 visible-sm visible-xs tofpg">
-          <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-        </div>
-        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
-          <img src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-{% endif %}
 
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
@@ -64,26 +35,29 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-<script type="text/javascript" src="../assets/js/lib/js-yaml.js"></script>
-<script type="text/javascript" src="../assets/js/src/deep-object.js"></script>
-<script type="text/javascript" src="../assets/js/src/git-file-manager.js"></script>
-<script type="text/javascript" src="../assets/js/src/custom-form-validation.js"></script>
-<script type="text/javascript" src="../assets/js/src/validation.js"></script>
-<script type="text/javascript" src="../assets/js/src/tags.js"></script>
-<script type="text/javascript" src="../assets/js/src/programmingLanguages.js"></script>
-{% if page.ref == "adminForm" %}
-  <script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
-{% endif %}
-{% if page.ref == "codeForm" %}
-  <script type="text/javascript" src="../assets/js/src/codeForm.js"></script>
-  <script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
-{% endif %}
-{% if page.ref == "standardsForm" %}
-  <script type="text/javascript" src="../assets/js/src/standardsForm.js"></script>
-{% endif %}
-{% if page.ref == "ossForm" %}
-  <script type="text/javascript" src="../assets/js/src/ossForm.js"></script>
-{% endif %}
+<script src="../assets/js/lib/js-yaml.js"></script>
+<script src="../assets/js/src/deep-object.js"></script>
+<script src="../assets/js/src/git-file-manager.js"></script>
+<script src="../assets/js/src/custom-form-validation.js"></script>
+<script src="../assets/js/src/validation.js"></script>
+<script src="../assets/js/src/tags.js"></script>
+<script src="../assets/js/src/programmingLanguages.js"></script>
+<script src="../assets/js/src/more-group.js"></script>
+{%- if page.ref == "adminForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+{%- endif -%}
+{%- if page.ref == "codeForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/codeForm.js"></script>
+{%- endif -%}
+{%- if page.ref == "standardsForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/standardsForm.js"></script>
+{%- endif -%}
+{%- if page.ref == "ossForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/ossForm.js"></script>
+{%- endif %}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
