@@ -1,0 +1,58 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+homepageURL:
+  en: 'http://www.google.com'
+  fr: 'http://www.google.ca'
+licenses:
+  - URL:
+      en: 'http://www.mit.edu/'
+      fr: 'http://www.mit.edu/'
+    spdxID: MIT
+  - URL:
+      en: 'http://www.mit.edu/2'
+      fr: 'http://www.mit.edu/2'
+    spdxID: MIT2
+name:
+  en: Frederic
+  fr: Frédéric
+tags:
+  en:
+    - TagEN
+  fr:
+    - TagFR
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: frederic.lestage@montreal.ca
+          URL:
+            en: 'http://www.google.com/contact'
+            fr: 'http://www.google.ca/contact'
+          name: contact
+        date:
+          started: '2019-07-03'
+          metadataLastUpdated: '2019-07-15'
+        description:
+          en: Data managment
+          fr: Gestion des données
+        name:
+          en: Software Database Management Systems
+          fr: Logiciels de systèmes de gestion de base de données
+        relatedCode:
+          - URL:
+              en: 'http://www.google.com/related'
+            name:
+              en: related
+              fr: relié
+          - URL:
+              en: 'http://www.google.com/related2'
+            name:
+              en: related2
+              fr: relié2
+        status: Beta
+        users:
+          - users
+          - public
