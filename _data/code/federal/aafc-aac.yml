@@ -1,0 +1,47 @@
+---
+schemaVersion: '1.0'
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-02'
+      metadataLastUpdated: '2019-07-15'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licenses:
+      - URL:
+          en: 'http://www.mit.edu/'
+          fr: 'http://www.mit.edu/'
+        spdxID: MIT
+      - URL:
+          en: 'http://www.mit.edu/2'
+          fr: 'http://www.mit.edu/2'
+        spdxID: MIT2
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
+    partners:
+      - URL:
+          en: 'http://www.google.com/partner'
+          fr: 'http://www.google.ca/partenaire'
+        email: contact@partner.com
+        name:
+          en: partner
+          fr: partenaire
+      - URL:
+          en: 'http://www.google.com/partner2'
+          fr: 'http://www.google.ca/partenaire2'
+        email: contact@partner2.com
+        name:
+          en: partner2
+          fr: partenaire2
