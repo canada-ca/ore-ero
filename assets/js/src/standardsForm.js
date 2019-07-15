@@ -2,16 +2,15 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  validateRequired toggleAlert getTags resetTags addTags
-  ALERT_OFF ALERT_IN_PROGRESS ALERT_FAIL ALERT_SUCCESS
+  getTags resetTags addTags
+  submitInit submitConclusion
+  getAdminObject getAdminCode
 */
 
-const standardObj = $('.page-standardsForm #StandardCodeSelect');
+const standardObj = $('.page-standardsForm #standardCodeselect');
 const adminObj = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
-  $('#StandardCode').focus();
-
   standardObj.change(function() {
     selectStandard();
     if (adminObj.val() != '') selectAdmin();
@@ -22,13 +21,15 @@ $(document).ready(function() {
   });
 
   $('#prbotSubmitstandardsForm').click(function() {
-    // Progress only when form input is valid
-    if (validateRequired()) {
-      toggleAlert(ALERT_OFF);
-      toggleAlert(ALERT_IN_PROGRESS);
-      window.scrollTo(0, document.body.scrollHeight);
-      submitStandardsForm();
+    if (submitInit()) {
+      if ($('#newAdminCode').val() != '') submitStandardsFormNewAdmin();
+      else submitStandardsForm();
     }
+  });
+
+  $('#formReset').click(function() {
+    $('#validation').trigger('reset');
+    resetTags();
   });
 });
 
@@ -36,68 +37,68 @@ function getStandardsObject() {
   let standardsObject = {
     schemaVersion: $('#schemaVersion').val(),
     date: {
-      created: $('#dateCreated').val(),
-      metadataLastUpdated: $('#dateLastUpdated').val()
+      created: $('#datecreated').val(),
+      metadataLastUpdated: $('#datemetadataLastUpdated').val()
     },
     description: {
-      en: $('#enDescription').val(),
-      fr: $('#frDescription').val()
+      en: $('#endescription').val(),
+      fr: $('#frdescription').val()
     },
     name: {
-      en: $('#enName').val(),
-      fr: $('#frName').val()
+      en: $('#enname').val(),
+      fr: $('#frname').val()
     },
     specURL: {
-      en: $('#enSpecURL').val(),
-      fr: $('#frSpecURL').val()
+      en: $('#enspecURL').val(),
+      fr: $('#frspecURL').val()
     },
-    standardCode: $('#StandardCode')
+    standardCode: $('#standardCode')
       .val()
       .toUpperCase(),
-    standardsOrg: $('#StandardOrg').val(),
+    standardsOrg: $('#standardOrg').val(),
     tags: {
       en: getTags([...document.querySelectorAll('#tagsEN input')]),
       fr: getTags([...document.querySelectorAll('#tagsFR input')])
     },
     administrations: [
       {
-        adminCode: $('#adminCode').val(),
+        adminCode: getAdminCode(),
         contact: {
-          email: $('#emailContact').val()
+          email: $('#contactemail').val()
         },
         references: [
           {
             URL: {
-              en: $('#enUrlReference').val(),
-              fr: $('#frUrlReference').val()
+              en: $('#enreferenceURL').val(),
+              fr: $('#frreferenceURL').val()
             },
             name: {
-              en: $('#enNameReference').val(),
-              fr: $('#frNameReference').val()
+              en: $('#enreferencename').val(),
+              fr: $('#frreferencename').val()
             }
           }
         ],
-        status: $('#Status').val()
+        status: $('#status').val()
       }
     ]
   };
 
-  if ($('#frUrlContact').val() || $('#enUrlContact').val()) {
+  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     standardsObject.administrations[0].contact.URL = {};
   }
-  if ($('#enUrlContact').val()) {
+  if ($('#encontactURL').val()) {
     standardsObject.administrations[0].contact.URL.en = $(
-      '#enUrlContact'
+      '#encontactURL'
     ).val();
   }
-  if ($('#frUrlContact').val()) {
+  if ($('#frcontactURL').val()) {
     standardsObject.administrations[0].contact.URL.fr = $(
-      '#frUrlContact'
+      '#frcontactURL'
     ).val();
   }
 
-  if ($('#nameContact').val()) {
-    standardsObject.administrations[0].contact.name = $('#nameContact').val();
+  if ($('#contactname').val()) {
+    standardsObject.administrations[0].contact.name = $('#contactname').val();
   }
 
   return standardsObject;
@@ -109,61 +110,44 @@ function submitStandardsForm() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let name = $('#StandardCode')
-    .val()
-    .toLowerCase();
-
-  let standardsObject = getStandardsObject();
+  let standardObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${name}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardCode.toLowerCase()}.yml`;
 
   fileWriter
-    .merge(file, standardsObject, 'administrations', 'adminCode')
+    .merge(file, standardObject, 'administrations', 'adminCode')
     .then(result => {
-      const config = getConfigUpdate(result);
-      return fetch(PRBOT_URL, config);
+      return fetch(
+        PRBOT_URL,
+        getConfigUpdate(result, file, standardObject.standardCode)
+      );
     })
     .catch(err => {
       if (err.status == 404) {
-        const config = getConfigNew(standardsObject, file);
-        return fetch(PRBOT_URL, config);
-      } else {
-        throw err;
-      }
+        return fetch(PRBOT_URL, getConfigNew(standardObject, file));
+      } else throw err;
     })
     .then(response => {
-      if (response.status != 200) {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_FAIL);
-        submitButton.disabled = false;
-        resetButton.disabled = false;
-      } else {
-        toggleAlert(ALERT_OFF);
-        toggleAlert(ALERT_SUCCESS);
-        // Redirect to home page
-        setTimeout(function() {
-          window.location.href = './index.html';
-        }, 2000);
-      }
+      submitConclusion(response, submitButton, resetButton);
     });
 }
 
-function getConfigUpdate(result, file) {
+function getConfigUpdate(result, file, code) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated the ${name} standard file`,
-      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      title: `Updated the ${code} standard file`,
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -176,21 +160,154 @@ function getConfigNew(standardsObject, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the standard file for ' + name,
-      description: 'Authored by: ' + $('#submitterEmail').val() + '\n',
-      commit: 'Committed by ' + $('#submitterEmail').val(),
+      title: 'Created the standard file for ' + standardsObject.standardCode,
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
-        name: $('#submitterUsername').val(),
-        email: $('#submitterEmail').val()
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(standardsObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(standardsObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function submitStandardsFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitstandardsForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let standardObject = getStandardsObject();
+  let adminObject = getAdminObject();
+
+  let standardName = standardObject.standardCode.toLowerCase();
+  let adminName = $('#newAdminCode').val();
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let standardFile = `_data/normes_ouvertes-open_standards/${standardName}.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
+
+  fileWriter
+    .mergeAdminFile(adminFile, adminObject, '', 'code')
+    .then(adminResult => {
+      fileWriter
+        .merge(standardFile, standardObject, 'administrations', 'adminCode')
+        .then(standardResult => {
+          return fetch(
+            PRBOT_URL,
+            getConfigUpdateStandardNewAdmin(
+              standardName,
+              adminName,
+              standardFile,
+              adminFile,
+              standardResult,
+              adminResult
+            )
+          );
+        })
+        .catch(err => {
+          if (err.status == 404) {
+            return fetch(
+              PRBOT_URL,
+              getConfigNewStandardNewAdmin(
+                standardName,
+                adminName,
+                standardFile,
+                adminFile,
+                standardObject,
+                adminResult
+              )
+            );
+          } else throw err;
+        })
+        .then(response => {
+          submitConclusion(response, submitButton, resetButton);
+        });
+    })
+    .catch(err => {
+      if (err.status == 404) console.log('File not Found');
+      else throw err;
+    });
+}
+
+function getConfigUpdateStandardNewAdmin(
+  standardName,
+  adminName,
+  standardFile,
+  adminFile,
+  standardResult,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Updated standard file for ' +
+        standardName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: standardFile,
+          content: '---\n' + jsyaml.dump(standardResult)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
+        }
+      ]
+    }),
+    method: 'POST'
+  };
+}
+
+function getConfigNewStandardNewAdmin(
+  standardName,
+  adminName,
+  standardFile,
+  adminFile,
+  standardObject,
+  adminObject
+) {
+  return {
+    body: JSON.stringify({
+      user: USERNAME,
+      repo: REPO_NAME,
+      title:
+        'Creaded standard file for ' +
+        standardName +
+        ' and created ' +
+        adminName +
+        ' in administration file',
+      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
+      commit: 'Committed by ' + $('#submitteremail').val(),
+      author: {
+        name: $('#submitterusername').val(),
+        email: $('#submitteremail').val()
+      },
+      files: [
+        {
+          path: standardFile,
+          content: '---\n' + jsyaml.dump(standardObject)
+        },
+        {
+          path: adminFile,
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),
@@ -217,31 +334,30 @@ function selectStandard() {
 
 function addValueToFieldsStandard(obj) {
   $('#schemaVersion').val(obj['schemaVersion']);
-  $('#StandardCode').val(obj['standardCode']);
-  $('#enName').val(obj['name']['en']);
-  $('#frName').val(obj['name']['fr']);
-  $('#enDescription').val(obj['description']['en']);
-  $('#frDescription').val(obj['description']['fr']);
-  $('#dateCreated').val(obj['date']['created']);
-  $('#enSpecURL').val(obj['specURL']['en']);
-  $('#frSpecURL').val(obj['specURL']['fr']);
-  $('#StandardOrg').val(obj['standardsOrg']);
+  $('#standardCode').val(obj['standardCode']);
+  $('#enname').val(obj['name']['en']);
+  $('#frname').val(obj['name']['fr']);
+  $('#endescription').val(obj['description']['en']);
+  $('#frdescription').val(obj['description']['fr']);
+  $('#datecreated').val(obj['date']['created']);
+  $('#enspecURL').val(obj['specURL']['en']);
+  $('#frspecURL').val(obj['specURL']['fr']);
+  $('#standardOrg').val(obj['standardsOrg']);
 
   addTags(obj);
 }
 
 function resetFieldsStandard() {
   $('#schemaVersion').val('1.0');
-  $('#StandardCode').val('');
-  $('#enName').val('');
-  $('#frName').val('');
-  $('#enDescription').val('');
-  $('#frDescription').val('');
-  $('#dateCreated').val('');
-  $('#enSpecURL').val('');
-  $('#frSpecURL').val('');
-  $('#StandardOrg').val('');
-  $('#StandardCode').focus();
+  $('#standardCode').val('');
+  $('#enname').val('');
+  $('#frname').val('');
+  $('#endescription').val('');
+  $('#frdescription').val('');
+  $('#datecreated').val('');
+  $('#enspecURL').val('');
+  $('#frspecURL').val('');
+  $('#standardOrg').val('');
   resetTags();
 }
 
@@ -264,33 +380,33 @@ function selectAdmin() {
           }
         }
       } else {
-        console.log('standard empty of not found');
+        resetFieldsAdmin();
       }
     }
   );
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['contact']['email']) $('#emailContact').val(obj['contact']['email']);
+  if (obj['contact']['email']) $('#contactemail').val(obj['contact']['email']);
 
-  if (obj['contact']['name']) $('#nameContact').val(obj['contact']['name']);
+  if (obj['contact']['name']) $('#contactname').val(obj['contact']['name']);
 
-  $('#enUrlReference').val(obj['references'][0]['URL']['en']);
-  $('#frUrlReference').val(obj['references'][0]['URL']['fr']);
-  $('#enNameReference').val(obj['references'][0]['name']['en']);
-  $('#frNameReference').val(obj['references'][0]['name']['fr']);
+  $('#enreferenceURL').val(obj['references'][0]['URL']['en']);
+  $('#frreferenceURL').val(obj['references'][0]['URL']['fr']);
+  $('#enreferencename').val(obj['references'][0]['name']['en']);
+  $('#frreferencename').val(obj['references'][0]['name']['fr']);
 
-  $('#Status').val(obj['status']);
+  $('#status').val(obj['status']);
 }
 
 function resetFieldsAdmin() {
-  $('#enUrlContact').val('');
-  $('#frUrlContact').val('');
-  $('#emailContact').val('');
-  $('#nameContact').val('');
-  $('#enUrlReference').val('');
-  $('#frUrlReference').val('');
-  $('#enNameReference').val('');
-  $('#frNameReference').val('');
-  $('#Status').val('');
+  $('#encontactURL').val('');
+  $('#frcontactURL').val('');
+  $('#contactemail').val('');
+  $('#contactname').val('');
+  $('#enreferenceURL').val('');
+  $('#frreferenceURL').val('');
+  $('#enreferencename').val('');
+  $('#frreferencename').val('');
+  $('#status').val('');
 }

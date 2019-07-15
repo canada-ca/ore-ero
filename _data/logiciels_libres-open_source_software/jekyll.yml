@@ -4,13 +4,12 @@ description:
   en: Transform your plain text into static websites and blogs
   fr: Transformez votre texte brut en sites Web et blogs statiques
 homepageURL:
-  en: https://jekyllrb.com/
-  fr: https://jekyllrb.com/
+  en: 'https://jekyllrb.com/'
+  fr: 'https://jekyllrb.com/'
 licenses:
-  -
-    URL:
-      en: https://github.com/jekyll/jekyll/blob/master/LICENSE
-      fr: https://github.com/jekyll/jekyll/blob/master/LICENSE
+  - URL:
+      en: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'
+      fr: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'
     spdxID: MIT
 name:
   en: Jekyll
@@ -21,14 +20,12 @@ tags:
   fr:
     - Site web
 administrations:
-  -
-    adminCode: tbs-sct
+  - adminCode: tbs-sct
     uses:
-      -
-        contact:
+      - contact:
           URL:
-            en: https://github.com/canada-ca/ore-ero/issues
-            fr: https://github.com/canada-ca/ore-ero/issues
+            en: 'https://github.com/canada-ca/ore-ero/issues'
+            fr: 'https://github.com/canada-ca/ore-ero/issues'
           email: sebastien.lemay@tbs-sct.gc.ca
         name:
           en: Open Resource Exchange
@@ -40,7 +37,7 @@ administrations:
           en: Github Pages
           fr: Pages Github
         relatedCode:
-          en: https://github.com/canada-ca/ore-ero
-          fr: https://github.com/canada-ca/ore-ero
+          en: 'https://github.com/canada-ca/ore-ero'
+          fr: 'https://github.com/canada-ca/ore-ero'
         users:
           - public
