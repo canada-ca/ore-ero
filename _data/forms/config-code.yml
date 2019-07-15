@@ -42,14 +42,6 @@ formGroups:
   - widget: string-i18n
     title: repositoryUrl
     type: url
-  - preset: relatedCode
   - preset: tags
   - preset: status
-  - widget: string
-    title: version
-    required: false
-  - widget: string
-    title: vcs
-    required: false
-    rule: alphanum-space
   - preset: empty

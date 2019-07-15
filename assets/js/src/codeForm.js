@@ -168,49 +168,8 @@ function getCodeObject() {
     codeObject.releases[0].partners.name.fr = $('#frpartnername').val();
   }
 
-  if (
-    $('#enrelatedCodeURL').val() ||
-    $('#frrelatedCodeURL').val() ||
-    $('#enrelatedCodename').val() ||
-    $('#frrelatedCodename').val()
-  ) {
-    codeObject.releases[0].relatedCode = [{}];
-  }
-
-  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL = {};
-  }
-  if ($('#enrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL.en = $('#enrelatedCodeURL').val();
-  }
-  if ($('#frrelatedCodeURL').val()) {
-    codeObject.releases[0].relatedCode[0].URL.fr = $('#frrelatedCodeURL').val();
-  }
-
-  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name = {};
-  }
-  if ($('#enrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name.en = $(
-      '#enrelatedCodename'
-    ).val();
-  }
-  if ($('#frrelatedCodename').val()) {
-    codeObject.releases[0].relatedCode[0].name.fr = $(
-      '#frrelatedCodename'
-    ).val();
-  }
-
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
-  }
-
-  if ($('#version').val()) {
-    codeObject.releases[0].version = $('#version').val();
-  }
-
-  if ($('#vcs').val()) {
-    codeObject.releases[0].vcs = $('#vcs').val();
   }
 
   return codeObject;
@@ -546,24 +505,7 @@ function addValueToFields(obj) {
     }
   }
 
-  if (obj.relatedCode) {
-    if (obj.relatedCode[0].URL) {
-      if (obj.relatedCode[0].URL.en)
-        $('#enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
-      if (obj.relatedCode[0].URL.fr)
-        $('#frrelatedCodeURL').val(obj.relatedCode[0].URL.fr);
-    }
-    if (obj.relatedCode[0].name) {
-      if (obj.relatedCode[0].name.en)
-        $('#enrelatedCodename').val(obj.relatedCode[0].name.en);
-      if (obj.relatedCode[0].name.fr)
-        $('#frrelatedCodename').val(obj.relatedCode[0].name.fr);
-    }
-  }
-
   if (obj.status) $('#status').val(obj.status);
-  if (obj.version) $('#version').val(obj.version);
-  if (obj.vcs) $('#vcs').val(obj.vcs);
 }
 
 function resetFields() {
@@ -596,11 +538,5 @@ function resetFields() {
   $('#partneremail').val('');
   $('#enpartnername').val('');
   $('#frpartnername').val('');
-  $('#enrelatedCodeURL').val('');
-  $('#frrelatedCodeURL').val('');
-  $('#enrelatedCodename').val('');
-  $('#frrelatedCodename').val('');
   $('#status').val('');
-  $('#version').val('');
-  $('#vcs').val('');
 }
