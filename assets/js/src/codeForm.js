@@ -141,6 +141,7 @@ function getCodeObject() {
     codeObject.releases[0].organization.fr = $('#frorganization').val();
   }
 
+  // Optional more-group
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
@@ -189,6 +190,7 @@ function getCodeObject() {
     }
   });
 
+  // Optional more-group
   $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');

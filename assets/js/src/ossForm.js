@@ -112,49 +112,68 @@ function getOssObject() {
     ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
 
-  if (
-    $('#enrelatedCodeURL').val() ||
-    $('#frrelatedCodeURL').val() ||
-    $('#enrelatedCodename').val() ||
-    $('#frrelatedCodename').val()
-  ) {
-    ossObject.administrations[0].uses[0].relatedCode = [{}];
-  }
-  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
-  }
-  if ($('#enrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $(
-      '#enrelatedCodeURL'
-    ).val();
-  }
-  if ($('#frrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $(
-      '#frrelatedCodeURL'
-    ).val();
-  }
-  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name = {};
-  }
-  if ($('#enrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name.en = $(
-      '#enrelatedCodename'
-    ).val();
-  }
-  if ($('#frrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name.fr = $(
-      '#frrelatedCodename'
-    ).val();
-  }
+  // Optional more-group
+  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val() ||
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      if (ossObject.administrations[0].uses[0].relatedCode == undefined)
+        ossObject.administrations[0].uses[0].relatedCode = [];
+      ossObject.administrations[0].uses[0].relatedCode[i] = {};
+    }
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val()
+    ) {
+      ossObject.administrations[0].uses[0].relatedCode[i].URL = {};
+    }
+    if ($('#enrelatedCodeURL' + id).val()) {
+      ossObject.administrations[0].uses[0].relatedCode[i].URL.en = $(
+        '#enrelatedCodeURL' + id
+      ).val();
+    }
+    if ($('#frrelatedCodeURL + id').val()) {
+      ossObject.administrations[0].uses[0].relatedCode[i].URL.fr = $(
+        '#frrelatedCodeURL' + id
+      ).val();
+    }
+    if (
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      ossObject.administrations[0].uses[0].relatedCode[i].name = {};
+    }
+    if ($('#enrelatedCodename' + id).val()) {
+      ossObject.administrations[0].uses[0].relatedCode[i].name.en = $(
+        '#enrelatedCodename' + id
+      ).val();
+    }
+    if ($('#frrelatedCodename' + id).val()) {
+      ossObject.administrations[0].uses[0].relatedCode[i].name.fr = $(
+        '#frrelatedCodename' + id
+      ).val();
+    }
+  });
 
   if ($('#status :selected').val() != '') {
     ossObject.administrations[0].uses[0].status = $('#status :selected').val();
   }
 
-  if ($('#users').val() != '') {
-    ossObject.administrations[0].uses[0].users = [];
-    ossObject.administrations[0].uses[0].users[0] = $('#users').val();
-  }
+  // Optional more-group
+  $('#addMoreusers ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if ($('#users' + id).val() != '') {
+      if (ossObject.administrations[0].uses[0].users == undefined)
+        ossObject.administrations[0].uses[0].users = [];
+      ossObject.administrations[0].uses[0].users[i] = $('#users' + id).val();
+    }
+  });
 
   return ossObject;
 }
@@ -463,8 +482,6 @@ function selectAdmin() {
             resetFieldsAdmin();
           }
         }
-      } else {
-        console.log('standard empty of not found');
       }
     }
   );
