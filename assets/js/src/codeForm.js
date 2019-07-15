@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses
+  addMoreLicenses addMoreRelatedCode
 */
 
 const codeObj = $('.page-codeForm #nameselect');
@@ -180,6 +180,8 @@ function getCodeObject() {
       ).val();
     }
   });
+
+  addMoreRelatedCode(codeObject.releases[0]);
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
@@ -518,6 +520,21 @@ function addValueToFields(obj) {
     }
   }
 
+  if (obj.relatedCode) {
+    if (obj.relatedCode[0].URL) {
+      if (obj.relatedCode[0].URL.en)
+        $('#enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
+      if (obj.relatedCode[0].URL.fr)
+        $('#frrelatedCodeURL').val(obj.relatedCode[0].URL.fr);
+    }
+    if (obj.relatedCode[0].name) {
+      if (obj.relatedCode[0].name.en)
+        $('#enrelatedCodename').val(obj.relatedCode[0].name.en);
+      if (obj.relatedCode[0].name.fr)
+        $('#frrelatedCodename').val(obj.relatedCode[0].name.fr);
+    }
+  }
+
   if (obj.status) $('#status').val(obj.status);
 }
 
@@ -551,5 +568,9 @@ function resetFields() {
   $('#partnersemail').val('');
   $('#enpartnersname').val('');
   $('#frpartnersname').val('');
+  $('#enrelatedCodeURL').val('');
+  $('#frrelatedCodeURL').val('');
+  $('#enrelatedCodename').val('');
+  $('#frrelatedCodename').val('');
   $('#status').val('');
 }

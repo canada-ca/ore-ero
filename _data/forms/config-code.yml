@@ -43,6 +43,7 @@ formGroups:
   - widget: string-i18n
     title: repositoryUrl
     type: url
+  - preset: relatedCode
   - preset: tags
   - preset: status
   - preset: empty

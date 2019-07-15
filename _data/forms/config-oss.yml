@@ -26,7 +26,6 @@ formGroups:
   - widget: string-i18n
     title: name
     prepend: use
-  - preset: relatedCode
   - preset: status
   - widget: string
     title: users
