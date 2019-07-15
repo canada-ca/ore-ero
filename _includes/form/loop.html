@@ -4,7 +4,9 @@
 
 <div class="form-element">
 {% if formGroup.preset -%}
+{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
 <div class="form-element-preset{% if formGroup.preset == 'licenses' or formGroup.preset == 'relatedCode' %} form-group-more{% endif %}" id="formgroup_preset_{{ formGroup.preset }}">
+{%- endif -%}
   {%- case formGroup.preset -%}
     {%- when 'adminCode' -%}
       {% include form/presets/adminCode.html id=idPreset -%}
@@ -47,7 +49,9 @@
     {%- when 'empty' -%}
       <!-- empty -->
   {%- endcase -%}
+{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
 </div>
+{%- endif -%}
 {% else %}
 <div class="form-group-widget{% if formGroup.more %} form-group-more{% endif %}" id="formgroup_widget_{% if formGroup.prepend != '' %}{{ formGroup.prepend }}{% endif %}{{ formGroup.title }}">
   {%- case formGroup.widget -%}
