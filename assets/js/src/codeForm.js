@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags getLanguages selectLanguage resetLanguages
+  getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
 */
@@ -68,8 +68,8 @@ function getCodeObject() {
           fr: $('#frrepositoryUrl').val()
         },
         tags: {
-          en: getTags([...document.querySelectorAll('#tagsEN input')]),
-          fr: getTags([...document.querySelectorAll('#tagsFR input')])
+          en: getTagsEN(),
+          fr: getTagsFR()
         }
       }
     ]
@@ -307,11 +307,11 @@ function getConfigNewAdmin(
       files: [
         {
           path: codeFile,
-          content: '---\n' + jsyaml.dump(codeObject, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(codeObject)
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(resultAdmin, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(resultAdmin)
         }
       ]
     }),

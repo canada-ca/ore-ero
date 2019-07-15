@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags
+  getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
 */
@@ -58,8 +58,8 @@ function getOssObject() {
       fr: $('#frname').val()
     },
     tags: {
-      en: getTags([...document.querySelectorAll('#tagsEN input')]),
-      fr: getTags([...document.querySelectorAll('#tagsFR input')])
+      en: getTagsEN(),
+      fr: getTagsFR()
     },
     administrations: [
       {
@@ -352,7 +352,7 @@ function getConfigUpdate(result, file, ProjectName) {
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -383,11 +383,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(softwareObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(softwareObject)
         }
       ]
     }),

@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags
+  getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
 */
@@ -57,8 +57,8 @@ function getStandardsObject() {
       .toUpperCase(),
     standardsOrg: $('#standardOrg').val(),
     tags: {
-      en: getTags([...document.querySelectorAll('#tagsEN input')]),
-      fr: getTags([...document.querySelectorAll('#tagsFR input')])
+      en: getTagsEN(),
+      fr: getTagsFR()
     },
     administrations: [
       {
