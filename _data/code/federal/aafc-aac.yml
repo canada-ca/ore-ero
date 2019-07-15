@@ -1,0 +1,28 @@
+---
+schemaVersion: !<tag:yaml.org,2002:js/undefined> ''
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-04'
+      metadataLastUpdated: '2019-07-15'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licenses:
+      - URL:
+          en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+          fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+        spdxID: Apache-2.0
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
