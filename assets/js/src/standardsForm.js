@@ -51,7 +51,10 @@ function getStandardsObject() {
     standardCode: $('#standardCode')
       .val()
       .toUpperCase(),
-    standardsOrg: $('#standardOrg').val(),
+    standardsOrg: {
+      en: $('#enstandardOrg').val(),
+      fr: $('#frstandardOrg').val()
+    },
     tags: {
       en: getTags([...document.querySelectorAll('#tagsEN input')]),
       fr: getTags([...document.querySelectorAll('#tagsFR input')])
@@ -342,7 +345,8 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#standardOrg').val(obj['standardsOrg']);
+  $('#enstandardOrg').val(obj['standardsOrg']['en']);
+  $('#frstandardOrg').val(obj['standardsOrg']['fr']);
 
   addTags(obj);
 }
@@ -357,7 +361,8 @@ function resetFieldsStandard() {
   $('#datecreated').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
-  $('#standardOrg').val('');
+  $('#enstandardOrg').val('');
+  $('#frstandardOrg').val('');
   resetTags();
 }
 

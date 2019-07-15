@@ -479,8 +479,12 @@ standards:
       en: Name of the organisation supporting the standard
       fr: Nom de l'organisation supportant le standard
     label:
-      en: Name
-      fr: Nom
+      en:
+        en: English name
+        fr: Nom en anglais 
+      fr:
+        en: french name
+        fr: Nom en français
   status:
     title:
       en: The status of the standard

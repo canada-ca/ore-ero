@@ -12,7 +12,7 @@ formGroups:
   - widget: string-i18n
     title: specURL
     type: url
-  - widget: string
+  - widget: string-i18n
     title: standardOrg
   - preset: tags
   - preset: hr
