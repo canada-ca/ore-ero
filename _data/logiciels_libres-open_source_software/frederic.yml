@@ -1,0 +1,56 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+homepageURL:
+  en: ''
+  fr: ''
+licenses:
+  - URL:
+      en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+      fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+    spdxID: Apache-2.0
+  - URL:
+      en: 'http://www.mit.edu/'
+      fr: 'http://www.mit.edu/'
+    spdxID: MIT
+name:
+  en: Frederic
+  fr: Frédéric
+tags:
+  en:
+    - TagEN
+  fr:
+    - TagFR
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: frederic.lestage@montreal.ca
+        date:
+          started: '2019-07-02'
+          metadataLastUpdated: '2019-07-15'
+        description:
+          en: descEN
+          fr: descFR
+        name:
+          en: nameEN
+          fr: nameFR
+        relatedCode:
+          - URL:
+              en: 'http://www.google.com/related'
+              fr: 'http://www.google.ca/relié'
+            name:
+              en: related
+              fr: relié
+          - URL:
+              en: 'http://www.google.com/related2'
+              fr: 'http://www.google.ca/relié2'
+            name:
+              en: related2
+              fr: relié2
+        users:
+          - users
+          - public
+          - user array
