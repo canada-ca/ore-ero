@@ -10,7 +10,7 @@ function getTags(query) {
 
 function addMoreTags() {
   let wrapper = $('<div class="copy hide"></div>');
-  tagObject('copy', '').appendTo(wrapper);
+  tagObject('copy' + Math.random(), '').appendTo(wrapper);
   wrapper.appendTo('#tags');
 }
 
@@ -19,18 +19,18 @@ function addTags(obj) {
     resetTags();
     let index = 0;
     obj['tags']['en'].forEach(function(tag) {
-      if (index == 0) $('#tagEN').val(tag);
+      if (index == 0) $('#entags').val(tag);
       else
-        tagObject('tagEN' + index, tag)
+        tagObject('entags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsEN');
       index++;
     });
     index = 0;
     obj['tags']['fr'].forEach(function(tag) {
-      if (index == 0) $('#tagFR').val(tag);
+      if (index == 0) $('#frtags').val(tag);
       else
-        tagObject('tagFR' + index, tag)
+        tagObject('frtags' + index, tag)
           .addClass('additional-tag')
           .appendTo('#tagsFR');
       index++;
@@ -41,8 +41,8 @@ function addTags(obj) {
 }
 
 function resetTags() {
-  $('#tagEN').val('');
-  $('#tagFR').val('');
+  $('#entags').val('');
+  $('#frtags').val('');
   $('.additional-tag').remove();
 }
 
