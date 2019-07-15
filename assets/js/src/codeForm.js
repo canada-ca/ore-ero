@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 function getCodeObject() {
   let codeObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     adminCode: getAdminCode(),
     releases: [
       {

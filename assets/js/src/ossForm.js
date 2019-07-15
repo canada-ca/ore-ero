@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 function getOssObject() {
   let ossObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -413,7 +413,6 @@ function selectOss() {
 }
 
 function addValueToFieldsOss(obj) {
-  $('#schemaVersion').val(obj['schemaVersion']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -427,7 +426,6 @@ function addValueToFieldsOss(obj) {
 }
 
 function resetFieldsOss() {
-  $('#schemaVersion').val('1.0');
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
