@@ -32,4 +32,3 @@ releases:
         - Environnement
         - Température
         - Routes
-    vcs: git
