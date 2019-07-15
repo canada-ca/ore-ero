@@ -3,26 +3,24 @@ layout: default
 ---
 
 {{ content }}
-
 <div class="wb-frmvld">
   <form action="#" method="get" id="validation">
+{%- assign idPreset = "presets" %}
 
-    {% include form/loop.html %}
-
-    {% include form/presets/submitter.html %}
-
-    <button id="prbotSubmit{{ page.ref }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.Submit[page.lang] }}</button>
-    <button id="formReset" type="reset" class="btn btn-default">{{ site.data.i18n.form.Reset[page.lang] }}</button>
+{% include form/loop.html idPreset=idPreset %}
+{%- include form/presets/submitter.html idPreset=idPreset %}
+    <button id="prbotSubmit{{ page.ref }}" type="button" class="btn btn-primary">{{ site.data.i18n.form.submit[page.lang] }}</button>
+    <button id="formReset" type="reset" class="btn btn-default">{{ site.data.i18n.form.reset[page.lang] }}</button>
 
     <div style="margin-top: 10px">
       <div id="prbotSubmitAlertInProgress" class="alert alert-warning" style="display: none">
-        <b>{{ site.data.i18n.form.alert.Progress[page.lang] }}</b>
+        <b>{{ site.data.i18n.form.alert.progress[page.lang] }}</b>
       </div>
       <div id="prbotSubmitAlertFail" class="alert alert-danger" style="display: none">
-        <b>{{ site.data.i18n.form.alert.Fail[page.lang ]}}</b>
+        <b>{{ site.data.i18n.form.alert.fail[page.lang ]}}</b>
       </div>
       <div id="prbotSubmitAlertSuccess" class="alert alert-success" style="display: none">
-        <b>{{ site.data.i18n.form.alert.Success[page.lang] }}</b>
+        <b>{{ site.data.i18n.form.alert.success[page.lang] }}</b>
       </div>
     </div>
 
