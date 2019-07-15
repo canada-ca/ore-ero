@@ -29,15 +29,19 @@
         {%- when 'status' -%}
           {%- include schema/presets/status.html id=idPreset -%}
         {%- when 'submitter' -%}
+          <!-- Submitter -->
         {%- when 'tags' -%}
           {%- include schema/presets/tags.html id=idPreset -%}
         {%- when 'selectStandard' -%}
+          <!-- SelectStandard -->
         {%- when 'selectCode' -%}
           {%- include schema/presets/selectCode.html id=idPreset -%}
         {%- when 'selectOss' -%}
+          <!-- SelectOss -->
         {%- when 'newAdmin' -%}
           {%- include schema/presets/newAdmin.html id=idPreset -%}
         {%- when 'hr' -%}
+          <!-- hr -->
         {%- when 'empty' -%}
           {% if formGroup.start %}
             {%- include schema/presets/wrap_start.html id=id title=formGroup.title -%}

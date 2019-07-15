@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 function getStandardsObject() {
   let standardsObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     date: {
       created: $('#datecreated').val(),
       metadataLastUpdated: $('#datemetadataLastUpdated').val()
@@ -339,7 +339,6 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#schemaVersion').val(obj['schemaVersion']);
   $('#standardCode').val(obj['standardCode']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
@@ -354,7 +353,6 @@ function addValueToFieldsStandard(obj) {
 }
 
 function resetFieldsStandard() {
-  $('#schemaVersion').val('1.0');
   $('#standardCode').val('');
   $('#enname').val('');
   $('#frname').val('');

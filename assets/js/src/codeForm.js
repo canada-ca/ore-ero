@@ -37,7 +37,7 @@ $(document).ready(function() {
 function getCodeObject() {
   // Handles mandatory fields
   let codeObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     adminCode: getAdminCode(),
     releases: [
       {
