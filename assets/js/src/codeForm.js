@@ -5,6 +5,7 @@
   getTags resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
+  addMoreLicenses addMoreRelatedCode
 */
 
 const codeObj = $('.page-codeForm #nameselect');
@@ -69,17 +70,7 @@ function getCodeObject() {
   };
 
   // Handle more-groups
-  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    codeObject.releases[0].licenses[i] = {
-      URL: {
-        en: $('#enlicensesURL' + id).val(),
-        fr: $('#frlicensesURL' + id).val()
-      },
-      spdxID: $('#licensesspdxID' + id).val()
-    };
-  });
+  addMoreLicenses(codeObject.releases[0]);
 
   // Handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -190,55 +181,7 @@ function getCodeObject() {
     }
   });
 
-  // Optional more-group
-  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    if (
-      $('#enrelatedCodeURL' + id).val() ||
-      $('#frrelatedCodeURL' + id).val() ||
-      $('#enrelatedCodename' + id).val() ||
-      $('#frrelatedCodename' + id).val()
-    ) {
-      if (codeObject.releases[0].relatedCode == undefined)
-        codeObject.releases[0].relatedCode = [];
-      codeObject.releases[0].relatedCode[i] = {};
-    }
-
-    if (
-      $('#enrelatedCodeURL' + id).val() ||
-      $('#frrelatedCodeURL' + id).val()
-    ) {
-      codeObject.releases[0].relatedCode[i].URL = {};
-    }
-    if ($('#enrelatedCodeURL' + id).val()) {
-      codeObject.releases[0].relatedCode[i].URL.en = $(
-        '#enrelatedCodeURL' + id
-      ).val();
-    }
-    if ($('#frrelatedCodeURL' + id).val()) {
-      codeObject.releases[0].relatedCode[i].URL.fr = $(
-        '#frrelatedCodeURL' + id
-      ).val();
-    }
-
-    if (
-      $('#enrelatedCodename' + id).val() ||
-      $('#frrelatedCodename' + id).val()
-    ) {
-      codeObject.releases[0].relatedCode[i].name = {};
-    }
-    if ($('#enrelatedCodename' + id).val()) {
-      codeObject.releases[0].relatedCode[i].name.en = $(
-        '#enrelatedCodename' + id
-      ).val();
-    }
-    if ($('#frrelatedCodename' + id).val()) {
-      codeObject.releases[0].relatedCode[i].name.fr = $(
-        '#frrelatedCodename' + id
-      ).val();
-    }
-  });
+  addMoreRelatedCode(codeObject.releases[0]);
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();

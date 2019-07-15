@@ -1,3 +1,5 @@
+/* exported addMoreLicenses addMoreRelatedCode */
+
 $(document).ready(function() {
   $('.add-more-group').each(function() {
     addBtns($(this).children('h2'));
@@ -79,4 +81,60 @@ function checkForMinusBtn(obj) {
   if (section.find('li').length > 1)
     section.find('.btn-tabs-more-remove').removeClass('invisible');
   else section.find('.btn-tabs-more-remove').addClass('invisible');
+}
+
+function addMoreLicenses(obj) {
+  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    obj.licenses[i] = {
+      URL: {
+        en: $('#enlicensesURL' + id).val(),
+        fr: $('#frlicensesURL' + id).val()
+      },
+      spdxID: $('#licensesspdxID' + id).val()
+    };
+  });
+}
+
+function addMoreRelatedCode(obj) {
+  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val() ||
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      if (obj.relatedCode == undefined) obj.relatedCode = [];
+      obj.relatedCode[i] = {};
+    }
+
+    if (
+      $('#enrelatedCodeURL' + id).val() ||
+      $('#frrelatedCodeURL' + id).val()
+    ) {
+      obj.relatedCode[i].URL = {};
+    }
+    if ($('#enrelatedCodeURL' + id).val()) {
+      obj.relatedCode[i].URL.en = $('#enrelatedCodeURL' + id).val();
+    }
+    if ($('#frrelatedCodeURL' + id).val()) {
+      obj.relatedCode[i].URL.fr = $('#frrelatedCodeURL' + id).val();
+    }
+
+    if (
+      $('#enrelatedCodename' + id).val() ||
+      $('#frrelatedCodename' + id).val()
+    ) {
+      obj.relatedCode[i].name = {};
+    }
+    if ($('#enrelatedCodename' + id).val()) {
+      obj.relatedCode[i].name.en = $('#enrelatedCodename' + id).val();
+    }
+    if ($('#frrelatedCodename' + id).val()) {
+      obj.relatedCode[i].name.fr = $('#frrelatedCodename' + id).val();
+    }
+  });
 }

@@ -5,6 +5,7 @@
   getTags resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
+  addMoreLicenses addMoreRelatedCode
 */
 
 const ossObj = $('.page-ossForm #nameselect');
@@ -81,17 +82,7 @@ function getOssObject() {
   };
 
   // Handle more-groups
-  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    ossObject.licenses[i] = {
-      URL: {
-        en: $('#enlicensesURL' + id).val(),
-        fr: $('#frlicensesURL' + id).val()
-      },
-      spdxID: $('#licensesspdxID' + id).val()
-    };
-  });
+  addMoreLicenses(ossObject);
 
   // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -113,52 +104,7 @@ function getOssObject() {
   }
 
   // Optional more-group
-  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    if (
-      $('#enrelatedCodeURL' + id).val() ||
-      $('#frrelatedCodeURL' + id).val() ||
-      $('#enrelatedCodename' + id).val() ||
-      $('#frrelatedCodename' + id).val()
-    ) {
-      if (ossObject.administrations[0].uses[0].relatedCode == undefined)
-        ossObject.administrations[0].uses[0].relatedCode = [];
-      ossObject.administrations[0].uses[0].relatedCode[i] = {};
-    }
-    if (
-      $('#enrelatedCodeURL' + id).val() ||
-      $('#frrelatedCodeURL' + id).val()
-    ) {
-      ossObject.administrations[0].uses[0].relatedCode[i].URL = {};
-    }
-    if ($('#enrelatedCodeURL' + id).val()) {
-      ossObject.administrations[0].uses[0].relatedCode[i].URL.en = $(
-        '#enrelatedCodeURL' + id
-      ).val();
-    }
-    if ($('#frrelatedCodeURL + id').val()) {
-      ossObject.administrations[0].uses[0].relatedCode[i].URL.fr = $(
-        '#frrelatedCodeURL' + id
-      ).val();
-    }
-    if (
-      $('#enrelatedCodename' + id).val() ||
-      $('#frrelatedCodename' + id).val()
-    ) {
-      ossObject.administrations[0].uses[0].relatedCode[i].name = {};
-    }
-    if ($('#enrelatedCodename' + id).val()) {
-      ossObject.administrations[0].uses[0].relatedCode[i].name.en = $(
-        '#enrelatedCodename' + id
-      ).val();
-    }
-    if ($('#frrelatedCodename' + id).val()) {
-      ossObject.administrations[0].uses[0].relatedCode[i].name.fr = $(
-        '#frrelatedCodename' + id
-      ).val();
-    }
-  });
+  addMoreRelatedCode(ossObject.administrations[0].uses[0]);
 
   if ($('#status :selected').val() != '') {
     ossObject.administrations[0].uses[0].status = $('#status :selected').val();
