@@ -18,12 +18,12 @@ releases:
       fr: MetPX-Sarracenia
     licenses:
       - URL:
-          en: https://github.com/MetPX/sarracenia/blob/master/LICENSE
-          fr: https://github.com/MetPX/sarracenia/blob/master/LICENSE
+          en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
+          fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
         spdxID: GPL-2.0
     repositoryURL:
-      en: https://github.com/MetPX/sarracenia
-      fr: https://github.com/MetPX/sarracenia
+      en: 'https://github.com/MetPX/sarracenia'
+      fr: 'https://github.com/MetPX/sarracenia'
     tags:
       en:
         - Environment
@@ -33,8 +33,6 @@ releases:
         - Météo
         - Données
         - Communication
-    vcs: git
-
   - contact:
       email: john.bain2@canada.ca
     date:
@@ -48,12 +46,12 @@ releases:
       fr: Architecture GC
     licenses:
       - URL:
-          en: https://github.com/canada-ca/architecture/blob/master/LICENSE
-          fr: https://github.com/canada-ca/architecture/blob/master/LICENSE
+          en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
+          fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/canada-ca/architecture
-      fr: https://github.com/canada-ca/architecture
+      en: 'https://github.com/canada-ca/architecture'
+      fr: 'https://github.com/canada-ca/architecture'
     tags:
       en:
         - Architecture

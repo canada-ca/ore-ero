@@ -1,0 +1,8 @@
+{%- assign title = "relatedCode" -%}
+<div class="add-more-group" id="addMore{{ title }}" data-title="{{ title }}">
+  {% include form/components/title.html id=include.id title=title -%}
+<div class="add-more-content">
+{% include form/components/group-i18n-group.html id=include.id title=title group="URL" required=false -%}
+{%- include form/components/group-i18n-group.html id=include.id title=title group="name" required=false -%}
+</div>
+</div>

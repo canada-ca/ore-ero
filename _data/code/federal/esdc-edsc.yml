@@ -14,20 +14,18 @@ releases:
       en: AppHub
       fr: HubApp
     licenses:
-      -
-        URL:
-          en: https://github.com/esdc-devx/AppHub/blob/master/LICENSE
-          fr: https://github.com/esdc-devx/AppHub/blob/master/LICENSE
+      - URL:
+          en: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
+          fr: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/esdc-devx/AppHub
-      fr: https://github.com/esdc-devx/AppHub
+      en: 'https://github.com/esdc-devx/AppHub'
+      fr: 'https://github.com/esdc-devx/AppHub'
     tags:
       en:
         - Dashboard
       fr:
         - Tableau de bord
-
   - contact:
       email: calvin.rodo@hrsdc-rhdcc.gc.ca
     date:
@@ -40,14 +38,13 @@ releases:
       en: .Net Code Coverage Demo
       fr: Démo de couverture de code .Net
     licenses:
-      -
-        URL:
-          en: https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE
-          fr: https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE
+      - URL:
+          en: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'
+          fr: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/esdc-devx/DotNetCCDemo
-      fr: https://github.com/esdc-devx/DotNetCCDemo
+      en: 'https://github.com/esdc-devx/DotNetCCDemo'
+      fr: 'https://github.com/esdc-devx/DotNetCCDemo'
     tags:
       en:
         - Demo

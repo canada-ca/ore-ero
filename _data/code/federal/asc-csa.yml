@@ -4,8 +4,8 @@ adminCode: asc-csa
 releases:
   - contact:
       URL:
-        en: https://projects.eclipse.org/projects/technology.apogy/contact
-        fr: https://projects.eclipse.org/projects/technology.apogy/contact
+        en: 'https://projects.eclipse.org/projects/technology.apogy/contact'
+        fr: 'https://projects.eclipse.org/projects/technology.apogy/contact'
       email: apogy-dev@eclipse.org
     date:
       created: '2015-09-28'
@@ -20,12 +20,12 @@ releases:
       fr: Apogy
     licenses:
       - URL:
-          en: https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE
-          fr: https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
         spdxID: EPL-1.0
     repositoryURL:
-      en: https://git.eclipse.org/c/apogy/apogy.git
-      fr: https://git.eclipse.org/c/apogy/apogy.git
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
     tags:
       en:
         - Robots
@@ -33,4 +33,3 @@ releases:
       fr:
         - Robots
         - Espace
-    vcs: git

@@ -5,8 +5,8 @@ releases:
   - contact:
       email: jared.rewerts@edmonton.ca
       URL:
-        en: https://github.com/yeg-relief/youcanbenefit/issues
-        fr: https://github.com/yeg-relief/youcanbenefit/issues
+        en: 'https://github.com/yeg-relief/youcanbenefit/issues'
+        fr: 'https://github.com/yeg-relief/youcanbenefit/issues'
       name: Jared Rewerts
       phone: 780-667-8058
     date:
@@ -21,20 +21,18 @@ releases:
       fr: YouCanBenefit
     licenses:
       - URL:
-          en: https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE
-          fr: https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE
+          en: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
+          fr: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/yeg-relief/youcanbenefit
-      fr: https://github.com/yeg-relief/youcanbenefit
+      en: 'https://github.com/yeg-relief/youcanbenefit'
+      fr: 'https://github.com/yeg-relief/youcanbenefit'
     tags:
       en:
         - Social Benefits
       fr:
         - Avantages sociaux
-    vcs: git
     languages:
       - JavaScript
       - TypeScript
     status: Maintained
-    version: 1.0.91

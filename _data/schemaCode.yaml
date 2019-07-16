@@ -2,15 +2,12 @@
 schemaVersion: str()
 adminCode: str()
 releases:
-  -
-    contact:
+  - contact:
       URL:
         en: str(required=False)
         fr: str(required=False)
       email: str()
-      name:
-        en: str(required=False)
-        fr: str(required=False)
+      name: str(required=False)
       phone: str(required=False)
     date:
       created: str()
@@ -34,16 +31,15 @@ releases:
       en: str(required=False)
       fr: str(required=False)
     partners:
-      URL:
-        en: str(required=False)
-        fr: str(required=False)
-      email: str(required=False)
-      name:
-        en: str(required=False)
-        fr: str(required=False)
+      - URL:
+          en: str(required=False)
+          fr: str(required=False)
+        email: str(required=False)
+        name:
+          en: str(required=False)
+          fr: str(required=False)
     licenses:
-      -
-        URL:
+      - URL:
           en: str()
           fr: str()
         spdxID: str()
@@ -51,8 +47,7 @@ releases:
       en: str()
       fr: str()
     relatedCode:
-      -
-        URL:
+      - URL:
           en: str(required=False)
           fr: str(required=False)
         name:
@@ -64,5 +59,3 @@ releases:
       fr:
         - str()
     status: str(required=False)
-    version: str(required=False)
-    vcs: str(required=False)

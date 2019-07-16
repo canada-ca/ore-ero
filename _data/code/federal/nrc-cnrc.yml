@@ -17,12 +17,12 @@ releases:
       fr: EGSnrc
     licenses:
       - URL:
-          en: https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE
-          fr: https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE
+          en: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
+          fr: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
         spdxID: AGPL-3.0
     repositoryURL:
-      en: https://github.com/nrc-cnrc/EGSnrc
-      fr: https://github.com/nrc-cnrc/EGSnrc
+      en: 'https://github.com/nrc-cnrc/EGSnrc'
+      fr: 'https://github.com/nrc-cnrc/EGSnrc'
     tags:
       en:
         - Monte Carlo simulation
@@ -30,4 +30,3 @@ releases:
       fr:
         - Simulation de Monte Carlo
         - Rayonnement ionisant
-    vcs: git

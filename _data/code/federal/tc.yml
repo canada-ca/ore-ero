@@ -16,14 +16,13 @@ releases:
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
     licenses:
-      -
-        URL:
-          en: https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE
-          fr: https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE
+      - URL:
+          en: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
+          fr: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/tc-ca/alexa-gc-recalls
-      fr: https://github.com/tc-ca/alexa-gc-recalls
+      en: 'https://github.com/tc-ca/alexa-gc-recalls'
+      fr: 'https://github.com/tc-ca/alexa-gc-recalls'
     tags:
       en:
         - Safety
@@ -35,8 +34,6 @@ releases:
         - Rappels
         - Véhicules
         - Alexa
-    vcs: git
-
   - contact:
       email: Heather.MacKeen@tc.gc.ca
       name: Heather MacKeen
@@ -52,14 +49,13 @@ releases:
       en: reference-center
       fr: reference-center
     licenses:
-      -
-        URL:
-          en: https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE
-          fr: https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE
+      - URL:
+          en: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
+          fr: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: https://github.com/tc-ca/Reference-Centre
-      fr: https://github.com/tc-ca/Reference-Centre
+      en: 'https://github.com/tc-ca/Reference-Centre'
+      fr: 'https://github.com/tc-ca/Reference-Centre'
     tags:
       en:
         - Files
@@ -69,4 +65,3 @@ releases:
         - Fichiers
         - Synchronisation
         - Réseau
-    vcs: git
