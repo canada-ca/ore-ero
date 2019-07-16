@@ -29,15 +29,19 @@
         {%- when 'status' -%}
           {%- include schema/presets/status.html id=idPreset -%}
         {%- when 'submitter' -%}
+          <!-- Submitter -->
         {%- when 'tags' -%}
           {%- include schema/presets/tags.html id=idPreset -%}
         {%- when 'selectStandard' -%}
+          <!-- SelectStandard -->
         {%- when 'selectCode' -%}
           {%- include schema/presets/selectCode.html id=idPreset -%}
         {%- when 'selectOss' -%}
+          <!-- SelectOss -->
         {%- when 'newAdmin' -%}
           {%- include schema/presets/newAdmin.html id=idPreset -%}
         {%- when 'hr' -%}
+          <!-- hr -->
         {%- when 'empty' -%}
           {% if formGroup.start %}
             {%- include schema/presets/wrap_start.html id=id title=formGroup.title -%}
@@ -48,13 +52,13 @@
     {%- else -%}
       {%- case formGroup.widget -%}
         {%- when 'group' -%}
-          {%- include schema/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required -%}
+          {%- include schema/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required more=formGroup.more -%}
         {%- when 'select' -%}
-          {%- include schema/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options -%}
+          {%- include schema/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options more=formGroup.more -%}
         {%- when 'string' -%}
-          {%- include schema/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required -%}
+          {%- include schema/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required more=formGroup.more -%}
         {%- when 'string-i18n' -%}
-          {%- include schema/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend -%}
+          {%- include schema/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
       {%- endcase -%}
     {%- endif -%}
   {%- endfor -%}

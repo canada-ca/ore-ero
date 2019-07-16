@@ -2,9 +2,10 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags
+  getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
+  addMoreLicenses
 */
 
 const ossObj = $('.page-ossForm #nameselect');
@@ -34,8 +35,9 @@ $(document).ready(function() {
 });
 
 function getOssObject() {
+  // Handles mandatory fields
   let ossObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -44,22 +46,14 @@ function getOssObject() {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
-    licenses: [
-      {
-        URL: {
-          en: $('#enlicensesURL').val(),
-          fr: $('#frlicensesURL').val()
-        },
-        spdxID: $('#licensesspdxID').val()
-      }
-    ],
+    licenses: [],
     name: {
       en: $('#enname').val(),
       fr: $('#frname').val()
     },
     tags: {
-      en: getTags([...document.querySelectorAll('#tagsEN input')]),
-      fr: getTags([...document.querySelectorAll('#tagsFR input')])
+      en: getTagsEN(),
+      fr: getTagsFR()
     },
     administrations: [
       {
@@ -87,9 +81,10 @@ function getOssObject() {
     ]
   };
 
-  // Then we handle all optional fields.
+  // Handle more-groups
+  addMoreLicenses(ossObject);
 
-  // contact.URL
+  // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     ossObject.administrations[0].uses[0].contact.URL = {};
   }
@@ -104,53 +99,24 @@ function getOssObject() {
     ).val();
   }
 
-  // contact.name, TODO: update to match schema
   if ($('#contactname').val()) {
     ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
 
-  // relatedCode TODO: support multiple relatedCode fields
-  if (
-    $('#enrelatedCodeURL').val() ||
-    $('#frrelatedCodeURL').val() ||
-    $('#enrelatedCodename').val() ||
-    $('#frrelatedCodename').val()
-  ) {
-    ossObject.administrations[0].uses[0].relatedCode = [{}];
-  }
-  // relatedCode.URL
-  if ($('#enrelatedCodeURL').val() || $('#frrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL = {};
-  }
-  if ($('#enrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.en = $(
-      '#enrelatedCodeURL'
-    ).val();
-  }
-  if ($('#frrelatedCodeURL').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].URL.fr = $(
-      '#frrelatedCodeURL'
-    ).val();
-  }
-  // relatedCode.name
-  if ($('#enrelatedCodename').val() || $('#frrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name = {};
-  }
-  if ($('#enrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name.en = $(
-      '#enrelatedCodename'
-    ).val();
-  }
-  if ($('#frrelatedCodename').val()) {
-    ossObject.administrations[0].uses[0].relatedCode[0].name.fr = $(
-      '#frrelatedCodename'
-    ).val();
-  }
-
-  // status
   if ($('#status :selected').val() != '') {
     ossObject.administrations[0].uses[0].status = $('#status :selected').val();
   }
+
+  // Optional more-group
+  $('#addMoreusers ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    if ($('#users' + id).val() != '') {
+      if (ossObject.administrations[0].uses[0].users == undefined)
+        ossObject.administrations[0].uses[0].users = [];
+      ossObject.administrations[0].uses[0].users[i] = $('#users' + id).val();
+    }
+  });
 
   return ossObject;
 }
@@ -352,7 +318,7 @@ function getConfigUpdate(result, file, ProjectName) {
       files: [
         {
           path: file,
-          content: jsyaml.dump(result, { lineWidth: 160 })
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -383,11 +349,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
       files: [
         {
           path: file,
-          content:
-            '---\n' +
-            jsyaml.dump(softwareObject, {
-              lineWidth: 160
-            })
+          content: '---\n' + jsyaml.dump(softwareObject)
         }
       ]
     }),
@@ -413,7 +375,6 @@ function selectOss() {
 }
 
 function addValueToFieldsOss(obj) {
-  $('#schemaVersion').val(obj['schemaVersion']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -427,7 +388,6 @@ function addValueToFieldsOss(obj) {
 }
 
 function resetFieldsOss() {
-  $('#schemaVersion').val('1.0');
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
@@ -459,8 +419,6 @@ function selectAdmin() {
             resetFieldsAdmin();
           }
         }
-      } else {
-        console.log('standard empty of not found');
       }
     }
   );
@@ -479,22 +437,11 @@ function addValueToFieldsAdmin(obj) {
     $('#contactname').val(obj['uses'][0]['contact']['name']);
 
   $('#datestarted').val(obj['uses'][0]['date']['started']);
-  $('#datemetadataLastUpdated').val(
-    obj['uses'][0]['date']['metadataLastUpdated']
-  );
   $('#useenname').val(obj['uses'][0]['name']['en']);
   $('#usefrname').val(obj['uses'][0]['name']['fr']);
   $('#useendescription').val(obj['uses'][0]['description']['en']);
   $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
 
-  if (obj['uses'][0]['relatedCode']) {
-    if (obj['uses'][0]['relatedCode']['URL']) {
-      if (obj['uses'][0]['relatedCode']['URL']['en'])
-        $('#enrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['en']);
-      if (obj['uses'][0]['relatedCode']['URL']['fr'])
-        $('#frrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['fr']);
-    }
-  }
   if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
 }
 
@@ -508,9 +455,5 @@ function resetFieldsAdmin() {
   $('#usefrname').val('');
   $('#useendescription').val('');
   $('#usefrdescription').val('');
-  $('#enrelatedCodeURL').val('');
-  $('#frrelatedCodeURL').val('');
-  $('#enrelatedCodename').val('');
-  $('#frrelatedCodename').val('');
   $('#status').val('');
 }

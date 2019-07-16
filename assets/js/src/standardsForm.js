@@ -2,7 +2,7 @@
   global $
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTags resetTags addTags
+  getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
 */
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 function getStandardsObject() {
   let standardsObject = {
-    schemaVersion: $('#schemaVersion').val(),
+    schemaVersion: '1.0',
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -56,8 +56,8 @@ function getStandardsObject() {
       fr: $('#frstandardOrg').val()
     },
     tags: {
-      en: getTags([...document.querySelectorAll('#tagsEN input')]),
-      fr: getTags([...document.querySelectorAll('#tagsFR input')])
+      en: getTagsEN(),
+      fr: getTagsFR()
     },
     administrations: [
       {
@@ -65,27 +65,33 @@ function getStandardsObject() {
         contact: {
           email: $('#contactemail').val()
         },
-        references: [
-          {
-            URL: {
-              en: $('#enreferenceURL').val(),
-              fr: $('#frreferenceURL').val()
-            },
-            name: {
-              en: $('#enreferencename').val(),
-              fr: $('#frreferencename').val()
-            }
-          }
-        ],
         date: {
           created: $('#datecreated').val(),
           metadataLastUpdated: $('#datemetadataLastUpdated').val()
         },
+        references: [],
         status: $('#status').val()
       }
     ]
   };
 
+  // Handles more-groups
+  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    standardsObject.administrations[0].references[i] = {
+      URL: {
+        en: $('#enreferenceURL' + id).val(),
+        fr: $('#frreferenceURL' + id).val()
+      },
+      name: {
+        en: $('#enreferencename' + id).val(),
+        fr: $('#frreferencename' + id).val()
+      }
+    };
+  });
+
+  // Handles optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     standardsObject.administrations[0].contact.URL = {};
   }
@@ -336,7 +342,6 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#schemaVersion').val(obj['schemaVersion']);
   $('#standardAcronym').val(obj['standardAcronym']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
@@ -352,7 +357,6 @@ function addValueToFieldsStandard(obj) {
 }
 
 function resetFieldsStandard() {
-  $('#schemaVersion').val('1.0');
   $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');

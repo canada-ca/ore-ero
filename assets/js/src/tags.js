@@ -1,4 +1,12 @@
-/* exported getTags addTags resetTags */
+/* exported getTagsEN getTagsFR addTags resetTags */
+
+function getTagsEN() {
+  return getTags($('#tagsEN input'));
+}
+
+function getTagsFR() {
+  return getTags($('#tagsFR input'));
+}
 
 function getTags(query) {
   return $(query)

@@ -22,6 +22,7 @@ formGroups:
   - preset: adminCode
   - widget: group
     title: reference
+    more: true
     fields:
       - widget: string-i18n
         title: URL

@@ -320,7 +320,7 @@ code:
       schema:
         en: Organization
         fr: Organisation
-  partner:
+  partners:
     title:
       en: Information about each group partnering on the project.
       fr: Renseignements sur chaque groupe partenaire du projet.
@@ -363,20 +363,6 @@ code:
       schema:
         en: Code Repository URL
         fr: URL du dépôt de code
-  vcs:
-    title:
-      en: A lowercase string with the name of the version control system that is being used for the project. For example, git, svn, ...
-      fr: Une chaîne de caractères en miniscule contenant le nom de la version du système de contrôle qui est utilisée dans le projet. Par exemple, git, svn, ...
-    label:
-      en: Version control system
-      fr: Système de contrôle de version
-  version:
-    title:
-      en: The latest version for this project. For example, 1.0.0.
-      fr: La version de ce projet. Par  exemple, 1.0.0.
-    label:
-      en: The latest version
-      fr: La dernière version
   releases:
     title:
       en: Information for each project or source code published.
@@ -430,6 +416,13 @@ oss:
       schema:
         en: Description of the project activity
         fr: Description de l'activité du projet.
+  users:
+    title:
+      en: Project Users
+      fr: Utilisateurs tu projet
+    label:
+      en: Group using the project
+      fr: Les groupes qui utilisent le projet
   administrations: *administrations
   uses:
     title:

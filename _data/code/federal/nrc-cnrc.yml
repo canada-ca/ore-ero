@@ -30,4 +30,3 @@ releases:
       fr:
         - Simulation de Monte Carlo
         - Rayonnement ionisant
-    vcs: git

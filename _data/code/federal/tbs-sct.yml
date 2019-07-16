@@ -38,7 +38,6 @@ releases:
       fr:
         - Collaboration
         - Social
-    vcs: git
   - contact:
       email: cds-snc@tbs-sct.gc.ca
     date:
@@ -66,7 +65,6 @@ releases:
         - Website
       fr:
         - Site Web
-    vcs: git
   - contact:
       email: wet-boew@tbs-sct.gc.ca
     date:
@@ -93,7 +91,6 @@ releases:
       fr:
         - Interface
         - Site Web
-    vcs: git
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -132,7 +129,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -171,7 +167,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -209,7 +204,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -247,7 +241,6 @@ releases:
         - CKAN Tool
       fr:
         - Outil CKAN
-    vcs: git
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -285,7 +278,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       email: sebastien.lemay@canada.ca
     date:

@@ -33,7 +33,6 @@ releases:
         - Météo
         - Données
         - Communication
-    vcs: git
   - contact:
       email: john.bain2@canada.ca
     date:

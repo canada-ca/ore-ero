@@ -26,8 +26,9 @@ formGroups:
     rule: alphanum-space
     required: false
   - widget: group
-    title: partner
+    title: partners
     required: false
+    more: true
     fields:
       - widget: string-i18n
         title: URL
@@ -45,11 +46,4 @@ formGroups:
   - preset: relatedCode
   - preset: tags
   - preset: status
-  - widget: string
-    title: version
-    required: false
-  - widget: string
-    title: vcs
-    required: false
-    rule: alphanum-space
   - preset: empty
