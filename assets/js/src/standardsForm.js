@@ -7,7 +7,7 @@
   getAdminObject getAdminCode
 */
 
-const standardObj = $('.page-standardsForm #standardCodeselect');
+const standardObj = $('.page-standardsForm #standardAcronymselect');
 const adminObj = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
@@ -48,7 +48,7 @@ function getStandardsObject() {
       en: $('#enspecURL').val(),
       fr: $('#frspecURL').val()
     },
-    standardCode: $('#standardCode')
+    standardAcronym: $('#standardAcronym')
       .val()
       .toUpperCase(),
     standardsOrg: {
@@ -115,14 +115,14 @@ function submitStandardsForm() {
 
   let standardObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardCode.toLowerCase()}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardAcronym.toLowerCase()}.yml`;
 
   fileWriter
     .merge(file, standardObject, 'administrations', 'adminCode')
     .then(result => {
       return fetch(
         PRBOT_URL,
-        getConfigUpdate(result, file, standardObject.standardCode)
+        getConfigUpdate(result, file, standardObject.standardAcronym)
       );
     })
     .catch(err => {
@@ -163,7 +163,7 @@ function getConfigNew(standardsObject, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the standard file for ' + standardsObject.standardCode,
+      title: 'Created the standard file for ' + standardsObject.standardAcronym,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -190,7 +190,7 @@ function submitStandardsFormNewAdmin() {
   let standardObject = getStandardsObject();
   let adminObject = getAdminObject();
 
-  let standardName = standardObject.standardCode.toLowerCase();
+  let standardName = standardObject.standardAcronym.toLowerCase();
   let adminName = $('#newAdminCode').val();
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -337,7 +337,7 @@ function selectStandard() {
 
 function addValueToFieldsStandard(obj) {
   $('#schemaVersion').val(obj['schemaVersion']);
-  $('#standardCode').val(obj['standardCode']);
+  $('#standardAcronym').val(obj['standardAcronym']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -353,7 +353,7 @@ function addValueToFieldsStandard(obj) {
 
 function resetFieldsStandard() {
   $('#schemaVersion').val('1.0');
-  $('#standardCode').val('');
+  $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
