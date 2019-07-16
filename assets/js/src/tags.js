@@ -55,7 +55,7 @@ function resetTags() {
 }
 
 function tagObject(id, value) {
-  return $(`<div class="control-group input-group col-xs-2" style="margin-top:10px" >
+  return $(`<div class="control-group input-group col-xs-2 mrgn-tp-md">
     <input type="text" id="${id}" name="tag" value="${value}" class="form-control">
     <div class="input-group-btn">
       <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
