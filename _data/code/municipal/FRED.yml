@@ -1,0 +1,28 @@
+---
+schemaVersion: '1.0'
+adminCode: FRED
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-06'
+      metadataLastUpdated: '2019-07-16'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licenses:
+      - URL:
+          en: 'http://www.mit.edu/'
+          fr: 'http://www.mit.edu/'
+        spdxID: MIT
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
