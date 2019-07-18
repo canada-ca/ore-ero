@@ -1,0 +1,21 @@
+---
+administration: str()
+uses:
+  - contact:
+      URL:
+        en: str(required=False)
+        fr: str(required=False)
+      email: str()
+      name: str(required=False)
+    date:
+      started: str()
+      metadataLastUpdated: str()
+    description:
+      en: str()
+      fr: str()
+    name:
+      en: str()
+      fr: str()
+    status: str(required=False)
+    users:
+      - str(required=False)

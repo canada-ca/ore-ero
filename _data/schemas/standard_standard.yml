@@ -1,0 +1,23 @@
+---
+schemaVersion: str()
+administrations:
+  - str()
+date:
+  created: str()
+  metadataLastUpdated: str()
+description:
+  en: str()
+  fr: str()
+name:
+  en: str()
+  fr: str()
+specURL:
+  en: str()
+  fr: str()
+standardCode: str()
+standardOrg: str()
+tags:
+  en:
+    - str()
+  fr:
+    - str()

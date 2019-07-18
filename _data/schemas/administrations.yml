@@ -1,0 +1,7 @@
+---
+code: str()
+name:
+  en: str()
+  fr: str()
+parent: enum('federal', 'provincial', 'municipal')
+provinceCode: enum('ab', 'bc', 'mb', 'nb', 'nl', 'nt', 'ns', 'nu', 'on', 'pe', 'qc', 'sk', 'yt', required=False)
