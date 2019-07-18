@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: A server-side scripting language designed for web development but also used as a general-purpose programming language.
+  fr: Langage de script côté serveur conçu pour le développement Web mais également utilisé comme langage de programmation généraliste.
+homepageURL:
+  en: 'https://php.net'
+  fr: 'https://php.net'
+licences:
+  - URL:
+      en: 'https://php.net/license/index.php'
+      fr: 'https://php.net/license/index.php'
+    spdxID: PHP-License
+name:
+  en: PHP
+  fr: PHP
+tags:
+  en:
+    - Programming language
+  fr:
+    - langage de programmation
+administrations:
+  - gac-amc

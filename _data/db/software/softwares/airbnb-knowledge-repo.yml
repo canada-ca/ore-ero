@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: A platform for data scientists and other technical professions.
+  fr: Une plateforme pour les scientifiques de données et d'autres professions techniques.
+homepageURL:
+  en: 'https://airbnb.io/projects/knowledge-repo/'
+  fr: 'https://airbnb.io/projects/knowledge-repo/'
+licences:
+  - URL:
+      en: 'https://github.com/airbnb/knowledge-repo/blob/master/LICENSE'
+      fr: 'https://github.com/airbnb/knowledge-repo/blob/master/LICENSE'
+    spdxID: Apache-2.0
+name:
+  en: AirBnb-knowledge-repo
+  fr: AirBnb-knowledge-repo
+tags:
+  en:
+    - Sharing knowledge
+  fr:
+    - Partage des connaissances
+administrations:
+  - mtl_qc

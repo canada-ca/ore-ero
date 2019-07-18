@@ -1,0 +1,14 @@
+---
+administration: mtl_qc
+uses:
+  - contact:
+      email: libre@ville.montreal.qc.ca
+    date:
+      started: '2017-06-30'
+      metadataLastUpdated: '2019-05-06'
+    description:
+      en: Application Management.
+      fr: Gestion applicative.
+    name:
+      en: Application Server Software.
+      fr: Logiciels serveur d'applications.

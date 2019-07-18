@@ -1,0 +1,29 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Highly customizable web framework and CMS for building social apps
+  fr: Framework Web hautement personnalisable et CMS pour créer des applications sociales
+homepageURL:
+  en: 'https://elgg.org/'
+  fr: 'https://elgg.org/'
+licences:
+  - URL:
+      en: 'http://learn.elgg.org/en/2.0/intro/license.html'
+      fr: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    spdxID: MIT
+  - URL:
+      en: 'http://learn.elgg.org/en/2.0/intro/license.html'
+      fr: 'http://learn.elgg.org/en/2.0/intro/license.html'
+    spdxID: GPL-2.0
+name:
+  en: Elgg
+  fr: Elgg
+tags:
+  en:
+    - Collaboration
+    - Social
+  fr:
+    - Collaboration
+    - Sociale
+administrations:
+  - tbs-sct

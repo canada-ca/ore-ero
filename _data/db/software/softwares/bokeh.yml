@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Bokeh is an interactive visualization library that targets modern web browsers for presentation.
+  fr: Bokeh est une bibliothèque de visualisation interactive qui cible les navigateurs Web modernes à des fins de présentation.
+homepageURL:
+  en: 'http://bokeh.pydata.org/en/latest/'
+  fr: 'http://bokeh.pydata.org/en/latest/'
+licences:
+  - URL:
+      en: 'https://github.com/bokeh/bokeh/blob/master/LICENSE.txt'
+      fr: 'https://github.com/bokeh/bokeh/blob/master/LICENSE.txt'
+    spdxID: BSD 3-Clause
+name:
+  en: Bokeh
+  fr: Bokeh
+tags:
+  en:
+    - Visualisation
+  fr:
+    - Visualisation
+administrations:
+  - mtl_qc

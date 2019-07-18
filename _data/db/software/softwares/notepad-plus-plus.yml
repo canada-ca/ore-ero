@@ -1,0 +1,27 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Text editor and Notepad replacement that runs in the Windows environment.
+  fr: Éditeur de textes et remplacement pour Notepad qui fonctionne dans l'environement Windows.
+homepageURL:
+  en: 'https://notepad-plus-plus.org'
+  fr: 'https://notepad-plus-plus.org/fr'
+licences:
+  - URL:
+      en: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
+      fr: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
+    spdxID: GPL-2.0
+name:
+  en: Notepad-plus-plus
+  fr: Notepad-plus-plus
+tags:
+  en:
+    - Desktop
+    - Productivity
+    - Text editor
+  fr:
+    - Poste de travail
+    - Productivité
+    - Éditeur texte
+administrations:
+  - gac-amc

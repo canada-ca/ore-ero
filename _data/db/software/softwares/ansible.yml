@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Ansible is an IT automation tool.
+  fr: Ansible est un outil d'automatisation informatique.
+homepageURL:
+  en: 'https://www.ansible.com/'
+  fr: 'https://www.ansible.com/'
+licences:
+  - URL:
+      en: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+      fr: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+    spdxID: GPL-3.0
+name:
+  en: Ansible
+  fr: Ansible
+tags:
+  en:
+    - Application platform
+  fr:
+    - Plateforme applicative
+administrations:
+  - mtl_qc

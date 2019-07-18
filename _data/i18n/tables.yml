@@ -2,8 +2,8 @@
 filterOptions:
   en: Filter Options
   fr: Options de filtrage
-license:
-  en: License(s)
+licence:
+  en: Licence(s)
   fr: Licence(s)
 tag:
   en: Tag(s)
@@ -20,6 +20,9 @@ clear:
 projectName:
   en: Project Name
   fr: Nom du projet
+software:
+  en: Software
+  fr: Logiciel
 languages:
   en: Language(s)
   fr: Langage(s)
@@ -32,6 +35,15 @@ status:
 contactPhone:
   en: Contact phone (###-###-####)
   fr: Numéro du contact (###-###-####)
+homepage:
+  en: Homepage
+  fr: Page d'accueil
+usage:
+  en: Usage
+  fr: Utilisation
+usedBy:
+  en: Is being used by
+  fr: Est utilisé par
 
 lightbox:
   sourceCode:

@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Cross-platform web server
+  fr: Serveur Web multiplateforme
+homepageURL:
+  en: 'https://httpd.apache.org'
+  fr: 'https://httpd.apache.org'
+licences:
+  - URL:
+      en: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+      fr: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    spdxID: Apache-2.0
+name:
+  en: Apache
+  fr: Apache
+tags:
+  en:
+    - HTTP Server
+  fr:
+    - Serveur HTTP
+administrations:
+  - gac-amc

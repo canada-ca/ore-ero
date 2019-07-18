@@ -1,0 +1,31 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application.
+  fr: Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web.
+homepageURL:
+  en: 'https://lesk.it'
+  fr: 'https://lesk.it'
+licences:
+  - URL:
+      en: 'http://lesk.it/license.html'
+      fr: 'http://lesk.it/license.html'
+    spdxID: GPL-3.0
+  - URL:
+      en: 'http://lesk.it/license.html'
+      fr: 'http://lesk.it/license.html'
+    spdxID: Apache-2.0
+name:
+  en: LESK
+  fr: LESK
+tags:
+  en:
+    - HTTP Server
+    - PHP
+    - Laravel
+  fr:
+    - Serveur HTTP
+    - PHP
+    - Laravel
+administrations:
+  - gac-amc
