@@ -17,7 +17,7 @@ languages:
 name:
   en: ckanext-geomapviewer
   fr: ckanext-geomapviewer
-licenses:
+licences:
   - URL:
       en: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
       fr: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'

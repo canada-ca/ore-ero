@@ -12,7 +12,7 @@ description:
 name:
   en: Web Experience Toolkit (WET)
   fr: Boîte à outils de l'expérience Web (BOEW)
-licenses:
+licences:
   - URL:
       en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
       fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'

@@ -37,7 +37,7 @@ partners:
     name:
       en: str(required=False)
       fr: str(required=False)
-licenses:
+licences:
   - URL:
       en: str()
       fr: str()

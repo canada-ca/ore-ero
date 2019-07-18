@@ -17,7 +17,7 @@ languages:
 name:
   en: Spartacus
   fr: Spartacus
-licenses:
+licences:
   - URL:
       en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
       fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'

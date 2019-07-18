@@ -12,7 +12,7 @@ description:
 name:
   en: GC Architecture
   fr: Architecture GC
-licenses:
+licences:
   - URL:
       en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
       fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'

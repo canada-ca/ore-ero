@@ -1,4 +1,4 @@
-/* exported addMoreLicenses addMoreRelatedCode */
+/* exported addMoreLicences addMoreRelatedCode */
 
 $(document).ready(function() {
   $('.add-more-group').each(function() {
@@ -83,16 +83,16 @@ function checkForMinusBtn(obj) {
   else section.find('.btn-tabs-more-remove').addClass('invisible');
 }
 
-function addMoreLicenses(obj) {
-  $('#addMorelicenses ul.list-unstyled > li').each(function(i) {
+function addMoreLicences(obj) {
+  $('#addMorelicences ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    obj.licenses[i] = {
+    obj.licences[i] = {
       URL: {
-        en: $('#enlicensesURL' + id).val(),
-        fr: $('#frlicensesURL' + id).val()
+        en: $('#enlicencesURL' + id).val(),
+        fr: $('#frlicencesURL' + id).val()
       },
-      spdxID: $('#licensesspdxID' + id).val()
+      spdxID: $('#licencesspdxID' + id).val()
     };
   });
 }

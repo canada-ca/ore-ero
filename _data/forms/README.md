@@ -127,7 +127,7 @@ The following sections explain each of the available presets:
  - homepageURL
  - hr
  - languages
- - licenses
+ - licences
  - newAdmin
  - orgLevel
  - provinceSelect
@@ -234,12 +234,12 @@ This preset takes no additional parameters.
   - preset: languages
 ```
 
-#### Licenses
-The licenses preset displays two fields for the license URLs (for english and french URLs) and a field for the spdxID of the license. The label for the spdxID contains a link to a list and definition of spdxIDs.
+#### licences
+The licences preset displays two fields for the license URLs (for english and french URLs) and a field for the spdxID of the license. The label for the spdxID contains a link to a list and definition of spdxIDs.
 
 This preset takes no additional parameters.
 ```yaml
-  - preset: licenses
+  - preset: licences
 ```
 
 #### newAdmin

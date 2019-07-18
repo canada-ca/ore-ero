@@ -39,7 +39,7 @@ formGroups:
       - widget: string-i18n
         title: name
         rule: alphanum-space
-  - preset: licenses
+  - preset: licences
   - widget: string-i18n
     title: repositoryUrl
     type: url

@@ -17,7 +17,7 @@ languages:
 name:
   en: CKAN-Extension-Territoire
   fr: CKAN-Extension-Territoire
-licenses:
+licences:
   - URL:
       en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-en.txt'
       fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-fr.txt'

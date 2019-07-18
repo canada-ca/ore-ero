@@ -14,7 +14,7 @@ languages:
 name:
   en: METRo
   fr: METRo
-licenses:
+licences:
   - URL:
       en: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
       fr: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'

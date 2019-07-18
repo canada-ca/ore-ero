@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses
+  addMoreLicences
 */
 
 const ossObj = $('.page-ossForm #nameselect');
@@ -46,7 +46,7 @@ function getOssObject() {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
-    licenses: [],
+    licences: [],
     name: {
       en: $('#enname').val(),
       fr: $('#frname').val()
@@ -82,7 +82,7 @@ function getOssObject() {
   };
 
   // Handle more-groups
-  addMoreLicenses(ossObject);
+  addMoreLicences(ossObject);
 
   // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -381,9 +381,9 @@ function addValueToFieldsOss(obj) {
   $('#frdescription').val(obj['description']['fr']);
   $('#enhomepageURL').val(obj['homepageURL']['en']);
   $('#frhomepageURL').val(obj['homepageURL']['fr']);
-  $('#enlicensesURL').val(obj['licenses'][0]['URL']['en']);
-  $('#frlicensesURL').val(obj['licenses'][0]['URL']['fr']);
-  $('#licensesspdxID').val(obj['licenses'][0]['spdxID']);
+  $('#enlicencesURL').val(obj['licences'][0]['URL']['en']);
+  $('#frlicencesURL').val(obj['licences'][0]['URL']['fr']);
+  $('#licencesspdxID').val(obj['licences'][0]['spdxID']);
   addTags(obj);
 }
 
@@ -394,9 +394,9 @@ function resetFieldsOss() {
   $('#frdescription').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
-  $('#enlicensesURL').val('');
-  $('#frlicensesURL').val('');
-  $('#licensesspdxID').val('');
+  $('#enlicencesURL').val('');
+  $('#frlicencesURL').val('');
+  $('#licencesspdxID').val('');
   $('#enname').focus();
   $('#frname').focus();
   resetTags();

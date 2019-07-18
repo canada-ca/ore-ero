@@ -151,7 +151,7 @@ presets:
     button:
       en: Add more languages
       fr: Ajouter plus de langues
-  licenses:
+  licences:
     title:
       en: Information about each licence for the project.
       fr: Renseignements sur chaque licence pour le projet.

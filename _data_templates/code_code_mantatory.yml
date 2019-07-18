@@ -11,11 +11,11 @@ description:
 name:
   en: Code-ex
   fr: Code-ex
-licenses:
+licences:
   - URL:
-      en: https://www.license.com
-      fr: https://www.license.ca
-    spdxID: license
+      en: https://www..com
+      fr: https://www..ca
+    spdxID: licence
 repositoryURL:
   en: https://www.repository.com
   fr: https://www.repository.ca

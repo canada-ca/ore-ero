@@ -17,7 +17,7 @@ languages:
 name:
   en: Devex
   fr: Devex
-licenses:
+licences:
   - URL:
       en: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
       fr: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'

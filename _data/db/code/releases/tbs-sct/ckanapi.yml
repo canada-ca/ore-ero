@@ -17,7 +17,7 @@ name:
 organization:
   en: Open Government
   fr: Gouvernement Ouvert
-licenses:
+licences:
   - URL:
       en: 'https://github.com/ckan/ckanapi/blob/master/COPYING'
       fr: 'https://github.com/ckan/ckanapi/blob/master/COPYING.fr'

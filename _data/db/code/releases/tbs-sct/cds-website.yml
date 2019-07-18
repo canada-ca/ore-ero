@@ -15,7 +15,7 @@ name:
 organization:
   en: Canadian Digital Services
   fr: Services numériques Canadiens
-licenses:
+licences:
   - URL:
       en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
       fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'

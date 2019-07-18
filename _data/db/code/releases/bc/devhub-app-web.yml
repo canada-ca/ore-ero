@@ -20,7 +20,7 @@ languages:
 name:
   en: devhub-app-web
   fr: devhub-app-web
-licenses:
+licences:
   - URL:
       en: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'
       fr: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'

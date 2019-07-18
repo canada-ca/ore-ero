@@ -20,7 +20,7 @@
         <label for="dt_department">{{ site.data.i18n.form.administration.title[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
-          {%- assign admin_arr = "" | split: ',' -%}
+          {%- assign admin_arr = "" | split: "," -%}
           {%- for admins in site.data.db.code.administrations -%}
             {%- assign admin = admins[0] -%}
             {%- assign administration = site.data.db.administrations[admin] -%}
@@ -55,21 +55,21 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_license">{{ site.data.i18n.tables.license[page.lang] }}</label>
-        <select class="form-control" id="dt_license" name="dt_license" data-column="3">
+        <label for="dt_licence">{{ site.data.i18n.tables.licence[page.lang] }}</label>
+        <select class="form-control" id="dt_licence" name="dt_licence" data-column="3">
           <option value="">&nbsp;</option>
-          {%- assign license_arr = "" | split: "," -%}
+          {%- assign licence_arr = "" | split: "," -%}
           {%- for codes in site.data.db.code.releases -%}
             {%- for releases in codes[1] -%}
               {%- assign release = releases[1] -%}
-              {%- for license in release.licenses -%}
-                {%- assign license_arr = license_arr | push: license.spdxID -%}
+              {%- for licence in release.licences -%}
+                {%- assign licence_arr = licence_arr | push: licence.spdxID -%}
               {%- endfor -%}
             {%- endfor -%}
           {%- endfor -%}
-          {%- assign license_arr = license_arr | sort_natural | uniq -%}
-          {%- for license in license_arr -%}
-            <option value="{{ license }}">{{ license }}</option>
+          {%- assign licence_arr = licence_arr | sort_natural | uniq -%}
+          {%- for licence in licence_arr -%}
+            <option value="{{ licence }}">{{ licence }}</option>
           {%- endfor -%}
         </select>
       </div>
@@ -114,8 +114,8 @@
       <tr>
         <th>{{ site.data.i18n.form.administrations.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.presets.description.schema[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.license[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.presets.description.label.schema[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.organization.schema[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
@@ -139,8 +139,8 @@
         <td><a href="#{{ release.name[page.lang] | slugify: "ascii" }}" aria-controls="{{ release.name[page.lang] | slugify: "ascii" }}" class="overlay-lnk" role="button">{{ release.name[page.lang] }}</a></td>
         <td>{{ release.description[page.lang] }}</td>
         <td>
-          {%- for license in release.licenses -%}
-          <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>
+          {%- for licence in release.licences -%}
+          <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>
           {%- endfor -%}
         </td>
         <td>
@@ -193,10 +193,10 @@
           <a href="{{ release.repositoryURL.URL[page.lang] }}" target="_blank">{{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}</a>
         </p>
         {%- endif -%}
-        <p>{{ site.data.i18n.tables.license[page.lang] }}:</p>
+        <p>{{ site.data.i18n.tables.licence[page.lang] }}:</p>
         <ul>
-          {%- for license in release.licenses -%}
-            <li><a href="{{ license.URL[page.lang] }}">{{ license.spdxID }}</a></li>
+          {%- for licence in release.licences -%}
+            <li><a href="{{ licence.URL[page.lang] }}">{{ licence.spdxID }}</a></li>
           {%- endfor -%}
         </ul>
         <p>{{ site.data.i18n.tables.tag[page.lang] }}:</p>

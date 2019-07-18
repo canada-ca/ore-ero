@@ -18,7 +18,7 @@ name:
 organization:
   en: Open Government
   fr: Gouvernement Ouvert
-licenses:
+licences:
   - URL:
       en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
       fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'

@@ -18,7 +18,7 @@ name:
 organization:
   en: Digital Enablement Division
   fr: Division de la mobilisation numérique
-licenses:
+licences:
   - URL:
       en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
       fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'

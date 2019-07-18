@@ -5,7 +5,7 @@
 <div class="form-element">
 {% if formGroup.preset -%}
 {%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
-<div class="form-element-preset{% if formGroup.preset == 'licenses' or formGroup.preset == 'relatedCode' %} form-group-more{% endif %}" id="formgroup_preset_{{ formGroup.preset }}">
+<div class="form-element-preset{% if formGroup.preset == 'licences' or formGroup.preset == 'relatedCode' %} form-group-more{% endif %}" id="formgroup_preset_{{ formGroup.preset }}">
 {%- endif -%}
   {%- case formGroup.preset -%}
     {%- when 'adminCode' -%}
@@ -20,8 +20,8 @@
       {% include form/presets/homepageURL.html id=idPreset -%}
     {%- when 'languages' -%}
       {% include form/presets/languages.html id=idPreset -%}
-    {%- when 'licenses' -%}
-      {% include form/presets/licenses.html id=idPreset -%}
+    {%- when 'licences' -%}
+      {% include form/presets/licences.html id=idPreset -%}
     {%- when 'orgLevel' -%}
       {% include form/presets/orgLevel.html id=idPreset -%}
     {%- when 'provinceSelect' -%}

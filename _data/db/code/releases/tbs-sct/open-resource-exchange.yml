@@ -12,7 +12,7 @@ description:
 name:
   en: Open Resource Exchange
   fr: Échange de Ressource Ouvert
-licenses:
+licences:
   - URL:
       en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
       fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'

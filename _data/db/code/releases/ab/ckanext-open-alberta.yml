@@ -17,7 +17,7 @@ languages:
 name:
   en: ckanext-open_alberta
   fr: ckanext-open_alberta
-licenses:
+licences:
   - URL:
       en: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
       fr: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'

@@ -15,7 +15,7 @@ languages:
 name:
   en: MetPX-Sarracenia
   fr: MetPX-Sarracenia
-licenses:
+licences:
   - URL:
       en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
       fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'

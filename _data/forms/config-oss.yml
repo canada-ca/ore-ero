@@ -7,7 +7,7 @@ formGroups:
   - preset: selectOss
   - preset: description
   - preset: homepageURL
-  - preset: licenses
+  - preset: licences
   - preset: tags
   - preset: empty
     start: true

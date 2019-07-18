@@ -6,11 +6,11 @@ description:
 homepageURL:
   en: https://www.homepage.com
   fr: https://www.homepage.ca
-licenses:
+licences:
   - URL:
-      en: https://www.license.com
-      fr: https://www.license.com
-    spdxID: license
+      en: https://www..com
+      fr: https://www..com
+    spdxID: licence
 name:
   en: Software-ex
   fr: Software-ex

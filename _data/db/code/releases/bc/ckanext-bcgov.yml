@@ -20,7 +20,7 @@ languages:
 name:
   en: ckanext-bcgov
   fr: ckanext-bcgov
-licenses:
+licences:
   - URL:
       en: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
       fr: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'

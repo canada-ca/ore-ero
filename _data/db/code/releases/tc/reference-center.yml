@@ -15,7 +15,7 @@ languages:
 name:
   en: reference-center
   fr: reference-center
-licenses:
+licences:
   - URL:
       en: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
       fr: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'

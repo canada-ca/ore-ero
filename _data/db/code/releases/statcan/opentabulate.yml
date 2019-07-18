@@ -13,7 +13,7 @@ description:
 name:
   en: OpenTabulate
   fr: OpenTabulate
-licenses:
+licences:
   - URL:
       en: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
       fr: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'

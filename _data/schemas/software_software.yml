@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: str()
   fr: str()
-licenses:
+licences:
   - URL:
       en: str()
       fr: str()
