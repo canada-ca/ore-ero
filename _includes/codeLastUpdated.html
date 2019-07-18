@@ -1,39 +1,13 @@
-{%- assign dates = "" | split: "," -%}
-{%- assign lastUpdated_array = "" | split: "," -%}
-{%- assign projectName_array = "" | split: "," -%}
-{%- assign repoUrl_array = "" | split: "," -%}
-
-{%- for fptms in site.data.code -%}
-  {%- assign fptm = fptms[1] -%}
-  {%- for admins in fptm -%}
-    {%- assign admin = admins[1] -%}
-    {%- for release in admin.releases -%}
-      {%- assign d = release.date.metadataLastUpdated | date: '%s' -%}
-      {%- assign dates = dates | push: d -%}
-    {%- endfor -%}
+{%- assign releases_arr = "" | split: ',' -%}
+{%- for codes in site.data.db.code.releases -%}
+  {%- for releases in codes[1] -%}
+    {%- assign releases_arr = releases_arr | push: releases[1] -%}
   {%- endfor -%}
 {%- endfor -%}
-
-{%- assign dates = dates | sort: '' | reverse -%}
-
-{%- for lastUpdated in dates limit 3 -%}
-  {%- for fptms in site.data.code -%}
-    {%- assign fptm = fptms[1] -%}
-    {%- for admins in fptm -%}
-      {%- assign admin = admins[1] -%}
-      {%- for release in admin.releases -%}
-        {%- assign d = release.date.metadataLastUpdated | date : '%s' -%}
-        {%- if d == lastUpdated -%}
-          {%- assign projectName_array = projectName_array | push: release.name[page.lang] -%}
-          {%- assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endfor -%}
+{%- assign releases_arr = releases_arr | sort: "date.metadataLastUpdated" | reverse -%}
 
 <ul>
-  <li><a href="{{ repoUrl_array[0] }}" target="_blank">{{ projectName_array[0] }}</a></li>
-  <li><a href="{{ repoUrl_array[1] }}" target="_blank">{{ projectName_array[1] }}</a></li>
-  <li><a href="{{ rerepoUrl_array[2]po2 }}" target="_blank">{{ projectName_array[2] }}</a></li>
+{%- for release in releases_arr limit: 3 -%}
+  <li><a href="{{ release.repositoryURL[page.lang] }}" target="_blank">{{ release.name[page.lang] }}</a></li>
+{%- endfor -%}
 </ul>
