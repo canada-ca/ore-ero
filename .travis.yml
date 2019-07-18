@@ -16,9 +16,13 @@ script:
 - bundle exec jekyll build
 - htmlproofer --disable-external --allow-hash-href ./_site
 - html5validator --root _site/
-- yamale -s schemaCode.yaml _data/code
-- yamale -s schemaAdmin.yaml _data/administrations
-- yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
+- yamale -s schemas/administrations.yml _data/administrations
+- yamale -s schemas/code_administration.yml _data/code/administrations
+- yamale -s schemas/code_code.yml _data/code/releases/
+- yamale -s schemas/software_administration.yml _data/software/**/administrations
+- yamale -s schemas/software_software.yml _data/software/**/*.yml
+- yamale -s schema/standards_administration.yml _data/standards/**/administrations
+- yamale -s schema/standards_standards.yml _data/standards/**/*.yml
 - npm run lint
 - yamllint -d configYamlLint.yml _data
 
