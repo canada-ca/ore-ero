@@ -175,19 +175,15 @@ presets:
         en: SPDX License identifier
         fr: Identifiant de licence SPDX
   orgLevel:
-    title:
+    title: &title
       en: Level of government
       fr: Niveau de gouvernement
-    label:
-      en: Level of government
-      fr: Niveau de gouvernement
+    label: *title
   provinceSelect: &provinceSelect
-    title:
+    title: &title
       en: Province
       fr: province
-    label:
-      en: Province
-      fr: Province
+    label: *title
   province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:

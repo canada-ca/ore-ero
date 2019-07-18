@@ -2,18 +2,15 @@
 filterOptions:
   en: Filter Options
   fr: Options de filtrage
-levelOfGovernment:
-  en: Level of government
-  fr: Niveau de gouvernement
-organization:
-  en: Organization
-  fr: Organisation
 license:
-  en: License
-  fr: Licence
+  en: License(s)
+  fr: Licence(s)
 tag:
-  en: Tag
-  fr: Étiquette
+  en: Tag(s)
+  fr: Étiquette(s)
+codeRepo:
+  en: Code repo
+  fr: Dépôt de code
 filter:
   en: Filter
   fr: Filtrer
@@ -23,27 +20,23 @@ clear:
 projectName:
   en: Project Name
   fr: Nom du projet
-language:
-  en: Language
-  fr: Langage
+languages:
+  en: Language(s)
+  fr: Langage(s)
 relatedCode:
   en: Related Code
   fr: Code Associé
 status:
   en: Status
   fr: Statut
-created:
-  en: Created
-  fr: Créé
-lastUpdated:
-  en: Last updated
-  fr: Dernière mise à jour
-metadataLastUpdated:
-  fr: Last updated metadata
-  en: Dernière fois que les métadatas on été mises à jour
 contactPhone:
   en: Contact phone (###-###-####)
   fr: Numéro du contact (###-###-####)
-administrations:
-  en: Administrations
-  fr: Administrations
+
+lightbox:
+  sourceCode:
+    en: Source code
+    fr: Code source
+  contact:
+    en: Contact
+    fr: Contact

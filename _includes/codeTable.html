@@ -6,7 +6,7 @@
     <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
-        <label for="dt_govLevel">{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</label>
+        <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
         <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
           <option value="">&nbsp;</option>
           {%- for govLevels in site.data.i18n.administrations -%}
@@ -17,7 +17,7 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
+        <label for="dt_department">{{ site.data.i18n.form.administration.title[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
           {%- assign admin_arr = "" | split: ',' -%}
@@ -35,7 +35,7 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_organization">{{ site.data.i18n.tables.organization[page.lang] }}</label>
+        <label for="dt_organization">{{ site.data.i18n.form.presets.organization.schema[page.lang] }}</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value="">&nbsp;</option>
           {%- assign org_arr = "" | split: "," -%}
@@ -111,16 +111,15 @@
 <div class="col-md-9" style="margin-bottom: 20px;">
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12], "visible": false}], "paging": true}'>
     <thead>
-      <!-- TODO: Better the translations, maybe use those from the form file -->
       <tr>
-        <th>Administration</th>
+        <th>{{ site.data.i18n.form.administrations.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
-        <th>Description</th>
+        <th>{{ site.data.i18n.form.presets.description.schema[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.license[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.organization[page.lang] }}</th>
-        <th>Code Repo</th>
-        <th>{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.presets.organization.schema[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.languages[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.relatedCode[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.status[page.lang] }}</th>
@@ -187,7 +186,7 @@
       <div class="modal-body">
         <p><strong>{{ release.description[page.lang] }}</strong></p>
         {%- assign parent = site.data.db.administrations[administration.adminCode].parent -%}
-        <p>{{ site.data.i18n.tables.levelOfGovernment[page.lang] }}: {{ site.data.i18n.administrations[parent][page.lang] }}</p>
+        <p>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: {{ site.data.i18n.administrations[parent][page.lang] }}</p>
         <p>{{ site.data.db.administrations[administration.adminCode].name[page.lang] }}</p>
         {%- if release.organization[page.lang] != nil -%}
         <p>{{ site.data.i18n.tables.lightbox.sourceCode[page.lang] }}:
