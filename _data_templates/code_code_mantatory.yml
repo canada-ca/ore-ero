@@ -1,0 +1,26 @@
+---
+schemaVersion: '1.0'
+contact:
+  email: contact@example.com
+date:
+  created: 15-03-2008
+  metadataLastUpdated: 28-09-2018
+description:
+  en: Example description
+  fr: Exemple description
+name:
+  en: Code-ex
+  fr: Code-ex
+licenses:
+  - URL:
+      en: https://www.license.com
+      fr: https://www.license.ca
+    spdxID: license
+repositoryURL:
+  en: https://www.repository.com
+  fr: https://www.repository.ca
+tags:
+  en:
+    - tag
+  fr:
+    - tag

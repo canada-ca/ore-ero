@@ -1,0 +1,14 @@
+---
+administration: ex
+uses:
+  - contact:
+      email: contact@example.com
+    date:
+      created: 15-03-2008
+      metadataLastUpdated: 28-09-2018
+    description:
+      en: Example description
+      fr: Exemple description
+    name:
+      en: Example
+      fr: Exemple

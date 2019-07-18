@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Example description
+  fr: Exemple description
+homepageURL:
+  en: https://www.homepage.com
+  fr: https://www.homepage.ca
+licenses:
+  - URL:
+      en: https://www.license.com
+      fr: https://www.license.com
+    spdxID: license
+name:
+  en: Software-ex
+  fr: Software-ex
+tags:
+  en:
+    - tag
+  fr:
+    - tag
+administrations:
+  - ex

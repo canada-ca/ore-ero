@@ -1,0 +1,12 @@
+---
+administration: ex
+contact:
+  email: contact@example.com
+references:
+  - URL:
+      en: https://www.reference.com
+      fr: https://www.reference.ca
+    name:
+      en: Standard-ex
+      fr: Standard-ex
+status: status

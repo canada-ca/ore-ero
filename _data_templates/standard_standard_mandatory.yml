@@ -1,0 +1,23 @@
+---
+schemaVersion: '1.0'
+administrations:
+  - ex
+date:
+  created: 15-03-2008
+  metadataLastUpdated: 28-09-2018
+description:
+  en: Example description
+  fr: Exemple description
+name:
+  en: standard-ex
+  fr: standard-ex
+specURL:
+  en: https://www.specification.com
+  fr: https://www.specification.ca
+standardCode: code
+standardOrg: org
+tags:
+  en:
+    - tag
+  fr:
+    - tag
