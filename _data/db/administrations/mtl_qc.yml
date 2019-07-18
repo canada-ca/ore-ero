@@ -1,0 +1,7 @@
+---
+code: mtl_qc
+name:
+  en: City of Montreal
+  fr: Ville de Montréal
+parent: municipal
+provinceCode: qc

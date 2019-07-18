@@ -1,0 +1,7 @@
+---
+code: ottawa_on
+name:
+  en: City of Ottawa
+  fr: Ville d'Ottawa
+parent: municipal
+provinceCode: 'on'

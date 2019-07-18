@@ -1,0 +1,7 @@
+---
+code: edmonton_ab
+name:
+  en: City of Edmonton
+  fr: Ville d'Edmonton
+parent: municipal
+provinceCode: ab
