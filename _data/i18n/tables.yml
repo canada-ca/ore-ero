@@ -2,6 +2,9 @@
 filterOptions:
   en: Filter Options
   fr: Options de filtrage
+administrations:
+  en: Administrations
+  fr: Administrations
 licence:
   en: Licence(s)
   fr: Licence(s)
