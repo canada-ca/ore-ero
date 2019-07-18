@@ -1,0 +1,12 @@
+---
+administration: tbs-sct
+contact:
+  email: null
+references:
+  - URL:
+      en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+      fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
+    name:
+      en: Standard on Web Interoperability
+      fr: Norme sur l'interopérabilité du Web
+status: mandatory-gc

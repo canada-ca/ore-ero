@@ -1,17 +1,7 @@
 ---
 schemaVersion: '1.0'
 administrations:
-  - adminCode: tbs-sct
-    contact:
-      email: null
-    references:
-      - URL:
-          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
-          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
-        name:
-          en: Standard on Web Interoperability
-          fr: Norme sur l'interopérabilité du Web
-    status: mandatory-gc
+  - tbs-sct
 date:
   created: '2018-01-23'
   metadataLastUpdated: '2018-11-15'
@@ -25,7 +15,7 @@ specURL:
   en: 'https://www.w3.org/TR/html5/'
   fr: 'https://www.w3.org/TR/html5/'
 standardCode: HTML5
-standardsOrg: W3C
+standardOrg: W3C
 tags:
   en:
     - Web

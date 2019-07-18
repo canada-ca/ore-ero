@@ -117,7 +117,7 @@
         <th>{{ site.data.i18n.form.presets.description.label.schema[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.presets.organization.schema[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.code.organization.label.schema[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.languages[page.lang] }}</th>
@@ -128,7 +128,6 @@
       </tr>
     </thead>
     <tbody>
-
       {%- for administrations in site.data.db.code.administrations -%}
         {%- assign administration = administrations[1] -%}
         {%- for releases in administration.releases -%}

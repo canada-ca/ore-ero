@@ -11,21 +11,24 @@ licence:
 tag:
   en: Tag(s)
   fr: Étiquette(s)
-codeRepo:
-  en: Code repo
-  fr: Dépôt de code
 filter:
   en: Filter
   fr: Filtrer
 clear:
   en: Clear
   fr: Effacer
+codeRepo:
+  en: Code repo
+  fr: Dépôt de code
 projectName:
   en: Project Name
   fr: Nom du projet
 software:
   en: Software
   fr: Logiciel
+standard:
+  en: Standard
+  fr: Norme
 languages:
   en: Language(s)
   fr: Langage(s)
