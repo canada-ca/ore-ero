@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+administration: tc
+contact:
+  email: thomas.gohard@tc.gc.ca
+date:
+  created: '2018-10-21'
+  metadataLastUpdated: '2019-01-18'
+description:
+  en: Vehicle safety recalls Amazon Alexa Skill.
+  fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
+languages:
+  - JavaScript
+name:
+  en: alexa-gc-recalls
+  fr: alexa-gc-recalls
+licenses:
+  - URL:
+      en: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
+      fr: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
+    spdxID: MIT
+repositoryURL:
+  en: 'https://github.com/tc-ca/alexa-gc-recalls'
+  fr: 'https://github.com/tc-ca/alexa-gc-recalls'
+tags:
+  en:
+    - Safety
+    - Recalls
+    - Vehicules
+    - Alexa
+  fr:
+    - Sécurité
+    - Rappels
+    - Véhicules
+    - Alexa

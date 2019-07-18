@@ -1,0 +1,27 @@
+---
+schemaVersion: '1.0'
+administration: esdc-edsc
+contact:
+  email: calvin.rodo@hrsdc-rhdcc.gc.ca
+date:
+  created: '2019-02-13'
+  metadataLastUpdated: '2019-02-21'
+description:
+  en: A .Net test app for the Code Coverage reporting dashboard
+  fr: Une application de test .Net pour le tableau de bord de rapports de couverture de code
+name:
+  en: .Net Code Coverage Demo
+  fr: Démo de couverture de code .Net
+licenses:
+  - URL:
+      en: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'
+      fr: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'
+    spdxID: MIT
+repositoryURL:
+  en: 'https://github.com/esdc-devx/DotNetCCDemo'
+  fr: 'https://github.com/esdc-devx/DotNetCCDemo'
+tags:
+  en:
+    - Demo
+  fr:
+    - Demo

@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+administration: bc
+contact:
+  URL:
+    en: 'https://github.com/bcgov/ckanext-bcgov/issues'
+    fr: 'https://github.com/bcgov/ckanext-bcgov/issues'
+  email: NRSApplications@gov.bc.ca
+date:
+  created: '2014-03-20'
+  metadataLastUpdated: '2019-05-10'
+description:
+  en: BC Data Catalogue source code.
+  fr: Code source du catalogue de données BC.
+homepageURL:
+  en: 'http://catalogue.data.gov.bc.ca'
+  fr: 'http://catalogue.data.gov.bc.ca'
+languages:
+  - Python
+name:
+  en: ckanext-bcgov
+  fr: ckanext-bcgov
+licenses:
+  - URL:
+      en: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
+      fr: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
+    spdxID: AGPL-3.0
+repositoryURL:
+  en: 'https://github.com/bcgov/ckanext-bcgov'
+  fr: 'https://github.com/bcgov/ckanext-bcgov'
+status: Production
+tags:
+  en:
+    - Data Catalogue
+  fr:
+    - Catalogue de données

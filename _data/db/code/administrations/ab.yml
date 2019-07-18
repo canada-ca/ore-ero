@@ -1,0 +1,6 @@
+---
+adminCode: ab
+releases:
+  - ckanext-ab_scheming
+  - ckanext-open_alberta
+  - ckanext-geomapviewer

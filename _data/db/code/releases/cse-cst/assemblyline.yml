@@ -1,0 +1,31 @@
+---
+schemaVersion: '1.0'
+administration: cse-cst
+contact:
+  email: assemblyline@cse-cst.gc.ca
+date:
+  created: '2016-12-21'
+  metadataLastUpdated: '2019-01-31'
+description:
+  en: Platform for the analysis of malicious files. It is designed to assist cyber defence teams to automate the analysis of files and to better use the time of security analysts
+  fr: Plateforme servant à l'analyse de fichiers malveillants, qui a été conçue pour aider les équipes de cyberdéfense à automatiser l'analyse des fichiers et à faire une meilleure utilisation du temps des analystes de la sécurité
+languages:
+  - Python
+name:
+  en: Assemblyline
+  fr: Assemblyline
+licenses:
+  - URL:
+      en: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
+      fr: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
+    spdxID: MIT
+repositoryURL:
+  en: 'https://bitbucket.org/cse-assemblyline/assemblyline'
+  fr: 'https://bitbucket.org/cse-assemblyline/assemblyline'
+tags:
+  en:
+    - Malware detection
+    - File analysis
+  fr:
+    - Détection de maliciels
+    - Analyse de fichiers

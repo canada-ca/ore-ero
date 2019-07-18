@@ -1,0 +1,12 @@
+---
+adminCode: tbs-sct
+releases:
+  - GCconnex
+  - CDS Website
+  - Web Experience Toolkit (WET)
+  - ckanext-canada
+  - ckanext-cloudstorage
+  - ckanext-scheming
+  - ckanapi
+  - ckanext-fluent
+  - Open Resource Exchange

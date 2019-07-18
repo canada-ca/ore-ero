@@ -1,0 +1,29 @@
+---
+schemaVersion: '1.0'
+administration: tbs-sct
+contact:
+  email: wet-boew@tbs-sct.gc.ca
+date:
+  created: '2013-08-11'
+  metadataLastUpdated: '2019-01-31'
+description:
+  en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
+  fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+name:
+  en: Web Experience Toolkit (WET)
+  fr: Boîte à outils de l'expérience Web (BOEW)
+licenses:
+  - URL:
+      en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
+      fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'
+    spdxID: MIT
+repositoryURL:
+  en: 'https://github.com/wet-boew/wet-boew'
+  fr: 'https://github.com/wet-boew/wet-boew'
+tags:
+  en:
+    - Frontend
+    - Website
+  fr:
+    - Interface
+    - Site Web

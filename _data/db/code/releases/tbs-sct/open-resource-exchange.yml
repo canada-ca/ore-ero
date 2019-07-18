@@ -1,0 +1,34 @@
+---
+schemaVersion: '1.0'
+administration: tbs-sct
+contact:
+  email: sebastien.lemay@canada.ca
+date:
+  created: '2017-12-31'
+  metadataLastUpdated: '2019-03-06'
+description:
+  en: This Website and all the data.
+  fr: Ce site Web et toutes les données.
+name:
+  en: Open Resource Exchange
+  fr: Échange de Ressource Ouvert
+licenses:
+  - URL:
+      en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
+      fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
+    spdxID: MIT
+partners:
+  - email: renatabianca.tomazeli@ville.montreal.qc.ca
+    name:
+      en: City of Montreal
+      fr: Ville de Montréal
+repositoryURL:
+  en: 'https://github.com/canada-ca/ore-ero'
+  fr: 'https://github.com/canada-ca/ore-ero'
+tags:
+  en:
+    - Website
+    - Data
+  fr:
+    - Site Web
+    - Données

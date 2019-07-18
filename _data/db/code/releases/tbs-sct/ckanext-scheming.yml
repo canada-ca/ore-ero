@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+administration: tbs-sct
+contact:
+  email: Christopher.Jaja@tbs-sct.gc.ca
+  name: Christopher Jaja
+date:
+  created: '2013-09-08'
+  metadataLastUpdated: '2018-03-26'
+description:
+  en: Easy, shareable custom CKAN schemas
+languages:
+  - Python
+name:
+  en: ckanext-scheming
+  fr: ckanext-scheming
+organization:
+  en: Open Government
+  fr: Gouvernement Ouvert
+licenses:
+  - URL:
+      en: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING'
+      fr: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr'
+    spdxID: MIT
+relatedCode:
+  - URL:
+      en: 'https://github.com/ckan/ckan'
+      fr: 'https://github.com/ckan/ckan'
+    name:
+      en: CKAN
+      fr: CKAN
+repositoryURL:
+  en: 'https://github.com/open-data/ckanext-scheming'
+  fr: 'https://github.com/open-data/ckanext-scheming'
+status: Production
+tags:
+  en:
+    - CKAN Extension
+  fr:
+    - Extension CKAN

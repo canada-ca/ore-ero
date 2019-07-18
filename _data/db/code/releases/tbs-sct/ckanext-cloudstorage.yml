@@ -1,0 +1,41 @@
+---
+schemaVersion: '1.0'
+administration: tbs-sct
+contact:
+  email: Christopher.Jaja@tbs-sct.gc.ca
+  name: Christopher Jaja
+date:
+  created: '2016-06-05'
+  metadataLastUpdated: '2018-03-26'
+description:
+  en: Store CKAN resources against multiple cloud providers.
+  fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
+languages:
+  - Python
+name:
+  en: ckanext-cloudstorage
+  fr: ckanext-cloudstorage
+organization:
+  en: Open Government
+  fr: Gouvernement Ouvert
+licenses:
+  - URL:
+      en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'
+      fr: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr'
+    spdxID: MIT
+relatedCode:
+  - URL:
+      en: 'https://github.com/ckan/ckan'
+      fr: 'https://github.com/ckan/ckan'
+    name:
+      en: CKAN
+      fr: CKAN
+repositoryURL:
+  en: 'https://github.com/open-data/ckanext-cloudstorage'
+  fr: 'https://github.com/open-data/ckanext-cloudstorage'
+status: Production
+tags:
+  en:
+    - CKAN Extension
+  fr:
+    - Extension CKAN

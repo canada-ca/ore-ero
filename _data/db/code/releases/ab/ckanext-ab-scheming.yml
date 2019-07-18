@@ -1,0 +1,33 @@
+---
+schemaVersion: '1.0'
+administration: ab
+contact:
+  URL:
+    en: 'https://github.com/abgov/ckanext-ab_scheming/issues'
+    fr: 'https://github.com/abgov/ckanext-ab_scheming/issues'
+  email: open@gov.ab.ca
+date:
+  created: '2016-07-05'
+  metadataLastUpdated: '2018-04-25'
+description:
+  en: Dataset scheming extension used on open.alberta.ca
+  fr: Extension du schéma de données utilisée dans open.alberta.ca
+languages:
+  - Python
+name:
+  en: ckanext-ab_scheming
+  fr: ckanext-ab_scheming
+licenses:
+  - URL:
+      en: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
+      fr: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
+    spdxID: AGPL-3.0
+repositoryURL:
+  en: 'https://github.com/abgov/ckanext-ab_scheming'
+  fr: 'https://github.com/abgov/ckanext-ab_scheming'
+status: Production
+tags:
+  en:
+    - CKAN Extension
+  fr:
+    - Extension CKAN

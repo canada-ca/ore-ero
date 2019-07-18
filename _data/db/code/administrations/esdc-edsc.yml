@@ -1,0 +1,5 @@
+---
+adminCode: esdc-edsc
+releases:
+  - AppHub
+  - .Net Code Coverage Demo

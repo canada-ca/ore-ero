@@ -1,0 +1,7 @@
+---
+adminCode: bc
+releases:
+  - Devex
+  - gwells
+  - devhub-app-web
+  - ckanext-bcgov
