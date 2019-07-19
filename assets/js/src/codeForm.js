@@ -6,25 +6,23 @@
   submitInit submitConclusion
   getAdminObject getAdminCode
   addMoreLicences addMoreRelatedCode
+  slugify
 */
 
-const codeObj = $('.page-codeForm #nameselect');
-const adminObj = $('.page-codeForm #adminCode');
+var adminSelect = $('.page-codeForm #adminCode');
+var codeSelect = $('.page-codeForm #nameselect');
 
 $(document).ready(function() {
-  adminObj.change(function() {
+  $('#prbotSubmitcodeForm').click(function() {
+    if (submitInit()) submitCodeForm();
+  });
+
+  adminSelect.change(function() {
     selectAdmin();
   });
 
-  codeObj.change(function() {
+  codeSelect.change(function() {
     selectCode();
-  });
-
-  $('#prbotSubmitcodeForm').click(function() {
-    if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitFormAdminCodeForm();
-      else submitCodeForm();
-    }
   });
 
   $('#formReset').click(function() {
@@ -34,105 +32,104 @@ $(document).ready(function() {
   });
 });
 
-function getCodeObject() {
-  // Handles mandatory fields
-  let codeObject = {
-    schemaVersion: '1.0',
+function getCodeAdminObject(name) {
+  let codeAdminObject = {
     adminCode: getAdminCode(),
-    releases: [
-      {
-        contact: {
-          email: $('#contactemail').val()
-        },
-        date: {
-          created: $('#datecreated').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
-        },
-        description: {
-          en: $('#endescription').val(),
-          fr: $('#frdescription').val()
-        },
-        name: {
-          en: $('#enname').val(),
-          fr: $('#frname').val()
-        },
-        licences: [],
-        repositoryURL: {
-          en: $('#enrepositoryUrl').val(),
-          fr: $('#frrepositoryUrl').val()
-        },
-        tags: {
-          en: getTagsEN(),
-          fr: getTagsFR()
-        }
-      }
-    ]
+    releases: [name]
   };
 
-  // Handle more-groups
-  addMoreLicences(codeObject.releases[0]);
+  return codeAdminObject;
+}
 
-  // Handle optional fields
+function getCodeReleaseObject() {
+  let codeReleaseObject = {
+    schemaVersion: '1.0',
+    administration: getAdminCode(),
+    contact: {
+      email: $('#contactemail').val()
+    },
+    date: {
+      created: $('#datecreated').val(),
+      metadataLastUpdated: $('#datemetadataLastUpdated').val()
+    },
+    description: {
+      en: $('#endescription').val(),
+      fr: $('#frdescription').val()
+    },
+    name: {
+      en: $('#enname').val(),
+      fr: $('#frname').val()
+    },
+    licences: [],
+    repositoryURL: {
+      en: $('#enrepositoryUrl').val(),
+      fr: $('#frrepositoryUrl').val()
+    },
+    tags: {
+      en: getTagsEN(),
+      fr: getTagsFR()
+    }
+  };
+
+  addMoreLicences(codeReleaseObject);
+
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL = {};
+    codeReleaseObject.contact.URL = {};
   }
   if ($('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL.en = $('#encontactURL').val();
+    codeReleaseObject.contact.URL.en = $('#encontactURL').val();
   }
   if ($('#frcontactURL').val()) {
-    codeObject.releases[0].contact.URL.fr = $('#frcontactURL').val();
+    codeReleaseObject.contact.URL.fr = $('#frcontactURL').val();
   }
-
   if ($('#contactname').val()) {
-    codeObject.releases[0].contact.name = $('#contactname').val();
+    codeReleaseObject.contact.name = $('#contactname').val();
   }
-
   if ($('#contactphone').val()) {
-    codeObject.releases[0].contact.phone = $('#contactphone').val();
+    codeReleaseObject.contact.phone = $('#contactphone').val();
   }
 
   if ($('#datelastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#datelastModified')
+    codeReleaseObject.date.lastModified = $('#datelastModified')
       .val()
       .toString();
   }
 
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
-    codeObject.releases[0].downloadURL = {};
+    codeReleaseObject.downloadURL = {};
   }
   if ($('#endownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.en = $('#endownloadUrl').val();
+    codeReleaseObject.downloadURL.en = $('#endownloadUrl').val();
   }
   if ($('#frdownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
+    codeReleaseObject.downloadURL.fr = $('#frdownloadUrl').val();
   }
 
   if ($('#enhomepageURL').val() || $('#frhomepageURL').val()) {
-    codeObject.releases[0].homepageURL = {};
+    codeReleaseObject.homepageURL = {};
   }
   if ($('#enhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
+    codeReleaseObject.homepageURL.en = $('#enhomepageURL').val();
   }
   if ($('#frhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
+    codeReleaseObject.homepageURL.fr = $('#frhomepageURL').val();
   }
 
   let languages = getLanguages();
   if (languages.length > 0) {
-    codeObject.releases[0].languages = languages;
+    codeReleaseObject.languages = languages;
   }
 
   if ($('#enorganization').val() || $('#frorganization').val()) {
-    codeObject.releases[0].organization = {};
+    codeReleaseObject.organization = {};
   }
   if ($('#enorganization').val()) {
-    codeObject.releases[0].organization.en = $('#enorganization').val();
+    codeReleaseObject.organization.en = $('#enorganization').val();
   }
   if ($('#frorganization').val()) {
-    codeObject.releases[0].organization.fr = $('#frorganization').val();
+    codeReleaseObject.organization.fr = $('#frorganization').val();
   }
 
-  // Optional more-group
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
@@ -143,149 +140,167 @@ function getCodeObject() {
       $('#enpartnersname' + id).val() ||
       $('#frpartnersname' + id).val()
     ) {
-      if (codeObject.releases[0].partners == undefined)
-        codeObject.releases[0].partners = [];
-      codeObject.releases[0].partners[i] = {};
+      if (codeReleaseObject.partners == undefined)
+        codeReleaseObject.partners = [];
+      codeReleaseObject.partners[i] = {};
     }
 
     if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL = {};
+      codeReleaseObject.partners[i].URL = {};
     }
     if ($('#enpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.en = $(
-        '#enpartnersURL' + id
-      ).val();
+      codeReleaseObject.partners[i].URL.en = $('#enpartnersURL' + id).val();
     }
     if ($('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.fr = $(
-        '#frpartnersURL' + id
-      ).val();
+      codeReleaseObject.partners[i].URL.fr = $('#frpartnersURL' + id).val();
     }
 
     if ($('#partnersemail' + id).val()) {
-      codeObject.releases[0].partners[i].email = $('#partnersemail' + id).val();
+      codeReleaseObject.partners[i].email = $('#partnersemail' + id).val();
     }
 
     if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name = {};
+      codeReleaseObject.partners[i].name = {};
     }
     if ($('#enpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.en = $(
-        '#enpartnersname' + id
-      ).val();
+      codeReleaseObject.partners[i].name.en = $('#enpartnersname' + id).val();
     }
     if ($('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.fr = $(
-        '#frpartnersname' + id
-      ).val();
+      codeReleaseObject.partners[i].name.fr = $('#frpartnersname' + id).val();
     }
   });
 
-  addMoreRelatedCode(codeObject.releases[0]);
+  addMoreRelatedCode(codeReleaseObject);
 
   if ($('#status :selected').val() != '') {
-    codeObject.releases[0].status = $('#status :selected').val();
+    codeReleaseObject.status = $('#status :selected').val();
   }
 
-  return codeObject;
+  return codeReleaseObject;
 }
 
-function getSelectedOrgType() {
-  if ($('#adminCode').val() != '')
-    return $('#adminCode :selected')
-      .parent()
-      .attr('label')
-      .toLowerCase();
-  else return $('#orgLevel').val();
-}
+function submitCodeForm() {
+  let submitBtn = $('#prbotSubmitcodeForm');
+  let resetBtn = $('#formReset');
+  submitBtn.disabled = true;
+  resetBtn.disabled = true;
 
-function submitFormAdminCodeForm() {
-  let submitButton = document.getElementById('prbotSubmitcodeForm');
-  let resetButton = document.getElementById('formReset');
-  submitButton.disabled = true;
-  resetButton.disabled = true;
-
-  let codeObject = getCodeObject();
+  let codeReleaseObject = getCodeReleaseObject();
+  let codeAdminObject = getCodeAdminObject(codeReleaseObject.name.en);
   let adminObject = getAdminObject();
 
-  let codeName = codeObject.releases[0].name.en;
-  let adminName = $('#newAdminCode').val();
+  let codeName = codeReleaseObject.name.en;
+  let adminName = adminObject.name.en;
+  let adminCode = adminObject.code == '' ? getAdminCode() : adminObject.code;
 
-  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let codeFile = `_data/code/${$('#orgLevel').val()}/${$(
-    '#newAdminCode'
-  ).val()}.yml`;
-  let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
+  let fileCodeRelease = `_data/db/code/releases/${adminCode}/${slugify(
+    codeName
+  )}.yml`;
+  let fileCodeAdmin = `_data/db/code/administrations/${adminCode}.yml`;
+  let fileAdmin = `_data/db/administrations/${adminCode}.yml`;
 
-  fileWriter
-    .mergeAdminFile(adminFile, adminObject, '', 'code')
-    .then(resultAdmin => {
-      fileWriter
-        .merge(codeFile, codeObject, 'releases', 'name.en')
-        .catch(err => {
-          if (err.status == 404) {
-            return fetch(
-              PRBOT_URL,
-              getConfigNewAdmin(
-                codeName,
-                adminName,
-                codeFile,
-                codeObject,
-                adminFile,
-                resultAdmin
-              )
-            );
-          } else throw err;
-        })
-        .then(response => {
-          submitConclusion(response, submitButton, resetButton);
-        });
-    });
+  let fileWriter = new YamlWriter(
+    'VilledeMontreal',
+    REPO_NAME,
+    'improvement/db'
+  );
+
+  if (adminObject.code != '') {
+    fileWriter
+      .merge(fileAdmin, adminObject, '', 'code')
+      .then(console.log('Administration with same code already exists'))
+      .catch(err => {
+        // Expected behaviour
+        if (err.status == 404) {
+          return fetch(
+            PRBOT_URL,
+            getConfigNewAdmin(
+              codeName,
+              adminName,
+              codeReleaseObject,
+              codeAdminObject,
+              adminObject,
+              fileCodeRelease,
+              fileCodeAdmin,
+              fileAdmin
+            )
+          );
+        }
+      })
+      .then(response => {
+        submitConclusion(response, submitBtn, resetBtn);
+      });
+  } else {
+    fileWriter
+      .merge(fileCodeAdmin, codeAdminObject, 'releases', '')
+      .then(result => {
+        return fetch(
+          PRBOT_URL,
+          getConfigUpdateCode(
+            codeName,
+            codeReleaseObject,
+            result,
+            fileCodeRelease,
+            fileCodeAdmin
+          )
+        );
+      })
+      .catch(err => {
+        if (err.status == 404) {
+          return fetch(
+            PRBOT_URL,
+            getConfigNewCode(
+              codeName,
+              codeReleaseObject,
+              codeAdminObject,
+              fileCodeRelease,
+              fileCodeAdmin
+            )
+          );
+        } else throw err;
+      })
+      .then(response => {
+        submitConclusion(response, submitBtn, resetBtn);
+      });
+  }
 }
 
 function getConfigNewAdmin(
   codeName,
   adminName,
-  codeFile,
-  codeObject,
-  adminFile,
-  resultAdmin
+  codeReleaseObject,
+  codeAdminObject,
+  adminObject,
+  fileCodeRelease,
+  fileCodeAdmin,
+  fileAdmin
 ) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title:
-        'Created code for ' +
-        codeName +
-        ' and updated ' +
-        $('#orgLevel').val() +
-        ' administrations file with new administration ' +
-        adminName,
+      title: `Created ${codeName} (code) for ${adminName} (new administration).`,
       description:
-        'Authored by: ' +
-        $('#submitteremail').val() +
-        '\n' +
-        'Project: ***' +
-        codeName +
-        '***\n' +
-        $('#endescription').val() +
-        ' and updated administration for ' +
-        adminName +
-        '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
+        `Authored by: ${$('#submitteremail').val()}\n` +
+        ` - ***${codeName}:*** ${codeReleaseObject.description.en}\n` +
+        ` - New ${adminObject.parent} administration ***${adminName}***`,
+      commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitterusername').val(),
+        name: $('#submitteremail').val(),
         email: $('#submitteremail').val()
       },
       files: [
         {
-          path: codeFile,
-          content: '---\n' + jsyaml.dump(codeObject)
+          path: fileCodeRelease,
+          content: '\---\n' + jsyaml.dump(codeReleaseObject)
         },
         {
-          path: adminFile,
-          content: '---\n' + jsyaml.dump(resultAdmin)
+          path: fileCodeAdmin,
+          content: '\---\n' + jsyaml.dump(codeAdminObject)
+        },
+        {
+          path: fileAdmin,
+          content: '\---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),
@@ -293,55 +308,34 @@ function getConfigNewAdmin(
   };
 }
 
-function submitCodeForm() {
-  let submitButton = document.getElementById('prbotSubmitcodeForm');
-  let resetButton = document.getElementById('formReset');
-  submitButton.disabled = true;
-  resetButton.disabled = true;
-
-  let codeObject = getCodeObject();
-  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
-  fileWriter
-    .merge(file, codeObject, 'releases', 'name.en')
-    .then(result => {
-      const config = getConfigUpdate(result, file);
-      return fetch(PRBOT_URL, config);
-    })
-    .catch(err => {
-      if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(codeObject, file));
-      } else throw err;
-    })
-    .then(response => {
-      submitConclusion(response);
-    });
-}
-
-function getConfigUpdate(result, file) {
+function getConfigUpdateCode(
+  codeName,
+  codeReleaseObject,
+  codeAdminObject,
+  fileCodeRelease,
+  fileCodeAdmin
+) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Updated code for ' + $('#adminCode :selected').text(),
+      title: `New or Updated ${codeName} (code).`,
       description:
-        'Authored by: ' +
-        $('#submitteremail').val() +
-        '\n' +
-        'Project: ***' +
-        $('#enname').val() +
-        '***\n' +
-        $('#endescription').val() +
-        '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
+        `Authored by: ${$('#submitteremail').val()}\n` +
+        ` - ***${codeName}:*** Updated`,
+      commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitterusername').val(),
+        name: $('#submitteremail').val(),
         email: $('#submitteremail').val()
       },
       files: [
         {
-          path: file,
-          content: '---\n' + jsyaml.dump(result)
+          path: fileCodeRelease,
+          content: '\---\n' + jsyaml.dump(codeReleaseObject)
+        },
+        {
+          path: fileCodeAdmin,
+          content: '\---\n' + jsyaml.dump(codeAdminObject)
         }
       ]
     }),
@@ -349,30 +343,34 @@ function getConfigUpdate(result, file) {
   };
 }
 
-function getConfigNew(codeObject, file) {
+function getConfigNewCode(
+  codeName,
+  codeReleaseObject,
+  codeAdminObject,
+  fileCodeRelease,
+  fileCodeAdmin
+) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created code file for ' + $('#adminCode :selected').text(),
+      title: `New code: ${codeName}.`,
       description:
-        'Authored by: ' +
-        $('#submitteremail').val() +
-        '\n' +
-        'Project: ***' +
-        $('#enname').val() +
-        '***\n' +
-        $('#endescription').val() +
-        '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
+        `Authored by: ${$('#submitteremail').val()}\n` +
+        ` - ***${codeName}:*** ${codeReleaseObject.description.en}`,
+      commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitterusername').val(),
+        name: $('#submitteremail').val(),
         email: $('#submitteremail').val()
       },
       files: [
         {
-          path: file,
-          content: '---\n' + jsyaml.dump(codeObject)
+          path: fileCodeRelease,
+          content: '\---\n' + jsyaml.dump(codeReleaseObject)
+        },
+        {
+          path: fileCodeAdmin,
+          content: '\---\n' + jsyaml.dump(codeAdminObject)
         }
       ]
     }),
@@ -382,35 +380,36 @@ function getConfigNew(codeObject, file) {
 
 function selectAdmin() {
   let lang = $('html').attr('lang');
-  let admin = adminObj.val();
+  let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
-      result
-    ) {
-      let orgLevel = getOrgLevel(result, admin);
-      if (orgLevel == undefined) {
-        $('#nameselect')
-          .prop('disabled', true)
-          .parent()
-          .addClass('hide');
-        resetFields();
-      } else {
-        orgLevel.releases.forEach(function(release) {
-          $(
-            '<option class="additional-option" value="' +
-              release.name[lang] +
-              '">' +
-              release.name[lang] +
-              (release.version ? ' (' + release.version + ')' : '') +
-              '</option>'
-          ).appendTo('#nameselect');
+    $.get(
+      `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/administrations/${admin}.yml`,
+      function(resultAdmin) {
+        let data = jsyaml.load(resultAdmin);
+        data.releases.forEach(function(release) {
+          let r = slugify(release);
+          $.get(
+            `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/releases/${admin}/${r}.yml`,
+            function(resultRelease) {
+              let name = jsyaml.load(resultRelease).name[lang];
+              $(
+                `<option class="additional-option" value="${name}">${name}</option>`
+              ).appendTo('#nameselect');
+              $('#nameselect')
+                .prop('disabled', false)
+                .parent()
+                .removeClass('hide');
+            }
+          );
         });
-        $('#nameselect')
-          .prop('disabled', false)
-          .parent()
-          .removeClass('hide');
       }
+    ).fail(function() {
+      $('#nameselect')
+        .prop('disabled', true)
+        .parent()
+        .addClass('hide');
+      resetFields();
     });
   } else {
     $('#nameselect')
@@ -422,45 +421,23 @@ function selectAdmin() {
 }
 
 function selectCode() {
-  let lang = $('html').attr('lang');
-  let admin = adminObj.val();
-  let code = codeObj.val();
-  if (code != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
-      result
-    ) {
-      let orgLevel = getOrgLevel(result, admin);
-      if (orgLevel == undefined) {
-        resetFields();
-      } else {
-        for (let i = 0; i < orgLevel.releases.length; i++) {
-          if (orgLevel.releases[i].name[lang] == code) {
-            addValueToFields(orgLevel.releases[i]);
-            break;
-          } else resetFields();
-        }
+  let admin = adminSelect.val();
+  let release = slugify(codeSelect.val());
+  if (release != '') {
+    $.get(
+      `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/releases/${admin}/${release}.yml`,
+      function(result) {
+        let data = jsyaml.load(result);
+        addValueToFields(data);
       }
-    });
+    );
   } else {
     resetFields();
   }
 }
 
-function getOrgLevel(result, admin) {
-  let federal = result.federal[admin];
-  let provincial = result.provincial[admin];
-  let municipal = result.municipal[admin];
-
-  let orgLevel;
-
-  if (municipal != undefined) orgLevel = municipal;
-  else if (provincial != undefined) orgLevel = provincial;
-  else if (federal != undefined) orgLevel = federal;
-
-  return orgLevel;
-}
-
 function addValueToFields(obj) {
+  // TODO: More-groups
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
   $('#endescription').val(obj.description.en);

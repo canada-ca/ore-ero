@@ -61,16 +61,21 @@ function resetNewAdminForm() {
 }
 
 function getAdminObject() {
-  let adminObject = {
+  // Mandatory fields
+  let adminObj = {
     code: $('#newAdminCode').val(),
-    provinceCode: $('#provinceSelect').val(),
     name: {
       en: $('#ennewAdminName').val(),
       fr: $('#frnewAdminName').val()
-    }
+    },
+    parent: $('#orgLevel').val()
   };
 
-  return adminObject;
+  // Optional fields
+  let province = $('#provinceSelect').val();
+  if (province != '') adminObj.provinceCode = province;
+
+  return adminObj;
 }
 
 function getAdminCode() {
