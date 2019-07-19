@@ -5,6 +5,9 @@ filterOptions:
 administrations:
   en: Administrations
   fr: Administrations
+administration:
+  en: Administration
+  fr: Administration
 licence:
   en: Licence(s)
   fr: Licence(s)

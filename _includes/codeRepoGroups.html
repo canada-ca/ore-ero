@@ -1,4 +1,3 @@
-{% cycle 'one', 'two', 'three' %}
 <div class="row">
   <ul class="list-unstyled">
     {%- for i in (1..4) -%}
@@ -12,7 +11,7 @@
         {%- for codes in site.data.db.code.releases -%}
           {%- for releases in codes[1] -%}
             {%- assign release = releases[1] -%}
-            {%- assign administration = site.data.db.administrations[release.adminCode] -%}
+            {%- assign administration = site.data.db.administrations[release.administration] -%}
             {%- if release.repositoryURL[page.lang] != nil and administration.parent == level -%}
               {%- assign repo_split = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
               {%- if repo_split.size == 3 -%}
