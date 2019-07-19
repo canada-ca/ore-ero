@@ -5,34 +5,17 @@
   <div class="form-group" style="display: flex;">
     <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
       <option value="">&nbsp;</option>
-      <optgroup data-value="{{ site.data.i18n.administrations.federal.value }}" label="{{ site.data.i18n.administrations.federal[page.lang] }}">
-        {%- for org in site.data.administrations.federal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {% endfor %}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.provincial.value }}" label="{{ site.data.i18n.administrations.provincial[page.lang] }}">
-        {%- for org in site.data.administrations.provincial -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.municipal.value }}" label="{{ site.data.i18n.administrations.municipal[page.lang] }}">
-        {%- for org in site.data.administrations.municipal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.aboriginal.value }}" label="{{ site.data.i18n.administrations.aboriginal[page.lang] }}">
-        {%- for org in site.data.administrations.aboriginal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
+      {%- for i in (1..4) -%}
+        {%- capture level -%}{%- cycle 'federal', 'provincial', 'municipal' -%}{%- endcapture -%}
+        <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
+          {%- for administrations in site.data.db.administrations -%}
+            {%- assign administration = administrations[1] -%}
+            {%- if administration.parent == level -%}
+              <option value="{{ administration.code }}">{{ administration.name[page.lang] }}</option>
+            {%- endif -%}
+          {%- endfor -%}
+        </optgroup>
+      {%- endfor -%}
     </select>
     <button type="button" class="btn btn-primary" id="newAdminButton" style="margin-left: 20px;"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.id][title].button[page.lang] }}</button>
   </div>

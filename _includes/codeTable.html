@@ -112,7 +112,7 @@
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12], "visible": false}], "paging": true}'>
     <thead>
       <tr>
-        <th>{{ site.data.i18n.form.administrations.title[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.description.label.schema[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
@@ -123,18 +123,18 @@
         <th>{{ site.data.i18n.tables.languages[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.relatedCode[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.status[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.created[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.metadataLastUpdated[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.presets.date.labels.created[page.lang] }}</th>
+        <th>{{ site.data.i18n.form.presets.date.labels.metadataLastUpdated[page.lang] }}</th>
       </tr>
     </thead>
     <tbody>
-      {%- for administrations in site.data.db.code.administrations -%}
-        {%- assign administration = administrations[1] -%}
-        {%- for releases in administration.releases -%}
-          {%- assign release_name = releases | slugify: "ascii" -%}
-          {%- assign release = site.data.db.code.releases[administration.adminCode][release_name] -%}
+        {%- for administrations in site.data.db.code.administrations -%}
+          {%- assign administration = administrations[1] -%}
+          {%- for releases in administration.releases -%}
+            {%- assign release_name = releases | slugify: "ascii" -%}
+            {%- assign release = site.data.db.code.releases[administration.adminCode][release_name] -%}
       <tr>
-        <td>{{ site.data.db.administrations[administration.adminCode].name[page.lang] }}</td>
+        <td>{{ site.data.db.administrations[release.administration].name[page.lang] }}</td>
         <td><a href="#{{ release.name[page.lang] | slugify: "ascii" }}" aria-controls="{{ release.name[page.lang] | slugify: "ascii" }}" class="overlay-lnk" role="button">{{ release.name[page.lang] }}</a></td>
         <td>{{ release.description[page.lang] }}</td>
         <td>
@@ -149,7 +149,7 @@
         </td>
         <td>{{ release.organization[page.lang] }}</td>
         <td><a href="{{ release.repositoryURL[page.lang] }}" target="_blank">{{ release.repositoryURL[page.lang] | remove: "https://" | replace first: "/", "                    " | truncate: 20, "" | rstrip }}</a></td>
-        {%- assign parent = site.data.db.administrations[administration.adminCode].parent -%}
+        {%- assign parent = site.data.db.administrations[release.administration].parent -%}
         <td>{{ site.data.i18n.administrations[parent][page.lang] }}</td>
         <td>
           {%- for language in release.languages -%}

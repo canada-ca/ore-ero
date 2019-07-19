@@ -3,21 +3,19 @@
 
 <div class="form-group">
   <label>{{ site.data.i18n.form[include.id][title].label[page.lang] }}</label>
-  {%- assign languages_array = "" | split: "," -%}
-  {%- for fptms in site.data.code -%}
-  {%- assign fptm = fptms[1] -%}
-  {%- for admins in fptm -%}
-    {%- assign admin = admins[1] -%}
-    {%- for release in admin.releases -%}
+  {%- assign languages_arr = "" | split: "," -%}
+  {%- for codes in site.data.db.code.releases -%}
+    {%- assign code = codes[1] -%}
+    {%- for releases in code -%}
+      {%- assign release = releases[1] -%}
       {%- for language in release.languages -%}
-        {%- assign languages_array = languages_array  | push: language -%}
+        {%- assign languages_arr = languages_arr | push: language -%}
       {%- endfor -%}
-    {%- endfor -%}
     {%- endfor -%}
   {%- endfor %}
   <div id="{{ title }}" class="form-group">
-    {%- assign languages_array = languages_array | uniq  -%}
-    {%- for language in languages_array %}
+    {%- assign languages_arr = languages_arr | uniq  -%}
+    {%- for language in languages_arr %}
     <div class="checkbox"><label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label></div>
     {%- endfor %}
   </div>
