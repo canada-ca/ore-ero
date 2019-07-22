@@ -9,6 +9,8 @@
   slugify
 */
 
+var branch = 'master';
+
 var adminSelect = $('.page-codeForm #adminCode');
 var codeSelect = $('.page-codeForm #nameselect');
 
@@ -197,39 +199,38 @@ function submitCodeForm() {
     codeName
   )}.yml`;
   let fileCodeAdmin = `_data/db/code/administrations/${adminCode}.yml`;
-  let fileAdmin = `_data/db/administrations/${adminCode}.yml`;
+  let fileAdmin = `_data/db/administrations/${adminCode.toLowerCase()}.yml`;
 
-  let fileWriter = new YamlWriter(
-    'VilledeMontreal',
-    REPO_NAME,
-    'improvement/db'
-  );
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME, branch);
 
   if (adminObject.code != '') {
-    fileWriter
-      .merge(fileAdmin, adminObject, '', 'code')
-      .then(console.log('Administration with same code already exists'))
-      .catch(err => {
+    $.get(
+      `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/${fileAdmin}`,
+      function() {
+        // TODO handle admin code already in use
+        console.log('Admin code already exists');
+        submitConclusion({ status: 418 }, submitBtn, resetBtn);
+      }
+    ).fail(function(result) {
+      if (result.status == 404) {
         // Expected behaviour
-        if (err.status == 404) {
-          return fetch(
-            PRBOT_URL,
-            getConfigNewAdmin(
-              codeName,
-              adminName,
-              codeReleaseObject,
-              codeAdminObject,
-              adminObject,
-              fileCodeRelease,
-              fileCodeAdmin,
-              fileAdmin
-            )
-          );
-        }
-      })
-      .then(response => {
-        submitConclusion(response, submitBtn, resetBtn);
-      });
+        fetch(
+          PRBOT_URL,
+          getConfigNewAdmin(
+            codeName,
+            adminName,
+            codeReleaseObject,
+            codeAdminObject,
+            adminObject,
+            fileCodeRelease,
+            fileCodeAdmin,
+            fileAdmin
+          )
+        ).then(function(response) {
+          submitConclusion(response, submitBtn, resetBtn);
+        });
+      } else throw result;
+    });
   } else {
     fileWriter
       .merge(fileCodeAdmin, codeAdminObject, 'releases', '')
@@ -384,13 +385,13 @@ function selectAdmin() {
   $('.additional-option').remove();
   if (admin != '') {
     $.get(
-      `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/administrations/${admin}.yml`,
+      `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/code/administrations/${admin}.yml`,
       function(resultAdmin) {
         let data = jsyaml.load(resultAdmin);
         data.releases.forEach(function(release) {
           let r = slugify(release);
           $.get(
-            `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/releases/${admin}/${r}.yml`,
+            `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/code/releases/${admin}/${r}.yml`,
             function(resultRelease) {
               let name = jsyaml.load(resultRelease).name[lang];
               $(
@@ -425,7 +426,7 @@ function selectCode() {
   let release = slugify(codeSelect.val());
   if (release != '') {
     $.get(
-      `https://raw.githubusercontent.com/VilledeMontreal/${REPO_NAME}/improvement/db/_data/db/code/releases/${admin}/${release}.yml`,
+      `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/code/releases/${admin}/${release}.yml`,
       function(result) {
         let data = jsyaml.load(result);
         addValueToFields(data);
@@ -443,7 +444,7 @@ function addValueToFields(obj) {
   $('#endescription').val(obj.description.en);
   $('#frdescription').val(obj.description.fr);
 
-  if (obj.contact.url) {
+  if (obj.contact.URL) {
     if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
     if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
   }
