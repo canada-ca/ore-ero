@@ -3,6 +3,6 @@
 function slugify(txt) {
   return txt
     .toLowerCase()
-    .replace(/[^\w ]+/g, '')
+    .replace(/[\W [^-]]+/g, '')
     .replace(/ +/g, '-');
 }

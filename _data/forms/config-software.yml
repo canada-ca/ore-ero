@@ -1,10 +1,10 @@
 ---
 
-id: oss
+id: software
 
 formGroups:
   - preset: schemaVersion
-  - preset: selectOss
+  - preset: selectSoftware
   - preset: description
   - preset: homepageURL
   - preset: licences

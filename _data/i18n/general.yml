@@ -38,7 +38,7 @@ nav:
     link:
       en: ./open-source-code.html
       fr: ./code-source-ouvert.html
-  oss:
+  software:
     en: Open Source Software
     fr: Logiciels libres
     link:

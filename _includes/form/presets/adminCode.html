@@ -5,7 +5,7 @@
   <div class="form-group" style="display: flex;">
     <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
       <option value="">&nbsp;</option>
-      {%- for i in (1..4) -%}
+      {%- for i in (1..3) -%}
         {%- capture level -%}{%- cycle 'federal', 'provincial', 'municipal' -%}{%- endcapture -%}
         <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
           {%- for administrations in site.data.db.administrations -%}

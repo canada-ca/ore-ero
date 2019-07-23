@@ -35,6 +35,7 @@ $(document).ready(function() {
 });
 
 function getCodeAdminObject(name) {
+  // Mandatory fields
   let codeAdminObject = {
     adminCode: getAdminCode(),
     releases: [name]
@@ -44,6 +45,7 @@ function getCodeAdminObject(name) {
 }
 
 function getCodeReleaseObject() {
+  // Mandatory fields
   let codeReleaseObject = {
     schemaVersion: '1.0',
     administration: getAdminCode(),
@@ -73,8 +75,10 @@ function getCodeReleaseObject() {
     }
   };
 
+  // More-groups
   addMoreLicences(codeReleaseObject);
 
+  // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeReleaseObject.contact.URL = {};
   }
@@ -132,6 +136,7 @@ function getCodeReleaseObject() {
     codeReleaseObject.organization.fr = $('#frorganization').val();
   }
 
+  // Optional more-group
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
@@ -172,8 +177,10 @@ function getCodeReleaseObject() {
     }
   });
 
+  // Optional more-group
   addMoreRelatedCode(codeReleaseObject);
 
+  // Optional field
   if ($('#status :selected').val() != '') {
     codeReleaseObject.status = $('#status :selected').val();
   }
@@ -199,7 +206,7 @@ function submitCodeForm() {
     codeName
   )}.yml`;
   let fileCodeAdmin = `_data/db/code/administrations/${adminCode}.yml`;
-  let fileAdmin = `_data/db/administrations/${adminCode.toLowerCase()}.yml`;
+  let fileAdmin = `_data/db/administrations/${adminCode()}.yml`;
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME, branch);
 
@@ -211,8 +218,8 @@ function submitCodeForm() {
         console.log('Admin code already exists');
         submitConclusion({ status: 418 }, submitBtn, resetBtn);
       }
-    ).fail(function(result) {
-      if (result.status == 404) {
+    ).fail(function(err) {
+      if (err.status == 404) {
         // Expected behaviour
         fetch(
           PRBOT_URL,
@@ -229,7 +236,7 @@ function submitCodeForm() {
         ).then(function(response) {
           submitConclusion(response, submitBtn, resetBtn);
         });
-      } else throw result;
+      } else throw err;
     });
   } else {
     fileWriter
@@ -287,7 +294,7 @@ function getConfigNewAdmin(
         ` - New ${adminObject.parent} administration ***${adminName}***`,
       commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitteremail').val(),
+        name: $('#submitterusername').val(),
         email: $('#submitteremail').val()
       },
       files: [
@@ -326,7 +333,7 @@ function getConfigUpdateCode(
         ` - ***${codeName}:*** Updated`,
       commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitteremail').val(),
+        name: $('#submitterusername').val(),
         email: $('#submitteremail').val()
       },
       files: [
@@ -361,7 +368,7 @@ function getConfigNewCode(
         ` - ***${codeName}:*** ${codeReleaseObject.description.en}`,
       commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
-        name: $('#submitteremail').val(),
+        name: $('#submitterusername').val(),
         email: $('#submitteremail').val()
       },
       files: [
@@ -432,9 +439,7 @@ function selectCode() {
         addValueToFields(data);
       }
     );
-  } else {
-    resetFields();
-  }
+  } else resetFields();
 }
 
 function addValueToFields(obj) {
