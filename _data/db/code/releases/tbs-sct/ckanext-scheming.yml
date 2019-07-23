@@ -9,6 +9,7 @@ date:
   metadataLastUpdated: '2018-03-26'
 description:
   en: Easy, shareable custom CKAN schemas
+  fr: Schémas CKAN personnalisés faciles à partager
 languages:
   - Python
 name:

@@ -153,7 +153,7 @@ function getConfigUpdate(result, file, code) {
       files: [
         {
           path: file,
-          content: '\---\n' + jsyaml.dump(result)
+          content: '---\n' + jsyaml.dump(result)
         }
       ]
     }),
@@ -176,7 +176,7 @@ function getConfigNew(standardsObject, file) {
       files: [
         {
           path: file,
-          content: '\---\n' + jsyaml.dump(standardsObject)
+          content: '---\n' + jsyaml.dump(standardsObject)
         }
       ]
     }),
@@ -270,11 +270,11 @@ function getConfigUpdateStandardNewAdmin(
       files: [
         {
           path: standardFile,
-          content: '\---\n' + jsyaml.dump(standardResult)
+          content: '---\n' + jsyaml.dump(standardResult)
         },
         {
           path: adminFile,
-          content: '\---\n' + jsyaml.dump(adminObject)
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),
@@ -309,11 +309,11 @@ function getConfigNewStandardNewAdmin(
       files: [
         {
           path: standardFile,
-          content: '\---\n' + jsyaml.dump(standardObject)
+          content: '---\n' + jsyaml.dump(standardObject)
         },
         {
           path: adminFile,
-          content: '\---\n' + jsyaml.dump(adminObject)
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),

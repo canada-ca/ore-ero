@@ -8,8 +8,8 @@ homepageURL:
   fr: https://www.homepage.ca
 licences:
   - URL:
-      en: https://www..com
-      fr: https://www..com
+      en: https://www.licence.com
+      fr: https://www.licence.com
     spdxID: licence
 name:
   en: Software-ex

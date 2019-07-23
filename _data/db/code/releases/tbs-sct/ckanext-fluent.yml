@@ -9,6 +9,7 @@ date:
   metadataLastUpdated: '2018-03-26'
 description:
   en: Multilingual metadata fields for CKAN
+  fr: Champs de métadonnées multilingues pour CKAN
 languages:
   - Python
 name:

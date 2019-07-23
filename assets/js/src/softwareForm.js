@@ -224,7 +224,7 @@ function getConfigNewSoftware(softwareName, softwareObject, fileSoftware) {
       files: [
         {
           path: fileSoftware,
-          content: '\---\n' + jsyaml.dump(softwareObject)
+          content: '---\n' + jsyaml.dump(softwareObject)
         }
       ]
     },
@@ -249,7 +249,7 @@ function getConfigUpdateSoftware(softwareName, softwareObject, fileSoftware) {
       files: [
         {
           path: fileSoftware,
-          content: '\---\n' + jsyaml.dump(softwareObject)
+          content: '---\n' + jsyaml.dump(softwareObject)
         }
       ]
     },
@@ -264,7 +264,7 @@ function getConfigUpdateUse(config, adminName, softwareUse, fileUse) {
   }`;
   config.body.files[config.body.files.length] = {
     path: fileUse,
-    content: '\---\n' + jsyaml.dump(softwareUse)
+    content: '---\n' + jsyaml.dump(softwareUse)
   };
 }
 
@@ -275,7 +275,7 @@ function getConfigNewUse(config, adminName, softwareUse, fileUse) {
   }`;
   config.body.files[config.body.files.length] = {
     path: fileUse,
-    content: '\---\n' + jsyaml.dump(softwareUse)
+    content: '---\n' + jsyaml.dump(softwareUse)
   };
 }
 
@@ -283,7 +283,7 @@ function configNewAdmin(config, fileAdmin, adminObject) {
   config.body.title += ' (new administration)';
   config.body.files[config.body.files.length] = {
     path: fileAdmin,
-    content: '\---\n' + jsyaml.dump(adminObject)
+    content: '---\n' + jsyaml.dump(adminObject)
   };
 }
 
@@ -346,7 +346,7 @@ function selectAdmin() {
       }
     ).fail(function() {
       resetFieldsAdmin();
-    })
+    });
   } else resetFieldsAdmin();
 }
 

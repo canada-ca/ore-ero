@@ -300,15 +300,15 @@ function getConfigNewAdmin(
       files: [
         {
           path: fileCodeRelease,
-          content: '\---\n' + jsyaml.dump(codeReleaseObject)
+          content: '---\n' + jsyaml.dump(codeReleaseObject)
         },
         {
           path: fileCodeAdmin,
-          content: '\---\n' + jsyaml.dump(codeAdminObject)
+          content: '---\n' + jsyaml.dump(codeAdminObject)
         },
         {
           path: fileAdmin,
-          content: '\---\n' + jsyaml.dump(adminObject)
+          content: '---\n' + jsyaml.dump(adminObject)
         }
       ]
     }),
@@ -339,11 +339,11 @@ function getConfigUpdateCode(
       files: [
         {
           path: fileCodeRelease,
-          content: '\---\n' + jsyaml.dump(codeReleaseObject)
+          content: '---\n' + jsyaml.dump(codeReleaseObject)
         },
         {
           path: fileCodeAdmin,
-          content: '\---\n' + jsyaml.dump(codeAdminObject)
+          content: '---\n' + jsyaml.dump(codeAdminObject)
         }
       ]
     }),
@@ -374,11 +374,11 @@ function getConfigNewCode(
       files: [
         {
           path: fileCodeRelease,
-          content: '\---\n' + jsyaml.dump(codeReleaseObject)
+          content: '---\n' + jsyaml.dump(codeReleaseObject)
         },
         {
           path: fileCodeAdmin,
-          content: '\---\n' + jsyaml.dump(codeAdminObject)
+          content: '---\n' + jsyaml.dump(codeAdminObject)
         }
       ]
     }),

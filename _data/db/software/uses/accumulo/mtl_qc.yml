@@ -1,5 +1,5 @@
 ---
-adminCode: mtl_qc
+administration: mtl_qc
 uses:
   - contact:
       email: libre@ville.montreal.qc.ca
