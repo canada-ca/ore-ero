@@ -90,9 +90,8 @@
 </div>
 
 <!-- Modal Lightboxes -->
-{%- for standards in site.data.normes_ouvertes-open_standards -%}
+{%- for standards in site.data.db.standard.standards -%}
   {%- assign standard = standards[1] -%}
-
   <section id="{{ standard.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
     <header class="modal-header">
       <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
@@ -101,24 +100,18 @@
       <p><strong>{{ standard.description[page.lang] }}</strong></p>
       <p>Is being used by:</p>
       {%- for admin in standard.administrations -%}
+        {%- assign slug = standard.standardCode | slugify -%}
+        {%- assign administration1 = site.data.db.standard.administrations[slug][admin] -%}
+        {%- assign administration2 = site.data.db.administrations[admin] -%}
         <div class="row">
-          {%- assign aNameFederal = site.data.administrations.federal | where: "code", admin.adminCode -%}
-          {%- assign aNameProvincial = site.data.administrations.provincial | where: "code", admin.adminCode -%}
-          {%- assign aNameMunicipal = site.data.administrations.municipal | where: "code", admin.adminCode -%}
-          {%- assign aNameAboriginal = site.data.administrations.aboriginal | where: "code", admin.adminCode -%}
           <div class="col-md-7">
-            <strong>{{ aNameFederal[0].name[page.lang] }}</strong>
-            <strong>{{ aNameProvincial[0].name[page.lang] }}</strong>
-            <strong>{{ aNameMunicipal[0].name[page.lang] }}</strong>
-            <strong>{{ aNameAboriginal[0].name[page.lang] }}</strong>
+            <strong>{{ administration2.name[page.lang] }}</strong>
           </div>
-          <div class="col-md-5">{{ admin.status }}</div>
+          <div class="col-md-5">{{ administration1.status }}</div>
         </div>
       {%- endfor -%}
-
     </div>
   </section>
-
 {%- endfor -%}
 
 </div>
