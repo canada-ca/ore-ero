@@ -1,7 +1,5 @@
 ---
 administration: ex
-contact:
-  email: contact@example.com
 references:
   - URL:
       en: https://www.reference.com
