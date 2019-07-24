@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   softwareSelect.change(function() {
     selectSoftware();
-    // if (adminSelect.val() != '') selectAdmin();
+    if (adminSelect.val() != '') selectAdmin();
   });
 
   adminSelect.change(function() {
@@ -173,9 +173,9 @@ function submitSoftwareForm() {
           getConfigUpdateUse(config, adminName, result, fileUse);
         })
         .catch(err => {
-          if (err.status == 404) {
+          if (err.status == 404)
             getConfigNewUse(config, adminName, softwareUse, fileUse);
-          } else throw err;
+          else throw err;
         })
         .then(function() {
           if (adminObject.code != '') {
@@ -187,9 +187,9 @@ function submitSoftwareForm() {
               }
             )
               .fail(function(err) {
-                if (err.status == 404) {
+                if (err.status == 404)
                   configNewAdmin(config, fileAdmin, adminObject);
-                } else throw err;
+                else throw err;
               })
               .always(function() {
                 getFinalConfig(config);
@@ -208,40 +208,33 @@ function submitSoftwareForm() {
 }
 
 function getConfigNewSoftware(softwareName, softwareObject, fileSoftware) {
-  return {
-    body: {
-      user: USERNAME,
-      repo: REPO_NAME,
-      title: `Created ${softwareName} (software)`,
-      description:
-        `Authored by: ${$('#submitteremail').val()}\n` +
-        ` - ***${softwareName}:*** ${softwareObject.description.en}`,
-      commit: `Commited by ${$('#submitteremail').val()}`,
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: fileSoftware,
-          content: '---\n' + jsyaml.dump(softwareObject)
-        }
-      ]
-    },
-    method: 'POST'
-  };
+  return getConfigSoftware(
+    softwareName,
+    softwareObject,
+    fileSoftware,
+    'Created'
+  );
 }
 
 function getConfigUpdateSoftware(softwareName, softwareObject, fileSoftware) {
+  return getConfigSoftware(
+    softwareName,
+    softwareObject,
+    fileSoftware,
+    'Updated'
+  );
+}
+
+function getConfigSoftware(softwareName, softwareObject, fileSoftware, change) {
   return {
     body: {
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated ${softwareName} (software)`,
+      title: `${change} ${softwareName} (software)`,
       description:
         `Authored by: ${$('#submitteremail').val()}\n` +
         ` - ***${softwareName}:*** ${softwareObject.description.en}`,
-      commit: `Commited by ${$('#submitteremail').val()}`,
+      commit: `Commited by ${$('#submitteremail').val()}\n`,
       author: {
         name: $('#submitterusername').val(),
         email: $('#submitteremail').val()
@@ -258,18 +251,15 @@ function getConfigUpdateSoftware(softwareName, softwareObject, fileSoftware) {
 }
 
 function getConfigUpdateUse(config, adminName, softwareUse, fileUse) {
-  config.body.title += ` and updated use for ${adminName}`;
-  config.body.description += `\n - ***${softwareUse.uses[0].name.en}:*** ${
-    softwareUse.uses[0].description.en
-  }`;
-  config.body.files[config.body.files.length] = {
-    path: fileUse,
-    content: '---\n' + jsyaml.dump(softwareUse)
-  };
+  getConfigUse(config, adminName, softwareUse, fileUse, 'updated');
 }
 
 function getConfigNewUse(config, adminName, softwareUse, fileUse) {
-  config.body.title += ` and created use for ${adminName}`;
+  getConfigUse(config, adminName, softwareUse, fileUse, 'created');
+}
+
+function getConfigUse(config, adminName, softwareUse, fileUse, change) {
+  config.body.title += ` and ${change} use for ${adminName}`;
   config.body.description += `\n - ***${softwareUse.uses[0].name.en}:*** ${
     softwareUse.uses[0].description.en
   }`;
@@ -344,9 +334,7 @@ function selectAdmin() {
         let data = jsyaml.load(result);
         addValueToFieldsAdmin(data);
       }
-    ).fail(function() {
-      resetFieldsAdmin();
-    });
+    ).fail(resetFieldsAdmin());
   } else resetFieldsAdmin();
 }
 

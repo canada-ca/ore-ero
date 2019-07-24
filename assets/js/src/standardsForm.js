@@ -5,26 +5,26 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
+  slugify
 */
 
-const standardObj = $('.page-standardsForm #standardCodeselect');
-const adminObj = $('.page-standardsForm #adminCode');
+var branch = 'master';
+
+var standardSelect = $('.page-standardsForm #standardCodeselect');
+var adminSelect = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
-  standardObj.change(function() {
-    selectStandard();
-    if (adminObj.val() != '') selectAdmin();
-  });
-
-  adminObj.change(function() {
-    selectAdmin();
-  });
-
   $('#prbotSubmitstandardsForm').click(function() {
-    if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitStandardsFormNewAdmin();
-      else submitStandardsForm();
-    }
+    if (submitInit()) submitStandardsForm();
+  });
+
+  standardSelect.change(function() {
+    selectStandard();
+    if (adminSelect.val() != '') selectAdmin();
+  });
+
+  adminSelect.change(function() {
+    selectAdmin();
   });
 
   $('#formReset').click(function() {
@@ -33,7 +33,8 @@ $(document).ready(function() {
   });
 });
 
-function getStandardsObject() {
+function getStandardObject(admin) {
+  // Mandatory fields
   let standardsObject = {
     schemaVersion: '1.0',
     date: {
@@ -55,28 +56,33 @@ function getStandardsObject() {
     standardCode: $('#standardCode')
       .val()
       .toUpperCase(),
-    standardsOrg: $('#standardOrg').val(),
+    standardOrg: $('#standardOrg').val(),
     tags: {
       en: getTagsEN(),
       fr: getTagsFR()
     },
-    administrations: [
-      {
-        adminCode: getAdminCode(),
-        contact: {
-          email: $('#contactemail').val()
-        },
-        references: [],
-        status: $('#status').val()
-      }
-    ]
+    administrations: [admin]
   };
 
-  // Handles more-groups
+  return standardsObject;
+}
+
+function getStandardAdmin(admin) {
+  // Mandatory fields
+  let standardAdmin = {
+    adminCode: admin,
+    contact: {
+      email: $('#contactemail').val()
+    },
+    references: [],
+    status: $('#status').val()
+  };
+
+  // More-groups
   $('#addMorereference ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    standardsObject.administrations[0].references[i] = {
+    standardAdmin.references[i] = {
       URL: {
         en: $('#enreferenceURL' + id).val(),
         fr: $('#frreferenceURL' + id).val()
@@ -88,254 +94,205 @@ function getStandardsObject() {
     };
   });
 
-  // Handles optional fields
+  // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    standardsObject.administrations[0].contact.URL = {};
+    standardAdmin.contact.URL = {};
   }
   if ($('#encontactURL').val()) {
-    standardsObject.administrations[0].contact.URL.en = $(
-      '#encontactURL'
-    ).val();
+    standardAdmin.contact.URL.en = $('#encontactURL').val();
   }
   if ($('#frcontactURL').val()) {
-    standardsObject.administrations[0].contact.URL.fr = $(
-      '#frcontactURL'
-    ).val();
+    standardAdmin.contact.URL.fr = $('#frcontactURL').val();
   }
-
   if ($('#contactname').val()) {
-    standardsObject.administrations[0].contact.name = $('#contactname').val();
+    standardAdmin.contact.name = $('#contactname').val();
   }
 
-  return standardsObject;
+  return standardAdmin;
 }
 
 function submitStandardsForm() {
-  let submitButton = document.getElementById('prbotSubmitstandardsForm');
-  let resetButton = document.getElementById('formReset');
-  submitButton.disabled = true;
-  resetButton.disabled = true;
+  let submitBtn = $('#prbotSubmitstandardsForm');
+  let resetBtn = $('#formReset');
+  submitBtn.disabled = true;
+  resetBtn.disabled = true;
 
-  let standardObject = getStandardsObject();
-  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardCode.toLowerCase()}.yml`;
+  let adminObject = getAdminObject();
+  let adminCode = slugify(
+    adminObject.code == '' ? getAdminCode() : adminObject.code
+  );
+  let adminName =
+    $('#ennewAdminName').val() == ''
+      ? adminSelect.val()
+      : $('#ennewAdminName').val();
+
+  let standardObject = getStandardObject(adminCode);
+  let standardAdmin = getStandardAdmin(adminCode);
+
+  let standardName = slugify(standardObject.standardCode);
+
+  let fileStandard = `_data/db/standard/standards/${slugify(standardName)}.yml`;
+  let fileStdAdmin = `_data/db/standard/administrations/${slugify(
+    standardName
+  )}/${adminCode}.yml`;
+  let fileAdmin = `_data/db/administrations/${adminCode}.yml`;
+
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME, branch);
+
+  let config;
 
   fileWriter
-    .merge(file, standardObject, 'administrations', 'adminCode')
+    .merge(fileStandard, standardObject, 'administrations', '')
     .then(result => {
-      return fetch(
-        PRBOT_URL,
-        getConfigUpdate(result, file, standardObject.standardCode)
-      );
+      config = getConfigUpdateStandard(standardName, result, fileStandard);
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(standardObject, file));
+        config = getConfigNewStandard(
+          standardName,
+          standardObject,
+          fileStandard
+        );
       } else throw err;
     })
-    .then(response => {
-      submitConclusion(response, submitButton, resetButton);
-    });
-}
-
-function getConfigUpdate(result, file, code) {
-  return {
-    body: JSON.stringify({
-      user: USERNAME,
-      repo: REPO_NAME,
-      title: `Updated the ${code} standard file`,
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: file,
-          content: '---\n' + jsyaml.dump(result)
-        }
-      ]
-    }),
-    method: 'POST'
-  };
-}
-
-function getConfigNew(standardsObject, file) {
-  return {
-    body: JSON.stringify({
-      user: USERNAME,
-      repo: REPO_NAME,
-      title: 'Created the standard file for ' + standardsObject.standardCode,
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: file,
-          content: '---\n' + jsyaml.dump(standardsObject)
-        }
-      ]
-    }),
-    method: 'POST'
-  };
-}
-
-function submitStandardsFormNewAdmin() {
-  let submitButton = document.getElementById('prbotSubmitstandardsForm');
-  let resetButton = document.getElementById('formReset');
-  submitButton.disabled = true;
-  resetButton.disabled = true;
-
-  let standardObject = getStandardsObject();
-  let adminObject = getAdminObject();
-
-  let standardName = standardObject.standardCode.toLowerCase();
-  let adminName = $('#newAdminCode').val();
-
-  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let standardFile = `_data/normes_ouvertes-open_standards/${standardName}.yml`;
-  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
-
-  fileWriter
-    .mergeAdminFile(adminFile, adminObject, '', 'code')
-    .then(adminResult => {
+    .then(function() {
       fileWriter
-        .merge(standardFile, standardObject, 'administrations', 'adminCode')
-        .then(standardResult => {
-          return fetch(
-            PRBOT_URL,
-            getConfigUpdateStandardNewAdmin(
-              standardName,
-              adminName,
-              standardFile,
-              adminFile,
-              standardResult,
-              adminResult
-            )
-          );
+        .merge(fileStdAdmin, standardAdmin, 'references', 'name.en')
+        .then(result => {
+          getConfigUpdateStdAdmin(config, adminName, result, fileStdAdmin);
         })
         .catch(err => {
-          if (err.status == 404) {
-            return fetch(
-              PRBOT_URL,
-              getConfigNewStandardNewAdmin(
-                standardName,
-                adminName,
-                standardFile,
-                adminFile,
-                standardObject,
-                adminResult
-              )
+          if (err.status == 404)
+            getConfigNewStdAdmin(
+              config,
+              adminName,
+              standardAdmin,
+              fileStdAdmin
             );
-          } else throw err;
+          else throw err;
         })
-        .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+        .then(function() {
+          if (adminObject.code != '') {
+            $.get(
+              `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/${fileAdmin}`,
+              function() {
+                // TODO handle admin code already in use
+                console.log('Admin code already exists');
+              }
+            )
+              .fail(function(err) {
+                if (err.status == 404)
+                  configNewAdmin(config, fileAdmin, adminObject);
+                else throw err;
+              })
+              .always(function() {
+                getFinalConfig(config);
+                fetch(PRBOT_URL, config).then(function(response) {
+                  submitConclusion(response, submitBtn, resetBtn);
+                });
+              });
+          } else {
+            getFinalConfig(config);
+            fetch(PRBOT_URL, config).then(function(response) {
+              submitConclusion(response, submitBtn, resetBtn);
+            });
+          }
         });
-    })
-    .catch(err => {
-      if (err.status == 404) console.log('File not Found');
-      else throw err;
     });
 }
 
-function getConfigUpdateStandardNewAdmin(
-  standardName,
-  adminName,
-  standardFile,
-  adminFile,
-  standardResult,
-  adminObject
-) {
+function getConfigNewStandard(standardName, standardObject, fileStandard) {
+  return getConfigStandard(
+    standardName,
+    standardObject,
+    fileStandard,
+    'Created'
+  );
+}
+
+function getConfigUpdateStandard(standardName, standardObject, fileStandard) {
+  return getConfigStandard(
+    standardName,
+    standardObject,
+    fileStandard,
+    'Updated'
+  );
+}
+
+function getConfigStandard(standardName, standardObject, fileStandard, change) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
-      title:
-        'Updated standard file for ' +
-        standardName +
-        ' and created ' +
-        adminName +
-        ' in administration file',
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
+      title: `${change} ${standardName} (standard)`,
+      description:
+        `Authored by: ${$('#submitteremail').val()}\n` +
+        ` - ***${standardName}:*** ${standardObject.name.en}`,
+      commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
         name: $('#submitterusername').val(),
         email: $('#submitteremail').val()
       },
       files: [
         {
-          path: standardFile,
-          content: '---\n' + jsyaml.dump(standardResult)
-        },
-        {
-          path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
+          path: fileStandard,
+          content: '---\n' + jsyaml.dump(standardObject)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
 
-function getConfigNewStandardNewAdmin(
-  standardName,
-  adminName,
-  standardFile,
-  adminFile,
-  standardObject,
-  adminObject
-) {
-  return {
-    body: JSON.stringify({
-      user: USERNAME,
-      repo: REPO_NAME,
-      title:
-        'Creaded standard file for ' +
-        standardName +
-        ' and created ' +
-        adminName +
-        ' in administration file',
-      description: 'Authored by: ' + $('#submitteremail').val() + '\n',
-      commit: 'Committed by ' + $('#submitteremail').val(),
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: standardFile,
-          content: '---\n' + jsyaml.dump(standardObject)
-        },
-        {
-          path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
-    }),
-    method: 'POST'
+function getConfigUpdateStdAdmin(config, adminName, stdAdmin, fileStdAdmin) {
+  getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, 'updated');
+}
+
+function getConfigNewStdAdmin(config, adminName, stdAdmin, fileStdAdmin) {
+  getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, 'added');
+}
+
+function getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, change) {
+  config.body.title += ` and ${change} relation with ${adminName}`;
+  config.body.description += `\n - ***${adminName}***:`;
+  if (stdAdmin.references.length == 1)
+    config.body.description += ' ' + stdAdmin.references[0].name.en;
+  else {
+    stdAdmin.references.forEach(function(reference) {
+      config.body.description += '\n   - ' + reference.name.en;
+    });
+  }
+  config.body.description += '\n';
+  config.body.files[config.body.files.length] = {
+    path: fileStdAdmin,
+    content: '---\n' + jsyaml.dump(stdAdmin)
   };
+}
+
+function configNewAdmin(config, fileAdmin, adminObject) {
+  config.body.title += ' (new administration)';
+  config.body.files[config.body.files.length] = {
+    path: fileAdmin,
+    content: '---\n' + jsyaml.dump(adminObject)
+  };
+}
+
+function getFinalConfig(config) {
+  config.body = JSON.stringify(config.body);
+  return config;
 }
 
 function selectStandard() {
-  let value = standardObj.val().toLowerCase();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
-    function(result) {
-      if (result[value]) {
-        addValueToFieldsStandard(result[value]);
-        $('#adminCode').focus();
-      } else if (value == '') {
-        resetFieldsStandard();
-      } else {
-        alert('Error retrieving the data');
+  let standard = standardSelect.val();
+  if (standard != '') {
+    $.get(
+      `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/standards/${standard}.yml`,
+      function(result) {
+        let data = jsyaml.load(result);
+        addValueToFieldsStandard(data);
       }
-    }
-  );
+    );
+  } else resetFieldsStandard();
 }
 
 function addValueToFieldsStandard(obj) {
@@ -347,7 +304,7 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#standardOrg').val(obj['standardsOrg']);
+  $('#standardOrg').val(obj['standardOrg']);
 
   addTags(obj);
 }
@@ -366,28 +323,17 @@ function resetFieldsStandard() {
 }
 
 function selectAdmin() {
-  let standard = standardObj.val().toLowerCase();
-  let administration = adminObj.val();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
-    function(result) {
-      if (result[standard]) {
-        for (let i = 0; i < result[standard]['administrations'].length; i++) {
-          if (
-            result[standard]['administrations'][i]['adminCode'] ==
-            administration
-          ) {
-            addValueToFieldsAdmin(result[standard]['administrations'][i]);
-            break;
-          } else {
-            resetFieldsAdmin();
-          }
-        }
-      } else {
-        resetFieldsAdmin();
+  let standard = standardSelect.val();
+  let administration = adminSelect.val();
+  if (standard != '' && administration != '') {
+    $.get(
+      `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/administrations/${standard}/${administration}.yml`,
+      function(result) {
+        let data = jsyaml.load(result);
+        addValueToFieldsAdmin(data);
       }
-    }
-  );
+    ).fail(resetFieldsAdmin());
+  } else resetFieldsAdmin();
 }
 
 function addValueToFieldsAdmin(obj) {
