@@ -6,7 +6,7 @@
   submitInit submitConclusion
   getAdminObject getAdminCode
   addMoreLicences
-  slugify
+  slugify getToday
 */
 
 var branch = 'master';
@@ -45,7 +45,7 @@ function getSoftwareUse(admin) {
         },
         date: {
           started: $('#datestarted').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+          metadataLastUpdated: getToday()
         },
         description: {
           en: $('#useendescription').val(),

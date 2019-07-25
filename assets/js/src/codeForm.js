@@ -6,7 +6,7 @@
   submitInit submitConclusion
   getAdminObject getAdminCode
   addMoreLicences addMoreRelatedCode
-  slugify
+  slugify getToday
 */
 
 var branch = 'master';
@@ -54,7 +54,7 @@ function getCodeReleaseObject() {
     },
     date: {
       created: $('#datecreated').val(),
-      metadataLastUpdated: $('#datemetadataLastUpdated').val()
+      metadataLastUpdated: getToday()
     },
     description: {
       en: $('#endescription').val(),

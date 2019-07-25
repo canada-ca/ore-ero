@@ -1,10 +1,10 @@
 {%- assign titleAdmin = "newAdmin" -%}
 {%- assign id = "admin" -%}
 <div id="{{ titleAdmin }}" class="well hide" style="position:relative;">
-{% include form/components/title.html id=id title=titleAdmin styles="text-align: center; margin-top:10px" -%}
+<h2 class="h1 text-center">{{ site.data.i18n.form.[id][titleAdmin].title[page.lang] }}</h2>
 <button id="removeNewAdminButton" style="position: absolute; top: 10px; right: 10px;" class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
 {% include form/presets/orgLevel.html idPreset=include.idPreset %}
-{% include form/widgets/string.html id=id title="newAdminCode" rule="names" %}
+{% include form/widgets/string.html id=id title="newAdminCode" param=site.data.forms.param.code %}
 {% include form/presets/provinceSelect.html idPreset=idPreset %}
-{% include form/widgets/string-i18n.html id=id title="newAdminName" rule="alphanum-space" -%}
+{% include form/widgets/string-i18n.html id=id title="newAdminName" param=site.data.forms.param.name -%}
 </div>

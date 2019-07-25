@@ -1,7 +1,7 @@
 {%- assign title = "status" -%}
 {%- include form/components/title.html id=include.idPreset title=title -%}
 <div class="form-group">
-  {% include form/components/label.html id=include.idPreset title=title required=false %}
+  {% include form/components/label.html id=include.idPreset title=title param=site.data.forms.param.status %}
   <select class="form-control" id="{{ title }}" name="{{ title }}">
     <option value="">&nbsp;</option>
     {%- for options in site.data.i18n.form[include.idPreset][title].options -%}

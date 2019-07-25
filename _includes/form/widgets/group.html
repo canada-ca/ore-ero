@@ -4,12 +4,6 @@
 
 {%- for field in include.fields -%}
 
-  {%- if field.required == nil -%}
-    {%- assign include.param.required = include.param.required -%}
-  {%- else -%}
-    {%- assign include.param.required = field.param.required -%}
-  {%- endif -%}
-
   {%- assign type = 'widgets' -%}
   {%- assign name = field.title -%}
   {%- capture file -%}{{ field.widget }}-group{%- endcapture -%}

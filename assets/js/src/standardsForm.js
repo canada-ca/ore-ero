@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  slugify
+  slugify getToday
 */
 
 var branch = 'master';
@@ -39,7 +39,7 @@ function getStandardObject(admin) {
     schemaVersion: '1.0',
     date: {
       created: $('#datecreated').val(),
-      metadataLastUpdated: $('#datemetadataLastUpdated').val()
+      metadataLastUpdated: getToday()
     },
     description: {
       en: $('#endescription').val(),

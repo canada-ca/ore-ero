@@ -5,7 +5,6 @@ id: code
 formGroups:
   - preset: adminCode
   - preset: selectCode
-    param: {id: true}
   - preset: description
   - preset: contact
   - preset: dates
@@ -17,20 +16,20 @@ formGroups:
   - preset: languages
   - widget: string-i18n
     title: organization
-    param: {rule: alphanum-space, required: fals}
+    param: {rule: alphanum-space, required: false}
   - widget: group
     title: partners
-    param: {required: false, more: true}
+    param: {more: true}
     fields:
       - widget: string-i18n
         title: URL
-        param: {type: url}
+        param: {required: false, type: url}
       - widget: string
         title: email
-        param: {type: email}
+        param: {required: false, type: email}
       - widget: string-i18n
         title: name
-        param: {rule: alphanum-space}
+        param: {required: false, rule: alphanum-space}
   - preset: licences
     param: {more: true}
   - widget: string-i18n

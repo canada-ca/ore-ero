@@ -1,0 +1,10 @@
+url:
+  type: url
+  required: false
+email:
+  type: email
+name:
+  required: false
+phone:
+  type: tel
+  required: false
