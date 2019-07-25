@@ -1,4 +1,4 @@
-<input class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.type | default: "text" }}"
+<input class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.prepend }}{{ include.lang }}{{ include.title }}" maxlength="150" type="{{ include.type | default: "text" }}"
   {%- if include.required == nil or include.required %} required="required"{% endif -%}
   {%- if include.value %} value="{{ include.value }}"{% endif -%}
   {%- if include.readonly %} readonly="readonly"{% endif -%}

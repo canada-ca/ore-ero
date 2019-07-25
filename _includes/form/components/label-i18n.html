@@ -1,4 +1,4 @@
 <label for="{{ include.prepend }}{{ include.lang }}{{ include.title }}"
   {%- if include.required == nil or include.required %} class="required"{% endif -%}
->{{ site.data.i18n.form[include.id][path].label[include.lang][page.lang] }}
-{%- if include.required == nil or include.required %} <strong class="required">({{ site.data.i18n.form.required[page.lang] }})</strong>{% endif %}</label>
+>{{ site.data.i18n.form[include.id][path].label[include.lang][page.lang] }} </label>
+<h6><small>{{ site.data.i18n.form[include.id][path].limitCharacters[page.lang] }}</small></h6>

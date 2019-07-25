@@ -1,0 +1,7 @@
+<textarea rows="4" cols="40" class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}" 
+  name="{{ include.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}" maxlength="200" type="{{ include.type | default: "text" }}"
+  {%- if include.required == nil or include.required %} required="required"{% endif -%}
+  {%- if include.value %} value="{{ include.value }}"{% endif -%}
+  {%- if include.readonly %} readonly="readonly"{% endif -%}
+  {%- if include.rule %} {{ site.data.forms.rules[include.rule] }}="true"{% endif -%}
+  {%- if include.style %} style="{{ include.style }}"{% endif -%} /></textarea>

@@ -49,8 +49,8 @@ function getCodeObject() {
           metadataLastUpdated: $('#datemetadataLastUpdated').val()
         },
         description: {
-          en: $('#endescription').val(),
-          fr: $('#frdescription').val()
+          en: $('#endescriptionwhat').val(),
+          fr: $('#frdescriptionwhat').val()
         },
         name: {
           en: $('#enname').val(),
@@ -73,6 +73,15 @@ function getCodeObject() {
   addMoreLicenses(codeObject.releases[0]);
 
   // Handle optional fields
+  if ($('#endescriptionhow').val() || $('#frdescriptionhow').val()) {
+    codeObject.releases[0].description.how = {};
+  }
+  if ($('#endescriptionhow').val()) {
+    codeObject.releases[0].description.how.en = $('#endescriptionhow').val();
+  }
+  if ($('#frdescriptionhow').val()) {
+    codeObject.releases[0].description.how.fr = $('#frdescriptionhow').val();
+  }
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeObject.releases[0].contact.URL = {};
   }
@@ -463,8 +472,15 @@ function getOrgLevel(result, admin) {
 function addValueToFields(obj) {
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+  $('#endescriptionwhat').val(obj.description.what.en);
+  $('#frdescriptionwhat').val(obj.description.what.fr);
+
+  if (obj.description.how) {
+    if (obj.description.how.en)
+      $('#endescriptionhow').val(obj.description.how.en);
+    if (obj.description.how.fr)
+      $('#frdescriptionhow').val(obj.description.how.fr);
+  }
 
   if (obj.contact.url) {
     if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
@@ -541,8 +557,10 @@ function addValueToFields(obj) {
 function resetFields() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
+  $('#endescriptionwhat').val('');
+  $('#frdescriptionwhat').val('');
+  $('#endescriptionhow').val('');
+  $('#frdescriptionhow').val('');
   $('#encontactURL').val('');
   $('#frcontactURL').val('');
   $('#contactemail').val('');

@@ -51,8 +51,14 @@ administrations: &administrations
 presets:
   adminCode:
     title:
-      en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
-      fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
+      en: Canadian public administration
+      fr: Administration publique Canadienne
+    subTitle:
+      en: <p>See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration</p>
+      fr: <p>Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration</p>
+    infobulle:
+      en: Select a public administration from the drop-down field or add a new one in case the administration does not exist.
+      fr: Choisir l'administration publique dans la liste ci-dessous. Créer une nouvelle au cas où l'administration n'était pas déjà dans la liste.
     label:
       en: Public administration
       fr: Administration publique
@@ -115,15 +121,32 @@ presets:
         fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   description:
     title:
-      en: A one or two sentence description of the project.
-      fr: Une description en une ou deux phrases du projet.
-    label:
-      en:
-        en: English description
-        fr: Description en anglais
-      fr:
-        en: French description
-        fr: Description en francais
+      en: Project description
+      fr: Description du projet
+    labels:
+      what:
+        subtitle:
+          en: What it does?
+          fr: De quoi il s'agit?
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Francais
+      how:
+        subtitle:
+          en: How it works?
+          fr: Comment cela fonctionne?
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Francais
+    charactersLimit:
+      en: (200 characters limit)
+      fr: (limite de 200 caractères)
       schema:
         en: Description
         fr: Description
@@ -233,11 +256,14 @@ presets:
       email: *email
   status:
     title:
-      en: The development status of the project. Alpha, Beta, Maintained, Deprecated or Retired.
-      fr: Le statut du développement du projet. Alpha, Beta, Maintenu, Obsolète ou Retraité.
-    label:
-      en: Development status of the project
+      en: Project Development Status 
       fr: Statut de développement du projet
+    label:
+      en: Status 
+      fr: Statut 
+    infobulle:
+      en: Select the project development status from the drop-down field according to its current life cycle stage. 
+      fr: Choisir le status de développement du projet dans la liste ci-dessous, selon sa phase de cycle de vie. 
     options:
       alpha:
         en: Alpha
@@ -276,18 +302,24 @@ presets:
 code:
   name:
     title:
-      en: The name of the project.
-      fr: Le nom du projet.
+      en: Project name 
+      fr: Nom du projet
+    infobulle:
+      en: Add the name of the project.
+      fr: Ajouter le nom du projet.
     label:
       en:
-        en: The english name of the project
-        fr: Le nom du projet en anglais
+        en: English name
+        fr: Nom en anglais
       fr:
-        en: The name of the project in french
-        fr: Le nom du projet en français
+        en: French name
+        fr: Nom en français
       schema:
         en: Project name
         fr: Nom du projet
+    limitCharacters:
+      en: (150 characters limit)
+      fr: (Limite de 150 caractères)
     labels:
       select:
         en: If you wish to update an already existing code, please select it below
@@ -308,15 +340,18 @@ code:
         fr: URL de téléchargement
   organization:
     title:
-      en: The English and French name of the organization or team to which the project belongs.
-      fr: Le nom de l'organisation ou l'équipe en francais et en anglais à laquelle le projet appartient.
+      en: Team, branch or sector within your public administration
+      fr: Équipe, direction ou secteur de l'administration publique
+    infobulle:
+      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat. 
+      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
     label:
       en:
-        en: English organization name
-        fr: Nom de l'organisation en anglais
+        en: English name
+        fr: Nom en anglais
       fr:
-        en: French organization name
-        fr: Nom de l'organisation en français
+        en: French name
+        fr: Nom en français
       schema:
         en: Organization
         fr: Organisation
