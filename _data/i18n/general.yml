@@ -62,6 +62,12 @@ nav:
     link:
       en: https://www.canada.ca/en.html
       fr: https://www.canada.ca/fr.html
+  form:
+    en: Form
+    fr: Formulaire
+  groups:
+    en: Groups
+    fr: Groupes
 
 footer:
   AboutGovernment:
