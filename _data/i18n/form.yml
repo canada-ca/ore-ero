@@ -29,7 +29,7 @@ email: &email
 name: &name
   en: Name
   fr: Nom
-phone: &phone
+phone:
   en: Phone number
   fr: Numéro de téléphone
 URL: &url
@@ -169,7 +169,7 @@ presets:
       en: Level of government
       fr: Niveau de gouvernement
     label: *title
-  provinceSelect: &provinceSelect
+  provinceSelect:
     title: &title
       en: Province
       fr: province
@@ -462,14 +462,14 @@ admin:
     title:
       en: New Administration
       fr: Nouvelle administration
-  newAdminCode: &newAdminCode
+  newAdminCode:
     title:
       en: Administration Code
       fr: Code de l'administration
     label:
       en: The code for the new administration
       fr: Le code de la nouvelle administration
-  newAdminName: &newAdminName
+  newAdminName:
     title:
       en: Administration Name
       fr: Nom de l'administration
