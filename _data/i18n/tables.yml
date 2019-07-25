@@ -1,52 +1,58 @@
 ---
-filterOptions:
-  en: Filter Options
-  fr: Options de filtrage
-administrations:
-  en: Administrations
-  fr: Administrations
 administration:
   en: Administration
   fr: Administration
-licence:
-  en: Licence(s)
-  fr: Licence(s)
-tag:
-  en: Tag(s)
-  fr: Étiquette(s)
-filter:
-  en: Filter
-  fr: Filtrer
+administrations:
+  en: Administrations
+  fr: Administrations
 clear:
   en: Clear
   fr: Effacer
 codeRepo:
   en: Code repo
   fr: Dépôt de code
+contactPhone:
+  en: Contact phone (###-###-####)
+  fr: Numéro du contact (###-###-####)
+description:
+  en: Description
+  fr: Description
+filter:
+  en: Filter
+  fr: Filtrer
+filterOptions:
+  en: Filter Options
+  fr: Options de filtrage
+homepage:
+  en: Homepage
+  fr: Page d'accueil
+languages:
+  en: Language(s)
+  fr: Langage(s)
+licence:
+  en: Licence(s)
+  fr: Licence(s)
+organization:
+  en: Organization
+  fr: Organisation
 projectName:
   en: Project Name
   fr: Nom du projet
+relatedCode:
+  en: Related Code
+  fr: Code Associé
 software:
   en: Software
   fr: Logiciel
 standard:
   en: Standard
   fr: Norme
-languages:
-  en: Language(s)
-  fr: Langage(s)
-relatedCode:
-  en: Related Code
-  fr: Code Associé
 status:
   en: Status
   fr: Statut
-contactPhone:
-  en: Contact phone (###-###-####)
-  fr: Numéro du contact (###-###-####)
-homepage:
-  en: Homepage
-  fr: Page d'accueil
+tag:
+  en: Tag(s)
+  fr: Étiquette(s)
 usage:
   en: Usage
   fr: Utilisation

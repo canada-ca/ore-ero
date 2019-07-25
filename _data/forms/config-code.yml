@@ -5,38 +5,38 @@ id: code
 formGroups:
   - preset: adminCode
   - preset: selectCode
-    param: { id: true }
+    param: {id: true}
   - preset: description
   - preset: contact
   - preset: dates
-    param: { created: true, modified: true, updated: true }
+    param: {created: true, modified: true, updated: true}
   - widget: string-i18n
     title: downloadUrl
-    param: { type: url, required: false }
+    param: {type: url, required: false}
   - preset: homepageURL
   - preset: languages
   - widget: string-i18n
     title: organization
-    param: { rule: alphanum-space, required: false}
+    param: {rule: alphanum-space, required: fals}
   - widget: group
     title: partners
-    param: { required: false, more: true }
+    param: {required: false, more: true}
     fields:
       - widget: string-i18n
         title: URL
-        param: { type: url }
+        param: {type: url}
       - widget: string
         title: email
-        param: { type: email }
+        param: {type: email}
       - widget: string-i18n
         title: name
-        param: { rule: alphanum-space }
+        param: {rule: alphanum-space}
   - preset: licences
-    param: { more: true }
+    param: {more: true}
   - widget: string-i18n
     title: repositoryUrl
-    param: { type: url }
+    param: {type: url}
   - preset: relatedCode
-    param: { more: true }
+    param: {more: true}
   - preset: tags
   - preset: status

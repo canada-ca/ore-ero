@@ -7,20 +7,20 @@ formGroups:
   - preset: description
   - preset: homepageURL
   - preset: licences
-    param: { more: true }
+    param: {more: true}
   - preset: tags
   - preset: adminCode
   - preset: contact
-    param: { phone: false }
+    param: {phone: false}
   - preset: dates
-    param: { started: true }
+    param: {started: true}
   - widget: string-i18n
     title: description
-    param: { prepend: use }
+    param: {prepend: use}
   - widget: string-i18n
     title: name
-    param: { prepend: use }
+    param: {prepend: use}
   - preset: status
   - widget: string
     title: users
-    param: { required: false, more: true }
+    param: {required: false, more: true}

@@ -68,13 +68,9 @@
           <li><a href="{{ site.data.i18n.general.nav.home.link[page.lang] }}">{{ site.data.i18n.general.nav.home[page.lang] }}</a></li>
         {%- endif -%}
 
-        {% if page.ref == "codeGroups" or page.ref == "codeSchema" or page.ref == "codeForm" -%}
+        {% if page.ref == "codeGroups" or page.ref == "codeForm" -%}
           <li><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
         {%- endif -%}
-
-        {% if page.ref == "softwareSchema" -%}
-          <li><a href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></li>
-        {%- endif %}
       </ol>
     </div>
   </nav>

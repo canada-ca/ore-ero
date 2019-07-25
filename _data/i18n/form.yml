@@ -39,9 +39,6 @@ URL: &url
   fr:
     en: French URL
     fr: URL français
-  schema: &url_generic
-    en: URL
-    fr: URL
 administrations: &administrations
   title:
     en: Software administrations descriptions
@@ -124,9 +121,6 @@ presets:
       fr:
         en: French description
         fr: Description en francais
-      schema:
-        en: Description
-        fr: Description
   homepageURL:
     title:
       en: The English and French URLs of the project homepage.
@@ -138,9 +132,6 @@ presets:
       fr:
         en: French homepage URL
         fr: URL de la page d'accueil en francais
-      schema:
-        en: Homepage URL
-        fr: URL de la page d'accueil
   languages:
     title:
       en: A list of the programming languages used in the project.
@@ -163,7 +154,6 @@ presets:
         fr:
           en: French licence URL
           fr: URL de la licence en francais
-        schema: *url_generic
       spdxID:
         en: The SPDX Licence identifier - See <a href="https://spdx.org/licenses/">List of licences</a>.
         fr: L'identifiant de licence SPDX - Consultez la <a href="https://spdx.org/licenses/">Liste des licences</a>.
@@ -184,7 +174,6 @@ presets:
       en: Province
       fr: province
     label: *title
-  province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
       en: Information about each library, framework, API or other related software used in this project.
@@ -197,7 +186,6 @@ presets:
         fr:
           en: French URL of related software
           fr: URL francais d'un logiciel connexe
-        schema: *url_generic
       name:
         en:
           en: Name of related software in english
@@ -205,7 +193,6 @@ presets:
         fr:
           en: Name of related software in french
           fr: Nom d'un logiciel connexe en francais
-        schema: *name
     titles:
       URL:
         en: The english and french URLs of related software.
@@ -213,13 +200,6 @@ presets:
       name:
         en: The english and french name of related software.
         fr: Le nom d'un logiciel connexe en anglais et en francais.
-  schemaVersion:
-    title:
-      en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
-      fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
-    label:
-      en: ORE metadata schema version
-      fr: Version du schéma de métadonnées de l'ERO
   submitter:
     title:
       en: Information about submitter
@@ -261,9 +241,6 @@ presets:
       fr:
         en: List of French tags
         fr: Liste d'étiquettes en français
-      schema:
-        en: Tags
-        fr: Étiquettes
     button:
       en: Add more tags
       fr: Ajouter d'autres étiquettes
@@ -281,9 +258,6 @@ code:
       fr:
         en: The name of the project in french
         fr: Le nom du projet en français
-      schema:
-        en: Project name
-        fr: Nom du projet
     labels:
       select:
         en: If you wish to update an already existing code, please select it below
@@ -299,9 +273,6 @@ code:
       fr:
         en: French download URL
         fr: URL de téléchargement en francais
-      schema:
-        en: Download URL
-        fr: URL de téléchargement
   organization:
     title:
       en: The English and French name of the organization or team to which the project belongs.
@@ -313,9 +284,6 @@ code:
       fr:
         en: French organization name
         fr: Nom de l'organisation en français
-      schema:
-        en: Organization
-        fr: Organisation
   partners:
     title:
       en: Information about each group partnering on the project.
@@ -328,7 +296,6 @@ code:
         fr:
           en: French URL of partner
           fr: URL du partenaire en francais
-        schema: *url_generic
       email: *email
       name:
         en:
@@ -337,7 +304,6 @@ code:
         fr:
           en: French name of partner
           fr: Nom du partenaire en francais
-        schema: *name
     titles:
       URL:
         en: The english and french URL to a website about the partner.
@@ -356,9 +322,6 @@ code:
       fr:
         en: French repository URL
         fr: URL du dépôt en francais
-      schema:
-        en: Code Repository URL
-        fr: URL du dépôt de code
   releases:
     title:
       en: Information for each project or source code published.
@@ -377,9 +340,6 @@ software:
       fr:
         en: French project name
         fr: Nom du projet en français
-      schema:
-        en: Project Name
-        fr: Nom du projet
     labels:
       select:
         en: If you wish to update an existing software, please select it below
@@ -395,9 +355,6 @@ software:
       fr:
         en: French use name
         fr: Nom de l'utilisation en français
-      schema:
-        en: Name of the project activity
-        fr: Nom de l'activité du projet.
   usedescription:
     title:
       en: The English and French description of the project activity.
@@ -409,9 +366,6 @@ software:
       fr:
         en: French project activity description
         fr: description du domaine de l'activité du projet en français
-      schema:
-        en: Description of the project activity
-        fr: Description de l'activité du projet.
   users:
     title:
       en: Project Users
@@ -449,9 +403,6 @@ standards:
       fr:
         en: French URL
         fr: Url français
-      schema:
-        en: Specification URL
-        fr: Url de la spécification
   standardCode:
     title:
       en: Code for the Standard
@@ -489,7 +440,6 @@ standards:
         fr:
           en: URL for the reference in french
           fr: Url de la référence en français
-        schema: *url_generic
       name:
         en:
           en: Name of the reference in english
@@ -497,7 +447,6 @@ standards:
         fr:
           en: Name of the reference in french
           fr: Nom de la référence en français
-        schema: *name
     titles:
       URL:
         en: The English and French URLs of the reference.
@@ -531,10 +480,3 @@ admin:
       fr:
         en: Name in french
         fr: Nom en français
-      schema: *name
-  code: *newAdminCode  # simplifies schema build
-  name: *newAdminName  # simplifies schema build
-  administrations:  # simplifies schema build
-    title:
-      en: The list of administrations for a specific organization level (corresponding with the file name)
-      fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)

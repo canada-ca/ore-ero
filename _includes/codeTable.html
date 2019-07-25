@@ -35,7 +35,7 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_organization">{{ site.data.i18n.form.code.organization.label.schema[page.lang] }}</label>
+        <label for="dt_organization">{{ site.data.i18n.tables.organization[page.lang] }}</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value="">&nbsp;</option>
           {%- assign org_arr = "" | split: "," -%}
@@ -114,10 +114,10 @@
       <tr>
         <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.presets.description.label.schema[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.code.organization.label.schema[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.organization[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.languages[page.lang] }}</th>

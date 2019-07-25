@@ -6,13 +6,13 @@ formGroups:
   - preset: selectStandard
   - widget: string-i18n
     title: name
-    param: { rule: alphanum-space }
+    param: {rule: alphanum-space}
   - preset: description
   - preset: dates
-    param: { created: true }
+    param: {created: true}
   - widget: string-i18n
     title: specURL
-    param: { type: url }
+    param: {type: url}
   - widget: string
     title: standardOrg
   - preset: tags
@@ -20,15 +20,15 @@ formGroups:
   - preset: adminCode
   - widget: group
     title: reference
-    param: { more: true }
+    param: {more: true}
     fields:
       - widget: string-i18n
         title: URL
-        param: { type: url }
+        param: {type: url}
       - widget: string-i18n
         title: name
-        param: { rule: names }
+        param: {rule: names}
   - widget: string
     title: status
   - preset: contact
-    param: { phone: false }
+    param: {phone: false}

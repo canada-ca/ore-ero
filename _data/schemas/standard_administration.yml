@@ -4,7 +4,7 @@ contact:
   URL:
     en: str(required=False)
     fr: str(required=False)
-  email: str(required=False)
+  email: str()
   name: str(required=False)
 references:
   - URL:
