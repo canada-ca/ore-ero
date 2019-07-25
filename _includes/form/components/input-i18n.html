@@ -1,6 +1,3 @@
-<input class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.type | default: "text" }}"
-  {%- if include.required == nil or include.required %} required="required"{% endif -%}
-  {%- if include.value %} value="{{ include.value }}"{% endif -%}
-  {%- if include.readonly %} readonly="readonly"{% endif -%}
-  {%- if include.rule %} {{ site.data.forms.rules[include.rule] }}="true"{% endif -%}
-  {%- if include.style %} style="{{ include.style }}"{% endif -%} />
+<input class="form-control" id="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.param.type | default: "text" }}"
+{%- include form/components/required_class.html required=include.param.required -%}
+{%- if include.param.rule %} {{ site.data.forms.rules[include.param.rule] }}="true"{% endif -%} />

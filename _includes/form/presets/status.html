@@ -1,10 +1,10 @@
 {%- assign title = "status" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 <div class="form-group">
-  {% include form/components/label.html id=include.id title=title required=false %}
+  {% include form/components/label.html id=include.idPreset title=title required=false %}
   <select class="form-control" id="{{ title }}" name="{{ title }}">
     <option value="">&nbsp;</option>
-    {%- for options in site.data.i18n.form[include.id][title].options -%}
+    {%- for options in site.data.i18n.form[include.idPreset][title].options -%}
     {%- assign option = options[1] %}
     <option value="{{ option.en }}">{{ option[page.lang] }}</option>
     {%- endfor %}

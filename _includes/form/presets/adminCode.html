@@ -1,7 +1,7 @@
 {%- assign title = "adminCode" %}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 <div class="form-group">
-  {% include form/components/label.html id=include.id title=title %}
+  {% include form/components/label.html id=include.idPreset title=title %}
   <div class="form-group" style="display: flex;">
     <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
       <option value="">&nbsp;</option>
@@ -17,8 +17,8 @@
         </optgroup>
       {%- endfor -%}
     </select>
-    <button type="button" class="btn btn-primary" id="newAdminButton" style="margin-left: 20px;"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.id][title].button[page.lang] }}</button>
+    <button type="button" class="btn btn-primary" id="newAdminButton" style="margin-left: 20px;"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
   </div>
 </div>
 
-{% include form/presets/newAdmin.html id=include.id optional=true -%}
+{% include form/presets/newAdmin.html idPreset=include.idPreset -%}

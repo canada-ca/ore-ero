@@ -1,17 +1,17 @@
 {%- assign title = "date" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 
-{%- if include.created -%}
-  {%- include form/components/group-group.html id=include.id title=title group="created" type="date" rule="dateISO" -%}
+{%- if include.param.created -%}
+  {%- include form/components/group-group.html id=include.idPreset title=title group="created" type="date" rule="dateISO" -%}
 {%- endif -%}
 
-{%- if include.started -%}
-  {%- include form/components/group-group.html id=include.id title=title group="started" type="date" rule="dateISO" -%}
+{%- if include.param.started -%}
+  {%- include form/components/group-group.html id=include.idPreset title=title group="started" type="date" rule="dateISO" -%}
 {%- endif -%}
 
-{%- if include.modified -%}
-  {%- include form/components/group-group.html id=include.id title=title group="lastModified" type="date" rule="dateISO" required=false -%}
+{%- if include.param.modified -%}
+  {%- include form/components/group-group.html id=include.idPreset title=title group="lastModified" type="date" rule="dateISO" required=false -%}
 {%- endif -%}
 
 {%- capture now %}{{ "now" | date: "%Y-%m-%d" }}{% endcapture -%}
-{%- include form/components/group-group.html id=include.id title=title group="metadataLastUpdated" type="date" rule="dateISO" readonly=true value=now -%}
+{%- include form/components/group-group.html id=include.idPreset title=title group="metadataLastUpdated" type="date" rule="dateISO" readonly=true value=now -%}
