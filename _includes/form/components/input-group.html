@@ -1,3 +1,2 @@
 <input class="form-control" id="{{ include.param.prepend }}{{ include.title }}{{ include.group }}" name="{{ include.param.prepend }}{{ include.title }}{{ include.group }}" type="{{ include.param.type | default: "text" }}"
-{%- include form/components/required_class.html required=include.param.required -%}
 {%- if include.param.rule %} {{ site.data.forms.rules[include.param.rule] }}="true"{% endif -%} />
