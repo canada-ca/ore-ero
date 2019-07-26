@@ -11,6 +11,9 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
+    date:
+      created: '2018-01-23'
+      metadataLastUpdated: '2018-11-15'
     status: mandatory-gc
   - adminCode: lac-bac
     contact:
@@ -22,10 +25,10 @@ administrations:
         name:
           en: Guidelines on File Formats for Transferring Information Resources of Enduring Value
           fr: Lignes directrices sur les formats de fichier à utiliser pour transférer des ressources documentaires
+    date:
+      created: '2018-01-23'
+      metadataLastUpdated: '2018-11-15'
     status: preferred-gc
-date:
-  created: '2018-01-23'
-  metadataLastUpdated: '2018-11-15'
 description:
   en: UTF-8 is a variable width character encoding capable of encoding all valid code points in Unicode using one to four 8-bit bytes. The encoding is defined by the Unicode standard.
   fr: UTF-8 est un codage de caractères de largeur variable capable de coder tous les points de code valides en Unicode en utilisant un à quatre octets de 8 bits. Le codage est défini par la norme Unicode.
@@ -35,8 +38,10 @@ name:
 specURL:
   en: 'https://tools.ietf.org/html/rfc3629'
   fr: 'https://tools.ietf.org/html/rfc3629'
-standardCode: UTF-8
-standardsOrg: IETF
+standardAcronym: UTF-8
+standardsOrg:
+  en: IETF
+  fr: IETF
 tags:
   en:
     - Web

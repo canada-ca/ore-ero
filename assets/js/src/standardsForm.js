@@ -7,7 +7,7 @@
   getAdminObject getAdminCode
 */
 
-const standardObj = $('.page-standardsForm #standardCodeselect');
+const standardObj = $('.page-standardsForm #standardAcronymselect');
 const adminObj = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
@@ -36,10 +36,6 @@ $(document).ready(function() {
 function getStandardsObject() {
   let standardsObject = {
     schemaVersion: '1.0',
-    date: {
-      created: $('#datecreated').val(),
-      metadataLastUpdated: $('#datemetadataLastUpdated').val()
-    },
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -52,10 +48,13 @@ function getStandardsObject() {
       en: $('#enspecURL').val(),
       fr: $('#frspecURL').val()
     },
-    standardCode: $('#standardCode')
+    standardAcronym: $('#standardAcronym')
       .val()
       .toUpperCase(),
-    standardsOrg: $('#standardOrg').val(),
+    standardsOrg: {
+      en: $('#enstandardOrg').val(),
+      fr: $('#frstandardOrg').val()
+    },
     tags: {
       en: getTagsEN(),
       fr: getTagsFR()
@@ -65,6 +64,10 @@ function getStandardsObject() {
         adminCode: getAdminCode(),
         contact: {
           email: $('#contactemail').val()
+        },
+        date: {
+          created: $('#datecreated').val(),
+          metadataLastUpdated: $('#datemetadataLastUpdated').val()
         },
         references: [],
         status: $('#status').val()
@@ -118,14 +121,14 @@ function submitStandardsForm() {
 
   let standardObject = getStandardsObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardCode.toLowerCase()}.yml`;
+  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardAcronym.toLowerCase()}.yml`;
 
   fileWriter
     .merge(file, standardObject, 'administrations', 'adminCode')
     .then(result => {
       return fetch(
         PRBOT_URL,
-        getConfigUpdate(result, file, standardObject.standardCode)
+        getConfigUpdate(result, file, standardObject.standardAcronym)
       );
     })
     .catch(err => {
@@ -166,7 +169,7 @@ function getConfigNew(standardsObject, file) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the standard file for ' + standardsObject.standardCode,
+      title: 'Created the standard file for ' + standardsObject.standardAcronym,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -193,7 +196,7 @@ function submitStandardsFormNewAdmin() {
   let standardObject = getStandardsObject();
   let adminObject = getAdminObject();
 
-  let standardName = standardObject.standardCode.toLowerCase();
+  let standardName = standardObject.standardAcronym.toLowerCase();
   let adminName = $('#newAdminCode').val();
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -339,7 +342,7 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#standardCode').val(obj['standardCode']);
+  $('#standardAcronym').val(obj['standardAcronym']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -347,13 +350,14 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#standardOrg').val(obj['standardsOrg']);
+  $('#enstandardOrg').val(obj['standardsOrg']['en']);
+  $('#frstandardOrg').val(obj['standardsOrg']['fr']);
 
   addTags(obj);
 }
 
 function resetFieldsStandard() {
-  $('#standardCode').val('');
+  $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
@@ -361,7 +365,8 @@ function resetFieldsStandard() {
   $('#datecreated').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
-  $('#standardOrg').val('');
+  $('#enstandardOrg').val('');
+  $('#frstandardOrg').val('');
   resetTags();
 }
 

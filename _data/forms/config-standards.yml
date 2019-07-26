@@ -9,13 +9,10 @@ formGroups:
     title: name
     rule: alphanum-space
   - preset: description
-  - preset: dates
-    created: true
-    metadata: true
   - widget: string-i18n
     title: specURL
     type: url
-  - widget: string
+  - widget: string-i18n
     title: standardOrg
   - preset: tags
   - preset: hr
@@ -33,6 +30,9 @@ formGroups:
       - widget: string-i18n
         title: name
         rule: names
+  - preset: dates
+    created: true
+    metadata: true
   - widget: string
     title: status
   - preset: contact
