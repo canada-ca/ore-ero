@@ -1,3 +1,4 @@
+---
 username:
   rule: alphanum-space
 email:
