@@ -10,7 +10,7 @@
 
 var branch = 'master';
 
-var standardSelect = $('.page-standardsForm #standardCodeselect');
+var standardSelect = $('.page-standardsForm #standardAcronymselect');
 var adminSelect = $('.page-standardsForm #adminCode');
 
 $(document).ready(function() {
@@ -53,10 +53,13 @@ function getStandardObject(admin) {
       en: $('#enspecURL').val(),
       fr: $('#frspecURL').val()
     },
-    standardCode: $('#standardCode')
+    standardAcronym: $('#standardAcronym')
       .val()
       .toUpperCase(),
-    standardOrg: $('#standardOrg').val(),
+    standardsOrg: {
+      en: $('#enstandardOrg').val(),
+      fr: $('#frstandardOrg').val()
+    },
     tags: {
       en: getTagsEN(),
       fr: getTagsFR()
@@ -296,7 +299,7 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#standardCode').val(obj['standardCode']);
+  $('#standardAcronym').val(obj['standardAcronym']);
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -304,13 +307,14 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#standardOrg').val(obj['standardOrg']);
+  $('#enstandardOrg').val(obj['standardsOrg']['en']);
+  $('#frstandardOrg').val(obj['standardsOrg']['fr']);
 
   addTags(obj);
 }
 
 function resetFieldsStandard() {
-  $('#standardCode').val('');
+  $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
@@ -318,7 +322,8 @@ function resetFieldsStandard() {
   $('#datecreated').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
-  $('#standardOrg').val('');
+  $('#enstandardOrg').val('');
+  $('#frstandardOrg').val('');
   resetTags();
 }
 

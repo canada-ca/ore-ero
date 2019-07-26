@@ -14,8 +14,10 @@ name:
 specURL:
   en: str()
   fr: str()
-standardCode: str()
-standardOrg: str()
+standardAcronym: str()
+standardsOrg:
+  en: str()
+  fr: str()
 tags:
   en:
     - str()

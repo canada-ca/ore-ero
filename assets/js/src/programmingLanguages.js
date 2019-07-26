@@ -1,7 +1,7 @@
 /* exported addMoreLanguages getLanguages selectLanguage resetLanguages */
 
 function addMoreLanguages() {
-  $(`<div class="control-group additional-languages input-group col-xs-2" style="margin-top:10px" >
+  $(`<div class="control-group additional-languages input-group col-xs-2 mrgn-tp-md">
         <input type="text" id="${'_' +
           Math.random()
             .toString(36)

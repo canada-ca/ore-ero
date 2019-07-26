@@ -1,4 +1,4 @@
-{% assign title = "standardCode" -%}
+{% assign title = "standardAcronym" -%}
 {% assign group = "select" -%}
 <div class="form-group">
   {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.selectStandard %}
@@ -6,7 +6,7 @@
     <option value="">&nbsp;</option>
     {%- for standards in site.data.db.standard.standards -%}
       {%- assign standard = standards[1] %}
-      <option value="{{ standard.standardCode | slugify }}">{{ standard.standardCode }}</option>
+      <option value="{{ standard.standardAcronym | slugify }}">{{ standard.standardAcronym }}</option>
     {%- endfor %}
   </select>
 </div>

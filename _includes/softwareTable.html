@@ -36,7 +36,7 @@
 
       <div class="form-group">
         <label for="dt_tag">{{ site.data.i18n.tables.tag[page.lang] }}</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
           <option value="">&nbsp;</option>
           {%- assign tag_arr = "" | split: "," -%}
           {%- for softwares in site.data.db.software.softwares -%}
@@ -67,7 +67,7 @@
 </div>
 
 <!-- Data Table -->
-<div class="col-md-9" style="margin-bottom: 20px;">
+<div class="col-md-9 mrgn-bttm-lg">
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6], "visible": false}], "paging": true}'>
     <thead>
       <tr>
