@@ -51,7 +51,7 @@ layout: form
 ref: exampleForm
 lang: en
 permalink: /en/example-form.html
-config: config-example # Will fetch _data/forms/config-example.yml
+config: config-example  # Will fetch _data/forms/config-example.yml
 ---
 ```
 
@@ -225,7 +225,7 @@ This preset takes no additional parameters.
 The hr preset is a simple `<hr>` tag, but was created to specify sections in which the fields could be auto-completed when using a select input. For instance, in the Open Source Software form, selecting an already existing project would fill its information, leaving the user to fill only the remaining part of selecting their administration and updating its uses.
 
 This preset takes no additional parameters.
-```
+```yaml
   - preset: hr
 ```
 
@@ -380,9 +380,9 @@ Found under `_includes/[form/schema]/widgets/`, widgets are generic components t
 
 Example: Widget with default values
 ```yaml
-  - widget: example # enum()
+  - widget: example  # enum()
     title: ~
-    type: text # enum()
+    type: text  # enum()
     rule: ~  # enum()
     required: true  # bool
 ```
@@ -450,7 +450,7 @@ In this example, the `required: false` of the parent `group` overwrites the defa
 ```
 In this example, since the required parameter is not specified on the `group` level, all the children are required by default. However, specifying the required parameter on a child has the same behaviour as usual, meaning that, in this case, the `string` child widget, and only this one, would not be required.
 
-*NOTE* : It is not possible to add presets to group widgets.
+*NOTE*: It is not possible to add presets to group widgets.
 
 #### select
 The select widget was created in order to have a more generic version of a `<select>` tag. However, all select widgets were later transformed to presets, as we discovered they were used in more than one form. Currently, the select widget is not used, but since it's already built, I decided to keep it in.
@@ -496,6 +496,7 @@ Then, add a call to your new widget in the form loop (`_includes/form/loop.html`
   {%- case formGroup.widget -%}
     {%- when '[example]' -%}
       {%- include form/widgets/[example].html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required [parameter=formGroup.value] -%}
+        [...]
 ```
 *Don't forget to add the default widget parameters.*
 
@@ -657,7 +658,7 @@ first-level:
         fr: The french value for the french page
   titles:
     widget-name:  # replace widget-name with each widget names
-      # The title is used for the schema page
+                  # The title is used for the schema page
       en: Widget Name
       fr: Nom du widget
     [...]
@@ -753,7 +754,7 @@ layout: form
 ref: exempleForm
 lang: fr
 permalink: /fr/exemple-form.html
-config: exemple-config # Ira chercher _data/forms/config-example.yml
+config: exemple-config  # Ira chercher _data/forms/config-example.yml
 ---
 ```
 ### Page de schéma
@@ -812,12 +813,12 @@ Note: Les "presets" et "widgets" disponibles, ainsi que leurs paramètres, seron
 
 id: exemple
 formGroups:
-  - preset : ~ # enum()
-  - widget : ~ # enum()
+  - preset:  ~  # enum()
+  - widget: ~  # enum()
     title: ~
     type: text
-    rule: ~ # enum()
-    required: true # bool
+    rule: ~  # enum()
+    required: true  # bool
 ```
 ### Presets
 Situé sous le dossier `_includes/[form/schema]/presets/`, les *presets* représentent des sections statiques contenant un ensemble de paramètres prédéfinis. L'ajout de paramètres est rarement nécessaire pour ces sections. Les *preset* sont créés dans une des situations suivantes:
@@ -865,7 +866,7 @@ Ce *preset* accepte un seul et unique paramètre (celui-ci est **optionnel** ) s
 - `phone`: Paramètre booléen permettant de savoir si ce champ (phone/téléphone) devrait être ajouté. Sa valeur par défaut est `true`.
 ```yaml
   - preset: contact
-    phone: true #bool
+    phone: tru  #bool
 ```
 #### Dates
 Ce *preset* représente un groupe de champs relatif aux dates pertinentes du projet: *date de création*, *dernière modification* et *dernière mise à jour*.
@@ -877,9 +878,9 @@ Ce *preset* nécessite trois paramètres **obligatoires** (param. booléen):
 - `modified`: Spécifie s'il est nécessaire de définir la date de la dernière modification.
 ```yaml
   - preset: dates
-    created: false #bool
-    started: false #bool
-    modified: false #bool
+    created: false  #bool
+    started: false  #bool
+    modified: false  #bool
 ```
 À noter que le groupe des dates serait vide au cas ces paramètres n'étaient pas définis, à l'exception de la date de dernière modification: ce paramètre est inclus par défaut et sa valeur correspond à la date de soumission du formulaire.
 Pour optimiser le nombre de lignes de code, vous pouvez définir uniquement les paramètres que vous désirez afficher en leur attribuant la valeur `true`:
@@ -906,7 +907,7 @@ Ce *preset* prend deux paramètre **obligatoires**:
 - `title`: Nom de la structure de donnée dans le schéma (également utilisé pour les traductions, voir la section des *widgets* pour plus d'informations).
 ```yaml
   - preset: empty
-    start: false # bool
+    start: false  # bool
     title: exemple
 # Beginning a group / array
 ```
@@ -1082,11 +1083,11 @@ Contrairement aux *presets*, les *widgets* sont des sections beaucoup plus flexi
 
 Voici un exemple de *widget* avec des valeurs par défaut:
 ```yaml
-  - widget: example # enum()
+  - widget: example  # enum()
     title: ~
-    type: text # enum()
-    rule: ~ # enum()
-    required: true # bool
+    type: text  # enum()
+    rule: ~  # enum()
+    required: true  # bool
 ```
 Dans cet exemple,
 - `widget` (**obligatoire**): définit le type de *widget* à inclure. Ce paramètre doit impérativement être définit, sinon, le formulaire affichera un message d'erreur.
@@ -1094,8 +1095,8 @@ Dans cet exemple,
 
 > Ce paramètre correspond à l'ID utiliser dans le fichier de traduction (`_data/i18n/form.yml`), comme un élément de second ordre après l'ID du formulaire déclaré au début du fichier de configuration.
 > ```yaml
-> example: # L'ID du formulaire
->   title: # Le titre du widget
+> example:  # L'ID du formulaire
+>   title:  # Le titre du widget
 > [...]
 > ```
 > Visitez la section sur les traductions pour plus d'informations.
@@ -1297,8 +1298,8 @@ Voici la bonne façon pour traduire un *widget*:
 
 - Pour chaque *widget*, ajoutez un élément au deuxième niveau (sachant que le premier niveau peut correspondre à *preset*, *admin*, *oss*, etc.). Le nom de ce paramètre doit être identique à la valeur du paramètre `title` présente dans le fichier *config*.Par exemple:
 ```yaml
-first-level: # either preset, admin, code, oss, standard, etc...
-  example: # replace example with the title value of the widget
+first-level:  # either preset, admin, code, oss, standard, etc...
+  example:  # replace example with the title value of the widget
   [...]
 ```
 - Vous aurez également besoin d'ajouter un paramètre au troisième niveau sous le nom de `title`. Ce paramètre renferme la version française et anglaise de la valeur qui le définit. Cette valeur (du paramètre `title`) apparaît en tant que titre d'une section dans la page de formulaire ainsi qu'en description dans la page de schéma. Voici un exemple permettant d'illustrer cette explication:
@@ -1352,7 +1353,7 @@ first-level:
       en: Example
       fr: Exemple
     options:
-      option-name: # where option-name is the value added in the options array in the config file
+      option-name:  # where option-name is the value added in the options array in the config file
         en: Option
         fr: Option
      [...]
@@ -1366,10 +1367,10 @@ first-level:
     en: Example
     fr: Exemple
   labels:
-    string: # replace string with the title of a string widget
+    string:  # replace string with the title of a string widget
       en: The english value for the label
       fr: The french value for the label
-    string-i18n: # replace string-i18n with the title of a string-i18n widget
+    string-i18n:  # replace string-i18n with the title of a string-i18n widget
       en:
         en: The english value for the english page
         fr: Then french value for the english page
@@ -1377,8 +1378,8 @@ first-level:
         en: The english value for the french page
         fr: The french value for the french page
   titles:
-    widget-name: # replace widget-name with each widget names
-                 # The title is used for the schema page
+    widget-name:  # replace widget-name with each widget names
+                  # The title is used for the schema page
       en: Widget Name
       fr: Nom du widget
    [...]
