@@ -2,9 +2,6 @@
 schemaVersion: str()
 administrations:
   - str()
-date:
-  created: str()
-  metadataLastUpdated: str()
 description:
   en: str()
   fr: str()
