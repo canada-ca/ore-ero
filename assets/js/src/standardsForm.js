@@ -287,8 +287,6 @@ function getFinalConfig(config) {
 
 function selectStandard() {
   let standard = standardSelect.val();
-  console.log(standard);
-  console.log('https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/standards/${standard}.yml');
   if (standard != '') {
     $.get(
       `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/standards/${standard}.yml`,

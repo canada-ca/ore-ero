@@ -2,4 +2,4 @@
 permalink: /software.json
 ---
 
-{{ site.data.software | jsonify }}
+{{ site.data.db.software | jsonify }}

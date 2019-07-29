@@ -33,23 +33,23 @@ nav:
       en: ./index.html
       fr: ./index.html
   code:
-    en: Open Source Codes
-    fr: Codes source ouverts
+    en: Open Source Code
+    fr: Code source ouvert
     link:
-      en: ./open-source-codes.html
-      fr: ./codes-source-ouverts.html
+      en: ./open-source-code.html
+      fr: ./code-source-ouvert.html
   software:
     en: Open Source Software
-    fr: Logiciels libres
+    fr: Logiciel libre
     link:
-      en: ./open-source-softwares.html
-      fr: ./logiciels-libres.html
+      en: ./open-source-software.html
+      fr: ./logiciels-libre.html
   standard:
-    en: Open Standards
-    fr: Normes ouvertes
+    en: Open Standard
+    fr: Norme ouverte
     link:
-      en: ./open-standards.html
-      fr: ./normes-ouvertes.html
+      en: ./open-standard.html
+      fr: ./normes-ouverte.html
   doc:
     en: Documentation
     fr: Documentation

@@ -2,4 +2,4 @@
 permalink: /standard.json
 ---
 
-{{ site.data.db.standard | jsonify }}
+{{ site.data.db.code | jsonify }}
