@@ -36,20 +36,20 @@ nav:
     en: Open Source Code
     fr: Code source ouvert
     link:
-      en: ./open-source-code.html
-      fr: ./code-source-ouvert.html
+      en: ./open-source-codes.html
+      fr: ./codes-source-ouverts.html
   software:
     en: Open Source Software
     fr: Logiciel libre
     link:
-      en: ./open-source-software.html
-      fr: ./logiciel-libre.html
+      en: ./open-source-softwares.html
+      fr: ./logiciels-libres.html
   standard:
     en: Open Standard
     fr: Norme ouverte
     link:
-      en: ./open-standard.html
-      fr: ./norme-ouverte.html
+      en: ./open-standards.html
+      fr: ./normes-ouvertes.html
   doc:
     en: Documentation
     fr: Documentation
