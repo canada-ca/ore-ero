@@ -2,4 +2,4 @@
 permalink: /administrations.json
 ---
 
-{{ site.data.administrations | jsonify }}
+{{ site.data.db.administrations | jsonify }}

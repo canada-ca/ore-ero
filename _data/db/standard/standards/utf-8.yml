@@ -16,7 +16,7 @@ specURL:
   en: 'https://tools.ietf.org/html/rfc3629'
   fr: 'https://tools.ietf.org/html/rfc3629'
 standardAcronym: UTF-8
-standardsOrg:
+standardOrg:
   en: IETF
   fr: IETF
 tags:

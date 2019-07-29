@@ -15,7 +15,7 @@ specURL:
   en: str()
   fr: str()
 standardAcronym: str()
-standardsOrg:
+standardOrg:
   en: str()
   fr: str()
 tags:

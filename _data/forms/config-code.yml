@@ -30,7 +30,7 @@ formGroups:
       - widget: string-i18n
         title: name
         param: {required: false, rule: alphanum-space}
-  - preset: licences
+  - preset: licence
     param: {more: true}
   - widget: string-i18n
     title: repositoryUrl

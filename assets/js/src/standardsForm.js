@@ -10,12 +10,12 @@
 
 var branch = 'master';
 
-var standardSelect = $('.page-standardsForm #standardAcronymselect');
-var adminSelect = $('.page-standardsForm #adminCode');
+var standardSelect = $('.page-standardForm #standardAcronymselect');
+var adminSelect = $('.page-standardForm #adminCode');
 
 $(document).ready(function() {
-  $('#prbotSubmitstandardsForm').click(function() {
-    if (submitInit()) submitStandardsForm();
+  $('#prbotSubmitstandardForm').click(function() {
+    if (submitInit()) submitStandardForm();
   });
 
   standardSelect.change(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 function getStandardObject(admin) {
   // Mandatory fields
-  let standardsObject = {
+  let standardObject = {
     schemaVersion: '1.0',
     date: {
       created: $('#datecreated').val(),
@@ -56,7 +56,7 @@ function getStandardObject(admin) {
     standardAcronym: $('#standardAcronym')
       .val()
       .toUpperCase(),
-    standardsOrg: {
+    standardOrg: {
       en: $('#enstandardOrg').val(),
       fr: $('#frstandardOrg').val()
     },
@@ -67,7 +67,7 @@ function getStandardObject(admin) {
     administrations: [admin]
   };
 
-  return standardsObject;
+  return standardObject;
 }
 
 function getStandardAdmin(admin) {
@@ -114,8 +114,8 @@ function getStandardAdmin(admin) {
   return standardAdmin;
 }
 
-function submitStandardsForm() {
-  let submitBtn = $('#prbotSubmitstandardsForm');
+function submitStandardForm() {
+  let submitBtn = $('#prbotSubmitstandardForm');
   let resetBtn = $('#formReset');
   submitBtn.disabled = true;
   resetBtn.disabled = true;
@@ -239,7 +239,7 @@ function getConfigStandard(standardName, standardObject, fileStandard, change) {
       files: [
         {
           path: fileStandard,
-          content: '---\n' + jsyaml.dump(standardObject)
+          content: '\---\n' + jsyaml.dump(standardObject)
         }
       ]
     },
@@ -268,7 +268,7 @@ function getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, change) {
   config.body.description += '\n';
   config.body.files[config.body.files.length] = {
     path: fileStdAdmin,
-    content: '---\n' + jsyaml.dump(stdAdmin)
+    content: '\---\n' + jsyaml.dump(stdAdmin)
   };
 }
 
@@ -276,7 +276,7 @@ function configNewAdmin(config, fileAdmin, adminObject) {
   config.body.title += ' (new administration)';
   config.body.files[config.body.files.length] = {
     path: fileAdmin,
-    content: '---\n' + jsyaml.dump(adminObject)
+    content: '\---\n' + jsyaml.dump(adminObject)
   };
 }
 
@@ -287,6 +287,8 @@ function getFinalConfig(config) {
 
 function selectStandard() {
   let standard = standardSelect.val();
+  console.log(standard);
+  console.log('https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/standards/${standard}.yml');
   if (standard != '') {
     $.get(
       `https://raw.githubusercontent.com/${USERNAME}/${REPO_NAME}/${branch}/_data/db/standard/standards/${standard}.yml`,
@@ -307,8 +309,8 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#enstandardOrg').val(obj['standardsOrg']['en']);
-  $('#frstandardOrg').val(obj['standardsOrg']['fr']);
+  $('#enstandardOrg').val(obj['standardOrg']['en']);
+  $('#frstandardOrg').val(obj['standardOrg']['fr']);
 
   addTags(obj);
 }

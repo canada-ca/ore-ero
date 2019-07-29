@@ -6,7 +6,7 @@ formGroups:
   - preset: selectSoftware
   - preset: description
   - preset: homepageURL
-  - preset: licences
+  - preset: licence
     param: {more: true}
   - preset: tags
   - preset: adminCode

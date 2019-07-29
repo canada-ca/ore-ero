@@ -66,7 +66,7 @@
         <tr>
           <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
           <td>{{ standard.description[page.lang] }}</td>
-          <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardsOrg[page.lang] }}</a></td>
+          <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardOrg[page.lang] }}</a></td>
           <td>
             {%- for tag in standard.tags[page.lang] -%}
               {{ tag }}&nbsp;
