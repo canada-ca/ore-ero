@@ -239,7 +239,7 @@ function getConfigStandard(standardName, standardObject, fileStandard, change) {
       files: [
         {
           path: fileStandard,
-          content: '---\n' + jsyaml.dump(standardObject)
+          content: '\---\n' + jsyaml.dump(standardObject)
         }
       ]
     },
@@ -268,7 +268,7 @@ function getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, change) {
   config.body.description += '\n';
   config.body.files[config.body.files.length] = {
     path: fileStdAdmin,
-    content: '---\n' + jsyaml.dump(stdAdmin)
+    content: '\---\n' + jsyaml.dump(stdAdmin)
   };
 }
 
@@ -276,7 +276,7 @@ function configNewAdmin(config, fileAdmin, adminObject) {
   config.body.title += ' (new administration)';
   config.body.files[config.body.files.length] = {
     path: fileAdmin,
-    content: '---\n' + jsyaml.dump(adminObject)
+    content: '\---\n' + jsyaml.dump(adminObject)
   };
 }
 
@@ -304,7 +304,6 @@ function addValueToFieldsStandard(obj) {
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
   $('#frdescription').val(obj['description']['fr']);
-  $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
   $('#enstandardOrg').val(obj['standardOrg']['en']);
@@ -319,7 +318,6 @@ function resetFieldsStandard() {
   $('#frname').val('');
   $('#endescription').val('');
   $('#frdescription').val('');
-  $('#datecreated').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#enstandardOrg').val('');
@@ -342,9 +340,17 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['contact']['email']) $('#contactemail').val(obj['contact']['email']);
+  $('#contactemail').val(obj['contact']['email']);
 
   if (obj['contact']['name']) $('#contactname').val(obj['contact']['name']);
+  if (obj['contact']['URL']) {
+    if (obj['contact']['URL']['en'])
+      $('#encontactURL').val(obj['contact']['URL']['en']);
+    if (obj['contact']['URL']['fr'])
+      $('#frcontactURL').val(obj['contact']['URL']['fr']);
+  }
+
+  $('#datecreated').val(obj['date']['created']);
 
   $('#enreferenceURL').val(obj['references'][0]['URL']['en']);
   $('#frreferenceURL').val(obj['references'][0]['URL']['fr']);
@@ -359,6 +365,7 @@ function resetFieldsAdmin() {
   $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
+  $('#datecreated').val('');
   $('#enreferenceURL').val('');
   $('#frreferenceURL').val('');
   $('#enreferencename').val('');
