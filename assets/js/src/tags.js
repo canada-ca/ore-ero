@@ -16,12 +16,6 @@ function getTags(query) {
     .get();
 }
 
-function addMoreTags() {
-  let wrapper = $('<div class="copy hide"></div>');
-  tagObject('copy' + Math.random(), '').appendTo(wrapper);
-  wrapper.appendTo('#tags');
-}
-
 function addTags(obj) {
   if (obj['tags']) {
     resetTags();
@@ -64,11 +58,9 @@ function tagObject(id, value) {
 }
 
 $(document).ready(function() {
-  addMoreTags();
   $('.add-more').click(function() {
-    var html = $('.copy').html();
-    $(html).appendTo('#tagsEN');
-    $(html).appendTo('#tagsFR');
+    addMoreTagsHtml('#tagsEN');
+    addMoreTagsHtml('#tagsFR');
   });
 
   $('body').on('click', '.remove', function() {
@@ -77,3 +69,15 @@ $(document).ready(function() {
       .remove();
   });
 });
+
+function addMoreTagsHtml(to) {
+  $(
+    tagObject(
+      '_' +
+        Math.random()
+          .toString(36)
+          .substr(2, 9),
+      ''
+    ).addClass('additional-tag')
+  ).appendTo(to);
+}

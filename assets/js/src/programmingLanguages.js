@@ -26,7 +26,8 @@ function getLanguages() {
 }
 
 function selectLanguage(language) {
-  if ($('#languages .' + language).length == 0) addMoreLanguages(language);
+  if ($('#languages input[name = "' + language + '"]').length == 0)
+    addMoreLanguages(language);
   else $('#languages .' + language).prop('checked', true);
 }
 
