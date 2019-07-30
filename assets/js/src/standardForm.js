@@ -6,6 +6,7 @@
   submitInit submitConclusion
   getAdminObject getAdminCode
   slugify getToday
+  resetMoreGroup addMoreGroup
 */
 
 var branch = 'master';
@@ -132,7 +133,7 @@ function submitStandardForm() {
   let standardObject = getStandardObject(adminCode);
   let standardAdmin = getStandardAdmin(adminCode);
 
-  let standardName = slugify(standardObject.standardCode);
+  let standardName = slugify(standardObject.standardAcronym);
 
   let fileStandard = `_data/db/standard/standards/${slugify(standardName)}.yml`;
   let fileStdAdmin = `_data/db/standard/administrations/${slugify(
@@ -189,19 +190,20 @@ function submitStandardForm() {
                 else throw err;
               })
               .always(function() {
-                getFinalConfig(config);
-                fetch(PRBOT_URL, config).then(function(response) {
-                  submitConclusion(response, submitBtn, resetBtn);
-                });
+                submitStandardFormFinal(config, submitBtn, resetBtn);
               });
           } else {
-            getFinalConfig(config);
-            fetch(PRBOT_URL, config).then(function(response) {
-              submitConclusion(response, submitBtn, resetBtn);
-            });
+            submitStandardFormFinal(config, submitBtn, resetBtn);
           }
         });
     });
+}
+
+function submitStandardFormFinal(config, submitBtn, resetBtn) {
+  getFinalConfig(config);
+  fetch(PRBOT_URL, config).then(function(response) {
+    submitConclusion(response, submitBtn, resetBtn);
+  });
 }
 
 function getConfigNewStandard(standardName, standardObject, fileStandard) {
@@ -239,7 +241,7 @@ function getConfigStandard(standardName, standardObject, fileStandard, change) {
       files: [
         {
           path: fileStandard,
-          content: '\---\n' + jsyaml.dump(standardObject)
+          content: '---\n' + jsyaml.dump(standardObject)
         }
       ]
     },
@@ -268,7 +270,7 @@ function getConfigStdAdmin(config, adminName, stdAdmin, fileStdAdmin, change) {
   config.body.description += '\n';
   config.body.files[config.body.files.length] = {
     path: fileStdAdmin,
-    content: '\---\n' + jsyaml.dump(stdAdmin)
+    content: '---\n' + jsyaml.dump(stdAdmin)
   };
 }
 
@@ -276,7 +278,7 @@ function configNewAdmin(config, fileAdmin, adminObject) {
   config.body.title += ' (new administration)';
   config.body.files[config.body.files.length] = {
     path: fileAdmin,
-    content: '\---\n' + jsyaml.dump(adminObject)
+    content: '---\n' + jsyaml.dump(adminObject)
   };
 }
 
@@ -299,15 +301,15 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#standardAcronym').val(obj['standardAcronym']);
-  $('#enname').val(obj['name']['en']);
-  $('#frname').val(obj['name']['fr']);
-  $('#endescription').val(obj['description']['en']);
-  $('#frdescription').val(obj['description']['fr']);
-  $('#enspecURL').val(obj['specURL']['en']);
-  $('#frspecURL').val(obj['specURL']['fr']);
-  $('#enstandardOrg').val(obj['standardOrg']['en']);
-  $('#frstandardOrg').val(obj['standardOrg']['fr']);
+  $('#standardAcronym').val(obj.standardAcronym);
+  $('#enname').val(obj.name.en);
+  $('#frname').val(obj.name.fr);
+  $('#endescription').val(obj.description.en);
+  $('#frdescription').val(obj.description.fr);
+  $('#enspecURL').val(obj.specURL.en);
+  $('#frspecURL').val(obj.specURL.fr);
+  $('#enstandardOrg').val(obj.standardOrg.en);
+  $('#frstandardOrg').val(obj.standardOrg.fr);
 
   addTags(obj);
 }
@@ -340,24 +342,30 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  $('#contactemail').val(obj['contact']['email']);
+  $('#contactemail').val(obj.contact.email);
 
-  if (obj['contact']['name']) $('#contactname').val(obj['contact']['name']);
-  if (obj['contact']['URL']) {
-    if (obj['contact']['URL']['en'])
-      $('#encontactURL').val(obj['contact']['URL']['en']);
-    if (obj['contact']['URL']['fr'])
-      $('#frcontactURL').val(obj['contact']['URL']['fr']);
+  if (obj.contact.name) $('#contactname').val(obj.contact.name);
+  if (obj.contact.URL) {
+    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
+    if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
   }
 
-  $('#datecreated').val(obj['date']['created']);
+  $('#datecreated').val(obj.date.created);
 
-  $('#enreferenceURL').val(obj['references'][0]['URL']['en']);
-  $('#frreferenceURL').val(obj['references'][0]['URL']['fr']);
-  $('#enreferencename').val(obj['references'][0]['name']['en']);
-  $('#frreferencename').val(obj['references'][0]['name']['fr']);
+  obj.references.forEach(function(reference, i) {
+    let id;
+    if (i == 0) id = '';
+    else {
+      id = i;
+      addMoreGroup($('#addMorereference'));
+    }
+    $('#enreferenceURL' + id).val(reference.URL.en);
+    $('#frreferenceURL' + id).val(reference.URL.fr);
+    $('#enreferencename' + id).val(reference.name.en);
+    $('#frreferencename' + id).val(reference.name.fr);
+  });
 
-  $('#status').val(obj['status']);
+  $('#status').val(obj.status);
 }
 
 function resetFieldsAdmin() {
@@ -366,9 +374,6 @@ function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datecreated').val('');
-  $('#enreferenceURL').val('');
-  $('#frreferenceURL').val('');
-  $('#enreferencename').val('');
-  $('#frreferencename').val('');
+  resetMoreGroup($('#addMorereference'));
   $('#status').val('');
 }

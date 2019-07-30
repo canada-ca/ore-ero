@@ -3,8 +3,6 @@
 
 {%- include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.contact.url -%}
 {%- include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}
-
-{%- assign include.param.required=false -%}
 {%- include form/components/group-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.contact.name -%}
 
 {%- if include.param.phone == nil or include.param.phone == true -%}

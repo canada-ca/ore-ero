@@ -1,4 +1,4 @@
-/* exported addMoreLicences addMoreRelatedCode */
+/* exported addMoreLicences fillLicenceField addMoreRelatedCode resetMoreGroup */
 
 $(document).ready(function() {
   $('.add-more-group').each(function() {
@@ -7,24 +7,46 @@ $(document).ready(function() {
   });
 
   $('.add-more-group').on('click', '.btn-tabs-more', function() {
-    addElement(
+    addMoreGroup(
       $(this)
         .parent()
         .parent()
     );
-    checkForMinusBtn($(this));
   });
 
   $('.add-more-group').on('click', '.btn-tabs-more-remove', function() {
-    $(this)
-      .parent()
-      .parent()
-      .find('li')
-      .last()
-      .remove();
-    checkForMinusBtn($(this));
+    removeMoreGroup(
+      $(this)
+        .parent()
+        .parent()
+    );
   });
 });
+
+function addMoreGroup(group) {
+  addElement(group);
+  checkForMinusBtn(group);
+}
+
+function removeMoreGroup(group) {
+  group
+    .find('li')
+    .last()
+    .remove();
+  checkForMinusBtn(group);
+}
+
+function resetMoreGroup(group) {
+  while (group.find('li').length > 1) removeMoreGroup(group);
+
+  group.find('li').each(function(i, li) {
+    $(li)
+      .find('input')
+      .each(function(j, input) {
+        $(input).val('');
+      });
+  });
+}
 
 function addBtns(obj) {
   $(
@@ -94,6 +116,20 @@ function addMoreLicences(obj) {
       },
       spdxID: $('#licencesspdxID' + id).val()
     };
+  });
+}
+
+function fillLicenceField(licences) {
+  licences.forEach(function(licence, i) {
+    let id;
+    if (i == 0) id = '';
+    else {
+      id = i;
+      addMoreGroup($('#addMorelicences'));
+    }
+    $('#enlicencesURL' + id).val(licence.URL.en);
+    $('#frlicencesURL' + id).val(licence.URL.fr);
+    $('#licencesspdxID' + id).val(licence.spdxID);
   });
 }
 

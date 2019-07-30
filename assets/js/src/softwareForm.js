@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicences
+  addMoreLicences resetMoreGroup addMoreGroup fillLicenceField
   slugify getToday
 */
 
@@ -296,16 +296,13 @@ function selectSoftware() {
 }
 
 function addValueToFieldsSoftware(obj) {
-  // TODO: More-groups
-  $('#enname').val(obj['name']['en']);
-  $('#frname').val(obj['name']['fr']);
-  $('#endescription').val(obj['description']['en']);
-  $('#frdescription').val(obj['description']['fr']);
-  $('#enhomepageURL').val(obj['homepageURL']['en']);
-  $('#frhomepageURL').val(obj['homepageURL']['fr']);
-  $('#enlicencesURL').val(obj['licences'][0]['URL']['en']);
-  $('#frlicencesURL').val(obj['licences'][0]['URL']['fr']);
-  $('#licencesspdxID').val(obj['licences'][0]['spdxID']);
+  $('#enname').val(obj.name.en);
+  $('#frname').val(obj.name.fr);
+  $('#endescription').val(obj.description.en);
+  $('#frdescription').val(obj.description.fr);
+  $('#enhomepageURL').val(obj.homepageURL.en);
+  $('#frhomepageURL').val(obj.homepageURL.fr);
+  fillLicenceField(obj.licences);
   addTags(obj);
 }
 
@@ -316,11 +313,7 @@ function resetFieldsSoftware() {
   $('#frdescription').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
-  $('#enlicencesURL').val('');
-  $('#frlicencesURL').val('');
-  $('#licencesspdxID').val('');
-  $('#enname').focus();
-  $('#frname').focus();
+  resetMoreGroup($('#addMorelicences'));
   resetTags();
 }
 
@@ -339,25 +332,33 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  // TODO: More-groups
-  if (obj['uses'][0]['contact']['URL']) {
-    if (obj['uses'][0]['contact']['URL']['en'])
-      $('#encontactURL').val(obj['uses'][0]['contact']['URL']['en']);
-    if (obj['uses']['contact']['URL']['fr'])
-      $('#frcontactURL').val(obj['uses'][0]['contact']['URL']['fr']);
+  if (obj.uses[0].contact.URL) {
+    if (obj.uses[0].contact.URL.en)
+      $('#encontactURL').val(obj.uses[0].contact.URL.en);
+    if (obj.uses[0].contact.URL.fr)
+      $('#frcontactURL').val(obj.uses[0].contact.URL.fr);
   }
-  if (obj['uses'][0]['contact']['email'])
-    $('#contactemail').val(obj['uses'][0]['contact']['email']);
-  if (obj['uses'][0]['contact']['name'])
-    $('#contactname').val(obj['uses'][0]['contact']['name']);
+  $('#contactemail').val(obj.uses[0].contact.email);
+  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
-  $('#datestarted').val(obj['uses'][0]['date']['started']);
-  $('#useenname').val(obj['uses'][0]['name']['en']);
-  $('#usefrname').val(obj['uses'][0]['name']['fr']);
-  $('#useendescription').val(obj['uses'][0]['description']['en']);
-  $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
+  $('#datestarted').val(obj.uses[0].date.started);
+  $('#useenname').val(obj.uses[0].name.en);
+  $('#usefrname').val(obj.uses[0].name.fr);
+  $('#useendescription').val(obj.uses[0].description.en);
+  $('#usefrdescription').val(obj.uses[0].description.fr);
 
-  if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
+  if (obj.uses[0].users)
+    obj.uses[0].users.forEach(function(user, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup($('#addMoreusers'));
+      }
+      $('#users' + id).val(user);
+    });
+
+  if (obj.uses[0].status) $('#status').val(obj.uses[0].status);
 }
 
 function resetFieldsAdmin() {
@@ -371,4 +372,5 @@ function resetFieldsAdmin() {
   $('#useendescription').val('');
   $('#usefrdescription').val('');
   $('#status').val('');
+  resetMoreGroup($('#addMoreusers'));
 }
