@@ -233,7 +233,7 @@ function getConfigSoftware(softwareName, softwareObject, fileSoftware, change) {
       title: `${change} ${softwareName} (software)`,
       description:
         `Authored by: ${$('#submitteremail').val()}\n` +
-        ` - ***${softwareName}:*** ${softwareObject.description.en}`,
+        ` - ***${softwareName}:*** ${softwareObject.description.en}\n`,
       commit: `Commited by ${$('#submitteremail').val()}\n`,
       author: {
         name: $('#submitterusername').val(),
@@ -260,9 +260,9 @@ function getConfigNewUse(config, adminName, softwareUse, fileUse) {
 
 function getConfigUse(config, adminName, softwareUse, fileUse, change) {
   config.body.title += ` and ${change} use for ${adminName}`;
-  config.body.description += `\n - ***${softwareUse.uses[0].name.en}:*** ${
+  config.body.description += ` - ***${softwareUse.uses[0].name.en}:*** ${
     softwareUse.uses[0].description.en
-  }`;
+  }\n`;
   config.body.files[config.body.files.length] = {
     path: fileUse,
     content: '---\n' + jsyaml.dump(softwareUse)

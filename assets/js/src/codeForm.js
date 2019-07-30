@@ -244,8 +244,9 @@ function submitCodeForm() {
       .then(result => {
         return fetch(
           PRBOT_URL,
-          getConfigUpdateCode(
+          getConfigCode(
             codeName,
+            adminCode,
             codeReleaseObject,
             result,
             fileCodeRelease,
@@ -257,8 +258,9 @@ function submitCodeForm() {
         if (err.status == 404) {
           return fetch(
             PRBOT_URL,
-            getConfigNewCode(
+            getConfigCode(
               codeName,
+              adminCode,
               codeReleaseObject,
               codeAdminObject,
               fileCodeRelease,
@@ -291,7 +293,7 @@ function getConfigNewAdmin(
       description:
         `Authored by: ${$('#submitteremail').val()}\n` +
         ` - ***${codeName}:*** ${codeReleaseObject.description.en}\n` +
-        ` - New ${adminObject.parent} administration ***${adminName}***`,
+        ` - New ${adminObject.parent} administration ***${adminName}***\n`,
       commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
         name: $('#submitterusername').val(),
@@ -316,8 +318,9 @@ function getConfigNewAdmin(
   };
 }
 
-function getConfigUpdateCode(
+function getConfigCode(
   codeName,
+  adminName,
   codeReleaseObject,
   codeAdminObject,
   fileCodeRelease,
@@ -327,45 +330,10 @@ function getConfigUpdateCode(
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `New or Updated ${codeName} (code).`,
+      title: `Created or Updated ${codeName} (code) under ${adminName}`,
       description:
         `Authored by: ${$('#submitteremail').val()}\n` +
-        ` - ***${codeName}:*** Updated`,
-      commit: `Commited by ${$('#submitteremail').val()}`,
-      author: {
-        name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
-      },
-      files: [
-        {
-          path: fileCodeRelease,
-          content: '---\n' + jsyaml.dump(codeReleaseObject)
-        },
-        {
-          path: fileCodeAdmin,
-          content: '---\n' + jsyaml.dump(codeAdminObject)
-        }
-      ]
-    }),
-    method: 'POST'
-  };
-}
-
-function getConfigNewCode(
-  codeName,
-  codeReleaseObject,
-  codeAdminObject,
-  fileCodeRelease,
-  fileCodeAdmin
-) {
-  return {
-    body: JSON.stringify({
-      user: USERNAME,
-      repo: REPO_NAME,
-      title: `New code: ${codeName}.`,
-      description:
-        `Authored by: ${$('#submitteremail').val()}\n` +
-        ` - ***${codeName}:*** ${codeReleaseObject.description.en}`,
+        ` - ***${codeName}:*** ${codeReleaseObject.description.en}\n`,
       commit: `Commited by ${$('#submitteremail').val()}`,
       author: {
         name: $('#submitterusername').val(),
@@ -387,6 +355,7 @@ function getConfigNewCode(
 }
 
 function selectAdmin() {
+  resetFields();
   let lang = $('html').attr('lang');
   let admin = adminSelect.val();
   $('.additional-option').remove();
@@ -417,14 +386,12 @@ function selectAdmin() {
         .prop('disabled', true)
         .parent()
         .addClass('hide');
-      resetFields();
     });
   } else {
     $('#nameselect')
       .prop('disabled', true)
       .parent()
       .addClass('hide');
-    resetFields();
   }
 }
 
