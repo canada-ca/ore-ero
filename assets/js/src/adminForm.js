@@ -62,7 +62,9 @@ function resetNewAdminForm() {
 
 function getAdminObject() {
   let adminObject = {
-    code: $('#newAdminCode').val(),
+    code: $('#newAdminCode')
+      .val()
+      .toLowerCase(),
     provinceCode: $('#provinceSelect').val(),
     name: {
       en: $('#ennewAdminName').val(),
