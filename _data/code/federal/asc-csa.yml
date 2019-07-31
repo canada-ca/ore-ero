@@ -3,18 +3,15 @@ schemaVersion: '1.0'
 adminCode: asc-csa
 releases:
   - contact:
-      URL:
-        en: 'https://projects.eclipse.org/projects/technology.apogy/contact'
-        fr: 'https://projects.eclipse.org/projects/technology.apogy/contact'
       email: apogy-dev@eclipse.org
     date:
       created: '2015-09-28'
-      metadataLastUpdated: '2019-01-31'
+      metadataLastUpdated: '2019-07-31'
     description:
-      en: The one-stop-shop solution for operating robots, satellites and beyond
-      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
-    languages:
-      - Java
+      en: 'The one-stop-shop solution for operating robots, satellites and beyond'
+      fr: >-
+        Un logiciel polyvalent pour faire fonctionner des robots et des
+        satellites
     name:
       en: Apogy
       fr: Apogy
@@ -33,3 +30,6 @@ releases:
       fr:
         - Robots
         - Espace
+    category: '43231500'
+    languages:
+      - Java
