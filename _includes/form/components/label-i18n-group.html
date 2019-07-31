@@ -1,4 +1,4 @@
 {%- capture path -%}{{ include.prepend }}{{ include.title }}{%- endcapture -%}
 <label for="{{ include.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}"
   {%- if include.required == nil or include.required %} class="required"{% endif -%}
->{{ site.data.i18n.form[include.id][path].labels[include.group][include.lang][page.lang] }}</label>
+><span class="field-name">{{ site.data.i18n.form[include.id][path].labels[include.group][include.lang][page.lang] }}</span></label>
