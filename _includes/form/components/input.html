@@ -1,2 +1,7 @@
 <input class="form-control" id="{{ include.param.prepend }}{{ include.title }}" name="{{ include.param.prepend }}{{ include.title }}" type="{{ include.param.type | default: "text" }}"
-{%- if include.param.rule %} {{ site.data.forms.rules[include.param.rule] }}="true"{% endif -%}{% if include.param.type == "tel" %} placeholder="123-456-7890"{% endif %} />
+{%- if include.param.rule %} {{ site.data.forms.rules[include.param.rule] }}="true"{% endif -%}{% if include.param.type == "tel" %} placeholder="123-456-7890"{% endif %}
+{%- if include.param.rule -%}
+  {%- assign rules = include.rule | split: ',' -%}
+  {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
+{%- endif -%}
+{%- if include.required == nil or include.required %} required="required"{% endif %} />
