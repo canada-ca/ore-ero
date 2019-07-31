@@ -8,8 +8,13 @@ releases:
       created: '2018-10-21'
       metadataLastUpdated: '2019-01-18'
     description:
-      en: Vehicle safety recalls Amazon Alexa Skill.
-      fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
+      whatItDoes:
+        en: Vehicle safety recalls Amazon Alexa Skill.
+        fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43233500'
     languages:
       - JavaScript
     name:
@@ -41,8 +46,13 @@ releases:
       created: '2018-10-14'
       metadataLastUpdated: '2018-10-29'
     description:
-      en: The Reference Centre is .net WPF application that was designed for Transport Canada Inspectors to quickly retrieve documents stored on a network drive that was setup with Windows Sync (Always Available Offline).
-      fr: Le Centre de référence est une application WPF .net conçue pour permettre aux inspecteurs de Transports Canada de récupérer rapidement les documents stockés sur un lecteur réseau configuré avec Windows Sync.
+      whatItDoes:
+        en: The Reference Centre is .net WPF application that was designed for Transport Canada Inspectors to quickly retrieve documents stored on a network drive that was setup with Windows Sync (Always Available Offline).
+        fr: Le Centre de référence est une application WPF .net conçue pour permettre aux inspecteurs de Transports Canada de récupérer rapidement les documents stockés sur un lecteur réseau configuré avec Windows Sync.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232200'
     languages:
       - C#
     name:

@@ -10,6 +10,8 @@
   {%- case formGroup.preset -%}
     {%- when 'adminCode' -%}
       {% include form/presets/adminCode.html id=idPreset -%}
+    {%- when 'categorySelect' -%}
+      {% include form/presets/categorySelect.html id=idPreset -%}
     {%- when 'contact' -%}
       {% include form/presets/contact.html id=idPreset phone=formGroup.phone required=formGroup.required -%}
     {%- when 'dates' -%}

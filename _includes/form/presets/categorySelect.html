@@ -1,0 +1,14 @@
+{%- assign title = "categorySelect" -%}
+{%- include form/components/title.html id=include.id title=title -%}
+
+<div class="form-group">
+
+{%- include form/components/label.html id=include.id title=title %}
+  <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
+    <option value="">&nbsp;</option>
+    {%- for categories in site.data.i18n.categories -%}
+    {%- assign category = categories[1] %}
+    <option value="{{ category.value }}">{{ category[page.lang] }}</option>
+    {%- endfor %}
+  </select>
+</div>

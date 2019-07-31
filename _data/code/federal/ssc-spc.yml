@@ -8,8 +8,13 @@ releases:
       created: '2013-10-06'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
-      fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
+      whatItDoes:
+        en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
+        fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
       - C
@@ -39,8 +44,13 @@ releases:
       created: '2018-12-09'
       metadataLastUpdated: '2019-03-06'
     description:
-      en: Enterprise architecture models
-      fr: Modèles d'architecture d'entreprise
+      whatItDoes:
+        en: Enterprise architecture models
+        fr: Modèles d'architecture d'entreprise
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232400'
     name:
       en: GC Architecture
       fr: Architecture GC

@@ -74,13 +74,17 @@ function getCodeObject() {
 
   // Handle optional fields
   if ($('#endescriptionhow').val() || $('#frdescriptionhow').val()) {
-    codeObject.releases[0].description.how = {};
+    codeObject.releases[0].description.howItWorks = {};
   }
   if ($('#endescriptionhow').val()) {
-    codeObject.releases[0].description.how.en = $('#endescriptionhow').val();
+    codeObject.releases[0].description.howItWorks.en = $(
+      '#endescriptionhow'
+    ).val();
   }
   if ($('#frdescriptionhow').val()) {
-    codeObject.releases[0].description.how.fr = $('#frdescriptionhow').val();
+    codeObject.releases[0].description.howItWorks.fr = $(
+      '#frdescriptionhow'
+    ).val();
   }
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeObject.releases[0].contact.URL = {};
@@ -104,6 +108,10 @@ function getCodeObject() {
     codeObject.releases[0].date.lastModified = $('#datelastModified')
       .val()
       .toString();
+  }
+
+  if ($('#categorySelect :selected').val()) {
+    codeObject.releases[0].category = $('#categorySelect :selected').val();
   }
 
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
@@ -394,9 +402,7 @@ function selectAdmin() {
   let admin = adminObj.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
-      result
-    ) {
+    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         $('#nameselect')
@@ -435,9 +441,7 @@ function selectCode() {
   let admin = adminObj.val();
   let code = codeObj.val();
   if (code != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
-      result
-    ) {
+    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         resetFields();
@@ -472,14 +476,15 @@ function getOrgLevel(result, admin) {
 function addValueToFields(obj) {
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescriptionwhat').val(obj.description.what.en);
-  $('#frdescriptionwhat').val(obj.description.what.fr);
+  $('#endescriptionwhat').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhat').val(obj.description.whatItDoes.fr);
+  $('#categorySelect').val(obj.category);
 
-  if (obj.description.how) {
-    if (obj.description.how.en)
-      $('#endescriptionhow').val(obj.description.how.en);
-    if (obj.description.how.fr)
-      $('#frdescriptionhow').val(obj.description.how.fr);
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhow').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhow').val(obj.description.howItWorks.fr);
   }
 
   if (obj.contact.url) {
@@ -561,6 +566,7 @@ function resetFields() {
   $('#frdescriptionwhat').val('');
   $('#endescriptionhow').val('');
   $('#frdescriptionhow').val('');
+  $('#categorySelect').val('');
   $('#encontactURL').val('');
   $('#frcontactURL').val('');
   $('#contactemail').val('');

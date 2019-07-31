@@ -8,8 +8,13 @@ releases:
       created: '2014-08-21'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: GC digital collaboration platform (GCconnex and GCcollab)
-      fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
+      whatItDoes:
+        en: GC digital collaboration platform (GCconnex and GCcollab)
+        fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
+      howItWorks:
+        en: null
+        fr: null
+    category: '43233500'
     languages:
       - PHP
       - MySQL
@@ -44,8 +49,13 @@ releases:
       created: '2017-04-09'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
-      fr: digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository.
+      whatItDoes:
+        en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
+        fr: Digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232100'
     name:
       en: CDS Website
       fr: Site Web SNC
@@ -71,8 +81,13 @@ releases:
       created: '2013-08-11'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
-      fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+      whatItDoes:
+        en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
+        fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232100'
     name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l'expérience Web (BOEW)
@@ -98,8 +113,13 @@ releases:
       created: '2012-12-09'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Government of Canada CKAN Extension
-      fr: Extension à CKAN du Gouvernement du Canada
+      whatItDoes:
+        en: Government of Canada CKAN Extension
+        fr: Extension à CKAN du Gouvernement du Canada
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
     name:
@@ -136,8 +156,13 @@ releases:
       created: '2016-06-05'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Store CKAN resources against multiple cloud providers.
-      fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
+      whatItDoes:
+        en: Store CKAN resources against multiple cloud providers.
+        fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
     name:
@@ -174,7 +199,13 @@ releases:
       created: '2013-09-08'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Easy, shareable custom CKAN schemas
+      whatItDoes:
+        en: Easy, shareable custom CKAN schemas
+        fr: Schémas CKAN personnalisés faciles à partager
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
     name:
@@ -211,7 +242,13 @@ releases:
       created: '2013-04-07'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Command line interface and Python module for accessing the CKAN Action API
+      whatItDoes:
+        en: Command line interface and Python module for accessing the CKAN Action API
+        fr: Interface en ligne de commande et un module en Python pour accéder à l'API CKAN
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
     name:
@@ -248,7 +285,13 @@ releases:
       created: '2013-09-08'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Multilingual metadata fields for CKAN
+      whatItDoes:
+        en: Multilingual metadata fields for CKAN
+        fr: Champs de métadonnées multilingues pour CKAN
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     languages:
       - Python
     name:
@@ -284,8 +327,13 @@ releases:
       created: '2017-12-31'
       metadataLastUpdated: '2019-03-06'
     description:
-      en: This Website and all the data.
-      fr: Ce site Web et toutes les données.
+      whatItDoes:
+        en: This Website and all the data.
+        fr: Ce site Web et toutes les données.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: Open Resource Exchange
       fr: Échange de Ressource Ouvert

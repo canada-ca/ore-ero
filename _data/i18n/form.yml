@@ -65,6 +65,16 @@ presets:
     button:
       en: Add new administration
       fr: Ajouter une nouvelle administration
+  categorySelect:
+    title:
+      en: Category
+      fr: Catégorie
+    label:
+      en: Category
+      fr: Catégorie
+    infobulle:
+      en: Select the best fit category for the project. Categories in the drop-down list correspond to the Software Family of the UNSPSC Taxonomy codes.
+      fr: Choisir la catégorie qui correspond le plus à l'activité du projet. Les catégories proposées dans la liste correpondent à la famille des logiciels de la taxonomie UNSPSC.
   contact:
     title:
       en: Contact information for the project.

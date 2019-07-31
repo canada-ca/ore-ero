@@ -11,8 +11,13 @@ releases:
       created: '2016-10-23'
       metadataLastUpdated: '2019-01-29'
     description:
-      en: B.C. Developer Exchange Application
-      fr: Application Échange de développeurs C.-B.
+      whatItDoes:
+        en: B.C. Developer Exchange Application
+        fr: Application Échange de développeurs C.-B.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232400'
     languages:
       - Python
     name:
@@ -41,8 +46,13 @@ releases:
       created: '2015-04-29'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: Groundwater Wells and Aquifers application for the Ministry of Environment.
-      fr: Application de puits d'eau souterraine et d'aquifères pour le ministère de l'environnement.
+      whatItDoes:
+        en: Groundwater Wells and Aquifers application for the Ministry of Environment.
+        fr: Application de puits d'eau souterraine et d'aquifères pour le ministère de l'environnement.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     homepageURL:
       en: 'https://apps.nrs.gov.bc.ca/gwells/'
       fr: 'https://apps.nrs.gov.bc.ca/gwells/'
@@ -74,8 +84,13 @@ releases:
       created: '2017-10-20'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: Web application for the DevHub.
-      fr: Application Web pour le DevHub.
+      whatItDoes:
+        en: Web application for the DevHub.
+        fr: Application Web pour le DevHub.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232400'
     homepageURL:
       en: 'https://developer.gov.bc.ca/'
       fr: 'https://developer.gov.bc.ca/'
@@ -107,8 +122,13 @@ releases:
       created: '2014-03-20'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: BC Data Catalogue source code.
-      fr: Code source du catalogue de données BC.
+      whatItDoes:
+        en: BC Data Catalogue source code.
+        fr: Code source du catalogue de données BC.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     homepageURL:
       en: 'http://catalogue.data.gov.bc.ca'
       fr: 'http://catalogue.data.gov.bc.ca'

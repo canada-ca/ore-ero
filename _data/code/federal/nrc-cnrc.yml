@@ -8,8 +8,13 @@ releases:
       created: '2012-11-25'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Toolkit to perform Monte Carlo simulation of ionizing radiation transport through matter
-      fr: Boîte à outils pour effectuer une simulation de Monte Carlo du transport du rayonnement ionisant à travers la matière
+      whatItDoes:
+        en: Toolkit to perform Monte Carlo simulation of ionizing radiation transport through matter
+        fr: Boîte à outils pour effectuer une simulation de Monte Carlo du transport du rayonnement ionisant à travers la matière
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232600'
     languages:
       - C++
     name:
