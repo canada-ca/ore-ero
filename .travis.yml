@@ -3,7 +3,7 @@ rvm:
 - 2.6.0
 
 jdk:
-- openjdk11
+- openjdk10
 
 install:
 - bundle install
