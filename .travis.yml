@@ -3,7 +3,7 @@ rvm:
 - 2.6.0
 
 jdk:
-- oraclejdk13
+- oraclejdk14
 
 install:
 - bundle install
