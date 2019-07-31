@@ -4,4 +4,4 @@
   {%- assign rules = include.rule | split: ',' -%}
   {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
 {%- endif -%}
-{%- if include.required == nil or include.required %} required="required"{% endif %} />
+{%- if include.param.required == nil or include.param.required %} required="required"{% endif %} />
