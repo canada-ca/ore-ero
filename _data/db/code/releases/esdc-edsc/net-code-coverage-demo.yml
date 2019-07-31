@@ -8,7 +8,9 @@ date:
   metadataLastUpdated: '2019-02-21'
 description:
   en: A .Net test app for the Code Coverage reporting dashboard
-  fr: Une application de test .Net pour le tableau de bord de rapports de couverture de code
+  fr: >-
+    Une application de test .Net pour le tableau de bord de rapports de
+    couverture de code
 name:
   en: .Net Code Coverage Demo
   fr: Démo de couverture de code .Net

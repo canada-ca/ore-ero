@@ -9,7 +9,9 @@ date:
   metadataLastUpdated: '2018-03-26'
 description:
   en: Command line interface and Python module for accessing the CKAN Action API
-  fr: Interface de ligne de commande et module Python pour accéder à l'API d'action CKAN
+  fr: >-
+    Interface de ligne de commande et module Python pour accéder à l'API
+    d'action CKAN
 languages:
   - Python
 name:

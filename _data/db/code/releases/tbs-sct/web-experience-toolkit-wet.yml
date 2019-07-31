@@ -7,8 +7,12 @@ date:
   created: '2013-08-11'
   metadataLastUpdated: '2019-01-31'
 description:
-  en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
-  fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+  en: >-
+    Building websites that are accessible, usable, interoperable, mobile
+    friendly and multilingual
+  fr: >-
+    Construire des sites Web accessibles, faciles d'emploi, interopérables,
+    optimisés pour les appareils mobiles et multilingues
 name:
   en: Web Experience Toolkit (WET)
   fr: Boîte à outils de l'expérience Web (BOEW)

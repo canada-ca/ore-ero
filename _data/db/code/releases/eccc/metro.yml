@@ -7,8 +7,12 @@ date:
   created: '2006-08-28'
   metadataLastUpdated: '2019-01-31'
 description:
-  en: The Model of the Environment and Temperature of Roads (METRo) is a road forecast software.
-  fr: Le Modèle de l'Environnement et de la Température de la Route (METRo) est un logiciel de prévision de la température de la route.
+  en: >-
+    The Model of the Environment and Temperature of Roads (METRo) is a road
+    forecast software.
+  fr: >-
+    Le Modèle de l'Environnement et de la Température de la Route (METRo) est un
+    logiciel de prévision de la température de la route.
 languages:
   - Python
 name:

@@ -17,10 +17,10 @@ function getTags(query) {
 }
 
 function addTags(obj) {
-  if (obj['tags']) {
+  if (obj.tags) {
     resetTags();
     let index = 0;
-    obj['tags']['en'].forEach(function(tag) {
+    obj.tags.en.forEach(function(tag) {
       if (index == 0) $('#entags').val(tag);
       else
         tagObject('entags' + index, tag)
@@ -29,7 +29,7 @@ function addTags(obj) {
       index++;
     });
     index = 0;
-    obj['tags']['fr'].forEach(function(tag) {
+    obj.tags.fr.forEach(function(tag) {
       if (index == 0) $('#frtags').val(tag);
       else
         tagObject('frtags' + index, tag)

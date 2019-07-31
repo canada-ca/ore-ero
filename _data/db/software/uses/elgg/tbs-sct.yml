@@ -14,7 +14,9 @@ uses:
       fr: GCcollab
     description:
       en: External social networking platform hosted by the Government of Canada
-      fr: Plateforme de réseautage social externe hébergée par le gouvernement du Canada
+      fr: >-
+        Plateforme de réseautage social externe hébergée par le gouvernement du
+        Canada
   - contact:
       URL:
       en: 'https://github.com/gctools-outilsgc/gcconnex/issues'

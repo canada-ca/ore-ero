@@ -2,7 +2,9 @@
 schemaVersion: '1.0'
 description:
   en: Text editor and Notepad replacement that runs in the Windows environment.
-  fr: Éditeur de textes et remplacement pour Notepad qui fonctionne dans l'environement Windows.
+  fr: >-
+    Éditeur de textes et remplacement pour Notepad qui fonctionne dans
+    l'environement Windows.
 homepageURL:
   en: 'https://notepad-plus-plus.org'
   fr: 'https://notepad-plus-plus.org/fr'

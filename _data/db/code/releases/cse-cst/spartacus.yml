@@ -10,8 +10,13 @@ date:
   created: '2016-02-28'
   metadataLastUpdated: '2019-01-31'
 description:
-  en: Learning environment that aims in helping students learn the basis of assembly programming and operating system development
-  fr: Environnement visant à aider les étudiants à apprendre les bases de la programmation assembleur et du développement de systèmes d'exploitation. C'est un environnement portable et facile à apprendre
+  en: >-
+    Learning environment that aims in helping students learn the basis of
+    assembly programming and operating system development
+  fr: >-
+    Environnement visant à aider les étudiants à apprendre les bases de la
+    programmation assembleur et du développement de systèmes d'exploitation.
+    C'est un environnement portable et facile à apprendre
 languages:
   - Python
 name:
@@ -19,8 +24,10 @@ name:
   fr: Spartacus
 licences:
   - URL:
-      en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
-      fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
+      en: >-
+        https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
+      fr: >-
+        https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
     spdxID: GPL-2.0
 repositoryURL:
   en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'

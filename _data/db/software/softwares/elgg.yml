@@ -2,7 +2,9 @@
 schemaVersion: '1.0'
 description:
   en: Highly customizable web framework and CMS for building social apps
-  fr: Framework Web hautement personnalisable et CMS pour créer des applications sociales
+  fr: >-
+    Framework Web hautement personnalisable et CMS pour créer des applications
+    sociales
 homepageURL:
   en: 'https://elgg.org/'
   fr: 'https://elgg.org/'
