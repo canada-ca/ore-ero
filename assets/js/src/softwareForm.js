@@ -37,7 +37,7 @@ $(document).ready(function() {
 function getSoftwareUse(admin) {
   // Mandatory fields
   let softwareUse = {
-    adminCode: admin,
+    administration: admin,
     uses: [
       {
         contact: {
