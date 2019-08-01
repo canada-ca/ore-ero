@@ -1,8 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application.
-  fr: Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web.
+  en: >-
+    Laravel Enterprise Starter Kit, is a template project based on the Laravel
+    framework, combining a set of features that can kick start any Web
+    application.
+  fr: >-
+    Laravel Enterprise Starter Kit, est un projet de modèle basé sur le
+    framework Laravel, combinant un ensemble de fonctionnalités qui peuvent
+    démarrer n'importe quelle application Web.
 homepageURL:
   en: 'https://lesk.it'
   fr: 'https://lesk.it'
@@ -60,3 +66,16 @@ administrations:
         description:
           en: COSMOS and ROCA Admin and Reporting Tool.
           fr: COSMOS and ROCA Admin and Reporting Tool.
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: aaaa@hotmail.com
+        date:
+          started: '2019-08-15'
+          metadataLastUpdated: '2019-07-31'
+        description:
+          en: sss
+          fr: ssssa
+        name:
+          en: asas
+          fr: sasas
