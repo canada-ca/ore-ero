@@ -11,11 +11,15 @@ releases:
       phone: str(required=False)
     date:
       created: str()
-      lastModified: str(required=False)
       metadataLastUpdated: str()
     description:
-      en: str()
-      fr: str()
+      whatItDoes:
+        en: str()
+        fr: str()
+      howItWorks:
+        en: str(required=False)
+        fr: str(required=False)
+    category: str()
     downloadURL:
       en: str(required=False)
       fr: str(required=False)
