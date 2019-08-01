@@ -86,28 +86,9 @@ function getCodeObject() {
       '#frdescriptionhow'
     ).val();
   }
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL = {};
-  }
-  if ($('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL.en = $('#encontactURL').val();
-  }
-  if ($('#frcontactURL').val()) {
-    codeObject.releases[0].contact.URL.fr = $('#frcontactURL').val();
-  }
 
   if ($('#contactname').val()) {
     codeObject.releases[0].contact.name = $('#contactname').val();
-  }
-
-  if ($('#contactphone').val()) {
-    codeObject.releases[0].contact.phone = $('#contactphone').val();
-  }
-
-  if ($('#datelastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#datelastModified')
-      .val()
-      .toString();
   }
 
   if ($('#categorySelect :selected').val()) {
@@ -154,8 +135,6 @@ function getCodeObject() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     if (
-      $('#enpartnersURL' + id).val() ||
-      $('#frpartnersURL' + id).val() ||
       $('#partnersemail' + id).val() ||
       $('#enpartnersname' + id).val() ||
       $('#frpartnersname' + id).val()
@@ -163,20 +142,6 @@ function getCodeObject() {
       if (codeObject.releases[0].partners == undefined)
         codeObject.releases[0].partners = [];
       codeObject.releases[0].partners[i] = {};
-    }
-
-    if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL = {};
-    }
-    if ($('#enpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.en = $(
-        '#enpartnersURL' + id
-      ).val();
-    }
-    if ($('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.fr = $(
-        '#frpartnersURL' + id
-      ).val();
     }
 
     if ($('#partnersemail' + id).val()) {
@@ -402,7 +367,9 @@ function selectAdmin() {
   let admin = adminObj.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         $('#nameselect')
@@ -441,7 +408,9 @@ function selectCode() {
   let admin = adminObj.val();
   let code = codeObj.val();
   if (code != '') {
-    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         resetFields();
@@ -487,16 +456,10 @@ function addValueToFields(obj) {
       $('#frdescriptionhow').val(obj.description.howItWorks.fr);
   }
 
-  if (obj.contact.url) {
-    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
-  }
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
-  if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.datelastModified);
 
   $('#enlicensesURL').val(obj.licenses[0].URL.en);
   $('#frlicensesURL').val(obj.licenses[0].URL.fr);
@@ -529,16 +492,10 @@ function addValueToFields(obj) {
     if (obj.organizations.fr) $('#frorganization').val(obj.organizations.fr);
   }
 
-  if (obj.partners) {
-    if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enpartnersURL').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frpartnersURL').val(obj.partners.URL.fr);
-    }
-    if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
-    if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
-    }
+  if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
+  if (obj.partners.name) {
+    if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
+    if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
   }
 
   if (obj.relatedCode) {
@@ -567,13 +524,9 @@ function resetFields() {
   $('#endescriptionhow').val('');
   $('#frdescriptionhow').val('');
   $('#categorySelect').val('');
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#contactphone').val('');
   $('#datecreated').val('');
-  $('#datelastModified').val('');
   $('#enlicensesURL').val('');
   $('#frlicensesURL').val('');
   $('#licensesspdxID').val('');
@@ -587,8 +540,6 @@ function resetFields() {
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
-  $('#enpartnersURL').val('');
-  $('#frpartnersURL').val('');
   $('#partnersemail').val('');
   $('#enpartnersname').val('');
   $('#frpartnersname').val('');

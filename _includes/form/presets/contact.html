@@ -1,17 +1,13 @@
 {%- assign title = "contact" -%}
 {%- include form/components/title.html id=include.id title=title -%}
 
-{%- include form/components/group-i18n-group.html id=include.id title=title group="URL" required=false -%}
-
 {%- if include.required == nil or include.required == true -%}
   {% assign required = true -%}
 {%- else -%}
   {% assign required = false -%}
 {%- endif -%}
+{%- include form/components/group-group.html id=include.id title=title group="name" required=false -%}
 {%- include form/components/group-group.html id=include.id title=title group="email" required=required type="email" -%}
 
-{%- include form/components/group-group.html id=include.id title=title group="name" required=false -%}
 
-{%- if include.phone == nil or include.phone == true -%}
-  {%- include form/components/group-group.html id=include.id title=title group="phone" type="tel" required=false rule="phone" -%}
-{%- endif -%}
+

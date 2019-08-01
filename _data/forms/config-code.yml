@@ -32,14 +32,11 @@ formGroups:
     more: true
     fields:
       - widget: string-i18n
-        title: URL
-        type: url
+        title: name
+        rule: alphanum-space
       - widget: string
         title: email
         type: email
-      - widget: string-i18n
-        title: name
-        rule: alphanum-space
   - preset: licenses
   - widget: string-i18n
     title: repositoryUrl
