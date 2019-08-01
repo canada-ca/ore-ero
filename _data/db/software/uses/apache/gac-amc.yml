@@ -1,17 +1,4 @@
 ---
 administration: gac-amc
 uses:
-  - contact:
-      URL:
-      en: 'https://www.international.gc.ca'
-      fr: 'https://www.international.gc.ca'
-      email: sebastien.routier@international.gc.ca
-    date:
-      started: '2019-05-06'
-      metadataLastUpdated: '2019-05-16'
-    name:
-      en: Misc
-      fr: Divers
-    description:
-      en: Used to server many Web sites.
-      fr: Utilisé pour servir plusieur site Web.
+  - Misc

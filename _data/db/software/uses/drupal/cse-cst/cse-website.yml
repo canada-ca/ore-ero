@@ -1,0 +1,14 @@
+---
+contact:
+  email: webmaster@cse-cst.gc.ca
+date:
+  started: '2019-05-06'
+  metadataLastUpdated: '2019-05-13'
+name:
+  en: CSE Website
+  fr: Site Web du CST
+description:
+  en: CST Website Creation
+  fr: Création de site Web du CST
+users:
+  - public

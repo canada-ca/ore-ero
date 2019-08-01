@@ -1,14 +1,4 @@
 ---
 administration: mtl_qc
 uses:
-  - contact:
-      email: libre@ville.montreal.qc.ca
-    date:
-      started: '2017-06-30'
-      metadataLastUpdated: '2019-05-10'
-    description:
-      en: Data managment.
-      fr: Gestion des données.
-    name:
-      en: Software Database Management Systems.
-      fr: Logiciels de systèmes de gestion de base de données.
+  - Software Database Management Systems.

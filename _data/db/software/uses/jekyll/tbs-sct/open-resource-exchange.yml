@@ -1,0 +1,20 @@
+---
+contact:
+  URL:
+    en: 'https://github.com/canada-ca/ore-ero/issues'
+    fr: 'https://github.com/canada-ca/ore-ero/issues'
+  email: sebastien.lemay@tbs-sct.gc.ca
+name:
+  en: Open Resource Exchange
+  fr: Échange de ressources ouvert
+date:
+  started: '2018-01-23'
+  metadataLastUpdated: '2019-05-06'
+description:
+  en: Github Pages
+  fr: Pages Github
+relatedCode:
+  en: 'https://github.com/canada-ca/ore-ero'
+  fr: 'https://github.com/canada-ca/ore-ero'
+users:
+  - public

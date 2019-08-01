@@ -1,14 +1,4 @@
 ---
 administration: tbs-sct
 uses:
-  - contact:
-      email: mark.wooff@tbs-sct.gc.ca
-    date:
-      started: '2019-05-06'
-      metadataLastUpdated: '2019-05-13'
-    name:
-      en: GCcollab Docs
-      fr: Docs GCcollab
-    description:
-      en: Integrated with GCcollab
-      fr: Intégré avec GCcollab
+  - GCcollab Docs

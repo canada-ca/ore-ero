@@ -10,6 +10,7 @@ formGroups:
     param: {more: true}
   - preset: tags
   - preset: adminCode
+  - preset: selectSoftwareAdmin
   - preset: contact
     param: {phone: false}
   - preset: dates
