@@ -9,23 +9,15 @@ formGroups:
   - preset: empty
     start: true
     title: releases
-  - preset: description
-  - preset: categorySelect
-  - preset: contact
-  - preset: dates
-    created: true
-    modified: true
-    updated: true
-  - widget: string-i18n
-    title: downloadUrl
-    type: url
-    required: false
-  - preset: homepageURL
-  - preset: languages
   - widget: string-i18n
     title: organization
     rule: alphanum-space
     required: false
+  - preset: status
+  - preset: description
+  - preset: categorySelect
+  - preset: tags
+  - preset: contact
   - widget: group
     title: partners
     required: false
@@ -37,11 +29,18 @@ formGroups:
       - widget: string
         title: email
         type: email
-  - preset: licenses
+  - preset: dates
+    created: true
+    updated: true
   - widget: string-i18n
     title: repositoryUrl
     type: url
+  - preset: homepageURL
+  - widget: string-i18n
+    title: downloadUrl
+    type: url
+    required: false
+  - preset: licenses
+  - preset: languages
   - preset: relatedCode
-  - preset: tags
-  - preset: status
   - preset: empty
