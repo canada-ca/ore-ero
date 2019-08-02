@@ -6,4 +6,4 @@
     {%- assign rules = include.rule | split: ',' -%}
     {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
   {%- endif -%}
-  {%- if include.style %} style="{{ include.style }}"{% endif %} />
+  {%- if include.style %} style="{{ include.style }}"{% endif %}>

@@ -111,7 +111,7 @@ presets:
       fr: Sélectionnez la date de création du code source ouvert.
   description:
     title:
-      en: Project description
+      en: Project Description
       fr: Description du projet
     labels:
       what:
@@ -137,9 +137,9 @@ presets:
     charactersLimit:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
-      schema:
-        en: Description
-        fr: Description
+    infobulle:
+      en: Add brief descriptions on what the code does (i.e. functionnality, use..) and on how it works.  
+      fr: Ajoutez une brève description du code, expliquant de quoi il s'agit et comment il fonctionne.
   homepageURL:
     title:
       en: Project Homepage
@@ -156,7 +156,7 @@ presets:
       fr: Ajouter les URLs pour accéder à la page d'accueil du projet.
   languages:
     title:
-      en: Programming languages 
+      en: Programming Languages 
       fr: Languages de programmation
     button:
       en: Add more languages
@@ -200,7 +200,7 @@ presets:
   province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
-      en: Related softwares
+      en: Related Softwares
       fr: Logiciels connexes
     labels:
       URL:
@@ -288,7 +288,7 @@ presets:
 code:
   name:
     title:
-      en: Project name 
+      en: Project Name 
       fr: Nom du projet
     infobulle:
       en: Add the name of the project.
@@ -301,7 +301,7 @@ code:
         en: French name
         fr: Nom en français
       schema:
-        en: Project name
+        en: Project Name
         fr: Nom du projet
     limitCharacters:
       en: (150 characters limit)
@@ -326,8 +326,8 @@ code:
       fr: Ajouter les URLs pour télécharger le projet
   organization:
     title:
-      en: Team, branch or sector within your public administration
-      fr: Équipe, direction ou secteur de l'administration publique
+      en: Team, branch or sector 
+      fr: Équipe, direction ou secteur
     infobulle:
       en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat. 
       fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
@@ -361,7 +361,7 @@ code:
   repositoryUrl:
     title:
       en: Project Public Repository
-      fr: répertoire public du projet
+      fr: Répertoire public du projet
     label:
       en:
         en: English repository URL
