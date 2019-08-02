@@ -201,7 +201,7 @@
             {%- endif -%}
 
             <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
-            <td>{{ release.description[page.lang] }}</td>
+            <td>{{ release.description.whatItDoes[page.lang] }}</td>
             <td>
               {%- for license in release.licenses -%}
                 <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
