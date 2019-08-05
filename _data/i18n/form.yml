@@ -426,8 +426,8 @@ software:
       en: Informations about software users.
       fr: Information à propos des utilisateurs du logiciel
 
-# Standards form specifics
-standards:
+# Standard form specifics
+standard:
   name:
     title:
       en: Name of the Standard

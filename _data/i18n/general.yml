@@ -44,8 +44,8 @@ nav:
     link:
       en: ./open-source-software.html
       fr: ./logiciels-libres.html
-  standards:
-    en: Open Standards
+  standard:
+    en: Open Standard
     fr: Normes ouvertes
     link:
       en: ./open-standards.html
