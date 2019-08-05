@@ -29,9 +29,6 @@ email: &email
 name: &name
   en: Name
   fr: Nom
-phone: &phone
-  en: Phone number
-  fr: Numéro de téléphone
 URL: &url
   en:
     en: English URL
@@ -68,8 +65,8 @@ presets:
       email: *email
       name: *name
       phone:
-        en: Contact number (###-###-####)
-        fr: Numéro du contact (###-###-####)
+        en: Contact number
+        fr: Numéro du contact
     titles:
       URL:
         en: English and French URLs that can be used to contact the project.

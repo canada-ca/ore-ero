@@ -1,4 +1,5 @@
 <input class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}" name="{{ include.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}" type="{{ include.type | default: "text" }}"
+  {%- if include.type == "tel" %} placeholder="123-456-7890"{% endif %}
   {%- if include.required == nil or include.required %} required="required"{% endif -%}
   {%- if include.value %} value="{{ include.value }}"{% endif -%}
   {%- if include.readonly %} readonly="readonly"{% endif -%}
