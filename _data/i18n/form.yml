@@ -366,7 +366,7 @@ code:
       fr: Informations pour chaque projet ou code source publié.
 
 # Software form specifics
-oss:
+software:
   name:
     title:
       en: The English and French name of the project.
@@ -471,7 +471,7 @@ standards:
     label:
       en:
         en: English name
-        fr: Nom en anglais 
+        fr: Nom en anglais
       fr:
         en: french name
         fr: Nom en français

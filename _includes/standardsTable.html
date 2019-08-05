@@ -21,7 +21,7 @@
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
           <option value="">&nbsp;</option>
           {%- assign tag_array = "" | split: ',' -%}
-          {%- for standards in site.data.normes_ouvertes-open_standards -%}
+          {%- for standards in site.data.standard -%}
             {%- assign standard = standards[1] -%}
             {%- for tag in standard.tags[page.lang] -%}
               {%- assign tag_array = tag_array | push: tag -%}
@@ -62,7 +62,7 @@
     </thead>
     <tbody>
 
-      {%- for standards in site.data.normes_ouvertes-open_standards -%}
+      {%- for standards in site.data.standard -%}
         {%- assign standard = standards[1] -%}
         <tr>
           <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
@@ -101,7 +101,7 @@
 </div>
 
 <!-- Modal Lightboxes -->
-{%- for standards in site.data.normes_ouvertes-open_standards -%}
+{%- for standards in site.data.standard -%}
   {%- assign standard = standards[1] -%}
 
   <section id="{{ standard.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">

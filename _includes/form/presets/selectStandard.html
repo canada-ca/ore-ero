@@ -4,7 +4,7 @@
   {% include form/components/label-group.html id=include.id title=title group=group required=false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
-    {%- for standards in site.data.normes_ouvertes-open_standards -%}
+    {%- for standards in site.data.standard -%}
       {%- assign standard = standards[1] %}
       <option value="{{ standard.standardAcronym }}">{{ standard.standardAcronym }}</option>
     {%- endfor %}

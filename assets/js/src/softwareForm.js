@@ -8,12 +8,12 @@
   addMoreLicenses
 */
 
-const ossObj = $('.page-ossForm #nameselect');
-const adminObj = $('.page-ossForm #adminCode');
+const softwareObj = $('.page-softwareForm #nameselect');
+const adminObj = $('.page-softwareForm #adminCode');
 
 $(document).ready(function() {
-  ossObj.change(function() {
-    selectOss();
+  softwareObj.change(function() {
+    selectSoftware();
     if (adminObj.val() != '') selectAdmin();
   });
 
@@ -21,10 +21,10 @@ $(document).ready(function() {
     selectAdmin();
   });
 
-  $('#prbotSubmitossForm').click(function() {
+  $('#prbotSubmitsoftwareForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val() != '') submitSoftwareFormNewAdmin();
-      else submitFormOss();
+      else submitFormSoftware();
     }
   });
 
@@ -34,9 +34,9 @@ $(document).ready(function() {
   });
 });
 
-function getOssObject() {
+function getsoftwareObject() {
   // Handles mandatory fields
-  let ossObject = {
+  let softwareObject = {
     schemaVersion: '1.0',
     description: {
       en: $('#endescription').val(),
@@ -82,29 +82,33 @@ function getOssObject() {
   };
 
   // Handle more-groups
-  addMoreLicenses(ossObject);
+  addMoreLicenses(softwareObject);
 
   // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    ossObject.administrations[0].uses[0].contact.URL = {};
+    softwareObject.administrations[0].uses[0].contact.URL = {};
   }
   if ($('#encontactURL').val()) {
-    ossObject.administrations[0].uses[0].contact.URL.en = $(
+    softwareObject.administrations[0].uses[0].contact.URL.en = $(
       '#encontactURL'
     ).val();
   }
   if ($('#frcontactURL').val()) {
-    ossObject.administrations[0].uses[0].contact.URL.fr = $(
+    softwareObject.administrations[0].uses[0].contact.URL.fr = $(
       '#frcontactURL'
     ).val();
   }
 
   if ($('#contactname').val()) {
-    ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
+    softwareObject.administrations[0].uses[0].contact.name = $(
+      '#contactname'
+    ).val();
   }
 
   if ($('#status :selected').val() != '') {
-    ossObject.administrations[0].uses[0].status = $('#status :selected').val();
+    softwareObject.administrations[0].uses[0].status = $(
+      '#status :selected'
+    ).val();
   }
 
   // Optional more-group
@@ -112,13 +116,15 @@ function getOssObject() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     if ($('#users' + id).val() != '') {
-      if (ossObject.administrations[0].uses[0].users == undefined)
-        ossObject.administrations[0].uses[0].users = [];
-      ossObject.administrations[0].uses[0].users[i] = $('#users' + id).val();
+      if (softwareObject.administrations[0].uses[0].users == undefined)
+        softwareObject.administrations[0].uses[0].users = [];
+      softwareObject.administrations[0].uses[0].users[i] = $(
+        '#users' + id
+      ).val();
     }
   });
 
-  return ossObject;
+  return softwareObject;
 }
 
 function getSelectedOrgType() {
@@ -131,12 +137,12 @@ function getSelectedOrgType() {
 }
 
 function submitSoftwareFormNewAdmin() {
-  let submitButton = document.getElementById('prbotSubmitossForm');
+  let submitButton = document.getElementById('prbotSubmitsoftwareForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let softwareObject = getOssObject();
+  let softwareObject = getsoftwareObject();
   let adminObject = getAdminObject();
   let softwareName = $('#enname')
     .val()
@@ -264,13 +270,13 @@ function getConfigNewSoftwareNewAdmin(
   };
 }
 
-function submitFormOss() {
-  let submitButton = document.getElementById('prbotSubmitossForm');
+function submitFormSoftware() {
+  let submitButton = document.getElementById('prbotSubmitSoftwareForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let softwareObject = getOssObject();
+  let softwareObject = getsoftwareObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname')
     .val()
@@ -357,16 +363,16 @@ function getConfigNew(softwareObject, file, ProjectName) {
   };
 }
 
-function selectOss() {
-  let value = ossObj.val().toLowerCase();
+function selectSoftware() {
+  let value = softwareObj.val().toLowerCase();
   $.getJSON(
     'https://canada-ca.github.io/ore-ero/logiciels_libres-open_source_software.json',
     function(result) {
       if (result[value]) {
-        addValueToFieldsOss(result[value]);
+        addValueToFieldsSoftware(result[value]);
         $('#adminCode').focus();
       } else if (value == '') {
-        resetFieldsOss();
+        resetFieldsSoftware();
       } else {
         alert('Error retrieving the data');
       }
@@ -374,7 +380,7 @@ function selectOss() {
   );
 }
 
-function addValueToFieldsOss(obj) {
+function addValueToFieldsSoftware(obj) {
   $('#enname').val(obj['name']['en']);
   $('#frname').val(obj['name']['fr']);
   $('#endescription').val(obj['description']['en']);
@@ -387,7 +393,7 @@ function addValueToFieldsOss(obj) {
   addTags(obj);
 }
 
-function resetFieldsOss() {
+function resetFieldsSoftware() {
   $('#enname').val('');
   $('#frname').val('');
   $('#endescription').val('');
@@ -403,25 +409,24 @@ function resetFieldsOss() {
 }
 
 function selectAdmin() {
-  let oss = ossObj.val().toLowerCase();
+  let software = softwareObj.val().toLowerCase();
   let administration = adminObj.val();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/logiciels_libres-open_source_software.json',
-    function(result) {
-      if (result[oss]) {
-        for (let i = 0; i < result[oss]['administrations'].length; i++) {
-          if (
-            result[oss]['administrations'][i]['adminCode'] == administration
-          ) {
-            addValueToFieldsAdmin(result[oss]['administrations'][i]);
-            break;
-          } else {
-            resetFieldsAdmin();
-          }
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+    result
+  ) {
+    if (result[software]) {
+      for (let i = 0; i < result[software]['administrations'].length; i++) {
+        if (
+          result[software]['administrations'][i]['adminCode'] == administration
+        ) {
+          addValueToFieldsAdmin(result[software]['administrations'][i]);
+          break;
+        } else {
+          resetFieldsAdmin();
         }
       }
     }
-  );
+  });
 }
 
 function addValueToFieldsAdmin(obj) {

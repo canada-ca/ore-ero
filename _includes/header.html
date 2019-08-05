@@ -52,7 +52,7 @@
       <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
       <ul role="menu" aria-orientation="vertical">
         <li role="presentation"><a role="menuitem" href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
-        <li role="presentation"><a role="menuitem" href="{{ site.data.i18n.general.nav.oss.link[page.lang] }}">{{ site.data.i18n.general.nav.oss[page.lang] }}</a></li>
+        <li role="presentation"><a role="menuitem" href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></li>
         <li role="presentation"><a role="menuitem" href="{{ site.data.i18n.general.nav.standards.link[page.lang] }}">{{ site.data.i18n.general.nav.standards[page.lang] }}</a></li>
         <li role="presentation"><a role="menuitem" href="{{ site.data.i18n.general.nav.doc.link[page.lang] }}">{{ site.data.i18n.general.nav.doc[page.lang] }}</a></li>
       </ul>
@@ -72,8 +72,8 @@
           <li><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
         {%- endif -%}
 
-        {% if page.ref == "ossSchema" -%}
-          <li><a href="{{ site.data.i18n.general.nav.oss.link[page.lang] }}">{{ site.data.i18n.general.nav.oss[page.lang] }}</a></li>
+        {% if page.ref == "softwareSchema" -%}
+          <li><a href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></li>
         {%- endif %}
       </ol>
     </div>

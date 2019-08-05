@@ -1,0 +1,5 @@
+---
+permalink: /standards.json
+---
+
+{{ site.data.standard | jsonify }}
