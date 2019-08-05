@@ -295,11 +295,11 @@ code:
       fr: Ajouter le nom du projet.
     label:
       en:
-        en: English name <h6><small>(100 characters limit)</small></h6>
-        fr: Nom en anglais <h6><small>(Limite de 100 caractères)</small></h6>
+        en: English name
+        fr: Nom en anglais
       fr:
-        en: French name <h6><small>(100 characters limit)</small></h6>
-        fr: Nom en français <h6><small>(Limite de 100 caractères)</small></h6>
+        en: French name
+        fr: Nom en français
       schema:
         en: Project Name
         fr: Nom du projet
@@ -307,6 +307,9 @@ code:
       select:
         en: If you wish to update an already existing code, please select it below
         fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+    charactersLimit:
+      en: (100 characters limit)
+      fr: (limite de 100 caractères)
   downloadUrl:
     title:
       en: Project Download Page
