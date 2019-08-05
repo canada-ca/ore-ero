@@ -7,8 +7,8 @@
   getAdminObject getAdminCode
 */
 
-const standardObj = $('.page-standardsForm #standardAcronymselect');
-const adminObj = $('.page-standardsForm #adminCode');
+const standardObj = $('.page-standardForm #standardAcronymselect');
+const adminObj = $('.page-standardForm #adminCode');
 
 $(document).ready(function() {
   standardObj.change(function() {
@@ -20,10 +20,10 @@ $(document).ready(function() {
     selectAdmin();
   });
 
-  $('#prbotSubmitstandardsForm').click(function() {
+  $('#prbotSubmitstandardForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitStandardsFormNewAdmin();
-      else submitStandardsForm();
+      if ($('#newAdminCode').val() != '') submitStandardFormNewAdmin();
+      else submitStandardForm();
     }
   });
 
@@ -33,8 +33,8 @@ $(document).ready(function() {
   });
 });
 
-function getStandardsObject() {
-  let standardsObject = {
+function getStandardObject() {
+  let standardObject = {
     schemaVersion: '1.0',
     description: {
       en: $('#endescription').val(),
@@ -51,7 +51,7 @@ function getStandardsObject() {
     standardAcronym: $('#standardAcronym')
       .val()
       .toUpperCase(),
-    standardsOrg: {
+    standardOrg: {
       en: $('#enstandardOrg').val(),
       fr: $('#frstandardOrg').val()
     },
@@ -79,7 +79,7 @@ function getStandardsObject() {
   $('#addMorereference ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    standardsObject.administrations[0].references[i] = {
+    standardObject.administrations[0].references[i] = {
       URL: {
         en: $('#enreferenceURL' + id).val(),
         fr: $('#frreferenceURL' + id).val()
@@ -93,35 +93,31 @@ function getStandardsObject() {
 
   // Handles optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    standardsObject.administrations[0].contact.URL = {};
+    standardObject.administrations[0].contact.URL = {};
   }
   if ($('#encontactURL').val()) {
-    standardsObject.administrations[0].contact.URL.en = $(
-      '#encontactURL'
-    ).val();
+    standardObject.administrations[0].contact.URL.en = $('#encontactURL').val();
   }
   if ($('#frcontactURL').val()) {
-    standardsObject.administrations[0].contact.URL.fr = $(
-      '#frcontactURL'
-    ).val();
+    standardObject.administrations[0].contact.URL.fr = $('#frcontactURL').val();
   }
 
   if ($('#contactname').val()) {
-    standardsObject.administrations[0].contact.name = $('#contactname').val();
+    standardObject.administrations[0].contact.name = $('#contactname').val();
   }
 
-  return standardsObject;
+  return standardObject;
 }
 
-function submitStandardsForm() {
-  let submitButton = document.getElementById('prbotSubmitstandardsForm');
+function submitStandardForm() {
+  let submitButton = document.getElementById('prbotSubmitstandardForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let standardObject = getStandardsObject();
+  let standardObject = getStandardObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let file = `_data/normes_ouvertes-open_standards/${standardObject.standardAcronym.toLowerCase()}.yml`;
+  let file = `_data/standard/${standardObject.standardAcronym.toLowerCase()}.yml`;
 
   fileWriter
     .merge(file, standardObject, 'administrations', 'adminCode')
@@ -164,12 +160,12 @@ function getConfigUpdate(result, file, code) {
   };
 }
 
-function getConfigNew(standardsObject, file) {
+function getConfigNew(standardObject, file) {
   return {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the standard file for ' + standardsObject.standardAcronym,
+      title: 'Created the standard file for ' + standardObject.standardAcronym,
       description: 'Authored by: ' + $('#submitteremail').val() + '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -179,7 +175,7 @@ function getConfigNew(standardsObject, file) {
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(standardsObject)
+          content: '---\n' + jsyaml.dump(standardObject)
         }
       ]
     }),
@@ -187,20 +183,20 @@ function getConfigNew(standardsObject, file) {
   };
 }
 
-function submitStandardsFormNewAdmin() {
-  let submitButton = document.getElementById('prbotSubmitstandardsForm');
+function submitStandardFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitstandardForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let standardObject = getStandardsObject();
+  let standardObject = getStandardObject();
   let adminObject = getAdminObject();
 
   let standardName = standardObject.standardAcronym.toLowerCase();
   let adminName = $('#newAdminCode').val();
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let standardFile = `_data/normes_ouvertes-open_standards/${standardName}.yml`;
+  let standardFile = `_data/standard/${standardName}.yml`;
   let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   fileWriter
@@ -326,19 +322,18 @@ function getConfigNewStandardNewAdmin(
 
 function selectStandard() {
   let value = standardObj.val().toLowerCase();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
-    function(result) {
-      if (result[value]) {
-        addValueToFieldsStandard(result[value]);
-        $('#adminCode').focus();
-      } else if (value == '') {
-        resetFieldsStandard();
-      } else {
-        alert('Error retrieving the data');
-      }
+  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
+    result
+  ) {
+    if (result[value]) {
+      addValueToFieldsStandard(result[value]);
+      $('#adminCode').focus();
+    } else if (value == '') {
+      resetFieldsStandard();
+    } else {
+      alert('Error retrieving the data');
     }
-  );
+  });
 }
 
 function addValueToFieldsStandard(obj) {
@@ -350,8 +345,8 @@ function addValueToFieldsStandard(obj) {
   $('#datecreated').val(obj['date']['created']);
   $('#enspecURL').val(obj['specURL']['en']);
   $('#frspecURL').val(obj['specURL']['fr']);
-  $('#enstandardOrg').val(obj['standardsOrg']['en']);
-  $('#frstandardOrg').val(obj['standardsOrg']['fr']);
+  $('#enstandardOrg').val(obj['standardOrg']['en']);
+  $('#frstandardOrg').val(obj['standardOrg']['fr']);
 
   addTags(obj);
 }
@@ -373,26 +368,24 @@ function resetFieldsStandard() {
 function selectAdmin() {
   let standard = standardObj.val().toLowerCase();
   let administration = adminObj.val();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/normes_ouvertes-open_standards.json',
-    function(result) {
-      if (result[standard]) {
-        for (let i = 0; i < result[standard]['administrations'].length; i++) {
-          if (
-            result[standard]['administrations'][i]['adminCode'] ==
-            administration
-          ) {
-            addValueToFieldsAdmin(result[standard]['administrations'][i]);
-            break;
-          } else {
-            resetFieldsAdmin();
-          }
+  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
+    result
+  ) {
+    if (result[standard]) {
+      for (let i = 0; i < result[standard]['administrations'].length; i++) {
+        if (
+          result[standard]['administrations'][i]['adminCode'] == administration
+        ) {
+          addValueToFieldsAdmin(result[standard]['administrations'][i]);
+          break;
+        } else {
+          resetFieldsAdmin();
         }
-      } else {
-        resetFieldsAdmin();
       }
+    } else {
+      resetFieldsAdmin();
     }
-  );
+  });
 }
 
 function addValueToFieldsAdmin(obj) {

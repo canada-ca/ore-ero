@@ -9,7 +9,7 @@ name:
 specURL:
   en: 'http://www.example.com/en'
   fr: 'http://www.exemple.com/fr'
-standardsOrg:
+standardOrg:
   en: Example
   fr: Exemple
 tags:
