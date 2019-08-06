@@ -1,10 +1,4 @@
-<input class="form-control" id="{{ include.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.type | default: "text" }}"
-  {%- if include.type == "tel" %} placeholder="123-456-7890"{% endif %}
-  {%- if include.required == nil or include.required %} required="required"{% endif -%}
-  {%- if include.value %} value="{{ include.value }}"{% endif -%}
-  {%- if include.readonly %} readonly="readonly"{% endif -%}
-  {%- if include.rule -%}
-    {%- assign rules = include.rule | split: ',' -%}
-    {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
-  {%- endif -%}
-  {%- if include.style %} style="{{ include.style }}"{% endif %} />
+<input class="form-control" id="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.param.type | default: "text" }}"
+{%- if include.param.type == "tel" %} placeholder="123-456-7890"{% endif -%}
+{% include form/components/rules.html rules=include.param.rule %}
+{%- if include.param.required == nil or include.param.required %} required="required"{% endif %} />

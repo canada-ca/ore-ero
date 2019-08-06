@@ -19,7 +19,7 @@ releases:
     organization:
       en: Digital Enablement Division
       fr: Division de la mobilisation numérique
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
           fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
@@ -52,7 +52,7 @@ releases:
     organization:
       en: Canadian Digital Services
       fr: Services numériques Canadiens
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
           fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
@@ -76,7 +76,7 @@ releases:
     name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l'expérience Web (BOEW)
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
           fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'
@@ -108,7 +108,7 @@ releases:
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
           fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
@@ -146,7 +146,7 @@ releases:
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'
           fr: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr'
@@ -183,7 +183,7 @@ releases:
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr'
@@ -220,7 +220,7 @@ releases:
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanapi/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanapi/blob/master/COPYING.fr'
@@ -257,7 +257,7 @@ releases:
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING.fr'
@@ -289,7 +289,7 @@ releases:
     name:
       en: Open Resource Exchange
       fr: Échange de Ressource Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
           fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'

@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://php.net'
   fr: 'https://php.net'
-licenses:
+licences:
   - URL:
       en: 'https://php.net/license/index.php'
       fr: 'https://php.net/license/index.php'

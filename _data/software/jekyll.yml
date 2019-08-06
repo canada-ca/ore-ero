@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://jekyllrb.com/'
   fr: 'https://jekyllrb.com/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'
       fr: 'https://github.com/jekyll/jekyll/blob/master/LICENSE'

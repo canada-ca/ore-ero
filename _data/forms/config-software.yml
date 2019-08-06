@@ -3,33 +3,32 @@
 id: software
 
 formGroups:
-  - preset: schemaVersion
   - preset: selectSoftware
   - preset: description
   - preset: homepageURL
-  - preset: licenses
+  - preset: licences
+    param: {more: true}
   - preset: tags
   - preset: empty
-    start: true
     title: administrations
+    param: {start: true}
   - preset: adminCode
   - preset: empty
-    start: true
     title: uses
+    param: {start: true}
   - preset: contact
-    phone: false
+    param: {phone: false}
   - preset: dates
-    started: true
+    param: {started: true}
   - widget: string-i18n
     title: description
-    prepend: use
+    param: {prepend: use}
   - widget: string-i18n
     title: name
-    prepend: use
+    param: {prepend: use}
   - preset: status
   - widget: string
     title: users
-    required: false
-    more: true
+    param: {required: false, more: true}
   - preset: empty
   - preset: empty

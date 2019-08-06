@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.drupal.org'
   fr: 'https://www.drupal.org'
-licenses:
+licences:
   - URL:
       en: 'https://www.drupal.org/about/licensing#drupal-license'
       fr: 'https://www.drupal.org/about/licensing#drupal-license'

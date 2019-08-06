@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.linux.org'
   fr: 'https://www.linux.org'
-licenses:
+licences:
   - URL:
       en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
       fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'

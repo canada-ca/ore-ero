@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'http://etherpad.org/'
   fr: 'http://etherpad.org/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/ether/etherpad-lite/blob/develop/LICENSE'
       fr: 'https://github.com/ether/etherpad-lite/blob/develop/LICENSE'

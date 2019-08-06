@@ -18,7 +18,7 @@ releases:
     name:
       en: Spartacus
       fr: Spartacus
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
           fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
@@ -48,7 +48,7 @@ releases:
     name:
       en: Assemblyline
       fr: Assemblyline
-    licenses:
+    licences:
       - URL:
           en: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
           fr: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'

@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://example.com/'
   fr: 'https://example.com/'
-licenses:
+licences:
   - URL:
       en: 'https://example.com/repo/example/LICENCE-en'
       fr: 'https://example.com/repo/example/LICENCE-fr'

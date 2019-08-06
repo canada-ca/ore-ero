@@ -18,7 +18,7 @@ releases:
     name:
       en: Devex
       fr: Devex
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
           fr: 'https://github.com/BCDevExchange/devex/blob/develop/LICENSE'
@@ -51,7 +51,7 @@ releases:
     name:
       en: gwells
       fr: gwells
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/bcgov/gwells/blob/release/LICENSE'
           fr: 'https://github.com/bcgov/gwells/blob/release/LICENSE'
@@ -84,7 +84,7 @@ releases:
     name:
       en: devhub-app-web
       fr: devhub-app-web
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'
           fr: 'https://github.com/bcgov/devhub-app-web/blob/master/LICENSE'
@@ -117,7 +117,7 @@ releases:
     name:
       en: ckanext-bcgov
       fr: ckanext-bcgov
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
           fr: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'

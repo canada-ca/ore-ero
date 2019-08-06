@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://rocket.chat'
   fr: 'https://rocket.chat'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
       fr: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'

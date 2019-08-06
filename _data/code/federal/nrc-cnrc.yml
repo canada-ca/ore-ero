@@ -15,7 +15,7 @@ releases:
     name:
       en: EGSnrc
       fr: EGSnrc
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
           fr: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'

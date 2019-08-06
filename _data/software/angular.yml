@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://angular.io/'
   fr: 'https://angular.io/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/angular/angular/blob/master/LICENSE'
       fr: 'https://github.com/angular/angular/blob/master/LICENSE'

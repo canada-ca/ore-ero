@@ -1,41 +1,23 @@
 {%- assign title = "adminCode" %}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 <div class="form-group">
-  {% include form/components/label.html id=include.id title=title %}
+  {% include form/components/label.html id=include.idPreset title=title %}
   <div class="form-group" style="display: flex;">
     <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
       <option value="">&nbsp;</option>
-      <optgroup data-value="{{ site.data.i18n.administrations.federal.value }}" label="{{ site.data.i18n.administrations.federal[page.lang] }}">
-        {%- for org in site.data.administrations.federal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {% endfor %}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.provincial.value }}" label="{{ site.data.i18n.administrations.provincial[page.lang] }}">
-        {%- for org in site.data.administrations.provincial -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.municipal.value }}" label="{{ site.data.i18n.administrations.municipal[page.lang] }}">
-        {%- for org in site.data.administrations.municipal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
-      <optgroup data-value="{{ site.data.i18n.administrations.aboriginal.value }}" label="{{ site.data.i18n.administrations.aboriginal[page.lang] }}">
-        {%- for org in site.data.administrations.aboriginal -%}
-          {%- if org.name[page.lang] != nil %}
-        <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </optgroup>
+      {%- for i in (1..3) -%}
+        {%- capture level -%}{%- cycle 'federal', 'provincial', 'municipal' -%}{%- endcapture -%}
+        <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
+          {%- for org in site.data.administrations[level] -%}
+            {%- if org.name[page.lang] != nil %}
+          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+            {%- endif -%}
+          {% endfor %}
+        </optgroup>
+      {%- endfor -%}
     </select>
-    <button type="button" class="btn btn-primary mrgn-lft-md" id="newAdminButton"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.id][title].button[page.lang] }}</button>
+    <button type="button" class="btn btn-primary mrgn-lft-md" id="newAdminButton"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
   </div>
 </div>
 
-{% include form/presets/newAdmin.html id=include.id -%}
+{% include form/presets/newAdmin.html -%}

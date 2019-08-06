@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.mozilla.org/en-US/firefox/'
   fr: 'https://www.mozilla.org/fr/firefox/'
-licenses:
+licences:
   - URL:
       en: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
       fr: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'

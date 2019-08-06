@@ -18,7 +18,7 @@ releases:
     name:
       en: Apogy
       fr: Apogy
-    licenses:
+    licences:
       - URL:
           en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
           fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'

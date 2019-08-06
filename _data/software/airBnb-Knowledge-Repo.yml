@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://airbnb.io/projects/knowledge-repo/'
   fr: 'https://airbnb.io/projects/knowledge-repo/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/airbnb/knowledge-repo/blob/master/LICENSE'
       fr: 'https://github.com/airbnb/knowledge-repo/blob/master/LICENSE'

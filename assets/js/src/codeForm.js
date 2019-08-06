@@ -5,7 +5,8 @@
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses addMoreRelatedCode
+  addMoreLicences addMoreRelatedCode
+  getToday
 */
 
 const codeObj = $('.page-codeForm #nameselect');
@@ -46,7 +47,7 @@ function getCodeObject() {
         },
         date: {
           created: $('#datecreated').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+          metadataLastUpdated: getToday()
         },
         description: {
           en: $('#endescription').val(),
@@ -56,7 +57,7 @@ function getCodeObject() {
           en: $('#enname').val(),
           fr: $('#frname').val()
         },
-        licenses: [],
+        licences: [],
         repositoryURL: {
           en: $('#enrepositoryUrl').val(),
           fr: $('#frrepositoryUrl').val()
@@ -70,7 +71,7 @@ function getCodeObject() {
   };
 
   // Handle more-groups
-  addMoreLicenses(codeObject.releases[0]);
+  addMoreLicences(codeObject.releases[0]);
 
   // Handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -477,9 +478,9 @@ function addValueToFields(obj) {
   $('#datecreated').val(obj.date.created);
   $('#datelastModified').val(obj.date.datelastModified);
 
-  $('#enlicensesURL').val(obj.licenses[0].URL.en);
-  $('#frlicensesURL').val(obj.licenses[0].URL.fr);
-  $('#licensesspdxID').val(obj.licenses[0].spdxID);
+  $('#enlicencesURL').val(obj.licences[0].URL.en);
+  $('#frlicencesURL').val(obj.licences[0].URL.fr);
+  $('#licencesspdxID').val(obj.licences[0].spdxID);
 
   addTags(obj);
 
@@ -550,9 +551,9 @@ function resetFields() {
   $('#contactphone').val('');
   $('#datecreated').val('');
   $('#datelastModified').val('');
-  $('#enlicensesURL').val('');
-  $('#frlicensesURL').val('');
-  $('#licensesspdxID').val('');
+  $('#enlicencesURL').val('');
+  $('#frlicencesURL').val('');
+  $('#licencesspdxID').val('');
   resetTags();
   $('#enrepositoryUrl').val('');
   $('#frrepositoryUrl').val('');

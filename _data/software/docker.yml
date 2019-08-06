@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.docker.com'
   fr: 'https://www.docker.com'
-licenses:
+licences:
   - URL:
       en: 'https://www.docker.com/legal/components-licenses'
       fr: 'https://www.docker.com/legal/components-licenses'

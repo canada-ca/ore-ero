@@ -19,7 +19,7 @@ releases:
     name:
       en: YouCanBenefit
       fr: YouCanBenefit
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'
           fr: 'https://github.com/yeg-relief/youcanbenefit/blob/master/LICENSE'

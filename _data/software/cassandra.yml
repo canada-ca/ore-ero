@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'http://cassandra.apache.org/'
   fr: 'http://cassandra.apache.org/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/apache/cassandra/blob/trunk/LICENSE.txt'
       fr: 'https://github.com/apache/cassandra/blob/trunk/LICENSE.txt'

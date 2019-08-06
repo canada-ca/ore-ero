@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://debezium.io/'
   fr: 'https://debezium.io/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/debezium/debezium/blob/master/LICENSE.txt'
       fr: 'https://github.com/debezium/debezium/blob/master/LICENSE.txt'

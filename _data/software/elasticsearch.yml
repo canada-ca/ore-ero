@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.elastic.co/products/elasticsearch'
   fr: 'https://www.elastic.co/fr/products/elasticsearch'
-licenses:
+licences:
   - URL:
       en: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
       fr: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'

@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://accumulo.apache.org/'
   fr: 'https://accumulo.apache.org/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
       fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'

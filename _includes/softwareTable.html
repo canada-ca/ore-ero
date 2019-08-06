@@ -20,16 +20,16 @@
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
           <option value="">&nbsp;</option>
-          {%- assign license_array = "" | split: ',' -%}
+          {%- assign licence_array = "" | split: ',' -%}
           {%- for softwares in site.data.software -%}
             {%- assign software = softwares[1] -%}
-            {%- for license in software.licenses -%}
-              {%- assign license_array = license_array | push: license.spdxID -%}
+            {%- for licence in software.licences -%}
+              {%- assign licence_array = licence_array | push: licence.spdxID -%}
             {%- endfor -%}
           {%- endfor -%}
-          {%- assign license_array = license_array | group_by: "" | sort: "name" -%}
-          {%- for license in license_array -%}
-            <option value="{{ license.name }}">{{ license.name }}</option>
+          {%- assign licence_array = licence_array | group_by: "" | sort: "name" -%}
+          {%- for licence in licence_array -%}
+            <option value="{{ licence.name }}">{{ licence.name }}</option>
           {%- endfor -%}
         </select>
       </div>
@@ -88,8 +88,8 @@
           <td><a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
           <td>{{ software.description[page.lang] }}</td>
           <td>
-            {%- for license in software.licenses -%}
-              <a href="{{ license.URL[page.lang] }}" target="_blank">{{ license.spdxID }}</a>&nbsp;
+            {%- for licence in software.licences -%}
+              <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
             {%- endfor -%}
           </td>
           <td>

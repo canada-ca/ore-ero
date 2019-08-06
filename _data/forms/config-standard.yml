@@ -3,39 +3,36 @@
 id: standard
 
 formGroups:
-  - preset: schemaVersion
   - preset: selectStandard
   - widget: string-i18n
     title: name
-    rule: alphanum-space
+    param: {rule: alphanum-space}
   - preset: description
   - widget: string-i18n
     title: specURL
-    type: url
+    param: {type: url}
   - widget: string-i18n
     title: standardOrg
   - preset: tags
   - preset: hr
   - preset: empty
-    start: true
     title: administrations
+    param: {start: true}
   - preset: adminCode
   - widget: group
     title: reference
-    more: true
+    param: {more: true}
     fields:
       - widget: string-i18n
         title: URL
-        type: url
+        param: {type: url}
       - widget: string-i18n
         title: name
-        rule: names
+        param: {rule: names}
   - preset: dates
-    created: true
-    metadata: true
+    param: {created: true}
   - widget: string
     title: status
   - preset: contact
-    phone: false
-    required: true
+    param: {phone: false}
   - preset: empty

@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://elgg.org/'
   fr: 'https://elgg.org/'
-licenses:
+licences:
   - URL:
       en: 'http://learn.elgg.org/en/2.0/intro/license.html'
       fr: 'http://learn.elgg.org/en/2.0/intro/license.html'

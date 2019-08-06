@@ -13,7 +13,7 @@ releases:
     name:
       en: AppHub
       fr: HubApp
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
           fr: 'https://github.com/esdc-devx/AppHub/blob/master/LICENSE'
@@ -37,7 +37,7 @@ releases:
     name:
       en: .Net Code Coverage Demo
       fr: Démo de couverture de code .Net
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'
           fr: 'https://github.com/esdc-devx/DotNetCCDemo/blob/master/LICENSE'

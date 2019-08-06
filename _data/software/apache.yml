@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://httpd.apache.org'
   fr: 'https://httpd.apache.org'
-licenses:
+licences:
   - URL:
       en: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
       fr: 'https://www.apache.org/licenses/LICENSE-2.0.txt'

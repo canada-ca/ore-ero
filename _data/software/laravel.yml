@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://laravel.com'
   fr: 'https://laravel.com'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/laravel/framework/blob/5.8/LICENSE.md'
       fr: 'https://github.com/laravel/framework/blob/5.8/LICENSE.md'

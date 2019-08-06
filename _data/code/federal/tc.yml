@@ -15,7 +15,7 @@ releases:
     name:
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
           fr: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
@@ -48,7 +48,7 @@ releases:
     name:
       en: reference-center
       fr: reference-center
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
           fr: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'

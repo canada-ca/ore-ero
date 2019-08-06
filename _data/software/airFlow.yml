@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://airflow.apache.org/'
   fr: 'https://airflow.apache.org/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/apache/airflow/blob/master/LICENSE'
       fr: 'https://github.com/apache/airflow/blob/master/LICENSE'

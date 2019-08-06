@@ -5,6 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
+  getToday
 */
 
 const standardObj = $('.page-standardForm #standardAcronymselect');
@@ -67,7 +68,7 @@ function getStandardObject() {
         },
         date: {
           created: $('#datecreated').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+          metadataLastUpdated: getToday()
         },
         references: [],
         status: $('#status').val()
@@ -337,16 +338,16 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
-  $('#standardAcronym').val(obj['standardAcronym']);
-  $('#enname').val(obj['name']['en']);
-  $('#frname').val(obj['name']['fr']);
-  $('#endescription').val(obj['description']['en']);
-  $('#frdescription').val(obj['description']['fr']);
-  $('#datecreated').val(obj['date']['created']);
-  $('#enspecURL').val(obj['specURL']['en']);
-  $('#frspecURL').val(obj['specURL']['fr']);
-  $('#enstandardOrg').val(obj['standardOrg']['en']);
-  $('#frstandardOrg').val(obj['standardOrg']['fr']);
+  $('#standardAcronym').val(obj.standardAcronym);
+  $('#enname').val(obj.name.en);
+  $('#frname').val(obj.name.fr);
+  $('#endescription').val(obj.description.en);
+  $('#frdescription').val(obj.description.fr);
+  $('#datecreated').val(obj.date.created);
+  $('#enspecURL').val(obj.specURL.en);
+  $('#frspecURL').val(obj.specURL.fr);
+  $('#enstandardOrg').val(obj.standardOrg.en);
+  $('#frstandardOrg').val(obj.standardOrg.fr);
 
   addTags(obj);
 }
@@ -372,11 +373,9 @@ function selectAdmin() {
     result
   ) {
     if (result[standard]) {
-      for (let i = 0; i < result[standard]['administrations'].length; i++) {
-        if (
-          result[standard]['administrations'][i]['adminCode'] == administration
-        ) {
-          addValueToFieldsAdmin(result[standard]['administrations'][i]);
+      for (let i = 0; i < result[standard].administrations.length; i++) {
+        if (result[standard].administrations[i].adminCode == administration) {
+          addValueToFieldsAdmin(result[standard].administrations[i]);
           break;
         } else {
           resetFieldsAdmin();
@@ -389,14 +388,14 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['contact']['email']) $('#contactemail').val(obj['contact']['email']);
+  if (obj.contact.email) $('#contactemail').val(obj.contact.email);
 
-  if (obj['contact']['name']) $('#contactname').val(obj['contact']['name']);
+  if (obj.contact.name) $('#contactname').val(obj.contact.name);
 
-  $('#enreferenceURL').val(obj['references'][0]['URL']['en']);
-  $('#frreferenceURL').val(obj['references'][0]['URL']['fr']);
-  $('#enreferencename').val(obj['references'][0]['name']['en']);
-  $('#frreferencename').val(obj['references'][0]['name']['fr']);
+  $('#enreferenceURL').val(obj.references[0].URL.en);
+  $('#frreferenceURL').val(obj.references[0].URL.fr);
+  $('#enreferencename').val(obj.references[0].name.en);
+  $('#frreferencename').val(obj.references[0].name.fr);
 
   $('#status').val(obj['status']);
 }

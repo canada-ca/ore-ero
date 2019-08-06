@@ -16,7 +16,7 @@ releases:
     name:
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
           fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
@@ -44,7 +44,7 @@ releases:
     name:
       en: GC Architecture
       fr: Architecture GC
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
           fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'

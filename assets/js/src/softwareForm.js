@@ -5,7 +5,8 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses
+  addMoreLicences
+  getToday
 */
 
 const softwareObj = $('.page-softwareForm #nameselect');
@@ -46,7 +47,7 @@ function getsoftwareObject() {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
-    licenses: [],
+    licences: [],
     name: {
       en: $('#enname').val(),
       fr: $('#frname').val()
@@ -65,7 +66,7 @@ function getsoftwareObject() {
             },
             date: {
               started: $('#datestarted').val(),
-              metadataLastUpdated: $('#datemetadataLastUpdated').val()
+              metadataLastUpdated: getToday()
             },
             description: {
               en: $('#useendescription').val(),
@@ -82,7 +83,7 @@ function getsoftwareObject() {
   };
 
   // Handle more-groups
-  addMoreLicenses(softwareObject);
+  addMoreLicences(softwareObject);
 
   // handle optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -381,15 +382,15 @@ function selectSoftware() {
 }
 
 function addValueToFieldsSoftware(obj) {
-  $('#enname').val(obj['name']['en']);
-  $('#frname').val(obj['name']['fr']);
-  $('#endescription').val(obj['description']['en']);
-  $('#frdescription').val(obj['description']['fr']);
-  $('#enhomepageURL').val(obj['homepageURL']['en']);
-  $('#frhomepageURL').val(obj['homepageURL']['fr']);
-  $('#enlicensesURL').val(obj['licenses'][0]['URL']['en']);
-  $('#frlicensesURL').val(obj['licenses'][0]['URL']['fr']);
-  $('#licensesspdxID').val(obj['licenses'][0]['spdxID']);
+  $('#enname').val(obj.name.en);
+  $('#frname').val(obj.name.fr);
+  $('#endescription').val(obj.description.en);
+  $('#frdescription').val(obj.description.fr);
+  $('#enhomepageURL').val(obj.homepageURL.en);
+  $('#frhomepageURL').val(obj.homepageURL.fr);
+  $('#enlicencesURL').val(obj.licences[0].URL.en);
+  $('#frlicencesURL').val(obj.licences[0].URL.fr);
+  $('#licencesspdxID').val(obj.licences[0].spdxID);
   addTags(obj);
 }
 
@@ -400,9 +401,9 @@ function resetFieldsSoftware() {
   $('#frdescription').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
-  $('#enlicensesURL').val('');
-  $('#frlicensesURL').val('');
-  $('#licensesspdxID').val('');
+  $('#enlicencesURL').val('');
+  $('#frlicencesURL').val('');
+  $('#licencesspdxID').val('');
   $('#enname').focus();
   $('#frname').focus();
   resetTags();
@@ -415,11 +416,9 @@ function selectAdmin() {
     result
   ) {
     if (result[software]) {
-      for (let i = 0; i < result[software]['administrations'].length; i++) {
-        if (
-          result[software]['administrations'][i]['adminCode'] == administration
-        ) {
-          addValueToFieldsAdmin(result[software]['administrations'][i]);
+      for (let i = 0; i < result[software].administrations.length; i++) {
+        if (result[software].administrations[i].adminCode == administration) {
+          addValueToFieldsAdmin(result[software].administrations[i]);
           break;
         } else {
           resetFieldsAdmin();
@@ -430,24 +429,23 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj['uses'][0]['contact']['URL']) {
-    if (obj['uses'][0]['contact']['URL']['en'])
-      $('#encontactURL').val(obj['uses'][0]['contact']['URL']['en']);
-    if (obj['uses']['contact']['URL']['fr'])
-      $('#frcontactURL').val(obj['uses'][0]['contact']['URL']['fr']);
+  if (obj.uses[0].contact.URL) {
+    if (obj.uses[0].contact.URL.en)
+      $('#encontactURL').val(obj.uses[0].contact.URL.en);
+    if (obj.uses.contact.URL.fr)
+      $('#frcontactURL').val(obj.uses[0].contact.URL.fr);
   }
-  if (obj['uses'][0]['contact']['email'])
-    $('#contactemail').val(obj['uses'][0]['contact']['email']);
-  if (obj['uses'][0]['contact']['name'])
-    $('#contactname').val(obj['uses'][0]['contact']['name']);
+  if (obj.uses[0].contact.email)
+    $('#contactemail').val(obj.uses[0].contact.email);
+  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
-  $('#datestarted').val(obj['uses'][0]['date']['started']);
-  $('#useenname').val(obj['uses'][0]['name']['en']);
-  $('#usefrname').val(obj['uses'][0]['name']['fr']);
-  $('#useendescription').val(obj['uses'][0]['description']['en']);
-  $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
+  $('#datestarted').val(obj.uses[0].date.started);
+  $('#useenname').val(obj.uses[0].name.en);
+  $('#usefrname').val(obj.uses[0].name.fr);
+  $('#useendescription').val(obj.uses[0].description.en);
+  $('#usefrdescription').val(obj.uses[0].description.fr);
 
-  if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
+  if (obj.uses[0].status) $('#status').val(obj.uses[0].status);
 }
 
 function resetFieldsAdmin() {

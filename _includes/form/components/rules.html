@@ -1,0 +1,4 @@
+{%- if include.rules %}
+  {%- assign rules = include.rules | split: ',' -%}
+  {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
+{%- endif -%}

@@ -18,7 +18,7 @@ releases:
     name:
       en: ckanext-ab_scheming
       fr: ckanext-ab_scheming
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
@@ -48,7 +48,7 @@ releases:
     name:
       en: ckanext-open_alberta
       fr: ckanext-open_alberta
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
@@ -78,7 +78,7 @@ releases:
     name:
       en: ckanext-geomapviewer
       fr: ckanext-geomapviewer
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'

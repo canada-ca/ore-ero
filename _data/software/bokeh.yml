@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'http://bokeh.pydata.org/en/latest/'
   fr: 'http://bokeh.pydata.org/en/latest/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/bokeh/bokeh/blob/master/LICENSE.txt'
       fr: 'https://github.com/bokeh/bokeh/blob/master/LICENSE.txt'

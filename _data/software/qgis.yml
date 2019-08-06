@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://qgis.org/en/site/'
   fr: 'https://qgis.org/fr/site/'
-licenses:
+licences:
   - URL:
       en: 'https://github.com/qgis/QGIS/blob/master/COPYING'
       fr: 'https://github.com/qgis/QGIS/blob/master/COPYING'
