@@ -5,28 +5,28 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicences
+  addMoreLicences resetMoreGroup addMoreGroup fillLicenceField
   getToday
 */
 
-const softwareObj = $('.page-softwareForm #nameselect');
-const adminObj = $('.page-softwareForm #adminCode');
+const softwareSelect = $('.page-softwareForm #nameselect');
+const adminSelect = $('.page-softwareForm #adminCode');
 
 $(document).ready(function() {
-  softwareObj.change(function() {
-    selectSoftware();
-    if (adminObj.val() != '') selectAdmin();
-  });
-
-  adminObj.change(function() {
-    selectAdmin();
-  });
-
   $('#prbotSubmitsoftwareForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val() != '') submitSoftwareFormNewAdmin();
       else submitFormSoftware();
     }
+  });
+
+  softwareSelect.change(function() {
+    selectSoftware();
+    if (adminSelect.val() != '') selectAdmin();
+  });
+
+  adminSelect.change(function() {
+    selectAdmin();
   });
 
   $('#formReset').click(function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
 });
 
 function getsoftwareObject() {
-  // Handles mandatory fields
+  // Mandatory fields
   let softwareObject = {
     schemaVersion: '1.0',
     description: {
@@ -82,10 +82,10 @@ function getsoftwareObject() {
     ]
   };
 
-  // Handle more-groups
+  // More-groups
   addMoreLicences(softwareObject);
 
-  // handle optional fields
+  // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     softwareObject.administrations[0].uses[0].contact.URL = {};
   }
@@ -365,20 +365,19 @@ function getConfigNew(softwareObject, file, ProjectName) {
 }
 
 function selectSoftware() {
-  let value = softwareObj.val().toLowerCase();
-  $.getJSON(
-    'https://canada-ca.github.io/ore-ero/logiciels_libres-open_source_software.json',
-    function(result) {
-      if (result[value]) {
-        addValueToFieldsSoftware(result[value]);
-        $('#adminCode').focus();
-      } else if (value == '') {
-        resetFieldsSoftware();
-      } else {
-        alert('Error retrieving the data');
-      }
+  let value = softwareSelect.val();
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+    result
+  ) {
+    if (result[value]) {
+      addValueToFieldsSoftware(result[value]);
+      $('#adminCode').focus();
+    } else if (value == '') {
+      resetFieldsSoftware();
+    } else {
+      alert('Error retrieving the data');
     }
-  );
+  });
 }
 
 function addValueToFieldsSoftware(obj) {
@@ -388,9 +387,7 @@ function addValueToFieldsSoftware(obj) {
   $('#frdescription').val(obj.description.fr);
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
-  $('#enlicencesURL').val(obj.licences[0].URL.en);
-  $('#frlicencesURL').val(obj.licences[0].URL.fr);
-  $('#licencesspdxID').val(obj.licences[0].spdxID);
+  fillLicenceField(obj.licences);
   addTags(obj);
 }
 
@@ -401,17 +398,13 @@ function resetFieldsSoftware() {
   $('#frdescription').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
-  $('#enlicencesURL').val('');
-  $('#frlicencesURL').val('');
-  $('#licencesspdxID').val('');
-  $('#enname').focus();
-  $('#frname').focus();
+  resetMoreGroup($('#addMoreLicences'));
   resetTags();
 }
 
 function selectAdmin() {
-  let software = softwareObj.val().toLowerCase();
-  let administration = adminObj.val();
+  let software = softwareSelect.val();
+  let administration = adminSelect.val();
   $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
     result
   ) {
@@ -445,6 +438,17 @@ function addValueToFieldsAdmin(obj) {
   $('#useendescription').val(obj.uses[0].description.en);
   $('#usefrdescription').val(obj.uses[0].description.fr);
 
+  if (obj.uses[0].users)
+    obj.uses[0].users.forEach(function(user, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup($('#addMoreusers'));
+      }
+      $('#users' + id).val(user);
+    });
+
   if (obj.uses[0].status) $('#status').val(obj.uses[0].status);
 }
 
@@ -459,4 +463,5 @@ function resetFieldsAdmin() {
   $('#useendescription').val('');
   $('#usefrdescription').val('');
   $('#status').val('');
+  resetMoreGroup($('#addMoreusers'));
 }

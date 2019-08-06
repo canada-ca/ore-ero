@@ -5,27 +5,28 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
+  resetMoreGroup addMoreGroup
   getToday
 */
 
-const standardObj = $('.page-standardForm #standardAcronymselect');
-const adminObj = $('.page-standardForm #adminCode');
+const standardSelect = $('.page-standardForm #standardAcronymselect');
+const adminSelect = $('.page-standardForm #adminCode');
 
 $(document).ready(function() {
-  standardObj.change(function() {
-    selectStandard();
-    if (adminObj.val() != '') selectAdmin();
-  });
-
-  adminObj.change(function() {
-    selectAdmin();
-  });
-
   $('#prbotSubmitstandardForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val() != '') submitStandardFormNewAdmin();
       else submitStandardForm();
     }
+  });
+
+  standardSelect.change(function() {
+    selectStandard();
+    if (adminSelect.val() != '') selectAdmin();
+  });
+
+  adminSelect.change(function() {
+    selectAdmin();
   });
 
   $('#formReset').click(function() {
@@ -35,8 +36,13 @@ $(document).ready(function() {
 });
 
 function getStandardObject() {
+  // Mandatory fields
   let standardObject = {
     schemaVersion: '1.0',
+    date: {
+      created: $('#datecreated').val(),
+      metadataLastUpdated: getToday()
+    },
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
@@ -76,7 +82,7 @@ function getStandardObject() {
     ]
   };
 
-  // Handles more-groups
+  // More-groups
   $('#addMorereference ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
@@ -92,7 +98,7 @@ function getStandardObject() {
     };
   });
 
-  // Handles optional fields
+  // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     standardObject.administrations[0].contact.URL = {};
   }
@@ -322,7 +328,7 @@ function getConfigNewStandardNewAdmin(
 }
 
 function selectStandard() {
-  let value = standardObj.val().toLowerCase();
+  let value = standardSelect.val();
   $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
     result
   ) {
@@ -367,8 +373,8 @@ function resetFieldsStandard() {
 }
 
 function selectAdmin() {
-  let standard = standardObj.val().toLowerCase();
-  let administration = adminObj.val();
+  let standard = standardSelect.val();
+  let administration = adminSelect.val();
   $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
     result
   ) {
@@ -388,16 +394,30 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  if (obj.contact.email) $('#contactemail').val(obj.contact.email);
+  $('#contactemail').val(obj.contact.email);
 
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
+  if (obj.contact.URL) {
+    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
+    if (obj.contact.URL.fr) $('#encontactURL').val(obj.contact.URL.fr);
+  }
 
-  $('#enreferenceURL').val(obj.references[0].URL.en);
-  $('#frreferenceURL').val(obj.references[0].URL.fr);
-  $('#enreferencename').val(obj.references[0].name.en);
-  $('#frreferencename').val(obj.references[0].name.fr);
+  $('#datecreated').val(obj.date.created);
 
-  $('#status').val(obj['status']);
+  obj.references.forEach(function(reference, i) {
+    let id;
+    if (i == 0) id = '';
+    else {
+      id = i;
+      addMoreGroup($('#addMorereference'));
+    }
+    $('#enreferenceURL' + id).val(reference.URL.en);
+    $('#frreferenceURL' + id).val(reference.URL.fr);
+    $('#enreferencename' + id).val(reference.name.en);
+    $('#frreferencename' + id).val(reference.name.fr);
+  });
+
+  $('#status').val(obj.status);
 }
 
 function resetFieldsAdmin() {
@@ -405,9 +425,7 @@ function resetFieldsAdmin() {
   $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#enreferenceURL').val('');
-  $('#frreferenceURL').val('');
-  $('#enreferencename').val('');
-  $('#frreferencename').val('');
+  $('#datecreated').val('');
+  resetMoreGroup($('#addMorereference'));
   $('#status').val('');
 }
