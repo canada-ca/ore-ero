@@ -35,7 +35,6 @@ releases:
         - Apprentissage
         - Programmation assembleur
         - Développement système d'exploitation
-    vcs: git
   - contact:
       email: assemblyline@cse-cst.gc.ca
     date:
@@ -64,4 +63,3 @@ releases:
       fr:
         - Détection de maliciels
         - Analyse de fichiers
-    vcs: git

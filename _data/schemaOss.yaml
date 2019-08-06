@@ -37,13 +37,6 @@ administrations:
         name:
           en: str()
           fr: str()
-        relatedCode:
-          - URL:
-              en: str(required=False)
-              fr: str(required=False)
-            name:
-              en: str(required=False)
-              fr: str(required=False)
         status: str(required=False)
         users:
           - str(required=False)

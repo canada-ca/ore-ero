@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses addMoreRelatedCode
+  addMoreLicenses
 */
 
 const ossObj = $('.page-ossForm #nameselect');
@@ -102,9 +102,6 @@ function getOssObject() {
   if ($('#contactname').val()) {
     ossObject.administrations[0].uses[0].contact.name = $('#contactname').val();
   }
-
-  // Optional more-group
-  addMoreRelatedCode(ossObject.administrations[0].uses[0]);
 
   if ($('#status :selected').val() != '') {
     ossObject.administrations[0].uses[0].status = $('#status :selected').val();
@@ -445,14 +442,6 @@ function addValueToFieldsAdmin(obj) {
   $('#useendescription').val(obj['uses'][0]['description']['en']);
   $('#usefrdescription').val(obj['uses'][0]['description']['fr']);
 
-  if (obj['uses'][0]['relatedCode']) {
-    if (obj['uses'][0]['relatedCode']['URL']) {
-      if (obj['uses'][0]['relatedCode']['URL']['en'])
-        $('#enrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['en']);
-      if (obj['uses'][0]['relatedCode']['URL']['fr'])
-        $('#frrelatedCodeURL').val(obj['uses'][0]['relatedCode']['URL']['fr']);
-    }
-  }
   if (obj['uses'][0]['status']) $('#status').val(obj['uses'][0]['status']);
 }
 
@@ -466,9 +455,5 @@ function resetFieldsAdmin() {
   $('#usefrname').val('');
   $('#useendescription').val('');
   $('#usefrdescription').val('');
-  $('#enrelatedCodeURL').val('');
-  $('#frrelatedCodeURL').val('');
-  $('#enrelatedCodename').val('');
-  $('#frrelatedCodename').val('');
   $('#status').val('');
 }

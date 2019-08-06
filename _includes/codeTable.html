@@ -152,8 +152,8 @@
 </div>
 
 <!-- Data Table -->
-<div class="col-md-9" style="margin-bottom: 20px;">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12,13,14], "visible": false}], "paging": true}'>
+<div class="col-md-9 mrgn-bttm-lg">
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,4,5,7,8,9,10,11,12], "visible": false}], "paging": true}'>
     <thead>
       <!-- TODO: Better the translations, maybe use those from the form file -->
       <tr>
@@ -168,8 +168,6 @@
         <th>{{ site.data.i18n.general.language[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.relatedCode[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.status[page.lang] }}</th>
-        <th>Vcs</th>
-        <th>Version</th>
         <th>{{ site.data.i18n.tables.created[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.metadataLastUpdated[page.lang] }}</th>
       </tr>
@@ -232,8 +230,6 @@
               {%- endfor -%}
             </td>
             <td>{{ release.status }}&nbsp;</td>
-            <td>{{ release.vcs }}&nbsp;</td>
-            <td>{{ release.version }}&nbsp;</td>
             <td>{{ release.date.created }}&nbsp;</td>
             <td>{{ release.date.metadataLastUpdated }}&nbsp;</td>
           </tr>
@@ -304,12 +300,6 @@
         </p>
         {%- if release.status != nil -%}
           <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
-        {%- endif -%}
-        {%- if release.vcs != nil -%}
-          <p>Version Control System: {{ release.vcs }}</p>
-        {%- endif -%}
-        {%- if release.version != nil -%}
-          <p>Version: {{ release.version }}</p>
         {%- endif -%}
         <p>{{ site.data.i18n.tables.created[page.lang] }}: {{ release.date.created }}</p>
         <p>{{ site.data.i18n.tables.lastUpdated[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>

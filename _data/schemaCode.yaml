@@ -59,5 +59,3 @@ releases:
       fr:
         - str()
     status: str(required=False)
-    version: str(required=False)
-    vcs: str(required=False)

@@ -32,7 +32,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       URL:
         en: 'https://github.com/abgov/ckanext-open_alberta/issues'
@@ -63,7 +62,6 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git
   - contact:
       URL:
         en: 'https://github.com/abgov/ckanext-geomapviewer/issues'
@@ -94,4 +92,3 @@ releases:
         - CKAN Extension
       fr:
         - Extension CKAN
-    vcs: git

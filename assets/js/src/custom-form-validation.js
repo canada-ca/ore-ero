@@ -19,6 +19,10 @@ const phoneError = {
   en: 'Please enter a valid phone number.',
   fr: 'Veuillez fournir un numéro de téléphone valide.'
 };
+const uniqNewAdminError = {
+  en: 'This admin code already exists.',
+  fr: "Ce code d'administration existe déjà."
+};
 
 $(document).on('wb-ready.wb', function() {
   let lang = document.documentElement.lang;
@@ -111,6 +115,24 @@ $(document).on('wb-ready.wb', function() {
         return true;
       },
       jQuery.validator.format(phoneError[lang])
+    );
+
+    /**
+     * Custom unique value. Usage: new admin code must be unique
+     */
+    jQuery.validator.addMethod(
+      'unique-newadmincode',
+      function(value) {
+        if (value) {
+          let valid = true;
+          $('#adminCode option').each(function(i, option) {
+            if (value.toLowerCase() === $(option).val()) valid = false;
+          });
+          return valid;
+        }
+        return true;
+      },
+      jQuery.validator.format(uniqNewAdminError[lang])
     );
   }
 });
