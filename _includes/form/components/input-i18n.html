@@ -1,4 +1,5 @@
-<input class="form-control" id="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" name="{{ include.param.prepend }}{{ include.lang }}{{ include.title }}" type="{{ include.param.type | default: "text" }}"
+{%- capture name %}{{ include.param.prepend }}{{ include.lang }}{{ include.title }}{% endcapture -%}
+<input class="form-control" id="{{ name }}" name="{{ name }}" type="{{ include.param.type | default: "text" }}"
 {%- if include.param.type == "tel" %} placeholder="123-456-7890"{% endif -%}
 {% include form/components/rules.html rules=include.param.rule %}
 {%- if include.param.required == nil or include.param.required %} required="required"{% endif %} />
