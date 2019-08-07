@@ -1,7 +1,7 @@
 {%- assign title = "name" -%}
 {%- assign group = "select" -%}
 <div class="form-group">
-  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.selectSoftware %}
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
     {%- for softwares in site.data.software -%}

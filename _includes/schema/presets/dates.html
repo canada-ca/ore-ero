@@ -1,20 +1,22 @@
 {%- assign title = "date" -%}
 <li>
   <details open>
-    <summary>{{ title }} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span> [array]</summary>
-    <p>{{ site.data.i18n.form.[include.id][title].title[page.lang] }}</p>
+    <summary>{{ title }} {% include schema/components/required.html %} [array]</summary>
+    <p>{{ site.data.i18n.form.[include.idPreset][title].title[page.lang] }}</p>
     <ul class="list-unstyled">
-      {%- if include.created -%}
-        {%- include schema/components/li-group.html id=include.id title=title group="created" -%}
+      {%- if include.param.created -%}
+        {%- include schema/components/li-group.html id=include.idPreset title=title group="created" group="created" param=site.data.forms.param.dates.created -%}
       {%- endif -%}
 
-      {%- if include.started -%}
-        {%- include schema/components/li-group.html id=include.id title=title group="started" -%}
+      {%- if include.param.started -%}
+        {%- include schema/components/li-group.html id=include.idPreset title=title group="started" param=site.data.forms.param.dates.started -%}
       {%- endif -%}
 
-      {%- if include.modified -%}
-        {%- include schema/components/li-group.html id=include.id title=title group="lastModified" required=false -%}
+      {%- if include.param.modified -%}
+        {%- include schema/components/li-group.html id=include.idPreset title=title group="lastModified" param=site.data.forms.param.dates.modified -%}
       {%- endif -%}
+
+      {%- include schema/components/li-group.html id=include.idPreset title=title group="metadataLastUpdated" -%}
     </ul>
   </details>
 </li>

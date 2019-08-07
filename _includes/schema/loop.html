@@ -1,22 +1,25 @@
+<ul class="list-unstyled">
+{% include schema/presets/schemaVersion.html %}
 {% for formGroup in site.data.forms[page.config].formGroups -%}
 
 {%- capture id -%}{{ site.data.forms[page.config].id }}{%- endcapture -%}
 
-{%- if formGroup.preset -%}
+{%- if formGroup.preset == 'empty' -%}
   {%- assign type = 'presets' -%}
-  {%- assign name = formGroup.preset -%}
+  {%- assign title = formGroup.title -%}
+  {%- assign file = formGroup.preset -%}
+{%- elsif formGroup.preset -%}
+  {%- assign type = 'presets' -%}
+  {%- assign title = formGroup.preset -%}
   {%- assign file = formGroup.preset -%}
 {% elsif formGroup.widget %}
   {%- assign type = 'widgets' -%}
-  {%- assign name = formGroup.title -%}
+  {%- assign title = formGroup.title -%}
   {%- assign file = formGroup.widget -%}
 {%- endif -%}
 
-<div class="schema-element">
-  <div class="schema-element-{{ type }}{% if formGroup.param.more %} schema-group-more{% endif %}" id="formgroup_{{ type }}_{{ formGroup.param.prepend }}{{ name }}">
 {%- capture path -%}schema/{{ type }}/{{ file }}.html{%- endcapture -%}
-{%- include {{ path }} param=formGroup.param id=id idPreset="presets" title=name fields=formGroup.fields -%}
-  </div>
-</div>
+{%- include {{ path }} param=formGroup.param id=id idPreset="presets" title=title fields=formGroup.fields -%}
 
 {% endfor %}
+</ul>

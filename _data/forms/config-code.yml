@@ -22,7 +22,7 @@ formGroups:
     param: {rule: alphanum-space, required: false}
   - widget: group
     title: partners
-    param: {more: true}
+    param: {more: true, required: false}
     fields:
       - widget: string-i18n
         title: URL

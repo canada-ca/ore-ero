@@ -9,6 +9,6 @@
   {%- capture file -%}{{ field.widget }}-group{%- endcapture -%}
 
   {%- capture path -%}form/{{ type }}/{{ file }}.html{%- endcapture -%}
-  {%- include {{ path }} param=field.param id=include.id idPreset=include.idPreset title=include.title required=required group=field.title -%}
+  {%- include {{ path }} param=field.param id=include.id title=include.title group=field.title -%}
 {%- endfor -%}
 {%- if include.param.more -%}</div></div>{%- endif %}
