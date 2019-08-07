@@ -467,7 +467,7 @@ function addValueToFields(obj) {
   $('#endescription').val(obj.description.en);
   $('#frdescription').val(obj.description.fr);
 
-  if (obj.contact.url) {
+  if (obj.contact.URL) {
     if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
     if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
   }
