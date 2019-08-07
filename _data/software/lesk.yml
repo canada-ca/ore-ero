@@ -1,8 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Laravel Enterprise Starter Kit, is a template project based on the Laravel framework, combining a set of features that can kick start any Web application.
-  fr: Laravel Enterprise Starter Kit, est un projet de modèle basé sur le framework Laravel, combinant un ensemble de fonctionnalités qui peuvent démarrer n'importe quelle application Web.
+  en: >-
+    Laravel Enterprise Starter Kit, is a template project based on the Laravel
+    framework, combining a set of features that can kick start any Web
+    application.
+  fr: >-
+    Laravel Enterprise Starter Kit, est un projet de modèle basé sur le
+    framework Laravel, combinant un ensemble de fonctionnalités qui peuvent
+    démarrer n'importe quelle application Web.
 homepageURL:
   en: 'https://lesk.it'
   fr: 'https://lesk.it'

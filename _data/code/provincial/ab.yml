@@ -50,8 +50,10 @@ releases:
       fr: ckanext-open_alberta
     licences:
       - URL:
-          en: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
-          fr: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
+          en: >-
+            https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE
+          fr: >-
+            https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE
         spdxID: AGPL-3.0
     repositoryURL:
       en: 'https://github.com/abgov/ckanext-open_alberta'
@@ -80,8 +82,10 @@ releases:
       fr: ckanext-geomapviewer
     licences:
       - URL:
-          en: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
-          fr: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
+          en: >-
+            https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE
+          fr: >-
+            https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE
         spdxID: AGPL-3.0
     repositoryURL:
       en: 'https://github.com/abgov/ckanext-geomapviewer'

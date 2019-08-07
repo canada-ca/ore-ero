@@ -12,7 +12,9 @@ releases:
       metadataLastUpdated: '2019-01-31'
     description:
       en: The one-stop-shop solution for operating robots, satellites and beyond
-      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
+      fr: >-
+        Un logiciel polyvalent pour faire fonctionner des robots et des
+        satellites
     languages:
       - Java
     name:

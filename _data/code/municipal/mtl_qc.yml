@@ -4,8 +4,10 @@ adminCode: mtl_qc
 releases:
   - contact:
       URL:
-        en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
-        fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
+        en: >-
+          https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
+        fr: >-
+          https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues
       email: julio.alcantara@ville.montreal.qc.ca
     date:
       created: '2014-02-14'
@@ -20,8 +22,10 @@ releases:
       fr: CKAN-Extension-Territoire
     licences:
       - URL:
-          en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-en.txt'
-          fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-fr.txt'
+          en: >-
+            https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-en.txt
+          fr: >-
+            https://github.com/VilledeMontreal/CKAN-Extension-Territoire/blob/master/Licence-fr.txt
         spdxID: MIT
     relatedCode:
       - URL:

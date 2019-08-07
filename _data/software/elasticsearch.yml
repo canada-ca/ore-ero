@@ -1,15 +1,21 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.
-  fr: Elasticsearch est un moteur de recherche et d'analyse RESTful distribué, conçu pour répondre à une multitude de cas d'utilisation.
+  en: >-
+    Elasticsearch is a distributed, RESTful search and analytics engine capable
+    of solving a growing number of use cases.
+  fr: >-
+    Elasticsearch est un moteur de recherche et d'analyse RESTful distribué,
+    conçu pour répondre à une multitude de cas d'utilisation.
 homepageURL:
   en: 'https://www.elastic.co/products/elasticsearch'
   fr: 'https://www.elastic.co/fr/products/elasticsearch'
 licences:
   - URL:
-      en: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
-      fr: 'https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html'
+      en: >-
+        https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html
+      fr: >-
+        https://www.elastic.co/guide/en/elasticsearch/hadoop/current/license.html
     spdxID: Apache-2.0
 name:
   en: Elasticsearch

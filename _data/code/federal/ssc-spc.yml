@@ -8,8 +8,12 @@ releases:
       created: '2013-10-06'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
-      fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
+      en: >-
+        Subscribe And Recursively Re-advertise Ad nauseam to Communicate
+        Everything Nearly Instantly and Always
+      fr: >-
+        Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
+        Instantanément et Ad vitam aeternam
     languages:
       - Python
       - C

@@ -1,8 +1,12 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Performs operating-system-level virtualization also known as containerization
-  fr: Effectue une virtualisation au niveau du système d'exploitation, également appelée conteneurisation
+  en: >-
+    Performs operating-system-level virtualization also known as
+    containerization
+  fr: >-
+    Effectue une virtualisation au niveau du système d'exploitation, également
+    appelée conteneurisation
 homepageURL:
   en: 'https://www.docker.com'
   fr: 'https://www.docker.com'
@@ -49,4 +53,6 @@ administrations:
           fr: Développements et Déploiements
         description:
           en: Digital Collaboration Division development and deployment
-          fr: Développement et déploiement de la Division de la collaboration numérique
+          fr: >-
+            Développement et déploiement de la Division de la collaboration
+            numérique

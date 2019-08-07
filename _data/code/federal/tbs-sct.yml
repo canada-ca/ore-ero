@@ -21,8 +21,10 @@ releases:
       fr: Division de la mobilisation numérique
     licences:
       - URL:
-          en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
-          fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
+          en: >-
+            https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
+          fr: >-
+            https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
         spdxID: GPL-2.0
     relatedCode:
       - URL: 'https://github.com/Elgg/Elgg'
@@ -44,8 +46,12 @@ releases:
       created: '2017-04-09'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
-      fr: digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository.
+      en: >-
+        Both digital.canada.ca and numerique.canada.ca are published from this
+        repository.
+      fr: >-
+        digital.canada.ca et numerique.canada.ca sont publiés à partir de ce
+        repository.
     name:
       en: CDS Website
       fr: Site Web SNC
@@ -54,8 +60,10 @@ releases:
       fr: Services numériques Canadiens
     licences:
       - URL:
-          en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
-          fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
+          en: >-
+            https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
+          fr: >-
+            https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt
         spdxID: MIT
     repositoryURL:
       en: 'https://github.com/cds-snc/digital-canada-ca'
@@ -71,8 +79,12 @@ releases:
       created: '2013-08-11'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
-      fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+      en: >-
+        Building websites that are accessible, usable, interoperable, mobile
+        friendly and multilingual
+      fr: >-
+        Construire des sites Web accessibles, faciles d'emploi, interopérables,
+        optimisés pour les appareils mobiles et multilingues
     name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l'expérience Web (BOEW)
@@ -111,7 +123,8 @@ releases:
     licences:
       - URL:
           en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
-          fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
+          fr: >-
+            https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr
         spdxID: MIT
     relatedCode:
       - URL:
@@ -137,7 +150,8 @@ releases:
       metadataLastUpdated: '2018-03-26'
     description:
       en: Store CKAN resources against multiple cloud providers.
-      fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
+      fr: >-
+        Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
     languages:
       - Python
     name:
@@ -148,8 +162,10 @@ releases:
       fr: Gouvernement Ouvert
     licences:
       - URL:
-          en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'
-          fr: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr'
+          en: >-
+            https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING
+          fr: >-
+            https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr
         spdxID: MIT
     relatedCode:
       - URL:
@@ -211,7 +227,9 @@ releases:
       created: '2013-04-07'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Command line interface and Python module for accessing the CKAN Action API
+      en: >-
+        Command line interface and Python module for accessing the CKAN Action
+        API
     languages:
       - Python
     name:

@@ -2,7 +2,9 @@
 schemaVersion: '1.0'
 description:
   en: Highly customizable web framework and CMS for building social apps
-  fr: Framework Web hautement personnalisable et CMS pour créer des applications sociales
+  fr: >-
+    Framework Web hautement personnalisable et CMS pour créer des applications
+    sociales
 homepageURL:
   en: 'https://elgg.org/'
   fr: 'https://elgg.org/'
@@ -40,8 +42,12 @@ administrations:
           en: GCcollab
           fr: GCcollab
         description:
-          en: External social networking platform hosted by the Government of Canada
-          fr: Plateforme de réseautage social externe hébergée par le gouvernement du Canada
+          en: >-
+            External social networking platform hosted by the Government of
+            Canada
+          fr: >-
+            Plateforme de réseautage social externe hébergée par le gouvernement
+            du Canada
       - contact:
           URL:
           en: 'https://github.com/gctools-outilsgc/gcconnex/issues'
@@ -55,4 +61,6 @@ administrations:
           fr: GCconnex
         description:
           en: Internal social networking platform for the Government of Canada
-          fr: Plateforme de réseautage social interne pour le gouvernement du Canada
+          fr: >-
+            Plateforme de réseautage social interne pour le gouvernement du
+            Canada
