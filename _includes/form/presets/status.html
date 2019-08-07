@@ -4,9 +4,8 @@
   {% include form/components/label.html id=include.idPreset title=title param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}" name="{{ title }}">
     <option value="">&nbsp;</option>
-    {%- for options in site.data.i18n.form[include.idPreset][title].options -%}
-    {%- assign option = options[1] %}
-    <option value="{{ option.en }}">{{ option[page.lang] }}</option>
+    {%- for option in site.data.i18n.form[include.idPreset][title].options -%}
+    <option value="{{ option[1].en }}">{{ option[1][page.lang] }}</option>
     {%- endfor %}
   </select>
 </div>

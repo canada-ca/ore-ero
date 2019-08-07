@@ -1,244 +1,60 @@
 <div class="row">
   <ul class="list-unstyled">
+    {%- for i in (1..4) -%}
     <li>
       <details>
-        <summary>{{ site.data.i18n.administrations.federal[page.lang] }}</summary>
+        {%- capture level -%}{%- cycle 'federal', 'provincial', 'municipal', 'aboriginal' -%}{%- endcapture -%}
+        <summary>{{ site.data.i18n.administrations[level][page.lang] }}</summary>
         <div class="list-group">
-        {%- assign repo_array = "" | split: ',' -%}
-        {%- assign groups_array = "" | split: ',' -%}
-        {%- for fptms in site.data.code -%}
-          {%- assign fptm = fptms[1] -%}
-          {%- for admins in fptm -%}
-            {%- assign admin = admins[1] -%}
-            {%- for release in admin.releases -%}
-              {%- assign aName = site.data.administrations.federal | where: "code", admin.adminCode -%}
-              {%- if aName[0].name[page.lang] != nil -%}
-                {%- if release.repositoryURL[page.lang] != nil -%}
-                  {%- assign repo_url = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
-                  {%- assign repo_size = repo_url | size -%}
-                  {%- if repo_size == 3 -%}
+          {%- assign repo_arr = "" | split: ',' -%}
+          {%- assign admin_arr = "" | split: ',' -%}
 
-                    {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign grp_url = repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign repo_array = repo_array | push: org_url -%}
-                    {%- assign groups_array = groups_array | push: grp_url -%}
-                    {%- elsif repo_size == 4 -%}
-                    {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign grp_url = repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-
-                    {%- assign repo_array = repo_array | push: org_url -%}
-                    {%- assign groups_array = groups_array | push: grp_url -%}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endfor -%}
-        {%- endfor -%}
-
-        {%- assign repo_array = repo_array | sort_natural | uniq -%}
-        {%- assign groups_array = groups_array | sort_natural | uniq -%}
-        {%- for grp in groups_array -%}
-        {%- assign grp_name = grp | split: "/" -%}
-          {%- if grp_name.size == 2 -%}
-          <a href="{{"https://"| append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-          {%- elsif grp_name.size == 3 -%}
-          <a href="{{"https://"| append: grp_name[2] | append: "/" | append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-
-          {%- endif -%}
-          {%- for repo in repo_array -%}
-          {%- assign org_name = repo | split: "/" -%}
-            {%- if repo contains {{grp}} -%}
-          <ul>
-            <li>
-              {{org_name[0]}}
-            </li>
-          </ul>
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endfor -%}
-        </div>
-      </details>
-    </li>
-
-    <li>
-      <details>
-      <summary>{{ site.data.i18n.administrations.provincial[page.lang] }}</summary>
-      <div class="list-group">
-        {%- assign repo_array = "" | split: ',' -%}
-        {%- assign groups_array = "" | split: ',' -%}
-        {%- for fptms in site.data.code -%}
-          {%- assign fptm = fptms[1] -%}
-          {%- for admins in fptm -%}
-            {%- assign admin = admins[1] -%}
-            {%- for release in admin.releases -%}
-              {%- assign aName = site.data.administrations.provincial | where: "code", admin.adminCode -%}
-              {%- if aName[0].name[page.lang] != nil -%}
-                {%- if release.repositoryURL[page.lang] != nil -%}
-                  {%- assign repo_url = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
-                  {%- assign repo_size = repo_url | size -%}
-                  {%- if repo_size == 3 -%}
-
-                    {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign grp_url = repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign repo_array = repo_array | push: org_url -%}
-                    {%- assign groups_array = groups_array | push: grp_url -%}
-                    {%- elsif repo_size == 4 -%}
-                    {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                    {%- assign grp_url = repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-
-                    {%- assign repo_array = repo_array | push: org_url -%}
-                    {%- assign groups_array = groups_array | push: grp_url -%}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endfor -%}
-        {%- endfor -%}
-
-
-        {%- assign repo_array = repo_array | sort_natural | uniq -%}
-        {%- assign groups_array = groups_array | sort_natural | uniq -%}
-        {%- for grp in groups_array -%}
-        {%- assign grp_name = grp | split: "/" -%}
-          {%- if grp_name.size == 2 -%}
-          <a href="{{"https://"| append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-          {%- elsif grp_name.size == 3 -%}
-          <a href="{{"https://"| append: grp_name[2] | append: "/" | append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-
-          {%- endif -%}
-          {%- for repo in repo_array -%}
-          {%- assign org_name = repo | split: "/" -%}
-            {%- if repo contains {{grp}} -%}
-          <ul>
-            <li>
-              {{org_name[0]}}
-            </li>
-          </ul>
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endfor -%}
-        </div>
-      </details>
-    </li>
-
-    <li>
-      <details>
-        <summary>{{ site.data.i18n.administrations.municipal[page.lang] }}</summary>
-          <div class="list-group">
-          {%- assign repo_array = "" | split: ',' -%}
-          {%- assign groups_array = "" | split: ',' -%}
-          {%- for fptms in site.data.code -%}
-            {%- assign fptm = fptms[1] -%}
-            {%- for admins in fptm -%}
-              {%- assign admin = admins[1] -%}
-              {%- for release in admin.releases -%}
-                {%- assign aName = site.data.administrations.municipal | where: "code", admin.adminCode -%}
-                {%- if aName[0].name[page.lang] != nil -%}
+          {%- for govLevels in site.data.code -%}
+            {%- for admins in govLevels[1] -%}
+              {%- for release in admins[1].releases -%}
+                {%- assign administration = site.data.administrations[level] | where: "code", admins[1].adminCode -%}
+                {%- if administration[0].name[page.lang] != nil -%}
                   {%- if release.repositoryURL[page.lang] != nil -%}
-                    {%- assign repo_url = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
-                    {%- assign repo_size = repo_url | size -%}
-                    {%- if repo_size == 3 -%}
-
-                      {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign grp_url = repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign repo_array = repo_array | push: org_url -%}
-                      {%- assign groups_array = groups_array | push: grp_url -%}
-                      {%- elsif repo_size == 4 -%}
-                      {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign grp_url = repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-
-                      {%- assign repo_array = repo_array | push: org_url -%}
-                      {%- assign groups_array = groups_array | push: grp_url -%}
+                    {%- assign repo_split = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
+                    {%- if repo_split.size == 3 -%}
+                      {%- assign repo_url = repo_split[1] | append: "/" | append: repo_split[0] -%}
+                      {%- assign admin_url = administration[0].name[page.lang] | append: "/" | append: repo_split[1] | append: "/" | append: repo_split[0] -%}
+                    {%- elsif repo_split.size == 4 -%}
+                      {%- assign repo_url = repo_split[2] | append: "/" | append: repo_split[1] | append: "/" | append: repo_split[0] -%}
+                      {%- assign admin_url = administration[0].name[page.lang] | append: "/" | append: repo_split[2] | append: "/" | append: repo_split[1] | append: "/" | append: repo_split[0] -%}
                     {%- endif -%}
+                    {%- assign repo_arr = repo_arr | push: repo_url -%}
+                    {%- assign admin_arr = admin_arr | push: admin_url -%}
                   {%- endif -%}
                 {%- endif -%}
               {%- endfor -%}
             {%- endfor -%}
           {%- endfor -%}
 
-          {%- assign repo_array = repo_array | sort_natural | uniq -%}
-          {%- assign groups_array = groups_array | sort_natural | uniq -%}
-          {%- for grp in groups_array -%}
-          {%- assign grp_name = grp | split: "/" -%}
-            {%- if grp_name.size == 2 -%}
-            <a href="{{"https://"| append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-            {%- elsif grp_name.size == 3 -%}
-            <a href="{{"https://"| append: grp_name[2] | append: "/" | append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
+          {%- assign repo_arr = repo_arr | sort_natural | uniq -%}
+          {%- assign admin_arr = admin_arr | sort_natural | uniq -%}
 
+          {%- for repo in repo_arr -%}
+            {%- assign repo_split = repo | split: "/" -%}
+            {%- if repo_split.size == 2 -%}
+            <a href="{{ "https://" | append: repo_split[1] | append: "/" | append: repo_split[0] }}" target="_blank">{{ repo_split[0] | capitalize }}</a>
+            {%- elsif repo_split.size == 3 -%}
+            <a href="{{ "https://" | append: repo_split[2] | append: "/" | append: repo_split[1] | append: "/" | append: repo_split[0] }}" target="_blank">{{ repo_split[0] | capitalize }}</a>
             {%- endif -%}
-            {%- for repo in repo_array -%}
-            {%- assign org_name = repo | split: "/" -%}
-              {%- if repo contains {{grp}} -%}
             <ul>
-              <li>
-                {{org_name[0]}}
-              </li>
-            </ul>
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endfor -%}
-        </div>
-      </details>
-    </li>
-
-    <li>
-      <details>
-        <summary>{{ site.data.i18n.administrations.aboriginal[page.lang] }}</summary>
-          <div class="list-group">
-          {%- assign repo_array = "" | split: ',' -%}
-          {%- assign groups_array = "" | split: ',' -%}
-          {%- for fptms in site.data.code -%}
-            {%- assign fptm = fptms[1] -%}
-            {%- for admins in fptm -%}
-              {%- assign admin = admins[1] -%}
-              {%- for release in admin.releases -%}
-                {%- assign aName = site.data.administrations.aboriginal | where: "code", admin.adminCode -%}
-                {%- if aName[0].name[page.lang] != nil -%}
-                  {%- if release.repositoryURL[page.lang] != nil -%}
-                    {%- assign repo_url = release.repositoryURL[page.lang] | remove: "https://" | split: "/" -%}
-                    {%- assign repo_size = repo_url | size -%}
-                    {%- if repo_size == 3 -%}
-
-                      {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign grp_url = repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign repo_array = repo_array | push: org_url -%}
-                      {%- assign groups_array = groups_array | push: grp_url -%}
-                      {%- elsif repo_size == 4 -%}
-                      {%- assign org_url = aName[0].name[page.lang] | append: "/" | append: repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-                      {%- assign grp_url = repo_url[2] | append: "/" | append: repo_url[1] | append: "/" | append: repo_url[0] -%}
-
-                      {%- assign repo_array = repo_array | push: org_url -%}
-                      {%- assign groups_array = groups_array | push: grp_url -%}
-                    {%- endif -%}
-                  {%- endif -%}
+              {%- for admin in admin_arr -%}
+                {%- if admin contains repo -%}
+                {%- assign admin_name = admin | split: "/" -%}
+                <li>{{ admin_name[0] }}</li>
                 {%- endif -%}
               {%- endfor -%}
-            {%- endfor -%}
-          {%- endfor -%}
-
-          {%- assign repo_array = repo_array | sort_natural | uniq -%}
-          {%- assign groups_array = groups_array | sort_natural | uniq -%}
-          {%- for grp in groups_array -%}
-          {%- assign grp_name = grp | split: "/" -%}
-            {%- if grp_name.size == 2 -%}
-            <a href="{{"https://"| append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-            {%- elsif grp_name.size == 3 -%}
-            <a href="{{"https://"| append: grp_name[2] | append: "/" | append: grp_name[1] | append: "/" | append: grp_name[0] }}" target="_blank">{{grp_name[0]}}</a>
-
-            {%- endif -%}
-            {%- for repo in repo_array -%}
-            {%- assign org_name = repo | split: "/" -%}
-              {%- if repo contains {{grp}} -%}
-            <ul>
-              <li>
-                {{org_name[0]}}
-              </li>
             </ul>
-              {%- endif -%}
-            {%- endfor -%}
+          {%- else -%}
+            {{ site.data.i18n.groups.notFound[page.lang] }}
           {%- endfor -%}
         </div>
       </details>
     </li>
+    {%- endfor -%}
   </ul>
 </div>

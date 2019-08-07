@@ -1,39 +1,16 @@
-{%- assign dates = "" | split: "," -%}
-{%- assign lastUpdated_array = "" | split: "," -%}
-{%- assign projectName_array = "" | split: "," -%}
-{%- assign repoUrl_array = "" | split: "," -%}
-
-{%- for fptms in site.data.code -%}
-  {%- assign fptm = fptms[1] -%}
-  {%- for admins in fptm -%}
-    {%- assign admin = admins[1] -%}
-    {%- for release in admin.releases -%}
-      {%- assign d = release.date.metadataLastUpdated | date: '%s' -%}
-      {%- assign dates = dates | push: d -%}
+{%- assign release_arr = "" | split: ',' -%}
+{%- for govLevels in site.data.code -%}
+  {%- for admins in govLevels[1] -%}
+    {%- for releases in admins[1].releases -%}
+      {%- assign release_arr = release_arr | push: releases -%}
     {%- endfor -%}
   {%- endfor -%}
 {%- endfor -%}
 
-{%- assign dates = dates | sort: '' | reverse -%}
-
-{%- for lastUpdated in dates limit 3 -%}
-  {%- for fptms in site.data.code -%}
-    {%- assign fptm = fptms[1] -%}
-    {%- for admins in fptm -%}
-      {%- assign admin = admins[1] -%}
-      {%- for release in admin.releases -%}
-        {%- assign d = release.date.metadataLastUpdated | date : '%s' -%}
-        {%- if d == lastUpdated -%}
-          {%- assign projectName_array = projectName_array | push: release.name[page.lang] -%}
-          {%- assign repoUrl_array = repoUrl_array | push: release.repositoryURL[page.lang] -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endfor -%}
+{%- assign release_arr = release_arr | sort: 'date.metadataLastUpdated' | reverse -%}
 
 <ul>
-  <li><a href="{{ repoUrl_array[0] }}" target="_blank">{{ projectName_array[0] }}</a></li>
-  <li><a href="{{ repoUrl_array[1] }}" target="_blank">{{ projectName_array[1] }}</a></li>
-  <li><a href="{{ repoUrl_array[2] }}" target="_blank">{{ projectName_array[2] }}</a></li>
+  {%- for release in release_arr limit: 3 -%}
+  <li><a href="{{ release.repositoryURL[page.lang] }}" target="_blank">{{ release.name[page.lang] }}</a></li>
+  {%- endfor -%}
 </ul>

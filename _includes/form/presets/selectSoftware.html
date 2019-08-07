@@ -4,9 +4,8 @@
   {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
-    {%- for softwares in site.data.software -%}
-    {%- assign software = softwares[1] %}
-    <option value="{{ software.name[page.lang] | slugify }}">{{ software.name[page.lang] }}</option>
+    {%- for software in site.data.software -%}
+    <option value="{{ software[1].name[page.lang] | slugify }}">{{ software[1].name[page.lang] }}</option>
     {%- endfor %}
   </select>
 </div>
