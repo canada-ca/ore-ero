@@ -39,10 +39,6 @@ function getStandardObject() {
   // Mandatory fields
   let standardObject = {
     schemaVersion: '1.0',
-    date: {
-      created: $('#datecreated').val(),
-      metadataLastUpdated: getToday()
-    },
     description: {
       en: $('#endescription').val(),
       fr: $('#frdescription').val()
