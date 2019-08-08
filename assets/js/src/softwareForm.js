@@ -151,7 +151,7 @@ function submitSoftwareFormNewAdmin() {
   let adminName = $('#newAdminCode').val();
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let softwareFile = `_data/logiciels_libres-open_source_software/${softwareName}.yml`;
+  let softwareFile = `_data/software/${softwareName}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
   fileWriter
@@ -272,7 +272,7 @@ function getConfigNewSoftwareNewAdmin(
 }
 
 function submitFormSoftware() {
-  let submitButton = document.getElementById('prbotSubmitSoftwareForm');
+  let submitButton = document.getElementById('prbotSubmitsoftwareForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
@@ -282,7 +282,7 @@ function submitFormSoftware() {
   let ProjectName = $('#enname')
     .val()
     .toLowerCase();
-  let file = `_data/logiciels_libres-open_source_software/${ProjectName}.yml`;
+  let file = `_data/software/${ProjectName}.yml`;
 
   fileWriter
     .merge(file, softwareObject, 'administrations', 'adminCode')
