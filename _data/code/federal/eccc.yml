@@ -14,8 +14,6 @@ releases:
       fr: >-
         Le Modèle de l'Environnement et de la Température de la Route (METRo)
         est un logiciel de prévision de la température de la route.
-    languages:
-      - Python
     name:
       en: METRo
       fr: METRo
@@ -36,3 +34,5 @@ releases:
         - Environnement
         - Température
         - Routes
+    languages:
+      - Python

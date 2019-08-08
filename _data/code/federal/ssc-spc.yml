@@ -14,9 +14,6 @@ releases:
       fr: >-
         Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
         Instantanément et Ad vitam aeternam
-    languages:
-      - Python
-      - C
     name:
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
@@ -37,6 +34,9 @@ releases:
         - Météo
         - Données
         - Communication
+    languages:
+      - Python
+      - C
   - contact:
       email: john.bain2@canada.ca
     date:

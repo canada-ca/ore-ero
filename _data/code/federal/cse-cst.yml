@@ -3,12 +3,12 @@ schemaVersion: '1.0'
 adminCode: cse-cst
 releases:
   - contact:
+      email: media@cse-cst.gc.ca
       URL:
         en: >-
           https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
         fr: >-
           https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
-      email: media@cse-cst.gc.ca
     date:
       created: '2016-02-28'
       metadataLastUpdated: '2019-01-31'
@@ -20,8 +20,6 @@ releases:
         Environnement visant à aider les étudiants à apprendre les bases de la
         programmation assembleur et du développement de systèmes d'exploitation.
         C'est un environnement portable et facile à apprendre
-    languages:
-      - Python
     name:
       en: Spartacus
       fr: Spartacus
@@ -44,6 +42,8 @@ releases:
         - Apprentissage
         - Programmation assembleur
         - Développement système d'exploitation
+    languages:
+      - Python
   - contact:
       email: assemblyline@cse-cst.gc.ca
     date:
@@ -59,8 +59,6 @@ releases:
         conçue pour aider les équipes de cyberdéfense à automatiser l'analyse
         des fichiers et à faire une meilleure utilisation du temps des analystes
         de la sécurité
-    languages:
-      - Python
     name:
       en: Assemblyline
       fr: Assemblyline
@@ -81,3 +79,5 @@ releases:
       fr:
         - Détection de maliciels
         - Analyse de fichiers
+    languages:
+      - Python
