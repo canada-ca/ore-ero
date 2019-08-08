@@ -1,20 +1,5 @@
 ---
 schemaVersion: '1.0'
-administrations:
-  - adminCode: tbs-sct
-    contact:
-      email: null
-    date:
-      created: '2018-01-23'
-      metadataLastUpdated: '2018-11-15'
-    references:
-      - URL:
-          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
-          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
-        name:
-          en: Standard on Web Interoperability
-          fr: Norme sur l'interopérabilité du Web
-    status: mandatory-gc
 description:
   en: >-
     HTML5 is a markup language used for structuring and presenting content on
@@ -38,3 +23,18 @@ tags:
     - Web
   fr:
     - Web
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: null
+    date:
+      created: '2018-01-23'
+      metadataLastUpdated: '2018-11-15'
+    references:
+      - URL:
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
+        name:
+          en: Standard on Web Interoperability
+          fr: Norme sur l'interopérabilité du Web
+    status: mandatory-gc
