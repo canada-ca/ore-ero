@@ -6,7 +6,7 @@ description:
 homepageURL:
   en: 'https://www.ansible.com/'
   fr: 'https://www.ansible.com/'
-cs:
+licences:
   - URL:
       en: 'https://github.com/ansible/ansible/blob/devel/COPYING'
       fr: 'https://github.com/ansible/ansible/blob/devel/COPYING'

@@ -429,7 +429,7 @@ function addValueToFieldsAdmin(obj) {
   if (obj.uses[0].contact.URL) {
     if (obj.uses[0].contact.URL.en)
       $('#encontactURL').val(obj.uses[0].contact.URL.en);
-    if (obj.uses.contact.URL.fr)
+    if (obj.uses[0].contact.URL.fr)
       $('#frcontactURL').val(obj.uses[0].contact.URL.fr);
   }
   if (obj.uses[0].contact.email)
