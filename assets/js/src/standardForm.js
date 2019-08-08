@@ -344,6 +344,8 @@ function selectStandard() {
 }
 
 function addValueToFieldsStandard(obj) {
+  resetFieldsStandard();
+
   $('#standardAcronym').val(obj.standardAcronym);
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
@@ -394,8 +396,9 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
-  $('#contactemail').val(obj.contact.email);
+  resetFieldsAdmin();
 
+  $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
   if (obj.contact.URL) {
     if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);

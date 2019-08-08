@@ -381,6 +381,8 @@ function selectSoftware() {
 }
 
 function addValueToFieldsSoftware(obj) {
+  resetFieldsSoftware();
+
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
   $('#endescription').val(obj.description.en);
@@ -422,6 +424,8 @@ function selectAdmin() {
 }
 
 function addValueToFieldsAdmin(obj) {
+  resetFieldsAdmin();
+
   if (obj.uses[0].contact.URL) {
     if (obj.uses[0].contact.URL.en)
       $('#encontactURL').val(obj.uses[0].contact.URL.en);

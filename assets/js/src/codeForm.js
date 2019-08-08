@@ -462,6 +462,8 @@ function getOrgLevel(result, admin) {
 }
 
 function addValueToFields(obj) {
+  resetFields();
+
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
   $('#endescription').val(obj.description.en);
@@ -476,7 +478,7 @@ function addValueToFields(obj) {
   if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.datelastModified);
+  $('#datelastModified').val(obj.date.lastModified);
 
   fillLicenceField(obj.licences);
 
@@ -495,16 +497,15 @@ function addValueToFields(obj) {
     if (obj.homepageURL.fr) $('#frhomepageURL').val(obj.homepageURL.fr);
   }
 
-  resetLanguages();
   if (obj.languages != undefined) {
     obj.languages.forEach(function(language) {
       selectLanguage(language);
     });
   }
 
-  if (obj.organizations) {
-    if (obj.organizations.en) $('#enorganization').val(obj.organizations.en);
-    if (obj.organizations.fr) $('#frorganization').val(obj.organizations.fr);
+  if (obj.organization) {
+    if (obj.organization.en) $('#enorganization').val(obj.organization.en);
+    if (obj.organization.fr) $('#frorganization').val(obj.organization.fr);
   }
 
   if (obj.partners)
