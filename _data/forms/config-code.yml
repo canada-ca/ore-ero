@@ -4,10 +4,10 @@ id: code
 
 formGroups:
   - preset: adminCode
-  - preset: selectCode
   - preset: empty
     title: releases
     param: {start: true}
+  - preset: selectCode
   - preset: description
   - preset: contact
   - preset: dates
