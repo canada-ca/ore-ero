@@ -3,18 +3,16 @@ schemaVersion: '1.0'
 adminCode: bc
 releases:
   - contact:
+      email: bcdevexchange@gov.bc.ca
       URL:
         en: 'https://github.com/BCDevExchange/devex/issues'
         fr: 'https://github.com/BCDevExchange/devex/issues'
-      email: bcdevexchange@gov.bc.ca
     date:
       created: '2016-10-23'
       metadataLastUpdated: '2019-01-29'
     description:
       en: B.C. Developer Exchange Application
       fr: Application Échange de développeurs C.-B.
-    languages:
-      - Python
     name:
       en: Devex
       fr: Devex
@@ -26,17 +24,19 @@ releases:
     repositoryURL:
       en: 'https://github.com/BCDevExchange/devex'
       fr: 'https://github.com/BCDevExchange/devex'
-    status: Production
     tags:
       en:
         - Developer Exchange
       fr:
         - Échange de développeurs
+    languages:
+      - Python
+    status: Maintained
   - contact:
+      email: todd.wilson@gov.bc.ca
       URL:
         en: 'https://github.com/bcgov/gwells/issues'
         fr: 'https://github.com/bcgov/gwells/issues'
-      email: todd.wilson@gov.bc.ca
     date:
       created: '2015-04-29'
       metadataLastUpdated: '2019-05-10'
@@ -50,8 +50,6 @@ releases:
     homepageURL:
       en: 'https://apps.nrs.gov.bc.ca/gwells/'
       fr: 'https://apps.nrs.gov.bc.ca/gwells/'
-    languages:
-      - JavaScript
     name:
       en: gwells
       fr: gwells
@@ -63,28 +61,25 @@ releases:
     repositoryURL:
       en: 'https://github.com/bcgov/gwells'
       fr: 'https://github.com/bcgov/gwells'
-    status: Production
     tags:
       en:
         - groundwater-data
       fr:
         - données-eaux souterraines
+    languages:
+      - JavaScript
+    status: Maintained
   - contact:
+      email: todd.wilson@gov.bc.ca
       URL:
         en: 'https://github.com/bcgov/devhub-app-web/issues'
         fr: 'https://github.com/bcgov/devhub-app-web/issues'
-      email: todd.wilson@gov.bc.ca
     date:
       created: '2017-10-20'
       metadataLastUpdated: '2019-05-10'
     description:
       en: Web application for the DevHub.
       fr: Application Web pour le DevHub.
-    homepageURL:
-      en: 'https://developer.gov.bc.ca/'
-      fr: 'https://developer.gov.bc.ca/'
-    languages:
-      - JavaScript
     name:
       en: devhub-app-web
       fr: devhub-app-web
@@ -96,28 +91,28 @@ releases:
     repositoryURL:
       en: 'https://github.com/bcgov/devhub-app-web'
       fr: 'https://github.com/bcgov/devhub-app-web'
-    status: Development
     tags:
       en:
         - DevHub App Web
       fr:
         - DevHub App Web
+    homepageURL:
+      en: 'https://developer.gov.bc.ca/'
+      fr: 'https://developer.gov.bc.ca/'
+    languages:
+      - JavaScript
+    status: Maintained
   - contact:
+      email: NRSApplications@gov.bc.ca
       URL:
         en: 'https://github.com/bcgov/ckanext-bcgov/issues'
         fr: 'https://github.com/bcgov/ckanext-bcgov/issues'
-      email: NRSApplications@gov.bc.ca
     date:
       created: '2014-03-20'
       metadataLastUpdated: '2019-05-10'
     description:
       en: BC Data Catalogue source code.
       fr: Code source du catalogue de données BC.
-    homepageURL:
-      en: 'http://catalogue.data.gov.bc.ca'
-      fr: 'http://catalogue.data.gov.bc.ca'
-    languages:
-      - Python
     name:
       en: ckanext-bcgov
       fr: ckanext-bcgov
@@ -129,9 +124,14 @@ releases:
     repositoryURL:
       en: 'https://github.com/bcgov/ckanext-bcgov'
       fr: 'https://github.com/bcgov/ckanext-bcgov'
-    status: Production
     tags:
       en:
         - Data Catalogue
       fr:
         - Catalogue de données
+    homepageURL:
+      en: 'http://catalogue.data.gov.bc.ca'
+      fr: 'http://catalogue.data.gov.bc.ca'
+    languages:
+      - Python
+    status: Maintained

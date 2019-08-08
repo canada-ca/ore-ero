@@ -10,8 +10,6 @@ releases:
     description:
       en: Vehicle safety recalls Amazon Alexa Skill.
       fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
-    languages:
-      - JavaScript
     name:
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
@@ -34,6 +32,8 @@ releases:
         - Rappels
         - Véhicules
         - Alexa
+    languages:
+      - JavaScript
   - contact:
       email: Heather.MacKeen@tc.gc.ca
       name: Heather MacKeen
@@ -50,8 +50,6 @@ releases:
         Le Centre de référence est une application WPF .net conçue pour
         permettre aux inspecteurs de Transports Canada de récupérer rapidement
         les documents stockés sur un lecteur réseau configuré avec Windows Sync.
-    languages:
-      - C#
     name:
       en: reference-center
       fr: reference-center
@@ -72,3 +70,5 @@ releases:
         - Fichiers
         - Synchronisation
         - Réseau
+    languages:
+      - 'C#'
