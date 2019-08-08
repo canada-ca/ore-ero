@@ -213,15 +213,13 @@
             <li>{{ tag }}</li>
           {%- endfor -%}
         </ul>
-        </p>
         {%- if release.languages != nil -%}
         <p>{{ site.data.i18n.tables.languages[page.lang] }}:</p>
-          <ul>
+        <ul>
           {%- for languages in release.languages -%}
             <li>{{ languages }}</li>
           {%- endfor -%}
         </ul>
-        </p>
         {%- endif -%}
         {%- if release.status != nil -%}
           <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
