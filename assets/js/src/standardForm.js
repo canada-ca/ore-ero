@@ -347,7 +347,6 @@ function addValueToFieldsStandard(obj) {
   $('#frname').val(obj.name.fr);
   $('#endescription').val(obj.description.en);
   $('#frdescription').val(obj.description.fr);
-  $('#datecreated').val(obj.date.created);
   $('#enspecURL').val(obj.specURL.en);
   $('#frspecURL').val(obj.specURL.fr);
   $('#enstandardOrg').val(obj.standardOrg.en);
@@ -362,7 +361,6 @@ function resetFieldsStandard() {
   $('#frname').val('');
   $('#endescription').val('');
   $('#frdescription').val('');
-  $('#datecreated').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#enstandardOrg').val('');
