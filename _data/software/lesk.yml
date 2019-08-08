@@ -37,32 +37,32 @@ administrations:
   - adminCode: gac-amc
     uses:
       - contact:
+          email: terry.oreilly@international.gc.ca
           URL:
             en: 'https://www.international.gc.ca'
             fr: 'https://www.international.gc.ca'
           name: Terry O'Reilly
-          email: terry.oreilly@international.gc.ca
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-15'
-        name:
-          en: IMSC
-          fr: IMSC
         description:
           en: Information Management System Console.
           fr: Information Management System Console.
+        name:
+          en: IMSC
+          fr: IMSC
       - contact:
+          email: yves.cloutier@international.gc.ca
           URL:
             en: 'https://www.international.gc.ca'
             fr: 'https://www.international.gc.ca'
           name: Yves Cloutier
-          email: yves.cloutier@international.gc.ca
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-15'
-        name:
-          en: CART
-          fr: CART
         description:
           en: COSMOS and ROCA Admin and Reporting Tool.
           fr: COSMOS and ROCA Admin and Reporting Tool.
+        name:
+          en: CART
+          fr: CART

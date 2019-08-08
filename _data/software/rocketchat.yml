@@ -27,9 +27,9 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        name:
-          en: GCcollab Message
-          fr: Message GCcollab
         description:
           en: Messaging pilot
           fr: Pilote Messagerie
+        name:
+          en: GCcollab Message
+          fr: Message GCcollab
