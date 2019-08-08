@@ -400,7 +400,7 @@ function resetFieldsSoftware() {
   $('#frdescription').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
-  resetMoreGroup($('#addMoreLicences'));
+  resetMoreGroup($('#addMorelicences'));
   resetTags();
 }
 
