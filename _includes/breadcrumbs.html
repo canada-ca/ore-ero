@@ -8,28 +8,12 @@
         <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.doc[page.lang] }}</span></li>
       {%- endif -%}
 
-      {%- if page.ref == 'code' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.code[page.lang] }}</span></li>
-      {%- elsif page.ref == 'software' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.software[page.lang] }}</span></li>
-      {%- elsif page.ref == 'standard' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.standard[page.lang] }}</span></li>
-      {%- endif -%}
-
       {%- if page.ref == 'codeForm' or page.ref == 'codeGroups' or page.ref == 'codeSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
       {%- elsif page.ref == 'softwareForm' or page.ref == 'softwareSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></li>
       {%- elsif page.ref == 'standardForm' or page.ref == 'standardSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.standard.link[page.lang] }}">{{ site.data.i18n.general.nav.standard[page.lang] }}</a></li>
-      {%- endif -%}
-
-      {%- if page.ref == 'codeForm' or page.ref == 'softwareForm' or page.ref == 'standardForm' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.form[page.lang] }}</span></li>
-      {%- elsif page.ref == 'codeGroups' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.groups[page.lang] }}</span></li>
-      {%- elsif page.ref =='codeSchema' or page.ref == 'softwareSchema' or page.ref == 'standardSchema' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.schema[page.lang] }}</span></li>
       {%- endif -%}
     </ol>
   </div>
