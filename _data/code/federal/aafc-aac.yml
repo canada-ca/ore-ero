@@ -1,0 +1,84 @@
+---
+schemaVersion: '1.0'
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+      URL:
+        en: 'http://www.google.com/contact'
+        fr: 'http://www.google.ca/contact'
+      name: contact
+      phone: 456-789-1230
+    date:
+      created: '2013-02-07'
+      metadataLastUpdated: '2019-08-09'
+      lastModified: '2019-02-13'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+        spdxID: MIT
+      - URL:
+          en: 'http://www.google.com/2'
+          fr: 'https://www.google.ca/licence2'
+        spdxID: MIT2
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+        - PotatoeEN
+      fr:
+        - TagFR
+        - PotatoeFR
+    downloadURL:
+      en: 'http://www.google.com/download'
+      fr: 'http://www.google.ca/download'
+    homepageURL:
+      en: 'https://accumulo.apache.org/'
+      fr: 'https://accumulo.apache.org/'
+    languages:
+      - C
+      - PHP
+      - JavaScript
+      - TypeScript
+      - test language
+    organization:
+      en: organization
+      fr: organisation
+    partners:
+      - URL:
+          en: 'http://www.google.com/partner'
+          fr: 'http://www.google.ca/partenaire'
+        email: contact@partner.com
+        name:
+          en: partner
+          fr: partenaire
+      - URL:
+          en: 'http://www.google.com/partner2'
+          fr: 'http://www.google.ca/partenaire2'
+        email: contact@partner2.com
+        name:
+          en: partner2
+          fr: partenaire2
+    relatedCode:
+      - URL:
+          en: 'http://www.google.com/related'
+          fr: 'http://www.google.ca/relié'
+        name:
+          en: related
+          fr: relié
+      - URL:
+          en: 'http://www.google.com/related2'
+          fr: 'http://www.google.ca/relié2'
+        name:
+          en: Related2
+          fr: relié2
+    status: Deprecated
