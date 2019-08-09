@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+homepageURL:
+  en: ''
+  fr: ''
+licences:
+  - URL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    spdxID: MIT
+name:
+  en: Accumulo
+  fr: Accumulo
+tags:
+  en:
+    - TagEN
+  fr:
+    - TagFR
+administrations:
+  - adminCode: fred
+    uses:
+      - contact:
+          email: frederic.lestage@montreal.ca
+        date:
+          started: '2019-08-07'
+          metadataLastUpdated: '2019-08-09'
+        description:
+          en: descEN
+          fr: descFR
+        name:
+          en: useEN
+          fr: useFR

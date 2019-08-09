@@ -14,3 +14,9 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: FRED
+  name:
+    en: Frederic Lestage
+    fr: Frédéric Lestage
+  parent: municipal
+  provinceCode: 'on'
