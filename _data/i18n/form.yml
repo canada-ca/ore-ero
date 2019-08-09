@@ -78,7 +78,7 @@ presets:
   contact:
     title:
       en: Contact Information
-      fr: Coordonnées de contact 
+      fr: Coordonnées de contact
     labels:
       name: *name
       email: *email
@@ -92,6 +92,13 @@ presets:
     infobulle: 
       en: Point of contact for general inquiries regarding the project.
       fr: Coordonnées de la personne à contacter pour des informations générales sur le logiciel.
+    titles:
+      email:
+        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+      name:
+        en: The name of a contact for the project.
+        fr: Le nom de la personne-ressource pour le projet.
   date:
     title:
       en: Project Creation Date
@@ -109,11 +116,21 @@ presets:
     infobulle:
       en: Select the date when the open source code was first created.
       fr: Sélectionnez la date de création du code source ouvert.
+    titles:
+      created:
+        en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
+      started:
+        en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
+      metadataLastUpdated:
+        en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
+        fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   description:
     title:
       en: Project Description
       fr: Description du projet
-    labels:
+    label:
       what:
         subtitle:
           en: What it does?
@@ -134,12 +151,22 @@ presets:
         fr:
           en: French
           fr: Francais
+      schema:
+          en: Description
+          fr: Description
     charactersLimit:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
     infobulle:
-      en: Add brief descriptions on what the code does (i.e. functionnality, use..) and on how it works.  
+      en: Add brief descriptions on what the code does (i.e. functionnality, use..) and on how it works.
       fr: Ajoutez une brève description du code, expliquant de quoi il s'agit et comment il fonctionne.
+    titles:
+      en:
+        en: English description
+        fr: Description en anglais
+      fr:
+        en: French description
+        fr: Description en francais
   homepageURL:
     title:
       en: Project Homepage
@@ -151,6 +178,9 @@ presets:
       fr:
         en: French homepage URL
         fr: URL en francais
+      schema:
+        en: Homepage URL
+        fr: URL de la page d'accueil
     infobulle:
       en: The URL of the project homepage.
       fr: Ajouter les URLs pour accéder à la page d'accueil du projet.
@@ -158,6 +188,9 @@ presets:
     title:
       en: Programming Languages 
       fr: Languages de programmation
+    label:
+      en: A list of the programming languages used in the project.
+      fr: Une liste des langages de programmation utilisés dans le projet.
     button:
       en: Add more languages
       fr: Ajouter un langage
@@ -182,7 +215,14 @@ presets:
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
     infobulle:
       en: Add general information about the project licenses. Search the list of lisences to find the SPDX license identifier according to your license's name.
-      fr: Ajouter des informations générales sur chaque licence du projet. Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. 
+      fr: Ajouter des informations générales sur chaque licence du projet. Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences.
+    titles:
+      URL:
+        en: The English and French URLs of licence.
+        fr: L'URL de la licence en français et en anglais.
+      spdxID:
+        en: SPDX License identifier
+        fr: Identifiant de licence SPDX
   orgLevel:
     title:
       en: Level of government
@@ -210,6 +250,7 @@ presets:
         fr:
           en: French URL
           fr: URL en francais
+        schema: *url_generic
       name:
         en:
           en: English name
@@ -217,9 +258,17 @@ presets:
         fr:
           en: French name
           fr: Nom en français
+        schema: *name
     infobulle:
       en: Add general information about each library, framework, API or other related software that is used in the project.
       fr: Ajouter des informations générales concernant chaque bibliothèque, plate-forme, API ou logiciel connexe utilisé dans le projet.
+    titles:
+      URL:
+        en: The english and french URLs of related software.
+        fr: L'URL anglais et francais d'un logiciel connexe.
+      name:
+        en: The english and french name of related software.
+        fr: Le nom d'un logiciel connexe en anglais et en francais.
   schemaVersion:
     title:
       en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
@@ -321,6 +370,9 @@ code:
       fr:
         en: French download URL
         fr: URL en francais
+      schema:
+        en: Download URL
+        fr: URL de téléchargement
     infobulle:
       en: The URL of the project download page, where a distribution of the project can be found.
       fr: Ajouter les URLs pour télécharger le projet
@@ -355,6 +407,10 @@ code:
           en: French name 
           fr: Nom en francais
         schema: *name
+    titles:
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
     infobulle:
       en: Contact information of each group partnering on the project.
       fr: Coordonnées de contact des groupes partenaires du projet. 
@@ -369,6 +425,9 @@ code:
       fr:
         en: French repository URL
         fr: URL en francais
+      schema:
+        en: Code Repository URL
+        fr: URL du dépôt de code
     infobulle:
       en: The URL of the public release repository, where the code is hosted.
       fr: Ajouter les URLs du répertoire public du projet, où le code est hébergé.
