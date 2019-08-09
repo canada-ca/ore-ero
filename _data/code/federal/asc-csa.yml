@@ -11,8 +11,10 @@ releases:
       created: '2015-09-28'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: The one-stop-shop solution for operating robots, satellites and beyond
-      fr: Un logiciel polyvalent pour faire fonctionner des robots et des satellites
+      en: 'The one-stop-shop solution for operating robots, satellites and beyond'
+      fr: >-
+        Un logiciel polyvalent pour faire fonctionner des robots et des
+        satellites
     languages:
       - Java
     name:
@@ -33,3 +35,28 @@ releases:
       fr:
         - Robots
         - Espace
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-30'
+      metadataLastUpdated: '2019-08-09'
+      lastModified: '2019-07-30'
+    description:
+      en: Best developper
+      fr: Meilleur développeur
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+        spdxID: Apache-2.0
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
