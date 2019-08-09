@@ -16,6 +16,7 @@ formGroups:
     title: downloadUrl
     param: {type: url, required: false}
   - preset: homepageURL
+    param: {type: url, required: false}
   - preset: languages
   - widget: string-i18n
     title: organization
