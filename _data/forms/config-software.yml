@@ -6,6 +6,7 @@ formGroups:
   - preset: selectSoftware
   - preset: description
   - preset: homepageURL
+    param: {type: url}
   - preset: licences
     param: {more: true}
   - preset: tags
