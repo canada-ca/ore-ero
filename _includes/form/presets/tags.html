@@ -1,19 +1,19 @@
 {%- assign title = "tags" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 <div id="tags">
   <div id="tagsEN" class="form-group">
-    {% include form/components/label-i18n.html id=include.id title=title lang="en" %}
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang="en" %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
       <input type="text" id="en{{ title }}" name="en{{ title }}" class="form-control" required="required">
     </div>
   </div>
   <div id="tagsFR" class="form-group">
-    {% include form/components/label-i18n.html id=include.id title=title lang="fr" %}
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang="fr" %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
       <input type="text" id="fr{{ title }}" name="fr{{ title }}" class="form-control" required="required">
     </div>
   </div>
 </div>
 <div class="input-group control-group after-add-more col-xs-2">
-  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.id][title].button[page.lang] }}</button>
+  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
 </div>

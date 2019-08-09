@@ -10,12 +10,10 @@ releases:
     description:
       en: Vehicle safety recalls Amazon Alexa Skill.
       fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
-    languages:
-      - JavaScript
     name:
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
           fr: 'https://github.com/tc-ca/alexa-gc-recalls/blob/master/LICENSE'
@@ -34,6 +32,8 @@ releases:
         - Rappels
         - Véhicules
         - Alexa
+    languages:
+      - JavaScript
   - contact:
       email: Heather.MacKeen@tc.gc.ca
       name: Heather MacKeen
@@ -41,14 +41,19 @@ releases:
       created: '2018-10-14'
       metadataLastUpdated: '2018-10-29'
     description:
-      en: The Reference Centre is .net WPF application that was designed for Transport Canada Inspectors to quickly retrieve documents stored on a network drive that was setup with Windows Sync (Always Available Offline).
-      fr: Le Centre de référence est une application WPF .net conçue pour permettre aux inspecteurs de Transports Canada de récupérer rapidement les documents stockés sur un lecteur réseau configuré avec Windows Sync.
-    languages:
-      - C#
+      en: >-
+        The Reference Centre is .net WPF application that was designed for
+        Transport Canada Inspectors to quickly retrieve documents stored on a
+        network drive that was setup with Windows Sync (Always Available
+        Offline).
+      fr: >-
+        Le Centre de référence est une application WPF .net conçue pour
+        permettre aux inspecteurs de Transports Canada de récupérer rapidement
+        les documents stockés sur un lecteur réseau configuré avec Windows Sync.
     name:
       en: reference-center
       fr: reference-center
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
           fr: 'https://github.com/tc-ca/Reference-Centre/blob/master/LICENSE'
@@ -65,3 +70,5 @@ releases:
         - Fichiers
         - Synchronisation
         - Réseau
+    languages:
+      - 'C#'

@@ -8,15 +8,16 @@ releases:
       created: '2013-10-06'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
-      fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
-    languages:
-      - Python
-      - C
+      en: >-
+        Subscribe And Recursively Re-advertise Ad nauseam to Communicate
+        Everything Nearly Instantly and Always
+      fr: >-
+        Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
+        Instantanément et Ad vitam aeternam
     name:
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
           fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
@@ -33,6 +34,9 @@ releases:
         - Météo
         - Données
         - Communication
+    languages:
+      - Python
+      - C
   - contact:
       email: john.bain2@canada.ca
     date:
@@ -44,7 +48,7 @@ releases:
     name:
       en: GC Architecture
       fr: Architecture GC
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
           fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'

@@ -29,9 +29,6 @@ email: &email
 name: &name
   en: Name
   fr: Nom
-phone: &phone
-  en: Phone number
-  fr: Numéro de téléphone
 URL: &url
   en:
     en: English URL
@@ -68,8 +65,8 @@ presets:
       email: *email
       name: *name
       phone:
-        en: Contact number (###-###-####)
-        fr: Numéro du contact (###-###-####)
+        en: Contact number
+        fr: Numéro du contact
     titles:
       URL:
         en: English and French URLs that can be used to contact the project.
@@ -151,7 +148,7 @@ presets:
     button:
       en: Add more languages
       fr: Ajouter plus de langues
-  licenses:
+  licences:
     title:
       en: Information about each licence for the project.
       fr: Renseignements sur chaque licence pour le projet.
@@ -172,22 +169,18 @@ presets:
         en: The English and French URLs of licence.
         fr: L'URL de la licence en français et en anglais.
       spdxID:
-        en: SPDX License identifier
+        en: SPDX Licence identifier
         fr: Identifiant de licence SPDX
   orgLevel:
-    title:
+    title: &title
       en: Level of government
       fr: Niveau de gouvernement
-    label:
-      en: Level of government
-      fr: Niveau de gouvernement
+    label: *title
   provinceSelect: &provinceSelect
-    title:
+    title: &title
       en: Province
       fr: province
-    label:
-      en: Province
-      fr: Province
+    label: *title
   province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
@@ -369,7 +362,7 @@ code:
       fr: Informations pour chaque projet ou code source publié.
 
 # Software form specifics
-oss:
+software:
   name:
     title:
       en: The English and French name of the project.
@@ -429,8 +422,8 @@ oss:
       en: Informations about software users.
       fr: Information à propos des utilisateurs du logiciel
 
-# Standards form specifics
-standards:
+# Standard form specifics
+standard:
   name:
     title:
       en: Name of the Standard
@@ -474,7 +467,7 @@ standards:
     label:
       en:
         en: English name
-        fr: Nom en anglais 
+        fr: Nom en anglais
       fr:
         en: french name
         fr: Nom en français

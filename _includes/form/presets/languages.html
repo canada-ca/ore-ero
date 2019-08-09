@@ -1,25 +1,23 @@
 {%- assign title = "languages" -%}
-{%- include form/components/title.html id=include.id title=title -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
 
 <div class="form-group">
-  <label>{{ site.data.i18n.form[include.id][title].label[page.lang] }}</label>
-  {%- assign languages_array = "" | split: "," -%}
-  {%- for fptms in site.data.code -%}
-  {%- assign fptm = fptms[1] -%}
-  {%- for admins in fptm -%}
-    {%- assign admin = admins[1] -%}
-    {%- for release in admin.releases -%}
+  <label>{{ site.data.i18n.form[include.idPreset][title].label[page.lang] }}</label>
+  {%- assign lang_arr = "" | split: "," -%}
+  {%- for govLevels in site.data.code -%}
+  {%- for admins in govLevels[1] -%}
+    {%- for release in admins[1].releases -%}
       {%- for language in release.languages -%}
-        {%- assign languages_array = languages_array  | push: language -%}
+        {%- assign lang_arr = lang_arr  | push: language -%}
       {%- endfor -%}
     {%- endfor -%}
     {%- endfor -%}
   {%- endfor %}
   <div id="{{ title }}" class="form-group">
-    {%- assign languages_array = languages_array | uniq  -%}
-    {%- for language in languages_array %}
-    <div class="checkbox"><label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}"> {{ language  }} </label></div>
+    {%- assign lang_arr = lang_arr | uniq  -%}
+    {%- for language in lang_arr %}
+    <div class="checkbox"><label><input class="{{ language }}" data-for="languages" type="checkbox" value="{{ language }}" name="{{ language }}">{{ language }}</label></div>
     {%- endfor %}
   </div>
-  <button type="button" class="btn btn-primary" onclick="addMoreLanguages()"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form.[include.id][title].button[page.lang] }}</button>
+  <button type="button" class="btn btn-primary" onclick="addMoreLanguages()"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form.[include.idPreset][title].button[page.lang] }}</button>
 </div>

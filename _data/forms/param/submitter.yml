@@ -1,0 +1,5 @@
+---
+username:
+  rule: alphanum-space
+email:
+  type: email

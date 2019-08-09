@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Instant messaging team chat
+  fr: Messagerie instantanée et clavardage d'équipe
+homepageURL:
+  en: 'https://rocket.chat'
+  fr: 'https://rocket.chat'
+licences:
+  - URL:
+      en: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
+      fr: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
+    spdxID: MIT
+name:
+  en: Rocketchat
+  fr: Rocketchat
+tags:
+  en:
+    - Instant messaging
+  fr:
+    - Messagerie instantanée
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: ilia.salem@tbs-sct.gc.ca
+        date:
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-16'
+        description:
+          en: Messaging pilot
+          fr: Pilote Messagerie
+        name:
+          en: GCcollab Message
+          fr: Message GCcollab

@@ -1,6 +1,6 @@
 /* exported addMoreLanguages getLanguages selectLanguage resetLanguages */
 
-function addMoreLanguages() {
+function addMoreLanguages(value) {
   $(`<div class="control-group additional-languages input-group col-xs-2 mrgn-tp-md">
         <input type="text" id="${'_' +
           Math.random()
@@ -8,7 +8,9 @@ function addMoreLanguages() {
             .substr(
               2,
               9
-            )}" name="language" data-for="languages" class="form-control" required="required">
+            )}" name="language" data-for="languages" class="form-control" required="required"${
+    value != undefined ? ' value="' + value + '"' : ''
+  }>
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
@@ -24,7 +26,9 @@ function getLanguages() {
 }
 
 function selectLanguage(language) {
-  $('#languages .' + language).prop('checked', true);
+  if ($('#languages input[name = "' + language + '"]').length == 0)
+    addMoreLanguages(language);
+  else $('#languages input[name = "' + language + '"]').prop('checked', true);
 }
 
 function resetLanguages() {
@@ -32,7 +36,5 @@ function resetLanguages() {
     $(input).prop('checked', false);
   });
 
-  $(document).ready(function() {
-    $('.additional-languages').remove();
-  });
+  $('.additional-languages').remove();
 }

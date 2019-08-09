@@ -5,26 +5,27 @@
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses addMoreRelatedCode
+  addMoreLicences addMoreRelatedCode resetMoreGroup addMoreGroup fillLicenceField
+  getToday
 */
 
-const codeObj = $('.page-codeForm #nameselect');
-const adminObj = $('.page-codeForm #adminCode');
+const codeSelect = $('.page-codeForm #nameselect');
+const adminSelect = $('.page-codeForm #adminCode');
 
 $(document).ready(function() {
-  adminObj.change(function() {
-    selectAdmin();
-  });
-
-  codeObj.change(function() {
-    selectCode();
-  });
-
   $('#prbotSubmitcodeForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val() != '') submitFormAdminCodeForm();
       else submitCodeForm();
     }
+  });
+
+  adminSelect.change(function() {
+    selectAdmin();
+  });
+
+  codeSelect.change(function() {
+    selectCode();
   });
 
   $('#formReset').click(function() {
@@ -35,7 +36,7 @@ $(document).ready(function() {
 });
 
 function getCodeObject() {
-  // Handles mandatory fields
+  // Mandatory fields
   let codeObject = {
     schemaVersion: '1.0',
     adminCode: getAdminCode(),
@@ -46,7 +47,7 @@ function getCodeObject() {
         },
         date: {
           created: $('#datecreated').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+          metadataLastUpdated: getToday()
         },
         description: {
           en: $('#endescription').val(),
@@ -56,7 +57,7 @@ function getCodeObject() {
           en: $('#enname').val(),
           fr: $('#frname').val()
         },
-        licenses: [],
+        licences: [],
         repositoryURL: {
           en: $('#enrepositoryUrl').val(),
           fr: $('#frrepositoryUrl').val()
@@ -69,10 +70,10 @@ function getCodeObject() {
     ]
   };
 
-  // Handle more-groups
-  addMoreLicenses(codeObject.releases[0]);
+  // More-groups
+  addMoreLicences(codeObject.releases[0]);
 
-  // Handle optional fields
+  // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     codeObject.releases[0].contact.URL = {};
   }
@@ -382,7 +383,7 @@ function getConfigNew(codeObject, file) {
 
 function selectAdmin() {
   let lang = $('html').attr('lang');
-  let admin = adminObj.val();
+  let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
     $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
@@ -423,8 +424,8 @@ function selectAdmin() {
 
 function selectCode() {
   let lang = $('html').attr('lang');
-  let admin = adminObj.val();
-  let code = codeObj.val();
+  let admin = adminSelect.val();
+  let code = codeSelect.val();
   if (code != '') {
     $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
       result
@@ -461,12 +462,14 @@ function getOrgLevel(result, admin) {
 }
 
 function addValueToFields(obj) {
+  resetFields();
+
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
   $('#endescription').val(obj.description.en);
   $('#frdescription').val(obj.description.fr);
 
-  if (obj.contact.url) {
+  if (obj.contact.URL) {
     if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
     if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
   }
@@ -475,11 +478,9 @@ function addValueToFields(obj) {
   if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.datelastModified);
+  $('#datelastModified').val(obj.date.lastModified);
 
-  $('#enlicensesURL').val(obj.licenses[0].URL.en);
-  $('#frlicensesURL').val(obj.licenses[0].URL.fr);
-  $('#licensesspdxID').val(obj.licenses[0].spdxID);
+  fillLicenceField(obj.licences);
 
   addTags(obj);
 
@@ -496,44 +497,54 @@ function addValueToFields(obj) {
     if (obj.homepageURL.fr) $('#frhomepageURL').val(obj.homepageURL.fr);
   }
 
-  resetLanguages();
   if (obj.languages != undefined) {
     obj.languages.forEach(function(language) {
       selectLanguage(language);
     });
   }
 
-  if (obj.organizations) {
-    if (obj.organizations.en) $('#enorganization').val(obj.organizations.en);
-    if (obj.organizations.fr) $('#frorganization').val(obj.organizations.fr);
+  if (obj.organization) {
+    if (obj.organization.en) $('#enorganization').val(obj.organization.en);
+    if (obj.organization.fr) $('#frorganization').val(obj.organization.fr);
   }
 
-  if (obj.partners) {
-    if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enpartnersURL').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frpartnersURL').val(obj.partners.URL.fr);
-    }
-    if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
-    if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
-    }
-  }
+  if (obj.partners)
+    obj.partners.forEach(function(partner, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup($('#addMorepartners'));
+      }
 
-  if (obj.relatedCode) {
-    if (obj.relatedCode[0].URL) {
-      if (obj.relatedCode[0].URL.en)
-        $('#enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
-      if (obj.relatedCode[0].URL.fr)
-        $('#frrelatedCodeURL').val(obj.relatedCode[0].URL.fr);
-    }
-    if (obj.relatedCode[0].name) {
-      if (obj.relatedCode[0].name.en)
-        $('#enrelatedCodename').val(obj.relatedCode[0].name.en);
-      if (obj.relatedCode[0].name.fr)
-        $('#frrelatedCodename').val(obj.relatedCode[0].name.fr);
-    }
-  }
+      if (partner.URL) {
+        if (partner.URL.en) $('#enpartnersURL' + id).val(partner.URL.en);
+        if (partner.URL.fr) $('#frpartnersURL' + id).val(partner.URL.fr);
+      }
+      if (partner.email) $('#partnersemail' + id).val(partner.email);
+      if (partner.name) {
+        if (partner.name.en) $('#enpartnersname' + id).val(partner.name.en);
+        if (partner.name.fr) $('#frpartnersname' + id).val(partner.name.fr);
+      }
+    });
+
+  if (obj.relatedCode)
+    obj.relatedCode.forEach(function(related, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup('#addMorerelatedCode');
+      }
+      if (related.URL) {
+        if (related.URL.en) $('#enrelatedCodeURL' + id).val(related.URL.en);
+        if (related.URL.fr) $('#frrelatedCodeURL' + id).val(related.URL.fr);
+      }
+      if (related.name) {
+        if (related.name.en) $('#enrelatedCodename' + id).val(related.name.en);
+        if (related.name.fr) $('#frrelatedCodename' + id).val(related.name.fr);
+      }
+    });
 
   if (obj.status) $('#status').val(obj.status);
 }
@@ -550,9 +561,7 @@ function resetFields() {
   $('#contactphone').val('');
   $('#datecreated').val('');
   $('#datelastModified').val('');
-  $('#enlicensesURL').val('');
-  $('#frlicensesURL').val('');
-  $('#licensesspdxID').val('');
+  resetMoreGroup($('#addMorelicences'));
   resetTags();
   $('#enrepositoryUrl').val('');
   $('#frrepositoryUrl').val('');
@@ -563,14 +572,7 @@ function resetFields() {
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
-  $('#enpartnersURL').val('');
-  $('#frpartnersURL').val('');
-  $('#partnersemail').val('');
-  $('#enpartnersname').val('');
-  $('#frpartnersname').val('');
-  $('#enrelatedCodeURL').val('');
-  $('#frrelatedCodeURL').val('');
-  $('#enrelatedCodename').val('');
-  $('#frrelatedCodename').val('');
+  resetMoreGroup($('#addMorepartners'));
+  resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');
 }

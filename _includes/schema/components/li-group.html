@@ -1,8 +1,6 @@
 <li>
   <details open>
-    <summary>{{ include.group }}
-      {%- if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]
-    </summary>
+    <summary>{{ include.group }} {% include schema/components/required.html required=include.param.required %} {% if include.array or include.param.more %}[array]{% else %}[string]{% endif %}</summary>
     <h5>{{ site.data.i18n.form[include.id][include.title].labels[include.group][page.lang] }}</h5>
     <p>{{ site.data.i18n.form[include.id][include.title].titles[include.group][page.lang] }}</p>
   </details>

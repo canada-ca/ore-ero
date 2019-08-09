@@ -1,9 +1,5 @@
-<input class="form-control" id="{{ include.prepend }}{{ include.title }}{{ include.group }}" name="{{ include.prepend }}{{ include.title }}{{ include.group }}" type="{{ include.type | default: "text" }}"
-  {%- if include.required == nil or include.required %} required="required"{% endif -%}
-  {%- if include.value %} value="{{ include.value }}"{% endif -%}
-  {%- if include.readonly %} readonly="readonly"{% endif -%}
-  {%- if include.rule -%}
-    {%- assign rules = include.rule | split: ',' -%}
-    {%- for rule in rules %} {{ site.data.forms.rules[rule] }}="true"{%- endfor -%}
-  {%- endif -%}
-  {%- if include.style %} style="{{ include.style }}"{% endif %} />
+{%- capture name %}{{ include.param.prepend }}{{ include.title }}{{ include.group }}{% endcapture -%}
+<input class="form-control" id="{{ name }}" name="{{ name }}" type="{{ include.param.type | default: "text" }}"
+{%- if include.param.type == "tel" %} placeholder="123-456-7890"{% endif -%}
+{% include form/components/rules.html rules=include.param.rule %}
+{%- if include.param.required == nil or include.param.required %} required="required"{% endif %} />
