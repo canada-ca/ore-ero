@@ -1,0 +1,51 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Best developper
+  fr: Meilleur développeur
+homepageURL:
+  en: 'https://accumulo.apache.org/'
+  fr: 'https://accumulo.apache.org/'
+licences:
+  - URL:
+      en: 'http://www.google.com'
+      fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+    spdxID: MIT
+  - URL:
+      en: 'http://www.google.com/2'
+      fr: 'http://www.google.ca/2'
+    spdxID: MIT2
+name:
+  en: Frederic
+  fr: Frédéric
+tags:
+  en:
+    - TagEN
+    - PotatoeEN
+  fr:
+    - TagFR
+    - PotatoeFR
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: frederic.lestage@montreal.ca
+          URL:
+            en: 'http://www.google.com/contact'
+            fr: 'http://www.google.ca/contact'
+          name: contact
+        date:
+          started: '2019-08-14'
+          metadataLastUpdated: '2019-08-09'
+        description:
+          en: Digital Collaboration Division development and deployment
+          fr: >-
+            Développement et déploiement de la Division de la collaboration
+            numérique
+        name:
+          en: Software Database Management Systems.
+          fr: useFR
+        status: Maintained
+        users:
+          - users
+          - public
