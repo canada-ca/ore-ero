@@ -368,7 +368,9 @@ function selectAdmin() {
   let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         $('#nameselect')
@@ -407,7 +409,9 @@ function selectCode() {
   let admin = adminSelect.val();
   let code = codeSelect.val();
   if (code != '') {
-    $.getJSON('http://localhost:4000/ore-ero/code.json', function(result) {
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+      result
+    ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
         resetFields();
