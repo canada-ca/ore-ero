@@ -15,8 +15,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-ab_scheming
       fr: ckanext-ab_scheming
@@ -49,8 +47,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-open_alberta
       fr: ckanext-open_alberta
@@ -83,8 +79,6 @@ releases:
         en: null
         fr: null
     category: '43233500'
-    languages:
-      - Python
     name:
       en: ckanext-geomapviewer
       fr: ckanext-geomapviewer

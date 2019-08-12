@@ -15,8 +15,6 @@ releases:
         en: null
         fr: null
     category: '43233500'
-    languages:
-      - JavaScript
     name:
       en: alexa-gc-recalls
       fr: alexa-gc-recalls
@@ -63,8 +61,6 @@ releases:
         en: null
         fr: null
     category: '43232200'
-    languages:
-      - C#
     name:
       en: reference-center
       fr: reference-center

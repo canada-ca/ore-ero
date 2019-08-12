@@ -79,13 +79,6 @@ presets:
     labels:
       name: *name
       email: *email
-    titles:
-      name:
-        en: Name
-        fr: Nom
-      email:
-        en: Email address
-        fr: Adresse électronique
     infobulle: 
       en: Point of contact for general inquiries regarding the project.
       fr: Coordonnées de la personne à contacter pour des informations générales sur le logiciel.
@@ -150,8 +143,8 @@ presets:
           fr: Francais
     label:
       schema:
-          en: Description
-          fr: Description
+        en: Description
+        fr: Description
     charactersLimit:
       en: (200 characters limit)
       fr: (limite de 200 caractères)

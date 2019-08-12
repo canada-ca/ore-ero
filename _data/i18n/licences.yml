@@ -105,7 +105,7 @@ LGPL-3.0-only:
   name: GNU Lesser General Public License v3.0 only
   value: LGPL-3.0-only
 LGPL-3.0-or-later:
-  name: GNU Lesser General Public License v3.0 or later	
+  name: GNU Lesser General Public License v3.0 or later
   value: LGPL-3.0-or-later
 LPL-1.02:
   name: Lucent Public License v1.02
@@ -122,57 +122,57 @@ MPL-2.0:
 MS-PL:
   name: Microsoft Public License
   value: MS-PL
-MS-RL	:
+MS-RL:
   name: Microsoft Reciprocal License
   value: MS-RL
-NCSA	:
+NCSA:
   name: University of Illinois/NCSA Open Source License
   value: NCSA
-Nokia	:
+Nokia:
   name: Nokia Open Source License
   value: Nokia
 OFL-1.1:
   name: SIL Open Font License 1.1
   value: OFL-1.1
-OSL-1.0	:
+OSL-1.0:
   name: Open Software License 1.0
   value: OSL-1.0
-OSL-2.0	:
+OSL-2.0:
   name: Open Software License 2.0
   value: OSL-2.0
-OSL-2.1	:
+OSL-2.1:
   name: Open Software License 2.1
   value: OSL-2.1
-OSL-3.0	:
+OSL-3.0:
   name: Open Software License 3.0
   value: OSL-3.0
-Python-2.0	:
+Python-2.0:
   name: Python License 2.0
   value: Python-2.0
-QPL-1.0	:
+QPL-1.0:
   name: Q Public License 1.0
   value: QPL-1.0
-RPSL-1.0	:
+RPSL-1.0:
   name: RealNetworks Public Source License v1.0
   value: RPSL-1.0
-SISSL	:
+SISSL:
   name: Sun Industry Standards Source License v1.1
   value: SISSL
-Sleepycat	:
+Sleepycat:
   name: Sleepycat License
   value: Sleepycat
-SPL-1.0	:
+SPL-1.0:
   name: Sun Public License v1.0
   value: SPL-1.0
-UPL-1.0	:
+UPL-1.0:
   name: Universal Permissive License v1.0
   value: UPL-1.0
 W3C:
   name: W3C Software Notice and License (2002-12-31)
   value: W3C
-Zlib	:
+Zlib:
   name: zlib License
   value: Zlib
-ZPL-2.0	:
+ZPL-2.0:
   name: Zope Public License 2.0
   value: ZPL-2.0

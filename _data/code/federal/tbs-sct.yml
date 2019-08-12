@@ -15,9 +15,6 @@ releases:
         en: null
         fr: null
     category: '43233500'
-    languages:
-      - PHP
-      - MySQL
     name:
       en: GCconnex
       fr: GCconnex
@@ -135,8 +132,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-canada
       fr: ckanext-canada
@@ -182,8 +177,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-cloudstorage
       fr: ckanext-cloudstorage
@@ -229,8 +222,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-scheming
       fr: ckanext-scheming
@@ -278,8 +269,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanapi
       fr: ckanapi
@@ -323,8 +312,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: ckanext-fluent
       fr: ckanext-fluent

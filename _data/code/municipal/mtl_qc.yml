@@ -15,8 +15,6 @@ releases:
         en: null
         fr: null
     category: '43232300'
-    languages:
-      - Python
     name:
       en: CKAN-Extension-Territoire
       fr: CKAN-Extension-Territoire

@@ -44,7 +44,7 @@ releases:
       en: str(required=False)
       fr: str(required=False)
     partners:
-        email: str(required=False)
+      - email: str(required=False)
         name:
           en: str(required=False)
           fr: str(required=False)

@@ -19,8 +19,6 @@ releases:
         en: null
         fr: null
     category: '43232600'
-    languages:
-      - Python
     name:
       en: METRo
       fr: METRo

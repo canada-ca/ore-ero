@@ -20,8 +20,6 @@ releases:
         en: null
         fr: null
     category: '43232500'
-    languages:
-      - Python
     name:
       en: Spartacus
       fr: Spartacus
@@ -66,8 +64,6 @@ releases:
         en: null
         fr: null
     category: '43233200'
-    languages:
-      - Python
     name:
       en: Assemblyline
       fr: Assemblyline
