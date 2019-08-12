@@ -1,5 +1,0 @@
----
-permalink: /normes_ouvertes-open_standards.json
----
-
-{{ site.data.normes_ouvertes-open_standards | jsonify }}

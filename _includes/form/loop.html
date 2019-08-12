@@ -1,73 +1,24 @@
 {% for formGroup in site.data.forms[page.config].formGroups -%}
-{%- capture id -%}{{ site.data.forms[page.config].id }}{%- endcapture -%}
-{%- assign idPreset = include.idPreset -%}
 
+{%- capture id -%}{{ site.data.forms[page.config].id }}{%- endcapture -%}
+
+{%- if formGroup.preset -%}
+  {%- assign type = 'presets' -%}
+  {%- assign name = formGroup.preset -%}
+  {%- assign file = formGroup.preset -%}
+{% elsif formGroup.widget %}
+  {%- assign type = 'widgets' -%}
+  {%- assign name = formGroup.title -%}
+  {%- assign file = formGroup.widget -%}
+{%- endif -%}
+
+{%- if name != 'empty' -%}
 <div class="form-element">
-{% if formGroup.preset -%}
-{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
-<div class="form-element-preset{% if formGroup.preset == 'licenses' or formGroup.preset == 'relatedCode' %} form-group-more{% endif %}" id="formgroup_preset_{{ formGroup.preset }}">
-{%- endif -%}
-  {%- case formGroup.preset -%}
-    {%- when 'adminCode' -%}
-      {% include form/presets/adminCode.html id=idPreset -%}
-    {%- when 'categorySelect' -%}
-      {% include form/presets/categorySelect.html id=idPreset -%}
-    {%- when 'contact' -%}
-      {% include form/presets/contact.html id=idPreset phone=formGroup.phone required=formGroup.required -%}
-    {%- when 'dates' -%}
-      {% include form/presets/dates.html id=idPreset created=formGroup.created started=formGroup.started modified=formGroup.modified -%}
-    {%- when 'description' -%}
-      {% include form/presets/description.html id=idPreset -%}
-    {%- when 'homepageURL' -%}
-      {% include form/presets/homepageURL.html id=idPreset -%}
-    {%- when 'languages' -%}
-      {% include form/presets/languages.html id=idPreset -%}
-    {%- when 'licenses' -%}
-      {% include form/presets/licenses.html id=idPreset -%}
-    {%- when 'orgLevel' -%}
-      {% include form/presets/orgLevel.html id=idPreset -%}
-    {%- when 'provinceSelect' -%}
-      {% include form/presets/provinceSelect.html id=idPreset -%}
-    {%- when 'relatedCode' -%}
-      {% include form/presets/relatedCode.html id=idPreset -%}
-    {%- when 'schemaVersion' -%}
-      <!-- schemaVersion -->
-    {%- when 'status' -%}
-      {% include form/presets/status.html id=idPreset -%}
-    {%- when 'submitter' -%}
-      {% include form/presets/submitter.html id=idPreset -%}
-    {%- when 'tags' -%}
-      {% include form/presets/tags.html id=idPreset -%}
-    {%- when 'selectStandard' -%}
-      {% include form/presets/selectStandard.html id=id -%}
-    {%- when 'selectCode' -%}
-      {% include form/presets/selectCode.html id=id -%}
-    {%- when 'selectOss' -%}
-      {% include form/presets/selectOss.html id=id -%}
-    {% when 'newAdmin' %}
-      {% include form/presets/newAdmin.html id=idPreset %}
-    {%- when 'hr' -%}
-      {% include form/presets/hr.html -%}
-    {%- when 'empty' -%}
-      <!-- empty -->
-  {%- endcase -%}
-{%- if formGroup.preset != 'empty' and formGroup.preset != 'hr' -%}
+  <div class="form-element-{{ type }}{% if formGroup.param.more %} form-group-more{% endif %}" id="formgroup_{{ type }}_{{ formGroup.param.prepend }}{{ name }}">
+{%- capture path -%}form/{{ type }}/{{ file }}.html{%- endcapture -%}
+{%- include {{ path }} param=formGroup.param id=id idPreset=include.idPreset title=name fields=formGroup.fields -%}
+  </div>
 </div>
 {%- endif -%}
-{% else %}
-<div class="form-group-widget{% if formGroup.more %} form-group-more{% endif %}" id="formgroup_widget_{% if formGroup.prepend != '' %}{{ formGroup.prepend }}{% endif %}{{ formGroup.title }}">
-  {%- case formGroup.widget -%}
-    {%- when 'group' -%}
-      {% include form/widgets/group.html id=id title=formGroup.title fields=formGroup.fields required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
-    {%- when 'select' -%}
-      {% include form/widgets/select.html id=id title=formGroup.title required=formGroup.required options=formGroup.options prepend=formGroup.prepend more=formGroup.more -%}
-    {%- when 'string' -%}
-      {% include form/widgets/string.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
-    {%- when 'string-i18n' -%}
-      {% include form/widgets/string-i18n.html id=id title=formGroup.title type=formGroup.type rule=formGroup.rule required=formGroup.required prepend=formGroup.prepend more=formGroup.more -%}
-  {%- endcase -%}
-</div>
-{%- endif -%}
-</div>
 
 {% endfor %}

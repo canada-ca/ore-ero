@@ -1,6 +1,6 @@
 ---
 layout: default
-ref: Docs
+ref: docs
 lang: en
 permalink: /en/docs.html
 ---
@@ -26,8 +26,8 @@ permalink: /en/docs.html
             <ul>
               <li><a href="#administrations">Administrations</a></li>
               <li><a href="#code">Code</a></li>
-              <li><a href="#logiciels_libres-open_source_software">Logiciels_libres-open_source_software</a></li>
-              <li><a href="#normes_ouvertes-open_standards">Normes_ouvertes-open_standards</a></li>
+              <li><a href="#software">Software</a></li>
+              <li><a href="#standard">Standard</a></li>
             </ul>
           </li>
         </ul>
@@ -35,14 +35,14 @@ permalink: /en/docs.html
     </div>
   </nav>
 </div>
-  
+
 <h2 id="how_to_add_your_data">How to add your data</h2>
 
 <h3 id="adding_your_administration">Adding your administration</h3>
 <p>
-  In the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> directory add your adminstration in the 
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>, 
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> or 
+  In the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> directory add your adminstration in the
+  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>,
+  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> or
   <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a> file.
 </p>
 
@@ -55,31 +55,31 @@ permalink: /en/docs.html
 
 <pre>
   <code>
-  - 
-    contact: 
+  -
+    contact:
       email: "abc@xyz.com"
-    date: 
+    date:
       created: "YYYY-MM-DD"
-      metadataLastUpdated: "YYYY-MM-DD"  
-    description: 
+      metadataLastUpdated: "YYYY-MM-DD"
+    description:
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
-    name: 
+    name:
       en: "Example"
       fr: "Exemple"
-    licenses:
-      - 
-        URL: 
+    licences:
+      -
+        URL:
           en: "https://example.com/repo/example/LICENCE-en"
           fr: "https://example.com/repo/example/LICENCE-fr"
         spdxID: "XYZ-1.0"
-    repositoryURL: 
+    repositoryURL:
       en: "https://example.com/repo/example"
       fr: "https://example.com/repo/example"
-    tags: 
-      en: 
+    tags:
+      en:
         - "tag1-en"
-      fr: 
+      fr:
         - "tag1-fr"
   </code>
 </pre>
@@ -91,30 +91,30 @@ permalink: /en/docs.html
 
 <h4 id="your_administration_needs_to_be_added">Your administration needs to be added:</h4>
 <p>
-  If your adminstration doesn't have a file under the 
-  <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you need to create a new file for your administration. Use the 
+  If your adminstration doesn't have a file under the
+  <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> directory, you need to create a new file for your administration. Use the
   <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/code_mandatory.yml">code template with only mandatory fields</a>.
 </p>
 
 <h3 id="adding_open_source_software">Adding Open Source Software</h3>
 
 <h4 id="the_software_is_already_there">The software is already there</h4>
-<p>If there is already a file for the open source software you are using under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a> directory, you need to check if your adminstration is already listed as using the open source software.</p>
+<p>If there is already a file for the open source software you are using under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/software">software</a> directory, you need to check if your adminstration is already listed as using the open source software.</p>
 
 <p>If not, you can copy the following at the bottom of the file, and change the informtion for your adminstration and use of the open source software. These are only the mandatory fields.</p>
 
 <pre>
   <code>
-  - 
+  -
     adminCode: abc-def
-    uses: 
-      - 
-        contact: 
+    uses:
+      -
+        contact:
           URL: https://www.example.com
-        name: 
+        name:
           en: "Example use"
           fr: "Exemple d'utilisation"
-        description: 
+        description:
           en: "Etiam rutrum, tellus nec egestas blandit."
           fr: "Vestibulum fringilla vel purus nec iaculis."
   </code>
@@ -124,13 +124,13 @@ permalink: /en/docs.html
 
 <pre>
   <code>
-      - 
-        contact: 
+      -
+        contact:
           URL: https://www.example.com
-        name: 
+        name:
           en: "Example use"
           fr: "Exemple d'utilisation"
-        description: 
+        description:
           en: "Etiam rutrum, tellus nec egestas blandit."
           fr: "Vestibulum fringilla vel purus nec iaculis."
   </code>
@@ -140,25 +140,25 @@ permalink: /en/docs.html
 
 <h4 id="your_open_source_software_needs_to_be_added">Your open source software needs to be added</h4>
 <p>
-  If your open source software does'nt have a file under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/logiciels_libres-open_source_software">logiciels_libres-open_source_software</a> directory, 
-  you need to create a new file for the open source software. Use the <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/ll-oss_mandatory.yml">ll-oss template with only mandatory fields</a>.
+  If your open source software does'nt have a file under the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/software">software</a> directory,
+  you need to create a new file for the open source software. Use the <a href="https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/software_mandatory.yml">software template with only mandatory fields</a>.
 </p>
 
 <h2 id="directory_structure">Directory structure</h2>
 
-<h3 id="administrations">Administrations</h3> 
+<h3 id="administrations">Administrations</h3>
 <p>List of Canadian federal, provincial, territorial and municipal administrations. Used to lookup bilingual names.</p>
 
-<h3 id="code">Code</h3> 
+<h3 id="code">Code</h3>
 <p>List of released open source code by administrations. Sub-folders contain data files. One file per administration.</p>
 <ul>
   <li>Federal</li>
-  <li>Provincial</li>    
-  <li>Municipal</li>    
+  <li>Provincial</li>
+  <li>Municipal</li>
 </ul>
 
-<h3 id="logiciels_libres-open_source_software">Logiciels_libres-open_source_software</h3> 
+<h3 id="software">software</h3>
 <p>List of open source software used by administrations.</p>
 
-<h3 id="normes_ouvertes-open_standards">Normes_ouvertes-open_standards</h3> 
+<h3 id="standard">Standard</h3>
 <p>List open standards endorsed or used by administrations.</p>

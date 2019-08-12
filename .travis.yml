@@ -3,7 +3,7 @@ rvm:
 - 2.6.0
 
 jdk:
-- oraclejdk8
+- openjdk12
 
 install:
 - bundle install
@@ -18,7 +18,7 @@ script:
 - html5validator --root _site/
 - yamale -s schemaCode.yaml _data/code
 - yamale -s schemaAdmin.yaml _data/administrations
-- yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
+- yamale -s schemaSoftware.yaml _data/software
 - npm run lint
 - yamllint -d configYamlLint.yml _data
 

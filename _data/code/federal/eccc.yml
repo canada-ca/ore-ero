@@ -9,8 +9,12 @@ releases:
       metadataLastUpdated: '2019-01-31'
     description:
       whatItDoes:
-        en: The Model of the Environment and Temperature of Roads (METRo) is a road forecast software.
-        fr: Le Modèle de l'Environnement et de la Température de la Route (METRo) est un logiciel de prévision de la température de la route.
+        en: >-
+          The Model of the Environment and Temperature of Roads (METRo) is a
+          road forecast software.
+        fr: >-
+          Le Modèle de l'Environnement et de la Température de la Route (METRo)
+          est un logiciel de prévision de la température de la route.
       howItWorks:
         en: null
         fr: null
@@ -20,7 +24,7 @@ releases:
     name:
       en: METRo
       fr: METRo
-    licenses:
+    licences:
       - URL:
           en: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
           fr: 'https://framagit.org/metroprojects/metro/blob/master/LICENSE'
@@ -37,3 +41,5 @@ releases:
         - Environnement
         - Température
         - Routes
+    languages:
+      - Python

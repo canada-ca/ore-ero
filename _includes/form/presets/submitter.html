@@ -2,5 +2,5 @@
 {% assign title = "submitter" -%}
 {%- include form/components/title.html id=include.idPreset title=title -%}
 
-{%- include form/components/group-group.html id=include.idPreset title=title group="username" rule="alphanum-space" -%}
-{%- include form/components/group-group.html id=include.idPreset title=title group="email" type="email" -%}
+{%- include form/components/group-group.html id=include.idPreset title=title group="username" param=site.data.forms.param.submitter.username -%}
+{%- include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.submitter.email -%}

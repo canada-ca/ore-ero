@@ -3,44 +3,42 @@
 id: code
 
 formGroups:
-  - preset: schemaVersion
   - preset: adminCode
-  - preset: selectCode
   - preset: empty
-    start: true
     title: releases
+    param: {start: true}
+  - preset: selectCode
   - widget: string-i18n
     title: organization
-    rule: alphanum-space
-    required: false
+    param: {rule: alphanum-space, required: false}
   - preset: status
   - preset: description
-  - preset: categorySelect
+  - preset: category
   - preset: tags
   - preset: contact
   - widget: group
     title: partners
-    required: false
-    more: true
+    param: {more: true, required: false}
     fields:
       - widget: string-i18n
         title: name
-        rule: alphanum-space
+        param: {rule: alphanum-space, required: false}
       - widget: string
         title: email
-        type: email
+        param: {type: email, required: false}
   - preset: dates
-    created: true
-    updated: true
+    param: {created: true}
   - widget: string-i18n
     title: repositoryUrl
-    type: url
+    param: {type: url}
   - preset: homepageURL
+    param: {type: url, required: false}
   - widget: string-i18n
     title: downloadUrl
-    type: url
-    required: false
-  - preset: licenses
+    param: {type: url, required: false}
+  - preset: licences
+    param: {more: true}
   - preset: languages
   - preset: relatedCode
+    param: {more: true}
   - preset: empty

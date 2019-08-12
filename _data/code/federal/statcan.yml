@@ -3,7 +3,6 @@ schemaVersion: '1.0'
 adminCode: statcan
 releases:
   - contact:
-      URL: 'https://github.com/CSBP-CPSE/OpenTabulate/issues'
       email: maksymarturo.neyra-nesterenko@canada.ca
     date:
       created: '2018-01-07'
@@ -19,7 +18,7 @@ releases:
     name:
       en: OpenTabulate
       fr: OpenTabulate
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
           fr: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'

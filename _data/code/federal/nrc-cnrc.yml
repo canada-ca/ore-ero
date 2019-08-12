@@ -9,8 +9,12 @@ releases:
       metadataLastUpdated: '2019-01-31'
     description:
       whatItDoes:
-        en: Toolkit to perform Monte Carlo simulation of ionizing radiation transport through matter
-        fr: Boîte à outils pour effectuer une simulation de Monte Carlo du transport du rayonnement ionisant à travers la matière
+        en: >-
+          Toolkit to perform Monte Carlo simulation of ionizing radiation
+          transport through matter
+        fr: >-
+          Boîte à outils pour effectuer une simulation de Monte Carlo du
+          transport du rayonnement ionisant à travers la matière
       howItWorks:
         en: null
         fr: null
@@ -20,7 +24,7 @@ releases:
     name:
       en: EGSnrc
       fr: EGSnrc
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
           fr: 'https://github.com/nrc-cnrc/EGSnrc/blob/master/LICENCE'
@@ -35,3 +39,5 @@ releases:
       fr:
         - Simulation de Monte Carlo
         - Rayonnement ionisant
+    languages:
+      - C++

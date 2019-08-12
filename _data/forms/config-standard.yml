@@ -1,0 +1,38 @@
+---
+
+id: standard
+
+formGroups:
+  - preset: selectStandard
+  - widget: string-i18n
+    title: name
+    param: {rule: alphanum-space}
+  - preset: description
+  - widget: string-i18n
+    title: specURL
+    param: {type: url}
+  - widget: string-i18n
+    title: standardOrg
+  - preset: tags
+  - preset: hr
+  - preset: empty
+    title: administrations
+    param: {start: true}
+  - preset: adminCode
+  - widget: group
+    title: reference
+    param: {more: true}
+    fields:
+      - widget: string-i18n
+        title: URL
+        param: {type: url}
+      - widget: string-i18n
+        title: name
+        param: {rule: names}
+  - preset: dates
+    param: {created: true}
+  - widget: string
+    title: status
+  - preset: contact
+    param: {phone: false}
+  - preset: empty

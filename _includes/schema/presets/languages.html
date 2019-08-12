@@ -1,7 +1,1 @@
-<li>
-  <details open>
-    <summary>languages [array]</summary>
-    <h5>{{ site.data.i18n.form[include.id].languages.title[page.lang] }}</h5>
-    <p>{{ site.data.i18n.form[include.id].languages.label[page.lang] }}</p>
-  </details>
-</li>
+{%- include schema/components/li.html id=include.idPreset title="languages" array=true param=site.data.forms.param.required_false -%}

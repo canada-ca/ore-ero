@@ -3,17 +3,19 @@ schemaVersion: '1.0'
 adminCode: cse-cst
 releases:
   - contact:
-      URL:
-        en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
-        fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/issues'
       email: media@cse-cst.gc.ca
     date:
       created: '2016-02-28'
       metadataLastUpdated: '2019-01-31'
     description:
       whatItDoes:
-        en: Learning environment that aims in helping students learn the basis of assembly programming and operating system development
-        fr: Environnement visant à aider les étudiants à apprendre les bases de la programmation assembleur et du développement de systèmes d'exploitation. C'est un environnement portable et facile à apprendre
+        en: >-
+          Learning environment that aims in helping students learn the basis of
+          assembly programming and operating system development
+        fr: >-
+          Environnement visant à aider les étudiants à apprendre les bases de la
+          programmation assembleur et du développement de systèmes
+          d'exploitation. C'est un environnement portable et facile à apprendre
       howItWorks:
         en: null
         fr: null
@@ -23,10 +25,12 @@ releases:
     name:
       en: Spartacus
       fr: Spartacus
-    licenses:
+    licences:
       - URL:
-          en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
-          fr: 'https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md'
+          en: >-
+            https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
+          fr: >-
+            https://github.com/CommunicationsSecurityEstablishment/spartacus/blob/master/LICENSE.md
         spdxID: GPL-2.0
     repositoryURL:
       en: 'https://github.com/CommunicationsSecurityEstablishment/spartacus'
@@ -40,6 +44,8 @@ releases:
         - Apprentissage
         - Programmation assembleur
         - Développement système d'exploitation
+    languages:
+      - Python
   - contact:
       email: assemblyline@cse-cst.gc.ca
     date:
@@ -47,8 +53,15 @@ releases:
       metadataLastUpdated: '2019-01-31'
     description:
       whatItDoes:
-        en: Platform for the analysis of malicious files. It is designed to assist cyber defence teams to automate the analysis of files and to better use the time of security analysts
-        fr: Plateforme servant à l'analyse de fichiers malveillants, qui a été conçue pour aider les équipes de cyberdéfense à automatiser l'analyse des fichiers et à faire une meilleure utilisation du temps des analystes de la sécurité
+        en: >-
+          Platform for the analysis of malicious files. It is designed to assist
+          cyber defence teams to automate the analysis of files and to better
+          use the time of security analysts
+        fr: >-
+          Plateforme servant à l'analyse de fichiers malveillants, qui a été
+          conçue pour aider les équipes de cyberdéfense à automatiser l'analyse
+          des fichiers et à faire une meilleure utilisation du temps des
+          analystes de la sécurité
       howItWorks:
         en: null
         fr: null
@@ -58,10 +71,12 @@ releases:
     name:
       en: Assemblyline
       fr: Assemblyline
-    licenses:
+    licences:
       - URL:
-          en: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
-          fr: 'https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default'
+          en: >-
+            https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default
+          fr: >-
+            https://bitbucket.org/cse-assemblyline/assemblyline/src/dec2e5a0143fdf8d65fd8c652327ad226b1e704c/LICENSE.md?at=master&fileviewer=file-view-default
         spdxID: MIT
     repositoryURL:
       en: 'https://bitbucket.org/cse-assemblyline/assemblyline'
@@ -73,3 +88,5 @@ releases:
       fr:
         - Détection de maliciels
         - Analyse de fichiers
+    languages:
+      - Python

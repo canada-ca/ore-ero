@@ -1,22 +1,14 @@
-{%- if include.more %}<div class="add-more-group" id="addMore{{ include.title }}" data-title="{{ include.title }}">{% endif -%}
-{%- include form/components/title.html id=include.id title=include.title prepend=include.prepend -%}
-{%- if include.more %}<div class="add-more-content">{% endif -%}
+{%- if include.param.more %}<div class="add-more-group" id="addMore{{ include.title }}" data-title="{{ include.title }}">{% endif -%}
+{%- include form/components/title.html id=include.id title=include.title param=include.param -%}
+{%- if include.param.more %}<div class="add-more-content">{% endif -%}
 
 {%- for field in include.fields -%}
 
-  {%- if field.required == nil -%}
-    {%- assign required = include.required -%}
-  {%- else -%}
-    {%- assign required = field.required -%}
-  {%- endif -%}
+  {%- assign type = 'widgets' -%}
+  {%- assign name = field.title -%}
+  {%- capture file -%}{{ field.widget }}-group{%- endcapture -%}
 
-  {%- case field.widget -%}
-    {%- when 'string' -%}
-      {%- include form/components/group-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule prepend=include.prepend -%}
-    {%- when 'string-i18n' -%}
-      {%- include form/components/group-i18n-group.html id=include.id title=include.title group=field.title required=required type=field.type value=field.value readonly=field.readonly rule=field.rule prepend=include.prepend -%}
-    {%- when 'select' -%}
-      {%- include form/widgets/select.html id=include.id title=include.title required=required options=options -%}
-  {%- endcase -%}
+  {%- capture path -%}form/{{ type }}/{{ file }}.html{%- endcapture -%}
+  {%- include {{ path }} param=field.param id=include.id title=include.title group=field.title -%}
 {%- endfor -%}
-{%- if include.more -%}</div></div>{%- endif %}
+{%- if include.param.more -%}</div></div>{%- endif %}

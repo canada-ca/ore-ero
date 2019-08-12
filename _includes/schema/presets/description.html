@@ -1,19 +1,19 @@
 <li>
   <details open>
     <summary> description
-      {%- if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [array]
+      {%- if include.param.required == nil or include.param.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [array]
     </summary>
     <h5>{{ site.data.i18n.form.presets.description.label.schema[page.lang] }}</h5>
     <p>{{ site.data.i18n.form.presets.description.title[page.lang] }}</p>
-    <h5>{{ site.data.i18n.form.presets.description.label.what.subtitle[page.lang] }} </h5>
+    <h5>{{ site.data.i18n.form.presets.description.labels.what.subtitle[page.lang] }} </h5>
       <ul>
-        <li>{{ site.data.i18n.form.presets.description.titles.en[page.lang] }}{% if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]</li>
-        <li>{{ site.data.i18n.form.presets.description.titles.fr[page.lang] }}{% if include.required == nil or include.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [{{ include.type | default: "string" }}]</li>
+        <li>{{ site.data.i18n.form.presets.description.titles.en[page.lang] }}{% if include.param.required == nil or include.param.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [string]</li>
+        <li>{{ site.data.i18n.form.presets.description.titles.fr[page.lang] }}{% if include.param.required == nil or include.param.required %} <span class="bg-primary">{{ site.data.i18n.form.required[page.lang] }}</span>{% endif %} [string]</li>
       </ul>
-    <h5>{{ site.data.i18n.form.presets.description.label.how.subtitle[page.lang] }} </h5>
+    <h5>{{ site.data.i18n.form.presets.description.labels.how.subtitle[page.lang] }} </h5>
       <ul>
-        <li>{{ site.data.i18n.form.presets.description.titles.en[page.lang] }} [{{ include.type | default: "string" }}]</li>
-        <li>{{ site.data.i18n.form.presets.description.titles.fr[page.lang] }} [{{ include.type | default: "string" }}]</li>
+        <li>{{ site.data.i18n.form.presets.description.titles.en[page.lang] }} [string]</li>
+        <li>{{ site.data.i18n.form.presets.description.titles.fr[page.lang] }} [string]</li>
       </ul>
   </details>
 </li>

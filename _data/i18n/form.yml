@@ -29,9 +29,6 @@ email: &email
 name: &name
   en: Name
   fr: Nom
-phone: &phone
-  en: Phone number
-  fr: Numéro de téléphone
 URL: &url
   en:
     en: English URL
@@ -65,7 +62,7 @@ presets:
     button:
       en: Add new administration
       fr: Ajouter une nouvelle administration
-  categorySelect:
+  category:
     title:
       en: Category
       fr: Catégorie
@@ -130,7 +127,7 @@ presets:
     title:
       en: Project Description
       fr: Description du projet
-    label:
+    labels:
       what:
         subtitle:
           en: What it does?
@@ -151,6 +148,7 @@ presets:
         fr:
           en: French
           fr: Francais
+    label:
       schema:
           en: Description
           fr: Description
@@ -197,7 +195,7 @@ presets:
     infobulle:
       en: Select the programming languages that are used in the project. Add new ones in case the programming languages are not listed.
       fr: Choisir les languages de programmation utilisés pour ce projet. Ajouter un language au cas où celui-ci n'était pas présent dans la liste.
-  licenses:
+  licences:
     title:
       en: Project Licenses
       fr: Licences du projet
@@ -221,22 +219,18 @@ presets:
         en: The English and French URLs of licence.
         fr: L'URL de la licence en français et en anglais.
       spdxID:
-        en: SPDX License identifier
+        en: SPDX Licence identifier
         fr: Identifiant de licence SPDX
   orgLevel:
-    title:
+    title: &title
       en: Level of government
       fr: Niveau de gouvernement
-    label:
-      en: Level of government
-      fr: Niveau de gouvernement
+    label: *title
   provinceSelect: &provinceSelect
-    title:
+    title: &title
       en: Province
       fr: province
-    label:
-      en: Province
-      fr: Province
+    label: *title
   province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
@@ -437,7 +431,7 @@ code:
       fr: Informations pour chaque projet ou code source publié.
 
 # Software form specifics
-oss:
+software:
   name:
     title:
       en: The English and French name of the project.
@@ -497,8 +491,8 @@ oss:
       en: Informations about software users.
       fr: Information à propos des utilisateurs du logiciel
 
-# Standards form specifics
-standards:
+# Standard form specifics
+standard:
   name:
     title:
       en: Name of the Standard
@@ -542,7 +536,7 @@ standards:
     label:
       en:
         en: English name
-        fr: Nom en anglais 
+        fr: Nom en anglais
       fr:
         en: french name
         fr: Nom en français

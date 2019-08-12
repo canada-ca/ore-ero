@@ -1,5 +1,4 @@
-{%- capture path -%}{{ include.prepend }}{{ include.title }}{%- endcapture -%}
-<h2  {% if include.styles %} style="{{ include.styles }}"{% endif %}>
-{{ site.data.i18n.form[include.id][path].title[page.lang] }}
+{%- capture path -%}{{ include.param.prepend }}{{ include.title }}{%- endcapture -%}
+<h2>{{ site.data.i18n.form.[include.id][path].title[page.lang] }}
 <span data-toggle="tooltip" data-placement="top" title="{{ site.data.i18n.form[include.id][path].infobulle[page.lang] }}" class="glyphicon glyphicon-question-sign small" aria-hidden="true"></span>
 </h2>
