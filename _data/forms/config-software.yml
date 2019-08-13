@@ -4,7 +4,11 @@ id: software
 
 formGroups:
   - preset: selectSoftware
+  - widget: string-i18n
+    title: organization
+    param: {rule: alphanum-space, required: false}
   - preset: description
+  - preset: category
   - preset: homepageURL
     param: {type: url}
   - preset: licences
@@ -21,9 +25,6 @@ formGroups:
     param: {phone: false}
   - preset: dates
     param: {started: true}
-  - widget: string-i18n
-    title: description
-    param: {prepend: use}
   - widget: string-i18n
     title: name
     param: {prepend: use}

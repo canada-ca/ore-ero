@@ -173,7 +173,7 @@ presets:
         en: Homepage URL
         fr: URL de la page d'accueil
     infobulle:
-      en: The URL of the project homepage.
+      en: Add the URL of the project homepage.
       fr: Ajouter les URLs pour accéder à la page d'accueil du projet.
   languages:
     title:
@@ -443,6 +443,26 @@ software:
       select:
         en: If you wish to update an existing software, please select it below
         fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
+    infobulle:
+      en: Add the name of the open source software
+      fr: Ajouter le nom du logiciel libre
+  organization:
+    title:
+      en: Team, branch or sector
+      fr: Équipe, direction ou secteur
+    infobulle:
+      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
+      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
+    label:
+      en:
+        en: English name
+        fr: Nom en anglais
+      fr:
+        en: French name
+        fr: Nom en français
+      schema:
+        en: Organization
+        fr: Organisation
   usename:
     title:
       en: The domain name of the project activity.
@@ -457,20 +477,6 @@ software:
       schema:
         en: Name of the project activity
         fr: Nom de l'activité du projet.
-  usedescription:
-    title:
-      en: The English and French description of the project activity.
-      fr: La description du domaine de l'activité du projet en français et en anglais.
-    label:
-      en:
-        en: English project activity description
-        fr: description du domaine de l'activité du projet en anglais
-      fr:
-        en: French project activity description
-        fr: description du domaine de l'activité du projet en français
-      schema:
-        en: Description of the project activity
-        fr: Description de l'activité du projet.
   users:
     title:
       en: Project Users
