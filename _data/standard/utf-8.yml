@@ -1,14 +1,15 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    UTF-8 is a variable width character encoding capable of encoding all valid
-    code points in Unicode using one to four 8-bit bytes. The encoding is
-    defined by the Unicode standard.
-  fr: >-
-    UTF-8 est un codage de caractères de largeur variable capable de coder tous
-    les points de code valides en Unicode en utilisant un à quatre octets de 8
-    bits. Le codage est défini par la norme Unicode.
+  whatItDoes:
+    en: >-
+      UTF-8 is a variable width character encoding capable of encoding all valid
+      code points in Unicode using one to four 8-bit bytes. The encoding is
+      defined by the Unicode standard.
+    fr: >-
+      UTF-8 est un codage de caractères de largeur variable capable de coder
+      tous les points de code valides en Unicode en utilisant un à quatre octets
+      de 8 bits. Le codage est défini par la norme Unicode.
 name:
   en: Unicode Transformation Format 8
   fr: Unicode Transformation Format 8

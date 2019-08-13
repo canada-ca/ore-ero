@@ -1,8 +1,12 @@
 ---
 schemaVersion: str()
 description:
-  en: str()
-  fr: str()
+  whatItDoes:
+    en: str()
+    fr: str()
+  howItWorks:
+    en: str(required=False)
+    fr: str(required=False)
 name:
   en: str()
   fr: str()
