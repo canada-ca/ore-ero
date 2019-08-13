@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicences resetMoreGroup addMoreGroup fillLicenceField
+  addMoreLicences resetMoreGroup fillLicenceField
   getToday
 */
 
@@ -82,21 +82,21 @@ function getsoftwareObject() {
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
   ) {
-    codeObject.releases[0].description.howItWorks = {};
+    softwareObject.releases[0].description.howItWorks = {};
   }
   if ($('#endescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.en = $(
+    softwareObject.releases[0].description.howItWorks.en = $(
       '#endescriptionhowItWorks'
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.fr = $(
+    softwareObject.releases[0].description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
   }
 
   if ($('#category :selected').val()) {
-    codeObject.releases[0].category = $('#category :selected').val();
+    softwareObject.releases[0].category = $('#category :selected').val();
   }
 
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
@@ -360,7 +360,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/software.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
     result
   ) {
     if (result[value]) {
@@ -399,7 +399,7 @@ function addValueToFieldsSoftware(obj) {
 function resetFieldsSoftware() {
   $('#enname').val('');
   $('#frname').val('');
- $('#endescriptionwhatItDoes').val('');
+  $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
   $('#frdescriptionhowItWorks').val('');
@@ -413,7 +413,7 @@ function resetFieldsSoftware() {
 function selectAdmin() {
   let software = softwareSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/software.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
     result
   ) {
     if (result[software]) {
@@ -443,7 +443,6 @@ function addValueToFieldsAdmin(obj) {
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
   $('#datestarted').val(obj.uses[0].date.started);
-
 }
 
 function resetFieldsAdmin() {
