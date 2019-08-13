@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-18'
+      metadataLastUpdated: '2019-08-13'
+    description:
+      en: What it does
+      fr: Qu'est-ce que ça fait
+      howItWorks:
+        en: How it works
+        fr: Comment ça fonctionne
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        spdxID: CPL-1.0
+    repositoryURL:
+      en: 'http://www.google.com'
+      fr: 'http://www.google.ca'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
+    category: '43231500'
