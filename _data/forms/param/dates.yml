@@ -5,7 +5,3 @@ created:
 started:
   type: date
   rule: dateISO
-modified:
-  type: date
-  rule: dateISO
-  required: false

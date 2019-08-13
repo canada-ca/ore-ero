@@ -95,7 +95,7 @@
     </header>
     <div class="modal-body">
       <p><strong>{{ standard.description[page.lang] }}</strong></p>
-      <p>Is being used by:</p>
+      <p>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</p>
       {%- for administration in standard.administrations -%}
           <div class="row">
             <div class="col-md-7">

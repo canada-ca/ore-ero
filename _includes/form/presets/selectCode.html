@@ -9,4 +9,4 @@
 
 {% include form/components/title.html id=include.id title=title -%}
 <p><small style="font-size: 11.4px">{{ site.data.i18n.form.code.name.charactersLimit[page.lang] }}</small></p>
-{% include form/components/group-i18n.html id=include.id title=title maxLength=100 -%}
+{% include form/components/group-i18n.html id=include.id title=title param=site.data.forms.param.selectCode -%}

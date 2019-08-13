@@ -29,7 +29,7 @@ email: &email
 name: &name
   en: Name
   fr: Nom
-URL: &url
+URL:
   en:
     en: English URL
     fr: URL anglais
@@ -79,7 +79,7 @@ presets:
     labels:
       name: *name
       email: *email
-    infobulle: 
+    infobulle:
       en: Point of contact for general inquiries regarding the project.
       fr: Coordonnées de la personne à contacter pour des informations générales sur le logiciel.
     titles:
@@ -177,7 +177,7 @@ presets:
       fr: Ajouter les URLs pour accéder à la page d'accueil du projet.
   languages:
     title:
-      en: Programming Languages 
+      en: Programming Languages
       fr: Languages de programmation
     label:
       en: A list of the programming languages used in the project.
@@ -272,7 +272,7 @@ presets:
       email: *email
     infobulle:
       en: Contact information of the person submitting this form.
-      fr: Ajouter les coordonnées du soumissionaire déposant le présent formulaire. 
+      fr: Ajouter les coordonnées du soumissionaire déposant le présent formulaire.
   status:
     title:
       en: Project Development Status
@@ -324,7 +324,7 @@ presets:
 code:
   name:
     title:
-      en: Project Name 
+      en: Project Name
       fr: Nom du projet
     infobulle:
       en: Add the name of the project.
@@ -365,10 +365,10 @@ code:
       fr: Ajouter les URLs pour télécharger le projet
   organization:
     title:
-      en: Team, branch or sector 
+      en: Team, branch or sector
       fr: Équipe, direction ou secteur
     infobulle:
-      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat. 
+      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
       fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
     label:
       en:
@@ -383,15 +383,15 @@ code:
   partners:
     title:
       en: Key Partners
-      fr: Partenaires 
+      fr: Partenaires
     labels:
       email: *email
       name:
         en:
-          en: English name 
+          en: English name
           fr: Nom en anglais
         fr:
-          en: French name 
+          en: French name
           fr: Nom en francais
         schema: *name
     titles:
@@ -400,7 +400,7 @@ code:
         fr: L'adresse courriel pour contacter le partenaire.
     infobulle:
       en: Contact information of each group partnering on the project.
-      fr: Coordonnées de contact des groupes partenaires du projet. 
+      fr: Coordonnées de contact des groupes partenaires du projet.
   repositoryUrl:
     title:
       en: Project Public Repository
