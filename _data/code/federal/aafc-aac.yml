@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-07-31'
+      metadataLastUpdated: '2019-08-13'
+    description:
+      en: What does it does
+      fr: Qu'est-ce que ça fait
+      howItWorks:
+        en: How does it work
+        fr: Comment ça fonctionne
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        spdxID: OSL-1.0
+    repositoryURL:
+      en: 'http://www.google.com/repository'
+      fr: 'http://www.google.ca/repertoire'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
+    category: '43231600'
