@@ -121,7 +121,7 @@ presets:
       en: Project Description
       fr: Description du projet
     labels:
-      what:
+      whatItDoes:
         subtitle:
           en: What it does?
           fr: De quoi il s'agit?
@@ -131,7 +131,7 @@ presets:
         fr:
           en: French
           fr: Francais
-      how:
+      howItWorks:
         subtitle:
           en: How it works?
           fr: Comment cela fonctionne?

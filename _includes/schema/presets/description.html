@@ -4,8 +4,8 @@
     <summary>{{ title }} {% include schema/components/required.html %} [array]</summary>
     <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
     <ul class="list-unstyled">
-      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="what" -%}
-      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="how" param=site.data.forms.param.required_false -%}
+      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="whatItDoes" -%}
+      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="howItWorks" param=site.data.forms.param.required_false -%}
     </ul>
   </details>
 </li>

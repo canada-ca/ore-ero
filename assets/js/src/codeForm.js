@@ -50,8 +50,8 @@ function getCodeObject() {
           metadataLastUpdated: getToday()
         },
         description: {
-          en: $('#endescriptionwhat').val(),
-          fr: $('#frdescriptionwhat').val()
+          en: $('#endescriptionwhatItDoes').val(),
+          fr: $('#frdescriptionwhatItDoes').val()
         },
         name: {
           en: $('#enname').val(),
@@ -74,17 +74,20 @@ function getCodeObject() {
   addMoreLicences(codeObject.releases[0]);
 
   // Handle optional fields
-  if ($('#endescriptionhow').val() || $('#frdescriptionhow').val()) {
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
     codeObject.releases[0].description.howItWorks = {};
   }
-  if ($('#endescriptionhow').val()) {
+  if ($('#endescriptionhowItWorks').val()) {
     codeObject.releases[0].description.howItWorks.en = $(
-      '#endescriptionhow'
+      '#endescriptionhowItWorks'
     ).val();
   }
-  if ($('#frdescriptionhow').val()) {
+  if ($('#frdescriptionhowItWorks').val()) {
     codeObject.releases[0].description.howItWorks.fr = $(
-      '#frdescriptionhow'
+      '#frdescriptionhowItWorks'
     ).val();
   }
 
@@ -252,7 +255,7 @@ function getConfigNewAdmin(
         'Project: ***' +
         codeName +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         ' and updated administration for ' +
         adminName +
         '\n',
@@ -314,7 +317,7 @@ function getConfigUpdate(result, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -345,7 +348,7 @@ function getConfigNew(codeObject, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -448,15 +451,15 @@ function addValueToFields(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescriptionwhat').val(obj.description.whatItDoes.en);
-  $('#frdescriptionwhat').val(obj.description.whatItDoes.fr);
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
   $('#category').val(obj.category);
 
   if (obj.description.howItWorks) {
     if (obj.description.howItWorks.en)
-      $('#endescriptionhow').val(obj.description.howItWorks.en);
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
     if (obj.description.howItWorks.fr)
-      $('#frdescriptionhow').val(obj.description.howItWorks.fr);
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
 
   $('#contactemail').val(obj.contact.email);
@@ -531,10 +534,10 @@ function addValueToFields(obj) {
 function resetFields() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescriptionwhat').val('');
-  $('#frdescriptionwhat').val('');
-  $('#endescriptionhow').val('');
-  $('#frdescriptionhow').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
   $('#category').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
