@@ -1,8 +1,15 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Transform your plain text into static websites and blogs
-  fr: Transformez votre texte brut en sites Web et blogs statiques
+  whatItDoes:
+    en: >-
+      Transform your plain text into static websites and blogs.
+    fr: >-
+      Transformez votre texte brut en sites Web et blogs statiques.
+  howItWorks:
+    en: null
+    fr: null
+category: '43232400'
 homepageURL:
   en: 'https://jekyllrb.com/'
   fr: 'https://jekyllrb.com/'

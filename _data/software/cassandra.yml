@@ -1,8 +1,15 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Apache Cassandra is a highly-scalable partitioned row store.
-  fr: Apache Cassandra est une base de données partitionnée hautement évolutif.
+  whatItDoes:
+    en: >-
+      Apache Cassandra is a highly-scalable partitioned row store.
+    fr: >-
+      Apache Cassandra est une base de données partitionnée hautement évolutif.
+  howItWorks:
+    en: null
+    fr: null
+category: '43232300'
 homepageURL:
   en: 'http://cassandra.apache.org/'
   fr: 'http://cassandra.apache.org/'

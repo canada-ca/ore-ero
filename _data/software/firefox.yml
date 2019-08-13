@@ -1,8 +1,15 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Web browser developed by Mozilla Foundation
-  fr: Navigateur Web développé par la Fondation Mozilla
+  whatItDoes:
+    en: >-
+      Web browser developed by Mozilla Foundation.
+    fr: >-
+      Navigateur Web développé par la Fondation Mozilla.
+  howItWorks:
+    en: null
+    fr: null
+category: '43232100'
 homepageURL:
   en: 'https://www.mozilla.org/en-US/firefox/'
   fr: 'https://www.mozilla.org/fr/firefox/'
