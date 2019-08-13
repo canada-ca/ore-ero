@@ -1,8 +1,13 @@
 ---
 schemaVersion: str()
 description:
-  en: str()
-  fr: str()
+  whatItDoes:
+    en: str()
+    fr: str()
+  howItWorks:
+    en: str(required=False)
+    fr: str(required=False)
+category: str()
 homepageURL:
   en: str()
   fr: str()
@@ -23,9 +28,6 @@ administrations:
   - adminCode: str()
     uses:
       - contact:
-          URL:
-            en: str(required=False)
-            fr: str(required=False)
           email: str()
           name: str(required=False)
         date:

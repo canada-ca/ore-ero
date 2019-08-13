@@ -1,8 +1,9 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+  whatItDoes:
+    en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
 homepageURL:
   en: 'https://example.com/'
   fr: 'https://example.com/'
