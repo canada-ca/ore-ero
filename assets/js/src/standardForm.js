@@ -360,8 +360,16 @@ function addValueToFieldsStandard(obj) {
   $('#standardAcronym').val(obj.standardAcronym);
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
+  }
+
   $('#enspecURL').val(obj.specURL.en);
   $('#frspecURL').val(obj.specURL.fr);
   $('#enstandardOrg').val(obj.standardOrg.en);
@@ -374,7 +382,10 @@ function resetFieldsStandard() {
   $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
   $('#frdescription').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
