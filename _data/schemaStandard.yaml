@@ -26,9 +26,6 @@ administrations:
   - adminCode: str()
     contact:
       email: str()
-      URL:
-        en: str(required=False)
-        fr: str(required=False)
       name: str(required=False)
     date:
       created: str()

@@ -79,16 +79,16 @@ function getCodeObject() {
     $('#frdescriptionhowItWorks').val()
   ) {
     codeObject.releases[0].description.howItWorks = {};
-  }
-  if ($('#endescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.en = $(
-      '#endescriptionhowItWorks'
-    ).val();
-  }
-  if ($('#frdescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.fr = $(
-      '#frdescriptionhowItWorks'
-    ).val();
+    if ($('#endescriptionhowItWorks').val()) {
+      codeObject.releases[0].description.howItWorks.en = $(
+        '#endescriptionhowItWorks'
+      ).val();
+    }
+    if ($('#frdescriptionhowItWorks').val()) {
+      codeObject.releases[0].description.howItWorks.fr = $(
+        '#frdescriptionhowItWorks'
+      ).val();
+    }
   }
 
   if ($('#contactname').val()) {
@@ -101,22 +101,22 @@ function getCodeObject() {
 
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
     codeObject.releases[0].downloadURL = {};
-  }
-  if ($('#endownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.en = $('#endownloadUrl').val();
-  }
-  if ($('#frdownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
+    if ($('#endownloadUrl').val()) {
+      codeObject.releases[0].downloadURL.en = $('#endownloadUrl').val();
+    }
+    if ($('#frdownloadUrl').val()) {
+      codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
+    }
   }
 
   if ($('#enhomepageURL').val() || $('#frhomepageURL').val()) {
     codeObject.releases[0].homepageURL = {};
-  }
-  if ($('#enhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
-  }
-  if ($('#frhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
+    if ($('#enhomepageURL').val()) {
+      codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
+    }
+    if ($('#frhomepageURL').val()) {
+      codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
+    }
   }
 
   let languages = getLanguages();
@@ -126,12 +126,12 @@ function getCodeObject() {
 
   if ($('#enteam').val() || $('#frteam').val()) {
     codeObject.releases[0].team = {};
-  }
-  if ($('#enteam').val()) {
-    codeObject.releases[0].team.en = $('#enteam').val();
-  }
-  if ($('#frteam').val()) {
-    codeObject.releases[0].team.fr = $('#frteam').val();
+    if ($('#enteam').val()) {
+      codeObject.releases[0].team.en = $('#enteam').val();
+    }
+    if ($('#frteam').val()) {
+      codeObject.releases[0].team.fr = $('#frteam').val();
+    }
   }
 
   // Optional more-group
@@ -154,16 +154,16 @@ function getCodeObject() {
 
     if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
       codeObject.releases[0].partners[i].name = {};
-    }
-    if ($('#enpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.en = $(
-        '#enpartnersname' + id
-      ).val();
-    }
-    if ($('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.fr = $(
-        '#frpartnersname' + id
-      ).val();
+      if ($('#enpartnersname' + id).val()) {
+        codeObject.releases[0].partners[i].name.en = $(
+          '#enpartnersname' + id
+        ).val();
+      }
+      if ($('#frpartnersname' + id).val()) {
+        codeObject.releases[0].partners[i].name.fr = $(
+          '#frpartnersname' + id
+        ).val();
+      }
     }
   });
 

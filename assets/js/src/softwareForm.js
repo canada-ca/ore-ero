@@ -88,16 +88,16 @@ function getsoftwareObject() {
   // Optional fields
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     softwareObject.administrations[0].uses[0].contact.URL = {};
-  }
-  if ($('#encontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL.en = $(
-      '#encontactURL'
-    ).val();
-  }
-  if ($('#frcontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL.fr = $(
-      '#frcontactURL'
-    ).val();
+    if ($('#encontactURL').val()) {
+      softwareObject.administrations[0].uses[0].contact.URL.en = $(
+        '#encontactURL'
+      ).val();
+    }
+    if ($('#frcontactURL').val()) {
+      softwareObject.administrations[0].uses[0].contact.URL.fr = $(
+        '#frcontactURL'
+      ).val();
+    }
   }
 
   if ($('#contactname').val()) {

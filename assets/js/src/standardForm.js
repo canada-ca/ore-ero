@@ -40,8 +40,10 @@ function getStandardObject() {
   let standardObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescription').val(),
-      fr: $('#frdescription').val()
+      whatItDoes: {
+        en: $('#endescriptionwhatItDoes').val(),
+        fr: $('#frdescriptionwhatItDoes').val()
+      }
     },
     name: {
       en: $('#enname').val(),
@@ -95,14 +97,19 @@ function getStandardObject() {
   });
 
   // Optional fields
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    standardObject.administrations[0].contact.URL = {};
-  }
-  if ($('#encontactURL').val()) {
-    standardObject.administrations[0].contact.URL.en = $('#encontactURL').val();
-  }
-  if ($('#frcontactURL').val()) {
-    standardObject.administrations[0].contact.URL.fr = $('#frcontactURL').val();
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    standardObject.description.howItWorks = {};
+    if ($('#endescriptionhowItWorks').val())
+      standardObject.description.howItWorks.en = $(
+        '#endescriptionhowItWorks'
+      ).val();
+    if ($('#frdescriptionhowItWorks').val())
+      standardObject.description.howItWorks.fr = $(
+        '#frdescriptionhowItWorks'
+      ).val();
   }
 
   if ($('#contactname').val()) {
@@ -111,12 +118,10 @@ function getStandardObject() {
 
   if ($('#enteam').val() || $('#frteam').val()) {
     standardObject.administrations[0].team = {};
-  }
-  if ($('#enteam').val()) {
-    standardObject.administrations[0].team.en = $('#enteam').val();
-  }
-  if ($('#frteam').val()) {
-    standardObject.administrations[0].team.fr = $('#frteam').val();
+    if ($('#enteam').val())
+      standardObject.administrations[0].team.en = $('#enteam').val();
+    if ($('#frteam').val())
+      standardObject.administrations[0].team.fr = $('#frteam').val();
   }
 
   return standardObject;
