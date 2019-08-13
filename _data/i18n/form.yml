@@ -427,8 +427,8 @@ code:
 software:
   name:
     title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
+      en: Project Name
+      fr: Nom du projet
     label:
       en:
         en: English project name

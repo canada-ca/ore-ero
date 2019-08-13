@@ -9,11 +9,11 @@ formGroups:
     param: {rule: alphanum-space, required: false}
   - preset: description
   - preset: category
+  - preset: tags
   - preset: homepageURL
     param: {type: url}
   - preset: licences
     param: {more: true}
-  - preset: tags
   - preset: empty
     title: administrations
     param: {start: true}
