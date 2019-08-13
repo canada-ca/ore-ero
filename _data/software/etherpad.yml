@@ -6,9 +6,6 @@ description:
       Edit text documents collaboratively in real-time.
     fr: >-
       Collaboration en temps réel sur des documents textes.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232100'
 homepageURL:
   en: 'http://etherpad.org/'

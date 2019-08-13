@@ -6,9 +6,6 @@ description:
       Ansible is an IT automation tool.
     fr: >-
       Ansible est un outil d'automatisation informatique.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232200'
 homepageURL:
   en: 'https://www.ansible.com/'

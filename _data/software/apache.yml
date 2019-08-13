@@ -6,9 +6,6 @@ description:
       Cross-platform web server.
     fr: >-
      Serveur Web multiplateforme.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232700'
 homepageURL:
   en: 'https://httpd.apache.org'

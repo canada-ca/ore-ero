@@ -7,9 +7,6 @@ description:
     fr: >-
       Debezium est une platforme distribuée d'une ressource ouverte pour la
       capture de données modifiées.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232300'
 homepageURL:
   en: 'https://debezium.io/'

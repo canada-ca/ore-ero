@@ -3,14 +3,11 @@ schemaVersion: '1.0'
 description:
   whatItDoes:
     en: >-
-      Elasticsearch is a distributed, RESTful search and analytics engine capable
-      of solving a growing number of use cases.
+      Elasticsearch is a distributed, RESTful search and analytics engine
+      capable of solving a growing number of use cases.
     fr: >-
       Elasticsearch est un moteur de recherche et d'analyse RESTful distribué,
       conçu pour répondre à une multitude de cas d'utilisation.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232300'
 homepageURL:
   en: 'https://www.elastic.co/products/elasticsearch'

@@ -8,9 +8,6 @@ description:
     fr: >-
       Effectue une virtualisation au niveau du système d'exploitation, également
       appelée conteneurisation
-  howItWorks:
-    en: null
-    fr: null
 category: '43233000'
 homepageURL:
   en: 'https://www.docker.com'

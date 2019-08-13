@@ -3,14 +3,11 @@ schemaVersion: '1.0'
 description:
   whatItDoes:
     en: >-
-      PHP web framework intended for the development of web applications following
-      the model–view–controller (MVC) architectural pattern.
+      PHP web framework intended for the development of web applications
+      following the model–view–controller (MVC) architectural pattern.
     fr: >-
       Framework Web PHP destiné au développement d'applications Web suivant le
       modèle architectural MVC modèle-vue-contrôleur.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232400'
 homepageURL:
   en: 'https://laravel.com'

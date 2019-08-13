@@ -8,9 +8,6 @@ description:
     fr: >-
       Système de gestion de contenu (CMS) écrit en PHP. Drupal fournis une
       plateforme back-end pour des sites Web.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232200'
 homepageURL:
   en: 'https://www.drupal.org'

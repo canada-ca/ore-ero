@@ -7,9 +7,6 @@ description:
     fr: >-
       Éditeur de textes et remplacement pour Notepad qui fonctionne dans
       l'environement Windows.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232100'
 homepageURL:
   en: 'https://notepad-plus-plus.org'

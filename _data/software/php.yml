@@ -8,9 +8,6 @@ description:
     fr: >-
       Langage de script côté serveur conçu pour le développement Web
       mais également utilisé comme langage de programmation généraliste.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232400'
 homepageURL:
   en: 'https://php.net'

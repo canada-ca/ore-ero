@@ -8,9 +8,6 @@ description:
     fr: >-
       Airflow est une plate-forme permettant de créer, planifier et surveiller
       par programme des flux de travail.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232200'
 homepageURL:
   en: 'https://airflow.apache.org/'

@@ -8,9 +8,6 @@ description:
     fr: >-
       Bokeh est une bibliothèque de visualisation interactive qui cible les
       navigateurs Web modernes à des fins de présentation.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232500'
 homepageURL:
   en: 'http://bokeh.pydata.org/en/latest/'

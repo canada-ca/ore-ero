@@ -8,9 +8,6 @@ description:
     fr: >-
       Accumulo est un magasin clé/valeur trié et distribué qui fournit un
       stockage et une récupération de données robustes et évolutifs.
-  howItWorks:
-    en: null
-    fr: null
 category: '43232300'
 homepageURL:
   en: 'https://accumulo.apache.org/'

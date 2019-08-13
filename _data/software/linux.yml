@@ -6,9 +6,6 @@ description:
       The Linux kernel is a Unix-like computer operating system kernel.
     fr: >-
       Le noyau Linux est un noyau de système d'exploitation de type UNIX.
-  howItWorks:
-    en: null
-    fr: null
 category: '43233000'
 homepageURL:
   en: 'https://www.linux.org'
