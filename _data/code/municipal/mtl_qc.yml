@@ -4,15 +4,17 @@ adminCode: mtl_qc
 releases:
   - contact:
       email: julio.alcantara@ville.montreal.qc.ca
-      URL:
-        en: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
-        fr: 'https://github.com/VilledeMontreal/CKAN-Extension-Territoire/issues'
     date:
       created: '2014-02-14'
       metadataLastUpdated: '2019-01-29'
     description:
-      en: City of Montreal CKAN Extension
-      fr: Extension CKAN de la ville de Montréal
+      whatItDoes:
+        en: City of Montreal CKAN Extension
+        fr: Extension CKAN de la ville de Montréal
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: CKAN-Extension-Territoire
       fr: CKAN-Extension-Territoire

@@ -1,0 +1,3 @@
+{%- capture name %}{{ include.param.prepend }}{{ include.lang }}{{ include.title }}{{ include.group }}{% endcapture -%}
+<textarea rows="4" cols="40" class="form-control" id="{{ name }}" name="{{ name }}" maxlength="200"
+{%- if include.param.required == nil or include.param.required %} required="required"{% endif -%} ></textarea>

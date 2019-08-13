@@ -50,8 +50,8 @@ function getCodeObject() {
           metadataLastUpdated: getToday()
         },
         description: {
-          en: $('#endescription').val(),
-          fr: $('#frdescription').val()
+          en: $('#endescriptionwhatItDoes').val(),
+          fr: $('#frdescriptionwhatItDoes').val()
         },
         name: {
           en: $('#enname').val(),
@@ -73,29 +73,30 @@ function getCodeObject() {
   // More-groups
   addMoreLicences(codeObject.releases[0]);
 
-  // Optional fields
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL = {};
+  // Handle optional fields
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    codeObject.releases[0].description.howItWorks = {};
   }
-  if ($('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL.en = $('#encontactURL').val();
+  if ($('#endescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.en = $(
+      '#endescriptionhowItWorks'
+    ).val();
   }
-  if ($('#frcontactURL').val()) {
-    codeObject.releases[0].contact.URL.fr = $('#frcontactURL').val();
+  if ($('#frdescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.fr = $(
+      '#frdescriptionhowItWorks'
+    ).val();
   }
 
   if ($('#contactname').val()) {
     codeObject.releases[0].contact.name = $('#contactname').val();
   }
 
-  if ($('#contactphone').val()) {
-    codeObject.releases[0].contact.phone = $('#contactphone').val();
-  }
-
-  if ($('#datelastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#datelastModified')
-      .val()
-      .toString();
+  if ($('#category :selected').val()) {
+    codeObject.releases[0].category = $('#category :selected').val();
   }
 
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
@@ -138,8 +139,6 @@ function getCodeObject() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     if (
-      $('#enpartnersURL' + id).val() ||
-      $('#frpartnersURL' + id).val() ||
       $('#partnersemail' + id).val() ||
       $('#enpartnersname' + id).val() ||
       $('#frpartnersname' + id).val()
@@ -147,20 +146,6 @@ function getCodeObject() {
       if (codeObject.releases[0].partners == undefined)
         codeObject.releases[0].partners = [];
       codeObject.releases[0].partners[i] = {};
-    }
-
-    if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL = {};
-    }
-    if ($('#enpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.en = $(
-        '#enpartnersURL' + id
-      ).val();
-    }
-    if ($('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.fr = $(
-        '#frpartnersURL' + id
-      ).val();
     }
 
     if ($('#partnersemail' + id).val()) {
@@ -270,7 +255,7 @@ function getConfigNewAdmin(
         'Project: ***' +
         codeName +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         ' and updated administration for ' +
         adminName +
         '\n',
@@ -332,7 +317,7 @@ function getConfigUpdate(result, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -363,7 +348,7 @@ function getConfigNew(codeObject, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -466,19 +451,21 @@ function addValueToFields(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
+  $('#category').val(obj.category);
 
-  if (obj.contact.URL) {
-    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
+
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
-  if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.lastModified);
 
   fillLicenceField(obj.licences);
 
@@ -516,11 +503,6 @@ function addValueToFields(obj) {
         id = i;
         addMoreGroup($('#addMorepartners'));
       }
-
-      if (partner.URL) {
-        if (partner.URL.en) $('#enpartnersURL' + id).val(partner.URL.en);
-        if (partner.URL.fr) $('#frpartnersURL' + id).val(partner.URL.fr);
-      }
       if (partner.email) $('#partnersemail' + id).val(partner.email);
       if (partner.name) {
         if (partner.name.en) $('#enpartnersname' + id).val(partner.name.en);
@@ -552,15 +534,14 @@ function addValueToFields(obj) {
 function resetFields() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
+  $('#category').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#contactphone').val('');
   $('#datecreated').val('');
-  $('#datelastModified').val('');
   resetMoreGroup($('#addMorelicences'));
   resetTags();
   $('#enrepositoryUrl').val('');

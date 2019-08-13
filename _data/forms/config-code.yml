@@ -8,39 +8,37 @@ formGroups:
     title: releases
     param: {start: true}
   - preset: selectCode
-  - preset: description
-  - preset: contact
-  - preset: dates
-    param: {created: true, modified: true, updated: true}
-  - widget: string-i18n
-    title: downloadUrl
-    param: {type: url, required: false}
-  - preset: homepageURL
-    param: {type: url, required: false}
-  - preset: languages
   - widget: string-i18n
     title: organization
     param: {rule: alphanum-space, required: false}
+  - preset: status
+  - preset: description
+  - preset: category
+  - preset: tags
+  - preset: contact
   - widget: group
     title: partners
     param: {more: true, required: false}
     fields:
       - widget: string-i18n
-        title: URL
-        param: {type: url, required: false}
+        title: name
+        param: {rule: alphanum-space, required: false}
       - widget: string
         title: email
         param: {type: email, required: false}
-      - widget: string-i18n
-        title: name
-        param: {rule: alphanum-space, required: false}
-  - preset: licences
-    param: {more: true}
+  - preset: dates
+    param: {created: true}
   - widget: string-i18n
     title: repositoryUrl
     param: {type: url}
+  - preset: homepageURL
+    param: {type: url, required: false}
+  - widget: string-i18n
+    title: downloadUrl
+    param: {type: url, required: false}
+  - preset: licences
+    param: {more: true}
+  - preset: languages
   - preset: relatedCode
     param: {more: true}
-  - preset: tags
-  - preset: status
   - preset: empty

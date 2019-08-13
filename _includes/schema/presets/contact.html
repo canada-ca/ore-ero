@@ -4,13 +4,8 @@
     <summary>{{ title }} {% include schema/components/required.html %} [array]</summary>
     <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
     <ul class="list-unstyled">
-      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.contact.URL -%}
       {%- include schema/components/li-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}
       {%- include schema/components/li-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.contact.name -%}
-
-      {%- if include.phone == nil or include.phone == true  -%}
-        {%- include schema/components/li-group.html id=include.idPreset title=title group="phone" param=site.data.forms.param.contact.phone -%}
-      {%- endif -%}
     </ul>
   </details>
 </li>

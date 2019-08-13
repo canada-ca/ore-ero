@@ -2,5 +2,4 @@
 <label for="{{ path }}{{ include.group }}"
 {%- if include.param.required == nil or include.param.required %} class="required"{% endif -%}
 ><span class="field-name">{{ site.data.i18n.form[include.id][path].labels[include.group][page.lang] }}</span>
-{%- include form/components/required.html required=include.param.required -%}
 </label>

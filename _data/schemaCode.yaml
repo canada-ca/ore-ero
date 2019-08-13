@@ -4,18 +4,18 @@ adminCode: str()
 releases:
   - contact:
       email: str()
-      URL:
-        en: str(required=False)
-        fr: str(required=False)
       name: str(required=False)
-      phone: str(required=False)
     date:
       created: str()
       metadataLastUpdated: str()
-      lastModified: str(required=False)
     description:
-      en: str()
-      fr: str()
+      whatItDoes:
+        en: str()
+        fr: str()
+      howItWorks:
+        en: str(required=False)
+        fr: str(required=False)
+    category: str()
     name:
       en: str()
       fr: str()
@@ -44,10 +44,7 @@ releases:
       en: str(required=False)
       fr: str(required=False)
     partners:
-      - URL:
-          en: str(required=False)
-          fr: str(required=False)
-        email: str(required=False)
+      - email: str(required=False)
         name:
           en: str(required=False)
           fr: str(required=False)

@@ -4,15 +4,17 @@ adminCode: ab
 releases:
   - contact:
       email: open@gov.ab.ca
-      URL:
-        en: 'https://github.com/abgov/ckanext-ab_scheming/issues'
-        fr: 'https://github.com/abgov/ckanext-ab_scheming/issues'
     date:
       created: '2016-07-05'
       metadataLastUpdated: '2018-04-25'
     description:
-      en: Dataset scheming extension used on open.alberta.ca
-      fr: Extension du schéma de données utilisée dans open.alberta.ca
+      whatItDoes:
+        en: Dataset scheming extension used on open.alberta.ca
+        fr: Extension du schéma de données utilisée dans open.alberta.ca
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-ab_scheming
       fr: ckanext-ab_scheming
@@ -34,15 +36,17 @@ releases:
     status: Maintained
   - contact:
       email: open@gov.ab.ca
-      URL:
-        en: 'https://github.com/abgov/ckanext-open_alberta/issues'
-        fr: 'https://github.com/abgov/ckanext-open_alberta/issues'
     date:
       created: '2016-07-05'
       metadataLastUpdated: '2017-05-03'
     description:
-      en: Ckan extension developed for use on open.alberta.ca
-      fr: Extension Ckan développée pour être utilisée dans open.alberta.ca
+      whatItDoes:
+        en: Ckan extension developed for use on open.alberta.ca
+        fr: Extension Ckan développée pour être utilisée dans open.alberta.ca
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-open_alberta
       fr: ckanext-open_alberta
@@ -64,15 +68,17 @@ releases:
     status: Maintained
   - contact:
       email: open@gov.ab.ca
-      URL:
-        en: 'https://github.com/abgov/ckanext-geomapviewer/issues'
-        fr: 'https://github.com/abgov/ckanext-geomapviewer/issues'
     date:
       created: '2016-08-03'
       metadataLastUpdated: '2016-08-03'
     description:
-      en: Ckan Geo Map Viewer Extension
-      fr: Extension Ckan de la carte géographique
+      whatItDoes:
+        en: Ckan Geo Map Viewer Extension
+        fr: Extension Ckan de la carte géographique
+      howItWorks:
+        en: null
+        fr: null
+    category: '43233500'
     name:
       en: ckanext-geomapviewer
       fr: ckanext-geomapviewer

@@ -140,7 +140,7 @@
             <td>{{ administration[0].name[page.lang] }}</td>
 
             <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
-            <td>{{ release.description[page.lang] }}</td>
+            <td>{{ release.description.whatItDoes[page.lang] }}</td>
             <td>
               {%- for licence in release.licences -%}
                 <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;

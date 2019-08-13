@@ -1,16 +1,23 @@
 {%- assign title = "tags" -%}
 {%- include form/components/title.html id=include.idPreset title=title -%}
+{%- if page.lang == "en" -%}
+{%- assign lang1 = "en" -%}
+{%- assign lang2 = "fr" -%}
+{%- else -%}
+{%- assign lang1 = "fr" -%}
+{%- assign lang2 = "en" -%}
+{%- endif -%}
 <div id="tags">
-  <div id="tagsEN" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang="en" %}
+  <div id="tags{{ lang1 | upcase }}" class="form-group">
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang1 %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="en{{ title }}" name="en{{ title }}" class="form-control" required="required">
+      <input type="text" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control" required="required">
     </div>
   </div>
-  <div id="tagsFR" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang="fr" %}
+  <div id="tags{{ lang2 | upcase }}" class="form-group">
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang2 %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="fr{{ title }}" name="fr{{ title }}" class="form-control" required="required">
+      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control" required="required">
     </div>
   </div>
 </div>

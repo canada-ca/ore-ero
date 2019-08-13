@@ -1,10 +1,4 @@
 {%- assign title = "contact" -%}
 {%- include form/components/title.html id=include.idPreset title=title -%}
-
-{%- include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.contact.URL -%}
-{%- include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}
 {%- include form/components/group-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.contact.name -%}
-
-{%- if include.param.phone == nil or include.param.phone == true -%}
-  {%- include form/components/group-group.html id=include.idPreset title=title group="phone" param=site.data.forms.param.contact.phone -%}
-{%- endif -%}
+{%- include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}

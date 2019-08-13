@@ -1,0 +1,73 @@
+---
+'43231500':
+  en: Business function specific software
+  fr: Logiciels spécifiques aux fonctions de gestion
+  value: '43231500'
+'43231600':
+  en: Finance accounting and enterprise resource planning ERP software
+  fr: Progiciels de gestion intégré ERP et logiciels de comptabilité générale
+  value: '43231600'
+'43232000':
+  en: Computer game or entertainment software
+  fr: Logiciels de loisir ou jeux sur ordinateur
+  value: '43232000'
+'43232100':
+  en: Content authoring and editing software
+  fr: Logiciels d'édition et de création de contenu
+  value: '43232100'
+'43232200':
+  en: Content management software
+  fr: Logiciels de gestion de contenus
+  value: '43232200'
+'43232300':
+  en: Data management and query software
+  fr: Logiciels de gestion de requêtes et de gestion des données
+  value: '43232300'
+'43232400':
+  en: Development software
+  fr: Logiciels de développement
+  value: '43232400'
+'43232500':
+  en: Educational or reference software
+  fr: Didacticiels ou logiciels de référence
+  value: '43232500'
+'43232600':
+  en: Industry specific software
+  fr: Logiciels spécifique à une branche de l'industrie
+  value: '43232600'
+'43232700':
+  en: Network applications software
+  fr: Logiciels d'applications réseau
+  value: '43232700'
+'43232800':
+  en: Network management software
+  fr: Logiciels de gestion de réseau
+  value: '43232800'
+'43232900':
+  en: Networking software
+  fr: Logiciels d'interconnexion réseau
+  value: '43232900'
+'43233000':
+  en: Operating environment software
+  fr: Logiciels d'environnement d'exploitation
+  value: '43233000'
+'43233200':
+  en: Security and protection software
+  fr: Logiciels de sécurité et de protection
+  value: '43233200'
+'43233400':
+  en: Utility and device driver software
+  fr: Logiciels pilotes et utilitaires
+  value: '43233400'
+'43233500':
+  en: Information exchange software
+  fr: Logiciels d'échange d'informations
+  value: '43233500'
+'43233600':
+  en: Electrical Equipment software
+  fr: Logiciels pour l'équipement électrique
+  value: '43233600'
+'43233700':
+  en: System Management software
+  fr: Logiciels de gestion des systèmes
+  value: '43233700'

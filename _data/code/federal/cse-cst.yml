@@ -4,22 +4,22 @@ adminCode: cse-cst
 releases:
   - contact:
       email: media@cse-cst.gc.ca
-      URL:
-        en: >-
-          https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
-        fr: >-
-          https://github.com/CommunicationsSecurityEstablishment/spartacus/issues
     date:
       created: '2016-02-28'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: >-
-        Learning environment that aims in helping students learn the basis of
-        assembly programming and operating system development
-      fr: >-
-        Environnement visant à aider les étudiants à apprendre les bases de la
-        programmation assembleur et du développement de systèmes d'exploitation.
-        C'est un environnement portable et facile à apprendre
+      whatItDoes:
+        en: >-
+          Learning environment that aims in helping students learn the basis of
+          assembly programming and operating system development
+        fr: >-
+          Environnement visant à aider les étudiants à apprendre les bases de la
+          programmation assembleur et du développement de systèmes
+          d'exploitation. C'est un environnement portable et facile à apprendre
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232500'
     name:
       en: Spartacus
       fr: Spartacus
@@ -50,15 +50,20 @@ releases:
       created: '2016-12-21'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: >-
-        Platform for the analysis of malicious files. It is designed to assis
-        cyber defence teams to automate the analysis of files and to better use
-        the time of security analysts
-      fr: >-
-        Plateforme servant à l'analyse de fichiers malveillants, qui a été
-        conçue pour aider les équipes de cyberdéfense à automatiser l'analyse
-        des fichiers et à faire une meilleure utilisation du temps des analystes
-        de la sécurité
+      whatItDoes:
+        en: >-
+          Platform for the analysis of malicious files. It is designed to assist
+          cyber defence teams to automate the analysis of files and to better
+          use the time of security analysts
+        fr: >-
+          Plateforme servant à l'analyse de fichiers malveillants, qui a été
+          conçue pour aider les équipes de cyberdéfense à automatiser l'analyse
+          des fichiers et à faire une meilleure utilisation du temps des
+          analystes de la sécurité
+      howItWorks:
+        en: null
+        fr: null
+    category: '43233200'
     name:
       en: Assemblyline
       fr: Assemblyline

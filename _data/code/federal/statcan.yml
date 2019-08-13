@@ -4,15 +4,17 @@ adminCode: statcan
 releases:
   - contact:
       email: maksymarturo.neyra-nesterenko@canada.ca
-      URL:
-        en: 'https://github.com/CSBP-CPSE/OpenTabulate/issues'
-        fr: 'https://github.com/CSBP-CPSE/OpenTabulate/issues'
     date:
       created: '2018-01-07'
       metadataLastUpdated: '2019-04-18'
     description:
-      en: 'Centralize, process, and clean data'
-      fr: 'Centraliser, traiter et nettoyer les données'
+      whatItDoes:
+        en: Centralize, process, and clean data
+        fr: Centraliser, traiter et nettoyer les données
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: OpenTabulate
       fr: OpenTabulate

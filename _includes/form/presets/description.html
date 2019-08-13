@@ -1,1 +1,14 @@
-{%- include form/widgets/string-i18n.html id=include.idPreset title="description" -%}
+{%- assign title = "description" -%}
+{%- include form/components/title.html id=include.idPreset title=title -%}
+<div class="row">
+<div class="col-sm-6">
+<h3>{{ site.data.i18n.form.presets.description.labels.whatItDoes.subtitle[page.lang] }} </h3>
+<p><small style="font-size: 11.4px">{{ site.data.i18n.form.presets.description.charactersLimit[page.lang] }}</small> </p>
+{%- include form/components/textarea-i18n.html id=include.idPreset title=title group="whatItDoes" -%}
+</div>
+<div class="col-sm-6">
+<h3>{{ site.data.i18n.form.presets.description.labels.howItWorks.subtitle[page.lang] }} </h3>
+<p><small style="font-size: 11.4px">{{ site.data.i18n.form.presets.description.charactersLimit[page.lang] }}</small></p>
+{%- include form/components/textarea-i18n.html id=include.idPreset title=title group="howItWorks" param=site.data.forms.param.required_false -%}
+</div>
+</div>

@@ -67,3 +67,6 @@ lightbox:
   contact:
     en: Contact
     fr: Contact
+  beingUsed:
+    en: 'Is being used by:'
+    fr: 'Est utilisé par :'

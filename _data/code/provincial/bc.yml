@@ -4,15 +4,17 @@ adminCode: bc
 releases:
   - contact:
       email: bcdevexchange@gov.bc.ca
-      URL:
-        en: 'https://github.com/BCDevExchange/devex/issues'
-        fr: 'https://github.com/BCDevExchange/devex/issues'
     date:
       created: '2016-10-23'
       metadataLastUpdated: '2019-01-29'
     description:
-      en: B.C. Developer Exchange Application
-      fr: Application Échange de développeurs C.-B.
+      whatItDoes:
+        en: B.C. Developer Exchange Application
+        fr: Application Échange de développeurs C.-B.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232400'
     name:
       en: Devex
       fr: Devex
@@ -34,19 +36,21 @@ releases:
     status: Maintained
   - contact:
       email: todd.wilson@gov.bc.ca
-      URL:
-        en: 'https://github.com/bcgov/gwells/issues'
-        fr: 'https://github.com/bcgov/gwells/issues'
     date:
       created: '2015-04-29'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: >-
-        Groundwater Wells and Aquifers application for the Ministry of
-        Environment.
-      fr: >-
-        Application de puits d'eau souterraine et d'aquifères pour le ministère
-        de l'environnement.
+      whatItDoes:
+        en: >-
+          Groundwater Wells and Aquifers application for the Ministry of
+          Environment.
+        fr: >-
+          Application de puits d'eau souterraine et d'aquifères pour le
+          ministère de l'environnement.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     homepageURL:
       en: 'https://apps.nrs.gov.bc.ca/gwells/'
       fr: 'https://apps.nrs.gov.bc.ca/gwells/'
@@ -71,15 +75,17 @@ releases:
     status: Maintained
   - contact:
       email: todd.wilson@gov.bc.ca
-      URL:
-        en: 'https://github.com/bcgov/devhub-app-web/issues'
-        fr: 'https://github.com/bcgov/devhub-app-web/issues'
     date:
       created: '2017-10-20'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: Web application for the DevHub.
-      fr: Application Web pour le DevHub.
+      whatItDoes:
+        en: Web application for the DevHub.
+        fr: Application Web pour le DevHub.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232400'
     name:
       en: devhub-app-web
       fr: devhub-app-web
@@ -104,15 +110,17 @@ releases:
     status: Maintained
   - contact:
       email: NRSApplications@gov.bc.ca
-      URL:
-        en: 'https://github.com/bcgov/ckanext-bcgov/issues'
-        fr: 'https://github.com/bcgov/ckanext-bcgov/issues'
     date:
       created: '2014-03-20'
       metadataLastUpdated: '2019-05-10'
     description:
-      en: BC Data Catalogue source code.
-      fr: Code source du catalogue de données BC.
+      whatItDoes:
+        en: BC Data Catalogue source code.
+        fr: Code source du catalogue de données BC.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-bcgov
       fr: ckanext-bcgov
