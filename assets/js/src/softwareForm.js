@@ -40,8 +40,8 @@ function getsoftwareObject() {
   let softwareObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescription').val(),
-      fr: $('#frdescription').val()
+      en: $('#endescriptionwhatItDoes').val(),
+      fr: $('#frdescriptionwhatItDoes').val()
     },
     homepageURL: {
       en: $('#enhomepageURL').val(),
@@ -78,6 +78,27 @@ function getsoftwareObject() {
   addMoreLicences(softwareObject);
 
   // Optional fields
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    codeObject.releases[0].description.howItWorks = {};
+  }
+  if ($('#endescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.en = $(
+      '#endescriptionhowItWorks'
+    ).val();
+  }
+  if ($('#frdescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.fr = $(
+      '#frdescriptionhowItWorks'
+    ).val();
+  }
+
+  if ($('#category :selected').val()) {
+    codeObject.releases[0].category = $('#category :selected').val();
+  }
+
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     softwareObject.administrations[0].uses[0].contact.URL = {};
   }
@@ -339,7 +360,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/software.json', function(
     result
   ) {
     if (result[value]) {
@@ -358,8 +379,17 @@ function addValueToFieldsSoftware(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
+
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
+  }
+
+  $('#category').val(obj.category);
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
   fillLicenceField(obj.licences);
@@ -369,8 +399,11 @@ function addValueToFieldsSoftware(obj) {
 function resetFieldsSoftware() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
+ $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
+  $('#category').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
   resetMoreGroup($('#addMorelicences'));
@@ -380,7 +413,7 @@ function resetFieldsSoftware() {
 function selectAdmin() {
   let software = softwareSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/software.json', function(
     result
   ) {
     if (result[software]) {
