@@ -67,14 +67,6 @@ function getsoftwareObject() {
             date: {
               started: $('#datestarted').val(),
               metadataLastUpdated: getToday()
-            },
-            description: {
-              en: $('#useendescription').val(),
-              fr: $('#usefrdescription').val()
-            },
-            name: {
-              en: $('#useenname').val(),
-              fr: $('#usefrname').val()
             }
           }
         ]
@@ -105,25 +97,6 @@ function getsoftwareObject() {
       '#contactname'
     ).val();
   }
-
-  if ($('#status :selected').val() != '') {
-    softwareObject.administrations[0].uses[0].status = $(
-      '#status :selected'
-    ).val();
-  }
-
-  // Optional more-group
-  $('#addMoreusers ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    if ($('#users' + id).val() != '') {
-      if (softwareObject.administrations[0].uses[0].users == undefined)
-        softwareObject.administrations[0].uses[0].users = [];
-      softwareObject.administrations[0].uses[0].users[i] = $(
-        '#users' + id
-      ).val();
-    }
-  });
 
   return softwareObject;
 }
@@ -437,23 +410,7 @@ function addValueToFieldsAdmin(obj) {
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
   $('#datestarted').val(obj.uses[0].date.started);
-  $('#useenname').val(obj.uses[0].name.en);
-  $('#usefrname').val(obj.uses[0].name.fr);
-  $('#useendescription').val(obj.uses[0].description.en);
-  $('#usefrdescription').val(obj.uses[0].description.fr);
 
-  if (obj.uses[0].users)
-    obj.uses[0].users.forEach(function(user, i) {
-      let id;
-      if (i == 0) id = '';
-      else {
-        id = i;
-        addMoreGroup($('#addMoreusers'));
-      }
-      $('#users' + id).val(user);
-    });
-
-  if (obj.uses[0].status) $('#status').val(obj.uses[0].status);
 }
 
 function resetFieldsAdmin() {
@@ -462,10 +419,4 @@ function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
-  $('#useenname').val('');
-  $('#usefrname').val('');
-  $('#useendescription').val('');
-  $('#usefrdescription').val('');
-  $('#status').val('');
-  resetMoreGroup($('#addMoreusers'));
 }

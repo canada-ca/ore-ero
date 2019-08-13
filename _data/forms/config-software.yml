@@ -25,12 +25,5 @@ formGroups:
     param: {phone: false}
   - preset: dates
     param: {started: true}
-  - widget: string-i18n
-    title: name
-    param: {prepend: use}
-  - preset: status
-  - widget: string
-    title: users
-    param: {required: false, more: true}
   - preset: empty
   - preset: empty

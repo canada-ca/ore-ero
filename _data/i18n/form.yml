@@ -463,27 +463,6 @@ software:
       schema:
         en: Organization
         fr: Organisation
-  usename:
-    title:
-      en: The domain name of the project activity.
-      fr: Le nom du domaine de l'activité du projet.
-    label:
-      en:
-        en: English use name
-        fr: Nom de l'utilisation en anglais
-      fr:
-        en: French use name
-        fr: Nom de l'utilisation en français
-      schema:
-        en: Name of the project activity
-        fr: Nom de l'activité du projet.
-  users:
-    title:
-      en: Project Users
-      fr: Utilisateurs tu projet
-    label:
-      en: Group using the project
-      fr: Les groupes qui utilisent le projet
   administrations: *administrations
   uses:
     title:
