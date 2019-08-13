@@ -109,6 +109,16 @@ function getStandardObject() {
     standardObject.administrations[0].contact.name = $('#contactname').val();
   }
 
+  if ($('#enteam').val() || $('#frteam').val()) {
+    standardObject.administrations[0].team = {};
+  }
+  if ($('#enteam').val()) {
+    standardObject.administrations[0].team.en = $('#enteam').val();
+  }
+  if ($('#frteam').val()) {
+    standardObject.administrations[0].team.fr = $('#frteam').val();
+  }
+
   return standardObject;
 }
 
@@ -415,6 +425,11 @@ function addValueToFieldsAdmin(obj) {
   });
 
   $('#status').val(obj.status);
+
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  }
 }
 
 function resetFieldsAdmin() {
@@ -425,4 +440,6 @@ function resetFieldsAdmin() {
   $('#datecreated').val('');
   resetMoreGroup($('#addMorereference'));
   $('#status').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
 }

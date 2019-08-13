@@ -37,4 +37,4 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status: mandatory-gc
+    status: mandatory

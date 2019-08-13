@@ -36,4 +36,7 @@ administrations:
         name:
           en: str()
           fr: str()
-    status: str()
+    status: enum('deprecated', 'mandatory', 'preferred')
+    team:
+      en: str(required=False)
+      fr: str(required=False)

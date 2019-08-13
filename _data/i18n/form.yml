@@ -60,7 +60,7 @@ presets:
       en: Public administration
       fr: Administration publique
     button:
-      en: Add new administration
+      en: Add a new administration
       fr: Ajouter une nouvelle administration
   category:
     title:
@@ -80,8 +80,8 @@ presets:
       name: *name
       email: *email
     infobulle:
-      en: Point of contact for general inquiries regarding the project.
-      fr: Coordonnées de la personne à contacter pour des informations générales sur le logiciel.
+      en: Point of contact for general inquiries.
+      fr: Coordonnées de la personne à contacter pour des informations générales.
     titles:
       email:
         en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
@@ -91,8 +91,8 @@ presets:
         fr: Le nom de la personne-ressource pour le projet.
   date:
     title:
-      en: Project Creation Date
-      fr: Date de création du projet
+      en: Creation Date
+      fr: Date de création
     labels:
       created:
         en: Created
@@ -104,8 +104,8 @@ presets:
         en: Last updated
         fr: Dernière mise à jour
     infobulle:
-      en: Select the date when the open source code was first created.
-      fr: Sélectionnez la date de création du code source ouvert.
+      en: Select the date of creation.
+      fr: Sélectionnez la date de création.
     titles:
       created:
         en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
@@ -149,8 +149,8 @@ presets:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
     infobulle:
-      en: Add brief descriptions on what the code does (i.e. functionnality, use..) and on how it works.
-      fr: Ajoutez une brève description du code, expliquant de quoi il s'agit et comment il fonctionne.
+      en: Add brief descriptions on what it does (i.e. functionnality, use..) and on how it works.
+      fr: Ajoutez une brève description, expliquant de quoi il s'agit et comment cela fonctionne.
     titles:
       en:
         en: English description
@@ -214,16 +214,26 @@ presets:
       spdxID:
         en: SPDX Licence identifier
         fr: Identifiant de licence SPDX
+  name:
+    charactersLimit:
+      en: (100 characters limit)
+      fr: (limite de 100 caractères)
   orgLevel:
     title: &title
       en: Level of government
       fr: Niveau de gouvernement
     label: *title
+    infobulle:
+      en: Select the level of government the administration belongs to.
+      fr: Sélectionnez le niveau de gouvernement auquel l'administration appartient.
   provinceSelect: &provinceSelect
     title: &title
       en: Province
       fr: province
     label: *title
+    infobulle:
+      en: Select a province
+      fr: Sélectionnez une province
   province: *provinceSelect  # Simplifies schema build
   relatedCode:
     title:
@@ -317,8 +327,25 @@ presets:
       en: Add more tags
       fr: Ajouter d'autres mots-clés
     infobulle:
-      en: Add keywords to help distinguish between various projects.
-      fr: Ajouter des mots-clés relatifs au code source ouvert pour différencier entre les différents projets.
+      en: Add keywords to help distinguish between various instances.
+      fr: Ajouter des mots-clés pour différencier entre les différents instances.
+  team:
+    title:
+      en: Team, branch or sector
+      fr: Équipe, direction ou secteur
+    infobulle:
+      en: Add the name of the team, branch or sector within the public administration to which this belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
+      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel ceci appartient. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
+    label:
+      en:
+        en: English name
+        fr: Nom en anglais
+      fr:
+        en: French name
+        fr: Nom en français
+      schema:
+        en: Team
+        fr: Équipe
 
 # Code form specifics
 code:
@@ -343,9 +370,6 @@ code:
       select:
         en: If you wish to update an already existing code, please select it below
         fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
-    charactersLimit:
-      en: (100 characters limit)
-      fr: (limite de 100 caractères)
   downloadUrl:
     title:
       en: Project Download Page
@@ -363,23 +387,6 @@ code:
     infobulle:
       en: The URL of the project download page, where a distribution of the project can be found.
       fr: Ajouter les URLs pour télécharger le projet
-  organization:
-    title:
-      en: Team, branch or sector
-      fr: Équipe, direction ou secteur
-    infobulle:
-      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
-      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
-    label:
-      en:
-        en: English name
-        fr: Nom en anglais
-      fr:
-        en: French name
-        fr: Nom en français
-      schema:
-        en: Organization
-        fr: Organisation
   partners:
     title:
       en: Key Partners
@@ -490,49 +497,68 @@ standard:
     title:
       en: Name of the Standard
       fr: Nom du standard
-    label:
-      en:
-        en: Name in English
-        fr: nom en anglais
-      fr:
-        en: Name in french
-        fr: Nom en français
-  specURL:
-    title:
-      en: URL of the specification
-      fr: Url de la spécification
-    label:
-      en:
-        en: English url
-        fr: Url anglais
-      fr:
-        en: French URL
-        fr: Url français
-      schema:
-        en: Specification URL
-        fr: Url de la spécification
-  standardAcronym:
-    title:
-      en: Acronym for the Standard
-      fr: Acronyme du standard
-    label:
-      en: Enter a standard acronym to create a new entry.
-      fr: Entrez un acronyme du standard pour créer une nouvelle entrée.
-    labels:
-      select:
-        en: If you wish to update an existing standard, please select it below
-        fr: Si vous souhaitez mettre à jour un standard existant, svp le sélectionner ci-dessous
-  standardOrg:
-    title:
-      en: Name of the organisation supporting the standard
-      fr: Nom de l'organisation supportant le standard
+    infobulle:
+      en: Add the name of the standard.
+      fr: Ajouter le nom de la norme.
     label:
       en:
         en: English name
         fr: Nom en anglais
       fr:
-        en: french name
+        en: French name
         fr: Nom en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a standard that already exists in our library, please select it below.
+        fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+  specURL:
+    title:
+      en: Specification URLs
+      fr: Url de la spécification de la norme
+    label:
+      en:
+        en: English URL
+        fr: Url en anglais
+      fr:
+        en: French URL
+        fr: Url en français
+      schema:
+        en: Specification URL
+        fr: Url de la spécification
+    infobulle:
+      en: Add the URL of the standard's specification, released usually by the Standard Setting Organization.
+      fr: Ajouter le URL de la spécification de la norme, publiée normalement par l'organization normative du standard.
+  standardAcronym:
+    title:
+      en: Standard Acronym
+      fr: Acronyme de la norme
+    label:
+      en: Standard Acronym.
+      fr: Acronyme de la norme.
+    labels:
+      select:
+        en: If you wish to update information of a standard that already exists in our library, please select it below.
+        fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+    infobulle:
+      en: Enter the short name or acronym for the new standard.
+      fr: Entrer l'acronyme de la norme ouverte.
+  standardOrg:
+    title:
+      en: Standard Setting Organization
+      fr: Organisation normative
+    label:
+      en:
+        en: English name
+        fr: Nom en anglais
+      fr:
+        en: French name
+        fr: Nom en français
+    infobulle:
+      en: Add the name of the organization developing, coordinating, promulgating, revising, amending, reissuing, interpreting or producing the standard.
+      fr: Ajouter le nom de l'organization de standardisation qui développe, coordonne, promulgue, révise, modifie, interprète publie ou produit la norme.
   status:
     title:
       en: The status of the standard
@@ -540,6 +566,19 @@ standard:
     label:
       en: Status
       fr: Status
+    options:
+      deprecated:
+        en: Deprecated
+        fr: Obsolète
+      mandatory:
+        en: Mandatory
+        fr: Obligatoire
+      preferred:
+        en: Preferred
+        fr: Préféré
+    infobulle:
+      en: Select the status of the standard from the drop-down list. In most cases, the status is set in the reference of the standard.
+      fr: Choisir le statut de la norme de la liste ci-dessous. Normalement, ce statut est défini dans la référence de la norme.
   reference:
     title:
       en: Reference for the standard
@@ -547,19 +586,19 @@ standard:
     labels:
       URL:
         en:
-          en: URL for the reference in english
-          fr: Url de la référence en anglais
+          en: English URL
+          fr: Url en anglais
         fr:
-          en: URL for the reference in french
-          fr: Url de la référence en français
+          en: French URL
+          fr: Url  en français
         schema: *url_generic
       name:
         en:
-          en: Name of the reference in english
-          fr: Nom de la référence en anglais
+          en: English Name
+          fr: Nom en anglais
         fr:
-          en: Name of the reference in french
-          fr: Nom de la référence en français
+          en: French Name
+          fr: Nom en français
         schema: *name
     titles:
       URL:
@@ -568,6 +607,9 @@ standard:
       name:
         en: The English and French name of the reference.
         fr: Le nom de la référence en français et en anglais.
+    infobulle:
+      en: Add the name and the URL of the public administration's policy, directive or research that references this open standard.
+      fr: Ajouter le nom et le URL de la politique, directive ou recherche de l'administration publique qui réfère à cette norme.
   administrations: *administrations
 
 # Admin form specifics
@@ -583,6 +625,9 @@ admin:
     label:
       en: The code for the new administration
       fr: Le code de la nouvelle administration
+    infobulle:
+      en: Add the unique code for the administration
+      fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
       en: Administration Name
@@ -595,6 +640,9 @@ admin:
         en: Name in french
         fr: Nom en français
       schema: *name
+    infobulle:
+      en: Add the name of the administration
+      fr: Inscrire le nom de l'administration
   code: *newAdminCode  # simplifies schema build
   name: *newAdminName  # simplifies schema build
   administrations:  # simplifies schema build

@@ -40,7 +40,7 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status: mandatory-gc
+    status: mandatory
   - adminCode: lac-bac
     contact:
       email: null
@@ -60,4 +60,4 @@ administrations:
           fr: >-
             Lignes directrices sur les formats de fichier à utiliser pour
             transférer des ressources documentaires
-    status: preferred-gc
+    status: preferred

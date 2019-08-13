@@ -40,9 +40,6 @@ releases:
       fr: str(required=False)
     languages:
       - str(required=False)
-    organization:
-      en: str(required=False)
-      fr: str(required=False)
     partners:
       - email: str(required=False)
         name:

@@ -38,5 +38,8 @@ administrations:
           en: str()
           fr: str()
         status: str(required=False)
+        team:
+          en: str(required=False)
+          fr: str(required=False)
         users:
           - str(required=False)

@@ -124,14 +124,14 @@ function getCodeObject() {
     codeObject.releases[0].languages = languages;
   }
 
-  if ($('#enorganization').val() || $('#frorganization').val()) {
-    codeObject.releases[0].organization = {};
+  if ($('#enteam').val() || $('#frteam').val()) {
+    codeObject.releases[0].team = {};
   }
-  if ($('#enorganization').val()) {
-    codeObject.releases[0].organization.en = $('#enorganization').val();
+  if ($('#enteam').val()) {
+    codeObject.releases[0].team.en = $('#enteam').val();
   }
-  if ($('#frorganization').val()) {
-    codeObject.releases[0].organization.fr = $('#frorganization').val();
+  if ($('#frteam').val()) {
+    codeObject.releases[0].team.fr = $('#frteam').val();
   }
 
   // Optional more-group
@@ -490,9 +490,9 @@ function addValueToFields(obj) {
     });
   }
 
-  if (obj.organization) {
-    if (obj.organization.en) $('#enorganization').val(obj.organization.en);
-    if (obj.organization.fr) $('#frorganization').val(obj.organization.fr);
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
   }
 
   if (obj.partners)
@@ -551,8 +551,8 @@ function resetFields() {
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
   resetLanguages();
-  $('#enorganization').val('');
-  $('#frorganization').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
   resetMoreGroup($('#addMorepartners'));
   resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');
