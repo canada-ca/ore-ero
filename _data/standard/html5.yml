@@ -38,3 +38,18 @@ administrations:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
     status: mandatory-gc
+  - adminCode: test-test-qc
+    contact:
+      email: test@gmail.com
+      name: imade
+    date:
+      created: '2019-08-04'
+      metadataLastUpdated: '2019-08-14'
+    references:
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        name:
+          en: TEST
+          fr: TEST
+    status: test

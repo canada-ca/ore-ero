@@ -14,3 +14,8 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: test-test-qc
+  name:
+    en: test TEST
+    fr: test TEST
+  provinceCode: qc
