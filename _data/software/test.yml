@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: test
+    fr: test
+  howItWorks:
+    en: test
+    fr: test
+homepageURL:
+  en: 'http://abc.com'
+  fr: 'http://abc.com'
+category: '43231500'
+licences:
+  - URL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    spdxID: CPAL-1.0
+name:
+  en: test
+  fr: test
+tags:
+  en:
+    - test
+    - test
+  fr:
+    - test
+    - test
+administrations:
+  - adminCode: test-pe
+    uses:
+      - contact:
+          email: test@gmail.com
+          name: imade
+        date:
+          started: '2019-08-05'
+          metadataLastUpdated: '2019-08-14'
+        organization:
+          en: test
+          fr: test
