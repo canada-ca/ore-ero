@@ -39,3 +39,11 @@ administrations:
         name:
           en: Software Database Management Systems.
           fr: Logiciels de systèmes de gestion de base de données.
+  - adminCode: test-test-ab
+    uses:
+      - contact:
+          email: test@gmail.com
+          name: test
+        date:
+          started: '2019-08-05'
+          metadataLastUpdated: '2019-08-14'
