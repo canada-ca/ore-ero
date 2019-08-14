@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: test test
+    fr: test test
+  howItWorks:
+    en: test test
+    fr: test test
+homepageURL:
+  en: 'http://abc.com'
+  fr: 'http://abc.com'
+licences:
+  - URL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    spdxID: AFL-1.1
+name:
+  en: test
+  fr: test
+tags:
+  en:
+    - test
+    - test
+  fr:
+    - test
+    - test
+administrations:
+  - adminCode: test-test-ab
+    uses:
+      - contact:
+          email: test@gmail.com
+          name: imade
+        date:
+          started: '2019-08-05'
+          metadataLastUpdated: '2019-08-14'
+organization:
+  en: test
+  fr: test
+category: '43231500'
