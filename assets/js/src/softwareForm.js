@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicences resetMoreGroup addMoreGroup fillLicenceField
+  addMoreLicences resetMoreGroup fillLicenceField
   getToday
 */
 
@@ -40,8 +40,8 @@ function getsoftwareObject() {
   let softwareObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescription').val(),
-      fr: $('#frdescription').val()
+      en: $('#endescriptionwhatItDoes').val(),
+      fr: $('#frdescriptionwhatItDoes').val()
     },
     homepageURL: {
       en: $('#enhomepageURL').val(),
@@ -67,14 +67,6 @@ function getsoftwareObject() {
             date: {
               started: $('#datestarted').val(),
               metadataLastUpdated: getToday()
-            },
-            description: {
-              en: $('#useendescription').val(),
-              fr: $('#usefrdescription').val()
-            },
-            name: {
-              en: $('#useenname').val(),
-              fr: $('#usefrname').val()
             }
           }
         ]
@@ -86,6 +78,27 @@ function getsoftwareObject() {
   addMoreLicences(softwareObject);
 
   // Optional fields
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    softwareObject.releases[0].description.howItWorks = {};
+  }
+  if ($('#endescriptionhowItWorks').val()) {
+    softwareObject.releases[0].description.howItWorks.en = $(
+      '#endescriptionhowItWorks'
+    ).val();
+  }
+  if ($('#frdescriptionhowItWorks').val()) {
+    softwareObject.releases[0].description.howItWorks.fr = $(
+      '#frdescriptionhowItWorks'
+    ).val();
+  }
+
+  if ($('#category :selected').val()) {
+    softwareObject.releases[0].category = $('#category :selected').val();
+  }
+
   if ($('#frcontactURL').val() || $('#encontactURL').val()) {
     softwareObject.administrations[0].uses[0].contact.URL = {};
   }
@@ -105,25 +118,6 @@ function getsoftwareObject() {
       '#contactname'
     ).val();
   }
-
-  if ($('#status :selected').val() != '') {
-    softwareObject.administrations[0].uses[0].status = $(
-      '#status :selected'
-    ).val();
-  }
-
-  // Optional more-group
-  $('#addMoreusers ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    if ($('#users' + id).val() != '') {
-      if (softwareObject.administrations[0].uses[0].users == undefined)
-        softwareObject.administrations[0].uses[0].users = [];
-      softwareObject.administrations[0].uses[0].users[i] = $(
-        '#users' + id
-      ).val();
-    }
-  });
 
   return softwareObject;
 }
@@ -385,8 +379,17 @@ function addValueToFieldsSoftware(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
+
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
+  }
+
+  $('#category').val(obj.category);
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
   fillLicenceField(obj.licences);
@@ -396,8 +399,11 @@ function addValueToFieldsSoftware(obj) {
 function resetFieldsSoftware() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
+  $('#category').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
   resetMoreGroup($('#addMorelicences'));
@@ -437,23 +443,6 @@ function addValueToFieldsAdmin(obj) {
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
   $('#datestarted').val(obj.uses[0].date.started);
-  $('#useenname').val(obj.uses[0].name.en);
-  $('#usefrname').val(obj.uses[0].name.fr);
-  $('#useendescription').val(obj.uses[0].description.en);
-  $('#usefrdescription').val(obj.uses[0].description.fr);
-
-  if (obj.uses[0].users)
-    obj.uses[0].users.forEach(function(user, i) {
-      let id;
-      if (i == 0) id = '';
-      else {
-        id = i;
-        addMoreGroup($('#addMoreusers'));
-      }
-      $('#users' + id).val(user);
-    });
-
-  if (obj.uses[0].status) $('#status').val(obj.uses[0].status);
 }
 
 function resetFieldsAdmin() {
@@ -462,10 +451,4 @@ function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
-  $('#useenname').val('');
-  $('#usefrname').val('');
-  $('#useendescription').val('');
-  $('#usefrdescription').val('');
-  $('#status').val('');
-  resetMoreGroup($('#addMoreusers'));
 }

@@ -1,12 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    Accumulo is a sorted, distributed key/value store  that provides robust,
-    scalable data storage and retrieval.
-  fr: >-
-    Accumulo est un magasin clé/valeur trié et distribué qui fournit un stockage
-    et une récupération de données robustes et évolutifs.
+  whatItDoes:
+    en: >-
+      Accumulo is a sorted, distributed key/value store  that provides robust,
+      scalable data storage and retrieval.
+    fr: >-
+      Accumulo est un magasin clé/valeur trié et distribué qui fournit un
+      stockage et une récupération de données robustes et évolutifs.
+category: '43232300'
 homepageURL:
   en: 'https://accumulo.apache.org/'
   fr: 'https://accumulo.apache.org/'

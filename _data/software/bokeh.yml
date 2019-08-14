@@ -1,12 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    Bokeh is an interactive visualization library that targets modern web
-    browsers for presentation.
-  fr: >-
-    Bokeh est une bibliothèque de visualisation interactive qui cible les
-    navigateurs Web modernes à des fins de présentation.
+  whatItDoes:
+    en: >-
+      Bokeh is an interactive visualization library that targets modern web
+      browsers for presentation.
+    fr: >-
+      Bokeh est une bibliothèque de visualisation interactive qui cible les
+      navigateurs Web modernes à des fins de présentation.
+category: '43232500'
 homepageURL:
   en: 'http://bokeh.pydata.org/en/latest/'
   fr: 'http://bokeh.pydata.org/en/latest/'

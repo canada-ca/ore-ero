@@ -1,10 +1,13 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: A platform for data scientists and other technical professions.
-  fr: >-
-    Une plateforme pour les scientifiques de données et d'autres professions
-    techniques.
+  whatItDoes:
+    en: >-
+      A platform for data scientists and other technical professions.
+    fr: >-
+      Une plateforme pour les scientifiques de données et d'autres professions
+      techniques.
+category: '43232300'
 homepageURL:
   en: 'https://airbnb.io/projects/knowledge-repo/'
   fr: 'https://airbnb.io/projects/knowledge-repo/'

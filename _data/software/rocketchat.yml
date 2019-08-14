@@ -1,8 +1,12 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Instant messaging team chat
-  fr: Messagerie instantanée et clavardage d'équipe
+  whatItDoes:
+    en: >-
+      Instant messaging team chat.
+    fr: >-
+      Messagerie instantanée et clavardage d'équipe.
+category: '43233500'
 homepageURL:
   en: 'https://rocket.chat'
   fr: 'https://rocket.chat'
