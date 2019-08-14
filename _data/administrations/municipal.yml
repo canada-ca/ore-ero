@@ -14,3 +14,9 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: test-test-test-sk
+  name:
+    en: test test TEST
+    fr: test test TEST
+  parent: municipal
+  provinceCode: sk
