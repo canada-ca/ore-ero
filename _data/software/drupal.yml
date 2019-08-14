@@ -16,7 +16,7 @@ licences:
   - URL:
       en: 'https://www.drupal.org/about/licensing#drupal-license'
       fr: 'https://www.drupal.org/about/licensing#drupal-license'
-    spdxID: GPL-2.0
+    spdxID: GPL-2.0-only
 name:
   en: Drupal
   fr: Drupal

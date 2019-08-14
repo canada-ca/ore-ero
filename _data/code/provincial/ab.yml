@@ -19,7 +19,7 @@ releases:
       - URL:
           en: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-ab_scheming/blob/master/LICENSE'
-        spdxID: AGPL-3.0
+        spdxID: AGPL-3.0-only
     repositoryURL:
       en: 'https://github.com/abgov/ckanext-ab_scheming'
       fr: 'https://github.com/abgov/ckanext-ab_scheming'
@@ -48,7 +48,7 @@ releases:
       - URL:
           en: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-open_alberta/blob/master/LICENSE'
-        spdxID: AGPL-3.0
+        spdxID: AGPL-3.0-only
     repositoryURL:
       en: 'https://github.com/abgov/ckanext-open_alberta'
       fr: 'https://github.com/abgov/ckanext-open_alberta'
@@ -77,7 +77,7 @@ releases:
       - URL:
           en: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
           fr: 'https://github.com/abgov/ckanext-geomapviewer/blob/master/LICENSE'
-        spdxID: AGPL-3.0
+        spdxID: AGPL-3.0-only
     repositoryURL:
       en: 'https://github.com/abgov/ckanext-geomapviewer'
       fr: 'https://github.com/abgov/ckanext-geomapviewer'

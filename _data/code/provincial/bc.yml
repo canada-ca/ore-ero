@@ -116,7 +116,7 @@ releases:
       - URL:
           en: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
           fr: 'https://github.com/bcgov/ckanext-bcgov/blob/dev/license'
-        spdxID: AGPL-3.0
+        spdxID: AGPL-3.0-only
     repositoryURL:
       en: 'https://github.com/bcgov/ckanext-bcgov'
       fr: 'https://github.com/bcgov/ckanext-bcgov'

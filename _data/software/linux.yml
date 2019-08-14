@@ -12,7 +12,7 @@ licences:
   - URL:
       en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
       fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
-    spdxID: GPL-2.0
+    spdxID: GPL-2.0-only
 name:
   en: Linux
   fr: Linux

@@ -14,7 +14,7 @@ licences:
   - URL:
       en: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
       fr: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
-    spdxID: GPL-2.0
+    spdxID: GPL-2.0-only
 name:
   en: Notepad-plus-plus
   fr: Notepad-plus-plus

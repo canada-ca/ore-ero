@@ -23,7 +23,7 @@ releases:
       - URL:
           en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
           fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
-        spdxID: GPL-2.0
+        spdxID: GPL-2.0-only
     repositoryURL:
       en: 'https://github.com/MetPX/sarracenia'
       fr: 'https://github.com/MetPX/sarracenia'

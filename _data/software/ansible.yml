@@ -12,7 +12,7 @@ licences:
   - URL:
       en: 'https://github.com/ansible/ansible/blob/devel/COPYING'
       fr: 'https://github.com/ansible/ansible/blob/devel/COPYING'
-    spdxID: GPL-3.0
+    spdxID: GPL-3.0-only
 name:
   en: Ansible
   fr: Ansible

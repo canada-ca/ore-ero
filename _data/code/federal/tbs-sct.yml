@@ -21,7 +21,7 @@ releases:
             https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
           fr: >-
             https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
-        spdxID: GPL-2.0
+        spdxID: GPL-2.0-only
     repositoryURL:
       en: 'https://github.com/gctools-outilsgc/gcconnex'
       fr: 'https://github.com/gctools-outilsgc/gcconnex'
