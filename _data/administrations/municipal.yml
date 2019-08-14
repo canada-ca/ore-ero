@@ -14,3 +14,8 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: test-test-test-bc
+  name:
+    en: TEST TEST test
+    fr: TEST TEST test
+  provinceCode: bc
