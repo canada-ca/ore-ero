@@ -15,9 +15,6 @@ releases:
         fr: >-
           Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
           Instantanément et Ad vitam aeternam
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: MetPX-Sarracenia
@@ -51,9 +48,6 @@ releases:
       whatItDoes:
         en: Enterprise architecture models
         fr: Modèles d'architecture d'entreprise
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: GC Architecture

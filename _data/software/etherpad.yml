@@ -1,8 +1,12 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Edit text documents collaboratively in real-time
-  fr: Collaboration en temps réel sur des documents textes
+  whatItDoes:
+    en: >-
+      Edit text documents collaboratively in real-time.
+    fr: >-
+      Collaboration en temps réel sur des documents textes.
+category: '43232100'
 homepageURL:
   en: 'http://etherpad.org/'
   fr: 'http://etherpad.org/'
@@ -31,9 +35,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Integrated with GCcollab
-          fr: Intégré avec GCcollab
-        name:
-          en: GCcollab Docs
-          fr: Docs GCcollab

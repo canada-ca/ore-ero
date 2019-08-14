@@ -1,12 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    A server-side scripting language designed for web development but also used
-    as a general-purpose programming language.
-  fr: >-
-    Langage de script côté serveur conçu pour le développement Web mais
-    également utilisé comme langage de programmation généraliste.
+  whatItDoes:
+    en: >-
+      A server-side scripting language designed for web development but also
+      used as a general-purpose programming language.
+    fr: >-
+      Langage de script côté serveur conçu pour le développement Web
+      mais également utilisé comme langage de programmation généraliste.
+category: '43232400'
 homepageURL:
   en: 'https://php.net'
   fr: 'https://php.net'
@@ -28,15 +30,6 @@ administrations:
     uses:
       - contact:
           email: sebastien.routier@international.gc.ca
-          URL:
-            en: 'https://www.international.gc.ca'
-            fr: 'https://www.international.gc.ca'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        description:
-          en: Used to server many Web sites.
-          fr: Utilisé pour servir plusieur site Web.
-        name:
-          en: Misc
-          fr: Divers

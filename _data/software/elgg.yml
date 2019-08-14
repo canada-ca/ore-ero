@@ -1,10 +1,13 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Highly customizable web framework and CMS for building social apps
-  fr: >-
-    Framework Web hautement personnalisable et CMS pour créer des applications
-    sociales
+  whatItDoes:
+    en: >-
+      Highly customizable web framework and CMS for building social apps
+    fr: >-
+      Framework Web hautement personnalisable et CMS pour créer des applications
+      sociales
+category: '43232400'
 homepageURL:
   en: 'https://elgg.org/'
   fr: 'https://elgg.org/'
@@ -32,35 +35,11 @@ administrations:
     uses:
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
-          URL:
-            en: 'https://github.com/gctools-outilsgc/gcconnex/issues'
-            fr: 'https://github.com/gctools-outilsgc/gcconnex/issues'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: >-
-            External social networking platform hosted by the Government of
-            Canada
-          fr: >-
-            Plateforme de réseautage social externe hébergée par le gouvernement
-            du Canada
-        name:
-          en: GCcollab
-          fr: GCcollab
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
-          URL:
-            en: 'https://github.com/gctools-outilsgc/gcconnex/issues'
-            fr: 'https://github.com/gctools-outilsgc/gcconnex/issues'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Internal social networking platform for the Government of Canada
-          fr: >-
-            Plateforme de réseautage social interne pour le gouvernement du
-            Canada
-        name:
-          en: GCconnex
-          fr: GCconnex

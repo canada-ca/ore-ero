@@ -11,9 +11,6 @@ releases:
       whatItDoes:
         en: Vehicle safety recalls Amazon Alexa Skill.
         fr: Skill Amazon Alexa pour les rappels de sécurité pour les véhicules.
-      howItWorks:
-        en: null
-        fr: null
     category: '43233500'
     name:
       en: alexa-gc-recalls
@@ -57,9 +54,6 @@ releases:
           permettre aux inspecteurs de Transports Canada de récupérer rapidement
           les documents stockés sur un lecteur réseau configuré avec Windows
           Sync.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232200'
     name:
       en: reference-center

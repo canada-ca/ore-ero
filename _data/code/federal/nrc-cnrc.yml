@@ -15,9 +15,6 @@ releases:
         fr: >-
           Boîte à outils pour effectuer une simulation de Monte Carlo du
           transport du rayonnement ionisant à travers la matière
-      howItWorks:
-        en: null
-        fr: null
     category: '43232600'
     name:
       en: EGSnrc

@@ -1,12 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    Airflow is a platform to programmatically author, schedule and monitor
-    workflows.
-  fr: >-
-    Airflow est une plate-forme permettant de créer, planifier et surveiller par
-    programme des flux de travail.
+  whatItDoes:
+    en: >-
+      Airflow is a platform to programmatically author, schedule and monitor
+      workflows.
+    fr: >-
+      Airflow est une plate-forme permettant de créer, planifier et surveiller
+      par programme des flux de travail.
+category: '43232200'
 homepageURL:
   en: 'https://airflow.apache.org/'
   fr: 'https://airflow.apache.org/'
@@ -31,9 +33,3 @@ administrations:
         date:
           started: '2017-06-30'
           metadataLastUpdated: '2019-05-06'
-        description:
-          en: Business Intelligence.
-          fr: Intelligence d'affaires.
-        name:
-          en: Content flow management software.
-          fr: Logiciels de gestion de flux de contenus.

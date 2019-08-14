@@ -173,7 +173,7 @@ presets:
         en: Homepage URL
         fr: URL de la page d'accueil
     infobulle:
-      en: The URL of the project homepage.
+      en: Add the URL of the project homepage.
       fr: Ajouter les URLs pour accéder à la page d'accueil du projet.
   languages:
     title:
@@ -434,8 +434,8 @@ code:
 software:
   name:
     title:
-      en: The English and French name of the project.
-      fr: Le nom du projet en français et en anglais.
+      en: Project Name
+      fr: Nom du projet
     label:
       en:
         en: English project name
@@ -450,41 +450,26 @@ software:
       select:
         en: If you wish to update an existing software, please select it below
         fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
-  usename:
+    infobulle:
+      en: Add the name of the open source software
+      fr: Ajouter le nom du logiciel libre
+  organization:
     title:
-      en: The domain name of the project activity.
-      fr: Le nom du domaine de l'activité du projet.
+      en: Team, branch or sector
+      fr: Équipe, direction ou secteur
+    infobulle:
+      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
+      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
     label:
       en:
-        en: English use name
-        fr: Nom de l'utilisation en anglais
+        en: English name
+        fr: Nom en anglais
       fr:
-        en: French use name
-        fr: Nom de l'utilisation en français
+        en: French name
+        fr: Nom en français
       schema:
-        en: Name of the project activity
-        fr: Nom de l'activité du projet.
-  usedescription:
-    title:
-      en: The English and French description of the project activity.
-      fr: La description du domaine de l'activité du projet en français et en anglais.
-    label:
-      en:
-        en: English project activity description
-        fr: description du domaine de l'activité du projet en anglais
-      fr:
-        en: French project activity description
-        fr: description du domaine de l'activité du projet en français
-      schema:
-        en: Description of the project activity
-        fr: Description de l'activité du projet.
-  users:
-    title:
-      en: Project Users
-      fr: Utilisateurs tu projet
-    label:
-      en: Group using the project
-      fr: Les groupes qui utilisent le projet
+        en: Organization
+        fr: Organisation
   administrations: *administrations
   uses:
     title:

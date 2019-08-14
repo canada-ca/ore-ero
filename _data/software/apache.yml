@@ -1,8 +1,12 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Cross-platform web server
-  fr: Serveur Web multiplateforme
+  whatItDoes:
+    en: >-
+      Cross-platform web server.
+    fr: >-
+     Serveur Web multiplateforme.
+category: '43232700'
 homepageURL:
   en: 'https://httpd.apache.org'
   fr: 'https://httpd.apache.org'
@@ -24,15 +28,6 @@ administrations:
     uses:
       - contact:
           email: sebastien.routier@international.gc.ca
-          URL:
-            en: 'https://www.international.gc.ca'
-            fr: 'https://www.international.gc.ca'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        description:
-          en: Used to server many Web sites.
-          fr: Utilisé pour servir plusieur site Web.
-        name:
-          en: Misc
-          fr: Divers

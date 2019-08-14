@@ -11,9 +11,6 @@ releases:
       whatItDoes:
         en: Dataset scheming extension used on open.alberta.ca
         fr: Extension du schéma de données utilisée dans open.alberta.ca
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-ab_scheming
@@ -43,9 +40,6 @@ releases:
       whatItDoes:
         en: Ckan extension developed for use on open.alberta.ca
         fr: Extension Ckan développée pour être utilisée dans open.alberta.ca
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-open_alberta
@@ -75,9 +69,6 @@ releases:
       whatItDoes:
         en: Ckan Geo Map Viewer Extension
         fr: Extension Ckan de la carte géographique
-      howItWorks:
-        en: null
-        fr: null
     category: '43233500'
     name:
       en: ckanext-geomapviewer

@@ -11,9 +11,6 @@ releases:
       whatItDoes:
         en: Centralize, process, and clean data
         fr: Centraliser, traiter et nettoyer les données
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: OpenTabulate

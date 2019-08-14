@@ -1,10 +1,13 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: Text editor and Notepad replacement that runs in the Windows environment.
-  fr: >-
-    Éditeur de textes et remplacement pour Notepad qui fonctionne dans
-    l'environement Windows.
+  whatItDoes:
+    en: >-
+      Text editor and Notepad replacement that runs in the Windows environment.
+    fr: >-
+      Éditeur de textes et remplacement pour Notepad qui fonctionne dans
+      l'environement Windows.
+category: '43232100'
 homepageURL:
   en: 'https://notepad-plus-plus.org'
   fr: 'https://notepad-plus-plus.org/fr'
@@ -30,15 +33,6 @@ administrations:
     uses:
       - contact:
           email: sebastien.routier@international.gc.ca
-          URL:
-            en: 'https://www.international.gc.ca/'
-            fr: 'https://www.international.gc.ca/'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        description:
-          en: Must be requeted from the AppStore.
-          fr: Disponible au AppStore.
-        name:
-          en: Available to all employees
-          fr: Disponible pour tous les employés

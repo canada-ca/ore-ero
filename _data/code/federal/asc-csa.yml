@@ -14,9 +14,6 @@ releases:
         fr: >-
           Un logiciel polyvalent pour faire fonctionner des robots et des
           satellites
-      howItWorks:
-        en: null
-        fr: null
     category: '43232600'
     name:
       en: Apogy

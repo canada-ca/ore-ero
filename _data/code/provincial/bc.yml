@@ -11,9 +11,6 @@ releases:
       whatItDoes:
         en: B.C. Developer Exchange Application
         fr: Application Échange de développeurs C.-B.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: Devex
@@ -47,9 +44,6 @@ releases:
         fr: >-
           Application de puits d'eau souterraine et d'aquifères pour le
           ministère de l'environnement.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     homepageURL:
       en: 'https://apps.nrs.gov.bc.ca/gwells/'
@@ -82,9 +76,6 @@ releases:
       whatItDoes:
         en: Web application for the DevHub.
         fr: Application Web pour le DevHub.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: devhub-app-web
@@ -117,9 +108,6 @@ releases:
       whatItDoes:
         en: BC Data Catalogue source code.
         fr: Code source du catalogue de données BC.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-bcgov

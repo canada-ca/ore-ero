@@ -81,7 +81,7 @@
         {%- assign software = softwares[1] -%}
         <tr>
           <td><a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
-          <td>{{ software.description[page.lang] }}</td>
+          <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
               <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
@@ -119,7 +119,7 @@
         <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
       </header>
       <div class="modal-body">
-        <p><strong>{{ software.description[page.lang] }}</strong></p>
+        <p><strong>{{ software.description.whatItDoes[page.lang] }}</strong></p>
         <p>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</p>
         {%- for administration in software.administrations -%}
           <div class="row">

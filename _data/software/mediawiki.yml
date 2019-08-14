@@ -1,8 +1,12 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: 'Wiki package written in PHP, originally for use on Wikipedia'
-  fr: Ensemble Wiki développé à l'origine pour Wikipédia
+  whatItDoes:
+    en: >-
+      Wiki package written in PHP, originally for use on Wikipedia.
+    fr: >-
+      Ensemble Wiki développé à l'origine pour Wikipédia.
+category: '43232100'
 homepageURL:
   en: 'https://www.mediawiki.org/wiki/MediaWiki'
   fr: 'https://www.mediawiki.org/wiki/MediaWiki/fr'
@@ -40,15 +44,6 @@ administrations:
           fr: GCpedia
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
-          URL:
-            en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
-            fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        description:
-          en: External Government of Canada Wiki
-          fr: Wiki externe du gouvernement du Canada
-        name:
-          en: GCcollab Wiki
-          fr: Wiki GCcollab

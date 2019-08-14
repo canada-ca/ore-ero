@@ -16,9 +16,6 @@ releases:
           Environnement visant à aider les étudiants à apprendre les bases de la
           programmation assembleur et du développement de systèmes
           d'exploitation. C'est un environnement portable et facile à apprendre
-      howItWorks:
-        en: null
-        fr: null
     category: '43232500'
     name:
       en: Spartacus
@@ -60,9 +57,6 @@ releases:
           conçue pour aider les équipes de cyberdéfense à automatiser l'analyse
           des fichiers et à faire une meilleure utilisation du temps des
           analystes de la sécurité
-      howItWorks:
-        en: null
-        fr: null
     category: '43233200'
     name:
       en: Assemblyline

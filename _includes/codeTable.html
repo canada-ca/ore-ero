@@ -189,7 +189,7 @@
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
         <div class="modal-body">
-          <p><strong>{{ release.description[page.lang] }}</strong></p>
+          <p><strong>{{ release.description.whatItDoes[page.lang] }}</strong></p>
           <p>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: {{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
           {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
           <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
