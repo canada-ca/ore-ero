@@ -4,20 +4,19 @@ adminCode: asc-csa
 releases:
   - contact:
       email: apogy-dev@eclipse.org
+      name: imade
     date:
       created: '2015-09-28'
-      metadataLastUpdated: '2019-01-31'
+      metadataLastUpdated: '2019-08-14'
     description:
       whatItDoes:
-        en: >-
-          The one-stop-shop solution for operating robots, satellites and beyond
+        en: 'The one-stop-shop solution for operating robots, satellites and beyond'
         fr: >-
           Un logiciel polyvalent pour faire fonctionner des robots et des
           satellites
       howItWorks:
-        en: null
-        fr: null
-    category: '43232600'
+        en: test
+        fr: test
     name:
       en: Apogy
       fr: Apogy
@@ -26,6 +25,10 @@ releases:
           en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
           fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
         spdxID: EPL-1.0
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        spdxID: AFL-1.2
     repositoryURL:
       en: 'https://git.eclipse.org/c/apogy/apogy.git'
       fr: 'https://git.eclipse.org/c/apogy/apogy.git'
@@ -36,5 +39,31 @@ releases:
       fr:
         - Robots
         - Espace
+    category: '43232600'
+    downloadURL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    homepageURL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
     languages:
       - Java
+      - C
+      - PHP
+      - MySQL
+    organization:
+      en: test
+      fr: test
+    partners:
+      - email: test@gmail.com
+        name:
+          en: test
+          fr: test
+    relatedCode:
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        name:
+          en: test
+          fr: test
+    status: Alpha
