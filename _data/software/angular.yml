@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      A framework for mobile and desktop applications.
-    fr: >-
-      Un framework pour les applications mobiles et bureaux.
+    en: A framework for mobile and desktop applications.
+    fr: Un framework pour les applications mobiles et bureaux.
 category: '43232400'
 homepageURL:
   en: 'https://angular.io/'
