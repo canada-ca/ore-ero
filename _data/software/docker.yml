@@ -37,12 +37,6 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Development and deployment process
-          fr: Processus de développements et déploiements
-        name:
-          en: Development and deployment
-          fr: Développements et Déploiements
   - adminCode: tbs-sct
     uses:
       - contact:
@@ -50,11 +44,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Digital Collaboration Division development and deployment
-          fr: >-
-            Développement et déploiement de la Division de la collaboration
-            numérique
-        name:
-          en: Development and deployment
-          fr: Développements et Déploiements

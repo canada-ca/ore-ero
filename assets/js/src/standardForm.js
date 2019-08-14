@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode
+  getAdminObject getAdminCode slugify
   resetMoreGroup addMoreGroup
   getToday
 */
@@ -196,7 +196,9 @@ function submitStandardFormNewAdmin() {
   let adminObject = getAdminObject();
 
   let standardName = standardObject.standardAcronym.toLowerCase();
-  let adminName = $('#newAdminCode').val();
+  let adminName = slugify(
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+  );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let standardFile = `_data/standard/${standardName}.yml`;

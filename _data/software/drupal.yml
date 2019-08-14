@@ -33,33 +33,14 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: CST Website Creation
-          fr: Création de site Web du CST
-        name:
-          en: CSE Website
-          fr: Site Web du CST
-        users:
-          - public
   - adminCode: tbs-sct
     uses:
       - contact:
           email: christopher.jaja@tbs-sct.gc.ca
-          URL:
-            en: 'https://github.com/canada-ca/ore-ero/issues'
-            fr: 'https://github.com/canada-ca/ore-ero/issues'
           name: Christopher Jaja
         date:
           started: '2018-01-23'
           metadataLastUpdated: '2019-05-06'
-        description:
-          en: Drupal 8 install profile for open.canada.ca
-          fr: Profil d'installation de Drupal 8 pour open.canada.ca
-        name:
-          en: Open Government Portal
-          fr: Portail du Gouvernement ouvert
-        users:
-          - public
   - adminCode: tc
     uses:
       - contact:
@@ -68,9 +49,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: APM data
-          fr: Données du APM
-        name:
-          en: Development Environment
-          fr: Environnement de développement

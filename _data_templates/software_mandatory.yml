@@ -29,9 +29,3 @@ administrations:
         date:
           started: 'YYYY-MM-DD'
           metadataLastUpdated: 'YYYY-MM-DD'
-        description:
-          en: Etiam rutrum, tellus nec egestas blandit.
-          fr: Vestibulum fringilla vel purus nec iaculis.
-        name:
-          en: Example use
-          fr: Exemple d'utilisation

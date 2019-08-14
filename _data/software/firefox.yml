@@ -35,9 +35,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Upgraded to latest ESR version every month.
-          fr: Mises à jours mensuelles à la dernière version ESR.
-        name:
-          en: Available to all employees (self service)
-          fr: Disponible pour tous les employés (libre service)

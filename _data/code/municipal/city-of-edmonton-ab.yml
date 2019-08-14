@@ -1,6 +1,6 @@
 ---
 schemaVersion: '1.0'
-adminCode: edmonton_ab
+adminCode: city-of-edmonton-ab
 releases:
   - contact:
       email: jared.rewerts@edmonton.ca

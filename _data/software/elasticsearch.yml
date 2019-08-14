@@ -36,12 +36,6 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: APM data
-          fr: Données du APM
-        name:
-          en: Development Environment
-          fr: Environnement de développement
   - adminCode: mtl_qc
     uses:
       - contact:
@@ -49,9 +43,3 @@ administrations:
         date:
           started: '2017-06-30'
           metadataLastUpdated: '2019-05-10'
-        description:
-          en: Information managment.
-          fr: Gestion de l'information.
-        name:
-          en: Data mining software (data mining).
-          fr: Logiciels d'extraction de données (data mining).

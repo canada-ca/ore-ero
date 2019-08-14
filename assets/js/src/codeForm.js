@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
-  getAdminObject getAdminCode
+  getAdminObject getAdminCode slugify
   addMoreLicences addMoreRelatedCode resetMoreGroup addMoreGroup fillLicenceField
   getToday
 */
@@ -15,7 +15,7 @@ const adminSelect = $('.page-codeForm #adminCode');
 $(document).ready(function() {
   $('#prbotSubmitcodeForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitFormAdminCodeForm();
+      if ($('#ennewAdminName').val() != '') submitFormAdminCodeForm();
       else submitCodeForm();
     }
   });
@@ -50,8 +50,10 @@ function getCodeObject() {
           metadataLastUpdated: getToday()
         },
         description: {
-          en: $('#endescriptionwhatItDoes').val(),
-          fr: $('#frdescriptionwhatItDoes').val()
+          whatItDoes: {
+            en: $('#endescriptionwhatItDoes').val(),
+            fr: $('#frdescriptionwhatItDoes').val()
+          }
         },
         name: {
           en: $('#enname').val(),
@@ -195,12 +197,14 @@ function submitFormAdminCodeForm() {
   let adminObject = getAdminObject();
 
   let codeName = codeObject.releases[0].name.en;
-  let adminName = $('#newAdminCode').val();
+  let adminName = slugify(
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+  );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let codeFile = `_data/code/${$('#orgLevel').val()}/${$(
-    '#newAdminCode'
-  ).val()}.yml`;
+  let codeFile = `_data/code/${$('#orgLevel').val()}/${slugify(
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+  )}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
   fileWriter
