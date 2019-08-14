@@ -39,3 +39,14 @@ administrations:
         name:
           en: Software Database Management Systems.
           fr: Logiciels de systèmes de gestion de base de données.
+  - adminCode: test-yk
+    uses:
+      - contact:
+          email: test@gmail.com
+          name: imade
+        date:
+          started: '2019-08-05'
+          metadataLastUpdated: '2019-08-14'
+        organization:
+          en: test
+          fr: test
