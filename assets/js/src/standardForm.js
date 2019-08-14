@@ -386,7 +386,6 @@ function resetFieldsStandard() {
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
   $('#frdescriptionhowItWorks').val('');
-  $('#frdescription').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#enstandardOrg').val('');
@@ -420,10 +419,6 @@ function addValueToFieldsAdmin(obj) {
 
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
-  if (obj.contact.URL) {
-    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#encontactURL').val(obj.contact.URL.fr);
-  }
 
   $('#datecreated').val(obj.date.created);
 
@@ -449,8 +444,6 @@ function addValueToFieldsAdmin(obj) {
 }
 
 function resetFieldsAdmin() {
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datecreated').val('');

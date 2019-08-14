@@ -40,9 +40,12 @@ function getsoftwareObject() {
   let softwareObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescriptionwhatItDoes').val(),
-      fr: $('#frdescriptionwhatItDoes').val()
+      whatItDoes: {
+        en: $('#endescriptionwhatItDoes').val(),
+        fr: $('#frdescriptionwhatItDoes').val()
+      }
     },
+    category: $('#category :selected').val(),
     homepageURL: {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
@@ -95,28 +98,18 @@ function getsoftwareObject() {
     ).val();
   }
 
-  if ($('#category :selected').val()) {
-    softwareObject.releases[0].category = $('#category :selected').val();
-  }
-
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL = {};
-    if ($('#encontactURL').val()) {
-      softwareObject.administrations[0].uses[0].contact.URL.en = $(
-        '#encontactURL'
-      ).val();
-    }
-    if ($('#frcontactURL').val()) {
-      softwareObject.administrations[0].uses[0].contact.URL.fr = $(
-        '#frcontactURL'
-      ).val();
-    }
-  }
-
   if ($('#contactname').val()) {
     softwareObject.administrations[0].uses[0].contact.name = $(
       '#contactname'
     ).val();
+  }
+
+  if ($('#enteam').val() || $('#frteam').val()) {
+    softwareObject.administrations[0].uses[0].team = {};
+    if ($('#enteam').val())
+      softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
+    if ($('#frteam').val())
+      softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
   }
 
   return softwareObject;
@@ -309,7 +302,7 @@ function getConfigUpdate(result, file, ProjectName) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -340,7 +333,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -432,23 +425,20 @@ function selectAdmin() {
 function addValueToFieldsAdmin(obj) {
   resetFieldsAdmin();
 
-  if (obj.uses[0].contact.URL) {
-    if (obj.uses[0].contact.URL.en)
-      $('#encontactURL').val(obj.uses[0].contact.URL.en);
-    if (obj.uses[0].contact.URL.fr)
-      $('#frcontactURL').val(obj.uses[0].contact.URL.fr);
-  }
-  if (obj.uses[0].contact.email)
-    $('#contactemail').val(obj.uses[0].contact.email);
+  $('#contactemail').val(obj.uses[0].contact.email);
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
   $('#datestarted').val(obj.uses[0].date.started);
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  }
 }
 
 function resetFieldsAdmin() {
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
 }

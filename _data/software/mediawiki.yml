@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Wiki package written in PHP, originally for use on Wikipedia.
-    fr: >-
-      Ensemble Wiki développé à l'origine pour Wikipédia.
+    en: Wiki package written in PHP, originally for use on Wikipedia.
+    fr: Ensemble Wiki développé à l'origine pour Wikipédia.
 category: '43232100'
 homepageURL:
   en: 'https://www.mediawiki.org/wiki/MediaWiki'

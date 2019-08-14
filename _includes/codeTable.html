@@ -40,8 +40,8 @@
           <option value="">&nbsp;</option>
           {%- assign org_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
-            {%- for admins in govLevels[1] -%}
-              {%- for release in admins[1].releases -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
                 {%- if release.organization[page.lang] != nil -%}
                   {%- assign org_arr = org_arr | push: release.organization[page.lang] -%}
                 {%- endif -%}
@@ -61,8 +61,8 @@
           <option value="">&nbsp;</option>
           {%- assign licence_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
-            {%- for admins in govLevels[1] -%}
-              {%- for release in admins[1].releases -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
                 {%- for licence in release.licences -%}
                   {%- assign licence_arr = licence_arr | push: licence.spdxID -%}
                 {%- endfor -%}
@@ -82,8 +82,8 @@
           <option value="">&nbsp;</option>
           {%- assign tag_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
-            {%- for admins in govLevels[1] -%}
-              {%- for release in admins[1].releases -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
                 {%- for tag in release.tags[page.lang] -%}
                   {%- assign tag_arr = tag_arr | push: tag -%}
                 {%- endfor -%}

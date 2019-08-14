@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Ansible is an IT automation tool.
-    fr: >-
-      Ansible est un outil d'automatisation informatique.
+    en: Ansible is an IT automation tool.
+    fr: Ansible est un outil d'automatisation informatique.
 category: '43232200'
 homepageURL:
   en: 'https://www.ansible.com/'

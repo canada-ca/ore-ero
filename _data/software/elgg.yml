@@ -2,8 +2,7 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Highly customizable web framework and CMS for building social apps
+    en: Highly customizable web framework and CMS for building social apps
     fr: >-
       Framework Web hautement personnalisable et CMS pour créer des applications
       sociales

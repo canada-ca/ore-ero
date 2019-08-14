@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Edit text documents collaboratively in real-time.
-    fr: >-
-      Collaboration en temps réel sur des documents textes.
+    en: Edit text documents collaboratively in real-time.
+    fr: Collaboration en temps réel sur des documents textes.
 category: '43232100'
 homepageURL:
   en: 'http://etherpad.org/'

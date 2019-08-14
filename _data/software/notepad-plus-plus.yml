@@ -2,8 +2,7 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Text editor and Notepad replacement that runs in the Windows environment.
+    en: Text editor and Notepad replacement that runs in the Windows environment.
     fr: >-
       Éditeur de textes et remplacement pour Notepad qui fonctionne dans
       l'environement Windows.

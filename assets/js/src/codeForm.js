@@ -50,9 +50,12 @@ function getCodeObject() {
           metadataLastUpdated: getToday()
         },
         description: {
-          en: $('#endescriptionwhatItDoes').val(),
-          fr: $('#frdescriptionwhatItDoes').val()
+          whatItDoes: {
+            en: $('#endescriptionwhatItDoes').val(),
+            fr: $('#frdescriptionwhatItDoes').val()
+          }
         },
+        category: $('#category :selected').val(),
         name: {
           en: $('#enname').val(),
           fr: $('#frname').val()
@@ -95,10 +98,6 @@ function getCodeObject() {
     codeObject.releases[0].contact.name = $('#contactname').val();
   }
 
-  if ($('#category :selected').val()) {
-    codeObject.releases[0].category = $('#category :selected').val();
-  }
-
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
     codeObject.releases[0].downloadURL = {};
     if ($('#endownloadUrl').val()) {
@@ -122,16 +121,6 @@ function getCodeObject() {
   let languages = getLanguages();
   if (languages.length > 0) {
     codeObject.releases[0].languages = languages;
-  }
-
-  if ($('#enteam').val() || $('#frteam').val()) {
-    codeObject.releases[0].team = {};
-    if ($('#enteam').val()) {
-      codeObject.releases[0].team.en = $('#enteam').val();
-    }
-    if ($('#frteam').val()) {
-      codeObject.releases[0].team.fr = $('#frteam').val();
-    }
   }
 
   // Optional more-group
@@ -171,6 +160,16 @@ function getCodeObject() {
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
+  }
+
+  if ($('#enteam').val() || $('#frteam').val()) {
+    codeObject.releases[0].team = {};
+    if ($('#enteam').val()) {
+      codeObject.releases[0].team.en = $('#enteam').val();
+    }
+    if ($('#frteam').val()) {
+      codeObject.releases[0].team.fr = $('#frteam').val();
+    }
   }
 
   return codeObject;
@@ -388,7 +387,6 @@ function selectAdmin() {
               release.name[lang] +
               '">' +
               release.name[lang] +
-              (release.version ? ' (' + release.version + ')' : '') +
               '</option>'
           ).appendTo('#nameselect');
         });
@@ -451,16 +449,17 @@ function addValueToFields(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
+
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
-  $('#category').val(obj.category);
-
   if (obj.description.howItWorks) {
     if (obj.description.howItWorks.en)
       $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
     if (obj.description.howItWorks.fr)
       $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
+
+  $('#category').val(obj.category);
 
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
@@ -488,11 +487,6 @@ function addValueToFields(obj) {
     obj.languages.forEach(function(language) {
       selectLanguage(language);
     });
-  }
-
-  if (obj.team) {
-    if (obj.team.en) $('#enteam').val(obj.team.en);
-    if (obj.team.fr) $('#frteam').val(obj.team.fr);
   }
 
   if (obj.partners)
@@ -529,6 +523,11 @@ function addValueToFields(obj) {
     });
 
   if (obj.status) $('#status').val(obj.status);
+
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  }
 }
 
 function resetFields() {
