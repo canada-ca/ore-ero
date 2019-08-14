@@ -1,0 +1,76 @@
+---
+schemaVersion: '1.0'
+adminCode: test-ab
+releases:
+  - contact:
+      email: test@gmail.com
+      name: imade
+    date:
+      created: '2019-08-05'
+      metadataLastUpdated: '2019-08-14'
+    description:
+      whatItDoes:
+        en: test test
+        fr: test test
+      howItWorks:
+        en: test test
+        fr: test test
+    name:
+      en: test
+      fr: test
+    licences:
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        spdxID: AFL-1.1
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        spdxID: CPAL-1.0
+    repositoryURL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    tags:
+      en:
+        - test
+        - test
+      fr:
+        - test
+        - test
+    category: '43231600'
+    downloadURL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    homepageURL:
+      en: 'http://abc.com'
+      fr: 'http://abc.com'
+    languages:
+      - JavaScript
+      - 'C#'
+      - TypeScript
+    organization:
+      en: test
+      fr: test
+    partners:
+      - email: test@gmail.com
+        name:
+          en: test
+          fr: test
+      - email: test@gmail.com
+        name:
+          en: test1
+          fr: test1
+    relatedCode:
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        name:
+          en: test
+          fr: test
+      - URL:
+          en: 'http://abc.com'
+          fr: 'http://abc.com'
+        name:
+          en: test1
+          fr: tes
+    status: Alpha
