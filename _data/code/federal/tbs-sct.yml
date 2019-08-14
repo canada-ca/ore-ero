@@ -8,29 +8,26 @@ releases:
       created: '2014-08-21'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: GC digital collaboration platform (GCconnex and GCcollab)
-      fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
-    languages:
-      - PHP
-      - MySQL
+      whatItDoes:
+        en: GC digital collaboration platform (GCconnex and GCcollab)
+        fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
+      howItWorks:
+        en: null
+        fr: null
+    category: '43233500'
     name:
       en: GCconnex
       fr: GCconnex
-    organization:
-      en: Digital Enablement Division
-      fr: Division de la mobilisation numérique
-    licenses:
+    licences:
       - URL:
-          en: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
-          fr: 'https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt'
+          en: >-
+            https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
+          fr: >-
+            https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
         spdxID: GPL-2.0
-    relatedCode:
-      - URL: 'https://github.com/Elgg/Elgg'
-        name: Elgg
     repositoryURL:
       en: 'https://github.com/gctools-outilsgc/gcconnex'
       fr: 'https://github.com/gctools-outilsgc/gcconnex'
-    status: Production
     tags:
       en:
         - Collaboration
@@ -38,21 +35,39 @@ releases:
       fr:
         - Collaboration
         - Social
+    languages:
+      - PHP
+      - MySQL
+    organization:
+      en: Digital Enablement Division
+      fr: Division de la mobilisation numérique
+    relatedCode:
+      - URL:
+          en: 'https://github.com/Elgg/Elgg'
+        name:
+          en: Elgg
+    status: Maintained
   - contact:
       email: cds-snc@tbs-sct.gc.ca
     date:
       created: '2017-04-09'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Both digital.canada.ca and numerique.canada.ca are published from this repository.
-      fr: digital.canada.ca et numerique.canada.ca sont publiés à partir de ce repository.
+      whatItDoes:
+        en: >-
+          Both digital.canada.ca and numerique.canada.ca are published from this
+          repository.
+        fr: >-
+          Digital.canada.ca et numerique.canada.ca sont publiés à partir de ce
+          repository.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232100'
     name:
       en: CDS Website
       fr: Site Web SNC
-    organization:
-      en: Canadian Digital Services
-      fr: Services numériques Canadiens
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
           fr: 'https://github.com/cds-snc/digital-canada-ca/blob/master/LICENSE.txt'
@@ -65,18 +80,30 @@ releases:
         - Website
       fr:
         - Site Web
+    organization:
+      en: Canadian Digital Services
+      fr: Services numériques Canadiens
   - contact:
       email: wet-boew@tbs-sct.gc.ca
     date:
       created: '2013-08-11'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Building websites that are accessible, usable, interoperable, mobile friendly and multilingual
-      fr: Construire des sites Web accessibles, faciles d'emploi, interopérables, optimisés pour les appareils mobiles et multilingues
+      whatItDoes:
+        en: >-
+          Building websites that are accessible, usable, interoperable, mobile
+          friendly and multilingual
+        fr: >-
+          Construire des sites Web accessibles, faciles d'emploi,
+          interopérables, optimisés pour les appareils mobiles et multilingues
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232100'
     name:
       en: Web Experience Toolkit (WET)
       fr: Boîte à outils de l'expérience Web (BOEW)
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/wet-boew/wet-boew/blob/master/License-en.txt'
           fr: 'https://github.com/wet-boew/wet-boew/blob/master/Licence-fr.txt'
@@ -98,21 +125,34 @@ releases:
       created: '2012-12-09'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Government of Canada CKAN Extension
-      fr: Extension à CKAN du Gouvernement du Canada
-    languages:
-      - Python
+      whatItDoes:
+        en: Government of Canada CKAN Extension
+        fr: Extension à CKAN du Gouvernement du Canada
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-canada
       fr: ckanext-canada
-    organization:
-      en: Open Government
-      fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
           fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
         spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/open-data/ckanext-canada'
+      fr: 'https://github.com/open-data/ckanext-canada'
+    tags:
+      en:
+        - CKAN Extension
+      fr:
+        - Extension CKAN
+    languages:
+      - Python
+    organization:
+      en: Open Government
+      fr: Gouvernement Ouvert
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -120,15 +160,7 @@ releases:
         name:
           en: CKAN
           fr: CKAN
-    repositoryURL:
-      en: 'https://github.com/open-data/ckanext-canada'
-      fr: 'https://github.com/open-data/ckanext-canada'
-    status: Production
-    tags:
-      en:
-        - CKAN Extension
-      fr:
-        - Extension CKAN
+    status: Maintained
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -136,21 +168,38 @@ releases:
       created: '2016-06-05'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Store CKAN resources against multiple cloud providers.
-      fr: Stocker les ressources CKAN contre plusieurs fournisseurs infonuagique.
-    languages:
-      - Python
+      whatItDoes:
+        en: Store CKAN resources against multiple cloud providers.
+        fr: >-
+          Stocker les ressources CKAN contre plusieurs fournisseurs
+          infonuagique.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-cloudstorage
       fr: ckanext-cloudstorage
+    licences:
+      - URL:
+          en: >-
+            https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING
+          fr: >-
+            https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/open-data/ckanext-cloudstorage'
+      fr: 'https://github.com/open-data/ckanext-cloudstorage'
+    tags:
+      en:
+        - CKAN Extension
+      fr:
+        - Extension CKAN
+    languages:
+      - Python
     organization:
       en: Open Government
       fr: Gouvernement Ouvert
-    licenses:
-      - URL:
-          en: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING'
-          fr: 'https://github.com/open-data/ckanext-cloudstorage/blob/master/COPYING.fr'
-        spdxID: MIT
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -158,15 +207,7 @@ releases:
         name:
           en: CKAN
           fr: CKAN
-    repositoryURL:
-      en: 'https://github.com/open-data/ckanext-cloudstorage'
-      fr: 'https://github.com/open-data/ckanext-cloudstorage'
-    status: Production
-    tags:
-      en:
-        - CKAN Extension
-      fr:
-        - Extension CKAN
+    status: Maintained
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -174,20 +215,34 @@ releases:
       created: '2013-09-08'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Easy, shareable custom CKAN schemas
-    languages:
-      - Python
+      whatItDoes:
+        en: 'Easy, shareable custom CKAN schemas'
+        fr: Schémas CKAN personnalisés faciles à partager
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-scheming
       fr: ckanext-scheming
-    organization:
-      en: Open Government
-      fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanext-scheming/blob/master/COPYING.fr'
         spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/open-data/ckanext-scheming'
+      fr: 'https://github.com/open-data/ckanext-scheming'
+    tags:
+      en:
+        - CKAN Extension
+      fr:
+        - Extension CKAN
+    languages:
+      - Python
+    organization:
+      en: Open Government
+      fr: Gouvernement Ouvert
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -195,15 +250,7 @@ releases:
         name:
           en: CKAN
           fr: CKAN
-    repositoryURL:
-      en: 'https://github.com/open-data/ckanext-scheming'
-      fr: 'https://github.com/open-data/ckanext-scheming'
-    status: Production
-    tags:
-      en:
-        - CKAN Extension
-      fr:
-        - Extension CKAN
+    status: Maintained
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -211,20 +258,38 @@ releases:
       created: '2013-04-07'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Command line interface and Python module for accessing the CKAN Action API
-    languages:
-      - Python
+      whatItDoes:
+        en: >-
+          Command line interface and Python module for accessing the CKAN Action
+          API
+        fr: >-
+          Interface en ligne de commande et un module en Python pour accéder à
+          l'API CKAN
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanapi
       fr: ckanapi
-    organization:
-      en: Open Government
-      fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanapi/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanapi/blob/master/COPYING.fr'
         spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/ckan/ckanapi'
+      fr: 'https://github.com/ckan/ckanapi'
+    tags:
+      en:
+        - CKAN Tool
+      fr:
+        - Outil CKAN
+    languages:
+      - Python
+    organization:
+      en: Open Government
+      fr: Gouvernement Ouvert
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -232,15 +297,7 @@ releases:
         name:
           en: CKAN
           fr: CKAN
-    repositoryURL:
-      en: 'https://github.com/ckan/ckanapi'
-      fr: 'https://github.com/ckan/ckanapi'
-    status: Production
-    tags:
-      en:
-        - CKAN Tool
-      fr:
-        - Outil CKAN
+    status: Maintained
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -248,20 +305,34 @@ releases:
       created: '2013-09-08'
       metadataLastUpdated: '2018-03-26'
     description:
-      en: Multilingual metadata fields for CKAN
-    languages:
-      - Python
+      whatItDoes:
+        en: Multilingual metadata fields for CKAN
+        fr: Champs de métadonnées multilingues pour CKAN
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: ckanext-fluent
       fr: ckanext-fluent
-    organization:
-      en: Open Government
-      fr: Gouvernement Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING'
           fr: 'https://github.com/ckan/ckanext-fluent/blob/master/COPYING.fr'
         spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/ckan/ckanext-fluent'
+      fr: 'https://github.com/ckan/ckanext-fluent'
+    tags:
+      en:
+        - CKAN Extension
+      fr:
+        - Extension CKAN
+    languages:
+      - Python
+    organization:
+      en: Open Government
+      fr: Gouvernement Ouvert
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -269,36 +340,28 @@ releases:
         name:
           en: CKAN
           fr: CKAN
-    repositoryURL:
-      en: 'https://github.com/ckan/ckanext-fluent'
-      fr: 'https://github.com/ckan/ckanext-fluent'
-    status: Production
-    tags:
-      en:
-        - CKAN Extension
-      fr:
-        - Extension CKAN
+    status: Maintained
   - contact:
       email: sebastien.lemay@canada.ca
     date:
       created: '2017-12-31'
       metadataLastUpdated: '2019-03-06'
     description:
-      en: This Website and all the data.
-      fr: Ce site Web et toutes les données.
+      whatItDoes:
+        en: This Website and all the data.
+        fr: Ce site Web et toutes les données.
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: Open Resource Exchange
       fr: Échange de Ressource Ouvert
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
           fr: 'https://github.com/canada-ca/ore-ero/blob/master/LICENSE.txt'
         spdxID: MIT
-    partners:
-      - email: renatabianca.tomazeli@ville.montreal.qc.ca
-        name:
-          en: City of Montreal
-          fr: Ville de Montréal
     repositoryURL:
       en: 'https://github.com/canada-ca/ore-ero'
       fr: 'https://github.com/canada-ca/ore-ero'
@@ -309,3 +372,8 @@ releases:
       fr:
         - Site Web
         - Données
+    partners:
+      - email: renatabianca.tomazeli@ville.montreal.qc.ca
+        name:
+          en: City of Montreal
+          fr: Ville de Montréal

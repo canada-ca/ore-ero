@@ -5,26 +5,27 @@
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
   getAdminObject getAdminCode
-  addMoreLicenses addMoreRelatedCode
+  addMoreLicences addMoreRelatedCode resetMoreGroup addMoreGroup fillLicenceField
+  getToday
 */
 
-const codeObj = $('.page-codeForm #nameselect');
-const adminObj = $('.page-codeForm #adminCode');
+const codeSelect = $('.page-codeForm #nameselect');
+const adminSelect = $('.page-codeForm #adminCode');
 
 $(document).ready(function() {
-  adminObj.change(function() {
-    selectAdmin();
-  });
-
-  codeObj.change(function() {
-    selectCode();
-  });
-
   $('#prbotSubmitcodeForm').click(function() {
     if (submitInit()) {
       if ($('#newAdminCode').val() != '') submitFormAdminCodeForm();
       else submitCodeForm();
     }
+  });
+
+  adminSelect.change(function() {
+    selectAdmin();
+  });
+
+  codeSelect.change(function() {
+    selectCode();
   });
 
   $('#formReset').click(function() {
@@ -35,7 +36,7 @@ $(document).ready(function() {
 });
 
 function getCodeObject() {
-  // Handles mandatory fields
+  // Mandatory fields
   let codeObject = {
     schemaVersion: '1.0',
     adminCode: getAdminCode(),
@@ -46,17 +47,17 @@ function getCodeObject() {
         },
         date: {
           created: $('#datecreated').val(),
-          metadataLastUpdated: $('#datemetadataLastUpdated').val()
+          metadataLastUpdated: getToday()
         },
         description: {
-          en: $('#endescription').val(),
-          fr: $('#frdescription').val()
+          en: $('#endescriptionwhatItDoes').val(),
+          fr: $('#frdescriptionwhatItDoes').val()
         },
         name: {
           en: $('#enname').val(),
           fr: $('#frname').val()
         },
-        licenses: [],
+        licences: [],
         repositoryURL: {
           en: $('#enrepositoryUrl').val(),
           fr: $('#frrepositoryUrl').val()
@@ -69,32 +70,33 @@ function getCodeObject() {
     ]
   };
 
-  // Handle more-groups
-  addMoreLicenses(codeObject.releases[0]);
+  // More-groups
+  addMoreLicences(codeObject.releases[0]);
 
   // Handle optional fields
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL = {};
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    codeObject.releases[0].description.howItWorks = {};
   }
-  if ($('#encontactURL').val()) {
-    codeObject.releases[0].contact.URL.en = $('#encontactURL').val();
+  if ($('#endescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.en = $(
+      '#endescriptionhowItWorks'
+    ).val();
   }
-  if ($('#frcontactURL').val()) {
-    codeObject.releases[0].contact.URL.fr = $('#frcontactURL').val();
+  if ($('#frdescriptionhowItWorks').val()) {
+    codeObject.releases[0].description.howItWorks.fr = $(
+      '#frdescriptionhowItWorks'
+    ).val();
   }
 
   if ($('#contactname').val()) {
     codeObject.releases[0].contact.name = $('#contactname').val();
   }
 
-  if ($('#contactphone').val()) {
-    codeObject.releases[0].contact.phone = $('#contactphone').val();
-  }
-
-  if ($('#datelastModified').val()) {
-    codeObject.releases[0].date.lastModified = $('#datelastModified')
-      .val()
-      .toString();
+  if ($('#category :selected').val()) {
+    codeObject.releases[0].category = $('#category :selected').val();
   }
 
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
@@ -137,8 +139,6 @@ function getCodeObject() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     if (
-      $('#enpartnersURL' + id).val() ||
-      $('#frpartnersURL' + id).val() ||
       $('#partnersemail' + id).val() ||
       $('#enpartnersname' + id).val() ||
       $('#frpartnersname' + id).val()
@@ -146,20 +146,6 @@ function getCodeObject() {
       if (codeObject.releases[0].partners == undefined)
         codeObject.releases[0].partners = [];
       codeObject.releases[0].partners[i] = {};
-    }
-
-    if ($('#enpartnersURL' + id).val() || $('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL = {};
-    }
-    if ($('#enpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.en = $(
-        '#enpartnersURL' + id
-      ).val();
-    }
-    if ($('#frpartnersURL' + id).val()) {
-      codeObject.releases[0].partners[i].URL.fr = $(
-        '#frpartnersURL' + id
-      ).val();
     }
 
     if ($('#partnersemail' + id).val()) {
@@ -269,7 +255,7 @@ function getConfigNewAdmin(
         'Project: ***' +
         codeName +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         ' and updated administration for ' +
         adminName +
         '\n',
@@ -331,7 +317,7 @@ function getConfigUpdate(result, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -362,7 +348,7 @@ function getConfigNew(codeObject, file) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -382,7 +368,7 @@ function getConfigNew(codeObject, file) {
 
 function selectAdmin() {
   let lang = $('html').attr('lang');
-  let admin = adminObj.val();
+  let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
     $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
@@ -423,8 +409,8 @@ function selectAdmin() {
 
 function selectCode() {
   let lang = $('html').attr('lang');
-  let admin = adminObj.val();
-  let code = codeObj.val();
+  let admin = adminSelect.val();
+  let code = codeSelect.val();
   if (code != '') {
     $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
       result
@@ -461,25 +447,27 @@ function getOrgLevel(result, admin) {
 }
 
 function addValueToFields(obj) {
+  resetFields();
+
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
+  $('#category').val(obj.category);
 
-  if (obj.contact.url) {
-    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#frcontactURL').val(obj.contact.URL.fr);
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
+
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
-  if (obj.contact.phone) $('#contactphone').val(obj.contact.phone);
 
   $('#datecreated').val(obj.date.created);
-  $('#datelastModified').val(obj.date.datelastModified);
 
-  $('#enlicensesURL').val(obj.licenses[0].URL.en);
-  $('#frlicensesURL').val(obj.licenses[0].URL.fr);
-  $('#licensesspdxID').val(obj.licenses[0].spdxID);
+  fillLicenceField(obj.licences);
 
   addTags(obj);
 
@@ -496,44 +484,49 @@ function addValueToFields(obj) {
     if (obj.homepageURL.fr) $('#frhomepageURL').val(obj.homepageURL.fr);
   }
 
-  resetLanguages();
   if (obj.languages != undefined) {
     obj.languages.forEach(function(language) {
       selectLanguage(language);
     });
   }
 
-  if (obj.organizations) {
-    if (obj.organizations.en) $('#enorganization').val(obj.organizations.en);
-    if (obj.organizations.fr) $('#frorganization').val(obj.organizations.fr);
+  if (obj.organization) {
+    if (obj.organization.en) $('#enorganization').val(obj.organization.en);
+    if (obj.organization.fr) $('#frorganization').val(obj.organization.fr);
   }
 
-  if (obj.partners) {
-    if (obj.partners.URL) {
-      if (obj.partners.URL.en) $('#enpartnersURL').val(obj.partners.URL.en);
-      if (obj.partners.URL.fr) $('#frpartnersURL').val(obj.partners.URL.fr);
-    }
-    if (obj.partners.email) $('#partnersemail').val(obj.partners.email);
-    if (obj.partners.name) {
-      if (obj.partners.name.en) $('#enpartnersname').val(obj.partners.name.en);
-      if (obj.partners.name.fr) $('#frpartnersname').val(obj.partners.name.fr);
-    }
-  }
+  if (obj.partners)
+    obj.partners.forEach(function(partner, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup($('#addMorepartners'));
+      }
+      if (partner.email) $('#partnersemail' + id).val(partner.email);
+      if (partner.name) {
+        if (partner.name.en) $('#enpartnersname' + id).val(partner.name.en);
+        if (partner.name.fr) $('#frpartnersname' + id).val(partner.name.fr);
+      }
+    });
 
-  if (obj.relatedCode) {
-    if (obj.relatedCode[0].URL) {
-      if (obj.relatedCode[0].URL.en)
-        $('#enrelatedCodeURL').val(obj.relatedCode[0].URL.en);
-      if (obj.relatedCode[0].URL.fr)
-        $('#frrelatedCodeURL').val(obj.relatedCode[0].URL.fr);
-    }
-    if (obj.relatedCode[0].name) {
-      if (obj.relatedCode[0].name.en)
-        $('#enrelatedCodename').val(obj.relatedCode[0].name.en);
-      if (obj.relatedCode[0].name.fr)
-        $('#frrelatedCodename').val(obj.relatedCode[0].name.fr);
-    }
-  }
+  if (obj.relatedCode)
+    obj.relatedCode.forEach(function(related, i) {
+      let id;
+      if (i == 0) id = '';
+      else {
+        id = i;
+        addMoreGroup('#addMorerelatedCode');
+      }
+      if (related.URL) {
+        if (related.URL.en) $('#enrelatedCodeURL' + id).val(related.URL.en);
+        if (related.URL.fr) $('#frrelatedCodeURL' + id).val(related.URL.fr);
+      }
+      if (related.name) {
+        if (related.name.en) $('#enrelatedCodename' + id).val(related.name.en);
+        if (related.name.fr) $('#frrelatedCodename' + id).val(related.name.fr);
+      }
+    });
 
   if (obj.status) $('#status').val(obj.status);
 }
@@ -541,18 +534,15 @@ function addValueToFields(obj) {
 function resetFields() {
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
+  $('#category').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#contactphone').val('');
   $('#datecreated').val('');
-  $('#datelastModified').val('');
-  $('#enlicensesURL').val('');
-  $('#frlicensesURL').val('');
-  $('#licensesspdxID').val('');
+  resetMoreGroup($('#addMorelicences'));
   resetTags();
   $('#enrepositoryUrl').val('');
   $('#frrepositoryUrl').val('');
@@ -563,14 +553,7 @@ function resetFields() {
   resetLanguages();
   $('#enorganization').val('');
   $('#frorganization').val('');
-  $('#enpartnersURL').val('');
-  $('#frpartnersURL').val('');
-  $('#partnersemail').val('');
-  $('#enpartnersname').val('');
-  $('#frpartnersname').val('');
-  $('#enrelatedCodeURL').val('');
-  $('#frrelatedCodeURL').val('');
-  $('#enrelatedCodename').val('');
-  $('#frrelatedCodename').val('');
+  resetMoreGroup($('#addMorepartners'));
+  resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');
 }

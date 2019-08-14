@@ -1,0 +1,15 @@
+{%- if page.lang == "en" -%}
+{%- assign lang1 = "en" -%}
+{%- assign lang2 = "fr" -%}
+{%- else -%}
+{%- assign lang1 = "fr" -%}
+{%- assign lang2 = "en" -%}
+{%- endif -%}
+<div class="form-group">
+  {% include form/components/label-i18n-group.html id=include.id title=include.title lang=lang1 group=include.group param=include.param %}
+  {% include form/components/textarea-i18n-group.html id=include.id title=include.title lang=lang1 group=include.group param=include.param %}
+</div>
+<div class="form-group">
+  {% include form/components/label-i18n-group.html id=include.id title=include.title lang=lang2 group=include.group param=include.param %}
+  {% include form/components/textarea-i18n-group.html id=include.id title=include.title lang=lang2 group=include.group param=include.param %}
+</div>

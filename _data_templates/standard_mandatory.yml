@@ -1,0 +1,34 @@
+---
+schemaVersion: '1.0'
+description:
+  en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+name:
+  en: Example
+  fr: Exemple
+specURL:
+  en: 'http://www.example.com/en'
+  fr: 'http://www.exemple.com/fr'
+standardOrg:
+  en: Example
+  fr: Exemple
+tags:
+  en:
+  - Example
+  fr:
+  - Exemple
+administrations:
+  - adminCode: abc-def
+    contact:
+      email: adc@xyz.com
+    date:
+      started: 'YYYY-MM-DD'
+      metadataLastUpdated: 'YYYY-MM-DD'
+    references:
+      - URL:
+          en: 'http://www.example.com/en'
+          fr: 'http://www.exemple.com/fr'
+        name:
+          en: Example
+          fr: Exemple
+    status: status

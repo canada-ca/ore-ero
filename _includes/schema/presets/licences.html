@@ -1,0 +1,11 @@
+{%- assign title = "licences" -%}
+<li>
+  <details open>
+    <summary>{{ title }} {% include schema/components/required.html %} [array]</summary>
+    <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="URL" -%}
+      {%- include schema/components/li-group.html id=include.idPreset title=title group="spdxID" -%}
+    </ul>
+  </details>
+</li>

@@ -1,0 +1,5 @@
+---
+email:
+  type: email
+name:
+  required: false

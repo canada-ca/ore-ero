@@ -1,0 +1,7 @@
+---
+created:
+  type: date
+  rule: dateISO
+started:
+  type: date
+  rule: dateISO

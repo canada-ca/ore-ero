@@ -1,49 +1,72 @@
 ---
-filterOptions:
-  en: Filter Options
-  fr: Options de filtrage
-levelOfGovernment:
-  en: Level of government
-  fr: Niveau de gouvernement
-organization:
-  en: Organization
-  fr: Organisation
-license:
-  en: License
-  fr: Licence
-tag:
-  en: Tag
-  fr: Étiquette
-filter:
-  en: Filter
-  fr: Filtrer
-clear:
-  en: Clear
-  fr: Effacer
-projectName:
-  en: Project Name
-  fr: Nom du projet
-language:
-  en: Language
-  fr: Langage
-relatedCode:
-  en: Related Code
-  fr: Code Associé
-status:
-  en: Status
-  fr: Statut
-created:
-  en: Created
-  fr: Créé
-lastUpdated:
-  en: Last updated
-  fr: Dernière mise à jour
-metadataLastUpdated:
-  fr: Last updated metadata
-  en: Dernière fois que les métadatas on été mises à jour
-contactPhone:
-  en: Contact phone (###-###-####)
-  fr: Numéro du contact (###-###-####)
+administration:
+  en: Administration
+  fr: Administration
 administrations:
   en: Administrations
   fr: Administrations
+clear:
+  en: Clear
+  fr: Effacer
+codeRepo:
+  en: Code repo
+  fr: Dépôt de code
+contactPhone:
+  en: Contact phone (###-###-####)
+  fr: Numéro du contact (###-###-####)
+description:
+  en: Description
+  fr: Description
+filter:
+  en: Filter
+  fr: Filtrer
+filterOptions:
+  en: Filter Options
+  fr: Options de filtrage
+homepage:
+  en: Homepage
+  fr: Page d'accueil
+languages:
+  en: Language(s)
+  fr: Langage(s)
+licence:
+  en: Licence(s)
+  fr: Licence(s)
+organization:
+  en: Organization
+  fr: Organisation
+projectName:
+  en: Project Name
+  fr: Nom du projet
+relatedCode:
+  en: Related Code
+  fr: Code Associé
+software:
+  en: Software
+  fr: Logiciel
+standard:
+  en: Standard
+  fr: Norme
+status:
+  en: Status
+  fr: Statut
+tag:
+  en: Tag(s)
+  fr: Étiquette(s)
+usage:
+  en: Usage
+  fr: Utilisation
+usedBy:
+  en: Is being used by
+  fr: Est utilisé par
+
+lightbox:
+  sourceCode:
+    en: Source code
+    fr: Code source
+  contact:
+    en: Contact
+    fr: Contact
+  beingUsed:
+    en: 'Is being used by:'
+    fr: 'Est utilisé par :'

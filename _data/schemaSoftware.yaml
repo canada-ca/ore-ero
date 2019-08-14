@@ -1,0 +1,35 @@
+---
+schemaVersion: str()
+description:
+  whatItDoes:
+    en: str()
+    fr: str()
+  howItWorks:
+    en: str(required=False)
+    fr: str(required=False)
+category: str()
+homepageURL:
+  en: str()
+  fr: str()
+licences:
+  - URL:
+      en: str()
+      fr: str()
+    spdxID: str()
+name:
+  en: str()
+  fr: str()
+tags:
+  en:
+    - str()
+  fr:
+    - str()
+administrations:
+  - adminCode: str()
+    uses:
+      - contact:
+          email: str()
+          name: str(required=False)
+        date:
+          started: str()
+          metadataLastUpdated: str()

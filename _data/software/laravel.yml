@@ -1,0 +1,46 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      PHP web framework intended for the development of web applications
+      following the model–view–controller (MVC) architectural pattern.
+    fr: >-
+      Framework Web PHP destiné au développement d'applications Web suivant le
+      modèle architectural MVC modèle-vue-contrôleur.
+category: '43232400'
+homepageURL:
+  en: 'https://laravel.com'
+  fr: 'https://laravel.com'
+licences:
+  - URL:
+      en: 'https://github.com/laravel/framework/blob/5.8/LICENSE.md'
+      fr: 'https://github.com/laravel/framework/blob/5.8/LICENSE.md'
+    spdxID: MIT
+name:
+  en: Laravel
+  fr: Laravel
+tags:
+  en:
+    - HTTP Server
+    - PHP
+  fr:
+    - Serveur HTTP
+    - PHP
+administrations:
+  - adminCode: gac-amc
+    uses:
+      - contact:
+          email: sebastien.routier@international.gc.ca
+          URL:
+            en: 'https://www.international.gc.ca'
+            fr: 'https://www.international.gc.ca'
+        date:
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-15'
+        description:
+          en: Used to server many Web sites.
+          fr: Utilisé pour servir plusieur site Web.
+        name:
+          en: Misc
+          fr: Divers

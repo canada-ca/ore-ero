@@ -127,12 +127,12 @@ The following sections explain each of the available presets:
  - homepageURL
  - hr
  - languages
- - licenses
+ - licences
  - newAdmin
  - orgLevel
  - provinceSelect
  - relatedCode
- - selectCode, selectOss, and selectStandard
+ - selectCode, selectSoftware, and selectStandard
  - status
  - submitter
  - tags
@@ -142,7 +142,7 @@ The adminCode preset displays a `<select>` widget for administrations, which are
 
 The select widget is followed by a button, allowing the user to create a new administration in case his administration was not already in that list. The button opens a new section in the form, containing the required fields for the creation of a new administration. For more information on these fields, consult the **newAdmin** preset section.
 
-When selecting the appropriate administration (depending on the type of the form), JavaScript should be added to auto-fill the administration section of the form. This follows the same logic as for the **selectCode**, **selectOss**, and **selectStandards** presets.
+When selecting the appropriate administration (depending on the type of the form), JavaScript should be added to auto-fill the administration section of the form. This follows the same logic as for the **selectCode**, **selectSoftware**, and **selectStandard** presets.
 
 This preset takes no additional parameters.
 ```yaml
@@ -234,12 +234,12 @@ This preset takes no additional parameters.
   - preset: languages
 ```
 
-#### Licenses
-The licenses preset displays two fields for the license URLs (for english and french URLs) and a field for the spdxID of the license. The label for the spdxID contains a link to a list and definition of spdxIDs.
+#### Licences
+The licences preset displays two fields for the licence URLs (for english and french URLs) and a field for the spdxID of the licence. The label for the spdxID contains a link to a list and definition of spdxIDs.
 
 This preset takes no additional parameters.
 ```yaml
-  - preset: licenses
+  - preset: licences
 ```
 
 #### newAdmin
@@ -303,8 +303,8 @@ This preset takes no additional parameters.
   - preset: schemaVersion
 ```
 
-#### selectCode, selectOss and selectStandards
-The selectCode, as well as selectOss and selectStandards presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). Using JavaScript, the whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
+#### selectCode, selectSoftware and selectStandard
+The selectCode, as well as selectSoftware and selectStandard presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). Using JavaScript, the whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
 
 These do not show in the schema pages. Their only use is to allow an auto-fill feature.
 
@@ -572,7 +572,7 @@ When creating a new preset, it should be added under the presets first-level gro
 Here's how to translate widgets:
  - For each widget, add a second-level element (under the first-level named after `id`). Its name should be the same as the value you put under `title` in the config file. The title should be the same as the value in the schema page since it's included as is in the schema page.
 ```yaml
-first-level:  # either preset, admin, code, oss, standard, etc...
+first-level:  # either preset, admin, code, software, standard, etc...
   example:  # replace example with the title value of the widget
     [...]
 ```

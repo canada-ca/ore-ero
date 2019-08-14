@@ -3,18 +3,22 @@ schemaVersion: '1.0'
 adminCode: statcan
 releases:
   - contact:
-      URL: 'https://github.com/CSBP-CPSE/OpenTabulate/issues'
       email: maksymarturo.neyra-nesterenko@canada.ca
     date:
       created: '2018-01-07'
       metadataLastUpdated: '2019-04-18'
     description:
-      en: Centralize, process, and clean data
-      fr: Centraliser, traiter et nettoyer les données
+      whatItDoes:
+        en: Centralize, process, and clean data
+        fr: Centraliser, traiter et nettoyer les données
+      howItWorks:
+        en: null
+        fr: null
+    category: '43232300'
     name:
       en: OpenTabulate
       fr: OpenTabulate
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
           fr: 'https://github.com/CSBP-CPSE/OpenTabulate/blob/master/LICENSE.md'
