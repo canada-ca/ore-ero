@@ -71,9 +71,9 @@ EUPL-1.2:
 GPL-2.0-only:
   name: GNU General Public License v2.0 only
   value: GPL-2.0-only
-GPL-2.0-only-or-later:
+GPL-2.0-or-later:
   name: GNU General Public License v2.0 or later
-  value: GPL-2.0-only-or-later
+  value: GPL-2.0-or-later
 GPL-3.0-only:
   name: GNU General Public License v3.0 only
   value: GPL-3.0-only
