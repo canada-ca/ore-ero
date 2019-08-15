@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+adminCode: whacka-whacka-qc
+releases:
+  - contact:
+      email: test@test.ca
+      name: Test
+    date:
+      created: '2019-08-06'
+      metadataLastUpdated: '2019-08-15'
+    description:
+      whatItDoes:
+        en: test
+        fr: test
+    category: '43233000'
+    name:
+      en: Test
+      fr: Test
+    licences:
+      - URL:
+          en: 'http://test.com'
+          fr: 'http://test.com'
+        spdxID: Sleepycat
+    repositoryURL:
+      en: 'http://test.com'
+      fr: 'http://test.com'
+    tags:
+      en:
+        - OS
+      fr:
+        - os
+    languages:
+      - PHP
+      - MySQL
+      - C
+    status: Maintained
+    team:
+      en: IT Service
+      fr: Departement de TI
