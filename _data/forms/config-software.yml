@@ -23,6 +23,5 @@ formGroups:
     param: {phone: false}
   - preset: dates
     param: {started: true}
-  - widget: string-i18n
   - preset: empty
   - preset: empty

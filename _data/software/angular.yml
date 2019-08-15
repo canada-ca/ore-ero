@@ -22,7 +22,7 @@ tags:
   fr:
     - Cadriciel
 administrations:
-  - adminCode: mtl_qc
+  - adminCode: ville-de-montreal-qc
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca
