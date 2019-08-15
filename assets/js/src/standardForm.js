@@ -362,7 +362,7 @@ function addValueToFieldsStandard(obj) {
   $('#frname').val(obj.name.fr);
 
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
-  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
   if (obj.description.howItWorks) {
     if (obj.description.howItWorks.en)
       $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);

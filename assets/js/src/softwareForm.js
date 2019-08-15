@@ -85,15 +85,15 @@ function getsoftwareObject() {
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
   ) {
-    softwareObject.releases[0].description.howItWorks = {};
+    softwareObject.administrations[0].description.howItWorks = {};
   }
   if ($('#endescriptionhowItWorks').val()) {
-    softwareObject.releases[0].description.howItWorks.en = $(
+    softwareObject.administrations[0].description.howItWorks.en = $(
       '#endescriptionhowItWorks'
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
-    softwareObject.releases[0].description.howItWorks.fr = $(
+    softwareObject.administrations[0].description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
   }
