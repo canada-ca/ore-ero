@@ -22,7 +22,7 @@ tags:
   fr:
     - Plateforme applicative
 administrations:
-  - adminCode: ville-de-montreal-qc
+  - adminCode: city-of-montreal-qc
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca

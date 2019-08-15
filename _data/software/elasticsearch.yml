@@ -36,7 +36,7 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-  - adminCode: ville-de-montreal-qc
+  - adminCode: city-of-montreal-qc
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca

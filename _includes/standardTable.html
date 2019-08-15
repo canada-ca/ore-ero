@@ -71,8 +71,8 @@
           </td>
           <td>
             {%- for administration in standard.administrations -%}
-              {%- for i in (1..4) -%}
-                {%- capture govLevel %}{% cycle 'federal', 'provincial', 'municipal', 'aboriginal' %}{% endcapture -%}
+              {%- for levels in site.data.i18n.administrations -%}
+                {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
                 {%- if admin[0] != nil -%}
                 {{ site.data.i18n.administrations[govLevel].value }}&nbsp;
@@ -99,8 +99,8 @@
       {%- for administration in standard.administrations -%}
           <div class="row">
             <div class="col-md-7">
-              {%- for i in (1..4) -%}
-                {%- capture govLevel %}{% cycle 'federal', 'provincial', 'municipal', 'aboriginal' %}{% endcapture -%}
+              {%- for levels in site.data.i18n.administrations -%}
+                {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
                 <strong>{{ admin[0].name[page.lang] }}</strong>
               {%- endfor -%}
