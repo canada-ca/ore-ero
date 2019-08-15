@@ -1,4 +1,6 @@
 /* exported slugify */
+/* source:   https://gist.github.com/hagemann/382adfc57adbd5af078dc93feef01fe1 */
+
 function slugify(string) {
   const a =
     'àáäâãåăæąçćčđďèéěėëêęğǵḧìíïîįłḿǹńňñòóöôœøṕŕřßşśšșťțùúüûǘůűūųẃẍÿýźžż·/_,:;';

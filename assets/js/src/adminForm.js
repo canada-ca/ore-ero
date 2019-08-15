@@ -1,4 +1,4 @@
-/* exported getAdminObject getAdminCode  */
+/* exported getAdminObject getAdminCode */
 
 /* global $ slugify */
 
