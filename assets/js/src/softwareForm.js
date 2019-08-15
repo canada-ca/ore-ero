@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode
+  getAdminObject getAdminCode slugify
   addMoreLicences resetMoreGroup fillLicenceField
   getToday
 */
@@ -15,7 +15,7 @@ const adminSelect = $('.page-softwareForm #adminCode');
 $(document).ready(function() {
   $('#prbotSubmitsoftwareForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitSoftwareFormNewAdmin();
+      if ($('#ennewAdminName').val() != '') submitSoftwareFormNewAdmin();
       else submitFormSoftware();
     }
   });
@@ -40,13 +40,16 @@ function getsoftwareObject() {
   let softwareObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescriptionwhatItDoes').val(),
-      fr: $('#frdescriptionwhatItDoes').val()
+      whatItDoes: {
+        en: $('#endescriptionwhatItDoes').val(),
+        fr: $('#frdescriptionwhatItDoes').val()
+      }
     },
     homepageURL: {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
+    category: $('#category :selected').val(),
     licences: [],
     name: {
       en: $('#enname').val(),
@@ -82,34 +85,29 @@ function getsoftwareObject() {
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
   ) {
-    softwareObject.releases[0].description.howItWorks = {};
+    softwareObject.description.howItWorks = {};
   }
   if ($('#endescriptionhowItWorks').val()) {
-    softwareObject.releases[0].description.howItWorks.en = $(
+    softwareObject.description.howItWorks.en = $(
       '#endescriptionhowItWorks'
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
-    softwareObject.releases[0].description.howItWorks.fr = $(
+    softwareObject.description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
   }
-
-  if ($('#category :selected').val()) {
-    softwareObject.releases[0].category = $('#category :selected').val();
+  if ($('#enorganization').val() || $('#frorganization').val()) {
+    softwareObject.administrations[0].uses[0].organization = {};
   }
-
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL = {};
-  }
-  if ($('#encontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL.en = $(
-      '#encontactURL'
+  if ($('#enorganization').val()) {
+    softwareObject.administrations[0].uses[0].organization.en = $(
+      '#enorganization'
     ).val();
   }
-  if ($('#frcontactURL').val()) {
-    softwareObject.administrations[0].uses[0].contact.URL.fr = $(
-      '#frcontactURL'
+  if ($('#frorganization').val()) {
+    softwareObject.administrations[0].uses[0].organization.fr = $(
+      '#frorganization'
     ).val();
   }
 
@@ -142,7 +140,9 @@ function submitSoftwareFormNewAdmin() {
   let softwareName = $('#enname')
     .val()
     .toLowerCase();
-  let adminName = $('#newAdminCode').val();
+  let adminName = slugify(
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+  );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let softwareFile = `_data/software/${softwareName}.yml`;
@@ -432,23 +432,23 @@ function selectAdmin() {
 function addValueToFieldsAdmin(obj) {
   resetFieldsAdmin();
 
-  if (obj.uses[0].contact.URL) {
-    if (obj.uses[0].contact.URL.en)
-      $('#encontactURL').val(obj.uses[0].contact.URL.en);
-    if (obj.uses[0].contact.URL.fr)
-      $('#frcontactURL').val(obj.uses[0].contact.URL.fr);
+  if (obj.administrations[0].uses[0].contact.email)
+    $('#contactemail').val(obj.administrations[0].uses[0].contact.email);
+  if (obj.administrations[0].uses[0].contact.name)
+    $('#contactname').val(obj.administrations[0].uses[0].contact.name);
+  $('#datestarted').val(obj.administrations[0].uses[0].date.started);
+  if (obj.organization) {
+    if (obj.administrations[0].uses[0].organization.en)
+      $('#enorganization').val(obj.administrations[0].uses[0].organization.en);
+    if (obj.administrations[0].uses[0].organization.fr)
+      $('#frorganization').val(obj.administrations[0].uses[0].organization.fr);
   }
-  if (obj.uses[0].contact.email)
-    $('#contactemail').val(obj.uses[0].contact.email);
-  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
-
-  $('#datestarted').val(obj.uses[0].date.started);
 }
 
 function resetFieldsAdmin() {
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
+  $('#enorganization').val('');
+  $('#frorganization').val('');
 }

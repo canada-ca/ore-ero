@@ -1,6 +1,6 @@
 /* exported getAdminObject getAdminCode */
 
-/* global $ */
+/* global $ slugify */
 
 var newAdminON = false;
 
@@ -45,29 +45,28 @@ function hideNewAdminForm() {
 
 function resetNewAdminForm() {
   $('#orgLevel').prop('selectedIndex', 1);
-  $('#newAdminCode').val('');
   $('#provinceSelect').prop('selectIndex', 0);
   $('#ennewAdminName').val('');
   $('#frnewAdminName').val('');
 }
 
 function getAdminCode() {
-  return $('#adminCode').val() == ''
-    ? $('#newAdminCode')
-        .val()
-        .toLowerCase()
-    : $('#adminCode').val();
+  if ($('#adminCode').val() == '') {
+    return slugify(
+      $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    );
+  }
+  return $('#adminCode').val();
 }
 
 function getAdminObject() {
   // Mandatory fields
   let adminObj = {
-    code: $('#newAdminCode').val(),
+    code: getAdminCode(),
     name: {
       en: $('#ennewAdminName').val(),
       fr: $('#frnewAdminName').val()
-    },
-    parent: $('#orgLevel').val()
+    }
   };
 
   // Optional fields

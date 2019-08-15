@@ -35,9 +35,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: Integrated with GCcollab
-          fr: Intégré avec GCcollab
-        name:
-          en: GCcollab Docs
-          fr: Docs GCcollab

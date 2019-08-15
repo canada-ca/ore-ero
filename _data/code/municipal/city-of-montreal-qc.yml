@@ -1,6 +1,6 @@
 ---
 schemaVersion: '1.0'
-adminCode: mtl_qc
+adminCode: city-of-montreal-qc
 releases:
   - contact:
       email: julio.alcantara@ville.montreal.qc.ca
