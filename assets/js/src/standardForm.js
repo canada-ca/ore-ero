@@ -40,8 +40,10 @@ function getStandardObject() {
   let standardObject = {
     schemaVersion: '1.0',
     description: {
-      en: $('#endescription').val(),
-      fr: $('#frdescription').val()
+      whatItDoes: {
+        en: $('#endescriptionwhatItDoes').val(),
+        fr: $('#frdescriptionwhatItDoes').val()
+      }
     },
     name: {
       en: $('#enname').val(),
@@ -95,18 +97,31 @@ function getStandardObject() {
   });
 
   // Optional fields
-  if ($('#frcontactURL').val() || $('#encontactURL').val()) {
-    standardObject.administrations[0].contact.URL = {};
-  }
-  if ($('#encontactURL').val()) {
-    standardObject.administrations[0].contact.URL.en = $('#encontactURL').val();
-  }
-  if ($('#frcontactURL').val()) {
-    standardObject.administrations[0].contact.URL.fr = $('#frcontactURL').val();
+  if (
+    $('#endescriptionhowItWorks').val() ||
+    $('#frdescriptionhowItWorks').val()
+  ) {
+    standardObject.description.howItWorks = {};
+    if ($('#endescriptionhowItWorks').val())
+      standardObject.description.howItWorks.en = $(
+        '#endescriptionhowItWorks'
+      ).val();
+    if ($('#frdescriptionhowItWorks').val())
+      standardObject.description.howItWorks.fr = $(
+        '#frdescriptionhowItWorks'
+      ).val();
   }
 
   if ($('#contactname').val()) {
     standardObject.administrations[0].contact.name = $('#contactname').val();
+  }
+
+  if ($('#enteam').val() || $('#frteam').val()) {
+    standardObject.administrations[0].team = {};
+    if ($('#enteam').val())
+      standardObject.administrations[0].team.en = $('#enteam').val();
+    if ($('#frteam').val())
+      standardObject.administrations[0].team.fr = $('#frteam').val();
   }
 
   return standardObject;
@@ -347,8 +362,16 @@ function addValueToFieldsStandard(obj) {
   $('#standardAcronym').val(obj.standardAcronym);
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
-  $('#endescription').val(obj.description.en);
-  $('#frdescription').val(obj.description.fr);
+
+  $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
+  $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
+  if (obj.description.howItWorks) {
+    if (obj.description.howItWorks.en)
+      $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
+    if (obj.description.howItWorks.fr)
+      $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
+  }
+
   $('#enspecURL').val(obj.specURL.en);
   $('#frspecURL').val(obj.specURL.fr);
   $('#enstandardOrg').val(obj.standardOrg.en);
@@ -361,8 +384,10 @@ function resetFieldsStandard() {
   $('#standardAcronym').val('');
   $('#enname').val('');
   $('#frname').val('');
-  $('#endescription').val('');
-  $('#frdescription').val('');
+  $('#endescriptionwhatItDoes').val('');
+  $('#frdescriptionwhatItDoes').val('');
+  $('#endescriptionhowItWorks').val('');
+  $('#frdescriptionhowItWorks').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#enstandardOrg').val('');
@@ -396,10 +421,6 @@ function addValueToFieldsAdmin(obj) {
 
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
-  if (obj.contact.URL) {
-    if (obj.contact.URL.en) $('#encontactURL').val(obj.contact.URL.en);
-    if (obj.contact.URL.fr) $('#encontactURL').val(obj.contact.URL.fr);
-  }
 
   $('#datecreated').val(obj.date.created);
 
@@ -417,14 +438,19 @@ function addValueToFieldsAdmin(obj) {
   });
 
   $('#status').val(obj.status);
+
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  }
 }
 
 function resetFieldsAdmin() {
-  $('#encontactURL').val('');
-  $('#frcontactURL').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datecreated').val('');
   resetMoreGroup($('#addMorereference'));
   $('#status').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
 }

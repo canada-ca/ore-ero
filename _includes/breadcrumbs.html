@@ -4,10 +4,6 @@
     <ol class="breadcrumb">
       <li><a href="./index.html">{{ site.data.i18n.general.head.home[page.lang] }}</a></li>
 
-      {%- if page.ref == 'docs' -%}
-        <li><span style="margin-left:10px">{{ site.data.i18n.general.nav.doc[page.lang] }}</span></li>
-      {%- endif -%}
-
       {%- if page.ref == 'codeForm' or page.ref == 'codeGroups' or page.ref == 'codeSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
       {%- elsif page.ref == 'softwareForm' or page.ref == 'softwareSchema' -%}

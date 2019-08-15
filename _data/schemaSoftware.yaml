@@ -33,6 +33,6 @@ administrations:
         date:
           started: str()
           metadataLastUpdated: str()
-        organization:
+        team:
           en: str(required=False)
           fr: str(required=False)

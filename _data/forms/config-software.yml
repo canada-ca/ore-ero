@@ -15,6 +15,7 @@ formGroups:
     title: administrations
     param: {start: true}
   - preset: adminCode
+  - preset: team
   - preset: empty
     title: uses
     param: {start: true}
@@ -22,8 +23,5 @@ formGroups:
     param: {phone: false}
   - preset: dates
     param: {started: true}
-  - widget: string-i18n
-    title: organization
-    param: {rule: alphanum-space, required: false}
   - preset: empty
   - preset: empty

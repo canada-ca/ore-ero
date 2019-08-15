@@ -1,0 +1,4 @@
+{%- assign title = "name" -%}
+{% include form/components/title.html id=include.id title=title -%}
+<p><small style="font-size: 75%">{{ site.data.i18n.form.presets.name.charactersLimit[page.lang] }}</small></p>
+{% include form/components/group-i18n.html id=include.id title=title param=site.data.forms.param.name -%}

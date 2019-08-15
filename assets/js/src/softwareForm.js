@@ -45,11 +45,11 @@ function getsoftwareObject() {
         fr: $('#frdescriptionwhatItDoes').val()
       }
     },
+    category: $('#category :selected').val(),
     homepageURL: {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
-    category: $('#category :selected').val(),
     licences: [],
     name: {
       en: $('#enname').val(),
@@ -97,24 +97,19 @@ function getsoftwareObject() {
       '#frdescriptionhowItWorks'
     ).val();
   }
-  if ($('#enorganization').val() || $('#frorganization').val()) {
-    softwareObject.administrations[0].uses[0].organization = {};
-  }
-  if ($('#enorganization').val()) {
-    softwareObject.administrations[0].uses[0].organization.en = $(
-      '#enorganization'
-    ).val();
-  }
-  if ($('#frorganization').val()) {
-    softwareObject.administrations[0].uses[0].organization.fr = $(
-      '#frorganization'
-    ).val();
-  }
 
   if ($('#contactname').val()) {
     softwareObject.administrations[0].uses[0].contact.name = $(
       '#contactname'
     ).val();
+  }
+
+  if ($('#enteam').val() || $('#frteam').val()) {
+    softwareObject.administrations[0].uses[0].team = {};
+    if ($('#enteam').val())
+      softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
+    if ($('#frteam').val())
+      softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
   }
 
   return softwareObject;
@@ -309,7 +304,7 @@ function getConfigUpdate(result, file, ProjectName) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -340,7 +335,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
         'Project: ***' +
         $('#enname').val() +
         '***\n' +
-        $('#endescription').val() +
+        $('#endescriptionwhatItDoes').val() +
         '\n',
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
@@ -432,16 +427,13 @@ function selectAdmin() {
 function addValueToFieldsAdmin(obj) {
   resetFieldsAdmin();
 
-  if (obj.administrations[0].uses[0].contact.email)
-    $('#contactemail').val(obj.administrations[0].uses[0].contact.email);
-  if (obj.administrations[0].uses[0].contact.name)
-    $('#contactname').val(obj.administrations[0].uses[0].contact.name);
-  $('#datestarted').val(obj.administrations[0].uses[0].date.started);
-  if (obj.organization) {
-    if (obj.administrations[0].uses[0].organization.en)
-      $('#enorganization').val(obj.administrations[0].uses[0].organization.en);
-    if (obj.administrations[0].uses[0].organization.fr)
-      $('#frorganization').val(obj.administrations[0].uses[0].organization.fr);
+  $('#contactemail').val(obj.uses[0].contact.email);
+  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
+
+  $('#datestarted').val(obj.uses[0].date.started);
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
   }
 }
 
@@ -449,6 +441,6 @@ function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
   $('#datestarted').val('');
-  $('#enorganization').val('');
-  $('#frorganization').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
 }

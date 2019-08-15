@@ -11,9 +11,6 @@ releases:
       whatItDoes:
         en: GC digital collaboration platform (GCconnex and GCcollab)
         fr: Plateforme de collaboration numérique du GC (GCconnex and GCcollab)
-      howItWorks:
-        en: null
-        fr: null
     category: '43233500'
     name:
       en: GCconnex
@@ -24,7 +21,7 @@ releases:
             https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
           fr: >-
             https://github.com/gctools-outilsgc/gcconnex/blob/gcconnex/LICENSE.txt
-        spdxID: GPL-2.0
+        spdxID: GPL-2.0-only
     repositoryURL:
       en: 'https://github.com/gctools-outilsgc/gcconnex'
       fr: 'https://github.com/gctools-outilsgc/gcconnex'
@@ -60,9 +57,6 @@ releases:
         fr: >-
           Digital.canada.ca et numerique.canada.ca sont publiés à partir de ce
           repository.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232100'
     name:
       en: CDS Website
@@ -96,9 +90,6 @@ releases:
         fr: >-
           Construire des sites Web accessibles, faciles d'emploi,
           interopérables, optimisés pour les appareils mobiles et multilingues
-      howItWorks:
-        en: null
-        fr: null
     category: '43232100'
     name:
       en: Web Experience Toolkit (WET)
@@ -128,9 +119,6 @@ releases:
       whatItDoes:
         en: Government of Canada CKAN Extension
         fr: Extension à CKAN du Gouvernement du Canada
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-canada
@@ -173,9 +161,6 @@ releases:
         fr: >-
           Stocker les ressources CKAN contre plusieurs fournisseurs
           infonuagique.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-cloudstorage
@@ -218,9 +203,6 @@ releases:
       whatItDoes:
         en: 'Easy, shareable custom CKAN schemas'
         fr: Schémas CKAN personnalisés faciles à partager
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-scheming
@@ -265,9 +247,6 @@ releases:
         fr: >-
           Interface en ligne de commande et un module en Python pour accéder à
           l'API CKAN
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanapi
@@ -308,9 +287,6 @@ releases:
       whatItDoes:
         en: Multilingual metadata fields for CKAN
         fr: Champs de métadonnées multilingues pour CKAN
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: ckanext-fluent
@@ -350,9 +326,6 @@ releases:
       whatItDoes:
         en: This Website and all the data.
         fr: Ce site Web et toutes les données.
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: Open Resource Exchange

@@ -8,9 +8,7 @@ formGroups:
     title: releases
     param: {start: true}
   - preset: selectCode
-  - widget: string-i18n
-    title: organization
-    param: {rule: alphanum-space, required: false}
+  - preset: team
   - preset: status
   - preset: description
   - preset: category

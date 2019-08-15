@@ -42,8 +42,13 @@ function resetMoreGroup(group) {
   group.find('li').each(function(i, li) {
     $(li)
       .find('input')
-      .each(function(j, input) {
+      .each(function(i, input) {
         $(input).val('');
+      });
+    $(li)
+      .find('select')
+      .each(function(i, select) {
+        $(select).prop('selectedIndex', 0);
       });
   });
 }

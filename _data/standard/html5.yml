@@ -1,13 +1,14 @@
 ---
 schemaVersion: '1.0'
 description:
-  en: >-
-    HTML5 is a markup language used for structuring and presenting content on
-    the Web. It is the fifth and current major version of the HTML standard.
-  fr: >-
-    HTML5 est un langage de balisage utilisé pour structurer et présenter du
-    contenu sur le Web. C'est la cinquième et dernière version majeure de la
-    norme HTML.
+  whatItDoes:
+    en: >-
+      HTML5 is a markup language used for structuring and presenting content on
+      the Web. It is the fifth and current major version of the HTML standard.
+    fr: >-
+      HTML5 est un langage de balisage utilisé pour structurer et présenter du
+      contenu sur le Web. C'est la cinquième et dernière version majeure de la
+      norme HTML.
 name:
   en: HyperText Markup Language 5
   fr: HyperText Markup Language 5
@@ -37,4 +38,4 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status: mandatory-gc
+    status: mandatory

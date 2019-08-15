@@ -13,9 +13,6 @@ releases:
         fr: >-
           Un tableau de bord pour afficher les métriques d'exposition sur les
           projets logiciels d'EDSC
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: AppHub
@@ -44,9 +41,6 @@ releases:
         fr: >-
           Une application de test .Net pour le tableau de bord de rapports de
           couverture de code
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: .Net Code Coverage Demo

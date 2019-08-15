@@ -55,6 +55,7 @@ function getCodeObject() {
             fr: $('#frdescriptionwhatItDoes').val()
           }
         },
+        category: $('#category :selected').val(),
         name: {
           en: $('#enname').val(),
           fr: $('#frname').val()
@@ -81,59 +82,45 @@ function getCodeObject() {
     $('#frdescriptionhowItWorks').val()
   ) {
     codeObject.releases[0].description.howItWorks = {};
-  }
-  if ($('#endescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.en = $(
-      '#endescriptionhowItWorks'
-    ).val();
-  }
-  if ($('#frdescriptionhowItWorks').val()) {
-    codeObject.releases[0].description.howItWorks.fr = $(
-      '#frdescriptionhowItWorks'
-    ).val();
+    if ($('#endescriptionhowItWorks').val()) {
+      codeObject.releases[0].description.howItWorks.en = $(
+        '#endescriptionhowItWorks'
+      ).val();
+    }
+    if ($('#frdescriptionhowItWorks').val()) {
+      codeObject.releases[0].description.howItWorks.fr = $(
+        '#frdescriptionhowItWorks'
+      ).val();
+    }
   }
 
   if ($('#contactname').val()) {
     codeObject.releases[0].contact.name = $('#contactname').val();
   }
 
-  if ($('#category :selected').val()) {
-    codeObject.releases[0].category = $('#category :selected').val();
-  }
-
   if ($('#endownloadUrl').val() || $('#frdownloadUrl').val()) {
     codeObject.releases[0].downloadURL = {};
-  }
-  if ($('#endownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.en = $('#endownloadUrl').val();
-  }
-  if ($('#frdownloadUrl').val()) {
-    codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
+    if ($('#endownloadUrl').val()) {
+      codeObject.releases[0].downloadURL.en = $('#endownloadUrl').val();
+    }
+    if ($('#frdownloadUrl').val()) {
+      codeObject.releases[0].downloadURL.fr = $('#frdownloadUrl').val();
+    }
   }
 
   if ($('#enhomepageURL').val() || $('#frhomepageURL').val()) {
     codeObject.releases[0].homepageURL = {};
-  }
-  if ($('#enhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
-  }
-  if ($('#frhomepageURL').val()) {
-    codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
+    if ($('#enhomepageURL').val()) {
+      codeObject.releases[0].homepageURL.en = $('#enhomepageURL').val();
+    }
+    if ($('#frhomepageURL').val()) {
+      codeObject.releases[0].homepageURL.fr = $('#frhomepageURL').val();
+    }
   }
 
   let languages = getLanguages();
   if (languages.length > 0) {
     codeObject.releases[0].languages = languages;
-  }
-
-  if ($('#enorganization').val() || $('#frorganization').val()) {
-    codeObject.releases[0].organization = {};
-  }
-  if ($('#enorganization').val()) {
-    codeObject.releases[0].organization.en = $('#enorganization').val();
-  }
-  if ($('#frorganization').val()) {
-    codeObject.releases[0].organization.fr = $('#frorganization').val();
   }
 
   // Optional more-group
@@ -156,16 +143,16 @@ function getCodeObject() {
 
     if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
       codeObject.releases[0].partners[i].name = {};
-    }
-    if ($('#enpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.en = $(
-        '#enpartnersname' + id
-      ).val();
-    }
-    if ($('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name.fr = $(
-        '#frpartnersname' + id
-      ).val();
+      if ($('#enpartnersname' + id).val()) {
+        codeObject.releases[0].partners[i].name.en = $(
+          '#enpartnersname' + id
+        ).val();
+      }
+      if ($('#frpartnersname' + id).val()) {
+        codeObject.releases[0].partners[i].name.fr = $(
+          '#frpartnersname' + id
+        ).val();
+      }
     }
   });
 
@@ -173,6 +160,16 @@ function getCodeObject() {
 
   if ($('#status :selected').val() != '') {
     codeObject.releases[0].status = $('#status :selected').val();
+  }
+
+  if ($('#enteam').val() || $('#frteam').val()) {
+    codeObject.releases[0].team = {};
+    if ($('#enteam').val()) {
+      codeObject.releases[0].team.en = $('#enteam').val();
+    }
+    if ($('#frteam').val()) {
+      codeObject.releases[0].team.fr = $('#frteam').val();
+    }
   }
 
   return codeObject;
@@ -392,7 +389,6 @@ function selectAdmin() {
               release.name[lang] +
               '">' +
               release.name[lang] +
-              (release.version ? ' (' + release.version + ')' : '') +
               '</option>'
           ).appendTo('#nameselect');
         });
@@ -455,16 +451,17 @@ function addValueToFields(obj) {
 
   $('#enname').val(obj.name.en);
   $('#frname').val(obj.name.fr);
+
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
-  $('#category').val(obj.category);
-
   if (obj.description.howItWorks) {
     if (obj.description.howItWorks.en)
       $('#endescriptionhowItWorks').val(obj.description.howItWorks.en);
     if (obj.description.howItWorks.fr)
       $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
+
+  $('#category').val(obj.category);
 
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
@@ -492,11 +489,6 @@ function addValueToFields(obj) {
     obj.languages.forEach(function(language) {
       selectLanguage(language);
     });
-  }
-
-  if (obj.organization) {
-    if (obj.organization.en) $('#enorganization').val(obj.organization.en);
-    if (obj.organization.fr) $('#frorganization').val(obj.organization.fr);
   }
 
   if (obj.partners)
@@ -533,6 +525,11 @@ function addValueToFields(obj) {
     });
 
   if (obj.status) $('#status').val(obj.status);
+
+  if (obj.team) {
+    if (obj.team.en) $('#enteam').val(obj.team.en);
+    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  }
 }
 
 function resetFields() {
@@ -555,8 +552,8 @@ function resetFields() {
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
   resetLanguages();
-  $('#enorganization').val('');
-  $('#frorganization').val('');
+  $('#enteam').val('');
+  $('#frteam').val('');
   resetMoreGroup($('#addMorepartners'));
   resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');

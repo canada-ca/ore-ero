@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      A Free and Open Source Geographic Information System.
-    fr: >-
-      Système d'Information Géographique Libre et Open Source.
+    en: A Free and Open Source Geographic Information System.
+    fr: Système d'Information Géographique Libre et Open Source.
 category: '43232500'
 homepageURL:
   en: 'https://qgis.org/en/site/'
@@ -14,7 +12,7 @@ licences:
   - URL:
       en: 'https://github.com/qgis/QGIS/blob/master/COPYING'
       fr: 'https://github.com/qgis/QGIS/blob/master/COPYING'
-    spdxID: GPL-2.0
+    spdxID: GPL-2.0-only
 name:
   en: QGIS
   fr: QGIS

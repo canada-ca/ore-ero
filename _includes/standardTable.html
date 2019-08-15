@@ -62,7 +62,7 @@
         {%- assign standard = standards[1] -%}
         <tr>
           <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
-          <td>{{ standard.description[page.lang] }}</td>
+          <td>{{ standard.description.whatItDoes[page.lang] }}</td>
           <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardOrg[page.lang] }}</a></td>
           <td>
             {%- for tag in standard.tags[page.lang] -%}
@@ -94,7 +94,7 @@
       <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
     </header>
     <div class="modal-body">
-      <p><strong>{{ standard.description[page.lang] }}</strong></p>
+      <p><strong>{{ standard.description.whatItDoes[page.lang] }}</strong></p>
       <p>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</p>
       {%- for administration in standard.administrations -%}
           <div class="row">

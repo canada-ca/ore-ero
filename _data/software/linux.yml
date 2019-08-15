@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      The Linux kernel is a Unix-like computer operating system kernel.
-    fr: >-
-      Le noyau Linux est un noyau de système d'exploitation de type UNIX.
+    en: The Linux kernel is a Unix-like computer operating system kernel.
+    fr: Le noyau Linux est un noyau de système d'exploitation de type UNIX.
 category: '43233000'
 homepageURL:
   en: 'https://www.linux.org'
@@ -14,7 +12,7 @@ licences:
   - URL:
       en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
       fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
-    spdxID: GPL-2.0
+    spdxID: GPL-2.0-only
 name:
   en: Linux
   fr: Linux

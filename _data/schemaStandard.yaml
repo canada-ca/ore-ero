@@ -1,8 +1,12 @@
 ---
 schemaVersion: str()
 description:
-  en: str()
-  fr: str()
+  whatItDoes:
+    en: str()
+    fr: str()
+  howItWorks:
+    en: str(required=False)
+    fr: str(required=False)
 name:
   en: str()
   fr: str()
@@ -22,9 +26,6 @@ administrations:
   - adminCode: str()
     contact:
       email: str()
-      URL:
-        en: str(required=False)
-        fr: str(required=False)
       name: str(required=False)
     date:
       created: str()
@@ -36,4 +37,7 @@ administrations:
         name:
           en: str()
           fr: str()
-    status: str()
+    status: enum('deprecated', 'mandatory', 'preferred')
+    team:
+      en: str(required=False)
+      fr: str(required=False)

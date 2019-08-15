@@ -2,10 +2,8 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Apache Cassandra is a highly-scalable partitioned row store.
-    fr: >-
-      Apache Cassandra est une base de données partitionnée hautement évolutif.
+    en: Apache Cassandra is a highly-scalable partitioned row store.
+    fr: Apache Cassandra est une base de données partitionnée hautement évolutif.
 category: '43232300'
 homepageURL:
   en: 'http://cassandra.apache.org/'
@@ -24,7 +22,7 @@ tags:
   fr:
     - Base de données
 administrations:
-  - adminCode: mtl_qc
+  - adminCode: ville-de-montreal-qc
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca

@@ -15,9 +15,6 @@ releases:
         fr: >-
           Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
           Instantanément et Ad vitam aeternam
-      howItWorks:
-        en: null
-        fr: null
     category: '43232300'
     name:
       en: MetPX-Sarracenia
@@ -26,7 +23,7 @@ releases:
       - URL:
           en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
           fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
-        spdxID: GPL-2.0
+        spdxID: GPL-2.0-only
     repositoryURL:
       en: 'https://github.com/MetPX/sarracenia'
       fr: 'https://github.com/MetPX/sarracenia'
@@ -51,9 +48,6 @@ releases:
       whatItDoes:
         en: Enterprise architecture models
         fr: Modèles d'architecture d'entreprise
-      howItWorks:
-        en: null
-        fr: null
     category: '43232400'
     name:
       en: GC Architecture
