@@ -36,12 +36,6 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
-        description:
-          en: APM data
-          fr: Données du APM
-        name:
-          en: Development Environment
-          fr: Environnement de développement
   - adminCode: mtl_qc
     uses:
       - contact:

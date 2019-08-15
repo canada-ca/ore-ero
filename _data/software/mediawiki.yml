@@ -28,18 +28,9 @@ administrations:
     uses:
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
-          URL:
-            en: 'https://github.com/gctools-outilsgc/gcpedia/issues'
-            fr: 'https://github.com/gctools-outilsgc/gcpedia/issues'
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-        description:
-          en: Internal Government of Canada Wiki
-          fr: Wiki interne du gouvernement du Canada
-        name:
-          en: GCpedia
-          fr: GCpedia
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
         date:

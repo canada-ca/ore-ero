@@ -4,7 +4,6 @@ id: software
 
 formGroups:
   - preset: selectSoftware
-    param: {rule: alphanum-space, required: false}
   - preset: description
   - preset: category
   - preset: tags
@@ -24,5 +23,6 @@ formGroups:
     param: {phone: false}
   - preset: dates
     param: {started: true}
+  - widget: string-i18n
   - preset: empty
   - preset: empty

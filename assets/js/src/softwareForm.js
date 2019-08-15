@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode
+  getAdminObject getAdminCode slugify
   addMoreLicences resetMoreGroup fillLicenceField
   getToday
 */
@@ -15,7 +15,7 @@ const adminSelect = $('.page-softwareForm #adminCode');
 $(document).ready(function() {
   $('#prbotSubmitsoftwareForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitSoftwareFormNewAdmin();
+      if ($('#ennewAdminName').val() != '') submitSoftwareFormNewAdmin();
       else submitFormSoftware();
     }
   });
@@ -135,7 +135,9 @@ function submitSoftwareFormNewAdmin() {
   let softwareName = $('#enname')
     .val()
     .toLowerCase();
-  let adminName = $('#newAdminCode').val();
+  let adminName = slugify(
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+  );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let softwareFile = `_data/software/${softwareName}.yml`;
