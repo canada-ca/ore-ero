@@ -1,16 +1,20 @@
 ---
-- code: mtl_qc
+- code: city-of-montreal-qc
   provinceCode: qc
   name:
     en: City of Montreal
     fr: Ville de Montréal
-- code: ottawa_on
+- code: city-of-ottawa-on
   provinceCode: 'on'
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
-- code: edmonton_ab
+- code: city-of-edmonton-ab
   provinceCode: ab
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: tbs-sct
+  name:
+    en: ''
+    fr: ''
