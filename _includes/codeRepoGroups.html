@@ -1,7 +1,8 @@
 <div class="row">
   <ul class="list-unstyled">
-    {%- for levels in site.data.i18n.administrations -%}
-      {%- assign level = levels[0] -%}
+  {%- for levels in site.data.i18n.administrations -%}
+    {%- assign level = levels[0] -%}
+    <li>
       <details>
         <summary>{{ site.data.i18n.administrations[level][page.lang] }}</summary>
         <div class="list-group">
