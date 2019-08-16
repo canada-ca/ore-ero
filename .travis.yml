@@ -21,6 +21,7 @@ script:
 - yamale -s schemaSoftware.yaml _data/software
 - npm run lint
 - yamllint -d configYamlLint.yml _data
+- npx cypress run
 
 
 sudo: false
