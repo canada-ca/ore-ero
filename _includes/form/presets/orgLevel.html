@@ -4,6 +4,7 @@
 <div class="form-group">
   {% include form/components/label.html id=include.idPreset title=title %}
   <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
+    <option value="">&nbsp;</option>
     <option value="{{ site.data.i18n.administrations.others.value }}">{{ site.data.i18n.administrations.others[page.lang] }}</option>
     <option value="{{ site.data.i18n.administrations.aboriginal.value }}">{{ site.data.i18n.administrations.aboriginal[page.lang] }}</option>
     <option value="{{ site.data.i18n.administrations.municipal.value }}" selected>{{ site.data.i18n.administrations.municipal[page.lang] }}</option>
