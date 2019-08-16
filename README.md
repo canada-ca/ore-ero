@@ -51,6 +51,14 @@ npm run prettify
 
 YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
 
+##### Testing
+
+Our JavaScript is unit tested using Cypress. Our approach is to load a page that includes the file and run the function from the window object. This comes with some isolation risks, but it works well for now. The main requirement to test your JS this way is that it needs to be added the global window object. 
+
+ - See The larger `testing` section for more details on getting started with Cypress.
+ - See `assets/js/src/deep-object.js` and `cypress/integration/unit-tests/deep-object.spec.js` for an example of unit testing our JS.
+ - See Cypress' section on [Stubs and Spies](https://docs.cypress.io/guides/guides/stubs-spies-and-clocks.html) for how we can isolate dependant code.
+
 #### PRB0t - Docker
 
 You can choose to run PRB0t locally using Docker if you like. First, you need to generate a personal access token.
@@ -69,6 +77,30 @@ docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST_NAME=* jrewerts/p
 Now change prbot_url in `_config.yml` to `http://localhost:3000/`.
 
 Now when you fill out our forms, it'll submit the pull request using PRB0t running in your Docker container!
+
+### Testing
+
+This project uses Cypress for front end tests and unit tests. Ensure you have run `npm install` before continuing.
+
+#### Manually viewing tests
+
+Cypress has an application it ships with that allows you to view test results and debug failures. This is really handy during the development cycle. 
+
+To open the app, run:
+```
+npx cypress open
+```
+
+Clicking on one of the files will allow you to run a single file at a time. You can also run all of the files from here.
+
+#### Automatically running tests
+
+Cypress also supports running the test suite in a Headless browser. This can be used to quickly visualize the state of the code or to automatically verify code quality as part of continuous integration. 
+
+To run in a terminal:
+``` bash
+npx cypress run
+```
 
 ### Release
 
@@ -142,6 +174,14 @@ npm run prettify
 
 Le traitement YAML est effectué à l'aide de la bibliothèque [js-yaml](https://github.com/nodeca/js-yaml).
 
+##### Testing
+
+Notre JavaScript est testé avec Cypress. Notre approche consiste à charger une page contenant le fichier et à exécuter la fonction à partir de l'objet window. Cela comporte des risques d’isolement, mais cela fonctionne bien pour le moment. La principale exigence pour tester votre JS de cette manière est qu’il doit être ajouté à l’objet fenêtre global.
+
+ - Reportez-vous à la section plus large `testing` pour plus de détails sur l'utilisation de Cypress.
+ - Voir `assets/js/src/deep-object.js` et `cypress/integration/unit-tests/deep-object.spec.js` pour un exemple de test unitaire de notre JS.
+ - Voir la section de Cypress sur [Stubs and Spies](https://docs.cypress.io/guides/guides/stubs-spies-and-clocks.html) pour savoir comment isoler le code dépendant.
+
 #### PRB0t - Docker
 
 Vous pouvez choisir d'exécuter PRB0t localement à l'aide de Docker si vous le souhaitez. Tout d'abord, vous devez générer un jeton d'accès personnel.
@@ -160,6 +200,30 @@ docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST_NAME=* jrewerts/p
 Maintenant, remplacez prbot_url dans `_config.yml` par `http://localhost:3000/`.
 
 Maintenant, lorsque vous remplissez nos formulaires, il soumet la demande d'extraction à l'aide de PRB0t s'exécutant dans votre conteneur Docker!
+
+### Testing
+
+Ce projet utilise Cypress pour les tests frontaux et les tests unitaires. Assurez-vous d'avoir exécuté `npm install` avant de continuer.
+
+#### Visualiser manuellement les tests
+
+Cypress est livré avec une application qui vous permet de visualiser les résultats des tests et les échecs de débogage. Ceci est très pratique pendant le cycle de développement.
+
+Pour ouvrir l'application, lancez:
+```
+npx cypress open
+```
+
+En cliquant sur l'un des fichiers, vous pourrez exécuter un seul fichier à la fois. Vous pouvez également exécuter tous les fichiers à partir d'ici.
+
+#### Exécution automatique de tests
+
+Cypress prend également en charge l'exécution de la suite de tests dans un navigateur Headless. Cela peut être utilisé pour visualiser rapidement l'état du code ou pour vérifier automatiquement la qualité du code dans le cadre d'une intégration continue.
+
+Pour exécuter dans un terminal:
+```
+npx cypress run
+```
 
 ### Libération
 
