@@ -49,7 +49,7 @@ function toggleAlert(option) {
   }
 }
 
-function submitConclusion(response, submitButton, resetButton) {
+function submitConclusion(response, submitButton, resetButton, url) {
   if (response.status != 200) {
     toggleAlert(ALERT_OFF);
     toggleAlert(ALERT_FAIL);
@@ -60,8 +60,8 @@ function submitConclusion(response, submitButton, resetButton) {
     toggleAlert(ALERT_SUCCESS);
     // Redirect to home page
     setTimeout(function() {
-      window.location.href = './index.html';
-    }, 2000);
+      window.location.href = url;
+    }, 3000);
   }
 }
 

@@ -151,7 +151,11 @@ function submitStandardForm() {
       } else throw err;
     })
     .then(response => {
-      submitConclusion(response, submitButton, resetButton);
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-source-standards.html'
+          : './normes-ouvertes.html';
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
@@ -253,7 +257,11 @@ function submitStandardFormNewAdmin() {
           } else throw err;
         })
         .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-standards.html'
+              : './normes-ouvertes.html';
+          submitConclusion(response, submitButton, resetButton, url);
         });
     })
     .catch(err => {

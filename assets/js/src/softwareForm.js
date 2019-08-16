@@ -177,7 +177,11 @@ function submitSoftwareFormNewAdmin() {
           } else throw err;
         })
         .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-softwares.html'
+              : './logiciels-libres.html';
+          submitConclusion(response, submitButton, resetButton, url);
         });
     });
 }
@@ -287,7 +291,11 @@ function submitFormSoftware() {
       } else throw err;
     })
     .then(response => {
-      submitConclusion(response, submitButton, resetButton);
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-source-softwares.html'
+          : './logiciels-libres.html';
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
