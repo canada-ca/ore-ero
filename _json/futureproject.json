@@ -1,0 +1,5 @@
+---
+permalink: /futureproject.json
+---
+
+{{ site.data.futureProject | jsonify }}

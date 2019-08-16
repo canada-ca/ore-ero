@@ -56,6 +56,12 @@ nav:
     link:
       en: ./docs.html
       fr: ./docs.html
+  futureProject:
+    en: Lorem ipsum (homepage title english)
+    fr: Lorem ipsum (homepage title french)
+    link:
+      en: ./future-projects.html
+      fr: ./projets-futurs.html
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada

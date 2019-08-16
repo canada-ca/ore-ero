@@ -1,0 +1,26 @@
+---
+
+id: futureProject
+
+formGroups:
+  - preset: adminCode
+  - preset: team
+  - preset: empty
+    title: projects
+    param: {start: true}
+  - preset: selectFutureProject
+  - preset: description
+  - preset: contact
+  - preset: dates
+    param: {created: true, closed: true}
+  - widget: group
+    title: partners
+    param: {more: true, required: false}
+    fields:
+      - widget: string-i18n
+        title: name
+        param: {rule: alphanum-space, required: false}
+      - widget: string
+        title: email
+        param: {type: email, required: false}
+  - preset: empty

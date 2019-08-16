@@ -1,0 +1,30 @@
+---
+schemaVersion: str()
+adminCode: str()
+projects:
+  - contact:
+      email: str()
+      name: str(required=False)
+    date:
+      closed: str()
+      created: str()
+      metadataLastUpdated: str()
+    description:
+      en: str()
+      fr: str()
+    name:
+      en: str()
+      fr: str()
+    partners:
+      - name:
+          en: str(required=False)
+          fr: str(required=False)
+        email: str(required=False)
+    tags:
+      en:
+        - str()
+      fr:
+        - str()
+    team:
+      en: str(required=False)
+      en: str(required=False)

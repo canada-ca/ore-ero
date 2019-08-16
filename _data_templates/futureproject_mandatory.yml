@@ -1,0 +1,16 @@
+---
+schemaVersion: '1.0'
+adminCode: abc-def
+projects:
+  - contact:
+      email: abc@xyz.com
+    date:
+      closed: 'YYYY-MM-DD'
+      created: 'YYYY-MM-DD'
+      metadataLastUpdated: 'YYYY-MM-DD'
+    description:
+      en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+    name:
+      en: Example
+      fr: Exemple
