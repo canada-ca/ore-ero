@@ -12,6 +12,9 @@ install:
 - npm install
 - pip install --user yamllint
 
+before_script:
+- jekyll serve &
+
 script:
 - bundle exec jekyll build
 - htmlproofer --disable-external --allow-hash-href ./_site
