@@ -16,55 +16,92 @@ permalink: /en/index.html
   </div>
 </div>
 
-<div class="row">
-  <section class="col-md-8 pull-left">
-    <h2>Services and information</h2>
-    <div class="wb-eqht row">
-      <div class="col-md-6">
-        <section>
-          <h3><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></h3>
-          <p>Search Canadian public administrations' open source projects and code repositories, get access to code and software, and contribute to ongoing development.</p>
-        </section>
+<div class="row profile">
+  <div class="col-md-12">
+    <h1 property="name">Services</h1>
+    <p>The Open Resource Exchange includes four main services that focus on sharing solutions in an open source format. The term open source refers to publicly accessible items that are freely available for use.</p>
+  </div>
+
+  <div class="col-md-4">
+    <section class="panel panel-info">
+
+      <header class="panel-heading">
+        <a href="./open-source-codes.html" style="color: inherit !important; text-decoration: none !important"><h5 class="panel-title">Open Source Code</h5></a>
+      </header>
+
+      <div class="panel-body" style="padding-bottom: 33px !important">
+        <div class="col-md-3" style="color: #31708f; font-size: 50px">
+          <a href="./open-source-codes.html" style="color: inherit !important; text-decoration: none !important"><i class="fas fa-code"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p>Search open source projects and code repositories.</p>
+        </div>
       </div>
 
-      <div class="col-md-6">
-        <section>
-          <h3><a href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></h3>
-          <p>Search open source softwares used by Canadian public administrations, promote collaboration and reuse of preferred solutions.</p>
-        </section>
-      </div>
-
-      <div class="col-md-6">
-        <section>
-          <h3><a href="{{ site.data.i18n.general.nav.standard.link[page.lang] }}">{{ site.data.i18n.general.nav.standard[page.lang] }}</a></h3>
-          <p>Search open standards used by Canadian public administrations.</p>
-        </section>
-      </div>
-
-      <div class="col-md-6">
-        <section>
-          <h3><a href="{{ site.data.i18n.general.nav.doc.link[page.lang] }}">{{ site.data.i18n.general.nav.doc[page.lang] }}</a></h3>
-          <p>Find out how to contribute using a standard metadata schema for each service.</p>
-        </section>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="col-md-4 col-xs-12 pull-right">
-    <section class="lnkbx">
-      <h2>Latest Open Source Codes</h2>
-      {% include codeLastUpdated.html %}
     </section>
+  </div>
 
-    <section class="lnkbx">
-      <h2>Featured Working Groups</h2>
-      <ul>
-        <li><a href="https://gccollab.ca/groups/profile/5911">Open Source Software group on GCcollab</a></li>
-        <li><a href="#">[Working Group name]</a></li>
-        <li><a href="#">[Working Group name]</a></li>
-      </ul>
+  <div class="col-md-4">
+    <section class="panel panel-success">
+      <header class="panel-heading">
+        <a href="./open-source-softwares.html" style="color: inherit !important; text-decoration: none !important"><h5 class="panel-title">Open Source Software</h5></a>
+      </header>
+
+      <div class="panel-body" style="padding-bottom: 0px !important">
+        <div class="col-md-3" style="color: #3c763d; font-size: 50px">
+          <a href="./open-source-softwares.html" style="color: inherit !important; text-decoration: none !important"><i class="fa fa-cog"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p>Search open source software platforms used by Canadian public administrators.</p>
+        </div>
+      </div>
+
     </section>
+  </div>
+
+  <div class="col-md-4">
+    <section class="panel panel-warning">
+
+      <header class="panel-heading">
+        <a href="./open-source-standards.html" style="color: inherit !important; text-decoration: none !important"><h5 class="panel-title">Open Standards</h5></a>
+      </header>
+
+      <div class="panel-body" style="padding-bottom: 33px !important">
+        <div class="col-md-3" style="color: #8a6d3b; font-size: 50px">
+          <a href="./open-source-standards.html" style="color: inherit !important; text-decoration: none !important"><i class="glyphicon glyphicon-list-alt"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p>Search open standards used by Canadian public administrators.</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+<div class="row profile">
+  <div class="col-md-12">
+    <h1 property="name">Documentation</h1>
+  </div>
+
+  <div class="col-md-12">
+
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary>How to use the Open Resource Exchange platform</summary>
+            The Open Resource Exchange platform offers three services based on open source solutions developed and used by canadian public administrations.
+            You can check our user guide on <a href="./ore-docs.html">how to use the Open Resource Exchange platform</a> to help you search for open digital solutions and share new open projects.
+        </details>
+      </li>
+      <li>
+        <details open>
+          <summary>List of repositories per public administration</summary>
+            Canadian public administrations use repositories on Github, GitLab, Bitbucket or any other online service to host their open source projects.
+            Check the <a href="./open-source-code-groups.html">list of repositories per public administration</a> to find open source projects’ repositories for public administrations, according to their level of government (federal, provincial, municipal or aboriginal). 
+        </details>
+      </li>
+    </ul>
 
   </div>
 </div>
