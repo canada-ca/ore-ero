@@ -1,164 +1,115 @@
 ---
 layout: default
-ref: docs
+ref: oreDocs
 lang: fr
-permalink: fr/docs.html
+permalink: /fr/docs.html
 ---
+<div class="row profile">
+  <div class="col-md-12">
+    <h1 property="name" id="wb-cont">Documentation</h1>
+  </div>
 
-<h1 property="name" id="wb-cont">Documentation</h1>
-
-<div class="row">
-  <nav role="navigation" class="col-md-12">
-    <div class="panel panel-default">
-      <header class="panel-heading">
-        <h2 class="panel-title">Table des matières</h2>
-      </header>
-      <div class="panel-body">
-        <ul class="list-unstyled">
-          <li><a href="#Comment_ajouter_vos_donnees">Comment ajouter vos données</a>
-            <ul>
-              <li><a href="#Ajouter_votre_administration">Ajouter votre administration</a></li>
-              <li><a href="#Ajouter_du_code_source_ouvert">Ajouter du code source ouvert</a></li>
-              <li><a href="#Ajouter_des_logiciels_libres">Ajouter des logiciels libres</a></li>
-            </ul>
-          </li>
-          <li><a href="#Structure_du_repertoire">Structure du répertoire</a>
-            <ul>
-              <li><a href="#administrations">Administrations</a></li>
-              <li><a href="#code">Code</a></li>
-              <li><a href="#software">software</a></li>
-              <li><a href="#standard">standard</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="col-md-12">
+    <h2>Comment utiliser la plateforme Échange de Ressources Ouvert</h2>
+    <p>
+      La plateforme Échange de Ressources Ouvert offre trois services basés sur le partage de solutions numériques ouvertes en provenance des différentes administrations publiques canadiennes.
+      Vous trouverez ici des guides d’utilisation relatifs à chaque service offert par les différentes sections de la plateforme.
+    </p>
+    <ul class="list-unstyled">
+      <li>
+        <details>
+          <summary>Codes Sources Ouverts</summary>
+          <p>
+            Ce service offre une plateforme de partage des différents codes sources ouverts développés par des administrations publiques canadiennes fédérales, provinciales, municipales et autochtones.
+          </p>
+          <p>
+            Vous y trouverez un catalogue (ou une liste autrement dit) contenant tous les projets libres disponibles. Chaque code source est brièvement décrit par les champs suivants:
+          </p>
+          <ul>
+            <li><strong>Nom du projet</strong>: Le nom du projet correspond au nom du code source développé en libre. L'hyperlien permet d’afficher des informations relatives au projet, tels les informations de l’administration publique ayant développé le projet, la date de création, la dernière mise à jour, etc.</li>
+            <li><strong>Catégorie</strong>: Il s’agit de la catégorie à laquelle appartient le code source ouvert en ce qui concerne son domaine d’utilisation. Les catégories proposées correspondent à la famille des logiciels de la taxonomie UNSPSC.</li>
+            <li><strong>Description</strong>: Il s’agit d’une brève description des fonctionnalités du programme.</li>
+            <li><strong>Licence </strong>: C’est le type de licence sous laquelle le projet est publié. L’hyperlien permet d’accéder au fichier de la licence du projet, qui est normalement dans le répertoire public où le code est hébergé (par exemple dans GitHub).</li>
+            <li><strong>Code repo</strong>: C’est le répertoire public du code source, où le code est hébergé (par exemple GitHub, GitLab, BitBucket, etc.). L’hyperlien permet d’accéder au dossier du projet déposé dans le répertoire public.</li>
+          </ul><br>
+          <p>
+            <strong>Utilisez ce catalogue</strong> pour trouver des normes ouvertes qui peuvent vous aider à développer un système qui fonctionne et communique avec d’autres produits ou systèmes, et qui peut être facilement mis à niveau et étendu. Afin de faciliter la recherche, plusieurs options de filtrage sont à votre disposition:<br>
+          </p>
+          <ul>
+            <li>Vous pouvez filtrer les différents codes selon des options de filtrages, tels le niveau de gouvernement, l’administration publique, le mot-clé, etc.</li>
+            <li>Vous pouvez également filtrer les noms et les descriptions des codes sources disponibles dans le catalogue selon une phrase, un mot ou une lettre de votre choix.</li>
+          </ul><br>
+          <p>
+            <strong>Vous désirez ajouter un nouveau projet ou mettre à jour les informations d’un projet déjà disponible dans le catalogue?</strong>
+          </p>
+          <p>
+            Que vous soyez une administration ayant déjà contribué à cette plateforme ou une administration désirant participer pour la première fois à la contribution de celle-ci, vous êtes libre d’ajouter une nouvelle solution au catalogue ou de mettre à jour les informations d’un projet déjà existant.
+            Il vous suffit de remplir le formulaire <a href="./code-source-ouvert-formulaire.html">Formulaire de code source ouvert</a> permettant d’identifier votre requête et d’exécuter celle-ci. Remplissez les champs s’alignant avec votre requête et soumettez le formulaire.
+          </p>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Logiciels Libres</summary>
+          <p>
+            Ce service offre une plateforme de partage des différents logiciels libres utilisés par des administrations publiques canadiennes fédérales, provinciales, municipales et autochtones.
+          </p>
+          <p>
+            Vous y trouverez un catalogue (ou une liste autrement dit) contenant tous les logiciels libres disponibles. Ceux-ci sont brièvement décrits par les champs suivants:
+          </p>
+          <ul>
+            <li><strong>Logiciel</strong>: Ce champ correspond au nom du logiciel libre. L'hyperlien permet d’afficher une liste des administrations utilisant le logiciel.</li>
+            <li><strong>Catégorie</strong>: Il s’agit de la catégorie à laquelle appartient le logiciel en ce qui concerne son domaine d’utilisation. Les catégories proposées correspondent à la famille des logiciels de la taxonomie UNSPSC.</li>
+            <li><strong>Description</strong>: Il s’agit d’une brève description des fonctionnalités du programme.</li>
+            <li><strong>Licence </strong>: C’est le type de licence sous laquelle le projet est publié. L’hyperlien permet d’accéder au fichier de la licence du projet, qui est normalement dans le répertoire public où le code est hébergé (par exemple dans GitHub).</li>
+            <li><strong>Usage</strong>: L’usage correspond au nombre d’administrations ayant validé leur utilisation du programme.</li>
+          </ul><br>
+          <p>
+            <strong>Utilisez ce catalogue</strong> pour trouver une solution numérique qui répond à vos besoins. Afin de faciliter la recherche, plusieurs options de filtrage sont à votre disposition:<br>
+          </p>
+          <ul>
+            <li>Vous pouvez filtrer les différents logiciels selon différentes options de filtrages, soit le niveau de gouvernement, la licence et le tag.</li>
+            <li>Vous pouvez également filtrer les noms et les descriptions des logiciels libres présentés dans le catalogue selon une phrase, un mot ou une lettre de votre choix.</li>
+          </ul><br>
+          <p>
+            <strong>Vous désirez ajouter un nouveau logiciel libre au catalogue ou vous inscrire à la liste des utilisateurs de l’une des solutions partagées?</strong>
+          </p>
+          <p>
+            Que vous soyez une administration ayant déjà contribué à cette plateforme ou une administration désirant participer pour le première fois à la contribution de celle-ci, vous êtes libre d’ajouter une nouvelle solution au catalogue ou de vous inscrire à la liste des utilisateurs de l’un des logiciels libres déjà partagés.
+            Il vous suffit de remplir le formulaire <a href="./logiciel-libre-formulaire.html">Formulaire du Logiciel Libre</a> permettant d’identifier votre requête et d’exécuter celle-ci. Remplissez les champs s’alignant avec votre requête et soumettez le formulaire.
+          </p>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Normes Ouvertes</summary>
+          <p>
+            Ce service offre une plateforme de partage des différentes normes ouvertes utilisées par des administrations publiques canadiennes fédérales, provinciales, municipales et autochtones.
+          </p>
+          <p>
+            Vous y trouverez un catalogue (ou une liste autrement dit) contenant toutes les normes partagées. Celles-ci sont brièvement décrites par les champs suivants:
+          </p>
+          <ul>
+            <li><strong>Norme</strong>: Ce champs correspond au nom de la norme. L'hyperlien permet d’afficher une liste des administrations utilisant la norme en question.</li>
+            <li><strong>Description</strong>: Il s’agit d’une brève description de la norme.</li>
+            <li><strong>Organisation normative</strong>: Il s’agit de l’organisation ayant développé, coordonné, promulgué, révisé, modifié, interprété, publié ou produit la norme. L’hyperlien renvoie vers la spécification de licence.</li>
+          </ul><br>
+          <p>
+            <strong>Utilisez ce catalogue</strong> pour trouver une norme qui répond à vos besoins. Afin de faciliter la recherche, plusieurs options de filtrage sont à votre disposition:<br>
+          </p>
+          <ul>
+            <li>Vous pouvez filtrer les différentes normes selon le niveau de gouvernement et/ou le tag.</li>
+            <li>Vous pouvez également filtrer les noms et les descriptions des standards présentés dans le catalogue selon une phrase, un mot ou une lettre de votre choix.</li>
+          </ul><br>
+          <p>
+            <strong>Vous désirez ajouter une nouvelle norme ou mettre à jour les informations d’une norme déjà présente dans le catalogue?</strong>
+          </p>
+          <p>
+            Que vous soyez une administration ayant déjà contribué à cette plateforme ou une administration désirant participer à la contribution de celle-ci, vous êtes libre d’ajouter une nouvelle norme au catalogue ou de mettre à jour les informations de l’un des normes disponibles.
+            Il vous suffit de remplir le formulaire <a href="./norme-ouverte-formulaire.html">Formulaire des Normes Ouvertes</a> permettant d’identifier votre requête et d’exécuter celle-ci. Remplissez les champs s’alignant avec votre requête et soumettez le formulaire.
+          </p>
+        </details>
+      </li>
+    </ul>
+  </div>
 </div>
-
-<h2 id="Comment_ajouter_vos_donnees">Comment ajouter vos données</h2>
-
-<h3 id="Ajouter_votre_administration">Ajouter votre administration</h3>
-<p>
-  Dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">administrations</a> ajouter votre administration dans le fichier
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/federal.yml">federal.yml</a>,
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/provincial.yml">provincial.yml</a> ou
-  <a href="https://github.com/canada-ca/ore-ero/blob/master/_data/administrations/municipal.yml">municipal.yml</a>.
-</p>
-
-<h3 id="Ajouter_du_code_source_ouvert">Ajouter du code source ouvert</h3>
-
-<h4 id="Votre_administration_est_deja_la">Votre administration est déjà là</h4>
-<p>S'il existe déjà un fichier pour votre administration sous le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> vous pouvez modifier ce fichier pour ajouter votre code source ouvert.</p>
-
-<p>Vous pouvez copier ce qui suit en bas du fichier et modifier les informations pour votre code. Ce ne sont que les champs obligatoires.</p>
-
-<pre>
-  <code>
-  -
-    contact:
-      email: "abc@xyz.com"
-    date:
-      created: "YYYY-MM-DD"
-      metadataLastUpdated: "YYYY-MM-DD"
-    description:
-      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      fr: "Quisque bibendum ante ligula, porta vestibulum enim egestas vel."
-    name:
-      en: "Example"
-      fr: "Exemple"
-    licences:
-      -
-        URL:
-          en: "https://example.com/repo/example/LICENCE-en"
-          fr: "https://example.com/repo/example/LICENCE-fr"
-        spdxID: "XYZ-1.0"
-    repositoryURL:
-      en: "https://example.com/repo/example"
-      fr: "https://example.com/repo/example"
-    tags:
-      en:
-        - "tag1-en"
-      fr:
-        - "tag1-fr"
-  </code>
-</pre>
-
-<p>
-  Pour plus d'informations, cliquez <a href="./code-source-ouvert-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.
-  Si vous êtes intéressé à contribuer avec nous, veuillez remplir <a href="./code-source-ouvert-formulaire.html">le formulaire de code source ouvert</a>.
-</p>
-
-<h4 id="Votre_administration_doit_etre_ajoute">Votre administration doit être ajouté:</h4>
-<p>
-    Si votre administration n'a pas de fichier sous le répertoire
-    <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/code">code</a> vous devez créer un nouveau fichier pour votre administration.
-    Utilisez le <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/code_mandatory.yml">modèle de code avec uniquement les champs obligatoires</a>.
-</p>
-
-<h3 id="Ajouter_des_logiciels_libres">Ajouter des logiciels libres</h3>
-
-<h4 id="Le_logiciel_est_deja_la">Le logiciel est déjà là</h4>
-<p>S'il existe déjà un fichier pour le logiciel libre que vous utilisez dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/software">software</a>, vous devez vérifier si votre administration est déjà répertoriée comme utilisant le logiciel libre.</p>
-
-<p>Si ce n'est pas le cas, vous pouvez copier ce qui suit au bas du fichier, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.</p>
-
-<pre>
-  <code>
-  -
-    adminCode: abc-def
-    uses:
-      -
-        contact:
-          URL: https://www.example.com
-        name:
-          en: "Example use"
-          fr: "Exemple d'utilisation"
-        description:
-          en: "Etiam rutrum, tellus nec egestas blandit."
-          fr: "Vestibulum fringilla vel purus nec iaculis."
-  </code>
-</pre>
-
-<p>Si votre administration est là, ajouter votre utilisation de logiciels libre, vous pouvez copier ce qui suit, et changer les informations pour votre administration et l'utilisation du logiciel open source. Ce ne sont que les champs obligatoires.</p>
-
-<pre>
-  <code>
-      -
-        contact:
-          URL: https://www.example.com
-        name:
-          en: "Example use"
-          fr: "Exemple d'utilisation"
-        description:
-          en: "Etiam rutrum, tellus nec egestas blandit."
-          fr: "Vestibulum fringilla vel purus nec iaculis."
-  </code>
-</pre>
-
-<p>Pour plus d'informations, cliquez <a href="./logiciel-libre-schema.html">ici</a> pour voir le schéma de métadonnées pour le code source ouvert.</p>
-
-<h4 id="Votre_logiciel_open_source_doit_etre_ajoute">Votre logiciel open source doit être ajouté</h4>
-<p>
-    Si votre logiciel open source n'a pas de fichier dans le répertoire <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/software">software</a>
-    vous devez créer un nouveau fichier pour le logiciel open source. Utilisez le modèle <a href="https://github.com/canada-ca/ore-ero/blob/master/_data_templates/software_mandatory.yml">software template with only mandatory fields</a>.
-</p>
-
-<h2 id="Structure_du_repertoire">Structure du répertoire</h2>
-
-<h3 id="administrations">Administrations</h3>
-<p>Liste des administrations fédérale, provinciales, territoriales et municipales du Canada. Utilisé pour rechercher les noms bilingues.</p>
-
-<h3 id="code">Code</h3>
-<p>Liste des codes sources ouverts publiés par les administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.</p>
-<ul>
-  <li>federal</li>
-  <li>provincial</li>
-  <li>municipal</li>
-</ul>
-
-<h3 id="software">Software</h3>
-<p>Liste des logiciels libres utilisés par les administrations.</p>
-
-<h3 id="standard">Standard</h3>
-<p>Liste des normes ouvertes approuvées ou utilisées par les administrations.</p>
