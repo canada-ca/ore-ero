@@ -2,6 +2,11 @@ language: ruby
 rvm:
 - 2.6.0
 
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
+
 jdk:
 - openjdk12
 
