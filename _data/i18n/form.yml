@@ -208,8 +208,8 @@ presets:
         en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
     infobulle:
-      en: Add general information about the project licenses. Search the list of lisences to find the SPDX license identifier according to your license's name.
-      fr: Ajouter des informations générales sur chaque licence du projet. Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences.
+      en: Search the list of lisences to find the SPDX license identifier according to your license's name. Add the URL of your project license repository.
+      fr: Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajouter le URL de license de votre projet.
     titles:
       URL:
         en: The English and French URLs of licence.
@@ -618,11 +618,11 @@ admin:
       fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
-      en: Administration Name
-      fr: Nom de l'administration
+      en: Administration Public Name
+      fr: Nom de l'administration publique
     label:
       en:
-        en: Name in english
+        en: English Name
         fr: Nom en anglais
       fr:
         en: Name in french
