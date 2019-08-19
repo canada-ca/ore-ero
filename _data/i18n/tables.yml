@@ -5,6 +5,9 @@ administration:
 administrations:
   en: Administrations
   fr: Administrations
+category:
+  en: Category
+  fr: Catégorie
 clear:
   en: Clear
   fr: Effacer
