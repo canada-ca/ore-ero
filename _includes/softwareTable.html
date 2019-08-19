@@ -64,10 +64,11 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6], "visible": false}], "paging": true}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,6,7], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.software[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.category[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
@@ -81,6 +82,14 @@
         {%- assign software = softwares[1] -%}
         <tr>
           <td><a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
+          <td>
+            {%- assign cat = software.category -%}
+            {%- for category in site.data.i18n.categories -%}
+                {%- if category[1].value == cat -%}
+                  {{ category[1][page.lang] }}
+                {%- endif -%}
+            {%- endfor -%}
+          </td>
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
