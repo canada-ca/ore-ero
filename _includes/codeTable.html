@@ -7,7 +7,7 @@
     <form class="wb-tables-filter" data-bind-to="dataset-filter">
       <div class="form-group">
         <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
-        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="8">
           <option value="">&nbsp;</option>
           {%- for govLevel in site.data.i18n.administrations -%}
           <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
@@ -36,7 +36,7 @@
 
       <div class="form-group">
         <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
-        <select class="form-control" id="dt_category" name="dt_category" data-column="5">
+        <select class="form-control" id="dt_category" name="dt_category" data-column="2">
           <option value="">&nbsp;</option>
           {%- assign cat_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
@@ -57,7 +57,7 @@
 
       <div class="form-group">
         <label for="dt_organization">{{ site.data.i18n.tables.organization[page.lang] }}</label>
-        <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
+        <select class="form-control" id="dt_organization" name="dt_organization" data-column="6">
           <option value="">&nbsp;</option>
           {%- assign org_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
@@ -78,7 +78,7 @@
 
       <div class="form-group">
         <label for="dt_licence">{{ site.data.i18n.tables.licence[page.lang] }}</label>
-        <select class="form-control" id="dt_licence" name="dt_licence" data-column="3">
+        <select class="form-control" id="dt_licence" name="dt_licence" data-column="4">
           <option value="">&nbsp;</option>
           {%- assign licence_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
@@ -99,7 +99,7 @@
 
       <div class="form-group">
         <label for="dt_tag">{{ site.data.i18n.tables.tag[page.lang] }}</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="5">
           <option value="">&nbsp;</option>
           {%- assign tag_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
