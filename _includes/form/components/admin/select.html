@@ -1,0 +1,13 @@
+<select class="form-control" id="{{ title }}" name="{{ title }}"{% if include.param.required == nil or include.param.required %} required="required"{% endif %}>
+  <option value="">&nbsp;</option>
+  {%- for i in (1..3) -%}
+    {%- capture level -%}{%- cycle 'federal', 'provincial', 'municipal' -%}{%- endcapture -%}
+    <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
+      {%- for org in site.data.administrations[level] -%}
+        {%- if org.name[page.lang] != nil %}
+      <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {%- endif -%}
+      {% endfor %}
+    </optgroup>
+  {%- endfor -%}
+</select>

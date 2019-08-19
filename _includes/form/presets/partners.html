@@ -1,0 +1,16 @@
+{%- assign title = "partners" -%}
+<div class="add-more-group" id="addMore{{ title }}" data-title="{{ title }}">
+  {% include form/components/title.html id=include.idPreset title=title -%}
+  <div class="add-more-content">
+    {% include form/components/label.html id=include.idPreset title=title param=site.data.forms.param.required_false %}
+    <div class="form-group" style="display: flex;">
+        <div class="{{ title }}AdminCodeSelect">{% include form/components/admin/select.html param=site.data.forms.param.required_false %}</div>
+        <div class="{{ title }}AdminCodeBtn">{% include form/components/admin/btn.html btn=title idPreset=include.idPreset %}</div>
+        <div class="{{ title }}AdminCodeRemove"><button type="button" class="btn btn-default mrgn-lft-md" id="cancelAdminButton{{ title }}" style="display: none;"><i class="glyphicon glyphicon-remove"></i></button></div>
+    </div>
+    {% include form/components/admin/orgLevel.html idPreset=include.idPreset title="orgLevelPartner" param=site.data.forms.param.required_false %}
+    {% include form/components/admin/provinceSelect.html btn=title idPreset=include.idPreset title="provinceSelectPartner" param=site.data.forms.param.required_false %}
+    {% include form/components/group-i18n-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.required_false %}
+    {% include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.required_false %}
+  </div>
+</div>

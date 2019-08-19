@@ -28,6 +28,25 @@ $(document).ready(function() {
     selectCode();
   });
 
+  hideFieldsPartner('');
+  $('#addMorepartners').on(
+    'change',
+    '.partnersAdminCodeSelect select',
+    function() {
+      selectPartners(this);
+    }
+  );
+  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
+    addNewPartner(this);
+  });
+  $('#addMorepartners').on(
+    'click',
+    '.partnersAdminCodeRemove button',
+    function() {
+      removeNewPartner(this);
+    }
+  );
+
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
     resetTags();
@@ -432,14 +451,19 @@ function selectCode() {
   }
 }
 
+// TODO Add "others" back when PR is merged
 function getOrgLevel(result, admin) {
   let federal = result.federal[admin];
   let provincial = result.provincial[admin];
   let municipal = result.municipal[admin];
+  let aboriginal = result.aboriginal[admin];
+  //let others = result.others[admin];
 
   let orgLevel;
 
-  if (municipal != undefined) orgLevel = municipal;
+  //if (others != undefined) orgLevel = others;
+  /*else*/ if (aboriginal != undefined) orgLevel = aboriginal;
+  else if (municipal != undefined) orgLevel = municipal;
   else if (provincial != undefined) orgLevel = provincial;
   else if (federal != undefined) orgLevel = federal;
 
@@ -557,4 +581,148 @@ function resetFields() {
   resetMoreGroup($('#addMorepartners'));
   resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');
+}
+
+// TODO Add "others" back when PR is merged
+function getAdminObjectForPartner(obj, admin) {
+  let administrations = [
+    'federal',
+    'provincial',
+    'municipal',
+    'aboriginal'
+    /*, 'others'*/
+  ];
+
+  for (let i = 0, l1 = administrations.length; i < l1; i++)
+    for (let j = 0, l2 = obj[administrations[i]].length; j < l2; j++)
+      if (obj[administrations[i]][j].code == admin)
+        return {
+          level: administrations[i],
+          values: obj[administrations[i]][j]
+        };
+}
+
+function getmoreIndex(element) {
+  let nb = $(element)
+    .closest('li')
+    .attr('data-index');
+  return nb != 0 ? nb : '';
+}
+
+function selectPartners(select) {
+  let adminCode = $(select).val();
+  let id = getmoreIndex(select);
+  if (adminCode != '') {
+    $.getJSON(
+      'https://canada-ca.github.io/ore-ero/administrations.json',
+      function(result) {
+        let admin = getAdminObjectForPartner(result, adminCode);
+        showFieldsPartner(id, false);
+        $('#orgLevelPartner' + id).val(admin.level);
+        if (admin.values.provinceCode != undefined) {
+          $('#provinceSelectPartner' + id)
+            .prop('disabled', false)
+            .val(admin.values.provinceCode);
+        } else
+          $('#provinceSelectPartner' + id)
+            .prop('disabled', true)
+            .val('');
+        $('#enpartnersname' + id).val(admin.values.name.en);
+        $('#frpartnersname' + id).val(admin.values.name.fr);
+      }
+    );
+  } else {
+    hideFieldsPartner(id);
+  }
+}
+
+function hideFieldsPartner(id) {
+  resetFieldsPartner(id);
+  $('#orgLevelPartner' + id)
+    .parent('.form-group')
+    .hide();
+  $('#provinceSelectPartner' + id)
+    .prop('disabled', false)
+    .parent('.form-group')
+    .hide();
+  $('#enpartnersname' + id)
+    .parent('.form-group')
+    .hide();
+  $('#frpartnersname' + id)
+    .parent('.form-group')
+    .hide();
+  $('#partnersemail' + id)
+    .parent('.form-group')
+    .hide();
+}
+
+function resetFieldsPartner(id) {
+  $('#orgLevelPartner' + id).val('');
+  $('#provinceSelectPartner' + id)
+    .prop('disabled', false)
+    .val('');
+  $('#enpartnersname' + id).val('');
+  $('#frpartnersname' + id).val('');
+  $('#partnersemail' + id).val('');
+}
+
+function showFieldsPartner(id, full) {
+  hideFieldsPartner(id);
+  if (full) {
+    $('#orgLevelPartner' + id)
+      .attr('required', 'required')
+      .parent('.form-group')
+      .show()
+      .children('label')
+      .addClass('required');
+    $('#provinceSelectPartner' + id)
+      .attr('required', 'required')
+      .prop('disabled', false)
+      .parent('.form-group')
+      .show()
+      .children('label')
+      .addClass('required');
+    $('#enpartnersname' + id)
+      .attr('required', 'required')
+      .parent('.form-group')
+      .show()
+      .children('label')
+      .addClass('required');
+    $('#frpartnersname' + id)
+      .attr('required', 'required')
+      .parent('.form-group')
+      .show()
+      .children('label')
+      .addClass('required');
+  }
+
+  $('#partnersemail' + id)
+    .parent('.form-group')
+    .show();
+}
+
+function addNewPartner(button) {
+  let id = getmoreIndex(button);
+
+  $('#partners' + id).val('');
+  resetFields(id);
+  showFieldsPartner(id, true);
+  showRemoveNewPartnerBtn(id);
+}
+
+function removeNewPartner(button) {
+  let id = getmoreIndex(button);
+
+  $('#partners' + id).val('');
+  resetFields(id);
+  hideFieldsPartner(id);
+  hideRemoveNewPartnerBtn(id);
+}
+
+function showRemoveNewPartnerBtn(index) {
+  $('newAdminButtonpartners' + index).hide();
+}
+
+function hideRemoveNewPartnerBtn(index) {
+  $('newAdminButtonpartners' + index).hide();
 }

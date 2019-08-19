@@ -100,6 +100,10 @@ function addElement(obj) {
       });
   });
 
+  li.find('button').each(function() {
+    $(this).attr('id', $(this).attr('id') + index);
+  });
+
   $(ul).append(li);
 }
 

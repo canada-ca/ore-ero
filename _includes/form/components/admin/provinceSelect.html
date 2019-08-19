@@ -1,0 +1,9 @@
+<div class="form-group">
+{%- include form/components/label.html id=include.idPreset title=include.title param=include.param %}
+  <select class="form-control" id="{{ include.title }}" name="{{ include.title }}"{% if include.param.required == nil or include.param.required %} required="required"{% endif %}>
+    <option value="">&nbsp;</option>
+    {%- for province in site.data.i18n.provinces -%}
+    <option value="{{ province[1].value }}">{{ province[1][page.lang] }}</option>
+    {%- endfor %}
+  </select>
+</div>

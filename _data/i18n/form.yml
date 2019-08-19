@@ -218,7 +218,7 @@ presets:
     charactersLimit:
       en: (100 characters limit)
       fr: (limite de 100 caractères)
-  orgLevel:
+  orgLevel: &orgLevel
     title: &title
       en: Level of government
       fr: Niveau de gouvernement
@@ -226,6 +226,31 @@ presets:
     infobulle:
       en: Select the level of government the administration belongs to.
       fr: Sélectionnez le niveau de gouvernement auquel l'administration appartient.
+  orgLevelPartner: *orgLevel
+  partners:
+    title:
+      en: Key Partners
+      fr: Partenaires
+    labels:
+      email: *email
+      name:
+        en:
+          en: English name
+          fr: Nom en anglais
+        fr:
+          en: French name
+          fr: Nom en francais
+        schema: *name
+    label:
+      en: Select an administration or create a new one.
+      fr: Sélectionnez une administration ou créez en une nouvelle.
+    titles:
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
+    infobulle:
+      en: Contact information of each group partnering on the project.
+      fr: Coordonnées de contact des groupes partenaires du projet.
   provinceSelect: &provinceSelect
     title: &title
       en: Province
@@ -235,6 +260,7 @@ presets:
       en: Select a province
       fr: Sélectionnez une province
   province: *provinceSelect  # Simplifies schema build
+  provinceSelectPartner: *provinceSelect
   relatedCode:
     title:
       en: Related Softwares
@@ -387,27 +413,6 @@ code:
     infobulle:
       en: The URL of the project download page, where a distribution of the project can be found.
       fr: Ajouter les URLs pour télécharger le projet
-  partners:
-    title:
-      en: Key Partners
-      fr: Partenaires
-    labels:
-      email: *email
-      name:
-        en:
-          en: English name
-          fr: Nom en anglais
-        fr:
-          en: French name
-          fr: Nom en francais
-        schema: *name
-    titles:
-      email:
-        en: The email address to contact the partner.
-        fr: L'adresse courriel pour contacter le partenaire.
-    infobulle:
-      en: Contact information of each group partnering on the project.
-      fr: Coordonnées de contact des groupes partenaires du projet.
   repositoryUrl:
     title:
       en: Project Public Repository

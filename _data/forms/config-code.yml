@@ -14,16 +14,7 @@ formGroups:
   - preset: category
   - preset: tags
   - preset: contact
-  - widget: group
-    title: partners
-    param: {more: true, required: false}
-    fields:
-      - widget: string-i18n
-        title: name
-        param: {rule: alphanum-space, required: false}
-      - widget: string
-        title: email
-        param: {type: email, required: false}
+  - preset: partners
   - preset: dates
     param: {created: true}
   - widget: string-i18n
