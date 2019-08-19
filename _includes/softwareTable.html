@@ -21,7 +21,6 @@
           <option value="">&nbsp;</option>
           {%- assign cat_arr = "" | split: ',' -%}
           {%- for software in site.data.software -%}
-            {%- assign govLevel = govLevels[0] -%}
             {%- for category in software[1].category -%}
               {%- assign cat_arr = cat_arr | push: category -%}
             {%- endfor -%}

@@ -40,7 +40,6 @@
           <option value="">&nbsp;</option>
           {%- assign cat_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
-            {%- assign govLevel = govLevels[0] -%}
             {%- for admin in govLevels[1] -%}
               {%- for release in admin[1].releases -%}
                 {%- if release.category != nil -%}
