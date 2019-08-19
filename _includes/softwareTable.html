@@ -16,6 +16,24 @@
       </div>
 
       <div class="form-group">
+        <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
+        <select class="form-control" id="dt_category" name="dt_category" data-column="5">
+          <option value="">&nbsp;</option>
+          {%- assign cat_arr = "" | split: ',' -%}
+          {%- for software in site.data.software -%}
+            {%- assign govLevel = govLevels[0] -%}
+            {%- for category in software[1].category -%}
+              {%- assign cat_arr = cat_arr | push: category -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign cat_arr = cat_arr | uniq -%}
+          {%- for cat in cat_arr -%}
+            <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
+          {%- endfor -%}
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="dt_licence">Licence</label>
         <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
           <option value="">&nbsp;</option>
@@ -83,12 +101,7 @@
         <tr>
           <td><a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
           <td>
-            {%- assign cat = software.category -%}
-            {%- for category in site.data.i18n.categories -%}
-                {%- if category[1].value == cat -%}
-                  {{ category[1][page.lang] }}
-                {%- endif -%}
-            {%- endfor -%}
+            {{ site.data.i18n.categories[release.category][page.lang] }}
           </td>
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>

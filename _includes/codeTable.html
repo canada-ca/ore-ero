@@ -35,6 +35,28 @@
       </div>
 
       <div class="form-group">
+        <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
+        <select class="form-control" id="dt_category" name="dt_category" data-column="5">
+          <option value="">&nbsp;</option>
+          {%- assign cat_arr = "" | split: ',' -%}
+          {%- for govLevels in site.data.code -%}
+            {%- assign govLevel = govLevels[0] -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
+                {%- if release.category != nil -%}
+                  {%- assign cat_arr = cat_arr | push: release.category -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign cat_arr = cat_arr | uniq -%}
+          {%- for cat in cat_arr -%}
+            <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
+          {%- endfor -%}
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="dt_organization">{{ site.data.i18n.tables.organization[page.lang] }}</label>
         <select class="form-control" id="dt_organization" name="dt_organization" data-column="5">
           <option value="">&nbsp;</option>
@@ -142,12 +164,7 @@
 
             <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
             <td>
-              {%- assign cat = release.category -%}
-              {%- for category in site.data.i18n.categories -%}
-                  {%- if category[1].value == cat -%}
-                    {{ category[1][page.lang] }}
-                  {%- endif -%}
-              {%- endfor -%}
+              {{ site.data.i18n.categories[release.category][page.lang] }}
             </td>
             <td>{{ release.description.whatItDoes[page.lang] }}</td>
             <td>
