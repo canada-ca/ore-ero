@@ -244,7 +244,11 @@ function submitFormAdminCodeForm() {
           } else throw err;
         })
         .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-codes.html'
+              : './codes-source-ouverts.html';
+          submitConclusion(response, submitButton, resetButton, url);
         });
     });
 }
@@ -320,7 +324,11 @@ function submitCodeForm() {
       } else throw err;
     })
     .then(response => {
-      submitConclusion(response);
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-source-codes.html'
+          : './codes-source-ouverts.html';
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 

@@ -62,6 +62,9 @@ presets:
     button:
       en: Add a new administration
       fr: Ajouter une nouvelle administration
+    noAdmins:
+      en: No Administration
+      fr: Aucune administration
   category:
     title:
       en: Category

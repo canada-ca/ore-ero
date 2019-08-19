@@ -15,3 +15,7 @@ aboriginal:
   en: Aboriginal
   fr: Autochtone
   value: aboriginal
+others:
+  en: Others
+  fr: Autres
+  value: others
