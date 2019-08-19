@@ -8,20 +8,20 @@ description:
     en: str(required=False)
     fr: str(required=False)
 name:
-  en: str()
-  fr: str()
+  en: str(required=False)
+  fr: str(required=False)
 specURL:
-  en: str()
-  fr: str()
+  en: str(required=False)
+  fr: str(required=False)
 standardAcronym: str()
 standardOrg:
-  en: str()
-  fr: str()
+  en: str(required=False)
+  fr: str(required=False)
 tags:
   en:
-    - str()
+    - str(required=False)
   fr:
-    - str()
+    - str(required=False)
 administrations:
   - adminCode: str()
     contact:
@@ -32,11 +32,11 @@ administrations:
       metadataLastUpdated: str()
     references:
       - URL:
-          en: str()
-          fr: str()
+          en: str(required=False)
+          fr: str(required=False)
         name:
-          en: str()
-          fr: str()
+          en: str(required=False)
+          fr: str(required=False)
     status: enum('deprecated', 'mandatory', 'preferred')
     team:
       en: str(required=False)
