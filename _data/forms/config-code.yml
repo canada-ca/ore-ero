@@ -7,8 +7,8 @@ formGroups:
   - preset: empty
     title: releases
     param: {start: true}
-  - preset: selectCode
   - preset: team
+  - preset: selectCode
   - preset: status
   - preset: description
   - preset: category
