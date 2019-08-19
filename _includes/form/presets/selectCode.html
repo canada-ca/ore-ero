@@ -1,7 +1,7 @@
 {% assign title = "name" -%}
 {%- assign group = "select" -%}
 <div class="form-group hide">
-  {% include form/components/label-group.html id=include.id title=title group=group %}
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}" disabled>
     <option value="">&nbsp;</option>
   </select>
