@@ -618,11 +618,11 @@ admin:
       fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
-      en: Administration Name
-      fr: Nom de l'administration
+      en: Administration Public Name
+      fr: Nom de l'administration publique
     label:
       en:
-        en: Name in english
+        en: English Name
         fr: Nom en anglais
       fr:
         en: Name in french
