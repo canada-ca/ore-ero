@@ -34,3 +34,36 @@ releases:
         - Espace
     languages:
       - Java
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-08-01'
+      metadataLastUpdated: '2019-08-19'
+    description:
+      whatItDoes:
+        en: What it does EN
+        fr: What it does FR
+    category: '43232200'
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        spdxID: AFL-2.0
+    repositoryURL:
+      en: 'http://www.google.com/repository'
+      fr: 'http://www.google.ca/repertoire'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
+    partners:
+      - email: contact@nasa.com
+        name: nasa
+        adminCode: asc-csa
+      - email: fred@lestage.ca
+        name: Frédéric
+        adminCode: partner2-bc
