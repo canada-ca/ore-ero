@@ -140,7 +140,7 @@
         <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.category[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.licence[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.team[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
@@ -226,13 +226,13 @@
               {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
           </a>
         </p>
-        <p>{{ site.data.i18n.tables.licence[page.lang] }}:</p>
+        <p>{{ site.data.i18n.tables.licence[page.lang] }}(s):</p>
         <ul>
           {%- for licence in release.licences -%}
             <li><a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a></li>
           {%- endfor -%}
         </ul>
-        <p>{{ site.data.i18n.tables.tag[page.lang] }}:</p>
+        <p>{{ site.data.i18n.tables.tag[page.lang] }}(s):</p>
         <ul>
           {%- for tag in release.tags[page.lang] -%}
             <li>{{ tag }}</li>
