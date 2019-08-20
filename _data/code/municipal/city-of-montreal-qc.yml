@@ -42,3 +42,28 @@ releases:
           en: CKAN
           fr: CKAN
     status: Maintained
+  - contact:
+      email: bassam.ajam@montreal.ca
+    date:
+      created: '2019-01-01'
+      metadataLastUpdated: '2019-08-20'
+    description:
+      whatItDoes:
+        en: test description en
+        fr: test description fr
+    category: '43232900'
+    name:
+      en: test presentation
+      fr: ''
+    licences:
+      - URL:
+          en: 'https://license.com'
+          fr: ''
+        spdxID: AFL-1.1
+    repositoryURL:
+      en: 'https://repo.com'
+      fr: ''
+    tags:
+      en:
+        - 'test tag '
+      fr: []
