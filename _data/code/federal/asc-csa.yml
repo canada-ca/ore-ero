@@ -34,3 +34,29 @@ releases:
         - Espace
     languages:
       - Java
+  - contact:
+      email: frederic.lestage@montreal.ca
+    date:
+      created: '2019-08-08'
+      metadataLastUpdated: '2019-08-20'
+    description:
+      whatItDoes:
+        en: What it does EN
+        fr: What it does FR
+    category: '43232200'
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        spdxID: AFL-1.1
+    repositoryURL:
+      en: 'http://www.google.com/repository'
+      fr: 'http://www.google.ca/repertoire'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
