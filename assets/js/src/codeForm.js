@@ -551,7 +551,7 @@ function selectCode() {
   let admin = adminSelect.val();
   let code = codeSelect.val();
   if (code != '') {
-    $.getJSON('http://localhost:4000/ore-ero/code.json', function(
+    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
