@@ -2,4 +2,4 @@
 <input class="form-control" id="{{ name }}" name="{{ name }}" type="{{ include.param.type | default: "text" }}"
 {%- if include.param.maxLength %} maxlength="{{ include.param.maxLength }}"{% endif -%}
 {% include form/components/rules.html rules=include.param.rule %}
-{%- if include.param.required == nil or include.param.required %} required="required"{% endif %} />
+{%- if include.param.required-i18n or include.lang == page.lang and include.param.required == nil or include.param.required %} required="required"{% endif %} />
