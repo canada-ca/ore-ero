@@ -52,7 +52,7 @@ presets:
       fr: Administration publique Canadienne
     subTitle:
       en: <p>See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration</p>
-      fr: <p>Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration</p>
+      fr: <p>Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichiers de données</a> pour trouver votre administration</p>
     infobulle:
       en: Select a public administration from the drop-down field or add a new one in case the administration does not exist.
       fr: Choisir l'administration publique dans la liste ci-dessous. Créer une nouvelle au cas où l'administration n'était pas déjà dans la liste.
@@ -372,7 +372,7 @@ code:
     labels:
       select:
         en: If you wish to update an already existing code, please select it below
-        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+        fr: Si vous souhaitez mettre à jour les données d'un code déjà ajouté au catalogue, veuillez le sélectionner de la liste
   downloadUrl:
     title:
       en: Project Download Page
@@ -618,7 +618,7 @@ admin:
       fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
-      en: Administration Public Name
+      en: Public Administration Name
       fr: Nom de l'administration publique
     label:
       en:
