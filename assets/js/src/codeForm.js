@@ -630,8 +630,6 @@ function addValueToFields(obj) {
     });
   }
 
-  console.log(obj);
-
   if (obj.partners)
     obj.partners.forEach(function(partner, i) {
       let id;
