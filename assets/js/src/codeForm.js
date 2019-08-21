@@ -28,6 +28,17 @@ $(document).ready(function() {
     selectCode();
   });
 
+  // More-group overwrite for partner
+  $('.add-more-group#addMorepartners').on(
+    'click',
+    '.btn-tabs-more',
+    function() {
+      let length = $('#addMorepartners ul li').length;
+      let index = length == 1 ? '' : length - 1;
+      hideFieldsPartner(index);
+    }
+  );
+
   hideFieldsPartner('');
   $('#addMorepartners').on(
     'change',
@@ -144,35 +155,40 @@ function getCodeObject() {
 
   // Optional more-group
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    let id = i == 0 ? '' : i;
+
+    let adminCode = '';
+    if ($('#partners' + id).val() != '') adminCode = $('#partners' + id).val();
+    else if (
+      $('#enpartnersname' + id).val() != '' &&
+      $('#provinceSelectPartner' + id).val() != ''
+    ) {
+      adminCode = slugify(
+        $('#enpartnersname' + id).val() +
+          '-' +
+          $('#provinceSelectPartner' + id).val()
+      );
+    }
+
     if (
-      $('#partnersemail' + id).val() ||
-      $('#enpartnersname' + id).val() ||
-      $('#frpartnersname' + id).val()
+      $('#partnerscontactemail' + id).val() ||
+      $('#partnerscontactname' + id).val() ||
+      adminCode != ''
     ) {
       if (codeObject.releases[0].partners == undefined)
         codeObject.releases[0].partners = [];
       codeObject.releases[0].partners[i] = {};
     }
 
-    if ($('#partnersemail' + id).val()) {
-      codeObject.releases[0].partners[i].email = $('#partnersemail' + id).val();
-    }
+    codeObject.releases[0].partners[i].adminCode = adminCode;
 
-    if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name = {};
-      if ($('#enpartnersname' + id).val()) {
-        codeObject.releases[0].partners[i].name.en = $(
-          '#enpartnersname' + id
-        ).val();
-      }
-      if ($('#frpartnersname' + id).val()) {
-        codeObject.releases[0].partners[i].name.fr = $(
-          '#frpartnersname' + id
-        ).val();
-      }
-    }
+    codeObject.releases[0].partners[i].email = $(
+      '#partnerscontactemail' + id
+    ).val();
+
+    codeObject.releases[0].partners[i].name = $(
+      '#partnerscontactname' + id
+    ).val();
   });
 
   addMoreRelatedCode(codeObject.releases[0]);
@@ -223,6 +239,8 @@ function submitFormAdminCodeForm() {
   )}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
+  let config;
+
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
     .then(resultAdmin => {
@@ -230,27 +248,97 @@ function submitFormAdminCodeForm() {
         .merge(codeFile, codeObject, 'releases', 'name.en')
         .catch(err => {
           if (err.status == 404) {
-            return fetch(
-              PRBOT_URL,
-              getConfigNewAdmin(
-                codeName,
-                adminName,
-                codeFile,
-                codeObject,
-                adminFile,
-                resultAdmin
-              )
+            config = getConfigNewAdmin(
+              codeName,
+              adminName,
+              codeFile,
+              codeObject,
+              adminFile,
+              resultAdmin
             );
           } else throw err;
         })
-        .then(response => {
-          let url =
-            $('html').attr('lang') == 'en'
-              ? './open-source-codes.html'
-              : './codes-source-ouverts.html';
-          submitConclusion(response, submitButton, resetButton, url);
+        .then(function() {
+          let promises = getNewAdminPartnerPromise(
+            codeObject,
+            fileWriter,
+            config
+          );
+          Promise.all(promises)
+            .then(function() {
+              config.body = JSON.stringify(config.body);
+              return fetch(PRBOT_URL, config);
+            })
+            .then(response => {
+              let url =
+                $('html').attr('lang') == 'en'
+                  ? './open-source-codes.html'
+                  : './codes-source-ouverts.html';
+              submitConclusion(response, submitButton, resetButton, url);
+            });
         });
     });
+}
+
+function getNewAdminPartnerPromise(codeObject, fileWriter, config) {
+  let promises = [];
+
+  if (
+    codeObject.releases[0].partners &&
+    codeObject.releases[0].partners.length > 0
+  ) {
+    let newAdmins = [];
+    codeObject.releases[0].partners.forEach(function(partner, index) {
+      let id = index == 0 ? '' : index;
+      if ($('#partners' + id).val() == '') {
+        if (newAdmins[$('#orgLevelPartner' + id).val()] == null)
+          newAdmins[$('#orgLevelPartner' + id).val()] = [];
+        newAdmins[$('#orgLevelPartner' + id).val()][
+          Object.keys(newAdmins[$('#orgLevelPartner' + id).val()]).length
+        ] = getNewAdminPartnerObject(id);
+      }
+    });
+
+    Object.keys(newAdmins).forEach(function(orgLevel) {
+      let promise = fileWriter
+        .mergePartnerAdminFile(
+          `_data/administrations/${orgLevel}.yml`,
+          newAdmins[orgLevel],
+          '',
+          'code'
+        )
+        .then(result => {
+          config.body.files[config.body.files.length] = {
+            path: `_data/administrations/${orgLevel}.yml`,
+            content: '---\n' + jsyaml.dump(result)
+          };
+        });
+
+      promises.push(promise);
+    });
+
+    return promises;
+  }
+}
+
+function getNewAdminPartnerObject(index) {
+  let adminObj = {
+    code: slugify(
+      $('#enpartnersname' + index).val() +
+        '-' +
+        $('#provinceSelectPartner' + index).val()
+    ),
+    name: {
+      en: $('#enpartnersname' + index).val(),
+      fr: $('#frpartnersname' + index).val()
+    }
+  };
+
+  // Optional fields
+  let province = $('#provinceSelectPartner' + index).val();
+  if (province != '') adminObj.provinceCode = province;
+
+  return adminObj;
 }
 
 function getConfigNewAdmin(
@@ -262,7 +350,7 @@ function getConfigNewAdmin(
   resultAdmin
 ) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title:
@@ -298,7 +386,7 @@ function getConfigNewAdmin(
           content: '---\n' + jsyaml.dump(resultAdmin)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
@@ -312,29 +400,39 @@ function submitCodeForm() {
   let codeObject = getCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
+
+  let config;
+
   fileWriter
     .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
-      const config = getConfigUpdate(result, file);
-      return fetch(PRBOT_URL, config);
+      config = getConfigUpdate(result, file);
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(codeObject, file));
+        config = getConfigNew(codeObject, file);
       } else throw err;
     })
-    .then(response => {
-      let url =
-        $('html').attr('lang') == 'en'
-          ? './open-source-codes.html'
-          : './codes-source-ouverts.html';
-      submitConclusion(response, submitButton, resetButton, url);
+    .then(function() {
+      let promises = getNewAdminPartnerPromise(codeObject, fileWriter, config);
+      Promise.all(promises)
+        .then(function() {
+          config.body = JSON.stringify(config.body);
+          return fetch(PRBOT_URL, config);
+        })
+        .then(response => {
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-codes.html'
+              : './codes-source-ouverts.html';
+          submitConclusion(response, submitButton, resetButton, url);
+        });
     });
 }
 
 function getConfigUpdate(result, file) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title: 'Updated code for ' + $('#adminCode :selected').text(),
@@ -358,14 +456,14 @@ function getConfigUpdate(result, file) {
           content: '---\n' + jsyaml.dump(result)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
 
 function getConfigNew(codeObject, file) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title: 'Created code file for ' + $('#adminCode :selected').text(),
@@ -389,7 +487,7 @@ function getConfigNew(codeObject, file) {
           content: '---\n' + jsyaml.dump(codeObject)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
@@ -459,19 +557,14 @@ function selectCode() {
   }
 }
 
-// TODO Add "others" back when PR is merged
 function getOrgLevel(result, admin) {
   let federal = result.federal[admin];
   let provincial = result.provincial[admin];
   let municipal = result.municipal[admin];
-  let aboriginal = result.aboriginal[admin];
-  //let others = result.others[admin];
 
   let orgLevel;
 
-  //if (others != undefined) orgLevel = others;
-  /*else*/ if (aboriginal != undefined) orgLevel = aboriginal;
-  else if (municipal != undefined) orgLevel = municipal;
+  if (municipal != undefined) orgLevel = municipal;
   else if (provincial != undefined) orgLevel = provincial;
   else if (federal != undefined) orgLevel = federal;
 
@@ -523,7 +616,8 @@ function addValueToFields(obj) {
     });
   }
 
-  if (obj.partners)
+  // TODO handle partner fetch
+  /*if (obj.partners)
     obj.partners.forEach(function(partner, i) {
       let id;
       if (i == 0) id = '';
@@ -531,12 +625,13 @@ function addValueToFields(obj) {
         id = i;
         addMoreGroup($('#addMorepartners'));
       }
-      if (partner.email) $('#partnersemail' + id).val(partner.email);
+      if (partner.email) $('#partnerscontactemail' + id).val(partner.email);
       if (partner.name) {
-        if (partner.name.en) $('#enpartnersname' + id).val(partner.name.en);
+        if (partner.name.en)
+          $('#partnerscontactname' + id).val(partner.name.en);
         if (partner.name.fr) $('#frpartnersname' + id).val(partner.name.fr);
       }
-    });
+    });*/
 
   if (obj.relatedCode)
     obj.relatedCode.forEach(function(related, i) {
@@ -591,14 +686,13 @@ function resetFields() {
   $('#status').val('');
 }
 
-// TODO Add "others" back when PR is merged
 function getAdminObjectForPartner(obj, admin) {
   let administrations = [
     'federal',
     'provincial',
     'municipal',
-    'aboriginal'
-    /*, 'others'*/
+    'aboriginal',
+    'others'
   ];
 
   for (let i = 0, l1 = administrations.length; i < l1; i++)
@@ -646,20 +740,18 @@ function selectPartners(select) {
 
 function hideFieldsPartner(id) {
   resetFieldsPartner(id);
-  $('#orgLevelPartner' + id)
-    .parent('.form-group')
-    .hide();
-  $('#provinceSelectPartner' + id)
+  hideFieldPartner($('#orgLevelPartner' + id));
+  hideFieldPartner($('#provinceSelectPartner' + id));
+  hideFieldPartner($('#enpartnersname' + id));
+  hideFieldPartner($('#frpartnersname' + id));
+  $('#partnersNewAdminSeparator' + id).hide();
+  hideFieldPartner($('#partnerscontactname' + id));
+  hideFieldPartner($('#partnerscontactemail' + id));
+}
+
+function hideFieldPartner(element) {
+  element
     .prop('disabled', false)
-    .parent('.form-group')
-    .hide();
-  $('#enpartnersname' + id)
-    .parent('.form-group')
-    .hide();
-  $('#frpartnersname' + id)
-    .parent('.form-group')
-    .hide();
-  $('#partnersemail' + id)
     .parent('.form-group')
     .hide();
 }
@@ -671,40 +763,39 @@ function resetFieldsPartner(id) {
     .val('');
   $('#enpartnersname' + id).val('');
   $('#frpartnersname' + id).val('');
-  $('#partnersemail' + id).val('');
+  $('#partnerscontactname' + id).val('');
+  $('#partnerscontactemail' + id).val('');
 }
 
 function showFieldsPartner(id, full) {
   hideFieldsPartner(id);
   if (full) {
-    $('#orgLevelPartner' + id)
-      .attr('required', 'required')
-      .parent('.form-group')
-      .show()
-      .children('label')
-      .addClass('required');
-    $('#provinceSelectPartner' + id)
-      .attr('required', 'required')
-      .prop('disabled', false)
-      .parent('.form-group')
-      .show()
-      .children('label')
-      .addClass('required');
-    $('#enpartnersname' + id)
-      .attr('required', 'required')
-      .parent('.form-group')
-      .show()
-      .children('label')
-      .addClass('required');
-    $('#frpartnersname' + id)
-      .attr('required', 'required')
-      .parent('.form-group')
-      .show()
-      .children('label')
-      .addClass('required');
+    showFieldPartner($('#orgLevelPartner' + id));
+    showFieldPartner($('#provinceSelectPartner' + id));
+    showFieldPartner($('#enpartnersname' + id));
+    showFieldPartner($('#frpartnersname' + id));
+    $('#partnersNewAdminSeparator' + id).show();
   }
 
-  $('#partnersemail' + id)
+  showFieldPartnerOptional(id);
+}
+
+function showFieldPartner(element) {
+  element
+    .attr('required', 'required')
+    .prop('disabled', false)
+    .parent('.form-group')
+    .show()
+    .children('label')
+    .addClass('required');
+}
+
+function showFieldPartnerOptional(id) {
+  $('#partnerscontactname' + id)
+    .parent('.form-group')
+    .show();
+
+  $('#partnerscontactemail' + id)
     .parent('.form-group')
     .show();
 }
@@ -713,7 +804,7 @@ function addNewPartner(button) {
   let id = getmoreIndex(button);
 
   $('#partners' + id).val('');
-  resetFields(id);
+  resetFieldsPartner(id);
   showFieldsPartner(id, true);
   showRemoveNewPartnerBtn(id);
 }
@@ -722,7 +813,7 @@ function removeNewPartner(button) {
   let id = getmoreIndex(button);
 
   $('#partners' + id).val('');
-  resetFields(id);
+  resetFieldsPartner(id);
   hideFieldsPartner(id);
   hideRemoveNewPartnerBtn(id);
 }

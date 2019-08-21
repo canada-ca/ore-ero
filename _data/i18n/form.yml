@@ -235,7 +235,12 @@ presets:
       en: Key Partners
       fr: Partenaires
     labels:
-      email: *email
+      contactemail:
+        en: Contact email
+        fr: Add
+      contactname:
+        en: Contact name
+        fr: Nom du contact
       name:
         en:
           en: English name
