@@ -19,8 +19,9 @@ formGroups:
   - preset: team
   - preset: contact
     param: {phone: false}
-  - preset: dates
-    param: {created: true}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
   - widget: group
     title: reference
     param: {more: true}

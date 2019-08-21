@@ -92,33 +92,6 @@ presets:
       name:
         en: The name of a contact for the project.
         fr: Le nom de la personne-ressource pour le projet.
-  date:
-    title:
-      en: Creation Date
-      fr: Date de création
-    labels:
-      created:
-        en: Created
-        fr: Créé
-      started:
-        en: Started
-        fr: Débuté
-      metadataLastUpdated:
-        en: Last updated
-        fr: Dernière mise à jour
-    infobulle:
-      en: Select the date of creation.
-      fr: Sélectionnez la date de création.
-    titles:
-      created:
-        en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
-      started:
-        en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
-      metadataLastUpdated:
-        en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   description:
     title:
       en: Project Description
@@ -373,6 +346,16 @@ code:
       select:
         en: If you wish to update an already existing code, please select it below
         fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+  date:
+    title:
+      en: Creation Date
+      fr: Date de création du projet
+    label:
+      en: Creation Date
+      fr: Date de création du projet
+    infobulle:
+      en: Select the date when the open source code was first created
+      fr: Sélectionner la date de création du code source ouvert.
   downloadUrl:
     title:
       en: Project Download Page
@@ -456,6 +439,16 @@ software:
     infobulle:
       en: Add the name of the open source software
       fr: Ajouter le nom du logiciel libre
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the software.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
   organization:
     title:
       en: Team, branch or sector
@@ -502,6 +495,16 @@ standard:
       select:
         en: If you wish to update information of a standard that already exists in our library, please select it below.
         fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the standard.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser la norme.
   specURL:
     title:
       en: Specification URLs
