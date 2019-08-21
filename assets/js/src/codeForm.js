@@ -57,6 +57,20 @@ $(document).ready(function() {
       removeNewPartner(this);
     }
   );
+  $('#addMorepartners').on('change', '.orgLevelPartner select', function() {
+    let index = getmoreIndex($(this));
+    if ($(this).val() == 'municipal') {
+      $('#provinceSelectPartner' + index)
+        .attr('required', 'required')
+        .siblings('label')
+        .addClass('required');
+    } else {
+      $('#provinceSelectPartner' + index)
+        .removeAttr('required')
+        .siblings('label')
+        .removeClass('required');
+    }
+  });
 
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
@@ -537,7 +551,7 @@ function selectCode() {
   let admin = adminSelect.val();
   let code = codeSelect.val();
   if (code != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+    $.getJSON('http://localhost:4000/ore-ero/code.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
@@ -616,8 +630,9 @@ function addValueToFields(obj) {
     });
   }
 
-  // TODO handle partner fetch
-  /*if (obj.partners)
+  console.log(obj);
+
+  if (obj.partners)
     obj.partners.forEach(function(partner, i) {
       let id;
       if (i == 0) id = '';
@@ -625,13 +640,11 @@ function addValueToFields(obj) {
         id = i;
         addMoreGroup($('#addMorepartners'));
       }
+      $('#partners' + id).val(partner.adminCode);
+      showFieldsPartner(id, false);
       if (partner.email) $('#partnerscontactemail' + id).val(partner.email);
-      if (partner.name) {
-        if (partner.name.en)
-          $('#partnerscontactname' + id).val(partner.name.en);
-        if (partner.name.fr) $('#frpartnersname' + id).val(partner.name.fr);
-      }
-    });*/
+      if (partner.name)  $('#partnerscontactname' + id).val(partner.name);
+    });
 
   if (obj.relatedCode)
     obj.relatedCode.forEach(function(related, i) {
@@ -772,6 +785,11 @@ function showFieldsPartner(id, full) {
   if (full) {
     showFieldPartner($('#orgLevelPartner' + id));
     showFieldPartner($('#provinceSelectPartner' + id));
+    if ($('#orgLevelPartner' + id).val() != 'municipal')
+      $('#provinceSelectPartner' + id)
+        .removeAttr('required')
+        .siblings('label')
+        .removeClass('required');
     showFieldPartner($('#enpartnersname' + id));
     showFieldPartner($('#frpartnersname' + id));
     $('#partnersNewAdminSeparator' + id).show();

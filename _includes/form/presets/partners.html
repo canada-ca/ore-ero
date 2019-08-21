@@ -8,7 +8,7 @@
         <div class="{{ title }}AdminCodeBtn more-group-id-replace">{% include form/components/admin/btn.html btn=title idPreset=include.idPreset %}</div>
         <div class="{{ title }}AdminCodeRemove more-group-id-replace"><button type="button" class="btn btn-default mrgn-lft-md" id="cancelAdminButton{{ title }}" style="display: none;"><i class="glyphicon glyphicon-remove"></i></button></div>
     </div>
-    {% include form/components/admin/orgLevel.html idPreset=include.idPreset title="orgLevelPartner" %}
+    <div class="orgLevelPartner">{% include form/components/admin/orgLevel.html idPreset=include.idPreset title="orgLevelPartner" %}</div>
     {% include form/components/admin/provinceSelect.html btn=title idPreset=include.idPreset title="provinceSelectPartner" %}
     {% include form/components/group-i18n-group.html id=include.idPreset title=title group="name" %}
     <div class="more-group-id-replace"><div id="partnersNewAdminSeparator"><hr></div></div>
