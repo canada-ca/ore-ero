@@ -17,21 +17,21 @@ releases:
         fr: str(required=False)
     category: str()
     name:
-      en: str(required=False)
-      fr: str(required=False)
+      en: str()
+      fr: str()
     licences:
       - URL:
-          en: str(required=False)
-          fr: str(required=False)
+          en: str()
+          fr: str()
         spdxID: str()
     repositoryURL:
-      en: str(required=False)
-      fr: str(required=False)
+      en: str()
+      fr: str()
     tags:
       en:
-        - str(required=False)
+        - str()
       fr:
-        - str(required=False)
+        - str()
     downloadURL:
       en: str(required=False)
       fr: str(required=False)
