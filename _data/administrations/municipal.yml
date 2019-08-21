@@ -14,3 +14,8 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: fred-nl
+  name:
+    en: fred
+    fr: fred
+  provinceCode: nl
