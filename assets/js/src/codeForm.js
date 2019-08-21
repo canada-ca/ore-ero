@@ -641,7 +641,7 @@ function addValueToFields(obj) {
       $('#partners' + id).val(partner.adminCode);
       showFieldsPartner(id, false);
       if (partner.email) $('#partnerscontactemail' + id).val(partner.email);
-      if (partner.name)  $('#partnerscontactname' + id).val(partner.name);
+      if (partner.name) $('#partnerscontactname' + id).val(partner.name);
     });
 
   if (obj.relatedCode)
