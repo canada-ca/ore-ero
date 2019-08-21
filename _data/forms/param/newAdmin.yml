@@ -3,4 +3,3 @@ code:
   rule: unique-newadmincode,names
 name:
   rule: alphanum-space
-
