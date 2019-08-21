@@ -21,7 +21,6 @@ $(document).ready(function() {
   });
 
   $('#orgLevel').change(function() {
-    console.log('test');
     if ($(this).val() == 'municipal')
       $('#provinceSelect')
         .attr('required', 'required')
