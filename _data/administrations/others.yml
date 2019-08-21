@@ -3,3 +3,8 @@
   name:
     en: Test (please remove)
     fr: Test (please remove)
+- code: fred1-mb
+  name:
+    en: fred1
+    fr: fred1
+  provinceCode: mb

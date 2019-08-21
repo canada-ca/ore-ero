@@ -14,3 +14,8 @@
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+- code: frederic-lestage-nt
+  name:
+    en: Frederic Lestage
+    fr: Frédéric Lestage
+  provinceCode: nt
