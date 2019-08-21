@@ -1,0 +1,30 @@
+---
+schemaVersion: '1.0'
+adminCode: lac-bac
+releases:
+  - contact:
+      email: apogy-dev@eclipse.org
+    date:
+      created: '2019-08-16'
+      metadataLastUpdated: '2019-08-21'
+    description:
+      whatItDoes:
+        en: What it does EN
+        fr: What it does FR
+    category: '43232400'
+    name:
+      en: Frederic
+      fr: Frédéric
+    licences:
+      - URL:
+          en: 'http://www.google.com'
+          fr: 'http://www.google.ca'
+        spdxID: APSL-2.0
+    repositoryURL:
+      en: 'http://www.google.com/repository'
+      fr: 'http://www.google.ca/repertoire'
+    tags:
+      en:
+        - TagEN
+      fr:
+        - TagFR
