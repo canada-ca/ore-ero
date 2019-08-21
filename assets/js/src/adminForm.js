@@ -19,6 +19,20 @@ $(document).ready(function() {
       hideNewAdminForm();
     }
   });
+
+  $('#orgLevel').change(function() {
+    console.log('test');
+    if ($(this).val() == 'municipal')
+      $('#provinceSelect')
+        .attr('required', 'required')
+        .siblings('label')
+        .addClass('required');
+    else
+      $('#provinceSelect')
+        .removeAttr('required')
+        .siblings('label')
+        .removeClass('required');
+  });
 });
 
 function showNewAdminForm() {
