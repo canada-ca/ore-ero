@@ -153,7 +153,7 @@ function submitStandardForm() {
     .then(response => {
       let url =
         $('html').attr('lang') == 'en'
-          ? './open-source-standards.html'
+          ? './open-standards.html'
           : './normes-ouvertes.html';
       submitConclusion(response, submitButton, resetButton, url);
     });
@@ -259,7 +259,7 @@ function submitStandardFormNewAdmin() {
         .then(response => {
           let url =
             $('html').attr('lang') == 'en'
-              ? './open-source-standards.html'
+              ? './open-standards.html'
               : './normes-ouvertes.html';
           submitConclusion(response, submitButton, resetButton, url);
         });
