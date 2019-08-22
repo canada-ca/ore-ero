@@ -618,7 +618,7 @@ admin:
       fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
-      en: Administration Public Name
+      en: Public Administration Name
       fr: Nom de l'administration publique
     label:
       en:
