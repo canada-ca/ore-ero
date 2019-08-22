@@ -90,7 +90,7 @@ function getCodeObject() {
           email: $('#contactemail').val()
         },
         date: {
-          created: $('#datecreated').val(),
+          created: $('#date').val(),
           metadataLastUpdated: getToday()
         },
         description: {

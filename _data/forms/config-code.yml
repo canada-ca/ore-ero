@@ -15,8 +15,9 @@ formGroups:
   - preset: tags
   - preset: contact
   - preset: partners
-  - preset: dates
-    param: {created: true}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
   - widget: string-i18n
     title: repositoryUrl
     param: {type: url}
