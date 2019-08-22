@@ -2,6 +2,9 @@
   <option value="">&nbsp;</option>
   {%- for levels in site.data.i18n.administrations -%}
     {%- assign level = levels[0] -%}
+    {%- if level == "others" -%}
+      {%- continue -%}
+    {%- else -%}
     <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
       {%- for org in site.data.administrations[level] -%}
         {%- if org.name[page.lang] != nil %}
@@ -11,5 +14,6 @@
       <option disabled>{{ site.data.i18n.form.presets.adminCode.noAdmins[page.lang] }}</option>
       {% endfor %}
     </optgroup>
+    {%- endif -%}
   {%- endfor -%}
 </select>
