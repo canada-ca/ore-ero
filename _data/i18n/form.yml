@@ -214,6 +214,13 @@ presets:
       contactname:
         en: Contact name
         fr: Nom du contact
+      name:
+        en:
+          en: English Name
+          fr: Nom en anglais
+        fr:
+          en: Name in french
+          fr: Nom en français
     label:
       en: Select an administration or create a new one.
       fr: Sélectionnez une administration ou créez en une nouvelle.
