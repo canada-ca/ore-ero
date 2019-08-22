@@ -21,7 +21,8 @@ formGroups:
     param: {start: true}
   - preset: contact
     param: {phone: false}
-  - preset: dates
-    param: {started: true}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
   - preset: empty
   - preset: empty
