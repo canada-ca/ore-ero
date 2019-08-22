@@ -56,15 +56,15 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_organization">{{ site.data.i18n.tables.team[page.lang] }}</label>
-        <select class="form-control" id="dt_organization" name="dt_organization" data-column="6">
+        <label for="dt_team">{{ site.data.i18n.tables.team[page.lang] }}</label>
+        <select class="form-control" id="dt_team" name="dt_team" data-column="6">
           <option value="">&nbsp;</option>
           {%- assign org_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.code -%}
             {%- for admin in govLevels[1] -%}
               {%- for release in admin[1].releases -%}
-                {%- if release.organization[page.lang] != nil -%}
-                  {%- assign org_arr = org_arr | push: release.organization[page.lang] -%}
+                {%- if release.team[page.lang] != nil -%}
+                  {%- assign org_arr = org_arr | push: release.team[page.lang] -%}
                 {%- endif -%}
               {%- endfor -%}
             {%- endfor -%}
@@ -176,7 +176,7 @@
                 {{ tag }}&nbsp;
               {%- endfor -%}
             </td>
-            <td>{{ release.organization[page.lang] }}</td>
+            <td>{{ release.team[page.lang] }}</td>
             <td>
               <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
                 {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
@@ -218,8 +218,8 @@
           <p>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: {{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
           {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
           <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
-        {%- if release.organization[page.lang] != nil -%}
-          <p>{{ site.data.i18n.tables.team[page.lang] }}: {{ release.organization[page.lang] }}</p>
+        {%- if release.team[page.lang] != nil -%}
+          <p>{{ site.data.i18n.tables.team[page.lang] }}: {{ release.team[page.lang] }}</p>
         {%- endif -%}
         <p>{{ site.data.i18n.tables.lightbox.sourceCode[page.lang] }}:
           <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
