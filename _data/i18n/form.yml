@@ -210,25 +210,23 @@ presets:
     labels:
       contactemail:
         en: Contact email
-        fr: Add
+        fr: Addresse courriel du contact
       contactname:
         en: Contact name
         fr: Nom du contact
-      name:
-        en:
-          en: English name
-          fr: Nom en anglais
-        fr:
-          en: French name
-          fr: Nom en francais
-        schema: *name
     label:
       en: Select an administration or create a new one.
       fr: Sélectionnez une administration ou créez en une nouvelle.
     titles:
+      adminCode:
+        en: The administration code for the partner.
+        fr: Le code de l'administration en partenariat au projet.
       email:
         en: The email address to contact the partner.
         fr: L'adresse courriel pour contacter le partenaire.
+      name:
+        en: The name of the contact in the administration partnering on the project.
+        fr: Le nom du contact de l'administration en partenariat.
     infobulle:
       en: Contact information of each group partnering on the project.
       fr: Coordonnées de contact des groupes partenaires du projet.
