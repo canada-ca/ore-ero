@@ -2,13 +2,12 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      Accumulo is a sorted, distributed key/value store  that provides robust,
-      scalable data storage and retrieval.
-    fr: >-
-      Accumulo est un magasin clé/valeur trié et distribué qui fournit un
-      stockage et une récupération de données robustes et évolutifs.
-category: '43232300'
+    en: What it does EN
+    fr: What it does FR
+  howItWorks:
+    en: How it works EN
+    fr: How it works FR
+category: '43233400'
 homepageURL:
   en: 'https://accumulo.apache.org/'
   fr: 'https://accumulo.apache.org/'
@@ -23,8 +22,10 @@ name:
 tags:
   en:
     - Application
+    - PotatoeEN
   fr:
     - Application
+    - PotatoeFR
 administrations:
   - adminCode: city-of-montreal-qc
     uses:
@@ -33,3 +34,14 @@ administrations:
         date:
           started: '2019-01-31'
           metadataLastUpdated: '2019-05-06'
+  - adminCode: nu
+    uses:
+      - contact:
+          email: frederic.lestage@montreal.ca
+          name: Frédéric Lestage
+        date:
+          started: '2019-08-01'
+          metadataLastUpdated: '2019-08-22'
+        team:
+          en: Lestage inc
+          fr: Lestage inc
