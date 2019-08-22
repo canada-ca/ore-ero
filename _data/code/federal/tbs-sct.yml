@@ -346,7 +346,6 @@ releases:
         - Site Web
         - Données
     partners:
-      - email: renatabianca.tomazeli@ville.montreal.qc.ca
-        name:
-          en: City of Montreal
-          fr: Ville de Montréal
+      - adminCode: city-of-montreal-qc
+        email: renatabianca.tomazeli@ville.montreal.qc.ca
+        name: Bianca Tomazeli
