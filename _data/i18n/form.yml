@@ -457,23 +457,6 @@ software:
     infobulle:
       en: Select the date when the public administration started using the software.
       fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
-  organization:
-    title:
-      en: Team, branch or sector
-      fr: Équipe, direction ou secteur
-    infobulle:
-      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
-      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
-    label:
-      en:
-        en: English name
-        fr: Nom en anglais
-      fr:
-        en: French name
-        fr: Nom en français
-      schema:
-        en: Organization
-        fr: Organisation
   administrations: *administrations
   uses:
     title:

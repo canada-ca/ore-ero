@@ -35,7 +35,7 @@ releases:
     languages:
       - PHP
       - MySQL
-    organization:
+    team:
       en: Digital Enablement Division
       fr: Division de la mobilisation numérique
     relatedCode:
@@ -74,7 +74,7 @@ releases:
         - Website
       fr:
         - Site Web
-    organization:
+    team:
       en: Canadian Digital Services
       fr: Services numériques Canadiens
   - contact:
@@ -138,7 +138,7 @@ releases:
         - Extension CKAN
     languages:
       - Python
-    organization:
+    team:
       en: Open Government
       fr: Gouvernement Ouvert
     relatedCode:
@@ -182,7 +182,7 @@ releases:
         - Extension CKAN
     languages:
       - Python
-    organization:
+    team:
       en: Open Government
       fr: Gouvernement Ouvert
     relatedCode:
@@ -222,7 +222,7 @@ releases:
         - Extension CKAN
     languages:
       - Python
-    organization:
+    team:
       en: Open Government
       fr: Gouvernement Ouvert
     relatedCode:
@@ -266,7 +266,7 @@ releases:
         - Outil CKAN
     languages:
       - Python
-    organization:
+    team:
       en: Open Government
       fr: Gouvernement Ouvert
     relatedCode:
@@ -306,7 +306,7 @@ releases:
         - Extension CKAN
     languages:
       - Python
-    organization:
+    team:
       en: Open Government
       fr: Gouvernement Ouvert
     relatedCode:
