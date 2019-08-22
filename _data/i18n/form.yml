@@ -121,8 +121,8 @@ presets:
         fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   description:
     title:
-      en: Project Description
-      fr: Description du projet
+      en: Description
+      fr: Description
     labels:
       whatItDoes:
         subtitle:
@@ -152,7 +152,7 @@ presets:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
     infobulle:
-      en: Add brief descriptions on what it does (i.e. functionnality, use..) and on how it works.
+      en: Add brief descriptions on what the project does and how it works.  
       fr: Ajoutez une brève description, expliquant de quoi il s'agit et comment cela fonctionne.
     titles:
       en:
@@ -208,8 +208,8 @@ presets:
         en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
     infobulle:
-      en: Search the list of lisences to find the SPDX license identifier according to your license's name. Add the URL of your project license repository.
-      fr: Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajouter le URL de license de votre projet.
+      en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
+      fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
     titles:
       URL:
         en: The English and French URLs of licence.
@@ -371,7 +371,7 @@ code:
         fr: Nom du projet
     labels:
       select:
-        en: If you wish to update an already existing code, please select it below
+        en: If you wish to update information of a code that already exists in our library, please select it below
         fr: Si vous souhaitez mettre à jour les données d'un code déjà ajouté au catalogue, veuillez le sélectionner de la liste
   downloadUrl:
     title:
@@ -451,8 +451,8 @@ software:
         fr: Nom du projet
     labels:
       select:
-        en: If you wish to update an existing software, please select it below
-        fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
+        en: If you wish to update information of a software that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un logiciel déjà ajouté au catalogue, veuillez le sélectionner de la liste
     infobulle:
       en: Add the name of the open source software
       fr: Ajouter le nom du logiciel libre
@@ -483,8 +483,8 @@ software:
 standard:
   name:
     title:
-      en: Name of the Standard
-      fr: Nom du standard
+      en: Standard Name
+      fr: Nom de la norme
     infobulle:
       en: Add the name of the standard.
       fr: Ajouter le nom de la norme.
@@ -505,7 +505,7 @@ standard:
   specURL:
     title:
       en: Specification URLs
-      fr: Url de la spécification de la norme
+      fr: URLs de la spécification
     label:
       en:
         en: English URL
@@ -528,8 +528,8 @@ standard:
       fr: Acronyme de la norme.
     labels:
       select:
-        en: If you wish to update information of a standard that already exists in our library, please select it below.
-        fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+        en: If you wish to update information of a standard that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une norme ajoutée déjà au catalogue, veuillez la sélectionner de la liste
     infobulle:
       en: Enter the short name or acronym for the new standard.
       fr: Entrer l'acronyme de la norme ouverte.
@@ -549,8 +549,8 @@ standard:
       fr: Ajouter le nom de l'organization de standardisation qui développe, coordonne, promulgue, révise, modifie, interprète publie ou produit la norme.
   status:
     title:
-      en: The status of the standard
-      fr: Le status du standard
+      en: Standard Status
+      fr: Statut de la norme
     label:
       en: Status
       fr: Status
@@ -570,7 +570,7 @@ standard:
   reference:
     title:
       en: Reference for the standard
-      fr: Référence pour le standard
+      fr: Référence de la norme
     labels:
       URL:
         en:
