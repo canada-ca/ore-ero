@@ -634,3 +634,41 @@ admin:
     title:
       en: The list of administrations for a specific organization level (corresponding with the file name)
       fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)
+
+# Partner form specifics
+partner:
+  name:
+    title:
+      en: Project Name
+      fr: Nom du projet
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a project that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un projet déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the project
+      fr: Ajouter le nom du projet
+  partners:
+    title:
+      en: Key Partners
+      fr: Partenaires
+    labels:
+      email: *email
+      name:
+        en:
+          en: English name
+          fr: Nom en anglais
+        fr:
+          en: French name
+          fr: Nom en francais
+        schema: *name
