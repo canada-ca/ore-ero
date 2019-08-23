@@ -610,7 +610,7 @@ function addValueToFields(obj) {
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
 
-  $('#datecreated').val(obj.date.created);
+  $('#date').val(obj.date.created);
 
   fillLicenceField(obj.licences);
 
@@ -685,7 +685,7 @@ function resetFields() {
   $('#category').val('');
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#datecreated').val('');
+  $('#date').val('');
   resetMoreGroup($('#addMorelicences'));
   resetTags();
   $('#enrepositoryUrl').val('');
