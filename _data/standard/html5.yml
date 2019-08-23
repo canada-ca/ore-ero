@@ -2,16 +2,14 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      HTML5 is a markup language used for structuring and presenting content on
-      the Web. It is the fifth and current major version of the HTML standard.
-    fr: >-
-      HTML5 est un langage de balisage utilisé pour structurer et présenter du
-      contenu sur le Web. C'est la cinquième et dernière version majeure de la
-      norme HTML.
+    en: What it does EN
+    fr: What it does FR
+  howItWorks:
+    en: How it works EN
+    fr: How it works FR
 name:
-  en: HyperText Markup Language 5
-  fr: HyperText Markup Language 5
+  en: New name
+  fr: Nouveau nom
 specURL:
   en: 'https://www.w3.org/TR/html5/'
   fr: 'https://www.w3.org/TR/html5/'
@@ -22,15 +20,17 @@ standardOrg:
 tags:
   en:
     - Web
+    - new tag EN
   fr:
     - Web
+    - new tag FR
 administrations:
   - adminCode: tbs-sct
     contact:
       email: sebastien.lemay@tbs-sct.gc.ca
     date:
       created: '2018-01-23'
-      metadataLastUpdated: '2018-11-15'
+      metadataLastUpdated: '2019-08-23'
     references:
       - URL:
           en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
@@ -38,4 +38,7 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status: mandatory
+    status: preferred
+    team:
+      en: Team EN
+      fr: Team FR
