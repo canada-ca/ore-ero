@@ -391,6 +391,11 @@ function selectAdmin() {
           .addClass('hide');
         resetFields();
       } else {
+        orgLevel.releases.sort(function(a, b) {
+          let aName = a.name[lang].toLowerCase();
+          let bName = b.name[lang].toLowerCase();
+          return aName < bName ? -1 : aName > bName ? 1 : 0;
+        });
         orgLevel.releases.forEach(function(release) {
           $(
             '<option class="additional-option" value="' +
