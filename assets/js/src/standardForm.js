@@ -15,7 +15,7 @@ const adminSelect = $('.page-standardForm #adminCode');
 $(document).ready(function() {
   $('#prbotSubmitstandardForm').click(function() {
     if (submitInit()) {
-      if ($('#newAdminCode').val() != '') submitStandardFormNewAdmin();
+      if ($('#ennewAdminName').val() != '') submitStandardFormNewAdmin();
       else submitStandardForm();
     }
   });
