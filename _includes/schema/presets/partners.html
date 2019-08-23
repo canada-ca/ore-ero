@@ -1,0 +1,12 @@
+{%- assign title = "partners" -%}
+<li>
+  <details open>
+    <summary>{{ title }}[array]</summary>
+    <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- include schema/components/li-group.html id=include.idPreset title=title group="adminCode" param=site.data.forms.param.required_false -%}
+      {%- include schema/components/li-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.required_false -%}
+      {%- include schema/components/li-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.required_false -%}
+    </ul>
+  </details>
+</li>

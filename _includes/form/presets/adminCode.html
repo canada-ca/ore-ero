@@ -1,27 +1,11 @@
 {%- assign title = "adminCode" %}
-{%- include form/components/title.html id=include.idPreset title=title -%}
+  {% include form/components/label.html id=include.idPreset title=title %}
 {{ site.data.i18n.form.presets.adminCode.subTitle[page.lang] }}
 <div class="form-group">
-  {% include form/components/label.html id=include.idPreset title=title %}
   <div class="form-group" style="display: flex;">
-    <select class="form-control" id="{{ title }}" name="{{ title }}" required="required">
-      <option value="">&nbsp;</option>
-      {%- for levels in site.data.i18n.administrations -%}
-        {%- assign level = levels[0] -%}
-        <!-- {{ s }} -->
-        <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
-          {%- for org in site.data.administrations[level] -%}
-            {%- if org.name[page.lang] != nil %}
-          <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
-            {%- endif -%}
-          {%- else -%}
-          <option disabled>{{ site.data.i18n.form.presets.adminCode.noAdmins[page.lang] }}</option>
-          {% endfor %}
-        </optgroup>
-      {%- endfor -%}
-    </select>
-    <button type="button" class="btn btn-primary mrgn-lft-md" id="newAdminButton"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
+    {% include form/components/admin/select.html %}
+    {% include form/components/admin/btn.html %}
   </div>
 </div>
 
-{% include form/presets/newAdmin.html -%}
+{% include form/components/admin/new.html -%}

@@ -1,0 +1,7 @@
+---
+email:
+  type: email
+  required: false
+name:
+  rule: names
+  required: false

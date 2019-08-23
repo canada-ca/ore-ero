@@ -41,10 +41,9 @@ releases:
     languages:
       - str(required=False)
     partners:
-      - email: str(required=False)
-        name:
-          en: str(required=False)
-          fr: str(required=False)
+      - adminCode: str(required=False)
+        email: str(required=False)
+        name: str(required=False)
     relatedCode:
       - URL:
           en: str(required=False)
