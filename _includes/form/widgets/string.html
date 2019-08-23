@@ -1,5 +1,4 @@
 {%- if include.param.more %}<div class="add-more-group" id="addMore{{ include.title }}" data-title="{{ include.title }}">{% endif -%}
-{% include form/components/title.html id=include.id title=include.title param=include.param -%}
 {%- if include.param.more %}<div class="add-more-content">{% endif -%}
 {% include form/components/group.html id=include.id title=include.title param=include.param -%}
 {%- if include.param.more -%}</div></div>{%- endif -%}

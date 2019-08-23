@@ -1,4 +1,3 @@
-{%- include form/components/title.html id=include.id title=include.title param=include.param -%}
 <div class="form-group">
   {%- include form/components/label.html id=include.id title=include.title param=include.param -%}
   <select class="form-control" id="{{ include.title }}" name="{{ include.title }}"{% if include.param.required == nil or include.param.required %} required="required"{% endif %}>
