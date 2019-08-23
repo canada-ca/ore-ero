@@ -194,7 +194,7 @@ presets:
     charactersLimit:
       en: (100 characters limit)
       fr: (limite de 100 caractères)
-  orgLevel:
+  orgLevel: &orgLevel
     title: &title
       en: Level of government
       fr: Niveau de gouvernement
@@ -202,6 +202,41 @@ presets:
     infobulle:
       en: Select the level of government the administration belongs to.
       fr: Sélectionnez le niveau de gouvernement auquel l'administration appartient.
+  orgLevelPartner: *orgLevel
+  partners:
+    title:
+      en: Key Partners
+      fr: Partenaires
+    labels:
+      contactemail:
+        en: Contact email
+        fr: Addresse courriel du contact
+      contactname:
+        en: Contact name
+        fr: Nom du contact
+      name:
+        en:
+          en: English Name
+          fr: Nom en anglais
+        fr:
+          en: Name in french
+          fr: Nom en français
+    label:
+      en: Select an administration or create a new one.
+      fr: Sélectionnez une administration ou créez en une nouvelle.
+    titles:
+      adminCode:
+        en: The administration code for the partner.
+        fr: Le code de l'administration en partenariat au projet.
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
+      name:
+        en: The name of the contact in the administration partnering on the project.
+        fr: Le nom du contact de l'administration en partenariat.
+    infobulle:
+      en: Contact information of each group partnering on the project.
+      fr: Coordonnées de contact des groupes partenaires du projet.
   provinceSelect: &provinceSelect
     title: &title
       en: Province
@@ -211,6 +246,7 @@ presets:
       en: Select a province
       fr: Sélectionnez une province
   province: *provinceSelect  # Simplifies schema build
+  provinceSelectPartner: *provinceSelect
   relatedCode:
     title:
       en: Related Softwares
@@ -373,27 +409,6 @@ code:
     infobulle:
       en: The URL of the project download page, where a distribution of the project can be found.
       fr: Ajouter les URLs pour télécharger le projet
-  partners:
-    title:
-      en: Key Partners
-      fr: Partenaires
-    labels:
-      email: *email
-      name:
-        en:
-          en: English name
-          fr: Nom en anglais
-        fr:
-          en: French name
-          fr: Nom en francais
-        schema: *name
-    titles:
-      email:
-        en: The email address to contact the partner.
-        fr: L'adresse courriel pour contacter le partenaire.
-    infobulle:
-      en: Contact information of each group partnering on the project.
-      fr: Coordonnées de contact des groupes partenaires du projet.
   repositoryUrl:
     title:
       en: Project Public Repository
@@ -449,23 +464,6 @@ software:
     infobulle:
       en: Select the date when the public administration started using the software.
       fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
-  organization:
-    title:
-      en: Team, branch or sector
-      fr: Équipe, direction ou secteur
-    infobulle:
-      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
-      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
-    label:
-      en:
-        en: English name
-        fr: Nom en anglais
-      fr:
-        en: French name
-        fr: Nom en français
-      schema:
-        en: Organization
-        fr: Organisation
   administrations: *administrations
   uses:
     title:

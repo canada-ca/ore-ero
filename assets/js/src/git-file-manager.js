@@ -135,4 +135,15 @@ class YamlWriter extends FileWriter {
       return items;
     });
   }
+
+  mergePartnerAdminFile(file, newObject) {
+    return this.get(file).then(result => {
+      let items = DeepObject.get(result, '');
+      for (let i = 0; i < newObject.length; i++)
+        items = items.concat(newObject[i]);
+
+      DeepObject.set(result, '', items);
+      return items;
+    });
+  }
 }

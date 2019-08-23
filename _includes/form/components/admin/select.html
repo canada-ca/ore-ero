@@ -1,0 +1,19 @@
+<select class="form-control" id="{{ title }}" name="{{ title }}" {% if include.param.required == nil or include.param.required %} required="required"{% endif %}>
+  <option value="">&nbsp;</option>
+  {%- for levels in site.data.i18n.administrations -%}
+    {%- assign level = levels[0] -%}
+    {%- if level == "others" -%}
+      {%- continue -%}
+    {%- else -%}
+    <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
+      {%- for org in site.data.administrations[level] -%}
+        {%- if org.name[page.lang] != nil %}
+      <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        {%- endif -%}
+      {%- else -%}
+      <option disabled>{{ site.data.i18n.form.presets.adminCode.noAdmins[page.lang] }}</option>
+      {% endfor %}
+    </optgroup>
+    {%- endif -%}
+  {%- endfor -%}
+</select>

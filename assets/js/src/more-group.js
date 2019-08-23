@@ -91,16 +91,26 @@ function addElement(obj) {
     $(this)
       .children()
       .each(function() {
-        if ($(this).attr('for'))
-          $(this).attr('for', $(this).attr('for') + index);
-        if ($(this).attr('id')) $(this).attr('id', $(this).attr('id') + index);
-        if ($(this).attr('name'))
-          $(this).attr('name', $(this).attr('name') + index);
-        $(this).val('');
+        replaceID($(this), index);
+      });
+  });
+
+  li.find('.more-group-id-replace').each(function() {
+    $(this)
+      .children()
+      .each(function() {
+        replaceID($(this), index);
       });
   });
 
   $(ul).append(li);
+}
+
+function replaceID(element, index) {
+  if (element.attr('for')) element.attr('for', element.attr('for') + index);
+  if (element.attr('id')) element.attr('id', element.attr('id') + index);
+  if (element.attr('name')) element.attr('name', element.attr('name') + index);
+  element.val('');
 }
 
 function checkForMinusBtn(obj) {

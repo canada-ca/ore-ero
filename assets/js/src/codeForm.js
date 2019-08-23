@@ -28,6 +28,50 @@ $(document).ready(function() {
     selectCode();
   });
 
+  // More-group overwrite for partner
+  $('.add-more-group#addMorepartners').on(
+    'click',
+    '.btn-tabs-more',
+    function() {
+      let length = $('#addMorepartners ul li').length;
+      let index = length == 1 ? '' : length - 1;
+      hideFieldsPartner(index);
+    }
+  );
+
+  hideFieldsPartner('');
+  $('#addMorepartners').on(
+    'change',
+    '.partnersAdminCodeSelect select',
+    function() {
+      selectPartners(this);
+    }
+  );
+  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
+    addNewPartner(this);
+  });
+  $('#addMorepartners').on(
+    'click',
+    '.partnersAdminCodeRemove button',
+    function() {
+      removeNewPartner(this);
+    }
+  );
+  $('#addMorepartners').on('change', '.orgLevelPartner select', function() {
+    let index = getmoreIndex($(this));
+    if ($(this).val() == 'municipal') {
+      $('#provinceSelectPartner' + index)
+        .attr('required', 'required')
+        .siblings('label')
+        .addClass('required');
+    } else {
+      $('#provinceSelectPartner' + index)
+        .removeAttr('required')
+        .siblings('label')
+        .removeClass('required');
+    }
+  });
+
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
     resetTags();
@@ -125,35 +169,40 @@ function getCodeObject() {
 
   // Optional more-group
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    let id = i == 0 ? '' : i;
+
+    let adminCode = '';
+    if ($('#partners' + id).val() != '') adminCode = $('#partners' + id).val();
+    else if (
+      $('#enpartnersname' + id).val() != '' &&
+      $('#provinceSelectPartner' + id).val() != ''
+    ) {
+      adminCode = slugify(
+        $('#enpartnersname' + id).val() +
+          '-' +
+          $('#provinceSelectPartner' + id).val()
+      );
+    }
+
     if (
-      $('#partnersemail' + id).val() ||
-      $('#enpartnersname' + id).val() ||
-      $('#frpartnersname' + id).val()
+      $('#partnerscontactemail' + id).val() ||
+      $('#partnerscontactname' + id).val() ||
+      adminCode != ''
     ) {
       if (codeObject.releases[0].partners == undefined)
         codeObject.releases[0].partners = [];
       codeObject.releases[0].partners[i] = {};
     }
 
-    if ($('#partnersemail' + id).val()) {
-      codeObject.releases[0].partners[i].email = $('#partnersemail' + id).val();
-    }
+    codeObject.releases[0].partners[i].adminCode = adminCode;
 
-    if ($('#enpartnersname' + id).val() || $('#frpartnersname' + id).val()) {
-      codeObject.releases[0].partners[i].name = {};
-      if ($('#enpartnersname' + id).val()) {
-        codeObject.releases[0].partners[i].name.en = $(
-          '#enpartnersname' + id
-        ).val();
-      }
-      if ($('#frpartnersname' + id).val()) {
-        codeObject.releases[0].partners[i].name.fr = $(
-          '#frpartnersname' + id
-        ).val();
-      }
-    }
+    codeObject.releases[0].partners[i].email = $(
+      '#partnerscontactemail' + id
+    ).val();
+
+    codeObject.releases[0].partners[i].name = $(
+      '#partnerscontactname' + id
+    ).val();
   });
 
   addMoreRelatedCode(codeObject.releases[0]);
@@ -204,6 +253,8 @@ function submitFormAdminCodeForm() {
   )}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
+  let config;
+
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
     .then(resultAdmin => {
@@ -211,27 +262,97 @@ function submitFormAdminCodeForm() {
         .merge(codeFile, codeObject, 'releases', 'name.en')
         .catch(err => {
           if (err.status == 404) {
-            return fetch(
-              PRBOT_URL,
-              getConfigNewAdmin(
-                codeName,
-                adminName,
-                codeFile,
-                codeObject,
-                adminFile,
-                resultAdmin
-              )
+            config = getConfigNewAdmin(
+              codeName,
+              adminName,
+              codeFile,
+              codeObject,
+              adminFile,
+              resultAdmin
             );
           } else throw err;
         })
-        .then(response => {
-          let url =
-            $('html').attr('lang') == 'en'
-              ? './open-source-codes.html'
-              : './codes-source-ouverts.html';
-          submitConclusion(response, submitButton, resetButton, url);
+        .then(function() {
+          let promises = getNewAdminPartnerPromise(
+            codeObject,
+            fileWriter,
+            config
+          );
+          Promise.all(promises)
+            .then(function() {
+              config.body = JSON.stringify(config.body);
+              return fetch(PRBOT_URL, config);
+            })
+            .then(response => {
+              let url =
+                $('html').attr('lang') == 'en'
+                  ? './open-source-codes.html'
+                  : './codes-source-ouverts.html';
+              submitConclusion(response, submitButton, resetButton, url);
+            });
         });
     });
+}
+
+function getNewAdminPartnerPromise(codeObject, fileWriter, config) {
+  let promises = [];
+
+  if (
+    codeObject.releases[0].partners &&
+    codeObject.releases[0].partners.length > 0
+  ) {
+    let newAdmins = [];
+    codeObject.releases[0].partners.forEach(function(partner, index) {
+      let id = index == 0 ? '' : index;
+      if ($('#partners' + id).val() == '') {
+        if (newAdmins[$('#orgLevelPartner' + id).val()] == null)
+          newAdmins[$('#orgLevelPartner' + id).val()] = [];
+        newAdmins[$('#orgLevelPartner' + id).val()][
+          Object.keys(newAdmins[$('#orgLevelPartner' + id).val()]).length
+        ] = getNewAdminPartnerObject(id);
+      }
+    });
+
+    Object.keys(newAdmins).forEach(function(orgLevel) {
+      let promise = fileWriter
+        .mergePartnerAdminFile(
+          `_data/administrations/${orgLevel}.yml`,
+          newAdmins[orgLevel],
+          '',
+          'code'
+        )
+        .then(result => {
+          config.body.files[config.body.files.length] = {
+            path: `_data/administrations/${orgLevel}.yml`,
+            content: '---\n' + jsyaml.dump(result)
+          };
+        });
+
+      promises.push(promise);
+    });
+
+    return promises;
+  }
+}
+
+function getNewAdminPartnerObject(index) {
+  let adminObj = {
+    code: slugify(
+      $('#enpartnersname' + index).val() +
+        '-' +
+        $('#provinceSelectPartner' + index).val()
+    ),
+    name: {
+      en: $('#enpartnersname' + index).val(),
+      fr: $('#frpartnersname' + index).val()
+    }
+  };
+
+  // Optional fields
+  let province = $('#provinceSelectPartner' + index).val();
+  if (province != '') adminObj.provinceCode = province;
+
+  return adminObj;
 }
 
 function getConfigNewAdmin(
@@ -243,7 +364,7 @@ function getConfigNewAdmin(
   resultAdmin
 ) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title:
@@ -279,7 +400,7 @@ function getConfigNewAdmin(
           content: '---\n' + jsyaml.dump(resultAdmin)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
@@ -293,29 +414,39 @@ function submitCodeForm() {
   let codeObject = getCodeObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/code/${getSelectedOrgType()}/${$('#adminCode').val()}.yml`;
+
+  let config;
+
   fileWriter
     .merge(file, codeObject, 'releases', 'name.en')
     .then(result => {
-      const config = getConfigUpdate(result, file);
-      return fetch(PRBOT_URL, config);
+      config = getConfigUpdate(result, file);
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(codeObject, file));
+        config = getConfigNew(codeObject, file);
       } else throw err;
     })
-    .then(response => {
-      let url =
-        $('html').attr('lang') == 'en'
-          ? './open-source-codes.html'
-          : './codes-source-ouverts.html';
-      submitConclusion(response, submitButton, resetButton, url);
+    .then(function() {
+      let promises = getNewAdminPartnerPromise(codeObject, fileWriter, config);
+      Promise.all(promises)
+        .then(function() {
+          config.body = JSON.stringify(config.body);
+          return fetch(PRBOT_URL, config);
+        })
+        .then(response => {
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-codes.html'
+              : './codes-source-ouverts.html';
+          submitConclusion(response, submitButton, resetButton, url);
+        });
     });
 }
 
 function getConfigUpdate(result, file) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title: 'Updated code for ' + $('#adminCode :selected').text(),
@@ -339,14 +470,14 @@ function getConfigUpdate(result, file) {
           content: '---\n' + jsyaml.dump(result)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
 
 function getConfigNew(codeObject, file) {
   return {
-    body: JSON.stringify({
+    body: {
       user: USERNAME,
       repo: REPO_NAME,
       title: 'Created code file for ' + $('#adminCode :selected').text(),
@@ -370,7 +501,7 @@ function getConfigNew(codeObject, file) {
           content: '---\n' + jsyaml.dump(codeObject)
         }
       ]
-    }),
+    },
     method: 'POST'
   };
 }
@@ -512,11 +643,10 @@ function addValueToFields(obj) {
         id = i;
         addMoreGroup($('#addMorepartners'));
       }
-      if (partner.email) $('#partnersemail' + id).val(partner.email);
-      if (partner.name) {
-        if (partner.name.en) $('#enpartnersname' + id).val(partner.name.en);
-        if (partner.name.fr) $('#frpartnersname' + id).val(partner.name.fr);
-      }
+      $('#partners' + id).val(partner.adminCode);
+      showFieldsPartner(id, false);
+      if (partner.email) $('#partnerscontactemail' + id).val(partner.email);
+      if (partner.name) $('#partnerscontactname' + id).val(partner.name);
     });
 
   if (obj.relatedCode)
@@ -570,4 +700,149 @@ function resetFields() {
   resetMoreGroup($('#addMorepartners'));
   resetMoreGroup($('#addMorerelatedCode'));
   $('#status').val('');
+}
+
+function getAdminObjectForPartner(obj, admin) {
+  let administrations = [
+    'federal',
+    'provincial',
+    'municipal',
+    'aboriginal',
+    'others'
+  ];
+
+  for (let i = 0, l1 = administrations.length; i < l1; i++)
+    for (let j = 0, l2 = obj[administrations[i]].length; j < l2; j++)
+      if (obj[administrations[i]][j].code == admin)
+        return {
+          level: administrations[i],
+          values: obj[administrations[i]][j]
+        };
+}
+
+function getmoreIndex(element) {
+  let nb = $(element)
+    .closest('li')
+    .attr('data-index');
+  return nb != 0 ? nb : '';
+}
+
+function selectPartners(select) {
+  let adminCode = $(select).val();
+  let id = getmoreIndex(select);
+  if (adminCode != '') {
+    $.getJSON(
+      'https://canada-ca.github.io/ore-ero/administrations.json',
+      function(result) {
+        let admin = getAdminObjectForPartner(result, adminCode);
+        showFieldsPartner(id, false);
+        $('#orgLevelPartner' + id).val(admin.level);
+        if (admin.values.provinceCode != undefined) {
+          $('#provinceSelectPartner' + id)
+            .prop('disabled', false)
+            .val(admin.values.provinceCode);
+        } else
+          $('#provinceSelectPartner' + id)
+            .prop('disabled', true)
+            .val('');
+        $('#enpartnersname' + id).val(admin.values.name.en);
+        $('#frpartnersname' + id).val(admin.values.name.fr);
+      }
+    );
+  } else {
+    hideFieldsPartner(id);
+  }
+}
+
+function hideFieldsPartner(id) {
+  resetFieldsPartner(id);
+  hideFieldPartner($('#orgLevelPartner' + id));
+  hideFieldPartner($('#provinceSelectPartner' + id));
+  hideFieldPartner($('#enpartnersname' + id));
+  hideFieldPartner($('#frpartnersname' + id));
+  $('#partnersNewAdminSeparator' + id).hide();
+  hideFieldPartner($('#partnerscontactname' + id));
+  hideFieldPartner($('#partnerscontactemail' + id));
+}
+
+function hideFieldPartner(element) {
+  element
+    .prop('disabled', false)
+    .parent('.form-group')
+    .hide();
+}
+
+function resetFieldsPartner(id) {
+  $('#orgLevelPartner' + id).val('');
+  $('#provinceSelectPartner' + id)
+    .prop('disabled', false)
+    .val('');
+  $('#enpartnersname' + id).val('');
+  $('#frpartnersname' + id).val('');
+  $('#partnerscontactname' + id).val('');
+  $('#partnerscontactemail' + id).val('');
+}
+
+function showFieldsPartner(id, full) {
+  hideFieldsPartner(id);
+  if (full) {
+    showFieldPartner($('#orgLevelPartner' + id));
+    showFieldPartner($('#provinceSelectPartner' + id));
+    if ($('#orgLevelPartner' + id).val() != 'municipal')
+      $('#provinceSelectPartner' + id)
+        .removeAttr('required')
+        .siblings('label')
+        .removeClass('required');
+    showFieldPartner($('#enpartnersname' + id));
+    showFieldPartner($('#frpartnersname' + id));
+    $('#partnersNewAdminSeparator' + id).show();
+  }
+
+  showFieldPartnerOptional(id);
+}
+
+function showFieldPartner(element) {
+  element
+    .attr('required', 'required')
+    .prop('disabled', false)
+    .parent('.form-group')
+    .show()
+    .children('label')
+    .addClass('required');
+}
+
+function showFieldPartnerOptional(id) {
+  $('#partnerscontactname' + id)
+    .parent('.form-group')
+    .show();
+
+  $('#partnerscontactemail' + id)
+    .parent('.form-group')
+    .show();
+}
+
+function addNewPartner(button) {
+  let id = getmoreIndex(button);
+
+  $('#partners' + id).val('');
+  resetFieldsPartner(id);
+  showFieldsPartner(id, true);
+  showRemoveNewPartnerBtn(id);
+}
+
+function removeNewPartner(button) {
+  let id = getmoreIndex(button);
+
+  $('#partners' + id).val('');
+  resetFieldsPartner(id);
+  hideFieldsPartner(id);
+  hideRemoveNewPartnerBtn(id);
+}
+
+function showRemoveNewPartnerBtn(index) {
+  $('newAdminButtonpartners' + index).hide();
+}
+
+function hideRemoveNewPartnerBtn(index) {
+  $('newAdminButtonpartners' + index).hide();
 }
