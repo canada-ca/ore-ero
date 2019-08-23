@@ -1,12 +1,17 @@
 {%- assign title = "name" -%}
 {%- assign group = "select" -%}
+{%- assign software_arr = "" | split: ',' -%}
+{%- for software in site.data.software -%}
+    {%- assign software_arr = software_arr | push: software[1].name[page.lang] -%}
+{%- endfor %}
+{%- assign software_arr = software_arr | sort_natural -%}
 <div class="form-group">
   {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
-    {%- for software in site.data.software -%}
-    <option value="{{ software[1].name[page.lang] | slugify }}">{{ software[1].name[page.lang] }}</option>
-    {%- endfor %}
+    {%- for software in software_arr -%}
+      <option value="{{ software | slugify }}">{{ software }}</option>
+    {%- endfor -%}
   </select>
 </div>
 
