@@ -30,6 +30,7 @@ administrations:
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca
+          name: frédéric lestage
         date:
           started: '2019-01-31'
-          metadataLastUpdated: '2019-05-06'
+          metadataLastUpdated: '2019-08-23'
