@@ -68,7 +68,7 @@ function getsoftwareObject() {
               email: $('#contactemail').val()
             },
             date: {
-              started: $('#datestarted').val(),
+              started: $('#date').val(),
               metadataLastUpdated: getToday()
             }
           }
@@ -177,7 +177,11 @@ function submitSoftwareFormNewAdmin() {
           } else throw err;
         })
         .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-source-softwares.html'
+              : './logiciels-libres.html';
+          submitConclusion(response, submitButton, resetButton, url);
         });
     });
 }
@@ -287,7 +291,11 @@ function submitFormSoftware() {
       } else throw err;
     })
     .then(response => {
-      submitConclusion(response, submitButton, resetButton);
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-source-softwares.html'
+          : './logiciels-libres.html';
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
@@ -430,7 +438,7 @@ function addValueToFieldsAdmin(obj) {
   $('#contactemail').val(obj.uses[0].contact.email);
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
-  $('#datestarted').val(obj.uses[0].date.started);
+  $('#date').val(obj.uses[0].date.started);
   if (obj.team) {
     if (obj.team.en) $('#enteam').val(obj.team.en);
     if (obj.team.fr) $('#frteam').val(obj.team.fr);
@@ -440,7 +448,7 @@ function addValueToFieldsAdmin(obj) {
 function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#datestarted').val('');
+  $('#date').val('');
   $('#enteam').val('');
   $('#frteam').val('');
 }

@@ -26,7 +26,7 @@ tags:
   fr:
     - Intégration de données
 administrations:
-  - adminCode: ville-de-montreal-qc
+  - adminCode: city-of-montreal-qc
     uses:
       - contact:
           email: libre@ville.montreal.qc.ca

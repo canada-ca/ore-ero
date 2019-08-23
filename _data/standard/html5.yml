@@ -27,7 +27,7 @@ tags:
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: null
+      email: sebastien.lemay@tbs-sct.gc.ca
     date:
       created: '2018-01-23'
       metadataLastUpdated: '2018-11-15'

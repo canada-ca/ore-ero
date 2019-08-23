@@ -52,16 +52,19 @@ presets:
       fr: Administration publique Canadienne
     subTitle:
       en: <p>See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration</p>
-      fr: <p>Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration</p>
+      fr: <p>Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichiers de données</a> pour trouver votre administration</p>
     infobulle:
       en: Select a public administration from the drop-down field or add a new one in case the administration does not exist.
       fr: Choisir l'administration publique dans la liste ci-dessous. Créer une nouvelle au cas où l'administration n'était pas déjà dans la liste.
     label:
-      en: Public administration
-      fr: Administration publique
+      en: Canadian public administration
+      fr: Administration publique Canadienne
     button:
       en: Add a new administration
       fr: Ajouter une nouvelle administration
+    noAdmins:
+      en: No Administration
+      fr: Aucune administration
   category:
     title:
       en: Category
@@ -89,37 +92,10 @@ presets:
       name:
         en: The name of a contact for the project.
         fr: Le nom de la personne-ressource pour le projet.
-  date:
-    title:
-      en: Creation Date
-      fr: Date de création
-    labels:
-      created:
-        en: Created
-        fr: Créé
-      started:
-        en: Started
-        fr: Débuté
-      metadataLastUpdated:
-        en: Last updated
-        fr: Dernière mise à jour
-    infobulle:
-      en: Select the date of creation.
-      fr: Sélectionnez la date de création.
-    titles:
-      created:
-        en: The date the project was originally created, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date du projet lorsqu'elle a été crée, au format AAAA-MM-JJ ou ISO 8601.
-      started:
-        en: The date the project was originally started, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date du projet lorsqu'elle a été lancé, au format AAAA-MM-JJ ou ISO 8601.
-      metadataLastUpdated:
-        en: The date the metadata of the project was last updated, in YYYY-MM-DD or ISO 8601 format.
-        fr: La date de la dernière fois les "metadata" ont été mises à jour, au format AAAA-MM-JJ ou ISO 8601.
   description:
     title:
-      en: Project Description
-      fr: Description du projet
+      en: Description
+      fr: Description
     labels:
       whatItDoes:
         subtitle:
@@ -149,7 +125,7 @@ presets:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
     infobulle:
-      en: Add brief descriptions on what it does (i.e. functionnality, use..) and on how it works.
+      en: Add brief descriptions on what the project does and how it works.  
       fr: Ajoutez une brève description, expliquant de quoi il s'agit et comment cela fonctionne.
     titles:
       en:
@@ -205,8 +181,8 @@ presets:
         en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
     infobulle:
-      en: Add general information about the project licenses. Search the list of lisences to find the SPDX license identifier according to your license's name.
-      fr: Ajouter des informations générales sur chaque licence du projet. Choisir l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences.
+      en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
+      fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
     titles:
       URL:
         en: The English and French URLs of licence.
@@ -218,7 +194,7 @@ presets:
     charactersLimit:
       en: (100 characters limit)
       fr: (limite de 100 caractères)
-  orgLevel:
+  orgLevel: &orgLevel
     title: &title
       en: Level of government
       fr: Niveau de gouvernement
@@ -226,6 +202,41 @@ presets:
     infobulle:
       en: Select the level of government the administration belongs to.
       fr: Sélectionnez le niveau de gouvernement auquel l'administration appartient.
+  orgLevelPartner: *orgLevel
+  partners:
+    title:
+      en: Key Partners
+      fr: Partenaires
+    labels:
+      contactemail:
+        en: Contact email
+        fr: Addresse courriel du contact
+      contactname:
+        en: Contact name
+        fr: Nom du contact
+      name:
+        en:
+          en: English Name
+          fr: Nom en anglais
+        fr:
+          en: Name in french
+          fr: Nom en français
+    label:
+      en: Select an administration or create a new one.
+      fr: Sélectionnez une administration ou créez en une nouvelle.
+    titles:
+      adminCode:
+        en: The administration code for the partner.
+        fr: Le code de l'administration en partenariat au projet.
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
+      name:
+        en: The name of the contact in the administration partnering on the project.
+        fr: Le nom du contact de l'administration en partenariat.
+    infobulle:
+      en: Contact information of each group partnering on the project.
+      fr: Coordonnées de contact des groupes partenaires du projet.
   provinceSelect: &provinceSelect
     title: &title
       en: Province
@@ -235,6 +246,7 @@ presets:
       en: Select a province
       fr: Sélectionnez une province
   province: *provinceSelect  # Simplifies schema build
+  provinceSelectPartner: *provinceSelect
   relatedCode:
     title:
       en: Related Softwares
@@ -368,8 +380,18 @@ code:
         fr: Nom du projet
     labels:
       select:
-        en: If you wish to update an already existing code, please select it below
-        fr: Si vous souhaitez mettre à jour un project existant, svp le sélectionner ci-dessous
+        en: If you wish to update information of a code that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un code déjà ajouté au catalogue, veuillez le sélectionner de la liste
+  date:
+    title:
+      en: Creation Date
+      fr: Date de création du projet
+    label:
+      en: Creation Date
+      fr: Date de création du projet
+    infobulle:
+      en: Select the date when the open source code was first created
+      fr: Sélectionner la date de création du code source ouvert.
   downloadUrl:
     title:
       en: Project Download Page
@@ -387,27 +409,6 @@ code:
     infobulle:
       en: The URL of the project download page, where a distribution of the project can be found.
       fr: Ajouter les URLs pour télécharger le projet
-  partners:
-    title:
-      en: Key Partners
-      fr: Partenaires
-    labels:
-      email: *email
-      name:
-        en:
-          en: English name
-          fr: Nom en anglais
-        fr:
-          en: French name
-          fr: Nom en francais
-        schema: *name
-    titles:
-      email:
-        en: The email address to contact the partner.
-        fr: L'adresse courriel pour contacter le partenaire.
-    infobulle:
-      en: Contact information of each group partnering on the project.
-      fr: Coordonnées de contact des groupes partenaires du projet.
   repositoryUrl:
     title:
       en: Project Public Repository
@@ -448,28 +449,21 @@ software:
         fr: Nom du projet
     labels:
       select:
-        en: If you wish to update an existing software, please select it below
-        fr: Si vous souhaitez mettre à jour un logiciel existant, svp le sélectionner ci-dessous
+        en: If you wish to update information of a software that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un logiciel déjà ajouté au catalogue, veuillez le sélectionner de la liste
     infobulle:
       en: Add the name of the open source software
       fr: Ajouter le nom du logiciel libre
-  organization:
+  date:
     title:
-      en: Team, branch or sector
-      fr: Équipe, direction ou secteur
-    infobulle:
-      en: Add the name of the team, branch or sector within the public administration to which the project belongs. For example, the Canadian Digital Services is a sector within the federal administration Treasury Board of Canada Secretariat.
-      fr: Ajouter le nom de l'équipe, direction ou secteur de l'administration publique auquel appartient le projet. Par exemple, le Service Numérique Canadien est une direction sous l'administration publique fédérale Scerétariat du Conseil du Trésor.
+      en: Started using
+      fr: Date de début d'utilisation
     label:
-      en:
-        en: English name
-        fr: Nom en anglais
-      fr:
-        en: French name
-        fr: Nom en français
-      schema:
-        en: Organization
-        fr: Organisation
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the software.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
   administrations: *administrations
   uses:
     title:
@@ -480,8 +474,8 @@ software:
 standard:
   name:
     title:
-      en: Name of the Standard
-      fr: Nom du standard
+      en: Standard Name
+      fr: Nom de la norme
     infobulle:
       en: Add the name of the standard.
       fr: Ajouter le nom de la norme.
@@ -499,10 +493,20 @@ standard:
       select:
         en: If you wish to update information of a standard that already exists in our library, please select it below.
         fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the standard.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser la norme.
   specURL:
     title:
       en: Specification URLs
-      fr: Url de la spécification de la norme
+      fr: URLs de la spécification
     label:
       en:
         en: English URL
@@ -525,8 +529,8 @@ standard:
       fr: Acronyme de la norme.
     labels:
       select:
-        en: If you wish to update information of a standard that already exists in our library, please select it below.
-        fr: Si vous souhaitez mettre à jour les données d'une norme ouverte se trouvant déjà dans notre catalogue, veuillez la sélectionner parmi la liste ci-dessous.
+        en: If you wish to update information of a standard that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une norme ajoutée déjà au catalogue, veuillez la sélectionner de la liste
     infobulle:
       en: Enter the short name or acronym for the new standard.
       fr: Entrer l'acronyme de la norme ouverte.
@@ -546,8 +550,8 @@ standard:
       fr: Ajouter le nom de l'organization de standardisation qui développe, coordonne, promulgue, révise, modifie, interprète publie ou produit la norme.
   status:
     title:
-      en: The status of the standard
-      fr: Le status du standard
+      en: Standard Status
+      fr: Statut de la norme
     label:
       en: Status
       fr: Status
@@ -567,7 +571,7 @@ standard:
   reference:
     title:
       en: Reference for the standard
-      fr: Référence pour le standard
+      fr: Référence de la norme
     labels:
       URL:
         en:
@@ -615,11 +619,11 @@ admin:
       fr: Ajouter le code unique pour l'administration
   newAdminName: &newAdminName
     title:
-      en: Administration Name
-      fr: Nom de l'administration
+      en: Public Administration Name
+      fr: Nom de l'administration publique
     label:
       en:
-        en: Name in english
+        en: English Name
         fr: Nom en anglais
       fr:
         en: Name in french

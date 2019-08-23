@@ -71,7 +71,7 @@ function getStandardObject() {
           email: $('#contactemail').val()
         },
         date: {
-          created: $('#datecreated').val(),
+          created: $('#date').val(),
           metadataLastUpdated: getToday()
         },
         references: [],
@@ -151,7 +151,11 @@ function submitStandardForm() {
       } else throw err;
     })
     .then(response => {
-      submitConclusion(response, submitButton, resetButton);
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-standards.html'
+          : './normes-ouvertes.html';
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
@@ -253,7 +257,11 @@ function submitStandardFormNewAdmin() {
           } else throw err;
         })
         .then(response => {
-          submitConclusion(response, submitButton, resetButton);
+          let url =
+            $('html').attr('lang') == 'en'
+              ? './open-standards.html'
+              : './normes-ouvertes.html';
+          submitConclusion(response, submitButton, resetButton, url);
         });
     })
     .catch(err => {
@@ -422,7 +430,7 @@ function addValueToFieldsAdmin(obj) {
   $('#contactemail').val(obj.contact.email);
   if (obj.contact.name) $('#contactname').val(obj.contact.name);
 
-  $('#datecreated').val(obj.date.created);
+  $('#date').val(obj.date.created);
 
   obj.references.forEach(function(reference, i) {
     let id;
@@ -448,7 +456,7 @@ function addValueToFieldsAdmin(obj) {
 function resetFieldsAdmin() {
   $('#contactemail').val('');
   $('#contactname').val('');
-  $('#datecreated').val('');
+  $('#date').val('');
   resetMoreGroup($('#addMorereference'));
   $('#status').val('');
   $('#enteam').val('');

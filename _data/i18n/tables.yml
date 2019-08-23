@@ -3,8 +3,11 @@ administration:
   en: Administration
   fr: Administration
 administrations:
-  en: Administrations
-  fr: Administrations
+  en: Administration
+  fr: Administration
+category:
+  en: Category
+  fr: Catégorie
 clear:
   en: Clear
   fr: Effacer
@@ -27,14 +30,14 @@ homepage:
   en: Homepage
   fr: Page d'accueil
 languages:
-  en: Language(s)
-  fr: Langage(s)
+  en: Language
+  fr: Langage
 licence:
-  en: Licence(s)
-  fr: Licence(s)
-organization:
-  en: Organization
-  fr: Organisation
+  en: Licence
+  fr: Licence
+team:
+  en: Team
+  fr: Équipe
 projectName:
   en: Project Name
   fr: Nom du projet
@@ -51,8 +54,8 @@ status:
   en: Status
   fr: Statut
 tag:
-  en: Tag(s)
-  fr: Étiquette(s)
+  en: Tag
+  fr: Étiquette
 usage:
   en: Usage
   fr: Utilisation
