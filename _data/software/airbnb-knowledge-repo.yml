@@ -16,8 +16,8 @@ licences:
       fr: 'https://github.com/airbnb/knowledge-repo/blob/master/LICENSE'
     spdxID: Apache-2.0
 name:
-  en: AirBnb-knowledge-repo
-  fr: AirBnb-knowledge-repo
+  en: AirBnb Knowledge Repo
+  fr: AirBnb Knowledge Repo
 tags:
   en:
     - Sharing knowledge
