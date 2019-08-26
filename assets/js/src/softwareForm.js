@@ -132,15 +132,13 @@ function submitSoftwareFormNewAdmin() {
 
   let softwareObject = getsoftwareObject();
   let adminObject = getAdminObject();
-  let softwareName = $('#enname')
-    .val()
-    .toLowerCase();
+  let softwareName = $('#enname').val();
   let adminName = slugify(
     $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let softwareFile = `_data/software/${softwareName}.yml`;
+  let softwareFile = `_data/software/${slugify(softwareName)}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
   fileWriter
@@ -272,10 +270,8 @@ function submitFormSoftware() {
 
   let softwareObject = getsoftwareObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let ProjectName = $('#enname')
-    .val()
-    .toLowerCase();
-  let file = `_data/software/${ProjectName}.yml`;
+  let ProjectName = $('#enname').val();
+  let file = `_data/software/${slugify(ProjectName)}.yml`;
 
   fileWriter
     .merge(file, softwareObject, 'administrations', 'adminCode')
