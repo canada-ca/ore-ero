@@ -1,4 +1,7 @@
 {%- capture path -%}{{ include.param.prepend }}{{ include.title }}{%- endcapture -%}
-<label for="{{ path }}"{%- if include.param.required == nil or include.param.required %} class="required"{% endif -%}>
-<span class="field-name h2">{{ site.data.i18n.form[include.id][path].label[page.lang] }}</span>
+<label for="{{ path }}" class="h2{%- if include.param.required == nil or include.param.required %} required{% endif -%}">
+  <span>
+    <span class="field-name">{{ site.data.i18n.form[include.id][path].label[page.lang] }}</span>
+    <span data-toggle="tooltip" data-placement="top" title="{{ site.data.i18n.form[include.id][path].infobulle[page.lang] }}" class="glyphicon glyphicon-question-sign small" aria-hidden="true"></span>
+  </span>
 </label>
