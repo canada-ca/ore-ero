@@ -1,0 +1,42 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      An internationally accepted way to represent dates and times using
+      numbers.
+    fr: >-
+      Un mode de représentation numérique de la date et de l'heure accepté à
+      l'échelon international.
+name:
+  en: Date and time format
+  fr: Représentation de la date et de l'heure
+specURL:
+  en: 'https://www.iso.org/iso-8601-date-and-time-format.html'
+  fr: 'https://www.iso.org/fr/iso-8601-date-and-time-format.html'
+standardAcronym: ISO-8601
+standardOrg:
+  en: International Organization for Standardization
+  fr: Organisation internationale de normalisation
+tags:
+  en:
+    - Date
+    - Time
+  fr:
+    - Date
+    - Heure
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: sebastien.lemay@tbs-sct.gc.ca
+    date:
+      created: '2010-07-01'
+      metadataLastUpdated: '2019-08-26'
+    references:
+      - URL:
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=18909'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=18909'
+        name:
+          en: Standard on Metadata
+          fr: Norme sur les métadonnées
+    status: mandatory
