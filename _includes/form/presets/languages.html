@@ -1,7 +1,7 @@
 {%- assign title = "languages" -%}
 
 <div class="form-group">
-  <label>{{ site.data.i18n.form[include.idPreset][title].label[page.lang] }}</label>
+    {% include form/components/label.html id=include.idPreset title=title param=site.data.forms.param.required_false %}
   {%- assign lang_arr = "" | split: "," -%}
   {%- for govLevels in site.data.code -%}
   {%- for admins in govLevels[1] -%}
