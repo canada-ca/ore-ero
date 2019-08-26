@@ -202,13 +202,15 @@ function getCodeObject() {
 
       codeObject.releases[0].partners[i].adminCode = adminCode;
 
-      codeObject.releases[0].partners[i].email = $(
-        '#partnerscontactemail' + id
-      ).val();
+      if ($('#partnerscontactemail' + id).val() != '')
+        codeObject.releases[0].partners[i].email = $(
+          '#partnerscontactemail' + id
+        ).val();
 
-      codeObject.releases[0].partners[i].name = $(
-        '#partnerscontactname' + id
-      ).val();
+      if ($('#partnerscontactname' + id).val() != '')
+        codeObject.releases[0].partners[i].name = $(
+          '#partnerscontactname' + id
+        ).val();
     }
   });
 
