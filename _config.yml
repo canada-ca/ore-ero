@@ -1,7 +1,7 @@
 # Site settings
 baseurl: "/ore-ero"
 url: "https://canada-ca.github.io/ore-ero"
-github_username: fredericlestage-vdm
+github_username: canada-ca
 github_repository: ore-ero
 prbot_url: "https://canada-pr-bot.herokuapp.com/"
 
