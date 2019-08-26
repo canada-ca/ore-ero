@@ -1,0 +1,48 @@
+---
+schemaVersion: '1.0'
+adminCode: aafc-aac
+releases:
+  - contact:
+      email: fsdfsd@hotmail.com
+    date:
+      created: '2019-08-15'
+      metadataLastUpdated: '2019-08-26'
+    description:
+      whatItDoes:
+        en: qwerty
+        fr: azerty
+    category: '43231500'
+    name:
+      en: oiu
+      fr: uio
+    licences:
+      - URL:
+          en: 'https://www.compteurdelettres.com/'
+          fr: 'https://www.compteurdelettres.com/'
+        spdxID: Artistic-2.0
+    repositoryURL:
+      en: 'https://www.compteurdelettres.com/'
+      fr: 'https://www.compteurdelettres.com/'
+    tags:
+      en:
+        - ty
+      fr:
+        - yt
+    languages:
+      - JavaScript
+      - TypeScript
+      - Python
+      - C++
+      - 'C#'
+      - PHP
+      - MySQL
+      - C
+      - Java
+    partners:
+      - adminCode: cse-cst
+        email: dsgdfgdf@hotmail.com
+        name: fgdfg
+    status: Alpha
+    team:
+      en: tyry
+      fr: iou
