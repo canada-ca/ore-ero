@@ -14,8 +14,8 @@ licences:
       fr: 'https://github.com/RocketChat/Rocket.Chat.Hubot/blob/master/LICENSE'
     spdxID: MIT
 name:
-  en: Rocketchat
-  fr: Rocketchat
+  en: Rocket.Chat
+  fr: Rocket.Chat
 tags:
   en:
     - Instant messaging
