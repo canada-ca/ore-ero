@@ -376,8 +376,12 @@ function selectSoftware() {
 function addValueToFieldsSoftware(obj) {
   resetFieldsSoftware();
 
-  $('#enname').val(obj.name.en);
-  $('#frname').val(obj.name.fr);
+  $('#enname')
+    .val(obj.name.en)
+    .prop('disabled', true);
+  $('#frname')
+    .val(obj.name.fr)
+    .prop('disabled', true);
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
 
@@ -396,8 +400,12 @@ function addValueToFieldsSoftware(obj) {
 }
 
 function resetFieldsSoftware() {
-  $('#enname').val('');
-  $('#frname').val('');
+  $('#enname')
+    .val('')
+    .prop('disabled', false);
+  $('#frname')
+    .val('')
+    .prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');

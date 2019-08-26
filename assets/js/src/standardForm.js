@@ -367,9 +367,15 @@ function selectStandard() {
 function addValueToFieldsStandard(obj) {
   resetFieldsStandard();
 
-  $('#standardAcronym').val(obj.standardAcronym);
-  $('#enname').val(obj.name.en);
-  $('#frname').val(obj.name.fr);
+  $('#standardAcronym')
+    .val(obj.standardAcronym)
+    .prop('disabled', true);
+  $('#enname')
+    .val(obj.name.en)
+    .prop('disabled', true);
+  $('#frname')
+    .val(obj.name.fr)
+    .prop('disabled', true);
 
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
@@ -389,9 +395,15 @@ function addValueToFieldsStandard(obj) {
 }
 
 function resetFieldsStandard() {
-  $('#standardAcronym').val('');
-  $('#enname').val('');
-  $('#frname').val('');
+  $('#standardAcronym')
+    .val('')
+    .prop('disabled', false);
+  $('#enname')
+    .val('')
+    .prop('disabled', false);
+  $('#frname')
+    .val('')
+    .prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
