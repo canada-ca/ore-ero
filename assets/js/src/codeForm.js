@@ -171,38 +171,45 @@ function getCodeObject() {
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id = i == 0 ? '' : i;
 
-    let adminCode = '';
-    if ($('#partners' + id).val() != '') adminCode = $('#partners' + id).val();
-    else if (
-      $('#enpartnersname' + id).val() != '' &&
-      $('#provinceSelectPartner' + id).val() != ''
-    ) {
-      adminCode = slugify(
-        $('#enpartnersname' + id).val() +
-          '-' +
-          $('#provinceSelectPartner' + id).val()
-      );
-    }
-
     if (
-      $('#partnerscontactemail' + id).val() ||
-      $('#partnerscontactname' + id).val() ||
-      adminCode != ''
+      $('#partners' + id).val() != '' ||
+      ($('#enpartnersname' + id).val() != '' &&
+        $('#provinceSelectPartner' + id).val() != '')
     ) {
-      if (codeObject.releases[0].partners == undefined)
-        codeObject.releases[0].partners = [];
-      codeObject.releases[0].partners[i] = {};
+      let adminCode = '';
+      if ($('#partners' + id).val() != '')
+        adminCode = $('#partners' + id).val();
+      else if (
+        $('#enpartnersname' + id).val() != '' &&
+        $('#provinceSelectPartner' + id).val() != ''
+      ) {
+        adminCode = slugify(
+          $('#enpartnersname' + id).val() +
+            '-' +
+            $('#provinceSelectPartner' + id).val()
+        );
+      }
+
+      if (
+        $('#partnerscontactemail' + id).val() ||
+        $('#partnerscontactname' + id).val() ||
+        adminCode != ''
+      ) {
+        if (codeObject.releases[0].partners == undefined)
+          codeObject.releases[0].partners = [];
+        codeObject.releases[0].partners[i] = {};
+      }
+
+      codeObject.releases[0].partners[i].adminCode = adminCode;
+
+      codeObject.releases[0].partners[i].email = $(
+        '#partnerscontactemail' + id
+      ).val();
+
+      codeObject.releases[0].partners[i].name = $(
+        '#partnerscontactname' + id
+      ).val();
     }
-
-    codeObject.releases[0].partners[i].adminCode = adminCode;
-
-    codeObject.releases[0].partners[i].email = $(
-      '#partnerscontactemail' + id
-    ).val();
-
-    codeObject.releases[0].partners[i].name = $(
-      '#partnerscontactname' + id
-    ).val();
   });
 
   addMoreRelatedCode(codeObject.releases[0]);
@@ -330,9 +337,9 @@ function getNewAdminPartnerPromise(codeObject, fileWriter, config) {
 
       promises.push(promise);
     });
-
-    return promises;
   }
+
+  return promises;
 }
 
 function getNewAdminPartnerObject(index) {
