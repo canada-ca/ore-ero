@@ -32,7 +32,7 @@ administrations:
           email: webmaster@cse-cst.gc.ca
         date:
           started: '2019-05-06'
-          metadataLastUpdated: '2019-05-13'
+          metadataLastUpdated: '2019-08-27'
   - adminCode: tbs-sct
     uses:
       - contact:
