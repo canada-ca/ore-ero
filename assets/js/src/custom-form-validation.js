@@ -88,7 +88,7 @@ $(document).on('wb-ready.wb', function() {
       'names-en-fr',
       function(value) {
         if (value) {
-          if (value.match(/^[a-zàâçéèêëîïôûùüÿñæœ,.'-\s]+$/i)) {
+          if (value.match(/^[0-9a-zàâçéèêëîïôûùüÿñæœ,.'-+\s]+$/i)) {
             return true;
           } else {
             return false;

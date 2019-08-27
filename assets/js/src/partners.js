@@ -51,33 +51,42 @@ function addMorePartners(obj) {
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id = i == 0 ? '' : i;
 
-    let adminCode = '';
-    if ($('#partners' + id).val() != '') adminCode = $('#partners' + id).val();
-    else if (
-      $('#enpartnersname' + id).val() != '' &&
-      $('#provinceSelectPartner' + id).val() != ''
-    ) {
-      adminCode = slugify(
-        $('#enpartnersname' + id).val() +
-          '-' +
-          $('#provinceSelectPartner' + id).val()
-      );
-    }
-
     if (
-      $('#partnerscontactemail' + id).val() ||
-      $('#partnerscontactname' + id).val() ||
-      adminCode != ''
+      $('#partners' + id).val() != '' ||
+      ($('#enpartnersname' + id).val() != '' &&
+        $('#provinceSelectPartner' + id).val() != '')
     ) {
-      if (obj.partners == undefined) obj.partners = [];
-      obj.partners[i] = {};
+      let adminCode = '';
+      if ($('#partners' + id).val() != '')
+        adminCode = $('#partners' + id).val();
+      else if (
+        $('#enpartnersname' + id).val() != '' &&
+        $('#provinceSelectPartner' + id).val() != ''
+      ) {
+        adminCode = slugify(
+          $('#enpartnersname' + id).val() +
+            '-' +
+            $('#provinceSelectPartner' + id).val()
+        );
+      }
+
+      if (
+        $('#partnerscontactemail' + id).val() ||
+        $('#partnerscontactname' + id).val() ||
+        adminCode != ''
+      ) {
+        if (obj.partners == undefined) obj.partners = [];
+        obj.partners[i] = {};
+      }
+
+      obj.partners[i].adminCode = adminCode;
+
+      if ($('#partnerscontactemail' + id).val() != '')
+        obj.partners[i].email = $('#partnerscontactemail' + id).val();
+
+      if ($('#partnerscontactname' + id).val() != '')
+        obj.partners[i].name = $('#partnerscontactname' + id).val();
     }
-
-    obj.partners[i].adminCode = adminCode;
-
-    obj.partners[i].email = $('#partnerscontactemail' + id).val();
-
-    obj.partners[i].name = $('#partnerscontactname' + id).val();
   });
 }
 
@@ -114,9 +123,9 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
 
       promises.push(promise);
     });
-
-    return promises;
   }
+
+  return promises;
 }
 
 function getNewAdminPartnerObject(index) {

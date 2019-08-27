@@ -92,6 +92,13 @@ class YamlWriter extends FileWriter {
     return this.get(file).then(result => {
       let items = DeepObject.get(result, propPath);
 
+      if (propPath != '')
+        result = this.mergeFirstLevel(
+          DeepObject.get(result),
+          newObject,
+          propPath
+        );
+
       // Update the object if there's a match.
       for (let i = 0; i < items.length; i++) {
         let item = items[i];
@@ -107,6 +114,15 @@ class YamlWriter extends FileWriter {
       DeepObject.set(result, propPath, items);
       return result;
     });
+  }
+
+  mergeFirstLevel(oldObject, newObject, propPath) {
+    if (newObject[propPath]) delete newObject[propPath];
+    if (oldObject[propPath]) delete oldObject[propPath];
+
+    Object.assign(oldObject, newObject);
+
+    return newObject;
   }
 
   mergeAdminFile(file, newObject, propPath, onValue) {

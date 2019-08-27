@@ -162,8 +162,8 @@ presets:
       en: Programming Languages
       fr: Languages de programmation
     label:
-      en: A list of the programming languages used in the project.
-      fr: Une liste des langages de programmation utilisés dans le projet.
+      en: Programming Languages
+      fr: Languages de programmation
     button:
       en: Add more languages
       fr: Ajouter un langage
@@ -531,8 +531,8 @@ standard:
       en: Standard Acronym
       fr: Acronyme de la norme
     label:
-      en: Standard Acronym.
-      fr: Acronyme de la norme.
+      en: Standard Acronym
+      fr: Acronyme de la norme
     labels:
       select:
         en: If you wish to update information of a standard that already exists in our library, please select it below
