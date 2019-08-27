@@ -4,9 +4,10 @@ adminCode: abc-def
 projects:
   - contact:
       email: abc@xyz.com
+    category: '1234567'
     date:
       closed: 'YYYY-MM-DD'
-      created: 'YYYY-MM-DD'
+      started: 'YYYY-MM-DD'
       metadataLastUpdated: 'YYYY-MM-DD'
     description:
       en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

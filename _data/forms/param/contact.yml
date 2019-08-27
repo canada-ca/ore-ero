@@ -3,3 +3,7 @@ email:
   type: email
 name:
   required: false
+phone:
+  required: false
+  type: phone
+  rule: phone

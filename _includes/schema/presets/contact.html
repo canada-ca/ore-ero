@@ -6,6 +6,9 @@
     <ul class="list-unstyled">
       {%- include schema/components/li-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}
       {%- include schema/components/li-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.contact.name -%}
+      {%- if include.param.phone -%}
+        {%- include schema/components/li-group.html id=include.idPreset title=title group="phone" param=site.data.forms.param.contact.phone -%}
+      {%- endif -%}
     </ul>
   </details>
 </li>

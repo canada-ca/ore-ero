@@ -82,6 +82,9 @@ presets:
     labels:
       name: *name
       email: *email
+      phone:
+        en: Phone
+        fr: Téléphonne
     infobulle:
       en: Point of contact for general inquiries.
       fr: Coordonnées de la personne à contacter pour des informations générales.
@@ -92,6 +95,9 @@ presets:
       name:
         en: The name of a contact for the project.
         fr: Le nom de la personne-ressource pour le projet.
+      phone:
+        en: The phone of the contact for the project
+        fr: Le nom de la personne-ressource à contacter.
   description:
     title:
       en: Description
@@ -639,8 +645,8 @@ admin:
       en: The list of administrations for a specific organization level (corresponding with the file name)
       fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)
 
-# Partner form specifics
-partner:
+# Future project form specifics
+partnership:
   name:
     title:
       en: Project Name
@@ -662,17 +668,17 @@ partner:
     infobulle:
       en: Add the name of the project
       fr: Ajouter le nom du projet
-  partners:
+  date:
     title:
-      en: Key Partners
-      fr: Partenaires
+      en: Search period dates
+      fr: Dates de la période de recherche
     labels:
-      email: *email
-      name:
-        en:
-          en: English name
-          fr: Nom en anglais
-        fr:
-          en: French name
-          fr: Nom en francais
-        schema: *name
+      started:
+        en: Beginning of the search period
+        fr: Début de la période de recherche
+      closed:
+        en: End of the search period
+        fr: Fin de la période de recherche
+    infobulle:
+      en: Select the period when the project is searching for partners.
+      fr: Sélectionner la période pendant laquelle le projet est en recherche de partenaires.

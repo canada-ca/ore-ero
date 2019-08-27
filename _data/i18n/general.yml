@@ -56,12 +56,12 @@ nav:
     link:
       en: ./docs.html
       fr: ./docs.html
-  futureProject:
-    en: Lorem ipsum (homepage title english)
-    fr: Lorem ipsum (homepage title french)
+  partnership:
+    en: Partnership
+    fr: Partenariat
     link:
-      en: ./future-projects.html
-      fr: ./projets-futurs.html
+      en: ./partnerships.html
+      fr: ./partenariats.html
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada

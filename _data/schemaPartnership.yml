@@ -5,26 +5,31 @@ projects:
   - contact:
       email: str()
       name: str(required=False)
+      phone: str(required=False)
+    category: str()
     date:
       closed: str()
-      created: str()
+      started: str()
       metadataLastUpdated: str()
     description:
-      en: str()
-      fr: str()
+      whatItDoes:
+        en: str()
+        fr: str()
+      howItWorks:
+        en: str(required=False)
+        fr: str(required=False)
     name:
       en: str()
       fr: str()
     partners:
-      - name:
-          en: str(required=False)
-          fr: str(required=False)
+      - adminCode: str(required=False)
         email: str(required=False)
+        name: str(required=False)
     tags:
       en:
-        - str()
+        - str(required=False)
       fr:
-        - str()
+        - str(required=False)
     team:
       en: str(required=False)
       en: str(required=False)

@@ -1,0 +1,28 @@
+---
+
+id: partnership
+
+formGroups:
+  - preset: adminCode
+  - preset: empty
+    title: projects
+    param: {start: true}
+  - preset: selectPartnership
+  - preset: description
+  - preset: team
+  - preset: category
+  - preset: tags
+    param: {required: false}
+  - preset: contact
+    param: {phone: true}
+  - widget: group
+    title: date
+    fields:
+      - widget: string
+        title: started
+        param: {type: date, rule: dateISO}
+      - widget: string
+        title: closed
+        param: {type: date, rule: dateISO}
+  - preset: partners
+  - preset: empty
