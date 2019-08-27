@@ -6,7 +6,7 @@ releases:
       email: calvin.rodo@hrsdc-rhdcc.gc.ca
     date:
       created: '2019-02-13'
-      metadataLastUpdated: '2019-02-21'
+      metadataLastUpdated: '2019-08-27'
     description:
       whatItDoes:
         en: A dashboard to show expose metrics on software projects at ESDC
