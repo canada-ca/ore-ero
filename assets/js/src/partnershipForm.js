@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode getSelectedOrgType getOrgLevel slugify
+  getAdminObject getAdminCode getSelectedOrgType getOrgLevel
   resetMoreGroup
   addMorePartners getNewAdminPartnerPromise fillPartnersField
   getToday
@@ -93,10 +93,10 @@ function getPartnershipObject() {
 
   let tagsEN = getTagsEN();
   let tagsFR = getTagsFR();
-  if (tagsEN || tagsFR) {
+  if (tagsEN.length != 0 || tagsFR.length != 0) {
     partnershipObject.projects[0].tags = {};
-    if (tagsEN) partnershipObject.projects[0].tags.en = tagsEN;
-    if (tagsFR) partnershipObject.projects[0].tags.fr = tagsFR;
+    if (tagsEN.length != 0) partnershipObject.projects[0].tags.en = tagsEN;
+    if (tagsFR.length != 0) partnershipObject.projects[0].tags.fr = tagsFR;
   }
 
   if ($('#enteam').val() || $('#frteam').val()) {
@@ -122,14 +122,15 @@ function submitForm() {
   let adminObject = getAdminObject();
 
   let partnershipName = partnershipObject.projects[0].name.en;
-  let adminCode = slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
-  );
+  let adminCode = getAdminCode();
+  let adminName = adminObject.name.en
+    ? adminObject.name.en
+    : $('#adminCode :selected').html();
 
-  let partnershipFile = `_data/partnership/${$('#orgLevel').val()}/${slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
-  )}.yml`;
-  let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
+  let partnershipFile = `_data/partnership/${getSelectedOrgType()}/${
+    $('#ennewAdminName').val() != '' ? adminCode : $('#adminCode').val()
+  }.yml`;
+  let adminFile = `_data/administrations/${$('#orgLevel').val()}.yml`;
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
 
@@ -141,7 +142,7 @@ function submitForm() {
       config = getConfigBase(
         'Updated',
         partnershipName,
-        adminObject.name.en,
+        adminName,
         partnershipFile,
         resultPartnership
       );
@@ -151,44 +152,49 @@ function submitForm() {
         config = getConfigBase(
           'Created',
           partnershipName,
-          adminObject.name.en,
+          adminName,
           partnershipFile,
           partnershipObject
         );
+      else throw err;
     })
     .then(function() {
+      let adminPromise = [];
       if ($('#ennewAdminName').val() != '') {
-        fileWriter
-          .merge(adminFile, adminObject, '', 'code')
-          .then(resultAdmin => {
-            addNewAdminToConfig(
-              config,
-              adminObject.name.en,
-              adminCode,
-              adminFile,
-              resultAdmin
-            );
-          })
-          .then(function() {
-            let newAdminPartnerPromise = getNewAdminPartnerPromise(
-              partnershipObject,
-              fileWriter,
-              config
-            );
-            Promise.all(newAdminPartnerPromise)
-              .then(function() {
-                config.body = JSON.stringify(config.body);
-                return fetch(PRBOT_URL, config);
-              })
-              .then(response => {
-                let url =
-                  $('html').attr('lang') == 'en'
-                    ? './partnerships.html'
-                    : './partenariats.html';
-                submitConclusion(response, submitBtn, resetBtn, url);
-              });
-          });
+        adminPromise.push(
+          fileWriter
+            .mergeAdminFile(adminFile, adminObject, '', 'code')
+            .then(resultAdmin => {
+              addNewAdminToConfig(
+                config,
+                adminName,
+                adminCode,
+                adminFile,
+                resultAdmin
+              );
+            })
+        );
       }
+      Promise.all(adminPromise).then(function() {
+        let newAdminPartnerPromise = getNewAdminPartnerPromise(
+          partnershipObject.projects[0],
+          fileWriter,
+          config
+        );
+        Promise.all(newAdminPartnerPromise)
+          .then(function() {
+            config.body.description = config.body.description + '\n';
+            config.body = JSON.stringify(config.body);
+            return fetch(PRBOT_URL, config);
+          })
+          .then(response => {
+            let url =
+              $('html').attr('lang') == 'en'
+                ? './partnerships.html'
+                : './partenariats.html';
+            submitConclusion(response, submitBtn, resetBtn, url);
+          });
+      });
     });
 }
 
@@ -198,10 +204,10 @@ function getConfigBase(change, projectName, adminName, file, object) {
       user: USERNAME,
       repo: REPO_NAME,
       title:
-        change + ' ' + projectName + ' partnership project under' + adminName,
+        change + ' ' + projectName + ' partnership project under ' + adminName,
       description:
         'Authored by: ' +
-        $('submitteremail').val() +
+        $('#submitteremail').val() +
         '\n' +
         'Partnership project: ***' +
         projectName +

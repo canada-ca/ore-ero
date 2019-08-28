@@ -47,37 +47,32 @@ $(document).ready(function() {
   });
 });
 
+function getAdminCodePartner(index) {
+  return slugify(
+    $('#enpartnersname' + index).val() +
+      ($('#provinceSelectPartner' + index).val() !== ''
+        ? '-' + $('#provinceSelectPartner' + index).val()
+        : '')
+  );
+}
+
 function addMorePartners(obj) {
   $('#addMorepartners ul.list-unstyled > li').each(function(i) {
     let id = i == 0 ? '' : i;
 
     if (
       $('#partners' + id).val() != '' ||
-      ($('#enpartnersname' + id).val() != '' &&
-        $('#provinceSelectPartner' + id).val() != '')
+      $('#enpartnersname' + id).val() != ''
     ) {
       let adminCode = '';
       if ($('#partners' + id).val() != '')
         adminCode = $('#partners' + id).val();
-      else if (
-        $('#enpartnersname' + id).val() != '' &&
-        $('#provinceSelectPartner' + id).val() != ''
-      ) {
-        adminCode = slugify(
-          $('#enpartnersname' + id).val() +
-            '-' +
-            $('#provinceSelectPartner' + id).val()
-        );
+      else if ($('#enpartnersname' + id).val() != '') {
+        adminCode = getAdminCodePartner(id);
       }
 
-      if (
-        $('#partnerscontactemail' + id).val() ||
-        $('#partnerscontactname' + id).val() ||
-        adminCode != ''
-      ) {
-        if (obj.partners == undefined) obj.partners = [];
-        obj.partners[i] = {};
-      }
+      if (obj.partners == undefined) obj.partners = [];
+      obj.partners[i] = {};
 
       obj.partners[i].adminCode = adminCode;
 
@@ -130,11 +125,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
 
 function getNewAdminPartnerObject(index) {
   let adminObj = {
-    code: slugify(
-      $('#enpartnersname' + index).val() +
-        '-' +
-        $('#provinceSelectPartner' + index).val()
-    ),
+    code: getAdminCodePartner(index),
     name: {
       en: $('#enpartnersname' + index).val(),
       fr: $('#frpartnersname' + index).val()
