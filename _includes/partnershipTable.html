@@ -132,6 +132,52 @@
   </table>
 </div>
 
-<!-- TODO: Modal Lightboxes -->
+{%- for govLevels in site.data.partnership -%}
+  {%- assign govLevel = govLevels[0] -%}
+  {%- for admin in govLevels[1] -%}
+    {%- for project in admin[1].projects -%}
+    {%- assign project = projects[1] -%}
+<section id="{{ project.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+  <header class="modal-header">
+    <h2 class="modal-title">{{ project.name[page.lang] }}</h2>
+  </header>
+  <div class="modal-body">
+    <p><strong>{{ project.description.whatItDoes[page.lang] }}</strong></p>
+    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+    <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
+    <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
+    {%- if project.contact.name != nil -%}
+      <p>{{ project.contact.name }}</p>
+    {%- endif -%}
+    {%- if project.contact.phone != nil -%}
+      <p>{{ site.data.i18n.tables.contactPhone[page.lang] }}: {{ project.contact.phone }}</p>
+    {%- endif -%}
+    {%- if project.contact.email != nil -%}
+      <p><a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
+    {%- endif -%}
+    {%- if project.partners != nil -%}
+      <h3>{{ site.data.i18n.tables.partners[page.lang] }}</h3>
+      <ul>
+      {%- for partner in project.partners -%}
+        <li>
+          {% if partner.name %}{{ partner.name }}{% endif %}
+          {% if partner.email %}<a href="mailto:{{ partner.email }}">{{ partner.email }}</a>{% endif %}
+          {% if partner.adminCode %}
+            {% for partnerLevel in site.data.i18n.administration %}
+              {%- assign adminPartner = site.data.administrations[partnerLevel] | where: "code", partner.adminCode -%}
+              {% if adminPartner[0] != nil %}
+                <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ adminPartner[0].name[page.lang] }}</p>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </li>
+      {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</section>
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor -%}
 
 </div>

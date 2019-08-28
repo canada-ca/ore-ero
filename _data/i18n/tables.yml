@@ -15,8 +15,8 @@ codeRepo:
   en: Code repo
   fr: Dépôt de code
 contactPhone:
-  en: Contact phone (###-###-####)
-  fr: Numéro du contact (###-###-####)
+  en: Contact phone
+  fr: Numéro du contact
 description:
   en: Description
   fr: Description
@@ -38,6 +38,9 @@ licence:
 team:
   en: Team
   fr: Équipe
+partners:
+  en: Partner(s)
+  fr: Partenaire(s)
 partnership: &projectName
   en: Project name
   fr: Nom du project
