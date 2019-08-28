@@ -319,8 +319,12 @@ function selectPartnership() {
 function addValueToFields(obj) {
   resetFields();
 
-  $('#enname').val(obj.name.en);
-  $('#frname').val(obj.name.fr);
+  $('#enname')
+    .val(obj.name.en)
+    .prop('disabled', true);
+  $('#frname')
+    .val(obj.name.fr)
+    .attr('disabled', true);
 
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
@@ -351,8 +355,12 @@ function addValueToFields(obj) {
 }
 
 function resetFields() {
-  $('#enname').val('');
-  $('#frname').val('');
+  $('#enname')
+    .val('')
+    .prop('disabled', false);
+  $('#frname')
+    .val('')
+    .prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
