@@ -5,5 +5,5 @@ name:
   required: false
 phone:
   required: false
-  type: phone
+  type: tel
   rule: phone

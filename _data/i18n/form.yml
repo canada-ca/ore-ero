@@ -227,8 +227,8 @@ presets:
         en: Contact email
         fr: Addresse courriel du contact
       name:
-          en: Name of the contact
-          fr: Nom du contact
+        en: Name of the contact
+        fr: Nom du contact
     label:
       en: Select an administration or create a new one.
       fr: Sélectionnez une administration ou créez en une nouvelle.
