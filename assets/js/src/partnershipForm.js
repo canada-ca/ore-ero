@@ -10,7 +10,7 @@
   getToday
 */
 
-const partnershipSelect = $('.page-partnershipForm #nameSelect');
+const partnershipSelect = $('.page-partnershipForm #nameselect');
 const adminSelect = $('.page-partnershipForm #adminCode');
 
 $(document).ready(function() {
@@ -248,11 +248,12 @@ function addNewAdminToConfig(config, name, adminCode, file, object) {
 }
 
 function selectAdmin() {
+  resetFields();
   let lang = $('html').attr('lang');
   let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function(
+    $.getJSON('http://localhost:4000/ore-ero/partnership.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
@@ -261,7 +262,6 @@ function selectAdmin() {
           .prop('disabled', true)
           .parent()
           .addClass('hide');
-        resetFields();
       } else {
         orgLevel.projects.sort(function(a, b) {
           let aName = a.name[lang].toLowerCase();
@@ -275,9 +275,9 @@ function selectAdmin() {
               '">' +
               project.name[lang] +
               '</option>'
-          ).appendTo('#nameSelect');
+          ).appendTo('#nameselect');
         });
-        $('#nameSelect')
+        $('#nameselect')
           .prop('disabled', false)
           .parent()
           .removeClass('hide');
@@ -288,7 +288,6 @@ function selectAdmin() {
       .prop('disabled', true)
       .parent()
       .addClass('hide');
-    resetFields();
   }
 }
 
@@ -297,7 +296,7 @@ function selectPartnership() {
   let admin = adminSelect.val();
   let partnership = partnershipSelect.val();
   if (partnership != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/code.json', function(
+    $.getJSON('http://localhost:4000/ore-ero/partnership.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);

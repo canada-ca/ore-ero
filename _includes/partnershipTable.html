@@ -20,16 +20,18 @@
         <select class="form-control" id="dt_team" name="dt_team" data-column="5">
           <option value="">&nbsp;</option>
           {%- assign team_arr = "" | split: ',' -%}
-          {%- for partnership in site.data.partnership -%}
-            {%- for tag in partnership[1].tags[page.lang] -%}
-              {%- if release.team[page.lang] != nil -%}
-                {%- assign team_arr = team_arr | push: release.team[page.lang] -%}
-              {%- endif -%}
+          {%- for govLevels in site.data.partnership -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for project in admin[1].projects -%}
+                {%- if project.team[page.lang] != nil -%}
+                  {%- assign team_arr = team_arr | push: project.team[page.lang] -%}
+                {%- endif -%}
+              {%- endfor -%}
             {%- endfor -%}
           {%- endfor -%}
           {%- assign team_arr = team_arr | group_by: "" | sort: "name" -%}
-          {%- for org in team_arr -%}
-            <option value="{{ org.name }}">{{ org.name }}</option>
+          {%- for team in team_arr -%}
+            <option value="{{ team.name }}">{{ team.name }}</option>
           {%- endfor -%}
         </select>
       </div>
@@ -39,9 +41,13 @@
         <select class="form-control" id="dt_category" name="dt_category" data-column="2">
           <option value="">&nbsp;</option>
           {%- assign cat_arr = "" | split: ',' -%}
-          {%- for partnership in site.data.partnership -%}
-            {%- for category in partnership[1].category -%}
-              {%- assign cat_arr = cat_arr | push: category -%}
+          {%- for govLevels in site.data.partnership -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for project in admin[1].projects -%}
+                {%- if project.category != nil -%}
+                  {%- assign cat_arr = cat_arr | push: project.category -%}
+                {%- endif -%}
+              {%- endfor -%}
             {%- endfor -%}
           {%- endfor -%}
           {%- assign cat_arr = cat_arr | uniq -%}
@@ -52,13 +58,17 @@
       </div>
 
       <div class="form-group">
-        <label for="dt_tag">Tag</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="6">
+        <label for="dt_tag">{{ site.data.i18n.tables.tag[page.lang] }}</label>
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="5">
           <option value="">&nbsp;</option>
           {%- assign tag_arr = "" | split: ',' -%}
-          {%- for partnership in site.data.partnership -%}
-            {%- for tag in partnership[1].tags[page.lang] -%}
-              {%- assign tag_arr = tag_arr | push: tag -%}
+          {%- for govLevels in site.data.partnership -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for project in admin[1].projects -%}
+                {%- for tag in project.tags[page.lang] -%}
+                  {%- assign tag_arr = tag_arr | push: tag -%}
+                {%- endfor -%}
+              {%- endfor -%}
             {%- endfor -%}
           {%- endfor -%}
           {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
@@ -83,7 +93,6 @@
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
   <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6,7], "visible": false}], "paging": true}'>
-  <!-- <table class="wb-tables table table-striped table-hover"> -->
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.partnership[page.lang] }}</th>
@@ -97,24 +106,28 @@
       </tr>
     </thead>
     <tbody>
-      {%- for partnerships in site.data.partnership -%}
-        {%- assign partnership =  partnerships[1] -%}
-        <tr>
-          <td><a href="#{{ partnership.name[page.lang] | slugify }}" aria-controls="{{ partnership.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ partnership.name[page.lang] }}</a></td>
-          <td>{{ partnership.description.whatItDoes[page.lang] }}</td>
-          <td>{{ site.data.i18n.categories[partnership.category][page.lang] }}</td>
-          <td>{{ partnership.date.started }}</td>
-          <td>{{ partnership.date.closed }}</td>
-          <td>{{ partnership.team[page.lang] }}</td>
-          <td>
-            {%- for tag in partnership.tags[page.lang] -%}
-              {{ tag }}&nbsp;
-            {%- endfor -%}
-          </td>
-          {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-          <td>{{ administration[0].name[page.lang] }}</td>
-        </tr>
+    {%- for govLevels in site.data.partnership -%}
+      {%- assign govLevel = govLevels[0] -%}
+      {%- for admin in govLevels[1] -%}
+        {%- for project in admin[1].projects -%}
+        {%- assign project = projects[1] -%}
+      <tr>
+        <td><a href="#{{ project.name[page.lang] | slugify }}" aria-controls="{{ project.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
+        <td>{{ project.description.whatItDoes[page.lang] }}</td>
+        <td>{{ site.data.i18n.categories[project.category][page.lang] }}</td>
+        <td>{{ project.date.started }}</td>
+        <td>{{ project.date.closed }}</td>
+        <td>{{ project.team[page.lang] }}</td>
+        <td>
+          {%- for tag in project.tags[page.lang] -%}
+            {{ tag }}&nbsp;
+          {%- endfor -%}
+        </td>
+        <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
+      </tr>
+        {%- endfor -%}
       {%- endfor -%}
+    {%- endfor -%}
     </tbody>
   </table>
 </div>

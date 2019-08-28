@@ -108,11 +108,11 @@ presets:
           en: What it does?
           fr: De quoi il s'agit?
         en:
-          en: English description on what it does
-          fr: Description en anglais de ce dont il s'agit
+          en: English
+          fr: Anglais
         fr:
-          en: French description on what it does
-          fr: Description en francais de ce dont il s'agit
+          en: French
+          fr: Français
         schema:
           en: What it does
           fr: De quoi il s'agit
@@ -121,11 +121,11 @@ presets:
           en: How it works?
           fr: Comment cela fonctionne?
         en:
-          en: English description on how it works
-          fr: Description en anglais sur comment cela fonctionne
+          en: English
+          fr: Anglais
         fr:
-          en: French description on how it works
-          fr: Description en français sur comment cela fonctionne
+          en: French
+          fr: Français
         schema:
           en: How it works
           fr: Comment cela fonctionne

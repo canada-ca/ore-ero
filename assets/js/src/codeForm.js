@@ -359,6 +359,7 @@ function getConfigNew(codeObject, file) {
 }
 
 function selectAdmin() {
+  resetFields();
   let lang = $('html').attr('lang');
   let admin = adminSelect.val();
   $('.additional-option').remove();
@@ -372,7 +373,6 @@ function selectAdmin() {
           .prop('disabled', true)
           .parent()
           .addClass('hide');
-        resetFields();
       } else {
         orgLevel.releases.sort(function(a, b) {
           let aName = a.name[lang].toLowerCase();
@@ -399,7 +399,6 @@ function selectAdmin() {
       .prop('disabled', true)
       .parent()
       .addClass('hide');
-    resetFields();
   }
 }
 
