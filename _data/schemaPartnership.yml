@@ -32,4 +32,4 @@ projects:
         - str(required=False)
     team:
       en: str(required=False)
-      en: str(required=False)
+      fr: str(required=False)
