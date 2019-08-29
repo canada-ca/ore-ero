@@ -145,7 +145,7 @@
     <p><strong>{{ project.description.whatItDoes[page.lang] }}</strong></p>
     {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
     <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
-    <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
+    <p><strong>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</strong></p>
     {%- if project.contact.name != nil -%}
       <p>{{ project.contact.name }}</p>
     {%- endif -%}
@@ -155,8 +155,9 @@
     {%- if project.contact.email != nil -%}
       <p><a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
     {%- endif -%}
+    <p>{{ site.data.i18n.tables.partnership.searchPeriod.title[page.lang] }} {{ site.data.i18n.tables.partnership.searchPeriod.beginning[page.lang] }} {{ project.date.started }} {{ site.data.i18n.tables.partnership.searchPeriod.end[page.lang] }} {{  project.date.closed }}</p>
     {%- if project.partners != nil -%}
-      <h3>{{ site.data.i18n.tables.partners[page.lang] }}</h3>
+      <p><strong>{{ site.data.i18n.tables.partners[page.lang] }}</strong></p>
       <ul>
       {%- for partner in project.partners -%}
         <li>

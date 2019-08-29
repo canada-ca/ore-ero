@@ -223,10 +223,21 @@ presets:
       adminCode:
         en: Admin code
         fr: Code de l'administration
-      email:
+      email: &partnerEmail
         en: Contact email
         fr: Addresse courriel du contact
       name:
+        en:
+          en: English name
+          fr: Nom anglais
+        fr:
+          en: French name
+          fr: Nom français
+        schema:
+          en: Administration name
+          fr: Nom de l'administration
+      contactemail: *partnerEmail
+      contactname:
         en: Name of the contact
         fr: Nom du contact
     label:

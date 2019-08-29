@@ -247,8 +247,7 @@
         {%- if release.status != nil -%}
           <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
         {%- endif -%}
-        <p>{{ site.data.i18n.form.presets.date.labels.created[page.lang] }}: {{ release.date.created }}</p>
-        <p>{{ site.data.i18n.form.presets.date.labels.metadataLastUpdated[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
+        <p>{{ site.data.i18n.form.code.date.label[page.lang] }}: {{ release.date.created }}</p>
 
         <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
         {%- if release.contact.name != nil -%}

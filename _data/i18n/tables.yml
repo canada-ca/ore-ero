@@ -44,6 +44,16 @@ partners:
 partnership: &projectName
   en: Project name
   fr: Nom du project
+  searchPeriod:
+    title:
+      en: 'Search period: '
+      fr: 'Période de recherche de partenaires :'
+    beginning:
+      en: from
+      fr: du
+    end:
+      en: to
+      fr: au
 projectName: *projectName
 relatedCode:
   en: Related Code
