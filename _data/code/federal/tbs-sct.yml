@@ -321,11 +321,26 @@ releases:
       email: sebastien.lemay@canada.ca
     date:
       created: '2017-12-31'
-      metadataLastUpdated: '2019-03-06'
+      metadataLastUpdated: '2019-08-29'
     description:
       whatItDoes:
-        en: This Website and all the data.
-        fr: Ce site Web et toutes les données.
+        en: >-
+          Platform for sharing open source solutions developed or used by
+          Canadian public administrations, as well as open project ideas of
+          administrations looking for partners and investors.
+        fr: >-
+          Plateforme de partage de solutions source ouverte développées ou
+          utilisées par les administrations publiques canadienne, ainsi que des
+          projets des administrations à la recherche de partenaires.
+      howItWorks:
+        en: >-
+          Users can search the platform for open source solutions and fill in
+          forms to add and modify projects. In that last case, a pull request is
+          automatically created on GitHub for the data to be updated.
+        fr: >-
+          L’utilisateur peut chercher des projets et soumettre un formulaire
+          pour ajouter et modifier un projet. Dans ce cas, une enquête est créée
+          automatiquement sur GitHub pour la mise à jour des données.
     category: '43232300'
     name:
       en: Open Resource Exchange
