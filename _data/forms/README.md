@@ -524,7 +524,7 @@ first-level:
         fr: The french value for the french page
   titles:
     widget-name:  # replace widget-name with each widget names
-      # The title is used for the schema page
+                  # The title is used for the schema page
       en: Widget Name
       fr: Nom du widget
     [...]
@@ -1027,8 +1027,8 @@ Voici la bonne façon pour traduire un *widget* :
 
 - Pour chaque *widget*, ajoutez un élément au deuxième niveau (sachant que le premier niveau peut correspondre à *preset*, *admin*, *software*, etc.). Le nom de ce paramètre doit être identique à la valeur du paramètre `title` présente dans le fichier *config*.Par exemple :
 ```yaml
-first-level:  # either preset, admin, code, software, standard, etc...
-  example:  # replace example with the title value of the widget
+first-level:  # soit preset, admin, code, software, standard, etc...
+  example:  # remplacer example avec la valeur pour title du widget
    [...]
 ```
 - Vous aurez également besoin d'ajouter un paramètre au troisième niveau sous le nom de `title`. Ce paramètre renferme la version française et anglaise de la valeur qui le définit. Cette valeur (du paramètre `title`) apparaît en tant que titre d'une section dans la page de formulaire ainsi qu'en description dans la page de schéma. Voici un exemple permettant d'illustrer cette explication :
@@ -1082,7 +1082,7 @@ first-level:
       en: Example
       fr: Exemple
     options:
-      option-name:  # where option-name is the value added in the options array in the config file
+      option-name:  # où option-name est la valeur ajoutées dans le tableau options du fichier config
         en: Option
         fr: Option
   [...]
@@ -1096,10 +1096,10 @@ first-level:
     en: Example
     fr: Exemple
   labels:
-    string:  # replace string with the title of a string widget
+    string:  # remplacer string avec le titre d'un widget de type string
       en: The english value for the label
       fr: The french value for the label
-    string-i18n:  # replace string-i18n with the title of a string-i18n widget
+    string-i18n:  # remplacer string-i18n avec le titre d'un widget de type string-i18n
       en:
         en: The english value for the english page
         fr: Then french value for the english page
@@ -1107,8 +1107,8 @@ first-level:
         en: The english value for the french page
         fr: The french value for the french page
     titles:
-      widget-name:  # replace widget-name with each widget names
-        # The title is used for the schema page
+      widget-name:  # remplacer widget-name avec le nom de chacun des widgets
+                    # title est utilisé pour la page schéma
         en: Widget Name
         fr: Nom du widget
 [...]
@@ -1149,8 +1149,8 @@ Certains formulaires nécessitent une fonction spécifique pour la réinitialisa
 
 #### getObject
 
-La fonction `get[form_id]Object ()` prend toutes les valeurs des entrées du formulaire en cours puis les attribue à une variable de type objet (*object*). Cet objet suit la hiérarchie comme le schéma pour le formulaire (en fait, son ordre définit l'ordre dans lequel les données seront écrites dans le fichier des données). Il est séparé en deux sections. Tout d'abord, tous les champs obligatoires sont ajoutés à l'objet. Ensuite, la fonction examine chaque champ non obligatoire, vérifiant s'il a une valeur ou non. S'il a une valeur, le champ non obligatoire est ajouté à l'objet. De cette façon, aucune clé avec des valeurs vides ne sera ajoutée aux fichiers de données.
+La fonction `get[form_id]Object()` prend toutes les valeurs des entrées du formulaire en cours puis les attribue à une variable de type objet (*object*). Cet objet suit la hiérarchie comme le schéma pour le formulaire (en fait, son ordre définit l'ordre dans lequel les données seront écrites dans le fichier des données). Il est séparé en deux sections. Tout d'abord, tous les champs obligatoires sont ajoutés à l'objet. Ensuite, la fonction examine chaque champ non obligatoire, vérifiant s'il a une valeur ou non. S'il a une valeur, le champ non obligatoire est ajouté à l'objet. De cette façon, aucune clé avec des valeurs vides ne sera ajoutée aux fichiers de données.
 
 #### addValuesToFields / resetFields
 
-Lorsque l'utilisateur sélectionne une administration ou un projet déjà existant, les données associées à la sélection sont extraites de GitHub. Par la suite*addValuesToFields* remplit certains champs avec les données extraites de GitHub. Si l'utilisateur choisit de rétablir les valeurs par défaut (soit *null*), le *resetField* supprime les valeurs ajoutées automatiquement aux champs provenant des données extraites précédemment. Dans les deux cas (*addValuesToFields* ou *resetField*), ce ne sont pas **tous** les champs du formulaire en cours qui sont automatiquement remplis. Par exemple, dans le formulaire pour les logiciels ouverts, la sélection d'une administration et d'un logiciel existant ne remplissent pas automatiquement les mêmes champs et la réinitialisation d'une sélection ne signifie pas que l'autre sélection est également réinitialisée.
+Lorsque l'utilisateur sélectionne une administration ou un projet déjà existant, les données associées à la sélection sont extraites de GitHub. Par la suite *addValuesToFields* remplit certains champs avec les données extraites de GitHub. Si l'utilisateur choisit de rétablir les valeurs par défaut (soit *null*), le *resetField* supprime les valeurs ajoutées automatiquement aux champs provenant des données extraites précédemment. Dans les deux cas (*addValuesToFields* ou *resetField*), ce ne sont pas **tous** les champs du formulaire en cours qui sont automatiquement remplis. Par exemple, dans le formulaire pour les logiciels ouverts, la sélection d'une administration et d'un logiciel existant ne remplissent pas automatiquement les mêmes champs et la réinitialisation d'une sélection ne signifie pas que l'autre sélection est également réinitialisée.
