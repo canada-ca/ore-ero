@@ -187,7 +187,7 @@ function submitFormAdminCodeForm() {
         })
         .then(function() {
           let promises = getNewAdminPartnerPromise(
-            codeObject,
+            codeObject.releases[0],
             fileWriter,
             config
           );
@@ -280,7 +280,11 @@ function submitCodeForm() {
       } else throw err;
     })
     .then(function() {
-      let promises = getNewAdminPartnerPromise(codeObject, fileWriter, config);
+      let promises = getNewAdminPartnerPromise(
+        codeObject.releases[0],
+        fileWriter,
+        config
+      );
       Promise.all(promises)
         .then(function() {
           config.body = JSON.stringify(config.body);
