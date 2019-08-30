@@ -1,0 +1,18 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-montreal-qc
+projects:
+  - contact:
+      email: frederic.lestage@montreal.ca
+    category: '43232400'
+    date:
+      closed: '2019-08-31'
+      started: '2019-08-30'
+      metadaLastUpdated: '2019-08-30'
+    description:
+      whatItDoes:
+        en: What it does EN
+        fr: What it does FR
+    name:
+      en: Frederic
+      fr: Frédéric
