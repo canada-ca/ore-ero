@@ -1,4 +1,4 @@
-/* exported getAdminObject getAdminCode */
+/* exported getAdminObject getAdminCode getSelectedOrgType getOrgLevel */
 
 /* global $ slugify */
 
@@ -87,4 +87,27 @@ function getAdminObject() {
   if (province != '') adminObj.provinceCode = province;
 
   return adminObj;
+}
+
+function getSelectedOrgType() {
+  if ($('#adminCode').val() != '')
+    return $('#adminCode :selected')
+      .parent()
+      .attr('label')
+      .toLowerCase();
+  else return $('#orgLevel').val();
+}
+
+function getOrgLevel(result, admin) {
+  let federal = result.federal[admin];
+  let provincial = result.provincial[admin];
+  let municipal = result.municipal[admin];
+
+  let orgLevel;
+
+  if (municipal != undefined) orgLevel = municipal;
+  else if (provincial != undefined) orgLevel = provincial;
+  else if (federal != undefined) orgLevel = federal;
+
+  return orgLevel;
 }

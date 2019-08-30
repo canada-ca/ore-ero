@@ -2,7 +2,7 @@
 <li>
   <details open>
     <summary>{{ include.title }} {% include schema/components/required.html required=include.param.required %} [array]</summary>
-    <p>{{ site.data.i18n.form[include.idPreset][include.title].title[page.lang] }}</p>
+    <p>{{ site.data.i18n.form[include.id][include.title].title[page.lang] }}</p>
     <ul class="list-unstyled">
 {%- else -%}
     </ul>

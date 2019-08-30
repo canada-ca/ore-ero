@@ -16,6 +16,27 @@
       </div>
 
       <div class="form-group">
+        <label for="dt_team">{{ site.data.i18n.tables.team[page.lang] }}</label>
+        <select class="form-control" id="dt_team" name="dt_team" data-column="6">
+          <option value="">&nbsp;</option>
+          {%- assign team_arr = "" | split: ',' -%}
+          {%- for govLevels in site.data.code -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
+                {%- if release.team[page.lang] != nil -%}
+                  {%- assign team_arr = team_arr | push: release.team[page.lang] -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign team_arr = team_arr | group_by: "" | sort: "name" -%}
+          {%- for team in team_arr -%}
+            <option value="{{ team.name }}">{{ team.name }}</option>
+          {%- endfor -%}
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
@@ -51,27 +72,6 @@
           {%- assign cat_arr = cat_arr | uniq -%}
           {%- for cat in cat_arr -%}
             <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dt_team">{{ site.data.i18n.tables.team[page.lang] }}</label>
-        <select class="form-control" id="dt_team" name="dt_team" data-column="6">
-          <option value="">&nbsp;</option>
-          {%- assign org_arr = "" | split: ',' -%}
-          {%- for govLevels in site.data.code -%}
-            {%- for admin in govLevels[1] -%}
-              {%- for release in admin[1].releases -%}
-                {%- if release.team[page.lang] != nil -%}
-                  {%- assign org_arr = org_arr | push: release.team[page.lang] -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endfor -%}
-          {%- endfor -%}
-          {%- assign org_arr = org_arr | group_by: "" | sort: "name" -%}
-          {%- for org in org_arr -%}
-            <option value="{{ org.name }}">{{ org.name }}</option>
           {%- endfor -%}
         </select>
       </div>
@@ -247,8 +247,7 @@
         {%- if release.status != nil -%}
           <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
         {%- endif -%}
-        <p>{{ site.data.i18n.form.presets.date.labels.created[page.lang] }}: {{ release.date.created }}</p>
-        <p>{{ site.data.i18n.form.presets.date.labels.metadataLastUpdated[page.lang] }}: {{ release.date.metadataLastUpdated }}</p>
+        <p>{{ site.data.i18n.form.code.date.label[page.lang] }}: {{ release.date.created }}</p>
 
         <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
         {%- if release.contact.name != nil -%}

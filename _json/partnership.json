@@ -1,0 +1,5 @@
+---
+permalink: /partnership.json
+---
+
+{{ site.data.partnership | jsonify }}

@@ -82,6 +82,9 @@ presets:
     labels:
       name: *name
       email: *email
+      phone:
+        en: Phone
+        fr: Téléphonne
     infobulle:
       en: Point of contact for general inquiries.
       fr: Coordonnées de la personne à contacter pour des informations générales.
@@ -92,6 +95,9 @@ presets:
       name:
         en: The name of a contact for the project.
         fr: Le nom de la personne-ressource pour le projet.
+      phone:
+        en: The phone of the contact for the project
+        fr: Le nom de la personne-ressource à contacter.
   description:
     title:
       en: Description
@@ -106,7 +112,10 @@ presets:
           fr: Anglais
         fr:
           en: French
-          fr: Francais
+          fr: Français
+        schema:
+          en: What it does
+          fr: De quoi il s'agit
       howItWorks:
         subtitle:
           en: How it works?
@@ -116,7 +125,10 @@ presets:
           fr: Anglais
         fr:
           en: French
-          fr: Francais
+          fr: Français
+        schema:
+          en: How it works
+          fr: Comment cela fonctionne
     label:
       schema:
         en: Description
@@ -125,15 +137,15 @@ presets:
       en: (200 characters limit)
       fr: (limite de 200 caractères)
     infobulle:
-      en: Add brief descriptions on what the project does and how it works.  
+      en: Add brief descriptions on what the project does and how it works.
       fr: Ajoutez une brève description, expliquant de quoi il s'agit et comment cela fonctionne.
     titles:
-      en:
-        en: English description
-        fr: Description en anglais
-      fr:
-        en: French description
-        fr: Description en francais
+      whatItDoes:
+        en: Description on what it does
+        fr: Description de ce dont it s'agit
+      howItWorks:
+        en: Description on how it works
+        fr: Description sur comment cela fonctionne
   homepageURL:
     title:
       en: Project Homepage
@@ -208,19 +220,26 @@ presets:
       en: Key Partners
       fr: Partenaires
     labels:
-      contactemail:
+      adminCode:
+        en: Admin code
+        fr: Code de l'administration
+      email: &partnerEmail
         en: Contact email
         fr: Addresse courriel du contact
-      contactname:
-        en: Contact name
-        fr: Nom du contact
       name:
         en:
-          en: English Name
-          fr: Nom en anglais
+          en: English name
+          fr: Nom anglais
         fr:
-          en: Name in french
-          fr: Nom en français
+          en: French name
+          fr: Nom français
+        schema:
+          en: Administration name
+          fr: Nom de l'administration
+      contactemail: *partnerEmail
+      contactname:
+        en: Name of the contact
+        fr: Nom du contact
     label:
       en: Select an administration or create a new one.
       fr: Sélectionnez une administration ou créez en une nouvelle.
@@ -545,6 +564,9 @@ standard:
       fr:
         en: French name
         fr: Nom en français
+      schema:
+        en: Organization name
+        fr: Nom de l'organisation
     infobulle:
       en: Add the name of the organization developing, coordinating, promulgating, revising, amending, reissuing, interpreting or producing the standard.
       fr: Ajouter le nom de l'organization de standardisation qui développe, coordonne, promulgue, révise, modifie, interprète publie ou produit la norme.
@@ -638,3 +660,52 @@ admin:
     title:
       en: The list of administrations for a specific organization level (corresponding with the file name)
       fr: La liste des organisations pour un niveau de gouvernement spécifique (correspondant au nom du fichier)
+
+# Future project form specifics
+partnership:
+  name:
+    title:
+      en: Project Name
+      fr: Nom du projet
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a project that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un projet déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the project
+      fr: Ajouter le nom du projet
+  date:
+    title:
+      en: Search period dates
+      fr: Dates de la période de recherche
+    labels:
+      started:
+        en: Beginning of the search period
+        fr: Début de la période de recherche
+      closed:
+        en: End of the search period
+        fr: Fin de la période de recherche
+    infobulle:
+      en: Select the period when the project is searching for partners.
+      fr: Sélectionner la période pendant laquelle le projet est en recherche de partenaires.
+    titles:
+      started:
+        en: The date when the project started searching for partners (in format YYYY-MM-DD)
+        fr: La date où le projet à débuté sa recherche de partenaires (au format AAAA-MM-JJ)
+      closed:
+        en: THe date when the project will stop or has stopped searching for partners (in format YYYY-MM-DD)
+        fr: La date où le project terminera ou a terminé sa recherche de partenaires (au format AAAA-MM-JJ)
+  projects:
+    title:
+      en: Informations about each project
+      fr: Information à propos de chacun des projects

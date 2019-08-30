@@ -2,3 +2,6 @@
 {%- include form/components/title.html id=include.idPreset title=title -%}
 {%- include form/components/group-group.html id=include.idPreset title=title group="name" param=site.data.forms.param.contact.name -%}
 {%- include form/components/group-group.html id=include.idPreset title=title group="email" param=site.data.forms.param.contact.email -%}
+{%- if include.param.phone -%}
+  {%- include form/components/group-group.html id=include.idPreset title=title group="phone" param=site.data.forms.param.contact.phone -%}
+{%- endif -%}

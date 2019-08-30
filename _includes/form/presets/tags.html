@@ -9,15 +9,15 @@
 {%- endif -%}
 <div id="tags">
   <div id="tags{{ lang1 | upcase }}" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang1 %}
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang1 param=include.param %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control" required="required">
+      <input type="text" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
     </div>
   </div>
   <div id="tags{{ lang2 | upcase }}" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang2 %}
+    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang2 param=include.param %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control" required="required">
+      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
     </div>
   </div>
 </div>

@@ -50,6 +50,7 @@
 {%- endif -%}
 {%- if page.ref == "codeForm" -%}
 <script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/partners.js"></script>
 <script src="../assets/js/src/codeForm.js"></script>
 {%- endif -%}
 {%- if page.ref == "standardForm" -%}
@@ -60,6 +61,11 @@
 <script src="../assets/js/src/adminForm.js"></script>
 <script src="../assets/js/src/softwareForm.js"></script>
 {%- endif %}
+{%- if page.ref == "partnershipForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/partners.js"></script>
+<script src="../assets/js/src/partnershipForm.js"></script>
+{%- endif -%}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
