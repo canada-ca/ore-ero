@@ -99,6 +99,8 @@ function getSelectedOrgType() {
 }
 
 function getOrgLevel(result, admin) {
+  if (result == null) return undefined;
+
   let federal = result.federal[admin];
   let provincial = result.provincial[admin];
   let municipal = result.municipal[admin];
