@@ -1,5 +1,5 @@
 ---
 username:
-  rule: alphanum-space
+  rule: names
 email:
   type: email
