@@ -1,0 +1,20 @@
+---
+schemaVersion: '1.0'
+adminCode: test-sk
+projects:
+  - contact:
+      email: tommy.hudon.1@ulval.ca
+    category: '43232500'
+    date:
+      closed: '2019-09-25'
+      started: '2019-09-12'
+      metadaLastUpdated: '2019-09-16'
+    description:
+      whatItDoes:
+        en: test
+        fr: test
+    name:
+      en: test
+      fr: test
+    partners:
+      - adminCode: test-on
