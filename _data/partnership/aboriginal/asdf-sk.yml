@@ -1,0 +1,20 @@
+---
+schemaVersion: '1.0'
+adminCode: asdf-sk
+projects:
+  - contact:
+      email: tommy.hudon@montreal.ca
+    category: '43233200'
+    date:
+      closed: '2019-09-28'
+      started: '2019-09-21'
+      metadaLastUpdated: '2019-09-17'
+    description:
+      whatItDoes:
+        en: asdf
+        fr: asdf
+    name:
+      en: asdf
+      fr: asdf
+    partners:
+      - adminCode: asdf-on
