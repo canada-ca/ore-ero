@@ -1,0 +1,20 @@
+---
+schemaVersion: '1.0'
+adminCode: test-bc
+projects:
+  - contact:
+      email: tommy.hudon@montreal.ca
+    category: '43231600'
+    date:
+      closed: '2019-09-28'
+      started: '2019-09-19'
+      metadaLastUpdated: '2019-09-17'
+    description:
+      whatItDoes:
+        en: test
+        fr: test
+    name:
+      en: tset
+      fr: test
+    partners:
+      - adminCode: testt-sk
