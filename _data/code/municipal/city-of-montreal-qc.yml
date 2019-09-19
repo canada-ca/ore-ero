@@ -42,3 +42,62 @@ releases:
           en: CKAN
           fr: CKAN
     status: Maintained
+  - contact:
+      email: olivier.albertini@montreal.ca
+      name: Albertini
+    date:
+      created: '2019-06-17'
+      metadataLastUpdated: '2019-09-19'
+    description:
+      whatItDoes:
+        en: >-
+          Extensible worker for Node.js that works with both Zeebe and Camunda
+          BPM platforms powered by TypeScript
+        fr: >-
+          Worker extensible pour Node.js fonctionnant avec les plates-formes
+          Zeebe et Camunda BPM optimisées par TypeScript
+    category: '43232300'
+    name:
+      en: WorkIt
+      fr: WorkIt
+    licences:
+      - URL:
+          en: 'https://github.com/VilledeMontreal/workit/blob/master/LICENSE'
+          fr: 'https://github.com/VilledeMontreal/workit/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/VilledeMontreal/workit'
+      fr: 'https://github.com/VilledeMontreal/workit'
+    tags:
+      en:
+        - Camunda BPM
+        - Zeebe
+        - Worker
+        - Microservice
+        - NodeJS
+      fr:
+        - Camunda BPM
+        - Zeebe
+        - Worker
+        - Micro service
+        - NodeJS
+    languages:
+      - JavaScript
+      - TypeScript
+    relatedCode:
+      - URL:
+          en: 'https://camunda.com'
+          fr: 'https://camunda.com'
+        name:
+          en: Camunda BPM
+          fr: Camunda BPM
+      - URL:
+          en: 'https://zeebe.io/'
+          fr: 'https://zeebe.io/'
+        name:
+          en: Zeebe
+          fr: Zeebe
+    status: Maintained
+    team:
+      en: ' Digital Solutions'
+      fr: Solutions numériques
