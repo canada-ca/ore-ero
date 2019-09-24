@@ -3,13 +3,13 @@ schemaVersion: '1.0'
 description:
   whatItDoes:
     en: >-
-      R is a programming language and free software environment for statistical
+      R is a programming language environment for statistical
       computing and graphics supported by the R Foundation for Statistical
-      Computing. The R language is widely used among statistici
+      Computing.
     fr: >-
-      R est un langage de programmation et un environnement logiciel libre pour
+      R est un langage de programmation et un environnement pour
       le calcul statistique et les graphiques pris en charge par la Fondation R
-      pour le calcul statistique. Le langage R est largeme
+      pour le calcul statistique.
 category: '43232400'
 homepageURL:
   en: 'https://www.r-project.org/'
@@ -34,5 +34,5 @@ administrations:
           email: vivian.nobrega@tbs-sct.gc.ca
           name: Vivian Nobrega
         date:
-          started: '0001-01-01'
+          started: '2019-09-24'
           metadataLastUpdated: '2019-09-24'
