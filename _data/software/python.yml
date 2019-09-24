@@ -4,12 +4,10 @@ description:
   whatItDoes:
     en: >-
       Python is an interpreted, high-level, general-purpose programming
-      language. Created by Guido van Rossum and first released in 1991, Python's
-      design philosophy emphasizes code readability with its nota
+      language.
     fr: >-
       Python est un langage de programmation interprété, de haut niveau et
-      polyvalent. Créée par Guido van Rossum et publiée pour la première fois en
-      1991, la philosophie de conception de Python met l'accen
+      polyvalent.
 category: '43232400'
 homepageURL:
   en: 'https://www.python.org/'
@@ -34,5 +32,5 @@ administrations:
           email: vivian.nobrega@tbs-sct.gc.ca
           name: Vivian Nobrega
         date:
-          started: '0001-01-01'
+          started: '2019-09-24'
           metadataLastUpdated: '2019-09-24'
