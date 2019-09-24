@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Python is an interpreted, high-level, general-purpose programming
+      language. Created by Guido van Rossum and first released in 1991, Python's
+      design philosophy emphasizes code readability with its nota
+    fr: >-
+      Python est un langage de programmation interprété, de haut niveau et
+      polyvalent. Créée par Guido van Rossum et publiée pour la première fois en
+      1991, la philosophie de conception de Python met l'accen
+category: '43232400'
+homepageURL:
+  en: 'https://www.python.org/'
+  fr: 'https://www.python.org/'
+licences:
+  - URL:
+      en: 'https://docs.python.org/3/license.html'
+      fr: 'https://docs.python.org/3/license.html'
+    spdxID: Python-2.0
+name:
+  en: Python
+  fr: Python
+tags:
+  en:
+    - Programming Language
+  fr:
+    - Langage de programmation
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: vivian.nobrega@tbs-sct.gc.ca
+          name: Vivian Nobrega
+        date:
+          started: '0001-01-01'
+          metadataLastUpdated: '2019-09-24'
