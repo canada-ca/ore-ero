@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      iTop stands for IT Operations Portal. It is a complete open source, ITIL,
+      web based service management tool including a fully customizable CMDB, a
+      helpdesk system and a document management tool. 
+    fr: >-
+      iTop stands for IT Operations Portal. It is a complete open source, ITIL,
+      web based service management tool including a fully customizable CMDB, a
+      helpdesk system and a document management tool.
+category: '43231600'
+homepageURL:
+  en: 'https://github.com/Combodo/iTop'
+  fr: 'https://github.com/Combodo/iTop'
+licences:
+  - URL:
+      en: 'https://github.com/Combodo/iTop/blob/develop/license.txt'
+      fr: 'https://github.com/Combodo/iTop/blob/develop/license.txt'
+    spdxID: AGPL-3.0-only
+name:
+  en: iTop
+  fr: iTop
+tags:
+  en:
+    - ITSM
+  fr:
+    - ITSM
+administrations:
+  - adminCode: ssc-spc
+    uses:
+      - contact:
+          email: noreply@example.com
+          name: TBD
+        date:
+          started: '2019-09-30'
+          metadataLastUpdated: '2019-09-30'
