@@ -76,6 +76,12 @@ footer:
   AboutSite:
     en: About this site
     fr: À propos du site
+  reportProblem:
+    en: Report a problem on this page
+    fr: Signaler un problème sur cette page
+  sourceCode:
+    en: View source code of this page
+    fr: Voir le code source de cette page
   Nav:
     Canada:
       en:
