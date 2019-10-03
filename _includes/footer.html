@@ -5,7 +5,7 @@
     <div class="row">
       <div class="btn-group btn-group-lg col-md-9 col-lg-8 col-sm-9">
         <a href="https://github.com/canada-ca/ore-ero/issues" class="btn btn-default" role="button">{{ site.data.i18n.general.footer.reportProblem[page.lang]}}</a>
-        <a href="https://github.com/canada-ca/ore-ero/tree/master/_pages/" onClick="location.href=this.href + fullPath;return false;" class="btn btn-default" role="button"> {{ site.data.i18n.general.footer.sourceCode[page.lang]}} </a>
+        <a href="https://github.com/canada-ca/ore-ero/tree/master/{{page.path}}" class="btn btn-default" role="button"> {{ site.data.i18n.general.footer.sourceCode[page.lang]}} </a>
       </div>
       <div class="wb-share col-md-3 col-sm-3  col-lg-offset-1" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
     </div>
@@ -82,11 +82,4 @@
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
   const PRBOT_URL = "{{ site.prbot_url }}";
-</script>
-<script language="JavaScript" type="text/javascript">
-  let parser = document.createElement('a');
-  parser.href = window.location.href;
-  let pathPage = parser.href.split("/").slice(-1)[0];
-  let pathLang = parser.href.split("/").slice(-2)[0];
-  let fullPath = pathLang + '/' + pathPage;
 </script>
