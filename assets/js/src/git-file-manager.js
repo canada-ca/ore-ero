@@ -12,9 +12,7 @@ class FileWriter {
     this._user = user;
     this._repo = repo;
     this._branch = branch;
-    this._base = `https://raw.githubusercontent.com/${this._user}/${
-      this._repo
-    }/${this._branch}`;
+    this._base = `https://raw.githubusercontent.com/${this._user}/${this._repo}/${this._branch}`;
   }
 
   /**
