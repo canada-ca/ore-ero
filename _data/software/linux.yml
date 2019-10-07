@@ -36,3 +36,11 @@ administrations:
         date:
           started: '2010-01-01'
           metadataLastUpdated: '2019-09-04'
+  - adminCode: ssc-spc
+    uses:
+      - contact:
+          email: ssc.itpro-approti.spc@canada.ca
+          name: SSC IT Procurement
+        date:
+          started: '2017-09-01'
+          metadataLastUpdated: '2019-10-07'
