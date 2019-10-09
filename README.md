@@ -159,11 +159,11 @@ docker run -p3000:3000 -e GH_TOKEN={YOUR GITHUB TOKEN} -e HOST_NAME=* jrewerts/p
 
 Maintenant, remplacez prbot_url dans `_config.yml` par `http://localhost:3000/`.
 
-Maintenant, lorsque vous remplissez nos formulaires, il soumet la demande d'extraction à l'aide de PRB0t s'exécutant dans votre conteneur Docker!
+Maintenant, lorsque vous remplissez nos formulaires, il soumet la demande de fusion à l'aide de PRB0t s'exécutant dans votre conteneur Docker!
 
-### Libération
+### Publication
 
-Le site principal est un site GitHub Pages. Il est donc mis à jour chaque fois que le code est fusionné dans le fichier maître. Nous dépendons également d'un service externe appelé PRB0t pour permettre aux utilisateurs de soumettre des demandes d'extraction à ORE sans avoir de compte GitHub.
+Le site principal est un site GitHub Pages. Il est donc mis à jour chaque fois que le code est fusionné dans le fichier maître. Nous dépendons également d'un service externe appelé PRB0t pour permettre aux utilisateurs de soumettre des demandes de fusion à ORE sans avoir de compte GitHub.
 
 #### Mise à jour PRB0t
 
@@ -174,7 +174,7 @@ Commencez par cloner PRB0t sur votre machine.
 git clone https://github.com/PRB0t/PRB0t
 ```
 
-Ensuite, ajoutez notre application en tant que référentiel git distant.
+Ensuite, ajoutez notre application en tant que dépôt git distant.
 ``` bash
 heroku git:remote -a canada-pr-bot
 ```
