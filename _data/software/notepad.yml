@@ -12,8 +12,10 @@ homepageURL:
   fr: 'https://notepad-plus-plus.org/fr'
 licences:
   - URL:
-      en: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
-      fr: 'https://notepad-plus-plus.org/news/notepad-6.1.1-gpl-enhancement.html'
+      en: >-
+        https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE
+      fr: >-
+        https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE
     spdxID: GPL-2.0-only
 name:
   en: Notepad++
@@ -35,3 +37,10 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: do-not-reply@tbs-sct.gc.ca
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2019-10-11'
