@@ -16,7 +16,7 @@ licences:
   - URL:
       en: 'https://www.drupal.org/about/licensing#drupal-license'
       fr: 'https://www.drupal.org/about/licensing#drupal-license'
-    spdxID: GPL-2.0-only
+    spdxID: GPL-2.0-or-later
 name:
   en: Drupal
   fr: Drupal
@@ -49,3 +49,11 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
+  - adminCode: statcan
+    uses:
+      - contact:
+          email: william.hearn@canada.ca
+          name: William Hearn
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2019-10-11'
