@@ -20,8 +20,8 @@ licences:
       fr: 'https://github.com/leskhq/Laravel-Enterprise-Starter-Kit/blob/master/LICENSE.md'
     spdxID: GPL-3.0-only
   - URL:
-      en: 'http://lesk.it/license.html'
-      fr: 'http://lesk.it/license.html'
+      en: 'https://github.com/leskhq/Laravel-Enterprise-Starter-Kit/blob/master/LICENSE.md'
+      fr: 'https://github.com/leskhq/Laravel-Enterprise-Starter-Kit/blob/master/LICENSE.md'
     spdxID: Apache-2.0
 name:
   en: LESK
