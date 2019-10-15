@@ -28,7 +28,7 @@ administrations:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
-          metadataLastUpdated: '2019-05-15'
+          metadataLastUpdated: '2019-10-15'
   - adminCode: city-of-montreal-qc
     uses:
       - contact:
