@@ -21,7 +21,7 @@ script:
 - yamale -s schemaSoftware.yaml _data/software
 - yamale -s schemaStandard.yaml _data/standard
 - yamale -s schemaPartnership.yaml _data/partnership
-- npm run lint
+- npm test
 - yamllint -d configYamlLint.yml _data
 
 

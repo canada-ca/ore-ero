@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint assets/js/src/**",
+    "open-licences": "licensee --errors-only",
     "prettify": "eslint assets/js/src/** --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run open-licences"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,9 @@
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.5.1",
     "eslint-plugin-prettier": "^3.1.1",
+    "licensee": "^7.0.3",
     "prettier": "^1.18.2"
   }
 }

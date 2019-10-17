@@ -1,6 +1,6 @@
 /* exported getAdminObject getAdminCode getSelectedOrgType getOrgLevel */
 
-/* global $ slugify */
+/* global  slugify */
 
 var newAdminON = false;
 

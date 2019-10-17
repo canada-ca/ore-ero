@@ -1,4 +1,4 @@
-/* global $ jsyaml slugify addMoreGroup */
+/* global  jsyaml slugify addMoreGroup */
 /* exported fillPartnersField getNewAdminPartnerPromise addMorePartners */
 
 $(document).ready(function() {

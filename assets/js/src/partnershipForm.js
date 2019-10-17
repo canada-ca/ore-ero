@@ -1,5 +1,5 @@
 /*
-  global $
+  global
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
