@@ -364,3 +364,47 @@ releases:
       - adminCode: city-of-montreal-qc
         email: renatabianca.tomazeli@ville.montreal.qc.ca
         name: Bianca Tomazeli
+  - contact:
+      email: GCInfoBase@tbs-sct.gc.ca
+      name: GC InfoBase Team / Équipe de l'InfoBase du GC
+    date:
+      created: '2012-08-21'
+      metadataLastUpdated: '2019-10-24'
+    description:
+      whatItDoes:
+        en: >-
+          The GC InfoBase is an interactive data-visualization tool,
+          transforming complex federal data into simple visual stories for
+          Canadians.
+        fr: >-
+          L’InfoBase du GC est un outil interactif de visualisation de données,
+          qui traduit en termes simples l’information complexe du gouvernement
+          fédéral au profit des Canadiens.
+    category: '43233500'
+    name:
+      en: GC InfoBase
+      fr: InfoBase du GC
+    licences:
+      - URL:
+          en: 'https://github.com/TBS-EACPD/infobase/blob/master/LICENSE'
+          fr: 'https://github.com/TBS-EACPD/infobase/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/TBS-EACPD/infobase'
+      fr: 'https://github.com/TBS-EACPD/infobase'
+    tags:
+      en:
+        - Website
+        - Data visualization
+      fr:
+        - Site web
+        - Visualization de données
+    homepageURL:
+      en: 'https://canada.ca/gcinfobase'
+      fr: 'https://canada.ca/infobasegc'
+    languages:
+      - JavaScript
+    status: Maintained
+    team:
+      en: EACPD EMS TBS
+      fr: DADPR SGD SCT
