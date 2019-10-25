@@ -41,8 +41,10 @@ releases:
     relatedCode:
       - URL:
           en: 'https://github.com/Elgg/Elgg'
+          fr: 'https://github.com/Elgg/Elgg'
         name:
           en: Elgg
+          fr: Elgg
     status: Maintained
   - contact:
       email: cds-snc@tbs-sct.gc.ca

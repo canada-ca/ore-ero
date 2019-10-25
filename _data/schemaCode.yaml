@@ -12,9 +12,7 @@ releases:
       whatItDoes:
         en: str()
         fr: str()
-      howItWorks:
-        en: str(required=False)
-        fr: str(required=False)
+      howItWorks: include('lang', required=False)
     category: str()
     name:
       en: str()
@@ -32,26 +30,23 @@ releases:
         - str()
       fr:
         - str()
-    downloadURL:
-      en: str(required=False)
-      fr: str(required=False)
-    homepageURL:
-      en: str(required=False)
-      fr: str(required=False)
-    languages:
-      - str(required=False)
-    partners:
-      - adminCode: str(required=False)
-        email: str(required=False)
-        name: str(required=False)
-    relatedCode:
-      - URL:
-          en: str(required=False)
-          fr: str(required=False)
-        name:
-          en: str(required=False)
-          fr: str(required=False)
+    downloadURL: include('lang', required=False)
+    homepageURL: include('lang', required=False)
+    languages: list(str(required=False), required=False)
+    partners: list(include('partner'), required=False)
+    relatedCode: list(include('related'), required=False)
     status: enum('Alpha', 'Beta', 'Maintained', 'Deprecated', 'Retired', required=False)
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+    team: include('lang', required=False)
+---
+partner:
+  adminCode: str(required=False)
+  email: str(required=False)
+  name: str(required=False)
+
+related:
+  URL: include('lang', required=False)
+  name: include('lang', required=False)
+
+lang:
+  en: str(required=False)
+  fr: str(required=False)

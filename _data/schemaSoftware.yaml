@@ -4,9 +4,7 @@ description:
   whatItDoes:
     en: str()
     fr: str()
-  howItWorks:
-    en: str(required=False)
-    fr: str(required=False)
+  howItWorks: include('lang', required=False)
 category: str()
 homepageURL:
   en: str()
@@ -33,6 +31,8 @@ administrations:
         date:
           started: str()
           metadataLastUpdated: str()
-        team:
-          en: str(required=False)
-          fr: str(required=False)
+        team: include('lang', required=False)
+---
+lang:
+  en: str(required=False)
+  fr: str(required=False)

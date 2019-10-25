@@ -15,21 +15,23 @@ projects:
       whatItDoes:
         en: str()
         fr: str()
-      howItWorks:
-        en: str(required=False)
-        fr: str(required=False)
+      howItWorks: include('lang', required=False)
     name:
       en: str()
       fr: str()
-    partners:
-      - adminCode: str(required=False)
-        email: str(required=False)
-        name: str(required=False)
+    partners: list(include('partner'), required=False)
     tags:
       en:
         - str(required=False)
       fr:
         - str(required=False)
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+    team: include('lang', required=False)
+---
+partner:
+  adminCode: str(required=False)
+  email: str(required=False)
+  name: str(required=False)
+
+lang:
+  en: str(required=False)
+  fr: str(required=False)
