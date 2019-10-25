@@ -4,9 +4,7 @@ description:
   whatItDoes:
     en: str()
     fr: str()
-  howItWorks:
-    en: str(required=False)
-    fr: str(required=False)
+  howItWorks: include('lang', required=False)
 name:
   en: str()
   fr: str()
@@ -38,6 +36,8 @@ administrations:
           en: str()
           fr: str()
     status: enum('deprecated', 'mandatory', 'preferred')
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+    team: include('lang', required=False)
+---
+lang:
+  en: str(required=False)
+  fr: str(required=False)
