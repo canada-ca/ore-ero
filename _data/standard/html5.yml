@@ -32,10 +32,12 @@ administrations:
       created: '2018-01-23'
       metadataLastUpdated: '2018-11-15'
     references:
-      - URL:
-          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
-          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
+      URL:
+        en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
+        fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=25875'
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status: mandatory
+    status:
+      en: mandatory
+      fr: mandatoire

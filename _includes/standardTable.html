@@ -94,18 +94,24 @@
       <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
     </header>
     <div class="modal-body">
-      <p><strong>{{ standard.description.whatItDoes[page.lang] }}</strong></p>
-      <p>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</p>
+      <p><strong>Description:</strong></p>
+      <p>{{ standard.description.whatItDoes[page.lang] }}</p>
+      <div class="row">
+        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
+        <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
+        <div class="col-md-6"><strong>{{ site.data.i18n.tables.lightbox.hyperlink[page.lang] }}</strong></div>
+      </div>
       {%- for administration in standard.administrations -%}
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-4">
               {%- for levels in site.data.i18n.administrations -%}
                 {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
-                <strong>{{ admin[0].name[page.lang] }}</strong>
+                {{ admin[0].name[page.lang] }}
               {%- endfor -%}
             </div>
-            <div class="col-md-5">{{ administration.status }}</div>
+            <div class="col-md-2">{{ administration.status[page.lang] }}</div>
+            <div class="col-md-6"><a href=" {{ administration.references.URL[page.lang] }}">{{ administration.references.URL[page.lang] }}</a></div>
           </div>
         {%- endfor -%}
     </div>
