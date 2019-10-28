@@ -78,6 +78,9 @@ usedBy:
   fr: Est utilisé par
 
 lightbox:
+  hyperlink:
+    en: Reference URL
+    fr: URL de référence
   sourceCode:
     en: Source code
     fr: Code source
