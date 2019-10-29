@@ -99,7 +99,8 @@
       <div class="row">
         <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
         <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
-        <div class="col-md-6"><strong>{{ site.data.i18n.tables.lightbox.hyperlink[page.lang] }}</strong></div>
+        <div class="col-md-2"><strong>{{ site.data.i18n.tables.lightbox.date[page.lang] }}</strong></div>
+        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.hyperlink[page.lang] }}</strong></div>
       </div>
       {%- for administration in standard.administrations -%}
           <div class="row">
@@ -108,10 +109,12 @@
                 {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
                 {{ admin[0].name[page.lang] }}
-              {%- endfor -%}
+              {%- endfor -%}-
             </div>
             <div class="col-md-2">{{ administration.status[page.lang] }}</div>
-            <div class="col-md-6"><a href=" {{ administration.references.URL[page.lang] }}">{{ administration.references.URL[page.lang] }}</a></div>
+            <div class="col-md-2">{{ administration.date.created }}</div>
+            <div class="col-md-4"><a href=" {{ administration.references.URL[page.lang] }}">{{ administration.references.URL[page.lang] }}</a></div>
+
           </div>
         {%- endfor -%}
     </div>
