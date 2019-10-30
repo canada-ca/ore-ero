@@ -12,26 +12,20 @@ projects:
       started: str()
       metadataLastUpdated: str()
     description:
-      whatItDoes:
-        en: str()
-        fr: str()
+      whatItDoes: include('lang')
       howItWorks: include('lang', required=False)
-    name:
-      en: str()
-      fr: str()
+    name: include('lang')
     partners: list(include('partner'), required=False)
     tags:
-      en:
-        - str(required=False)
-      fr:
-        - str(required=False)
+      en: list(str())
+      fr: list(str())
     team: include('lang', required=False)
 ---
 partner:
-  adminCode: str(required=False)
-  email: str(required=False)
-  name: str(required=False)
+  adminCode: str()
+  email: str()
+  name: str()
 
 lang:
-  en: str(required=False)
-  fr: str(required=False)
+  en: str()
+  fr: str()

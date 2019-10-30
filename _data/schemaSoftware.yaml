@@ -6,22 +6,14 @@ description:
     fr: str()
   howItWorks: include('lang', required=False)
 category: str()
-homepageURL:
-  en: str()
-  fr: str()
+homepageURL: include('lang')
 licences:
-  - URL:
-      en: str()
-      fr: str()
+  - URL: include('lang')
     spdxID: str()
-name:
-  en: str()
-  fr: str()
+name: include('lang')
 tags:
-  en:
-    - str()
-  fr:
-    - str()
+  en: list(str())
+  fr: list(str())
 administrations:
   - adminCode: str()
     uses:
@@ -34,5 +26,5 @@ administrations:
         team: include('lang', required=False)
 ---
 lang:
-  en: str(required=False)
-  fr: str(required=False)
+  en: str()
+  fr: str()

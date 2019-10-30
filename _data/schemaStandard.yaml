@@ -1,25 +1,15 @@
 ---
 schemaVersion: str()
 description:
-  whatItDoes:
-    en: str()
-    fr: str()
+  whatItDoes: include('lang')
   howItWorks: include('lang', required=False)
-name:
-  en: str()
-  fr: str()
-specURL:
-  en: str()
-  fr: str()
+name: include('lang')
+specURL: include('lang')
 standardAcronym: str()
-standardOrg:
-  en: str()
-  fr: str()
+standardOrg: include('lang')
 tags:
-  en:
-    - str()
-  fr:
-    - str()
+  en: list(str())
+  fr: list(str())
 administrations:
   - adminCode: str()
     contact:
@@ -29,15 +19,11 @@ administrations:
       created: str()
       metadataLastUpdated: str()
     references:
-      - URL:
-          en: str()
-          fr: str()
-        name:
-          en: str()
-          fr: str()
+      - URL: include('lang')
+        name: include('lang')
     status: enum('deprecated', 'mandatory', 'preferred')
     team: include('lang', required=False)
 ---
 lang:
-  en: str(required=False)
-  fr: str(required=False)
+  en: str()
+  fr: str()
