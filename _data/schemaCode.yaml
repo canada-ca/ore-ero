@@ -1,8 +1,11 @@
 ---
-schemaVersion: str()
-adminCode: str()
-releases: list(include('release', strict=True))
+include('code', strict=True)
 ---
+code:
+  schemaVersion: str()
+  adminCode: str()
+  releases: list(include('release'))
+
 release:
   contact:
     email: str()

@@ -1,8 +1,11 @@
 ---
-schemaVersion: str()
-adminCode: str()
-projects: list(include('project', strict=True))
+include('partnership', strict=True)
 ---
+partnership:
+  schemaVersion: str()
+  adminCode: str()
+  projects: list(include('project'))
+
 project:
   contact:
     email: str()

@@ -1,15 +1,18 @@
 ---
-schemaVersion: str()
-description:
-  whatItDoes: include('lang', strict=True)
-  howItWorks: include('lang', required=False, strict=True)
-category: str()
-homepageURL: include('lang', strict=True)
-licences: list(include('licence', strict=True))
-name: include('lang', strict=True)
-tags: include('tag', strict=True)
-administrations: list(include('administration', strict=True))
+include('software', strict=True)
 ---
+software:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  category: str()
+  homepageURL: include('lang')
+  licences: list(include('licence'))
+  name: include('lang')
+  tags: include('tag')
+  administrations: list(include('administration'))
+
 licence:
   URL: include('lang')
   spdxID: str()

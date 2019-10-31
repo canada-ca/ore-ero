@@ -1,15 +1,18 @@
 ---
-schemaVersion: str()
-description:
-  whatItDoes: include('lang', strict=True)
-  howItWorks: include('lang', required=False, strict=True)
-name: include('lang', strict=True)
-specURL: include('lang', strict=True)
-standardAcronym: str()
-standardOrg: include('lang', strict=True)
-tags: include('tag', strict=True)
-administrations: list(include('administration', strict=True))
+include('standard', strict=True)
 ---
+standard:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  name: include('lang')
+  specURL: include('lang')
+  standardAcronym: str()
+  standardOrg: include('lang')
+  tags: include('tag')
+  administrations: list(include('administration'))
+
 tag:
   en: list(str())
   fr: list(str())
