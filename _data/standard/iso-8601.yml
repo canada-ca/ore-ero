@@ -33,12 +33,12 @@ administrations:
       created: '2010-07-01'
       metadataLastUpdated: '2019-08-26'
     references:
-      URL:
-        en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=18909'
-        fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=18909'
-      name:
-        en: Standard on Metadata
-        fr: Norme sur les métadonnées
+       - URL:
+           en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=18909'
+           fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=18909'
+         name:
+           en: Standard on Metadata
+           fr: Norme sur les métadonnées
     status:
       en: mandatory
       fr: mandatoire

@@ -113,10 +113,13 @@
             </div>
             <div class="col-md-2">{{ administration.status[page.lang] }}</div>
             <div class="col-md-2">{{ administration.date.created }}</div>
-            <div class="col-md-4"><a href=" {{ administration.references.URL[page.lang] }}">{{ administration.references.URL[page.lang] }}</a></div>
-
+            <div class="col-md-4"><a href=" {{ administration.references.URL[page.lang] }}">
+              {%- for reference in administration.references -%}
+              <a href="{{ reference.URL[page.lang] }}">{{ reference.name[page.lang] }}</a>
+              {%- endfor -%}-
+            </a></div>
           </div>
-        {%- endfor -%}
+      {%- endfor -%}
     </div>
   </section>
 {%- endfor -%}
