@@ -38,8 +38,8 @@ administrations:
           en: str()
           fr: str()
     status:
-      en: enum('deprecated', 'mandatory', 'preferred')
-      fr: enum('obsolete','mandatoire','favoris')
+      en: enum('Deprecated', 'Mandatory', 'Preferred')
+      fr: enum('Deprecie','Mandatoire','Favoris')
     team:
       en: str(required=False)
       fr: str(required=False)
