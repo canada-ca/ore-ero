@@ -245,7 +245,8 @@
         </ul>
         {%- endif -%}
         {%- if release.status != nil -%}
-          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
+          {%- assign status = release.status | downcase -%}
+          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
         {%- endif -%}
         <p>{{ site.data.i18n.form.code.date.label[page.lang] }}: {{ release.date.created }}</p>
 
