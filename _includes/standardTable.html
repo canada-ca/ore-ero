@@ -96,17 +96,29 @@
     <div class="modal-body">
       <p><strong>Description:</strong></p>
       <p>{{ standard.description.whatItDoes[page.lang] }}</p>
-      <p><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></p>
+      <div class="row">
+        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
+        <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
+        <div class="col-md-2"><strong>Date</strong></div>
+        <div class="col-md-4"><strong>URL</strong></div>
+      </div>
       {%- for administration in standard.administrations -%}
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-4">
               {%- for levels in site.data.i18n.administrations -%}
                 {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
                 {{ admin[0].name[page.lang] }}
               {%- endfor -%}
             </div>
-            <div class="col-md-5">{{ administration.status }}</div>
+            <div class="col-md-2">{{ administration.status }}</div>
+            <div class="col-md-2">{{ administration.date.created }}</div>
+            <div class="col-md-4">
+            {%- for reference in administration.references -%}
+            <a href="{{ reference.URL[page.lang] }}">{{ reference.name[page.lang] }}</a>
+            {%- endfor -%}
+            {{ administration.references.URL[page.lang] }}
+            </div>
           </div>
         {%- endfor -%}
     </div>
