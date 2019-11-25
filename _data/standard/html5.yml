@@ -38,6 +38,4 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status:
-      en: mandatory
-      fr: mandatoire
+    status: mandatory

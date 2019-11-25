@@ -1,127 +1,129 @@
 <div class="row">
 
-<!-- Filters -->
-<div class="col-md-3">
-  <details open>
-    <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
-    <form class="wb-tables-filter" data-bind-to="dataset-filter">
-      <div class="form-group">
-          <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
-        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="4">
-          <option value="">&nbsp;</option>
-          {%- for govLevel in site.data.i18n.administrations -%}
-          <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dt_tag">Tag</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
-          <option value="">&nbsp;</option>
-          {%- assign tag_arr = "" | split: ',' -%}
-          {%- for standard in site.data.standard -%}
-            {%- for tag in standard[1].tags[page.lang] -%}
-              {%- assign tag_arr = tag_arr | push: tag -%}
+  <!-- Filters -->
+  <div class="col-md-3">
+    <details open>
+      <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
+      <form class="wb-tables-filter" data-bind-to="dataset-filter">
+        <div class="form-group">
+            <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
+          <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="4">
+            <option value="">&nbsp;</option>
+            {%- for govLevel in site.data.i18n.administrations -%}
+            <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
             {%- endfor -%}
-          {%- endfor -%}
-          {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
-          {%- for tag in tag_arr -%}
-            <option value="{{ tag.name }}">{{ tag.name }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+          </select>
         </div>
-        <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
-        </div>
-      </div>
-
-    </form>
-  </details>
-</div>
-
-<!-- Data Table -->
-<div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4], "visible": false}], "paging": true}'>
-    <thead>
-      <tr>
-        <th>{{ site.data.i18n.tables.standard[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.standard.standardOrg.title[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      {%- for standards in site.data.standard -%}
-        {%- assign standard = standards[1] -%}
-        <tr>
-          <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
-          <td>{{ standard.description.whatItDoes[page.lang] }}</td>
-          <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardOrg[page.lang] }}</a></td>
-          <td>
-            {%- for tag in standard.tags[page.lang] -%}
-              {{ tag }}&nbsp;
-            {%- endfor -%}
-          </td>
-          <td>
-            {%- for administration in standard.administrations -%}
-              {%- for levels in site.data.i18n.administrations -%}
-                {%- assign govLevel = levels[0] -%}
-                {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
-                {%- if admin[0] != nil -%}
-                {{ site.data.i18n.administrations[govLevel].value }}&nbsp;
-                {%- endif -%}
+  
+        <div class="form-group">
+          <label for="dt_tag">Tag</label>
+          <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
+            <option value="">&nbsp;</option>
+            {%- assign tag_arr = "" | split: ',' -%}
+            {%- for standard in site.data.standard -%}
+              {%- for tag in standard[1].tags[page.lang] -%}
+                {%- assign tag_arr = tag_arr | push: tag -%}
               {%- endfor -%}
-            {% endfor %}
-          </td>
+            {%- endfor -%}
+            {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
+            {%- for tag in tag_arr -%}
+              <option value="{{ tag.name }}">{{ tag.name }}</option>
+            {%- endfor -%}
+          </select>
+        </div>
+  
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+          </div>
+          <div class="col-xs-6">
+            <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
+          </div>
+        </div>
+  
+      </form>
+    </details>
+  </div>
+  
+  <!-- Data Table -->
+  <div class="col-md-9 mrgn-bttm-lg">
+    <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4], "visible": false}], "paging": true}'>
+      <thead>
+        <tr>
+          <th>{{ site.data.i18n.tables.standard[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+          <th>{{ site.data.i18n.form.standard.standardOrg.title[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
+          <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
         </tr>
-      {%- endfor -%}
-    </tbody>
-  </table>
-</div>
-
-<!-- Modal Lightboxes -->
-{%- for standards in site.data.standard -%}
-  {%- assign standard = standards[1] -%}
-  <section id="{{ standard.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
-    <header class="modal-header">
-      <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
-    </header>
-    <div class="modal-body">
-      <p><strong>Description:</strong></p>
-      <p>{{ standard.description.whatItDoes[page.lang] }}</p>
-      <div class="row">
-        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
-        <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
-        <div class="col-md-2"><strong>{{ site.data.i18n.tables.lightbox.date[page.lang] }}</strong></div>
-        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.hyperlink[page.lang] }}</strong></div>
-      </div>
-      {%- for administration in standard.administrations -%}
-          <div class="row">
-            <div class="col-md-4">
-              {%- for levels in site.data.i18n.administrations -%}
-                {%- assign govLevel = levels[0] -%}
-                {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
-                {{ admin[0].name[page.lang] }}
-              {%- endfor -%}-
-            </div>
-            <div class="col-md-2">{{ administration.status[page.lang] }}</div>
-            <div class="col-md-2">{{ administration.date.created }}</div>
-            <div class="col-md-4">
+      </thead>
+      <tbody>
+        {%- for standards in site.data.standard -%}
+          {%- assign standard = standards[1] -%}
+          <tr>
+            <td><a href="#{{ standard.name[page.lang] | slugify }}" aria-controls="{{ standard.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
+            <td>{{ standard.description.whatItDoes[page.lang] }}</td>
+            <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardOrg[page.lang] }}</a></td>
+            <td>
+              {%- for tag in standard.tags[page.lang] -%}
+                {{ tag }}&nbsp;
+              {%- endfor -%}
+            </td>
+            <td>
+              {%- for administration in standard.administrations -%}
+                {%- for levels in site.data.i18n.administrations -%}
+                  {%- assign govLevel = levels[0] -%}
+                  {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
+                  {%- if admin[0] != nil -%}
+                  {{ site.data.i18n.administrations[govLevel].value }}&nbsp;
+                  {%- endif -%}
+                {%- endfor -%}
+              {% endfor %}
+            </td>
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Modal Lightboxes -->
+  {%- for standards in site.data.standard -%}
+    {%- assign standard = standards[1] -%}
+    <section id="{{ standard.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+      <header class="modal-header">
+        <h2 class="modal-title">{{ standard.name[page.lang] }}</h2>
+      </header>
+      <div class="modal-body">
+        <p><strong>Description:</strong></p>
+        <p>{{ standard.description.whatItDoes[page.lang] }}</p>
+        <div class="row">
+          <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
+          <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
+          <div class="col-md-2"><strong>Date</strong></div>
+          <div class="col-md-4"><strong>URL</strong></div>
+        </div>
+        {%- for administration in standard.administrations -%}
+            <div class="row">
+              <div class="col-md-4">
+                {%- for levels in site.data.i18n.administrations -%}
+                  {%- assign govLevel = levels[0] -%}
+                  {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
+                  {{ admin[0].name[page.lang] }}
+                {%- endfor -%}
+              </div>
+              <div class="col-md-2">{{ administration.status }}</div>
+              <div class="col-md-2">{{ administration.date.created }}</div>
+              <div class="col-md-4">
               {%- for reference in administration.references -%}
               <a href="{{ reference.URL[page.lang] }}">{{ reference.name[page.lang] }}</a>
-              {%- endfor -%}-
+              {%- endfor -%}
+              {{ administration.references.URL[page.lang] }}
+              </div>
             </div>
-          </div>
-      {%- endfor -%}
-    </div>
-  </section>
-{%- endfor -%}
-
-</div>
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endfor -%}
+  
+  </div>
+  

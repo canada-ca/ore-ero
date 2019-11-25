@@ -65,8 +65,8 @@ standard:
   en: Standard
   fr: Norme
 status:
-  en: 'Status :'
-  fr: 'Statut :'
+  en: Status
+  fr: Statut
 tag:
   en: Tag
   fr: Étiquette
@@ -78,18 +78,10 @@ usedBy:
   fr: Est utilisé par
 
 lightbox:
-  hyperlink:
-    en: 'Reference URL :'
-    fr: 'URL de référence :'
-  sourceCode:
-    en: Source code
-    fr: Code source
   contact:
     en: Contact
     fr: Contact
   beingUsed:
     en: 'Is being used by:'
     fr: 'Est utilisé par :'
-  date:
-    en: 'Started using :'
-    fr: 'Utilisé depuis :'
+ 
