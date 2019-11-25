@@ -39,6 +39,4 @@ administrations:
          name:
            en: Standard on Metadata
            fr: Norme sur les métadonnées
-    status:
-      en: mandatory
-      fr: mandatoire
+    status: mandatory

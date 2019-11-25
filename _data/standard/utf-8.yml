@@ -41,9 +41,7 @@ administrations:
         name:
           en: Standard on Web Interoperability
           fr: Norme sur l'interopérabilité du Web
-    status:
-      en: mandatory
-      fr: mandatoire
+    status: mandatory
   - adminCode: lac-bac
     contact:
       email: sebastien.lemay@tbs-sct.gc.ca
@@ -68,6 +66,4 @@ administrations:
           fr: >-
             Lignes directrices sur les formats de fichier à utiliser pour
             transférer des ressources documentaires
-    status:
-      en: preferred
-      fr: favoris
+    status: preferred
