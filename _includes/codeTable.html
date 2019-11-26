@@ -238,7 +238,7 @@
           {%- endfor -%}
         </ul>
         {%- if release.languages != nil -%}
-        <p>{{ site.data.i18n.tables.languages[page.lang] }}:</p>
+        <p><strong>{{ site.data.i18n.tables.languages[page.lang] }}:</strong></p>
         <ul>
           {%- for languages in release.languages -%}
             <li>{{ languages }}</li>
@@ -246,7 +246,7 @@
         </ul>
         {%- endif -%}
         {%- if release.status != nil -%}
-          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
+          <p><strong>{{ site.data.i18n.tables.status[page.lang] }}:</strong> {{ release.status }}</p>
         {%- endif -%}
         <p><strong>{{ site.data.i18n.form.code.date.label[page.lang] }}:</strong> {{ release.date.created }}</p>
 

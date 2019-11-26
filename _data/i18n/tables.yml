@@ -78,6 +78,9 @@ usedBy:
   fr: Est utilisé par
 
 lightbox:
+  sourceCode:
+    en: Source code
+    fr: Code source
   contact:
     en: Contact
     fr: Contact
