@@ -38,6 +38,12 @@ nav:
     link:
       en: ./open-source-codes.html
       fr: ./codes-source-ouverts.html
+  research:
+    en: Open Research
+    fr: Recherche Libre
+    link:
+      en: ./open-researches.html
+      fr: ./recherches-libres.html
   software:
     en: Open Source Software
     fr: Logiciels libres
