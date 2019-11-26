@@ -38,12 +38,6 @@ nav:
     link:
       en: ./open-source-codes.html
       fr: ./codes-source-ouverts.html
-  research:
-    en: Open Scientific Research
-    fr: Recherche Scientifique Libre
-    link:
-      en: ./research.html
-      fr: ./recherche.html
   software:
     en: Open Source Software
     fr: Logiciels libres
@@ -56,12 +50,6 @@ nav:
     link:
       en: ./open-standards.html
       fr: ./normes-ouvertes.html
-  template:
-    en: UI/UX template
-    fr: template UI/UX
-    link: 
-      en: ./template.html
-      fr: ./template.html
   doc:
     en: Documentation
     fr: Documentation
