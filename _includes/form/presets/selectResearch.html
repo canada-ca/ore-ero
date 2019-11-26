@@ -1,0 +1,21 @@
+{%- assign title = "standardAcronym" -%}
+{%- assign group = "select" -%}
+{%- assign standard_arr = "" | split: ',' -%}
+{%- for standard in site.data.standard -%}
+    {%- assign standard_arr = standard_arr | push: standard[1].standardAcronym -%}
+{%- endfor %}
+{%- assign standard_arr = standard_arr | sort_natural -%}
+<div class="form-group">
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
+  <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
+    <option value="">&nbsp;</option>
+    {%- for standard in standard_arr -%}
+    <option value="{{ standard | slugify }}">{{ standard }}</option>
+    {%- endfor %}
+  </select>
+</div>
+
+{% include form/components/group.html id=include.id title=title -%}
+
+{%- include form/presets/name.html id=include.id -%}
+

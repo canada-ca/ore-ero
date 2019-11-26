@@ -1,0 +1,39 @@
+---
+
+id: research
+
+formGroups:
+  - preset: selectResearch
+  - preset: description
+  - preset: tags
+  - widget: string-i18n
+    title: researchOrg
+  - widget: string-i18n
+    title: specURL
+    param: {type: url}
+  - preset: hr
+  - preset: empty
+    title: administrations
+    param: {start: true}
+  - preset: adminCode
+  - preset: team
+  - preset: contact
+    param: {phone: false}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
+  - widget: group
+    title: reference
+    param: {more: true}
+    fields:
+      - widget: string-i18n
+        title: name
+        param: {rule: names}
+      - widget: string-i18n
+        title: URL
+        param: {type: url}
+  - widget: select
+    title: status
+    param:
+      options: {deprecated, mandatory, preferred}
+  - preset: empty

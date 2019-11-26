@@ -38,6 +38,12 @@ nav:
     link:
       en: ./open-source-codes.html
       fr: ./codes-source-ouverts.html
+  design:
+    en: Open Source Design
+    fr: Design Libre
+    link:
+      en: ./open-design.html
+      fr: ./design-libre.html
   research:
     en: Open Research
     fr: Recherche Libre
