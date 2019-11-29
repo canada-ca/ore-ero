@@ -1,9 +1,9 @@
 ---
 
-id: research
+id: design
 
 formGroups:
-  - preset: selectSoftware
+  - preset: selectDesign
   - preset: description
   - preset: category
   - preset: tags
