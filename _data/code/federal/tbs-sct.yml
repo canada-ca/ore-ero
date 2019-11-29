@@ -410,3 +410,64 @@ releases:
     team:
       en: EACPD EMS TBS
       fr: DADPR SGD SCT
+  - contact:
+      email: bryan.willey@tbs-sct.gc.ca
+      name: Bryan Willey
+    date:
+      created: '2019-11-26'
+      metadataLastUpdated: '2019-11-29'
+    description:
+      whatItDoes:
+        en: >-
+          An easy and efficient system that helps government departments send
+          notifications, such as email, text messages or letters, to people who
+          use government services.
+        fr: >-
+          Un système simple et efficace qui aide les ministères du gouvernement
+          à envoyer des notifications (comme des courriels, des textos ou des
+          lettres) aux personnes qui utilisent les services gouvernement
+      howItWorks:
+        en: >-
+
+          Integrate Notify into your web application or admin system The Notify
+          API sends messages automatically. Choose a client to integrate your
+          API with your web application or admin system.
+        fr: >-
+          L’API Notification envoie les messages de façon automatique.
+          Choisissez un client pour intégrer notre API à votre application Web
+          ou à votre système administratif.
+    category: '43233500'
+    name:
+      en: Notify
+      fr: Notification
+    licences:
+      - URL:
+          en: 'https://github.com/cds-snc/notification-api/blob/master/LICENSE'
+          fr: 'https://github.com/cds-snc/notification-api/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: >-
+        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+      fr: >-
+        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+    tags:
+      en:
+        - Notify
+      fr:
+        - Notification
+    downloadURL:
+      en: >-
+        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+      fr: >-
+        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+    homepageURL:
+      en: 'https://notification.alpha.canada.ca/'
+      fr: 'https://notification.alpha.canada.ca/'
+    languages:
+      - JavaScript
+      - TypeScript
+      - Python
+    status: Alpha
+    team:
+      en: Canadian Digital Service
+      fr: Service numérique canadien
