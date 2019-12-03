@@ -212,8 +212,10 @@
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
         <div class="modal-body">
-          <p><strong>Description:</strong></p>
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.whatItDoes.subtitle[page.lang] }}</strong></p>
           <p>{{ release.description.whatItDoes[page.lang] }}</p>
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.howItWorks.subtitle[page.lang] }}</strong></p>
+          <p>{{release.description.howItWorks[page.lang]}}</p>
           <p><strong>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: </strong>{{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
           {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
           <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
