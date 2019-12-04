@@ -1,43 +1,38 @@
 ---
-schemaVersion: str()
-description:
-  whatItDoes:
-    en: str()
-    fr: str()
-  howItWorks:
-    en: str(required=False)
-    fr: str(required=False)
-name:
+include('standard', strict=True)
+---
+standard:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  name: include('lang')
+  specURL: include('lang')
+  standardAcronym: str()
+  standardOrg: include('lang')
+  tags: include('tag')
+  administrations: list(include('administration'))
+
+tag:
+  en: list(str())
+  fr: list(str())
+
+administration:
+  adminCode: str()
+  contact:
+    email: str()
+    name: str(required=False)
+  date:
+    created: str()
+    metadataLastUpdated: str()
+  references: list(include('reference'))
+  status: enum('deprecated', 'mandatory', 'preferred')
+  team: include('lang', required=False)
+
+reference:
+  URL: include('lang')
+  name: include('lang')
+
+lang:
   en: str()
   fr: str()
-specURL:
-  en: str()
-  fr: str()
-standardAcronym: str()
-standardOrg:
-  en: str()
-  fr: str()
-tags:
-  en:
-    - str()
-  fr:
-    - str()
-administrations:
-  - adminCode: str()
-    contact:
-      email: str()
-      name: str(required=False)
-    date:
-      created: str()
-      metadataLastUpdated: str()
-    references:
-      - URL:
-          en: str()
-          fr: str()
-        name:
-          en: str()
-          fr: str()
-    status: enum('deprecated', 'mandatory', 'preferred')
-    team:
-      en: str(required=False)
-      fr: str(required=False)
