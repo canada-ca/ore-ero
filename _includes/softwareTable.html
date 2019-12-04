@@ -143,11 +143,6 @@
         <p><strong>Description:</strong></p>
         <p>{{ software.description.whatItDoes[page.lang] }}</p>
         <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
-        <ul>
-          {%- for tag in software.tags[page.lang] -%}
-          <li>{{ tag }}</li>&nbsp;
-            {%- endfor -%}
-        </ul>
         <div class="row">
             <div class="col-md-7"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
             <div class="col-md-5"><strong>Contact:</strong></div>
