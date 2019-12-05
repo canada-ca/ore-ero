@@ -98,7 +98,7 @@
       {%- for softwares in site.data.software -%}
         {%- assign software = softwares[1] -%}
         <tr>
-          <td><a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
+          <td><a href="#{{ software.name[page.lang] | slugify: "latin" }}" aria-controls="{{ software.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
           <td>
             {{ site.data.i18n.categories[software.category][page.lang] }}
           </td>
@@ -135,7 +135,7 @@
 <!-- Modal Lightboxes -->
 {%- for softwares in site.data.software -%}
   {%- assign software = softwares[1] -%}
-    <section id="{{ software.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <section id="{{ software.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
       <header class="modal-header">
         <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
       </header>
