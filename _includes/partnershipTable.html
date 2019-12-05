@@ -131,7 +131,7 @@
         {%- for project in admin[1].projects -%}
         {%- assign project = projects[1] -%}
       <tr>
-        <td><a href="#{{ project.name[page.lang] | slugify }}" aria-controls="{{ project.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
+        <td><a href="#{{ project.name[page.lang] | slugify: "latin" }}" aria-controls="{{ project.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
         <td>{{ project.description.whatItDoes[page.lang] }}</td>
         <td>{{ site.data.i18n.categories[project.category][page.lang] }}</td>
         <td>{{ project.date.started }}</td>
@@ -156,7 +156,7 @@
   {%- for admin in govLevels[1] -%}
     {%- for project in admin[1].projects -%}
     {%- assign project = projects[1] -%}
-<section id="{{ project.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+<section id="{{ project.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
   <header class="modal-header">
     <h2 class="modal-title">{{ project.name[page.lang] }}</h2>
   </header>
