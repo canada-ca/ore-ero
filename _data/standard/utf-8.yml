@@ -50,15 +50,8 @@ administrations:
       metadataLastUpdated: '2018-11-15'
     references:
       - URL:
-          en: >-
-            http://www.lac-bac.gc.ca/eng/services/government-information
-            -resources/guidelines/Pages/guidelines-file-formats-transferring
-            -information-resources-enduring-value.aspx
-          fr: >-
-            http://www.lac-bac.gc.ca/fra/services/gestion-ressources
-            -documentaires-gouvernement/lignes-directrices/Pages/lignes
-            -directrices-formats-fichier-transferers-ressources-documentaires.
-            aspx
+          en: 'https://www.bac-lac.gc.ca/eng/services/government-information-resources/guidelines/Pages/guidelines-file-formats-transferring-information-resources-enduring-value.aspx'
+          fr: 'https://www.bac-lac.gc.ca/fra/services/gestion-ressources-documentaires-gouvernement/lignes-directrices/Pages/lignes-directrices-formats-fichier-transferers-ressources-documentaires.aspx'
         name:
           en: >-
             Guidelines on File Formats for Transferring Information Resources of
