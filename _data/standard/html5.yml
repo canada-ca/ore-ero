@@ -27,10 +27,10 @@ tags:
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: sebastien.lemay@tbs-sct.gc.ca
+      email: dppn@tbs-sct.gc.ca
     date:
       created: '2018-01-23'
-      metadataLastUpdated: '2018-11-15'
+      metadataLastUpdated: '2019-12-09'
     references:
       - URL:
           en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25875'
