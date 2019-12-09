@@ -10,7 +10,7 @@ description:
       l'échelon international.
 name:
   en: Date and time format
-  fr: Format de la date et de l'heure
+  fr: Représentation de la date et de l'heure
 specURL:
   en: 'https://www.iso.org/iso-8601-date-and-time-format.html'
   fr: 'https://www.iso.org/fr/iso-8601-date-and-time-format.html'
