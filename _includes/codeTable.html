@@ -212,32 +212,37 @@
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
         <div class="modal-body">
-          <p><strong>{{ release.description.whatItDoes[page.lang] }}</strong></p>
-          <p>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: {{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
-          {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-          <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
-        {%- if release.team[page.lang] != nil -%}
-          <p>{{ site.data.i18n.tables.team[page.lang] }}: {{ release.team[page.lang] }}</p>
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.whatItDoes.subtitle[page.lang] }}</strong></p>
+          <p>{{ release.description.whatItDoes[page.lang] }}</p>
+        {%- if release.description.howItWorks[page.lang] != nil -%}
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.howItWorks.subtitle[page.lang] }}</strong></p>
+          <p>{{release.description.howItWorks[page.lang]}}</p>
         {%- endif -%}
-        <p>{{ site.data.i18n.tables.lightbox.sourceCode[page.lang] }}:
+          <p><strong>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: </strong>{{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
+          {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+          <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
+        {%- if release.team[page.lang] != nil -%}
+          <p><strong>{{ site.data.i18n.tables.team[page.lang] }}:</strong> {{ release.team[page.lang] }}</p>
+        {%- endif -%}
+        <p><strong>{{ site.data.i18n.tables.lightbox.sourceCode[page.lang] }}:</strong>
           <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
               {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
           </a>
         </p>
-        <p>{{ site.data.i18n.tables.licence[page.lang] }}(s):</p>
+        <p><strong>{{ site.data.i18n.tables.licence[page.lang] }}(s):</strong></p>
         <ul>
           {%- for licence in release.licences -%}
             <li><a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a></li>
           {%- endfor -%}
         </ul>
-        <p>{{ site.data.i18n.tables.tag[page.lang] }}(s):</p>
+        <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
         <ul>
           {%- for tag in release.tags[page.lang] -%}
             <li>{{ tag }}</li>
           {%- endfor -%}
         </ul>
         {%- if release.languages != nil -%}
-        <p>{{ site.data.i18n.tables.languages[page.lang] }}:</p>
+        <p><strong>{{ site.data.i18n.tables.languages[page.lang] }}:</strong></p>
         <ul>
           {%- for languages in release.languages -%}
             <li>{{ languages }}</li>
@@ -246,9 +251,9 @@
         {%- endif -%}
         {%- if release.status != nil -%}
           {%- assign status = release.status | downcase -%}
-          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
+          <p><strong>{{ site.data.i18n.tables.status[page.lang] }}:</strong> {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
         {%- endif -%}
-        <p>{{ site.data.i18n.form.code.date.label[page.lang] }}: {{ release.date.created }}</p>
+        <p><strong>{{ site.data.i18n.form.code.date.label[page.lang] }}:</strong> {{ release.date.created }}</p>
 
         <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
         {%- if release.contact.name != nil -%}

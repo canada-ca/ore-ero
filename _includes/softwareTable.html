@@ -140,15 +140,25 @@
         <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
       </header>
       <div class="modal-body">
-        <p><strong>{{ software.description.whatItDoes[page.lang] }}</strong></p>
-        <p>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</p>
+        <p><strong>Description:</strong></p>
+        <p>{{ software.description.whatItDoes[page.lang] }}</p>
+        <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+        <ul>
+          {%- for tag in software.tags[page.lang] -%}
+          <li>{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+        <div class="row">
+            <div class="col-md-7"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
+            <div class="col-md-5"><strong>Contact:</strong></div>
+        </div>
         {%- for administration in software.administrations -%}
           <div class="row">
             <div class="col-md-7">
               {%- for levels in site.data.i18n.administrations -%}
                 {%- assign govLevel = levels[0] -%}
                 {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
-                <strong>{{ admin[0].name[page.lang] }}</strong>
+                {{ admin[0].name[page.lang] }}
               {%- endfor -%}
             </div>
             <div class="col-md-5">
