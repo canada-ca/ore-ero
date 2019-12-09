@@ -320,10 +320,10 @@ releases:
           fr: CKAN
     status: Maintained
   - contact:
-      email: sebastien.lemay@canada.ca
+      email: sebastien.lemay@hrsdc-rhdcc.gc.ca
     date:
       created: '2017-12-31'
-      metadataLastUpdated: '2019-08-29'
+      metadataLastUpdated: '2019-12-09'
     description:
       whatItDoes:
         en: >-

@@ -29,7 +29,14 @@ administrations:
   - adminCode: pch
     uses:
       - contact:
-          email: sebastien.lemay@canada.ca
+          email: sebastien.lemay@hrsdc-rhdcc.gc.ca
         date:
           started: '2019-05-06'
-          metadataLastUpdated: '2019-05-13'
+          metadataLastUpdated: '2019-12-09'
+  - adminCode: esdc-edsc
+    uses:
+      - contact:
+          email: sebastien.lemay@hrsdc-rhdcc.gc.ca
+        date:
+          started: '2019-07-06'
+          metadataLastUpdated: '2019-12-09'
