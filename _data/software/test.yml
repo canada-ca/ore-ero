@@ -1,0 +1,31 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Test
+    fr: Test
+category: '43233600'
+homepageURL:
+  en: 'https://github.com/VilledeMontreal'
+  fr: 'https://github.com/VilledeMontreal'
+licences:
+  - URL:
+      en: 'https://github.com/VilledeMontreal'
+      fr: 'https://github.com/VilledeMontreal'
+    spdxID: ECL-2.0
+name:
+  en: Test
+  fr: Test
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+administrations:
+  - adminCode: csps-efpc
+    uses:
+      - contact:
+          email: tommy.hudon@montreal.ca
+        date:
+          started: '2019-12-13'
+          metadataLastUpdated: '2019-12-17'
