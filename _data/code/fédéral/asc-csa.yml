@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+adminCode: asc-csa
+releases:
+  - contact:
+      email: apogy-dev@eclipse.org
+    date:
+      created: '2015-09-28'
+      metadataLastUpdated: '2020-01-07'
+    description:
+      whatItDoes:
+        en: 'The one-stop-shop solution for operating robots, satellites and beyond'
+        fr: >-
+          Un logiciel polyvalent pour faire fonctionner des robots et des
+          satellites
+    category: '43232600'
+    name:
+      en: Apogy
+      fr: Apogy
+    licences:
+      - URL:
+          en: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+          fr: 'https://git.eclipse.org/c/apogy/apogy.git/tree/LICENSE'
+        spdxID: EPL-1.0
+    repositoryURL:
+      en: 'https://git.eclipse.org/c/apogy/apogy.git'
+      fr: 'https://git.eclipse.org/c/apogy/apogy.git'
+    tags:
+      en:
+        - Robots
+        - Space
+      fr:
+        - Robots
+        - Espace
+    languages:
+      - Java
+    status: Beta
+    team:
+      en: test
+      fr: test
