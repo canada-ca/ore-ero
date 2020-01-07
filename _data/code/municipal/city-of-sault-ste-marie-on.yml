@@ -1,0 +1,34 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-sault-ste-marie-on
+releases:
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2017-12-06'
+      metadataLastUpdated: '2020-01-07'
+    description:
+      whatItDoes:
+        en: Parse the MPAC year end tax file.
+        fr: Analyser le fichier d'impôt de fin d'année de la SEFM.
+    category: '43232300'
+    name:
+      en: mpacParser
+      fr: mpacParser
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/mpacParser/blob/master/LICENSE'
+          fr: 'https://github.com/cityssm/mpacParser/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/cityssm/mpacParser'
+      fr: 'https://github.com/cityssm/mpacParser'
+    tags:
+      en:
+        - mpac property tax
+      fr:
+        - sefm taxe propriété
+    languages:
+      - Java
+    status: Maintained
