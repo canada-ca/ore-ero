@@ -14,3 +14,8 @@
     en: City of Edmonton
     fr: Ville d'Edmonton
   provinceCode: ab
+- code: city-of-sault-ste-marie-on
+  name:
+    en: City of Sault Ste Marie
+    fr: Ville de Sault Sainte Marie
+  provinceCode: 'on'
