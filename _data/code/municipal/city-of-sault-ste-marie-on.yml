@@ -26,9 +26,11 @@ releases:
       fr: 'https://github.com/cityssm/mpacParser'
     tags:
       en:
-        - mpac property tax
+        - mpac
+        - property tax
       fr:
-        - sefm taxe propriété
+        - sefm
+        - taxe propriété
     languages:
       - Java
     status: Maintained
