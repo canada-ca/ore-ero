@@ -1,0 +1,33 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-sault-ste-marie-on
+projects:
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    category: '43231500'
+    date:
+      closed: '2020-04-30'
+      started: '2020-01-08'
+      metadaLastUpdated: '2020-01-08'
+    description:
+      whatItDoes:
+        en: >-
+          A tool for managing AGCO's municipal lottery licensing requirements in
+          Ontario.
+        fr: >-
+          Un outil pour gérer les exigences de licence de loterie municipale de
+          CAJO en Ontario.
+      howItWorks:
+        en: 'https://github.com/cityssm/lottery-licence-manager'
+        fr: 'https://github.com/cityssm/lottery-licence-manager'
+    name:
+      en: lottery-licence-manager
+      fr: lottery-licence-manager
+    tags:
+      en:
+        - lottery licensing
+        - Ontario
+      fr:
+        - licence de loterie
+        - Ontario
