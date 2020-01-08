@@ -1,0 +1,221 @@
+<h2>{{ site.data.i18n.general.stats.projects[page.lang] }}</h2>
+<div id="chartContainer_codebases"></div>
+
+<h2>{{ site.data.i18n.general.stats.software[page.lang] }}</h2>
+<div id="chartContainer_software"></div>
+
+<script>
+    window.onload = function() {
+
+        var organizationList = {};
+        var languageCode = "{{ page.lang }}";
+
+        function toTitleCase(str) {
+            return str.replace(/(?:^|\s)\w/g, function(match) {
+                return match.toUpperCase();
+            });
+        }
+
+        function hashCode(str) { // java String#hashCode
+            var hash = 0;
+            for (var i = 0; i < str.length; i++) {
+            hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            return hash;
+        } 
+
+        function intToRGB(i){
+            var c = (i & 0x00FFFFFF)
+                .toString(16)
+                .toUpperCase();
+
+            return "00000".substring(0, 6 - c.length) + c;
+        }
+
+        const hex2rgba = (hex, alpha = 1) => {
+            const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
+            return `rgba(${r},${g},${b},${alpha})`;
+        };
+    
+        function createChart(area, suffix, dataPoints) {
+            $("#chartContainer_"+suffix).append("<canvas id='"+area+"' style='position:relative;min-height:400px;'></div>");
+
+            var ctx = $("#chartContainer_"+suffix + " #" + area).get();
+
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: dataPoints,
+                options: {
+                    scales:{
+                        yAxes:[ {
+                            ticks:{
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+
+            return chart;
+        }
+
+
+        function addDataVisuals(data, suffix) {
+            console.log(data);
+            for (groupId in data) {
+                var group = data[groupId];
+
+                if (!$.isEmptyObject(group)) {
+                    var dataPoints = [];
+                    var labelPoints = [];
+                    var colorPoints = [];
+                    
+                    for (instituteId in group) {
+                            dataPoints.push(group[instituteId].releases.length);
+                            var organizationLabel = getOrganizationLabel(group[instituteId].adminCode);
+                            labelPoints.push(organizationLabel);
+                            colorPoints.push(hex2rgba("#" + hashCode(group[instituteId].adminCode), 0.5));
+                        }
+
+                    var dataSet = {
+                        labels: labelPoints, 
+                        datasets: [{
+                            label: getAdministrationLabel(groupId, suffix),
+                            fill: false,
+                            data:dataPoints,
+                            backgroundColor: colorPoints
+                            }]
+                            
+                        };
+
+                    var chart = createChart(groupId, suffix, dataSet);
+                }
+            }    
+        }
+
+        function addCodebases(data) {
+            addDataVisuals(data, "codebases");
+        }
+
+        function addSoftware(data) {
+            addSoftwareData(data, "software");
+        }
+
+        function addSoftwareData(data, suffix) {
+
+            var administrationSoftware = {};
+
+            for (groupId in data) {
+                var group = data[groupId];
+                var administrations = group.administrations;
+
+                for (administrationId in administrations) {
+                    var adminCode = administrations[administrationId].adminCode;
+                    var levelCode = getOrganizationLevelCode(adminCode);
+
+                    if (administrationSoftware[levelCode] === undefined) {
+                        administrationSoftware[levelCode] = {};
+                    }
+
+                    if (administrationSoftware[levelCode][adminCode] !== undefined) {
+                        administrationSoftware[levelCode][adminCode].releases.push(group);
+                    } else {
+                        administrationSoftware[levelCode][adminCode] = {};
+                        administrationSoftware[levelCode][adminCode].adminCode = adminCode;
+                        administrationSoftware[levelCode][adminCode].releases = [group];
+                    }
+                }
+            }
+
+            addDataVisuals(administrationSoftware, suffix);
+        }
+
+
+        function getAdministrationLabel(adminCode, suffix) {
+            var label = "";
+            switch (adminCode) {
+                case "federal":
+                    if (languageCode == "en") label = "Federal";
+                    if (languageCode == "fr") label = "Fédéral";
+                    break;
+                case "municipal":
+                    if (languageCode == "en") label = "Municipal";
+                    if (languageCode == "fr") label = "Municipal";
+                    break;
+                case "provincial":
+                    if (languageCode == "en") label = "Provincial";
+                    if (languageCode == "fr") label = "Provincial";
+                    break;
+                case "aboriginal":
+                    if (languageCode == "en") label = "Aboriginal";
+                    if (languageCode == "fr") label = "Aborigène";
+                    break;
+            }
+
+            switch (suffix) {
+                case "codebases":
+                    if (languageCode == "en") label += " Projects";
+                    if (languageCode == "fr") label += " Projets";
+                    break;
+                case "software":
+                    if (languageCode == "en") label += " Software";
+                    if (languageCode == "fr") label += " Logiciel";
+                    break;
+            }
+
+            return label;
+        }
+
+        function getOrganizationLabel(adminCode) {
+            for (var levelId in organizationList) {
+                var organizations = organizationList[levelId];
+                
+                for (var organzationId in organizations) {
+                    var organization = organizations[organzationId];
+                    
+                    if (organization.code == adminCode) {
+                        return organization.name[languageCode];
+                    }
+                }
+            }
+            return "error";
+        }
+
+        function getOrganizationLevelCode(adminCode) {
+            for (var levelId in organizationList) {
+                var organizations = organizationList[levelId];
+                
+                for (var organzationId in organizations) {
+                    var organization = organizations[organzationId];
+                    
+                    if (organization.code == adminCode) {
+                        return levelId;
+                    }
+                }
+            }
+            return "error";
+        }
+
+        function loadOrganizations(data) {
+
+            for (levelId in data) {
+                var level = data[levelId];
+                //console.log(level);
+            }
+
+            organizationList = data;
+
+            $.getJSON("../code.json", addCodebases);
+            $.getJSON("../software.json", addSoftware);
+        }
+    
+        $.getJSON("../administrations.json", loadOrganizations);
+    }
+    </script>
+
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<div>
+
+</div>
