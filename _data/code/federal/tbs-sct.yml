@@ -371,7 +371,7 @@ releases:
       name: GC InfoBase Team / Équipe de l'InfoBase du GC
     date:
       created: '2012-08-21'
-      metadataLastUpdated: '2019-10-24'
+      metadataLastUpdated: '2020-01-08'
     description:
       whatItDoes:
         en: >-
@@ -399,7 +399,7 @@ releases:
         - Website
         - Data visualization
       fr:
-        - Site web
+        - Site Web
         - Visualization de données
     homepageURL:
       en: 'https://canada.ca/gcinfobase'
