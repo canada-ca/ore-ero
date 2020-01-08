@@ -18,9 +18,9 @@ name:
   fr: Jekyll
 tags:
   en:
-    - Web site
+    - Website
   fr:
-    - Site web
+    - Site Web
 administrations:
   - adminCode: tbs-sct
     uses:
