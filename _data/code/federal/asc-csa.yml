@@ -6,7 +6,7 @@ releases:
       email: apogy-dev@eclipse.org
     date:
       created: '2015-09-28'
-      metadataLastUpdated: '2019-01-31'
+      metadataLastUpdated: '2020-01-08'
     description:
       whatItDoes:
         en: 'The one-stop-shop solution for operating robots, satellites and beyond'
@@ -34,3 +34,6 @@ releases:
         - Espace
     languages:
       - Java
+    team:
+      en: test
+      fr: test
