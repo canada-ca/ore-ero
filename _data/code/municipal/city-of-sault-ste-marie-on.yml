@@ -10,8 +10,12 @@ releases:
       metadataLastUpdated: '2020-01-08'
     description:
       whatItDoes:
-        en: Parse the Municipal Property Assessment Corporation (MPAC) year end tax file.
-        fr: Analyser le fichier d'impôt de fin d'année de la Société d'évaluation foncière des municipalité (SEFM).
+        en: >-
+          Parse the Municipal Property Assessment Corporation (MPAC) year end
+          tax file.
+        fr: >-
+          Analyser le fichier d'impôt de fin d'année de la Société d'évaluation
+          foncière des municipalité (SEFM).
     category: '43232300'
     name:
       en: mpacParser
@@ -34,3 +38,37 @@ releases:
     languages:
       - Java
     status: Maintained
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2019-11-10'
+      metadataLastUpdated: '2020-01-09'
+    description:
+      whatItDoes:
+        en: >-
+          A tool for managing AGCO's municipal lottery licensing requirements in
+          Ontario.
+        fr: >-
+          Un outil pour gérer les exigences de licence de loterie municipale de
+          CAJO en Ontario.
+    category: '43231500'
+    name:
+      en: lottery-licence-manager
+      fr: lottery-licence-manager
+    licences:
+      - URL:
+          en: >-
+            https://github.com/cityssm/lottery-licence-manager/blob/master/LICENSE
+          fr: >-
+            https://github.com/cityssm/lottery-licence-manager/blob/master/LICENSE
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/cityssm/lottery-licence-manager'
+      fr: 'https://github.com/cityssm/lottery-licence-manager'
+    tags:
+      en:
+        - Lottery
+      fr:
+        - Lottery
+    status: Alpha
