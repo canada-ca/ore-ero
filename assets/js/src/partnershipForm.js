@@ -48,7 +48,7 @@ function getPartnershipObject() {
         date: {
           closed: $('#dateclosed').val(),
           started: $('#datestarted').val(),
-          metadaLastUpdated: getToday()
+          metadataLastUpdated: getToday()
         },
         description: {
           whatItDoes: {
