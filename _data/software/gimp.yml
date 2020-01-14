@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      GIMP is a cross-platform image editor available for GNU/Linux, OS X,
+      Windows and more operating systems.
+    fr: >-
+      GIMP is a cross-platform image editor available for GNU/Linux, OS X,
+      Windows and more operating systems.
+category: '43232100'
+homepageURL:
+  en: 'https://www.gimp.org/'
+  fr: 'https://www.gimp.org/'
+licences:
+  - URL:
+      en: 'https://www.gimp.org/about/COPYING'
+      fr: 'https://www.gimp.org/about/COPYING'
+    spdxID: GPL-3.0-or-later
+name:
+  en: GIMP
+  fr: GIMP
+tags:
+  en:
+    - Graphics
+  fr:
+    - Graphics
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-14'
