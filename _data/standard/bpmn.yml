@@ -9,7 +9,7 @@ description:
       BPMN est une notation et représentation graphique pour la spécification
       des processus de gestion.
 name:
-  en: Business Prcess Model and Notationo
+  en: Business Process Model and Notation
   fr: Modèle et notation de processus d'affaires
 specURL:
   en: 'https://www.omg.org/spec/BPMN'
