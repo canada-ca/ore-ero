@@ -1,0 +1,44 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Greenshot is a light-weight screenshot software tool for Windows with the
+      following key features:
+
+
+      Quickly create screenshots of a selected region, window or fullscreen; you
+      can even capture complete 
+    fr: >-
+      Greenshot est un outil logiciel de capture d'écran léger pour Windows avec
+      les fonctionnalités clés suivantes:
+
+
+      Créez rapidement des captures d'écran d'une région, d'une fenêtre ou d'un
+      plein écran sé
+category: '43233400'
+homepageURL:
+  en: 'https://getgreenshot.org/'
+  fr: 'https://getgreenshot.org/'
+licences:
+  - URL:
+      en: 'https://github.com/greenshot/greenshot/blob/develop/LICENSE'
+      fr: 'https://github.com/greenshot/greenshot/blob/develop/LICENSE'
+    spdxID: GPL-3.0-only
+name:
+  en: Greenshot
+  fr: Greenshot
+tags:
+  en:
+    - Screenshot
+  fr:
+    - Screenshot
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: '`noreply@canada.ca'
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'
