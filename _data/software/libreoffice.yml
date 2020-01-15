@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      LibreOffice is a powerful office suite – its clean interface and
+      feature-rich tools help you unleash your creativity and enhance your
+      productivity.
+    fr: >-
+      LibreOffice est une suite bureautique puissante - son interface claire et
+      ses outils riches en fonctionnalités vous aident à libérer votre
+      créativité et à améliorer votre productivité.
+category: '43232100'
+homepageURL:
+  en: 'https://www.libreoffice.org/'
+  fr: 'https://fr.libreoffice.org/'
+licences:
+  - URL:
+      en: 'https://www.libreoffice.org/about-us/licenses'
+      fr: 'https://www.libreoffice.org/about-us/licenses'
+    spdxID: MPL-2.0
+name:
+  en: LibreOffice
+  fr: LibreOffice
+tags:
+  en:
+    - Office
+  fr:
+    - Office
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'
