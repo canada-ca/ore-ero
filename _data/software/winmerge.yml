@@ -13,11 +13,11 @@ description:
 category: '43233400'
 homepageURL:
   en: 'https://winmerge.org/'
-  fr: 'https://winmerge.org/'
+  fr: 'https://winmerge.org/?lang=fr'
 licences:
   - URL:
       en: 'https://winmerge.org/source-code/?lang=en'
-      fr: 'https://winmerge.org/source-code/?lang=en'
+      fr: 'https://winmerge.org/source-code/?lang=fr'
     spdxID: GPL-2.0-or-later
 name:
   en: WinMerge
