@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The Apache Tomcat® software is an open source implementation of the Java
+      Servlet, JavaServer Pages, Java Expression Language and Java WebSocket
+      technologies.
+    fr: >-
+      Le logiciel Apache Tomcat® est une implémentation open source des
+      technologies Java Servlet, JavaServer Pages, Java Expression Language et
+      Java WebSocket.
+category: '43232900'
+homepageURL:
+  en: 'http://tomcat.apache.org/'
+  fr: 'http://tomcat.apache.org/'
+licences:
+  - URL:
+      en: 'https://github.com/apache/tomcat/blob/master/LICENSE'
+      fr: 'https://github.com/apache/tomcat/blob/master/LICENSE'
+    spdxID: Apache-2.0
+name:
+  en: Tomcat
+  fr: Tomcat
+tags:
+  en:
+    - Server
+  fr:
+    - Server
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'
