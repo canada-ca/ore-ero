@@ -17,7 +17,6 @@ $(document).ready(function() {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
       else submitFormDesign();
-      
     }
     
   });
@@ -180,7 +179,7 @@ function submitDesignFormNewAdmin() {
           let url =
             $('html').attr('lang') == 'en'
               ? './open-source-designs.html'
-              : './designs-libres.html';
+              : './logiciels-libres.html';
           submitConclusion(response, submitButton, resetButton, url);
         });
     });
@@ -292,7 +291,7 @@ function submitFormDesign() {
       let url =
         $('html').attr('lang') == 'en'
           ? './open-source-designs.html'
-          : './designs-libres.html';
+          : './logiciels-libres.html';
       submitConclusion(response, submitButton, resetButton, url);
     });
 }
@@ -361,7 +360,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
     result
   ) {
     if (result[value]) {
@@ -374,6 +373,10 @@ function selectDesign() {
     }
   });
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 168e08e7ae1697ad8b3d6abb94ebc8662b838abc
 function addValueToFieldsDesign(obj) {
   resetFieldsDesign();
 
@@ -422,7 +425,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
     result
   ) {
     if (result[design]) {

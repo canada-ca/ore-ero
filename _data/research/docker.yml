@@ -1,0 +1,51 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Performs operating-system-level virtualization also known as
+      containerization
+    fr: >-
+      Effectue une virtualisation au niveau du système d'exploitation, également
+      appelée conteneurisation
+category: '43233000'
+homepageURL:
+  en: 'https://www.docker.com'
+  fr: 'https://www.docker.com'
+licences:
+  - URL:
+      en: 'https://www.docker.com/legal/components-licenses'
+      fr: 'https://www.docker.com/legal/components-licenses'
+    spdxID: Apache-2.0
+name:
+  en: Docker
+  fr: Docker
+tags:
+  en:
+    - Container platform
+    - Development
+    - Infrastructure
+  fr:
+    - Plate-forme de conteneur
+    - Développement
+    - Infrastructure
+researchOrg:
+  en:
+    - Test
+  fr:
+    - Test
+administrations:
+  - adminCode: statcan
+    uses:
+      - contact:
+          email: michael.goit@canada.ca
+        date:
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-13'
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: ilia.salem@tbs-sct.gc.ca
+        date:
+          started: '2019-05-06'
+          metadataLastUpdated: '2019-05-13'
