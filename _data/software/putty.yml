@@ -33,7 +33,7 @@ administrations:
   - adminCode: aafc-aac
     uses:
       - contact:
-          email: vivian.nobrega@tbs-sct.gc.ca
+          email: noreply@canada.ca
           name: AAFC-AAC
         date:
           started: '1900-01-01'
