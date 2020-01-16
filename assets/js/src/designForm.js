@@ -373,10 +373,6 @@ function selectDesign() {
     }
   });
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 168e08e7ae1697ad8b3d6abb94ebc8662b838abc
 function addValueToFieldsDesign(obj) {
   resetFieldsDesign();
 
