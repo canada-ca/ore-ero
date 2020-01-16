@@ -53,9 +53,9 @@ function getResearchObject() {
         en: $('#enspecURL').val(),
         fr: $('#frspecURL').val()
       },
-      researchAcronym: $('#researchAcronym')
-        .val()
-        .toUpperCase(),
+      // researchAcronym: $('#researchAcronym')
+      //   .val()
+      //   .toUpperCase(),
       researchOrg: {
         en: $('#enresearchOrg').val(),
         fr: $('#frresearchOrg').val()
