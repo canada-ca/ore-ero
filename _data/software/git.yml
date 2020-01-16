@@ -38,3 +38,11 @@ administrations:
         date:
           started: '1900-01-01'
           metadataLastUpdated: '2020-01-15'
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'
