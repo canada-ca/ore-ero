@@ -35,7 +35,7 @@ $(document).ready(function() {
     });
 });
 
-function getResearchObject() {
+function getresearchObject() {
     // Mandatory fields
     let researchObject = {
       schemaVersion: '1.0',
@@ -49,20 +49,19 @@ function getResearchObject() {
         en: $('#enname').val(),
         fr: $('#frname').val()
       },
-      specURL: {
-        en: $('#enspecURL').val(),
-        fr: $('#frspecURL').val()
+      homepageURL: {
+        en: $('#enhomepageURL').val(),
+        fr: $('#frhomepageURL').val()
       },
-      // researchAcronym: $('#researchAcronym')
-      //   .val()
-      //   .toUpperCase(),
+      researchAcronym: $('#researchAcronym')
+        .val().toUpperCase(),
       researchOrg: {
         en: $('#enresearchOrg').val(),
         fr: $('#frresearchOrg').val()
       },
       tags: {
-        en: getResearchEN(),
-        fr: getResearchFR()
+        en: getTagsEN(),
+        fr: getTagsFR()
       },
       administrations: [
         {
@@ -133,7 +132,7 @@ function submitResearchForm() {
     submitButton.disabled = true;
     resetButton.disabled = true;
   
-    let researchObject = getResearchObject();
+    let researchObject = getresearchObject();
     let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
     let file = `_data/research/${researchObject.researchAcronym.toLowerCase()}.yml`;
   
@@ -211,7 +210,7 @@ function submitResearchFormNewAdmin() {
     submitButton.disabled = true;
     resetButton.disabled = true;
   
-    let researchObject = getResearchObject();
+    let researchObject = getresearchObject();
     let adminObject = getAdminObject();
   
     let researchName = researchObject.researchAcronym.toLowerCase();
@@ -309,6 +308,39 @@ function getConfigUpdateResearchNewAdmin(
     };
 }
 
+function submitFormResearch() {
+  let submitButton = document.getElementById('prbotSubmitresearchForm');
+  let resetButton = document.getElementById('formReset');
+  submitButton.disabled = true;
+  resetButton.disabled = true;
+
+  let researchObject = getresearchObject();
+  let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
+  let ProjectName = $('#enname').val();
+  let file = `_data/research/${slugify(ProjectName)}.yml`;
+
+  fileWriter
+    .merge(file, researchObject, 'administrations', 'adminCode')
+    .then(result => {
+      return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
+    })
+    .catch(err => {
+      if (err.status == 404) {
+        return fetch(
+          PRBOT_URL,
+          getConfigNew(researchObject, file, ProjectName)
+        );
+      } else throw err;
+    })
+    .then(response => {
+      let url =
+        $('html').attr('lang') == 'en'
+          ? './open-source-researchs.html'
+          : './logiciels-libres.html';
+      submitConclusion(response, submitButton, resetButton, url);
+    });
+}
+
 function getConfigNewResearchNewAdmin(
     researchName,
     adminName,
@@ -350,7 +382,7 @@ function getConfigNewResearchNewAdmin(
 
 function selectResearch() {
     let value = researchSelect.val();
-    $.getJSON('https://canada-ca.github.io/ore-ero/research.json', function(
+    $.getJSON('http://localhost:4000/ore-ero/research.json', function(
       result
     ) {
       if (result[value]) {
@@ -385,9 +417,9 @@ function addValueToFieldsResearch(obj) {
       if (obj.description.howItWorks.fr)
         $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
     }
-  
-    $('#enspecURL').val(obj.specURL.en);
-    $('#frspecURL').val(obj.specURL.fr);
+  console.log(obj);
+    $('#enhomepageURL').val(obj.homepageURL.en);
+    $('#frhomepageURL').val(obj.homepageURL.fr);
     $('#enresearchOrg').val(obj.researchOrg.en);
     $('#frresearchOrg').val(obj.researchOrg.fr);
   
@@ -418,7 +450,7 @@ function resetFieldsResearch() {
 function selectAdmin() {
     let research = researchSelect.val();
     let administration = adminSelect.val();
-    $.getJSON('https://canada-ca.github.io/ore-ero/research.json', function(
+    $.getJSON('http://localhost:4000/ore-ero/research.json', function(
       result
     ) {
       if (result[research]) {

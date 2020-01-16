@@ -9,19 +9,19 @@
   getToday
 */
 
-const softwareSelect = $('.page-designForm #nameselect');
+const designSelect = $('.page-designForm #nameselect');
 const adminSelect = $('.page-designForm #adminCode');
 
 $(document).ready(function() {
   $('#prbotSubmitdesignForm').click(function() {
     if (submitInit()) {
-      if ($('#ennewAdminName').val() != '') DesignsoftwareFormNewAdmin();
-      else submitFormSoftware();
+      if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
+      else submitFormDesign();
     }
   });
 
-  softwareSelect.change(function() {
-    selectSoftware();
+  designSelect.change(function() {
+    selectDesign();
     if (adminSelect.val() != '') selectAdmin();
   });
 
@@ -124,37 +124,37 @@ function getSelectedOrgType() {
   else return $('#orgLevel').val();
 }
 
-function DesignsoftwareFormNewAdmin() {
-  let submitButton = document.getElementById('prbotDesignsoftwareForm');
+function submitDesignFormNewAdmin() {
+  let submitButton = document.getElementById('prbotSubmitdesignForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
   let designObject = getdesignObject();
   let adminObject = getAdminObject();
-  let softwareName = $('#enname').val();
+  let designName = $('#enname').val();
   let adminName = slugify(
     $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
-  let softwareFile = `_data/software/${slugify(softwareName)}.yml`;
+  let designFile = `_data/design/${slugify(designName)}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
     .then(adminResult => {
       fileWriter
-        .merge(softwareFile, designObject, 'administrations', 'adminCode')
-        .then(softwareResult => {
+        .merge(designFile, designObject, 'administrations', 'adminCode')
+        .then(designResult => {
           return fetch(
             PRBOT_URL,
-            getConfigUpdateSoftwareNewAdmin(
-              softwareName,
+            getConfigUpdateDesignNewAdmin(
+              designName,
               adminName,
-              softwareFile,
+              designFile,
               adminFile,
-              softwareResult,
+              designResult,
               adminResult
             )
           );
@@ -163,10 +163,10 @@ function DesignsoftwareFormNewAdmin() {
           if (err.status == 404) {
             return fetch(
               PRBOT_URL,
-              getConfigNewSoftwareNewAdmin(
-                softwareName,
+              getConfigNewDesignNewAdmin(
+                designName,
                 adminName,
-                softwareFile,
+                designFile,
                 adminFile,
                 designObject,
                 adminResult
@@ -177,19 +177,19 @@ function DesignsoftwareFormNewAdmin() {
         .then(response => {
           let url =
             $('html').attr('lang') == 'en'
-              ? './open-source-softwares.html'
+              ? './open-source-designs.html'
               : './logiciels-libres.html';
           submitConclusion(response, submitButton, resetButton, url);
         });
     });
 }
 
-function getConfigUpdateSoftwareNewAdmin(
-  softwareName,
+function getConfigUpdateDesignNewAdmin(
+  designName,
   adminName,
-  softwareFile,
+  designFile,
   adminFile,
-  softwareResult,
+  designResult,
   adminObject
 ) {
   return {
@@ -197,8 +197,8 @@ function getConfigUpdateSoftwareNewAdmin(
       user: USERNAME,
       repo: REPO_NAME,
       title:
-        'Updated software file for ' +
-        softwareName +
+        'Updated design file for ' +
+        designName +
         ' and created ' +
         adminName +
         ' in administration file',
@@ -210,8 +210,8 @@ function getConfigUpdateSoftwareNewAdmin(
       },
       files: [
         {
-          path: softwareFile,
-          content: '---\n' + jsyaml.dump(softwareResult)
+          path: designFile,
+          content: '---\n' + jsyaml.dump(designResult)
         },
         {
           path: adminFile,
@@ -223,10 +223,10 @@ function getConfigUpdateSoftwareNewAdmin(
   };
 }
 
-function getConfigNewSoftwareNewAdmin(
-  softwareName,
+function getConfigNewDesignNewAdmin(
+  designName,
   adminName,
-  softwareFile,
+  designFile,
   adminFile,
   designObject,
   adminObject
@@ -236,8 +236,8 @@ function getConfigNewSoftwareNewAdmin(
       user: USERNAME,
       repo: REPO_NAME,
       title:
-        'Creaded software file for ' +
-        softwareName +
+        'Creaded design file for ' +
+        designName +
         ' and created ' +
         adminName +
         ' in administration file',
@@ -249,7 +249,7 @@ function getConfigNewSoftwareNewAdmin(
       },
       files: [
         {
-          path: softwareFile,
+          path: designFile,
           content: '---\n' + jsyaml.dump(designObject)
         },
         {
@@ -262,8 +262,8 @@ function getConfigNewSoftwareNewAdmin(
   };
 }
 
-function submitFormSoftware() {
-  let submitButton = document.getElementById('prbotDesignsoftwareForm');
+function submitFormDesign() {
+  let submitButton = document.getElementById('prbotSubmitdesignForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
@@ -271,7 +271,7 @@ function submitFormSoftware() {
   let designObject = getdesignObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
-  let file = `_data/software/${slugify(ProjectName)}.yml`;
+  let file = `_data/design/${slugify(ProjectName)}.yml`;
 
   fileWriter
     .merge(file, designObject, 'administrations', 'adminCode')
@@ -280,13 +280,16 @@ function submitFormSoftware() {
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(PRBOT_URL, getConfigNew(designObject, file, ProjectName));
+        return fetch(
+          PRBOT_URL,
+          getConfigNew(designObject, file, ProjectName)
+        );
       } else throw err;
     })
     .then(response => {
       let url =
         $('html').attr('lang') == 'en'
-          ? './open-source-softwares.html'
+          ? './open-source-designs.html'
           : './logiciels-libres.html';
       submitConclusion(response, submitButton, resetButton, url);
     });
@@ -297,7 +300,7 @@ function getConfigUpdate(result, file, ProjectName) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: `Updated the ${ProjectName} software file`,
+      title: `Updated the ${ProjectName} design file`,
       description:
         'Authored by: ' +
         $('#submitteremail').val() +
@@ -328,7 +331,7 @@ function getConfigNew(designObject, file, ProjectName) {
     body: JSON.stringify({
       user: USERNAME,
       repo: REPO_NAME,
-      title: 'Created the software file for ' + ProjectName,
+      title: 'Created the design file for ' + ProjectName,
       description:
         'Authored by: ' +
         $('#submitteremail').val() +
@@ -354,23 +357,24 @@ function getConfigNew(designObject, file, ProjectName) {
   };
 }
 
-function selectSoftware() {
-  let value = softwareSelect.val();
-
-  $.getJSON('http://canada-ca.github.io/ore-ero/design.json', function(result) {
+function selectDesign() {
+  let value = designSelect.val();
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
+    result
+  ) {
     if (result[value]) {
-      addValueToFieldsSoftware(result[value]);
+      addValueToFieldsDesign(result[value]);
       $('#adminCode').focus();
     } else if (value == '') {
-      resetFieldsSoftware();
+      resetFieldsDesign();
     } else {
       alert('Error retrieving the data');
     }
   });
 }
 
-function addValueToFieldsSoftware(obj) {
-  resetFieldsSoftware();
+function addValueToFieldsDesign(obj) {
+  resetFieldsDesign();
 
   $('#enname')
     .val(obj.name.en)
@@ -395,7 +399,7 @@ function addValueToFieldsSoftware(obj) {
   addTags(obj);
 }
 
-function resetFieldsSoftware() {
+function resetFieldsDesign() {
   $('#enname')
     .val('')
     .prop('disabled', false);
@@ -414,15 +418,15 @@ function resetFieldsSoftware() {
 }
 
 function selectAdmin() {
-  let software = softwareSelect.val();
+  let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
     result
   ) {
-    if (result[software]) {
-      for (let i = 0; i < result[software].administrations.length; i++) {
-        if (result[software].administrations[i].adminCode == administration) {
-          addValueToFieldsAdmin(result[software].administrations[i]);
+    if (result[design]) {
+      for (let i = 0; i < result[design].administrations.length; i++) {
+        if (result[design].administrations[i].adminCode == administration) {
+          addValueToFieldsAdmin(result[design].administrations[i]);
           break;
         } else {
           resetFieldsAdmin();
