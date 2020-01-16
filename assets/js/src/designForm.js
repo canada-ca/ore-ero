@@ -374,7 +374,6 @@ function selectDesign() {
     }
   });
 }
-
 function addValueToFieldsDesign(obj) {
   resetFieldsDesign();
 
