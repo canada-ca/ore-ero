@@ -356,6 +356,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
+
   $.getJSON('http://canada-ca.github.io/ore-ero/design.json', function(result) {
     if (result[value]) {
       addValueToFieldsSoftware(result[value]);
