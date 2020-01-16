@@ -9,13 +9,13 @@
   getToday
 */
 
-const softwareSelect = $('.page-softwareForm #nameselect');
-const adminSelect = $('.page-softwareForm #adminCode');
+const softwareSelect = $('.page-designForm #nameselect');
+const adminSelect = $('.page-designForm #adminCode');
 
 $(document).ready(function() {
-  $('#prbotSubmitsoftwareForm').click(function() {
+  $('#prbotSubmitdesignForm').click(function() {
     if (submitInit()) {
-      if ($('#ennewAdminName').val() != '') submitSoftwareFormNewAdmin();
+      if ($('#ennewAdminName').val() != '') DesignsoftwareFormNewAdmin();
       else submitFormSoftware();
     }
   });
@@ -35,9 +35,9 @@ $(document).ready(function() {
   });
 });
 
-function getsoftwareObject() {
+function getdesignObject() {
   // Mandatory fields
-  let softwareObject = {
+  let designObject = {
     schemaVersion: '1.0',
     description: {
       whatItDoes: {
@@ -78,41 +78,41 @@ function getsoftwareObject() {
   };
 
   // More-groups
-  addMoreLicences(softwareObject);
+  addMoreLicences(designObject);
 
   // Optional fields
   if (
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
   ) {
-    softwareObject.description.howItWorks = {};
+    designObject.description.howItWorks = {};
   }
   if ($('#endescriptionhowItWorks').val()) {
-    softwareObject.description.howItWorks.en = $(
+    designObject.description.howItWorks.en = $(
       '#endescriptionhowItWorks'
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
-    softwareObject.description.howItWorks.fr = $(
+    designObject.description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
   }
 
   if ($('#contactname').val()) {
-    softwareObject.administrations[0].uses[0].contact.name = $(
+    designObject.administrations[0].uses[0].contact.name = $(
       '#contactname'
     ).val();
   }
 
   if ($('#enteam').val() || $('#frteam').val()) {
-    softwareObject.administrations[0].uses[0].team = {};
+    designObject.administrations[0].uses[0].team = {};
     if ($('#enteam').val())
-      softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
+      designObject.administrations[0].uses[0].team.en = $('#enteam').val();
     if ($('#frteam').val())
-      softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
+      designObject.administrations[0].uses[0].team.fr = $('#frteam').val();
   }
 
-  return softwareObject;
+  return designObject;
 }
 
 function getSelectedOrgType() {
@@ -124,13 +124,13 @@ function getSelectedOrgType() {
   else return $('#orgLevel').val();
 }
 
-function submitSoftwareFormNewAdmin() {
-  let submitButton = document.getElementById('prbotSubmitsoftwareForm');
+function DesignsoftwareFormNewAdmin() {
+  let submitButton = document.getElementById('prbotDesignsoftwareForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let softwareObject = getsoftwareObject();
+  let designObject = getdesignObject();
   let adminObject = getAdminObject();
   let softwareName = $('#enname').val();
   let adminName = slugify(
@@ -145,7 +145,7 @@ function submitSoftwareFormNewAdmin() {
     .mergeAdminFile(adminFile, adminObject, '', 'code')
     .then(adminResult => {
       fileWriter
-        .merge(softwareFile, softwareObject, 'administrations', 'adminCode')
+        .merge(softwareFile, designObject, 'administrations', 'adminCode')
         .then(softwareResult => {
           return fetch(
             PRBOT_URL,
@@ -168,7 +168,7 @@ function submitSoftwareFormNewAdmin() {
                 adminName,
                 softwareFile,
                 adminFile,
-                softwareObject,
+                designObject,
                 adminResult
               )
             );
@@ -228,7 +228,7 @@ function getConfigNewSoftwareNewAdmin(
   adminName,
   softwareFile,
   adminFile,
-  softwareObject,
+  designObject,
   adminObject
 ) {
   return {
@@ -250,7 +250,7 @@ function getConfigNewSoftwareNewAdmin(
       files: [
         {
           path: softwareFile,
-          content: '---\n' + jsyaml.dump(softwareObject)
+          content: '---\n' + jsyaml.dump(designObject)
         },
         {
           path: adminFile,
@@ -263,27 +263,24 @@ function getConfigNewSoftwareNewAdmin(
 }
 
 function submitFormSoftware() {
-  let submitButton = document.getElementById('prbotSubmitsoftwareForm');
+  let submitButton = document.getElementById('prbotDesignsoftwareForm');
   let resetButton = document.getElementById('formReset');
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let softwareObject = getsoftwareObject();
+  let designObject = getdesignObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
   let file = `_data/software/${slugify(ProjectName)}.yml`;
 
   fileWriter
-    .merge(file, softwareObject, 'administrations', 'adminCode')
+    .merge(file, designObject, 'administrations', 'adminCode')
     .then(result => {
       return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(
-          PRBOT_URL,
-          getConfigNew(softwareObject, file, ProjectName)
-        );
+        return fetch(PRBOT_URL, getConfigNew(designObject, file, ProjectName));
       } else throw err;
     })
     .then(response => {
@@ -326,7 +323,7 @@ function getConfigUpdate(result, file, ProjectName) {
   };
 }
 
-function getConfigNew(softwareObject, file, ProjectName) {
+function getConfigNew(designObject, file, ProjectName) {
   return {
     body: JSON.stringify({
       user: USERNAME,
@@ -349,7 +346,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(softwareObject)
+          content: '---\n' + jsyaml.dump(designObject)
         }
       ]
     }),
@@ -359,9 +356,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
-    result
-  ) {
+  $.getJSON('http://canada-ca.github.io/ore-ero/design.json', function(result) {
     if (result[value]) {
       addValueToFieldsSoftware(result[value]);
       $('#adminCode').focus();
