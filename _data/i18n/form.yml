@@ -728,11 +728,11 @@ design:
         fr: Nom du projet
     labels:
       select:
-        en: If you wish to update information of a software that already exists in our library, please select it below
-        fr: Si vous souhaitez mettre à jour les données d'un logiciel déjà ajouté au catalogue, veuillez le sélectionner de la liste
+        en: If you wish to update information of a design that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un design déjà ajouté au catalogue, veuillez le sélectionner de la liste
     infobulle:
-      en: Add the name of the open source software
-      fr: Ajouter le nom du logiciel libre
+      en: Add the name of the open design
+      fr: Ajouter le nom du design libre
   date:
     title:
       en: Started using
@@ -741,11 +741,50 @@ design:
       en: Started using
       fr: Date de début d'utilisation
     infobulle:
-      en: Select the date when the public administration started using the software.
-      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
+      en: Select the date when the public administration started using the design.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le design.
   administrations: *administrations
   uses:
     title:
-      en: Informations about software users.
-      fr: Information à propos des utilisateurs du logiciel
+      en: Informations about design users.
+      fr: Information à propos des utilisateurs du design
+  
+# Future project form specifics
+research:
+  name:
+    title:
+      en: Project Name
+      fr: Nom du projet
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a research that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une recherche déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the open research
+      fr: Ajouter le nom de la recherche libre
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started contributing to the research.
+      fr: Choisir la date lorsque l'administration publique a commencé à contribuer à la recherche.
+  administrations: *administrations
+  uses:
+    title:
+      en: Informations about research participants.
+      fr: Information à propos des participants à la recherche
   
