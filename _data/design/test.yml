@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Test
+    fr: Test
+category: '43232300'
+homepageURL:
+  en: 'https://accumulo.apache.org/'
+  fr: 'https://accumulo.apache.org/'
+licences:
+  - URL:
+      en: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+      fr: 'https://github.com/apache/accumulo/blob/master/LICENSE'
+    spdxID: Apache-2.0
+name:
+  en: Test
+  fr: Test
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+administrations:
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: josephaime.djemo@gmail.com
+          name: Joseph Aimé Djemo Tinghouo
+        date:
+          started: '2020-01-24'
+          metadataLastUpdated: '2020-01-16'
+        team:
+          en: Joseph Aimé Djemo Tinghouo
+          fr: Joseph Aimé Djemo Tinghouo
