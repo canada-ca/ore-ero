@@ -44,3 +44,10 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
+  - adminCode: asc-csa
+    uses:
+      - contact:
+          email: xzy@ymail.com
+        date:
+          started: '2020-01-11'
+          metadataLastUpdated: '2020-01-16'
