@@ -18,6 +18,7 @@ $(document).ready(function() {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
       else submitFormDesign();
     }
+    
   });
 
   designSelect.change(function() {
@@ -35,7 +36,7 @@ $(document).ready(function() {
   });
 });
 
-function getdesignObject() {
+function getDesignObject() {
   // Mandatory fields
   let designObject = {
     schemaVersion: '1.0',
@@ -130,7 +131,7 @@ function submitDesignFormNewAdmin() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let designObject = getdesignObject();
+  let designObject = getDesignObject();
   let adminObject = getAdminObject();
   let designName = $('#enname').val();
   let adminName = slugify(
@@ -268,7 +269,7 @@ function submitFormDesign() {
   submitButton.disabled = true;
   resetButton.disabled = true;
 
-  let designObject = getdesignObject();
+  let designObject = getDesignObject();
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
   let file = `_data/design/${slugify(ProjectName)}.yml`;
@@ -372,13 +373,17 @@ function selectDesign() {
     }
   });
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 168e08e7ae1697ad8b3d6abb94ebc8662b838abc
 function addValueToFieldsDesign(obj) {
   resetFieldsDesign();
 
   $('#enname')
     .val(obj.name.en)
     .prop('disabled', true);
+    
   $('#frname')
     .val(obj.name.fr)
     .prop('disabled', true);

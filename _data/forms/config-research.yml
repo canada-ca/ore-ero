@@ -3,7 +3,7 @@
 id: research
 
 formGroups:
-  - preset: selectSoftware
+  - preset: selectResearch
   - preset: description
   - preset: category
   - preset: tags

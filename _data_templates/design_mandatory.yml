@@ -1,5 +1,36 @@
 ---
 schemaVersion: '1.0'
+<<<<<<< HEAD
+description:
+  whatItDoes:
+    en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+Category: '1234567'
+homepageURL:
+  en: 'https://example.com/'
+  fr: 'https://example.com/'
+licences:
+  - URL:
+      en: 'https://example.com/repo/example/LICENCE-en'
+      fr: 'https://example.com/repo/example/LICENCE-fr'
+    spdxID: XYZ-1.0
+name:
+  en: Example
+  fr: Exemple
+tags:
+  en:
+    - tag1-en
+  fr:
+    - tag1-fr
+administrations:
+  - adminCode: abc-def
+    uses:
+      - contact:
+          email: abc@xyz.com
+        date:
+          started: 'YYYY-MM-DD'
+          metadataLastUpdated: 'YYYY-MM-DD'
+=======
 adminCode: abc-def
 releases:
   - contact:
@@ -28,3 +59,4 @@ releases:
         - tag1-en
       fr:
         - tag1-fr
+>>>>>>> c2cfb2a47b7d15562ab972a7e83dfec3af85c5bd
