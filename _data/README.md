@@ -29,16 +29,38 @@ If there is already a file for your adminstration under the [code](https://githu
 #### You administration needs to be added?
 If your adminstration doesn't have a file under the [code](https://github.com/canada-ca/ore-ero/tree/master/_data/code) directory, you need to create a new file for your administration. Its name should corresponds with the value you add to the `adminCode` field.
 
+### Adding Open Design Resource
+The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaDesign.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page] (https://raw.githubusercontent.com/canada-ca/ore-ero/open-design-schema.html)
+
+You can use the [design template with only mandatory fields](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/design_mandatory.yml) as an example
+
+#### The design is already there?
+If there is already a file for the design under the [design](https://github.com/canada-ca/ore-ero/tree/master/_data/design) directory, you need to check if your administration is already listed as using the open design. If it's there, you can update it directly in the file. Otherwise, you need to add your administration data under the `uses` field.
+
+#### The design doesn't exist yet?
+If the design doesn't have a file under the [design](https://github.com/canada-ca/ore-ero/tree/master/_data/design) directory, you need to create a new file for the software. It's name should correspond to a slugified version of it's english name
+
+### Adding Open Research
+The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaResearch.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page] (https://raw.githubusercontent.com/canada-ca/ore-ero/open-research-schema.html)
+
+You can use the [design template with only mandatory fields](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/research_mandatory.yml) as an example
+
+#### The research is already there?
+If there is already a file for the research under the [research](https://github.com/canada-ca/ore-ero/tree/master/_data/research) directory, you need to check if your administration is already listed as contributing to the research. If it's there, you can update it directly in the file. Otherwise, you need to add your administration data under the `uses` field.
+
+#### The research doesn't exist yet?
+If the research doesn't have a file under the [research](https://github.com/canada-ca/ore-ero/tree/master/_data/research) directory, you need to create a new file for the research. It's name should correspond to a slugified version of it's english name
+
 ### Adding Open Source Software
 The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaSoftware.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page](https://canada-ca.github.io/ore-ero/en/open-source-software-schema.html).
 
 You can use the [software template with only mandatory fields](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/software_mandatory.yml) as an example.
 
 #### The software is already there?
-If there is already a file for the software under the [software](https://github.com/canada-ca/ore-ero/tree/master/_data/software) directory, you need to check if your adminstration is already listed as using the open source software. If it's there, you can update it directly in the file. Otherwise, you need to add your administration data under the `uses` field.
+If there is already a file for the software under the [software](https://github.com/canada-ca/ore-ero/tree/master/_data/software) directory, you need to check if your administration is already listed as using the open source software. If it's there, you can update it directly in the file. Otherwise, you need to add your administration data under the `uses` field.
 
 #### The software does not exist yet?
-If the software doesn't have a file under the [software](https://github.com/canada-ca/ore-ero/tree/master/_data/software) directory, you need to create a new file for the software. Its name should corresponds to a slugified version of it's english name.
+If the software doesn't have a file under the [software](https://github.com/canada-ca/ore-ero/tree/master/_data/software) directory, you need to create a new file for the software. It's name should corresponds to a slugified version of it's english name.
 
 ### Adding Open Standard
 The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaStandard.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page](https://canada-ca.github.io/ore-ero/en/open-standard-schema.html).
@@ -73,6 +95,11 @@ A list of released open source code by administrations. Sub-folders contain data
  - Provincial
  - Municipal
  - Aboriginal
+### Design
+List of open design used by administrations
+
+### Research
+List of open researches contributed to by administrations
 
 ### Software
 List of open source software used by administrations.
@@ -118,8 +145,19 @@ S'il existe déjà un fichier pour votre administration sous le répertoire [cod
 #### Votre administration doit être ajoutée?
 Si votre administration n'a pas de fichier sous le répertoire [code](https://github.com/canada-ca/ore-ero/tree/master/_data/code) vous devez créer un nouveau fichier pour votre administration. Le nom de ce fichier doit correspondre avec la valeur que vous ajoutez au champ `adminCode`.
 
+### Ajouter des design libres
+Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaDesign.yaml) montre comment les fichiers de données sont structurés. La structure et les champs requis sont expliqués sur la [page des métadonnées](https://canada-ca.github.io/ore-ero/fr/design-libre-schema.html).
+
+Utilisez le [modèle de design avec uniquement les champs obligatoires](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/design_mandatory.yml) comme exemple.
+
+#### Le design est déjà là?
+S'il existe déjà un fichier pour le design libre que vous utilisez dans le répertoire [design](https://github.com/canada-ca/ore-ero/tree/master/_data/design) vous devez vérifier si votre administration est déjà répertoriée comme utilisant le design libre. Si c'est le cas, vous pouvez mettre à jour le fichier directement. Sinon, vous devez ajouter votre administration sous le champ `uses`.
+
+#### Le design n'existe pas?
+Si le logiciel que vous utilisez n'a pas de fichier dans le répertoire [design](https://github.com/canada-ca/ore-ero/tree/master/_data/design) vous devez créer un nouveau fichier pour le design libre. Le nom du fichier doit correspondre avec une version simplifiée pour les urls du nom anglais du design.
+
 ### Ajouter des logiciels libres
-Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaSoftware.yaml) montre comment les fichiées de données sont structurées. La structure et les champs requis sont expliqués sur la [page des métadonnées](https://canada-ca.github.io/ore-ero/fr/logiciel-libre-schema.html).
+Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaSoftware.yaml) montre comment les fichiers de données sont structurés. La structure et les champs requis sont expliqués sur la [page des métadonnées](https://canada-ca.github.io/ore-ero/fr/logiciel-libre-schema.html).
 
 Utilisez le [modèle de logiciel avec uniquement les champs obligatoires](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/software_mandatory.yml) comme exemple.
 
@@ -151,6 +189,17 @@ S'il existe déjà un fichier pour votre administration sous le répertoire [par
 #### Votre administration doit être ajoutée?
 Si votre administration n'a pas de fichier sous le répertoire [partnership](https://github.com/canada-ca/ore-ero/tree/master/_data/partnership) vous devez créer un nouveau fichier pour votre administration. Le nom de ce fichier doit correspondre avec la valeur que vous ajoutez au champ `adminCode`.
 
+### Ajouter des recherches libres
+Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaResearch.yaml) montre comment les fichiers de données sont structurés. La structure et les champs requis sont expliqués sur la [page des métadonnées](https://canada-ca.github.io/ore-ero/fr/recherche-libre-schema.html).
+
+Utilisez le [modèle de recherche avec uniquement les champs obligatoires](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/recherche_mandatory.yml) comme exemple.
+
+#### La recherche est déjà là?
+S'il existe déjà un fichier pour la recherche libre que vous utilisez dans le répertoire [research](https://github.com/canada-ca/ore-ero/tree/master/_data/research) vous devez vérifier si votre administration est déjà répertoriée comme contribuant à la recherche libre. Si c'est le cas, vous pouvez mettre à jour le fichier directement. Sinon, vous devez ajouter votre administration sous le champ `uses`.
+
+#### Le recherche n'existe pas?
+Si la recherche à laquelle vous contribuez n'a pas de fichier dans le répertoire [research](https://github.com/canada-ca/ore-ero/tree/master/_data/research) vous devez créer un nouveau fichier pour la recherche libre. Le nom du fichier doit correspondre avec une version simplifiée pour les urls du nom anglais de la recherche.
+
 ## Structure du répertoire
 
 ### Administrations
@@ -162,6 +211,11 @@ Liste des codes sources ouverts publiés par les administrations. Les sous-répe
  - Provincial
  - Municipal
  - Aboriginal
+### Design
+Liste des designs libres utilisés par les administrations
+
+### Research
+Liste des recherches qui reçoivent la contribution des administrations.
 
 ### Software
 Liste des logiciels libres utilisés par les administrations.

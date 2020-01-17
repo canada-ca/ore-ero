@@ -386,7 +386,6 @@ function addValueToFieldsResearch(obj) {
     if (obj.description.howItWorks.fr)
       $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
-  console.log(obj);
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
   $('#enresearchOrg').val(obj.researchOrg.en);
@@ -410,6 +409,8 @@ function resetFieldsResearch() {
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
   $('#frdescriptionhowItWorks').val('');
+  $('#enhomepageURL').val('');
+  $('#frhomepageURL').val('');
   $('#enspecURL').val('');
   $('#frspecURL').val('');
   $('#enresearchOrg').val('');
