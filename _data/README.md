@@ -179,7 +179,7 @@ S'il existe déjà un fichier pour la norme que vous utilisez dans le répertoir
 Si la norme que vous utilisez n'a pas de fichier dans le répertoire [standard](https://github.com/canada-ca/ore-ero/tree/master/_data/standard) directory, you need to create a new file for the standard. Le nom de ce fichier doit correspondre avec la valeur que vous ajoutez au champ `standardAcronym`, sans majuscules.
 
 ### Ajouter un projet en recherche de partenariat
-Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaPartnership.yaml) montre comment les fichiées de données sont structurées. La structure et les champs requis sont expliqués sur la [page des métadonnées schema page](https://canada-ca.github.io/ore-ero/fr/partenariat-schema.html).
+Le [schéma des métadonnées](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaPartnership.yaml) montre comment les fichiées de données sont structurées. La structure et les champs requis sont expliqués sur la [page des métadonnées](https://canada-ca.github.io/ore-ero/fr/partenariat-schema.html).
 
 Utilisez le [modèle de partenariat avec uniquement les champs obligatoires](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/partnership_mandatory.yml) comme exemple.
 
