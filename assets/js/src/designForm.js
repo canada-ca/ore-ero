@@ -18,7 +18,6 @@ $(document).ready(function() {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
       else submitFormDesign();
     }
-    
   });
 
   designSelect.change(function() {
@@ -281,10 +280,7 @@ function submitFormDesign() {
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(
-          PRBOT_URL,
-          getConfigNew(designObject, file, ProjectName)
-        );
+        return fetch(PRBOT_URL, getConfigNew(designObject, file, ProjectName));
       } else throw err;
     })
     .then(response => {
@@ -360,9 +356,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
-    result
-  ) {
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
     if (result[value]) {
       addValueToFieldsDesign(result[value]);
       $('#adminCode').focus();
@@ -379,7 +373,7 @@ function addValueToFieldsDesign(obj) {
   $('#enname')
     .val(obj.name.en)
     .prop('disabled', true);
-    
+
   $('#frname')
     .val(obj.name.fr)
     .prop('disabled', true);
@@ -421,9 +415,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
-    result
-  ) {
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {
