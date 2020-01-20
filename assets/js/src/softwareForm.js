@@ -4,7 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode slugify
+  getAdminObject getAdminCode hideNewAdminForm slugify
   addMoreLicences resetMoreGroup fillLicenceField
   getToday
 */
@@ -32,6 +32,8 @@ $(document).ready(function() {
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
     resetTags();
+    hideNewAdminForm();
+    resetMoreGroup($('#addMorelicences'));
   });
 });
 
