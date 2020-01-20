@@ -95,8 +95,8 @@
         </tr>
       </thead>
       <tbody>
-        {%- for softwares in site.data.research -%}
-          {%- assign research = softwares[1] -%}
+        {%- for researches in site.data.research -%}
+          {%- assign research = researches[1] -%}
           <tr>
             <td><a href="#{{ research.name[page.lang] | slugify }}" aria-controls="{{ research.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ research.name[page.lang] }}</a></td>
             <td>
@@ -133,8 +133,8 @@
   </div>
   
   <!-- Modal Lightboxes -->
-  {%- for softwares in site.data.research -%}
-    {%- assign research = softwares[1] -%}
+  {%- for researches in site.data.research -%}
+    {%- assign research = researches[1] -%}
       <section id="{{ research.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
         <header class="modal-header">
           <h2 class="modal-title">{{ research.name[page.lang] }}</h2>
