@@ -19,7 +19,7 @@ $(document).ready(function() {
       submitForm();
     }
   });
-  
+
   adminSelect.change(function() {
     selectAdmin();
   });

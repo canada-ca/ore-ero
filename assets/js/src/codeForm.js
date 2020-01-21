@@ -4,9 +4,9 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags getLanguages selectLanguage resetLanguages
   submitInit submitConclusion
-  getAdminObject getAdminCode getSelectedOrgType getOrgLevel slugify
-  addMoreLicences addMoreRelatedCode resetMoreGroup addMoreGroup fillLicenceField
-  addMorePartners getNewAdminPartnerPromise fillPartnersField
+  getAdminObject getAdminCode getSelectedOrgType getOrgLevel hideNewAdminForm slugify
+  addMoreLicences addMoreRelatedCode resetMoreGroup addMoreGroup fillLicenceField 
+  addMorePartners getNewAdminPartnerPromise fillPartnersField resetPartners
   getToday
 */
 
@@ -35,6 +35,8 @@ $(document).ready(function() {
     resetLanguages();
     hideNewAdminForm();
     resetMoreGroup($('#addMorelicences'));
+    resetPartners();
+    resetMoreGroup($('#addMorerelatedCode'));
   });
 });
 
