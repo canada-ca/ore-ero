@@ -8,7 +8,7 @@ $(document).ready(function() {
     function() {
       let length = $('#addMorepartners ul li').length;
       let index = length == 1 ? '' : length - 1;
-      $('#partnersNewAdmin' + index).addClass('hide'); 
+      $('#partnersNewAdmin' + index).addClass('hide');
     }
   );
 
@@ -20,17 +20,15 @@ $(document).ready(function() {
       selectPartners(this);
     }
   );
-  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', 
-    function() {
-      let index = getmoreIndex($(this));  
-      addNewPartner(this);
-      if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
-        $('#partnersNewAdmin' + index).addClass('hide');
-      } else {
-        $('#partnersNewAdmin' + index).removeClass('hide');
-      }
+  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
+    let index = getmoreIndex($(this));
+    addNewPartner(this);
+    if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
+      $('#partnersNewAdmin' + index).addClass('hide');
+    } else {
+      $('#partnersNewAdmin' + index).removeClass('hide');
     }
-  );
+  });
   $('#addMorepartners').on(
     'click',
     '.partnersAdminCodeRemove button',
@@ -91,9 +89,7 @@ function addMorePartners(obj) {
       if ($('#partnerscontactname' + id).val() != '')
         obj.partners[i].name = $('#partnerscontactname' + id).val();
     }
-
   });
-
 }
 
 function getNewAdminPartnerPromise(obj, fileWriter, config) {
@@ -311,13 +307,11 @@ function getAdminObjectForPartner(obj, admin) {
         };
 }
 
-
 function resetPartners() {
   let count = $('#addMorepartners ul li').length - 1;
   for (let index = count; index > 0; index--) {
     $('#addMorepartners ul li')[index].remove();
   }
-  $('.btn-tabs-more-remove').addClass('invisible'); 
+  $('.btn-tabs-more-remove').addClass('invisible');
   $('#partnersNewAdmin').addClass('hide');
-
 }
