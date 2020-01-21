@@ -168,6 +168,21 @@
               </div>
             </div>
           {%- endfor -%}
+      <br />
+      <div class="row">
+        <div class="col-md-7">
+          <strong
+            >{{ site.data.i18n.tables.lightbox.website[page.lang] }}</strong
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <a href="{{ research.homepageURL[page.lang] }}" target="_blank">
+            {{ research.homepageURL[page.lang] }}
+          </a>
+        </div>
+      </div>
         </div>
       </section>
   {%- endfor -%}
