@@ -6,7 +6,7 @@
   submitInit submitConclusion
   getAdminObject getAdminCode getSelectedOrgType getOrgLevel hideNewAdminForm
   resetMoreGroup
-  addMorePartners getNewAdminPartnerPromise fillPartnersField
+  addMorePartners getNewAdminPartnerPromise fillPartnersField resetPartners
   getToday
 */
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
       submitForm();
     }
   });
-
+  
   adminSelect.change(function() {
     selectAdmin();
   });
@@ -32,6 +32,7 @@ $(document).ready(function() {
     $('#validation').trigger('reset');
     resetTags();
     hideNewAdminForm();
+    resetPartners();
   });
 });
 
