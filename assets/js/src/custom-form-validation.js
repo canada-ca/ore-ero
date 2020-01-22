@@ -23,7 +23,10 @@ const uniqNewAdminError = {
   en: 'This admin code already exists.',
   fr: "Ce code d'administration existe déjà."
 };
-
+const invalidCloseDate = {
+  en: 'The closing date cannot be before the starting date',
+  fr: 'La date de fermeture ne peux pas être avant la date de départ'
+}
 $(document).on('wb-ready.wb', function() {
   let lang = document.documentElement.lang;
   if (jQuery.validator && window.jQuery.validator !== 'undefined') {
@@ -133,6 +136,18 @@ $(document).on('wb-ready.wb', function() {
         return true;
       },
       jQuery.validator.format(uniqNewAdminError[lang])
+    );
+
+    jQuery.validator.addMethod(
+      'invalid-closingdate',
+      function(value) {
+        let start = document.getElementById('datestarted').value;
+        if (new Date(start).getTime() > new Date(value).getTime()) {
+          return false;
+        }
+        return true;
+      },
+      jQuery.validator.format(invalidCloseDate[lang])
     );
   }
 });
