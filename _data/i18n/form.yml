@@ -304,6 +304,9 @@ presets:
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
+    infobulle:
+      en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
+      fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
   submitter:
     title:
       en: Submitter Contact Information

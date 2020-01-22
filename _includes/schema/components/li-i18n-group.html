@@ -1,8 +1,9 @@
+{%- capture path -%}{{ include.param.prepend }}{{ include.title }}{%- endcapture -%}
 <li>
   <details open>
     <summary>{{ include.group }} {% include schema/components/required.html required=include.param.required %} [array]</summary>
     <h5>{{ site.data.i18n.form[include.id][include.title].labels[include.group].schema[page.lang] }}</h5>
-    <p>{{ site.data.i18n.form[include.id][include.title].titles[include.group][page.lang] }}</p>
+    <p>{{ site.data.i18n.form[include.id][path].infobulle[page.lang] }}</p>
     <ul>
       <li>{{ site.data.i18n.form[include.id][include.title].labels[include.group].en[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>
       <li>{{ site.data.i18n.form[include.id][include.title].labels[include.group].fr[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>
