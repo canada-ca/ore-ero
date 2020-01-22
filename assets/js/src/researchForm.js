@@ -9,7 +9,7 @@
   getToday addMoreGroup
 */
 
-const researchSelect = $('.page-researchForm #nameselect');
+const researchSelect = $('.page-researchForm #researchAcronymselect');
 const adminSelect = $('.page-researchForm #adminCode');
 
 $(document).ready(function() {
@@ -55,6 +55,11 @@ function getresearchObject() {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
     },
+    licences: [],
+    name: {
+      en: $('#enname').val(),
+      fr: $('#frname').val()
+    },
     researchAcronym: $('#researchAcronym')
       .val()
       .toUpperCase(),
@@ -83,9 +88,8 @@ function getresearchObject() {
   };
 
   // More-groups
-
   addMoreLicences(researchObject);
-
+  
   $('#addMorereference ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');

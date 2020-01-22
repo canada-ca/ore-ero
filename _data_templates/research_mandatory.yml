@@ -8,6 +8,7 @@ Category: '1234567'
 homepageURL:
   en: 'https://example.com/'
   fr: 'https://example.com/'
+researchAcronym: docker
 licences:
   - URL:
       en: 'https://example.com/repo/example/LICENCE-en'
