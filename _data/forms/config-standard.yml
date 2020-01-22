@@ -3,6 +3,10 @@
 id: standard
 
 formGroups:
+  - preset: empty
+    title: administrations
+    param: {start: true}
+  - preset: adminCode
   - preset: selectStandard
   - preset: description
   - preset: tags
@@ -12,10 +16,6 @@ formGroups:
     title: specURL
     param: {type: url}
   - preset: hr
-  - preset: empty
-    title: administrations
-    param: {start: true}
-  - preset: adminCode
   - preset: team
   - preset: contact
     param: {phone: false}
