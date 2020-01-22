@@ -12,6 +12,7 @@ category: '43233000'
 homepageURL:
   en: 'https://www.docker.com'
   fr: 'https://www.docker.com'
+researchAcronym: docker
 licences:
   - URL:
       en: 'https://www.docker.com/legal/components-licenses'

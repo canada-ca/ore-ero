@@ -1,8 +1,8 @@
-{%- assign title = "name" -%}
+{%- assign title = "researchAcronym" -%}
 {%- assign group = "select" -%}
 {%- assign research_arr = "" | split: ',' -%}
 {%- for research in site.data.research -%}
-    {%- assign research_arr = research_arr | push: research[1].name[page.lang] -%}
+    {%- assign research_arr = research_arr | push: research[1].researchAcronym -%}
 {%- endfor %}
 {%- assign research_arr = research_arr | sort_natural -%}
 <div class="form-group">
@@ -15,6 +15,7 @@
   </select>
 </div>
 
+{% include form/components/group.html id=include.id title=title -%}
 
 {%- include form/presets/name.html id=include.id -%}
 

@@ -124,6 +124,7 @@ function addMoreLicences(obj) {
   $('#addMorelicences ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    console.log(" show object : " + obj);
     obj.licences[i] = {
       URL: {
         en: $('#enlicencesURL' + id).val(),
