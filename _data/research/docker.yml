@@ -1,0 +1,47 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Performs operating-system-level virtualization also known as
+      containerization
+    fr: >-
+      Effectue une virtualisation au niveau du système d'exploitation, également
+      appelée conteneurisation
+name:
+  en: Docker
+  fr: Docker
+homepageURL:
+  en: 'https://www.docker.com'
+  fr: 'https://www.docker.com'
+licences:
+  - URL:
+      en: 'https://www.docker.com/legal/components-licenses'
+      fr: 'https://www.docker.com/legal/components-licenses'
+    spdxID: Apache-2.0
+researchAcronym: DOCKER
+researchOrg:
+  en: !<tag:yaml.org,2002:js/undefined> ''
+  fr: !<tag:yaml.org,2002:js/undefined> ''
+tags:
+  en:
+    - Container platform
+    - Development
+    - Infrastructure
+  fr:
+    - Plate-forme de conteneur
+    - Développement
+    - Infrastructure
+administrations:
+  - adminCode: asc-csa
+    contact:
+      email: josephaime.djemo@gmail.com
+      name: joseph djemo
+    date:
+      created: '2020-01-22'
+      metadataLastUpdated: '2020-01-22'
+    references: []
+    status: !<tag:yaml.org,2002:js/undefined> ''
+    team:
+      en: joseph djemo
+      fr: joseph djemo
