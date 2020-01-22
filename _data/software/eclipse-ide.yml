@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Eclipse is an integrated development environment (IDE) used in computer
+      programming. It contains a base workspace and an extensible plug-in system
+      for customizing the environment. 
+    fr: >-
+      Eclipse est un environnement de développement intégré (IDE) utilisé dans
+      la programmation informatique. Il contient un espace de travail de base et
+      un système de plug-in extensible pour personnaliser.
+category: '43232400'
+homepageURL:
+  en: 'https://www.eclipse.org/ide/'
+  fr: 'https://www.eclipse.org/ide/'
+licences:
+  - URL:
+      en: 'https://www.eclipse.org/legal/epl-2.0/'
+      fr: 'https://www.eclipse.org/legal/epl-2.0/'
+    spdxID: EPL-2.0
+name:
+  en: Eclipse IDE
+  fr: Eclipse IDE
+tags:
+  en:
+    - IDE
+  fr:
+    - IDE
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-22'
