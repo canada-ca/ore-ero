@@ -19,3 +19,8 @@
     en: City of Sault Ste Marie
     fr: Ville de Sault Sainte Marie
   provinceCode: 'on'
+- code: quebec-city-qc
+  name:
+    en: Quebec City
+    fr: Ville de Québec
+  provinceCode: qc

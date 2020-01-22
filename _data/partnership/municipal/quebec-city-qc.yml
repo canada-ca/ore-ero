@@ -1,0 +1,20 @@
+---
+schemaVersion: '1.0'
+adminCode: quebec-city-qc
+projects:
+  - contact:
+      email: test@hotmail.ca
+    category: '43231600'
+    date:
+      closed: '2020-01-24'
+      started: '2020-01-22'
+      metadaLastUpdated: '2020-01-22'
+    description:
+      whatItDoes:
+        en: Test
+        fr: Test
+    name:
+      en: Test
+      fr: Test
+    partners:
+      - adminCode: toronto-city-on
