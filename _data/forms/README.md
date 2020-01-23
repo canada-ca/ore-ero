@@ -117,7 +117,7 @@ The following sections explain each of the available presets:
  - name (*form only*)
  - partners
  - relatedCode
- - selectCode, selectPartnership, selectSoftware, and selectStandard
+ - selectCode, selectDesign, selectPartnership, selectResearch, selectSoftware, and selectStandard
  - status
  - submitter
  - tags
@@ -710,7 +710,7 @@ L'*adminCode* affiche un menu de sélection (`<select>` widget) pour les adminis
 
 Le menu est suivi d'un bouton permettant à l'utilisateurs de créer une nouvelle administration au cas où son administration n'était pas déjà présente dans liste. Une nouvelle section est alors ouverte dans le formulaire et des champs obligatoires sont à remplir. Consultez la section **newAdmin** de la documentation pour de l'information sur ces champs.
 
-Lorsqu'une administration est sélectionnée, du JavaScript est utilisé pour remplir automatiquement la section de de l'administration du formulaire, dépendamment de son type. La même logique est suivie pour les *presets* **selectCode**, **selectPartnership**, **selectSoftware** et **selectStandards**.
+Lorsqu'une administration est sélectionnée, du JavaScript est utilisé pour remplir automatiquement la section de de l'administration du formulaire, dépendamment de son type. La même logique est suivie pour les *presets* **selectCode**, **selectDesign**, **selectPartnership**, **selectResearch** **selectSoftware** et **selectStandards**.
 
 L'adminCode ne prend pas de paramètres additionnels :
 

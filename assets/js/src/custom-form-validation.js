@@ -26,7 +26,7 @@ const uniqNewAdminError = {
 const invalidCloseDate = {
   en: 'The closing date cannot be before the starting date',
   fr: 'La date de fermeture ne peux pas être avant la date de départ'
-}
+};
 $(document).on('wb-ready.wb', function() {
   let lang = document.documentElement.lang;
   if (jQuery.validator && window.jQuery.validator !== 'undefined') {

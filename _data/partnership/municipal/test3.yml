@@ -1,0 +1,29 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-edmonton-ab
+projects:
+contact:
+  email: free@city.edmonton.on.ab
+description:
+  whatItDoes:
+    en: >-
+      Test
+    fr: >-
+      Test
+category: '43232300'
+name:
+  en: Test3
+  fr: Test3
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+date:
+  started: '2019-01-31'
+  closed:  '2020-02-10'
+  metadataLastUpdated: '2019-05-06'
+partners:
+  - adminCode: city-of-ottawa-on
+    name: Ottawa
+    email: free@city.ottawa.on.ca
