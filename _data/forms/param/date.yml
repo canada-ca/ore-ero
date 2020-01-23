@@ -1,0 +1,4 @@
+---
+type: date
+required: true
+rule: dateISO
