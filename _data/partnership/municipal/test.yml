@@ -1,0 +1,30 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-montreal-qc
+projects:
+contact:
+  email: libre@ville.montreal.qc.ca
+description:
+  whatItDoes:
+    en: >-
+      Test
+    fr: >-
+      Test
+category: '43232300'
+name:
+  en: Test
+  fr: Test
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+date:
+  started: '2019-01-31'
+  closed:  '2020-02-10'
+  metadataLastUpdated: '2019-05-06'
+partners:
+  - adminCode: city-of-ottawa-on
+    email: free@city.ottawa.on.ca
+  - adminCode: city-of-edmonton-ab
+    email: free@city.edmonton.ab.ca

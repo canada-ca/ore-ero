@@ -126,19 +126,17 @@
     </thead>
     <tbody>
     {%- for govLevels in site.data.partnership -%}
-      {%- assign govLevel = govLevels[0] -%}
       {%- for admin in govLevels[1] -%}
-        {%- for project in admin[1].projects -%}
-        {%- assign project = projects[1] -%}
+        {%- assign partnership = admin[1] -%}
       <tr>
-        <td><a href="#{{ project.name[page.lang] | slugify }}" aria-controls="{{ project.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
-        <td>{{ project.description.whatItDoes[page.lang] }}</td>
-        <td>{{ site.data.i18n.categories[project.category][page.lang] }}</td>
-        <td>{{ project.date.started }}</td>
-        <td>{{ project.date.closed }}</td>
-        <td>{{ project.team[page.lang] }}</td>
+        <td><a href="#{{ partnership.name[page.lang] | slugify }}" aria-controls="{{ partnership.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ partnership.name[page.lang] }}</a></td>
+        <td>{{ partnership.description.whatItDoes[page.lang] }}</td>
+        <td>{{ site.data.i18n.categories[partnership.category][page.lang] }}</td>
+        <td>{{ partnership.date.started }}</td>
+        <td>{{ partnership.date.closed }}</td>
+        <td>{{ partnership.team[page.lang] }}</td>
         <td>
-          {%- for tag in project.tags[page.lang] -%}
+          {%- for tag in partnership.tags[page.lang] -%}
             {{ tag }}&nbsp;
           {%- endfor -%}
         </td>
@@ -146,50 +144,48 @@
       </tr>
         {%- endfor -%}
       {%- endfor -%}
-    {%- endfor -%}
     </tbody>
   </table>
 </div>
-
+<!-- Modal Lightboxes -->
 {%- for govLevels in site.data.partnership -%}
   {%- assign govLevel = govLevels[0] -%}
   {%- for admin in govLevels[1] -%}
-    {%- for project in admin[1].projects -%}
-    {%- assign project = projects[1] -%}
-<section id="{{ project.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    {%- assign partnership = admin[1] -%}
+<section id="{{ partnership.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
   <header class="modal-header">
-    <h2 class="modal-title">{{ project.name[page.lang] }}</h2>
+    <h2 class="modal-title">{{ partnership.name[page.lang] }}</h2>
   </header>
   <div class="modal-body">
-    <p><strong>{{ project.description.whatItDoes[page.lang] }}</strong></p>
-    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-    <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
-    <p><strong>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</strong></p>
-    {%- if project.contact.name != nil -%}
-      <p>{{ project.contact.name }}</p>
-    {%- endif -%}
-    {%- if project.contact.phone != nil -%}
-      <p>{{ site.data.i18n.tables.contactPhone[page.lang] }}: {{ project.contact.phone }}</p>
-    {%- endif -%}
-    {%- if project.contact.email != nil -%}
-      <p><a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
-    {%- endif -%}
-    <p>{{ site.data.i18n.tables.partnership.searchPeriod.title[page.lang] }} {{ site.data.i18n.tables.partnership.searchPeriod.beginning[page.lang] }} {{ project.date.started }} {{ site.data.i18n.tables.partnership.searchPeriod.end[page.lang] }} {{  project.date.closed }}</p>
-    {%- if project.partners != nil -%}
+    <p><strong>Description:</strong></p>
+      <p>{{ partnership.description.whatItDoes[page.lang] }}</p>
+      <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+      <ul>
+        {%- for tag in partnership.tags[page.lang] -%}
+        <li>{{ tag }}</li>
+        &nbsp; {%- endfor -%}
+      </ul>  
+      {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
+      <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
+      <p><strong> Contact:</strong> <a href="mailto:{{ partnership.contact.email }}" target="_blank">{{ partnership.contact.email }}</a></p>
+      <p><strong> {{ site.data.i18n.tables.partnership.searchPeriod.title[page.lang] }}</strong></p>
+      <p> {{ site.data.i18n.tables.partnership.searchPeriod.beginning[page.lang] }} {{ partnership.date.started }} {{ site.data.i18n.tables.partnership.searchPeriod.end[page.lang] }} {{  partnership.date.closed }}</p>
+    {%- if partnership.partners != nil -%}
       <p><strong>{{ site.data.i18n.tables.partners[page.lang] }}</strong></p>
       <ul>
-      {%- for partner in project.partners -%}
+      {%- for partner in partnership.partners -%}
         <li>
-          {% if partner.name %}{{ partner.name }}{% endif %}
-          {% if partner.email %}<a href="mailto:{{ partner.email }}">{{ partner.email }}</a>{% endif %}
-          {% if partner.adminCode %}
-            {% for partnerLevel in site.data.i18n.administration %}
-              {%- assign adminPartner = site.data.administrations[partnerLevel] | where: "code", partner.adminCode -%}
-              {% if adminPartner[0] != nil %}
-                <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ adminPartner[0].name[page.lang] }}</p>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
+          {%- if partner.name -%}{{ partner.name }} :{%- endif -%}
+          {%- if partner.email -%}<a href="mailto:{{ partner.email }}">{{ partner.email }}</a>{%- endif -%}
+          {%- if partner.adminCode -%}
+              {%- for partnerLevels in site.data.administrations -%}
+                {%- assign partnerLevel = partnerLevels[0] -%}
+                {%- assign adminPartner = site.data.administrations[partnerLevel] | where: "code", partner.adminCode -%}
+                {%- if adminPartner[0].name[page.lang] != nil -%}
+                    <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}: </strong>{{ adminPartner[0].name[page.lang] }}</p>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
         </li>
       {%- endfor -%}
       </ul>
@@ -198,6 +194,5 @@
 </section>
     {%- endfor -%}
   {%- endfor -%}
-{%- endfor -%}
 
 </div>
