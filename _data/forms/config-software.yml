@@ -15,14 +15,7 @@ formGroups:
     param: {type: url}
   - preset: licences
     param: {more: true}
-  - preset: team
-  - preset: empty
-    title: uses
-    param: {start: true}
-  - preset: contact
-    param: {phone: false}
-  - widget: string
-    title: date
-    param: {type: date, rule: dateISO}
+  - preset: uses
+    param: {more: true}
   - preset: empty
   - preset: empty

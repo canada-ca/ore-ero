@@ -380,6 +380,20 @@ presets:
       schema:
         en: Team
         fr: Équipe
+  uses:
+    title:
+      en: Informations about software users.
+      fr: Information à propos des utilisateurs du logiciel
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the software.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
 
 # Code form specifics
 code:
