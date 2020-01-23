@@ -1,0 +1,28 @@
+---
+schemaVersion: '1.0'
+adminCode: test
+projects:
+contact:
+  email: test@hotmail.ca
+description:
+  whatItDoes:
+    en: >-
+      Test
+    fr: >-
+      Test
+category: '43232300'
+name:
+  en: Test5
+  fr: Test5
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+date:
+  started: '2019-01-31'
+  closed:  '2020-02-10'
+  metadataLastUpdated: '2019-05-06'
+partners:
+  - adminCode: city-of-montreal-qc
+    email: libre@ville.montreal.qc.ca
