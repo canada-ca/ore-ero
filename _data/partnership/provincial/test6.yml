@@ -10,7 +10,7 @@ description:
       NEW TEST, WILL THE DESCRIPTION BE SHOWN ENTIRELY??
     fr: >-
       NOUVEAU TEST, LA DESCRIPTION SERA-T-ELLE ENTIEREMENT PRESENTEE
-category: '43232300'
+category: '43232000'
 name:
   en: Test6
   fr: Test6
@@ -19,6 +19,9 @@ tags:
     - Test
   fr:
     - Test
+team:
+  en: TEAM TEAM TEAM TEAM
+  fr: EQUIPE EQUIPE EQUIPE EQUIPE
 date:
   started: '2019-01-31'
   closed:  '2020-02-10'

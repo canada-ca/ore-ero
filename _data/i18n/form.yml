@@ -763,7 +763,7 @@ design:
   administrations: *administrations
   uses:
     title:
-      en: Informations about design users.
+      en: Informations about design users
       fr: Information à propos des utilisateurs du design
   
 # Future project form specifics

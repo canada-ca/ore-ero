@@ -19,6 +19,9 @@ tags:
     - Test
   fr:
     - Test
+team:
+  en: Testing team
+  fr: Equipe test
 date:
   started: '2019-01-31'
   closed:  '2020-02-10'
