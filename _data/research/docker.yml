@@ -1,0 +1,47 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Performs operating-system-level virtualization also known as
+      containerization
+    fr: >-
+      Effectue une virtualisation au niveau du système d'exploitation, également
+      appelée conteneurisation
+homepageURL:
+  en: 'https://www.docker.com'
+  fr: 'https://www.docker.com'
+licences:
+  - URL:
+      en: 'https://www.docker.com/legal/components-licenses'
+      fr: 'https://www.docker.com/legal/components-licenses'
+    spdxID: Apache-2.0
+name:
+  en: Docker
+  fr: Docker
+researchAcronym: DOCKER
+researchOrg:
+  en: !<tag:yaml.org,2002:js/undefined> ''
+  fr: !<tag:yaml.org,2002:js/undefined> ''
+tags:
+  en:
+    - Container platform
+    - Development
+    - Infrastructure
+  fr:
+    - Plate-forme de conteneur
+    - Développement
+    - Infrastructure
+administrations:
+  - adminCode: cse-cst
+    contact:
+      email: fsaf@sdf.com
+      name: asdfasdf
+    date:
+      created: '2020-01-07'
+      metadataLastUpdated: '2020-01-24'
+    references: []
+    status: !<tag:yaml.org,2002:js/undefined> ''
+    team:
+      en: asdfasdf
+      fr: asdfasdf
