@@ -138,6 +138,7 @@ function submitResearchForm() {
   resetButton.disabled = true;
 
   let researchObject = getresearchObject();
+  console.log('TCL: submitResearchForm -> researchObject', researchObject);
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let file = `_data/research/${researchObject.researchAcronym.toLowerCase()}.yml`;
 

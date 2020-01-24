@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode hideNewAdminForm slugify
-  addMoreLicences resetMoreGroup fillUseField fillLicenceField
+  addMoreLicences addMoreUses resetMoreGroup fillUseField fillLicenceField
   getToday
 */
 
@@ -82,6 +82,7 @@ function getsoftwareObject() {
 
   // More-groups
   addMoreLicences(softwareObject);
+  addMoreUses(softwareObject, getAdminCode());
 
   // Optional fields
   if (
@@ -105,14 +106,6 @@ function getsoftwareObject() {
     softwareObject.administrations[0].uses[0].contact.name = $(
       '#contactname'
     ).val();
-  }
-
-  if ($('#enteam').val() || $('#frteam').val()) {
-    softwareObject.administrations[0].uses[0].team = {};
-    if ($('#enteam').val())
-      softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
-    if ($('#frteam').val())
-      softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
   }
 
   return softwareObject;
@@ -272,6 +265,8 @@ function submitFormSoftware() {
   resetButton.disabled = true;
 
   let softwareObject = getsoftwareObject();
+  console.log('TCL: submitFormSoftware -> softwareObject', softwareObject);
+
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
   let file = `_data/software/${slugify(ProjectName)}.yml`;
@@ -294,7 +289,7 @@ function submitFormSoftware() {
         $('html').attr('lang') == 'en'
           ? './open-source-softwares.html'
           : './logiciels-libres.html';
-      submitConclusion(response, submitButton, resetButton, url);
+      // submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
