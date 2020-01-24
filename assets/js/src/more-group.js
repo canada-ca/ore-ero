@@ -146,7 +146,7 @@ function addMoreUses(obj, currentAdminCode) {
   $('#addMoreuses ul.list-unstyled > li').each(function(i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    obj.administrations[currentPosition].uses[i] = {
+    obj.administrations[0].uses[i] = {
       contact: {
         email: $(`#contactemail${id}`).val()
       },
@@ -157,19 +157,15 @@ function addMoreUses(obj, currentAdminCode) {
     };
     console.log(
       'TCL: addMoreUses -> obj.administration[currentPosition]',
-      obj.administration[currentPosition]
+      obj.administrations[0]
     );
 
     if ($(`#enteam${id}`).val() || $(`#frteam${id}`).val()) {
-      obj.administrations[currentPosition].uses[i].team = {};
+      obj.administrations[0].uses[i].team = {};
       if ($(`#enteam${id}`).val())
-        obj.administrations[currentPosition].uses[i].team.en = $(
-          `#enteam${id}`
-        ).val();
+        obj.administrations[0].uses[i].team.en = $(`#enteam${id}`).val();
       if ($(`#frteam${id}`).val())
-        obj.administrations[currentPosition].uses[i].team.fr = $(
-          `#frteam${id}`
-        ).val();
+        obj.administrations[0].uses[i].team.fr = $(`#frteam${id}`).val();
     }
   });
 }
