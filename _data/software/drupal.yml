@@ -57,3 +57,14 @@ administrations:
         date:
           started: '1900-01-01'
           metadataLastUpdated: '2019-10-11'
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: sadf@asdf.com
+          name: Fabrice Ralph Ndui Ntoutoume
+        date:
+          started: '2020-01-07'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: asdfasdf
+          fr: fabrice
