@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      zlib is a general-purpose lossless data-compression library for use on
+      virtually any computer hardware and OS.
+    fr: >-
+      zlib est une bibliothèque de compression de données sans perte à usage
+      général pour une utilisation sur pratiquement n'importe quel matériel
+      informatique et système d'exploitation.
+category: '43232400'
+homepageURL:
+  en: 'http://www.zlib.net/'
+  fr: 'http://www.zlib.net/'
+licences:
+  - URL:
+      en: 'http://www.zlib.net/zlib_license.html'
+      fr: 'http://www.zlib.net/zlib_license.html'
+    spdxID: Zlib
+name:
+  en: zLib Compression Library
+  fr: zLib Compression Library
+tags:
+  en:
+    - Compression
+    - Library
+  fr:
+    - Compression
+    - Library
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-23'
