@@ -36,9 +36,15 @@ administrations:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
-          metadataLastUpdated: '2019-05-13'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: sdf
+          fr: dsfsdf
       - contact:
           email: ilia.salem@tbs-sct.gc.ca
         date:
           started: '2019-05-06'
-          metadataLastUpdated: '2019-05-13'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: ddd
+          fr: dsfsdfsdf
