@@ -83,7 +83,7 @@ function getsoftwareObject() {
 
   // More-groups
   addMoreLicences(softwareObject);
-  addMoreUses(softwareObject, getAdminCode());
+  addMoreUses(softwareObject);
 
   // Optional fields
   if (
@@ -266,7 +266,6 @@ function submitFormSoftware() {
   resetButton.disabled = true;
 
   let softwareObject = getsoftwareObject();
-  console.log('TCL: submitFormSoftware -> softwareObject', softwareObject);
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
@@ -290,7 +289,7 @@ function submitFormSoftware() {
         $('html').attr('lang') == 'en'
           ? './open-source-softwares.html'
           : './logiciels-libres.html';
-      // submitConclusion(response, submitButton, resetButton, url);
+      submitConclusion(response, submitButton, resetButton, url);
     });
 }
 
