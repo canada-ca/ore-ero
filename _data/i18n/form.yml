@@ -382,8 +382,11 @@ presets:
         fr: Équipe
   uses:
     title:
-      en: Informations about software users.
+      en: Informations about software users
       fr: Information à propos des utilisateurs du logiciel
+    infobulle:
+      en: Information concerning the uses of this software
+      fr: Information a propos des utilisations du logiciel 
   date:
     title:
       en: Started using
@@ -503,8 +506,11 @@ software:
   administrations: *administrations
   uses:
     title:
-      en: Informations about software users.
+      en: Informations about software users
       fr: Information à propos des utilisateurs du logiciel
+    infobulle:
+      en: Information concerning the uses of this software
+      fr: Information a propos des utilisations du logiciel 
 
 # Standard form specifics
 standard:
@@ -765,6 +771,9 @@ design:
     title:
       en: Informations about design users
       fr: Information à propos des utilisateurs du design
+    infobulle:
+      en: Information concerning the uses of this design
+      fr: Information a propos des utilisations de ce design
   
 # Future project form specifics
 research:
@@ -816,6 +825,9 @@ research:
   administrations: *administrations
   uses:
     title:
-      en: Informations about research participants.
+      en: Informations about research participants
       fr: Information à propos des participants à la recherche
+    infobulle:
+      en: Information concerning the participations on this research
+      fr: Information à propos des participations à cette recherche
   
