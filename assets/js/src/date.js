@@ -1,6 +1,6 @@
 /* exported getToday */
 
-function getToday() {
+exports.getToday = () => {
   let d = new Date();
 
   let month = d.getMonth() + 1;
