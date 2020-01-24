@@ -2,18 +2,24 @@ const { getToday } = require('../assets/js/src/date');
 
 describe("Date function", () => {
     // test 
-    test("it should get date of today", () => {
+    test("It should call and return Date.now()", () => {
         // actual test
-        const d = new Date();
-        const output = (d.getFullYear() +
+        const now = new Date();
+        const output = (now.getFullYear() +
             '-' +
-            ((d.getMonth() + 1) < 10 ? '0' : '') +
-            (d.getMonth() + 1) +
+            ((now.getMonth() + 1) < 10 ? '0' : '') +
+            (now.getMonth() + 1) +
             '-' +
-            ((d.getDate()) < 10 ? '0' : '') +
-            (d.getDate())
+            ((now.getDate()) < 10 ? '0' : '') +
+            (now.getDate())
         );
-        
+
         expect(getToday()).toEqual(output);
+    });
+
+    test("It should not equal to day time", () => {
+        const output = new Date(Date.now());;
+
+        expect(getToday()).not.toEqual(output);
     });
 });
