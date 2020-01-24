@@ -44,3 +44,14 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
+  - adminCode: cra-arc
+    uses:
+      - contact:
+          email: sadf@asdf.com
+          name: asdf
+        date:
+          started: '2020-01-15'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: asdf
+          fr: asdf
