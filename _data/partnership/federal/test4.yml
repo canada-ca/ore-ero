@@ -10,7 +10,7 @@ description:
       Test
     fr: >-
       Test
-category: '43232300'
+category: '43232700'
 name:
   en: Test4
   fr: Test4
@@ -26,3 +26,4 @@ date:
 partners:
   - adminCode: city-of-ottawa-on
     email: free@city.ottawa.on.ca
+    name: J

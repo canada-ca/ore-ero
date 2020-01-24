@@ -49,9 +49,8 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endfor -%}
-          {%- assign team_arr = team_arr | group_by: "" | sort: "name" -%}
           {%- for team in team_arr -%}
-            <option value="{{ team.name }}">{{ team.name }}</option>
+            <option value="{{ team }}">{{ team }}</option>
           {%- endfor -%}
         </select>
       </div>
