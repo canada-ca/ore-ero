@@ -44,3 +44,22 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
+  - adminCode: cra-arc
+    uses:
+      - contact:
+          email: fsaf@sdf.com
+          name: Fabrice Ralph Ndui Ntoutoume
+        date:
+          started: '2020-01-09'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: asdfasdf
+          fr: asdf
+      - contact:
+          email: dfgh@sdfg.asdf
+        date:
+          started: '2020-01-09'
+          metadataLastUpdated: '2020-01-24'
+        team:
+          en: asdfasdfasdf
+          fr: asdfs
