@@ -33,3 +33,10 @@ administrations:
         date:
           started: '2017-06-30'
           metadataLastUpdated: '2019-05-06'
+  - adminCode: asc-csa
+    uses:
+      - contact:
+          email: sadf@asdf.com
+        date:
+          started: '2020-01-16'
+          metadataLastUpdated: '2020-01-27'
