@@ -33,3 +33,11 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-13'
+  - adminCode: dfo-mpo
+    uses:
+      - contact:
+          email: fsaf@sdf.com
+          name: asdfa
+        date:
+          started: '2020-01-23'
+          metadataLastUpdated: '2020-01-27'
