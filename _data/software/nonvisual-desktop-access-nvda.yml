@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      NonVisual Desktop Access (NVDA) is a free, open-source, portable screen
+      reader for Microsoft Windows.
+    fr: >-
+      NonVisual Desktop Access (NVDA) est un lecteur d'écran portable gratuit et
+      open source pour Microsoft Windows.
+category: '43233400'
+homepageURL:
+  en: 'https://www.nvaccess.org/'
+  fr: 'https://www.nvaccess.org/'
+licences:
+  - URL:
+      en: 'https://github.com/nvaccess/nvda/blob/master/copying.txt'
+      fr: 'https://github.com/nvaccess/nvda/blob/master/copying.txt'
+    spdxID: GPL-2.0-only
+name:
+  en: NonVisual Desktop Access (NVDA)
+  fr: NonVisual Desktop Access (NVDA)
+tags:
+  en:
+    - Accessibility
+  fr:
+    - Accessibilité
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
