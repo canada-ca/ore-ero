@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The FASTX-Toolkit is a collection of command line tools for Short-Reads
+      FASTA/FASTQ files preprocessing.
+    fr: >-
+      Le FASTX-Toolkit est une collection d'outils de ligne de commande pour le
+      prétraitement des fichiers FASTA / FASTQ à lecture courte.
+category: '43232600'
+homepageURL:
+  en: 'http://hannonlab.cshl.edu/fastx_toolkit/'
+  fr: 'http://hannonlab.cshl.edu/fastx_toolkit/'
+licences:
+  - URL:
+      en: 'http://hannonlab.cshl.edu/fastx_toolkit/license.html'
+      fr: 'http://hannonlab.cshl.edu/fastx_toolkit/license.html'
+    spdxID: AGPL-3.0-or-later
+name:
+  en: FASTX-Toolkit
+  fr: FASTX-Toolkit
+tags:
+  en:
+    - Tools
+  fr:
+    - Tools
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
