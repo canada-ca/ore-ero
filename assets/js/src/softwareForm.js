@@ -6,7 +6,6 @@
   submitInit submitConclusion
   getAdminObject getAdminCode hideNewAdminForm slugify
   addMoreLicences addMoreUses resetMoreGroup fillUseField fillLicenceField
-  getToday
 */
 
 const softwareSelect = $('.page-softwareForm #nameselect');

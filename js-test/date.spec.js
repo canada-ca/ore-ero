@@ -1,5 +1,4 @@
-const { getToday } = require('../assets/js/src/date');
-
+const { testGetToday } = require('../assets/js/src/date');
 describe("Date function", () => {
     // test 
     test("It should call and return Date.now()", () => {
@@ -14,12 +13,12 @@ describe("Date function", () => {
             (now.getDate())
         );
 
-        expect(getToday()).toEqual(output);
+        expect(testGetToday()).toEqual(output);
     });
 
     test("It should not equal to day time", () => {
         const output = new Date(Date.now());;
 
-        expect(getToday()).not.toEqual(output);
+        expect(testGetToday()).not.toEqual(output);
     });
 });

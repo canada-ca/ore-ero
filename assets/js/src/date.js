@@ -1,6 +1,6 @@
 /* exported getToday */
 
-const getToday = () => {
+function getToday() {
   let d = new Date();
 
   let month = d.getMonth() + 1;
@@ -15,4 +15,8 @@ const getToday = () => {
     (day < 10 ? '0' : '') +
     day
   );
+};
+
+exports.testGetToday = () => {
+  return getToday();
 };

@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1579893607165" clover="3.2.0">
-  <project timestamp="1579893607165" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="4" methods="2" coveredmethods="2" elements="20" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="2" files="2" classes="2"/>
+<coverage generated="1580149435534" clover="3.2.0">
+  <project timestamp="1580149435534" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="4" methods="4" coveredmethods="4" elements="24" coveredelements="20" complexity="0" loc="12" ncloc="12" packages="2" files="2" classes="2"/>
     <package name="_site.assets.js.src">
-      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="date.js" path="C:\Users\josep\Documents\mtl-ore-ero\ore-ero\_site\assets\js\src\date.js">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="date.js" path="/home/simon/project/ore-ero/_site/assets/js/src/date.js">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
       </file>
     </package>
     <package name="assets.js.src">
-      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="date.js" path="C:\Users\josep\Documents\mtl-ore-ero\ore-ero\assets\js\src\date.js">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="date.js" path="/home/simon/project/ore-ero/assets/js/src/date.js">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
       </file>
     </package>
   </project>
