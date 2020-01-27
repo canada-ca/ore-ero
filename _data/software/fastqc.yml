@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: A quality control tool for high throughput sequence data.
+    fr: Un outil de contrôle qualité pour les données de séquence à haut débit.
+category: '43232600'
+homepageURL:
+  en: 'http://www.bioinformatics.babraham.ac.uk/projects/fastqc/'
+  fr: 'http://www.bioinformatics.babraham.ac.uk/projects/fastqc/'
+licences:
+  - URL:
+      en: 'https://github.com/s-andrews/FastQC/blob/master/LICENSE'
+      fr: 'https://github.com/s-andrews/FastQC/blob/master/LICENSE'
+    spdxID: GPL-3.0-or-later
+name:
+  en: FastQC
+  fr: FastQC
+tags:
+  en:
+    - Data
+  fr:
+    - Data
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
