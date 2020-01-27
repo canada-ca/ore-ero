@@ -1,5 +1,6 @@
 /* exported addMoreLicences addMoreUses fillLicenceField fillUseField addMoreRelatedCode resetMoreGroup */
 /* global getToday*/
+
 $(document).ready(function() {
   $('.add-more-group').each(function() {
     addBtns($(this).children('h2'));

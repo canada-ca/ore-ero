@@ -66,17 +66,7 @@ function getsoftwareObject() {
     administrations: [
       {
         adminCode: getAdminCode(),
-        uses: [
-          {
-            contact: {
-              email: $('#contactemail').val()
-            },
-            date: {
-              started: $('#date').val(),
-              metadataLastUpdated: getToday()
-            }
-          }
-        ]
+        uses: []
       }
     ]
   };
@@ -266,6 +256,7 @@ function submitFormSoftware() {
   resetButton.disabled = true;
 
   let softwareObject = getsoftwareObject();
+  console.log('TCL: submitFormSoftware -> softwareObject', softwareObject);
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let ProjectName = $('#enname').val();
