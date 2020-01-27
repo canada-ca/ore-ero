@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Beagle is a software package for phasing genotypes and for imputing
+      ungenotyped markers.
+    fr: >-
+      Beagle est un progiciel pour phaser les génotypes et imputer des marqueurs
+      non génotypés.
+category: '43232600'
+homepageURL:
+  en: 'https://faculty.washington.edu/browning/beagle/beagle.html'
+  fr: 'https://faculty.washington.edu/browning/beagle/beagle.html'
+licences:
+  - URL:
+      en: 'https://faculty.washington.edu/browning/beagle/beagle.html'
+      fr: 'https://faculty.washington.edu/browning/beagle/beagle.html'
+    spdxID: GPL-3.0-or-later
+name:
+  en: Beagle Genotype Imputation Method
+  fr: Beagle Genotype Imputation Method
+tags:
+  en:
+    - Genotypes
+  fr:
+    - Genotypes
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
