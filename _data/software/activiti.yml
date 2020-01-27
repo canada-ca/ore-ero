@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Activiti is a light-weight workflow and Business Process Management (BPM)
+      Platform targeted at business people, developers and system admins.
+    fr: >-
+      Activiti est un workflow léger et une plateforme de gestion des processus
+      métier (BPM) destinés aux hommes d'affaires, aux développeurs et aux
+      administrateurs système.
+category: '43231500'
+homepageURL:
+  en: 'https://www.activiti.org/'
+  fr: 'https://www.activiti.org/'
+licences:
+  - URL:
+      en: 'https://github.com/Activiti/Activiti/blob/develop/LICENSE.txt'
+      fr: 'https://github.com/Activiti/Activiti/blob/develop/LICENSE.txt'
+    spdxID: Apache-2.0
+name:
+  en: Activiti
+  fr: Activiti
+tags:
+  en:
+    - BPM
+  fr:
+    - BPM
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
