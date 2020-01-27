@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Biopython is a set of freely available tools for biological computation
+      written in Python by an international team of developers.
+    fr: >-
+      Biopython est un ensemble d'outils disponibles gratuitement pour le calcul
+      biologique écrit en Python par une équipe internationale de développeurs.
+category: '43232600'
+homepageURL:
+  en: 'https://biopython.org/'
+  fr: 'https://biopython.org/'
+licences:
+  - URL:
+      en: 'https://github.com/biopython/biopython/blob/master/LICENSE.rst'
+      fr: 'https://github.com/biopython/biopython/blob/master/LICENSE.rst'
+    spdxID: BSD-3-Clause
+name:
+  en: Biopython
+  fr: Biopython
+tags:
+  en:
+    - Python
+    - Library
+  fr:
+    - Python
+    - Library
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
