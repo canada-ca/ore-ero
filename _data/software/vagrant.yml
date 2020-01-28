@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Vagrant is an open-source software product for building and maintaining
+      portable virtual software development environments.
+    fr: >-
+      Vagrant est un produit logiciel open source pour la création et la
+      maintenance d'environnements de développement de logiciels virtuels
+      portables.
+category: '43233000'
+homepageURL:
+  en: 'https://www.vagrantup.com/'
+  fr: 'https://www.vagrantup.com/'
+licences:
+  - URL:
+      en: 'https://github.com/hashicorp/vagrant/blob/master/LICENSE'
+      fr: 'https://github.com/hashicorp/vagrant/blob/master/LICENSE'
+    spdxID: MIT
+name:
+  en: Vagrant
+  fr: Vagrant
+tags:
+  en:
+    - VM
+  fr:
+    - VM
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
