@@ -15,7 +15,7 @@ homepageURL:
 licences:
   - URL:
       en: 'https://www.kinovea.org/help/en/003.html'
-      fr: 'https://www.kinovea.org/help/en/003.html'
+      fr: 'https://www.kinovea.org/help/fr/003.html'
     spdxID: GPL-2.0-only
 name:
   en: Kinovea
@@ -33,4 +33,4 @@ administrations:
           name: AAFC-AAC
         date:
           started: '1900-01-01'
-          metadataLastUpdated: '2020-01-27'
+          metadataLastUpdated: '2020-01-28'
