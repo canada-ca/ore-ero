@@ -379,7 +379,9 @@ function addValueToFieldsResearch(obj) {
   $('#frname')
     .val(obj.name.fr)
     .prop('disabled', true);
-
+  $('#category')
+    .val(obj.category)
+    .prop('disabled', true);
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
   if (obj.description.howItWorks) {
@@ -442,11 +444,10 @@ function selectAdmin() {
 
 function addValueToFieldsAdmin(obj) {
   resetFieldsAdmin();
+  $('#contactemail').val(obj.uses[0].contact.email);
+  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
-  $('#contactemail').val(obj.contact.email);
-  if (obj.contact.name) $('#contactname').val(obj.contact.name);
-
-  $('#date').val(obj.date.created);
+  $('#date').val(obj.uses[0].date.started);
 
   obj.references.forEach(function(reference, i) {
     let id;
