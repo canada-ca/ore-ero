@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Inselect is an application that automates the cropping of individual
+      images of specimens from whole-drawer scans and similar images.
+    fr: >-
+      Inselect est une application qui automatise le recadrage d'images
+      individuelles d'échantillons à partir de numérisations à tiroirs entiers
+      et d'images similaires.
+category: '43232600'
+homepageURL:
+  en: 'https://naturalhistorymuseum.github.io/inselect/'
+  fr: 'https://naturalhistorymuseum.github.io/inselect/'
+licences:
+  - URL:
+      en: 'https://github.com/NaturalHistoryMuseum/inselect/blob/master/LICENSE.md'
+      fr: 'https://github.com/NaturalHistoryMuseum/inselect/blob/master/LICENSE.md'
+    spdxID: BSD-3-Clause
+name:
+  en: Inselect
+  fr: Inselect
+tags:
+  en:
+    - Image
+  fr:
+    - Image
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
