@@ -7,11 +7,11 @@ description:
 category: '43232100'
 homepageURL:
   en: 'https://inkscape.org/'
-  fr: 'https://inkscape.org/'
+  fr: 'https://inkscape.org/fr/'
 licences:
   - URL:
       en: 'https://inkscape.org/about/license/'
-      fr: 'https://inkscape.org/about/license/'
+      fr: 'https://inkscape.org/fr/apropos/licence/'
     spdxID: GPL-2.0-only
 name:
   en: InkScape
