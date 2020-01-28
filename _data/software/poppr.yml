@@ -1,0 +1,42 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Poppr is an R package designed for analysis of populations with mixed
+      modes of sexual and clonal reproduction. 
+    fr: >-
+      Poppr est un package R conçu pour l'analyse des populations à modes mixtes
+      de reproduction sexuelle et clonale.
+category: '43232600'
+homepageURL:
+  en: 'https://grunwaldlab.github.io/poppr/'
+  fr: 'https://grunwaldlab.github.io/poppr/'
+licences:
+  - URL:
+      en: 'https://www.r-project.org/Licenses/GPL-3'
+      fr: 'https://www.r-project.org/Licenses/GPL-3'
+    spdxID: GPL-2.0-only
+  - URL:
+      en: 'https://www.r-project.org/Licenses/GPL-2'
+      fr: 'https://www.r-project.org/Licenses/GPL-2'
+    spdxID: GPL-3.0-only
+name:
+  en: Poppr
+  fr: Poppr
+tags:
+  en:
+    - Package
+    - R
+  fr:
+    - Package
+    - R
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
