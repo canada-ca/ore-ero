@@ -19,3 +19,8 @@
     en: City of Sault Ste Marie
     fr: Ville de Sault Sainte Marie
   provinceCode: 'on'
+- code: city-of-test-on
+  name:
+    en: City of Test
+    fr: Ville de Test
+  provinceCode: 'on'

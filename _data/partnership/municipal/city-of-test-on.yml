@@ -1,0 +1,24 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-test-on
+projects:
+  - contact:
+      email: t@test.ca
+    category: '43232500'
+    date:
+      closed: '2020-01-29'
+      started: '2020-01-29'
+      metadaLastUpdated: '2020-01-29'
+    description:
+      whatItDoes:
+        en: >-
+          mergeAdminPartner takes 2 arguments but was receiving 4. Verifying
+          what happens when the extra arguments are removed
+        fr: >-
+          mergeAdminPartner prends 2 arguments mais en recevait 4. Verification
+          de ce qui arrive lorsqu'on enleve les arguments supplementaires
+    name:
+      en: TestSubmit
+      fr: TestSoumission
+    partners:
+      - adminCode: ptest-city-qc
