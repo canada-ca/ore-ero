@@ -112,9 +112,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
       let promise = fileWriter
         .mergePartnerAdminFile(
           `_data/administrations/${orgLevel}.yml`,
-          newAdmins[orgLevel],
-          '',
-          'code'
+          newAdmins[orgLevel]
         )
         .then(result => {
           config.body.files[config.body.files.length] = {
