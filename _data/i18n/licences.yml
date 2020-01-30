@@ -182,3 +182,7 @@ Zlib:
 ZPL-2.0:
   name: Zope Public License 2.0
   value: ZPL-2.0
+Non-SPDX-or-Public-Domain:
+  name: Non-SPDX Listed License and Public Domain
+  value: Non-SPDX-or-Public-Domain
+  
