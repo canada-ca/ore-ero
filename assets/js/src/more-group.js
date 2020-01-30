@@ -134,6 +134,7 @@ function addMoreLicences(obj) {
   });
 }
 
+
 function fillLicenceField(licences) {
   licences.forEach(function(licence, i) {
     let id;
@@ -147,6 +148,7 @@ function fillLicenceField(licences) {
     $('#licencesspdxID' + id).val(licence.spdxID);
   });
 }
+
 
 function addMoreRelatedCode(obj) {
   $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
