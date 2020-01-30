@@ -15,3 +15,8 @@ projects:
     name:
       en: Example
       fr: Exemple
+    tags: 
+      en: 
+        - Tag
+      fr: 
+        - Tag

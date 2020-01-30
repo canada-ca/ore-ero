@@ -27,9 +27,9 @@ projects:
         name: str(required=False)
     tags:
       en:
-        - str(required=False)
+        - str()
       fr:
-        - str(required=False)
+        - str()
     team:
       en: str(required=False)
       fr: str(required=False)

@@ -12,7 +12,6 @@ formGroups:
   - preset: team
   - preset: category
   - preset: tags
-    param: {required: false}
   - preset: contact
     param: {phone: true}
   - widget: group
