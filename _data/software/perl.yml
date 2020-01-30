@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Perl is a highly capable, feature-rich programming language with over 30
+      years of development.
+    fr: >-
+      Perl est un langage de programmation très performant et riche en
+      fonctionnalités avec plus de 30 ans de développement.
+category: '43232400'
+homepageURL:
+  en: 'https://www.perl.org/'
+  fr: 'https://www.perl.org/'
+licences:
+  - URL:
+      en: 'https://dev.perl.org/licenses/'
+      fr: 'https://dev.perl.org/licenses/'
+    spdxID: GPL-2.0-or-later
+name:
+  en: PERL
+  fr: PERL
+tags:
+  en:
+    - Programming Language
+  fr:
+    - Langage de programmation
+administrations:
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-30'
