@@ -155,6 +155,9 @@ QPL-1.0:
 RPSL-1.0:
   name: RealNetworks Public Source License v1.0
   value: RPSL-1.0
+Ruby:
+  name: Ruby License
+  value: Ruby
 SISSL:
   name: Sun Industry Standards Source License v1.1
   value: SISSL
