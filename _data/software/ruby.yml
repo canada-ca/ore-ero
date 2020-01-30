@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: 'Ruby is an interpreted, high-level, general-purpose programming language.'
+    fr: Ruby est un langage de programmation polyvalent de haut niveau interprété.
+category: '43232400'
+homepageURL:
+  en: 'https://www.ruby-lang.org/en/'
+  fr: 'https://www.ruby-lang.org/fr/'
+licences:
+  - URL:
+      en: 'https://www.ruby-lang.org/en/about/license.txt'
+      fr: 'https://www.ruby-lang.org/en/about/license.txt'
+    spdxID: Ruby
+name:
+  en: Ruby
+  fr: Ruby
+tags:
+  en:
+    - Programming Language
+  fr:
+    - Langage de programmatio
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'
