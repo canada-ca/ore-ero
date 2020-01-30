@@ -32,6 +32,9 @@ APSL-2.0:
 Artistic-2.0:
   name: Artistic License 2.0
   value: Artistic-2.0
+BSD-2-Clause:
+  name: BSD 2-Clause "Simplified" License
+  value: BSD-2-Clause
 BSD-3-Clause:
   name: BSD 3-Clause "New" or "Revised" License
   value: BSD-3-Clause
