@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      OpenSSH is a suite of secure networking utilities based on the Secure
+      Shell (SSH) protocol.
+    fr: >-
+      OpenSSH est une suite d'utilitaires de mise en réseau sécurisée basée sur
+      le protocole Secure Shell (SSH).
+category: '43232900'
+homepageURL:
+  en: 'https://www.openssh.com/'
+  fr: 'https://www.openssh.com/'
+licences:
+  - URL:
+      en: 'https://github.com/openssh/openssh-portable/blob/master/LICENCE'
+      fr: 'https://github.com/openssh/openssh-portable/blob/master/LICENCE'
+    spdxID: BSD-3-Clause
+name:
+  en: OpenSSH
+  fr: OpenSSH
+tags:
+  en:
+    - SSH
+  fr:
+    - SSH
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'
