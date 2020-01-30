@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Samtools is a suite of programs for interacting with high-throughput
+      sequencing data.
+    fr: >-
+      Samtools est une suite de programmes permettant d'interagir avec des
+      données de séquençage à haut débit.
+category: '43232600'
+homepageURL:
+  en: 'http://www.htslib.org/'
+  fr: 'http://www.htslib.org/'
+licences:
+  - URL:
+      en: 'https://github.com/samtools/samtools/blob/develop/LICENSE'
+      fr: 'https://github.com/samtools/samtools/blob/develop/LICENSE'
+    spdxID: MIT
+name:
+  en: Samtools
+  fr: Samtools
+tags:
+  en:
+    - DNA
+  fr:
+    - ADN
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'
