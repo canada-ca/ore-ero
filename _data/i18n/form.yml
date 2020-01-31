@@ -183,24 +183,24 @@ presets:
     labels:
       URL:
         en:
-          en: English licence URL
+          en: English license URL
           fr: URL en anglais de la licence
         fr:
-          en: French licence URL
+          en: French license URL
           fr: URL en français de la licence
         schema: *url_generic
       spdxID:
-        en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
-        fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
+        en: The SPDX License identifier - Search the <a href="https://spdx.org/licenses/" target="_blank">List of licenses</a>.
+        fr: Identifiant SPDX de la licence - Consultez la  <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
     infobulle:
       en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
       fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
     titles:
       URL:
-        en: The English and French URLs of licence.
+        en: The English and French URLs of license.
         fr: L'URL de la licence en français et en anglais.
       spdxID:
-        en: SPDX Licence identifier
+        en: SPDX License identifier
         fr: Identifiant de licence SPDX
   name:
     charactersLimit:
