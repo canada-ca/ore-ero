@@ -1,35 +1,39 @@
 ---
-schemaVersion: str()
-adminCode: str()
-projects:
-  - contact:
-      email: str()
-      name: str(required=False)
-      phone: str(required=False)
-    category: str()
-    date:
-      closed: str()
-      started: str()
-      metadataLastUpdated: str()
-    description:
-      whatItDoes:
-        en: str()
-        fr: str()
-      howItWorks:
-        en: str(required=False)
-        fr: str(required=False)
-    name:
-      en: str()
-      fr: str()
-    partners:
-      - adminCode: str(required=False)
-        email: str(required=False)
-        name: str(required=False)
-    tags:
-      en:
-        - str(required=False)
-      fr:
-        - str(required=False)
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+include('design', strict=True)
+---
+design:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  category: str()
+  homepageURL: include('lang')
+  licences: list(include('licence'))
+  name: include('lang')
+  tags: include('tag')
+  administrations: list(include('administration'))
+
+licence:
+  URL: include('lang')
+  spdxID: str()
+
+tag:
+  en: list(str())
+  fr: list(str())
+
+administration:
+  adminCode: str()
+  uses: list(include('use'))
+
+use:
+  contact:
+    email: str()
+    name: str(required=False)
+  date:
+    started: str()
+    metadataLastUpdated: str()
+  team: include('lang', required=False)
+
+lang:
+  en: str()
+  fr: str()

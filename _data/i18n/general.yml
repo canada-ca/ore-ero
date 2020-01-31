@@ -42,8 +42,8 @@ nav:
     en: Open Design
     fr: Design libre
     link:
-      en: ./open-designs.html
-      fr: ./designs-libres.html
+      en: ./open-design.html
+      fr: ./design-libre.html
   software:
     en: Open Source Software
     fr: Logiciels libres

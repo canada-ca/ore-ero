@@ -179,8 +179,8 @@ function submitDesignFormNewAdmin() {
         .then(response => {
           let url =
             $('html').attr('lang') == 'en'
-              ? './open-source-designs.html'
-              : './logiciels-libres.html';
+              ? './open-desing.html'
+              : './design-libre.html';
           submitConclusion(response, submitButton, resetButton, url);
         });
     });
