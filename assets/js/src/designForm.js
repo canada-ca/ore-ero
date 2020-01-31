@@ -179,7 +179,7 @@ function submitDesignFormNewAdmin() {
         .then(response => {
           let url =
             $('html').attr('lang') == 'en'
-              ? './open-desing.html'
+              ? './open-design.html'
               : './design-libre.html';
           submitConclusion(response, submitButton, resetButton, url);
         });
