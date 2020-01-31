@@ -11,11 +11,11 @@ description:
 category: '43233400'
 homepageURL:
   en: 'https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR'
-  fr: 'https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR'
+  fr: 'https://developer.mozilla.org/fr/docs/NSPR'
 licences:
   - URL:
-      en: 'https://www.mozilla.org/en-US/MPL/2.0/FAQ/'
-      fr: 'https://www.mozilla.org/en-US/MPL/'
+      en: 'https://hg.mozilla.org/projects/nspr/file/tip/LICENSE'
+      fr: 'https://hg.mozilla.org/projects/nspr/file/tip/LICENSE'
     spdxID: MPL-2.0
 name:
   en: Netscape Portable Runtime
@@ -33,4 +33,4 @@ administrations:
           name: AAFC-AAC
         date:
           started: '1900-01-01'
-          metadataLastUpdated: '2020-01-27'
+          metadataLastUpdated: '2020-01-31'
