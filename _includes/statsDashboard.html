@@ -1,43 +1,37 @@
-<h2>{{ site.data.i18n.general.stats.projects[page.lang] }}</h2>
-<div id="chartContainer_codebases">
-  <!-- Data Table -->
-  <div>
-    {%- for govLevels in site.data.code -%}
-      {%- assign govLevel = govLevels[0] -%}
+<section>
+  <h2>{{ site.data.i18n.general.stats.projects[page.lang] }}</h2>
 
-      {%- if govLevels[1].size > 0 -%}
-      <h3>{{ site.data.i18n.administrations[govLevel][page.lang] }}</h3>
-      <table class="wb-tables table table-striped table-hover wb-charts wb-charts-bar" id="dataset-filter-{{govLevels[0]}}" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,5,6,8,9,10,11,12], "visible": false}], "paging": true}'>
-        <thead>
-          <tr>
-            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
-            <th>#</th>
-          </tr>
-        </thead>
-        <tbody>
-            
-            {%- for admin in govLevels[1] -%}
+  {%- for govLevels in site.data.code -%}
+    {%- assign govLevel = govLevels[0] -%}
+    
+    {%- if govLevels[1].size > 0 -%}
+      <section>
+        <table class="wb-charts wb-charts-bar table">
+          <caption>{{ site.data.i18n.administrations[govLevel][page.lang] }}</caption>
+          <thead>
             <tr>
-              {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-              <th>{{ administration[0].name[page.lang] }}</th>
-              {%- assign projectCount = admin[1].releases.size -%}
-              <td>{{ projectCount }}</td>
+              <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+              <th>#</th>
             </tr>
-            {%- endfor -%}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+              {%- for admin in govLevels[1] -%}
+              <tr>
+                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                <th>{{ administration[0].name[page.lang] }}</th>
+                {%- assign projectCount = admin[1].releases.size -%}
+                <td>{{ projectCount }}</td>
+              </tr>
+              {%- endfor -%}
+          </tbody>
+        </table>
+      </section>
       {%- endif -%}
     {%- endfor -%}
-  </div>
+</section>
 
-</div>
-
-<div class="clear"></div>
-
-<h2>{{ site.data.i18n.general.stats.software[page.lang] }}</h2>
-<div id="chartContainer_software">
-
-
+<section>
+  <h2>{{ site.data.i18n.general.stats.software[page.lang] }}</h2>
   {% comment %} ===Build View of Administrations=== {% endcomment %}
 
   {%- assign governanceString = "" -%}
@@ -54,9 +48,9 @@
       {%- for softwares in site.data.software -%}
         {%- assign software = softwares[1] -%}
         {%- for administration in software.administrations -%}
-              {%- if administration.adminCode == govcode -%}
-                {%- assign counter = counter | plus: 1  -%}
-              {%- endif -%}
+          {%- if administration.adminCode == govcode -%}
+            {%- assign counter = counter | plus: 1  -%}
+          {%- endif -%}
         {% endfor %}
       {%- endfor -%}
 
@@ -65,37 +59,35 @@
       {%- endif -%}
 
     {%- endfor -%}
+    
+    {% comment %} ===Build Array of Administrations=== {% endcomment %}
 
     {%- assign adminValues = adminString | split: "," -%}
 
     {%- if adminValues.size != 0 -%}
-    <h3>{{ site.data.i18n.administrations[govLevel][page.lang] }}</h3>
-    <!-- Data Table -->
-    <div>
-
-    <table class="wb-tables table table-striped table-hover wb-charts wb-charts-bar" id="dataset-filter-s{{govLevel}}" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,6,7], "visible": false}], "paging": true}'>
-      <thead>
-        <tr>
-          <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
-          <th>#</th>
-        </tr>
-      </thead>
-      <tbody>
-        {%- for av in adminValues -%}
-          {%- assign ev = av | split: ":" -%}
-          {%- assign administration = site.data.administrations[govLevel] | where: "code", ev[0] -%}
+    <section>
+      <table class="wb-charts wb-charts-bar table">
+        <caption>{{ site.data.i18n.administrations[govLevel][page.lang] }}</caption>
+        <thead>
           <tr>
-            <th>{{ administration[0].name[page.lang] }}</th>
-            <td>{{ev[1]}}</td>
+            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+            <td>#</td>
           </tr>
-        {%- endfor -%}
-      </tbody>
-    </table>
-        
-    </div>
+        </thead>
+        <tbody>
+          {%- for av in adminValues -%}
+            {%- assign ev = av | split: ":" -%}
+            {%- assign administration = site.data.administrations[govLevel] | where: "code", ev[0] -%}
+            <tr>
+              <th>{{ administration[0].name[page.lang] }}</th>
+              <td>{{ev[1]}}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </section>
     {%- endif -%}
 
   {%- endfor -%}
 
-  {% comment %} ===Build Array of Administrations=== {% endcomment %}
-  </div>
+</section>
