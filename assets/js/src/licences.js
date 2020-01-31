@@ -20,8 +20,8 @@ function addOptions(list) {
         licenseSelect.appendChild(newOption);
     }
     let nonSPDX = document.createElement('option');
-    nonSPDX.text = 'Non-SPDX-and-Public-Domain';
-    nonSPDX.value = 'Non-SPDX-and-Public-Domain';
+    nonSPDX.text = 'Non-SPDX-or-Public-Domain';
+    nonSPDX.value = 'Non-SPDX-or-Public-Domain';
     licenseSelect.appendChild(nonSPDX);
 }
 
