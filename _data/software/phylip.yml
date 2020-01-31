@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: PHYLIP is a free package of programs for inferring phylogenies.
+    fr: >-
+      PHYLIP est un ensemble gratuit de programmes permettant de déduire des
+      phylogénies.
+category: '43232600'
+homepageURL:
+  en: 'http://evolution.genetics.washington.edu/phylip/'
+  fr: 'http://evolution.genetics.washington.edu/phylip/'
+licences:
+  - URL:
+      en: >-
+        https://metadata.ftp-master.debian.org/changelogs//main/p/phylip/phylip_3.697+dfsg-1_copyright
+      fr: >-
+        https://metadata.ftp-master.debian.org/changelogs//main/p/phylip/phylip_3.697+dfsg-1_copyright
+    spdxID: BSD-2-Clause
+name:
+  en: PHYLIP
+  fr: PHYLIP
+tags:
+  en:
+    - Phylogenetics
+  fr:
+    - Phylogénétique
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'
