@@ -15,13 +15,11 @@ function getLicenses() {
 function addOptions(list) {
     for (let i = 0; i < list.licenses.length; i++) {
         let newOption = document.createElement('option');
-        newOption.text = list.licenses[i].licenseId;
-        newOption.value = list.licenses[i].licenseId;
+        newOption.text = newOption.value = list.licenses[i].licenseId;
         licenseSelect.appendChild(newOption);
     }
     let nonSPDX = document.createElement('option');
-    nonSPDX.text = 'Non-SPDX-or-Public-Domain';
-    nonSPDX.value = 'Non-SPDX-or-Public-Domain';
+    nonSPDX.text = nonSPDX.value = 'Non-SPDX-or-Public-Domain';
     licenseSelect.appendChild(nonSPDX);
 }
 
