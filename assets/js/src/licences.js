@@ -1,9 +1,7 @@
 
 const licenseSelect = document.getElementById('licencesspdxID');
 $(document).ready(function() {
-    $(document).on('ready', function() {
-        getLicenses();
-    });
+    getLicenses();
 });
 
 function getLicenses() {
