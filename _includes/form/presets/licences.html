@@ -6,9 +6,7 @@
     {% include form/components/label-group.html id=include.idPreset title=title group="spdxID" %}
     <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
       <option value="">&nbsp;</option>
-      {%- for licence in site.data.i18n.licences -%}
-      <option value="{{ licence[1].value }}">{{ licence[1].value }}</option>
-      {%- endfor %}
+      
     </select>
   </div>
 {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
