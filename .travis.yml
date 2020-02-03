@@ -21,8 +21,10 @@ script:
 - yamale -s schemaSoftware.yaml _data/software
 - yamale -s schemaStandard.yaml _data/standard
 - yamale -s schemaPartnership.yaml _data/partnership
+- yamale -s schemaResearch.yaml _data/research
 - npm test
 - yamllint -d configYamlLint.yml _data
+- npx cypress run
 
 
 sudo: false
