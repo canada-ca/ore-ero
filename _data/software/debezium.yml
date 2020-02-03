@@ -31,3 +31,10 @@ administrations:
         date:
           started: '2017-06-30'
           metadataLastUpdated: '2019-05-10'
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: xzy@ml.com
+        date:
+          started: '2020-02-05'
+          metadataLastUpdated: '2020-02-03'
