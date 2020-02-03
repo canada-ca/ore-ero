@@ -238,7 +238,7 @@ function getConfigNewDesignNewAdmin(
       user: USERNAME,
       repo: REPO_NAME,
       title:
-        'Creaded design file for ' +
+        'Created design file for ' +
         designName +
         ' and created ' +
         adminName +
