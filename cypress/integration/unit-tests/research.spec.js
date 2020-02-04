@@ -15,10 +15,7 @@ context('Open Research', () => {
 
         cy.get('#dataset-filter')
             .find('tbody>tr')
-            .first()
-            .find('td>a')
-            .first()
-            .contains('Jekyll');
+            .should('not.contain', 'Jekyll');
     });
 
     it('Loads the French page', () => {
@@ -34,9 +31,7 @@ context('Open Research', () => {
 
         cy.get('#dataset-filter')
             .find('tbody>tr')
-            .first()
-            .find('td>a')
-            .first()
-            .contains('Jekyll');
+            .should('not.contain', 'Jekyll');
     });
+
 });
