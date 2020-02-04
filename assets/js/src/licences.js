@@ -14,7 +14,7 @@ function getLicenses() {
 
 function addOptions(list) {
   list.licenses.forEach(function(license) {
-    if (!license.isDeprecatedLicenseId && license.isOsiApproved) {
+    if (!license.isDeprecatedLicenseId && (license.isOsiApproved || license.isFsfLibre)) {
       let newOption = document.createElement('option');
       newOption.text = newOption.value = license.licenseId;
       licenseSelect.appendChild(newOption);
