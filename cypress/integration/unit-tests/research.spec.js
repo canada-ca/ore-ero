@@ -18,6 +18,20 @@ context('Open Research', () => {
             .should('not.contain', 'Jekyll');
     });
 
+    it('Dynamically filters on the English page', () => {
+        cy.visit('http://localhost:4000/ore-ero/en/open-researches.html');
+        cy.get('#dataset-filter_filter')
+            .find('input')
+            .type('Docker');
+
+        cy.get('#dataset-filter')
+            .find('tbody>tr')
+            .first()
+            .find('td>a')
+            .first()
+            .contains('Docker');
+    });
+
     it('Loads the French page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/recherches-libres.html');
         cy.get('#wb-cont').contains('Recherches libres');
@@ -32,6 +46,20 @@ context('Open Research', () => {
         cy.get('#dataset-filter')
             .find('tbody>tr')
             .should('not.contain', 'Jekyll');
+    });
+
+    it('Dynamically filters on the French page', () => {
+        cy.visit('http://localhost:4000/ore-ero/fr/recherches-libres.html');
+        cy.get('#dataset-filter_filter')
+            .find('input')
+            .type('Docker');
+
+        cy.get('#dataset-filter')
+            .find('tbody>tr')
+            .first()
+            .find('td>a')
+            .first()
+            .contains('Docker');
     });
 
 });
