@@ -233,8 +233,8 @@ This preset takes no additional parameters.
   - preset: relatedCode
 ```
 
-#### selectCode, selectDesign, selectPartnership, selectResearch, selectSoftware and selectStandard
-The selectCode, as well as the selectDesign, the selectPartnership, the selectResearch, the selectSoftware and the selectStandard presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). The whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
+#### selectCode, selectDesign, selectPartnership, selectSoftware and selectStandard
+The selectCode, as well as the selectDesign, the selectPartnership, the selectSoftware and the selectStandard presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). The whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
 
 In the schema, these usually display only the project name fields (english and french).
 
@@ -804,7 +804,7 @@ Il ne prend pas de paramètres additionnels.
 - preset: relatedCode
 ```
 
-#### selectCode, selectDesign, selectPartnership, selectResearch, selectSoftware et selectStandard
+#### selectCode, selectDesign, selectPartnership, selectSoftware et selectStandard
 Ces six *presets* affichent un menu de sélection (un *widget*) permettant à un quelconque utilisateur de sélectionner un projet (déjà existant) afin de le modifier ou bien d'y ajouter des éléments lui étant reliés (administrations, etc.). Ils permettent **principalement** de remplir automatiquement la section correspondante du formulaire lorsqu'un projet est sélectionner grâce au JavaScript (ils suivent le même principe que l'*adminCode*).
 
 Ces trois *presets* ne prennent pas de paramètres supplémentaires.
