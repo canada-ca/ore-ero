@@ -4,6 +4,7 @@
 This folder contains all the data used to generate the [Open Resource Exchange Website](https://canada-ca.github.io/ore-ero/en/index.html).
 
 See [Documentation](https://canada-ca.github.io/ore-ero/en/docs.html) for how to update and contribute to data using the following forms:
+ - The [Open Design Resource Form](https://canada-ca.github.io/ore-ero/en/open-design-form.html)
  - The [Open Source Code Form](https://canada-ca.github.io/ore-ero/en/open-source-code-form.html)
  - The [Open Source Software Form](https://canada-ca.github.io/ore-ero/en/open-source-software-form.html)
  - The [Open Standard Form](https://canada-ca.github.io/ore-ero/en/open-standard-form.html)
@@ -92,9 +93,10 @@ Ce dossier contient toutes les données utilisées pour générer le [site Web d
 
 Voir la [Documentation](https://canada-ca.github.io/ore-ero/fr/docs.html) pour savoir comment mettre à jour et contribuer aux données grâce à l'utilisation des formulaires suivants :
  - Le [formulaire de code source ouvert](https://canada-ca.github.io/ore-ero/fr/code-source-ouvert-formulaire.html)
- - Le [formulaire du logiciel libre](https://canada-ca.github.io/ore-ero/en/open-source-software-form.html)
- - Le [formulaire des normes ouvertes](https://canada-ca.github.io/ore-ero/en/open-standard-form.html)
- - Le [formulaire des projets en recherche d’investisseurs et partenaires](https://canada-ca.github.io/ore-ero/en/partenariat-formulaire.html)
+ - Le [formulaire de design libre](https://canada-ca.github.io/ore-ero/fr/design-libre-formulaire.html)
+ - Le [formulaire du logiciel libre](https://canada-ca.github.io/ore-ero/fr/logiciel-libre-formulaire.html)
+ - Le [formulaire des normes ouvertes](https://canada-ca.github.io/ore-ero/fr/norme-ouverte-formulaire.html)
+ - Le [formulaire des projets en recherche d’investisseurs et partenaires](https://canada-ca.github.io/ore-ero/fr/partenariat-formulaire.html)
 
 Si vous souhaitez collaborer directement à l'aide de GitHub, les informations suivantes vont vous informer sur comment ajouter vos données selon les différents types de projets :
 

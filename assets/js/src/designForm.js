@@ -19,7 +19,6 @@ $(document).ready(function() {
       else submitFormDesign();
       
     }
-    
   });
 
   designSelect.change(function() {
@@ -282,10 +281,7 @@ function submitFormDesign() {
     })
     .catch(err => {
       if (err.status == 404) {
-        return fetch(
-          PRBOT_URL,
-          getConfigNew(designObject, file, ProjectName)
-        );
+        return fetch(PRBOT_URL, getConfigNew(designObject, file, ProjectName));
       } else throw err;
     })
     .then(response => {
@@ -381,7 +377,7 @@ function addValueToFieldsDesign(obj) {
   $('#enname')
     .val(obj.name.en)
     .prop('disabled', true);
-    
+
   $('#frname')
     .val(obj.name.fr)
     .prop('disabled', true);
