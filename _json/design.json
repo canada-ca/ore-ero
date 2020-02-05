@@ -1,0 +1,5 @@
+---
+permalink: /design.json
+---
+
+{{ site.data.design | jsonify }}
