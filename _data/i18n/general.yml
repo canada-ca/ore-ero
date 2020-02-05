@@ -68,6 +68,12 @@ nav:
     link:
       en: https://www.canada.ca/en.html
       fr: https://www.canada.ca/fr.html
+  research:
+    en: Open Research
+    fr: Recherche Libre
+    link:
+      en: ./open-researches.html
+      fr: ./recherches-libres.html
 
 footer:
   AboutGovernment:

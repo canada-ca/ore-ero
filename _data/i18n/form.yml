@@ -709,3 +709,60 @@ partnership:
     title:
       en: Informations about each project
       fr: Information à propos de chacun des projects
+
+# Future project form specifics
+research:
+  name:
+    title:
+      en: Project Name
+      fr: Nom du projet
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a research that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une recherche déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the open research
+      fr: Ajouter le nom de la recherche libre
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started contributing to the research.
+      fr: Choisir la date lorsque l'administration publique a commencé à contribuer à la recherche.
+  researchAcronym:
+    title:
+      en: Research Acronym
+      fr: Acronyme de la recherche
+    label:
+      en: Research Acronym
+      fr: Acronyme de la recherche
+    labels:
+      select:
+        en: If you wish to update information of a research that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une norme ajoutée déjà au catalogue, veuillez la sélectionner de la liste
+    infobulle:
+      en: Enter the short name or acronym for the new reseach.
+      fr: Entrer l'acronyme de la recherche ouverte.
+  administrations: *administrations
+  uses:
+    title:
+      en: Informations about research participants
+      fr: Information à propos des participants à la recherche
+    infobulle:
+      en: Information concerning the participations on this research
+      fr: Information à propos des participations à cette recherche
+  
