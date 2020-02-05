@@ -17,7 +17,6 @@ $(document).ready(function() {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
       else submitFormDesign();
-      
     }
   });
 
@@ -359,7 +358,9 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(result) {
+  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+    result
+  ) {
     if (result[value]) {
       addValueToFieldsDesign(result[value]);
       $('#adminCode').focus();
@@ -419,7 +420,9 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(result) {
+  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+    result
+  ) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {
