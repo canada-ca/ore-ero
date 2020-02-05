@@ -30,7 +30,7 @@ tags:
 administrations:
   - adminCode: tbs-sct
     contact:
-      email: sebastien.lemay@tbs-sct.gc.ca
+      email: dppn@tbs-sct.gc.ca
     date:
       created: '2018-01-23'
       metadataLastUpdated: '2018-11-15'
@@ -44,19 +44,14 @@ administrations:
     status: mandatory
   - adminCode: lac-bac
     contact:
-      email: sebastien.lemay@tbs-sct.gc.ca
+      email: sebastien.lemay@hrsdc-rhdcc.gc.ca
     date:
       created: '2018-01-23'
-      metadataLastUpdated: '2018-11-15'
+      metadataLastUpdated: '2019-12-09'
     references:
       - URL:
-          en:
-            "http://www.bac-lac.gc.ca/eng/services/government-information-resources/\
-            guidelines/Pages/guidelines-file-formats-transferring-information-resources-enduring-value.aspx"
-          fr:
-            "https://www.bac-lac.gc.ca/fra/services/gestion-ressources-documentaires-gouvernement/\
-            lignes-directrices/Pages/lignes-directrices-formats-fichier-transferers-ressources\
-            -documentaires.aspx"
+          en: 'https://www.bac-lac.gc.ca/eng/services/government-information-resources/guidelines/Pages/guidelines-file-formats-transferring-information-resources-enduring-value.aspx'
+          fr: 'https://www.bac-lac.gc.ca/fra/services/gestion-ressources-documentaires-gouvernement/lignes-directrices/Pages/lignes-directrices-formats-fichier-transferers-ressources-documentaires.aspx'
         name:
           en: >-
             Guidelines on File Formats for Transferring Information Resources of

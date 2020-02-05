@@ -93,8 +93,7 @@ function getSelectedOrgType() {
   if ($('#adminCode').val() != '')
     return $('#adminCode :selected')
       .parent()
-      .attr('label')
-      .toLowerCase();
+      .data('value');
   else return $('#orgLevel').val();
 }
 

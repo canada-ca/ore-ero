@@ -7,10 +7,8 @@ jdk:
 
 install:
 - bundle install
-- pip install --user html5validator
-- pip install --user yamale==1.10.1
+- pip install --user -r requirements.txt
 - npm install
-- pip install --user yamllint
 
 script:
 - bundle exec jekyll build
@@ -25,6 +23,5 @@ script:
 - npm test
 - yamllint -d configYamlLint.yml _data
 - npx cypress run
-
 
 sudo: false

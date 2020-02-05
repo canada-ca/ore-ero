@@ -32,6 +32,9 @@ APSL-2.0:
 Artistic-2.0:
   name: Artistic License 2.0
   value: Artistic-2.0
+BSD-2-Clause:
+  name: BSD 2-Clause "Simplified" License
+  value: BSD-2-Clause
 BSD-3-Clause:
   name: BSD 3-Clause "New" or "Revised" License
   value: BSD-3-Clause
@@ -155,6 +158,9 @@ QPL-1.0:
 RPSL-1.0:
   name: RealNetworks Public Source License v1.0
   value: RPSL-1.0
+Ruby:
+  name: Ruby License
+  value: Ruby
 SISSL:
   name: Sun Industry Standards Source License v1.1
   value: SISSL
@@ -176,3 +182,7 @@ Zlib:
 ZPL-2.0:
   name: Zope Public License 2.0
   value: ZPL-2.0
+Non-SPDX-or-Public-Domain:
+  name: Non-SPDX Listed License and Public Domain
+  value: Non-SPDX-or-Public-Domain
+  

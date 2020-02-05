@@ -1,0 +1,127 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-sault-ste-marie-on
+releases:
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2017-12-06'
+      metadataLastUpdated: '2020-01-08'
+    description:
+      whatItDoes:
+        en: >-
+          Parse the Municipal Property Assessment Corporation (MPAC) year end
+          tax file.
+        fr: >-
+          Analyser le fichier d'impôt de fin d'année de la Société d'évaluation
+          foncière des municipalité (SEFM).
+    category: '43232300'
+    name:
+      en: mpacParser
+      fr: mpacParser
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/mpacParser/blob/master/LICENSE'
+          fr: 'https://github.com/cityssm/mpacParser/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/cityssm/mpacParser'
+      fr: 'https://github.com/cityssm/mpacParser'
+    tags:
+      en:
+        - MPAC
+        - Taxes
+      fr:
+        - SÉFM
+        - Taxes
+    languages:
+      - Java
+    status: Maintained
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2019-11-10'
+      metadataLastUpdated: '2020-01-09'
+    description:
+      whatItDoes:
+        en: >-
+          A tool for managing AGCO's municipal lottery licensing requirements in
+          Ontario.
+        fr: >-
+          Un outil pour gérer les exigences de licence de loterie municipale de
+          CAJO en Ontario.
+    category: '43231500'
+    name:
+      en: lottery-licence-manager
+      fr: lottery-licence-manager
+    licences:
+      - URL:
+          en: >-
+            https://github.com/cityssm/lottery-licence-manager/blob/master/LICENSE
+          fr: >-
+            https://github.com/cityssm/lottery-licence-manager/blob/master/LICENSE
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/cityssm/lottery-licence-manager'
+      fr: 'https://github.com/cityssm/lottery-licence-manager'
+    tags:
+      en:
+        - Lottery
+      fr:
+        - Lottery
+    status: Alpha
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2018-12-13'
+      metadataLastUpdated: '2020-01-10'
+    description:
+      whatItDoes:
+        en: >-
+          Secures PDF documents by making floating redactions and form entries
+          permanent.
+        fr: >-
+          Sécurise les documents PDF en rendant permanentes les rédactions
+          flottantes et les entrées de formulaire.
+      howItWorks:
+        en: >-
+          The tool flattens PDF documents by taking a picture of each page, then
+          creating a new PDF with the images.
+        fr: >-
+          L'outil aplatit les documents PDF en prenant une photo de chaque page,
+          puis en créant un nouveau PDF avec les images.
+    category: '43231500'
+    name:
+      en: pdfFlattener
+      fr: pdfFlattener
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/pdfFlattener/blob/master/LICENSE'
+          fr: 'https://github.com/cityssm/pdfFlattener/blob/master/LICENSE'
+        spdxID: Apache-2.0
+    repositoryURL:
+      en: 'https://github.com/cityssm/pdfFlattener'
+      fr: 'https://github.com/cityssm/pdfFlattener'
+    tags:
+      en:
+        - pdf
+        - freedom of information
+      fr:
+        - pdf
+        - la liberté d'information
+    downloadURL:
+      en: 'https://github.com/cityssm/pdfFlattener/releases'
+      fr: 'https://github.com/cityssm/pdfFlattener/releases'
+    languages:
+      - Java
+    relatedCode:
+      - URL:
+          en: 'https://pdfbox.apache.org/'
+          fr: 'https://pdfbox.apache.org/'
+        name:
+          en: Apache PDFBox
+          fr: Apache PDFBox
+    status: Maintained

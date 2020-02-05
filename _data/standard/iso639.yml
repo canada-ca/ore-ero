@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Internationally recognized codes for the representation of languages.
+    fr: Codes internationalement reconnus pour la représentation des langues.
+name:
+  en: Language codes
+  fr: Codes des langues
+specURL:
+  en: 'https://www.iso.org/iso-639-language-codes.html'
+  fr: 'https://www.iso.org/fr/iso-639-language-codes.html'
+standardAcronym: ISO639
+standardOrg:
+  en: International Organization for Standardization
+  fr: International Organization for Standardization
+tags:
+  en:
+    - Languages
+  fr:
+    - Langues
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: dppn@tbs-sct.gc.ca
+    date:
+      created: '2010-07-01'
+      metadataLastUpdated: '2020-01-15'
+    references:
+      - URL:
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=18909'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=18909'
+        name:
+          en: Standard on Metadata
+          fr: Norme sur les métadonnées
+    status: mandatory

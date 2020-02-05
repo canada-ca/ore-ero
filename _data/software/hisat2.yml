@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      HISAT2 is a fast and sensitive alignment program for mapping
+      next-generation sequencing reads against the general human population.
+    fr: >-
+      HISAT2 est un programme d'alignement rapide et sensible pour cartographier
+      les lectures de séquençage de nouvelle génération par rapport à la
+      population humaine générale.
+category: '43232600'
+homepageURL:
+  en: 'https://ccb.jhu.edu/software/hisat2/index.shtml'
+  fr: 'https://ccb.jhu.edu/software/hisat2/index.shtml'
+licences:
+  - URL:
+      en: 'https://ccb.jhu.edu/software/hisat2/manual.shtml#what-is-hisat2'
+      fr: 'https://ccb.jhu.edu/software/hisat2/manual.shtml#what-is-hisat2'
+    spdxID: GPL-3.0-only
+name:
+  en: HISAT2
+  fr: HISAT2
+tags:
+  en:
+    - Genome
+  fr:
+    - Genome
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'

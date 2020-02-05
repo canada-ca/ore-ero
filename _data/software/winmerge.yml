@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      WinMerge is an Open Source differencing and merging tool for Windows.
+      WinMerge can compare both folders and files, presenting differences in a
+      visual text format that is easy to understand and handle.
+    fr: >-
+      WinMerge est un outil de différenciation et de fusion Open Source pour
+      Windows. WinMerge peut comparer les dossiers et les fichiers, présentant
+      des différences dans un format de texte visuel facile à 
+category: '43233400'
+homepageURL:
+  en: 'https://winmerge.org/'
+  fr: 'https://winmerge.org/?lang=fr'
+licences:
+  - URL:
+      en: 'https://winmerge.org/source-code/?lang=en'
+      fr: 'https://winmerge.org/source-code/?lang=fr'
+    spdxID: GPL-2.0-or-later
+name:
+  en: WinMerge
+  fr: WinMerge
+tags:
+  en:
+    - Compare
+  fr:
+    - Compare
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'

@@ -24,7 +24,7 @@ tags:
   en:
     - Programming language
   fr:
-    - langage de programmation
+    - Langage de programmation
 administrations:
   - adminCode: gac-amc
     uses:

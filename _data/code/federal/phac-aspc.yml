@@ -1,0 +1,45 @@
+---
+schemaVersion: '1.0'
+adminCode: phac-aspc
+releases:
+  - contact:
+      email: tbd@example.com
+      name: 'https://www.irida.ca/people/'
+    date:
+      created: '2012-12-20'
+      metadataLastUpdated: '2019-10-16'
+    description:
+      whatItDoes:
+        en: >-
+          Public health, food safety, and clinical microbiology labs around the
+          world are embracing whole genome sequencing and genomic
+          epidemiological approaches to modernize their infectious disease
+          research,
+        fr: >-
+          Public health, food safety, and clinical microbiology labs around the
+          world are embracing whole genome sequencing and genomic
+          epidemiological approaches to modernize their infectious disease
+          research,
+    category: '43232200'
+    name:
+      en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+      fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    licences:
+      - URL:
+          en: 'https://github.com/phac-nml/irida/blob/development/LICENSE'
+          fr: 'https://github.com/phac-nml/irida/blob/development/LICENSE'
+        spdxID: Apache-2.0
+    repositoryURL:
+      en: 'https://github.com/phac-nml/irida'
+      fr: 'https://github.com/phac-nml/irida'
+    tags:
+      en:
+        - Health
+      fr:
+        - Sante
+    homepageURL:
+      en: 'https://www.irida.ca/'
+      fr: 'https://www.irida.ca/'
+    languages:
+      - Java
+    status: Maintained

@@ -1,5 +1,6 @@
 /* global  jsyaml slugify addMoreGroup */
-/* exported fillPartnersField getNewAdminPartnerPromise addMorePartners resetPartners */
+/* exported fillPartnersField getNewAdminPartnerPromise addMorePartners */
+
 $(document).ready(function() {
   // More-group overwrite for partner
   $('.add-more-group#addMorepartners').on(

@@ -1,57 +1,49 @@
 ---
-schemaVersion: str()
-adminCode: str()
-releases:
-  - contact:
-      email: str()
-      name: str(required=False)
-    date:
-      created: str()
-      metadataLastUpdated: str()
-    description:
-      whatItDoes:
-        en: str()
-        fr: str()
-      howItWorks:
-        en: str(required=False)
-        fr: str(required=False)
-    category: str()
-    name:
-      en: str()
-      fr: str()
-    licences:
-      - URL:
-          en: str()
-          fr: str()
-        spdxID: str()
-    repositoryURL:
-      en: str()
-      fr: str()
-    tags:
-      en:
-        - str()
-      fr:
-        - str()
-    downloadURL:
-      en: str(required=False)
-      fr: str(required=False)
-    homepageURL:
-      en: str(required=False)
-      fr: str(required=False)
-    languages:
-      - str(required=False)
-    partners:
-      - adminCode: str(required=False)
-        email: str(required=False)
-        name: str(required=False)
-    relatedCode:
-      - URL:
-          en: str(required=False)
-          fr: str(required=False)
-        name:
-          en: str(required=False)
-          fr: str(required=False)
-    status: enum('Alpha', 'Beta', 'Maintained', 'Deprecated', 'Retired', required=False)
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+include('code', strict=True)
+---
+code:
+  schemaVersion: str()
+  adminCode: str()
+  releases: list(include('release'))
+
+release:
+  contact:
+    email: str()
+    name: str(required=False)
+  date:
+    created: str()
+    metadataLastUpdated: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  category: str()
+  name: include('lang')
+  licences: list(include('licence'))
+  repositoryURL: include('lang')
+  tags:
+    en: list(str())
+    fr: list(str())
+  downloadURL: include('lang', required=False)
+  homepageURL: include('lang', required=False)
+  languages: list(str(), required=False)
+  partners: list(include('partner'), required=False)
+  relatedCode: list(include('related'), required=False)
+  status: enum('Alpha', 'Beta', 'Maintained', 'Deprecated', 'Retired', required=False)
+  team: include('lang', required=False)
+
+licence:
+  URL: include('lang')
+  spdxID: str()
+
+partner:
+  adminCode: str()
+  email: str()
+  name: str()
+
+related:
+  URL: include('lang')
+  name: include('lang')
+
+lang:
+  en: str()
+  fr: str()

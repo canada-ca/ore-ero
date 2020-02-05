@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      BPMN is a notation and graphical representation for specifying business
+      processes.
+    fr: >-
+      BPMN est une notation et représentation graphique pour la spécification
+      des processus de gestion.
+name:
+  en: Business Process Model and Notation
+  fr: Modèle et notation de processus d'affaires
+specURL:
+  en: 'https://www.omg.org/spec/BPMN'
+  fr: 'https://www.omg.org/spec/BPMN'
+standardAcronym: BPMN
+standardOrg:
+  en: Object Management Group
+  fr: Object Management Group
+tags:
+  en:
+    - Process
+  fr:
+    - Processus
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: dppn@tbs-sct.gc.ca
+    date:
+      created: '2018-12-01'
+      metadataLastUpdated: '2020-01-15'
+    references:
+      - URL:
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32602'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32602'
+        name:
+          en: Mandatory Procedures for Enterprise Architecture Assessment
+          fr: Procédures obligatoires pour l'évaluation de l'architecture intégrée
+    status: mandatory

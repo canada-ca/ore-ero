@@ -1,35 +1,36 @@
 ---
-schemaVersion: str()
-adminCode: str()
-projects:
-  - contact:
-      email: str()
-      name: str(required=False)
-      phone: str(required=False)
-    category: str()
-    date:
-      closed: str()
-      started: str()
-      metadataLastUpdated: str()
-    description:
-      whatItDoes:
-        en: str()
-        fr: str()
-      howItWorks:
-        en: str(required=False)
-        fr: str(required=False)
-    name:
-      en: str()
-      fr: str()
-    partners:
-      - adminCode: str(required=False)
-        email: str(required=False)
-        name: str(required=False)
-    tags:
-      en:
-        - str(required=False)
-      fr:
-        - str(required=False)
-    team:
-      en: str(required=False)
-      fr: str(required=False)
+include('partnership', strict=True)
+---
+partnership:
+  schemaVersion: str()
+  adminCode: str()
+  projects: list(include('project'))
+
+project:
+  contact:
+    email: str()
+    name: str(required=False)
+    phone: str(required=False)
+  category: str()
+  date:
+    closed: str()
+    started: str()
+    metadataLastUpdated: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  name: include('lang')
+  partners: list(include('partner'), required=False)
+  tags:
+    en: list(str())
+    fr: list(str())
+  team: include('lang', required=False)
+
+partner:
+  adminCode: str()
+  email: str()
+  name: str()
+
+lang:
+  en: str()
+  fr: str()

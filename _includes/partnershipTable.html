@@ -129,12 +129,12 @@
       {%- for admin in govLevels[1] -%}
         {%- assign partnership = admin[1] -%}
       <tr>
-        <td><a href="#{{ partnership.name[page.lang] | slugify }}" aria-controls="{{ partnership.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ partnership.name[page.lang] }}</a></td>
-        <td>{{ partnership.description.whatItDoes[page.lang] }}</td>
-        <td>{{ site.data.i18n.categories[partnership.category][page.lang] }}</td>
-        <td>{{ partnership.date.started }}</td>
-        <td>{{ partnership.date.closed }}</td>
-        <td>{{ partnership.team[page.lang] }}</td>
+        <td><a href="#{{ project.name[page.lang] | slugify: "latin" }}" aria-controls="{{ project.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
+        <td>{{ project.description.whatItDoes[page.lang] }}</td>
+        <td>{{ site.data.i18n.categories[project.category][page.lang] }}</td>
+        <td>{{ project.date.started }}</td>
+        <td>{{ project.date.closed }}</td>
+        <td>{{ project.team[page.lang] }}</td>
         <td>
           {%- for tag in partnership.tags[page.lang] -%}
             {{ tag }}&nbsp;
@@ -154,8 +154,9 @@
 {%- for govLevels in site.data.partnership -%}
   {%- assign govLevel = govLevels[0] -%}
   {%- for admin in govLevels[1] -%}
-    {%- assign partnership = admin[1] -%}
-<section id="{{ partnership.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    {%- for project in admin[1].projects -%}
+    {%- assign project = projects[1] -%}
+<section id="{{ project.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
   <header class="modal-header">
     <h2 class="modal-title">{{ partnership.name[page.lang] }}</h2>
   </header>

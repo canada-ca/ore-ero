@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >
+      LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under
+      the LGPL.
+    fr: >-
+      LAME est un encodeur MPEG Audio Layer III (MP3) de haute qualité sous
+      licence LGPL.
+category: '43232400'
+homepageURL:
+  en: 'https://lame.sourceforge.io'
+  fr: 'https://lame.sourceforge.io'
+licences:
+  - URL:
+      en: 'https://lame.sourceforge.io/license.txt'
+      fr: 'https://lame.sourceforge.io/license.txt'
+    spdxID: LGPL-3.0-or-later
+name:
+  en: LAME MP3 Encoder
+  fr: LAME MP3 Encoder
+tags:
+  en:
+    - Audio
+  fr:
+    - Audio
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-23'

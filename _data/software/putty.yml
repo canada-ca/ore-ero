@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      PuTTY is a free and open-source terminal emulator, serial console and
+      network file transfer application.
+    fr: >-
+      PuTTY est un émulateur de terminal gratuit et open-source, une console
+      série et une application de transfert de fichiers réseau. 
+category: '43232900'
+homepageURL:
+  en: 'https://www.chiark.greenend.org.uk/~sgtatham/putty/'
+  fr: 'https://www.chiark.greenend.org.uk/~sgtatham/putty/'
+licences:
+  - URL:
+      en: 'https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html'
+      fr: 'https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html'
+    spdxID: MIT
+name:
+  en: PuTTY
+  fr: PuTTY
+tags:
+  en:
+    - SCP
+    - SSH
+    - Telnet
+  fr:
+    - '`SCP'
+    - SSH
+    - Telnet
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'

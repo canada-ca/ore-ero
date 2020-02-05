@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: 'NumPy is the fundamental package for scientific computing with Python. '
+    fr: NumPy est le package fondamental pour le calcul scientifique avec Python.
+category: '43232400'
+homepageURL:
+  en: 'https://numpy.org/'
+  fr: 'https://numpy.org/'
+licences:
+  - URL:
+      en: 'https://numpy.org/license.html'
+      fr: 'https://numpy.org/license.html'
+    spdxID: BSD-3-Clause
+name:
+  en: NumPy
+  fr: NumPy
+tags:
+  en:
+    - Python
+  fr:
+    - Python
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-23'

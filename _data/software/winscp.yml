@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      WinSCP (Windows Secure Copy) is a free and open-source SFTP, FTP, WebDAV,
+      Amazon S3 and SCP client for Microsoft Windows. Its main function is
+      secure file transfer between a local and a remote compute
+    fr: >-
+      WinSCP (Windows Secure Copy) est un client SFTP, FTP, WebDAV, Amazon S3 et
+      SCP gratuit et open-source pour Microsoft Windows. Sa fonction principale
+      est le transfert de fichiers sécurisé entre un ordi
+category: '43233400'
+homepageURL:
+  en: 'https://winscp.net/eng/index.php'
+  fr: 'https://winscp.net/eng/index.php'
+licences:
+  - URL:
+      en: 'https://github.com/winscp/winscp/blob/master/license.txt'
+      fr: 'https://github.com/winscp/winscp/blob/master/license.txt'
+    spdxID: GPL-3.0-only
+name:
+  en: WinSCP
+  fr: WinSCP
+tags:
+  en:
+    - SCP
+  fr:
+    - SCP
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'

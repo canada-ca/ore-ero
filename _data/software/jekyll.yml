@@ -18,14 +18,14 @@ name:
   fr: Jekyll
 tags:
   en:
-    - Web site
+    - Website
   fr:
-    - Site web
+    - Site Web
 administrations:
   - adminCode: tbs-sct
     uses:
       - contact:
-          email: sebastien.lemay@tbs-sct.gc.ca
+          email: sebastien.lemay@hrsdc-rhdcc.gc.ca
         date:
           started: '2018-01-23'
-          metadataLastUpdated: '2019-05-06'
+          metadataLastUpdated: '2019-12-09'

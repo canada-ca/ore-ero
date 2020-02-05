@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      NVDA allows blind and vision impaired people to access and interact with
+      the Windows operating system and many third party applications.
+    fr: >-
+      NVDA permet aux personnes ayant une déficience aveugles et de vision
+      d'accès et d'interagir avec le système d'exploitation Windows et de
+      nombreuses applications tierces.
+category: '43233400'
+homepageURL:
+  en: 'https://www.nvaccess.org/'
+  fr: 'https://www.nvaccess.org/'
+licences:
+  - URL:
+      en: 'https://github.com/nvaccess/nvda/blob/master/copying.txt'
+      fr: 'https://github.com/nvaccess/nvda/blob/master/copying.txt'
+    spdxID: GPL-2.0-only
+name:
+  en: NVDA
+  fr: NVDA
+tags:
+  en:
+    - Accessibility
+  fr:
+    - Accessibilité
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: ITServiceTI@tbs-sct.gc.ca
+          name: IT Service Desk
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-14'

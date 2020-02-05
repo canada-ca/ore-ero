@@ -160,7 +160,7 @@
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             <td>{{ administration[0].name[page.lang] }}</td>
 
-            <td><a href="#{{ release.name[page.lang] | slugify }}" aria-controls="{{ release.name[page.lang] | slugify }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
+            <td><a href="#{{ release.name[page.lang] | slugify: "latin" }}" aria-controls="{{ release.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
             <td>
               {{ site.data.i18n.categories[release.category][page.lang] }}
             </td>
@@ -207,13 +207,17 @@
 {%- assign govLevel = govLevels[0] -%}
   {%- for admin in govLevels[1] -%}
     {%- for release in admin[1].releases -%}
-      <section id="{{ release.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+      <section id="{{ release.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
         <header class="modal-header">
           <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
         </header>
         <div class="modal-body">
-          <p><strong>Description:</strong></p>
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.whatItDoes.subtitle[page.lang] }}</strong></p>
           <p>{{ release.description.whatItDoes[page.lang] }}</p>
+        {%- if release.description.howItWorks[page.lang] != nil -%}
+          <p><strong>{{ site.data.i18n.form.presets.description.labels.howItWorks.subtitle[page.lang] }}</strong></p>
+          <p>{{release.description.howItWorks[page.lang]}}</p>
+        {%- endif -%}
           <p><strong>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: </strong>{{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
           {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
           <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
@@ -238,7 +242,7 @@
           {%- endfor -%}
         </ul>
         {%- if release.languages != nil -%}
-        <p>{{ site.data.i18n.tables.languages[page.lang] }}:</p>
+        <p><strong>{{ site.data.i18n.tables.languages[page.lang] }}:</strong></p>
         <ul>
           {%- for languages in release.languages -%}
             <li>{{ languages }}</li>
@@ -246,7 +250,8 @@
         </ul>
         {%- endif -%}
         {%- if release.status != nil -%}
-          <p>{{ site.data.i18n.tables.status[page.lang] }}: {{ release.status }}</p>
+          {%- assign status = release.status | downcase -%}
+          <p><strong>{{ site.data.i18n.tables.status[page.lang] }}:</strong> {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
         {%- endif -%}
         <p><strong>{{ site.data.i18n.form.code.date.label[page.lang] }}:</strong> {{ release.date.created }}</p>
 

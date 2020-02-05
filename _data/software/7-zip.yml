@@ -1,0 +1,46 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      7-Zip is a free and open-source file archiver, a utility used to place
+      groups of files within compressed containers known as "archives".
+    fr: >-
+      7-Zip est un logiciel de compression de données et d’archivage de fichiers
+      fonctionnant.
+category: '43233400'
+homepageURL:
+  en: 'https://www.7-zip.org/'
+  fr: 'https://www.7-zip.fr/'
+licences:
+  - URL:
+      en: 'https://www.7-zip.org/license.txt'
+      fr: 'https://www.7-zip.fr/license.txt'
+    spdxID: LGPL-2.1-only
+name:
+  en: 7-zip
+  fr: 7-zip
+tags:
+  en:
+    - Zip
+    - Archive
+  fr:
+    - Zip
+    - Archivage
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: donotreply@tbs-sct.gc.ca
+          name: TBS-SCT
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-14'
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'

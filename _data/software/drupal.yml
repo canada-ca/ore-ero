@@ -22,9 +22,9 @@ name:
   fr: Drupal
 tags:
   en:
-    - Web site
+    - Website
   fr:
-    - Site web
+    - Site Web
 administrations:
   - adminCode: cse-cst
     uses:

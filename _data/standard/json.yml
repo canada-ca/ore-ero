@@ -1,0 +1,42 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Text-based, language-independent syntax for defining data interchange
+      formats.
+    fr: >-
+      Syntaxe texte indépendante de la langue pour définir les formats d'échange
+      de données.
+name:
+  en: JSON Data Interchange Syntax
+  fr: Syntaxe d'échange de données JSON
+specURL:
+  en: 'https://www.ecma-international.org/publications/standards/Ecma-404.htm'
+  fr: 'https://www.ecma-international.org/publications/standards/Ecma-404.htm'
+standardAcronym: JSON
+standardOrg:
+  en: Ecma International
+  fr: Ecma International
+tags:
+  en:
+    - Data
+  fr:
+    - Données
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: dppn@tbs-sct.gc.ca
+    date:
+      created: '2018-12-01'
+      metadataLastUpdated: '2020-01-15'
+    references:
+      - URL:
+          en: 'https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32604'
+          fr: 'https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32604'
+        name:
+          en: Mandatory Procedures on Application Programming Interfaces
+          fr: >-
+            Procédures obligatoires sur les interfaces de programmation
+            d'applications
+    status: mandatory

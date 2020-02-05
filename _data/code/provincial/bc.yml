@@ -35,7 +35,7 @@ releases:
       email: todd.wilson@gov.bc.ca
     date:
       created: '2015-04-29'
-      metadataLastUpdated: '2019-05-10'
+      metadataLastUpdated: '2020-01-08'
     description:
       whatItDoes:
         en: >-
@@ -61,9 +61,11 @@ releases:
       fr: 'https://github.com/bcgov/gwells'
     tags:
       en:
-        - groundwater-data
+        - Groundwater
+        - Data
       fr:
-        - données-eaux souterraines
+        - Eau souterraine
+        - Données
     languages:
       - JavaScript
     status: Maintained
@@ -71,7 +73,7 @@ releases:
       email: todd.wilson@gov.bc.ca
     date:
       created: '2017-10-20'
-      metadataLastUpdated: '2019-05-10'
+      metadataLastUpdated: '2020-01-08'
     description:
       whatItDoes:
         en: Web application for the DevHub.
@@ -90,9 +92,11 @@ releases:
       fr: 'https://github.com/bcgov/devhub-app-web'
     tags:
       en:
-        - DevHub App Web
+        - DevHub
+        - Web Application
       fr:
-        - DevHub App Web
+        - DevHub
+        - Application Web
     homepageURL:
       en: 'https://developer.gov.bc.ca/'
       fr: 'https://developer.gov.bc.ca/'

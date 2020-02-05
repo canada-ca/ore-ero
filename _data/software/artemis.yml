@@ -1,0 +1,34 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: A set of software tools for genome browsing and annotation.
+    fr: >-
+      Un ensemble d'outils logiciels pour l'exploration et l'annotation du
+      génome.
+category: '43232600'
+homepageURL:
+  en: 'http://sanger-pathogens.github.io/Artemis/'
+  fr: 'http://sanger-pathogens.github.io/Artemis/'
+licences:
+  - URL:
+      en: 'https://github.com/sanger-pathogens/Artemis/blob/master/LICENSE'
+      fr: 'https://github.com/sanger-pathogens/Artemis/blob/master/LICENSE'
+    spdxID: GPL-3.0-only
+name:
+  en: Artemis
+  fr: Artemis
+tags:
+  en:
+    - Genome
+  fr:
+    - Genome
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'

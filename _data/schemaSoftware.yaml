@@ -1,38 +1,39 @@
 ---
-schemaVersion: str()
-description:
-  whatItDoes:
-    en: str()
-    fr: str()
-  howItWorks:
-    en: str(required=False)
-    fr: str(required=False)
-category: str()
-homepageURL:
+include('software', strict=True)
+---
+software:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  category: str()
+  homepageURL: include('lang')
+  licences: list(include('licence'))
+  name: include('lang')
+  tags: include('tag')
+  administrations: list(include('administration'))
+
+licence:
+  URL: include('lang')
+  spdxID: str()
+
+tag:
+  en: list(str())
+  fr: list(str())
+
+administration:
+  adminCode: str()
+  uses: list(include('use'))
+
+use:
+  contact:
+    email: str()
+    name: str(required=False)
+  date:
+    started: str()
+    metadataLastUpdated: str()
+  team: include('lang', required=False)
+
+lang:
   en: str()
   fr: str()
-licences:
-  - URL:
-      en: str()
-      fr: str()
-    spdxID: str()
-name:
-  en: str()
-  fr: str()
-tags:
-  en:
-    - str()
-  fr:
-    - str()
-administrations:
-  - adminCode: str()
-    uses:
-      - contact:
-          email: str()
-          name: str(required=False)
-        date:
-          started: str()
-          metadataLastUpdated: str()
-        team:
-          en: str(required=False)
-          fr: str(required=False)

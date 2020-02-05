@@ -19,10 +19,10 @@ name:
 tags:
   en:
     - Wiki
-    - Web site
+    - Website
   fr:
     - Wiki
-    - Site web
+    - Site Web
 administrations:
   - adminCode: tbs-sct
     uses:

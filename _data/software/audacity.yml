@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Audacity is a free and open-source digital audio editor and recording
+      application software. (mp3, Wave, AIFF, Flac, Ogg...)
+    fr: >-
+      Audacity est un logiciel d'enregistrement de son numérique et d'édition de
+      sources audionumériques sous différents formats (mp3, Wave, AIFF, Flac,
+      Ogg...)
+category: '43232100'
+homepageURL:
+  en: 'https://www.audacityteam.org/'
+  fr: 'https://www.audacityteam.org/'
+licences:
+  - URL:
+      en: 'https://www.audacityteam.org/about/license/'
+      fr: 'https://www.audacityteam.org/about/license/'
+    spdxID: GPL-2.0-or-later
+name:
+  en: Audacity
+  fr: Audacity
+tags:
+  en:
+    - audio
+  fr:
+    - l'audio
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-14'

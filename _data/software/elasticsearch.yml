@@ -24,9 +24,9 @@ name:
   fr: Elasticsearch
 tags:
   en:
-    - Web site
+    - Website
   fr:
-    - Site web
+    - Site Web
 administrations:
   - adminCode: tc
     uses:

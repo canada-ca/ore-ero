@@ -1,0 +1,48 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Git is a free and open source distributed version control system designed
+      to handle everything from small to very large projects with speed and
+      efficiency.
+    fr: >-
+      Git est un système de contrôle de version distribué gratuit et open source
+      conçu pour gérer tout, des petits aux très grands projets avec rapidité et
+      efficacité.
+category: '43233400'
+homepageURL:
+  en: 'https://git-scm.com/'
+  fr: 'https://git-scm.com/'
+licences:
+  - URL:
+      en: 'https://git-scm.com/about/free-and-open-source'
+      fr: 'https://git-scm.com/about/free-and-open-source'
+    spdxID: GPL-2.0-only
+name:
+  en: Git
+  fr: Git
+tags:
+  en:
+    - Git
+    - Source Control
+  fr:
+    - Git
+    - Source Control
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: TBS-SCT
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-15'

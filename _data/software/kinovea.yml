@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      A video player that provides a set of tools to capture, slow down, study,
+      compare, annotate and measure technical performances.
+    fr: >-
+      Un lecteur vidéo qui fournit un ensemble d'outils pour capturer, ralentir,
+      étudier, comparer, annoter et mesurer les performances techniques.
+category: '43232100'
+homepageURL:
+  en: 'https://www.kinovea.org/'
+  fr: 'https://www.kinovea.org/'
+licences:
+  - URL:
+      en: 'https://www.kinovea.org/help/en/003.html'
+      fr: 'https://www.kinovea.org/help/fr/003.html'
+    spdxID: GPL-2.0-only
+name:
+  en: Kinovea
+  fr: Kinovea
+tags:
+  en:
+    - Video
+  fr:
+    - Video
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
