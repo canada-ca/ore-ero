@@ -1,0 +1,37 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Ansible is an IT automation tool.
+    fr: Ansible est un outil d'automatisation informatique.
+category: '43232200'
+homepageURL:
+  en: 'https://www.ansible.com/'
+  fr: 'https://www.ansible.com/'
+researchAcronym: ansible
+licences:
+  - URL:
+      en: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+      fr: 'https://github.com/ansible/ansible/blob/devel/COPYING'
+    spdxID: GPL-3.0-only
+name:
+  en: Ansible
+  fr: Ansible
+tags:
+  en:
+    - Application platform
+  fr:
+    - Plateforme applicative
+researchOrg:
+  en:
+    - Test
+  fr:
+    - Test
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: libre@ville.montreal.qc.ca
+        date:
+          started: '2017-06-30'
+          metadataLastUpdated: '2019-05-06'

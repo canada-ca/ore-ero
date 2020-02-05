@@ -1,0 +1,5 @@
+---
+permalink: /research.json
+---
+
+{{ site.data.research | jsonify }}

@@ -1,0 +1,21 @@
+{%- assign title = "researchAcronym" -%}
+{%- assign group = "select" -%}
+{%- assign research_arr = "" | split: ',' -%}
+{%- for research in site.data.research -%}
+    {%- assign research_arr = research_arr | push: research[1].researchAcronym -%}
+{%- endfor %}
+{%- assign research_arr = research_arr | sort_natural -%}
+<div class="form-group">
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
+  <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
+    <option value=""></option>
+    {%- for research in research_arr -%}
+    <option value="{{ research | slugify }}">{{ research }}</option>
+    {%- endfor %}
+  </select>
+</div>
+
+{% include form/components/group.html id=include.id title=title -%}
+
+{%- include form/presets/name.html id=include.id -%}
+
