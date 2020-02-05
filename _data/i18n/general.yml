@@ -38,6 +38,12 @@ nav:
     link:
       en: ./open-source-codes.html
       fr: ./codes-source-ouverts.html
+  design:
+    en: Open Design
+    fr: Design Libre
+    link:
+      en: ./open-design.html
+      fr: ./design-libre.html
   software:
     en: Open Source Software
     fr: Logiciels libres
