@@ -6,6 +6,7 @@
  * @return {Boolean} true/false if the form is valid/invalid
  */
 function validateRequired() {
+  
   let form = document.getElementById('validation');
   let elements = form.elements;
   let validator = $('#validation').validate();
