@@ -377,6 +377,10 @@ presets:
       schema:
         en: Team
         fr: Équipe
+  uses:
+    title:
+      en: Informations about software users.
+      fr: Information à propos des utilisateurs du logiciel
 
 # Code form specifics
 code:
