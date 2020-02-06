@@ -4,6 +4,7 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
+  getAdminObject getAdminCode slugify
   addMoreLicences resetMoreGroup fillUseField fillLicenceField
   getToday
 */
