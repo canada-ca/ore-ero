@@ -17,4 +17,3 @@ formGroups:
   - preset: uses
     param: {more: true}
   - preset: empty
-  - preset: empty
