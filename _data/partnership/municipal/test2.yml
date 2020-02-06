@@ -1,0 +1,17 @@
+---
+schemaVersion: '1.0'
+adminCode: city-of-montreal-qc
+projects:
+  - contact:
+      email: abc@xyz.com
+    category: '43233400'
+    date:
+      closed: '2020-02-09'
+      started: '2020-01-20'
+      metadataLastUpdated: '2020-01-20'
+    description:
+      en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+    name:
+      en: Example
+      fr: Exemple
