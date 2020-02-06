@@ -6,9 +6,9 @@
 {%- endfor %}
 {%- assign research_arr = research_arr | sort_natural -%}
 <div class="form-group">
-  <!-- {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %} -->
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
-    <option value=""></option>
+    
     {%- for research in research_arr -%}
     <option value="{{ research | slugify }}">{{ research }}</option>
     {%- endfor %}
