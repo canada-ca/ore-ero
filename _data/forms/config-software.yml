@@ -1,5 +1,4 @@
 ---
-
 id: software
 
 formGroups:
@@ -8,10 +7,14 @@ formGroups:
   - preset: category
   - preset: tags
   - preset: homepageURL
-    param: {type: url}
+    param: { type: url }
   - preset: licences
-    param: {more: true}
+    param: { more: true }
+  - preset: empty
+    title: administrations
+    param: { start: true }
+  - preset: adminCode
   - preset: uses
-    param: {more: true}
+    param: { more: true }
   - preset: empty
   - preset: empty
