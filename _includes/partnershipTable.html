@@ -17,17 +17,19 @@
 
       <div class="form-group">
         <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
-        <select class="form-control" id="dt_department" name="dt_department" data-column="0">
+        <select class="form-control" id="dt_department" name="dt_department" data-column="8">
           <option value="">&nbsp;</option>
           {%- assign admin_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.partnership -%}
             {%- assign govLevel = govLevels[0] -%}
             {% for admin in govLevels[1] %}
-              {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+              {%- for project in admin[1].projects -%}
+              {%- assign project = projects[1] -%}
+              {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
               {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
+              {%- endfor -%}
             {% endfor %}
           {%- endfor -%}
-          {%- assign admin_arr = admin_arr | sort -%}
           {%- for admin in admin_arr -%}
             <option value="{{ admin }}">{{ admin }}</option>
           {%- endfor -%}
@@ -78,7 +80,7 @@
 
       <div class="form-group">
         <label for="dt_tag">{{ site.data.i18n.tables.tag[page.lang] }}</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="5">
+        <select class="form-control" id="dt_tag" name="dt_tag" data-column="6">
           <option value="">&nbsp;</option>
           {%- assign tag_arr = "" | split: ',' -%}
           {%- for govLevels in site.data.partnership -%}
@@ -111,7 +113,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6,7], "visible": false}], "paging": true}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6,7,8], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.partnership[page.lang] }}</th>
@@ -122,6 +124,7 @@
         <th>{{ site.data.i18n.tables.team[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
       </tr>
     </thead>
     <tbody>
@@ -143,6 +146,8 @@
           {%- endfor -%}
         </td>
         <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
+        {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
+        <td>{{ administration[0].name[page.lang] }}</td>
       </tr>
         {%- endfor -%}
       {%- endfor -%}
@@ -161,35 +166,35 @@
     <h2 class="modal-title">{{ project.name[page.lang] }}</h2>
   </header>
   <div class="modal-body">
-    <p><strong>{{ project.description.whatItDoes[page.lang] }}</strong></p>
-    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-    <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ administration[0].name[page.lang] }}</p>
-    <p><strong>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</strong></p>
-    {%- if project.contact.name != nil -%}
-      <p>{{ project.contact.name }}</p>
-    {%- endif -%}
-    {%- if project.contact.phone != nil -%}
-      <p>{{ site.data.i18n.tables.contactPhone[page.lang] }}: {{ project.contact.phone }}</p>
-    {%- endif -%}
-    {%- if project.contact.email != nil -%}
-      <p><a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
-    {%- endif -%}
-    <p>{{ site.data.i18n.tables.partnership.searchPeriod.title[page.lang] }} {{ site.data.i18n.tables.partnership.searchPeriod.beginning[page.lang] }} {{ project.date.started }} {{ site.data.i18n.tables.partnership.searchPeriod.end[page.lang] }} {{  project.date.closed }}</p>
+    <p><strong>Description:</strong></p>
+      <p>{{ project.description.whatItDoes[page.lang] }}</p>
+      <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+      <ul>
+        {%- for tag in project.tags[page.lang] -%}
+        <li>{{ tag }}</li>
+        &nbsp; {%- endfor -%}
+      </ul>  
+      {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
+      <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
+      <p><strong> Contact:</strong> <a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
+      <p><strong> {{ site.data.i18n.tables.project.searchPeriod.title[page.lang] }}</strong></p>
+      <p> {{ site.data.i18n.tables.partnership.searchPeriod.beginning[page.lang] }} {{ project.date.started }} {{ site.data.i18n.tables.partnership.searchPeriod.end[page.lang] }} {{  project.date.closed }}</p>
     {%- if project.partners != nil -%}
       <p><strong>{{ site.data.i18n.tables.partners[page.lang] }}</strong></p>
       <ul>
       {%- for partner in project.partners -%}
         <li>
-          {% if partner.name %}{{ partner.name }}{% endif %}
-          {% if partner.email %}<a href="mailto:{{ partner.email }}">{{ partner.email }}</a>{% endif %}
-          {% if partner.adminCode %}
-            {% for partnerLevel in site.data.i18n.administration %}
-              {%- assign adminPartner = site.data.administrations[partnerLevel] | where: "code", partner.adminCode -%}
-              {% if adminPartner[0] != nil %}
-                <p>{{ site.data.i18n.tables.administration[page.lang] }}: {{ adminPartner[0].name[page.lang] }}</p>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
+          {%- if partner.name -%}{{ partner.name }} :{%- endif -%}
+          {%- if partner.email -%}<a href="mailto:{{ partner.email }}">{{ partner.email }}</a>{%- endif -%}
+          {%- if partner.adminCode -%}
+              {%- for partnerLevels in site.data.administrations -%}
+                {%- assign partnerLevel = partnerLevels[0] -%}
+                {%- assign adminPartner = site.data.administrations[partnerLevel] | where: "code", partner.adminCode -%}
+                {%- if adminPartner[0].name[page.lang] != nil -%}
+                    <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}: </strong>{{ adminPartner[0].name[page.lang] }}</p>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
         </li>
       {%- endfor -%}
       </ul>
