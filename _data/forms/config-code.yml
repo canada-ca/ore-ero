@@ -32,4 +32,3 @@ formGroups:
   - preset: relatedCode
     param: {more: true}
   - preset: empty
-  - preset: empty
