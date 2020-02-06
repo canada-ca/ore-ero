@@ -7,8 +7,10 @@
     <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
       <option value="">&nbsp;</option>
       {%- for licence in site.data.spdx.json.licenses.licenses -%}
-      <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
-      {%- endfor %}
+        {%- if licence.isDeprecatedLicenseId == false and licence.isOsiApproved == true -%}
+        <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
+        {%- endif -%}
+      {%- endfor -%}
     </select>
   </div>
 {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
