@@ -23,11 +23,8 @@
           {%- for govLevels in site.data.partnership -%}
             {%- assign govLevel = govLevels[0] -%}
             {% for admin in govLevels[1] %}
-              {%- for project in admin[1].projects -%}
-              {%- assign project = projects[1] -%}
-              {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
+              {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
               {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
-              {%- endfor -%}
             {% endfor %}
           {%- endfor -%}
           {%- for admin in admin_arr -%}
@@ -146,7 +143,7 @@
           {%- endfor -%}
         </td>
         <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
-        {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
+        {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
         <td>{{ administration[0].name[page.lang] }}</td>
       </tr>
         {%- endfor -%}
@@ -174,7 +171,7 @@
         <li>{{ tag }}</li>
         &nbsp; {%- endfor -%}
       </ul>  
-      {%- assign administration = site.data.administrations[govLevel] | where: "code", project.adminCode -%}
+      {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
       <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
       <p><strong> Contact:</strong> <a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>
       <p><strong> {{ site.data.i18n.tables.project.searchPeriod.title[page.lang] }}</strong></p>
