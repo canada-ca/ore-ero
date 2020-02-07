@@ -23,6 +23,6 @@ formGroups:
         param: {type: date, rule: dateISO}
       - widget: string
         title: closed
-        param: {type: date, rule: dateISO}
+        param: {type: date, rule: dateISO, rule: invalid-closingdate}
   - preset: partners
   - preset: empty
