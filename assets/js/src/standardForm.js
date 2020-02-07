@@ -33,6 +33,7 @@ $(document).ready(function() {
     $('#validation').trigger('reset');
     resetTags();
     hideNewAdminForm();
+    resetMoreGroup($('#addMorereference'));
   });
 });
 
