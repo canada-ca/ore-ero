@@ -33,6 +33,8 @@ $(document).ready(function() {
     $('#validation').trigger('reset');
     resetTags();
     resetLanguages();
+    hideNewAdminForm();
+    resetMoreGroup($('#addMorelicences'));
   });
 });
 
