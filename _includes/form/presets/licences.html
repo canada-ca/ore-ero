@@ -6,8 +6,9 @@
     {% include form/components/label-group.html id=include.idPreset title=title group="spdxID" %}
     <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
       <option value="">&nbsp;</option>
-      {%- for licence in site.data.spdx.json.licenses.licenses -%}
-        {%- if licence.isDeprecatedLicenseId == false and licence.isOsiApproved == true -%}
+      {%- assign licence_arr = site.data.spdx.json.licenses.licenses | where:"isDeprecatedLicenseId","false" -%}
+      {%- for licence in licence_arr -%}
+        {%- if licence.isOsiApproved == true or licence.isFsfLibre == true -%}
         <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
         {%- endif -%}
       {%- endfor -%}
