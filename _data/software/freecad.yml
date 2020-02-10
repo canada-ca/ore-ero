@@ -18,7 +18,7 @@ licences:
   - URL:
       en: 'https://github.com/FreeCAD/FreeCAD/blob/master/LICENSE'
       fr: 'https://github.com/FreeCAD/FreeCAD/blob/master/LICENSE'
-    spdxID: GPL-2.0-or-later
+    spdxID: GPL-2.0-only
 name:
   en: FreeCAD
   fr: FreeCAD
@@ -35,4 +35,4 @@ administrations:
           name: AAFC-AAC
         date:
           started: '1900-01-01'
-          metadataLastUpdated: '2020-01-27'
+          metadataLastUpdated: '2020-01-31'
