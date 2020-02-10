@@ -90,6 +90,4 @@ lightbox:
   website:
     en: 'Website:'
     fr: 'Site internet:'
-  githubRepo:
-    en: 'Github repository:'
-    fr: 'Repertoire github :'
+
