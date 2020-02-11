@@ -1,9 +1,25 @@
 /* exported getTypeEN getTypeFR addType resetType */
 $(document).ready(function() {
-
+  $('.add-more-group#addMoredesignType').on(
+    'click',
+    '.btn-tabs-more',
+    function() {
+      let length = $('#addMoredesignType ul li').length;
+      let index = length == 1 ? '' : length - 1;
+      $('#newType' + index).addClass('hide');
+    }
+  );
     $('#newTypeButton').click(function() {
-        $('#newType').removeClass('hide');
-    });
+      let index = getmoreIndex($(this));
+      if (!$('#newType' + index).hasClass('hide')) {
+        $('#newType' + index).addClass('hide');
+      } else {
+        $('#newType' + index).removeClass('hide');
+    }});
+    $('#cancelnewTypeButton').click(function() {
+      let index = getmoreIndex($(this));
+      $('#newType' + index).addClass('hide');
+  });
 });
 function getnewTypeEN() {
     return getType($('#newTypeEN input'));
@@ -46,6 +62,14 @@ function getnewTypeEN() {
       resetTypes();
     }
   }
+
+  function getmoreIndex(element) {
+    let nb = $(element)
+    .closest('li')
+    .attr('data-index');
+    return nb != 0 ? nb : '';
+  }
+  
   
   function resetTypes() {
     $('#ennewType').val('');

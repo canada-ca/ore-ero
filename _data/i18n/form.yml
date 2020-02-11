@@ -382,8 +382,8 @@ presets:
       en: Design Type
       fr: Type de design
     label:
-      en: Design
-      fr: Type de design
+      en: Select a type
+      fr: Selectionner un type
     infobulle:
       en: The type of design
       fr: Le type de design
