@@ -7,7 +7,7 @@
 {%- assign lang1 = "fr" -%}
 {%- assign lang2 = "en" -%}
 {%- endif -%}
-<div class="add-more-group" id="addMore{{ title1 }}" data-title="{{ title1 }}">
+<div class="add-more-group" id="addMore{{ title1 }}" data-title="{{ site.data.i18n.form[include.idPreset][title1].title[page.lang] }}">
   {% include form/components/title.html id=include.idPreset title=title1 -%}
   <div class="add-more-content">
     <div class="form-group" style="margin-bottom: 0;">
@@ -19,11 +19,11 @@
             <select class="form-control" id="{{ title1 }}" name="{{ title1 }}" required="required">
               <option value="">&nbsp;</option>
               <!-- To fill later -->
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
               <!--               -->
               {%- for design in site.data.design -%}
                 {%- for type in design.types -%}
@@ -33,20 +33,16 @@
             </select>
           </div> 
         </div>
-          <button id="newTypeButton" class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title2].button[page.lang] }}</button>
+          <div class="{{ title2 }}Button more-group-id-replace" ><button id="newTypeButton" class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title2].button[page.lang] }}</button></div>
           <div id="newType" class="well hide" style="position:relative">
-          <button type="button" class="btn btn-default remove" id="cancelnewTypeButton" style="position:absolute; top: 10px; right: 10px;"><i class="glyphicon glyphicon-remove"></i></button>
+           <div class="{{ title2 }}ButtonRemove more-group-id-replace" ><button type="button" class="btn btn-default remove " id="cancelnewTypeButton" style="position:absolute; top: 10px; right: 10px;"><i class="glyphicon glyphicon-remove"></i></button></div>
             <div id="newType{{ lang1 | upcase }}" class="form-group">
-                {% include form/components/label-i18n.html id=include.idPreset title=title2 lang=lang1 param=include.param %}
-                <div class="control-group input-group col-xs-2 mrgn-tp-md">
-                    <input type="text" id="{{ lang1 }}{{ title2 }}" name="{{ lang1 }}{{ title2 }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
-                </div>
+                <strong>{{ site.data.i18n.form.[include.idPreset][title2].label[lang1][page.lang] }}</strong>    
+                <input type="text" id="{{ lang1 }}{{ title2 }}" name="{{ lang1 }}{{ title2 }}" class="form-control" required="required">
             </div>
             <div id="newType{{ lang2 | upcase }}" class="form-group">
-                {% include form/components/label-i18n.html id=include.idPreset title=title2 lang=lang2 param=include.param %}
-                <div class="control-group input-group col-xs-2 mrgn-tp-md">
-                    <input type="text" id="{{ lang2 }}{{ title2 }}" name="{{ lang2 }}{{ title2 }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
-                </div>
+                <strong>{{ site.data.i18n.form.[include.idPreset][title2].label[lang2][page.lang] }}</strong>
+                <input type="text" id="{{ lang2 }}{{ title2 }}" name="{{ lang2 }}{{ title2 }}" class="form-control" required="required">
             </div>
           </div>
       </div>

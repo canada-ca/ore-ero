@@ -9,16 +9,27 @@ $(document).ready(function() {
       $('#newType' + index).addClass('hide');
     }
   );
-    $('#newTypeButton').click(function() {
+  $('#addMoredesignType').on('click', '.newTypeButton button', function() {
       let index = getmoreIndex($(this));
       if (!$('#newType' + index).hasClass('hide')) {
-        $('#newType' + index).addClass('hide');
+        removeType(index);
       } else {
-        $('#newType' + index).removeClass('hide');
+        addType(index);
     }});
-    $('#cancelnewTypeButton').click(function() {
+    $('#addMoredesignType').on(
+      'click',
+      '.newTypeButtonRemove button',
+      function() {
       let index = getmoreIndex($(this));
-      $('#newType' + index).addClass('hide');
+      removeType(index);
+  });
+  $('#addMoredesignType').on(
+    'change',
+    '.designTypeSelect select', function() {
+    let index = getmoreIndex($(this));
+    if (($('#designType' + index).val() != '') && (!$('#newType' + index).hasClass('hide'))) {
+      removeType(index);
+    }
   });
 });
 function getnewTypeEN() {
@@ -36,7 +47,23 @@ function getnewTypeEN() {
       })
       .get();
   }
-  
+  function removeType(index) {
+    $('#newType' + index).addClass('hide');
+    $('#designType' + index).attr('required', 'required');
+    $('#ennewType' + index).removeAttr('required');
+    $('#frnewType' + index).removeAttr('required');
+    resetTypes();
+  }
+
+  function addType(index) {
+    $('#newType' + index).removeClass('hide');
+    $('#designType' + index).removeAttr('required');
+    $('#designType' + index)
+      .prop('selectedIndex', 0)
+      .change();
+    $('#ennewType' + index).attr('required', 'required');
+    $('#frnewType' + index).attr('required', 'required');
+  }
   function addTypes(obj) {
     if (obj.types) {
       resetTypes();
@@ -74,7 +101,6 @@ function getnewTypeEN() {
   function resetTypes() {
     $('#ennewType').val('');
     $('#frnewType').val('');
-    $('.additional-type').remove();
   }
   
   function typeObject(id, value) {

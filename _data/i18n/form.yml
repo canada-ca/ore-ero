@@ -385,25 +385,19 @@ presets:
       en: Select a type
       fr: Selectionner un type
     infobulle:
-      en: The type of design
-      fr: Le type de design
+      en: Select types to categorize this design.
+      fr: Selectionner des types pour catégoriser ce design.
   newType:
-      title:
-        en: Tags
-        fr: Mots-clés
-      label:
-        en:
-          en: English tags
-          fr: Mots-clés en anglais
-        fr:
-          en: French tags
-          fr: Mots-clés en français
-      button:
-        en: Add new type
-        fr: Ajouter un nouveau type
-      infobulle:
-        en: Add keywords to help distinguish between various instances.
-        fr: Ajouter des mots-clés pour différencier entre les différents instances.
+    label:
+      en:
+        en: English type
+        fr: Type en anglais
+      fr:
+        en: French type
+        fr: Type en français
+    button:
+      en: Add new type
+      fr: Ajouter un nouveau type
   
 # Code form specifics
 code:

@@ -6,20 +6,22 @@ design:
   description:
     whatItDoes: include('lang')
     howItWorks: include('lang', required=False)
-  category: str()
+  designTypes: list(include('designType'))
   homepageURL: include('lang')
   licences: list(include('licence'))
   name: include('lang')
-  tags: include('tag')
+  
   administrations: list(include('administration'))
 
 licence:
   URL: include('lang')
   spdxID: str()
-
-tag:
-  en: list(str())
-  fr: list(str())
+  
+designType:
+  designType: str()
+  newType:
+    en: list(str())
+    fr: list(str())
 
 administration:
   adminCode: str()
