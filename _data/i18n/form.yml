@@ -377,7 +377,34 @@ presets:
       schema:
         en: Team
         fr: Équipe
-
+  designType:
+    title:
+      en: Design Type
+      fr: Type de design
+    label:
+      en: Design
+      fr: Type de design
+    infobulle:
+      en: The type of design
+      fr: Le type de design
+  newType:
+      title:
+        en: Tags
+        fr: Mots-clés
+      label:
+        en:
+          en: English tags
+          fr: Mots-clés en anglais
+        fr:
+          en: French tags
+          fr: Mots-clés en français
+      button:
+        en: Add new type
+        fr: Ajouter un nouveau type
+      infobulle:
+        en: Add keywords to help distinguish between various instances.
+        fr: Ajouter des mots-clés pour différencier entre les différents instances.
+  
 # Code form specifics
 code:
   name:

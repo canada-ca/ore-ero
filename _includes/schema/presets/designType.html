@@ -1,0 +1,10 @@
+{%- assign title = "designType" -%}
+<li>
+  <details open>
+    <summary>{{ title }}[array]</summary>
+    <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- include schema/components/li-i18n-group.html id=include.idPreset title=title group="type" param=site.data.forms.param.required_true -%}
+    </ul>
+  </details>
+</li>
