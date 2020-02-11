@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-/* global cy, context, it, before, expect, date */
+/* global cy, context, it, before, expect */
 
 context('date.js', () => {
     const now = new Date();
@@ -13,7 +13,7 @@ context('date.js', () => {
     );
 
     before(() => {
-        cy.visit('http://localhost:4000/ore-ero/en/open-source-codes.html');
+        cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
     });
 
     it('Loads the script', () => {
@@ -22,7 +22,7 @@ context('date.js', () => {
 
     it('It should call and return Date.now()', () => {
         cy.window().then(win => {
-            console.log(date);
+            console.log(now);
             let value = win.date.getToday();
             expect(value).to.equal(output);
         });
