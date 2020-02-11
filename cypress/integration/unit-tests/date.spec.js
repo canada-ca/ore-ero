@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 /* global cy, context, it, before, expect */
 
-context('date.js', () => {
+context('date_func.js', () => {
     const now = new Date();
     const output = (now.getFullYear() +
         '-' +
@@ -22,22 +22,21 @@ context('date.js', () => {
 
     it('It should call and return Date.now()', () => {
         cy.window().then(win => {
-            console.log(now);
-            let value = win.date.getToday();
+            let value = win.date_func.getToday();
             expect(value).to.equal(output);
         });
     });
 
     it('It should not equal to day time', () => {
         cy.window().then(win => {
-            const outputDate = new Date(Date.now());;
-            expect(getToday()).not.toEqual(outputDate);
+            const outputDate = new Date(Date.now());
+            expect(win.date_func.getToday()).not.equal(outputDate);
         });
     });
 
     // it("Returns undefined if it doesn't exist", () => {
     //     cy.window().then(win => {
-    //         let value = win.date.getToday();
+    //         let value = win.date_func.getToday(0);
     //         expect(value).to.equal(undefined);
     //     });
     // });
