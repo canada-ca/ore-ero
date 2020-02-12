@@ -33,27 +33,4 @@ context('date_func.js', () => {
             expect(win.date_func.getToday()).not.equal(outputDate);
         });
     });
-
-    // it("Returns undefined if it doesn't exist", () => {
-    //     cy.window().then(win => {
-    //         let value = win.date_func.getToday(0);
-    //         expect(value).to.equal(undefined);
-    //     });
-    // });
-
-    // it('Adds new object', () => {
-    //     // cy.window().then(win => {
-    //     //     let innerValue = {
-    //     //         b: 'B'
-    //     //     };
-    //     //     let value = {
-    //     //         a: {
-    //     //             a: 'A'
-    //     //         }
-    //     //     };
-
-    //     //     win.DeepObject.set(value, 'b', innerValue);
-    //     //     expect(value.b.b).to.equal('B');
-    //     // });
-    // });
 });
