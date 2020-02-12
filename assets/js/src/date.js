@@ -19,4 +19,4 @@ function getToday() {
 
 window.date_func = {
   getToday
-}
+};
