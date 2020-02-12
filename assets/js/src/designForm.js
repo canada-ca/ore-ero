@@ -57,7 +57,6 @@ function getDesignObject() {
       en: $('#enname').val(),
       fr: $('#frname').val()
     },
-    designStatus: $('#designStatus').val(),
     administrations: [
       {
         adminCode: getAdminCode(),
@@ -95,6 +94,9 @@ function getDesignObject() {
     designObject.description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
+  }
+  if ($('#designStatus').val()) {
+    designObject.designStatus =  $('#designStatus').val();
   }
 
   if ($('#contactname').val()) {
