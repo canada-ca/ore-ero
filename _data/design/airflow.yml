@@ -9,10 +9,6 @@ description:
       Airflow est une plate-forme permettant de créer, planifier et surveiller
       par programme des flux de travail.
 designTypes: 
-  - value: Software
-    type:
-      en: Software
-      fr: Logiciel
   - value: A
     type:
       en: A

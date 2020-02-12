@@ -9,10 +9,6 @@ description:
       7-Zip est un logiciel de compression de données et d’archivage de fichiers
       fonctionnant.
 designTypes: 
-  - value: Software
-    type:
-      en: Software
-      fr: Logiciel
   - value: Data Compression
     type:
       en: Data Compression
