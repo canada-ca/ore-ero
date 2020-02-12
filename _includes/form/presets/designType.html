@@ -37,12 +37,12 @@
           <div id="newType" class="well hide" style="position:relative">
            <div class="{{ title2 }}ButtonRemove more-group-id-replace" ><button type="button" class="btn btn-default remove " id="cancelnewTypeButton" style="position:absolute; top: 10px; right: 10px;"><i class="glyphicon glyphicon-remove"></i></button></div>
             <div id="newType{{ lang1 | upcase }}" class="form-group">
-                <strong>{{ site.data.i18n.form.[include.idPreset][title2].label[lang1][page.lang] }}</strong>    
+              <label for="{{ lang1 }}{{ title2 }}"><span class="field-name">{{ site.data.i18n.form.[include.idPreset][title2].label[lang1][page.lang] }}</span></label>   
                 <input type="text" id="{{ lang1 }}{{ title2 }}" name="{{ lang1 }}{{ title2 }}" class="form-control" required="required">
             </div>
             <div id="newType{{ lang2 | upcase }}" class="form-group">
-                <strong>{{ site.data.i18n.form.[include.idPreset][title2].label[lang2][page.lang] }}</strong>
-                <input type="text" id="{{ lang2 }}{{ title2 }}" name="{{ lang2 }}{{ title2 }}" class="form-control" required="required">
+              <label for="{{ lang2 }}{{ title2 }}"><span class="field-name">{{ site.data.i18n.form.[include.idPreset][title2].label[lang2][page.lang] }}</span></label>   
+              <input type="text" id="{{ lang2 }}{{ title2 }}" name="{{ lang2 }}{{ title2 }}" class="form-control" required="required">
             </div>
           </div>
       </div>
