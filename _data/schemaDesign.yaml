@@ -10,7 +10,7 @@ design:
   homepageURL: include('lang')
   licences: list(include('licence'))
   name: include('lang')
-  status: str()
+  status: str(required=False)
   administrations: list(include('administration'))
 
 licence:

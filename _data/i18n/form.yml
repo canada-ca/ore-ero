@@ -146,6 +146,26 @@ presets:
       howItWorks:
         en: Description on how it works
         fr: Description sur comment cela fonctionne
+  designStatus:
+    title:
+      en: Design use status
+      fr: Statut d'utilisation du design
+    label:
+      en: Status
+      fr: Statut
+    infobulle:
+      en: Select the design status from the drop-down field according to its use.
+      fr: Choisir le statut du design dans la liste ci-dessous, selon son utilisation.
+    options:
+      Used:
+        en: Original design
+        fr: Design original
+      Modified:
+        en: Modified version
+        fr: Version modifiée
+      Outdated:
+        en: Outdated design
+        fr: Design désuet
   homepageURL:
     title:
       en: Project Homepage
@@ -323,7 +343,7 @@ presets:
       fr: Statut
     infobulle:
       en: Select the project development status from the drop-down field according to its current life cycle stage.
-      fr: Choisir le status de développement du projet dans la liste ci-dessous, selon sa phase de cycle de vie.
+      fr: Choisir le statut de développement du projet dans la liste ci-dessous, selon sa phase de cycle de vie.
     options:
       alpha:
         en: Alpha

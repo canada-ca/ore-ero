@@ -57,6 +57,7 @@ function getDesignObject() {
       en: $('#enname').val(),
       fr: $('#frname').val()
     },
+    designStatus: $('#designStatus').val(),
     administrations: [
       {
         adminCode: getAdminCode(),

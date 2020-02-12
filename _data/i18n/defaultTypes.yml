@@ -23,3 +23,7 @@
   type:
     en: Medical
     fr: Médical
+- value: Industrial
+  type:
+    en: Industrial
+    fr: Industriel
