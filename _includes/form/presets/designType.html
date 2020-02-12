@@ -18,6 +18,9 @@
         <div class="{{ title1 }}Select more-group-id-replace">
             <select class="form-control" id="{{ title1 }}" name="{{ title1 }}" required="required">
               <option value="">&nbsp;</option>
+              {%- for defaultType in site.data.i18n.defaultTypes -%}
+              <option value="{{ defaultType.value }}">{{ defaultType.type[page.lang] }}</option>
+              {%- endfor -%}
               {%- assign design_arr = "" | split: ',' -%}
               {%- for design in site.data.design -%}
                 {%- for ntype in design[1].designTypes -%}
