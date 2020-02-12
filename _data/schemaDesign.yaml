@@ -18,10 +18,8 @@ licence:
   spdxID: str()
   
 designType:
-  designType: str()
-  newType:
-    en: list(str())
-    fr: list(str())
+  value: str()
+  type: include('lang')
 
 administration:
   adminCode: str()

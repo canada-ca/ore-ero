@@ -2,7 +2,7 @@
   global
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  getTagsEN getTagsFR resetTags addTags
+  addTypes resetTypes
   submitInit submitConclusion
   getAdminObject getAdminCode hideNewAdminForm slugify
   addMoreLicences resetMoreGroup fillLicenceField
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
-    resetTags();
+    resetTypes();
     hideNewAdminForm();
     resetMoreGroup($('#addMorelicences'));
   });
@@ -47,7 +47,7 @@ function getDesignObject() {
         fr: $('#frdescriptionwhatItDoes').val()
       }
     },
-    category: $('#category :selected').val(),
+    designTypes: [],
     homepageURL: {
       en: $('#enhomepageURL').val(),
       fr: $('#frhomepageURL').val()
@@ -56,10 +56,6 @@ function getDesignObject() {
     name: {
       en: $('#enname').val(),
       fr: $('#frname').val()
-    },
-    tags: {
-      en: getTagsEN(),
-      fr: getTagsFR()
     },
     administrations: [
       {
@@ -81,7 +77,7 @@ function getDesignObject() {
 
   // More-groups
   addMoreLicences(designObject);
-
+  addTypes(designObject);
   // Optional fields
   if (
     $('#endescriptionhowItWorks').val() ||
@@ -410,11 +406,10 @@ function resetFieldsDesign() {
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
   $('#frdescriptionhowItWorks').val('');
-  $('#category').val('');
   $('#enhomepageURL').val('');
   $('#frhomepageURL').val('');
   resetMoreGroup($('#addMorelicences'));
-  resetTags();
+  resetTypes();
 }
 
 function selectAdmin() {

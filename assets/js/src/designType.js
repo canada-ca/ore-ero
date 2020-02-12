@@ -1,4 +1,4 @@
-/* exported getTypeEN getTypeFR addType resetType */
+/* exported resetTypes addTypes*/
 $(document).ready(function() {
   $('.add-more-group#addMoredesignType').on(
     'click',
@@ -12,33 +12,31 @@ $(document).ready(function() {
   $('#addMoredesignType').on('click', '.newTypeButton button', function() {
       let index = getmoreIndex($(this));
       if (!$('#newType' + index).hasClass('hide')) {
-        removeType(index);
+        hideType(index);
+        resetType(index);
       } else {
         addType(index);
-    }});
-    $('#addMoredesignType').on(
+  }});
+  $('#addMoredesignType').on(
       'click',
       '.newTypeButtonRemove button',
       function() {
       let index = getmoreIndex($(this));
-      removeType(index);
+      hideType(index);
+      resetType(index);
   });
   $('#addMoredesignType').on(
     'change',
     '.designTypeSelect select', function() {
     let index = getmoreIndex($(this));
-    if (($('#designType' + index).val() != '') && (!$('#newType' + index).hasClass('hide'))) {
-      removeType(index);
+    if ($('#designType' + index).val() != '') {
+      selectType($('#designType' + index).val(), index);
+      if (!$('#newType' + index).hasClass('hide')) {
+        hideType(index);
+      }
     }
   });
 });
-function getnewTypeEN() {
-    return getType($('#newTypeEN input'));
-  }
-  
-  function getnewTypeFR() {
-    return getType($('#newTypeFR input'));
-  }
   
   function getType(query) {
     return $(query)
@@ -47,15 +45,43 @@ function getnewTypeEN() {
       })
       .get();
   }
-  function removeType(index) {
+
+  function addTypes(designObject) {
+    $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
+        let id =
+          $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+        designObject.designTypes[i] = {
+          value: $('#newTypeEN' + id).val(),
+          type: {
+            en: $('#newTypeEN' + id).val(),
+            fr: $('#newTypeFR' + id).val()
+          }
+        };
+    });
+  }
+
+  function hideType(index) {
     $('#newType' + index).addClass('hide');
     $('#designType' + index).attr('required', 'required');
     $('#ennewType' + index).removeAttr('required');
     $('#frnewType' + index).removeAttr('required');
-    resetTypes();
+  }
+
+  function resetTypes() {
+    $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
+      let id =
+        $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+      $('#designType' + id)
+      .prop('selectedIndex', 0)
+      .change();
+      resetType(id);
+      hideType(id);
+      }
+    );
   }
 
   function addType(index) {
+    resetType(index);
     $('#newType' + index).removeClass('hide');
     $('#designType' + index).removeAttr('required');
     $('#designType' + index)
@@ -63,31 +89,6 @@ function getnewTypeEN() {
       .change();
     $('#ennewType' + index).attr('required', 'required');
     $('#frnewType' + index).attr('required', 'required');
-  }
-  function addTypes(obj) {
-    if (obj.types) {
-      resetTypes();
-      let index = 0;
-      obj.types.en.forEach(function(type) {
-        if (index == 0) $('#ennewType').val(type);
-        else
-          typeObject('ennewType' + index, type)
-            .addClass('additional-type')
-            .appendTo('#newTypeEN');
-        index++;
-      });
-      index = 0;
-      obj.types.fr.forEach(function(type) {
-        if (index == 0) $('#frnewType').val(type);
-        else
-          typeObject('frnewType' + index, type)
-            .addClass('additional-type')
-            .appendTo('#newTypeFR');
-        index++;
-      });
-    } else {
-      resetTypes();
-    }
   }
 
   function getmoreIndex(element) {
@@ -97,43 +98,28 @@ function getnewTypeEN() {
     return nb != 0 ? nb : '';
   }
   
-  
-  function resetTypes() {
-    $('#ennewType').val('');
-    $('#frnewType').val('');
-  }
-  
-  function typeObject(id, value) {
-    return $(`<div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="${id}" name="type" value="${value}" class="form-control">
-      <div class="input-group-btn">
-        <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
-      </div>
-    </div>`);
-  }
-  
-  $(document).ready(function() {
-    $('.add-more').click(function() {
-      addMoreTagsHtml('#newTypeEN');
-      addMoreTagsHtml('#newTypeFR');
-    });
-  
-    $('body').on('click', '.remove', function() {
-      $(this)
-        .parents('.control-group')
-        .remove();
-    });
+  function selectType(selectedType, index) {
+    $.getJSON('http://localhost:4000/ore-ero/design.json', function(
+    result
+  ) {
+    let found = false;
+    for (let id = 0; i < result.length; id++) {
+      for (let typeId = 0; i < result[id].designTypes.length; typeId++) {
+        if (found = (design[id].designTypes[typeId].value == selectedType)) {
+          $('#ennewType' + index).val(result[id].designTypes[typeId].type.en);
+          $('#frnewType' + index).val(result[id].designTypes[typeId].type.fr);
+          break;
+        }
+      }
+    }
+    if (!found) {
+      alert('Error retrieving the data');
+    }
   });
-  
-  function addMoreTypesHtml(to) {
-    $(
-      typeObject(
-        '_' +
-          Math.random()
-            .toString(36)
-            .substr(2, 9),
-        ''
-      ).addClass('additional-type')
-    ).appendTo(to);
+  }
+
+  function resetType(index) {
+    $('#ennewType' + index).val('');
+    $('#frnewType' + index).val('');
   }
   

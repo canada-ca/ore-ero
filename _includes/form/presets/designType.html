@@ -18,18 +18,16 @@
         <div class="{{ title1 }}Select more-group-id-replace">
             <select class="form-control" id="{{ title1 }}" name="{{ title1 }}" required="required">
               <option value="">&nbsp;</option>
-              <!-- To fill later -->
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <!--               -->
+              {%- assign design_arr = "" | split: ',' -%}
               {%- for design in site.data.design -%}
-                {%- for type in design.types -%}
-                <option value="{{ type[1] }}">{{ type[1][page.lang] }}</option>
+                {%- for ntype in design[1].designTypes -%}
+                {%- assign design_arr = design_arr | push: ntype -%}
+                {%- assign design_arr = design_arr | uniq -%}
                 {%- endfor %}
               {%- endfor %}
+              {%- for design in design_arr -%}
+              <option value="{{ design.value }}">{{ design.type[page.lang] }}</option>
+              {%- endfor -%}
             </select>
           </div> 
         </div>
