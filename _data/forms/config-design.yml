@@ -24,3 +24,5 @@ formGroups:
     title: date
     param: {type: date, rule: dateISO}
   - preset: designStatus
+  - preset: empty
+  - preset: empty
