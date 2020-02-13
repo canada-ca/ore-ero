@@ -99,7 +99,7 @@ $(document).ready(function() {
   }
   
   function selectType(selectedType, index) {
-    $.getJSON('http://localhost:4000/ore-ero/design.json', function(
+    $.getJSON('https://github.com/canada-ca/ore-ero/design.json', function(
     result
   ) {
     let found = false;

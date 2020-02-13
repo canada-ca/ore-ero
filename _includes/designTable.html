@@ -160,6 +160,7 @@
                 </div>
               </div>
             {%- endfor -%}
+            <p><strong>{{ site.data.i18n.tables.homepage[page.lang] }}</strong>: <a href="{{ design.homepageURL[page.lang] }}"­>{{ design.homepageURL[page.lang] }}</a></p>
             {%- if design.designStatus != nil -%}
               <p><strong>{{ site.data.i18n.tables.designStatus[page.lang] }}</strong>: {{ design.designStatus[page.lang] }}</p>
             {%- endif -%}
