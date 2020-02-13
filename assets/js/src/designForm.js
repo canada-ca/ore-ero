@@ -2,7 +2,7 @@
   global
   YamlWriter jsyaml
   USERNAME REPO_NAME PRBOT_URL
-  addTypes resetTypes
+  addTypes resetTypes fillTypeFields
   submitInit submitConclusion
   getAdminObject getAdminCode hideNewAdminForm slugify
   addMoreLicences resetMoreGroup fillLicenceField
@@ -96,7 +96,7 @@ function getDesignObject() {
     ).val();
   }
   if ($('#designStatus').val()) {
-    designObject.designStatus =  $('#designStatus').val();
+    designObject.designStatus = $('#designStatus').val();
   }
 
   if ($('#contactname').val()) {
@@ -357,9 +357,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
-    result
-  ) {
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
     if (result[value]) {
       addValueToFieldsDesign(result[value]);
       $('#adminCode').focus();
@@ -390,12 +388,13 @@ function addValueToFieldsDesign(obj) {
     if (obj.description.howItWorks.fr)
       $('#frdescriptionhowItWorks').val(obj.description.howItWorks.fr);
   }
-
-  $('#category').val(obj.category);
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
+  if (obj.designStatus) {
+    $('#designStatus').val(obj.designStatus);
+  }
+  fillTypeFields(obj.designTypes);
   fillLicenceField(obj.licences);
-  addTags(obj);
 }
 
 function resetFieldsDesign() {
@@ -413,14 +412,13 @@ function resetFieldsDesign() {
   $('#frhomepageURL').val('');
   resetMoreGroup($('#addMorelicences'));
   resetTypes();
+  $('#designStatus').prop('selectedIndex', 0);
 }
 
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
-    result
-  ) {
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {
