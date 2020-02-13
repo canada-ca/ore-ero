@@ -17,6 +17,9 @@ designTypes:
     type:
       en: B
       fr: B
+designStatus:
+  en: Modified version
+  fr: Version modifiée
 homepageURL:
   en: 'https://airflow.apache.org/'
   fr: 'https://airflow.apache.org/'

@@ -15,6 +15,9 @@ designTypes:
     type:
       en: Platform
       fr: Plateforme
+designStatus:
+  en: Original design
+  fr: Design original
 homepageURL:
   en: 'https://airbnb.io/projects/knowledge-repo/'
   fr: 'https://airbnb.io/projects/knowledge-repo/'
