@@ -104,7 +104,9 @@ function getmoreIndex(element) {
 
 function selectType(selectedType, index) {
   $('#ennewType' + index).val(selectedType);
-  $('#frnewType' + index).val($('#option' + $('#designType').prop('selectedIndex')).data("fr"));
+  $('#frnewType' + index).val(
+    $('#option' + $('#designType').prop('selectedIndex')).data('fr')
+  );
 }
 
 function resetType(index) {
