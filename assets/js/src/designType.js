@@ -103,31 +103,8 @@ function getmoreIndex(element) {
 }
 
 function selectType(selectedType, index) {
-  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
-    let found = false;
-    let designs = Object.keys(result);
-    for (let id = 0; id < designs.length; id++) {
-      for (
-        let typeId = 0;
-        typeId < result[designs[id]].designTypes.length;
-        typeId++
-      ) {
-        if (result[designs[id]].designTypes[typeId].value == selectedType) {
-          $('#ennewType' + index).val(
-            result[designs[id]].designTypes[typeId].type.en
-          );
-          $('#frnewType' + index).val(
-            result[designs[id]].designTypes[typeId].type.fr
-          );
-          found = true;
-          break;
-        }
-      }
-    }
-    if (!found) {
-      alert('Error retrieving the data');
-    }
-  });
+  $('#ennewType' + index).val(selectedType);
+  $('#frnewType' + index).val($('#option' + $('#designType').prop('selectedIndex')).data("fr"));
 }
 
 function resetType(index) {
