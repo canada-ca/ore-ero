@@ -7,7 +7,7 @@
         <form class="wb-tables-filter" data-bind-to="dataset-filter">
           <div class="form-group">
             <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
-            <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="6">
+            <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
               <option value="">&nbsp;</option>
               {%- for govLevel in site.data.i18n.administrations -%}
               <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
@@ -52,6 +52,16 @@
             </select>
           </div>
 
+          <div class="form-group">
+            <label for="dt_type">Design Status</label>
+            <select class="form-control" id="dt_type" name="dt_type" data-column="6">
+              <option value="">&nbsp;</option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Used[page.lang]}}">{{ site.data.i18n.form.presets.designStatus.options.Used[page.lang] }}</option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Modified[page.lang]}}"> {{site.data.i18n.form.presets.designStatus.options.Modified[page.lang]}} </option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Outdated[page.lang]}}"> {{site.data.i18n.form.presets.designStatus.options.Outdated[page.lang]}} </option>
+            </select>
+          </div>
+
           <div class="row">
             <div class="col-xs-6">
               <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
@@ -67,7 +77,7 @@
     
     <!-- Data Table -->
     <div class="col-md-9 mrgn-bttm-lg">
-      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [5,6], "visible": false}], "paging": true}'>
+      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [5,6,7], "visible": false}], "paging": true}'>
         <thead>
           <tr>
             <th>{{ site.data.i18n.tables.design[page.lang] }}</th>
@@ -76,6 +86,7 @@
             <th>{{ site.data.i18n.tables.designType[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.usage[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.homepage[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.designStatus[page.lang]}}</th>
             <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
           </tr>
         </thead>
@@ -102,6 +113,7 @@
               </td>
               <td>{{ design.administrations.size }}</td>
               <td><a href="{{ design.homepageURL[page.lang] }}" target="_blank">{{ design.homepageURL[page.lang] | remove: "https://" | rstrip }}</a></td>
+              <td>design.designStatus</td>
               <td>
                 {%- for administration in design.administrations -%}
                 {%- for levels in site.data.i18n.administrations -%}
