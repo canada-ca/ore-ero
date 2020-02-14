@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Specify processes the data associated with specimens in biological
+      research collections.
+    fr: >-
+      Spécifier traite les données associées aux spécimens dans les collections
+      de recherche biologique.
+category: '43232600'
+homepageURL:
+  en: 'https://www.sustain.specifysoftware.org/'
+  fr: 'https://www.sustain.specifysoftware.org/'
+licences:
+  - URL:
+      en: 'https://github.com/specify/specify7/blob/master/LICENSE'
+      fr: 'https://github.com/specify/specify7/blob/master/LICENSE'
+    spdxID: GPL-2.0-only
+name:
+  en: Specify
+  fr: Specify
+tags:
+  en:
+    - Data
+  fr:
+    - Données
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Netscape Portable Runtime (NSPR) provides a platform-neutral API for
+      system level and libc-like functions.
+    fr: >-
+      Netscape Portable Runtime (NSPR) fournit une API indépendante de la
+      plate-forme pour les fonctions de niveau système et de type libc.
+category: '43233400'
+homepageURL:
+  en: 'https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR'
+  fr: 'https://developer.mozilla.org/fr/docs/NSPR'
+licences:
+  - URL:
+      en: 'https://hg.mozilla.org/projects/nspr/file/tip/LICENSE'
+      fr: 'https://hg.mozilla.org/projects/nspr/file/tip/LICENSE'
+    spdxID: MPL-2.0
+name:
+  en: Netscape Portable Runtime
+  fr: Netscape Portable Runtime
+tags:
+  en:
+    - API
+  fr:
+    - API
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-31'
