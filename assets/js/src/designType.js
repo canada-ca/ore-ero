@@ -46,7 +46,6 @@ function addTypes(designObject) {
   $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
     let id = getmoreIndex($(this));
     designObject.designTypes[i] = {
-      value: $('#newTypeEN' + id).val(),
       type: {
         en: $('#newTypeEN' + id).val(),
         fr: $('#newTypeFR' + id).val()
@@ -75,14 +74,14 @@ function resetTypes() {
 }
 
 function fillTypeFields(designTypes) {
-  designTypes.forEach(function(type, i) {
+  designTypes.forEach(function(designType, i) {
     let id;
     if (i == 0) id = '';
     else {
       id = i;
       addMoreGroup($('#addMoredesignType'));
     }
-    $('#designType' + id).val(type.value);
+    $('#designType' + id).val(designType.type.en);
   });
 }
 

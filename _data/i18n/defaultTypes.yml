@@ -1,29 +1,24 @@
 ---
-- value: Architecture
-  type:
+- type:
     en: Architecture
     fr: Architecture
 
-- value: Furniture
-  type:
+- type:
     en: Furniture
     fr: Mobilier
 
-- value: Software
-  type:
+- type:
     en: Software
     fr: Logiciel
 
-- value: Hardware
-  type:
+- type:
     en: Hardware
     fr: Matériel
   
-- value: Medical
-  type:
+- type:
     en: Medical
     fr: Médical
-- value: Industrial
-  type:
+
+- type:
     en: Industrial
     fr: Industriel
