@@ -13,8 +13,6 @@ formGroups:
   - preset: tags
   - preset: homepageURL
     param: {type: url}
-  - preset: licences
-    param: {more: true}
   - preset: team
   - preset: empty
     title: uses
