@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      VLC media player is a free and open-source portable cross-platform media
+      player software and streaming media server developed by the VideoLAN
+      project.
+    fr: >-
+      VLC media player est un logiciel de lecture multimédia portable
+      multiplateforme gratuit et open source et un serveur multimédia en
+      streaming développé par le projet VideoLAN.
+category: '43233400'
+homepageURL:
+  en: 'https://www.videolan.org/vlc/'
+  fr: 'https://www.videolan.org/index.fr.html'
+licences:
+  - URL:
+      en: 'https://github.com/videolan/vlc/blob/master/COPYING'
+      fr: 'https://github.com/videolan/vlc/blob/master/COPYING'
+    spdxID: GPL-2.0-only
+name:
+  en: VLC Media Player
+  fr: VLC Media Player
+tags:
+  en:
+    - Video
+  fr:
+    - Video
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'

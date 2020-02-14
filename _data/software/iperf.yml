@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      iPerf is a tool for active measurements of the maximum achievable
+      bandwidth on IP networks. 
+    fr: >-
+      iPerf est un outil de mesure active de la bande passante maximale
+      réalisable sur les réseaux IP.
+category: '43232900'
+homepageURL:
+  en: 'https://iperf.fr/'
+  fr: 'https://iperf.fr/'
+licences:
+  - URL:
+      en: 'https://github.com/esnet/iperf/blob/master/LICENSE'
+      fr: 'https://github.com/esnet/iperf/blob/master/LICENSE'
+    spdxID: BSD-3-Clause
+name:
+  en: iPerf
+  fr: iPerf
+tags:
+  en:
+    - Bandwidth
+  fr:
+    - Bandwidth
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'

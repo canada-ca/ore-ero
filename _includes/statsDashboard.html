@@ -1,0 +1,93 @@
+<section>
+  <h2>{{ site.data.i18n.general.stats.projects[page.lang] }}</h2>
+
+  {%- for govLevels in site.data.code -%}
+    {%- assign govLevel = govLevels[0] -%}
+    
+    {%- if govLevels[1].size > 0 -%}
+      <section>
+        <table class="wb-charts wb-charts-bar table">
+          <caption>{{ site.data.i18n.administrations[govLevel][page.lang] }}</caption>
+          <thead>
+            <tr>
+              <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+              <th>#</th>
+            </tr>
+          </thead>
+          <tbody>
+              {%- for admin in govLevels[1] -%}
+              <tr>
+                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                <th>{{ administration[0].name[page.lang] }}</th>
+                {%- assign projectCount = admin[1].releases.size -%}
+                <td>{{ projectCount }}</td>
+              </tr>
+              {%- endfor -%}
+          </tbody>
+        </table>
+      </section>
+      {%- endif -%}
+    {%- endfor -%}
+</section>
+
+<section>
+  <h2>{{ site.data.i18n.general.stats.software[page.lang] }}</h2>
+  {% comment %} ===Build View of Administrations=== {% endcomment %}
+
+  {%- assign governanceString = "" -%}
+  {%- for adminData in site.data.administrations -%}
+
+    {%- assign adminString = "" -%}
+    {%- assign govLevel = adminData[0] -%}
+    
+    {%- for gov in adminData[1] -%} 
+
+      {%- assign counter = 0 -%}
+      {%- assign govcode = gov.code -%}
+
+      {%- for softwares in site.data.software -%}
+        {%- assign software = softwares[1] -%}
+        {%- for administration in software.administrations -%}
+          {%- if administration.adminCode == govcode -%}
+            {%- assign counter = counter | plus: 1  -%}
+          {%- endif -%}
+        {% endfor %}
+      {%- endfor -%}
+
+      {%- if counter != 0 -%}
+        {%- assign adminString = adminString | append: gov.code | append: ":" | append: counter | append: "," -%}
+      {%- endif -%}
+
+    {%- endfor -%}
+    
+    {% comment %} ===Build Array of Administrations=== {% endcomment %}
+
+    {%- assign adminValues = adminString | split: "," -%}
+
+    {%- if adminValues.size != 0 -%}
+    <section>
+      <table class="wb-charts wb-charts-bar table">
+        <caption>{{ site.data.i18n.administrations[govLevel][page.lang] }}</caption>
+        <thead>
+          <tr>
+            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+            <td>#</td>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for av in adminValues -%}
+            {%- assign ev = av | split: ":" -%}
+            {%- assign administration = site.data.administrations[govLevel] | where: "code", ev[0] -%}
+            <tr>
+              <th>{{ administration[0].name[page.lang] }}</th>
+              <td>{{ev[1]}}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </section>
+    {%- endif -%}
+
+  {%- endfor -%}
+
+</section>

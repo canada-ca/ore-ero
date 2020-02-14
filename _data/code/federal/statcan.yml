@@ -9,8 +9,8 @@ releases:
       metadataLastUpdated: '2019-04-18'
     description:
       whatItDoes:
-        en: Centralize, process, and clean data
-        fr: Centraliser, traiter et nettoyer les données
+        en: 'Centralize, process, and clean data'
+        fr: 'Centraliser, traiter et nettoyer les données'
     category: '43232300'
     name:
       en: OpenTabulate
@@ -28,3 +28,46 @@ releases:
         - Data
       fr:
         - Données
+  - contact:
+      email: noreply@canada.ca
+      name: 'https://github.com/drupalwxt/wxt/issues/new'
+    date:
+      created: '2019-02-03'
+      metadataLastUpdated: '2020-01-31'
+    description:
+      whatItDoes:
+        en: >-
+          Drupal WxT leverages the WET-BOEW Framework and Drupal for building
+          innovative websites that are accessible, usable, interoperable,
+          mobile-friendly and multilingual.
+        fr: >-
+          Drupal WxT exploite le cadre WET-BOEW et Drupal pour créer des sites
+          Web innovants qui sont accessibles, utilisables, interopérables,
+          adaptés aux mobiles et multilingues.
+    category: '43232200'
+    name:
+      en: Drupal WxT
+      fr: Drupal WxT
+    licences:
+      - URL:
+          en: 'https://github.com/drupalwxt/wxt/blob/8.x-3.x/LICENSE.txt'
+          fr: 'https://github.com/drupalwxt/wxt/blob/8.x-3.x/LICENSE.txt'
+        spdxID: GPL-2.0-only
+    repositoryURL:
+      en: 'https://github.com/drupalwxt/wxt'
+      fr: 'https://github.com/drupalwxt/wxt'
+    tags:
+      en:
+        - Drupal
+      fr:
+        - Drupal
+    downloadURL:
+      en: 'https://github.com/drupalwxt/wxt/releases'
+      fr: 'https://github.com/drupalwxt/wxt/releases'
+    homepageURL:
+      en: 'https://drupalwxt.github.io/'
+      fr: 'https://drupalwxt.github.io/'
+    languages:
+      - PHP
+      - HTML
+    status: Maintained
