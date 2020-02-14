@@ -23,6 +23,7 @@ formGroups:
   - widget: string
     title: date
     param: {type: date, rule: dateISO}
-  - preset: designStatus
+  - preset: status
+    param: {design: true}
   - preset: empty
   - preset: empty
