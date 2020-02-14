@@ -68,6 +68,12 @@ nav:
     link:
       en: ./partnerships.html
       fr: ./partenariats.html
+  stats:
+    en: Metrics
+    fr: Métrique
+    link:
+      en: ./stats.html
+      fr: ./stats.html
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada
@@ -116,6 +122,14 @@ footer:
   Logo:
     en: Symbol of the Government of Canada
     fr: Symbole du gouvernement du Canada
+
+stats:
+  projects:
+    en: Data on Projects
+    fr: Données sur les projets
+  software:
+    en: Data on Software
+    fr: Données sur le logiciel
 
 language:
   en: English

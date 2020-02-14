@@ -88,6 +88,15 @@ presets:
     infobulle:
       en: Point of contact for general inquiries.
       fr: Coordonnées de la personne à contacter pour des informations générales.
+      email:
+        en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
+        fr: Une adresse courriel pour contacter le projet. Il devrait s'agir d'une adresse courriel à laquelle une personne-ressource peut être jointe directement.
+      name:
+        en: The name of a contact for the project.
+        fr: Le nom de la personne-ressource pour le projet.
+      phone:
+        en: The phone of the contact for the project
+        fr: Le nom de la personne-ressource à contacter.
     titles:
       email:
         en: Email address to contact the project. It should be an email address of where a contact can be directly reached.
@@ -139,6 +148,12 @@ presets:
     infobulle:
       en: Add brief descriptions on what the project does and how it works.
       fr: Ajoutez une brève description, expliquant de quoi il s'agit et comment cela fonctionne.
+      whatItDoes:
+        en: Description on what it does
+        fr: Description de ce dont it s'agit
+      howItWorks:
+        en: Description on how it works
+        fr: Description sur comment cela fonctionne
     titles:
       whatItDoes:
         en: Description on what it does
@@ -215,6 +230,9 @@ presets:
     infobulle:
       en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
       fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
+      spdxID:
+        en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
+        fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
     titles:
       URL:
         en: The English and French URLs of licence.
@@ -276,6 +294,15 @@ presets:
     infobulle:
       en: Contact information of each group partnering on the project.
       fr: Coordonnées de contact des groupes partenaires du projet.
+      adminCode:
+        en: The administration code for the partner.
+        fr: Le code de l'administration en partenariat au projet.
+      email:
+        en: The email address to contact the partner.
+        fr: L'adresse courriel pour contacter le partenaire.
+      name:
+        en: The name of the contact in the administration partnering on the project.
+        fr: Le nom du contact de l'administration en partenariat.
   provinceSelect: &provinceSelect
     title: &title
       en: Province
@@ -310,6 +337,12 @@ presets:
     infobulle:
       en: Add general information about each library, framework, API or other related software that is used in the project.
       fr: Ajouter des informations générales concernant chaque bibliothèque, plate-forme, API ou logiciel connexe utilisé dans le projet.
+      URL:
+        en: The english and french URLs of related software.
+        fr: L'URL anglais et francais d'un logiciel connexe.
+      name:
+        en: The english and french name of related software.
+        fr: Le nom d'un logiciel connexe en anglais et en francais.
     titles:
       URL:
         en: The english and french URLs of related software.
@@ -324,6 +357,9 @@ presets:
     label:
       en: ORE metadata schema version
       fr: Version du schéma de métadonnées de l'ERO
+    infobulle:
+      en: The version of the ORE metadata schema for open source code. This is currently version 1.0.
+      fr: La version du schéma de métadonnées ORE pour code soure ouvert. Il s'agit actuellement de la version 1.0.
   submitter:
     title:
       en: Submitter Contact Information
