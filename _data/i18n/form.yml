@@ -735,14 +735,14 @@ research:
       fr: Ajouter le nom de la recherche libre
   date:
     title:
-      en: Started using
-      fr: Date de début d'utilisation
+      en: Published date
+      fr: Date de publication
     label:
-      en: Started using
-      fr: Date de début d'utilisation
+      en: Published date
+      fr: Date de publication
     infobulle:
-      en: Select the date when the public administration started contributing to the research.
-      fr: Choisir la date lorsque l'administration publique a commencé à contribuer à la recherche.
+      en: Select the date when the research was published.
+      fr: Choisir la date lorsque la recherche a été publié.
   administrations: *administrations
   uses:
     title:
