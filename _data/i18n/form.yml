@@ -714,18 +714,18 @@ partnership:
 research:
   name:
     title:
-      en: Project Name
-      fr: Nom du projet
+      en: Research Name
+      fr: Nom de la recherche
     label:
       en:
-        en: English project name
-        fr: Nom du projet en anglais
+        en: English research Name
+        fr: Nom de la recherche en anglais
       fr:
-        en: French project name
-        fr: Nom du projet en français
+        en: French research Name
+        fr: Nom de la recherche en français
       schema:
-        en: Project Name
-        fr: Nom du projet
+        en: Research Name
+        fr: Nom de la recherche
     labels:
       select:
         en: If you wish to update information of a research that already exists in our library, please select it below
