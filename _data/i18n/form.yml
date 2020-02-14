@@ -751,4 +751,51 @@ research:
     infobulle:
       en: Information concerning the participations on this research
       fr: Information à propos des participations à cette recherche
-  
+  description:
+    title:
+      en: Description
+      fr: Description
+    labels:
+      whatItDoes:
+        subtitle:
+          en: Research subject
+          fr: Sujet de recherche
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Français
+        schema:
+          en: Research subject
+          fr: Sujet de recherche
+      howItWorks:
+        subtitle:
+          en: Abstract
+          fr: Résumé
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Français
+        schema:
+          en: Abstract
+          fr: Résumé
+    label:
+      schema:
+        en: Description
+        fr: Description
+    charactersLimit:
+      en: (200 characters limit)
+      fr: (limite de 200 caractères)
+    infobulle:
+      en: Add a brief description of the research.
+      fr: Ajoutez une brève description de la recherche.
+    titles:
+      whatItDoes:
+        en: Description of the research's subject
+        fr: Description du sujet de la recherche
+      howItWorks:
+        en: Description of the abstract's research 
+        fr: Description du résumé de la recherche

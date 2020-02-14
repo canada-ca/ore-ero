@@ -9,6 +9,7 @@ formGroups:
   - preset: adminCode
   - preset: selectResearch
   - preset: description
+    param: {model: true}
   - preset: category
   - preset: tags
   - preset: homepageURL
