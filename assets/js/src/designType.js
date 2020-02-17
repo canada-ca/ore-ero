@@ -45,20 +45,20 @@ $(document).ready(function() {
 function addTypes(designObject) {
   $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
     let id = getmoreIndex($(this));
-    if ($('#designType' + id).val() == '') {
+    let selectedIndex = $('#designType' + id).prop('selectedIndex');
+    let index = selectedIndex == 0 ? '' : selectedIndex;
+    if (selectedIndex == 0) {
       designObject.designTypes[i] = {
         type: {
-          en: $('#newTypeEN' + id).val(),
-          fr: $('#newTypeFR' + id).val()
+          en: $('#ennewType' + id).val(),
+          fr: $('#frnewType' + id).val()
         }
       };
     } else {
       designObject.designTypes[i] = {
         type: {
           en: $('#designType' + id).val(),
-          fr: $('#option' + $('#designType' + id).prop('selectedIndex')).data(
-            'fr'
-          )
+          fr: $('#option' + index).data('fr')
         }
       };
     }
