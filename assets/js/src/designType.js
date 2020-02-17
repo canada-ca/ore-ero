@@ -46,7 +46,6 @@ function addTypes(designObject) {
   $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
     let id = getmoreIndex($(this));
     let selectedIndex = $('#designType' + id).prop('selectedIndex');
-    let index = selectedIndex == 0 ? '' : selectedIndex;
     if (selectedIndex == 0) {
       designObject.designTypes[i] = {
         type: {
@@ -58,7 +57,9 @@ function addTypes(designObject) {
       designObject.designTypes[i] = {
         type: {
           en: $('#designType' + id).val(),
-          fr: $('#option' + index).data('fr')
+          fr: $('#option' + (selectedIndex == 0 ? '' : selectedIndex)).data(
+            'fr'
+          )
         }
       };
     }
