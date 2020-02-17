@@ -6,6 +6,8 @@
 
       {%- if page.ref == 'codeForm' or page.ref == 'codeGroups' or page.ref == 'codeSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.code.link[page.lang] }}">{{ site.data.i18n.general.nav.code[page.lang] }}</a></li>
+      {%- elsif page.ref == 'designForm' or page.ref == 'designSchema' -%}
+        <li><a href="{{ site.data.i18n.general.nav.design.link[page.lang] }}">{{ site.data.i18n.general.nav.design[page.lang] }}</a></li>
       {%- elsif page.ref == 'softwareForm' or page.ref == 'softwareSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.software.link[page.lang] }}">{{ site.data.i18n.general.nav.software[page.lang] }}</a></li>
       {%- elsif page.ref == 'standardForm' or page.ref == 'standardSchema' -%}

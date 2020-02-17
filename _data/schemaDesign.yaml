@@ -1,0 +1,38 @@
+---
+include('design', strict=True)
+---
+design:
+  schemaVersion: str()
+  description:
+    whatItDoes: include('lang')
+    howItWorks: include('lang', required=False)
+  designTypes: list(include('designType'))
+  homepageURL: include('lang')
+  licences: list(include('licence'))
+  name: include('lang')
+  status: str(required=False)
+  administrations: list(include('administration'))
+
+licence:
+  URL: include('lang')
+  spdxID: str()
+  
+designType:
+  type: include('lang')
+
+administration:
+  adminCode: str()
+  uses: list(include('use'))
+
+use:
+  contact:
+    email: str()
+    name: str(required=False)
+  date:
+    started: str()
+    metadataLastUpdated: str()
+  team: include('lang', required=False)
+
+lang:
+  en: str()
+  fr: str()

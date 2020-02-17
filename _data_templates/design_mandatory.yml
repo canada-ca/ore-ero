@@ -1,0 +1,30 @@
+---
+schemaVersion: '1.0'
+adminCode: abc-def
+releases:
+  - contact:
+      email: abc@xyz.com
+    date:
+      created: 'YYYY-MM-DD'
+      metadataLastUpdated: 'YYYY-MM-DD'
+    description:
+      whatItDoes:
+        en: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        fr: Quisque bibendum ante ligula, porta vestibulum enim egestas vel.
+    category: '12345678'
+    name:
+      en: Example
+      fr: Exemple
+    licences:
+      - URL:
+          en: 'https://example.com/repo/example/LICENCE-en'
+          fr: 'https://example.com/repo/example/LICENCE-fr'
+        spdxID: XYZ-1.0
+    repositoryURL:
+      en: 'https://example.com/repo/example'
+      fr: 'https://example.com/repo/example'
+    tags:
+      en:
+        - tag1-en
+      fr:
+        - tag1-fr
