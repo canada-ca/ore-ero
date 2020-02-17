@@ -35,6 +35,7 @@ $(document).ready(function() {
     resetTags();
     hideNewAdminForm();
     resetMoreGroup($('#addMorelicences'));
+    resetMoreGroup($('#addMoreuses'));
   });
 });
 
