@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: a
+    fr: a
+designTypes:
+  - type:
+      en: Information
+      fr: Information
+  - type:
+      en: Business
+      fr: Entreprise
+  - type:
+      en: Application
+      fr: Application
+homepageURL:
+  en: 'http://a.ca'
+  fr: 'http://a.ca'
+licences:
+  - URL:
+      en: 'http://a.ca'
+      fr: 'http://a.ca'
+    spdxID: 0BSD
+name:
+  en: a
+  fr: a
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: a@a.ca
+        date:
+          started: '2020-02-17'
+          metadataLastUpdated: '2020-02-17'
