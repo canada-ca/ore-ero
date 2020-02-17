@@ -1,0 +1,30 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Making sure design fields is transmitted properly
+    fr: Vérifie que le champ designType est bien transmit
+designTypes:
+  - type:
+      en: ''
+      fr: ''
+homepageURL:
+  en: 'http://test.ca'
+  fr: 'http://test.ca'
+licences:
+  - URL:
+      en: 'http://test.ca'
+      fr: 'http://test.ca'
+    spdxID: 0BSD
+name:
+  en: Test1
+  fr: Test1
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: 1@test.ca
+        date:
+          started: '2020-02-17'
+          metadataLastUpdated: '2020-02-17'
+designStatus: Original design
