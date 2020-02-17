@@ -1,0 +1,48 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: a
+    fr: a
+designTypes:
+  - type:
+      en: Business
+      fr: Entreprise
+  - type:
+      en: Information
+      fr: Information
+  - type:
+      en: Application
+      fr: Application
+  - type:
+      en: Technology
+      fr: Technologie
+  - type:
+      en: Security & Privacy
+      fr: Sécurité et confidentialité
+  - type:
+      en: Hardware
+      fr: Matériel
+  - type:
+      en: !<tag:yaml.org,2002:js/undefined> ''
+      fr: !<tag:yaml.org,2002:js/undefined> ''
+homepageURL:
+  en: 'http://test.ca'
+  fr: 'http://test.ca'
+licences:
+  - URL:
+      en: 'http://test.ca'
+      fr: 'http://test.ca'
+    spdxID: 0BSD
+name:
+  en: Test
+  fr: Test
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: a@1.ca
+        date:
+          started: '2020-02-17'
+          metadataLastUpdated: '2020-02-17'
+designStatus: Outdated design
