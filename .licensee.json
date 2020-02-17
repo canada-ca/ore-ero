@@ -9,11 +9,9 @@
   },
   "packages": {
     "deep-is": "=0.1.3",
+    "querystring":"0.2.0",
+    "json-schema":"0.2.3",
     "docopt": "=0.6.2",
     "prelude-ls": "=1.1.2"
-  },
-  "ignore": [
-    {"prefix": "querystring"},
-    {"prefix": "json-schema"}
-  ]
+  }
 }
