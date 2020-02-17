@@ -4,9 +4,9 @@
   USERNAME REPO_NAME PRBOT_URL
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
-  getAdminObject getAdminCode getSelectedOrgType getOrgLevel
+  getAdminObject getAdminCode getSelectedOrgType getOrgLevel hideNewAdminForm
   resetMoreGroup
-  addMorePartners getNewAdminPartnerPromise fillPartnersField
+  addMorePartners getNewAdminPartnerPromise fillPartnersField resetPartners
   getToday
 */
 
@@ -31,6 +31,8 @@ $(document).ready(function() {
   $('#formReset').click(function() {
     $('#validation').trigger('reset');
     resetTags();
+    hideNewAdminForm();
+    resetPartners();
   });
 });
 

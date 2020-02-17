@@ -38,3 +38,47 @@ releases:
         - Routes
     languages:
       - Python
+  - contact:
+      email: yves.pelletier2@canada.ca
+      name: Yves Pelletier
+    date:
+      created: '2009-05-05'
+      metadataLastUpdated: '2020-01-31'
+    description:
+      whatItDoes:
+        en: >-
+          libECBUFR was developed to provide a uniform BUFR API and library
+          across the various meteorological and IT components of Environment
+          Canada that encode or decode BUFR.
+        fr: >-
+          libECBUFR a été développé pour fournir une API BUFR et une
+          bibliothèque uniformes à travers les divers composants météorologiques
+          et informatiques d'Environnement Canada qui codent ou décodent BUFR.
+    category: '43232600'
+    name:
+      en: libECBUFR
+      fr: libECBUFR
+    licences:
+      - URL:
+          en: >-
+            https://bazaar.launchpad.net/~libecbufr-dev/libecbufr/trunk/view/head:/COPYING
+          fr: >-
+            https://bazaar.launchpad.net/~libecbufr-dev/libecbufr/trunk/view/head:/COPYING
+        spdxID: GPL-3.0-only
+    repositoryURL:
+      en: 'https://code.launchpad.net/libecbufr'
+      fr: 'https://code.launchpad.net/libecbufr'
+    tags:
+      en:
+        - API
+      fr:
+        - API
+    downloadURL:
+      en: 'https://launchpad.net/libecbufr/+download'
+      fr: 'https://launchpad.net/libecbufr/+download'
+    homepageURL:
+      en: 'https://launchpad.net/libecbufr'
+      fr: 'https://launchpad.net/libecbufr'
+    languages:
+      - C
+    status: Maintained

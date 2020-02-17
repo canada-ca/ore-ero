@@ -1,6 +1,5 @@
 /* global  jsyaml slugify addMoreGroup */
-/* exported fillPartnersField getNewAdminPartnerPromise addMorePartners */
-
+/* exported fillPartnersField getNewAdminPartnerPromise addMorePartners resetPartners */
 $(document).ready(function() {
   // More-group overwrite for partner
   $('.add-more-group#addMorepartners').on(
@@ -9,7 +8,7 @@ $(document).ready(function() {
     function() {
       let length = $('#addMorepartners ul li').length;
       let index = length == 1 ? '' : length - 1;
-      hideFieldsPartner(index);
+      $('#partnersNewAdmin' + index).addClass('hide');
     }
   );
 
@@ -22,13 +21,21 @@ $(document).ready(function() {
     }
   );
   $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
+    let index = getmoreIndex($(this));
     addNewPartner(this);
+    if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
+      $('#partnersNewAdmin' + index).addClass('hide');
+    } else {
+      $('#partnersNewAdmin' + index).removeClass('hide');
+    }
   });
   $('#addMorepartners').on(
     'click',
     '.partnersAdminCodeRemove button',
     function() {
       removeNewPartner(this);
+      let index = getmoreIndex($(this));
+      $('#partnersNewAdmin' + index).addClass('hide');
     }
   );
   $('#addMorepartners').on('change', '.orgLevelPartner select', function() {
@@ -298,4 +305,13 @@ function getAdminObjectForPartner(obj, admin) {
           level: administrations[i],
           values: obj[administrations[i]][j]
         };
+}
+
+function resetPartners() {
+  let count = $('#addMorepartners ul li').length - 1;
+  for (let index = count; index > 0; index--) {
+    $('#addMorepartners ul li')[index].remove();
+  }
+  $('.btn-tabs-more-remove').addClass('invisible');
+  $('#partnersNewAdmin').addClass('hide');
 }

@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      PyDev is a Python IDE for Eclipse, which may be used in Python, Jython and
+      IronPython development.
+    fr: >-
+      PyDev est un IDE Python pour Eclipse, qui peut être utilisé dans le
+      développement Python, Jython et IronPython.
+category: '43232400'
+homepageURL:
+  en: 'http://www.pydev.org/'
+  fr: 'http://www.pydev.org/'
+licences:
+  - URL:
+      en: 'https://github.com/fabioz/Pydev/blob/master/LICENSE.txt'
+      fr: 'https://github.com/fabioz/Pydev/blob/master/LICENSE.txt'
+    spdxID: EPL-1.0
+name:
+  en: PyDev
+  fr: PyDev
+tags:
+  en:
+    - IDE
+  fr:
+    - IDE
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

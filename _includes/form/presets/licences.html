@@ -6,9 +6,12 @@
     {% include form/components/label-group.html id=include.idPreset title=title group="spdxID" %}
     <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
       <option value="">&nbsp;</option>
-      {%- for licence in site.data.i18n.licences -%}
-      <option value="{{ licence[1].value }}">{{ licence[1].value }}</option>
-      {%- endfor %}
+      {%- assign licence_arr = site.data.spdx.json.licenses.licenses | where:"isDeprecatedLicenseId","false" -%}
+      {%- for licence in licence_arr -%}
+        {%- if licence.isOsiApproved == true or licence.isFsfLibre == true -%}
+        <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
+        {%- endif -%}
+      {%- endfor -%}
     </select>
   </div>
 {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
