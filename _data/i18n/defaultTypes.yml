@@ -1,24 +1,24 @@
 ---
 - type:
-    en: Architecture
-    fr: Architecture
+    en: Business
+    fr: Entreprise
 
 - type:
-    en: Furniture
-    fr: Mobilier
+    en: Information
+    fr: Information
 
 - type:
-    en: Software
-    fr: Logiciel
+    en: Application
+    fr: Application
+
+- type:
+    en: Technology
+    fr: Technologie
+  
+- type:
+    en: Security & Privacy
+    fr: Sécurité et confidentialité
 
 - type:
     en: Hardware
     fr: Matériel
-  
-- type:
-    en: Medical
-    fr: Médical
-
-- type:
-    en: Industrial
-    fr: Industriel
