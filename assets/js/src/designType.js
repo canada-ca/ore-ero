@@ -33,11 +33,11 @@ $(document).ready(function() {
   );
   $('#addMoredesignType').on('change', '.designTypeSelect select', function() {
     let index = getmoreIndex($(this));
-    if ($('#designType' + index).val() != '') {
-      selectType($('#designType' + index).val(), index);
-      if (!$('#newType' + index).hasClass('hide')) {
-        hideType(index);
-      }
+    if (
+      $('#designType' + index).val() != '' &&
+      !$('#newType' + index).hasClass('hide')
+    ) {
+      hideType(index);
     }
   });
 });
@@ -45,12 +45,23 @@ $(document).ready(function() {
 function addTypes(designObject) {
   $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
     let id = getmoreIndex($(this));
-    designObject.designTypes[i] = {
-      type: {
-        en: $('#newTypeEN' + id).val(),
-        fr: $('#newTypeFR' + id).val()
-      }
-    };
+    if ($('#designType' + id).val() == '') {
+      designObject.designTypes[i] = {
+        type: {
+          en: $('#newTypeEN' + id).val(),
+          fr: $('#newTypeFR' + id).val()
+        }
+      };
+    } else {
+      designObject.designTypes[i] = {
+        type: {
+          en: $('#designType' + id).val(),
+          fr: $('#option' + $('#designType' + id).prop('selectedIndex')).data(
+            'fr'
+          )
+        }
+      };
+    }
   });
 }
 
@@ -99,13 +110,6 @@ function getmoreIndex(element) {
     .closest('li')
     .attr('data-index');
   return nb != 0 ? nb : '';
-}
-
-function selectType(selectedType, index) {
-  $('#ennewType' + index).val(selectedType);
-  $('#frnewType' + index).val(
-    $('#option' + $('#designType').prop('selectedIndex')).data('fr')
-  );
 }
 
 function resetType(index) {
