@@ -58,3 +58,47 @@ releases:
         - Demo
       fr:
         - Demo
+  - contact:
+      email: nc-sgdc-cdts-gd@hrsdc-rhdcc.gc.ca
+      name: CDTS info tracker @ ESDC Web Standards Centre of Expertise
+    date:
+      created: '2020-01-16'
+      metadataLastUpdated: '2020-01-31'
+    description:
+      whatItDoes:
+        en: >-
+          The purpose of the CDTS is essentially to deliver the presentation
+          layer of the Canada.ca theme or Intranet.canada.ca theme to web
+          assets.
+        fr: >-
+          L’objectif de la SGDC est de fournir la couche de présentation des
+          thèmes Canada.ca et intranet.canada.ca aux actifs Web.
+    category: '43232400'
+    name:
+      en: CDTS
+      fr: SGDC
+    licences:
+      - URL:
+          en: 'https://github.com/wet-boew/cdts-sgdc/blob/master/LICENSE'
+          fr: 'https://github.com/wet-boew/cdts-sgdc/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/wet-boew/cdts-sgdc'
+      fr: 'https://github.com/wet-boew/cdts-sgdc'
+    tags:
+      en:
+        - WET-BOEW
+      fr:
+        - WET-BOEW
+    downloadURL:
+      en: 'https://github.com/wet-boew/cdts-sgdc/releases'
+      fr: 'https://github.com/wet-boew/cdts-sgdc/releases'
+    homepageURL:
+      en: 'https://cenw-wscoe.github.io/sgdc-cdts/'
+      fr: 'https://cenw-wscoe.github.io/sgdc-cdts/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - CoffeeScript
+    status: Maintained

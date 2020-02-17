@@ -12,6 +12,8 @@
         <li><a href="{{ site.data.i18n.general.nav.standard.link[page.lang] }}">{{ site.data.i18n.general.nav.standard[page.lang] }}</a></li>
       {%- elsif page.ref == 'partnershipForm' or page.ref == 'partnershipSchema' -%}
         <li><a href="{{ site.data.i18n.general.nav.partnership.link[page.lang] }}">{{ site.data.i18n.general.nav.partnership[page.lang] }}</a></li>
+      {%- elsif page.ref == 'stats' -%}
+        <li><a href="{{ site.data.i18n.general.nav.stats.link[page.lang] }}">{{ site.data.i18n.general.nav.stats[page.lang] }}</a></li>
       {%- endif -%}
     </ol>
   </div>

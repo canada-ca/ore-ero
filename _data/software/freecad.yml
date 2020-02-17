@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      FreeCAD is a general-purpose parametric 3D CAD modeler and a building
+      information modeling (BIM) software with finite-element-method (FEM)
+      support.
+    fr: >-
+      FreeCAD est un modeleur CAO 3D paramétrique à usage général et un logiciel
+      de modélisation des informations du bâtiment (BIM) avec prise en charge de
+      la méthode des éléments finis (FEM).
+category: '43232600'
+homepageURL:
+  en: 'https://www.freecadweb.org/'
+  fr: 'https://www.freecadweb.org/?lang=fr'
+licences:
+  - URL:
+      en: 'https://github.com/FreeCAD/FreeCAD/blob/master/LICENSE'
+      fr: 'https://github.com/FreeCAD/FreeCAD/blob/master/LICENSE'
+    spdxID: GPL-2.0-only
+name:
+  en: FreeCAD
+  fr: FreeCAD
+tags:
+  en:
+    - CAD
+  fr:
+    - CAD
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-31'

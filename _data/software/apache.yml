@@ -37,3 +37,11 @@ administrations:
         date:
           started: '2000-01-01'
           metadataLastUpdated: '2020-01-14'
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-30'

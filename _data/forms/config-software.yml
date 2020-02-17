@@ -1,5 +1,4 @@
 ---
-
 id: software
 
 formGroups:
@@ -15,14 +14,6 @@ formGroups:
     title: administrations
     param: {start: true}
   - preset: adminCode
-  - preset: team
-  - preset: empty
-    title: uses
-    param: {start: true}
-  - preset: contact
-    param: {phone: false}
-  - widget: string
-    title: date
-    param: {type: date, rule: dateISO}
-  - preset: empty
+  - preset: uses
+    param: {more: true}
   - preset: empty
