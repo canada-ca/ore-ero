@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Plot Digitizer is a Java program used to digitize scanned plots of
+      functional data.
+    fr: >-
+      Plot Digitizer est un programme Java utilisé pour numériser des tracés
+      numérisés de données fonctionnelles.
+category: '43232600'
+homepageURL:
+  en: 'http://plotdigitizer.sourceforge.net/'
+  fr: 'http://plotdigitizer.sourceforge.net/'
+licences:
+  - URL:
+      en: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
+      fr: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
+    spdxID: GPL-2.0-or-later
+name:
+  en: Plot Digitizer
+  fr: Plot Digitizer
+tags:
+  en:
+    - Plot
+  fr:
+    - Plot
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
