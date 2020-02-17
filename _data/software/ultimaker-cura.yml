@@ -12,7 +12,7 @@ licences:
   - URL:
       en: 'https://github.com/Ultimaker/Cura/blob/master/LICENSE'
       fr: 'https://github.com/Ultimaker/Cura/blob/master/LICENSE'
-    spdxID: LGPL-3.0-only
+    spdxID: LGPL-3.0-or-later
 name:
   en: Ultimaker Cura
   fr: Ultimaker Cura
@@ -26,7 +26,6 @@ administrations:
     uses:
       - contact:
           email: noreply@canada.ca
-          name: AAFC-AAC
         date:
           started: '1900-01-01'
-          metadataLastUpdated: '2020-01-27'
+          metadataLastUpdated: '2020-02-17'
