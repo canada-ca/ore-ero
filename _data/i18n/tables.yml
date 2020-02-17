@@ -92,3 +92,6 @@ lightbox:
   beingUsed:
     en: 'Is being used by:'
     fr: 'Est utilisé par :'
+  website:
+    en: 'Website:'
+    fr: 'Site internet:'

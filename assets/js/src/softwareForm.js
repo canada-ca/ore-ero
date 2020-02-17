@@ -5,7 +5,7 @@
   getTagsEN getTagsFR resetTags addTags
   submitInit submitConclusion
   getAdminObject getAdminCode hideNewAdminForm slugify
-  addMoreLicences resetMoreGroup fillLicenceField
+  addMoreLicences resetMoreGroup fillUseField fillLicenceField
   getToday
 */
 
@@ -439,15 +439,7 @@ function selectAdmin() {
 
 function addValueToFieldsAdmin(obj) {
   resetFieldsAdmin();
-
-  $('#contactemail').val(obj.uses[0].contact.email);
-  if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
-
-  $('#date').val(obj.uses[0].date.started);
-  if (obj.team) {
-    if (obj.team.en) $('#enteam').val(obj.team.en);
-    if (obj.team.fr) $('#frteam').val(obj.team.fr);
-  }
+  fillUseField(obj.uses);
 }
 
 function resetFieldsAdmin() {
