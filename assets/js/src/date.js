@@ -16,3 +16,7 @@ function getToday() {
     day
   );
 }
+
+window.date_func = {
+  getToday
+};
