@@ -127,3 +127,15 @@
   name:
     en: Public Services and Procurement Canada
     fr: Services publics et Approvisionnement Canada
+- code: pmo-cpm
+  name:
+    en: Office of the Prime Minister
+    fr: Bureau du Premier Ministre
+- code: psic-ispc
+  name:
+    en: Office of the Public Sector Integrity Commissioner of Canada
+    fr: Commissariat à l’intégrité du secteur public
+- code: otc-cta
+  name:
+    en: Canadian Transportation Agency
+    fr: Office des transports du Canada
