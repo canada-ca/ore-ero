@@ -227,6 +227,16 @@ presets:
       spdxID:
         en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
+      level:
+        en: License level
+        fr: Niveau de license
+      scope:
+        en:
+          en: English license scope
+          fr: Portée de la license en anglais
+        fr:
+          en: French license scope
+          fr: Portée de la license en français
     infobulle:
       en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
       fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
@@ -454,7 +464,6 @@ presets:
     button:
       en: Add new type
       fr: Ajouter un nouveau type
-  
   uses:
     title:
       en: Informations about software users.
@@ -469,7 +478,25 @@ presets:
     infobulle:
       en: Select the date when the public administration started using the software.
       fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
-
+  licensesLevel:
+    level:
+      main:
+        en: Main license
+        fr: License principale
+      sub:
+        en: Sub license
+        fr: Sous license
+    infobulle:
+      en: License level within the project
+      fr: Niveau de la license dans le projet
+  licensesScope:
+    title:
+      en: License scope
+      fr: Portée de la license
+    infobulle:
+      en: Scope of the sub license within the project
+      fr: Portée de la sous license dans le projet
+    
 # Code form specifics
 code:
   name:

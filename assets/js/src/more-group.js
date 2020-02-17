@@ -21,6 +21,19 @@ $(document).ready(function() {
         .parent()
     );
   });
+
+  $('#addMorelicences').on('change', '.licenceslevelSelect select', function() {
+    let nb = $(this)
+    .closest('li')
+    .attr('data-index');
+    let id = nb != 0 ? nb : '';
+    if ($('#licenceslevel' + id).prop('selectedIndex') == 1) {
+      $('#licencesScope' + id).removeClass('hide');
+    }
+    else {
+      $('#licencesScope' + id).addClass('hide');
+    }
+  })
 });
 
 function addMoreGroup(group) {

@@ -15,5 +15,19 @@
     </select>
   </div>
 {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
+
+  <div class="form-group" id="{{ title }}levelSelect">
+    {% include form/components/label-group.html id=include.idPreset title=title group="level" %}
+    <select class="form-control" id="{{ title }}level" name="{{ title }}level" required="required">
+      {%- assign level = site.data.i18n.form[include.idPreset]licensesLevel.level -%}
+      <option value="{{ level.main.en }}" data-fr="{{level.main.fr}}">{{ level.main[page.lang] }}</option>
+      <option value="{{ level.sub.en }}" data-fr="{{level.sub.fr}}">{{ level.sub[page.lang] }}</option>
+    </select>
+  </div>
+  <div  class="form-group">
+    <div­ id="{{ title }}Scope" class="well hide" style="position:relative">
+      {% include form/components/group-i18n-group.html id=include.idPreset title=title group="scope"  -%}
+    </div>
+  </div>
 </div>
 </div>
