@@ -149,7 +149,7 @@
                 {%- endfor -%}
                 {%- assign type_arr = type_arr | uniq -%}
                 {%- for dtype in type_arr -%}
-                  <p>{{ dtype.type[page.lang] }}</p>
+                  <li>{{ dtype.type[page.lang] }}</li>
                 {%- endfor -%}
             </ul>
             <div class="row">
@@ -172,7 +172,7 @@
                 </div>
               </div>
             {%- endfor -%}
-            <p><strong>{{ site.data.i18n.tables.homepage[page.lang] }}</strong>: <a href="{{ design.homepageURL[page.lang] }}"­>{{ design.homepageURL[page.lang] }}</a></p>
+            <p><strong>{{ site.data.i18n.tables.homepage[page.lang] }}</strong>: <a href="{{ design.homepageURL[page.lang] }}">{{ design.homepageURL[page.lang] }}</a></p>
             {%- if design.designStatus != nil -%}
               <p><strong>{{ site.data.i18n.tables.designStatus[page.lang] }}</strong>: {{ design.designStatus[page.lang] }}</p>
             {%- endif -%}
