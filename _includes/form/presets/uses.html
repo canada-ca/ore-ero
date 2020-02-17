@@ -1,0 +1,20 @@
+{%- assign title = "uses" -%}
+<div class="add-more-group" id="addMore{{ title }}" data-title="{{ title }}">
+{% include form/components/title.html id=include.idPreset title=title -%}
+<div class="add-more-content">
+  {%- include form/widgets/string-i18n.html 
+    id=include.idPreset 
+    title="team" 
+    param=site.data.forms.param.team 
+    -%}
+  {%- include form/presets/contact.html 
+    idPreset=include.idPreset 
+    title="contact" 
+    -%}
+  {%- include form/widgets/string.html 
+    id=include.idPreset 
+    title="date" 
+    param=site.data.forms.param.date 
+    -%}
+</div>
+</div>
