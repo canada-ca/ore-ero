@@ -1,0 +1,17 @@
+{%- assign title = "designType" -%}
+<li>
+  <details open>
+    <summary>{{ title }}[array]</summary>
+    <p>{{ site.data.i18n.form[include.idPreset][title].infobulle[page.lang] }}</p>
+    <ul class="list-unstyled">
+      <li>
+        <details open>
+          <summary> type {% include schema/components/required.html required=include.param.required %} [array]</summary>
+          <ul>
+            <li>{{ site.data.i18n.form[include.idPreset].newType.label.en[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>
+            <li>{{ site.data.i18n.form[include.idPreset].newType.label.fr[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>
+          </ul>
+        </details>
+      </li></ul>
+  </details>
+</li>

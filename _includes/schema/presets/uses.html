@@ -1,0 +1,11 @@
+{%- assign title = "uses" -%}
+<li>
+  <details open>
+    <summary>{{ title }} {% include schema/components/required.html %} [array]</summary>
+    <p>{{ site.data.i18n.form[include.idPreset][title].title[page.lang] }}</p>
+    <ul class="list-unstyled">
+      {%- include schema/widgets/string-i18n.html id=include.idPreset title="team" param=site.data.forms.param.team -%}
+      {%- include schema/presets/contact.html idPreset=include.idPreset param=site.data.forms.param.contact title=title group="spdxID" -%}
+    </ul>
+  </details>
+</li>

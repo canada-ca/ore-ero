@@ -1,0 +1,51 @@
+{%- assign title1 = "designType" -%}
+{%- assign title2 = "newType" -%}
+{%- if page.lang == "en" -%}
+{%- assign lang1 = "en" -%}
+{%- assign lang2 = "fr" -%}
+{%- else -%}
+{%- assign lang1 = "fr" -%}
+{%- assign lang2 = "en" -%}
+{%- endif -%}
+<div class="add-more-group" id="addMore{{ title1 }}" data-title="{{ site.data.i18n.form[include.idPreset][title1].title[page.lang] }}">
+  {% include form/components/title.html id=include.idPreset title=title1 -%}
+  <div class="add-more-content">
+    <div class="form-group" style="margin-bottom: 0;">
+      <label for="{{ title1 }}"><span class="field-name">{{ site.data.i18n.form[include.idPreset][title1].label[page.lang] }}</span></label>
+    </div>
+    <div class = "form-group">
+      <div class="form-group" style="display: flex;">
+        <div class="{{ title1 }}Select more-group-id-replace">
+            <select class="form-control" id="{{ title1 }}" name="{{ title1 }}" required="required">
+              <option value="">&nbsp;</option>
+              {%- assign design_arr = "" | split: ',' -%}
+              {%- for defaultType in site.data.i18n.defaultTypes -%}
+                {%- assign design_arr = design_arr | push: defaultType -%}
+              {%- endfor -%}
+              {%- for design in site.data.design -%}
+                {%- for ntype in design[1].designTypes -%}
+                {%- assign design_arr = design_arr | push: ntype -%}
+                {%- endfor %}
+              {%- endfor %}
+              {%- assign design_arr = design_arr | uniq -%}
+              {%- for design in design_arr -%}
+              <option value="{{ design.type.en }}" id="option{{forloop.index}}" data-fr="{{design.type.fr}}">{{ design.type[page.lang] }}</option>
+              {%- endfor -%}
+            </select>
+          </div> 
+        </div>
+          <div class="{{ title2 }}Button more-group-id-replace" ><button id="newTypeButton" class="btn btn-primary" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title2].button[page.lang] }}</button></div>
+          <div id="newType" class="well hide" style="position:relative">
+           <div class="{{ title2 }}ButtonRemove more-group-id-replace" ><button type="button" class="btn btn-default remove " id="cancelnewTypeButton" style="position:absolute; top: 10px; right: 10px;"><i class="glyphicon glyphicon-remove"></i></button></div>
+            <div id="newType{{ lang1 | upcase }}" class="form-group">
+              <label for="{{ lang1 }}{{ title2 }}"><span class="field-name">{{ site.data.i18n.form.[include.idPreset][title2].label[lang1][page.lang] }}</span></label>   
+                <input type="text" id="{{ lang1 }}{{ title2 }}" name="{{ lang1 }}{{ title2 }}" class="form-control" required="required">
+            </div>
+            <div id="newType{{ lang2 | upcase }}" class="form-group">
+              <label for="{{ lang2 }}{{ title2 }}"><span class="field-name">{{ site.data.i18n.form.[include.idPreset][title2].label[lang2][page.lang] }}</span></label>   
+              <input type="text" id="{{ lang2 }}{{ title2 }}" name="{{ lang2 }}{{ title2 }}" class="form-control" required="required">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>

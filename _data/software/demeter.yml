@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Demeter is a comprehensive system for processing and analyzing X-ray
+      Absorption Spectroscopy data.
+    fr: >-
+      Demeter est un système complet de traitement et d'analyse des données de
+      spectroscopie d'absorption des rayons X.
+category: '43232600'
+homepageURL:
+  en: 'https://bruceravel.github.io/demeter/'
+  fr: 'https://bruceravel.github.io/demeter/'
+licences:
+  - URL:
+      en: 'https://github.com/bruceravel/demeter/blob/master/LICENSE'
+      fr: 'https://github.com/bruceravel/demeter/blob/master/LICENSE'
+    spdxID: Artistic-2.0
+name:
+  en: Demeter
+  fr: Demeter
+tags:
+  en:
+    - X-Ray
+  fr:
+    - Rayons X
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'

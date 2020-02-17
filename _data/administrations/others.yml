@@ -1,5 +1,21 @@
 ---
-- code: test (please remove)
+- code: O-CLCL-SICL
   name:
-    en: Test (please remove)
-    fr: Test (please remove)
+    en: Canada Lands Company
+    fr: Société immobilière du Canada limitée
+- code: CROWN-CMIP21-MCIQ21
+  name:
+    en: Canadian Museum of Immigration at Pier 21
+    fr: Musée canadien de l'immigration du Quai 21
+- code: CROWN-DESTCANADA
+  name:
+    en: Destination Canada
+    fr: Destination Canada
+- code: CROWN-VIAR-VIAR
+  name:
+    en: VIA Rail
+    fr: VIA Rail
+- code: CROWN-TELEFILM
+  name:
+    en: Telefilm Canada
+    fr: Telefilm Canada

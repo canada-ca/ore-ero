@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Anaconda is a distribution of the Python and R programming languages for
+      scientific computing.
+    fr: >
+      Anaconda est une distribution des langages de programmation Python et R
+      pour le calcul scientifique.
+category: '43232400'
+homepageURL:
+  en: 'https://www.anaconda.com/'
+  fr: 'https://www.anaconda.com/'
+licences:
+  - URL:
+      en: 'https://docs.anaconda.com/anaconda/eula/'
+      fr: 'https://docs.anaconda.com/anaconda/eula/'
+    spdxID: BSD-3-Clause
+name:
+  en: Anaconda
+  fr: Anaconda
+tags:
+  en:
+    - Python
+    - R
+    - Data Science
+  fr:
+    - Python
+    - R
+    - Science des données
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'

@@ -1,0 +1,31 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Cura is an open source 3D printer slicing application.
+    fr: Cura est une application de découpage d'imprimante 3D open source.
+category: '43232600'
+homepageURL:
+  en: 'https://ultimaker.com/software/ultimaker-cura'
+  fr: 'https://ultimaker.com/software/ultimaker-cura'
+licences:
+  - URL:
+      en: 'https://github.com/Ultimaker/Cura/blob/master/LICENSE'
+      fr: 'https://github.com/Ultimaker/Cura/blob/master/LICENSE'
+    spdxID: LGPL-3.0-or-later
+name:
+  en: Ultimaker Cura
+  fr: Ultimaker Cura
+tags:
+  en:
+    - 3D Printing
+  fr:
+    - Imprimante 3D
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-02-17'

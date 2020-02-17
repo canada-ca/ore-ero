@@ -1,4 +1,4 @@
-/* exported addMoreLicences fillLicenceField addMoreRelatedCode resetMoreGroup */
+/* exported addMoreLicences fillLicenceField fillUseField addMoreRelatedCode resetMoreGroup */
 
 $(document).ready(function() {
   $('.add-more-group').each(function() {
@@ -145,6 +145,25 @@ function fillLicenceField(licences) {
     $('#enlicencesURL' + id).val(licence.URL.en);
     $('#frlicencesURL' + id).val(licence.URL.fr);
     $('#licencesspdxID' + id).val(licence.spdxID);
+  });
+}
+
+function fillUseField(uses) {
+  uses.forEach(function(use, i) {
+    let id;
+    if (i == 0) id = '';
+    else {
+      id = i;
+      addMoreGroup($('#addMoreuses'));
+    }
+    $('#contactemail' + id).val(use.contact.email);
+    if (use.contact.name) $('#contactname + id').val(use.contact.name);
+
+    $('#date' + id).val(use.date.started);
+    if (use.team) {
+      if (use.team.en) $('#enteam + id').val(use.team.en);
+      if (use.team.fr) $('#frteam' + id).val(use.team.fr);
+    }
   });
 }
 

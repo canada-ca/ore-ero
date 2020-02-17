@@ -10,6 +10,7 @@ formGroups:
   - preset: selectCode
   - preset: team
   - preset: status
+    param: {design: false}
   - preset: description
   - preset: category
   - preset: tags

@@ -3,7 +3,7 @@
   <details open>
     <summary>{{ include.title }} {% include schema/components/required.html required=include.param.required %} [array]</summary>
     <h5>{{ site.data.i18n.form[include.id][path].label.schema[page.lang] }}</h5>
-    <p>{{ site.data.i18n.form[include.id][path].title[page.lang] }}</p>
+    <p>{{ site.data.i18n.form[include.id][path].infobulle[page.lang] }}</p>
     <ul>
       <li>{{ site.data.i18n.form[include.id][path].label.en[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>
       <li>{{ site.data.i18n.form[include.id][path].label.fr[page.lang] }}{% if include.param.required == nil or include.param.required %} {% include schema/components/required.html %}{% endif %} [string]</li>

@@ -1,0 +1,29 @@
+---
+
+id: design
+
+formGroups:
+  - preset: empty
+    title: administrations
+    param: {start: true}
+  - preset: adminCode  
+  - preset: selectDesign
+  - preset: description
+  - preset: designType
+  - preset: homepageURL
+    param: {type: url}
+  - preset: licences
+    param: {more: true}
+  - preset: team
+  - preset: empty
+    title: uses
+    param: {start: true}
+  - preset: contact
+    param: {phone: false}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
+  - preset: status
+    param: {design: true}
+  - preset: empty
+  - preset: empty

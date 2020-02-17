@@ -1,0 +1,18 @@
+{%- assign title = "name" -%}
+{%- assign group = "select" -%}
+{%- assign design_arr = "" | split: ',' -%}
+{%- for design in site.data.design -%}
+    {%- assign design_arr = design_arr | push: design[1].name[page.lang] -%}
+{%- endfor %}
+{%- assign design_arr = design_arr | sort_natural -%}
+<div class="form-group">
+  {% include form/components/label-group.html id=include.id title=title group=group param=site.data.forms.param.required_false %}
+  <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
+    <option value="">&nbsp;</option>
+    {%- for design in design_arr -%}
+      <option value="{{ design | slugify }}">{{ design }}</option>
+    {%- endfor -%}
+  </select>
+</div>
+
+{%- include form/presets/name.html id=include.id -%}
