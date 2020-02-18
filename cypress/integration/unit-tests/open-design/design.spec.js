@@ -20,17 +20,22 @@ context('Open Design', () => {
 
     it('Can filter for an existing element on the English page', () => {
         cy.visit('http://localhost:4000/ore-ero/en/open-design.html');
-        cy.get('#dataset-filter').find('tbody').get('td').first().invoke('text').then((expected) => {
-
-        cy.get('#dataset-filter_filter')
-            .find('input')
-            .type(expected);
-
         cy.get('#dataset-filter')
-            .find('tbody>tr')
-            .should('contain', expected);
-        });
+            .find('tbody')
+            .get('td')
+            .eq(0)
+            .invoke('text')
+            .then((expected) => {
+                cy.get('#dataset-filter_filter')
+                    .find('input')
+                    .type(expected);
+
+                cy.get('#dataset-filter')
+                    .find('tbody>tr')
+                    .should('contain', expected);
+            });
     });
+    
 
     it('Loads the French page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre.html');
@@ -50,15 +55,19 @@ context('Open Design', () => {
 
     it('Can filter for an existing element on the French page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre.html');
-        cy.get('#dataset-filter').find('tbody').get('td').first().invoke('text').then((expected) => {
-
-        cy.get('#dataset-filter_filter')
-            .find('input')
-            .type(expected);
-
         cy.get('#dataset-filter')
-            .find('tbody>tr')
-            .should('contain', expected);
-        });
+            .find('tbody')
+            .get('td')
+            .eq(0)
+            .invoke('text')
+            .then((expected) => {
+                cy.get('#dataset-filter_filter')
+                    .find('input')
+                    .type(expected);
+
+                cy.get('#dataset-filter')
+                    .find('tbody>tr')
+                    .should('contain', expected);
+            });
     });
 });
