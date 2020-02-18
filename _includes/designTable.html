@@ -94,7 +94,7 @@
           {%- for designs in site.data.design -%}
             {%- assign design = designs[1] -%}
             <tr>
-              <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
+              <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
               <td>{{ design.description.whatItDoes[page.lang] }}</td>
               <td>
                 {%- for licence in design.licences -%}
