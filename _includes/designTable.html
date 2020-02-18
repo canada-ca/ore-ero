@@ -94,7 +94,7 @@
           {%- for designs in site.data.design -%}
             {%- assign design = designs[1] -%}
             <tr>
-              <td><a href="#{{ design.name[page.lang] | slugify }}" aria-controls="{{ design.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
+              <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
               <td>{{ design.description.whatItDoes[page.lang] }}</td>
               <td>
                 {%- for licence in design.licences -%}
@@ -113,7 +113,7 @@
               </td>
               <td>{{ design.administrations.size }}</td>
               <td><a href="{{ design.homepageURL[page.lang] }}" target="_blank">{{ design.homepageURL[page.lang] | remove: "https://" | rstrip }}</a></td>
-              <td>design.designStatus</td>
+              <td>{{ design.designStatus[page.lang] }}</td>
               <td>
                 {%- for administration in design.administrations -%}
                 {%- for levels in site.data.i18n.administrations -%}
@@ -134,7 +134,7 @@
     <!-- Modal Lightboxes -->
     {%- for designs in site.data.design -%}
       {%- assign design = designs[1] -%}
-        <section id="{{ design.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+        <section id="{{ design.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
           <header class="modal-header">
             <h2 class="modal-title">{{ design.name[page.lang] }}</h2>
           </header>

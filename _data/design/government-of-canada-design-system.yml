@@ -1,0 +1,53 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The Government of Canada design system provides usable, consistent and
+      trustworthy online experience for people to access Government of Canada
+      digital services.
+    fr: >-
+      Le système de conception du gouvernement du Canada offre une expérience en
+      ligne conviviale, cohérente et fiable pour que les gens puissent accéder
+      aux services numériques du gouvernement du Canada.
+  howItWorks:
+    en: >-
+      Still in alpha, the Government of Canada design system will provide a
+      space for designers, developers and communicators to collaborate on the
+      design of the GC web presence.
+    fr: >-
+      Encore en Alpha, le système de conception du gouvernement du Canada
+      fournira un espace aux concepteurs, aux développeurs et aux communicateurs
+      afin de collaborer à la conception de la présence Web GC 
+designTypes:
+  - type:
+      en: Application
+      fr: Application
+homepageURL:
+  en: 'https://design.alpha.canada.ca/en.html'
+  fr: 'https://design.alpha.canada.ca/fr.html'
+licences:
+  - URL:
+      en: >-
+        https://github.com/canada-ca/design-system-systeme-conception/blob/gh-pages/LICENCE
+      fr: >-
+        https://github.com/canada-ca/design-system-systeme-conception/blob/gh-pages/LICENCE
+    spdxID: MIT
+name:
+  en: Government of Canada design system
+  fr: Système de conception du gouvernement du Canada
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: dto.btn@tbs-sct.gc.ca
+          name: David Pepin
+        date:
+          started: '2019-09-01'
+          metadataLastUpdated: '2020-02-18'
+        team:
+          en: Digital Transformation Office
+          fr: Bureau de la transformation numérique
+designStatus: 
+  en: Original design
+  fr: Design original
