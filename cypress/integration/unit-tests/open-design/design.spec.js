@@ -20,7 +20,7 @@ context('Open Design', () => {
 
     it('Can filter for an existing element', () => {
         cy.visit('http://localhost:4000/ore-ero/en/open-design.html');
-        let expected = cy.get('#dataset-filter').find('tbody');
+        let expected = cy.get('#dataset-filter').find('tbody').find('td').first();
         cy.get('#dataset-filter_filter')
             .find('input')
             .type(expected);
