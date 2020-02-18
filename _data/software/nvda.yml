@@ -35,7 +35,7 @@ administrations:
         date:
           started: '1900-01-01'
           metadataLastUpdated: '2020-01-14'
-- adminCode: aafc-aac
+  - adminCode: aafc-aac
     uses:
       - contact:
           email: noreply@canada.ca
