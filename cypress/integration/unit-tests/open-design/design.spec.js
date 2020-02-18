@@ -18,9 +18,10 @@ context('Open Design', () => {
             .should('not.contain', 'docker');
     });
 
-    it('Can filter for an existing element', () => {
+    it('Can filter for an existing element on the English page', () => {
         cy.visit('http://localhost:4000/ore-ero/en/open-design.html');
-        let expected = cy.get('#dataset-filter').find('tbody').find('td').first();
+        cy.get('#dataset-filter').find('tbody').get('td').first().invoke('text').then((expected) => {
+
         cy.get('#dataset-filter_filter')
             .find('input')
             .type(expected);
@@ -28,6 +29,7 @@ context('Open Design', () => {
         cy.get('#dataset-filter')
             .find('tbody>tr')
             .should('contain', expected);
+        });
     });
 
     it('Loads the French page', () => {
@@ -35,7 +37,7 @@ context('Open Design', () => {
         cy.get('#wb-cont').contains('Designs Libres');
     });
 
-    it('Dynamically filters on the English page', () => {
+    it('Dynamically filters on the French page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre.html');
         cy.get('#dataset-filter_filter')
             .find('input')
@@ -44,5 +46,19 @@ context('Open Design', () => {
         cy.get('#dataset-filter')
             .find('tbody>tr')
             .should('not.contain', 'docker');
+    });
+
+    it('Can filter for an existing element on the French page', () => {
+        cy.visit('http://localhost:4000/ore-ero/fr/design-libre.html');
+        cy.get('#dataset-filter').find('tbody').get('td').first().invoke('text').then((expected) => {
+
+        cy.get('#dataset-filter_filter')
+            .find('input')
+            .type(expected);
+
+        cy.get('#dataset-filter')
+            .find('tbody>tr')
+            .should('contain', expected);
+        });
     });
 });
