@@ -159,8 +159,6 @@ context('Open Source Software Form', () => {
     cy.get('input#submitteremail')
       .type('xyz@ymail.com')
       .should('have.value','xyz@ymail.com');
-    // cy.get('#validation')
-    //   .submit();
     cy.get('button#prbotSubmitsoftwareForm')
       .click();
     });
