@@ -113,7 +113,7 @@
               </td>
               <td>{{ design.administrations.size }}</td>
               <td><a href="{{ design.homepageURL[page.lang] }}" target="_blank">{{ design.homepageURL[page.lang] | remove: "https://" | rstrip }}</a></td>
-              <td>design.designStatus</td>
+              <td>{{ design.designStatus[page.lang] }}</td>
               <td>
                 {%- for administration in design.administrations -%}
                 {%- for levels in site.data.i18n.administrations -%}
