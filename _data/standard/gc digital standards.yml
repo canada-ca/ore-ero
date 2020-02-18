@@ -1,0 +1,41 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The Government of Canada’s Digital Standards form the foundation of the
+      government’s shift to becoming more agile, open, and user-focused. 
+    fr: ' Les normes numériques du gouvernement du Canada constituent le fondement du virage du gouvernement vers une plus grande souplesse.'
+name:
+  en: Government of Canada Digital Standards
+  fr: Normes numériques du gouvernement du Canada
+specURL:
+  en: >-
+    https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html
+  fr: >-
+    https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/normes-numeriques-gouvernement-canada.html
+standardAcronym: GC DIGITAL STANDARDS
+standardOrg:
+  en: Government of Canada
+  fr: Gouvernement du Canada
+tags:
+  en:
+    - Process
+  fr:
+    - Processus
+administrations:
+  - adminCode: tbs-sct
+    contact:
+      email: noreply@canada.ca
+      name: TBS-SCT
+    date:
+      created: '2019-03-29'
+      metadataLastUpdated: '2020-02-18'
+    references:
+      - URL:
+          en: 'https://www.canada.ca/en/treasury-board-secretariat.html'
+          fr: 'https://www.canada.ca/fr/secretariat-conseil-tresor.html'
+        name:
+          en: Treasury Board of Canada Secretariat
+          fr: Secrétariat du Conseil du Trésor du Canada
+    status: mandatory
