@@ -394,7 +394,7 @@ function addValueToFieldsDesign(obj) {
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
   if (obj.designStatus) {
-    $('#designStatus').val(obj.designStatus);
+    $('#designStatus').val(obj.designStatus.en);
   }
   fillTypeFields(obj.designTypes);
   fillLicenceField(obj.licences);
