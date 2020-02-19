@@ -74,6 +74,28 @@ context('Open Design Form', () => {
         });
     });
 
+    it ('Should reset all fields filled by design select if the selected option is modified', () => {
+        cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+        cy.window().get('#nameselect').children().eq(1).invoke('text').then((name) => {
+            cy.window().get('#nameselect').select(name);
+            cy.window().get('#nameselect').select('');
+            cy.window().get('#nameselect').children().first().should('be.selected');
+            cy.window().get('#enname').should('have.value', '');
+            cy.window().get('#frname').should('have.value', '');
+            cy.window().get('#endescriptionwhatItDoes').should('have.value', '');
+            cy.window().get('#frdescriptionwhatItDoes').should('have.value', '');
+            cy.window().get('#enhomepageURL').should('have.value', '');
+            cy.window().get('#frhomepageURL').should('have.value', '');
+            cy.window().get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
+            cy.window().get('#designType').children().first().should('be.selected');
+            cy.window().get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
+            cy.window().get('#enlicencesURL').should('have.value', '');
+            cy.window().get('#frlicencesURL').should('have.value', '');
+            cy.window().get('#licencesspdxID').children().first().should('be.selected');    
+        });
+         
+    });
+
     it('Loads the script on french page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
         cy.window().should('have.property', 'designType');
@@ -123,6 +145,8 @@ context('Open Design Form', () => {
             cy.window().get('#frname').should('have.value', '');
             cy.window().get('#endescriptionwhatItDoes').should('have.value', '');
             cy.window().get('#frdescriptionwhatItDoes').should('have.value', '');
+            cy.window().get('#frdescriptionhowItWorks').should('have.value', '');
+            cy.window().get('#endescriptionhowItWorks').should('have.value', '');
             cy.window().get('#enhomepageURL').should('have.value', '');
             cy.window().get('#frhomepageURL').should('have.value', '');
             cy.window().get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
@@ -141,6 +165,28 @@ context('Open Design Form', () => {
             cy.window().get('#submitterusername').should('have.value', '');
           });
         });
+    });
+
+    it ('Should reset all fields filled by design select if the selected option is modified on french page', () => {
+        cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+        cy.window().get('#nameselect').children().eq(1).invoke('text').then((name) => {
+            cy.window().get('#nameselect').select(name);
+            cy.window().get('#nameselect').select('');
+            cy.window().get('#nameselect').children().first().should('be.selected');
+            cy.window().get('#enname').should('have.value', '');
+            cy.window().get('#frname').should('have.value', '');
+            cy.window().get('#endescriptionwhatItDoes').should('have.value', '');
+            cy.window().get('#frdescriptionwhatItDoes').should('have.value', '');
+            cy.window().get('#enhomepageURL').should('have.value', '');
+            cy.window().get('#frhomepageURL').should('have.value', '');
+            cy.window().get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
+            cy.window().get('#designType').children().first().should('be.selected');
+            cy.window().get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
+            cy.window().get('#enlicencesURL').should('have.value', '');
+            cy.window().get('#frlicencesURL').should('have.value', '');
+            cy.window().get('#licencesspdxID').children().first().should('be.selected');    
+        });
+         
     });
 
 });
