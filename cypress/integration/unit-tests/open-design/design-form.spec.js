@@ -2,7 +2,14 @@
 /* global cy, context, it */
 
 context('Open Design Form', () => {
-
+    it('Loads the French form page', () => {
+        cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+        cy.get('#wb-cont').contains('Formulaire du Design libre');
+    });
+    it('Loads the English form page', () => {
+        cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+        cy.get('#wb-cont').contains('Open Design Form');
+    });
     it('Loads the script', () => {
         cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
         cy.window().should('have.property', 'designType');
