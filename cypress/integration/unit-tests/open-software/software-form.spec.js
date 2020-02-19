@@ -1,6 +1,13 @@
 /// <reference types="Cypress" />
 /* global cy, context, it */
 
-context('Open Source Software Form', () => {
-  
+context('softwareForm.js', () => {
+  before(() => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
+  });
+
+  it('Loads the script', () => {
+    cy.window().should('have.property', 'getsoftwareObject');
+  });
+
 });

@@ -229,5 +229,10 @@ context('Open Source Software', () => {
             .should('have.value','xyz@ymail.com');
           cy.get('button#prbotSubmitsoftwareForm')
             .click();
+          cy.get('#validation')
+            .submit();
+          cy.wait(2000);
+          cy.get('#errors-validation')
+            .contains('Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
         });
 });

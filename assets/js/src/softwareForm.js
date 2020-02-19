@@ -450,3 +450,21 @@ function resetFieldsAdmin() {
   $('#enteam').val('');
   $('#frteam').val('');
 }
+
+window.softwareForm_func = {
+  getsoftwareObject,
+  // softwareObject,
+  getSelectedOrgType,
+  submitSoftwareFormNewAdmin,
+  getConfigUpdateSoftwareNewAdmin,
+  getConfigNewSoftwareNewAdmin,
+  submitFormSoftware,
+  getConfigUpdate,
+  getConfigNew,
+  selectSoftware,
+  addValueToFieldsSoftware,
+  resetFieldsSoftware,
+  selectAdmin,
+  addValueToFieldsAdmin,
+  resetFieldsAdmin
+};
