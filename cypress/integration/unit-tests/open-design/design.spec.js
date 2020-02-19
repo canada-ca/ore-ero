@@ -130,13 +130,14 @@ context('Common parts', () => {
     });
 
     it('should open the correct modal', () => {
-      cy.get(':nth-child(1) > .sorting_1').click();
+      //25, 25 should hit the link no matter the size of the box
+      cy.get(':nth-child(1) > .sorting_1').click(25, 25);
       cy.get(':nth-child(1) > .sorting_1').then(name => {
-        cy.get('.wb-overlay .open').contains(name.text());
+        cy.get('.wb-overlay.open').contains(name.text());
       });
 
       // click on the close button
-      cy.get('.wb-overlay-close button').click();
+      cy.get('.wb-overlay.open .btn').click();
       cy.get('.wb-overlay').should('not.be.visible');
     });
   });
