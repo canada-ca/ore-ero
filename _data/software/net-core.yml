@@ -34,3 +34,10 @@ administrations:
         date:
           started: '2018-05-30'
           metadataLastUpdated: '2020-01-30'
+  - adminCode: asc-csa
+    uses:
+      - contact:
+          email: jekyll@ymail.com
+        date:
+          started: '1959-09-13'
+          metadataLastUpdated: '2020-02-19'
