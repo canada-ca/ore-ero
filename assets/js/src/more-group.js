@@ -12,6 +12,17 @@ $(document).ready(function() {
         .parent()
         .parent()
     );
+    if (
+      $(this)
+        .parent()
+        .parent()
+        .data('title') == 'licences'
+    ) {
+      let nb = $('#addMorelicences ul li').length - 1;
+      let id = nb == 0 ? '' : nb;
+      $('#licencesScope' + id).addClass('hide');
+      $('#licenceslevel' + id).prop('selectedIndex', 0);
+    }
   });
 
   $('.add-more-group').on('click', '.btn-tabs-more-remove', function() {
@@ -24,16 +35,17 @@ $(document).ready(function() {
 
   $('#addMorelicences').on('change', '.licenceslevelSelect select', function() {
     let nb = $(this)
-    .closest('li')
-    .attr('data-index');
-    let id = nb != 0 ? nb : '';
-    if ($('#licenceslevel' + id).prop('selectedIndex') == 1) {
+      .closest('li')
+      .attr('data-index');
+    let id = nb == 0 ? '' : nb;
+    if ($('#licenceslevel' + id).val() == 'Sub license') {
       $('#licencesScope' + id).removeClass('hide');
-    }
-    else {
+    } else {
+      $('#enlicencesscope' + id).val('');
+      $('#frlicencesscope' + id).val('');
       $('#licencesScope' + id).addClass('hide');
     }
-  })
+  });
 });
 
 function addMoreGroup(group) {
@@ -51,7 +63,6 @@ function removeMoreGroup(group) {
 
 function resetMoreGroup(group) {
   while (group.find('li').length > 1) removeMoreGroup(group);
-
   group.find('li').each(function(i, li) {
     $(li)
       .find('input')
@@ -64,6 +75,9 @@ function resetMoreGroup(group) {
         $(select).prop('selectedIndex', 0);
       });
   });
+  if (group[0]['id'] == 'addMorelicences') {
+    $('#licencesScope').addClass('hide');
+  }
 }
 
 function addBtns(obj) {
@@ -142,8 +156,18 @@ function addMoreLicences(obj) {
         en: $('#enlicencesURL' + id).val(),
         fr: $('#frlicencesURL' + id).val()
       },
-      spdxID: $('#licencesspdxID' + id).val()
+      spdxID: $('#licencesspdxID' + id).val(),
+      level: {
+        en: $('#licenceslevel' + id).val(),
+        fr: $('#licenceslevel' + id).data('fr')
+      }
     };
+    if ($('#licenceslevel' + id).val() == 'Sub license') {
+      obj.licences[i].scope = {
+        en: $('#enlicencesscope' + id).val(),
+        fr: $('#frlicencesscope' + id).val()
+      };
+    }
   });
 }
 
@@ -158,6 +182,11 @@ function fillLicenceField(licences) {
     $('#enlicencesURL' + id).val(licence.URL.en);
     $('#frlicencesURL' + id).val(licence.URL.fr);
     $('#licencesspdxID' + id).val(licence.spdxID);
+    if (licence.level.en == 'Sub licence') {
+      $('#licenceslevel' + id).prop('selectedIndex', 1);
+      $('#enlicencesscope' + id).val(licence.scope.en);
+      $('#frlicencesscope' + id).val(licence.scope.fr);
+    } else $('#licenceslevel' + id).prop('selectedIndex', 0);
   });
 }
 
