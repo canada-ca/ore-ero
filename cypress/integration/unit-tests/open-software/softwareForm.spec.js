@@ -45,9 +45,11 @@ context('Open Source Software Form', () => {
       .type('jekyll@ymail.com')
       .should('have.value','jekyll@ymail.com');
     cy.get('input#date')
-      .type("1959-09-13");
+      .type("1959-09-13")
+      .should('have.value','1959-09-13');
     cy.get('input#submitterusername')
-      .type('test name');
+      .type('test name')
+      .should('have.value','test name');
     cy.get('input#submitteremail')
       .type('xyz@ymail.com')
       .should('have.value','xyz@ymail.com');
@@ -73,9 +75,11 @@ context('Open Source Software Form', () => {
       .type('ymail')
       .should('have.value','ymail');
     cy.get('input#date')
-      .type("1959-09-13");
+      .type("1959-09-13")
+      .should('have.value','1959-09-13');
     cy.get('input#submitterusername')
-      .type('test name');
+      .type('test name')
+      .should('have.value','test name');
     cy.get('input#submitteremail')
       .type('xyz@ymail.com')
       .should('have.value','xyz@ymail.com');
@@ -111,56 +115,60 @@ context('Open Source Software Form', () => {
     it('Should submit form on the French page', () => {
       cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
       cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .contains('.NET Core');
-    cy.get('select#adminCode')
-      .as('option')
-      .invoke('val', 'asc-csa')
-      .first()
-      .trigger('change')
-      .contains('Agence spatiale canadienne');
-    cy.get('input#contactemail')
-      .type('jekyll@ymail.com')
-      .should('have.value','jekyll@ymail.com');
-    cy.get('input#date')
-      .type("1959-09-13");
-    cy.get('input#submitterusername')
-      .type('test name');
-    cy.get('input#submitteremail')
-      .type('xyz@ymail.com')
-      .should('have.value','xyz@ymail.com');
-    cy.get('form').submit();
+        .as('option')
+        .invoke('val', 'net-core')
+        .first()
+        .trigger('change')
+        .contains('.NET Core');
+      cy.get('select#adminCode')
+        .as('option')
+        .invoke('val', 'asc-csa')
+        .first()
+        .trigger('change')
+        .contains('Agence spatiale canadienne');
+      cy.get('input#contactemail')
+        .type('jekyll@ymail.com')
+        .should('have.value','jekyll@ymail.com');
+      cy.get('input#date')
+        .type("1959-09-13")
+        .should('have.value','1959-09-13');
+      cy.get('input#submitterusername')
+        .type('test name')
+        .should('have.value','test name');
+      cy.get('input#submitteremail')
+        .type('xyz@ymail.com')
+        .should('have.value','xyz@ymail.com');
+      cy.get('form').submit();
     });
 
     it('Should not submit form on the French page', () => {
       cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
       cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .contains('.NET Core');
-    cy.get('select#adminCode')
-      .as('option')
-      .invoke('val', 'asc-csa')
-      .first()
-      .trigger('change')
-      .should('not.contain', 'Hardware');
-    cy.get('input#contactemail')
-      .type('ymail')
-      .should('have.value','ymail');
-    cy.get('input#date')
-      .type("1959-09-13");
-    cy.get('input#submitterusername')
-      .type('test name');
-    cy.get('input#submitteremail')
-      .type('xyz@ymail.com')
-      .should('have.value','xyz@ymail.com');
-    cy.get('button#prbotSubmitsoftwareForm')
-      .click();
+        .as('option')
+        .invoke('val', 'net-core')
+        .first()
+        .trigger('change')
+        .contains('.NET Core');
+      cy.get('select#adminCode')
+        .as('option')
+        .invoke('val', 'asc-csa')
+        .first()
+        .trigger('change')
+        .should('not.contain', 'Hardware');
+      cy.get('input#contactemail')
+        .type('ymail')
+        .should('have.value','ymail');
+      cy.get('input#date')
+        .type("1959-09-13")
+        .should('have.value','1959-09-13');
+      cy.get('input#submitterusername')
+        .type('test name')
+        .should('have.value','test name');
+      cy.get('input#submitteremail')
+        .type('xyz@ymail.com')
+        .should('have.value','xyz@ymail.com');
+      cy.get('button#prbotSubmitsoftwareForm')
+        .click();
     });
 
 });
