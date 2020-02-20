@@ -113,8 +113,14 @@ context('Open Source Software', () => {
         cy.get('input#submitteremail')
           .type('xyz@ymail.com')
           .should('have.value','xyz@ymail.com');
-        cy.get('form')
+        cy.get('button#prbotSubmitsoftwareForm')
+          .click();
+        cy.get('#validation')
           .submit();
+        cy.wait(2000);
+        cy.get('#errors-validation')
+          .should('not.contain','The form could not be submitted because 1 error was found.');
+        cy.get('form').submit();
       });
     
       it('Should not submit form on the English page', () => {
@@ -143,8 +149,14 @@ context('Open Source Software', () => {
         cy.get('input#submitteremail')
           .type('xyz@ymail.com')
           .should('have.value','xyz@ymail.com');
-        cy.get('form')
+        cy.get('button#prbotSubmitsoftwareForm')
+          .click();
+        cy.get('#validation')
           .submit();
+        cy.wait(2000);
+        cy.get('#errors-validation')
+          .contains('The form could not be submitted because 1 error was found.');
+        cy.get('form').submit();
       });
     
       it('Loads the French page', () => {
@@ -198,7 +210,13 @@ context('Open Source Software', () => {
           cy.get('input#submitteremail')
             .type('xyz@ymail.com')
             .should('have.value','xyz@ymail.com');
-          cy.get('form').submit();
+          cy.get('button#prbotSubmitsoftwareForm')
+            .click();
+          cy.get('#validation')
+            .submit();
+          cy.wait(2000);
+          cy.get('#errors-validation')
+            .should('not.contain','Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
         });
     
         it('Should not submit form on the French page', () => {
