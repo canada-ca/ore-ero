@@ -226,14 +226,90 @@ context('Open Design Form submission', () => {
   
   
   it ('Should fail submit', () => {
-    
     cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
     //Wait needed because otherwise the click happens too fast and the validation doesn't really go through
     cy.wait(1000);
     cy.get('#prbotSubmitdesignForm').click().then(() => {
       cy.get('#errors-validation').should('exist');
+      cy.get('#errors-validation').find('ul > li').should('have.length', 15);
     });
-    
   });
 
+  it ('Should fail submit with 1 error', () => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#adminCode').children().eq(1)
+      .children().eq(1).invoke('text').then((code) => {
+        cy.get('#adminCode').select(code);
+        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#submitterusername').type('Test');
+        cy.get('#submitteremail').type('Test@test.ca');
+        cy.get('#prbotSubmitdesignForm').click().then(() => {
+          cy.get('#errors-validation').find('ul > li').should('have.length', 1);
+        });
+      });
+    });
+  });
+
+  it ('Should submit', () => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#adminCode').children().eq(1)
+      .children().eq(1).invoke('text').then((code) => {
+        cy.get('#adminCode').select(code);
+        cy.get('#submitterusername').type('Test');
+        cy.get('#submitteremail').type('Test@test.ca');
+        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#date').type('2020-02-19');
+        cy.get('#validation').submit().then(() => {
+        }).end();
+      });
+    });
+  });
+
+  it ('Should fail submit on french page', () => {
+    cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+    //Wait needed because otherwise the click happens too fast and the validation doesn't really go through
+    cy.wait(1000);
+    cy.get('#prbotSubmitdesignForm').click().then(() => {
+      cy.get('#errors-validation').should('exist');
+      cy.get('#errors-validation').find('ul > li').should('have.length', 15);
+    });
+  });
+
+  it ('Should fail submit with 1 error on french page', () => {
+    cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#adminCode').children().eq(1)
+      .children().eq(1).invoke('text').then((code) => {
+        cy.get('#adminCode').select(code);
+        cy.get('#submitterusername').type('Test');
+        cy.get('#submitteremail').type('Test@test.ca');
+        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#prbotSubmitdesignForm').click().then(() => {
+          cy.get('#errors-validation').find('ul > li').should('have.length', 1);
+        });
+      });
+    });
+  });
+
+  it ('Should submit on french page', () => {
+    cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#adminCode').children().eq(1)
+      .children().eq(1).invoke('text').then((code) => {
+        cy.get('#adminCode').select(code);
+        cy.get('#submitterusername').type('Test');
+        cy.get('#submitteremail').type('Test@test.ca');
+        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#date').type('2020-02-19');
+        cy.get('#validation').submit().then(() => {
+        }).end();
+      });
+    });
+  });
 });
