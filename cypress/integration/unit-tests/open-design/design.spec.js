@@ -75,7 +75,7 @@ context('Open Design', () => {
 });
 
 
-context('Common parts', () => {
+context('Common parts Open design', () => {
     const selectTags = [
       '#dt_govLevel',
       '#dt_licence',

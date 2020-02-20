@@ -49,6 +49,10 @@ context('Open Design Form', () => {
         cy.get('#frdescriptionhowItWorks').type('Test');
         cy.get('#endescriptionhowItWorks').type('Test');
         cy.get('#designStatus').select('Original design');
+        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+        cy.get('#addMorelicences').find('.btn-tabs-more').click();
+        cy.get('#addMorelicences').find('.btn-tabs-more').click();
         cy.get('#adminCode').children().eq(1)
         .children().eq(1).invoke('text').then((code) => {
             cy.get('#adminCode').select(code);
@@ -103,6 +107,17 @@ context('Open Design Form', () => {
          
     });
 
+    it ('New admin button should make new admin field appear if hidden and both new admin button and remove new admin button should hide it if shown', () => {
+      cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+      cy.get('#newAdminButton').click();
+      cy.get('#newAdmin').should('be.visible');
+      cy.get('#newAdminButton').click();
+      cy.get('#newAdmin').should('be.hidden');
+      cy.get('#newAdminButton').click();
+      cy.get('#removeNewAdminButton').click();
+      cy.get('#newAdmin').should('be.hidden');
+    });
+
     it('Loads the script on french page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
         cy.window().should('have.property', 'designType');
@@ -142,6 +157,10 @@ context('Open Design Form', () => {
         cy.get('#frdescriptionhowItWorks').type('Test');
         cy.get('#endescriptionhowItWorks').type('Test');
         cy.get('#designStatus').select('Design original');
+        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+        cy.get('#addMorelicences').find('.btn-tabs-more').click();
+        cy.get('#addMorelicences').find('.btn-tabs-more').click();
         cy.get('#adminCode').children().eq(1)
         .children().eq(1).invoke('text').then((code) => {
             cy.get('#adminCode').select(code);

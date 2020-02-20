@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 /* global cy, context, it, expect */
 
-context('Open Design Form', () => {
+context('Open Design Type', () => {
    
 it ('New type button should make new type field appear if hidden and both new type button and remove new type button should hide it if shown', () => {
   cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
