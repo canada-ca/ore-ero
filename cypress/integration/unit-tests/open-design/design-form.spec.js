@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 /* global cy, context, it */
 
-context('Open Design Form', () => {
+context('General Open Design Form', () => {
     it('Loads the French form page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
         cy.get('#wb-cont').contains('Formulaire du Design libre');
@@ -15,75 +15,7 @@ context('Open Design Form', () => {
         cy.window().should('have.property', 'designType');
         });
 
-    it('Values should be autofilled when design name is selected', () => {
-        cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
-        cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
-          cy.get('#nameselect').select(name);
-          cy.get('#enname').should('have.value', name);
-          cy.get('#frname').should('not.have.value', '');
-          cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
-          cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
-          cy.get('#enhomepageURL').should('not.have.value', '');
-          cy.get('#frhomepageURL').should('not.have.value', '');
-          cy.get('#addMoredesignType').find('ul > li').each(($li, id) => {
-            let i = id == 0 ? '' : id;
-            cy.get('#designType' + i).children().first().should('not.be.selected');
-          });
-          cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
-            let i = id == 0 ? '' : id;
-            cy.get('#enlicencesURL' + i).should('not.have.value', '');
-            cy.get('#frlicencesURL' + i).should('not.have.value', '');
-            cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
-          });
-        });
-    });
-
-    it('Should reset all fields when reset is activated', () => {
-        cy.get('#date').type('2020-02-19');
-        cy.get('#contactemail').type('Test@test.ca');
-        cy.get('#contactname').type('Test');
-        cy.get('#submitterusername').type('Test');
-        cy.get('#submitteremail').type('Test@test.ca');
-        cy.get('#frteam').type('Test');
-        cy.get('#enteam').type('Test');
-        cy.get('#frdescriptionhowItWorks').type('Test');
-        cy.get('#endescriptionhowItWorks').type('Test');
-        cy.get('#designStatus').select('Original design');
-        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
-        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
-        cy.get('#addMorelicences').find('.btn-tabs-more').click();
-        cy.get('#addMorelicences').find('.btn-tabs-more').click();
-        cy.get('#adminCode').children().eq(1)
-        .children().eq(1).invoke('text').then((code) => {
-            cy.get('#adminCode').select(code);
-            cy.get('#formReset').click().then(() => {
-            cy.get('#adminCode').children().first().should('be.selected');
-            cy.get('#nameselect').children().first().should('be.selected');
-            cy.get('#enname').should('have.value', '');
-            cy.get('#frname').should('have.value', '');
-            cy.get('#endescriptionwhatItDoes').should('have.value', '');
-            cy.get('#frdescriptionwhatItDoes').should('have.value', '');
-            cy.get('#frdescriptionhowItWorks').should('have.value', '');
-            cy.get('#endescriptionhowItWorks').should('have.value', '');
-            cy.get('#enhomepageURL').should('have.value', '');
-            cy.get('#frhomepageURL').should('have.value', '');
-            cy.get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
-            cy.get('#designType').children().first().should('be.selected');
-            cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
-            cy.get('#enlicencesURL').should('have.value', '');
-            cy.get('#frlicencesURL').should('have.value', '');
-            cy.get('#licencesspdxID').children().first().should('be.selected');
-            cy.get('#designStatus').children().first().should('be.selected');
-            cy.get('#frteam').should('have.value', '');
-            cy.get('#enteam').should('have.value', '');
-            cy.get('#date').should('have.value', '');
-            cy.get('#contactemail').should('have.value', '');
-            cy.get('#contactname').should('have.value', '');
-            cy.get('#submitteremail').should('have.value', '');
-            cy.get('#submitterusername').should('have.value', '');
-          });
-        });
-    });
+    
 
     it ('Should reset all fields filled by design select if the selected option is modified', () => {
         cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
@@ -123,75 +55,6 @@ context('Open Design Form', () => {
         cy.window().should('have.property', 'designType');
         });
 
-    it('Values should be autofilled when design name is selected on french page', () => {
-        cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
-        cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
-          cy.get('#nameselect').select(name);
-          cy.get('#enname').should('not.have.value', '');
-          cy.get('#frname').should('have.value', name);
-          cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
-          cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
-          cy.get('#enhomepageURL').should('not.have.value', '');
-          cy.get('#frhomepageURL').should('not.have.value', '');
-          cy.get('#addMoredesignType').find('ul > li').each(($li, id) => {
-            let i = id == 0 ? '' : id;
-            cy.get('#designType' + i).children().first().should('not.be.selected');
-          });
-          cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
-            let i = id == 0 ? '' : id;
-            cy.get('#enlicencesURL' + i).should('not.have.value', '');
-            cy.get('#frlicencesURL' + i).should('not.have.value', '');
-            cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
-          });
-        });
-    });
-
-    it('Should reset all fields when reset is activated on french page', () => {
-        cy.get('#date').type('2020-02-19');
-        cy.get('#contactemail').type('Test@test.ca');
-        cy.get('#contactname').type('Test');
-        cy.get('#submitterusername').type('Test');
-        cy.get('#submitteremail').type('Test@test.ca');
-        cy.get('#frteam').type('Test');
-        cy.get('#enteam').type('Test');
-        cy.get('#frdescriptionhowItWorks').type('Test');
-        cy.get('#endescriptionhowItWorks').type('Test');
-        cy.get('#designStatus').select('Design original');
-        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
-        cy.get('#addMoredesignType').find('.btn-tabs-more').click();
-        cy.get('#addMorelicences').find('.btn-tabs-more').click();
-        cy.get('#addMorelicences').find('.btn-tabs-more').click();
-        cy.get('#adminCode').children().eq(1)
-        .children().eq(1).invoke('text').then((code) => {
-            cy.get('#adminCode').select(code);
-            cy.get('#formReset').click().then(() => {
-            cy.get('#adminCode').children().first().should('be.selected');
-            cy.get('#nameselect').children().first().should('be.selected');
-            cy.get('#enname').should('have.value', '');
-            cy.get('#frname').should('have.value', '');
-            cy.get('#endescriptionwhatItDoes').should('have.value', '');
-            cy.get('#frdescriptionwhatItDoes').should('have.value', '');
-            cy.get('#frdescriptionhowItWorks').should('have.value', '');
-            cy.get('#endescriptionhowItWorks').should('have.value', '');
-            cy.get('#enhomepageURL').should('have.value', '');
-            cy.get('#frhomepageURL').should('have.value', '');
-            cy.get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
-            cy.get('#designType').children().first().should('be.selected');
-            cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
-            cy.get('#enlicencesURL').should('have.value', '');
-            cy.get('#frlicencesURL').should('have.value', '');
-            cy.get('#licencesspdxID').children().first().should('be.selected');
-            cy.get('#designStatus').children().first().should('be.selected');
-            cy.get('#frteam').should('have.value', '');
-            cy.get('#enteam').should('have.value', '');
-            cy.get('#date').should('have.value', '');
-            cy.get('#contactemail').should('have.value', '');
-            cy.get('#contactname').should('have.value', '');
-            cy.get('#submitteremail').should('have.value', '');
-            cy.get('#submitterusername').should('have.value', '');
-          });
-        });
-    });
 
     it ('Should reset all fields filled by design select if the selected option is modified on french page', () => {
         cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
@@ -214,5 +77,156 @@ context('Open Design Form', () => {
         });
          
     });
+
+});
+
+context('Open Design Form Reset', () => {
+  it('Values should be autofilled when design name is selected', () => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#enname').should('have.value', name);
+      cy.get('#frname').should('not.have.value', '');
+      cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#enhomepageURL').should('not.have.value', '');
+      cy.get('#frhomepageURL').should('not.have.value', '');
+      cy.get('#addMoredesignType').find('ul > li').each(($li, id) => {
+        let i = id == 0 ? '' : id;
+        cy.get('#designType' + i).children().first().should('not.be.selected');
+      });
+      cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
+        let i = id == 0 ? '' : id;
+        cy.get('#enlicencesURL' + i).should('not.have.value', '');
+        cy.get('#frlicencesURL' + i).should('not.have.value', '');
+        cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
+      });
+    });
+});
+
+it('Should reset all fields when reset is activated', () => {
+    cy.get('#date').type('2020-02-19');
+    cy.get('#contactemail').type('Test@test.ca');
+    cy.get('#contactname').type('Test');
+    cy.get('#submitterusername').type('Test');
+    cy.get('#submitteremail').type('Test@test.ca');
+    cy.get('#frteam').type('Test');
+    cy.get('#enteam').type('Test');
+    cy.get('#frdescriptionhowItWorks').type('Test');
+    cy.get('#endescriptionhowItWorks').type('Test');
+    cy.get('#designStatus').select('Original design');
+    cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+    cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+    cy.get('#addMorelicences').find('.btn-tabs-more').click();
+    cy.get('#addMorelicences').find('.btn-tabs-more').click();
+    cy.get('#adminCode').children().eq(1)
+    .children().eq(1).invoke('text').then((code) => {
+        cy.get('#adminCode').select(code);
+        cy.get('#formReset').click().then(() => {
+        cy.get('#adminCode').children().first().should('be.selected');
+        cy.get('#nameselect').children().first().should('be.selected');
+        cy.get('#enname').should('have.value', '');
+        cy.get('#frname').should('have.value', '');
+        cy.get('#endescriptionwhatItDoes').should('have.value', '');
+        cy.get('#frdescriptionwhatItDoes').should('have.value', '');
+        cy.get('#frdescriptionhowItWorks').should('have.value', '');
+        cy.get('#endescriptionhowItWorks').should('have.value', '');
+        cy.get('#enhomepageURL').should('have.value', '');
+        cy.get('#frhomepageURL').should('have.value', '');
+        cy.get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
+        cy.get('#designType').children().first().should('be.selected');
+        cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
+        cy.get('#enlicencesURL').should('have.value', '');
+        cy.get('#frlicencesURL').should('have.value', '');
+        cy.get('#licencesspdxID').children().first().should('be.selected');
+        cy.get('#designStatus').children().first().should('be.selected');
+        cy.get('#frteam').should('have.value', '');
+        cy.get('#enteam').should('have.value', '');
+        cy.get('#date').should('have.value', '');
+        cy.get('#contactemail').should('have.value', '');
+        cy.get('#contactname').should('have.value', '');
+        cy.get('#submitteremail').should('have.value', '');
+        cy.get('#submitterusername').should('have.value', '');
+      });
+    });
+});
+
+it('Values should be autofilled when design name is selected on french page', () => {
+  cy.visit('http://localhost:4000/ore-ero/fr/design-libre-formulaire.html');
+  cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+    cy.get('#nameselect').select(name);
+    cy.get('#enname').should('not.have.value', '');
+    cy.get('#frname').should('have.value', name);
+    cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
+    cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
+    cy.get('#enhomepageURL').should('not.have.value', '');
+    cy.get('#frhomepageURL').should('not.have.value', '');
+    cy.get('#addMoredesignType').find('ul > li').each(($li, id) => {
+      let i = id == 0 ? '' : id;
+      cy.get('#designType' + i).children().first().should('not.be.selected');
+    });
+    cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
+      let i = id == 0 ? '' : id;
+      cy.get('#enlicencesURL' + i).should('not.have.value', '');
+      cy.get('#frlicencesURL' + i).should('not.have.value', '');
+      cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
+    });
+  });
+});
+
+it('Should reset all fields when reset is activated on french page', () => {
+  cy.get('#date').type('2020-02-19');
+  cy.get('#contactemail').type('Test@test.ca');
+  cy.get('#contactname').type('Test');
+  cy.get('#submitterusername').type('Test');
+  cy.get('#submitteremail').type('Test@test.ca');
+  cy.get('#frteam').type('Test');
+  cy.get('#enteam').type('Test');
+  cy.get('#frdescriptionhowItWorks').type('Test');
+  cy.get('#endescriptionhowItWorks').type('Test');
+  cy.get('#designStatus').select('Design original');
+  cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+  cy.get('#addMoredesignType').find('.btn-tabs-more').click();
+  cy.get('#addMorelicences').find('.btn-tabs-more').click();
+  cy.get('#addMorelicences').find('.btn-tabs-more').click();
+  cy.get('#adminCode').children().eq(1)
+  .children().eq(1).invoke('text').then((code) => {
+      cy.get('#adminCode').select(code);
+      cy.get('#formReset').click().then(() => {
+      cy.get('#adminCode').children().first().should('be.selected');
+      cy.get('#nameselect').children().first().should('be.selected');
+      cy.get('#enname').should('have.value', '');
+      cy.get('#frname').should('have.value', '');
+      cy.get('#endescriptionwhatItDoes').should('have.value', '');
+      cy.get('#frdescriptionwhatItDoes').should('have.value', '');
+      cy.get('#frdescriptionhowItWorks').should('have.value', '');
+      cy.get('#endescriptionhowItWorks').should('have.value', '');
+      cy.get('#enhomepageURL').should('have.value', '');
+      cy.get('#frhomepageURL').should('have.value', '');
+      cy.get('#addMoredesignType').find('ul > li').should('have.length.lte', 1);
+      cy.get('#designType').children().first().should('be.selected');
+      cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
+      cy.get('#enlicencesURL').should('have.value', '');
+      cy.get('#frlicencesURL').should('have.value', '');
+      cy.get('#licencesspdxID').children().first().should('be.selected');
+      cy.get('#designStatus').children().first().should('be.selected');
+      cy.get('#frteam').should('have.value', '');
+      cy.get('#enteam').should('have.value', '');
+      cy.get('#date').should('have.value', '');
+      cy.get('#contactemail').should('have.value', '');
+      cy.get('#contactname').should('have.value', '');
+      cy.get('#submitteremail').should('have.value', '');
+      cy.get('#submitterusername').should('have.value', '');
+    });
+  });
+});
+});
+
+context('Open Design Form submission', () => {
+
+  it ('Should fail submit', () => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-design-form.html');
+    
+  });
 
 });
