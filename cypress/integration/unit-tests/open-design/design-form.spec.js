@@ -265,8 +265,8 @@ context('Open Design Form submission', () => {
         cy.get('#date').type('2020-02-19');
         cy.get('#prbotSubmitdesignForm').click().then(() => {
           cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+          cy.get('#validation').submit().end();
         });
-        cy.get('#validation').submit().end();
       });
     });
   });
@@ -311,8 +311,8 @@ context('Open Design Form submission', () => {
         cy.get('#date').type('2020-02-19');
         cy.get('#prbotSubmitdesignForm').click().then(() => {
           cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+          cy.get('#validation').submit().end();
         });
-        cy.get('#validation').submit().end();
       });
     });
   });
