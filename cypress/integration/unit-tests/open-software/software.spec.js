@@ -1,14 +1,15 @@
 /// <reference types="Cypress" />
 /* global cy, context, it */
+context('Open Source Software on the English page', () =>  {
+  before(() => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
+  });
 
-context('Open Source Software', () => {
   it('Loads the English page', () => {
-      cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
-      cy.get('#wb-cont').contains('Open Source Software');
+    cy.get('#wb-cont').contains('Open Source Software');
   });
 
   it('Dynamically filters on the English page', () => {
-      cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
       cy.get('#dataset-filter_filter')
           .find('input')
           .type('jekyll');
@@ -22,7 +23,6 @@ context('Open Source Software', () => {
   });
 
   it('Dynamically filters on the English page', () => {
-      cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
       cy.get('#dataset-filter_filter')
           .find('input')
           .type('cypress');
@@ -33,7 +33,6 @@ context('Open Source Software', () => {
   });
 
   it('Can filter for an existing element on the English page', () => {
-    cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
     cy.get('#dataset-filter')
         .find('tbody')
         .get('td')
@@ -49,14 +48,18 @@ context('Open Source Software', () => {
                 .should('contain', expected);
         });
   });
+});
+
+context('Open Source Software on the French page', () =>  {
+  before(() => {
+    cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
+  });
 
   it('Loads the French page', () => {
-      cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
-      cy.get('#wb-cont').contains('Logiciels libres');
+    cy.get('#wb-cont').contains('Logiciels libres');
   });
 
   it('Dynamically filters on the French page', () => {
-      cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
       cy.get('#dataset-filter_filter')
           .find('input')
           .type('jekyll');
@@ -70,7 +73,6 @@ context('Open Source Software', () => {
   });
 
   it('Dynamically filters on the English page', () => {
-      cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
       cy.get('#dataset-filter_filter')
           .find('input')
           .type('cypress');
@@ -81,7 +83,6 @@ context('Open Source Software', () => {
   });
 
   it('Can filter for an existing element on the French page', () => {
-    cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
     cy.get('#dataset-filter')
         .find('tbody')
         .get('td')
@@ -97,14 +98,18 @@ context('Open Source Software', () => {
                 .should('contain', expected);
         });
   });
+});
+
+context('Open Source Software on the English Form page', () =>  {
+  before(() => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
+  });
 
   it('Loads the English Form page', () => {
-      cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
-      cy.get('#wb-cont').contains('Open Source Software Form');
+    cy.get('#wb-cont').contains('Open Source Software Form');
   });
-  
+
   it('Should return dynamicall filled of existing data information on the English page', () => {
-    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -112,9 +117,8 @@ context('Open Source Software', () => {
       .trigger('change')
       .contains('.NET Core');
   });
-  
+
   it('Should not dynamicall filled of unexisting data information on the English page', () => {
-    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -122,9 +126,8 @@ context('Open Source Software', () => {
       .trigger('change')
       .should('not.contain', 'sourcetree');
   });
-  
+
   it('Should submit form on the English page', () => {
-    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -158,9 +161,8 @@ context('Open Source Software', () => {
       .should('not.contain','The form could not be submitted because 1 error was found.');
     cy.get('form').submit();
   });
-  
+
   it('Should not submit form on the English page', () => {
-    cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -194,14 +196,18 @@ context('Open Source Software', () => {
       .contains('The form could not be submitted because 1 error was found.');
     cy.get('form').submit();
   });
-  
-  it('Loads the French Form page', () => {
+});
+
+context('Open Source Software on the French Form page', () =>  {
+  before(() => {
     cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
+  });
+
+  it('Loads the French Form page', () => {
     cy.get('#wb-cont').contains('Formulaire du logiciel libre');
   });
   
   it('Should return dynamicall filled of existing data information on the French page', () => {
-    cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -211,7 +217,6 @@ context('Open Source Software', () => {
   });
   
   it('Should not dynamicall filled of unexisting data information on the French page', () => {
-    cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -221,7 +226,6 @@ context('Open Source Software', () => {
   });
   
   it('Should submit form on the French page', () => {
-    cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
@@ -256,7 +260,6 @@ context('Open Source Software', () => {
   });
   
   it('Should not submit form on the French page', () => {
-    cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
     cy.get('select')
       .as('option')
       .invoke('val', 'net-core')
