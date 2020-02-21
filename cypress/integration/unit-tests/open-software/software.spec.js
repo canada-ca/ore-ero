@@ -32,6 +32,24 @@ context('Open Source Software', () => {
           .should('not.contain', 'cypress');
   });
 
+  it('Can filter for an existing element on the English page', () => {
+    cy.visit('http://localhost:4000/ore-ero/en/open-source-softwares.html');
+    cy.get('#dataset-filter')
+        .find('tbody')
+        .get('td')
+        .eq(0)
+        .invoke('text')
+        .then((expected) => {
+            cy.get('#dataset-filter_filter')
+                .find('input')
+                .type(expected);
+
+            cy.get('#dataset-filter')
+                .find('tbody>tr')
+                .should('contain', expected);
+        });
+  });
+
   it('Loads the French page', () => {
       cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
       cy.get('#wb-cont').contains('Logiciels libres');
@@ -62,7 +80,25 @@ context('Open Source Software', () => {
           .should('not.contain', 'cypress');
   });
 
-  it('Loads the English page', () => {
+  it('Can filter for an existing element on the French page', () => {
+    cy.visit('http://localhost:4000/ore-ero/fr/logiciels-libres.html');
+    cy.get('#dataset-filter')
+        .find('tbody')
+        .get('td')
+        .eq(0)
+        .invoke('text')
+        .then((expected) => {
+            cy.get('#dataset-filter_filter')
+                .find('input')
+                .type(expected);
+
+            cy.get('#dataset-filter')
+                .find('tbody>tr')
+                .should('contain', expected);
+        });
+  });
+
+  it('Loads the English Form page', () => {
       cy.visit('http://localhost:4000/ore-ero/en/open-source-software-form.html');
       cy.get('#wb-cont').contains('Open Source Software Form');
   });
@@ -159,7 +195,7 @@ context('Open Source Software', () => {
     cy.get('form').submit();
   });
   
-  it('Loads the French page', () => {
+  it('Loads the French Form page', () => {
     cy.visit('http://localhost:4000/ore-ero/fr/logiciel-libre-formulaire.html');
     cy.get('#wb-cont').contains('Formulaire du logiciel libre');
   });
