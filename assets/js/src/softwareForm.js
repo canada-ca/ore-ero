@@ -23,17 +23,9 @@ $(document).ready(function() {
   softwareSelect.change(function() {
     selectSoftware();
     if (adminSelect.val() != '') selectAdmin();
-    if (softwareSelect.prop('selectedIndex') == 0) {
-      adminSelect.attr('required', 'required');
-      $('#date').attr('required', 'required');
-      $('#contactemail').attr('required', 'required');
-    }
-    else {
-      hideNewAdminForm();
-      adminSelect.removeAttr('required');
-      $('#date').removeAttr('required');
-      $('#contactemail').removeAttr('required');
-    }
+    if (softwareSelect.prop('selectedIndex') == 0) setRequiredUpdate();
+    else setNotRequiredUpdate();
+    
   });
 
   adminSelect.change(function() {
@@ -48,6 +40,19 @@ $(document).ready(function() {
     resetMoreGroup($('#addMoreuses'));
   });
 });
+
+function setRequiredUpdate() {
+  adminSelect.attr('required', 'required');
+  $('#date').attr('required', 'required');
+  $('#contactemail').attr('required', 'required');
+}
+
+function setNotRequiredUpdate() {
+  hideNewAdminForm();
+  adminSelect.removeAttr('required');
+  $('#date').removeAttr('required');
+  $('#contactemail').removeAttr('required');
+}
 
 function getsoftwareObject() {
   // Mandatory fields
@@ -81,25 +86,27 @@ function getsoftwareObject() {
 
   // Optional fields
   if (getAdminCode()) {
-    designObject.administrations[0] = {};
-    designObject.administrations[0].uses = [];
-    designObject.administrations[0].uses[0] = {};
-    designObject.administrations[0].adminCode = getAdminCode();
-    if ($('#contactemail').val()) designObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
+    softwareObject.administrations[0] = {};
+    softwareObject.administrations[0].uses = [];
+    softwareObject.administrations[0].uses[0] = {};
+    softwareObject.administrations[0].uses[0].contact = {};
+    softwareObject.administrations[0].uses[0].date = {};
+    softwareObject.administrations[0].adminCode = getAdminCode();
+    if ($('#contactemail').val()) softwareObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
     if ($('#contactname').val()) {
-      designObject.administrations[0].uses[0].contact.name = $(
+      softwareObject.administrations[0].uses[0].contact.name = $(
         '#contactname'
       ).val();
     }
     if ($('#enteam').val() || $('#frteam').val()) {
-      designObject.administrations[0].uses[0].team = {};
+      softwareObject.administrations[0].uses[0].team = {};
       if ($('#enteam').val())
-        designObject.administrations[0].uses[0].team.en = $('#enteam').val();
+        softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
       if ($('#frteam').val())
-        designObject.administrations[0].uses[0].team.fr = $('#frteam').val();
+        softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
     }
-    if ($('#date').val()) designObject.administrations[0].uses[0].date.started = $('#date').val();
-    designObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
+    if ($('#date').val()) softwareObject.administrations[0].uses[0].date.started = $('#date').val();
+    softwareObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
   }
   
   if (

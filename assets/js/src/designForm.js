@@ -23,19 +23,8 @@ $(document).ready(function() {
   designSelect.change(function() {
     selectDesign();
     if (adminSelect.val() != '') selectAdmin();
-    if (designSelect.prop('selectedIndex') == 0) {
-      adminSelect.attr('required', 'required');
-      $('#date').attr('required', 'required');
-      $('#contactemail').attr('required', 'required');
-      $('#designStatus').attr('required', 'required');
-    }
-    else {
-      hideNewAdminForm();
-      adminSelect.removeAttr('required');
-      $('#date').removeAttr('required');
-      $('#contactemail').removeAttr('required');
-      $('#designStatus').removeAttr('required');
-    }
+    if (designSelect.prop('selectedIndex') == 0) setRequiredUpdate();
+    else setNotRequiredUpdate();
   });
 
   adminSelect.change(function() {
@@ -49,6 +38,21 @@ $(document).ready(function() {
     resetMoreGroup($('#addMorelicences'));
   });
 });
+
+function setRequiredUpdate() {
+  adminSelect.attr('required', 'required');
+  $('#date').attr('required', 'required');
+  $('#contactemail').attr('required', 'required');
+  $('#designStatus').attr('required', 'required');
+}
+
+function setNotRequiredUpdate() {
+  hideNewAdminForm();
+  adminSelect.removeAttr('required');
+  $('#date').removeAttr('required');
+  $('#contactemail').removeAttr('required');
+  $('#designStatus').removeAttr('required');
+}
 
 function getDesignObject() {
   // Mandatory fields
@@ -81,6 +85,9 @@ function getDesignObject() {
     designObject.administrations[0] = {};
     designObject.administrations[0].uses = [];
     designObject.administrations[0].uses[0] = {};
+    designObject.administrations[0].uses[0].contact = {};
+    designObject.administrations[0].uses[0].date = {};
+    designObject.administrations[0].uses[0].designStatus = {};
     designObject.administrations[0].adminCode = getAdminCode();
     if ($('#contactemail').val()) designObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
     if ($('#contactname').val()) {

@@ -23,6 +23,9 @@ $(document).ready(function() {
   standardSelect.change(function() {
     selectStandard();
     if (adminSelect.val() != '') selectAdmin();
+    if (standardSelect.prop('selectedIndex') == 0) setRequiredUpdate();
+    else setNotRequiredUpdate();
+    
   });
 
   adminSelect.change(function() {
@@ -37,6 +40,36 @@ $(document).ready(function() {
   });
 });
 
+function setRequiredUpdate() {
+  adminSelect.attr('required', 'required');
+  $('#date').attr('required', 'required');
+  $('#contactemail').attr('required', 'required');
+  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    $('#enreferenceURL' + id).attr('required','required');
+    $('#frreferenceURL' + id).attr('required','required');
+    $('#enreferencename' + id).attr('required','required');
+    $('#frreferencename' + id).attr('required','required');
+  });
+  $('#status').attr('required','required');
+}
+
+function setNotRequiredUpdate() {
+  hideNewAdminForm();
+  adminSelect.removeAttr('required');
+  $('#date').removeAttr('required');
+  $('#contactemail').removeAttr('required');
+  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+    let id =
+      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+    $('#enreferenceURL' + id).removeAttr('required');
+    $('#frreferenceURL' + id).removeAttr('required');
+    $('#enreferencename' + id).removeAttr('required');
+    $('#frreferencename' + id).removeAttr('required');
+  });
+  $('#status').removeAttr('required');
+}
 function getStandardObject() {
   // Mandatory fields
   let standardObject = {
@@ -66,38 +99,48 @@ function getStandardObject() {
       en: getTagsEN(),
       fr: getTagsFR()
     },
-    administrations: [
-      {
-        adminCode: getAdminCode(),
-        contact: {
-          email: $('#contactemail').val()
-        },
-        date: {
-          created: $('#date').val(),
-          metadataLastUpdated: getToday()
-        },
-        references: [],
-        status: $('#status').val()
-      }
-    ]
+    administrations: []
   };
 
   // More-groups
-  $('#addMorereference ul.list-unstyled > li').each(function(i) {
-    let id =
-      $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    standardObject.administrations[0].references[i] = {
-      URL: {
-        en: $('#enreferenceURL' + id).val(),
-        fr: $('#frreferenceURL' + id).val()
-      },
-      name: {
-        en: $('#enreferencename' + id).val(),
-        fr: $('#frreferencename' + id).val()
-      }
-    };
-  });
-
+  if (getAdminCode()) {
+    standardObject.administrations[0] = {};
+    standardObject.administrations[0].contact = {};
+    standardObject.administrations[0].date = {};
+    standardObject.administrations[0].references = [];
+    standardObject.administrations[0].adminCode = getAdminCode();
+    if ($('#contactemail').val()) standardObject.administrations[0].contact.email = $('#contactemail').val();
+    if ($('#contactname').val()) {
+      standardObject.administrations[0].contact.name = $(
+        '#contactname'
+      ).val();
+    }
+    if ($('#enteam').val() || $('#frteam').val()) {
+      standardObject.administrations[0].team = {};
+      if ($('#enteam').val())
+        standardObject.administrations[0].team.en = $('#enteam').val();
+      if ($('#frteam').val())
+        standardObject.administrations[0].team.fr = $('#frteam').val();
+    }
+    if ($('#date').val()) standardObject.administrations[0].date.started = $('#date').val();
+    standardObject.administrations[0].date.metadataLastUpdated = getToday();
+    
+    $('#addMorereference ul.list-unstyled > li').each(function(i) {
+      let id =
+        $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
+      standardObject.administrations[0].references[i] = {
+        URL: {
+          en: $('#enreferenceURL' + id).val(),
+          fr: $('#frreferenceURL' + id).val()
+        },
+        name: {
+          en: $('#enreferencename' + id).val(),
+          fr: $('#frreferencename' + id).val()
+        }
+      };
+    });
+    standardObject.administrations[0].status = $('#status').val();
+  }
   // Optional fields
   if (
     $('#endescriptionhowItWorks').val() ||
@@ -113,19 +156,6 @@ function getStandardObject() {
         '#frdescriptionhowItWorks'
       ).val();
   }
-
-  if ($('#contactname').val()) {
-    standardObject.administrations[0].contact.name = $('#contactname').val();
-  }
-
-  if ($('#enteam').val() || $('#frteam').val()) {
-    standardObject.administrations[0].team = {};
-    if ($('#enteam').val())
-      standardObject.administrations[0].team.en = $('#enteam').val();
-    if ($('#frteam').val())
-      standardObject.administrations[0].team.fr = $('#frteam').val();
-  }
-
   return standardObject;
 }
 
