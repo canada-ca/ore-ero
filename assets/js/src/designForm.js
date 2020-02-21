@@ -438,7 +438,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
+  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(result) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {
