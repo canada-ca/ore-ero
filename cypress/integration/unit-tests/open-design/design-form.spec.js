@@ -259,14 +259,14 @@ context('Open Design Form submission', () => {
       cy.get('#adminCode').children().eq(1)
       .children().eq(1).invoke('text').then((code) => {
         cy.get('#adminCode').select(code);
-        cy.get('#submitterusername').type('Test');
-        cy.get('#submitteremail').type('Test@test.ca');
-        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#submitterusername').type('E');
+        cy.get('#submitteremail').type('E@test.ca');
+        cy.get('#contactemail').type('E@test.ca');
         cy.get('#date').type('2020-02-19');
-        cy.get('#prbotSubmitdesignForm').click().then(() => {
-          cy.get('#prbotSubmitAlertInProgress').should('be.visible');
-          cy.get('#validation').submit().end();
-        });
+        // cy.get('#prbotSubmitdesignForm').click().then(() => {
+        //   cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+        //   cy.get('#validation').submit().end();
+        // });
       });
     });
   });
@@ -305,14 +305,14 @@ context('Open Design Form submission', () => {
       cy.get('#adminCode').children().eq(1)
       .children().eq(1).invoke('text').then((code) => {
         cy.get('#adminCode').select(code);
-        cy.get('#submitterusername').type('Test');
-        cy.get('#submitteremail').type('Test@test.ca');
-        cy.get('#contactemail').type('Test@test.ca');
+        cy.get('#submitterusername').type('S');
+        cy.get('#submitteremail').type('S@test.ca');
+        cy.get('#contactemail').type('S@test.ca');
         cy.get('#date').type('2020-02-19');
-        cy.get('#prbotSubmitdesignForm').click().then(() => {
-          cy.get('#prbotSubmitAlertInProgress').should('be.visible');
-          cy.get('#validation').submit().end();
-        });
+        // cy.get('#prbotSubmitdesignForm').click().then(() => {
+        //   cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+        //   cy.get('#validation').submit().end();
+        // });
       });
     });
   });
