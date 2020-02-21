@@ -23,6 +23,19 @@ $(document).ready(function() {
   designSelect.change(function() {
     selectDesign();
     if (adminSelect.val() != '') selectAdmin();
+    if (designSelect.prop('selectedIndex') == 0) {
+      adminSelect.attr('required', 'required');
+      $('#date').attr('required', 'required');
+      $('#contactemail').attr('required', 'required');
+      $('#designStatus').attr('required', 'required');
+    }
+    else {
+      hideNewAdminForm();
+      adminSelect.removeAttr('required');
+      $('#date').removeAttr('required');
+      $('#contactemail').removeAttr('required');
+      $('#designStatus').removeAttr('required');
+    }
   });
 
   adminSelect.change(function() {
@@ -57,28 +70,38 @@ function getDesignObject() {
       en: $('#enname').val(),
       fr: $('#frname').val()
     },
-    administrations: [
-      {
-        adminCode: getAdminCode(),
-        uses: [
-          {
-            contact: {
-              email: $('#contactemail').val()
-            },
-            date: {
-              started: $('#date').val(),
-              metadataLastUpdated: getToday()
-            }
-          }
-        ]
-      }
-    ]
+    administrations: []
   };
 
   // More-groups
   addMoreLicences(designObject);
   addTypes(designObject);
   // Optional fields
+  if (getAdminCode()) {
+    designObject.administrations[0] = {};
+    designObject.administrations[0].uses = [];
+    designObject.administrations[0].uses[0] = {};
+    designObject.administrations[0].adminCode = getAdminCode();
+    if ($('#contactemail').val()) designObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
+    if ($('#contactname').val()) {
+      designObject.administrations[0].uses[0].contact.name = $(
+        '#contactname'
+      ).val();
+    }
+    if ($('#enteam').val() || $('#frteam').val()) {
+      designObject.administrations[0].uses[0].team = {};
+      if ($('#enteam').val())
+        designObject.administrations[0].uses[0].team.en = $('#enteam').val();
+      if ($('#frteam').val())
+        designObject.administrations[0].uses[0].team.fr = $('#frteam').val();
+    }
+    if ($('#date').val()) designObject.administrations[0].uses[0].date.started = $('#date').val();
+    designObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
+    if ($('#designStatus').val()) {
+      designObject.administrations[0].uses[0].designStatus.en = $('#designStatus').val();
+      designObject.administrations[0].uses[0].designStatus.fr = $('#designStatus').data('fr');
+    }
+  }
   if (
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
@@ -95,24 +118,8 @@ function getDesignObject() {
       '#frdescriptionhowItWorks'
     ).val();
   }
-  if ($('#designStatus').val()) {
-    designObject.designStatus.en = $('#designStatus').val();
-    designObject.designStatus.fr = $('#designStatus').data('fr');
-  }
 
-  if ($('#contactname').val()) {
-    designObject.administrations[0].uses[0].contact.name = $(
-      '#contactname'
-    ).val();
-  }
-
-  if ($('#enteam').val() || $('#frteam').val()) {
-    designObject.administrations[0].uses[0].team = {};
-    if ($('#enteam').val())
-      designObject.administrations[0].uses[0].team.en = $('#enteam').val();
-    if ($('#frteam').val())
-      designObject.administrations[0].uses[0].team.fr = $('#frteam').val();
-  }
+  
 
   return designObject;
 }
@@ -393,9 +400,7 @@ function addValueToFieldsDesign(obj) {
   }
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
-  if (obj.designStatus) {
-    $('#designStatus').val(obj.designStatus);
-  }
+  
   fillTypeFields(obj.designTypes);
   fillLicenceField(obj.licences);
 }
@@ -415,13 +420,12 @@ function resetFieldsDesign() {
   $('#frhomepageURL').val('');
   resetMoreGroup($('#addMorelicences'));
   resetTypes();
-  $('#designStatus').prop('selectedIndex', 0);
 }
 
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
     result
   ) {
     if (result[design]) {
@@ -444,9 +448,13 @@ function addValueToFieldsAdmin(obj) {
   if (obj.uses[0].contact.name) $('#contactname').val(obj.uses[0].contact.name);
 
   $('#date').val(obj.uses[0].date.started);
-  if (obj.team) {
-    if (obj.team.en) $('#enteam').val(obj.team.en);
-    if (obj.team.fr) $('#frteam').val(obj.team.fr);
+  if (obj.uses[0].team) {
+    if (obj.uses[0].team.en) $('#enteam').val(obj.uses[0].team.en);
+    if (obj.uses[0].team.fr) $('#frteam').val(obj.uses[0].team.fr);
+  }
+
+  if (obj.uses[0].designStatus) {
+    $('#designStatus').val(obj.uses[0].designStatus.en);
   }
 }
 
@@ -456,4 +464,5 @@ function resetFieldsAdmin() {
   $('#date').val('');
   $('#enteam').val('');
   $('#frteam').val('');
+  $('#designStatus').prop('selectedIndex', 0);
 }
