@@ -263,8 +263,10 @@ context('Open Design Form submission', () => {
         cy.get('#submitteremail').type('Test@test.ca');
         cy.get('#contactemail').type('Test@test.ca');
         cy.get('#date').type('2020-02-19');
-        cy.get('#validation').submit().then(() => {
-        }).end();
+        cy.get('#prbotSubmitdesignForm').click().then(() => {
+          cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+        });
+        cy.get('#validation').submit().end();
       });
     });
   });
@@ -307,8 +309,10 @@ context('Open Design Form submission', () => {
         cy.get('#submitteremail').type('Test@test.ca');
         cy.get('#contactemail').type('Test@test.ca');
         cy.get('#date').type('2020-02-19');
-        cy.get('#validation').submit().then(() => {
-        }).end();
+        cy.get('#prbotSubmitdesignForm').click().then(() => {
+          cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+        });
+        cy.get('#validation').submit().end();
       });
     });
   });
