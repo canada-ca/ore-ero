@@ -1,9 +1,9 @@
 context('Common parts', () => {
     const selectTags = [
       '#dt_govLevel',
+      '#dt_category',
       '#dt_licence',
-      '#dt_type',
-      '#dt_status'
+      '#dt_tag'
     ];
     // eslint-disable-next-line no-undef
     beforeEach(() => {
@@ -34,14 +34,14 @@ context('Common parts', () => {
       cy.get('.sorting_1')
         .first()
         .then(projectName => {
-          cy.get('tbody > :nth-child(1) > :nth-child(4)').then(type => {
-            cy.get(`#dt_type`).select(type.text().trim());
+          cy.get('tbody > :nth-child(1) > :nth-child(2)').then(category => {
+            cy.get(`#dt_category`).select(category.text().trim());
           });
-          cy.get('tbody > :nth-child(1) > :nth-child(3)').then(licence => {
+          cy.get('tbody > :nth-child(1) > :nth-child(4)').then(licence => {
             cy.get(`#dt_licence`).select(licence.text().trim());
           });
           cy.get('.wb-tables-filter > .row > :nth-child(1) > .btn').click();
-          cy.get(':nth-child(1) > .sorting_1').contains(projectName.text());
+          cy.get(':nth-child(1) > .sorting_1').contains(projectName.text().trim());
         });
     });
 
@@ -49,7 +49,7 @@ context('Common parts', () => {
       //25, 25 should hit the link no matter the size of the box
       cy.get(':nth-child(1) > .sorting_1').click(25, 25);
       cy.get(':nth-child(1) > .sorting_1').then(name => {
-        cy.get('.wb-overlay.open').contains(name.text());
+        cy.get('.wb-overlay.open').contains(name.text().trim());
       });
 
       // click on the close button
