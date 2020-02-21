@@ -25,7 +25,6 @@ $(document).ready(function() {
     if (adminSelect.val() != '') selectAdmin();
     if (softwareSelect.prop('selectedIndex') == 0) setRequiredUpdate();
     else setNotRequiredUpdate();
-    
   });
 
   adminSelect.change(function() {
@@ -92,7 +91,10 @@ function getsoftwareObject() {
     softwareObject.administrations[0].uses[0].contact = {};
     softwareObject.administrations[0].uses[0].date = {};
     softwareObject.administrations[0].adminCode = getAdminCode();
-    if ($('#contactemail').val()) softwareObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
+    if ($('#contactemail').val())
+      softwareObject.administrations[0].uses[0].contact.email = $(
+        '#contactemail'
+      ).val();
     if ($('#contactname').val()) {
       softwareObject.administrations[0].uses[0].contact.name = $(
         '#contactname'
@@ -105,10 +107,11 @@ function getsoftwareObject() {
       if ($('#frteam').val())
         softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
     }
-    if ($('#date').val()) softwareObject.administrations[0].uses[0].date.started = $('#date').val();
+    if ($('#date').val())
+      softwareObject.administrations[0].uses[0].date.started = $('#date').val();
     softwareObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
   }
-  
+
   if (
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
@@ -125,7 +128,6 @@ function getsoftwareObject() {
       '#frdescriptionhowItWorks'
     ).val();
   }
-
 
   return softwareObject;
 }

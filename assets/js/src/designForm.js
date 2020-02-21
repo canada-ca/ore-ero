@@ -89,7 +89,10 @@ function getDesignObject() {
     designObject.administrations[0].uses[0].date = {};
     designObject.administrations[0].uses[0].designStatus = {};
     designObject.administrations[0].adminCode = getAdminCode();
-    if ($('#contactemail').val()) designObject.administrations[0].uses[0].contact.email = $('#contactemail').val();
+    if ($('#contactemail').val())
+      designObject.administrations[0].uses[0].contact.email = $(
+        '#contactemail'
+      ).val();
     if ($('#contactname').val()) {
       designObject.administrations[0].uses[0].contact.name = $(
         '#contactname'
@@ -102,11 +105,16 @@ function getDesignObject() {
       if ($('#frteam').val())
         designObject.administrations[0].uses[0].team.fr = $('#frteam').val();
     }
-    if ($('#date').val()) designObject.administrations[0].uses[0].date.started = $('#date').val();
+    if ($('#date').val())
+      designObject.administrations[0].uses[0].date.started = $('#date').val();
     designObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
     if ($('#designStatus').val()) {
-      designObject.administrations[0].uses[0].designStatus.en = $('#designStatus').val();
-      designObject.administrations[0].uses[0].designStatus.fr = $('#designStatus').data('fr');
+      designObject.administrations[0].uses[0].designStatus.en = $(
+        '#designStatus'
+      ).val();
+      designObject.administrations[0].uses[0].designStatus.fr = $(
+        '#designStatus'
+      ).data('fr');
     }
   }
   if (
@@ -125,8 +133,6 @@ function getDesignObject() {
       '#frdescriptionhowItWorks'
     ).val();
   }
-
-  
 
   return designObject;
 }
@@ -407,7 +413,7 @@ function addValueToFieldsDesign(obj) {
   }
   $('#enhomepageURL').val(obj.homepageURL.en);
   $('#frhomepageURL').val(obj.homepageURL.fr);
-  
+
   fillTypeFields(obj.designTypes);
   fillLicenceField(obj.licences);
 }
@@ -432,9 +438,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('http://localhost:4000/ore-ero/design.json', function(
-    result
-  ) {
+  $.getJSON('http://localhost:4000/ore-ero/design.json', function(result) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {

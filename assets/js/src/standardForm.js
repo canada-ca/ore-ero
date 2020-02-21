@@ -25,7 +25,6 @@ $(document).ready(function() {
     if (adminSelect.val() != '') selectAdmin();
     if (standardSelect.prop('selectedIndex') == 0) setRequiredUpdate();
     else setNotRequiredUpdate();
-    
   });
 
   adminSelect.change(function() {
@@ -44,15 +43,15 @@ function setRequiredUpdate() {
   adminSelect.attr('required', 'required');
   $('#date').attr('required', 'required');
   $('#contactemail').attr('required', 'required');
-  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+  $('#addMorereference ul.list-unstyled > li').each(function() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
-    $('#enreferenceURL' + id).attr('required','required');
-    $('#frreferenceURL' + id).attr('required','required');
-    $('#enreferencename' + id).attr('required','required');
-    $('#frreferencename' + id).attr('required','required');
+    $('#enreferenceURL' + id).attr('required', 'required');
+    $('#frreferenceURL' + id).attr('required', 'required');
+    $('#enreferencename' + id).attr('required', 'required');
+    $('#frreferencename' + id).attr('required', 'required');
   });
-  $('#status').attr('required','required');
+  $('#status').attr('required', 'required');
 }
 
 function setNotRequiredUpdate() {
@@ -60,7 +59,7 @@ function setNotRequiredUpdate() {
   adminSelect.removeAttr('required');
   $('#date').removeAttr('required');
   $('#contactemail').removeAttr('required');
-  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+  $('#addMorereference ul.list-unstyled > li').each(function() {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     $('#enreferenceURL' + id).removeAttr('required');
@@ -109,11 +108,12 @@ function getStandardObject() {
     standardObject.administrations[0].date = {};
     standardObject.administrations[0].references = [];
     standardObject.administrations[0].adminCode = getAdminCode();
-    if ($('#contactemail').val()) standardObject.administrations[0].contact.email = $('#contactemail').val();
-    if ($('#contactname').val()) {
-      standardObject.administrations[0].contact.name = $(
-        '#contactname'
+    if ($('#contactemail').val())
+      standardObject.administrations[0].contact.email = $(
+        '#contactemail'
       ).val();
+    if ($('#contactname').val()) {
+      standardObject.administrations[0].contact.name = $('#contactname').val();
     }
     if ($('#enteam').val() || $('#frteam').val()) {
       standardObject.administrations[0].team = {};
@@ -122,9 +122,10 @@ function getStandardObject() {
       if ($('#frteam').val())
         standardObject.administrations[0].team.fr = $('#frteam').val();
     }
-    if ($('#date').val()) standardObject.administrations[0].date.started = $('#date').val();
+    if ($('#date').val())
+      standardObject.administrations[0].date.started = $('#date').val();
     standardObject.administrations[0].date.metadataLastUpdated = getToday();
-    
+
     $('#addMorereference ul.list-unstyled > li').each(function(i) {
       let id =
         $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
