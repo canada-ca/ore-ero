@@ -37,20 +37,45 @@ $(document).ready(function() {
     hideNewAdminForm();
     resetMoreGroup($('#addMorelicences'));
     resetMoreGroup($('#addMoreuses'));
+    setRequiredUpdate();
   });
 });
 
 function setRequiredUpdate() {
   adminSelect.attr('required', 'required');
+  adminSelect
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
   $('#date').attr('required', 'required');
+  $('#date')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
   $('#contactemail').attr('required', 'required');
+  $('#contactemail')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
 }
 
 function setNotRequiredUpdate() {
   hideNewAdminForm();
   adminSelect.removeAttr('required');
+  adminSelect
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
   $('#date').removeAttr('required');
+  $('#date')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
   $('#contactemail').removeAttr('required');
+  $('#contactemail')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
 }
 
 function getsoftwareObject() {
