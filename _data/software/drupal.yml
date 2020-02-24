@@ -65,7 +65,7 @@ administrations:
         date:
           started: '2017-01-01'
           metadataLastUpdated: '2020-02-18'
- - adminCode: pmo-cpm
+  - adminCode: pmo-cpm
     uses:
       - contact:
           email: noreply@canada.ca
