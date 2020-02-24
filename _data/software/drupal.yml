@@ -65,3 +65,27 @@ administrations:
         date:
           started: '2017-01-01'
           metadataLastUpdated: '2020-02-18'
+ - adminCode: pmo-cpm
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: 'https://pm.gc.ca/en/connect/website-feedback'
+        date:
+          started: '2016-07-14'
+          metadataLastUpdated: '2020-02-17'
+  - adminCode: tpsgc-pwgsc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: 'https://buyandsell.gc.ca/about-us/feedback'
+        date:
+          started: '2015-01-27'
+          metadataLastUpdated: '2020-02-18'
+  - adminCode: rcmp-grc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: RCMP
+        date:
+          started: '2017-01-01'
+          metadataLastUpdated: '2020-02-18'
