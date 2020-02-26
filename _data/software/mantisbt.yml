@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      MantisBT is an open source issue tracker that provides a delicate balance
+      between simplicity and power.
+    fr: >-
+      MantisBT est un outil de suivi des problèmes open source qui offre un
+      équilibre délicat entre simplicité et puissance.
+category: '43232400'
+homepageURL:
+  en: 'https://www.mantisbt.org/'
+  fr: 'https://www.mantisbt.org/'
+licences:
+  - URL:
+      en: 'https://github.com/mantisbt/mantisbt/blob/master/doc/LICENSE'
+      fr: 'https://github.com/mantisbt/mantisbt/blob/master/doc/LICENSE'
+    spdxID: GPL-2.0-only
+name:
+  en: MantisBT
+  fr: MantisBT
+tags:
+  en:
+    - Bug Tracking
+  fr:
+    - Suivi de problèmes
+administrations:
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-31'
