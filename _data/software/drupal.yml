@@ -89,3 +89,11 @@ administrations:
         date:
           started: '2017-01-01'
           metadataLastUpdated: '2020-02-18'
+  - adminCode: otc-cta
+    uses:
+      - contact:
+          email: info@otc-cta.gc.ca
+          name: OTC-CTA
+        date:
+          started: '2016-01-01'
+          metadataLastUpdated: '2020-02-24'
