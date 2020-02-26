@@ -471,3 +471,43 @@ releases:
     team:
       en: Canadian Digital Service
       fr: Service numérique canadien
+  - contact:
+      email: talent.cloud-nuage.de.talents@tbs-sct.gc.ca
+      name: TalentCloud
+    date:
+      created: '2018-01-01'
+      metadataLastUpdated: '2020-02-26'
+    description:
+      whatItDoes:
+        en: >-
+          Talent Cloud aspires to be a cross-sectoral initiative testing new
+          realities for talent in-and-out of government. This initiative is
+          designed to test the viability of a new model for recruiting and mo
+        fr: >-
+          Nuage de talent s'efforce d'être une initiative intersectorielle
+          mettant à l'essai de nouvelles réalités pour le talent à l'intérieur
+          et à l'extérieur du gouvernement. 
+    category: '43231500'
+    name:
+      en: TalentCloud
+      fr: Nuage de Talent
+    licences:
+      - URL:
+          en: 'https://github.com/GCTC-NTGC/TalentCloud/blob/dev/LICENSE'
+          fr: 'https://github.com/GCTC-NTGC/TalentCloud/blob/dev/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/GCTC-NTGC/TalentCloud'
+      fr: 'https://github.com/GCTC-NTGC/TalentCloud'
+    tags:
+      en:
+        - Talent
+      fr:
+        - Talent
+    homepageURL:
+      en: 'https://talent.canada.ca/en'
+      fr: 'https://talent.canada.ca/fr'
+    languages:
+      - TypeScript
+      - PHP
+      - HTML
