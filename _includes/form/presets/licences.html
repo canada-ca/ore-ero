@@ -15,7 +15,16 @@
       {%- endfor -%}
     </select>
 {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
-
+{% include form/components/label-group.html id=include.idPreset title=title group="level" %}
+<div class="{{ title }}levelSelect form-group" style="display:flex;">
+    <select class="form-control" id="{{ title }}level" name="{{ title }}level" required="required">
+      {%- assign level = site.data.i18n.form[include.idPreset]licensesLevel.level -%}
+      <option value="">&nbsp;</option>
+      <option value="{{ level.main.en }}" data-fr="{{level.main.fr}}">{{ level.main[page.lang] }}</option>
+      <option value="{{ level.sub.en }}" data-fr="{{level.sub.fr}}">{{ level.sub[page.lang] }}</option>
+    </select>
+</div>
+    
 </div>
 </div>
 </div>
