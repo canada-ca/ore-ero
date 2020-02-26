@@ -29,6 +29,7 @@ formGroups:
     param: {type: url, required: false}
   - preset: licences
     param: {more: true}
+  - preset: empty
   - preset: languages
   - preset: relatedCode
     param: {more: true}

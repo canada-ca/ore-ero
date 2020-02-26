@@ -10,6 +10,7 @@ formGroups:
     param: {type: url}
   - preset: licences
     param: {more: true}
+  - preset: empty
     title: administrations
     param: {start: true}
   - preset: adminCode
