@@ -33,7 +33,7 @@ $(document).ready(function() {
     );
   });
 
-  $('#addMorelicences').on('change', '.licenceslevelSelect select', function() {
+  $('#addMorelicences').on('change', '.licenceslevel', function() {
     let nb = $(this)
       .closest('li')
       .attr('data-index');
