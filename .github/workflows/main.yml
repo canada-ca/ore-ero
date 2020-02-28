@@ -1,0 +1,17 @@
+name: sync-french-repo
+
+on: push
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v1
+      env:
+        SOURCE_REPO: "https://github.com/canada-ca/ore-ero"
+        SOURCE_BRANCH: "master"
+        DESTINATION_REPO: "https://github.com/canada-ca/ore-ero-fr"
+        DESTINATION_BRANCH: "master"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
