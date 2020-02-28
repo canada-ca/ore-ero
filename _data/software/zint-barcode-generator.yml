@@ -8,12 +8,12 @@ description:
       symbologies.
 category: '43233400'
 homepageURL:
-  en: 'https://zint.github.io/'
-  fr: 'https://zint.github.io/'
+  en: 'http://www.zint.org.uk/'
+  fr: 'http://www.zint.org.uk/'
 licences:
   - URL:
-      en: 'https://github.com/zint/zint/blob/master/COPYING'
-      fr: 'https://github.com/zint/zint/blob/master/COPYING'
+      en: 'https://sourceforge.net/p/zint/code/ci/master/tree/COPYING'
+      fr: 'https://sourceforge.net/p/zint/code/ci/master/tree/COPYING'
     spdxID: GPL-3.0-only
 name:
   en: Zint Barcode Generator
