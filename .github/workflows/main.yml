@@ -8,9 +8,9 @@ jobs:
     - name: repo-sync
       uses: wei/git-sync@v1
       env:
-        SOURCE_REPO: "https://github.com/canada-ca/ore-ero.git"
+        SOURCE_REPO: "https://github.com/canada-ca/ore-ero"
         SOURCE_BRANCH: "master"
-        DESTINATION_REPO: "https://github.com/canada-ca/ore-ero-fr.git"
+        DESTINATION_REPO: "https://github.com/canada-ca/ore-ero-fr"
         DESTINATION_BRANCH: "master"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
