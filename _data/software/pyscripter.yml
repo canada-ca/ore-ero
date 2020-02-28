@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      PyScripter is an open-source Python Integrated Development Environment
+      (IDE).
+    fr: >-
+      PyScripter est un environnement de développement intégré Python (IDE) open
+      source.
+category: '43232400'
+homepageURL:
+  en: 'https://sourceforge.net/projects/pyscripter/'
+  fr: 'https://sourceforge.net/projects/pyscripter/'
+licences:
+  - URL:
+      en: 'https://github.com/pyscripter/pyscripter/blob/master/LICENSE'
+      fr: 'https://github.com/pyscripter/pyscripter/blob/master/LICENSE'
+    spdxID: MIT
+name:
+  en: PyScripter
+  fr: PyScripter
+tags:
+  en:
+    - IDE
+  fr:
+    - IDE
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
