@@ -16,7 +16,7 @@ licences:
   - URL:
       en: 'https://gitlab.com/mailman/mailman/blob/master/COPYING'
       fr: 'https://gitlab.com/mailman/mailman/blob/master/COPYING'
-    spdxID: GPL-3.0-only
+    spdxID: GPL-3.0-or-later
 name:
   en: Mailman
   fr: Mailman
