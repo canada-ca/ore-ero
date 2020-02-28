@@ -12,7 +12,7 @@ licences:
   - URL:
       en: 'http://vimdoc.sourceforge.net/htmldoc/uganda.html#license'
       fr: 'http://vimdoc.sourceforge.net/htmldoc/uganda.html#license'
-    spdxID: GPL-2.0-or-later
+    spdxID: Vim
 name:
   en: VIM
   fr: VIM
