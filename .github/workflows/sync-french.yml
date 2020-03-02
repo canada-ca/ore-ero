@@ -20,7 +20,7 @@ jobs:
       with:
         repository: canada-ca/ore-ero-fr
         path: french
-        ref: gh-pages
+        ref: master
         token: ${{ secrets.PUSH_API_TOKEN }}
     - name: Copy files from English to French
       run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*/CNAME' english french
