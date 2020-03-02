@@ -19,8 +19,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: canada-ca/ore-ero-fr
-        path:  french
-        ref: master
+        path: french
+        ref: gh-pages
         token: ${{ secrets.PUSH_API_TOKEN }}
     - name: Copy files from English to French
       run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*/CNAME' english french
