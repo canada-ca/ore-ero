@@ -30,4 +30,4 @@ jobs:
         git config --global user.email "canada.pr.bot@gmail.com"
         git config --global user.name "canada-bot"
         git commit --amend --no-edit
-        git push -f || fatal "Error pushing the French Mirror"
+        git push -f -v || fatal "Error pushing the French Mirror"
