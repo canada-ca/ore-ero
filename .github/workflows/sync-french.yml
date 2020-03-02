@@ -25,10 +25,13 @@ jobs:
     - name: Copy files from English to French
       run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*/CNAME' english/ french
     - name: Push back changes to French repo
+      env: 
+        TIMESTAMP: ${{ date "+%Y-%m-%d-%H:%M" }}
       run: |
         cd french
         ls
         git config --global user.email "canada.pr.bot@gmail.com"
         git config --global user.name "canada-bot"
-        git commit --amend --no-edit
+        git add -A
+        git commit -m "Sync Action $TIMESTAMP"
         git push -f || fatal "Error pushing the French Mirror"
