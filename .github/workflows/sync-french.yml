@@ -23,7 +23,7 @@ jobs:
         ref: master
         token: ${{ secrets.PUSH_API_TOKEN }}
     - name: Copy files from English to French
-      run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*/CNAME' french english
+      run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*/CNAME' english french
     - name: Push back changes to French repo
       run: |
         cd french
