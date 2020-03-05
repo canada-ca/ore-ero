@@ -511,3 +511,46 @@ releases:
       - TypeScript
       - PHP
       - HTML
+  - contact:
+      email: Benoit.Deshaies@tbs-sct.gc.ca
+      name: 'Deshaies, Benoit'
+    date:
+      created: '2019-04-01'
+      metadataLastUpdated: '2020-03-05'
+    description:
+      whatItDoes:
+        en: >-
+          The users of this project will be Government of Canada employees
+          assessing the impact of using an automated decision system, including
+          Artificial Intelligence.
+        fr: >-
+          Les utilisateurs de ce projet seront des employés du gouvernement du
+          Canada qui évalueront l'incidence de l'utilisation d'un système
+          automatisé de décision, y compris l'intelligence artificielle.
+    category: '43232600'
+    name:
+      en: Algorithmic Impact Assessment
+      fr: Évaluation de l'incidence algorithmique
+    licences:
+      - URL:
+          en: 'https://github.com/canada-ca/aia-eia-js/blob/master/LICENSE'
+          fr: 'https://github.com/canada-ca/aia-eia-js/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/canada-ca/aia-eia-js'
+      fr: 'https://github.com/canada-ca/aia-eia-js'
+    tags:
+      en:
+        - AI
+      fr:
+        - AI
+    homepageURL:
+      en: 'https://open.canada.ca/aia-eia-js/?lang=en'
+      fr: 'https://open.canada.ca/aia-eia-js/?lang=fr'
+    languages:
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - Vue
+    status: Maintained
