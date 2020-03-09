@@ -1,5 +1,7 @@
 /* exported getTagsEN getTagsFR addTags resetTags */
 
+const suggestions = $('#suggestions');
+
 function getTagsEN() {
   return getTags($('#tagsEN input'));
 }
@@ -50,7 +52,8 @@ function resetTags() {
 
 function tagObject(id, value) {
   return $(`<div class="control-group input-group col-xs-2 mrgn-tp-md">
-    <input type="text" id="${id}" name="tag" value="${value}" class="form-control">
+    <input type="text" id="${id}" name="tag" value="${value}" class="form-control" list="suggestion${id}">
+    <datalist id="suggestion${id}"></datalist>
     <div class="input-group-btn">
       <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
     </div>
@@ -71,13 +74,18 @@ $(document).ready(function() {
 });
 
 function addMoreTagsHtml(to) {
-  $(
-    tagObject(
-      '_' +
-        Math.random()
-          .toString(36)
-          .substr(2, 9),
-      ''
-    ).addClass('additional-tag')
-  ).appendTo(to);
+  const newTagId =
+    '_' +
+    Math.random()
+      .toString(36)
+      .substr(2, 9);
+  $(tagObject(newTagId, '').addClass('additional-tag')).appendTo(to);
+  appendSuggestion(newTagId);
+}
+
+function appendSuggestion(id) {
+  suggestions.clone().appendTo(`#suggestion${id}`);
+  console.log(`#suggestion${id}`);
+  $(`#suggestion${id}`).html(suggestions.html());
+  console.log('supposed to be added');
 }

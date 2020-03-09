@@ -11,16 +11,34 @@
   <div id="tags{{ lang1 | upcase }}" class="form-group">
     {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang1 param=include.param %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
+      {%- assign tag_arr = "" | split: ',' -%}
+            <input type="text"   list="suggestions" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control">
+      <datalist id="suggestions">
+        <!--[if lte IE 9]><select><![endif]-->
+        {%- for govLevels in site.data.code -%}
+        {%- for admin in govLevels[1] -%}
+        {%- for release in admin[1].releases -%}
+        {%- for tag in release.tags[page.lang] -%}
+        <option label="{{tag}}" value="{{tag}}"></option>
+        {%- assign tag_arr = tag_arr | push: tag -%}
+        {%- endfor -%}
+        {%- endfor -%}
+        {%- endfor -%}
+        {%- endfor -%}
+      </datalist>
+      {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
+      {%- if include.param.required == nil or include.param.required %} required="required" {% endif %}
     </div>
   </div>
   <div id="tags{{ lang2 | upcase }}" class="form-group">
     {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang2 param=include.param %}
     <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
+      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control"
+        {%- if include.param.required == nil or include.param.required %} required="required" {% endif %}>
     </div>
   </div>
 </div>
 <div class="input-group control-group after-add-more col-xs-2">
-  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
+  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i>
+    {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
 </div>
