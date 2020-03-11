@@ -82,7 +82,8 @@
             site.data.software -%} {%- for tag in software[1].tags[page.lang]
             -%} {%- assign tag_arr = tag_arr | push: tag -%} {%- endfor -%} {%-
             endfor -%} {%- assign tag_arr = tag_arr | group_by: "" | sort:
-            "name" -%} {%- for tag in tag_arr -%}
+            "name" -%} 
+            {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
             {%- endfor -%}
           </select>
