@@ -16,38 +16,37 @@
 
   {%- if include.id == "software" %}
   {%- assign tag_arr = "" | split: ',' -%}
-   {%- for software in site.data.software -%}
-    {%- for tag in software[1].tags[include.lang] -%}
-     {%- assign tag_arr = tag_arr | push: tag -%}
-    {%- endfor -%} 
+  {%- for software in site.data.software -%}
+  {%- for tag in software[1].tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%} 
   {%- endfor -%}
   {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%} 
   {% endif %}
 
   {%- if include.id == "partnership" %}
-          {%- assign tag_arr = "" | split: ',' -%}
-          {%- for govLevels in site.data.partnership -%}
-            {%- for admin in govLevels[1] -%}
-              {%- for project in admin[1].projects -%}
-                {%- for tag in project.tags[include.lang] -%}
-                  {%- assign tag_arr = tag_arr | push: tag -%}
-                {%- endfor -%}
-              {%- endfor -%}
-            {%- endfor -%}
-          {%- endfor -%}
-          {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for govLevels in site.data.partnership -%}
+  {%- for admin in govLevels[1] -%}
+  {%- for project in admin[1].projects -%}
+  {%- for tag in project.tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
   {% endif %}
 
-    {%- if include.id == "standard" %}
-          {%- assign tag_arr = "" | split: ',' -%}
-          {%- for standard in site.data.standard -%}
-            {%- for tag in standard[1].tags[include.lang] -%}
-              {%- assign tag_arr = tag_arr | push: tag -%}
-            {%- endfor -%}
-          {%- endfor -%}
-          {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}  {% endif %}
-
-
+  {%- if include.id == "standard" %}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for standard in site.data.standard -%}
+  {%- for tag in standard[1].tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}  
+  {% endif %}
 
   <input type="text" list="{{ include.lang }}-suggestions" id="{{ include.lang }}{{ title }}" name="{{ include.lang }}{{ title }}"
     {%- if include.param.required == nil or include.param.required %} required="required" {% endif %}
