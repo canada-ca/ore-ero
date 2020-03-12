@@ -130,7 +130,9 @@ stats:
   software:
     en: Data on Software
     fr: Données sur le logiciel
-
+  design:
+    en: Data on Design
+    fr: Données sur le design
 language:
   en: English
   fr: Français

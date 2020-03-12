@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      VirtualDub is a free and open-source video capture and video processing
+      utility for Microsoft Windows.
+    fr: >-
+      VirtualDub est un utilitaire gratuit et open source de capture vidéo et de
+      traitement vidéo pour Microsoft Windows.
+category: '43232100'
+homepageURL:
+  en: 'http://www.virtualdub.org/'
+  fr: 'http://www.virtualdub.org/'
+licences:
+  - URL:
+      en: 'http://www.virtualdub.org/gpl.html'
+      fr: 'http://www.virtualdub.org/gpl.html'
+    spdxID: GPL-2.0-only
+name:
+  en: VirtualDub
+  fr: VirtualDub
+tags:
+  en:
+    - Video
+  fr:
+    - Video
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
