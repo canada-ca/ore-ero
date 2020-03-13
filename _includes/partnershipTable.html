@@ -30,15 +30,15 @@
             {% for admin in govLevels[1] %}
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             {%- if administration[0] != nil -%}
-              {%- if level == 3 -%}
+              {%- if level == 1 -%}
                 {%- assign federal_arr = federal_arr | push: administration[0]-%}
-              {%- elsif level == 0 -%}
-                {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
-              {%- elsif level == 1 -%}
-                {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
-              {%- elsif level == 2 -%}
-                {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
               {%- elsif level == 4 -%}
+                {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
+              {%- elsif level == 2 -%}
+                {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
+              {%- elsif level == 0 -%}
+                {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
+              {%- elsif level == 3 -%}
                 {%- assign other_arr = other_arr | push: administration[0]-%}
               {%- endif -%}
             {%- endif -%}
