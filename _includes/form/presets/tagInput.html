@@ -1,0 +1,60 @@
+{% include form/components/label-i18n.html id=include.idPreset title=include.title lang=include.lang %}
+<div class="control-group input-group col-xs-2 mrgn-tp-md">
+  {%- if include.id == "code" %}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for govLevels in site.data.code -%}
+  {%- for admin in govLevels[1] -%}
+  {%- for release in admin[1].releases -%}
+  {%- for tag in release.tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
+  {% endif %}
+
+  {%- if include.id == "software" %}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for software in site.data.software -%}
+  {%- for tag in software[1].tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%} 
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%} 
+  {% endif %}
+
+  {%- if include.id == "partnership" %}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for govLevels in site.data.partnership -%}
+  {%- for admin in govLevels[1] -%}
+  {%- for project in admin[1].projects -%}
+  {%- for tag in project.tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
+  {% endif %}
+
+  {%- if include.id == "standard" %}
+  {%- assign tag_arr = "" | split: ',' -%}
+  {%- for standard in site.data.standard -%}
+  {%- for tag in standard[1].tags[include.lang] -%}
+  {%- assign tag_arr = tag_arr | push: tag -%}
+  {%- endfor -%}
+  {%- endfor -%}
+  {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}  
+  {% endif %}
+
+  <input type="text" list="{{ include.lang }}-suggestions" id="{{ include.lang }}{{ title }}" name="{{ include.lang }}{{ title }}"
+    {%- if include.param.required == nil or include.param.required %} required="required" {% endif %}
+    class="form-control">
+  <datalist id="{{ include.lang }}-suggestions">
+    <!--[if lte IE 9]><select><![endif]-->
+    {%- for tag in tag_arr -%}
+    <option label="{{tag.name}}" value="{{ tag.name }}">{{ tag.name }}</option>
+    {%- endfor -%}
+  </datalist>
+</div>

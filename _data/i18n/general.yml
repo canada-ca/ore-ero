@@ -26,6 +26,9 @@ head:
     fr: Vous êtes ici
 
 nav:
+  base:
+    en: https://code.open.canada.ca
+    fr: https://code.ouvert.canada.ca
   home:
     en: *title_en
     fr: *title_fr

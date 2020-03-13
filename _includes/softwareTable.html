@@ -120,6 +120,7 @@
               {%- endfor -%} 
             {%- endfor -%}
             {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%} 
+
             {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
             {%- endfor -%}
