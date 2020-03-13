@@ -14,7 +14,6 @@ $('#dt_govLevel').on('change', function() {
       if ($('#' + i).data('level') == level) {
         $('#' + i).removeClass('hide');
       } else {
-        console.log(level);
         $('#' + i).addClass('hide');
       }
     }

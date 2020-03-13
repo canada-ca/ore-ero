@@ -45,7 +45,7 @@
             {%- endfor -%}
             {%- assign level = level | plus:1 -%}
           {%- endfor -%}
-          {%- assign federal_arr = federal_arr -%}
+          {%- assign federal_arr = federal_arr | uniq -%}
           {%- assign provincial_arr = provincial_arr | uniq -%}
           {%- assign municipal_arr = municipal_arr | uniq -%}
           {%- assign aboriginal_arr = aboriginal_arr | uniq -%}
@@ -68,7 +68,7 @@
             {%- assign id = id | plus: 1 -%}
           {%- endfor -%}
           {%- for other in other_arr -%}
-            <option class="hide" id="{{id}}" value="{{other.name[page.lang]}}" data-level="other">{{other.name[page.lang]}}</option>
+            <option class="hide" id="{{id}}" value="{{other.name[page.lang]}}" data-level="others">{{other.name[page.lang]}}</option>
             {%- assign id = id | plus: 1 -%}
           {%- endfor -%}
         </select>

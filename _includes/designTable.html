@@ -26,22 +26,24 @@
               {%- assign other_arr = "" | split: ',' -%}
               {%- for design in site.data.design -%}
                 {%- for admin in design[1].administrations -%}
+                  {%- assign level = 0 -%}
                   {%- for govLevels in site.data.i18n.administrations -%}
                    {%- assign govLevel = govLevels[0] -%}
                     {%- assign administration = site.data.administrations[govLevel] | where: "code", admin.adminCode -%}
                     {%- if administration[0] != nil -%}
-                      {%- if govLevel == govLevels[0] -%}
+                      {%- if level == 0 -%}
                         {%- assign federal_arr = federal_arr | push: administration[0]-%}
-                      {%- elsif govLevel == govLevels[1] -%}
+                      {%- elsif level == 1 -%}
                         {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
-                      {%- elsif govLevel == govLevels[2] -%}
+                      {%- elsif level == 2 -%}
                         {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
-                      {%- elsif govLevel == govLevels[3] -%}
+                      {%- elsif level == 3 -%}
                         {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
-                      {%- elsif govLevel == govLevels[4] -%}
+                      {%- elsif level == 4 -%}
                         {%- assign other_arr = other_arr | push: administration[0]-%}
                       {%- endif -%}
                     {%- endif -%}
+                  {%- assign level = level | plus:1 -%}
                   {%- endfor -%}
                 {%- endfor -%}
               {%- endfor -%}
@@ -68,7 +70,7 @@
                 {%- assign id = id | plus: 1 -%}
               {%- endfor -%}
               {%- for other in other_arr -%}
-                <option class="hide" id="{{id}}" value="{{other.code}}" data-level="other">{{other.name[page.lang]}}</option>
+                <option class="hide" id="{{id}}" value="{{other.code}}" data-level="others">{{other.name[page.lang]}}</option>
                 {%- assign id = id | plus: 1 -%}
               {%- endfor -%}
             </select>
