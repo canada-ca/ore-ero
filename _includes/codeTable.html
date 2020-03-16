@@ -34,17 +34,18 @@
             {%- for admin in govLevels[1] -%}
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             {%- if administration[0] != nil -%}
-              {%- if level == 0 -%}
+              {%- case level -%}
+              {%- when 0 -%}
                 {%- assign aboriginal_arr = aboriginal_arr | push: administration[0] -%}
-              {%- elsif level == 1 -%}
+              {%- when 1 -%}
                 {%- assign federal_arr = federal_arr | push: administration[0] -%}
-              {%- elsif level == 2 -%}
+              {%- when 2 -%}
                 {%- assign municipal_arr = municipal_arr | push: administration[0] -%}
-              {%- elsif level == 3 -%}
+              {%- when 3 -%}
                 {%- assign other_arr = other_arr | push: administration[0] -%}
-              {%- elsif level == 4 -%}
+              {%- when 4 -%}
                 {%- assign provincial_arr = provincial_arr | push: administration[0] -%}
-              {%- endif -%}
+              {%- endcase -%}
             {%- endif -%}
             {%- endfor -%}
             {%- assign level = level | plus:1 -%}
