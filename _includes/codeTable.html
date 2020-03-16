@@ -19,27 +19,31 @@
         <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="0">
           <option value="">&nbsp;</option>
-          {%- assign municipal_arr = "" | split: ',' -%}
-          {%- assign provincial_arr = "" | split: ',' -%}
           {%- assign federal_arr = "" | split: ',' -%}
+          {%- assign provincial_arr = "" | split: ',' -%}
+          {%- assign municipal_arr = "" | split: ',' -%}
           {%- assign aboriginal_arr = "" | split: ',' -%}
           {%- assign other_arr = "" | split: ',' -%}
-          {%- assign level = 0 -%}    
-          {%- for govLevels in site.data.code -%}
+          {%- assign level = 0 -%}
+          {%- assign code = site.data.code -%}
+          {%- if code != nil -%}
+            {%- assign code = code | sort -%}
+          {%- endif -%}
+          {%- for govLevels in code -%}
             {%- assign govLevel = govLevels[0] -%}
-            {% for admin in govLevels[1] %}
+            {%- for admin in govLevels[1] -%}
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             {%- if administration[0] != nil -%}
-              {%- if level == 1 -%}
-                {%- assign federal_arr = federal_arr | push: administration[0]-%}
-              {%- elsif level == 4 -%}
-                {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
+              {%- if level == 0 -%}
+                {%- assign aboriginal_arr = aboriginal_arr | push: administration[0] -%}
+              {%- elsif level == 1 -%}
+                {%- assign federal_arr = federal_arr | push: administration[0] -%}
               {%- elsif level == 2 -%}
-                {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
-              {%- elsif level == 0 -%}
-                {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
+                {%- assign municipal_arr = municipal_arr | push: administration[0] -%}
               {%- elsif level == 3 -%}
-                {%- assign other_arr = other_arr | push: administration[0]-%}
+                {%- assign other_arr = other_arr | push: administration[0] -%}
+              {%- elsif level == 4 -%}
+                {%- assign provincial_arr = provincial_arr | push: administration[0] -%}
               {%- endif -%}
             {%- endif -%}
             {%- endfor -%}
