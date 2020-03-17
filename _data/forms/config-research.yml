@@ -1,0 +1,28 @@
+---
+
+id: research
+
+formGroups:
+  - preset: empty
+    title: administrations
+    param: {start: true}
+  - preset: adminCode
+  - preset: selectResearch
+  - preset: description
+    param: {model: true}
+  - preset: category
+  - preset: tags
+  - preset: homepageURL
+    param: {type: url}
+  - preset: team
+  - preset: empty
+    title: uses
+    param: {start: true}
+  - preset: contact
+    param: {phone: false}
+  - widget: string
+    title: date
+    param: {type: date, rule: dateISO}
+  - preset: empty
+  - preset: empty
+ 

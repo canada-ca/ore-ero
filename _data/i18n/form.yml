@@ -803,6 +803,95 @@ partnership:
       fr: Information à propos de chacun des projects
 
 # Future project form specifics
+research:
+  name:
+    title:
+      en: Research Name
+      fr: Nom de la recherche
+    label:
+      en:
+        en: English research Name
+        fr: Nom de la recherche en anglais
+      fr:
+        en: French research Name
+        fr: Nom de la recherche en français
+      schema:
+        en: Research Name
+        fr: Nom de la recherche
+    labels:
+      select:
+        en: If you wish to update information of a research that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'une recherche déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the open research
+      fr: Ajouter le nom de la recherche libre
+  date:
+    title:
+      en: Published date
+      fr: Date de publication
+    label:
+      en: Published date
+      fr: Date de publication
+    infobulle:
+      en: Select the date when the research was published.
+      fr: Choisir la date lorsque la recherche a été publié.
+  administrations: *administrations
+  uses:
+    title:
+      en: Informations about research participants
+      fr: Information à propos des participants à la recherche
+    infobulle:
+      en: Information concerning the participations on this research
+      fr: Information à propos des participations à cette recherche
+  description:
+    title:
+      en: Description
+      fr: Description
+    labels:
+      whatItDoes:
+        subtitle:
+          en: Research subject
+          fr: Sujet de recherche
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Français
+        schema:
+          en: Research subject
+          fr: Sujet de recherche
+      howItWorks:
+        subtitle:
+          en: Abstract
+          fr: Résumé
+        en:
+          en: English
+          fr: Anglais
+        fr:
+          en: French
+          fr: Français
+        schema:
+          en: Abstract
+          fr: Résumé
+    label:
+      schema:
+        en: Description
+        fr: Description
+    charactersLimit:
+      en: (200 characters limit)
+      fr: (limite de 200 caractères)
+    infobulle:
+      en: Add a brief description of the research.
+      fr: Ajoutez une brève description de la recherche.
+    titles:
+      whatItDoes:
+        en: Description of the research's subject
+        fr: Description du sujet de la recherche
+      howItWorks:
+        en: Description of the abstract's research 
+        fr: Description du résumé de la recherche
+# Future project form specifics
 design:
   name:
     title:
