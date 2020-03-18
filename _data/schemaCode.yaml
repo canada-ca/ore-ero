@@ -34,7 +34,9 @@ release:
 licence:
   URL: include('lang')
   spdxID: str()
-
+  level: include('lang')
+  scope: include('lang', required=False)
+  
 partner:
   adminCode: str()
   email: str()

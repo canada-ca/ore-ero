@@ -97,7 +97,7 @@ function getDesignObject() {
   }
   if ($('#designStatus').val()) {
     designObject.designStatus.en = $('#designStatus').val();
-    designObject.designStatus.fr = $('#designStatus').data('fr');
+    designObject.designStatus.fr = $('#designStatus').find(":selected").data('fr');
   }
 
   if ($('#contactname').val()) {
