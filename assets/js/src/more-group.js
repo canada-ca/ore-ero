@@ -159,7 +159,9 @@ function addMoreLicences(obj) {
       spdxID: $('#licencesspdxID' + id).val(),
       level: {
         en: $('#licenceslevel' + id).val(),
-        fr: $('#licenceslevel' + id).find(":selected").data('fr')
+        fr: $('#licenceslevel' + id)
+          .find(':selected')
+          .data('fr')
       }
     };
     if ($('#licenceslevel' + id).val() == 'Sub license') {
