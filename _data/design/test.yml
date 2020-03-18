@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: A
+    fr: B
+designTypes:
+  - type:
+      en: Business
+      fr: Entreprise
+homepageURL:
+  en: 'http://a.ca'
+  fr: 'http://a.ca'
+licences:
+  - URL:
+      en: 'http://a.ca'
+      fr: 'http://a.ca'
+    spdxID: 0BSD
+    level:
+      en: Sub license
+      fr: !<tag:yaml.org,2002:js/undefined> ''
+    scope:
+      en: TEST
+      fr: TEST
+name:
+  en: Test
+  fr: Test
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: a@b.ca
+        date:
+          started: '2020-03-18'
+          metadataLastUpdated: '2020-03-18'
