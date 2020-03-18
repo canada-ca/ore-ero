@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The purpose of the guardrails is to ensure that departments and agencies
+      are implementing a preliminary baseline set of controls within their
+      Microsoft O365 cloud-based environment.
+    fr: >-
+      Le présent projet met l’accent sur un ensemble préliminaire de mesures de
+      sécurité de base pour veiller à ce que l’environnement des services
+      d’informatique en nuage.
+designTypes:
+  - type:
+      en: Security & Privacy
+      fr: Sécurité et confidentialité
+homepageURL:
+  en: 'https://canada-ca.github.io/cloud-guardrails-O365/'
+  fr: 'https://canada-ca.github.io/cloud-guardrails-O365/'
+licences:
+  - URL:
+      en: 'https://github.com/canada-ca/cloud-guardrails-O365/blob/master/LICENSE'
+      fr: 'https://github.com/canada-ca/cloud-guardrails-O365/blob/master/LICENSE'
+    spdxID: MIT
+    level:
+      en: Main license
+      fr: !<tag:yaml.org,2002:js/undefined> ''
+name:
+  en: Office 365 Guardrails
+  fr: Office 365 Guardrails
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: ZZTBSCYBERS@tbs-sct.gc.ca
+          name: TBS-Cyber Security/SCT-Cybersécurité
+        date:
+          started: '2020-03-18'
+          metadataLastUpdated: '2020-03-18'
