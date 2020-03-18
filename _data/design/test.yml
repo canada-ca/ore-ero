@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: t
+    fr: t
+designTypes:
+  - type:
+      en: Information
+      fr: Information
+homepageURL:
+  en: 'http://test.ca'
+  fr: 'http://test.ca'
+licences:
+  - URL:
+      en: 'http://test.ca'
+      fr: 'http://test.ca'
+    spdxID: AFL-1.2
+    level:
+      en: Main license
+      fr: !<tag:yaml.org,2002:js/undefined> ''
+name:
+  en: test
+  fr: test
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: test@t.ca
+        date:
+          started: '2020-03-18'
+          metadataLastUpdated: '2020-03-18'
