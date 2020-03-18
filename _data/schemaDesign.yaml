@@ -15,7 +15,7 @@ design:
 licence:
   URL: include('lang')
   spdxID: str()
-  level: include('lang')
+  level: include('lang', required=False)
   scope: include('lang', required=False)
   
 designType:
@@ -34,7 +34,7 @@ use:
     metadataLastUpdated: str()
   team: include('lang', required=False)
   status: str(required=False)
-  
+
 lang:
   en: str()
   fr: str()
