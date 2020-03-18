@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: test
+    fr: test
+designTypes:
+  - type:
+      en: Information
+      fr: Information
+homepageURL:
+  en: 'http://test.ca'
+  fr: 'http://test.ca'
+licences:
+  - URL:
+      en: 'http://test.ca'
+      fr: 'http://test.ca'
+    spdxID: 0BSD
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Test
+  fr: Test
+administrations:
+  - adminCode: city-of-montreal-qc
+    uses:
+      - contact:
+          email: a@test.ca
+        date:
+          started: '2020-03-18'
+          metadataLastUpdated: '2020-03-18'
