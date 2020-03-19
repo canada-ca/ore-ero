@@ -96,31 +96,37 @@
     <div class="modal-body">
       <p><strong>Description:</strong></p>
       <p>{{ standard.description.whatItDoes[page.lang] }}</p>
-      <div class="row">
-        <div class="col-md-4"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
-        <div class="col-md-2"><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></div>
-        <div class="col-md-2"><strong>Date</strong></div>
-        <div class="col-md-4"><strong>URL</strong></div>
-      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></th>
+          <th><strong>{{ site.data.i18n.tables.status[page.lang] }}</strong></th>
+          <th><strong>Date</strong></th>
+          <th><strong>URL</strong></th>
+        </tr>
+      </thead>
+      <tbody>
       {%- for administration in standard.administrations -%}
-        <div class="row">
-          <div class="col-md-4">
+        <tr>
+          <td>
             {%- for levels in site.data.i18n.administrations -%}
               {%- assign govLevel = levels[0] -%}
               {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
               {{ admin[0].name[page.lang] }}
             {%- endfor -%}
-          </div>
-          <div class="col-md-2">{{ administration.status }}</div>
-          <div class="col-md-2">{{ administration.date.created }}</div>
-          <div class="col-md-4">
+          </td>
+          <td>{{ administration.status }}</td>
+          <td>{{ administration.date.created }}</td>
+          <td>
           {%- for reference in administration.references -%}
           <a target="_blank" href="{{ reference.URL[page.lang] }}">{{ reference.name[page.lang] }}</a>
           {%- endfor -%}
           {{ administration.references.URL[page.lang] }}
-          </div>
-        </div>
+          </td>
+        </tr>
       {%- endfor -%}
+      </tbody>
+      </table>
     </div>
   </section>
 {%- endfor -%}
