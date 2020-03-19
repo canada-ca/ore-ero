@@ -33,6 +33,6 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "cypress": "^4.0.1"
+    "cypress": "^4.2.0"
   }
 }
