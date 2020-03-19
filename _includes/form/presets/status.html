@@ -1,10 +1,14 @@
+{%- if include.param.design -%}
+{%- assign title = "designStatus" -%}
+{%- else -%}
 {%- assign title = "status" -%}
+{%- endif -%}
   {% include form/components/label.html id=include.idPreset title=title param=site.data.forms.param.required_false %}
 <div class="form-group">
   <select class="form-control" id="{{ title }}" name="{{ title }}">
     <option value="">&nbsp;</option>
     {%- for option in site.data.i18n.form[include.idPreset][title].options -%}
-    <option value="{{ option[1].en }}">{{ option[1][page.lang] }}</option>
+    <option value="{{ option[1].en }}" data-fr="{{ option[1].fr }}">{{ option[1][page.lang] }}</option>
     {%- endfor %}
   </select>
 </div>

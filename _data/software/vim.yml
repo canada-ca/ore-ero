@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Vim is a greatly improved version of the good old UNIX editor Vi.
+    fr: Vim est une version grandement améliorée du bon vieil éditeur UNIX Vi.
+category: '43232100'
+homepageURL:
+  en: 'https://www.vim.org/'
+  fr: 'https://www.vim.org/'
+licences:
+  - URL:
+      en: 'http://vimdoc.sourceforge.net/htmldoc/uganda.html#license'
+      fr: 'http://vimdoc.sourceforge.net/htmldoc/uganda.html#license'
+    spdxID: Vim
+name:
+  en: VIM
+  fr: VIM
+tags:
+  en:
+    - Vi
+  fr:
+    - Vi
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-30'

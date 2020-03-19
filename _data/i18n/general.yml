@@ -26,6 +26,9 @@ head:
     fr: Vous êtes ici
 
 nav:
+  base:
+    en: https://code.open.canada.ca
+    fr: https://code.ouvert.canada.ca
   home:
     en: *title_en
     fr: *title_fr
@@ -38,6 +41,12 @@ nav:
     link:
       en: ./open-source-codes.html
       fr: ./codes-source-ouverts.html
+  design:
+    en: Open Design
+    fr: Design libre
+    link:
+      en: ./open-design.html
+      fr: ./design-libre.html
   software:
     en: Open Source Software
     fr: Logiciels libres
@@ -124,7 +133,9 @@ stats:
   software:
     en: Data on Software
     fr: Données sur le logiciel
-
+  design:
+    en: Data on Design
+    fr: Données sur le design
 language:
   en: English
   fr: Français

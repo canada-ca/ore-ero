@@ -6,3 +6,11 @@
 .font-size-50{
   font-size: 50px
 }
+
+.hiddenText {
+ height: 1px;
+ width: 1px;
+ position: absolute;
+ overflow: hidden;
+ top: -10px;
+}

@@ -233,8 +233,8 @@ This preset takes no additional parameters.
   - preset: relatedCode
 ```
 
-#### selectCode, selectPartnership, selectSoftware and selectStandards
-The selectCode, as well as the selectPartnership, the selectSoftware and the selectStandard presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). The whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
+#### selectCode, selectDesign, selectPartnership, selectSoftware and selectStandard
+The selectCode, as well as the selectDesign, the selectPartnership, the selectSoftware and the selectStandard presets display a `<select>` widget allowing the user to select an already existing project in order to edit it or add a new linked element (releases, uses, administrations, etc.). The whole point of these presets are to auto-fill the corresponding section of the form when selecting an existing project.
 
 In the schema, these usually display only the project name fields (english and french).
 
@@ -564,7 +564,7 @@ Most form use two very similar submit functions. One for submitting the form wit
 Some forms require a specific function for reset, especially when dealing with tags and programming languages. The user is able to add and remove tag fields and we want to make sure to reset those fields since the basic reset does not take care of that by default.
 
 #### getObject
-The `get[form_id]Object()` function takes all the values from the form inputs and assigns them to an object variable. That object follows the hierarchy as the schema for the form (its order defines in which order the fiels will appear in the data file). It is separated into two sections. First, all mandatory fields are added to the object. Then, the function probes each single non-mandatory field, checking whether it has a value or not. In case it has a value, the non-mandatory field is added to the object. That way, no keys with empty values will be added to the data files.
+The `get[form_id]Object()` function takes all the values from the form inputs and assigns them to an object variable. That object follows the hierarchy as the schema for the form (its order defines in which order the fields will appear in the data file). It is separated into two sections. First, all mandatory fields are added to the object. Then, the function probes each single non-mandatory field, checking whether it has a value or not. In case it has a value, the non-mandatory field is added to the object. That way, no keys with empty values will be added to the data files.
 
 #### addValuesToFields / resetFields
 When the user selects an already existing project or administration, data is pulled from github. The addValuesToFields fills some input fields with the fetched data. Now if the user chooses to change back the select to its default null value, the resetField removes the values that were added automatically to the input fields from fetched data.
@@ -804,8 +804,8 @@ Il ne prend pas de paramètres additionnels.
 - preset: relatedCode
 ```
 
-#### SelectCode, selectPartnership, selectSoftware et selectStandards
-Ces trois *presets* affichent un menu de sélection (un *widget*) permettant à un quelconque utilisateur de sélectionner un projet (déjà existant) afin de le modifier ou bien d'y ajouter des éléments lui étant reliés (administrations, etc.). Ils permettent **principalement** de remplir automatiquement la section correspondante du formulaire lorsqu'un projet est sélectionner grâce au JavaScript (ils suivent le même principe que l'*adminCode*).
+#### selectCode, selectDesign, selectPartnership, selectSoftware et selectStandard
+Ces six *presets* affichent un menu de sélection (un *widget*) permettant à un quelconque utilisateur de sélectionner un projet (déjà existant) afin de le modifier ou bien d'y ajouter des éléments lui étant reliés (administrations, etc.). Ils permettent **principalement** de remplir automatiquement la section correspondante du formulaire lorsqu'un projet est sélectionner grâce au JavaScript (ils suivent le même principe que l'*adminCode*).
 
 Ces trois *presets* ne prennent pas de paramètres supplémentaires.
 
@@ -1145,7 +1145,7 @@ La plupart des fichiers JavaScript des formulaires utilisent deux fonctions pour
 
 #### *Reset*
 
-Certains formulaires nécessitent une fonction spécifique pour la réinitialisation. Particulièrement lorsqu'il s'agit de mots-clés et de langages de programmation. Par exemple, les utilisateurs sont en mesure d'ajouter et de supprimer des mots-clés et nous voulons nous assurer de pourvoir les réinitialiser, car par défaut, ces champs ne sont pas réinitialisés.
+Certains formulaires nécessitent une fonction spécifique pour la réinitialisation. Particulièrement lorsqu'il s'agit de mots-clés et de langages de programmation. Par exemple, les utilisateurs sont en mesure d'ajouter et de supprimer des mots-clés et nous voulons nous assurer de pouvoir les réinitialiser, car par défaut, ces champs ne sont pas réinitialisés.
 
 #### getObject
 

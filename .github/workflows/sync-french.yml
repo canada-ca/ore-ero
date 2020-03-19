@@ -1,0 +1,36 @@
+name: Mirror Content to French repo
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Main repo
+      uses: actions/checkout@v2
+      with:
+        path: english
+    - name: Checkout French mirror
+      uses: actions/checkout@v2
+      with:
+        repository: canada-ca/ore-ero-fr
+        path: french
+        ref: master
+        token: ${{ secrets.PUSH_API_TOKEN }}
+    - name: Copy files from English to French
+      run: rsync -avr --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' english/ french
+    - name: Push back changes to French repo
+
+      run: |
+        cd french
+        ls
+        git config --global user.email "canada.pr.bot@gmail.com"
+        git config --global user.name "canada-bot"
+        git add -A
+        git commit -m "Sync Action"
+        git push -f || fatal "Error pushing the French Mirror"

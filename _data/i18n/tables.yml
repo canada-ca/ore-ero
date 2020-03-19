@@ -76,7 +76,15 @@ usage:
 usedBy:
   en: Is being used by
   fr: Est utilisé par
-
+design:
+  en: Design
+  fr: Design
+designType:
+  en: Design type(s)
+  fr: Type(s) de design
+designStatus:
+  en: Design status
+  fr: Statut du design
 lightbox:
   sourceCode:
     en: Source code
@@ -87,3 +95,6 @@ lightbox:
   beingUsed:
     en: 'Is being used by:'
     fr: 'Est utilisé par :'
+  website:
+    en: 'Website:'
+    fr: 'Site internet:'

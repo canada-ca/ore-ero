@@ -161,6 +161,26 @@ presets:
       howItWorks:
         en: Description on how it works
         fr: Description sur comment cela fonctionne
+  designStatus:
+    title:
+      en: Design use status
+      fr: Statut d'utilisation du design
+    label:
+      en: Status
+      fr: Statut
+    infobulle:
+      en: Select the design status from the drop-down field according to its use.
+      fr: Choisir le statut du design dans la liste ci-dessous, selon son utilisation.
+    options:
+      Used:
+        en: Original design
+        fr: Design original
+      Modified:
+        en: Modified version
+        fr: Version modifiée
+      Outdated:
+        en: Outdated design
+        fr: Design désuet
   homepageURL:
     title:
       en: Project Homepage
@@ -359,7 +379,7 @@ presets:
       fr: Statut
     infobulle:
       en: Select the project development status from the drop-down field according to its current life cycle stage.
-      fr: Choisir le status de développement du projet dans la liste ci-dessous, selon sa phase de cycle de vie.
+      fr: Choisir le statut de développement du projet dans la liste ci-dessous, selon sa phase de cycle de vie.
     options:
       alpha:
         en: Alpha
@@ -413,6 +433,42 @@ presets:
       schema:
         en: Team
         fr: Équipe
+  designType:
+    title:
+      en: Design Type
+      fr: Type de design
+    label:
+      en: Select a type
+      fr: Selectionner un type
+    infobulle:
+      en: Select types to categorize this design.
+      fr: Selectionner des types pour catégoriser ce design.
+  newType:
+    label:
+      en:
+        en: English type
+        fr: Type en anglais
+      fr:
+        en: French type
+        fr: Type en français
+    button:
+      en: Add new type
+      fr: Ajouter un nouveau type
+  
+  uses:
+    title:
+      en: Informations about software users.
+      fr: Information à propos des utilisateurs du logiciel
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the software.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
 
 # Code form specifics
 code:
@@ -745,3 +801,43 @@ partnership:
     title:
       en: Informations about each project
       fr: Information à propos de chacun des projects
+
+# Future project form specifics
+design:
+  name:
+    title:
+      en: Project Name
+      fr: Nom du projet
+    label:
+      en:
+        en: English project name
+        fr: Nom du projet en anglais
+      fr:
+        en: French project name
+        fr: Nom du projet en français
+      schema:
+        en: Project Name
+        fr: Nom du projet
+    labels:
+      select:
+        en: If you wish to update information of a design that already exists in our library, please select it below
+        fr: Si vous souhaitez mettre à jour les données d'un design déjà ajouté au catalogue, veuillez le sélectionner de la liste
+    infobulle:
+      en: Add the name of the open design
+      fr: Ajouter le nom du design libre
+  date:
+    title:
+      en: Started using
+      fr: Date de début d'utilisation
+    label:
+      en: Started using
+      fr: Date de début d'utilisation
+    infobulle:
+      en: Select the date when the public administration started using the design.
+      fr: Choisir la date lorsque l'administration publique a commencé à utiliser le design.
+  administrations: *administrations
+  uses:
+    title:
+      en: Informations about design users.
+      fr: Information à propos des utilisateurs du design
+  

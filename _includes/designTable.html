@@ -1,0 +1,184 @@
+<div class="row">
+
+    <!-- Filters -->
+    <div class="col-md-3">
+      <details open>
+        <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
+        <form class="wb-tables-filter" data-bind-to="dataset-filter">
+          <div class="form-group">
+            <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
+            <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
+              <option value="">&nbsp;</option>
+              {%- for govLevel in site.data.i18n.administrations -%}
+              <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
+              {%- endfor -%}
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="dt_licence">Licence</label>
+            <select class="form-control" id="dt_licence" name="dt_licence" data-column="2">
+              <option value="">&nbsp;</option>
+              {%- assign licence_arr = "" | split: ',' -%}
+              {%- for design in site.data.design -%}
+                {%- for licence in design[1].licences -%}
+                  {%- assign licence_arr = licence_arr | push: licence.spdxID -%}
+                {%- endfor -%}
+              {%- endfor -%}
+              {%- assign licence_arr = licence_arr | group_by: "" | sort: "name" -%}
+              {%- for licence in licence_arr -%}
+                <option value="{{ licence.name }}">{{ licence.name }}</option>
+              {%- endfor -%}
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="dt_type">Type</label>
+            <select class="form-control" id="dt_type" name="dt_type" data-column="3">
+              <option value="">&nbsp;</option>
+              {%- assign type_arr = "" | split: ',' -%}
+              {%- for defaultType in site.data.i18n.defaultTypes -%}
+                {%- assign type_arr = type_arr | push: defaultType -%}
+              {%- endfor -%}
+              {%- for design in site.data.design -%}
+                {%- for ntype in design[1].designTypes -%}
+                  {%- assign type_arr = type_arr | push: ntype -%}
+                {%- endfor -%}
+              {%- endfor -%}
+              {%- assign type_arr = type_arr | uniq | sort: "name" -%}
+              {%- for dtype in type_arr -%}
+                <option value="{{ dtype.type[page.lang] }}">{{ dtype.type[page.lang] }}</option>
+              {%- endfor -%}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dt_status">Design Status</label>
+            <select class="form-control" id="dt_status" name="dt_status" data-column="6">
+              <option value="">&nbsp;</option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Used[page.lang]}}">{{ site.data.i18n.form.presets.designStatus.options.Used[page.lang] }}</option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Modified[page.lang]}}"> {{site.data.i18n.form.presets.designStatus.options.Modified[page.lang]}} </option>
+              <option value="{{site.data.i18n.form.presets.designStatus.options.Outdated[page.lang]}}"> {{site.data.i18n.form.presets.designStatus.options.Outdated[page.lang]}} </option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+            </div>
+            <div class="col-xs-6">
+              <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
+            </div>
+          </div>
+    
+        </form>
+      </details>
+    </div>
+    
+    <!-- Data Table -->
+    <div class="col-md-9 mrgn-bttm-lg">
+      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [5,6,7], "visible": false}], "paging": true}'>
+        <thead>
+          <tr>
+            <th>{{ site.data.i18n.tables.design[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
+            <th>{{ site.data.i18n.tables.designType[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.usage[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.homepage[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.designStatus[page.lang]}}</th>
+            <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for designs in site.data.design -%}
+            {%- assign design = designs[1] -%}
+            <tr>
+              <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
+              <td>{{ design.description.whatItDoes[page.lang] }}</td>
+              <td>
+                {%- for licence in design.licences -%}
+                  <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
+                {%- endfor -%}
+              </td>
+              <td>
+                {%- assign type_arr = "" | split: ',' -%}
+                {%- for ntype in design.designTypes -%}
+                  {%- assign type_arr = type_arr | push: ntype -%}
+                {%- endfor -%}
+                {%- assign type_arr = type_arr | uniq -%}
+                {%- for dtype in type_arr -%}
+                  <p>{{ dtype.type[page.lang] }}</p>
+                {%- endfor -%}
+              </td>
+              <td>{{ design.administrations.size }}</td>
+              <td><a href="{{ design.homepageURL[page.lang] }}" target="_blank">{{ design.homepageURL[page.lang] | remove: "https://" | rstrip }}</a></td>
+              <td>{{ design.designStatus[page.lang] }}</td>
+              <td>
+                {%- for administration in design.administrations -%}
+                {%- for levels in site.data.i18n.administrations -%}
+                  {%- assign govLevel = levels[0] -%}
+                    {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
+                    {%- if admin[0] != nil -%}
+                    {{ site.data.i18n.administrations[govLevel].value }}&nbsp;
+                    {%- endif -%}
+                  {%- endfor -%}
+                {% endfor %}
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Modal Lightboxes -->
+    {%- for designs in site.data.design -%}
+      {%- assign design = designs[1] -%}
+        <section id="{{ design.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+          <header class="modal-header">
+            <h2 class="modal-title">{{ design.name[page.lang] }}</h2>
+          </header>
+          <div class="modal-body">
+            <p><strong>Description:</strong></p>
+            <p>{{ design.description.whatItDoes[page.lang] }}</p>
+            <p><strong>{{ site.data.i18n.tables.designType[page.lang] }}:</strong></p>
+            <ul>
+              {%- assign type_arr = "" | split: ',' -%}
+                {%- for ntype in design.designTypes -%}
+                  {%- assign type_arr = type_arr | push: ntype -%}
+                {%- endfor -%}
+                {%- assign type_arr = type_arr | uniq -%}
+                {%- for dtype in type_arr -%}
+                  <li>{{ dtype.type[page.lang] }}</li>
+                {%- endfor -%}
+            </ul>
+            <div class="row">
+                <div class="col-md-7"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
+                <div class="col-md-5"><strong>Contact:</strong></div>
+            </div>
+            {%- for administration in design.administrations -%}
+              <div class="row">
+                <div class="col-md-7">
+                  {%- for levels in site.data.i18n.administrations -%}
+                    {%- assign govLevel = levels[0] -%}
+                    {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
+                    {{ admin[0].name[page.lang] }}
+                  {%- endfor -%}
+                </div>
+                <div class="col-md-5">
+                {%- for use in administration.uses -%}
+                  {{ use.contact.email }}<br />
+                {%- endfor -%}
+                </div>
+              </div>
+            {%- endfor -%}
+            <p><strong>{{ site.data.i18n.tables.homepage[page.lang] }}</strong>: <a href="{{ design.homepageURL[page.lang] }}">{{ design.homepageURL[page.lang] }}</a></p>
+            {%- if design.designStatus != nil -%}
+              <p><strong>{{ site.data.i18n.tables.designStatus[page.lang] }}</strong>: {{ design.designStatus[page.lang] }}</p>
+            {%- endif -%}
+          </div>
+        </section>
+    {%- endfor -%}
+    
+    </div>
+    

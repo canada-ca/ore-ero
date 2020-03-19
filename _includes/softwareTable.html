@@ -1,175 +1,239 @@
 <div class="row">
-
-<!-- Filters -->
-<div class="col-md-3">
-  <details open>
-    <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
-    <form class="wb-tables-filter" data-bind-to="dataset-filter">
-      <div class="form-group">
-        <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
-        <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
-          <option value="">&nbsp;</option>
-          {%- for govLevel in site.data.i18n.administrations -%}
-          <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
-        <select class="form-control" id="dt_category" name="dt_category" data-column="1">
-          <option value="">&nbsp;</option>
-          {%- assign cat_arr = "" | split: ',' -%}
-          {%- for software in site.data.software -%}
-            {%- for category in software[1].category -%}
-              {%- assign cat_arr = cat_arr | push: category -%}
+  <!-- Filters -->
+  <div class="col-md-3">
+    <details open>
+      <summary
+        ><h4 class="h4">
+          {{ site.data.i18n.tables.filterOptions[page.lang] }}
+        </h4></summary
+      >
+      <form class="wb-tables-filter" data-bind-to="dataset-filter">
+        <div class="form-group">
+          <label for="dt_govLevel"
+            >{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label
+          >
+          <select
+            class="form-control"
+            id="dt_govLevel"
+            name="dt_govLevel"
+            data-column="7"
+          >
+            <option value="">&nbsp;</option>
+            {%- for govLevel in site.data.i18n.administrations -%}
+            <option value="{{ govLevel[1].value }}"
+              >{{ govLevel[1][page.lang] }}</option
+            >
             {%- endfor -%}
-          {%- endfor -%}
-          {%- assign cat_arr = cat_arr | uniq -%}
-          {%- for cat in cat_arr -%}
-            <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="dt_licence">Licence</label>
-        <select class="form-control" id="dt_licence" name="dt_licence" data-column="3">
-          <option value="">&nbsp;</option>
-          {%- assign licence_arr = "" | split: ',' -%}
-          {%- for software in site.data.software -%}
-            {%- for licence in software[1].licences -%}
-              {%- assign licence_arr = licence_arr | push: licence.spdxID -%}
+        <div class="form-group">
+          <label for="dt_category"
+            >{{ site.data.i18n.tables.category[page.lang] }}</label
+          >
+          <select
+            class="form-control"
+            id="dt_category"
+            name="dt_category"
+            data-column="1"
+          >
+            <option value="">&nbsp;</option>
+            {%- assign cat_arr = "" | split: ',' -%} {%- for software in
+            site.data.software -%} {%- for category in software[1].category -%}
+            {%- assign cat_arr = cat_arr | push: category -%} {%- endfor -%} {%-
+            endfor -%} {%- assign cat_arr = cat_arr | uniq -%} {%- for cat in
+            cat_arr -%}
+            <option value="{{ site.data.i18n.categories[cat][page.lang] }}"
+              >{{ site.data.i18n.categories[cat][page.lang] }}</option
+            >
             {%- endfor -%}
-          {%- endfor -%}
-          {%- assign licence_arr = licence_arr | group_by: "" | sort: "name" -%}
-          {%- for licence in licence_arr -%}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dt_licence">Licence</label>
+          <select
+            class="form-control"
+            id="dt_licence"
+            name="dt_licence"
+            data-column="3"
+          >
+            <option value="">&nbsp;</option>
+            {%- assign licence_arr = "" | split: ',' -%} {%- for software in
+            site.data.software -%} {%- for licence in software[1].licences -%}
+            {%- assign licence_arr = licence_arr | push: licence.spdxID -%} {%-
+            endfor -%} {%- endfor -%} {%- assign licence_arr = licence_arr |
+            group_by: "" | sort: "name" -%} {%- for licence in licence_arr -%}
             <option value="{{ licence.name }}">{{ licence.name }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dt_tag">Tag</label>
-        <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
-          <option value="">&nbsp;</option>
-          {%- assign tag_arr = "" | split: ',' -%}
-          {%- for software in site.data.software -%}
-            {%- for tag in software[1].tags[page.lang] -%}
-              {%- assign tag_arr = tag_arr | push: tag -%}
             {%- endfor -%}
-          {%- endfor -%}
-          {%- assign tag_arr = tag_arr | group_by: "" | sort: "name" -%}
-          {%- for tag in tag_arr -%}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dt_tag">Tag</label>
+          <select
+            class="form-control"
+            id="dt_tag"
+            name="dt_tag"
+            data-column="4"
+          >
+            <option value="">&nbsp;</option>
+            {%- assign tag_arr = "" | split: ',' -%} {%- for software in
+            site.data.software -%} {%- for tag in software[1].tags[page.lang]
+            -%} {%- assign tag_arr = tag_arr | push: tag -%} {%- endfor -%} {%-
+            endfor -%} {%- assign tag_arr = tag_arr | group_by: "" | sort:
+            "name" -%} 
+            {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
-          {%- endfor -%}
-        </select>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+            {%- endfor -%}
+          </select>
         </div>
-        <div class="col-xs-6">
-          <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              aria-controls="dataset-filter"
+            >
+              {{ site.data.i18n.tables.filter[page.lang] }}
+            </button>
+          </div>
+          <div class="col-xs-6">
+            <button type="reset" class="btn btn-default">
+              {{ site.data.i18n.tables.clear[page.lang] }}
+            </button>
+          </div>
         </div>
-      </div>
+      </form>
+    </details>
+  </div>
 
-    </form>
-  </details>
-</div>
-
-<!-- Data Table -->
-<div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,6,7], "visible": false}], "paging": true}'>
-    <thead>
-      <tr>
-        <th>{{ site.data.i18n.tables.software[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.category[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
-        <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.usage[page.lang] }}</th>
-        <th>{{ site.data.i18n.tables.homepage[page.lang] }}</th>
-        <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      {%- for softwares in site.data.software -%}
-        {%- assign software = softwares[1] -%}
+  <!-- Data Table -->
+  <div class="col-md-9 mrgn-bttm-lg">
+    <table
+      class="wb-tables table table-striped table-hover"
+      id="dataset-filter"
+      data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,6,7], "visible": false}], "paging": true}'
+    >
+      <thead>
         <tr>
-          <td><a href="#{{ software.name[page.lang] | slugify: "latin" }}" aria-controls="{{ software.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
+          <th>{{ site.data.i18n.tables.software[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.category[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
+          <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.usage[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.homepage[page.lang] }}</th>
+          <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for softwares in site.data.software -%} {%- assign software =
+        softwares[1] -%}
+        <tr>
+          <td>
+            <a
+              href="#{{ software.name[page.lang] | slugify }}"
+              aria-controls="{{ software.name[page.lang] | slugify }}"
+              class="overlay-lnk"
+              role="button"
+              >{{ software.name[page.lang] }}</a
+            >
+          </td>
           <td>
             {{ site.data.i18n.categories[software.category][page.lang] }}
           </td>
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
-              <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
-            {%- endfor -%}
+            <a href="{{ licence.URL[page.lang] }}" target="_blank"
+              >{{ licence.spdxID }}</a
+            >&nbsp; {%- endfor -%}
           </td>
           <td>
-            {%- for tag in software.tags[page.lang] -%}
-              {{ tag }}&nbsp;
-            {%- endfor -%}
+            {%- for tag in software.tags[page.lang] -%} {{ tag }}&nbsp; {%-
+            endfor -%}
           </td>
           <td>{{ software.administrations.size }}</td>
-          <td><a href="{{ software.homepageURL[page.lang] }}" target="_blank">{{ software.homepageURL[page.lang] | remove: "https://" | rstrip }}</a></td>
           <td>
-            {%- for administration in software.administrations -%}
-            {%- for levels in site.data.i18n.administrations -%}
-              {%- assign govLevel = levels[0] -%}
-                {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
-                {%- if admin[0] != nil -%}
-                {{ site.data.i18n.administrations[govLevel].value }}&nbsp;
-                {%- endif -%}
-              {%- endfor -%}
-            {% endfor %}
+            <a href="{{ software.homepageURL[page.lang] }}" target="_blank"
+              >{{ software.homepageURL[page.lang] | remove: "https://" | rstrip
+              }}</a
+            >
+          </td>
+          <td>
+            {%- for administration in software.administrations -%} {%- for
+            levels in site.data.i18n.administrations -%} {%- assign govLevel =
+            levels[0] -%} {%- assign admin = site.data.administrations[govLevel]
+            | where: "code": administration.adminCode -%} {%- if admin[0] != nil
+            -%} {{ site.data.i18n.administrations[govLevel].value }}&nbsp; {%-
+            endif -%} {%- endfor -%} {% endfor %}
           </td>
         </tr>
-      {%- endfor -%}
-    </tbody>
-  </table>
-</div>
-
-<!-- Modal Lightboxes -->
-{%- for softwares in site.data.software -%}
-  {%- assign software = softwares[1] -%}
-    <section id="{{ software.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
-      <header class="modal-header">
-        <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
-      </header>
-      <div class="modal-body">
-        <p><strong>Description:</strong></p>
-        <p>{{ software.description.whatItDoes[page.lang] }}</p>
-        <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
-        <ul>
-          {%- for tag in software.tags[page.lang] -%}
-          <li>{{ tag }}</li>
-          {%- endfor -%}
-        </ul>
-        <div class="row">
-            <div class="col-md-7"><strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong></div>
-            <div class="col-md-5"><strong>Contact:</strong></div>
-        </div>
-        {%- for administration in software.administrations -%}
-          <div class="row">
-            <div class="col-md-7">
-              {%- for levels in site.data.i18n.administrations -%}
-                {%- assign govLevel = levels[0] -%}
-                {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%}
-                {{ admin[0].name[page.lang] }}
-              {%- endfor -%}
-            </div>
-            <div class="col-md-5">
-            {%- for use in administration.uses -%}
-              {{ use.contact.email }}<br />
-            {%- endfor -%}
-            </div>
-          </div>
         {%- endfor -%}
-      </div>
-    </section>
-{%- endfor -%}
+      </tbody>
+    </table>
+  </div>
 
+  <!-- Modal Lightboxes -->
+  {%- for softwares in site.data.software -%} {%- assign software = softwares[1]
+  -%}
+  <section
+    id="{{ software.name[page.lang] | slugify }}"
+    class="wb-overlay modal-content overlay-def wb-popup-mid"
+  >
+    <header class="modal-header">
+      <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
+    </header>
+    <div class="modal-body">
+      <p><strong>Description:</strong></p>
+      <p>{{ software.description.whatItDoes[page.lang] }}</p>
+      <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+      <ul>
+        {%- for tag in software.tags[page.lang] -%}
+        <li>{{ tag }}</li>
+        {%- endfor -%}
+      </ul>
+      <div class="row">
+        <div class="col-md-7">
+          <strong
+            >{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong
+          >
+        </div>
+        <div class="col-md-5"><strong>Contact:</strong></div>
+      </div>
+      {%- for administration in software.administrations -%}
+      <div class="row">
+        <div class="col-md-7">
+          {%- for levels in site.data.i18n.administrations -%} {%- assign
+          govLevel = levels[0] -%} {%- assign admin =
+          site.data.administrations[govLevel] | where: "code",
+          administration.adminCode -%} {{ admin[0].name[page.lang] }} {%- endfor
+          -%}
+        </div>
+        <div class="col-md-5">
+          {%- for use in administration.uses -%} {{ use.contact.email }}<br />
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- endfor -%}
+      <br />
+      <div class="row">
+        <div class="col-md-7">
+          <strong
+            >{{ site.data.i18n.tables.lightbox.website[page.lang] }}</strong
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <a href="{{ software.homepageURL[page.lang] }}" target="_blank">
+            {{ software.homepageURL[page.lang] }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endfor -%}
 </div>

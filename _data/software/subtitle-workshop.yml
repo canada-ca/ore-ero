@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Subtitle Workshop is a free application for creating, editing, and
+      converting text-based subtitle files.
+    fr: >-
+      Subtitle Workshop est une application gratuite pour créer, éditer et
+      convertir des fichiers de sous-titres textuels.
+category: '43232100'
+homepageURL:
+  en: 'http://subworkshop.sourceforge.net/'
+  fr: 'http://subworkshop.sourceforge.net/'
+licences:
+  - URL:
+      en: 'https://www.gnu.org/licenses/gpl-3.0.html'
+      fr: 'https://www.gnu.org/licenses/gpl-3.0.fr.html'
+    spdxID: GPL-3.0-only
+name:
+  en: Subtitle Workshop
+  fr: Subtitle Workshop
+tags:
+  en:
+    - Subtitles
+  fr:
+    - Sous-titres
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
