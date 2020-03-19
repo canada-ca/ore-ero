@@ -1,4 +1,8 @@
 language: ruby
+
+os: linux
+dist: xenial
+
 rvm:
 - 2.6.0
 
@@ -21,5 +25,3 @@ script:
 - yamale -s schemaPartnership.yaml _data/partnership
 - npm test
 - yamllint -d configYamlLint.yml _data
-
-sudo: false
