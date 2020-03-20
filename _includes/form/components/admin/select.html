@@ -8,7 +8,7 @@
     <optgroup data-value="{{ site.data.i18n.administrations[level].value }}" label="{{ site.data.i18n.administrations[level][page.lang] }}">
       {%- for org in site.data.administrations[level] -%}
         {%- if org.name[page.lang] != nil %}
-      <option value="{{ org.code }}">{{ org.name[page.lang] }}</option>
+        <option value="{{ org.code }}" data-suffix='{{ org.email_suffix }}'>{{ org.name[page.lang] }}</option>
         {%- endif -%}
       {%- else -%}
       <option disabled>{{ site.data.i18n.form.presets.adminCode.noAdmins[page.lang] }}</option>

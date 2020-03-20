@@ -61,6 +61,8 @@ function resetNewAdminForm() {
   $('#provinceSelect').prop('selectIndex', 0);
   $('#ennewAdminName').val('');
   $('#frnewAdminName').val('');
+  $('#adminCodesuffix').val('');
+  $('.additional-suffixes').remove();
 }
 
 function getAdminCode() {
@@ -74,6 +76,7 @@ function getAdminCode() {
 
 function getAdminObject() {
   // Mandatory fields
+
   let adminObj = {
     code: getAdminCode(),
     name: {
@@ -85,7 +88,14 @@ function getAdminObject() {
   // Optional fields
   let province = $('#provinceSelect').val();
   if (province != '') adminObj.provinceCode = province;
-
+  let suffix = $('#adminCodesuffix').val();
+  if (suffix != '') {
+    let suffixes = $('input[data-for="suffixes"][type="text"]').toArray();
+    for (item in suffixes) {
+      suffix += "," + suffixes[item].value;
+    }
+    adminObj.email_suffix = suffix;
+  }
   return adminObj;
 }
 
@@ -111,4 +121,21 @@ function getOrgLevel(result, admin) {
   else if (federal != undefined) orgLevel = federal;
 
   return orgLevel;
+}
+
+function addMoreSuffixes(value) {
+  $(`<div class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+        <input type="text" id="${'_' +
+          Math.random()
+            .toString(36)
+            .substr(
+              2,
+              9
+            )}" name="suffix" data-for="suffixes" class="form-control" required="required"${
+    value != undefined ? ' value="' + value + '"' : ''
+  }>
+        <div class="input-group-btn">
+          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+      </div>`).appendTo($('#adminCodesuffix').parent());
 }
