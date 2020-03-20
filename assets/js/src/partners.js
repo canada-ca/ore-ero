@@ -142,7 +142,16 @@ function getNewAdminPartnerObject(index) {
   // Optional fields
   let province = $('#provinceSelectPartner' + index).val();
   if (province != '') adminObj.provinceCode = province;
-
+  let suffix = $('#partnerssuffix').val();
+  if (suffix != '') {
+    let suffixes = $(
+      'input[data-for="partners-suffixes' + index + '"][type="text"]'
+    ).toArray();
+    for (let item in suffixes) {
+      suffix += ',' + suffixes[item].value;
+    }
+    adminObj.email_suffix = suffix;
+  }
   return adminObj;
 }
 
@@ -223,6 +232,10 @@ function resetFieldsPartner(id) {
   $('#frpartnersname' + id).val('');
   $('#partnerscontactname' + id).val('');
   $('#partnerscontactemail' + id).val('');
+  $('#partnerssuffix' + id).val('');
+  $('#partners-suffixes' + id)
+    .parent()
+    .remove();
 }
 
 function showFieldsPartner(id, full) {
@@ -314,4 +327,18 @@ function resetPartners() {
   }
   $('.btn-tabs-more-remove').addClass('invisible');
   $('#partnersNewAdmin').addClass('hide');
+}
+
+function partnersaddMoreSuffixes(value) {
+  let id = getmoreIndex($('#' + value));
+  $(`<div class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+        <input type="text" id="${'_' +
+          Math.random()
+            .toString(36)
+            .substr(2, 9)}" name="suffix" data-for="${'partners-suffixes' +
+    id}" class="form-control" required="required">
+        <div class="input-group-btn">
+          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+      </div>`).appendTo($('#partnerssuffix' + id).parent());
 }

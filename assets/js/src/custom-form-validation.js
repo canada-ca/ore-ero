@@ -25,9 +25,9 @@ const uniqNewAdminError = {
 };
 
 const emailSuffixError = {
-  en: "This email address is not associated with this administration",
+  en: 'This email address is not associated with this administration',
   fr: "Cette adresse email n'est pas associée à cette administration"
-}
+};
 $(document).on('wb-ready.wb', function() {
   let lang = document.documentElement.lang;
   if (jQuery.validator && window.jQuery.validator !== 'undefined') {
@@ -144,9 +144,12 @@ $(document).on('wb-ready.wb', function() {
       function(value) {
         let valid = false;
         if (value) {
-          let acceptedSuffix = $('#adminCode').find(':selected').data('suffix').split(',');
+          let acceptedSuffix = $('#adminCode')
+            .find(':selected')
+            .data('suffix')
+            .split(',');
           if (acceptedSuffix != undefined) {
-            for (index in acceptedSuffix) {
+            for (let index in acceptedSuffix) {
               if (value.endsWith(acceptedSuffix[index])) valid = true;
             }
           } else valid = true;
