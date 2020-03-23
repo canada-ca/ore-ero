@@ -90,14 +90,16 @@ function addMorePartners(obj) {
         obj.partners[i].name = $('#partnerscontactname' + id).val();
 
       let suffix = $('#partnerssuffix').val();
+      let first = suffix;
       if (suffix != '') {
         let suffixes = $(
           'input[data-for="partners-suffixes' + id + '"][type="text"]'
         ).toArray();
         for (let item in suffixes) {
-          suffix += ',' + suffixes[item].value;
+          let val = suffixes[item].value;
+          if (!suffix.includes(',' + val) && val != first) suffix += ',' + val;
         }
-        adminObj.email_suffix = suffix;
+        obj.partners[i].email_suffix = suffix;
       }
     }
   });
@@ -244,8 +246,7 @@ function resetFieldsPartner(id) {
   $('#partnerscontactname' + id).val('');
   $('#partnerscontactemail' + id).val('');
   $('#partnerssuffix' + id).val('');
-  $('#partners-suffixes' + id)
-    .remove();
+  $('#partners-suffixes' + id).remove();
 }
 
 function showFieldsPartner(id, full) {
@@ -338,15 +339,16 @@ function resetPartners() {
   $('.btn-tabs-more-remove').addClass('invisible');
   $('#partnersNewAdmin').addClass('hide');
 }
-
+/*eslint-disable no-unused-vars*/
 function partnersaddMoreSuffixes(value) {
   let id = getmoreIndex($('#' + value));
   $(`<div id="${'partners-suffixes' +
-  id}" class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+    id}" class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
         <input type="text"  name="suffix" data-for="${'partners-suffixes' +
-    id}" class="form-control" required="required">
+          id}" class="form-control" required="required">
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
       </div>`).appendTo($('#partnerssuffix' + id).parent());
 }
+/*eslint-enable no-unused-vars*/

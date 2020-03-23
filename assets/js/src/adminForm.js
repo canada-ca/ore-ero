@@ -91,10 +91,12 @@ function getAdminObject() {
   let province = $('#provinceSelect').val();
   if (province != '') adminObj.provinceCode = province;
   let suffix = $('#adminCodesuffix').val();
+  let first = suffix;
   if (suffix != '') {
     let suffixes = $('input[data-for="admin-suffixes"][type="text"]').toArray();
     for (let item in suffixes) {
-      suffix += ',' + suffixes[item].value;
+      let val = suffixes[item].value;
+      if (!suffix.includes(',' + val) && val != first) suffix += ',' + val;
     }
     adminObj.email_suffix = suffix;
   }
@@ -125,6 +127,7 @@ function getOrgLevel(result, admin) {
   return orgLevel;
 }
 
+/*eslint-disable no-unused-vars*/
 function adminCodeaddMoreSuffixes() {
   $(`<div class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
         <input type="text" id="${'_' +
@@ -133,9 +136,10 @@ function adminCodeaddMoreSuffixes() {
             .substr(
               2,
               9
-            )}" name="suffix" data-for="admin-suffixes" class="form-control" required="required">
+            )}" name="suffix" data-for="admin-suffixes" class="form-control" required="required" >
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
       </div>`).appendTo($('#adminCodesuffix').parent());
 }
+/*eslint-enable no-unused-vars*/
