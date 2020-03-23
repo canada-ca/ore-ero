@@ -161,41 +161,6 @@ context('Open Source Software on the English Form page', () =>  {
       .should('not.contain','The form could not be submitted because 1 error was found.');
     cy.get('form').submit();
   });
-
-  it('Should not submit form on the English page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .contains('.NET Core');
-    cy.get('select#adminCode')
-      .as('option')
-      .invoke('val', 'asc-csa')
-      .first()
-      .trigger('change')
-      .should('not.contain', 'Hardware');
-    cy.get('input#contactemail')
-      .type('ymail')
-      .should('have.value','ymail');
-    cy.get('input#date')
-      .type("1959-09-13")
-      .should('have.value','1959-09-13');
-    cy.get('input#submitterusername')
-      .type('test name')
-      .should('have.value','test name');
-    cy.get('input#submitteremail')
-      .type('xyz@ymail.com')
-      .should('have.value','xyz@ymail.com');
-    cy.get('button#prbotSubmitsoftwareForm')
-      .click();
-    cy.get('#validation')
-      .submit();
-    cy.wait(2000);
-    cy.get('#errors-validation')
-      .contains('The form could not be submitted because 1 error was found.');
-    cy.get('form').submit();
-  });
 });
 
 context('Open Source Software on the French Form page', () =>  {
@@ -257,39 +222,5 @@ context('Open Source Software on the French Form page', () =>  {
     cy.wait(2000);
     cy.get('#errors-validation')
       .should('not.contain','Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
-  });
-  
-  it('Should not submit form on the French page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .contains('.NET Core');
-    cy.get('select#adminCode')
-      .as('option')
-      .invoke('val', 'asc-csa')
-      .first()
-      .trigger('change')
-      .should('not.contain', 'Hardware');
-    cy.get('input#contactemail')
-      .type('ymail')
-      .should('have.value','ymail');
-    cy.get('input#date')
-      .type("1959-09-13")
-      .should('have.value','1959-09-13');
-    cy.get('input#submitterusername')
-      .type('test name')
-      .should('have.value','test name');
-    cy.get('input#submitteremail')
-      .type('xyz@ymail.com')
-      .should('have.value','xyz@ymail.com');
-    cy.get('button#prbotSubmitsoftwareForm')
-      .click();
-    cy.get('#validation')
-      .submit();
-    cy.wait(2000);
-    cy.get('#errors-validation')
-      .contains('Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
   });
 });
