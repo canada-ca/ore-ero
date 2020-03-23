@@ -88,6 +88,17 @@ function addMorePartners(obj) {
 
       if ($('#partnerscontactname' + id).val() != '')
         obj.partners[i].name = $('#partnerscontactname' + id).val();
+
+      let suffix = $('#partnerssuffix').val();
+      if (suffix != '') {
+        let suffixes = $(
+          'input[data-for="partners-suffixes' + id + '"][type="text"]'
+        ).toArray();
+        for (let item in suffixes) {
+          suffix += ',' + suffixes[item].value;
+        }
+        adminObj.email_suffix = suffix;
+      }
     }
   });
 }
@@ -234,7 +245,6 @@ function resetFieldsPartner(id) {
   $('#partnerscontactemail' + id).val('');
   $('#partnerssuffix' + id).val('');
   $('#partners-suffixes' + id)
-    .parent()
     .remove();
 }
 
@@ -331,11 +341,9 @@ function resetPartners() {
 
 function partnersaddMoreSuffixes(value) {
   let id = getmoreIndex($('#' + value));
-  $(`<div class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
-        <input type="text" id="${'_' +
-          Math.random()
-            .toString(36)
-            .substr(2, 9)}" name="suffix" data-for="${'partners-suffixes' +
+  $(`<div id="${'partners-suffixes' +
+  id}" class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+        <input type="text"  name="suffix" data-for="${'partners-suffixes' +
     id}" class="form-control" required="required">
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
