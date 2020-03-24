@@ -82,7 +82,8 @@
             site.data.software -%} {%- for tag in software[1].tags[page.lang]
             -%} {%- assign tag_arr = tag_arr | push: tag -%} {%- endfor -%} {%-
             endfor -%} {%- assign tag_arr = tag_arr | group_by: "" | sort:
-            "name" -%} {%- for tag in tag_arr -%}
+            "name" -%} 
+            {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
             {%- endfor -%}
           </select>
@@ -194,29 +195,35 @@
         <li>{{ tag }}</li>
         {%- endfor -%}
       </ul>
-      <div class="row">
-        <div class="col-md-7">
+      <table class="table">
+      <thead>
+      <tr>
+        <th>
           <strong
             >{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong
           >
-        </div>
-        <div class="col-md-5"><strong>Contact:</strong></div>
-      </div>
+        </th>
+        <th><strong>Contact:</strong></th>
+      </tr>
+    </thead>
+    <tbody>
       {%- for administration in software.administrations -%}
-      <div class="row">
-        <div class="col-md-7">
+      <tr>
+        <td>
           {%- for levels in site.data.i18n.administrations -%} {%- assign
           govLevel = levels[0] -%} {%- assign admin =
           site.data.administrations[govLevel] | where: "code",
           administration.adminCode -%} {{ admin[0].name[page.lang] }} {%- endfor
           -%}
-        </div>
-        <div class="col-md-5">
+        </td>
+        <td>
           {%- for use in administration.uses -%} {{ use.contact.email }}<br />
           {%- endfor -%}
-        </div>
-      </div>
+        </td>
+      </tr>
       {%- endfor -%}
+    </tbody>
+    </table>
       <br />
       <div class="row">
         <div class="col-md-7">

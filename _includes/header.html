@@ -13,14 +13,14 @@
           {%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
           {%- for my_post in posts -%}
             {%- if my_post.lang != page.lang %}
-            <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: '..' }}">{{ site.data.i18n.general.language[my_post.lang] }}</a></li>
+            <li><a lang="{{ my_post.lang }}" hreflang="{{ my_post.lang }}" href="{{ my_post.url | prepend: site.data.i18n.general.nav.base[my_post.lang] }}">{{ site.data.i18n.general.language[my_post.lang] }}</a></li>
             {%- endif -%}
           {%- endfor -%}
 
           {%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
           {%- for my_page in pages -%}
             {%- if my_page.lang != page.lang %}
-            <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: '..' }}">{{ site.data.i18n.general.language[my_page.lang] }}</a></li>
+            <li><a lang="{{ my_page.lang }}" hreflang="{{ my_page.lang }}" href="{{ my_page.url | prepend: site.data.i18n.general.nav.base[my_page.lang] }}">{{ site.data.i18n.general.language[my_page.lang] }}</a></li>
             {%- endif -%}
           {%- endfor %}
           </ul>

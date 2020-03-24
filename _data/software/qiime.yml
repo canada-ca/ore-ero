@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      QIIME is an open-source bioinformatics pipeline for performing microbiome
+      analysis from raw DNA sequencing data.
+    fr: >-
+      QIIME est un pipeline de bioinformatique open source pour effectuer
+      l'analyse du microbiome à partir de données de séquençage d'ADN brutes.
+category: '43232600'
+homepageURL:
+  en: 'http://qiime.org/'
+  fr: 'http://qiime.org/'
+licences:
+  - URL:
+      en: 'https://github.com/biocore/qiime/blob/master/COPYING.txt'
+      fr: 'https://github.com/biocore/qiime/blob/master/COPYING.txt'
+    spdxID: GPL-2.0-only
+name:
+  en: QIIME
+  fr: QIIME
+tags:
+  en:
+    - DNA
+  fr:
+    - ADN
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

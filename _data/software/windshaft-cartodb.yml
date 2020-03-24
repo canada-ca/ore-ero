@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The CARTO Maps API tiler. It extends Windshaft and exposes a web service
+      with extra functionality.
+    fr: >-
+      Le carreleur API CARTO Maps. Il étend Windshaft et expose un service Web
+      avec des fonctionnalités supplémentaires.
+category: '43232300'
+homepageURL:
+  en: 'https://carto.com/developers/maps-api/'
+  fr: 'https://carto.com/developers/maps-api/'
+licences:
+  - URL:
+      en: 'https://github.com/CartoDB/Windshaft-cartodb/blob/master/LICENSE'
+      fr: 'https://github.com/CartoDB/Windshaft-cartodb/blob/master/LICENSE'
+    spdxID: BSD-3-Clause
+name:
+  en: Windshaft-cartodb
+  fr: Windshaft-cartodb
+tags:
+  en:
+    - API
+  fr:
+    - API
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

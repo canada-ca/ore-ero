@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: Subversion is an open source version control system.
+    fr: Subversion est un système de contrôle de version open source.
+category: '43232400'
+homepageURL:
+  en: 'http://subversion.apache.org/'
+  fr: 'http://subversion.apache.org/'
+licences:
+  - URL:
+      en: 'https://svn.apache.org/repos/asf/subversion/trunk/LICENSE'
+      fr: 'https://svn.apache.org/repos/asf/subversion/trunk/LICENSE'
+    spdxID: Apache-2.0
+name:
+  en: Subversion
+  fr: Subversion
+tags:
+  en:
+    - Source Control
+  fr:
+    - Contrôle de source
+administrations:
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-31'
