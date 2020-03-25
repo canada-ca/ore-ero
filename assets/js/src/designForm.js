@@ -11,8 +11,10 @@
 
 const designSelect = $('.page-designForm #nameselect');
 const adminSelect = $('.page-designForm #adminCode');
-
+const URL = document.defaultView.location.origin + 
+(document.defaultView.location.protocol == "http:" ? "/ore-ero" : "");
 $(document).ready(function() {
+  
   $('#prbotSubmitdesignForm').click(function() {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
@@ -358,7 +360,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON(URL + '/design.json', function(
     result
   ) {
     if (result[value]) {
@@ -421,7 +423,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON(URL + '/design.json', function(
     result
   ) {
     if (result[design]) {
