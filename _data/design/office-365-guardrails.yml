@@ -24,7 +24,7 @@ licences:
     spdxID: MIT
     level:
       en: Main license
-      fr: !<tag:yaml.org,2002:js/undefined> ''
+      fr: License principale
 name:
   en: Office 365 Guardrails
   fr: Office 365 Guardrails
