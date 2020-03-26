@@ -83,6 +83,9 @@
 <script src="../assets/js/src/partners.js"></script>
 <script src="../assets/js/src/partnershipForm.js"></script>
 {%- endif -%}
+{%- if page.ref == ("design" or "code" or "partnership" or "software" or "standard") -%}
+<script src="../assets/js/src/adminFilter.js"></script>
+{%- endif -%}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
