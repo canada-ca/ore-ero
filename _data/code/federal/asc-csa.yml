@@ -34,3 +34,36 @@ releases:
         - Espace
     languages:
       - Java
+  - contact:
+      email: vivian.nobrega@tbs-sct.gc.ca
+      name: Vivian Nobrega
+    date:
+      created: '1900-01-01'
+      metadataLastUpdated: '2020-03-26'
+    description:
+      whatItDoes:
+        en: This is fake test data.
+        fr: This is fake test data.
+    category: '43231500'
+    name:
+      en: Fake Project
+      fr: Fake Project
+    licences:
+      - URL:
+          en: 'http://meow.com'
+          fr: 'http://meow.com'
+        spdxID: AGPL-3.0-or-later
+        level:
+          en: Sub license
+          fr: Sous license
+        scope:
+          en: Something
+          fr: Something
+    repositoryURL:
+      en: 'http://meow.com'
+      fr: 'http://meow.com'
+    tags:
+      en:
+        - Fake
+      fr:
+        - Fake
