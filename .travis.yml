@@ -18,6 +18,7 @@ install:
 - npm install
 
 script:
+- node -v
 - bundle exec jekyll build
 - htmlproofer --disable-external --allow-hash-href ./_site
 - html5validator --root _site/
