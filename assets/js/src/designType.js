@@ -3,17 +3,17 @@
   global
   addMoreGroup
 */
-$(document).ready(function() {
+$(document).ready(function () {
   $('.add-more-group#addMoredesignType').on(
     'click',
     '.btn-tabs-more',
-    function() {
+    function () {
       let length = $('#addMoredesignType ul li').length;
       let index = length == 1 ? '' : length - 1;
       $('#newType' + index).addClass('hide');
     }
   );
-  $('#addMoredesignType').on('click', '.newTypeButton button', function() {
+  $('#addMoredesignType').on('click', '.newTypeButton button', function () {
     let index = getmoreIndex($(this));
     if (!$('#newType' + index).hasClass('hide')) {
       hideType(index);
@@ -25,13 +25,13 @@ $(document).ready(function() {
   $('#addMoredesignType').on(
     'click',
     '.newTypeButtonRemove button',
-    function() {
+    function () {
       let index = getmoreIndex($(this));
       hideType(index);
       resetType(index);
     }
   );
-  $('#addMoredesignType').on('change', '.designTypeSelect select', function() {
+  $('#addMoredesignType').on('change', '.designTypeSelect select', function () {
     let index = getmoreIndex($(this));
     if (
       $('#designType' + index).val() != '' &&
@@ -43,22 +43,22 @@ $(document).ready(function() {
 });
 
 function addTypes(designObject) {
-  $('#addMoredesignType ul.list-unstyled > li').each(function(i) {
+  $('#addMoredesignType ul.list-unstyled > li').each(function (i) {
     let id = getmoreIndex($(this));
     let selectedIndex = $('#designType' + id).prop('selectedIndex');
     if (selectedIndex == 0) {
       designObject.designTypes[i] = {
         type: {
           en: $('#ennewType' + id).val(),
-          fr: $('#frnewType' + id).val()
-        }
+          fr: $('#frnewType' + id).val(),
+        },
       };
     } else {
       designObject.designTypes[i] = {
         type: {
           en: $('#designType' + id).val(),
-          fr: $('#option' + selectedIndex).data('fr')
-        }
+          fr: $('#option' + selectedIndex).data('fr'),
+        },
       };
     }
   });
@@ -72,7 +72,7 @@ function hideType(index) {
 }
 
 function resetTypes() {
-  $('#addMoredesignType ul.list-unstyled > li').each(function() {
+  $('#addMoredesignType ul.list-unstyled > li').each(function () {
     let id = getmoreIndex($(this));
     if (id != 0) {
       $(this).remove();
@@ -84,7 +84,7 @@ function resetTypes() {
 }
 
 function fillTypeFields(designTypes) {
-  designTypes.forEach(function(designType, i) {
+  designTypes.forEach(function (designType, i) {
     let id;
     if (i == 0) id = '';
     else {
@@ -105,9 +105,7 @@ function addType(index) {
 }
 
 function getmoreIndex(element) {
-  let nb = $(element)
-    .closest('li')
-    .attr('data-index');
+  let nb = $(element).closest('li').attr('data-index');
   return nb != 0 ? nb : '';
 }
 

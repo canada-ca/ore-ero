@@ -4,23 +4,23 @@
 
 var newAdminON = false;
 
-$(document).ready(function() {
-  $('#newAdminButton').click(function() {
+$(document).ready(function () {
+  $('#newAdminButton').click(function () {
     if (!newAdminON) showNewAdminForm();
     else hideNewAdminForm();
   });
 
-  $('#removeNewAdminButton').click(function() {
+  $('#removeNewAdminButton').click(function () {
     hideNewAdminForm();
   });
 
-  $('#adminCode').change(function() {
+  $('#adminCode').change(function () {
     if (newAdminON) {
       hideNewAdminForm();
     }
   });
 
-  $('#orgLevel').change(function() {
+  $('#orgLevel').change(function () {
     if ($(this).val() == 'municipal')
       $('#provinceSelect')
         .attr('required', 'required')
@@ -39,9 +39,7 @@ function showNewAdminForm() {
   $('#adminCode').removeAttr('required');
   $('label[for="adminCode"]').removeClass('required');
   $('label[for="adminCode"] strong').addClass('hide');
-  $('#adminCode')
-    .prop('selectedIndex', 0)
-    .change();
+  $('#adminCode').prop('selectedIndex', 0).change();
 
   newAdminON = true;
 }
@@ -78,8 +76,8 @@ function getAdminObject() {
     code: getAdminCode(),
     name: {
       en: $('#ennewAdminName').val(),
-      fr: $('#frnewAdminName').val()
-    }
+      fr: $('#frnewAdminName').val(),
+    },
   };
 
   // Optional fields
@@ -91,9 +89,7 @@ function getAdminObject() {
 
 function getSelectedOrgType() {
   if ($('#adminCode').val() != '')
-    return $('#adminCode :selected')
-      .parent()
-      .data('value');
+    return $('#adminCode :selected').parent().data('value');
   else return $('#orgLevel').val();
 }
 

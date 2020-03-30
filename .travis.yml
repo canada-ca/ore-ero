@@ -9,12 +9,17 @@ rvm:
 jdk:
 - openjdk12
 
+language: node_js
+node_js:
+- lts/*
+
 install:
 - bundle install
 - pip install --user -r requirements.txt
 - npm install
 
 script:
+- node -v
 - bundle exec jekyll build
 - htmlproofer --disable-external --allow-hash-href ./_site
 - html5validator --root _site/
