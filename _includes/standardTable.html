@@ -15,6 +15,68 @@
         </select>
       </div>
 
+      <div class="form-group hide">
+        <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
+        <select class="form-control" id="dt_department" name="dt_department" data-column="5">
+          <option value="">&nbsp;</option>
+          {%- assign municipal_arr = "" | split: ',' -%}
+          {%- assign provincial_arr = "" | split: ',' -%}
+          {%- assign federal_arr = "" | split: ',' -%}
+          {%- assign aboriginal_arr = "" | split: ',' -%}
+          {%- assign other_arr = "" | split: ',' -%}
+          {%- for standard in site.data.standard -%}
+            {%- for admin in standard[1].administrations -%}
+              {%- assign level = 0 -%}
+              {%- for govLevels in site.data.i18n.administrations -%}
+               {%- assign govLevel = govLevels[0] -%}
+                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin.adminCode -%}
+                {%- if administration[0] != nil -%}
+                  {%- case level -%}
+                  {%- when 0 -%}
+                    {%- assign federal_arr = federal_arr | push: administration[0]-%}
+                  {%- when 1 -%}
+                    {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
+                  {%- when 2 -%}
+                    {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
+                  {%- when 3 -%}
+                    {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
+                  {%- when 4 -%}
+                    {%- assign other_arr = other_arr | push: administration[0]-%}
+                  {%- endcase -%}
+                {%- endif -%}
+                {%- assign level = level | plus:1 -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign federal_arr = federal_arr | uniq -%}
+          {%- assign provincial_arr = provincial_arr | uniq -%}
+          {%- assign municipal_arr = municipal_arr | uniq -%}
+          {%- assign aboriginal_arr = aboriginal_arr | uniq -%}
+          {%- assign other_arr = other_arr | uniq -%}
+          {%- assign id = 1 -%}
+          {%- for federal in federal_arr -%}
+            <option class="hide" id="{{id}}" value="{{federal.code}}" data-level="federal">{{federal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for provincial in provincial_arr -%}
+            <option class="hide" id="{{id}}" value="{{provincial.code}}" data-level="provincial">{{provincial.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for municipal in municipal_arr -%}
+            <option class="hide" id="{{id}}" value="{{municipal.code}}" data-level="municipal">{{municipal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for aboriginal in aboriginal_arr -%}
+            <option class="hide" id="{{id}}" value="{{aboriginal.code}}" data-level="aboriginal">{{aboriginal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for other in other_arr -%}
+            <option class="hide" id="{{id}}" value="{{other.code}}" data-level="others">{{other.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+        </select>
+      </div>
+
       <div class="form-group">
         <label for="dt_tag">Tag</label>
         <select class="form-control" id="dt_tag" name="dt_tag" data-column="3">
@@ -47,7 +109,7 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4], "visible": false}], "paging": true}'>
+  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4,5], "visible": false}], "paging": true}'>
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.standard[page.lang] }}</th>
@@ -55,6 +117,7 @@
         <th>{{ site.data.i18n.form.standard.standardOrg.title[page.lang] }}</th>
         <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
         <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+        <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
       </tr>
     </thead>
     <tbody>
@@ -80,6 +143,11 @@
               {%- endfor -%}
             {% endfor %}
           </td>
+          <td>
+            {%- for administration in standard.administrations -%}
+              {{ administration.adminCode }}&nbsp;
+            {%- endfor -%}
+            </td>
         </tr>
       {%- endfor -%}
     </tbody>
