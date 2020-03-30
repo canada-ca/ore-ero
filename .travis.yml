@@ -9,6 +9,7 @@ rvm:
 jdk:
 - openjdk12
 
+language: node_js
 node_js:
 - lts/*
 
