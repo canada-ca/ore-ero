@@ -9,6 +9,9 @@ rvm:
 jdk:
 - openjdk12
 
+node_js:
+- lts/*
+
 install:
 - bundle install
 - pip install --user -r requirements.txt
