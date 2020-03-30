@@ -1,0 +1,103 @@
+general:
+  -
+    scope:
+      path: "../assets/js/lib/js-yaml.js"
+      type: "lib"
+  -
+    scope:
+      path: "../assets/js/src/deep-object.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/git-file-manager.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/custom-form-validation.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/validation.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/tags.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/programmingLanguages.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/more-group.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/date.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/slugify.js"
+      type: "src"
+adminForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+codeForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+  -    
+    scope:
+      path: "../assets/js/src/partners.js"
+      type: "src"
+  -    
+    scope:
+      path: "../assets/js/src/codeForm.js"
+      type: "src"
+standardForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/standardForm.js"
+      type: "src"
+softwareForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/softwareForm.js"
+      type: "src"
+designForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/designForm.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/designType.js"
+      type: "src"
+partnershipForm:
+  -
+    scope:
+      path: "../assets/js/src/adminForm.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/partners.js"
+      type: "src"
+  -
+    scope:
+      path: "../assets/js/src/partnershipForm.js"
+      type: "src"
