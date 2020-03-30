@@ -6,18 +6,9 @@ $(document).ready(function () {
     wrap($(this));
   });
 
-  $('.add-more-group').on('click', '.btn-tabs-more', function() {
-    addMoreGroup(
-      $(this)
-        .parent()
-        .parent()
-    );
-    if (
-      $(this)
-        .parent()
-        .parent()
-        .data('title') == 'licences'
-    ) {
+  $('.add-more-group').on('click', '.btn-tabs-more', function () {
+    addMoreGroup($(this).parent().parent());
+    if ($(this).parent().parent().data('title') == 'licences') {
       let nb = $('#addMorelicences ul li').length - 1;
       let id = nb == 0 ? '' : nb;
       $('#licencesScope' + id).addClass('hide');
@@ -29,10 +20,8 @@ $(document).ready(function () {
     removeMoreGroup($(this).parent().parent());
   });
 
-  $('#addMorelicences').on('change', '.licenceslevel', function() {
-    let nb = $(this)
-      .closest('li')
-      .attr('data-index');
+  $('#addMorelicences').on('change', '.licenceslevel', function () {
+    let nb = $(this).closest('li').attr('data-index');
     let id = nb == 0 ? '' : nb;
     if ($('#licenceslevel' + id).val() == 'Sub license') {
       $('#licencesScope' + id).removeClass('hide');
@@ -56,7 +45,7 @@ function removeMoreGroup(group) {
 
 function resetMoreGroup(group) {
   while (group.find('li').length > 1) removeMoreGroup(group);
-  group.find('li').each(function(i, li) {
+  group.find('li').each(function (i, li) {
     $(li)
       .find('input')
       .each(function (i, input) {
@@ -151,13 +140,13 @@ function addMoreLicences(obj) {
         en: $('#licenceslevel' + id).val(),
         fr: $('#licenceslevel' + id)
           .find(':selected')
-          .data('fr')
-      }
+          .data('fr'),
+      },
     };
     if ($('#licenceslevel' + id).val() == 'Sub license') {
       obj.licences[i].scope = {
         en: $('#enlicencesscope' + id).val(),
-        fr: $('#frlicencesscope' + id).val()
+        fr: $('#frlicencesscope' + id).val(),
       };
     }
   });

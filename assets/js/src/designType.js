@@ -57,8 +57,8 @@ function addTypes(designObject) {
       designObject.designTypes[i] = {
         type: {
           en: $('#designType' + id).val(),
-          fr: $('#option' + selectedIndex).data('fr')
-        }
+          fr: $('#option' + selectedIndex).data('fr'),
+        },
       };
     }
   });
