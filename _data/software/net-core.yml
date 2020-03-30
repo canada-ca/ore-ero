@@ -2,13 +2,9 @@
 schemaVersion: '1.0'
 description:
   whatItDoes:
-    en: >-
-      .NET Core is a free and open-source, managed computer software framework
-      that is a cross-platform successor to .NET Framework.
-    fr: >-
-      .NET Core est un framework de logiciel informatique gratuit et open
-      source, qui est un successeur multiplateforme de .NET Framework.
-category: '43232400'
+    en: test
+    fr: test
+category: '43231500'
 homepageURL:
   en: 'https://dotnet.microsoft.com/'
   fr: 'https://dotnet.microsoft.com/'
@@ -17,14 +13,17 @@ licences:
       en: 'https://github.com/dotnet/core/blob/master/LICENSE.TXT'
       fr: 'https://github.com/dotnet/core/blob/master/LICENSE.TXT'
     spdxID: MIT
+    level:
+      en: Main license
+      fr: License principale
 name:
-  en: .NET Core
-  fr: .NET Core
+  en: net-core
+  fr: net-core
 tags:
   en:
-    - Programming Language
+    - API
   fr:
-    - Langage de programmation
+    - Browser
 administrations:
   - adminCode: tc
     uses:
@@ -34,3 +33,10 @@ administrations:
         date:
           started: '2018-05-30'
           metadataLastUpdated: '2020-01-30'
+  - adminCode: lac-bac
+    uses:
+      - contact:
+          email: test@ymail.com
+        date:
+          started: '2020-03-11'
+          metadataLastUpdated: '2020-03-30'
