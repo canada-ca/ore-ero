@@ -35,6 +35,7 @@ function resetMoreGroup(group) {
         $(input).val('');
       });
     $(li)
+
       .find('select')
       .each(function (i, select) {
         $(select).prop('selectedIndex', 0);
