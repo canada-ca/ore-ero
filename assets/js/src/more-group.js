@@ -1,25 +1,17 @@
 /* exported addMoreLicences fillLicenceField fillUseField addMoreRelatedCode resetMoreGroup */
 
-$(document).ready(function() {
-  $('.add-more-group').each(function() {
+$(document).ready(function () {
+  $('.add-more-group').each(function () {
     addBtns($(this).children('h2'));
     wrap($(this));
   });
 
-  $('.add-more-group').on('click', '.btn-tabs-more', function() {
-    addMoreGroup(
-      $(this)
-        .parent()
-        .parent()
-    );
+  $('.add-more-group').on('click', '.btn-tabs-more', function () {
+    addMoreGroup($(this).parent().parent());
   });
 
-  $('.add-more-group').on('click', '.btn-tabs-more-remove', function() {
-    removeMoreGroup(
-      $(this)
-        .parent()
-        .parent()
-    );
+  $('.add-more-group').on('click', '.btn-tabs-more-remove', function () {
+    removeMoreGroup($(this).parent().parent());
   });
 });
 
@@ -29,25 +21,22 @@ function addMoreGroup(group) {
 }
 
 function removeMoreGroup(group) {
-  group
-    .find('li')
-    .last()
-    .remove();
+  group.find('li').last().remove();
   checkForMinusBtn(group);
 }
 
 function resetMoreGroup(group) {
   while (group.find('li').length > 1) removeMoreGroup(group);
 
-  group.find('li').each(function(i, li) {
+  group.find('li').each(function (i, li) {
     $(li)
       .find('input')
-      .each(function(i, input) {
+      .each(function (i, input) {
         $(input).val('');
       });
     $(li)
       .find('select')
-      .each(function(i, select) {
+      .each(function (i, select) {
         $(select).prop('selectedIndex', 0);
       });
   });
@@ -81,24 +70,21 @@ function wrap(obj) {
 function addElement(obj) {
   let ul = $(obj).children('ul');
   let index = $(ul).children('li').length;
-  let li = $(ul)
-    .children('li')
-    .first()
-    .clone();
+  let li = $(ul).children('li').first().clone();
   li.attr('data-index', index);
 
-  li.find('.form-group').each(function() {
+  li.find('.form-group').each(function () {
     $(this)
       .children()
-      .each(function() {
+      .each(function () {
         replaceID($(this), index);
       });
   });
 
-  li.find('.more-group-id-replace').each(function() {
+  li.find('.more-group-id-replace').each(function () {
     $(this)
       .children()
-      .each(function() {
+      .each(function () {
         replaceID($(this), index);
       });
   });
@@ -121,21 +107,21 @@ function checkForMinusBtn(obj) {
 }
 
 function addMoreLicences(obj) {
-  $('#addMorelicences ul.list-unstyled > li').each(function(i) {
+  $('#addMorelicences ul.list-unstyled > li').each(function (i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     obj.licences[i] = {
       URL: {
         en: $('#enlicencesURL' + id).val(),
-        fr: $('#frlicencesURL' + id).val()
+        fr: $('#frlicencesURL' + id).val(),
       },
-      spdxID: $('#licencesspdxID' + id).val()
+      spdxID: $('#licencesspdxID' + id).val(),
     };
   });
 }
 
 function fillLicenceField(licences) {
-  licences.forEach(function(licence, i) {
+  licences.forEach(function (licence, i) {
     let id;
     if (i == 0) id = '';
     else {
@@ -149,7 +135,7 @@ function fillLicenceField(licences) {
 }
 
 function fillUseField(uses) {
-  uses.forEach(function(use, i) {
+  uses.forEach(function (use, i) {
     let id;
     if (i == 0) id = '';
     else {
@@ -168,7 +154,7 @@ function fillUseField(uses) {
 }
 
 function addMoreRelatedCode(obj) {
-  $('#addMorerelatedCode ul.list-unstyled > li').each(function(i) {
+  $('#addMorerelatedCode ul.list-unstyled > li').each(function (i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     if (
