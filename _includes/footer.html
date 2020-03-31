@@ -47,45 +47,12 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-<script src="../assets/js/lib/js-yaml.js"></script>
-<script src="../assets/js/src/deep-object.js"></script>
-<script src="../assets/js/src/git-file-manager.js"></script>
-<script src="../assets/js/src/custom-form-validation.js"></script>
-<script src="../assets/js/src/validation.js"></script>
-<script src="../assets/js/src/tags.js"></script>
-<script src="../assets/js/src/programmingLanguages.js"></script>
-<script src="../assets/js/src/more-group.js"></script>
-<script src="../assets/js/src/date.js"></script>
-<script src="../assets/js/src/slugify.js"></script>
-{%- if page.ref == "adminForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-{%- endif -%}
-{%- if page.ref == "codeForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-<script src="../assets/js/src/partners.js"></script>
-<script src="../assets/js/src/codeForm.js"></script>
-{%- endif -%}
-{%- if page.ref == "standardForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-<script src="../assets/js/src/standardForm.js"></script>
-{%- endif -%}
-{%- if page.ref == "softwareForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-<script src="../assets/js/src/softwareForm.js"></script>
-{%- endif %}
-{%- if page.ref == "designForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-<script src="../assets/js/src/designForm.js"></script>
-<script src="../assets/js/src/designType.js"></script>
-{%- endif %}
-{%- if page.ref == "partnershipForm" -%}
-<script src="../assets/js/src/adminForm.js"></script>
-<script src="../assets/js/src/partners.js"></script>
-<script src="../assets/js/src/partnershipForm.js"></script>
-{%- endif -%}
-{%- if page.ref == ("design" or "code" or "partnership" or "software" or "standard") -%}
-<script src="../assets/js/src/adminFilter.js"></script>
-{%- endif -%}
+{% for script in site.data.scripts.general %}
+  <script src="{{script.scope.path}}"></script>
+{% endfor %}
+{% for script in site.data.scripts[page.ref] %}
+  <script src="{{script.scope.path}}"></script>
+{% endfor %}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";
   const USERNAME = "{{ site.github_username }}";
