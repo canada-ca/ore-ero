@@ -12,24 +12,24 @@
 const standardSelect = $('.page-standardForm #standardAcronymselect');
 const adminSelect = $('.page-standardForm #adminCode');
 
-$(document).ready(function() {
-  $('#prbotSubmitstandardForm').click(function() {
+$(document).ready(function () {
+  $('#prbotSubmitstandardForm').click(function () {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitStandardFormNewAdmin();
       else submitStandardForm();
     }
   });
 
-  standardSelect.change(function() {
+  standardSelect.change(function () {
     selectStandard();
     if (adminSelect.val() != '') selectAdmin();
   });
 
-  adminSelect.change(function() {
+  adminSelect.change(function () {
     selectAdmin();
   });
 
-  $('#formReset').click(function() {
+  $('#formReset').click(function () {
     $('#validation').trigger('reset');
     resetTags();
     hideNewAdminForm();
@@ -44,57 +44,55 @@ function getStandardObject() {
     description: {
       whatItDoes: {
         en: $('#endescriptionwhatItDoes').val(),
-        fr: $('#frdescriptionwhatItDoes').val()
-      }
+        fr: $('#frdescriptionwhatItDoes').val(),
+      },
     },
     name: {
       en: $('#enname').val(),
-      fr: $('#frname').val()
+      fr: $('#frname').val(),
     },
     specURL: {
       en: $('#enspecURL').val(),
-      fr: $('#frspecURL').val()
+      fr: $('#frspecURL').val(),
     },
-    standardAcronym: $('#standardAcronym')
-      .val()
-      .toUpperCase(),
+    standardAcronym: $('#standardAcronym').val().toUpperCase(),
     standardOrg: {
       en: $('#enstandardOrg').val(),
-      fr: $('#frstandardOrg').val()
+      fr: $('#frstandardOrg').val(),
     },
     tags: {
       en: getTagsEN(),
-      fr: getTagsFR()
+      fr: getTagsFR(),
     },
     administrations: [
       {
         adminCode: getAdminCode(),
         contact: {
-          email: $('#contactemail').val()
+          email: $('#contactemail').val(),
         },
         date: {
           created: $('#date').val(),
-          metadataLastUpdated: getToday()
+          metadataLastUpdated: getToday(),
         },
         references: [],
-        status: $('#status').val()
-      }
-    ]
+        status: $('#status').val(),
+      },
+    ],
   };
 
   // More-groups
-  $('#addMorereference ul.list-unstyled > li').each(function(i) {
+  $('#addMorereference ul.list-unstyled > li').each(function (i) {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     standardObject.administrations[0].references[i] = {
       URL: {
         en: $('#enreferenceURL' + id).val(),
-        fr: $('#frreferenceURL' + id).val()
+        fr: $('#frreferenceURL' + id).val(),
       },
       name: {
         en: $('#enreferencename' + id).val(),
-        fr: $('#frreferencename' + id).val()
-      }
+        fr: $('#frreferencename' + id).val(),
+      },
     };
   });
 
@@ -141,18 +139,18 @@ function submitStandardForm() {
 
   fileWriter
     .merge(file, standardObject, 'administrations', 'adminCode')
-    .then(result => {
+    .then((result) => {
       return fetch(
         PRBOT_URL,
         getConfigUpdate(result, file, standardObject.standardAcronym)
       );
     })
-    .catch(err => {
+    .catch((err) => {
       if (err.status == 404) {
         return fetch(PRBOT_URL, getConfigNew(standardObject, file));
       } else throw err;
     })
-    .then(response => {
+    .then((response) => {
       let url =
         $('html').attr('lang') == 'en'
           ? './open-standards.html'
@@ -171,16 +169,16 @@ function getConfigUpdate(result, file, code) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(result)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(result),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -194,16 +192,16 @@ function getConfigNew(standardObject, file) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(standardObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(standardObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -227,10 +225,10 @@ function submitStandardFormNewAdmin() {
 
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
-    .then(adminResult => {
+    .then((adminResult) => {
       fileWriter
         .merge(standardFile, standardObject, 'administrations', 'adminCode')
-        .then(standardResult => {
+        .then((standardResult) => {
           return fetch(
             PRBOT_URL,
             getConfigUpdateStandardNewAdmin(
@@ -243,7 +241,7 @@ function submitStandardFormNewAdmin() {
             )
           );
         })
-        .catch(err => {
+        .catch((err) => {
           if (err.status == 404) {
             return fetch(
               PRBOT_URL,
@@ -258,7 +256,7 @@ function submitStandardFormNewAdmin() {
             );
           } else throw err;
         })
-        .then(response => {
+        .then((response) => {
           let url =
             $('html').attr('lang') == 'en'
               ? './open-standards.html'
@@ -266,7 +264,7 @@ function submitStandardFormNewAdmin() {
           submitConclusion(response, submitButton, resetButton, url);
         });
     })
-    .catch(err => {
+    .catch((err) => {
       if (err.status == 404) console.log('File not Found');
       else throw err;
     });
@@ -294,20 +292,20 @@ function getConfigUpdateStandardNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: standardFile,
-          content: '---\n' + jsyaml.dump(standardResult)
+          content: '---\n' + jsyaml.dump(standardResult),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -333,26 +331,26 @@ function getConfigNewStandardNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: standardFile,
-          content: '---\n' + jsyaml.dump(standardObject)
+          content: '---\n' + jsyaml.dump(standardObject),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
 function selectStandard() {
   let value = standardSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
     result
   ) {
     if (result[value]) {
@@ -369,15 +367,9 @@ function selectStandard() {
 function addValueToFieldsStandard(obj) {
   resetFieldsStandard();
 
-  $('#standardAcronym')
-    .val(obj.standardAcronym)
-    .prop('disabled', true);
-  $('#enname')
-    .val(obj.name.en)
-    .prop('disabled', true);
-  $('#frname')
-    .val(obj.name.fr)
-    .prop('disabled', true);
+  $('#standardAcronym').val(obj.standardAcronym).prop('disabled', true);
+  $('#enname').val(obj.name.en).prop('disabled', true);
+  $('#frname').val(obj.name.fr).prop('disabled', true);
 
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
@@ -397,15 +389,9 @@ function addValueToFieldsStandard(obj) {
 }
 
 function resetFieldsStandard() {
-  $('#standardAcronym')
-    .val('')
-    .prop('disabled', false);
-  $('#enname')
-    .val('')
-    .prop('disabled', false);
-  $('#frname')
-    .val('')
-    .prop('disabled', false);
+  $('#standardAcronym').val('').prop('disabled', false);
+  $('#enname').val('').prop('disabled', false);
+  $('#frname').val('').prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
@@ -420,7 +406,7 @@ function resetFieldsStandard() {
 function selectAdmin() {
   let standard = standardSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
     result
   ) {
     if (result[standard]) {
@@ -446,7 +432,7 @@ function addValueToFieldsAdmin(obj) {
 
   $('#date').val(obj.date.created);
 
-  obj.references.forEach(function(reference, i) {
+  obj.references.forEach(function (reference, i) {
     let id;
     if (i == 0) id = '';
     else {

@@ -43,5 +43,5 @@ window.DeepObject = {
     }
 
     obj[path[i]] = value;
-  }
+  },
 };
