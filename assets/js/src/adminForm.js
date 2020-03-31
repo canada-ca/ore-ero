@@ -4,23 +4,23 @@
 
 var newAdminON = false;
 
-$(document).ready(function() {
-  $('#newAdminButton').click(function() {
+$(document).ready(function () {
+  $('#newAdminButton').click(function () {
     if (!newAdminON) showNewAdminForm();
     else hideNewAdminForm();
   });
 
-  $('#removeNewAdminButton').click(function() {
+  $('#removeNewAdminButton').click(function () {
     hideNewAdminForm();
   });
 
-  $('#adminCode').change(function() {
+  $('#adminCode').change(function () {
     if (newAdminON) {
       hideNewAdminForm();
     }
   });
 
-  $('#orgLevel').change(function() {
+  $('#orgLevel').change(function () {
     if ($(this).val() == 'municipal')
       $('#provinceSelect')
         .attr('required', 'required')
@@ -39,9 +39,7 @@ function showNewAdminForm() {
   $('#adminCode').removeAttr('required');
   $('label[for="adminCode"]').removeClass('required');
   $('label[for="adminCode"] strong').addClass('hide');
-  $('#adminCode')
-    .prop('selectedIndex', 0)
-    .change();
+  $('#adminCode').prop('selectedIndex', 0).change();
 
   newAdminON = true;
 }
@@ -62,9 +60,7 @@ function resetNewAdminForm() {
   $('#ennewAdminName').val('');
   $('#frnewAdminName').val('');
   $('#adminCodesuffix').val('');
-  $('#admin-suffixes')
-    .parent()
-    .remove();
+  $('#admin-suffixes').parent().remove();
 }
 
 function getAdminCode() {
@@ -83,8 +79,8 @@ function getAdminObject() {
     code: getAdminCode(),
     name: {
       en: $('#ennewAdminName').val(),
-      fr: $('#frnewAdminName').val()
-    }
+      fr: $('#frnewAdminName').val(),
+    },
   };
 
   // Optional fields
@@ -105,9 +101,7 @@ function getAdminObject() {
 
 function getSelectedOrgType() {
   if ($('#adminCode').val() != '')
-    return $('#adminCode :selected')
-      .parent()
-      .data('value');
+    return $('#adminCode :selected').parent().data('value');
   else return $('#orgLevel').val();
 }
 
@@ -130,13 +124,9 @@ function getOrgLevel(result, admin) {
 /*eslint-disable no-unused-vars*/
 function adminCodeaddMoreSuffixes() {
   $(`<div class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
-        <input type="text" id="${'_' +
-          Math.random()
-            .toString(36)
-            .substr(
-              2,
-              9
-            )}" name="suffix" data-for="admin-suffixes" class="form-control" required="required" >
+        <input type="text" id="${
+          '_' + Math.random().toString(36).substr(2, 9)
+        }" name="suffix" data-for="admin-suffixes" class="form-control" required="required" >
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>

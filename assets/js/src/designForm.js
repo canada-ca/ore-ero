@@ -12,24 +12,24 @@
 const designSelect = $('.page-designForm #nameselect');
 const adminSelect = $('.page-designForm #adminCode');
 
-$(document).ready(function() {
-  $('#prbotSubmitdesignForm').click(function() {
+$(document).ready(function () {
+  $('#prbotSubmitdesignForm').click(function () {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitDesignFormNewAdmin();
       else submitFormDesign();
     }
   });
 
-  designSelect.change(function() {
+  designSelect.change(function () {
     selectDesign();
     if (adminSelect.val() != '') selectAdmin();
   });
 
-  adminSelect.change(function() {
+  adminSelect.change(function () {
     selectAdmin();
   });
 
-  $('#formReset').click(function() {
+  $('#formReset').click(function () {
     $('#validation').trigger('reset');
     resetTypes();
     hideNewAdminForm();
@@ -44,18 +44,18 @@ function getDesignObject() {
     description: {
       whatItDoes: {
         en: $('#endescriptionwhatItDoes').val(),
-        fr: $('#frdescriptionwhatItDoes').val()
-      }
+        fr: $('#frdescriptionwhatItDoes').val(),
+      },
     },
     designTypes: [],
     homepageURL: {
       en: $('#enhomepageURL').val(),
-      fr: $('#frhomepageURL').val()
+      fr: $('#frhomepageURL').val(),
     },
     licences: [],
     name: {
       en: $('#enname').val(),
-      fr: $('#frname').val()
+      fr: $('#frname').val(),
     },
     administrations: [
       {
@@ -63,16 +63,16 @@ function getDesignObject() {
         uses: [
           {
             contact: {
-              email: $('#contactemail').val()
+              email: $('#contactemail').val(),
             },
             date: {
               started: $('#date').val(),
-              metadataLastUpdated: getToday()
-            }
-          }
-        ]
-      }
-    ]
+              metadataLastUpdated: getToday(),
+            },
+          },
+        ],
+      },
+    ],
   };
 
   // More-groups
@@ -121,10 +121,7 @@ function getDesignObject() {
 
 function getSelectedOrgType() {
   if ($('#adminCode').val() != '')
-    return $('#adminCode :selected')
-      .parent()
-      .attr('label')
-      .toLowerCase();
+    return $('#adminCode :selected').parent().attr('label').toLowerCase();
   else return $('#orgLevel').val();
 }
 
@@ -147,10 +144,10 @@ function submitDesignFormNewAdmin() {
 
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
-    .then(adminResult => {
+    .then((adminResult) => {
       fileWriter
         .merge(designFile, designObject, 'administrations', 'adminCode')
-        .then(designResult => {
+        .then((designResult) => {
           return fetch(
             PRBOT_URL,
             getConfigUpdateDesignNewAdmin(
@@ -163,7 +160,7 @@ function submitDesignFormNewAdmin() {
             )
           );
         })
-        .catch(err => {
+        .catch((err) => {
           if (err.status == 404) {
             return fetch(
               PRBOT_URL,
@@ -178,7 +175,7 @@ function submitDesignFormNewAdmin() {
             );
           } else throw err;
         })
-        .then(response => {
+        .then((response) => {
           let url =
             $('html').attr('lang') == 'en'
               ? './open-design.html'
@@ -210,20 +207,20 @@ function getConfigUpdateDesignNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: designFile,
-          content: '---\n' + jsyaml.dump(designResult)
+          content: '---\n' + jsyaml.dump(designResult),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -249,20 +246,20 @@ function getConfigNewDesignNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: designFile,
-          content: '---\n' + jsyaml.dump(designObject)
+          content: '---\n' + jsyaml.dump(designObject),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -279,15 +276,15 @@ function submitFormDesign() {
 
   fileWriter
     .merge(file, designObject, 'administrations', 'adminCode')
-    .then(result => {
+    .then((result) => {
       return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
     })
-    .catch(err => {
+    .catch((err) => {
       if (err.status == 404) {
         return fetch(PRBOT_URL, getConfigNew(designObject, file, ProjectName));
       } else throw err;
     })
-    .then(response => {
+    .then((response) => {
       let url =
         $('html').attr('lang') == 'en'
           ? './open-design.html'
@@ -314,16 +311,16 @@ function getConfigUpdate(result, file, ProjectName) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(result)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(result),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -345,22 +342,22 @@ function getConfigNew(designObject, file, ProjectName) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(designObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(designObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function (
     result
   ) {
     if (result[value]) {
@@ -377,13 +374,9 @@ function selectDesign() {
 function addValueToFieldsDesign(obj) {
   resetFieldsDesign();
 
-  $('#enname')
-    .val(obj.name.en)
-    .prop('disabled', true);
+  $('#enname').val(obj.name.en).prop('disabled', true);
 
-  $('#frname')
-    .val(obj.name.fr)
-    .prop('disabled', true);
+  $('#frname').val(obj.name.fr).prop('disabled', true);
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
 
@@ -403,12 +396,8 @@ function addValueToFieldsDesign(obj) {
 }
 
 function resetFieldsDesign() {
-  $('#enname')
-    .val('')
-    .prop('disabled', false);
-  $('#frname')
-    .val('')
-    .prop('disabled', false);
+  $('#enname').val('').prop('disabled', false);
+  $('#frname').val('').prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
@@ -423,7 +412,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/design.json', function (
     result
   ) {
     if (result[design]) {
