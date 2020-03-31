@@ -5,27 +5,31 @@
 
 const lettersSpaceError = {
   en: 'Letters with spaces only please.',
-  fr: 'Veuillez fournir seulement les lettres avec des espaces.',
+  fr: 'Veuillez fournir seulement les lettres avec des espaces.'
 };
 const alphanumericSpaceError = {
   en: 'Letters and numbers with spaces only please.',
-  fr:
-    'Veuillez fournir seulement des lettres et des chiffres avec des espaces.',
+  fr: 'Veuillez fournir seulement des lettres et des chiffres avec des espaces.'
 };
 const namesError = {
   en: 'Please enter a valid name.',
-  fr: 'Veuillez fournir un nom valide.',
+  fr: 'Veuillez fournir un nom valide.'
 };
 const phoneError = {
   en: 'Please enter a valid phone number.',
-  fr: 'Veuillez fournir un numéro de téléphone valide.',
+  fr: 'Veuillez fournir un numéro de téléphone valide.'
 };
 const uniqNewAdminError = {
   en: 'This admin code already exists.',
-  fr: "Ce code d'administration existe déjà.",
+  fr: "Ce code d'administration existe déjà."
 };
 
-$(document).on('wb-ready.wb', function () {
+const emailSuffixError = {
+  en: 'This email address is not associated with this administration',
+  fr: "Cette adresse email n'est pas associée à cette administration"
+};
+
+$(document).on('wb-ready.wb', function() {
   let lang = document.documentElement.lang;
   if (jQuery.validator && window.jQuery.validator !== 'undefined') {
     /**
@@ -33,7 +37,7 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'letters-space',
-      function (value) {
+      function(value) {
         if (value) {
           if (value.match(/^[A-Za-z\s]+$/)) {
             return true;
@@ -51,7 +55,7 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'letters-space-en-fr',
-      function (value) {
+      function(value) {
         if (value) {
           if (value.match(/^[a-zàâçéèêëîïôûùüÿñæœ\s]+$/i)) {
             return true;
@@ -69,7 +73,7 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'alphanum-space-en-fr',
-      function (value) {
+      function(value) {
         if (value) {
           if (value.match(/^[0-9a-zàâçéèêëîïôûùüÿñæœ\s]+$/i)) {
             return true;
@@ -87,7 +91,7 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'names-en-fr',
-      function (value) {
+      function(value) {
         if (value) {
           if (value.match(/^[0-9a-zàâçéèêëîïôûùüÿñæœ,.'-+-\s]+$/i)) {
             return true;
@@ -105,7 +109,7 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'custom-phone',
-      function (value) {
+      function(value) {
         if (value) {
           if (value.match(/^[0-9]{3}[\s]*-[\s]*[0-9]{3}[\s]*-[\s]*[0-9]{4}$/)) {
             return true;
@@ -123,10 +127,10 @@ $(document).on('wb-ready.wb', function () {
      */
     jQuery.validator.addMethod(
       'unique-newadmincode',
-      function (value) {
+      function(value) {
         if (value) {
           let valid = true;
-          $('#adminCode option').each(function (i, option) {
+          $('#adminCode option').each(function(i, option) {
             if (value.toLowerCase() === $(option).val()) valid = false;
           });
           return valid;
@@ -134,6 +138,26 @@ $(document).on('wb-ready.wb', function () {
         return true;
       },
       jQuery.validator.format(uniqNewAdminError[lang])
+    );
+
+    jQuery.validator.addMethod(
+      'valid-emailsuffix',
+      function(value) {
+        let valid = false;
+        if (value) {
+          let acceptedSuffix = $('#adminCode')
+            .find(':selected')
+            .data('suffix')
+            .split(',');
+          if (acceptedSuffix != undefined) {
+            for (let index in acceptedSuffix) {
+              if (value.endsWith(acceptedSuffix[index])) valid = true;
+            }
+          } else valid = true;
+        }
+        return valid;
+      },
+      jQuery.validator.format(emailSuffixError[lang])
     );
   }
 });

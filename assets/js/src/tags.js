@@ -12,7 +12,7 @@ function getTagsFR() {
 
 function getTags(query) {
   return $(query)
-    .map(function () {
+    .map(function() {
       return this.value ? this.value : null;
     })
     .get();
@@ -22,7 +22,7 @@ function addTags(obj) {
   if (obj.tags) {
     resetTags();
     let index = 0;
-    obj.tags.en.forEach(function (tag) {
+    obj.tags.en.forEach(function(tag) {
       if (index == 0) $('#entags').val(tag);
       else
         tagObject('entags' + index, tag)
@@ -31,7 +31,7 @@ function addTags(obj) {
       index++;
     });
     index = 0;
-    obj.tags.fr.forEach(function (tag) {
+    obj.tags.fr.forEach(function(tag) {
       if (index == 0) $('#frtags').val(tag);
       else
         tagObject('frtags' + index, tag)
@@ -60,19 +60,25 @@ function tagObject(id, value) {
   </div>`);
 }
 
-$(document).ready(function () {
-  $('.add-more').click(function () {
+$(document).ready(function() {
+  $('.add-more').click(function() {
     addMoreTagsHtml('#tagsEN');
     addMoreTagsHtml('#tagsFR');
   });
 
-  $('body').on('click', '.remove', function () {
-    $(this).parents('.control-group').remove();
+  $('body').on('click', '.remove', function() {
+    $(this)
+      .parents('.control-group')
+      .remove();
   });
 });
 
 function addMoreTagsHtml(to) {
-  const newTagId = '_' + Math.random().toString(36).substr(2, 9);
+  const newTagId =
+    '_' +
+    Math.random()
+      .toString(36)
+      .substr(2, 9);
   $(tagObject(newTagId, '').addClass('additional-tag')).appendTo(to);
   appendSuggestion(newTagId);
 }

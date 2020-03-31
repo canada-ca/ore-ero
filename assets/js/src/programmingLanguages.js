@@ -2,9 +2,13 @@
 
 function addMoreLanguages(value) {
   $(`<div class="control-group additional-languages input-group col-xs-2 mrgn-tp-md">
-        <input type="text" id="${
-          '_' + Math.random().toString(36).substr(2, 9)
-        }" name="language" data-for="languages" class="form-control" required="required"${
+        <input type="text" id="${'_' +
+          Math.random()
+            .toString(36)
+            .substr(
+              2,
+              9
+            )}" name="language" data-for="languages" class="form-control" required="required"${
     value != undefined ? ' value="' + value + '"' : ''
   }>
         <div class="input-group-btn">
@@ -18,7 +22,7 @@ function getLanguages() {
     'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]'
   )
     .toArray()
-    .map((input) => input.value);
+    .map(input => input.value);
 }
 
 function selectLanguage(language) {
@@ -28,7 +32,7 @@ function selectLanguage(language) {
 }
 
 function resetLanguages() {
-  $('#languages input[type="checkbox"]').each(function (i, input) {
+  $('#languages input[type="checkbox"]').each(function(i, input) {
     $(input).prop('checked', false);
   });
 
