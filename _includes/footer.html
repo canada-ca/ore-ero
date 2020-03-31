@@ -48,10 +48,10 @@
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
 {% for script in site.data.scripts.general %}
-  <script src="../assets/js/" + script></script>
+  <script src="{{script.scope.path}}"></script>
 {% endfor %}
 {% for script in site.data.scripts[page.ref] %}
-  <script src="../assets/js/" + script></script>
+  <script src="{{script.scope.path}}"></script>
 {% endfor %}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";
