@@ -197,24 +197,21 @@ function selectPartners(select) {
   let adminCode = $(select).val();
   let id = getmoreIndex(select);
   if (adminCode != '') {
-    $.getJSON(
-      'https://canada-ca.github.io/ore-ero/administrations.json',
-      function (result) {
-        let admin = getAdminObjectForPartner(result, adminCode);
-        showFieldsPartner(id, false);
-        $('#orgLevelPartner' + id).val(admin.level);
-        if (admin.values.provinceCode != undefined) {
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', false)
-            .val(admin.values.provinceCode);
-        } else
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', true)
-            .val('');
-        $('#enpartnersname' + id).val(admin.values.name.en);
-        $('#frpartnersname' + id).val(admin.values.name.fr);
-      }
-    );
+    $.getJSON('../administrations.json', function (result) {
+      let admin = getAdminObjectForPartner(result, adminCode);
+      showFieldsPartner(id, false);
+      $('#orgLevelPartner' + id).val(admin.level);
+      if (admin.values.provinceCode != undefined) {
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', false)
+          .val(admin.values.provinceCode);
+      } else
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', true)
+          .val('');
+      $('#enpartnersname' + id).val(admin.values.name.en);
+      $('#frpartnersname' + id).val(admin.values.name.fr);
+    });
   } else {
     hideFieldsPartner(id);
   }
