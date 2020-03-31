@@ -3,7 +3,7 @@
   name:
     en: Agriculture and Agri-Food Canada
     fr: Agriculture et Agroalimentaire Canada
-  email_suffix:
+  email_suffix: '@canada.ca'
 - code: asc-csa
   name:
     en: Canadian Space Agency
@@ -148,7 +148,7 @@
   name:
     en: Treasury Board of Canada Secretariat
     fr: Secrétariat du Conseil du Trésor du Canada
-  email_suffix:
+  email_suffix: '@tbs-gc.ca'
 - code: tc
   name:
     en: Transport Canada

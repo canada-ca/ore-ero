@@ -22,7 +22,7 @@ class FileWriter {
    */
   get(file) {
     return fetch(`${this._base}/${file}`)
-      .then((res) => {
+      .then(res => {
         if (!res.ok && res.status == 404) {
           throw res;
         } else if (!res.ok) {
@@ -30,7 +30,7 @@ class FileWriter {
         }
         return res;
       })
-      .then((res) => res.text());
+      .then(res => res.text());
   }
 
   /**
@@ -39,7 +39,7 @@ class FileWriter {
    * @param {String} content The content to append.
    */
   append(file, content) {
-    return this.get(file).then((currentContent) => {
+    return this.get(file).then(currentContent => {
       return currentContent + content;
     });
   }
@@ -63,7 +63,7 @@ class YamlWriter extends FileWriter {
    * @return {Promise<Object>} A Promise that resolves with a POJO.
    */
   get(file) {
-    return FileWriter.prototype.get.call(this, file).then((content) => {
+    return FileWriter.prototype.get.call(this, file).then(content => {
       return jsyaml.load(content, { schema: jsyaml.JSON_SCHEMA });
     });
   }
@@ -87,7 +87,7 @@ class YamlWriter extends FileWriter {
       newIds[DeepObject.get(newItem, onValue)] = newItem;
     }
 
-    return this.get(file).then((result) => {
+    return this.get(file).then(result => {
       let items = DeepObject.get(result, propPath);
 
       if (propPath != '')
@@ -130,7 +130,7 @@ class YamlWriter extends FileWriter {
     let newIds = {};
     newIds[DeepObject.get(newObjects, onValue)] = newObjects;
 
-    return this.get(file).then((result) => {
+    return this.get(file).then(result => {
       let items = DeepObject.get(result, propPath);
 
       // Update the object if there's a match.
@@ -151,7 +151,7 @@ class YamlWriter extends FileWriter {
   }
 
   mergePartnerAdminFile(file, newObject) {
-    return this.get(file).then((result) => {
+    return this.get(file).then(result => {
       let items = DeepObject.get(result, '');
       for (let i = 0; i < newObject.length; i++)
         items = items.concat(newObject[i]);

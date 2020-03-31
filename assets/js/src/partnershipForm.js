@@ -13,22 +13,22 @@
 const partnershipSelect = $('.page-partnershipForm #nameselect');
 const adminSelect = $('.page-partnershipForm #adminCode');
 
-$(document).ready(function () {
-  $('#prbotSubmitpartnershipForm').click(function () {
+$(document).ready(function() {
+  $('#prbotSubmitpartnershipForm').click(function() {
     if (submitInit()) {
       submitForm();
     }
   });
 
-  adminSelect.change(function () {
+  adminSelect.change(function() {
     selectAdmin();
   });
 
-  partnershipSelect.change(function () {
+  partnershipSelect.change(function() {
     selectPartnership();
   });
 
-  $('#formReset').click(function () {
+  $('#formReset').click(function() {
     $('#validation').trigger('reset');
     resetTags();
     hideNewAdminForm();
@@ -44,26 +44,26 @@ function getPartnershipObject() {
     projects: [
       {
         contact: {
-          email: $('#contactemail').val(),
+          email: $('#contactemail').val()
         },
         category: $('#category :selected').val(),
         date: {
           closed: $('#dateclosed').val(),
           started: $('#datestarted').val(),
-          metadataLastUpdated: getToday(),
+          metadataLastUpdated: getToday()
         },
         description: {
           whatItDoes: {
             en: $('#endescriptionwhatItDoes').val(),
-            fr: $('#frdescriptionwhatItDoes').val(),
-          },
+            fr: $('#frdescriptionwhatItDoes').val()
+          }
         },
         name: {
           en: $('#enname').val(),
-          fr: $('#frname').val(),
-        },
-      },
-    ],
+          fr: $('#frname').val()
+        }
+      }
+    ]
   };
 
   // Optional fields
@@ -140,7 +140,7 @@ function submitForm() {
 
   fileWriter
     .merge(partnershipFile, partnershipObject, 'projects', 'name.en')
-    .then((resultPartnership) => {
+    .then(resultPartnership => {
       config = getConfigBase(
         'Updated',
         partnershipName,
@@ -149,7 +149,7 @@ function submitForm() {
         resultPartnership
       );
     })
-    .catch((err) => {
+    .catch(err => {
       if (err.status == 404)
         config = getConfigBase(
           'Created',
@@ -160,13 +160,13 @@ function submitForm() {
         );
       else throw err;
     })
-    .then(function () {
+    .then(function() {
       let adminPromise = [];
       if ($('#ennewAdminName').val() != '') {
         adminPromise.push(
           fileWriter
             .mergeAdminFile(adminFile, adminObject, '', 'code')
-            .then((resultAdmin) => {
+            .then(resultAdmin => {
               addNewAdminToConfig(
                 config,
                 adminName,
@@ -177,19 +177,19 @@ function submitForm() {
             })
         );
       }
-      Promise.all(adminPromise).then(function () {
+      Promise.all(adminPromise).then(function() {
         let newAdminPartnerPromise = getNewAdminPartnerPromise(
           partnershipObject.projects[0],
           fileWriter,
           config
         );
         Promise.all(newAdminPartnerPromise)
-          .then(function () {
+          .then(function() {
             config.body.description = config.body.description + '\n';
             config.body = JSON.stringify(config.body);
             return fetch(PRBOT_URL, config);
           })
-          .then((response) => {
+          .then(response => {
             let url =
               $('html').attr('lang') == 'en'
                 ? './partnerships.html'
@@ -218,16 +218,16 @@ function getConfigBase(change, projectName, adminName, file, object) {
       commit: 'Commited by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val(),
+        email: $('#submitteremail').val()
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(object),
-        },
-      ],
+          content: '---\n' + jsyaml.dump(object)
+        }
+      ]
     },
-    method: 'POST',
+    method: 'POST'
   };
 }
 
@@ -245,7 +245,7 @@ function addNewAdminToConfig(config, name, adminCode, file, object) {
     ')';
   config.body.files[config.body.files.length] = {
     path: file,
-    content: '---\n' + jsyaml.dump(object),
+    content: '---\n' + jsyaml.dump(object)
   };
 }
 
@@ -255,19 +255,22 @@ function selectAdmin() {
   let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function (
+    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
       if (orgLevel == undefined) {
-        $('#nameselect').prop('disabled', true).parent().addClass('hide');
+        $('#nameselect')
+          .prop('disabled', true)
+          .parent()
+          .addClass('hide');
       } else {
-        orgLevel.projects.sort(function (a, b) {
+        orgLevel.projects.sort(function(a, b) {
           let aName = a.name[lang].toLowerCase();
           let bName = b.name[lang].toLowerCase();
           return aName < bName ? -1 : aName > bName ? 1 : 0;
         });
-        orgLevel.projects.forEach(function (project) {
+        orgLevel.projects.forEach(function(project) {
           $(
             '<option class="additional-option" value="' +
               project.name[lang] +
@@ -276,11 +279,17 @@ function selectAdmin() {
               '</option>'
           ).appendTo('#nameselect');
         });
-        $('#nameselect').prop('disabled', false).parent().removeClass('hide');
+        $('#nameselect')
+          .prop('disabled', false)
+          .parent()
+          .removeClass('hide');
       }
     });
   } else {
-    $('#nameselect').prop('disabled', true).parent().addClass('hide');
+    $('#nameselect')
+      .prop('disabled', true)
+      .parent()
+      .addClass('hide');
   }
 }
 
@@ -289,7 +298,7 @@ function selectPartnership() {
   let admin = adminSelect.val();
   let partnership = partnershipSelect.val();
   if (partnership != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function (
+    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function(
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
@@ -312,8 +321,12 @@ function selectPartnership() {
 function addValueToFields(obj) {
   resetFields();
 
-  $('#enname').val(obj.name.en).prop('disabled', true);
-  $('#frname').val(obj.name.fr).attr('disabled', true);
+  $('#enname')
+    .val(obj.name.en)
+    .prop('disabled', true);
+  $('#frname')
+    .val(obj.name.fr)
+    .attr('disabled', true);
 
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
@@ -344,8 +357,12 @@ function addValueToFields(obj) {
 }
 
 function resetFields() {
-  $('#enname').val('').prop('disabled', false);
-  $('#frname').val('').prop('disabled', false);
+  $('#enname')
+    .val('')
+    .prop('disabled', false);
+  $('#frname')
+    .val('')
+    .prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');

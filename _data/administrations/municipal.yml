@@ -3,7 +3,7 @@
   name:
     en: City of Montreal
     fr: Ville de Montréal
-  email_suffix:
+  email_suffix: '@montreal.ca'
   provinceCode: qc
 - code: city-of-ottawa-on
   name:
