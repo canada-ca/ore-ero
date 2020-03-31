@@ -15,6 +15,8 @@ design:
 licence:
   URL: include('lang')
   spdxID: str()
+  level: include('lang', required=False)
+  scope: include('lang', required=False)
   
 designType:
   type: include('lang')
@@ -22,7 +24,7 @@ designType:
 administration:
   adminCode: str()
   uses: list(include('use'))
-
+  
 use:
   contact:
     email: str()

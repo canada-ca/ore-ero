@@ -1,11 +1,11 @@
 /* global  jsyaml slugify addMoreGroup */
 /* exported fillPartnersField getNewAdminPartnerPromise addMorePartners resetPartners */
-$(document).ready(function() {
+$(document).ready(function () {
   // More-group overwrite for partner
   $('.add-more-group#addMorepartners').on(
     'click',
     '.btn-tabs-more',
-    function() {
+    function () {
       let length = $('#addMorepartners ul li').length;
       let index = length == 1 ? '' : length - 1;
       $('#partnersNewAdmin' + index).addClass('hide');
@@ -16,29 +16,33 @@ $(document).ready(function() {
   $('#addMorepartners').on(
     'change',
     '.partnersAdminCodeSelect select',
-    function() {
+    function () {
       selectPartners(this);
     }
   );
-  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
-    let index = getmoreIndex($(this));
-    addNewPartner(this);
-    if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
-      $('#partnersNewAdmin' + index).addClass('hide');
-    } else {
-      $('#partnersNewAdmin' + index).removeClass('hide');
+  $('#addMorepartners').on(
+    'click',
+    '.partnersAdminCodeBtn button',
+    function () {
+      let index = getmoreIndex($(this));
+      addNewPartner(this);
+      if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
+        $('#partnersNewAdmin' + index).addClass('hide');
+      } else {
+        $('#partnersNewAdmin' + index).removeClass('hide');
+      }
     }
-  });
+  );
   $('#addMorepartners').on(
     'click',
     '.partnersAdminCodeRemove button',
-    function() {
+    function () {
       removeNewPartner(this);
       let index = getmoreIndex($(this));
       $('#partnersNewAdmin' + index).addClass('hide');
     }
   );
-  $('#addMorepartners').on('change', '.orgLevelPartner select', function() {
+  $('#addMorepartners').on('change', '.orgLevelPartner select', function () {
     let index = getmoreIndex($(this));
     if ($(this).val() == 'municipal') {
       $('#provinceSelectPartner' + index)
@@ -64,7 +68,7 @@ function getAdminCodePartner(index) {
 }
 
 function addMorePartners(obj) {
-  $('#addMorepartners ul.list-unstyled > li').each(function(i) {
+  $('#addMorepartners ul.list-unstyled > li').each(function (i) {
     let id = i == 0 ? '' : i;
 
     if (
@@ -97,7 +101,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
 
   if (obj.partners && obj.partners.length > 0) {
     let newAdmins = [];
-    obj.partners.forEach(function(partner, index) {
+    obj.partners.forEach(function (partner, index) {
       let id = index == 0 ? '' : index;
       if ($('#partners' + id).val() == '') {
         if (newAdmins[$('#orgLevelPartner' + id).val()] == null)
@@ -108,7 +112,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
       }
     });
 
-    Object.keys(newAdmins).forEach(function(orgLevel) {
+    Object.keys(newAdmins).forEach(function (orgLevel) {
       let promise = fileWriter
         .mergePartnerAdminFile(
           `_data/administrations/${orgLevel}.yml`,
@@ -116,10 +120,10 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
           '',
           'code'
         )
-        .then(result => {
+        .then((result) => {
           config.body.files[config.body.files.length] = {
             path: `_data/administrations/${orgLevel}.yml`,
-            content: '---\n' + jsyaml.dump(result)
+            content: '---\n' + jsyaml.dump(result),
           };
         });
 
@@ -135,8 +139,8 @@ function getNewAdminPartnerObject(index) {
     code: getAdminCodePartner(index),
     name: {
       en: $('#enpartnersname' + index).val(),
-      fr: $('#frpartnersname' + index).val()
-    }
+      fr: $('#frpartnersname' + index).val(),
+    },
   };
 
   // Optional fields
@@ -148,7 +152,7 @@ function getNewAdminPartnerObject(index) {
 
 function fillPartnersField(obj) {
   if (obj.partners)
-    obj.partners.forEach(function(partner, i) {
+    obj.partners.forEach(function (partner, i) {
       let id;
       if (i == 0) id = '';
       else {
@@ -163,9 +167,7 @@ function fillPartnersField(obj) {
 }
 
 function getmoreIndex(element) {
-  let nb = $(element)
-    .closest('li')
-    .attr('data-index');
+  let nb = $(element).closest('li').attr('data-index');
   return nb != 0 ? nb : '';
 }
 
@@ -175,7 +177,7 @@ function selectPartners(select) {
   if (adminCode != '') {
     $.getJSON(
       'https://canada-ca.github.io/ore-ero/administrations.json',
-      function(result) {
+      function (result) {
         let admin = getAdminObjectForPartner(result, adminCode);
         showFieldsPartner(id, false);
         $('#orgLevelPartner' + id).val(admin.level);
@@ -208,10 +210,7 @@ function hideFieldsPartner(id) {
 }
 
 function hideFieldPartner(element) {
-  element
-    .prop('disabled', false)
-    .parent('.form-group')
-    .hide();
+  element.prop('disabled', false).parent('.form-group').hide();
 }
 
 function resetFieldsPartner(id) {
@@ -295,7 +294,7 @@ function getAdminObjectForPartner(obj, admin) {
     'provincial',
     'municipal',
     'aboriginal',
-    'others'
+    'others',
   ];
 
   for (let i = 0, l1 = administrations.length; i < l1; i++)
@@ -303,7 +302,7 @@ function getAdminObjectForPartner(obj, admin) {
       if (obj[administrations[i]][j].code == admin)
         return {
           level: administrations[i],
-          values: obj[administrations[i]][j]
+          values: obj[administrations[i]][j],
         };
 }
 

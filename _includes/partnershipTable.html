@@ -15,20 +15,66 @@
         </select>
       </div>
 
-      <div class="form-group">
+      <div class="form-group hide">
         <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
         <select class="form-control" id="dt_department" name="dt_department" data-column="8">
           <option value="">&nbsp;</option>
-          {%- assign admin_arr = "" | split: ',' -%}
-          {%- for govLevels in site.data.partnership -%}
+          {%- assign municipal_arr = "" | split: ',' -%}
+          {%- assign provincial_arr = "" | split: ',' -%}
+          {%- assign federal_arr = "" | split: ',' -%}
+          {%- assign aboriginal_arr = "" | split: ',' -%}
+          {%- assign other_arr = "" | split: ',' -%}
+          {%- assign level = 0 -%} 
+          {%- assign partnership = site.data.partnership -%}
+          {%- if partnership != nil -%}
+            {%- assign partnership = partnership | sort -%}
+          {%- endif -%}   
+          {%- for govLevels in partnership -%}
             {%- assign govLevel = govLevels[0] -%}
             {% for admin in govLevels[1] %}
-              {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
-              {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
-            {% endfor %}
+            {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+            {%- if administration[0] != nil -%}
+              {%- case level -%}
+              {%- when 0 -%}
+                {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
+              {%- when 1 -%}
+                {%- assign federal_arr = federal_arr | push: administration[0]-%}
+              {%- when 2 -%}
+                {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
+              {%- when 3 -%}
+                {%- assign other_arr = other_arr | push: administration[0]-%}
+              {%- when 4 -%}
+                {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
+              {%- endcase -%}
+            {%- endif -%}
+            {%- endfor -%}
+            {%- assign level = level | plus:1 -%}
           {%- endfor -%}
-          {%- for admin in admin_arr -%}
-            <option value="{{ admin }}">{{ admin }}</option>
+          {%- assign federal_arr = federal_arr | uniq -%}
+          {%- assign provincial_arr = provincial_arr | uniq -%}
+          {%- assign municipal_arr = municipal_arr | uniq -%}
+          {%- assign aboriginal_arr = aboriginal_arr | uniq -%}
+          {%- assign other_arr = other_arr | uniq -%}
+          {%- assign id = 1 -%}
+          {%- for federal in federal_arr -%}
+            <option class="hide" id="{{id}}" value="{{federal.name[page.lang]}}" data-level="federal">{{federal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for provincial in provincial_arr -%}
+            <option class="hide" id="{{id}}" value="{{provincial.name[page.lang]}}" data-level="provincial">{{provincial.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for municipal in municipal_arr -%}
+            <option class="hide" id="{{id}}" value="{{municipal.name[page.lang]}}" data-level="municipal">{{municipal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for aboriginal in aboriginal_arr -%}
+            <option class="hide" id="{{id}}" value="{{aboriginal.name[page.lang]}}" data-level="aboriginal">{{aboriginal.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
+          {%- endfor -%}
+          {%- for other in other_arr -%}
+            <option class="hide" id="{{id}}" value="{{other.name[page.lang]}}" data-level="others">{{other.name[page.lang]}}</option>
+            {%- assign id = id | plus: 1 -%}
           {%- endfor -%}
         </select>
       </div>

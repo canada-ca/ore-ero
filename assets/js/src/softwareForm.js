@@ -12,26 +12,26 @@
 const softwareSelect = $('.page-softwareForm #nameselect');
 const adminSelect = $('.page-softwareForm #adminCode');
 
-$(document).ready(function() {
-  $('#prbotSubmitsoftwareForm').click(function() {
+$(document).ready(function () {
+  $('#prbotSubmitsoftwareForm').click(function () {
     if (submitInit()) {
       if ($('#ennewAdminName').val() != '') submitSoftwareFormNewAdmin();
       else submitFormSoftware();
     }
   });
 
-  softwareSelect.change(function() {
+  softwareSelect.change(function () {
     selectSoftware();
     if (adminSelect.val() != '') selectAdmin();
     if (softwareSelect.prop('selectedIndex') == 0) setRequiredUpdate();
     else setNotRequiredUpdate();
   });
 
-  adminSelect.change(function() {
+  adminSelect.change(function () {
     selectAdmin();
   });
 
-  $('#formReset').click(function() {
+  $('#formReset').click(function () {
     $('#validation').trigger('reset');
     resetTags();
     hideNewAdminForm();
@@ -85,22 +85,22 @@ function getsoftwareObject() {
     description: {
       whatItDoes: {
         en: $('#endescriptionwhatItDoes').val(),
-        fr: $('#frdescriptionwhatItDoes').val()
-      }
+        fr: $('#frdescriptionwhatItDoes').val(),
+      },
     },
     category: $('#category :selected').val(),
     homepageURL: {
       en: $('#enhomepageURL').val(),
-      fr: $('#frhomepageURL').val()
+      fr: $('#frhomepageURL').val(),
     },
     licences: [],
     name: {
       en: $('#enname').val(),
-      fr: $('#frname').val()
+      fr: $('#frname').val(),
     },
     tags: {
       en: getTagsEN(),
-      fr: getTagsFR()
+      fr: getTagsFR(),
     },
     administrations: []
   };
@@ -159,9 +159,7 @@ function getsoftwareObject() {
 
 function getSelectedOrgType() {
   if ($('#adminCode').val() != '')
-    return $('#adminCode :selected')
-      .parent()
-      .data('value');
+    return $('#adminCode :selected').parent().data('value');
   else return $('#orgLevel').val();
 }
 
@@ -184,10 +182,10 @@ function submitSoftwareFormNewAdmin() {
 
   fileWriter
     .mergeAdminFile(adminFile, adminObject, '', 'code')
-    .then(adminResult => {
+    .then((adminResult) => {
       fileWriter
         .merge(softwareFile, softwareObject, 'administrations', 'adminCode')
-        .then(softwareResult => {
+        .then((softwareResult) => {
           return fetch(
             PRBOT_URL,
             getConfigUpdateSoftwareNewAdmin(
@@ -200,7 +198,7 @@ function submitSoftwareFormNewAdmin() {
             )
           );
         })
-        .catch(err => {
+        .catch((err) => {
           if (err.status == 404) {
             return fetch(
               PRBOT_URL,
@@ -215,7 +213,7 @@ function submitSoftwareFormNewAdmin() {
             );
           } else throw err;
         })
-        .then(response => {
+        .then((response) => {
           let url =
             $('html').attr('lang') == 'en'
               ? './open-source-softwares.html'
@@ -247,20 +245,20 @@ function getConfigUpdateSoftwareNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: softwareFile,
-          content: '---\n' + jsyaml.dump(softwareResult)
+          content: '---\n' + jsyaml.dump(softwareResult),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -286,20 +284,20 @@ function getConfigNewSoftwareNewAdmin(
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: softwareFile,
-          content: '---\n' + jsyaml.dump(softwareObject)
+          content: '---\n' + jsyaml.dump(softwareObject),
         },
         {
           path: adminFile,
-          content: '---\n' + jsyaml.dump(adminObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(adminObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -316,10 +314,10 @@ function submitFormSoftware() {
 
   fileWriter
     .merge(file, softwareObject, 'administrations', 'adminCode')
-    .then(result => {
+    .then((result) => {
       return fetch(PRBOT_URL, getConfigUpdate(result, file, ProjectName));
     })
-    .catch(err => {
+    .catch((err) => {
       if (err.status == 404) {
         return fetch(
           PRBOT_URL,
@@ -327,7 +325,7 @@ function submitFormSoftware() {
         );
       } else throw err;
     })
-    .then(response => {
+    .then((response) => {
       let url =
         $('html').attr('lang') == 'en'
           ? './open-source-softwares.html'
@@ -354,16 +352,16 @@ function getConfigUpdate(result, file, ProjectName) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(result)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(result),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
@@ -385,22 +383,22 @@ function getConfigNew(softwareObject, file, ProjectName) {
       commit: 'Committed by ' + $('#submitteremail').val(),
       author: {
         name: $('#submitterusername').val(),
-        email: $('#submitteremail').val()
+        email: $('#submitteremail').val(),
       },
       files: [
         {
           path: file,
-          content: '---\n' + jsyaml.dump(softwareObject)
-        }
-      ]
+          content: '---\n' + jsyaml.dump(softwareObject),
+        },
+      ],
     }),
-    method: 'POST'
+    method: 'POST',
   };
 }
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
     result
   ) {
     if (result[value]) {
@@ -417,12 +415,8 @@ function selectSoftware() {
 function addValueToFieldsSoftware(obj) {
   resetFieldsSoftware();
 
-  $('#enname')
-    .val(obj.name.en)
-    .prop('disabled', true);
-  $('#frname')
-    .val(obj.name.fr)
-    .prop('disabled', true);
+  $('#enname').val(obj.name.en).prop('disabled', true);
+  $('#frname').val(obj.name.fr).prop('disabled', true);
   $('#endescriptionwhatItDoes').val(obj.description.whatItDoes.en);
   $('#frdescriptionwhatItDoes').val(obj.description.whatItDoes.fr);
 
@@ -441,12 +435,8 @@ function addValueToFieldsSoftware(obj) {
 }
 
 function resetFieldsSoftware() {
-  $('#enname')
-    .val('')
-    .prop('disabled', false);
-  $('#frname')
-    .val('')
-    .prop('disabled', false);
+  $('#enname').val('').prop('disabled', false);
+  $('#frname').val('').prop('disabled', false);
   $('#endescriptionwhatItDoes').val('');
   $('#frdescriptionwhatItDoes').val('');
   $('#endescriptionhowItWorks').val('');
@@ -461,7 +451,7 @@ function resetFieldsSoftware() {
 function selectAdmin() {
   let software = softwareSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function(
+  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
     result
   ) {
     if (result[software]) {

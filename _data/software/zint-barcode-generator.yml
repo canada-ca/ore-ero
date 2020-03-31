@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: A barcode encoding library supporting over 50 symbologies.
+    fr: >-
+      Une bibliothèque d'encodage de codes à barres prenant en charge plus de 50
+      symbologies.
+category: '43233400'
+homepageURL:
+  en: 'http://www.zint.org.uk/'
+  fr: 'http://www.zint.org.uk/'
+licences:
+  - URL:
+      en: 'https://sourceforge.net/p/zint/code/ci/master/tree/COPYING'
+      fr: 'https://sourceforge.net/p/zint/code/ci/master/tree/COPYING'
+    spdxID: GPL-3.0-only
+name:
+  en: Zint Barcode Generator
+  fr: Zint Barcode Generator
+tags:
+  en:
+    - Barcode
+    - Library
+  fr:
+    - Code à barre
+    - Bibliothèque
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

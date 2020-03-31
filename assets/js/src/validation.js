@@ -59,7 +59,7 @@ function submitConclusion(response, submitButton, resetButton, url) {
     toggleAlert(ALERT_OFF);
     toggleAlert(ALERT_SUCCESS);
     // Redirect to home page
-    setTimeout(function() {
+    setTimeout(function () {
       window.location.href = url;
     }, 3000);
   }

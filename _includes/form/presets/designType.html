@@ -29,7 +29,7 @@
               {%- endfor %}
               {%- assign design_arr = design_arr | uniq -%}
               {%- for design in design_arr -%}
-              <option value="{{ design.type.en }}" id="option{{forloop.index}}" data-fr="{{design.type.fr}}">{{ design.type[page.lang] }}</option>
+              <option value="{{ design.type.en }}" id="option{{forloop.index}}" data-fr="{{ design.type.fr }}">{{ design.type[page.lang] }}</option>
               {%- endfor -%}
             </select>
           </div> 
