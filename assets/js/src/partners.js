@@ -198,7 +198,7 @@ function selectPartners(select) {
   let id = getmoreIndex(select);
   if (adminCode != '') {
     $.getJSON(
-      'https://canada-ca.github.io/ore-ero/administrations.json',
+      '../administrations.json',
       function (result) {
         let admin = getAdminObjectForPartner(result, adminCode);
         showFieldsPartner(id, false);

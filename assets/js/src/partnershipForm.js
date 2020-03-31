@@ -255,7 +255,7 @@ function selectAdmin() {
   let admin = adminSelect.val();
   $('.additional-option').remove();
   if (admin != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function (
+    $.getJSON('../partnership.json', function (
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);
@@ -289,7 +289,7 @@ function selectPartnership() {
   let admin = adminSelect.val();
   let partnership = partnershipSelect.val();
   if (partnership != '') {
-    $.getJSON('https://canada-ca.github.io/ore-ero/partnership.json', function (
+    $.getJSON('../partnership.json', function (
       result
     ) {
       let orgLevel = getOrgLevel(result, admin);

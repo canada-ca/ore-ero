@@ -359,7 +359,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
+  $.getJSON('../software.json', function (
     result
   ) {
     if (result[value]) {
@@ -412,7 +412,7 @@ function resetFieldsSoftware() {
 function selectAdmin() {
   let software = softwareSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
+  $.getJSON('../software.json', function (
     result
   ) {
     if (result[software]) {

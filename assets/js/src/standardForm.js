@@ -350,7 +350,7 @@ function getConfigNewStandardNewAdmin(
 
 function selectStandard() {
   let value = standardSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
+  $.getJSON('../standard.json', function (
     result
   ) {
     if (result[value]) {
@@ -406,7 +406,7 @@ function resetFieldsStandard() {
 function selectAdmin() {
   let standard = standardSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
+  $.getJSON('../standard.json', function (
     result
   ) {
     if (result[standard]) {
