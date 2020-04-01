@@ -8,15 +8,17 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "10:28"
+execTime = "09:19"
 
 def parsePackageLock(name, depObj):
     packagelock = urllib.request.urlopen(name)
     data = json.loads(packagelock.read())
-
+    print(data)
+    
 def parsePackage(name, depObj):
     package = urllib.request.urlopen(name)
     data = json.loads(package.read())
+    print(data)
 
 def parseRequirements(name, depObj):
     requirements = urllib.request.urlopen(name)
@@ -26,32 +28,40 @@ def parseRequirements(name, depObj):
 def parseComposer(name, depObj):
     composer = urllib.request.urlopen(name)
     data = json.loads(composer.read())
+    print(data)
 
 def parseGemfile(name, depObj):
     gemfile = urllib.request.urlopen(name)
     data = gemfile.read()
+    print(data)
 
-def makePath(repo, name):
+def makePath(repo, name, branch):
     divName = name.split("/")
     divName.pop(0)
-    path = repo
+    path = repo.replace("github.com", "raw.githubusercontent.com") + "/" + branch
     for part in divName:
         path += "/" + part
-    return path    
+    return path  
 
 def defaultBranch(url):
+    ex = r'branch-name(.*)>(.*)<'
     framagit = ""
     if "framagit" in url:
         framagit = "/-"
+        ex = r'(.*)qa-branch-name(.*)>(.*)<'
+    
+    response = requests.get(url + framagit + "/branches")
     download = "/archive/"
     if "bitbucket" in url:
         download = "/get/"
-    response = requests.get(url + framagit + "/branches")
-    regex = re.compile(r'branch-name(.*)>(.*)<')
+        ex = r'css-1waz8j8(.*)>(.*)<'
+    
+    regex = re.compile(ex)
     result = regex.search(response.text)
     if result is not None:
-        return framagit + download +  result.group().split(">")[1].split("<")[0] + ".zip"
-    return ""
+        branch = result.group().split(">")[-1].split("<")[0]
+        return [framagit + download + branch + ".zip", branch]
+    return "", ""
     
 def getDependencies(repos):
     dependenciesObject = []
@@ -64,23 +74,23 @@ def getDependencies(repos):
             "dependencies": []
         }
         path = defaultBranch(repo[0])
-        print(repo[0] + path)
-        response = requests.get(repo[0] + path)
+        print(repo[0] + path[0])
+        response = requests.get(repo[0] + path[0])
         if response is not None:
             try:
                 with ZipFile(io.BytesIO(response.content)) as zip:
                     for name in zip.namelist():
-                        path = makePath(repo[0], name)
+                        filepath = makePath(repo[0], name, path[1])
                         if ("package-lock.json" in name):
-                           parsePackageLock(path, release["dependencies"])
+                           parsePackageLock(filepath, release["dependencies"])
                         if ("package.json" in name):
-                            parsePackage(path, release["dependencies"])
+                            parsePackage(filepath, release["dependencies"])
                         if ("composer.json" in name):
-                            parseComposer(path, release["dependencies"])
+                            parseComposer(filepath, release["dependencies"])
                         if ("Gemfile" in name):
-                            parseGemfile(path, release["dependencies"])
+                            parseGemfile(filepath, release["dependencies"])
                         if ("requirements.txt" in name):
-                            parseRequirements(path, release["dependencies"])
+                            parseRequirements(filepath, release["dependencies"])
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])
         dependenciesObject.append(release)
