@@ -11,14 +11,6 @@ jobs:
     - name: Checkout Main repo
       uses: actions/checkout@v2
 
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10
-
-    - name: Install Node dependencies
-      run: npm ci
-
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -47,6 +39,3 @@ jobs:
 
     - name: Run HTML5 Validator
       run: html5validator --root _site/
-
-    - name: Run Node tests
-      run: npm test
