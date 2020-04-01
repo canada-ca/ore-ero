@@ -48,16 +48,5 @@ jobs:
     - name: Run HTML5 Validator
       run: html5validator --root _site/
 
-    - name: Validate YAML schemas
-      run: |
-        yamale -s schemaCode.yaml _data/code
-        yamale -s schemaAdmin.yaml _data/administrations
-        yamale -s schemaSoftware.yaml _data/software
-        yamale -s schemaStandard.yaml _data/standard
-        yamale -s schemaPartnership.yaml _data/partnership
-
-    - name: Lint Yaml
-      run: yamllint -d configYamlLint.yml _data
-
     - name: Run Node tests
       run: npm test
