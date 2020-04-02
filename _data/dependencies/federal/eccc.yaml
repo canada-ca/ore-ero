@@ -1,0 +1,10 @@
+- dependencies:
+    core: {}
+    dev: {}
+    peer: {}
+  name: {en: METRo, fr: METRo}
+- dependencies:
+    core: {}
+    dev: {}
+    peer: {}
+  name: {en: libECBUFR, fr: libECBUFR}

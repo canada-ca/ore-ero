@@ -1,0 +1,10 @@
+- dependencies:
+    core: {}
+    dev: {}
+    peer: {}
+  name: {en: Spartacus, fr: Spartacus}
+- dependencies:
+    core: {}
+    dev: {}
+    peer: {}
+  name: {en: Assemblyline, fr: Assemblyline}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
-import io, json, os, re, schedule, time
+import io, json, os, re, schedule, time, yaml
 import urllib.request
 import requests
 from datetime import date, timedelta, datetime
@@ -8,33 +8,94 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "09:19"
+execTime = "15:34"
+
+def createDirectory(dir, path):
+    dirExists = dir in os.listdir(path)
+    if not dirExists:
+        os.mkdir(path + "/" + dir)
+
+def updateData(dependencies):
+    createDirectory("dependencies", "./_data")
+    for level, admins in dependencies.items():
+        createDirectory(level, "./_data/dependencies")
+        for admin, releases in admins.items():
+            with open("./_data/dependencies" + "/" + level + "/" + admin + ".yaml", 'w') as file:
+                yaml.dump(releases, file)
+
+    
 
 def parsePackageLock(name, depObj):
     packagelock = urllib.request.urlopen(name)
     data = json.loads(packagelock.read())
-    print(data)
-    
+    if data.get("dependencies") is not None:
+        if depObj["core"].get("npm") is None:
+            depObj["core"]["npm"] = []
+        for key in data["dependencies"].keys(): 
+            depObj["core"]["npm"].append(key)
+    if data.get("devDependencies") is not None:
+        if depObj["dev"].get("npm") is None:
+            depObj["dev"]["npm"] = []
+        for key in data["devDependencies"].keys(): 
+            depObj["dev"]["npm"].append(key)
+    if data.get("peerDependencies") is not None:
+        if depObj["peer"].get("npm") is None:
+            depObj["peer"]["npm"] = []
+        for key in data["peerDependencies"].keys(): 
+            depObj["peer"]["npm"].append(key)
+
 def parsePackage(name, depObj):
     package = urllib.request.urlopen(name)
     data = json.loads(package.read())
-    print(data)
+    if data.get("dependencies") is not None:
+        if depObj["core"].get("npm") is None:
+            depObj["core"]["npm"] = []
+        for key in data["dependencies"].keys(): 
+            depObj["core"]["npm"].append(key)
+    if data.get("devDependencies") is not None:
+        if depObj["dev"].get("npm") is None:
+            depObj["dev"]["npm"] = []
+        for key in data["devDependencies"].keys(): 
+            depObj["dev"]["npm"].append(key)
+    if data.get("peerDependencies") is not None:
+        if depObj["peer"].get("npm") is None:
+            depObj["peer"]["npm"] = []
+        for key in data["peerDependencies"].keys(): 
+            depObj["peer"]["npm"].append(key)
 
 def parseRequirements(name, depObj):
-    requirements = urllib.request.urlopen(name)
-    data = requirements.read()
-    print(data)
-
+    requirements = requests.get(name)
+    data = requirements.text
+    if data is not None:
+        if depObj["core"].get("pypi") is None:
+                depObj["core"]["pypi"] = []
+        for dep in data.splitlines():
+            depObj["core"]["pypi"].append(dep.split("=")[0].split("<")[0].split(">")[0])
+            
 def parseComposer(name, depObj):
     composer = urllib.request.urlopen(name)
     data = json.loads(composer.read())
-    print(data)
+    if data.get("require") is not None:
+        if depObj["core"].get("composer") is None:
+            depObj["core"]["composer"] = []
+        for key in data["require"].keys(): 
+            depObj["core"]["composer"].append(key)
+    if data.get("require-dev") is not None:
+        if depObj["dev"].get("composer") is None:
+            depObj["dev"]["composer"] = []
+        for key in data["require-dev"].keys(): 
+            depObj["dev"]["composer"].append(key)
 
 def parseGemfile(name, depObj):
-    gemfile = urllib.request.urlopen(name)
-    data = gemfile.read()
-    print(data)
-
+    gemfile = requests.get(name)
+    data = gemfile.text
+    if data is not None:
+        if depObj["core"].get("bundler") is None:
+                depObj["core"]["bundler"] = []
+        for dep in data.splitlines():
+            if (dep.startswith("gem")):
+                depObj["core"]["bundler"].append(dep.split("'")[1])
+            
 def makePath(repo, name, branch):
     divName = name.split("/")
     divName.pop(0)
@@ -50,31 +111,40 @@ def defaultBranch(url):
         framagit = "/-"
         ex = r'(.*)qa-branch-name(.*)>(.*)<'
     
-    response = requests.get(url + framagit + "/branches")
     download = "/archive/"
     if "bitbucket" in url:
         download = "/get/"
         ex = r'css-1waz8j8(.*)>(.*)<'
-    
+        
+    response = requests.get(url + framagit + "/branches")    
     regex = re.compile(ex)
     result = regex.search(response.text)
     if result is not None:
         branch = result.group().split(">")[-1].split("<")[0]
-        return [framagit + download + branch + ".zip", branch]
+        return framagit + download + branch + ".zip", branch
     return "", ""
     
 def getDependencies(repos):
-    dependenciesObject = []
+    dependenciesObject = {
+        "aboriginal": {},
+        "federal": {},
+        "municipal": {},
+        "others": {},
+        "provincial": {}
+    }
     for repo in repos:
         release = {
             "name": {
                 "en": repo[1],
                 "fr": repo[2]
             },
-            "dependencies": []
+            "dependencies": {
+                "core": {},
+                "dev": {},
+                "peer": {}
+            }
         }
         path = defaultBranch(repo[0])
-        print(repo[0] + path[0])
         response = requests.get(repo[0] + path[0])
         if response is not None:
             try:
@@ -93,7 +163,10 @@ def getDependencies(repos):
                             parseRequirements(filepath, release["dependencies"])
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])
-        dependenciesObject.append(release)
+        if dependenciesObject[repo[4]].get(repo[3]) is None:
+            dependenciesObject[repo[4]][repo[3]] = []
+        dependenciesObject[repo[4]][repo[3]].append(release)
+    updateData(dependenciesObject)
 
 def getRepositories():
     print("Started task at: " + datetime.now().isoformat(' ', 'seconds'))
@@ -101,11 +174,11 @@ def getRepositories():
     data = json.loads(codeDb.read())
     repositories = []
     if data is not None:
-        for level in data.values():   
-            for admin in level.values():
+        for level, admins in data.items():   
+            for admin in admins.values():
                 for release in admin["releases"]:
                     repositories.append((release["repositoryURL"]["en"], release["name"]["en"], 
-                    release["name"]["fr"]))
+                    release["name"]["fr"], admin["adminCode"], level))
     getDependencies(repositories)
     print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
     
