@@ -1,5 +1,8 @@
+---
 - dependencies:
     core: {}
     dev: {}
     peer: {}
-  name: {en: EGSnrc, fr: EGSnrc}
+  name:
+    en: EGSnrc
+    fr: EGSnrc

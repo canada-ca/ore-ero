@@ -1,5 +1,8 @@
+---
 - dependencies:
     core: {}
     dev: {}
     peer: {}
-  name: {en: Apogy, fr: Apogy}
+  name:
+    en: Apogy
+    fr: Apogy

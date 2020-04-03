@@ -1,24 +1,43 @@
+---
 - dependencies:
     core:
-      pypi: ['-e git+https://github.com/open-data/ckanext-scheming@master#egg', '-e
-          git+https://github.com/open-data/ckanext-repeating@master#egg']
+      pypi:
+      - -e git+https://github.com/open-data/ckanext-scheming@master#egg
+      - -e git+https://github.com/open-data/ckanext-repeating@master#egg
     dev: {}
     peer: {}
-  name: {en: ckanext-ab_scheming, fr: ckanext-ab_scheming}
+  name:
+    en: ckanext-ab_scheming
+    fr: ckanext-ab_scheming
 - dependencies:
     core:
-      pypi: ['#Public Items', '#ckanext-scheming', '-e git+https://github.com/open-data/ckanext-scheming@master#egg',
-        '#ckanext-ldap', '-e git+https://github.com/NaturalHistoryMuseum/ckanext-ldap@master#egg',
-        '#GoogleAnalytics', '-e git+https://github.com/ckan/ckanext-googleanalytics.git@master#egg',
-        redis, '', '#Ckanext-spatial', '-e git+https://github.com/ckan/ckanext-spatial.git@release-v2.0#egg',
-        '#ckanext-harvest', '-e git+https://github.com/ckan/ckanext-harvest@master#egg',
-        '', '#??Private?? Items', '-e git+https://github.com/abgov/ckanext-ab_scheming.git@UAT#egg']
+      pypi:
+      - '#Public Items'
+      - '#ckanext-scheming'
+      - -e git+https://github.com/open-data/ckanext-scheming@master#egg
+      - '#ckanext-ldap'
+      - -e git+https://github.com/NaturalHistoryMuseum/ckanext-ldap@master#egg
+      - '#GoogleAnalytics'
+      - -e git+https://github.com/ckan/ckanext-googleanalytics.git@master#egg
+      - redis
+      - ''
+      - '#Ckanext-spatial'
+      - -e git+https://github.com/ckan/ckanext-spatial.git@release-v2.0#egg
+      - '#ckanext-harvest'
+      - -e git+https://github.com/ckan/ckanext-harvest@master#egg
+      - ''
+      - '#??Private?? Items'
+      - -e git+https://github.com/abgov/ckanext-ab_scheming.git@UAT#egg
     dev: {}
     peer: {}
-  name: {en: ckanext-open_alberta, fr: ckanext-open_alberta}
+  name:
+    en: ckanext-open_alberta
+    fr: ckanext-open_alberta
 - dependencies:
     core:
       pypi: []
     dev: {}
     peer: {}
-  name: {en: ckanext-geomapviewer, fr: ckanext-geomapviewer}
+  name:
+    en: ckanext-geomapviewer
+    fr: ckanext-geomapviewer

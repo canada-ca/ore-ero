@@ -8,7 +8,7 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "15:34"
+execTime = "11:13"
 
 def createDirectory(dir, path):
     dirExists = dir in os.listdir(path)
@@ -21,7 +21,8 @@ def updateData(dependencies):
         createDirectory(level, "./_data/dependencies")
         for admin, releases in admins.items():
             with open("./_data/dependencies" + "/" + level + "/" + admin + ".yaml", 'w') as file:
-                yaml.dump(releases, file)
+                file.write("---\n")
+                yaml.dump(releases, file, default_flow_style=False)
 
     
 
