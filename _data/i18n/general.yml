@@ -77,6 +77,12 @@ nav:
     link:
       en: ./stats.html
       fr: ./stats.html
+  dependencies:
+    en: Dependencies
+    fr: Dépendances
+    link:
+      en: ./dependencies.html
+      fr: ./dependencies.html
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada

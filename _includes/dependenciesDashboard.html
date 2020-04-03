@@ -1,0 +1,183 @@
+<section>
+    
+    <div class=row>
+        <details open>
+          <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
+          <form class="wb-tables-filter" data-bind-to="dataset-filter">
+
+        <div class=row>
+            <div class="form-group col-md-6">
+              <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
+              <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="8">
+                <option value="">&nbsp;</option>
+                {%- for govLevel in site.data.i18n.administrations -%}
+                <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+      
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+              <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
+              <select class="form-control" id="dt_department" name="dt_department" data-column="0">
+                <option value="">&nbsp;</option>
+                {%- assign admin_arr = "" | split: ',' -%}
+                {%- for govLevels in site.data.code -%}
+                  {%- assign govLevel = govLevels[0] -%}
+                  {% for admin in govLevels[1] %}
+                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                    {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
+                  {% endfor %}
+                {%- endfor -%}
+                {%- assign admin_arr = admin_arr | sort -%}
+                {%- for admin in admin_arr -%}
+                  <option value="{{ admin }}">{{ admin }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="dt_name">{{ site.data.i18n.tables.projectName[page.lang] }}</label>
+                <select class="form-control" id="dt_name" name="dt_name" data-column="4">
+                  <option value="">&nbsp;</option>
+                  {%- assign licence_arr = "" | split: ',' -%}
+                  {%- for govLevels in site.data.dependencies -%}
+                    {%- for admin in govLevels[1] -%}
+                      {%- for dependency in admin[1] -%}
+                      <option value="{{ dependency.name.en }}">{{ dependency.name[page.lang] }}</option>
+                      {%- endfor -%}
+                    {%- endfor -%}
+                  {%- endfor -%}
+                  </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+              <label for="dt_team">{{ site.data.i18n.tables.team[page.lang] }}</label>
+              <select class="form-control" id="dt_team" name="dt_team" data-column="6">
+                <option value="">&nbsp;</option>
+                {%- assign team_arr = "" | split: ',' -%}
+                {%- for govLevels in site.data.code -%}
+                  {%- for admin in govLevels[1] -%}
+                    {%- for release in admin[1].releases -%}
+                      {%- if release.team[page.lang] != nil -%}
+                        {%- assign team_arr = team_arr | push: release.team[page.lang] -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endfor -%}
+                {%- endfor -%}
+                {%- assign team_arr = team_arr | group_by: "" | sort: "name" -%}
+                {%- for team in team_arr -%}
+                  <option value="{{ team.name }}">{{ team.name }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+      
+            <div class="form-group col-md-6">
+              <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
+              <select class="form-control" id="dt_category" name="dt_category" data-column="2">
+                <option value="">&nbsp;</option>
+                {%- assign cat_arr = "" | split: ',' -%}
+                {%- for govLevels in site.data.code -%}
+                  {%- for admin in govLevels[1] -%}
+                    {%- for release in admin[1].releases -%}
+                      {%- if release.category != nil -%}
+                        {%- assign cat_arr = cat_arr | push: release.category -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endfor -%}
+                {%- endfor -%}
+                {%- assign cat_arr = cat_arr | uniq -%}
+                {%- for cat in cat_arr -%}
+                  <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+        </div>
+      
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+              </div>
+              <div class="col-xs-6">
+                <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
+              </div>
+            </div>
+      
+          </form>
+        </details>
+      </div>
+      
+      <!-- Data Table -->
+      <div class="col-md-12 mrgn-bttm-lg">
+        <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0,5,6,8,9,10,11,12], "visible": false}], "paging": true}'>
+          <thead>
+            <tr>
+              <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.category[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
+              <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.team[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
+              <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.languages[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.relatedCode[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.status[page.lang] }}</th>
+              <th>{{ site.data.i18n.form.presets.date.labels.created[page.lang] }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for govLevels in site.data.code -%}
+              {%- assign govLevel = govLevels[0] -%}
+              {%- for admin in govLevels[1] -%}
+                {%- for release in admin[1].releases -%}
+                <tr>
+                  {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                  <td>{{ administration[0].name[page.lang] }}</td>
+      
+                  <td><a href="#{{ release.name[page.lang] | slugify: "latin" }}" aria-controls="{{ release.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
+                  <td>
+                    {{ site.data.i18n.categories[release.category][page.lang] }}
+                  </td>
+                  <td>{{ release.description.whatItDoes[page.lang] }}</td>
+                  <td>
+                    {%- for licence in release.licences -%}
+                      <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
+                    {%- endfor -%}
+                  </td>
+                  <td>
+                    {%- for tag in release.tags[page.lang] -%}
+                      {{ tag }}&nbsp;
+                    {%- endfor -%}
+                  </td>
+                  <td>{{ release.team[page.lang] }}</td>
+                  <td>
+                    <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
+                      {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+                    </a>
+                  </td>
+                  <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
+                  <td>
+                    {%- for languages in release.languages -%}
+                      {{ languages }}&nbsp;
+                    {%- endfor -%}
+                  </td>
+                  <td>
+                    {%- for relatedCode in release.relatedCode -%}
+                      <a href= "{{ relatedCode.URL[page.lang] }}">{{ relatedCode.name[page.lang] }}</a>
+                    {%- endfor -%}
+                  </td>
+                  <td>{{ release.status }}&nbsp;</td>
+                  <td>{{ release.date.created }}&nbsp;</td>
+                </tr>
+                {%- endfor -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+      
+</section>

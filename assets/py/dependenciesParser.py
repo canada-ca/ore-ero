@@ -3,12 +3,12 @@
 import io, json, os, re, schedule, time, yaml
 import urllib.request
 import requests
-from datetime import date, timedelta, datetime
+from datetime import datetime
 from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "11:13"
+execTime = "00:00"
 
 def createDirectory(dir, path):
     dirExists = dir in os.listdir(path)
@@ -22,7 +22,7 @@ def updateData(dependencies):
         for admin, releases in admins.items():
             with open("./_data/dependencies" + "/" + level + "/" + admin + ".yaml", 'w') as file:
                 file.write("---\n")
-                yaml.dump(releases, file, default_flow_style=False)
+                yaml.dump(releases, file, default_flow_style=False, allow_unicode=True)
 
     
 
