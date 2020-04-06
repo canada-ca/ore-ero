@@ -1,15 +1,11 @@
 ---
-- dependencies:
-    core: {}
-    dev: {}
-    peer: {}
+adminCode: eccc
+releases:
+- dependencies: []
   name:
     en: METRo
     fr: METRo
-- dependencies:
-    core: {}
-    dev: {}
-    peer: {}
+- dependencies: []
   name:
     en: libECBUFR
     fr: libECBUFR

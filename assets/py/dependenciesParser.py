@@ -8,7 +8,7 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "00:00"
+execTime = "11:59"
 
 def createDirectory(dir, path):
     dirExists = dir in os.listdir(path)
@@ -19,8 +19,8 @@ def updateData(dependencies):
     createDirectory("dependencies", "./_data")
     for level, admins in dependencies.items():
         createDirectory(level, "./_data/dependencies")
-        for admin, releases in admins.items():
-            with open("./_data/dependencies" + "/" + level + "/" + admin + ".yaml", 'w') as file:
+        for releases in admins:
+            with open("./_data/dependencies" + "/" + level + "/" + releases["adminCode"] + ".yaml", 'w') as file:
                 file.write("---\n")
                 yaml.dump(releases, file, default_flow_style=False, allow_unicode=True)
 
@@ -30,72 +30,194 @@ def parsePackageLock(name, depObj):
     packagelock = urllib.request.urlopen(name)
     data = json.loads(packagelock.read())
     if data.get("dependencies") is not None:
-        if depObj["core"].get("npm") is None:
-            depObj["core"]["npm"] = []
-        for key in data["dependencies"].keys(): 
-            depObj["core"]["npm"].append(key)
+        coreNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "core"):
+                coreNpm = True                
+                for key in data["dependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not coreNpm:
+            coreDeps = {
+                "origin": "npm",
+                "type": "core",
+                "values": []
+            }        
+            for key in data["dependencies"].keys(): 
+                coreDeps["values"].append(key)
+            depObj.append(coreDeps)
     if data.get("devDependencies") is not None:
-        if depObj["dev"].get("npm") is None:
-            depObj["dev"]["npm"] = []
-        for key in data["devDependencies"].keys(): 
-            depObj["dev"]["npm"].append(key)
+        devNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "dev"):
+                devNpm = True                
+                for key in data["devDependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not devNpm:
+            devDeps = {
+                "origin": "npm",
+                "type": "dev",
+                "values": []
+            }
+            for key in data["devDependencies"].keys(): 
+                devDeps["values"].append(key)
+            depObj.append(devDeps)
     if data.get("peerDependencies") is not None:
-        if depObj["peer"].get("npm") is None:
-            depObj["peer"]["npm"] = []
-        for key in data["peerDependencies"].keys(): 
-            depObj["peer"]["npm"].append(key)
+        peerNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "peer"):
+                peerNpm = True                
+                for key in data["peerDependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not peerNpm:
+            peerDeps = {
+                "origin": "npm",
+                "type": "peer",
+                "values": []
+            }
+            for key in data["peerDependencies"].keys(): 
+                peerDeps["values"].append(key)
+            depObj.append(peerDeps)
 
 def parsePackage(name, depObj):
     package = urllib.request.urlopen(name)
     data = json.loads(package.read())
     if data.get("dependencies") is not None:
-        if depObj["core"].get("npm") is None:
-            depObj["core"]["npm"] = []
-        for key in data["dependencies"].keys(): 
-            depObj["core"]["npm"].append(key)
+        coreNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "core"):
+                coreNpm = True                
+                for key in data["dependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not coreNpm:
+            coreDeps = {
+                "origin": "npm",
+                "type": "core",
+                "values": []
+            }        
+            for key in data["dependencies"].keys(): 
+                coreDeps["values"].append(key)
+            depObj.append(coreDeps)
     if data.get("devDependencies") is not None:
-        if depObj["dev"].get("npm") is None:
-            depObj["dev"]["npm"] = []
-        for key in data["devDependencies"].keys(): 
-            depObj["dev"]["npm"].append(key)
+        devNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "dev"):
+                devNpm = True                
+                for key in data["devDependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not devNpm:
+            devDeps = {
+                "origin": "npm",
+                "type": "dev",
+                "values": []
+            }
+            for key in data["devDependencies"].keys(): 
+                devDeps["values"].append(key)
+            depObj.append(devDeps)
     if data.get("peerDependencies") is not None:
-        if depObj["peer"].get("npm") is None:
-            depObj["peer"]["npm"] = []
-        for key in data["peerDependencies"].keys(): 
-            depObj["peer"]["npm"].append(key)
+        peerNpm = False
+        for val in depObj:
+            if (val.get("origin") == "npm" and val.get("type") == "peer"):
+                peerNpm = True                
+                for key in data["peerDependencies"].keys(): 
+                    val["values"].append(key)
+                break
+        if not peerNpm:
+            peerDeps = {
+                "origin": "npm",
+                "type": "peer",
+                "values": []
+            }
+            for key in data["peerDependencies"].keys(): 
+                peerDeps["values"].append(key)
+            depObj.append(peerDeps)
 
 def parseRequirements(name, depObj):
     requirements = requests.get(name)
     data = requirements.text
     if data is not None:
-        if depObj["core"].get("pypi") is None:
-                depObj["core"]["pypi"] = []
-        for dep in data.splitlines():
-            depObj["core"]["pypi"].append(dep.split("=")[0].split("<")[0].split(">")[0])
+        corepypi = False
+        for val in depObj:
+            if (val.get("origin") == "pypi" and val.get("type") == "core"):
+                corepypi = True                
+                for dep in data.splitlines():
+                    val["values"].append(dep.split("=")[0].split("<")[0].split(">")[0])
+                break
+        if not corepypi:
+            coreDeps = {
+                "origin": "pypi",
+                "type": "core",
+                "values": []
+            }        
+            for dep in data.splitlines():
+                coreDeps["values"].append(dep.split("=")[0].split("<")[0].split(">")[0])
+            depObj.append(coreDeps)
+       
             
 def parseComposer(name, depObj):
     composer = urllib.request.urlopen(name)
     data = json.loads(composer.read())
     if data.get("require") is not None:
-        if depObj["core"].get("composer") is None:
-            depObj["core"]["composer"] = []
-        for key in data["require"].keys(): 
-            depObj["core"]["composer"].append(key)
+        corecomposer = False
+        for val in depObj:
+            if (val.get("origin") == "composer" and val.get("type") == "core"):
+                corecomposer = True                 
+                for key in data["require"].keys():
+                    val["values"].append(key)
+                break
+        if not corecomposer:
+            coreDeps = {
+                "origin": "composer",
+                "type": "core",
+                "values": []
+            }        
+            for key in data["require"].keys(): 
+               coreDeps["values"].append(key)
+            depObj.append(coreDeps)
     if data.get("require-dev") is not None:
-        if depObj["dev"].get("composer") is None:
-            depObj["dev"]["composer"] = []
-        for key in data["require-dev"].keys(): 
-            depObj["dev"]["composer"].append(key)
+        devcomposer = False
+        for val in depObj:
+            if (val.get("origin") == "composer" and val.get("type") == "dev"):
+                devcomposer = True                 
+                for key in data["require-dev"].keys():
+                    val["values"].append(key)
+                break
+        if not devcomposer:
+            devDeps = {
+                "origin": "composer",
+                "type": "dev",
+                "values": []
+            }        
+            for key in data["require-dev"].keys(): 
+               devDeps["values"].append(key)
+            depObj.append(devDeps)
 
 def parseGemfile(name, depObj):
     gemfile = requests.get(name)
     data = gemfile.text
     if data is not None:
-        if depObj["core"].get("bundler") is None:
-                depObj["core"]["bundler"] = []
-        for dep in data.splitlines():
-            if (dep.startswith("gem")):
-                depObj["core"]["bundler"].append(dep.split("'")[1])
+        corebundler = False
+        for val in depObj:
+            if (val.get("origin") == "bundler" and val.get("type") == "core"):
+                corebundler = True                 
+                for dep in data.splitlines():
+                    if (dep.startswith("gem")):
+                        val["values"].append(dep.split("'")[1])
+                break
+        if not corebundler:
+            coreDeps = {
+                "origin": "bundler",
+                "type": "core",
+                "values": []
+            }        
+            for dep in data.splitlines():
+                if (dep.startswith("gem")):
+                    coreDeps["values"].append(dep.split("'")[1])
+            depObj.append(coreDeps)
             
 def makePath(repo, name, branch):
     divName = name.split("/")
@@ -127,11 +249,11 @@ def defaultBranch(url):
     
 def getDependencies(repos):
     dependenciesObject = {
-        "aboriginal": {},
-        "federal": {},
-        "municipal": {},
-        "others": {},
-        "provincial": {}
+        "aboriginal": [],
+        "federal": [],
+        "municipal": [],
+        "others": [],
+        "provincial": []
     }
     for repo in repos:
         release = {
@@ -139,11 +261,7 @@ def getDependencies(repos):
                 "en": repo[1],
                 "fr": repo[2]
             },
-            "dependencies": {
-                "core": {},
-                "dev": {},
-                "peer": {}
-            }
+            "dependencies": []
         }
         path = defaultBranch(repo[0])
         response = requests.get(repo[0] + path[0])
@@ -164,9 +282,19 @@ def getDependencies(repos):
                             parseRequirements(filepath, release["dependencies"])
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])
-        if dependenciesObject[repo[4]].get(repo[3]) is None:
-            dependenciesObject[repo[4]][repo[3]] = []
-        dependenciesObject[repo[4]][repo[3]].append(release)
+        adminSet = False
+        for val in dependenciesObject[repo[4]]:
+            if val.get("adminCode") == repo[3]:
+                val["releases"].append(release)
+                adminSet = True
+                break
+        if not adminSet:
+            admin = {
+                "adminCode": repo[3],
+                "releases": [] 
+            }
+            admin["releases"].append(release)
+            dependenciesObject[repo[4]].append(admin)
     updateData(dependenciesObject)
 
 def getRepositories():

@@ -1,15 +1,11 @@
 ---
-- dependencies:
-    core: {}
-    dev: {}
-    peer: {}
+adminCode: cse-cst
+releases:
+- dependencies: []
   name:
     en: Spartacus
     fr: Spartacus
-- dependencies:
-    core: {}
-    dev: {}
-    peer: {}
+- dependencies: []
   name:
     en: Assemblyline
     fr: Assemblyline

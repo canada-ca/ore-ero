@@ -1,92 +1,94 @@
 ---
-- dependencies:
-    core: {}
-    dev: {}
-    peer: {}
+adminCode: statcan
+releases:
+- dependencies: []
   name:
     en: OpenTabulate
     fr: OpenTabulate
 - dependencies:
-    core:
-      composer:
-      - composer/installers
-      - cweagans/composer-patches
-      - zaporylie/composer-drupal-optimizations
-      - acquia/lightning
-      - drupal/admin_toolbar
-      - drupal/block_class
-      - drupal/blog
-      - drupal/bootstrap_layouts
-      - drupal/button_link
-      - drupal/ckeditor_codemirror
-      - drupal/config_rewrite
-      - drupal/config_update
-      - drupal/core
-      - drupal/core_context
-      - drupal/ctools
-      - drupal/diff
-      - drupal/entity_reference_revisions
-      - drupal/entityqueue
-      - drupal/features
-      - drupal/field_group
-      - drupal/fontawesome
-      - drupal/group
-      - drupal/inline_entity_form
-      - drupal/linkit
-      - drupal/media_entity
-      - drupal/media_entity_document
-      - drupal/media_entity_image
-      - drupal/media_entity_slideshow
-      - drupal/menu_block
-      - drupal/menu_breadcrumb
-      - drupal/password_policy
-      - drupal/simple_sitemap
-      - drupal/page_manager
-      - drupal/panelizer
-      - drupal/paragraphs
-      - drupal/field_formatter
-      - drupal/file_entity
-      - drupal/metatag
-      - drupal/migrate_plus
-      - drupal/migrate_tools
-      - drupal/s3fs
-      - drupal/url_embed
-      - drupal/views_bootstrap
-      - drupal/scheduled_updates
-      - drupal/search_api_solr
-      - drupal/token_filter
-      - drupal/views_autocomplete_filters
-      - drupal/webform
-      - drupal/webform_migrate
-      - drupal/wxt_bootstrap
-      - drupal/wxt_library
-      - w8tcha/ckeditor-codemirror
-      npm:
-      - bower
-    dev:
-      composer:
-      - behat/behat
-      - behat/mink
-      - behat/mink-goutte-driver
-      - composer/composer
-      - drupal/coder
-      - drupal/core-composer-scaffold
-      - drupal/console
-      - drupal/devel
-      - drupal/drupal-extension
-      - drush/drush
-      - grasmash/yaml-cli
-      - jakoch/phantomjs-installer
-      - jcalderonzumba/gastonjs
-      - jcalderonzumba/mink-phantomjs-driver
-      - mikey179/vfsstream
-      - phing/phing
-      - phpunit/phpunit
-      - se/selenium-server-standalone
-      - squizlabs/php_codesniffer
-      - symfony/css-selector
-      - symfony/phpunit-bridge
-    peer: {}
+  - origin: composer
+    type: core
+    values:
+    - composer/installers
+    - cweagans/composer-patches
+    - zaporylie/composer-drupal-optimizations
+    - acquia/lightning
+    - drupal/admin_toolbar
+    - drupal/block_class
+    - drupal/blog
+    - drupal/bootstrap_layouts
+    - drupal/button_link
+    - drupal/ckeditor_codemirror
+    - drupal/config_rewrite
+    - drupal/config_update
+    - drupal/core
+    - drupal/core_context
+    - drupal/ctools
+    - drupal/diff
+    - drupal/entity_reference_revisions
+    - drupal/entityqueue
+    - drupal/features
+    - drupal/field_group
+    - drupal/fontawesome
+    - drupal/group
+    - drupal/inline_entity_form
+    - drupal/linkit
+    - drupal/media_entity
+    - drupal/media_entity_document
+    - drupal/media_entity_image
+    - drupal/media_entity_slideshow
+    - drupal/menu_block
+    - drupal/menu_breadcrumb
+    - drupal/password_policy
+    - drupal/simple_sitemap
+    - drupal/page_manager
+    - drupal/panelizer
+    - drupal/paragraphs
+    - drupal/field_formatter
+    - drupal/file_entity
+    - drupal/metatag
+    - drupal/migrate_plus
+    - drupal/migrate_tools
+    - drupal/s3fs
+    - drupal/url_embed
+    - drupal/views_bootstrap
+    - drupal/scheduled_updates
+    - drupal/search_api_solr
+    - drupal/token_filter
+    - drupal/views_autocomplete_filters
+    - drupal/webform
+    - drupal/webform_migrate
+    - drupal/wxt_bootstrap
+    - drupal/wxt_library
+    - w8tcha/ckeditor-codemirror
+  - origin: composer
+    type: dev
+    values:
+    - behat/behat
+    - behat/mink
+    - behat/mink-goutte-driver
+    - composer/composer
+    - drupal/coder
+    - drupal/core-composer-scaffold
+    - drupal/console
+    - drupal/devel
+    - drupal/drupal-extension
+    - drush/drush
+    - grasmash/yaml-cli
+    - jakoch/phantomjs-installer
+    - jcalderonzumba/gastonjs
+    - jcalderonzumba/mink-phantomjs-driver
+    - mikey179/vfsstream
+    - phing/phing
+    - phpunit/phpunit
+    - se/selenium-server-standalone
+    - squizlabs/php_codesniffer
+    - symfony/css-selector
+    - symfony/phpunit-bridge
+  - origin: npm
+    type: core
+    values:
+    - bower
   name:
     en: Drupal WxT
     fr: Drupal WxT
