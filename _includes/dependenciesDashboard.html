@@ -11,7 +11,7 @@
               <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="5">
                 <option value="">&nbsp;</option>
                 {%- for govLevel in site.data.i18n.administrations -%}
-                <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
+                <option value="{{ govLevel[1].code }}">{{ govLevel[1][page.lang] }}</option>
                 {%- endfor -%}
               </select>
             </div>
@@ -23,10 +23,10 @@
               <select class="form-control" id="dt_department" name="dt_department" data-column="0">
                 <option value="">&nbsp;</option>
                 {%- assign admin_arr = "" | split: ',' -%}
-                {%- for govLevels in site.data.code -%}
+                {%- for govLevels in site.data.dependencies -%}
                   {%- assign govLevel = govLevels[0] -%}
                   {% for admin in govLevels[1] %}
-                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
                     {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
                   {% endfor %}
                 {%- endfor -%}
@@ -97,7 +97,7 @@
       
       <!-- Data Table -->
       <div class="col-md-12 mrgn-bttm-lg">
-        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0, 5], "visible": false}], "paging": false}'>
+        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0, 5], "visible": false}], "paging": true}'>
           <thead>
             <tr>
               <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
@@ -114,20 +114,21 @@
               {%- for admin in govLevels[1] -%}
                 {%- for releases in admin[1] -%}
                 {%- for dependencySet in releases[1] -%}
-                {%- for val in dependencySet.values -%}
-
+                {%- for dependency in dependencySet.dependencies -%}
+                {%- for val in dependency.values-%}
                 <tr>
-                  {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
+                  {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
                   <td>{{ administration[0].name[page.lang] }}</td>
       
-                  <td>{{ dependencySet[0].name[page.lang] }}</td>
+                  <td>{{ dependencySet.name[page.lang] }}</td>
                   <td>
                     {{ val }}
                   </td>
-                  <td>{{ dependencySet[0].type }}</td>
-                  <td>{{ dependencySet[0].origin }}</td>
+                  <td>{{ dependency.type }}</td>
+                  <td>{{ dependency.origin }}</td>
                   <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
                   </tr>
+                  {%- endfor -%}
                   {%- endfor -%}
                   {%- endfor -%}
                 {%- endfor -%}
