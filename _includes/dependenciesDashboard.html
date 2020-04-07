@@ -44,12 +44,8 @@
                   {%- assign name_arr = "" | split: ',' -%}
                   {%- for govLevels in site.data.dependencies -%}
                     {%- for admin in govLevels[1] -%}
-                      {%- for releases in admin[1] -%}
-                      {%- for dependencySet in releases[1] -%}
-                      {%- if dependencySet.name != nil -%}
-                      {%- assign name_arr = name_arr | push: dependencySet.name[page.lang] -%}
-                      {%- endif -%}
-                      {%- endfor -%}
+                      {%- for release in admin[1].releases -%}
+                      {%- assign name_arr = name_arr | push: release.name[page.lang] -%}
                       {%- endfor -%}
                     {%- endfor -%}
                   {%- endfor -%}
@@ -97,7 +93,7 @@
       
       <!-- Data Table -->
       <div class="col-md-12 mrgn-bttm-lg">
-        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [0, 5], "visible": false}], "paging": true}'>
+        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{ "columnDefs": [{"targets": [0, 5], "visible": false}], "paging": true}'>
           <thead>
             <tr>
               <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
