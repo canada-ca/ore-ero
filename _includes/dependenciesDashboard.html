@@ -115,7 +115,7 @@
                 {%- for releases in admin[1] -%}
                 {%- for dependencySet in releases[1] -%}
                 {%- for dependency in dependencySet.dependencies -%}
-                {%- for val in dependency.values-%}
+                {%- for val in dependency.values -%}
                 <tr>
                   {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
                   <td>{{ administration[0].name[page.lang] }}</td>

@@ -251,22 +251,6 @@ releases:
     - wrappy
     - yallist
     - yauzl
-    - '@fortawesome/fontawesome-free'
-    - bcrypt
-    - better-sqlite3
-    - compression
-    - connect-sqlite3
-    - convert-array-to-csv
-    - cookie-parser
-    - debug
-    - ejs
-    - express
-    - express-session
-    - fresh-password
-    - html-pdf
-    - http-errors
-    - marked
-    - morgan
   - origin: npm
     type: dev
     values:

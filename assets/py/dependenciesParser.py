@@ -8,7 +8,7 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "11:59"
+execTime = "09:10"
 
 def createDirectory(dir, path):
     dirExists = dir in os.listdir(path)
@@ -35,7 +35,8 @@ def parsePackageLock(name, depObj):
             if (val.get("origin") == "npm" and val.get("type") == "core"):
                 coreNpm = True                
                 for key in data["dependencies"].keys(): 
-                    val["values"].append(key)
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not coreNpm:
             coreDeps = {
@@ -51,8 +52,9 @@ def parsePackageLock(name, depObj):
         for val in depObj:
             if (val.get("origin") == "npm" and val.get("type") == "dev"):
                 devNpm = True                
-                for key in data["devDependencies"].keys(): 
-                    val["values"].append(key)
+                for key in data["devDependencies"].keys():
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not devNpm:
             devDeps = {
@@ -68,8 +70,9 @@ def parsePackageLock(name, depObj):
         for val in depObj:
             if (val.get("origin") == "npm" and val.get("type") == "peer"):
                 peerNpm = True                
-                for key in data["peerDependencies"].keys(): 
-                    val["values"].append(key)
+                for key in data["peerDependencies"].keys():
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not peerNpm:
             peerDeps = {
@@ -89,8 +92,9 @@ def parsePackage(name, depObj):
         for val in depObj:
             if (val.get("origin") == "npm" and val.get("type") == "core"):
                 coreNpm = True                
-                for key in data["dependencies"].keys(): 
-                    val["values"].append(key)
+                for key in data["dependencies"].keys():
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not coreNpm:
             coreDeps = {
@@ -101,13 +105,15 @@ def parsePackage(name, depObj):
             for key in data["dependencies"].keys(): 
                 coreDeps["values"].append(key)
             depObj.append(coreDeps)
+       
     if data.get("devDependencies") is not None:
         devNpm = False
         for val in depObj:
             if (val.get("origin") == "npm" and val.get("type") == "dev"):
                 devNpm = True                
-                for key in data["devDependencies"].keys(): 
-                    val["values"].append(key)
+                for key in data["devDependencies"].keys():
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not devNpm:
             devDeps = {
@@ -124,7 +130,8 @@ def parsePackage(name, depObj):
             if (val.get("origin") == "npm" and val.get("type") == "peer"):
                 peerNpm = True                
                 for key in data["peerDependencies"].keys(): 
-                    val["values"].append(key)
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not peerNpm:
             peerDeps = {
@@ -145,7 +152,9 @@ def parseRequirements(name, depObj):
             if (val.get("origin") == "pypi" and val.get("type") == "core"):
                 corepypi = True                
                 for dep in data.splitlines():
-                    val["values"].append(dep.split("=")[0].split("<")[0].split(">")[0])
+                    key = dep.split("=")[0].split("<")[0].split(">")[0]
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not corepypi:
             coreDeps = {
@@ -167,7 +176,8 @@ def parseComposer(name, depObj):
             if (val.get("origin") == "composer" and val.get("type") == "core"):
                 corecomposer = True                 
                 for key in data["require"].keys():
-                    val["values"].append(key)
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not corecomposer:
             coreDeps = {
@@ -184,7 +194,8 @@ def parseComposer(name, depObj):
             if (val.get("origin") == "composer" and val.get("type") == "dev"):
                 devcomposer = True                 
                 for key in data["require-dev"].keys():
-                    val["values"].append(key)
+                    if key not in val["values"]:
+                        val["values"].append(key)
                 break
         if not devcomposer:
             devDeps = {
@@ -206,7 +217,9 @@ def parseGemfile(name, depObj):
                 corebundler = True                 
                 for dep in data.splitlines():
                     if (dep.startswith("gem")):
-                        val["values"].append(dep.split("'")[1])
+                        key = dep.split("'")[1]
+                        if key not in val["values"]:
+                            val["values"].append(key)
                 break
         if not corebundler:
             coreDeps = {
@@ -270,15 +283,15 @@ def getDependencies(repos):
                 with ZipFile(io.BytesIO(response.content)) as zip:
                     for name in zip.namelist():
                         filepath = makePath(repo[0], name, path[1])
-                        if ("package-lock.json" in name):
+                        if ("/package-lock.json" in name):
                            parsePackageLock(filepath, release["dependencies"])
-                        if ("package.json" in name):
+                        if ("/package.json" in name):
                             parsePackage(filepath, release["dependencies"])
-                        if ("composer.json" in name):
+                        if ("/composer.json" in name):
                             parseComposer(filepath, release["dependencies"])
-                        if ("Gemfile" in name):
+                        if ("/Gemfile" in name):
                             parseGemfile(filepath, release["dependencies"])
-                        if ("requirements.txt" in name):
+                        if ("/requirements.txt" in name):
                             parseRequirements(filepath, release["dependencies"])
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])

@@ -46,14 +46,6 @@ releases:
     - util-deprecate
     - uuid
     - xtend
-    - ask-sdk-core
-    - ask-sdk-model
-    - dotenv
-    - i18next
-    - i18next-sprintf-postprocessor
-    - logless-client
-    - node-fetch
-    - sanitize-html
     - '@babel/code-frame'
     - '@babel/generator'
     - '@babel/helper-function-name'
@@ -69,7 +61,6 @@ releases:
     - agent-base
     - ansi-colors
     - ansi-regex
-    - ansi-styles
     - append-transform
     - archy
     - argparse
@@ -84,13 +75,10 @@ releases:
     - caching-transform
     - camelcase
     - chai
-    - chalk
     - check-error
     - cliui
     - code-point-at
     - codecov
-    - color-convert
-    - color-name
     - commander
     - commondir
     - concat-map
@@ -112,7 +100,6 @@ releases:
     - es6-error
     - es6-promise
     - es6-promisify
-    - escape-string-regexp
     - esprima
     - esutils
     - events
@@ -132,7 +119,6 @@ releases:
     - growl
     - handlebars
     - has
-    - has-flag
     - has-symbols
     - hasha
     - he
@@ -142,7 +128,6 @@ releases:
     - ignore-walk
     - imurmurhash
     - inflight
-    - inherits
     - invert-kv
     - is-arrayish
     - is-buffer
@@ -188,10 +173,8 @@ releases:
     - nice-try
     - nock
     - node-environment-flags
-    - node-fetch
     - normalize-package-data
     - npm-run-path
-    - number-is-nan
     - nyc
     - object-keys
     - object.assign
@@ -230,14 +213,12 @@ releases:
     - resolve
     - resolve-from
     - rimraf
-    - safe-buffer
     - sax
     - semver
     - set-blocking
     - shebang-command
     - shebang-regex
     - signal-exit
-    - source-map
     - spawn-wrap
     - spdx-correct
     - spdx-exceptions
@@ -249,7 +230,6 @@ releases:
     - strip-bom
     - strip-eof
     - strip-json-comments
-    - supports-color
     - teeny-request
     - test-exclude
     - to-fast-properties
@@ -258,7 +238,6 @@ releases:
     - uglify-js
     - url
     - urlgrey
-    - uuid
     - validate-npm-package-license
     - virtual-alexa
     - virtual-core
@@ -276,9 +255,6 @@ releases:
     - yargs
     - yargs-parser
     - yargs-unparser
-    - mocha
-    - nyc
-    - virtual-alexa
   - origin: npm
     type: dev
     values:
