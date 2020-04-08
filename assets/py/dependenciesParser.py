@@ -8,7 +8,7 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "09:10"
+execTime = "00:00"
 
 def createDirectory(dir, path):
     dirExists = dir in os.listdir(path)
@@ -245,7 +245,7 @@ def defaultBranch(url):
     framagit = ""
     if "framagit" in url:
         framagit = "/-"
-        ex = r'(.*)qa-branch-name(.*)>(.*)<'
+        ex = r'qa-branch-name.*>.*'
     
     download = "/archive/"
     if "bitbucket" in url:

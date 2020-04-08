@@ -2641,10 +2641,12 @@ releases:
     - base
     - base64-arraybuffer
     - base64-js
+    - basic-auth
     - bcrypt-pbkdf
     - big.js
     - bin-v8-flags-filter
     - binary-extensions
+    - bindings
     - block-stream
     - bluebird
     - bn.js
@@ -2689,7 +2691,6 @@ releases:
     - check-error
     - chokidar
     - chownr
-    - chrome-emulated-devices-list
     - chrome-remote-interface
     - chrome-trace-event
     - chromium-pickle-js
@@ -2716,6 +2717,7 @@ releases:
     - collection-visit
     - color-convert
     - color-name
+    - colors
     - combined-stream
     - commander
     - commondir
@@ -2801,6 +2803,7 @@ releases:
     - delegates
     - des.js
     - detect-indent
+    - device-specs
     - diff
     - diffie-hellman
     - dir-glob
@@ -2867,6 +2870,7 @@ releases:
     - figures
     - file-entry-cache
     - file-saver
+    - file-uri-to-path
     - fill-range
     - filter-chunk-webpack-plugin
     - find-cache-dir
@@ -2952,6 +2956,7 @@ releases:
     - http-server
     - http-signature
     - https-browserify
+    - human-signals
     - hyphenate-style-name
     - iconv-lite
     - icss-replace-symbols
@@ -3343,6 +3348,7 @@ releases:
     - script-loader
     - scss-tokenizer
     - seamless-immutable
+    - secure-compare
     - semver
     - semver-diff
     - serialize-javascript
@@ -3390,6 +3396,7 @@ releases:
     - strip-ansi
     - strip-bom
     - strip-eof
+    - strip-final-newline
     - strip-indent
     - strip-json-comments
     - style-loader
@@ -3482,7 +3489,6 @@ releases:
     - url-join
     - url-parse-lax
     - use
-    - useragent
     - utf8-byte-length
     - util
     - util-deprecate
@@ -3526,12 +3532,17 @@ releases:
     - zen-observable
     - zen-observable-ts
     - '@babel/cli'
+    - '@babel/helper-validator-identifier'
     - '@babel/node'
+    - '@babel/plugin-syntax-bigint'
     - '@babel/plugin-transform-member-expression-literals'
     - '@babel/plugin-transform-property-literals'
     - '@babel/plugin-transform-reserved-words'
     - '@babel/register'
+    - '@bcoe/v8-coverage'
     - '@cnakazawa/watch'
+    - '@istanbuljs/load-nyc-config'
+    - '@istanbuljs/schema'
     - '@jest/console'
     - '@jest/core'
     - '@jest/environment'
@@ -3542,15 +3553,19 @@ releases:
     - '@jest/test-sequencer'
     - '@jest/transform'
     - '@jest/types'
+    - '@sinonjs/commons'
     - '@types/babel__core'
     - '@types/babel__generator'
     - '@types/babel__template'
     - '@types/babel__traverse'
+    - '@types/color-name'
     - '@types/istanbul-lib-coverage'
     - '@types/istanbul-lib-report'
     - '@types/istanbul-reports'
+    - '@types/prettier'
     - '@types/stack-utils'
     - '@types/yargs'
+    - '@types/yargs-parser'
     - abort-controller
     - accepts
     - acorn-walk
@@ -3571,6 +3586,7 @@ releases:
     - buffer-equal-constant-time
     - bytes
     - capture-exit
+    - collect-v8-coverage
     - common-node-scripts
     - compressible
     - compression
@@ -3582,6 +3598,7 @@ releases:
     - core-js-pure
     - cors
     - data-urls
+    - deepmerge
     - depd
     - destroy
     - detect-newline
@@ -3608,6 +3625,7 @@ releases:
     - fs-readdir-recursive
     - gaxios
     - gcp-metadata
+    - gensync
     - google-auth-library
     - google-p12-pem
     - googleapis
@@ -3616,12 +3634,13 @@ releases:
     - gtoken
     - homedir-polyfill
     - html-encoding-sniffer
+    - html-escaper
     - http-errors
     - https-proxy-agent
     - import-local
+    - ip-regex
     - ipaddr.js
     - is-generator-fn
-    - is-plain-obj
     - istanbul-lib-coverage
     - istanbul-lib-instrument
     - istanbul-lib-report
@@ -3659,14 +3678,12 @@ releases:
     - jwa
     - jws
     - kleur
-    - left-pad
     - leven
     - locate-path
     - lodash.sortby
+    - lolex
     - makeerror
-    - map-age-cleaner
     - media-typer
-    - mem
     - merge-descriptors
     - methods
     - negotiator
@@ -3679,13 +3696,9 @@ releases:
     - nwsapi
     - on-finished
     - on-headers
-    - output-file-sync
-    - p-defer
     - p-each-series
-    - p-is-promise
     - p-limit
     - p-locate
-    - p-reduce
     - p-try
     - parse-passwd
     - parseurl
@@ -3702,6 +3715,7 @@ releases:
     - request-promise-native
     - rsvp
     - sane
+    - saxes
     - send
     - serve-static
     - setprototypeof
@@ -3711,20 +3725,26 @@ releases:
     - statuses
     - stealthy-require
     - string-length
+    - supports-hyperlinks
+    - terminal-link
     - test-exclude
     - throat
     - tmpl
     - toidentifier
     - type-is
+    - typedarray-to-buffer
     - unpipe
     - url-template
     - utils-merge
+    - v8-to-istanbul
     - v8flags
     - vary
     - w3c-hr-time
+    - w3c-xmlserializer
     - walker
     - whatwg-encoding
     - whatwg-mimetype
+    - xmlchars
     - append-transform
     - compare-versions
     - default-require-extensions
@@ -3733,7 +3753,6 @@ releases:
     - istanbul-lib-hook
     - word-wrap
     - '@babel/plugin-proposal-dynamic-import'
-    - '@types/yargs-parser'
     - '@wry/equality'
     - babel-plugin-dynamic-import-node
     - bson
@@ -3873,10 +3892,12 @@ releases:
     - '@babel/plugin-proposal-unicode-property-regex'
     - '@babel/plugin-syntax-async-generators'
     - '@babel/plugin-syntax-bigint'
+    - '@babel/plugin-syntax-class-properties'
     - '@babel/plugin-syntax-dynamic-import'
     - '@babel/plugin-syntax-flow'
     - '@babel/plugin-syntax-json-strings'
     - '@babel/plugin-syntax-jsx'
+    - '@babel/plugin-syntax-logical-assignment-operators'
     - '@babel/plugin-syntax-nullish-coalescing-operator'
     - '@babel/plugin-syntax-numeric-separator'
     - '@babel/plugin-syntax-object-rest-spread'
@@ -4288,6 +4309,7 @@ releases:
     - babel-plugin-transform-simplify-comparison-operators
     - babel-plugin-transform-strict-mode
     - babel-plugin-transform-undefined-to-void
+    - babel-preset-current-node-syntax
     - babel-preset-env
     - babel-preset-flow
     - babel-preset-jest
@@ -5933,6 +5955,7 @@ releases:
     - accepts
     - acorn
     - acorn-globals
+    - acorn-jsx
     - acorn-walk
     - address
     - aggregate-error
@@ -6164,7 +6187,6 @@ releases:
     - dashdash
     - data-urls
     - date-fns
-    - date-now
     - de-indent
     - debug
     - decamelize
@@ -6190,6 +6212,7 @@ releases:
     - dns-equal
     - dns-packet
     - dns-txt
+    - doctrine
     - dom-converter
     - dom-event-types
     - dom-serializer
@@ -6235,6 +6258,7 @@ releases:
     - eslint-scope
     - eslint-utils
     - eslint-visitor-keys
+    - espree
     - esprima
     - esquery
     - esrecurse
@@ -6272,6 +6296,7 @@ releases:
     - fd-slicer
     - figgy-pudding
     - figures
+    - file-entry-cache
     - file-loader
     - file-uri-to-path
     - filesize
@@ -6280,6 +6305,7 @@ releases:
     - find-babel-config
     - find-cache-dir
     - find-up
+    - flat-cache
     - flatted
     - flush-write-stream
     - follow-redirects
@@ -6521,7 +6547,6 @@ releases:
     - make-dir
     - make-error
     - makeerror
-    - mamacro
     - map-age-cleaner
     - map-cache
     - map-visit
@@ -6742,6 +6767,7 @@ releases:
     - regenerator-transform
     - regex-not
     - regexp.prototype.flags
+    - regexpp
     - regexpu-core
     - register-service-worker
     - regjsgen
@@ -6859,6 +6885,7 @@ releases:
     - svgo
     - symbol-observable
     - symbol-tree
+    - table
     - tapable
     - terser
     - terser-webpack-plugin
@@ -6996,6 +7023,7 @@ releases:
     - worker-rpc
     - wrap-ansi
     - wrappy
+    - write
     - write-file-atomic
     - ws
     - xdg-basedir

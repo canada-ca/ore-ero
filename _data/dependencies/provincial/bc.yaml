@@ -2224,6 +2224,7 @@ releases:
     - functional-red-black-tree
     - gauge
     - gaze
+    - geojson-utils
     - get-caller-file
     - get-stdin
     - get-stream
