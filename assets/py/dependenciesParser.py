@@ -243,21 +243,29 @@ def makePath(repo, name, branch):
 def defaultBranch(url):
     ex = r'branch-name(.*)>(.*)<'
     framagit = ""
+    extension = ".zip"
     if "framagit" in url:
         framagit = "/-"
         ex = r'qa-branch-name.*>.*'
-    
+    branches = "/branches"
     download = "/archive/"
+    search = ""
     if "bitbucket" in url:
         download = "/get/"
+        search = "/?search=default"
         ex = r'css-1waz8j8(.*)>(.*)<'
-        
-    response = requests.get(url + framagit + "/branches")    
+    if "eclipse" in url:
+        download = "/snapshot/"
+        branches = ""
+        extension = ""
+        search = "/commit/?head"
+        ex = r"zip'>.*</a"
+    response = requests.get(url + framagit + branches + search)    
     regex = re.compile(ex)
     result = regex.search(response.text)
     if result is not None:
         branch = result.group().split(">")[-1].split("<")[0]
-        return framagit + download + branch + ".zip", branch
+        return framagit + download + branch + extension, branch
     return "", ""
     
 def getDependencies(repos):
