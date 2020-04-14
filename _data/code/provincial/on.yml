@@ -1,0 +1,47 @@
+---
+schemaVersion: '1.0'
+adminCode: 'on'
+releases:
+  - contact:
+      email: noreply@canada.ca
+      name: No Reply
+    date:
+      created: '2020-03-01'
+      metadataLastUpdated: '2020-04-14'
+    description:
+      whatItDoes:
+        en: >-
+          The tool takes the public through a series of questions to inform
+          those who are concerned they may have contracted COVID-19.
+        fr: >-
+          L'outil amène le public à travers une série de questions pour informer
+          ceux qui sont concernés qu'ils peuvent avoir contracté COVID-19.
+    category: '43232600'
+    name:
+      en: Ontario COVID-19 self-assessment
+      fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+    licences:
+      - URL:
+          en: >-
+            https://github.com/ongov/covid-19-self-assessment/blob/master/LICENSE
+          fr: >-
+            https://github.com/ongov/covid-19-self-assessment/blob/master/LICENSE
+        spdxID: Apache-2.0
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/ongov/covid-19-self-assessment'
+      fr: 'https://github.com/ongov/covid-19-self-assessment'
+    tags:
+      en:
+        - COVID-19
+      fr:
+        - COVID-19
+    homepageURL:
+      en: 'https://covid-19.ontario.ca/self-assessment/'
+      fr: 'https://covid-19.ontario.ca/autoevaluation/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
