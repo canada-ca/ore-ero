@@ -32,7 +32,9 @@
                 </td>
                 <td>
                   {%- for tag in release.tags[page.lang] -%}
+                    {%- unless tag == site.excludeTag -%}
                     {{ tag }}&nbsp;
+                    {%- endunless -%}
                   {%- endfor -%}
                 </td>
 
@@ -68,7 +70,9 @@
           </td>
           <td>
             {%- for tag in software.tags[page.lang] -%} 
+              {%- unless tag == site.excludeTag -%}
               {{ tag }}
+              {%- endunless -%}
             {%- endfor -%}
           </td>
           <td>
@@ -135,7 +139,9 @@
             <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
             <ul>
               {%- for tag in release.tags[page.lang] -%}
+                {%- unless tag == site.excludeTag -%}
                 <li>{{ tag }}</li>
+                {%- endunless -%}
               {%- endfor -%}
             </ul>
             {%- if release.languages != nil -%}
@@ -184,7 +190,9 @@
       <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
       <ul>
         {%- for tag in software.tags[page.lang] -%}
-        <li>{{ tag }}</li>
+        {%- unless tag == site.excludeTag -%}
+          <li>{{ tag }}</li>
+        {%- endunless -%}
         {%- endfor -%}
       </ul>
       <div class="row">

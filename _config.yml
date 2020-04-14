@@ -12,7 +12,7 @@ active_emergency: true
 active_emergency_name: "COVID-19"
 high_value_tag: "BCP-PCA"
 
-exludeTag: "Exclude-Exclure"
+excludeTag: "Exclude-Exclure"
 
 # Build settings
 markdown: kramdown
