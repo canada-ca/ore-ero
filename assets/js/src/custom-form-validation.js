@@ -146,10 +146,13 @@ $(document).on('wb-ready.wb', function () {
       function (value) {
         let valid = false;
         if (value) {
-          let acceptedSuffix = $('#adminCode')
+          let acceptedSuffixText = $('#adminCode')
             .find(':selected')
-            .data('suffix')
-            .split(',');
+            .data('suffix');
+          let acceptedSuffix = undefined;
+          if (acceptedSuffixText != undefined) {
+            acceptedSuffix = acceptedSuffixText.split(',');
+          }
           if (acceptedSuffix != undefined) {
             for (let index in acceptedSuffix) {
               if (value.endsWith(acceptedSuffix[index])) valid = true;
