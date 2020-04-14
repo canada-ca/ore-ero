@@ -56,12 +56,22 @@ presets:
     infobulle:
       en: Select a public administration from the drop-down field or add a new one in case the administration does not exist.
       fr: Choisir l'administration publique dans la liste ci-dessous. Créer une nouvelle au cas où l'administration n'était pas déjà dans la liste.
+      suffix:
+        en: Email suffix(es) associated with your administration, for example '@canada.ca'
+        fr: Suffixe(s) des emails associés à votre administration, par exemple '@canada.ca'
     label:
       en: Canadian public administration
       fr: Administration publique Canadienne
+    labels:
+      suffix:
+        en: Email suffix
+        fr: Suffixe d'email
     button:
       en: Add a new administration
       fr: Ajouter une nouvelle administration
+      suffix:
+        en: Add another suffix
+        fr: Ajouter un autre suffix
     noAdmins:
       en: No Administration
       fr: Aucune administration

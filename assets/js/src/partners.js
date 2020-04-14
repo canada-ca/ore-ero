@@ -92,6 +92,19 @@ function addMorePartners(obj) {
 
       if ($('#partnerscontactname' + id).val() != '')
         obj.partners[i].name = $('#partnerscontactname' + id).val();
+
+      let suffix = $('#partnerssuffix').val();
+      let first = suffix;
+      if (suffix != '') {
+        let suffixes = $(
+          'input[data-for="partners-suffixes' + id + '"][type="text"]'
+        ).toArray();
+        for (let item in suffixes) {
+          let val = suffixes[item].value;
+          if (!suffix.includes(',' + val) && val != first) suffix += ',' + val;
+        }
+        obj.partners[i].email_suffix = "'" + suffix + "'";
+      }
     }
   });
 }
@@ -146,7 +159,16 @@ function getNewAdminPartnerObject(index) {
   // Optional fields
   let province = $('#provinceSelectPartner' + index).val();
   if (province != '') adminObj.provinceCode = province;
-
+  let suffix = $('#partnerssuffix').val();
+  if (suffix != '') {
+    let suffixes = $(
+      'input[data-for="partners-suffixes' + index + '"][type="text"]'
+    ).toArray();
+    for (let item in suffixes) {
+      suffix += ',' + suffixes[item].value;
+    }
+    adminObj.email_suffix = suffix;
+  }
   return adminObj;
 }
 
@@ -175,24 +197,21 @@ function selectPartners(select) {
   let adminCode = $(select).val();
   let id = getmoreIndex(select);
   if (adminCode != '') {
-    $.getJSON(
-      'https://canada-ca.github.io/ore-ero/administrations.json',
-      function (result) {
-        let admin = getAdminObjectForPartner(result, adminCode);
-        showFieldsPartner(id, false);
-        $('#orgLevelPartner' + id).val(admin.level);
-        if (admin.values.provinceCode != undefined) {
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', false)
-            .val(admin.values.provinceCode);
-        } else
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', true)
-            .val('');
-        $('#enpartnersname' + id).val(admin.values.name.en);
-        $('#frpartnersname' + id).val(admin.values.name.fr);
-      }
-    );
+    $.getJSON('../administrations.json', function (result) {
+      let admin = getAdminObjectForPartner(result, adminCode);
+      showFieldsPartner(id, false);
+      $('#orgLevelPartner' + id).val(admin.level);
+      if (admin.values.provinceCode != undefined) {
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', false)
+          .val(admin.values.provinceCode);
+      } else
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', true)
+          .val('');
+      $('#enpartnersname' + id).val(admin.values.name.en);
+      $('#frpartnersname' + id).val(admin.values.name.fr);
+    });
   } else {
     hideFieldsPartner(id);
   }
@@ -222,6 +241,8 @@ function resetFieldsPartner(id) {
   $('#frpartnersname' + id).val('');
   $('#partnerscontactname' + id).val('');
   $('#partnerscontactemail' + id).val('');
+  $('#partnerssuffix' + id).val('');
+  $('#partners-suffixes' + id).remove();
 }
 
 function showFieldsPartner(id, full) {
@@ -314,3 +335,18 @@ function resetPartners() {
   $('.btn-tabs-more-remove').addClass('invisible');
   $('#partnersNewAdmin').addClass('hide');
 }
+/*eslint-disable no-unused-vars*/
+function partnersaddMoreSuffixes(value) {
+  let id = getmoreIndex($('#' + value));
+  $(`<div id="${
+    'partners-suffixes' + id
+  }" class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+        <input type="text"  name="suffix" data-for="${
+          'partners-suffixes' + id
+        }" class="form-control" required="required">
+        <div class="input-group-btn">
+          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+      </div>`).appendTo($('#partnerssuffix' + id).parent());
+}
+/*eslint-enable no-unused-vars*/

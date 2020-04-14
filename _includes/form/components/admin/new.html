@@ -6,4 +6,5 @@
 {% include form/components/admin/orgLevel.html idPreset=include.idPreset title="orgLevel" all=false %}
 {% include form/components/admin/provinceSelect.html idPreset=include.idPreset title="provinceSelect" %}
 {% include form/widgets/string-i18n.html id=id title="newAdminName" param=site.data.forms.param.newAdmin.name -%}
+{% include form/presets/emailSuffix.html idPreset=include.idPreset title="adminCode" %}
 </div>

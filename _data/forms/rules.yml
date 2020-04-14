@@ -4,3 +4,4 @@ phone: data-rule-custom-phone
 dateISO: data-rule-dateISO
 alphanum-space: data-rule-alphanum-space-en-fr
 unique-newadmincode: data-rule-unique-newadmincode
+valid-emailsuffix: data-rule-valid-emailsuffix

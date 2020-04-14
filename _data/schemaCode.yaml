@@ -41,6 +41,7 @@ partner:
   adminCode: str()
   email: str()
   name: str()
+  email_suffix: str(required=False)
 
 related:
   URL: include('lang')
