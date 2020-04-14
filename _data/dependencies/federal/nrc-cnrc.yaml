@@ -1,7 +1,7 @@
 ---
 adminCode: nrc-cnrc
-releases:
-- dependencies: []
-  name:
-    en: EGSnrc
-    fr: EGSnrc
+releases: 
+  - name: 
+      en: EGSnrc
+      fr: EGSnrc
+    dependencySet: []

@@ -1,7 +1,7 @@
 ---
 adminCode: asc-csa
-releases:
-- dependencies: []
-  name:
-    en: Apogy
-    fr: Apogy
+releases: 
+  - name: 
+      en: Apogy
+      fr: Apogy
+    dependencySet: []

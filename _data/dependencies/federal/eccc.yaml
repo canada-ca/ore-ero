@@ -1,11 +1,11 @@
 ---
 adminCode: eccc
-releases:
-- dependencies: []
-  name:
-    en: METRo
-    fr: METRo
-- dependencies: []
-  name:
-    en: libECBUFR
-    fr: libECBUFR
+releases: 
+  - name: 
+      en: METRo
+      fr: METRo
+    dependencySet: []
+  - name: 
+      en: libECBUFR
+      fr: libECBUFR
+    dependencySet: []

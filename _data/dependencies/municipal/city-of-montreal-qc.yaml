@@ -1,88 +1,88 @@
 ---
 adminCode: city-of-montreal-qc
-releases:
-- dependencies: []
-  name:
-    en: CKAN-Extension-Territoire
-    fr: CKAN-Extension-Territoire
-- dependencies:
-  - origin: npm
-    type: core
-    values:
-    - axios
-    - workit-camunda
-    - workit-core
-    - workit-types
-    - '@opentelemetry/exporter-jaeger'
-    - '@opentelemetry/node'
-    - '@opentelemetry/plugin-http'
-    - '@opentelemetry/plugin-https'
-    - '@opentelemetry/tracing'
-    - camunda-external-task-client-js
-    - debug
-    - fast-safe-stringify
-    - form-data
-    - inversify
-    - reflect-metadata
-    - workit-bpm-client
-    - workit-zeebe-client
-    - camelcase
-    - caporal
-    - colors
-    - fast-xml-parser
-    - he
-    - progress
-    - prompt
-    - shelljs
-    - ts-morph
-    - validate-npm-package-name
-    - config
-    - '@opentelemetry/api'
-    - '@opentelemetry/core'
-    - uuid
-    - zeebe-elasticsearch-client
-    - zeebe-node
-  - origin: npm
-    type: dev
-    values:
-    - '@types/node'
-    - prettier
-    - eslint
-    - eslint-plugin-header
-    - eslint-config-airbnb-typescript
-    - eslint-plugin-import
-    - eslint-config-prettier
-    - eslint-plugin-prettier
-    - '@typescript-eslint/eslint-plugin'
-    - '@typescript-eslint/parser'
-    - typescript
-    - '@commitlint/cli'
-    - '@commitlint/config-conventional'
-    - codecov
-    - lerna
-    - lerna-changelog
-    - remark-cli
-    - remark-preset-lint-recommended
-    - '@opentelemetry/api'
-    - '@types/axios'
-    - '@types/chai'
-    - '@types/debug'
-    - '@types/events'
-    - '@types/form-data'
-    - '@types/jest'
-    - '@types/nock'
-    - chai
-    - husky
-    - jest
-    - nock
-    - source-map-support
-    - ts-jest
-    - typedoc
-    - '@opentelemetry/core'
-    - axios
-    - '@types/he'
-    - '@types/uuid'
-    - '@types/bytebuffer'
-  name:
-    en: WorkIt
-    fr: WorkIt
+releases: 
+  - name: 
+      en: CKAN-Extension-Territoire
+      fr: CKAN-Extension-Territoire
+    dependencySet: []
+  - name: 
+      en: WorkIt
+      fr: WorkIt
+    dependencySet: 
+      - origin: npm
+        type: core
+        dependencies: 
+          - axios
+          - workit-camunda
+          - workit-core
+          - workit-types
+          - '@opentelemetry/exporter-jaeger'
+          - '@opentelemetry/node'
+          - '@opentelemetry/plugin-http'
+          - '@opentelemetry/plugin-https'
+          - '@opentelemetry/tracing'
+          - camunda-external-task-client-js
+          - debug
+          - fast-safe-stringify
+          - form-data
+          - inversify
+          - reflect-metadata
+          - workit-bpm-client
+          - workit-zeebe-client
+          - camelcase
+          - caporal
+          - colors
+          - fast-xml-parser
+          - he
+          - progress
+          - prompt
+          - shelljs
+          - ts-morph
+          - validate-npm-package-name
+          - config
+          - '@opentelemetry/api'
+          - '@opentelemetry/core'
+          - uuid
+          - zeebe-elasticsearch-client
+          - zeebe-node
+      - origin: npm
+        type: dev
+        dependencies: 
+          - '@types/node'
+          - prettier
+          - eslint
+          - eslint-plugin-header
+          - eslint-config-airbnb-typescript
+          - eslint-plugin-import
+          - eslint-config-prettier
+          - eslint-plugin-prettier
+          - '@typescript-eslint/eslint-plugin'
+          - '@typescript-eslint/parser'
+          - typescript
+          - '@commitlint/cli'
+          - '@commitlint/config-conventional'
+          - codecov
+          - lerna
+          - lerna-changelog
+          - remark-cli
+          - remark-preset-lint-recommended
+          - '@opentelemetry/api'
+          - '@types/axios'
+          - '@types/chai'
+          - '@types/debug'
+          - '@types/events'
+          - '@types/form-data'
+          - '@types/jest'
+          - '@types/nock'
+          - chai
+          - husky
+          - jest
+          - nock
+          - source-map-support
+          - ts-jest
+          - typedoc
+          - '@opentelemetry/core'
+          - axios
+          - '@types/he'
+          - '@types/uuid'
+          - '@types/bytebuffer'
