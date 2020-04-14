@@ -2,68 +2,109 @@
   <!-- Filters -->
   <div class="col-md-3">
     <details open>
-      <summary
-        ><h4 class="h4">
-          {{ site.data.i18n.tables.filterOptions[page.lang] }}
-        </h4></summary
-      >
+      <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
       <form class="wb-tables-filter" data-bind-to="dataset-filter">
         <div class="form-group">
-          <label for="dt_govLevel"
-            >{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label
-          >
-          <select
-            class="form-control"
-            id="dt_govLevel"
-            name="dt_govLevel"
-            data-column="7"
-          >
+          <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
+          <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="7">
             <option value="">&nbsp;</option>
             {%- for govLevel in site.data.i18n.administrations -%}
-            <option value="{{ govLevel[1].value }}"
-              >{{ govLevel[1][page.lang] }}</option
-            >
+            <option value="{{ govLevel[1].value }}">{{ govLevel[1][page.lang] }}</option>
+            {%- endfor -%}
+          </select>
+        </div>
+
+        <div class="form-group hide">
+          <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
+          <select class="form-control" id="dt_department" name="dt_department" data-column="8">
+            <option value="">&nbsp;</option>
+            {%- assign municipal_arr = "" | split: ',' -%}
+            {%- assign provincial_arr = "" | split: ',' -%}
+            {%- assign federal_arr = "" | split: ',' -%}
+            {%- assign aboriginal_arr = "" | split: ',' -%}
+            {%- assign other_arr = "" | split: ',' -%}
+            {%- for software in site.data.software -%}
+              {%- for admin in software[1].administrations -%}
+                {%- assign level = 0 -%}
+                {%- for govLevels in site.data.i18n.administrations -%}
+                 {%- assign govLevel = govLevels[0] -%}
+                  {%- assign administration = site.data.administrations[govLevel] | where: "code", admin.adminCode -%}
+                  {%- if administration[0] != nil -%}
+                    {%- case level -%}
+                    {%- when 0 -%}
+                      {%- assign federal_arr = federal_arr | push: administration[0]-%}
+                    {%- when 1 -%}
+                      {%- assign provincial_arr = provincial_arr | push: administration[0]-%}
+                    {%- when 2 -%}
+                      {%- assign municipal_arr = municipal_arr | push: administration[0]-%}
+                    {%- when 3 -%}
+                      {%- assign aboriginal_arr = aboriginal_arr | push: administration[0]-%}
+                    {%- when 4 -%}
+                      {%- assign other_arr = other_arr | push: administration[0]-%}
+                    {%- endcase -%}
+                  {%- endif -%}
+                {%- assign level = level | plus:1 -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            {%- endfor -%}
+            {%- assign federal_arr = federal_arr | uniq -%}
+            {%- assign provincial_arr = provincial_arr | uniq -%}
+            {%- assign municipal_arr = municipal_arr | uniq -%}
+            {%- assign aboriginal_arr = aboriginal_arr | uniq -%}
+            {%- assign other_arr = other_arr | uniq -%}
+            {%- assign id = 1 -%}
+            {%- for federal in federal_arr -%}
+              <option class="hide" id="{{id}}" value="{{federal.code}}" data-level="federal">{{federal.name[page.lang]}}</option>
+              {%- assign id = id | plus: 1 -%}
+            {%- endfor -%}
+            {%- for provincial in provincial_arr -%}
+              <option class="hide" id="{{id}}" value="{{provincial.code}}" data-level="provincial">{{provincial.name[page.lang]}}</option>
+              {%- assign id = id | plus: 1 -%}
+            {%- endfor -%}
+            {%- for municipal in municipal_arr -%}
+              <option class="hide" id="{{id}}" value="{{municipal.code}}" data-level="municipal">{{municipal.name[page.lang]}}</option>
+              {%- assign id = id | plus: 1 -%}
+            {%- endfor -%}
+            {%- for aboriginal in aboriginal_arr -%}
+              <option class="hide" id="{{id}}" value="{{aboriginal.code}}" data-level="aboriginal">{{aboriginal.name[page.lang]}}</option>
+              {%- assign id = id | plus: 1 -%}
+            {%- endfor -%}
+            {%- for other in other_arr -%}
+              <option class="hide" id="{{id}}" value="{{other.code}}" data-level="others">{{other.name[page.lang]}}</option>
+              {%- assign id = id | plus: 1 -%}
             {%- endfor -%}
           </select>
         </div>
 
         <div class="form-group">
-          <label for="dt_category"
-            >{{ site.data.i18n.tables.category[page.lang] }}</label
-          >
-          <select
-            class="form-control"
-            id="dt_category"
-            name="dt_category"
-            data-column="1"
-          >
+          <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
+          <select class="form-control" id="dt_category" name="dt_category" data-column="1">
             <option value="">&nbsp;</option>
-            {%- assign cat_arr = "" | split: ',' -%} {%- for software in
-            site.data.software -%} {%- for category in software[1].category -%}
-            {%- assign cat_arr = cat_arr | push: category -%} {%- endfor -%} {%-
-            endfor -%} {%- assign cat_arr = cat_arr | uniq -%} {%- for cat in
-            cat_arr -%}
-            <option value="{{ site.data.i18n.categories[cat][page.lang] }}"
-              >{{ site.data.i18n.categories[cat][page.lang] }}</option
-            >
+            {%- assign cat_arr = "" | split: ',' -%} 
+            {%- for software in site.data.software -%} 
+              {%- for category in software[1].category -%}
+                {%- assign cat_arr = cat_arr | push: category -%} 
+              {%- endfor -%} 
+            {%-endfor -%} 
+            {%- assign cat_arr = cat_arr | uniq -%} 
+            {%- for cat in cat_arr -%}
+            <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
             {%- endfor -%}
           </select>
         </div>
 
         <div class="form-group">
           <label for="dt_licence">Licence</label>
-          <select
-            class="form-control"
-            id="dt_licence"
-            name="dt_licence"
-            data-column="3"
-          >
+          <select class="form-control" id="dt_licence" name="dt_licence" data-column="3">
             <option value="">&nbsp;</option>
-            {%- assign licence_arr = "" | split: ',' -%} {%- for software in
-            site.data.software -%} {%- for licence in software[1].licences -%}
-            {%- assign licence_arr = licence_arr | push: licence.spdxID -%} {%-
-            endfor -%} {%- endfor -%} {%- assign licence_arr = licence_arr |
-            group_by: "" | sort: "name" -%} {%- for licence in licence_arr -%}
+            {%- assign licence_arr = "" | split: ',' -%}
+            {%- for software in site.data.software -%}
+              {%- for licence in software[1].licences -%}
+                {%- assign licence_arr = licence_arr | push: licence.spdxID -%} 
+              {%- endfor -%}
+            {%- endfor -%}
+            {%- assign licence_arr = licence_arr | group_by: "" | sort: "name" -%}
+            {%- for licence in licence_arr -%}
             <option value="{{ licence.name }}">{{ licence.name }}</option>
             {%- endfor -%}
           </select>
@@ -71,18 +112,16 @@
 
         <div class="form-group">
           <label for="dt_tag">Tag</label>
-          <select
-            class="form-control"
-            id="dt_tag"
-            name="dt_tag"
-            data-column="4"
-          >
+          <select class="form-control" id="dt_tag" name="dt_tag" data-column="4">
             <option value="">&nbsp;</option>
-            {%- assign tag_arr = "" | split: ',' -%} {%- for software in
-            site.data.software -%} {%- for tag in software[1].tags[page.lang]
-            -%} {%- assign tag_arr = tag_arr | push: tag -%} {%- endfor -%} {%-
-            endfor -%} {%- assign tag_arr = tag_arr | group_by: "" | sort:
-            "name" -%} 
+            {%- assign tag_arr = "" | split: ',' -%}
+            {%- for software in site.data.software -%}
+              {%- for tag in software[1].tags[page.lang] -%}
+                {%- assign tag_arr = tag_arr | push: tag -%} 
+              {%- endfor -%} 
+            {%- endfor -%}
+            {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%} 
+
             {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
             {%- endfor -%}
@@ -91,11 +130,7 @@
 
         <div class="row">
           <div class="col-xs-6">
-            <button
-              type="submit"
-              class="btn btn-primary"
-              aria-controls="dataset-filter"
-            >
+            <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">
               {{ site.data.i18n.tables.filter[page.lang] }}
             </button>
           </div>
@@ -111,11 +146,7 @@
 
   <!-- Data Table -->
   <div class="col-md-9 mrgn-bttm-lg">
-    <table
-      class="wb-tables table table-striped table-hover"
-      id="dataset-filter"
-      data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,6,7], "visible": false}], "paging": true}'
-    >
+    <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,6,7,8], "visible": false}], "paging": true}'>
       <thead>
         <tr>
           <th>{{ site.data.i18n.tables.software[page.lang] }}</th>
@@ -126,49 +157,53 @@
           <th>{{ site.data.i18n.tables.usage[page.lang] }}</th>
           <th>{{ site.data.i18n.tables.homepage[page.lang] }}</th>
           <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+          <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
         </tr>
       </thead>
       <tbody>
-        {%- for softwares in site.data.software -%} {%- assign software =
-        softwares[1] -%}
+        {%- for softwares in site.data.software -%} 
+          {%- assign software = softwares[1] -%}
         <tr>
           <td>
-            <a
-              href="#{{ software.name[page.lang] | slugify }}"
-              aria-controls="{{ software.name[page.lang] | slugify }}"
-              class="overlay-lnk"
-              role="button"
-              >{{ software.name[page.lang] }}</a
-            >
-          </td>
+            <a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
           <td>
             {{ site.data.i18n.categories[software.category][page.lang] }}
           </td>
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
-            <a href="{{ licence.URL[page.lang] }}" target="_blank"
-              >{{ licence.spdxID }}</a
-            >&nbsp; {%- endfor -%}
+            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp; 
+            {%- endfor -%}
           </td>
           <td>
-            {%- for tag in software.tags[page.lang] -%} {{ tag }}&nbsp; {%-
-            endfor -%}
+            {%- for tag in software.tags[page.lang] -%} 
+              {{ tag }}
+            {%- endfor -%}
           </td>
           <td>{{ software.administrations.size }}</td>
           <td>
-            <a href="{{ software.homepageURL[page.lang] }}" target="_blank"
-              >{{ software.homepageURL[page.lang] | remove: "https://" | rstrip
-              }}</a
-            >
+            <a href="{{ software.homepageURL[page.lang] }}" target="_blank">{{ software.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
           </td>
           <td>
-            {%- for administration in software.administrations -%} {%- for
-            levels in site.data.i18n.administrations -%} {%- assign govLevel =
-            levels[0] -%} {%- assign admin = site.data.administrations[govLevel]
-            | where: "code": administration.adminCode -%} {%- if admin[0] != nil
-            -%} {{ site.data.i18n.administrations[govLevel].value }}&nbsp; {%-
-            endif -%} {%- endfor -%} {% endfor %}
+            {%- assign org_arr = "" | split: ',' -%}
+            {%- for administration in software.administrations -%}
+              {%- for levels in site.data.i18n.administrations -%}
+                {%- assign govLevel = levels[0] -%}
+                {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
+                {%- if admin[0] != nil -%}
+                  {%- assign org_arr = org_arr | push: site.data.i18n.administrations[govLevel].value -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+            {%- assign org_arr = org_arr | uniq -%}
+            {%- for org in org_arr -%}
+              {{ org }}&nbsp;
+            {%- endfor -%}
+          </td>
+          <td>
+          {%- for administration in software.administrations -%}
+            {{ administration.adminCode }}&nbsp;
+          {%- endfor -%}
           </td>
         </tr>
         {%- endfor -%}
@@ -177,69 +212,55 @@
   </div>
 
   <!-- Modal Lightboxes -->
-  {%- for softwares in site.data.software -%} {%- assign software = softwares[1]
-  -%}
-  <section
-    id="{{ software.name[page.lang] | slugify }}"
-    class="wb-overlay modal-content overlay-def wb-popup-mid"
-  >
-    <header class="modal-header">
-      <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
-    </header>
-    <div class="modal-body">
-      <p><strong>Description:</strong></p>
-      <p>{{ software.description.whatItDoes[page.lang] }}</p>
-      <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
-      <ul>
-        {%- for tag in software.tags[page.lang] -%}
-        <li>{{ tag }}</li>
-        {%- endfor -%}
-      </ul>
-      <table class="table">
-      <thead>
-      <tr>
-        <th>
-          <strong
-            >{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong
-          >
-        </th>
-        <th><strong>Contact:</strong></th>
-      </tr>
-    </thead>
-    <tbody>
-      {%- for administration in software.administrations -%}
-      <tr>
-        <td>
-          {%- for levels in site.data.i18n.administrations -%} {%- assign
-          govLevel = levels[0] -%} {%- assign admin =
-          site.data.administrations[govLevel] | where: "code",
-          administration.adminCode -%} {{ admin[0].name[page.lang] }} {%- endfor
-          -%}
-        </td>
-        <td>
-          {%- for use in administration.uses -%} {{ use.contact.email }}<br />
+  {%- for softwares in site.data.software -%} 
+    {%- assign software = softwares[1]-%}
+    <section id="{{ software.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+      <header class="modal-header">
+        <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
+      </header>
+      <div class="modal-body">
+        <p><strong>Description:</strong></p>
+        <p>{{ software.description.whatItDoes[page.lang] }}</p>
+        <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+        <ul>
+          {%- for tag in software.tags[page.lang] -%}
+          <li>{{ tag }}</li>
           {%- endfor -%}
-        </td>
-      </tr>
-      {%- endfor -%}
-    </tbody>
-    </table>
-      <br />
-      <div class="row">
-        <div class="col-md-7">
-          <strong
-            >{{ site.data.i18n.tables.lightbox.website[page.lang] }}</strong
-          >
+        </ul>
+        <div class="row">
+          <div class="col-md-7">
+            <strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong>
+          </div>
+          <div class="col-md-5"><strong>Contact:</strong></div>
+        </div>
+        {%- for administration in software.administrations -%}
+        <div class="row">
+          <div class="col-md-7">
+            {%- for levels in site.data.i18n.administrations -%}
+              {%- assign govLevel = levels[0] -%}
+              {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%} {{ admin[0].name[page.lang] }}
+            {%- endfor -%}
+          </div>
+          <div class="col-md-5">
+            {%- for use in administration.uses -%} {{ use.contact.email }}<br />
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- endfor -%}
+        <br />
+        <div class="row">
+          <div class="col-md-7">
+            <strong>{{ site.data.i18n.tables.lightbox.website[page.lang] }}</strong>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <a href="{{ software.homepageURL[page.lang] }}" target="_blank">
+              {{ software.homepageURL[page.lang] }}
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-7">
-          <a href="{{ software.homepageURL[page.lang] }}" target="_blank">
-            {{ software.homepageURL[page.lang] }}
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
   {%- endfor -%}
 </div>

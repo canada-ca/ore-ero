@@ -56,12 +56,22 @@ presets:
     infobulle:
       en: Select a public administration from the drop-down field or add a new one in case the administration does not exist.
       fr: Choisir l'administration publique dans la liste ci-dessous. Créer une nouvelle au cas où l'administration n'était pas déjà dans la liste.
+      suffix:
+        en: Email suffix(es) associated with your administration, for example '@canada.ca'
+        fr: Suffixe(s) des emails associés à votre administration, par exemple '@canada.ca'
     label:
       en: Canadian public administration
       fr: Administration publique Canadienne
+    labels:
+      suffix:
+        en: Email suffix
+        fr: Suffixe d'email
     button:
       en: Add a new administration
       fr: Ajouter une nouvelle administration
+      suffix:
+        en: Add another suffix
+        fr: Ajouter un autre suffix
     noAdmins:
       en: No Administration
       fr: Aucune administration
@@ -227,12 +237,28 @@ presets:
       spdxID:
         en: The SPDX License identifier - Search the List of licenses <a href="https://spdx.org/licenses/" target="_blank">List of licences</a>.
         fr: Identifiant SPDX de la licence - Consultez la liste des licenses <a href="https://spdx.org/licenses/" target="_blank">Liste des licences</a>.
+      level:
+        en: License level
+        fr: Niveau de license
+      scope:
+        en:
+          en: English license scope
+          fr: Portée de la license en anglais
+        fr:
+          en: French license scope
+          fr: Portée de la license en français
     infobulle:
       en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
       fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
       spdxID:
         en: Search the list of licenses to find the SPDX license identifier according to the project license's name. Add the URLs of the license's repository.
         fr: Choisissez l'identifiant SPDX de la licence utilisée selon son nom, en consultant la liste des licences. Ajoutez les URLs pour accéder au fichier de la licence du projet.
+      level:
+        en: License level within the project, if it covers the whole project or only a section
+        fr: Niveau de la license dans le projet, si elle couvre tout le projet ou seulement une section
+      scope:
+        en: Scope of the sub license within the project, only applicable when 'sub license' level is selected
+        fr: Portée de la sous license dans le projet, seulement applicable lorsque le niveau 'sous license' est selectionné
     titles:
       URL:
         en: The English and French URLs of licence.
@@ -454,7 +480,6 @@ presets:
     button:
       en: Add new type
       fr: Ajouter un nouveau type
-  
   uses:
     title:
       en: Informations about software users.
@@ -469,7 +494,19 @@ presets:
     infobulle:
       en: Select the date when the public administration started using the software.
       fr: Choisir la date lorsque l'administration publique a commencé à utiliser le logiciel.
-
+  licensesLevel:
+    level:
+      main:
+        en: Main license
+        fr: License principale
+      sub:
+        en: Sub license
+        fr: Sous license
+  licensesScope:
+    title:
+      en: License scope
+      fr: Portée de la license
+    
 # Code form specifics
 code:
   name:

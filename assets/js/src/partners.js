@@ -1,11 +1,11 @@
 /* global  jsyaml slugify addMoreGroup */
 /* exported fillPartnersField getNewAdminPartnerPromise addMorePartners resetPartners */
-$(document).ready(function() {
+$(document).ready(function () {
   // More-group overwrite for partner
   $('.add-more-group#addMorepartners').on(
     'click',
     '.btn-tabs-more',
-    function() {
+    function () {
       let length = $('#addMorepartners ul li').length;
       let index = length == 1 ? '' : length - 1;
       $('#partnersNewAdmin' + index).addClass('hide');
@@ -16,29 +16,33 @@ $(document).ready(function() {
   $('#addMorepartners').on(
     'change',
     '.partnersAdminCodeSelect select',
-    function() {
+    function () {
       selectPartners(this);
     }
   );
-  $('#addMorepartners').on('click', '.partnersAdminCodeBtn button', function() {
-    let index = getmoreIndex($(this));
-    addNewPartner(this);
-    if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
-      $('#partnersNewAdmin' + index).addClass('hide');
-    } else {
-      $('#partnersNewAdmin' + index).removeClass('hide');
+  $('#addMorepartners').on(
+    'click',
+    '.partnersAdminCodeBtn button',
+    function () {
+      let index = getmoreIndex($(this));
+      addNewPartner(this);
+      if (!$('#partnersNewAdmin' + index).hasClass('hide')) {
+        $('#partnersNewAdmin' + index).addClass('hide');
+      } else {
+        $('#partnersNewAdmin' + index).removeClass('hide');
+      }
     }
-  });
+  );
   $('#addMorepartners').on(
     'click',
     '.partnersAdminCodeRemove button',
-    function() {
+    function () {
       removeNewPartner(this);
       let index = getmoreIndex($(this));
       $('#partnersNewAdmin' + index).addClass('hide');
     }
   );
-  $('#addMorepartners').on('change', '.orgLevelPartner select', function() {
+  $('#addMorepartners').on('change', '.orgLevelPartner select', function () {
     let index = getmoreIndex($(this));
     if ($(this).val() == 'municipal') {
       $('#provinceSelectPartner' + index)
@@ -64,7 +68,7 @@ function getAdminCodePartner(index) {
 }
 
 function addMorePartners(obj) {
-  $('#addMorepartners ul.list-unstyled > li').each(function(i) {
+  $('#addMorepartners ul.list-unstyled > li').each(function (i) {
     let id = i == 0 ? '' : i;
 
     if (
@@ -88,6 +92,19 @@ function addMorePartners(obj) {
 
       if ($('#partnerscontactname' + id).val() != '')
         obj.partners[i].name = $('#partnerscontactname' + id).val();
+
+      let suffix = $('#partnerssuffix').val();
+      let first = suffix;
+      if (suffix != '') {
+        let suffixes = $(
+          'input[data-for="partners-suffixes' + id + '"][type="text"]'
+        ).toArray();
+        for (let item in suffixes) {
+          let val = suffixes[item].value;
+          if (!suffix.includes(',' + val) && val != first) suffix += ',' + val;
+        }
+        obj.partners[i].email_suffix = "'" + suffix + "'";
+      }
     }
   });
 }
@@ -97,7 +114,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
 
   if (obj.partners && obj.partners.length > 0) {
     let newAdmins = [];
-    obj.partners.forEach(function(partner, index) {
+    obj.partners.forEach(function (partner, index) {
       let id = index == 0 ? '' : index;
       if ($('#partners' + id).val() == '') {
         if (newAdmins[$('#orgLevelPartner' + id).val()] == null)
@@ -108,7 +125,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
       }
     });
 
-    Object.keys(newAdmins).forEach(function(orgLevel) {
+    Object.keys(newAdmins).forEach(function (orgLevel) {
       let promise = fileWriter
         .mergePartnerAdminFile(
           `_data/administrations/${orgLevel}.yml`,
@@ -116,10 +133,10 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
           '',
           'code'
         )
-        .then(result => {
+        .then((result) => {
           config.body.files[config.body.files.length] = {
             path: `_data/administrations/${orgLevel}.yml`,
-            content: '---\n' + jsyaml.dump(result)
+            content: '---\n' + jsyaml.dump(result),
           };
         });
 
@@ -135,20 +152,29 @@ function getNewAdminPartnerObject(index) {
     code: getAdminCodePartner(index),
     name: {
       en: $('#enpartnersname' + index).val(),
-      fr: $('#frpartnersname' + index).val()
-    }
+      fr: $('#frpartnersname' + index).val(),
+    },
   };
 
   // Optional fields
   let province = $('#provinceSelectPartner' + index).val();
   if (province != '') adminObj.provinceCode = province;
-
+  let suffix = $('#partnerssuffix').val();
+  if (suffix != '') {
+    let suffixes = $(
+      'input[data-for="partners-suffixes' + index + '"][type="text"]'
+    ).toArray();
+    for (let item in suffixes) {
+      suffix += ',' + suffixes[item].value;
+    }
+    adminObj.email_suffix = suffix;
+  }
   return adminObj;
 }
 
 function fillPartnersField(obj) {
   if (obj.partners)
-    obj.partners.forEach(function(partner, i) {
+    obj.partners.forEach(function (partner, i) {
       let id;
       if (i == 0) id = '';
       else {
@@ -163,9 +189,7 @@ function fillPartnersField(obj) {
 }
 
 function getmoreIndex(element) {
-  let nb = $(element)
-    .closest('li')
-    .attr('data-index');
+  let nb = $(element).closest('li').attr('data-index');
   return nb != 0 ? nb : '';
 }
 
@@ -173,24 +197,21 @@ function selectPartners(select) {
   let adminCode = $(select).val();
   let id = getmoreIndex(select);
   if (adminCode != '') {
-    $.getJSON(
-      'https://canada-ca.github.io/ore-ero/administrations.json',
-      function(result) {
-        let admin = getAdminObjectForPartner(result, adminCode);
-        showFieldsPartner(id, false);
-        $('#orgLevelPartner' + id).val(admin.level);
-        if (admin.values.provinceCode != undefined) {
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', false)
-            .val(admin.values.provinceCode);
-        } else
-          $('#provinceSelectPartner' + id)
-            .prop('disabled', true)
-            .val('');
-        $('#enpartnersname' + id).val(admin.values.name.en);
-        $('#frpartnersname' + id).val(admin.values.name.fr);
-      }
-    );
+    $.getJSON('../administrations.json', function (result) {
+      let admin = getAdminObjectForPartner(result, adminCode);
+      showFieldsPartner(id, false);
+      $('#orgLevelPartner' + id).val(admin.level);
+      if (admin.values.provinceCode != undefined) {
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', false)
+          .val(admin.values.provinceCode);
+      } else
+        $('#provinceSelectPartner' + id)
+          .prop('disabled', true)
+          .val('');
+      $('#enpartnersname' + id).val(admin.values.name.en);
+      $('#frpartnersname' + id).val(admin.values.name.fr);
+    });
   } else {
     hideFieldsPartner(id);
   }
@@ -208,10 +229,7 @@ function hideFieldsPartner(id) {
 }
 
 function hideFieldPartner(element) {
-  element
-    .prop('disabled', false)
-    .parent('.form-group')
-    .hide();
+  element.prop('disabled', false).parent('.form-group').hide();
 }
 
 function resetFieldsPartner(id) {
@@ -223,6 +241,8 @@ function resetFieldsPartner(id) {
   $('#frpartnersname' + id).val('');
   $('#partnerscontactname' + id).val('');
   $('#partnerscontactemail' + id).val('');
+  $('#partnerssuffix' + id).val('');
+  $('#partners-suffixes' + id).remove();
 }
 
 function showFieldsPartner(id, full) {
@@ -295,7 +315,7 @@ function getAdminObjectForPartner(obj, admin) {
     'provincial',
     'municipal',
     'aboriginal',
-    'others'
+    'others',
   ];
 
   for (let i = 0, l1 = administrations.length; i < l1; i++)
@@ -303,7 +323,7 @@ function getAdminObjectForPartner(obj, admin) {
       if (obj[administrations[i]][j].code == admin)
         return {
           level: administrations[i],
-          values: obj[administrations[i]][j]
+          values: obj[administrations[i]][j],
         };
 }
 
@@ -315,3 +335,18 @@ function resetPartners() {
   $('.btn-tabs-more-remove').addClass('invisible');
   $('#partnersNewAdmin').addClass('hide');
 }
+/*eslint-disable no-unused-vars*/
+function partnersaddMoreSuffixes(value) {
+  let id = getmoreIndex($('#' + value));
+  $(`<div id="${
+    'partners-suffixes' + id
+  }" class="control-group additional-suffixes input-group col-xs-2 mrgn-tp-md">
+        <input type="text"  name="suffix" data-for="${
+          'partners-suffixes' + id
+        }" class="form-control" required="required">
+        <div class="input-group-btn">
+          <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+      </div>`).appendTo($('#partnerssuffix' + id).parent());
+}
+/*eslint-enable no-unused-vars*/

@@ -4,7 +4,7 @@
 This folder contains all the data used to generate the [Open Resource Exchange Website](https://canada-ca.github.io/ore-ero/en/index.html).
 
 See [Documentation](https://canada-ca.github.io/ore-ero/en/docs.html) for how to update and contribute to data using the following forms:
- - The [Open Design Resource Form](https://canada-ca.github.io/ore-ero/en/open-design-form.html)
+ - The [Open Design Form](https://canada-ca.github.io/ore-ero/en/open-design-form.html)
  - The [Open Source Code Form](https://canada-ca.github.io/ore-ero/en/open-source-code-form.html)
  - The [Open Source Software Form](https://canada-ca.github.io/ore-ero/en/open-source-software-form.html)
  - The [Open Standard Form](https://canada-ca.github.io/ore-ero/en/open-standard-form.html)
