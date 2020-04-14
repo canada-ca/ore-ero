@@ -77,6 +77,13 @@ nav:
     link:
       en: ./stats.html
       fr: ./stats.html
+  emergency:
+    en: Emergency Response
+    fr: Réponse d'urgence
+    link:
+      en: ./open-emergency-response.html
+      fr: ./response-durgence-ouvert.html
+
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada
