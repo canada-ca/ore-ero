@@ -113,7 +113,7 @@
             {%- assign govLevel = govLevels[0] -%}
             {%- for admin in govLevels[1] -%}
               {%- for release in admin[1].releases -%}
-              {%- if release.tags.en contains site.active_emergency_name -%}
+              {%- if release.tags.en contains site.active_emergency_name or release.tags.en contains site.high_value_tag -%}
               <tr>
                 {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
                 <td>{{ administration[0].name[page.lang] }}</td>
@@ -145,7 +145,7 @@
 
         {%- for softwares in site.data.software -%} 
           {%- assign software = softwares[1] -%}
-          {%- if software.tags.en contains site.active_emergency_name -%}
+          {%- if software.tags.en contains site.active_emergency_name or software.tags.en contains site.high_value_tag -%}
         <tr>
             <td>
                 {%- for administration in software.administrations -%}

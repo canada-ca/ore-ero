@@ -10,8 +10,9 @@ wet_cdts_version: "v4_0_30"
 
 active_emergency: true
 active_emergency_name: "COVID-19"
+high_value_tag: "BCP-PCA"
 
-data_tag: "Dataset"
+exludeTag: "Exclude-Exclure"
 
 # Build settings
 markdown: kramdown
