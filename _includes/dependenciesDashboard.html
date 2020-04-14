@@ -109,8 +109,8 @@
               {%- assign govLevel = govLevels[0] -%}
               {%- for admin in govLevels[1] -%}
                 {%- for release in admin[1].releases -%}
-                {%- for dependencySet in release.dependencies -%}
-                {%- for dependency in dependencySet.values -%}
+                {%- for set in release.dependencySet -%}
+                {%- for dependency in set.dependencies -%}
                 <tr>
                   {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
                   <td>{{ administration[0].name[page.lang] }}</td>
@@ -119,8 +119,8 @@
                   <td>
                     {{ dependency }}
                   </td>
-                  <td>{{ dependencySet.type }}</td>
-                  <td>{{ dependencySet.origin }}</td>
+                  <td>{{ set.type }}</td>
+                  <td>{{ set.origin }}</td>
                   <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
                   </tr>
                   {%- endfor -%}

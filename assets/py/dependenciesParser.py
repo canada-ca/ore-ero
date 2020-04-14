@@ -31,7 +31,10 @@ def updateData(dependencies):
         for admin in admins:
             with open("./_data/dependencies" + "/" + level + "/" + admin["adminCode"] + ".yaml", 'w') as file:
                 file.write("---\n")
-                file.write("adminCode: " + admin["adminCode"] + "\n")
+                if admin["adminCode"] == "on":
+                    file.write("adminCode: '" + admin["adminCode"] + "'\n")
+                else:
+                    file.write("adminCode: " + admin["adminCode"] + "\n")
                 file.write("releases: ")
                 for release in admin["releases"]:
                     file.write("\n" + indent(1) + "- name: ")

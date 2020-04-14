@@ -1,5 +1,5 @@
 ---
-adminCode: on
+adminCode: 'on'
 releases: 
   - name: 
       en: Ontario COVID-19 self-assessment
