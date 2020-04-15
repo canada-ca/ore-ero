@@ -5,34 +5,15 @@
           <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
           <form class="wb-tables-filter" data-bind-to="dataset-filter">
 
-        <div class=row>
-            <div class="form-group col-md-6">
-              <label for="dt_govLevel">{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</label>
-              <select class="form-control" id="dt_govLevel" name="dt_govLevel" data-column="5">
-                <option value="">&nbsp;</option>
-                {%- for govLevel in site.data.i18n.administrations -%}
-                <option value="{{ govLevel[1].code }}">{{ govLevel[1][page.lang] }}</option>
-                {%- endfor -%}
-              </select>
-            </div>
-      
-        </div>
         <div class="row">
             <div class="form-group col-md-6">
               <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
               <select class="form-control" id="dt_department" name="dt_department" data-column="0">
                 <option value="">&nbsp;</option>
-                {%- assign admin_arr = "" | split: ',' -%}
-                {%- for govLevels in site.data.dependencies -%}
-                  {%- assign govLevel = govLevels[0] -%}
-                  {% for admin in govLevels[1] %}
-                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
-                    {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
+                {%- for govLevels in site.data.administrations -%}
+                  {%- for admin in govLevels[1] -%}
+                    <option value="'{{ admin.code }}'">{{ admin.name[page.lang] }}</option>
                   {% endfor %}
-                {%- endfor -%}
-                {%- assign admin_arr = admin_arr | sort -%}
-                {%- for admin in admin_arr -%}
-                  <option value="{{ admin }}">{{ admin }}</option>
                 {%- endfor -%}
               </select>
             </div>
@@ -42,7 +23,7 @@
                 <select class="form-control" id="dt_name" name="dt_name" data-column="1">
                   <option value="">&nbsp;</option>
                   {%- assign name_arr = "" | split: ',' -%}
-                  {%- for govLevels in site.data.dependencies -%}
+                  {%- for govLevels in site.data.code -%}
                     {%- for admin in govLevels[1] -%}
                       {%- for release in admin[1].releases -%}
                       {%- assign name_arr = name_arr | push: release.name[page.lang] -%}
@@ -50,7 +31,7 @@
                     {%- endfor -%}
                   {%- endfor -%}
                   {%- for name in name_arr -%}
-                  <option value="{{ name }}">{{ name }}</option>
+                  <option value="'{{ name }}'">{{ name }}</option>
                   {%- endfor -%}
                   </select>
               </div>
@@ -93,7 +74,7 @@
       
       <!-- Data Table -->
       <div class="col-md-12 mrgn-bttm-lg">
-        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{ "columnDefs": [{"targets": [0, 5], "visible": false}], "paging": true}'>
+        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{ "columnDefs": [{"targets": [0, 1], "visible": false}], "paging": true}'>
           <thead>
             <tr>
               <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
@@ -101,32 +82,35 @@
               <th>{{ site.data.i18n.tables.dependency[page.lang] }}</th>
               <th>{{ site.data.i18n.tables.dependencyType[page.lang] }}</th>
               <th>{{ site.data.i18n.tables.dependencyOrigin[page.lang] }}</th>
-              <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
             </tr>
           </thead>
           <tbody>
-            {%- for govLevels in site.data.dependencies -%}
-              {%- assign govLevel = govLevels[0] -%}
-              {%- for admin in govLevels[1] -%}
-                {%- for release in admin[1].releases -%}
-                {%- for set in release.dependencySet -%}
-                {%- for dependency in set.dependencies -%}
+            {%- for dependency in site.data.dependencies -%}
                 <tr>
-                  {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[1].adminCode -%}
-                  <td>{{ administration[0].name[page.lang] }}</td>
-      
-                  <td>{{ release.name[page.lang] }}</td>
+                  {%- assign admin_arr = "" | split: ',' -%}
+                  {%- for admin in dependency.admins -%}
+                    {%- assign admin_arr = admin_arr | push: admin -%}
+                  {%- endfor -%}
                   <td>
-                    {{ dependency }}
+                    {%- for admin in admin_arr -%}
+                    '{{ admin }}'
+                    {%- endfor -%}
                   </td>
-                  <td>{{ set.type }}</td>
-                  <td>{{ set.origin }}</td>
-                  <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
+                  {%- assign name_arr = "" | split: ',' -%}
+                  {%- for name in dependency.projects -%}
+                    {%- assign name_arr = name_arr | push: name.projectName[page.lang] -%}
+                  {%- endfor -%}
+                  <td>
+                    {%- for name in name_arr -%}
+                    '{{ name }}'
+                    {%- endfor -%}
+                  </td>
+                  <td>
+                    {{ dependency.dependency }}
+                  </td>
+                  <td>{{ dependency.type }}</td>
+                  <td>{{ dependency.origin }}</td>
                   </tr>
-                  {%- endfor -%}
-                  {%- endfor -%}
-                {%- endfor -%}
-              {%- endfor -%}
             {%- endfor -%}
           </tbody>
         </table>

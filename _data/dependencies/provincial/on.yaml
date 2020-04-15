@@ -1,7 +1,0 @@
----
-adminCode: 'on'
-releases: 
-  - name: 
-      en: Ontario COVID-19 self-assessment
-      fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    dependencySet: []

@@ -25,243 +25,297 @@ def createDirectory(dir, path):
         os.mkdir(path + "/" + dir)
 
 def updateData(dependencies):
-    createDirectory("dependencies", "./_data")
-    for level, admins in dependencies.items():
-        createDirectory(level, "./_data/dependencies")
-        for admin in admins:
-            with open("./_data/dependencies" + "/" + level + "/" + admin["adminCode"] + ".yaml", 'w') as file:
-                file.write("---\n")
-                if admin["adminCode"] == "on":
-                    file.write("adminCode: '" + admin["adminCode"] + "'\n")
-                else:
-                    file.write("adminCode: " + admin["adminCode"] + "\n")
-                file.write("releases: ")
-                for release in admin["releases"]:
-                    file.write("\n" + indent(1) + "- name: ")
-                    file.write("\n" + indent(3) + "en: " + release["name"]["en"])
-                    file.write("\n" + indent(3) + "fr: " + release["name"]["fr"])
-                    file.write("\n" + indent(2) + "dependencySet: ")
-                    if release["dependencySet"] == []:
-                        file.write("[]")
-                    else: 
-                        for dependencySet in release["dependencySet"]:
-                            file.write("\n" + indent(3) + "- origin: " + dependencySet["origin"])
-                            file.write("\n" + indent(4) + "type: " + dependencySet["type"])
-                            file.write("\n" + indent(4) + "dependencies: ")
-                            if dependencySet["dependencies"] == []:
-                                file.write("[]")
-                            else: 
-                                for dependency in dependencySet["dependencies"]:
-                                    if '@' in dependency:
-                                        file.write("\n" + indent(5) + "- '" + dependency + "'")
-                                    else: file.write("\n" + indent(5) + "- " + dependency)
-                file.write("\n")
+    with open("./_data/dependencies.yaml", 'w') as file:
+        file.write("---")
+        for value in dependencies:
+            if '@' in value["dependency"]:
+                file.write("\n" + "- dependency: '" + value["dependency"] + "'")
+            else: 
+                file.write("\n" + "- dependency: " + value["dependency"])
+            
+            file.write("\n" + indent(1) + "origin: " + value["origin"])
+            file.write("\n" + indent(1) + "type: " + value["type"])
+            file.write("\n" + indent(1) + "admins: ")
+            if value["admin"] == []:
+                file.write("[]")
+            else: 
+                for admin in value["admin"]:
+                    if admin == "on":
+                        file.write("\n" + indent(2) + "- '" + admin + "'")
+                    else:
+                        file.write("\n" + indent(2) + "- " + admin)
+            file.write("\n" + indent(1) + "projects: ")
+            if value["project"] == []:
+                file.write("[]")
+            else: 
+                for name in value["project"]:
+                    file.write("\n" + indent(2) + "- projectName: ")
+                    file.write("\n" + indent(4) + "en: " + name["en"])
+                    file.write("\n" + indent(4) + "fr: " + name["fr"])
+        file.write("\n")
 
-def parsePackageLock(name, depObj):
+def parsePackageLock(name, depObj, repo):
     packagelock = urllib.request.urlopen(name)
     data = json.loads(packagelock.read())
     if data.get("dependencies") is not None:
-        coreNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "core"):
-                coreNpm = True                
-                for key in data["dependencies"].keys(): 
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not coreNpm:
-            coreDeps = {
-                "origin": "npm",
-                "type": "core",
-                "dependencies": []
-            }        
-            for key in data["dependencies"].keys(): 
-                coreDeps["dependencies"].append(key)
-            depObj.append(coreDeps)
+        for key in data["dependencies"].keys():
+            coreNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "core"):                
+                    if key == val.get("dependency"):
+                        coreNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not coreNpm:
+                coreDep = {
+                    "origin": "npm",
+                    "type": "core",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(coreDep)
     if data.get("devDependencies") is not None:
-        devNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "dev"):
-                devNpm = True                
-                for key in data["devDependencies"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not devNpm:
-            devDeps = {
-                "origin": "npm",
-                "type": "dev",
-                "dependencies": []
-            }
-            for key in data["devDependencies"].keys(): 
-                devDeps["dependencies"].append(key)
-            depObj.append(devDeps)
+        for key in data["devDependencies"].keys():
+            devNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "dev"):                
+                    if key == val.get("dependency"):
+                        devNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not devNpm:
+                devDep = {
+                    "origin": "npm",
+                    "type": "dev",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(devDep)
     if data.get("peerDependencies") is not None:
-        peerNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "peer"):
-                peerNpm = True                
-                for key in data["peerDependencies"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not peerNpm:
-            peerDeps = {
-                "origin": "npm",
-                "type": "peer",
-                "dependencies": []
-            }
-            for key in data["peerDependencies"].keys(): 
-                peerDeps["dependencies"].append(key)
-            depObj.append(peerDeps)
+        for key in data["peerDependencies"].keys():
+            peerNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "peer"):                
+                    if key == val.get("dependency"):
+                        peerNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not peerNpm:
+                peerDep = {
+                    "origin": "npm",
+                    "type": "peer",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(peerDep)
 
-def parsePackage(name, depObj):
+def parsePackage(name, depObj, repo):
     package = urllib.request.urlopen(name)
     data = json.loads(package.read())
     if data.get("dependencies") is not None:
-        coreNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "core"):
-                coreNpm = True                
-                for key in data["dependencies"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not coreNpm:
-            coreDeps = {
-                "origin": "npm",
-                "type": "core",
-                "dependencies": []
-            }        
-            for key in data["dependencies"].keys(): 
-                coreDeps["dependencies"].append(key)
-            depObj.append(coreDeps)
-       
+        for key in data["dependencies"].keys():
+            coreNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "core"):                
+                    if key == val.get("dependency"):
+                        coreNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not coreNpm:
+                coreDep = {
+                    "origin": "npm",
+                    "type": "core",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(coreDep)
     if data.get("devDependencies") is not None:
-        devNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "dev"):
-                devNpm = True                
-                for key in data["devDependencies"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not devNpm:
-            devDeps = {
-                "origin": "npm",
-                "type": "dev",
-                "dependencies": []
-            }
-            for key in data["devDependencies"].keys(): 
-                devDeps["dependencies"].append(key)
-            depObj.append(devDeps)
+        for key in data["devDependencies"].keys():
+            devNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "dev"):                
+                    if key == val.get("dependency"):
+                        devNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not devNpm:
+                devDep = {
+                    "origin": "npm",
+                    "type": "dev",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(devDep)
     if data.get("peerDependencies") is not None:
-        peerNpm = False
-        for val in depObj:
-            if (val.get("origin") == "npm" and val.get("type") == "peer"):
-                peerNpm = True                
-                for key in data["peerDependencies"].keys(): 
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not peerNpm:
-            peerDeps = {
-                "origin": "npm",
-                "type": "peer",
-                "dependencies": []
-            }
-            for key in data["peerDependencies"].keys(): 
-                peerDeps["dependencies"].append(key)
-            depObj.append(peerDeps)
+        for key in data["peerDependencies"].keys():
+            peerNpm = False
+            for val in depObj:
+                if (val.get("origin") == "npm" and val.get("type") == "peer"):                
+                    if key == val.get("dependency"):
+                        peerNpm = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not peerNpm:
+                peerDep = {
+                    "origin": "npm",
+                    "type": "peer",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(peerDep)
 
-def parseRequirements(name, depObj):
+def parseRequirements(name, depObj, repo):
     requirements = requests.get(name)
     data = requirements.text
     if data is not None:
-        corepypi = False
-        for val in depObj:
-            if (val.get("origin") == "pypi" and val.get("type") == "core"):
-                corepypi = True                
-                for dep in data.splitlines():
-                    key = dep.split("=")[0].split("<")[0].split(">")[0]
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not corepypi:
-            coreDeps = {
-                "origin": "pypi",
-                "type": "core",
-                "dependencies": []
-            }        
-            for dep in data.splitlines():
-                coreDeps["dependencies"].append(dep.split("=")[0].split("<")[0].split(">")[0])
-            depObj.append(coreDeps)
-       
+        for dep in data.splitlines():
+            key = dep.split("=")[0].split("<")[0].split(">")[0]
+            corepypi = False
+            for val in depObj:
+                if (val.get("origin") == "pypi" and val.get("type") == "core"):                
+                    if key == val.get("dependency"):
+                        corepypi = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not corepypi:
+                coreDep = {
+                    "origin": "pypi",
+                    "type": "core",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(coreDep)
             
-def parseComposer(name, depObj):
+def parseComposer(name, depObj, repo):
     composer = urllib.request.urlopen(name)
     data = json.loads(composer.read())
     if data.get("require") is not None:
-        corecomposer = False
-        for val in depObj:
-            if (val.get("origin") == "composer" and val.get("type") == "core"):
-                corecomposer = True                 
-                for key in data["require"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not corecomposer:
-            coreDeps = {
-                "origin": "composer",
-                "type": "core",
-                "dependencies": []
-            }        
-            for key in data["require"].keys(): 
-               coreDeps["dependencies"].append(key)
-            depObj.append(coreDeps)
+        for key in data["require"].keys():
+            corecomposer = False
+            for val in depObj:
+                if (val.get("origin") == "composer" and val.get("type") == "core"):                
+                    if key == val.get("dependency"):
+                        corecomposer = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not corecomposer:
+                coreDep = {
+                    "origin": "composer",
+                    "type": "core",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(coreDep)
     if data.get("require-dev") is not None:
-        devcomposer = False
-        for val in depObj:
-            if (val.get("origin") == "composer" and val.get("type") == "dev"):
-                devcomposer = True                 
-                for key in data["require-dev"].keys():
-                    if key not in val["dependencies"]:
-                        val["dependencies"].append(key)
-                break
-        if not devcomposer:
-            devDeps = {
-                "origin": "composer",
-                "type": "dev",
-                "dependencies": []
-            }        
-            for key in data["require-dev"].keys(): 
-               devDeps["dependencies"].append(key)
-            depObj.append(devDeps)
+        for key in data["require-dev"].keys():
+            devcomposer = False
+            for val in depObj:
+                if (val.get("origin") == "composer" and val.get("type") == "dev"):                
+                    if key == val.get("dependency"):
+                        devcomposer = True
+                        if repo[3] not in val["admin"]:
+                            val["admin"].append(repo[3])
+                        listed = False
+                        for name in val["project"]:
+                            if repo[1] == name.get("en"):
+                                listed = True
+                        if listed == False:
+                            val["project"].append({"en": repo[1], "fr": repo[2]})
+            if not devcomposer:
+                devDep = {
+                    "origin": "composer",
+                    "type": "dev",
+                    "dependency": key,
+                    "admin": [repo[3]],
+                    "project": [{"en": repo[1], "fr": repo[2]}]
+                }        
+                depObj.append(devDep)
 
-def parseGemfile(name, depObj):
+def parseGemfile(name, depObj, repo):
     gemfile = requests.get(name)
     data = gemfile.text
     if data is not None:
-        corebundler = False
-        for val in depObj:
-            if (val.get("origin") == "bundler" and val.get("type") == "core"):
-                corebundler = True                 
-                for dep in data.splitlines():
-                    if (dep.startswith("gem")):
-                        key = dep.split("'")[1]
-                        if key not in val["dependencies"]:
-                            val["dependencies"].append(key)
-                break
-        if not corebundler:
-            coreDeps = {
-                "origin": "bundler",
-                "type": "core",
-                "dependencies": []
-            }        
-            for dep in data.splitlines():
-                if (dep.startswith("gem")):
-                    coreDeps["dependencies"].append(dep.split("'")[1])
-            depObj.append(coreDeps)
+        for dep in data.splitlines():
+            if (dep.startswith("gem")):
+                key = dep.split("'")[1]
+                corebundler = False
+                for val in depObj:
+                    if (val.get("origin") == "bundler" and val.get("type") == "core"):                
+                        if key == val.get("dependency"):
+                            corebundler = True
+                            if repo[3] not in val["admin"]:
+                                val["admin"].append(repo[3])
+                            listed = False
+                            for name in val["project"]:
+                                if repo[1] == name.get("en"):
+                                    listed = True
+                            if listed == False:
+                                val["project"].append({"en": repo[1], "fr": repo[2]})
+                if not corebundler:
+                    coreDep = {
+                        "origin": "bundler",
+                        "type": "core",
+                        "dependency": key,
+                        "admin": [repo[3]],
+                        "project": [{"en": repo[1], "fr": repo[2]}]
+                    }        
+                    depObj.append(coreDep)
             
 def makePath(repo, name, branch):
     divName = name.split("/")
@@ -300,23 +354,8 @@ def defaultBranch(url):
     return "", ""
     
 def getDependencies(repos):
-    dependenciesObject = {
-        "aboriginal": [],
-        "federal": [],
-        "municipal": [],
-        "others": [],
-        "provincial": []
-    }
+    dependenciesObject = []
     for repo in repos:
-        release = {
-            "name": {
-                "en": repo[1],
-                "fr": repo[2]
-            },
-            "dependencySet": [
-
-            ]
-        }
         path = defaultBranch(repo[0])
         response = requests.get(repo[0] + path[0])
         if response is not None:
@@ -325,32 +364,17 @@ def getDependencies(repos):
                     for name in zip.namelist():
                         filepath = makePath(repo[0], name, path[1])
                         if ("/package-lock.json" in name):
-                           parsePackageLock(filepath, release["dependencySet"])
+                           parsePackageLock(filepath, dependenciesObject, repo)
                         if ("/package.json" in name):
-                            parsePackage(filepath, release["dependencySet"])
+                            parsePackage(filepath, dependenciesObject, repo)
                         if ("/composer.json" in name):
-                            parseComposer(filepath, release["dependencySet"])
+                            parseComposer(filepath, dependenciesObject, repo)
                         if ("/Gemfile" in name):
-                            parseGemfile(filepath, release["dependencySet"])
+                            parseGemfile(filepath, dependenciesObject, repo)
                         if ("/requirements.txt" in name):
-                            parseRequirements(filepath, release["dependencySet"])
+                            parseRequirements(filepath, dependenciesObject, repo)
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])
-        adminSet = False
-        for val in dependenciesObject[repo[4]]:
-            if val.get("adminCode") == repo[3]:
-                val["releases"].append(release)
-                adminSet = True
-                break
-        if not adminSet:
-            admin = {
-                "adminCode": repo[3],
-                "releases": [
-
-                ] 
-            }
-            admin["releases"].append(release)
-            dependenciesObject[repo[4]].append(admin)
     updateData(dependenciesObject)
 
 def getRepositories():
