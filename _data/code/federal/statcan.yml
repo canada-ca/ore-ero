@@ -71,3 +71,34 @@ releases:
       - PHP
       - HTML
     status: Maintained
+  - contact:
+      email: noreply@canada.ca
+      name: 'https://github.com/CSBP-CPSE/LODE-ECDO/issues/new'
+    date:
+      created: '2019-02-01'
+      metadataLastUpdated: '2020-01-31'
+    description:
+      whatItDoes:
+        en: >-
+          The Linkable Open Data Environment (LODE) is an exploratory project of the Data Exploration and Integration Lab (DEIL), at the Centre for Special Business Projects (CSBP), Statistics Canada. The project is currently in development.
+        fr: >-
+          ECDO (Environnement de couplage de données ouvertes) est un projet exploratoire du Lab d’exploration et intégration de données (LEID), situé au Centre des Projets Spéciaux sur les Entreprises (CPSE) de Statistique Canada. Le projet est actuellement en développement.
+    category: '43232300'
+    name:
+      en: Linkable Open Data Environment (LODE)
+      fr: Environnement de couplage de données ouvertes (ECDO)
+    licences:
+      - URL:
+          en: 'https://github.com/CSBP-CPSE/LODE-ECDO/blob/master/LICENSE.md'
+          fr: 'https://github.com/CSBP-CPSE/LODE-ECDO/blob/master/LICENSE.md'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/CSBP-CPSE/LODE-ECDO'
+      fr: 'https://github.com/CSBP-CPSE/LODE-ECDO'
+    tags:
+      en:
+        - Dataset
+        - BCP-PCA
+      fr:
+        - Dataset
+        - BCP-PCA
