@@ -2,7 +2,7 @@ class Templates:
     plain = """
     English Message:
     Test message about {EN_NAME}, last updated {LAST_UPDATED}
-    "https://code.ouvert.canada.ca/en/index.html"
+    "https://code.open.canada.ca/en/index.html"
 
     Message en français:
     Message test concernant {FR_NAME}, mise à jour la plus récente {LAST_UPDATED}
@@ -11,7 +11,7 @@ class Templates:
     html = """
     <h4>English Message:</h4>
     <p>Test message about {EN_NAME}, last updated {LAST_UPDATED} </p>
-    <p><a href="https://code.ouvert.canada.ca/en/index.html">Link to site</a></p>
+    <p><a href="https://code.open.canada.ca/en/index.html">Link to site</a></p>
 
     <h4>Message en français:</h4>
     <p>Message test concernant {FR_NAME}, mise à jour la plus récente {LAST_UPDATED} </p>
