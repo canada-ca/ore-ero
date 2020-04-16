@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The purpose of the guardrails is to ensure that departments and agencies
+      are implementing a preliminary baseline set of controls within their
+      cloud-based environments. 
+    fr: >-
+      Le présent projet met l’accent sur un ensemble préliminaire de mesures de
+      sécurité de base pour veiller à ce que l’environnement des services
+      d’informatique en nuage ait un ensemble minimal.
+designTypes:
+  - type:
+      en: Security & Privacy
+      fr: Sécurité et confidentialité
+homepageURL:
+  en: 'https://canada-ca.github.io/cloud-guardrails/'
+  fr: 'https://canada-ca.github.io/cloud-guardrails/'
+licences:
+  - URL:
+      en: 'https://github.com/canada-ca/cloud-guardrails/blob/master/LICENSE'
+      fr: 'https://github.com/canada-ca/cloud-guardrails/blob/master/LICENSE'
+    spdxID: MIT
+name:
+  en: GC Cloud Guardrails
+  fr: GC Mesures de sécurité du nuage
+administrations:
+  - adminCode: tbs-sct
+    uses:
+      - contact:
+          email: ZZTBSCYBERS@tbs-sct.gc.ca
+          name: TBS-Cyber Security/SCT-Cybersécurité
+        date:
+          started: '2019-11-27'
+          metadataLastUpdated: '2020-02-27'

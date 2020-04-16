@@ -5,7 +5,7 @@ admin:
   code: str()
   provinceCode: enum('ab', 'bc', 'mb', 'nb', 'nl', 'nt', 'ns', 'nu', 'on', 'pe', 'qc', 'sk', 'yt', required=False)
   name: include('lang')
-
+  email_suffix: str(required=False)
 lang:
   en: str()
   fr: str()

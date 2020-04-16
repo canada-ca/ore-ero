@@ -3,3 +3,4 @@ username:
   rule: names
 email:
   type: email
+  rule: valid-emailsuffix

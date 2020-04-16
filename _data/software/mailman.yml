@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Mailman is free software for managing electronic mail discussion and
+      e-newsletter lists.
+    fr: >-
+      Mailman est un logiciel gratuit pour gérer les discussions par courrier
+      électronique et les listes de bulletins électroniques.
+category: '43233500'
+homepageURL:
+  en: 'https://www.list.org/'
+  fr: 'https://www.list.org/'
+licences:
+  - URL:
+      en: 'https://gitlab.com/mailman/mailman/blob/master/COPYING'
+      fr: 'https://gitlab.com/mailman/mailman/blob/master/COPYING'
+    spdxID: GPL-3.0-or-later
+name:
+  en: Mailman
+  fr: Mailman
+tags:
+  en:
+    - Mailing List
+  fr:
+    - Liste de diffusion
+administrations:
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-31'

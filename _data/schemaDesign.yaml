@@ -10,12 +10,13 @@ design:
   homepageURL: include('lang')
   licences: list(include('licence'))
   name: include('lang')
-  status: str(required=False)
   administrations: list(include('administration'))
 
 licence:
   URL: include('lang')
   spdxID: str()
+  level: include('lang', required=False)
+  scope: include('lang', required=False)
   
 designType:
   type: include('lang')
@@ -23,7 +24,7 @@ designType:
 administration:
   adminCode: str()
   uses: list(include('use'))
-
+  
 use:
   contact:
     email: str()
@@ -32,6 +33,7 @@ use:
     started: str()
     metadataLastUpdated: str()
   team: include('lang', required=False)
+  status: str(required=False)
 
 lang:
   en: str()
