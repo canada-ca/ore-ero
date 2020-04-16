@@ -78,10 +78,10 @@ nav:
       en: ./stats.html
       fr: ./stats.html
   emergency:
-    en: Emergency Response
+    en: Urgent Response
     fr: Réponse d'urgence
     link:
-      en: ./open-emergency-response.html
+      en: ./open-urgent-response.html
       fr: ./response-durgence-ouvert.html
 
   Canada:
