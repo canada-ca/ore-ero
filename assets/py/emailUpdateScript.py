@@ -33,21 +33,20 @@ def sendEmails(emailData):
         ##Replace with data[0] to actually send the mails to the right place
         email['to'] = "Simon_moreau@hotmail.ca"
         email['subject'] = Templates.getSubject() 
-        plainVersion = MIMEText(Templates.plainFormat(data[1], data[2], data[3]), 'plain')
+        plainVersion = MIMEText(Templates.plainFormat(data[1], data[2], data[3], data[4]), 'plain')
         plainVersion.add_header("Content-Disposition",
         "attachment; filename= Plain Text Version.txt")
-        htmlVersion = MIMEText(Templates.htmlFormat(data[1], data[2], data[3]), 'html')
+        htmlVersion = MIMEText(Templates.htmlFormat(data[1], data[2], data[3], data[4]), 'html')
         email.attach(htmlVersion)
         email.attach(plainVersion)
         server.send_message(email)
         del email
         ##limit how many emails are sent during testing
-        break
     server.quit()
         
 
 def checkCodeEmails():
-    codeDb = urllib.request.urlopen("https://canada-ca.github.io/ore-ero/code.json")
+    codeDb = urllib.request.urlopen("https://code.open.canada.ca/code.json")
     data = json.loads(codeDb.read())
     codeData = []
     if data is not None:
@@ -55,14 +54,16 @@ def checkCodeEmails():
             for admin in level.values():
                 for release in admin["releases"]:
                     if (datetime.strptime(release["date"]["metadataLastUpdated"], '%Y-%m-%d').date()
-                    + timedelta(days=maxDaysNoUpdate) < date.today()): 
+                    + timedelta(days=maxDaysNoUpdate) < date.today()):
+                        if "noreply" not in release["contact"]["email"]:
                             codeData.append((release["contact"]["email"], release["name"]["en"],
-                            release["name"]["fr"], release["date"]["metadataLastUpdated"]))
+                            release["name"]["fr"], release["date"]["metadataLastUpdated"],
+                            "code"))
     return codeData
         
 
 def checkDesignEmails():
-    designDb = urllib.request.urlopen("https://canada-ca.github.io/ore-ero/design.json")
+    designDb = urllib.request.urlopen("https://code.open.canada.ca/design.json")
     data = json.loads(designDb.read())
     designData = []
     if data is not None:
@@ -70,13 +71,15 @@ def checkDesignEmails():
             for administration in project["administrations"]:
                 for use in administration["uses"]: 
                     if (datetime.strptime(use["date"]["metadataLastUpdated"], '%Y-%m-%d').date()
-                    + timedelta(days=maxDaysNoUpdate) < date.today()): 
+                    + timedelta(days=maxDaysNoUpdate) < date.today()):
+                        if "noreply" not in use["contact"]["email"]: 
                             designData.append((use["contact"]["email"], project["name"]["en"],
-                            project["name"]["fr"], use["date"]["metadataLastUpdated"]))
+                            project["name"]["fr"], use["date"]["metadataLastUpdated"],
+                            "design"))
     return designData
 
 def checkSoftwareEmails():
-    softwareDb = urllib.request.urlopen("https://canada-ca.github.io/ore-ero/software.json")
+    softwareDb = urllib.request.urlopen("https://code.open.canada.ca/software.json")
     data = json.loads(softwareDb.read())
     softwareData = []
     if data is not None:
@@ -84,26 +87,30 @@ def checkSoftwareEmails():
             for administration in project["administrations"]:
                 for use in administration["uses"]: 
                     if (datetime.strptime(use["date"]["metadataLastUpdated"], '%Y-%m-%d').date()
-                    + timedelta(days=maxDaysNoUpdate) < date.today()): 
+                    + timedelta(days=maxDaysNoUpdate) < date.today()):
+                        if "noreply" not in use["contact"]["email"]: 
                             softwareData.append((use["contact"]["email"], project["name"]["en"],
-                            project["name"]["fr"], use["date"]["metadataLastUpdated"]))
+                            project["name"]["fr"], use["date"]["metadataLastUpdated"],
+                            "software"))
     return softwareData
 
 def checkStandardEmails():
-    standardDb = urllib.request.urlopen("https://canada-ca.github.io/ore-ero/standard.json")
+    standardDb = urllib.request.urlopen("https://code.open.canada.ca/standard.json")
     data = json.loads(standardDb.read())
     standardData = []
     if data is not None:
         for project in data.values(): 
             for administration in project["administrations"]:
                 if (datetime.strptime(administration["date"]["metadataLastUpdated"], '%Y-%m-%d').date()
-                + timedelta(days=maxDaysNoUpdate) < date.today()): 
-                        standardData.append((administration["contact"]["email"], project["standardAcronym"],
-                        project["standardAcronym"], administration["date"]["metadataLastUpdated"]))
+                + timedelta(days=maxDaysNoUpdate) < date.today()):
+                        if "noreply" not in administration["contact"]["email"]: 
+                            standardData.append((administration["contact"]["email"], project["standardAcronym"],
+                            project["standardAcronym"], administration["date"]["metadataLastUpdated"],
+                            "standard"))
     return standardData
 
 def checkPartnershipEmails():
-    partnershipDb = urllib.request.urlopen("https://canada-ca.github.io/ore-ero/partnership.json")
+    partnershipDb = urllib.request.urlopen("https://code.open.canada.ca/partnership.json")
     data = json.loads(partnershipDb.read())
     partnershipData = []
     if data is not None:
@@ -112,8 +119,10 @@ def checkPartnershipEmails():
                 for project in admin["projects"]:
                     if (datetime.strptime(project["date"]["metadataLastUpdated"], '%Y-%m-%d').date()
                     + timedelta(days=maxDaysNoUpdate) < date.today()): 
+                        if "noreply" not in project["contact"]["email"]:
                             partnershipData.append((project["contact"]["email"], project["name"]["en"],
-                            project["name"]["fr"], project["date"]["metadataLastUpdated"]))
+                            project["name"]["fr"], project["date"]["metadataLastUpdated"],
+                            "partnership"))
     return partnershipData
 
 def checkOutdatedEmails():
