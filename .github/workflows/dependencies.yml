@@ -1,0 +1,12 @@
+nightly:
+    triggers:
+      - schedule:
+        cron: "0 0 * * *"
+        filter:
+          branches:
+            only:
+              - master
+    jobs:
+      - name: Dependencies parser
+        run: ./assets/py/dependenciesParser.py
+        
