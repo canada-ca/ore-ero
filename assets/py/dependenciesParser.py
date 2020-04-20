@@ -385,7 +385,7 @@ if data is not None:
         for admin in admins.values():
             for release in admin["releases"]:
                 repositories.append((release["repositoryURL"]["en"], release["name"]["en"], 
-                release["name"]["fr"], admin["adminCode"], level))
+                release["name"]["fr"], admin["adminCode"]))
 getDependencies(repositories)
 print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
     
