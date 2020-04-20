@@ -10,10 +10,17 @@
               <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
               <select class="form-control" id="dt_department" name="dt_department" data-column="0">
                 <option value="">&nbsp;</option>
-                {%- for govLevels in site.data.administrations -%}
-                  {%- for admin in govLevels[1] -%}
-                    <option value="'{{ admin.code }}'">{{ admin.name[page.lang] }}</option>
+                {%- assign admin_arr = "" | split: ',' -%}
+                {%- for govLevels in site.data.code -%}
+                  {%- assign govLevel = govLevels[0] -%}
+                  {% for admin in govLevels[1] %}
+                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                    {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
                   {% endfor %}
+                {%- endfor -%}
+                {%- assign admin_arr = admin_arr | sort -%}
+                {%- for admin in admin_arr -%}
+                  <option value="{{ admin }}">{{ admin }}</option>
                 {%- endfor -%}
               </select>
             </div>
