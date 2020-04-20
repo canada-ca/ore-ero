@@ -11,7 +11,8 @@ from messageTemplates import Templates
 ###############################################################################
 ##Replace with whichever gmail will be used to send the messages, can use this one for tests
 sender = "scheduledupdatescripttester@gmail.com"
-#App password for the gmail
+#App password for the gmail, for implementation should be kept in a file that isn't included in the git
+#repo, or required as a parameter when you call the script
 password = "koppttrkbyodglmc"
 #Maximum amount of days since last update, half a year default
 maxDaysNoUpdate = 182
@@ -30,8 +31,10 @@ def sendEmails(emailData):
     for data in emailData:
         email = MIMEMultipart()
         email['from'] = sender
-        ##Replace with data[0] to actually send the mails to the right place
-        email['to'] = "Simon_moreau@hotmail.ca"
+        ##Implementation
+        #email['to'] = data[0]
+        ##Any address to test the script
+        #email['to'] = 
         email['subject'] = Templates.getSubject() 
         plainVersion = MIMEText(Templates.plainFormat(data[1], data[2], data[3], data[4]), 'plain')
         plainVersion.add_header("Content-Disposition",
@@ -42,6 +45,7 @@ def sendEmails(emailData):
         server.send_message(email)
         del email
         ##limit how many emails are sent during testing
+        #break
     server.quit()
         
 
