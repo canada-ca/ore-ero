@@ -39,3 +39,15 @@ jobs:
 
     - name: Run HTML5 Validator
       run: html5validator --root _site/
+
+nightly:
+  triggers:
+    - schedule:
+      cron: "0 0 * * *"
+      filter:
+        branches:
+          only:
+            - master
+  jobs:
+    - name: Dependencies parser
+      run: ./assets/py/dependenciesParser.py

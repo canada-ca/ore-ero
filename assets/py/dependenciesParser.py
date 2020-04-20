@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
-import io, json, os, re, schedule, time, yaml
+import io, json, os, re, time, yaml
 import urllib.request
 import requests
 from datetime import datetime
@@ -8,7 +8,6 @@ from zipfile import ZipFile
 ################################################################################
 ###From ore-ero folder, run with ./assets/py/dependenciesParser.py           ###
 ################################################################################
-execTime = "00:00"
 
 def indent(level):
     i = 0
@@ -377,25 +376,16 @@ def getDependencies(repos):
                 print("{0} for ".format(err) + repo[0])
     updateData(dependenciesObject)
 
-def getRepositories():
-    print("Started task at: " + datetime.now().isoformat(' ', 'seconds'))
-    codeDb = urllib.request.urlopen("https://code.open.canada.ca/code.json")
-    data = json.loads(codeDb.read())
-    repositories = []
-    if data is not None:
-        for level, admins in data.items():   
-            for admin in admins.values():
-                for release in admin["releases"]:
-                    repositories.append((release["repositoryURL"]["en"], release["name"]["en"], 
-                    release["name"]["fr"], admin["adminCode"], level))
-    getDependencies(repositories)
-    print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
+print("Started task at: " + datetime.now().isoformat(' ', 'seconds'))
+codeDb = urllib.request.urlopen("https://code.open.canada.ca/code.json")
+data = json.loads(codeDb.read())
+repositories = []
+if data is not None:
+    for level, admins in data.items():   
+        for admin in admins.values():
+            for release in admin["releases"]:
+                repositories.append((release["repositoryURL"]["en"], release["name"]["en"], 
+                release["name"]["fr"], admin["adminCode"], level))
+getDependencies(repositories)
+print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
     
-
-
-
-schedule.every().day.at(execTime).do(getRepositories)
-
-while True:
-    schedule.run_pending()
-    time.sleep(1)
