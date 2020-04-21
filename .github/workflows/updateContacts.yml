@@ -1,0 +1,13 @@
+name: Contact Email Update
+
+on:
+  schedule:
+    - cron:  '0 0 31 1,7 *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Contact Email Update
+      run: ./assets/py/emailUpdateScript.py

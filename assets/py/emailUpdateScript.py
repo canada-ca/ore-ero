@@ -1,40 +1,26 @@
 #!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
-import json, schedule, smtplib, time
+import json, smtplib
 import urllib.request
 from datetime import date, timedelta, datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from messageTemplates import Templates
+from emailInfo import emailInfo
 ###############################################################################
 ###From ore-ero folder, run with ./assets/py/emailUpdateScript.py           ###
 ###############################################################################
-##Replace with whichever gmail will be used to send the messages, can use this one for tests
-sender = "scheduledupdatescripttester@gmail.com"
-#App password for the gmail, for implementation should be kept in a file that isn't included in the git
-#repo, or required as a parameter when you call the script
-password = "koppttrkbyodglmc"
 #Maximum amount of days since last update, half a year default
 maxDaysNoUpdate = 182
-##For the scheduler
-#weeksToExec if we want to make sure it's done at a specific day of the week, half a year default
-weeksToExec = 26
-#daysToExec can be changed to whatever number as long as it's long enough not to spam contacts, half a year default
-daysToExec = 182
-#execTime doesn't really matter considering speed of execution, default at midnight
-#To test it change this to a time at least 1 minute after your current time
-execTime = "00:00"
 
 def sendEmails(emailData):
     server = smtplib.SMTP_SSL(host='smtp.gmail.com')
-    server.login(sender, password)
+    server.login(emailInfo["email"], emailInfo["password"])
     for data in emailData:
         email = MIMEMultipart()
-        email['from'] = sender
-        ##Implementation
-        #email['to'] = data[0]
-        ##Any address to test the script
-        #email['to'] = 
+        email['from'] = emailInfo["email"]
+        #Replace with any address to test the script
+        email['to'] = data[0]
         email['subject'] = Templates.getSubject() 
         plainVersion = MIMEText(Templates.plainFormat(data[1], data[2], data[3], data[4]), 'plain')
         plainVersion.add_header("Content-Disposition",
@@ -44,8 +30,6 @@ def sendEmails(emailData):
         email.attach(plainVersion)
         server.send_message(email)
         del email
-        ##limit how many emails are sent during testing
-        #break
     server.quit()
         
 
@@ -129,18 +113,9 @@ def checkPartnershipEmails():
                             "partnership"))
     return partnershipData
 
-def checkOutdatedEmails():
-    print("Started task at: " + datetime.now().isoformat(' ', 'seconds'))
-    sendEmails(checkCodeEmails() + checkDesignEmails() + checkSoftwareEmails()
-            + checkStandardEmails() + checkPartnershipEmails())
-    print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
 
-#Implementation
-##schedule.every(weeksToExec).weeks.at(execTime).do(checkOutdatedEmails)
-##schedule.every(daysToExec).days.at(execTime).do(checkOutdatedEmails) 
-#For testing
-schedule.every().day.at(execTime).do(checkOutdatedEmails)
+print("Started task at: " + datetime.now().isoformat(' ', 'seconds'))
+sendEmails(checkCodeEmails() + checkDesignEmails() + checkSoftwareEmails()
+        + checkStandardEmails() + checkPartnershipEmails())
+print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
