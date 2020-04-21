@@ -15,10 +15,10 @@ maxDaysNoUpdate = 182
 
 def sendEmails(emailData):
     server = smtplib.SMTP_SSL(host='smtp.gmail.com')
-    server.login(emailInfo["email"], emailInfo["password"])
+    server.login(emailInfo["address"], emailInfo["password"])
     for data in emailData:
         email = MIMEMultipart()
-        email['from'] = emailInfo["email"]
+        email['from'] = emailInfo["address"]
         #Replace with any address to test the script
         email['to'] = data[0]
         email['subject'] = Templates.getSubject() 
