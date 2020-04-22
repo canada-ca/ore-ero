@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: It's a test
+    fr: C'est un test
+name:
+  en: Test
+  fr: Test
+specURL:
+  en: >-
+    http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com
+  fr: >-
+    http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com
+standardAcronym: T
+standardOrg:
+  en: Me
+  fr: Moi
+tags:
+  en:
+    - Test
+  fr:
+    - Test
+administrations:
+  - adminCode: city-of-montreal-qc
+    contact:
+      email: t@t.ca
+    date:
+      created: '2020-04-22'
+      metadataLastUpdated: '2020-04-22'
+    references:
+      - URL:
+          en: >-
+            http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com
+          fr: >-
+            http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com
+        name:
+          en: T
+          fr: T
+    status: deprecated
