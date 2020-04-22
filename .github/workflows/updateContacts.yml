@@ -10,4 +10,8 @@ jobs:
 
     steps:
     - name: Contact Email Update
+      env:
+        ##Insert address here
+        GMAIL_ADDRESS: 
+        GMAIL_APP_PASSWORD: ${{ secrets.GmailAppPassword }}
       run: ./assets/py/emailUpdateScript.py

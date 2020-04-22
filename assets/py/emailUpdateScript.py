@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
-import json, smtplib
+import json, os, smtplib
 import urllib.request
 from datetime import date, timedelta, datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from messageTemplates import Templates
-from emailInfo import emailInfo
 ###############################################################################
 ###From ore-ero folder, run with ./assets/py/emailUpdateScript.py           ###
 ###############################################################################
@@ -14,11 +13,12 @@ from emailInfo import emailInfo
 maxDaysNoUpdate = 182
 
 def sendEmails(emailData):
+    address = os.getenv("GMAIL_ADDRESS")
     server = smtplib.SMTP_SSL(host='smtp.gmail.com')
-    server.login(emailInfo["address"], emailInfo["password"])
+    server.login(address, os.getenv("GMAIL_APP_PASSWORD"))
     for data in emailData:
         email = MIMEMultipart()
-        email['from'] = emailInfo["address"]
+        email['from'] = address
         #Replace with any address to test the script
         email['to'] = data[0]
         email['subject'] = Templates.getSubject() 
