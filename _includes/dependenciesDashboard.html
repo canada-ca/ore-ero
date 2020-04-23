@@ -15,12 +15,13 @@
                   {%- assign govLevel = govLevels[0] -%}
                   {% for admin in govLevels[1] %}
                     {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-                    {%- assign admin_arr = admin_arr | push: administration[0].name[page.lang] -%}
+                    {%- assign admin_arr = admin_arr | push: administration[0] -%}
                   {% endfor %}
                 {%- endfor -%}
-                {%- assign admin_arr = admin_arr | sort -%}
+                {%- assign sort_lang = page.lang -%}
+                {%- assign admin_arr = admin_arr | sort: "name.sort_lang" -%}
                 {%- for admin in admin_arr -%}
-                  <option value="{{ admin }}">{{ admin }}</option>
+                  <option value="{{ admin.code }}">{{ admin.name[page.lang] }}</option>
                 {%- endfor -%}
               </select>
             </div>
