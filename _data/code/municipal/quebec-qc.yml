@@ -1,0 +1,42 @@
+---
+schemaVersion: '1.0'
+adminCode: quebec-qc
+releases:
+  - contact:
+      email: s@s.ca
+    date:
+      created: '2020-04-23'
+      metadataLastUpdated: '2020-04-23'
+    description:
+      whatItDoes:
+        en: 'Test a bug regarding issue #782'
+        fr: 'Test le bug concernant le issue #782'
+    category: '43233500'
+    name:
+      en: Bug Test
+      fr: Test de Bug
+    licences:
+      - URL:
+          en: 'http://aal.com'
+          fr: 'http://aal.com'
+        spdxID: AAL
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'http://t.ca'
+      fr: 'http://t.ca'
+    tags:
+      en:
+        - T
+      fr:
+        - T
+    languages:
+      - JavaScript
+    partners:
+      - adminCode: toronto-on
+        email: t@t.ca
+    status: Deprecated
+    team:
+      en: Tester
+      fr: Tester
