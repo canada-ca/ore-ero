@@ -6,20 +6,32 @@
           <form class="wb-tables-filter" data-bind-to="dataset-filter">
 
         <div class="row">
+          {%- assign name_arr = "" | split: ',' -%}
+          {%- assign code_arr = "" | split: ',' -%}   
+            {%- for dependency in site.data.dependencies -%}
+              {%- for project in dependency.projects -%}
+                {%- assign name_arr = name_arr | push: project.projectName[page.lang] -%}
+              {%- endfor -%}
+              {%- for admin in dependency.admins -%}
+                    {%- assign code_arr = code_arr | push: admin -%}
+                  {%- endfor -%}              
+            {%- endfor -%}
             <div class="form-group col-md-6">
               <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
               <select class="form-control" id="dt_department" name="dt_department" data-column="0">
                 <option value="">&nbsp;</option>
+                {%- assign code_arr = code_arr | uniq -%}
                 {%- assign admin_arr = "" | split: ',' -%}
-                {%- for govLevels in site.data.code -%}
-                  {%- assign govLevel = govLevels[0] -%}
-                  {% for admin in govLevels[1] %}
-                    {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-                    {%- assign admin_arr = admin_arr | push: administration[0] -%}
-                  {% endfor %}
+                {%- for admincode in code_arr -%}
+                {%- for govLevels in site.data.administrations -%}
+                  {%- for administration in govLevels[1] -%}
+                    {%- if administration.code == admincode -%}
+                     {%- assign admin_arr = admin_arr | push: administration -%}
+                    {%- endif -%}
+                    {%- endfor -%}
+                  {%- endfor -%}
                 {%- endfor -%}
-                {%- assign sort_lang = page.lang -%}
-                {%- assign admin_arr = admin_arr | sort: "name.sort_lang" -%}
+                {%- assign admin_arr = admin_arr | sort:"code" -%}
                 {%- for admin in admin_arr -%}
                   <option value="{{ admin.code }}">{{ admin.name[page.lang] }}</option>
                 {%- endfor -%}
@@ -30,14 +42,7 @@
                 <label for="dt_name">{{ site.data.i18n.tables.projectName[page.lang] }}</label>
                 <select class="form-control" id="dt_name" name="dt_name" data-column="1">
                   <option value="">&nbsp;</option>
-                  {%- assign name_arr = "" | split: ',' -%}
-                  {%- for govLevels in site.data.code -%}
-                    {%- for admin in govLevels[1] -%}
-                      {%- for release in admin[1].releases -%}
-                      {%- assign name_arr = name_arr | push: release.name[page.lang] -%}
-                      {%- endfor -%}
-                    {%- endfor -%}
-                  {%- endfor -%}
+                  {%- assign name_arr = name_arr | uniq | sort -%}
                   {%- for name in name_arr -%}
                   <option value="'{{ name }}'">{{ name }}</option>
                   {%- endfor -%}
