@@ -1,0 +1,236 @@
+<div class="row">
+    <!-- Data Table -->
+    <div class="col-md-12 mrgn-bttm-lg">
+      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [0,5,6], "visible": false}], "paging": true}'>
+        <thead>
+          <tr>
+            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
+            <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
+            <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for govLevels in site.data.code -%}
+            {%- assign govLevel = govLevels[0] -%}
+            {%- for admin in govLevels[1] -%}
+              {%- for release in admin[1].releases -%}
+              {%- if release.tags.en contains site.active_campaign_name or release.tags.en contains site.high_value_tag -%}
+              <tr>
+                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                <td>{{ administration[0].name[page.lang] }}</td>
+    
+                <td><a href="#{{ release.name[page.lang] | slugify: "latin" }}" aria-controls="{{ release.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
+                <td>{{ release.description.whatItDoes[page.lang] }}</td>
+                <td>
+                  {%- for licence in release.licences -%}
+                    <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
+                  {%- endfor -%}
+                </td>
+                <td>
+                  {%- for tag in release.tags[page.lang] -%}
+                    {%- unless tag == site.excludeTag -%}
+                    {{ tag }}&nbsp;
+                    {%- endunless -%}
+                  {%- endfor -%}
+                </td>
+
+                <td>
+                  <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
+                    {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+                  </a>
+                </td>
+                <td>{{ site.data.i18n.administrations[govLevel].value }}</td>
+              </tr>
+              {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+          {%- endfor -%}
+
+        {%- for softwares in site.data.software -%} 
+          {%- assign software = softwares[1] -%}
+          {%- if software.tags.en contains site.active_campaign_name or software.tags.en contains site.high_value_tag -%}
+        <tr>
+            <td>
+                {%- for administration in software.administrations -%}
+                  {{ administration.adminCode }}&nbsp;
+                {%- endfor -%}
+            </td>
+          <td>
+            <a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a>
+        </td>
+          <td>{{ software.description.whatItDoes[page.lang] }}</td>
+          <td>
+            {%- for licence in software.licences -%}
+            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp; 
+            {%- endfor -%}
+          </td>
+          <td>
+            {%- for tag in software.tags[page.lang] -%} 
+              {%- unless tag == site.excludeTag -%}
+              {{ tag }}
+              {%- endunless -%}
+            {%- endfor -%}
+          </td>
+          <td>
+            <a href="{{ software.homepageURL[page.lang] }}" target="_blank">{{ software.homepageURL[page.lang] | remove: "https://" | rstrip }}</a>
+          </td>
+          <td>
+            {%- assign org_arr = "" | split: ',' -%}
+            {%- for administration in software.administrations -%}
+              {%- for levels in site.data.i18n.administrations -%}
+                {%- assign govLevel = levels[0] -%}
+                {%- assign admin = site.data.administrations[govLevel] | where: "code": administration.adminCode -%}
+                {%- if admin[0] != nil -%}
+                  {%- assign org_arr = org_arr | push: site.data.i18n.administrations[govLevel].value -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+            {%- assign org_arr = org_arr | uniq -%}
+            {%- for org in org_arr -%}
+              {{ org }}&nbsp;
+            {%- endfor -%}
+          </td>
+          
+        </tr>
+        {%- endif -%}
+        {%- endfor -%}
+
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Modal Lightboxes -->
+    {%- for govLevels in site.data.code -%}
+    {%- assign govLevel = govLevels[0] -%}
+      {%- for admin in govLevels[1] -%}
+        {%- for release in admin[1].releases -%}
+          <section id="{{ release.name[page.lang] | slugify: "latin" }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+            <header class="modal-header">
+              <h2 class="modal-title">{{ release.name[page.lang] }}</h2>
+            </header>
+            <div class="modal-body">
+              <p><strong>{{ site.data.i18n.form.presets.description.labels.whatItDoes.subtitle[page.lang] }}</strong></p>
+              <p>{{ release.description.whatItDoes[page.lang] }}</p>
+            {%- if release.description.howItWorks[page.lang] != nil -%}
+              <p><strong>{{ site.data.i18n.form.presets.description.labels.howItWorks.subtitle[page.lang] }}</strong></p>
+              <p>{{release.description.howItWorks[page.lang]}}</p>
+            {%- endif -%}
+              <p><strong>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}: </strong>{{ site.data.i18n.administrations[govLevel][page.lang] }}</p>
+              {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+              <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
+            {%- if release.team[page.lang] != nil -%}
+              <p><strong>{{ site.data.i18n.tables.team[page.lang] }}:</strong> {{ release.team[page.lang] }}</p>
+            {%- endif -%}
+            <p><strong>{{ site.data.i18n.tables.lightbox.sourceCode[page.lang] }}:</strong>
+              <a href="{{ release.repositoryURL[page.lang] }}" target="_blank">
+                  {{ release.repositoryURL[page.lang] | remove: "https://" | replace_first: "/", "                    " | truncate: 20, "" | rstrip }}
+              </a>
+            </p>
+            <p><strong>{{ site.data.i18n.tables.licence[page.lang] }}(s):</strong></p>
+            <ul>
+              {%- for licence in release.licences -%}
+                <li><a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a></li>
+              {%- endfor -%}
+            </ul>
+            <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+            <ul>
+              {%- for tag in release.tags[page.lang] -%}
+                {%- unless tag == site.excludeTag -%}
+                <li>{{ tag }}</li>
+                {%- endunless -%}
+              {%- endfor -%}
+            </ul>
+            {%- if release.languages != nil -%}
+            <p><strong>{{ site.data.i18n.tables.languages[page.lang] }}:</strong></p>
+            <ul>
+              {%- for languages in release.languages -%}
+                <li>{{ languages }}</li>
+              {%- endfor -%}
+            </ul>
+            {%- endif -%}
+            {%- if release.status != nil -%}
+              {%- assign status = release.status | downcase -%}
+              <p><strong>{{ site.data.i18n.tables.status[page.lang] }}:</strong> {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
+            {%- endif -%}
+            <p><strong>{{ site.data.i18n.form.code.date.label[page.lang] }}:</strong> {{ release.date.created }}</p>
+    
+            <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
+            {%- if release.contact.name != nil -%}
+              <p>{{ release.contact.name }}</p>
+            {%- endif -%}
+            {%- if release.contact.phone != nil -%}
+              <p>{{ site.data.i18n.tables.contactPhone[page.lang] }}: {{ release.contact.phone }}</p>
+            {%- endif -%}
+            {%- if release.contact.email != nil -%}
+              <p><a href="mailto:{{ release.contact.email }}" target="_blank">{{ release.contact.email }}</a></p>
+            {%- endif -%}
+            {%- if release.contact.URL != nil -%}
+              <p><a href="{{ release.contact.URL[page.lang] }}" target="_blank">{{ release.contact.URL[page.lang] }}</a></p>
+            {%- endif -%}
+            </div>
+          </section>
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endfor -%}
+
+     <!-- Modal Lightboxes -->
+  {%- for softwares in site.data.software -%} 
+  {%- assign software = softwares[1]-%}
+  <section id="{{ software.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <header class="modal-header">
+      <h2 class="modal-title">{{ software.name[page.lang] }}</h2>
+    </header>
+    <div class="modal-body">
+      <p><strong>Description:</strong></p>
+      <p>{{ software.description.whatItDoes[page.lang] }}</p>
+      <p><strong>{{ site.data.i18n.tables.tag[page.lang] }}(s):</strong></p>
+      <ul>
+        {%- for tag in software.tags[page.lang] -%}
+        {%- unless tag == site.excludeTag -%}
+          <li>{{ tag }}</li>
+        {%- endunless -%}
+        {%- endfor -%}
+      </ul>
+      <div class="row">
+        <div class="col-md-7">
+          <strong>{{ site.data.i18n.tables.lightbox.beingUsed[page.lang] }}</strong>
+        </div>
+        <div class="col-md-5"><strong>Contact:</strong></div>
+      </div>
+      {%- for administration in software.administrations -%}
+      <div class="row">
+        <div class="col-md-7">
+          {%- for levels in site.data.i18n.administrations -%}
+            {%- assign govLevel = levels[0] -%}
+            {%- assign admin = site.data.administrations[govLevel] | where: "code", administration.adminCode -%} {{ admin[0].name[page.lang] }}
+          {%- endfor -%}
+        </div>
+        <div class="col-md-5">
+          {%- for use in administration.uses -%} {{ use.contact.email }}<br />
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- endfor -%}
+      <br />
+      <div class="row">
+        <div class="col-md-7">
+          <strong>{{ site.data.i18n.tables.lightbox.website[page.lang] }}</strong>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <a href="{{ software.homepageURL[page.lang] }}" target="_blank">
+            {{ software.homepageURL[page.lang] }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{%- endfor -%}
+    
+    </div>
+    

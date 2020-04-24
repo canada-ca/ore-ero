@@ -101,3 +101,28 @@ partnershipForm:
     scope:
       path: "../assets/js/src/partnershipForm.js"
       type: "src"
+code:
+  -
+    scope:
+      path: "../assets/js/src/adminFilter.js"
+      type: "src"
+design:
+  -
+    scope:
+      path: "../assets/js/src/adminFilter.js"
+      type: "src"
+software:
+  -
+    scope:
+      path: "../assets/js/src/adminFilter.js"
+      type: "src"
+standard:
+  -
+    scope:
+      path: "../assets/js/src/adminFilter.js"
+      type: "src"
+partnership:
+  -
+    scope:
+      path: "../assets/js/src/adminFilter.js"
+      type: "src"

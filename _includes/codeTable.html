@@ -201,6 +201,7 @@
         {%- assign govLevel = govLevels[0] -%}
         {%- for admin in govLevels[1] -%}
           {%- for release in admin[1].releases -%}
+          {%- unless release.tags.en contains site.excludeTag -%}
           <tr>
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             <td>{{ administration[0].name[page.lang] }}</td>
@@ -240,6 +241,7 @@
             <td>{{ release.status }}&nbsp;</td>
             <td>{{ release.date.created }}&nbsp;</td>
           </tr>
+          {%- endunless -%}
           {%- endfor -%}
         {%- endfor -%}
       {%- endfor -%}

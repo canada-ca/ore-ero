@@ -1,0 +1,14 @@
+name: Dependencies parser
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Dependencies parser
+      run: ./assets/py/dependenciesParser.py
+        
