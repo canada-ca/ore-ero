@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+adminCode: international
+releases:
+  - contact:
+      email: noreply@nih.gov
+      name: https://3dprint.nih.gov/contact
+    date:
+      created: '2016-06-16'
+      metadataLastUpdated: '2019-05-28'
+    description:
+      whatItDoes:
+        en: >-
+          This collection of designs was created to support the manufacturing of personal protective equipment (PPE) or other necessary medical devices that are in short supply due to the COVID-19 outbreak.
+        fr: >-
+          Cette collection de conceptions a été créée pour soutenir la fabrication d'équipements de protection individuelle (EPI) ou d'autres dispositifs médicaux nécessaires qui font défaut en raison de l'épidémie de COVID-19
+    category: '43232300'
+    name:
+      en: [US] NIH 3d Print Exchange - COVID-19 Supply Chain Response
+      fr: [US] NIH 3d Print Exchange - Réponse de la chaîne d'approvisionnement COVID-19
+    licences:
+      - URL:
+          en: 'https://3dprint.nih.gov/collections/covid-19-response'
+          fr: 'https://3dprint.nih.gov/collections/covid-19-response'
+        spdxID: CC-BY-4.0
+    repositoryURL:
+      en: 'https://3dprint.nih.gov/collections/covid-19-response'
+      fr: 'https://3dprint.nih.gov/collections/covid-19-response'
+    tags:
+      en:
+        - 3D Printing
+        - COVID-19
+        - Exclude-Exclure
+      fr:
+        - Impression en 3D
+        - COVID-19
+        - Exclude-Exclure
+    languages:
+    status: Maintained
