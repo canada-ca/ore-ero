@@ -67,10 +67,6 @@ function addTypes(designObject) {
 function hideType(index) {
   $('#newType' + index).addClass('hide');
   $('#designType' + index).attr('required', 'required');
-  $('#designType' + index)
-    .prop('labels')
-    .item(0)
-    .setAttribute('required', 'required');
   $('#ennewType' + index).removeAttr('required');
   $('#frnewType' + index).removeAttr('required');
 }
@@ -104,10 +100,6 @@ function addType(index) {
   $('#newType' + index).removeClass('hide');
   $('#designType' + index).removeAttr('required');
   $('#designType' + index).prop('selectedIndex', 0);
-  $('#designType' + index)
-    .prop('labels')
-    .item(0)
-    .removeAttr('required');
   $('#ennewType' + index).attr('required', 'required');
   $('#frnewType' + index).attr('required', 'required');
 }
