@@ -3,11 +3,11 @@ schemaVersion: '1.0'
 adminCode: 'on'
 releases:
   - contact:
-      email: noreply@canada.ca
-      name: No Reply
+      email: spencer.daniels@ontario.ca
+      name: Spencer Daniels
     date:
       created: '2020-03-01'
-      metadataLastUpdated: '2020-04-14'
+      metadataLastUpdated: '2020-04-24'
     description:
       whatItDoes:
         en: >-
@@ -39,8 +39,8 @@ releases:
       fr:
         - COVID-19
     homepageURL:
-      en: 'https://covid-19.ontario.ca/self-assessment/'
-      fr: 'https://covid-19.ontario.ca/autoevaluation/'
+      en: 'https://github.com/ongov/covid-19-self-assessment-v2.8'
+      fr: 'https://github.com/ongov/covid-19-self-assessment-v2.8'
     languages:
       - JavaScript
       - HTML
