@@ -70,7 +70,7 @@ function hideType(index) {
   $('#designType' + index)
     .prop('labels')
     .item(0)
-    .setAttribute('class', 'required');
+    .setAttribute('required', 'required');
   $('#ennewType' + index).removeAttr('required');
   $('#frnewType' + index).removeAttr('required');
 }
@@ -107,7 +107,7 @@ function addType(index) {
   $('#designType' + index)
     .prop('labels')
     .item(0)
-    .setAttribute('class', '');
+    .removeAttr('required');
   $('#ennewType' + index).attr('required', 'required');
   $('#frnewType' + index).attr('required', 'required');
 }
