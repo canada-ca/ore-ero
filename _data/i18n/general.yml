@@ -77,13 +77,18 @@ nav:
     link:
       en: ./stats.html
       fr: ./stats.html
+  dependencies:
+    en: Dependencies
+    fr: Dépendances
+    link:
+      en: ./dependencies.html
+      fr: ./dependances.html
   emergency:
     en: Urgent Response
     fr: Réponse d'urgence
     link:
       en: ./open-urgent-response.html
       fr: ./response-durgence-ouvert.html
-
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada
