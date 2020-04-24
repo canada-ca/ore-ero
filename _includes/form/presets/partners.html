@@ -18,6 +18,7 @@
         <div id="partnersNewAdminSeparator"><hr></div>
         {% include form/components/group-group.html id=include.idPreset title=title group="contactname" param=site.data.forms.param.partners.name %}
         {% include form/components/group-group.html id=include.idPreset title=title group="contactemail" param=site.data.forms.param.partners.email %}
+        {% include form/presets/emailSuffix.html idPreset=include.idPreset title=title %}
       </div>
     </div>
   </div>

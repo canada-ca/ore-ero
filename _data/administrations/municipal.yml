@@ -3,19 +3,23 @@
   name:
     en: City of Montreal
     fr: Ville de Montréal
+  email_suffix: '@montreal.ca'
   provinceCode: qc
 - code: city-of-ottawa-on
   name:
     en: City of Ottawa
     fr: Ville d'Ottawa
+  email_suffix:
   provinceCode: 'on'
 - code: city-of-edmonton-ab
   name:
     en: City of Edmonton
     fr: Ville d'Edmonton
+  email_suffix:
   provinceCode: ab
 - code: city-of-sault-ste-marie-on
   name:
     en: City of Sault Ste Marie
     fr: Ville de Sault Sainte Marie
+  email_suffix:
   provinceCode: 'on'

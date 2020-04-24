@@ -98,3 +98,12 @@ lightbox:
   website:
     en: 'Website:'
     fr: 'Site internet:'
+dependency:
+  en: Dependency
+  fr: Dépendance
+dependencyType:
+  en: Dependency Type
+  fr: Type de dépendance
+dependencyOrigin:
+  en: Dependency Origin
+  fr: Provenance de la dépendance

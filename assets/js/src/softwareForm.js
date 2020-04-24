@@ -398,9 +398,7 @@ function getConfigNew(softwareObject, file, ProjectName) {
 
 function selectSoftware() {
   let value = softwareSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
-    result
-  ) {
+  $.getJSON('../software.json', function (result) {
     if (result[value]) {
       addValueToFieldsSoftware(result[value]);
       $('#adminCode').focus();
@@ -451,9 +449,7 @@ function resetFieldsSoftware() {
 function selectAdmin() {
   let software = softwareSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/software.json', function (
-    result
-  ) {
+  $.getJSON('../software.json', function (result) {
     if (result[software]) {
       for (let i = 0; i < result[software].administrations.length; i++) {
         if (result[software].administrations[i].adminCode == administration) {

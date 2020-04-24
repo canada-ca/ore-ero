@@ -447,9 +447,9 @@ releases:
         spdxID: MIT
     repositoryURL:
       en: >-
-        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+        https://github.com/cds-snc/notification-api
       fr: >-
-        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+        https://github.com/cds-snc/notification-api
     tags:
       en:
         - Notify

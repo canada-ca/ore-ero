@@ -3,51 +3,64 @@
   name:
     en: Province of British Columbia
     fr: Province de la Colombie-Britannique
+  email_suffix:
 - code: 'on'
   name:
     en: Province of Ontario
     fr: Province de l'Ontario
+  email_suffix:
 - code: qc
   name:
     en: Province of Quebec
     fr: Province de Québec
+  email_suffix:
 - code: ab
   name:
     en: Province of Alberta
     fr: Province de l'Alberta
+  email_suffix:
 - code: pe
   name:
     en: Province of Prince Edward Island
     fr: Province de l'Île-du-Prince-Édouard
+  email_suffix:
 - code: mb
   name:
     en: Province of Manitoba
     fr: Province du Manitoba
+  email_suffix:
 - code: nb
   name:
     en: Province of New Brunswick
     fr: Province du Nouveau-Brunswick
+  email_suffix:
 - code: ns
   name:
     en: Province of Nova Scotia
     fr: Province de la Nouvelle-Écosse
+  email_suffix:
 - code: sk
   name:
     en: Province of Saskatchewan
     fr: Province de la Saskatchewan
+  email_suffix:
 - code: nl
   name:
     en: Province of Newfoundland and Labrador
     fr: Province du Terre-Neuve-et-Labrador
+  email_suffix:
 - code: nu
   name:
     en: Territory of Nunavut
     fr: Territoire du Nunavut
+  email_suffix:
 - code: nt
   name:
     en: Territory of Northwest Territories
     fr: Territoire des Territoires du Nord-Ouest
+  email_suffix:
 - code: yt
   name:
     en: Territory of Yukon
     fr: Territoire du Yukon
+  email_suffix:

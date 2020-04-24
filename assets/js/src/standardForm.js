@@ -446,9 +446,7 @@ function getConfigNewStandardNewAdmin(
 
 function selectStandard() {
   let value = standardSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
-    result
-  ) {
+  $.getJSON('../standard.json', function (result) {
     if (result[value]) {
       addValueToFieldsStandard(result[value]);
       $('#adminCode').focus();
@@ -502,9 +500,7 @@ function resetFieldsStandard() {
 function selectAdmin() {
   let standard = standardSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('https://canada-ca.github.io/ore-ero/standard.json', function (
-    result
-  ) {
+  $.getJSON('../standard.json', function (result) {
     if (result[standard]) {
       for (let i = 0; i < result[standard].administrations.length; i++) {
         if (result[standard].administrations[i].adminCode == administration) {
