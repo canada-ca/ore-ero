@@ -16,6 +16,7 @@ jobs:
       run: ./assets/py/dependenciesParser.py
 
     - name: Commit changes
+      if: git diff --quiet == 1
       run:
         git add _data/dependencies.yaml
         git config --global user.email "canada.pr.bot@gmail.com"
