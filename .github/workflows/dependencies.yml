@@ -9,6 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout Main repo
+      uses: actions/checkout@v2
+
     - name: Dependencies parser
       run: ./assets/py/dependenciesParser.py
+
+    - name: Commit changes
+      run:
+        git add _data/dependencies.yaml
+        git config --global user.email "canada.pr.bot@gmail.com"
+        git config --global user.name "canada-bot"
+        git commit -m "Updating dependencies"
+        git push
         
