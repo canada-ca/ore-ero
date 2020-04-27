@@ -1,0 +1,49 @@
+---
+schemaVersion: '1.0'
+adminCode: ns
+releases:
+  - contact:
+      email: noreply@canada.ca
+      name: 'https://github.com/Nova-Scotia-Digital-Service/when-to-call-811/issues'
+    date:
+      created: '2020-03-01'
+      metadataLastUpdated: '2020-04-27'
+    description:
+      whatItDoes:
+        en: >-
+          Self-assesment tool to find out if you should call 811 about COVID-19
+          for the citizens of Nova Scotia, Canada.
+        fr: >-
+          Outil d'auto-évaluation pour savoir si vous devez appeler le 811 au
+          sujet de COVID-19 pour les citoyens de la Nouvelle-Écosse, Canada.
+    category: '43232100'
+    name:
+      en: Nova Scotia - When to call  811 about COVID-19
+      fr: Nouvelle-Écosse - Quand appeler le 811 au sujet de COVID-19
+    licences:
+      - URL:
+          en: >-
+            https://github.com/Nova-Scotia-Digital-Service/when-to-call-811/blob/master/LICENSE
+          fr: >-
+            https://github.com/Nova-Scotia-Digital-Service/when-to-call-811/blob/master/LICENSE
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/Nova-Scotia-Digital-Service/when-to-call-811'
+      fr: 'https://github.com/Nova-Scotia-Digital-Service/when-to-call-811'
+    tags:
+      en:
+        - COVID-19
+      fr:
+        - COVID-19
+    homepageURL:
+      en: 'https://novascotia.ca/coronavirus/when-to-seek-help/'
+      fr: 'https://novascotia.ca/coronavirus/when-to-seek-help/fr/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - 'C#'
+    status: Maintained

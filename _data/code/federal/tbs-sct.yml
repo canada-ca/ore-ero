@@ -453,8 +453,10 @@ releases:
     tags:
       en:
         - Notify
+        - BCP-PCA
       fr:
         - Notification
+        - BCP-PCA
     downloadURL:
       en: >-
         https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
