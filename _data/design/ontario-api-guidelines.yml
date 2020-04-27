@@ -23,7 +23,7 @@ licences:
     spdxID: CC-BY-4.0
 name:
   en: Ontario API Guidelines
-  fr: Ontario API Guidelines
+  fr: Lignes directrices sur les API
 administrations:
   - adminCode: 'on'
     uses:
