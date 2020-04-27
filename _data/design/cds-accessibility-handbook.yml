@@ -34,3 +34,10 @@ administrations:
         date:
           started: '2019-03-01'
           metadataLastUpdated: '2020-02-17'
+  - adminCode: cra-arc
+    uses:
+      - contact:
+          email: t@t.t
+        date:
+          started: '2020-04-27'
+          metadataLastUpdated: '2020-04-27'
