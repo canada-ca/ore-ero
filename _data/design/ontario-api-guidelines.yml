@@ -1,0 +1,34 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Learn how to create services that can connect to and build on each other
+      by using Application Programming Interfaces (APIs)
+    fr: >-
+      Apprenez à créer des services qui peuvent se connecter les uns aux autres
+      et se compléter en utilisant les interfaces de protocole d’application
+      (API).
+designTypes:
+  - type:
+      en: Application
+      fr: Application
+homepageURL:
+  en: 'https://github.com/ongov/API-Guidelines'
+  fr: 'https://github.com/ongov/API-Guidelines/blob/develop/README-FR.md'
+licences:
+  - URL:
+      en: 'https://github.com/ongov/API-Guidelines/blob/develop/LICENSE.md'
+      fr: 'https://github.com/ongov/API-Guidelines/blob/develop/LICENSE.md'
+    spdxID: CC-BY-4.0
+name:
+  en: Ontario API Guidelines
+  fr: Ontario API Guidelines
+administrations:
+  - adminCode: 'on'
+    uses:
+      - contact:
+          email: digital.standard@ontario.ca
+        date:
+          started: '2019-01-09'
+          metadataLastUpdated: '2020-03-02'
