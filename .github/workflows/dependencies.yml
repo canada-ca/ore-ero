@@ -17,7 +17,7 @@ jobs:
       run: ./assets/py/dependenciesParser.py
 
     - name: Commit changes
-      run:
+      run: |
         git add _data/dependencies.yaml
         git config --global user.email "canada.pr.bot@gmail.com"
         git config --global user.name "canada-bot"
