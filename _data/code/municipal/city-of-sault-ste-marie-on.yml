@@ -43,7 +43,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2019-11-10'
-      metadataLastUpdated: '2020-01-09'
+      metadataLastUpdated: '2020-04-27'
     description:
       whatItDoes:
         en: >-
@@ -63,15 +63,27 @@ releases:
           fr: >-
             https://github.com/cityssm/lottery-licence-manager/blob/master/LICENSE
         spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
     repositoryURL:
       en: 'https://github.com/cityssm/lottery-licence-manager'
       fr: 'https://github.com/cityssm/lottery-licence-manager'
     tags:
       en:
-        - Lottery
+        - lottery
       fr:
-        - Lottery
-    status: Alpha
+        - 'loterie '
+    homepageURL:
+      en: 'https://cityssm.github.io/lottery-licence-manager/'
+      fr: 'https://cityssm.github.io/lottery-licence-manager/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - TypeScript
+      - SQLite
+    status: Beta
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
