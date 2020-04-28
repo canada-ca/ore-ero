@@ -17,14 +17,17 @@ licences:
       en: 'https://www.drupal.org/about/licensing#drupal-license'
       fr: 'https://www.drupal.org/about/licensing#drupal-license'
     spdxID: GPL-2.0-or-later
+    level:
+      en: Main license
+      fr: License principale
 name:
   en: Drupal
   fr: Drupal
 tags:
   en:
-    - Website
+    - Application platform
   fr:
-    - Site Web
+    - Plateforme applicative
 administrations:
   - adminCode: cse-cst
     uses:
@@ -97,3 +100,11 @@ administrations:
         date:
           started: '2016-01-01'
           metadataLastUpdated: '2020-02-24'
+  - adminCode: nrcan
+    uses:
+      - contact:
+          email: eric.goodwin@canada.ca
+          name: Eric Goodwin
+        date:
+          started: '2013-08-01'
+          metadataLastUpdated: '2020-04-28'
