@@ -1,0 +1,41 @@
+---
+schemaVersion: '1.0'
+adminCode: public
+releases:
+  - contact:
+      email: noreply@canada.ca
+      name: https://github.com/ishaberry/Covid19Canada/issues/new
+    date:
+      created: '2016-06-16'
+      metadataLastUpdated: '2019-05-28'
+    description:
+      whatItDoes:
+        en: >-
+          A collection of publicly available information on confirmed and presumptive postive cases during the ongoing COVID-19 outbreak in Canada.
+        fr: >-
+          Une collection d'informations accessibles au public sur les cas positifs confirmés et présumés pendant l'éclosion de COVID-19 en cours au Canada.
+    category: '43232300'
+    name:
+      en: Epidemiological Data from the COVID-19 Outbreak in Canada
+      fr: Données épidémiologiques de l'éclosion de COVID-19 au Canada
+    licences:
+      - URL:
+          en: 'https://github.com/ishaberry/Covid19Canada/blob/master/LICENSE.MD'
+          fr: 'https://github.com/ishaberry/Covid19Canada/blob/master/LICENSE.MD'
+        spdxID: CC-BY-4.0
+    repositoryURL:
+      en: 'https://github.com/ishaberry/Covid19Canada'
+      fr: 'https://github.com/ishaberry/Covid19Canada'
+    tags:
+      en:
+        - Dataset
+        - COVID-19
+        - Exclude-Exclure
+      fr:
+        - Base de données
+        - COVID-19
+        - Exclude-Exclure
+    languages:
+      - JavaScript
+      - TypeScript
+    status: Maintained

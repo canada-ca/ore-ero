@@ -1,0 +1,39 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The WiX toolset lets developers create installers for Windows Installer,
+      the Windows installation engine.
+    fr: >-
+      Les outils WiX permet aux développeurs de créer des programmes
+      d'installation pour Windows Installer, le moteur d'installation de
+      Windows.
+category: '43233400'
+homepageURL:
+  en: 'https://wixtoolset.org/'
+  fr: 'https://wixtoolset.org/'
+licences:
+  - URL:
+      en: 'https://github.com/wixtoolset/Core/blob/master/LICENSE.TXT'
+      fr: 'https://github.com/wixtoolset/Core/blob/master/LICENSE.TXT'
+    spdxID: MS-RL
+name:
+  en: WiX Toolset
+  fr: WiX Toolset
+tags:
+  en:
+    - Install
+  fr:
+    - Installer
+administrations:
+  - adminCode: tc
+    uses:
+      - contact:
+          email: TC.Cloud-Infonuagique.TC@tc.gc.ca
+          name: >-
+            Transport Canada Cloud Center of Excellence - Centre d'excellence en
+            nuage de Transports Canada
+        date:
+          started: '2020-03-04'
+          metadataLastUpdated: '2020-03-04'

@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Texmaker is a cross-platform open-source LaTeX editor with an integrated
+      PDF viewer.
+    fr: >-
+      Texmaker est un éditeur LaTeX multiplateforme open source avec une
+      visionneuse PDF intégrée.
+category: '43232100'
+homepageURL:
+  en: 'https://www.xm1math.net/texmaker/'
+  fr: 'https://www.xm1math.net/texmaker/index_fr.html'
+licences:
+  - URL:
+      en: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'
+      fr: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.fr.html'
+    spdxID: GPL-2.0-only
+name:
+  en: Texmaker
+  fr: Texmaker
+tags:
+  en:
+    - LaTeX
+  fr:
+    - LaTeX
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

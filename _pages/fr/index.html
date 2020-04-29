@@ -15,6 +15,14 @@ permalink: /fr/index.html
   </div>
 </div>
 
+{% if site.active_campaign %}
+<div class="row profile alert alert-{{site.active_campaign_style}}">
+  <h1 property="name">Répondre à {{ site.active_campaign_name }}</h1>
+  <p>L'Échange de ressources ouvert cherche à soutenir le partage ouvert et la collaboration sur les ressources technologiques liées à {{ site.active_campaign_name }}.</p>
+  <p>Pour rechercher des ressources liées, veuillez cliquer <a href="{{ site.data.i18n.general.nav.emergency.link[page.lang] }}">ici</a>.</p>
+</div>
+{% endif %}
+
 <div class="row profile">
   <div class="col-md-12">
     <h1 property="name">Services</h1>
