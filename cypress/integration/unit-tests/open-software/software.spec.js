@@ -115,7 +115,7 @@ context('Open Source Software on the English Form page', () =>  {
       .invoke('val', 'net-core')
       .first()
       .trigger('change')
-      .contains('.NET Core');
+      .contains('.NET Core'); //Faudrait plutôt vérifier que l'information s'est ajoutée dans les champs concernés
   });
 
   it('Should not dynamicall filled of unexisting data information on the English page', () => {
@@ -124,7 +124,7 @@ context('Open Source Software on the English Form page', () =>  {
       .invoke('val', 'net-core')
       .first()
       .trigger('change')
-      .should('not.contain', 'sourcetree');
+      .should('not.contain', 'sourcetree'); //Test un peu redondant
   });
 
   it('Should submit form on the English page', () => {
@@ -160,7 +160,7 @@ context('Open Source Software on the English Form page', () =>  {
     cy.get('#errors-validation')
       .should('not.contain','The form could not be submitted because 1 error was found.');
     cy.get('form').submit();
-  });
+  }); // +++ Tu évite la soumission lors du test, - le test ne regarde pas le bon point
 });
 
 context('Open Source Software on the French Form page', () =>  {
@@ -175,7 +175,7 @@ context('Open Source Software on the French Form page', () =>  {
   it('Should return dynamicall filled of existing data information on the French page', () => {
     cy.get('select')
       .as('option')
-      .invoke('val', 'net-core')
+      .invoke('val', 'net-core')//Faudrait plutôt vérifier que l'information s'est ajoutée dans les champs concernés
       .first()
       .trigger('change')
       .contains('.NET Core');
@@ -187,7 +187,7 @@ context('Open Source Software on the French Form page', () =>  {
       .invoke('val', 'net-core')
       .first()
       .trigger('change')
-      .should('not.contain', 'sourcetree');
+      .should('not.contain', 'sourcetree'); //Test un peu redondant
   });
   
   it('Should submit form on the French page', () => {
@@ -218,9 +218,10 @@ context('Open Source Software on the French Form page', () =>  {
     cy.get('button#prbotSubmitsoftwareForm')
       .click();
     cy.get('#validation')
-      .submit();
+      .submit();  
     cy.wait(2000);
     cy.get('#errors-validation')
       .should('not.contain','Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
+       // +++ Tu évite la soumission lors du test, - le test ne regarde pas le bon point
   });
 });
