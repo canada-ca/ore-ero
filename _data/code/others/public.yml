@@ -39,7 +39,7 @@ releases:
       - JavaScript
       - TypeScript
     status: Maintained
-- contact:
+  - contact:
       email: teamequipegoc@gmail.com
       name: Team Equipe GOC
     date:
