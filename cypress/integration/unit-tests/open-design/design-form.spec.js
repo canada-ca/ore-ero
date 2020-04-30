@@ -14,7 +14,7 @@ context('Open Design on the English Form Page', () => {
         cy.window().should('have.property', 'designType');
         });
 
-    
+
 
     it ('Should reset all fields filled by design select if the selected option is modified', () => {
         cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
@@ -32,9 +32,9 @@ context('Open Design on the English Form Page', () => {
             cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
             cy.get('#enlicencesURL').should('have.value', '');
             cy.get('#frlicencesURL').should('have.value', '');
-            cy.get('#licencesspdxID').children().first().should('be.selected');    
+            cy.get('#licencesspdxID').children().first().should('be.selected');
         });
-         
+
     });
 
     it ('New admin button should make new admin field appear if hidden and both new admin button and remove new admin button should hide it if shown', () => {
@@ -47,7 +47,7 @@ context('Open Design on the English Form Page', () => {
       cy.get('#newAdmin').should('be.hidden');
     });
 
-       
+
 
 
   it('Values should be autofilled when design name is selected', () => {
@@ -128,13 +128,11 @@ it ('Should submit', () => {
       cy.get('#submitteremail').type('E@test.ca');
       cy.get('#contactemail').type('E@test.ca');
       cy.get('#date').type('2020-02-19');
-      cy.get('#prbotSubmitdesignForm').click().then(() => {
-        cy.get('#prbotSubmitAlertInProgress').should('be.visible');
-        cy.get('#validation').submit();
-        cy.wait(2000);
-        cy.get('form').submit();
+      cy.window().then(win => {
+        win.submit_init.submitInit();
       });
-    });
+      cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+      });
   });
 });
 
@@ -194,7 +192,7 @@ it ('Should reset all fields filled by design select if the selected option is m
       cy.get('#addMorelicences').find('ul > li').should('have.length.lte', 1);
       cy.get('#enlicencesURL').should('have.value', '');
       cy.get('#frlicencesURL').should('have.value', '');
-      cy.get('#licencesspdxID').children().first().should('be.selected');    
+      cy.get('#licencesspdxID').children().first().should('be.selected');
   });
 });
 it('Values should be autofilled when design name is selected on french page', () => {
@@ -275,12 +273,10 @@ it ('Should submit on french page', () => {
       cy.get('#submitteremail').type('S@test.ca');
       cy.get('#contactemail').type('S@test.ca');
       cy.get('#date').type('2020-02-19');
-      cy.get('#prbotSubmitdesignForm').click().then(() => {
-        cy.get('#prbotSubmitAlertInProgress').should('be.visible');
-        cy.get('#validation').submit();
-        cy.wait(2000);
-        cy.get('form').submit();
+      cy.window().then(win => {
+        win.submit_init.submitInit();
       });
+      cy.get('#prbotSubmitAlertInProgress').should('be.visible');
     });
   });
 });
