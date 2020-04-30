@@ -8,6 +8,13 @@ prbot_url: "https://canada-pr-bot.herokuapp.com/"
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_30"
 
+active_campaign: true
+active_campaign_name: "COVID-19"
+active_campaign_style: "danger"
+high_value_tag: "BCP-PCA"
+
+excludeTag: "Exclude-Exclure"
+
 # Build settings
 markdown: kramdown
 include: ["_pages", "_json"]

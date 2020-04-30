@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label for="{{ include.title }}suffix">
+      <span>
+        <span class="field-name">{{ site.data.i18n.form.presets.adminCode.labels.suffix[page.lang] }}</span>
+        <span data-toggle="tooltip" data-placement="top" title="{{ site.data.i18n.form.presets.adminCode.infobulle.suffix[page.lang] }}" class="glyphicon glyphicon-question-sign small" aria-hidden="true"></span>
+      </span>
+    </label>
+    {%- include form/components/input-group.html id=include.idPreset title=include.title group="suffix" param=site.data.forms.param.newAdmin.suffix -%}
+</div>  
+<div class="form-group">
+<button id="{{ include.title }}Suffixbtn" type="button" class="btn btn-primary" onclick="{{include.title}}addMoreSuffixes(this.id)"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form.[include.idPreset].adminCode.button.suffix[page.lang] }}</button>
+</div>

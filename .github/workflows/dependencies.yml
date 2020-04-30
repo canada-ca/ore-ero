@@ -1,0 +1,28 @@
+name: Dependencies parser
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+  repository_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Main repo
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PUSH_API_TOKEN }}
+
+    - name: Dependencies parser
+      run: ./assets/py/dependenciesParser.py
+
+    - name: Commit changes
+      run: |
+        git add _data/dependencies.yaml
+        git config --global user.email "canada.pr.bot@gmail.com"
+        git config --global user.name "canada-bot"
+        git commit -m "Updating dependencies"
+        git push
+        

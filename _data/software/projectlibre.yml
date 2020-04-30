@@ -1,0 +1,32 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: ProjectLibre is project management software.
+    fr: ProjectLibre est un logiciel de gestion de projet.
+category: '43231500'
+homepageURL:
+  en: 'http://www.projectlibre.com/'
+  fr: 'http://www.projectlibre.com/'
+licences:
+  - URL:
+      en: 'https://opensource.org/licenses/CPAL-1.0'
+      fr: 'https://opensource.org/licenses/CPAL-1.0'
+    spdxID: CPAL-1.0
+name:
+  en: ProjectLibre
+  fr: ProjectLibre
+tags:
+  en:
+    - Project
+  fr:
+    - Projet
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

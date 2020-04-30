@@ -17,6 +17,12 @@ licences:
       en: 'https://github.com/pyscripter/pyscripter/blob/master/LICENSE'
       fr: 'https://github.com/pyscripter/pyscripter/blob/master/LICENSE'
     spdxID: MIT
+  - URL:
+      en: >-
+        https://github.com/pyscripter/pyscripter/blob/58ecc5d3caeffdbfc933ed5b896a7b64632a2815/Source/dlgAskParam.pas
+      fr: >-
+        https://github.com/pyscripter/pyscripter/blob/58ecc5d3caeffdbfc933ed5b896a7b64632a2815/Source/dlgAskParam.pas
+    spdxID: MPL-1.0
 name:
   en: PyScripter
   fr: PyScripter
@@ -33,4 +39,4 @@ administrations:
           name: AAFC-AAC
         date:
           started: '1900-01-01'
-          metadataLastUpdated: '2020-01-28'
+          metadataLastUpdated: '2020-02-28'
