@@ -39,3 +39,35 @@ releases:
       - JavaScript
       - TypeScript
     status: Maintained
+- contact:
+      email: teamequipegoc@gmail.com
+      name: Team Equipe GOC
+    date:
+      created: '2016-06-16'
+      metadataLastUpdated: '2019-05-28'
+    description:
+      whatItDoes:
+        en: >-
+          A ragtag bunch of Public Servants in the Government of Canada lending their personal computers to Folding@Home; helping find a COVID-19 vaccine by modeling protein molecules.
+        fr: >-
+          Un groupe hétéroclite de fonctionnaires du gouvernement du Canada prêtant leurs ordinateurs personnels à Folding @ Home; aider à trouver un vaccin COVID-19 en modélisant des molécules de protéines.
+    category: '43232600'
+    name:
+      en: Public Servants Folding@Home Team
+      fr: Équipe Folding @ Home des fonctionnaires
+    licences:
+      - URL:
+          en: 'https://teamequipe.github.io/teamequipe/'
+          fr: 'https://teamequipe.github.io/teamequipe/'
+        spdxID: CC-BY-4.0
+    repositoryURL:
+      en: 'https://github.com/teamequipe/teamequipe'
+      fr: 'https://github.com/teamequipe/teamequipe'
+    tags:
+      en:
+        - COVID-19
+        - Exclude-Exclure
+      fr:
+        - COVID-19
+        - Exclude-Exclure
+    status: Maintained
