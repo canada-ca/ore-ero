@@ -110,21 +110,24 @@ context('Open Source Software on the English Form page', () =>  {
   });
 
   it('Should return dynamicall filled of existing data information on the English page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .contains('.NET Core'); //Faudrait plutôt vérifier que l'information s'est ajoutée dans les champs concernés
-  });
-
-  it('Should not dynamicall filled of unexisting data information on the English page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .should('not.contain', 'sourcetree'); //Test un peu redondant
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#enname').should('have.value', name);
+      cy.get('#frname').should('not.have.value', '');
+      cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#enhomepageURL').should('not.have.value', '');
+      cy.get('#frhomepageURL').should('not.have.value', '');
+      cy.get('#category').children().first().should('not.be.selected');
+      cy.get('#entags').should('not.have.value', '');
+      cy.get('#frtags').should('not.have.value', '');
+      cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
+        let i = id == 0 ? '' : id;
+        cy.get('#enlicencesURL' + i).should('not.have.value', '');
+        cy.get('#frlicencesURL' + i).should('not.have.value', '');
+        cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
+      });
+    });
   });
 
   it('Should submit form on the English page', () => {
@@ -152,15 +155,11 @@ context('Open Source Software on the English Form page', () =>  {
     cy.get('input#submitteremail')
       .type('xyz@ymail.com')
       .should('have.value','xyz@ymail.com');
-    cy.get('button#prbotSubmitsoftwareForm')
-      .click();
-    cy.get('#validation')
-      .submit();
-    cy.wait(2000);
-    cy.get('#errors-validation')
-      .should('not.contain','The form could not be submitted because 1 error was found.');
-    cy.get('form').submit();
-  }); // +++ Tu évite la soumission lors du test, - le test ne regarde pas le bon point
+    cy.window().then(win => {
+      win.submit_init.submitInit();
+    });
+    cy.get('#prbotSubmitAlertInProgress').should('be.visible');
+    });
 });
 
 context('Open Source Software on the French Form page', () =>  {
@@ -173,21 +172,24 @@ context('Open Source Software on the French Form page', () =>  {
   });
   
   it('Should return dynamicall filled of existing data information on the French page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')//Faudrait plutôt vérifier que l'information s'est ajoutée dans les champs concernés
-      .first()
-      .trigger('change')
-      .contains('.NET Core');
-  });
-  
-  it('Should not dynamicall filled of unexisting data information on the French page', () => {
-    cy.get('select')
-      .as('option')
-      .invoke('val', 'net-core')
-      .first()
-      .trigger('change')
-      .should('not.contain', 'sourcetree'); //Test un peu redondant
+    cy.get('#nameselect').children().eq(1).invoke('text').then((name) => {
+      cy.get('#nameselect').select(name);
+      cy.get('#enname').should('have.value', name);
+      cy.get('#frname').should('not.have.value', '');
+      cy.get('#endescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#frdescriptionwhatItDoes').should('not.have.value', '');
+      cy.get('#enhomepageURL').should('not.have.value', '');
+      cy.get('#frhomepageURL').should('not.have.value', '');
+      cy.get('#category').children().first().should('not.be.selected');
+      cy.get('#entags').should('not.have.value', '');
+      cy.get('#frtags').should('not.have.value', '');
+      cy.get('#addMorelicences').find('ul > li').each(($li, id) => {
+        let i = id == 0 ? '' : id;
+        cy.get('#enlicencesURL' + i).should('not.have.value', '');
+        cy.get('#frlicencesURL' + i).should('not.have.value', '');
+        cy.get('#licencesspdxID' + i).children().first().should('not.be.selected');
+      });
+    });
   });
   
   it('Should submit form on the French page', () => {
@@ -215,13 +217,9 @@ context('Open Source Software on the French Form page', () =>  {
     cy.get('input#submitteremail')
       .type('xyz@ymail.com')
       .should('have.value','xyz@ymail.com');
-    cy.get('button#prbotSubmitsoftwareForm')
-      .click();
-    cy.get('#validation')
-      .submit();  
-    cy.wait(2000);
-    cy.get('#errors-validation')
-      .should('not.contain','Le formulaire n\'a pu être soumis car 1 erreur a été trouvée.');
-       // +++ Tu évite la soumission lors du test, - le test ne regarde pas le bon point
+      cy.window().then(win => {
+        win.submit_init.submitInit();
+      });
+      cy.get('#prbotSubmitAlertInProgress').should('be.visible');
   });
 });
