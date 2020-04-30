@@ -1,0 +1,132 @@
+<section>
+    
+    <div class=row>
+        <details open>
+          <summary><h4 class="h4">{{ site.data.i18n.tables.filterOptions[page.lang] }}</h4></summary>
+          <form class="wb-tables-filter" data-bind-to="dataset-filter">
+
+        <div class="row">
+          {%- assign name_arr = "" | split: ',' -%}
+          {%- assign code_arr = "" | split: ',' -%}   
+            {%- for dependency in site.data.dependencies -%}
+              {%- for project in dependency.projects -%}
+                {%- assign name_arr = name_arr | push: project.projectName[page.lang] -%}
+              {%- endfor -%}
+              {%- for admin in dependency.admins -%}
+                    {%- assign code_arr = code_arr | push: admin -%}
+                  {%- endfor -%}              
+            {%- endfor -%}
+            <div class="form-group col-md-6">
+              <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
+              <select class="form-control" id="dt_department" name="dt_department" data-column="0">
+                <option value="">&nbsp;</option>
+                {%- assign code_arr = code_arr | uniq -%}
+                {%- assign admin_arr = "" | split: ',' -%}
+                {%- for admincode in code_arr -%}
+                {%- for govLevels in site.data.administrations -%}
+                  {%- for administration in govLevels[1] -%}
+                    {%- if administration.code == admincode -%}
+                     {%- assign admin_arr = admin_arr | push: administration -%}
+                    {%- endif -%}
+                    {%- endfor -%}
+                  {%- endfor -%}
+                {%- endfor -%}
+                {%- assign admin_arr = admin_arr | sort:"code" -%}
+                {%- for admin in admin_arr -%}
+                  <option value="{{ admin.code }}">{{ admin.name[page.lang] }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="dt_name">{{ site.data.i18n.tables.projectName[page.lang] }}</label>
+                <select class="form-control" id="dt_name" name="dt_name" data-column="1">
+                  <option value="">&nbsp;</option>
+                  {%- assign name_arr = name_arr | uniq | sort -%}
+                  {%- for name in name_arr -%}
+                  <option value="'{{ name }}'">{{ name }}</option>
+                  {%- endfor -%}
+                  </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+              <label for="dt_type">{{ site.data.i18n.tables.dependencyType[page.lang] }}</label>
+              <select class="form-control" id="dt_type" name="dt_type" data-column="3">
+                <option value="">&nbsp;</option>
+                <option value="core">core</option>
+                <option value="dev">dev</option>
+                <option value="peer">peer</option>
+                </select>
+            </div>
+      
+            <div class="form-group col-md-6">
+              <label for="dt_origin">{{ site.data.i18n.tables.dependencyOrigin[page.lang] }}</label>
+              <select class="form-control" id="dt_origin" name="dt_origin" data-column="4">
+                <option value="">&nbsp;</option>
+                <option value="bundler">bundler</option>
+                <option value="composer">composer</option>
+                <option value="npm">npm</option>
+                <option value="pypi">pypi</option> 
+              </select>
+            </div>
+        </div>
+      
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">{{ site.data.i18n.tables.filter[page.lang] }}</button>
+              </div>
+              <div class="col-xs-6">
+                <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
+              </div>
+            </div>
+      
+          </form>
+        </details>
+      </div>
+      
+      <!-- Data Table -->
+      <div class="col-md-12 mrgn-bttm-lg">
+        <table class="wb-tables table" id="dataset-filter" data-wb-tables='{ "columnDefs": [{"targets": [0, 1], "visible": false}], "paging": true}'>
+          <thead>
+            <tr>
+              <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.dependency[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.dependencyType[page.lang] }}</th>
+              <th>{{ site.data.i18n.tables.dependencyOrigin[page.lang] }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for dependency in site.data.dependencies -%}
+                <tr>
+                  {%- assign admin_arr = "" | split: ',' -%}
+                  {%- for admin in dependency.admins -%}
+                    {%- assign admin_arr = admin_arr | push: admin -%}
+                  {%- endfor -%}
+                  <td>
+                    {%- for admin in admin_arr -%}
+                    '{{ admin }}'
+                    {%- endfor -%}
+                  </td>
+                  {%- assign name_arr = "" | split: ',' -%}
+                  {%- for name in dependency.projects -%}
+                    {%- assign name_arr = name_arr | push: name.projectName[page.lang] -%}
+                  {%- endfor -%}
+                  <td>
+                    {%- for name in name_arr -%}
+                    '{{ name }}'
+                    {%- endfor -%}
+                  </td>
+                  <td>
+                    {{ dependency.dependency }}
+                  </td>
+                  <td>{{ dependency.type }}</td>
+                  <td>{{ dependency.origin }}</td>
+                  </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+      
+</section>

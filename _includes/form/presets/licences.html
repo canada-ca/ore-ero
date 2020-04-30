@@ -1,19 +1,30 @@
 {%- assign title = "licences" -%}
 <div class="add-more-group" id="addMore{{ title }}" data-title="{{ title }}">
-{% include form/components/title.html id=include.idPreset title=title -%}
-<div class="add-more-content">
-<div class="form-group">
-    {% include form/components/label-group.html id=include.idPreset title=title group="spdxID" %}
-    <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
-      <option value="">&nbsp;</option>
-      {%- assign licence_arr = site.data.spdx.json.licenses.licenses | where:"isDeprecatedLicenseId","false" -%}
-      {%- for licence in licence_arr -%}
-        {%- if licence.isOsiApproved == true or licence.isFsfLibre == true -%}
-        <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
-        {%- endif -%}
-      {%- endfor -%}
-    </select>
+  {% include form/components/title.html id=include.idPreset title=title -%}
+  <div class="add-more-content">
+    <div class="form-group">
+      {% include form/components/label-group.html id=include.idPreset title=title group="spdxID" %}
+      <select class="form-control" id="{{ title }}spdxID" name="{{ title }}spdxID" required="required">
+        <option value="">&nbsp;</option>
+        {%- assign licence_arr = site.data.spdx.json.licenses.licenses | where:"isDeprecatedLicenseId","false" -%}
+        {%- for licence in licence_arr -%}
+          {%- if licence.isOsiApproved == true or licence.isFsfLibre == true -%}
+          <option value="{{ licence.licenseId }}">{{ licence.licenseId }}</option>
+          {%- endif -%}
+        {%- endfor -%}
+      </select>
+      
+      {% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
+      {% include form/components/label-group.html id=include.idPreset title=title group="level" %}
+      <select class="{{ title }}level form-control" id="{{ title }}level" name="{{ title }}level" required="required">
+        {%- assign level = site.data.i18n.form[include.idPreset]licensesLevel.level -%}
+        <option value="">&nbsp;</option>
+        <option value="{{ level.main.en }}" data-fr="{{ level.main.fr }}">{{ level.main[page.lang] }}</option>
+        <option value="{{ level.sub.en }}" data-fr="{{ level.sub.fr }}">{{ level.sub[page.lang] }}</option>
+      </select>
+      <div id="{{ title }}Scope" class="hide">
+       {% include form/components/group-i18n-group.html id=include.idPreset title=title group="scope"  -%}
+      </div>
+    </div>
   </div>
-{% include form/components/group-i18n-group.html id=include.idPreset title=title group="URL" param=site.data.forms.param.licences -%}
-</div>
 </div>

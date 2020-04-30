@@ -1,0 +1,41 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      System for Automated Geoscientific Analyses is a geographic information
+      system computer program, used to edit spatial data.
+    fr: >-
+      System for Automated Geoscientific Analyses est un programme informatique
+      de système d'information géographique, utilisé pour éditer des données
+      spatiales.
+category: '43232600'
+homepageURL:
+  en: 'http://www.saga-gis.org/en/index.html'
+  fr: 'http://www.saga-gis.org/en/index.html'
+licences:
+  - URL:
+      en: 'http://www.saga-gis.org/en/about/about.html'
+      fr: 'http://www.saga-gis.org/en/about/about.html'
+    spdxID: GPL-2.0-or-later
+  - URL:
+      en: 'http://www.saga-gis.org/en/about/about.html'
+      fr: 'http://www.saga-gis.org/en/about/about.html'
+    spdxID: LGPL-2.1-only
+name:
+  en: SAGA
+  fr: SAGA
+tags:
+  en:
+    - GIS
+  fr:
+    - GIS
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

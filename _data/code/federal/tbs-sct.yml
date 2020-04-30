@@ -447,14 +447,16 @@ releases:
         spdxID: MIT
     repositoryURL:
       en: >-
-        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+        https://github.com/cds-snc/notification-api
       fr: >-
-        https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
+        https://github.com/cds-snc/notification-api
     tags:
       en:
         - Notify
+        - BCP-PCA
       fr:
         - Notification
+        - BCP-PCA
     downloadURL:
       en: >-
         https://github.com/search?q=topic%3Anotification-canada-ca+org%3Acds-snc&type=Repositories
@@ -471,3 +473,86 @@ releases:
     team:
       en: Canadian Digital Service
       fr: Service numérique canadien
+  - contact:
+      email: talent.cloud-nuage.de.talents@tbs-sct.gc.ca
+      name: TalentCloud
+    date:
+      created: '2018-01-01'
+      metadataLastUpdated: '2020-02-26'
+    description:
+      whatItDoes:
+        en: >-
+          Talent Cloud aspires to be a cross-sectoral initiative testing new
+          realities for talent in-and-out of government. This initiative is
+          designed to test the viability of a new model for recruiting and mo
+        fr: >-
+          Nuage de talent s'efforce d'être une initiative intersectorielle
+          mettant à l'essai de nouvelles réalités pour le talent à l'intérieur
+          et à l'extérieur du gouvernement. 
+    category: '43231500'
+    name:
+      en: TalentCloud
+      fr: Nuage de Talent
+    licences:
+      - URL:
+          en: 'https://github.com/GCTC-NTGC/TalentCloud/blob/dev/LICENSE'
+          fr: 'https://github.com/GCTC-NTGC/TalentCloud/blob/dev/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/GCTC-NTGC/TalentCloud'
+      fr: 'https://github.com/GCTC-NTGC/TalentCloud'
+    tags:
+      en:
+        - Talent
+      fr:
+        - Talent
+    homepageURL:
+      en: 'https://talent.canada.ca/en'
+      fr: 'https://talent.canada.ca/fr'
+    languages:
+      - TypeScript
+      - PHP
+      - HTML
+  - contact:
+      email: Benoit.Deshaies@tbs-sct.gc.ca
+      name: 'Deshaies, Benoit'
+    date:
+      created: '2019-04-01'
+      metadataLastUpdated: '2020-03-05'
+    description:
+      whatItDoes:
+        en: >-
+          The users of this project will be Government of Canada employees
+          assessing the impact of using an automated decision system, including
+          Artificial Intelligence.
+        fr: >-
+          Les utilisateurs de ce projet seront des employés du gouvernement du
+          Canada qui évalueront l'incidence de l'utilisation d'un système
+          automatisé de décision, y compris l'intelligence artificielle.
+    category: '43232600'
+    name:
+      en: Algorithmic Impact Assessment
+      fr: Évaluation de l'incidence algorithmique
+    licences:
+      - URL:
+          en: 'https://github.com/canada-ca/aia-eia-js/blob/master/LICENSE'
+          fr: 'https://github.com/canada-ca/aia-eia-js/blob/master/LICENSE'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/canada-ca/aia-eia-js'
+      fr: 'https://github.com/canada-ca/aia-eia-js'
+    tags:
+      en:
+        - AI
+      fr:
+        - AI
+    homepageURL:
+      en: 'https://open.canada.ca/aia-eia-js/?lang=en'
+      fr: 'https://open.canada.ca/aia-eia-js/?lang=fr'
+    languages:
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - Vue
+    status: Maintained

@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Bugzilla is a web-based general-purpose bug tracking system and testing
+      tool originally developed and used by the Mozilla project, and licensed
+      under the Mozilla Public License.
+    fr: >-
+      Bugzilla est un système de suivi des bogues et un outil de test
+      généraliste basé sur le Web, développé et utilisé à l'origine par le
+      projet Mozilla et sous licence sous la licence publique Mozilla.
+category: '43232400'
+homepageURL:
+  en: 'https://www.bugzilla.org/'
+  fr: 'https://www.bugzilla.org/'
+licences:
+  - URL:
+      en: 'https://github.com/bugzilla/bugzilla/blob/5.2/LICENSE'
+      fr: 'https://github.com/bugzilla/bugzilla/blob/5.2/LICENSE'
+    spdxID: MPL-2.0
+name:
+  en: Bugzilla
+  fr: Bugzilla
+tags:
+  en:
+    - Bug Tracking
+  fr:
+    - Suivi de problèmes
+administrations:
+  - adminCode: eccc
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: ECCC-ECCC
+        date:
+          started: '2010-01-01'
+          metadataLastUpdated: '2020-01-31'

@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      rsync is a utility for efficiently transferring and synchronizing files
+      between a computer and an external hard drive and across networked
+      computers.
+    fr: >-
+      rsync est un utilitaire pour transférer et synchroniser efficacement des
+      fichiers entre un ordinateur et un disque dur externe et sur des
+      ordinateurs en réseau.
+category: '43233400'
+homepageURL:
+  en: 'https://rsync.samba.org/'
+  fr: 'https://rsync.samba.org/'
+licences:
+  - URL:
+      en: 'https://rsync.samba.org/GPL.html'
+      fr: 'https://rsync.samba.org/GPL.html'
+    spdxID: GPL-3.0-only
+name:
+  en: rsync
+  fr: rsync
+tags:
+  en:
+    - File Transfer
+  fr:
+    - Transfert de fichier
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'

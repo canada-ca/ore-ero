@@ -9,18 +9,13 @@
 {%- endif -%}
 <div id="tags">
   <div id="tags{{ lang1 | upcase }}" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang1 param=include.param %}
-    <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang1 }}{{ title }}" name="{{ lang1 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
-    </div>
+    {%- include form/presets/tagInput.html idPreset=include.idPreset lang=lang1 id=include.id title=title param=include.param -%}
   </div>
   <div id="tags{{ lang2 | upcase }}" class="form-group">
-    {% include form/components/label-i18n.html id=include.idPreset title=title lang=lang2 param=include.param %}
-    <div class="control-group input-group col-xs-2 mrgn-tp-md">
-      <input type="text" id="{{ lang2 }}{{ title }}" name="{{ lang2 }}{{ title }}" class="form-control"{%- if include.param.required == nil or include.param.required %} required="required"{% endif %}>
-    </div>
+    {%- include form/presets/tagInput.html idPreset=include.idPreset lang=lang2 id=include.id title=title param=include.param -%}
   </div>
 </div>
 <div class="input-group control-group after-add-more col-xs-2">
-  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i> {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
+  <button class="btn btn-primary add-more" type="button"><i class="glyphicon glyphicon-plus"></i>
+    {{ site.data.i18n.form[include.idPreset][title].button[page.lang] }}</button>
 </div>

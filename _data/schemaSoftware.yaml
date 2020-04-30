@@ -16,6 +16,8 @@ software:
 licence:
   URL: include('lang')
   spdxID: str()
+  level: include('lang', required=False)
+  scope: include('lang', required=False)
 
 tag:
   en: list(str())

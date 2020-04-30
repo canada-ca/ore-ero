@@ -13,7 +13,7 @@ function slugify(string) {
       .toString()
       .toLowerCase()
       .replace(/\s+/g, '-') // Replace spaces with -
-      .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+      .replace(p, (c) => b.charAt(a.indexOf(c))) // Replace special characters
       .replace(/&/g, '-and-') // Replace & with 'and'
       // eslint-disable-next-line no-useless-escape
       .replace(/[^\w\-]+/g, '') // Remove all non-word characters
