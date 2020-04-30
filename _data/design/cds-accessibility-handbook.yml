@@ -34,3 +34,10 @@ administrations:
         date:
           started: '2019-03-01'
           metadataLastUpdated: '2020-02-17'
+  - adminCode: asc-csa
+    uses:
+      - contact:
+          email: E@test.ca
+        date:
+          started: '2020-02-19'
+          metadataLastUpdated: '2020-04-30'
