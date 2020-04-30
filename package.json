@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
-    "cypress": "^4.4.1",
+    "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-plugin-prettier": "^3.1.3",
     "licensee": "^8.0.2",
