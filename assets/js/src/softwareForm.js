@@ -11,8 +11,6 @@
 
 const softwareSelect = $('.page-softwareForm #nameselect');
 const adminSelect = $('.page-softwareForm #adminCode');
-const URL = document.defaultView.location.origin + 
-(document.defaultView.location.protocol == "http:" ? "/ore-ero" : "");
 
 $(document).ready(function () {
   $('#prbotSubmitsoftwareForm').click(function () {
