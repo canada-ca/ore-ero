@@ -1,36 +1,37 @@
 #!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
-import json, os, smtplib
+import json, os
 import urllib.request
 from datetime import date, timedelta, datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from messageTemplates import Templates
+from notifications_python_client.notifications import NotificationsAPIClient
 ###############################################################################
 ###From ore-ero folder, run with ./assets/py/emailUpdateScript.py           ###
 ###############################################################################
 #Maximum amount of days since last update, half a year default
 maxDaysNoUpdate = 182
 
+frTypes = {"code": "code",
+        "design": "design",
+        "software": "logiciel",
+        "standard": "norme",
+        "partnership": "partenariat"}
+
+formName = {"code": {"en": "open-source-code-form", "fr": "code-source-ouvert-formulaire"},
+        "design": {"en": "open-design-form", "fr": "design-libre-formulaire"},
+        "software": {"en": "open-source-software-form", "fr": "logiciel-libre-formulaire"},
+        "standard": {"en": "open-standard-form", "fr": "norme-ouverte-formulaire"},
+        "partnership": {"en": "partnership-form", "fr": "partenariat-formulaire"}}
+
+
 def sendEmails(emailData):
-    address = os.getenv("GMAIL_ADDRESS")
-    server = smtplib.SMTP_SSL(host='smtp.gmail.com')
-    server.login(address, os.getenv("GMAIL_APP_PASSWORD"))
+    client = NotificationsAPIClient(os.getenv("API_KEY"), "https://api.notification.alpha.canada.ca")
     for data in emailData:
-        email = MIMEMultipart()
-        email['from'] = address
-        #Replace with any address to test the script
-        email['to'] = data[0]
-        email['subject'] = Templates.getSubject() 
-        plainVersion = MIMEText(Templates.plainFormat(data[1], data[2], data[3], data[4]), 'plain')
-        plainVersion.add_header("Content-Disposition",
-        "attachment; filename= Plain Text Version.txt")
-        htmlVersion = MIMEText(Templates.htmlFormat(data[1], data[2], data[3], data[4]), 'html')
-        email.attach(htmlVersion)
-        email.attach(plainVersion)
-        server.send_message(email)
-        del email
-    server.quit()
+        #Replace data[0] with any address to test the script
+        client.send_notification(
+            data[0], os.getenv("TEMPLATE_ID"),
+            {'EN_NAME': data[1], 'FR_NAME': data[2], 'LAST_UPDATED': data[3],
+            'EN_TYPE': data[4], 'FR_TYPE': frTypes[data[4]],
+            'EN_FORM': formName[data[4]]["en"], 'FR_FORM': formName[data[4]]["fr"]})
         
 
 def checkCodeEmails():
