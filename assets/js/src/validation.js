@@ -77,5 +77,5 @@ function submitInit() {
 
 //Allows use of the function for testing so there isn't any real submission happening
 window.submit_init = {
-  submitInit
+  submitInit,
 };

@@ -452,5 +452,5 @@ window.softwareForm_func = {
   resetFieldsSoftware,
   selectAdmin,
   addValueToFieldsAdmin,
-  resetFieldsAdmin
+  resetFieldsAdmin,
 };
