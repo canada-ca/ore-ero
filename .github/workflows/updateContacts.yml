@@ -1,0 +1,19 @@
+name: Contact Email Update
+
+on:
+  schedule:
+    - cron:  '0 0 31 1,7 *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Main repo
+      uses: actions/checkout@v2
+      
+    - name: Contact Email Update
+      env:
+        API_KEY: ${{ secrets.NotifyAPIKey }}
+        TEMPLATE_ID: ""
+      run: ./assets/py/emailUpdateScript.py
