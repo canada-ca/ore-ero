@@ -17,14 +17,17 @@ licences:
       en: 'https://github.com/dotnet/core/blob/master/LICENSE.TXT'
       fr: 'https://github.com/dotnet/core/blob/master/LICENSE.TXT'
     spdxID: MIT
+    level:
+      en: Main license
+      fr: License principale
 name:
   en: .NET Core
   fr: .NET Core
 tags:
   en:
-    - Programming Language
+    - Code
   fr:
-    - Langage de programmation
+    - Code
 administrations:
   - adminCode: tc
     uses:
