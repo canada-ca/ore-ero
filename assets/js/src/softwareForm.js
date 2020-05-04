@@ -23,6 +23,8 @@ $(document).ready(function () {
   softwareSelect.change(function () {
     selectSoftware();
     if (adminSelect.val() != '') selectAdmin();
+    if (softwareSelect.prop('selectedIndex') == 0) setRequiredUpdate();
+    else setNotRequiredUpdate();
   });
 
   adminSelect.change(function () {
@@ -35,8 +37,46 @@ $(document).ready(function () {
     hideNewAdminForm();
     resetMoreGroup($('#addMorelicences'));
     resetMoreGroup($('#addMoreuses'));
+    setRequiredUpdate();
   });
 });
+
+function setRequiredUpdate() {
+  adminSelect.attr('required', 'required');
+  adminSelect
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
+  $('#date').attr('required', 'required');
+  $('#date')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
+  $('#contactemail').attr('required', 'required');
+  $('#contactemail')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2 required');
+}
+
+function setNotRequiredUpdate() {
+  hideNewAdminForm();
+  adminSelect.removeAttr('required');
+  adminSelect
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
+  $('#date').removeAttr('required');
+  $('#date')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
+  $('#contactemail').removeAttr('required');
+  $('#contactemail')
+    .prop('labels')
+    .item(0)
+    .setAttribute('class', 'h2');
+}
 
 function getsoftwareObject() {
   // Mandatory fields
@@ -62,28 +102,41 @@ function getsoftwareObject() {
       en: getTagsEN(),
       fr: getTagsFR(),
     },
-    administrations: [
-      {
-        adminCode: getAdminCode(),
-        uses: [
-          {
-            contact: {
-              email: $('#contactemail').val(),
-            },
-            date: {
-              started: $('#date').val(),
-              metadataLastUpdated: getToday(),
-            },
-          },
-        ],
-      },
-    ],
+    administrations: []
   };
 
   // More-groups
   addMoreLicences(softwareObject);
 
   // Optional fields
+  if (getAdminCode()) {
+    softwareObject.administrations[0] = {};
+    softwareObject.administrations[0].uses = [];
+    softwareObject.administrations[0].uses[0] = {};
+    softwareObject.administrations[0].uses[0].contact = {};
+    softwareObject.administrations[0].uses[0].date = {};
+    softwareObject.administrations[0].adminCode = getAdminCode();
+    if ($('#contactemail').val())
+      softwareObject.administrations[0].uses[0].contact.email = $(
+        '#contactemail'
+      ).val();
+    if ($('#contactname').val()) {
+      softwareObject.administrations[0].uses[0].contact.name = $(
+        '#contactname'
+      ).val();
+    }
+    if ($('#enteam').val() || $('#frteam').val()) {
+      softwareObject.administrations[0].uses[0].team = {};
+      if ($('#enteam').val())
+        softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
+      if ($('#frteam').val())
+        softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
+    }
+    if ($('#date').val())
+      softwareObject.administrations[0].uses[0].date.started = $('#date').val();
+    softwareObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
+  }
+
   if (
     $('#endescriptionhowItWorks').val() ||
     $('#frdescriptionhowItWorks').val()
@@ -99,20 +152,6 @@ function getsoftwareObject() {
     softwareObject.description.howItWorks.fr = $(
       '#frdescriptionhowItWorks'
     ).val();
-  }
-
-  if ($('#contactname').val()) {
-    softwareObject.administrations[0].uses[0].contact.name = $(
-      '#contactname'
-    ).val();
-  }
-
-  if ($('#enteam').val() || $('#frteam').val()) {
-    softwareObject.administrations[0].uses[0].team = {};
-    if ($('#enteam').val())
-      softwareObject.administrations[0].uses[0].team.en = $('#enteam').val();
-    if ($('#frteam').val())
-      softwareObject.administrations[0].uses[0].team.fr = $('#frteam').val();
   }
 
   return softwareObject;

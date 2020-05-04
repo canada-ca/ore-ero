@@ -33,7 +33,7 @@ use:
     started: str()
     metadataLastUpdated: str()
   team: include('lang', required=False)
-  status: str(required=False)
+  status: include('lang', required=False)
 
 lang:
   en: str()

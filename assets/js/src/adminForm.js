@@ -25,19 +25,19 @@ $(document).ready(function () {
       $('#provinceSelect')
         .attr('required', 'required')
         .siblings('label')
-        .addClass('required');
+        .attr('required', 'required');
     else
       $('#provinceSelect')
         .removeAttr('required')
         .siblings('label')
-        .removeClass('required');
+        .removeAttr('required');
   });
 });
 
 function showNewAdminForm() {
   $('#newAdmin').removeClass('hide');
   $('#adminCode').removeAttr('required');
-  $('label[for="adminCode"]').removeClass('required');
+  $('label[for="adminCode"]').removeAttr('required');
   $('label[for="adminCode"] strong').addClass('hide');
   $('#adminCode').prop('selectedIndex', 0).change();
 
@@ -47,7 +47,7 @@ function showNewAdminForm() {
 function hideNewAdminForm() {
   $('#newAdmin').addClass('hide');
   $('#adminCode').attr('required', 'required');
-  $('label[for="adminCode"]').addClass('required');
+  $('label[for="adminCode"]').attr('required', 'required');
   $('label[for="adminCode"] strong').removeClass('hide');
 
   newAdminON = false;

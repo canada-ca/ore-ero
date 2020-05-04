@@ -48,6 +48,6 @@ administrations:
         team:
           en: Digital Transformation Office
           fr: Bureau de la transformation numérique
-designStatus: 
-  en: Original design
-  fr: Design original
+        designStatus: 
+          en: Original design
+          fr: Design original
