@@ -15,6 +15,5 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import submitInit from "../assets/js/src/validation.js"
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
