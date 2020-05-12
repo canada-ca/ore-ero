@@ -42,15 +42,9 @@ $(document).ready(function () {
 
 function setRequiredUpdate() {
   adminSelect.attr('required', 'required');
-  adminSelect
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2 required');
+  adminSelect.prop('labels').item(0).setAttribute('class', 'h2 required');
   $('#date').attr('required', 'required');
-  $('#date')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2 required');
+  $('#date').prop('labels').item(0).setAttribute('class', 'h2 required');
   $('#contactemail').attr('required', 'required');
   $('#contactemail')
     .prop('labels')
@@ -66,25 +60,13 @@ function setRequiredUpdate() {
 function setNotRequiredUpdate() {
   hideNewAdminForm();
   adminSelect.removeAttr('required');
-  adminSelect
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  adminSelect.prop('labels').item(0).setAttribute('class', 'h2');
   $('#date').removeAttr('required');
-  $('#date')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  $('#date').prop('labels').item(0).setAttribute('class', 'h2');
   $('#contactemail').removeAttr('required');
-  $('#contactemail')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  $('#contactemail').prop('labels').item(0).setAttribute('class', 'h2');
   $('#designStatus').removeAttr('required');
-  $('#designStatus')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  $('#designStatus').prop('labels').item(0).setAttribute('class', 'h2');
 }
 
 function getDesignObject() {
@@ -107,7 +89,7 @@ function getDesignObject() {
       en: $('#enname').val(),
       fr: $('#frname').val(),
     },
-    administrations: []
+    administrations: [],
   };
 
   // More-groups

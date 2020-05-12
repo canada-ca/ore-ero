@@ -42,21 +42,15 @@ $(document).ready(function () {
 
 function setRequiredUpdate() {
   adminSelect.attr('required', 'required');
-  adminSelect
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2 required');
+  adminSelect.prop('labels').item(0).setAttribute('class', 'h2 required');
   $('#date').attr('required', 'required');
-  $('#date')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2 required');
+  $('#date').prop('labels').item(0).setAttribute('class', 'h2 required');
   $('#contactemail').attr('required', 'required');
   $('#contactemail')
     .prop('labels')
     .item(0)
     .setAttribute('class', 'h2 required');
-  $('#addMorereference ul.list-unstyled > li').each(function() {
+  $('#addMorereference ul.list-unstyled > li').each(function () {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     $('#enreferenceURL' + id).attr('required', 'required');
@@ -81,30 +75,18 @@ function setRequiredUpdate() {
       .setAttribute('class', 'required');
   });
   $('#status').attr('required', 'required');
-  $('#status')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2 required');
+  $('#status').prop('labels').item(0).setAttribute('class', 'h2 required');
 }
 
 function setNotRequiredUpdate() {
   hideNewAdminForm();
   adminSelect.removeAttr('required');
-  adminSelect
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  adminSelect.prop('labels').item(0).setAttribute('class', 'h2');
   $('#date').removeAttr('required');
-  $('#date')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  $('#date').prop('labels').item(0).setAttribute('class', 'h2');
   $('#contactemail').removeAttr('required');
-  $('#contactemail')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
-  $('#addMorereference ul.list-unstyled > li').each(function() {
+  $('#contactemail').prop('labels').item(0).setAttribute('class', 'h2');
+  $('#addMorereference ul.list-unstyled > li').each(function () {
     let id =
       $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
     $('#enreferenceURL' + id).removeAttr('required');
@@ -129,10 +111,7 @@ function setNotRequiredUpdate() {
       .setAttribute('class', '');
   });
   $('#status').removeAttr('required');
-  $('#status')
-    .prop('labels')
-    .item(0)
-    .setAttribute('class', 'h2');
+  $('#status').prop('labels').item(0).setAttribute('class', 'h2');
 }
 function getStandardObject() {
   // Mandatory fields
@@ -161,7 +140,7 @@ function getStandardObject() {
       en: getTagsEN(),
       fr: getTagsFR(),
     },
-    administrations: []
+    administrations: [],
   };
 
   // More-groups
@@ -189,18 +168,18 @@ function getStandardObject() {
       standardObject.administrations[0].date.started = $('#date').val();
     standardObject.administrations[0].date.metadataLastUpdated = getToday();
 
-    $('#addMorereference ul.list-unstyled > li').each(function(i) {
+    $('#addMorereference ul.list-unstyled > li').each(function (i) {
       let id =
         $(this).attr('data-index') == '0' ? '' : $(this).attr('data-index');
       standardObject.administrations[0].references[i] = {
         URL: {
           en: $('#enreferenceURL' + id).val(),
-          fr: $('#frreferenceURL' + id).val()
+          fr: $('#frreferenceURL' + id).val(),
         },
         name: {
           en: $('#enreferencename' + id).val(),
-          fr: $('#frreferencename' + id).val()
-        }
+          fr: $('#frreferencename' + id).val(),
+        },
       };
     });
     standardObject.administrations[0].status = $('#status').val();
