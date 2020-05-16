@@ -6770,9 +6770,6 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: media-typer
   origin: npm
   type: core
@@ -61008,14 +61005,10 @@
   type: core
   admins: 
     - bc
-    - tbs-sct
   projects: 
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@bcgov/gatsby-source-github-raw'
   origin: npm
   type: core
@@ -65033,9 +65026,6 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: file-extension
   origin: npm
   type: core
@@ -70389,9 +70379,6 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: uid-number
   origin: npm
   type: core
@@ -83552,7 +83539,7 @@
     - projectName: 
         en: Notify
         fr: Notification
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@42.1.0#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@42.1.1#egg'
   origin: pypi
   type: core
   admins: 
@@ -84200,15 +84187,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@base2/pretty-print-object'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@formatjs/intl-displaynames'
   origin: npm
   type: core
@@ -84264,15 +84242,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@icons/material'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@storybook/addon-info'
   origin: npm
   type: core
   admins: 
@@ -84767,15 +84736,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: marksy
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: material-colors
   origin: npm
   type: core
@@ -84804,15 +84764,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: nearley
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: nested-object-assign
   origin: npm
   type: core
   admins: 
@@ -84866,15 +84817,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: react-addons-create-fragment
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: react-color
   origin: npm
   type: core
@@ -84894,15 +84836,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: react-docgen-typescript-loader
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: react-element-to-jsx-string
   origin: npm
   type: core
   admins: 
@@ -85056,15 +84989,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@fortawesome/fontawesome-free'
-  origin: npm
-  type: dev
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@storybook/addon-info'
   origin: npm
   type: dev
   admins: 
