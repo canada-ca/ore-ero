@@ -1,0 +1,38 @@
+---
+schemaVersion: '1.0'
+adminCode: csps-efpc
+releases:
+  - contact:
+      email: noreply@canada.ca
+      name: 'https://github.com/ToferC/payscraper/issues'
+    date:
+      created: '2020-05-01'
+      metadataLastUpdated: '2020-05-19'
+    description:
+      whatItDoes:
+        en: >-
+          An example GO Lang project for scraping Pay data from TBS Collective
+          Agreements.
+        fr: >-
+          Un exemple de projet Lang GO pour supprimer les données de paye des
+          conventions collectives du SCT.
+    category: '43232500'
+    name:
+      en: GO Pay Scraper
+      fr: GO Gratte-salaire
+    licences:
+      - URL:
+          en: 'https://github.com/ToferC/payscraper/blob/master/LICENCE'
+          fr: 'https://github.com/ToferC/payscraper/blob/master/LICENCE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/ToferC/payscraper'
+      fr: 'https://github.com/ToferC/payscraper'
+    tags:
+      en:
+        - Scraper
+      fr:
+        - Grattoir
