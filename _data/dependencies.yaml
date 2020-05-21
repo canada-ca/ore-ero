@@ -54506,15 +54506,6 @@
     - projectName: 
         en: GC Architecture
         fr: Architecture GC
-- dependency: '@esri/arcgis-to-geojson-utils'
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
 - dependency: '@geolonia/mbgl-gesture-handling'
   origin: npm
   type: core
@@ -54834,24 +54825,6 @@
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-- dependency: '@types/geojson'
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
-- dependency: '@types/leaflet'
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
 - dependency: '@types/normalize-package-data'
   origin: npm
   type: core
@@ -56325,15 +56298,6 @@
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-- dependency: esri-leaflet
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
 - dependency: event-pubsub
   origin: npm
   type: core
@@ -56965,33 +56929,6 @@
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-- dependency: leaflet
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
-- dependency: leaflet-gesture-handling
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
-- dependency: leaflet-virtual-grid
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
 - dependency: loader-fs-cache
   origin: npm
   type: core
@@ -58110,15 +58047,6 @@
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-- dependency: tiny-binary-search
-  origin: npm
-  type: core
-  admins: 
-    - bc
-  projects: 
-    - projectName: 
-        en: gwells
-        fr: gwells
 - dependency: tinyqueue
   origin: npm
   type: core
