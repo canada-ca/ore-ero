@@ -2,7 +2,7 @@
 {%- assign group = "select" -%}
 {%- assign design_arr = "" | split: ',' -%}
 {%- for design in site.data.design -%}
-    {%- assign design_arr = design_arr | push: design[1].name[page.lang] -%}
+    {%- assign design_arr = design_arr | push: design[1] -%}
 {%- endfor %}
 {%- assign design_arr = design_arr | sort_natural -%}
 <div class="form-group">
@@ -10,7 +10,7 @@
   <select class="form-control" id="{{ title }}{{ group }}" name="{{ title }}{{ group }}">
     <option value="">&nbsp;</option>
     {%- for design in design_arr -%}
-      <option value="{{ design | slugify }}">{{ design }}</option>
+      <option value="{{ design.name.en | slugify }}">{{ design.name[page.lang] }}</option>
     {%- endfor -%}
   </select>
 </div>

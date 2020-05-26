@@ -93,6 +93,7 @@ function fillTypeFields(designTypes) {
     }
     $('#designType' + id).val(designType.type.en);
   });
+  
 }
 
 function addType(index) {

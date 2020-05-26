@@ -8,7 +8,8 @@
     "open-licences": "licensee --errors-only",
     "prettify": "eslint assets/js/src/** --fix",
     "test": "npm run lint && npm run open-licences",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress": "cypress run"
   },
   "repository": {
     "type": "git",

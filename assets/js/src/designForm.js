@@ -11,6 +11,8 @@
 
 const designSelect = $('.page-designForm #nameselect');
 const adminSelect = $('.page-designForm #adminCode');
+const URL = document.defaultView.location.origin + 
+(document.defaultView.location.protocol == "http:" ? "/ore-ero" : "");
 
 $(document).ready(function () {
   $('#prbotSubmitdesignForm').click(function () {
@@ -390,7 +392,7 @@ function getConfigNew(designObject, file, ProjectName) {
 
 function selectDesign() {
   let value = designSelect.val();
-  $.getJSON('../design.json', function (result) {
+  $.getJSON(URL + '/design.json', function (result) {
     if (result[value]) {
       addValueToFieldsDesign(result[value]);
       $('#adminCode').focus();
@@ -440,7 +442,7 @@ function resetFieldsDesign() {
 function selectAdmin() {
   let design = designSelect.val();
   let administration = adminSelect.val();
-  $.getJSON('../design.json', function (result) {
+  $.getJSON(URL + '/design.json', function (result) {
     if (result[design]) {
       for (let i = 0; i < result[design].administrations.length; i++) {
         if (result[design].administrations[i].adminCode == administration) {

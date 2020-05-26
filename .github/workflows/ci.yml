@@ -39,4 +39,10 @@ jobs:
 
     - name: Run HTML5 Validator
       run: html5validator --root _site/
+    
+    - name: Serve with jekyll
+      run: bundle exec jekyll serve
+
+    - name: Cypress
+      run: npm run cypress
       
