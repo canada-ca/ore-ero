@@ -167,6 +167,29 @@
     - projectName: 
         en: Devex
         fr: Devex
+- dependency: '@types/debug'
+  origin: npm
+  type: core
+  admins: 
+    - city-of-sault-ste-marie-on
+    - bc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/ejs'
   origin: npm
   type: core
@@ -18746,6 +18769,22 @@
     - projectName: 
         en: Devex
         fr: Devex
+- dependency: '@types/debug'
+  origin: npm
+  type: dev
+  admins: 
+    - city-of-sault-ste-marie-on
+    - city-of-montreal-qc
+  projects: 
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: WorkIt
+        fr: WorkIt
 - dependency: '@types/ejs'
   origin: npm
   type: dev
@@ -41674,15 +41713,6 @@
     - projectName: 
         en: WorkIt
         fr: WorkIt
-- dependency: '@types/debug'
-  origin: npm
-  type: dev
-  admins: 
-    - city-of-montreal-qc
-  projects: 
-    - projectName: 
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/events'
   origin: npm
   type: dev
@@ -63342,22 +63372,6 @@
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: '@types/debug'
-  origin: npm
-  type: core
-  admins: 
-    - bc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName: 
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@types/eslint-visitor-keys'
   origin: npm
   type: core
