@@ -31856,6 +31856,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
         en: AppHub
         fr: HubApp
 - dependency: png-js
@@ -32969,6 +32972,9 @@
     - projectName: 
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
@@ -41263,6 +41269,9 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: underscore.string
   origin: npm
   type: core
@@ -46832,6 +46841,9 @@
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
@@ -52709,6 +52721,7 @@
   type: core
   admins: 
     - bc
+    - tbs-sct
   projects: 
     - projectName: 
         en: gwells
@@ -52716,6 +52729,9 @@
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: quickselect
   origin: npm
   type: core
@@ -57302,6 +57318,9 @@
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
@@ -66296,6 +66315,9 @@
     - projectName: 
         en: CDS Website
         fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: mitt
   origin: npm
   type: core
@@ -79166,6 +79188,9 @@
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: is-lower-case
   origin: npm
   type: core
@@ -84615,6 +84640,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/cacheable-request'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/cheerio'
   origin: npm
   type: core
@@ -84625,6 +84659,15 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@types/classnames'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@types/emscripten'
   origin: npm
   type: core
   admins: 
@@ -84651,7 +84694,25 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/http-cache-semantics'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/intl'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@types/keyv'
   origin: npm
   type: core
   admins: 
@@ -84705,6 +84766,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/responselike'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/schema-utils'
   origin: npm
   type: core
@@ -84733,6 +84803,69 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@webpack-contrib/schema-utils'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/core'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/fslib'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/json-proxy'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/libzip'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/parsers'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/pnp'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@yarnpkg/shell'
   origin: npm
   type: core
   admins: 
@@ -84849,7 +84982,25 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: cacheable-lookup
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: cldr-core
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: clipanion
   origin: npm
   type: core
   admins: 
@@ -85042,6 +85193,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: http2-wrapper
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: img-loader
   origin: npm
   type: core
@@ -85096,6 +85256,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: json-file-plus
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: language-subtag-registry
   origin: npm
   type: core
@@ -85124,6 +85293,24 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: lodash.camelcase
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: lodash.topairs
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: logic-solver
   origin: npm
   type: core
   admins: 
@@ -85177,7 +85364,34 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: node.extend
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: nprogress
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: promise-deferred
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: promiseback
   origin: npm
   type: core
   admins: 
@@ -85334,6 +85548,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: resolve-alpn
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: resolve-url-loader
   origin: npm
   type: core
@@ -85379,6 +85602,33 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: stream-buffers
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: stream-to-array
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: stream-to-promise
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: sweetalert2
   origin: npm
   type: core
@@ -85404,6 +85654,15 @@
     - projectName: 
         en: AppHub
         fr: HubApp
+- dependency: tunnel
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: universal-router
   origin: npm
   type: core
