@@ -73557,6 +73557,9 @@
     - projectName: 
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@types/bcrypt'
   origin: npm
   type: core
