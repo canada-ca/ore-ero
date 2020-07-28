@@ -1445,6 +1445,9 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: '@babel/plugin-syntax-json-strings'
   origin: npm
   type: core
@@ -33100,9 +33103,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName: 
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: process
   origin: npm
   type: core
@@ -66535,6 +66535,9 @@
     - projectName: 
         en: CDS Website
         fr: Site Web SNC
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: node-dir
   origin: npm
   type: core
@@ -88395,6 +88398,24 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@babel/plugin-proposal-private-methods'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+- dependency: '@babel/plugin-transform-unicode-escapes'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: '@soda/get-current-script'
   origin: npm
   type: core
@@ -88621,6 +88642,15 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
 - dependency: cspell-util-bundle
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+- dependency: deasync
   origin: npm
   type: core
   admins: 
