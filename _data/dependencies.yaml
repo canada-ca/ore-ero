@@ -78090,6 +78090,18 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@snyk/docker-registry-v2-client'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@snyk/gemfile'
   origin: npm
   type: core
@@ -78175,6 +78187,18 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@snyk/snyk-cocoapods-plugin'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@snyk/snyk-docker-pull'
   origin: npm
   type: core
   admins: 
@@ -79014,6 +79038,18 @@
     - projectName: 
         en: CDS Website
         fr: Site Web SNC
+- dependency: child-process
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: cli-spinner
   origin: npm
   type: core
@@ -79524,6 +79560,18 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: lodash.flatmap
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: lodash.topairs
   origin: npm
   type: core
@@ -79927,6 +79975,18 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: pac-resolver
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: parse-link-header
   origin: npm
   type: core
   admins: 
@@ -86820,24 +86880,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/docker-registry-v2-client'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@snyk/snyk-docker-pull'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@storybook/addon-knobs'
   origin: npm
   type: core
@@ -87090,15 +87132,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: child-process
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: cldr-core
   origin: npm
   type: core
@@ -87225,6 +87258,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: fast-memoize
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: fetch-mock
   origin: npm
   type: core
@@ -87280,15 +87322,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: img-loader
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: intl-format-cache
   origin: npm
   type: core
   admins: 
@@ -87379,15 +87412,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: lodash.filter
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: lodash.flatmap
   origin: npm
   type: core
   admins: 
@@ -87496,15 +87520,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: nprogress
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: parse-link-header
   origin: npm
   type: core
   admins: 
