@@ -66405,6 +66405,9 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName: 
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: death
@@ -84492,6 +84495,15 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: cls-bluebird
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: cron
   origin: npm
   type: core
   admins: 
