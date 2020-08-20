@@ -8,6 +8,8 @@ on:
       - ".licensee.json"
       - "assets/js/src/"
       - ".github/workflows/lint-js.yml"
+    branches-ignore:
+      - "dependabot/**"
   pull_request:
     paths:
       - "package*.json"
