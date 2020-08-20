@@ -21,10 +21,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Set up Ruby 2.6
+    - name: Set up Ruby
       uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
 
     - name: Install Ruby dependencies
       run: |
@@ -37,6 +35,12 @@ jobs:
     - name: Run HTMLProofer
       run: htmlproofer --disable-external --allow-hash-href ./_site
 
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.3
+
+    - name: Install NPM dependencies
+      run: npm ci
+
     - name: Run HTML5 Validator
-      run: html5validator --root _site/
+      run: npm run lint:html
       

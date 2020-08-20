@@ -4,7 +4,9 @@
   "description": "Open Resource Exchange - Échange de ressources ouvert",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint assets/js/src/**",
+    "lint": "npm run lint:js && npm run lint:html",
+    "lint:html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --no-langdetect --skip-non-html _site/",
+    "lint:js": "eslint assets/js/src/**",
     "open-licences": "licensee --errors-only",
     "prettify": "eslint assets/js/src/** --fix",
     "test": "npm run lint && npm run open-licences",
@@ -31,7 +33,8 @@
     "eslint": "^7.2.0",
     "eslint-plugin-prettier": "^3.1.3",
     "licensee": "^8.0.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "vnu-jar": "^20.6.30"
   },
   "dependencies": {}
 }
