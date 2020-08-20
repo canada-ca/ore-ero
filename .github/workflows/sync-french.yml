@@ -28,9 +28,8 @@ jobs:
 
       run: |
         cd french
-        ls
         git config --global user.email "canada.pr.bot@gmail.com"
         git config --global user.name "canada-bot"
         git add -A
-        git commit -m "Sync Action"
-        git push -f || fatal "Error pushing the French Mirror"
+        git commit -m "Sync Action" || true
+        git push
