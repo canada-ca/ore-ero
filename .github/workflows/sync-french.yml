@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - "CNAME"
-      - ".github/**"
+    paths:
+      - "!CNAME"
+      - "!.github/**"
+      - ".github/workflows/sync-french.yml"
 
 jobs:
   build:
