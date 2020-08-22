@@ -213,6 +213,8 @@ def parseRequirements(name, depObj, repo):
         for dep in data.splitlines():
             if dep.startswith( "#" ):
               continue
+            if dep.startswith( "-e " ):
+              dep = dep[3:]
             key = dep.split("=")[0].split("<")[0].split(">")[0]
             corepypi = False
             for val in depObj:
