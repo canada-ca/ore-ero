@@ -211,6 +211,8 @@ def parseRequirements(name, depObj, repo):
     data = requirements.text
     if data is not None:
         for dep in data.splitlines():
+            if dep.startswith( "#" ):
+              continue
             key = dep.split("=")[0].split("<")[0].split(">")[0]
             corepypi = False
             for val in depObj:
