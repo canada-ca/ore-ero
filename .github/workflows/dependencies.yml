@@ -4,6 +4,12 @@ on:
   schedule:
     - cron:  '0 0 * * *'
   repository_dispatch:
+  push:
+    branches:
+      - "master"
+    paths:
+      - ".github/workflows/dependencies.yml"
+      - "assets/py/dependenciesParser.py"
 
 jobs:
   build:
