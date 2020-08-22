@@ -26,6 +26,7 @@ def createDirectory(dir, path):
 def updateData(dependencies):
     with open("./_data/dependencies.yaml", 'w') as file:
         file.write("---")
+        dependencies.sort(key=lambda item: item.get("dependency"), reverse=False)
         for value in dependencies:
             if '@' in value["dependency"]:
                 file.write("\n" + "- dependency: '" + value["dependency"] + "'")
@@ -388,4 +389,3 @@ if data is not None:
                 release["name"]["fr"], admin["adminCode"]))
 getDependencies(repositories)
 print("Finished task at: " + datetime.now().isoformat(' ', 'seconds'))
-    
