@@ -30,6 +30,5 @@ jobs:
         git add _data/dependencies.yaml
         git config --global user.email "canada.pr.bot@gmail.com"
         git config --global user.name "canada-bot"
-        git commit -m "Updating dependencies"
+        git commit -m "Updating dependencies"  || true
         git push
-        
