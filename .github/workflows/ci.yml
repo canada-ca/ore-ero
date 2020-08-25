@@ -12,39 +12,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Main repo
-      uses: actions/checkout@v2
+      - name: Checkout Main repo
+        uses: actions/checkout@v2
 
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
 
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
 
-    - name: Install Ruby dependencies
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
+      - name: Install Ruby dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
 
-    - name: Build with Jekyll
-      run: bundle exec jekyll build
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
 
-    - name: Run HTMLProofer
-      run: htmlproofer --disable-external --allow-hash-href ./_site
+      - name: Run HTMLProofer
+        run: htmlproofer --disable-external --allow-hash-href ./_site
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v1.4.3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.3
 
-    - name: Install NPM dependencies
-      run: npm ci
+      - name: Install NPM dependencies
+        run: npm ci
 
-    - name: Run HTML5 Validator
-      run: npm run lint:html
-      
+      - name: Run HTML5 Validator
+        run: npm run lint:html

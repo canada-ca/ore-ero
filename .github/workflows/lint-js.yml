@@ -24,16 +24,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Main repo
-      uses: actions/checkout@v2
+      - name: Checkout Main repo
+        uses: actions/checkout@v2
 
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
 
-    - name: Install Node dependencies
-      run: npm ci
+      - name: Install Node dependencies
+        run: npm ci
 
-    - name: Run Node tests
-      run: npm run lint:js
+      - name: Run Node tests
+        run: npm run lint:js
