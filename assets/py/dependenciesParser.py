@@ -48,10 +48,12 @@ def updateData(dependencies):
             if value["project"] == []:
                 file.write("[]")
             else: 
-                for name in value["project"]:
+                projects = value["project"]
+                projects.sort(key=lambda x: x['en'].lower(), reverse=False)
+                for project in projects:
                     file.write("\n" + indent(2) + "- projectName: ")
-                    file.write("\n" + indent(4) + "en: " + name["en"])
-                    file.write("\n" + indent(4) + "fr: " + name["fr"])
+                    file.write("\n" + indent(4) + "en: " + project["en"])
+                    file.write("\n" + indent(4) + "fr: " + project["fr"])
         file.write("\n")
 
 def parsePackageLock(name, depObj, repo):
