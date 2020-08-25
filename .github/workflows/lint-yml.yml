@@ -5,18 +5,16 @@ on:
     paths:
       - "requirements.txt"
       - ".yamllint.yaml"
-      - "_data/**/*.yml"
-      - "_data/**/*.yaml"
-      - ".github/workflows/lint-yml.yml"
+      - "**/*.yml"
+      - "**/*.yaml"
     branches-ignore:
       - "dependabot/**"
   pull_request:
     paths:
       - "requirements.txt"
       - ".yamllint.yaml"
-      - "_data/**/*.yml"
-      - "_data/**/*.yaml"
-      - ".github/workflows/lint-yml.yml"
+      - "**/*.yml"
+      - "**/*.yaml"
 
 jobs:
   build:
@@ -46,4 +44,4 @@ jobs:
         yamale -s schemaPartnership.yaml _data/partnership
 
     - name: Lint Yaml
-      run: yamllint _data
+      run: yamllint .
