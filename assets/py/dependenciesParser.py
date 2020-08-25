@@ -39,7 +39,7 @@ def updateData(dependencies):
             if value["admin"] == []:
                 file.write("[]")
             else: 
-                for admin in value["admin"]:
+                for admin in sorted(value["admin"]):
                     if admin == "on":
                         file.write("\n" + indent(2) + "- '" + admin + "'")
                     else:
