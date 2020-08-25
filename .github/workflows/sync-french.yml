@@ -5,6 +5,7 @@ on:
     branches:
       - master
     paths:
+      - "**/*.*"
       - "!CNAME"
       - "!.github/**"
       - ".github/workflows/sync-french.yml"
