@@ -11,5 +11,6 @@ rules:
   line-length:
     max: 400
     level: warning
+  document-start: disable
   trailing-spaces: disable  # don't bother me with this rule
   new-line-at-end-of-file: disable # don't bother me with this rule
