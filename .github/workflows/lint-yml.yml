@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - "requirements.txt"
-      - "configYamlLint.yml"
+      - ".yamllint.yaml"
       - "_data/**/*.yml"
       - "_data/**/*.yaml"
       - ".github/workflows/lint-yml.yml"
@@ -13,7 +13,7 @@ on:
   pull_request:
     paths:
       - "requirements.txt"
-      - "configYamlLint.yml"
+      - ".yamllint.yaml"
       - "_data/**/*.yml"
       - "_data/**/*.yaml"
       - ".github/workflows/lint-yml.yml"
@@ -46,4 +46,4 @@ jobs:
         yamale -s schemaPartnership.yaml _data/partnership
 
     - name: Lint Yaml
-      run: yamllint -d configYamlLint.yml _data
+      run: yamllint _data
