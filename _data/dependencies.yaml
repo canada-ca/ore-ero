@@ -4362,6 +4362,15 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@formatjs/intl'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@formatjs/intl-datetimeformat'
   origin: npm
   type: core
@@ -46726,6 +46735,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
 - dependency: iota-array
@@ -50878,9 +50890,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
 - dependency: jest-message-util
@@ -53499,6 +53508,9 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName: 
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
@@ -63426,6 +63438,9 @@
     - projectName: 
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName: 
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
@@ -77359,6 +77374,15 @@
     - projectName: 
         en: CDS Website
         fr: Site Web SNC
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: snyk-cpp-plugin
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
