@@ -14,9 +14,9 @@ standardOrg:
   fr: Exemple
 tags:
   en:
-  - Example
+    - Example
   fr:
-  - Exemple
+    - Exemple
 administrations:
   - adminCode: abc-def
     contact:

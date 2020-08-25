@@ -17,25 +17,25 @@ jobs:
     if: github.repository_owner == 'canada-ca'
 
     steps:
-    - name: Checkout Main repo
-      uses: actions/checkout@v2
-      with:
-        path: english
-    - name: Checkout French mirror
-      uses: actions/checkout@v2
-      with:
-        repository: canada-ca/ore-ero-fr
-        path: french
-        ref: master
-        token: ${{ secrets.PUSH_API_TOKEN }}
-    - name: Copy files from English to French
-      run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' english/ french
-    - name: Push back changes to French repo
+      - name: Checkout Main repo
+        uses: actions/checkout@v2
+        with:
+          path: english
+      - name: Checkout French mirror
+        uses: actions/checkout@v2
+        with:
+          repository: canada-ca/ore-ero-fr
+          path: french
+          ref: master
+          token: ${{ secrets.PUSH_API_TOKEN }}
+      - name: Copy files from English to French
+        run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' english/ french
+      - name: Push back changes to French repo
 
-      run: |
-        cd french
-        git config --global user.email "canada.pr.bot@gmail.com"
-        git config --global user.name "canada-bot"
-        git add -A
-        git commit -m "Sync Action" || true
-        git push
+        run: |
+          cd french
+          git config --global user.email "canada.pr.bot@gmail.com"
+          git config --global user.name "canada-bot"
+          git add -A
+          git commit -m "Sync Action" || true
+          git push
