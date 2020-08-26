@@ -7887,6 +7887,15 @@
         fr: Nuage de Talent
 - dependency: '@types/events'
   origin: npm
+  type: dev
+  admins: 
+    - city-of-montreal-qc
+  projects: 
+    - projectName: 
+        en: WorkIt
+        fr: WorkIt
+- dependency: '@types/events'
+  origin: npm
   type: core
   admins: 
     - bc
@@ -7921,15 +7930,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/events'
-  origin: npm
-  type: dev
-  admins: 
-    - city-of-montreal-qc
-  projects: 
-    - projectName: 
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/expect'
   origin: npm
   type: core
@@ -10341,6 +10341,29 @@
         fr: InfoBase du GC
 - dependency: '@typescript-eslint/eslint-plugin'
   origin: npm
+  type: dev
+  admins: 
+    - city-of-montreal-qc
+    - city-of-sault-ste-marie-on
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
+        en: unleet
+        fr: unleet
+    - projectName: 
+        en: WorkIt
+        fr: WorkIt
+- dependency: '@typescript-eslint/eslint-plugin'
+  origin: npm
   type: core
   admins: 
     - bc
@@ -10369,29 +10392,6 @@
     - projectName: 
         en: unleet
         fr: unleet
-- dependency: '@typescript-eslint/eslint-plugin'
-  origin: npm
-  type: dev
-  admins: 
-    - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName: 
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
-        en: unleet
-        fr: unleet
-    - projectName: 
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@typescript-eslint/experimental-utils'
   origin: npm
   type: core
@@ -10420,6 +10420,29 @@
         fr: unleet
 - dependency: '@typescript-eslint/parser'
   origin: npm
+  type: dev
+  admins: 
+    - city-of-montreal-qc
+    - city-of-sault-ste-marie-on
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
+        en: unleet
+        fr: unleet
+    - projectName: 
+        en: WorkIt
+        fr: WorkIt
+- dependency: '@typescript-eslint/parser'
+  origin: npm
   type: core
   admins: 
     - bc
@@ -10448,29 +10471,6 @@
     - projectName: 
         en: unleet
         fr: unleet
-- dependency: '@typescript-eslint/parser'
-  origin: npm
-  type: dev
-  admins: 
-    - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName: 
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
-        en: unleet
-        fr: unleet
-    - projectName: 
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@typescript-eslint/types'
   origin: npm
   type: core
@@ -33520,51 +33520,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: eslint
   origin: npm
-  type: core
-  admins: 
-    - bc
-    - city-of-sault-ste-marie-on
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName: 
-        en: AppHub
-        fr: HubApp
-    - projectName: 
-        en: Devex
-        fr: Devex
-    - projectName: 
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName: 
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName: 
-        en: gwells
-        fr: gwells
-    - projectName: 
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName: 
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName: 
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
-        en: unleet
-        fr: unleet
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: eslint
-  origin: npm
   type: dev
   admins: 
     - bc
@@ -33613,6 +33568,51 @@
     - projectName: 
         en: WorkIt
         fr: WorkIt
+- dependency: eslint
+  origin: npm
+  type: core
+  admins: 
+    - bc
+    - city-of-sault-ste-marie-on
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName: 
+        en: AppHub
+        fr: HubApp
+    - projectName: 
+        en: Devex
+        fr: Devex
+    - projectName: 
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName: 
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName: 
+        en: gwells
+        fr: gwells
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: Open Resource Exchange
+        fr: Échange de Ressource Ouvert
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
+        en: unleet
+        fr: unleet
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: eslint-config-airbnb
   origin: npm
   type: core
@@ -33969,38 +33969,6 @@
         fr: WorkIt
 - dependency: eslint-plugin-import
   origin: npm
-  type: core
-  admins: 
-    - bc
-    - city-of-sault-ste-marie-on
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName: 
-        en: Devex
-        fr: Devex
-    - projectName: 
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName: 
-        en: gwells
-        fr: gwells
-    - projectName: 
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName: 
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
-        en: unleet
-        fr: unleet
-- dependency: eslint-plugin-import
-  origin: npm
   type: dev
   admins: 
     - bc
@@ -34033,6 +34001,38 @@
     - projectName: 
         en: WorkIt
         fr: WorkIt
+- dependency: eslint-plugin-import
+  origin: npm
+  type: core
+  admins: 
+    - bc
+    - city-of-sault-ste-marie-on
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName: 
+        en: Devex
+        fr: Devex
+    - projectName: 
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName: 
+        en: gwells
+        fr: gwells
+    - projectName: 
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName: 
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName: 
+        en: unleet
+        fr: unleet
 - dependency: eslint-plugin-jest
   origin: npm
   type: core
@@ -41400,6 +41400,19 @@
         fr: YouCanBenefit
 - dependency: grunt
   origin: npm
+  type: core
+  admins: 
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDTS
+        fr: SGDC
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: grunt
+  origin: npm
   type: dev
   admins: 
     - esdc-edsc
@@ -41414,19 +41427,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt
-  origin: npm
-  type: core
-  admins: 
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDTS
-        fr: SGDC
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -41548,6 +41548,19 @@
         fr: GCconnex
 - dependency: grunt-contrib-clean
   origin: npm
+  type: core
+  admins: 
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDTS
+        fr: SGDC
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: grunt-contrib-clean
+  origin: npm
   type: dev
   admins: 
     - esdc-edsc
@@ -41562,7 +41575,7 @@
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-contrib-clean
+- dependency: grunt-contrib-concat
   origin: npm
   type: core
   admins: 
@@ -41594,7 +41607,7 @@
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-contrib-concat
+- dependency: grunt-contrib-connect
   origin: npm
   type: core
   admins: 
@@ -41620,19 +41633,6 @@
     - projectName: 
         en: GCconnex
         fr: GCconnex
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-contrib-connect
-  origin: npm
-  type: core
-  admins: 
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDTS
-        fr: SGDC
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -41762,6 +41762,19 @@
         fr: Nuage de Talent
 - dependency: grunt-contrib-uglify
   origin: npm
+  type: core
+  admins: 
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDTS
+        fr: SGDC
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: grunt-contrib-uglify
+  origin: npm
   type: dev
   admins: 
     - esdc-edsc
@@ -41779,7 +41792,7 @@
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-contrib-uglify
+- dependency: grunt-contrib-watch
   origin: npm
   type: core
   admins: 
@@ -41805,19 +41818,6 @@
     - projectName: 
         en: GCconnex
         fr: GCconnex
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-contrib-watch
-  origin: npm
-  type: core
-  admins: 
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDTS
-        fr: SGDC
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -51384,15 +51384,6 @@
         en: devhub-app-web
         fr: devhub-app-web
 - dependency: jmespath
-  origin: pypi
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: Notify
-        fr: Notification
-- dependency: jmespath
   origin: npm
   type: core
   admins: 
@@ -51401,6 +51392,15 @@
     - projectName: 
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+- dependency: jmespath
+  origin: pypi
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Notify
+        fr: Notification
 - dependency: joblib
   origin: pypi
   type: core
@@ -54119,6 +54119,19 @@
         fr: devhub-app-web
 - dependency: load-grunt-tasks
   origin: npm
+  type: core
+  admins: 
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDTS
+        fr: SGDC
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: load-grunt-tasks
+  origin: npm
   type: dev
   admins: 
     - esdc-edsc
@@ -54133,19 +54146,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: load-grunt-tasks
-  origin: npm
-  type: core
-  admins: 
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDTS
-        fr: SGDC
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -82098,6 +82098,19 @@
         fr: YouCanBenefit
 - dependency: time-grunt
   origin: npm
+  type: core
+  admins: 
+    - esdc-edsc
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: CDTS
+        fr: SGDC
+    - projectName: 
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: time-grunt
+  origin: npm
   type: dev
   admins: 
     - esdc-edsc
@@ -82109,19 +82122,6 @@
     - projectName: 
         en: GCconnex
         fr: GCconnex
-    - projectName: 
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: time-grunt
-  origin: npm
-  type: core
-  admins: 
-    - esdc-edsc
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: CDTS
-        fr: SGDC
     - projectName: 
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
