@@ -4353,15 +4353,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@formatjs/intl-datetimeformat'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@formatjs/intl-displaynames'
   origin: npm
   type: core
@@ -4381,15 +4372,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@formatjs/intl-listformat'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@formatjs/intl-numberformat'
   origin: npm
   type: core
   admins: 
@@ -9621,6 +9603,15 @@
     - projectName: 
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@types/reactcss'
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
@@ -29629,6 +29620,15 @@
     - projectName: 
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: detect-node-es
+  origin: npm
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: detect-node
   origin: npm
   type: core
