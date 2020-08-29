@@ -26,31 +26,29 @@ def updateData():
         for item in sorted(dependencies):
             value = dependencies[item]
             if '@' in value["dependency"]:
-                file.write("\n" + "- dependency: '" + value["dependency"] + "'")
-            else: 
-                file.write("\n" + "- dependency: " + value["dependency"])
+                value["dependency"] = f'\'{value["dependency"]}\''
             
-            file.write("\n" + indent(1) + "origin: " + value["origin"])
-            file.write("\n" + indent(1) + "type: " + value["type"])
-            file.write("\n" + indent(1) + "admins: ")
+            file.write(f'\n- dependency: {value["dependency"]}')            
+            file.write(f'\n{indent(1)}origin: {value["origin"]}')
+            file.write(f'\n{indent(1)}type: {value["type"]}')
+            file.write(f'\n{indent(1)}admins:')
             if value["admin"] == []:
-                file.write("[]")
+                file.write(" []")
             else: 
                 for admin in sorted(value["admin"]):
                     if admin == "on":
-                        file.write("\n" + indent(2) + "- '" + admin + "'")
-                    else:
-                        file.write("\n" + indent(2) + "- " + admin)
-            file.write("\n" + indent(1) + "projects: ")
+                        admin = "'on'"
+                    file.write(f'\n{indent(2)}- {admin}')
+            file.write(f'\n{indent(1)}projects:')
             if value["project"] == []:
-                file.write("[]")
+                file.write(" []")
             else: 
                 projects = value["project"]
                 projects.sort(key=lambda x: x['en'].lower(), reverse=False)
                 for project in projects:
-                    file.write("\n" + indent(2) + "- projectName: ")
-                    file.write("\n" + indent(4) + "en: " + project["en"])
-                    file.write("\n" + indent(4) + "fr: " + project["fr"])
+                    file.write(f'\n{indent(2)}- projectName:')
+                    file.write(f'\n{indent(4)}en: {project["en"]}')
+                    file.write(f'\n{indent(4)}fr: {project["fr"]}')
         file.write("\n")
 
 def parsePackageLock(filepath, repo):
