@@ -9,7 +9,7 @@ on:
       - "master"
     paths:
       - ".github/workflows/dependencies.yml"
-      - "assets/py/dependenciesParser.py"
+      - ".github/workflows/dependenciesParser.py"
 
 jobs:
   build:
