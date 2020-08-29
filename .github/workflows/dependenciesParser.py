@@ -81,6 +81,9 @@ def parseRequirements(requirements, repo):
     if data is not None:
         for dep in data:
             dep = dep.decode()
+            dep = dep.strip()
+            if dep == '':
+              continue
             if dep.startswith( "#" ):
               continue
             if dep.startswith( "-e " ):
