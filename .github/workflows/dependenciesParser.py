@@ -51,10 +51,9 @@ def updateData():
                     file.write(f'\n{indent(4)}fr: {project["fr"]}')
         file.write("\n")
 
-def parsePackageLock(filepath, repo):
+def parsePackageLock(packagelock, repo):
     # Schema and handling for dependency trees is different from package.json
     # https://docs.npmjs.com/files/package-lock.json
-    packagelock = urllib.request.urlopen(filepath)
     data = json.loads(packagelock.read())
     if data.get("dependencies") is not None:
         for key in data["dependencies"]:
@@ -63,8 +62,7 @@ def parsePackageLock(filepath, repo):
             else:
                 addDependency(repo, key, "npm", "core")
 
-def parsePackage(filepath, repo):
-    package = urllib.request.urlopen(filepath)
+def parsePackage(package, repo):
     data = json.loads(package.read())
     if data.get("dependencies") is not None:
         for key in data["dependencies"].keys():
@@ -78,11 +76,11 @@ def parsePackage(filepath, repo):
         for key in data["peerDependencies"].keys():
             addDependency(repo, key, "npm", "peer")
 
-def parseRequirements(filepath, repo):
-    requirements = requests.get(filepath)
-    data = requirements.text
+def parseRequirements(requirements, repo):
+    data = requirements.readlines()
     if data is not None:
-        for dep in data.splitlines():
+        for dep in data:
+            dep = dep.decode()
             if dep.startswith( "#" ):
               continue
             if dep.startswith( "-e " ):
@@ -90,8 +88,7 @@ def parseRequirements(filepath, repo):
             key = dep.split("=")[0].split("<")[0].split(">")[0]
             addDependency(repo, key, "pypi", "core")
 
-def parseComposer(filepath, repo):
-    composer = urllib.request.urlopen(filepath)
+def parseComposer(composer, repo):
     data = json.loads(composer.read())
     if data.get("require") is not None:
         for key in data["require"].keys():
@@ -101,11 +98,11 @@ def parseComposer(filepath, repo):
         for key in data["require-dev"].keys():
             addDependency(repo, key, "composer", "dev")
 
-def parseGemfile(filepath, repo):
-    gemfile = requests.get(filepath)
-    data = gemfile.text
+def parseGemfile(gemfile, repo):
+    data = gemfile.readlines()
     if data is not None:
-        for dep in data.splitlines():
+        for dep in data:
+            dep = dep.decode()
             if (dep.startswith("gem")):
                 key = dep.split("'")[1]
                 addDependency(repo, key, "bundler", "core")
@@ -126,14 +123,6 @@ def addDependency(repo, dependency, origin, deptype):
           "admin": [repo[3]],
           "project": [{"en": repo[1], "fr": repo[2]}]
       }        
-
-def makePath(repo, filepath, branch):
-    divName = filepath.split("/")
-    divName.pop(0)
-    path = repo.replace("github.com", "raw.githubusercontent.com") + "/" + branch
-    for part in divName:
-        path += "/" + part
-    return path  
 
 def defaultBranch(url):
     ex = r'branch-name(.*)>(.*)<'
@@ -169,19 +158,23 @@ def getDependencies(repos):
         response = requests.get(repo[0] + path[0])
         if response is not None:
             try:
-                with ZipFile(io.BytesIO(response.content)) as zip:
+                with ZipFile(io.BytesIO(response.content), mode='r') as zip:
                     for filepath in zip.namelist():
-                        filepath = makePath(repo[0], filepath, path[1])
                         if ("/package-lock.json" in filepath):
-                           parsePackageLock(filepath, repo)
+                            with zip.open(filepath, mode='r') as depfile:
+                                parsePackageLock(depfile, repo)
                         if ("/package.json" in filepath):
-                            parsePackage(filepath, repo)
+                            with zip.open(filepath, mode='r') as depfile:
+                                parsePackage(depfile, repo)
                         if ("/composer.json" in filepath):
-                            parseComposer(filepath, repo)
+                            with zip.open(filepath, mode='r') as depfile:
+                                parseComposer(depfile, repo)
                         if ("/Gemfile" in filepath):
-                            parseGemfile(filepath, repo)
+                            with zip.open(filepath, mode='r') as depfile:
+                                parseGemfile(depfile, repo)
                         if ("/requirements.txt" in filepath):
-                            parseRequirements(filepath, repo)
+                            with zip.open(filepath, mode='r') as depfile:
+                                parseRequirements(depfile, repo)
             except Exception as err:
                 print("{0} for ".format(err) + repo[0])
     updateData()
