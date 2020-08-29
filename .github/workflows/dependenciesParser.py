@@ -138,9 +138,7 @@ def defaultBranch(url):
     download = "/archive/"
     search = ""
     if "bitbucket" in url:
-        download = "/get/"
-        search = "/?search=default"
-        ex = r'css-1waz8j8(.*)>(.*)<'
+        return "/get/HEAD.zip", ""
     if "eclipse" in url:
         download = "/snapshot/"
         branches = ""
