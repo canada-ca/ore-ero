@@ -43,7 +43,7 @@ releases:
       name: Yves Pelletier
     date:
       created: '2009-05-05'
-      metadataLastUpdated: '2020-01-31'
+      metadataLastUpdated: '2020-08-29'
     description:
       whatItDoes:
         en: >-
@@ -60,25 +60,20 @@ releases:
       fr: libECBUFR
     licences:
       - URL:
-          en: >-
-            https://bazaar.launchpad.net/~libecbufr-dev/libecbufr/trunk/view/head:/COPYING
-          fr: >-
-            https://bazaar.launchpad.net/~libecbufr-dev/libecbufr/trunk/view/head:/COPYING
+          en: 'https://github.com/ECCC-MSC/libecbufr/blob/master/COPYING'
+          fr: 'https://github.com/ECCC-MSC/libecbufr/blob/master/COPYING'
         spdxID: GPL-3.0-only
+        level:
+          en: Main license
+          fr: License principale
     repositoryURL:
-      en: 'https://code.launchpad.net/libecbufr'
-      fr: 'https://code.launchpad.net/libecbufr'
+      en: 'https://github.com/ECCC-MSC/libecbufr'
+      fr: 'https://github.com/ECCC-MSC/libecbufr'
     tags:
       en:
-        - API
+        - BUFR
       fr:
-        - API
-    downloadURL:
-      en: 'https://launchpad.net/libecbufr/+download'
-      fr: 'https://launchpad.net/libecbufr/+download'
-    homepageURL:
-      en: 'https://launchpad.net/libecbufr'
-      fr: 'https://launchpad.net/libecbufr'
+        - BUFR
     languages:
       - C
     status: Maintained
