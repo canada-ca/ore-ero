@@ -7802,24 +7802,6 @@
     - projectName: 
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/es-abstract'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@types/es-to-primitive'
-  origin: npm
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@types/eslint-visitor-keys'
   origin: npm
   type: core
@@ -18301,15 +18283,6 @@
     - projectName: 
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: babel
-  origin: pypi
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: ckanext-canada
-        fr: ckanext-canada
 - dependency: Babel
   origin: pypi
   type: core
@@ -18319,6 +18292,15 @@
     - projectName: 
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: babel
+  origin: pypi
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: ckanext-canada
+        fr: ckanext-canada
 - dependency: babylon
   origin: npm
   type: core
@@ -37229,15 +37211,6 @@
     - projectName: 
         en: Notify
         fr: Notification
-- dependency: Flask
-  origin: pypi
-  type: core
-  admins: 
-    - tbs-sct
-  projects: 
-    - projectName: 
-        en: Notify
-        fr: Notification
 - dependency: flask
   origin: pypi
   type: core
@@ -37247,6 +37220,15 @@
     - projectName: 
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: Flask
+  origin: pypi
+  type: core
+  admins: 
+    - tbs-sct
+  projects: 
+    - projectName: 
+        en: Notify
+        fr: Notification
 - dependency: flat-cache
   origin: npm
   type: core
@@ -79810,9 +79792,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName: 
         en: unleet
         fr: unleet
 - dependency: string.prototype.trimleft
@@ -79879,9 +79858,6 @@
     - projectName: 
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName: 
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName: 
         en: unleet
         fr: unleet
