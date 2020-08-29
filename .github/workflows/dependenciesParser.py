@@ -52,19 +52,16 @@ def updateData():
         file.write("\n")
 
 def parsePackageLock(filepath, repo):
+    # Schema and handling for dependency trees is different from package.json
+    # https://docs.npmjs.com/files/package-lock.json
     packagelock = urllib.request.urlopen(filepath)
     data = json.loads(packagelock.read())
     if data.get("dependencies") is not None:
-        for key in data["dependencies"].keys():
-            addDependency(repo, key, "npm", "core")
-
-    if data.get("devDependencies") is not None:
-        for key in data["devDependencies"].keys():
-            addDependency(repo, key, "npm", "dev")
-
-    if data.get("peerDependencies") is not None:
-        for key in data["peerDependencies"].keys():
-            addDependency(repo, key, "npm", "peer")
+        for key in data["dependencies"]:
+            if "dev" in data["dependencies"][key] and data["dependencies"][key]["dev"]:
+                addDependency(repo, key, "npm", "dev")
+            else:
+                addDependency(repo, key, "npm", "core")
 
 def parsePackage(filepath, repo):
     package = urllib.request.urlopen(filepath)
