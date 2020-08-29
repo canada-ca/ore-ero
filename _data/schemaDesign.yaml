@@ -17,14 +17,14 @@ licence:
   spdxID: str()
   level: include('lang', required=False)
   scope: include('lang', required=False)
-  
+
 designType:
   type: include('lang')
 
 administration:
   adminCode: str()
   uses: list(include('use'))
-  
+
 use:
   contact:
     email: str()

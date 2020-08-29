@@ -4,7 +4,7 @@ description:
   whatItDoes:
     en: >-
       Poppr is an R package designed for analysis of populations with mixed
-      modes of sexual and clonal reproduction. 
+      modes of sexual and clonal reproduction.
     fr: >-
       Poppr est un package R conçu pour l'analyse des populations à modes mixtes
       de reproduction sexuelle et clonale.

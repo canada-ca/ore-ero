@@ -31,7 +31,7 @@ partner:
   email: str()
   name: str()
   email_suffix: str(required=false)
-  
+
 lang:
   en: str()
   fr: str()

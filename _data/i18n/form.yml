@@ -506,7 +506,7 @@ presets:
     title:
       en: License scope
       fr: Portée de la license
-    
+
 # Code form specifics
 code:
   name:

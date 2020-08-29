@@ -6,7 +6,7 @@ formGroups:
   - preset: empty
     title: administrations
     param: {start: true}
-  - preset: adminCode  
+  - preset: adminCode
   - preset: selectDesign
   - preset: description
   - preset: designType

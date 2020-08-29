@@ -18,7 +18,7 @@ description:
     fr: >-
       Encore en Alpha, le système de conception du gouvernement du Canada
       fournira un espace aux concepteurs, aux développeurs et aux communicateurs
-      afin de collaborer à la conception de la présence Web GC 
+      afin de collaborer à la conception de la présence Web GC
 designTypes:
   - type:
       en: Application
@@ -48,6 +48,6 @@ administrations:
         team:
           en: Digital Transformation Office
           fr: Bureau de la transformation numérique
-        designStatus: 
+        designStatus:
           en: Original design
           fr: Design original

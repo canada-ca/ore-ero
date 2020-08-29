@@ -12,5 +12,4 @@ rules:
     max: 400
     level: warning
   document-start: disable
-  trailing-spaces: disable  # don't bother me with this rule
   truthy: {check-keys: false}  # flags the `on` values in GitHub Action workflows
