@@ -49,11 +49,11 @@ codeForm:
     scope:
       path: "../assets/js/src/adminForm.js"
       type: "src"
-  -    
+  -
     scope:
       path: "../assets/js/src/partners.js"
       type: "src"
-  -    
+  -
     scope:
       path: "../assets/js/src/codeForm.js"
       type: "src"

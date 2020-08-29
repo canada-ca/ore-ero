@@ -152,7 +152,7 @@
 - code: tc
   name:
     en: Transport Canada
-    fr: Transports 
+    fr: Transports
   email_suffix:
 - code: tpsgc-pwgsc
   name:

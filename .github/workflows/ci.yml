@@ -1,6 +1,6 @@
 name: Build and test website
 
-on: 
+on:
   push:
     branches-ignore:
       - "dependabot/**"
