@@ -116,6 +116,7 @@ def parseGemfile(filepath, repo):
                 addDependency(repo, key, "bundler", "core")
 
 def addDependency(repo, dependency, origin, deptype):
+  dependency = dependency.lower()
   key = f'{dependency}~{origin}~{deptype}'
   if key in dependencies:
       if repo[3] not in dependencies[key]["admin"]:                
