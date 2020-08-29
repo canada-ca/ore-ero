@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.PUSH_API_TOKEN }}
 
       - name: Dependencies parser
-        run: ./assets/py/dependenciesParser.py
+        run: ./.github/workflows/dependenciesParser.py
 
       - name: Commit changes
         run: |
