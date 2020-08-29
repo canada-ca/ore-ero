@@ -157,6 +157,9 @@ def defaultBranch(url):
     
 def getDependencies(repos):
     for repo in repos:
+        # Limit to the sites we have some sort of zip parsing for
+        if 'github' not in repo[0] and 'framagit' not in repo[0] and 'eclipse' not in repo[0] and 'bitbucket' not in repo[0]:
+            continue
         path = defaultBranch(repo[0])
         response = requests.get(repo[0] + path[0])
         if response is not None:
