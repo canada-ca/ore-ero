@@ -66345,11 +66345,7 @@
   type: dev
   admins:
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
