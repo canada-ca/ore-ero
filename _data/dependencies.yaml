@@ -5367,6 +5367,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@eslint/eslintrc'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Open Resource Exchange
+        fr: Échange de Ressource Ouvert
 - dependency: '@formatjs/ecma402-abstract'
   origin: npm
   type: core
@@ -5403,6 +5412,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@formatjs/intl-numberformat'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@formatjs/intl-pluralrules'
   origin: npm
   type: core
@@ -5421,25 +5439,16 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@formatjs/intl-unified-numberformat'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: '@formatjs/intl-utils'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@formatjs/intl'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@formatjs/ts-transformer'
   origin: npm
   type: core
   admins:
@@ -9127,6 +9136,15 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
+- dependency: '@types/fs-extra'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/geojson'
   origin: npm
   type: core
@@ -17515,6 +17533,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: at-least-node
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: at-least-node
   origin: npm
   type: dev
@@ -43414,9 +43441,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: fs-extra
@@ -43443,6 +43467,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -58892,9 +58919,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: jsonfile
@@ -58921,6 +58945,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -88992,9 +89019,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: source-map
@@ -89031,6 +89055,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -97634,9 +97661,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: universalify
@@ -97663,6 +97687,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
