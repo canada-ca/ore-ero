@@ -2042,6 +2042,15 @@
         fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-decorators'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@babel/plugin-proposal-decorators'
+  origin: npm
   type: dev
   admins:
     - bc
@@ -2466,6 +2475,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@babel/plugin-syntax-decorators'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@babel/plugin-syntax-decorators'
   origin: npm
   type: dev
@@ -5366,11 +5384,17 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@formatjs/ecma402-abstract'
   origin: npm
   type: core
@@ -6705,11 +6729,17 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@nodelib/fs.stat'
   origin: npm
   type: core
@@ -6748,11 +6778,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@nodelib/fs.walk'
   origin: npm
   type: core
@@ -6777,11 +6813,17 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@nuxt/opencollective'
   origin: npm
   type: core
@@ -8922,21 +8964,14 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@types/estree'
   origin: npm
   type: core
@@ -9642,6 +9677,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: '@types/json5'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@types/json5'
   origin: npm
   type: dev
@@ -11198,9 +11242,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@typescript-eslint/parser'
   origin: npm
   type: core
@@ -11247,8 +11288,14 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@typescript-eslint/typescript-estree'
   origin: npm
   type: core
@@ -16321,11 +16368,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -16475,10 +16528,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: array.prototype.flat
   origin: npm
   type: dev
@@ -28472,10 +28529,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: contains-path
   origin: npm
   type: dev
@@ -34123,11 +34184,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -38027,10 +38094,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: eslint-import-resolver-node
   origin: npm
   type: dev
@@ -38102,10 +38173,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: eslint-module-utils
   origin: npm
   type: dev
@@ -38208,10 +38283,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: eslint-plugin-import
   origin: npm
   type: dev
@@ -40814,11 +40893,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: fast-json-stable-stringify
   origin: npm
   type: core
@@ -41064,11 +41149,17 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: fault
   origin: npm
   type: dev
@@ -45932,11 +46023,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -55075,10 +55172,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: is-string
   origin: npm
   type: dev
@@ -65084,11 +65185,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: merge
   origin: npm
   type: dev
@@ -65410,6 +65517,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -70173,6 +70283,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -70402,6 +70515,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70693,10 +70809,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: object.values
   origin: npm
   type: dev
@@ -84210,11 +84330,17 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: rev-hash
   origin: npm
   type: dev
@@ -84697,6 +84823,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -84705,6 +84834,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: run-queue
   origin: npm
   type: core
@@ -87600,11 +87732,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -91104,6 +91242,9 @@
         en: CDS Website
         fr: Site Web SNC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -91195,6 +91336,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -95445,6 +95589,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: tsconfig-paths
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: tsconfig-paths
   origin: npm
   type: dev
