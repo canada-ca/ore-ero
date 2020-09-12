@@ -45344,7 +45344,7 @@
     - projectName:
         en: Notify
         fr: Notification
-- dependency: 'git+https://github.com/bcgov/ckanext-bcgov-schema@19a8fdcfe5f3c1494e602fcf4fa85f16e733402a#egg'
+- dependency: 'git+https://github.com/bcgov/ckanext-bcgov-schema@04ec0945d21cb383511882836e248b0e8055536d#egg'
   origin: pypi
   type: core
   admins:
