@@ -47,3 +47,8 @@ jobs:
 
       - name: Run HTML5 Validator
         run: npm run lint:html
+
+      - name: Run Cypress tests
+        run: |
+          bundle exec jekyll serve --detach
+          npm run cypress:run
