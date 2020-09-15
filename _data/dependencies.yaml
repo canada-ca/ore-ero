@@ -11242,6 +11242,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@typescript-eslint/parser'
   origin: npm
   type: core
