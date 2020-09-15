@@ -4,13 +4,14 @@
   "description": "Open Resource Exchange - Échange de ressources ouvert",
   "main": "index.js",
   "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "lint": "npm run lint:js && npm run lint:html",
     "lint:html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --no-langdetect --skip-non-html _site/",
     "lint:js": "eslint assets/js/src/**",
     "open-licences": "licensee --errors-only",
     "prettify": "eslint assets/js/src/** --fix",
-    "test": "npm run lint && npm run open-licences",
-    "cypress:open": "cypress open"
+    "test": "npm run lint && npm run open-licences"
   },
   "repository": {
     "type": "git",
