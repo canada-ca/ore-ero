@@ -18,3 +18,10 @@ excludeTag: "Exclude-Exclure"
 # Build settings
 markdown: kramdown
 include: ["_pages", "_json"]
+exclude:
+  - "cypress"
+  - "node_modules"
+  - "*.md"
+  - "Gemfile*"
+  - "package*.json"
+  - "requirements.txt"
