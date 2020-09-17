@@ -7689,15 +7689,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: '@snyk/graphlib'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@snyk/inquirer'
   origin: npm
   type: core
@@ -7707,15 +7698,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: '@snyk/inquirer'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@snyk/java-call-graph-builder'
   origin: npm
   type: core
@@ -7743,15 +7725,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: '@snyk/lodash'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@snyk/rpm-parser'
   origin: npm
   type: core
@@ -7779,15 +7752,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: '@snyk/ruby-semver'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@snyk/snyk-cocoapods-plugin'
   origin: npm
   type: core
@@ -9258,6 +9222,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@types/graphlib'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -11064,15 +11037,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: '@types/xml2js'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@types/yargs-parser'
   origin: npm
   type: core
@@ -61660,15 +61624,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.constant
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.debounce
   origin: npm
   type: core
@@ -61755,15 +61710,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: lodash.escaperegexp
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.escape
   origin: npm
   type: dev
@@ -61795,7 +61741,7 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.filter
+- dependency: lodash.findkey
   origin: npm
   type: dev
   admins:
@@ -61912,9 +61858,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.forown
@@ -61977,15 +61920,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.has
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.identity
   origin: npm
   type: core
@@ -62025,6 +61959,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: lodash.invert
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: lodash.isarguments
   origin: npm
   type: dev
@@ -62053,9 +61996,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -62165,9 +62105,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -62293,15 +62230,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.isundefined
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.iteratee
   origin: npm
   type: core
@@ -62354,9 +62282,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.mapvalues
@@ -62389,15 +62314,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: lodash.map
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.maxby
   origin: npm
   type: core
@@ -62477,10 +62393,14 @@
   type: dev
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: lodash.noop
   origin: npm
   type: core
@@ -62585,15 +62505,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.reduce
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.restparam
   origin: npm
   type: dev
@@ -62637,15 +62548,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.size
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.some
   origin: npm
   type: dev
@@ -62864,9 +62766,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.unescape
   origin: npm
   type: dev
@@ -62893,15 +62792,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.union
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.uniqby
   origin: npm
   type: core
@@ -62963,15 +62853,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: lodash.values
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash
   origin: npm
   type: core
