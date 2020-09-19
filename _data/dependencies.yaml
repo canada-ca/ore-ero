@@ -38351,6 +38351,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: eslint-plugin-lodash
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: eslint-plugin-node
   origin: npm
   type: dev
