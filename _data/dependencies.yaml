@@ -36717,9 +36717,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: encoding
   origin: npm
   type: dev
@@ -36777,6 +36774,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -39804,6 +39804,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -45216,6 +45219,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -50755,9 +50761,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: iconv-lite
@@ -50791,6 +50794,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -54242,6 +54248,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: is-negative-zero
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: is-npm
   origin: npm
   type: core
@@ -55200,9 +55215,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: is-stream
   origin: npm
   type: dev
@@ -55234,6 +55246,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -56626,9 +56641,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -58591,6 +58603,15 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+- dependency: json-parse-even-better-errors
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: json-parser
   origin: npm
   type: dev
@@ -69671,6 +69692,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -72201,6 +72225,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -72211,6 +72236,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -78702,6 +78730,9 @@
         en: Devex
         fr: Devex
     - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -80105,15 +80136,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: re-resizable
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: react-addons-shallow-compare
   origin: npm
   type: core
@@ -85371,9 +85393,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: safer-buffer
@@ -85410,6 +85429,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -91916,6 +91938,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -95615,7 +95640,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -98679,6 +98708,33 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: use-composed-ref
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: use-isomorphic-layout-effect
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: use-latest
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: use-sidecar
   origin: npm
   type: core
