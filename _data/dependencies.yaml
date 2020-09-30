@@ -395,15 +395,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-- dependency: '@arcanis/slice-ansi'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@ardatan/aggregate-error'
   origin: npm
   type: core
@@ -6489,9 +6480,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -6523,9 +6511,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -6572,9 +6557,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -8839,15 +8821,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@types/emscripten'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/enzyme'
   origin: npm
   type: dev
@@ -8953,9 +8926,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -12753,42 +12723,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@yarnpkg/core'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/fslib'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/json-proxy'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/libzip'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@yarnpkg/lockfile'
   origin: npm
   type: core
@@ -12814,33 +12748,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@yarnpkg/parsers'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/pnp'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/shell'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: abab
   origin: npm
   type: core
@@ -14719,11 +14626,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16318,9 +16221,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -26260,15 +26160,6 @@
     - projectName:
         en: Notify
         fr: Notification
-- dependency: clipanion
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: clipboard-polyfill
   origin: npm
   type: core
@@ -34245,9 +34136,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -40946,9 +40834,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -41215,9 +41100,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -46115,9 +45997,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -46572,15 +46451,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-- dependency: grapheme-splitter
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: graphiql
   origin: npm
   type: core
@@ -46596,6 +46466,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -51088,9 +50961,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -56605,15 +56475,6 @@
         fr: gwells
 - dependency: is
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: is
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -58519,15 +58380,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: json-file-plus
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: json-loader
   origin: npm
   type: core
@@ -63290,15 +63142,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: logic-solver
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: logless-client
   origin: npm
   type: core
@@ -65220,9 +65063,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -69037,15 +68877,6 @@
 - dependency: node-yaml
   origin: npm
   type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: node.extend
-  origin: npm
-  type: core
   admins:
     - tbs-sct
   projects:
@@ -75359,9 +75190,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: pluralize
@@ -77326,11 +77154,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77777,15 +77601,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: promise-deferred
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: promise-fs
   origin: npm
   type: dev
@@ -77908,15 +77723,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: promiseback
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: promise
   origin: npm
   type: core
@@ -84458,9 +84264,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -84950,9 +84753,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -87825,9 +87625,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -90777,15 +90574,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: stream-buffers
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: stream-combiner2
   origin: npm
   type: core
@@ -91014,15 +90802,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: stream-to-array
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: stream-to-buffer
   origin: npm
   type: core
@@ -91054,15 +90833,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: stream-to-promise
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: stream-to
   origin: npm
   type: core
@@ -96080,15 +95850,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: tunnel
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: tweetnacl
   origin: npm
   type: core
@@ -97046,9 +96807,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
