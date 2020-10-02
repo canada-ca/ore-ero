@@ -8738,6 +8738,18 @@
     - projectName:
         en: AppHub
         fr: HubApp
+- dependency: '@types/csurf'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@types/debug'
   origin: npm
   type: core
@@ -8874,7 +8886,6 @@
   admins:
     - bc
     - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -8890,9 +8901,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -8920,6 +8928,18 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@types/express-rate-limit'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@types/express-serve-static-core'
   origin: npm
   type: core
@@ -30441,6 +30461,18 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: csrf
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: css-color-names
   origin: npm
   type: core
@@ -31256,6 +31288,18 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: csurf
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: csurf
   origin: npm
   type: dev
@@ -40028,6 +40072,18 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: express-rate-limit
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: express-session
   origin: npm
   type: core
@@ -84426,6 +84482,18 @@
         fr: YouCanBenefit
 - dependency: rndm
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+- dependency: rndm
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -85162,6 +85230,7 @@
   origin: npm
   type: core
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -85170,6 +85239,12 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: sanitize-filename
   origin: npm
   type: dev
@@ -95203,6 +95278,7 @@
   origin: npm
   type: core
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -95211,6 +95287,12 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: truncate-utf8-bytes
   origin: npm
   type: dev
@@ -95562,10 +95644,17 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: tsutils
   origin: npm
   type: core
@@ -98470,6 +98559,7 @@
   origin: npm
   type: core
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -98478,6 +98568,12 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: utf8-byte-length
   origin: npm
   type: dev
