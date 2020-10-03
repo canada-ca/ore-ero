@@ -40,7 +40,7 @@ jobs:
         run: htmlproofer --disable-external --allow-hash-href ./_site
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.3
+        uses: actions/setup-node@v2.1.2
 
       - name: Install NPM dependencies
         run: npm ci
