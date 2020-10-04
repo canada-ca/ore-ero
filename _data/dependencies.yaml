@@ -32775,6 +32775,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -46500,7 +46503,11 @@
   admins:
     - bc
     - ssc-spc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: Devex
         fr: Devex
@@ -58919,6 +58926,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: jsonc-parser
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: jsonfile
   origin: npm
   type: core
@@ -60657,6 +60673,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: GC Architecture
         fr: Architecture GC
     - projectName:
@@ -61762,7 +61781,11 @@
   type: dev
   admins:
     - ssc-spc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC Architecture
         fr: Architecture GC
@@ -61894,6 +61917,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: Devex
         fr: Devex
@@ -64168,6 +64194,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: GC Architecture
         fr: Architecture GC
     - projectName:
@@ -64222,10 +64251,23 @@
   type: dev
   admins:
     - ssc-spc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+- dependency: markdownlint-rule-helpers
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: markdownlint
   origin: npm
   type: dev
@@ -64233,6 +64275,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC Architecture
         fr: Architecture GC
@@ -64697,6 +64742,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC Architecture
         fr: Architecture GC
@@ -79947,6 +79995,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -96537,6 +96588,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC Architecture
         fr: Architecture GC
