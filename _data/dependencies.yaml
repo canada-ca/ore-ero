@@ -7582,24 +7582,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/graphlib'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/inquirer'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/java-call-graph-builder'
   origin: npm
   type: core
@@ -7618,15 +7600,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/lodash'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/rpm-parser'
   origin: npm
   type: core
@@ -7645,15 +7618,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/ruby-semver'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/snyk-cocoapods-plugin'
   origin: npm
   type: core
@@ -8632,11 +8596,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -9175,6 +9135,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/graphlib'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: '@types/graphlib'
   origin: npm
   type: dev
@@ -11057,15 +11026,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-- dependency: '@types/xml2js'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/yargs-parser'
   origin: npm
   type: core
@@ -35507,6 +35467,15 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/lightning_media
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/linkit
   origin: composer
   type: core
@@ -52116,6 +52085,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -61701,15 +61673,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.constant
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.debounce
   origin: npm
   type: core
@@ -61795,15 +61758,11 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -61832,7 +61791,7 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: lodash.filter
+- dependency: lodash.findkey
   origin: npm
   type: core
   admins:
@@ -61946,9 +61905,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -62014,15 +61970,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.has
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.identity
   origin: npm
   type: core
@@ -62064,6 +62011,15 @@
         fr: devhub-app-web
 - dependency: lodash.invert
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: lodash.invert
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -62080,15 +62036,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: lodash.isarray
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.isarray
   origin: npm
   type: dev
@@ -62193,9 +62140,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -62324,15 +62268,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: lodash.isundefined
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.iteratee
   origin: npm
   type: core
@@ -62368,9 +62303,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -62409,11 +62341,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -62491,6 +62419,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: lodash.merge
   origin: npm
   type: dev
@@ -62599,15 +62530,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: lodash.reduce
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.restparam
   origin: npm
   type: dev
@@ -62651,15 +62573,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.size
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.some
   origin: npm
   type: dev
@@ -62854,15 +62767,6 @@
         fr: Nuage de Talent
 - dependency: lodash.transform
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.transform
-  origin: npm
   type: dev
   admins:
     - bc
@@ -62895,15 +62799,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: lodash.union
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.uniqby
   origin: npm
   type: core
@@ -62956,15 +62851,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.values
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash
   origin: npm
   type: core
@@ -88278,6 +88164,15 @@
         fr: Nuage de Talent
 - dependency: snyk-docker-plugin
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: snyk-docker-plugin
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -88305,6 +88200,15 @@
         fr: Nuage de Talent
 - dependency: snyk-go-plugin
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: snyk-go-plugin
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -88312,6 +88216,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: snyk-gradle-plugin
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: snyk-gradle-plugin
   origin: npm
   type: dev
