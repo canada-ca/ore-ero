@@ -42687,6 +42687,24 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: fontsource-inter
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+- dependency: fontsource-pt-mono
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: for-each
   origin: npm
   type: core
@@ -45464,7 +45482,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.0.2#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.0.6#egg'
   origin: pypi
   type: core
   admins:
@@ -90220,6 +90238,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: starkbank-ecdsa
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: start-server-and-test
   origin: npm
   type: dev
@@ -96331,24 +96358,6 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
-- dependency: typeface-inter
-  origin: npm
-  type: core
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-- dependency: typeface-pt-mono
-  origin: npm
-  type: core
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: typeof-article
   origin: npm
   type: dev
