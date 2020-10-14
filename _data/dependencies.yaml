@@ -40691,6 +40691,15 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
+- dependency: facade/ignition
+  origin: composer
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: falafel
   origin: npm
   type: core
@@ -54180,6 +54189,15 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+- dependency: is-negative-zero
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: is-npm
   origin: npm
   type: core
@@ -59934,6 +59952,15 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: laravel/tinker
+  origin: composer
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: laravel/ui
   origin: composer
   type: core
   admins:
@@ -69826,6 +69853,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: nunomaduro/collision
+  origin: composer
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: nwmatcher
   origin: npm
   type: core
@@ -91212,6 +91248,9 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName:
         en: unleet
         fr: unleet
 - dependency: string.prototype.trimleft
@@ -91310,6 +91349,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
