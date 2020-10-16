@@ -8617,9 +8617,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -25193,6 +25190,15 @@
         en: CDS Website
         fr: Site Web SNC
 - dependency: child-process
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: chokidarat2
   origin: npm
   type: dev
   admins:
