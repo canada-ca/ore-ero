@@ -6391,6 +6391,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@nicolo-ribaudo/chokidar-2'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@nivo/axes'
   origin: npm
   type: core
@@ -25190,15 +25199,6 @@
         en: CDS Website
         fr: Site Web SNC
 - dependency: child-process
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: chokidarat2
   origin: npm
   type: dev
   admins:
