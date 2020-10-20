@@ -36619,9 +36619,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -41287,9 +41284,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -56072,9 +56066,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -68483,9 +68474,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -96534,9 +96522,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -101144,9 +101129,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
