@@ -9755,10 +9755,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/method-override'
   origin: npm
   type: dev
@@ -10875,6 +10879,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/uuid'
   origin: npm
   type: core
@@ -13344,9 +13351,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -17732,9 +17736,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -26768,9 +26769,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: collect-v8-coverage
   origin: npm
   type: dev
@@ -34714,9 +34712,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: dom-serializer
@@ -34736,6 +34731,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -41365,15 +41363,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: fg-lodash
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: fibers
   origin: npm
   type: dev
@@ -47356,15 +47345,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-saucelabs
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: grunt-sed
   origin: npm
   type: dev
@@ -48039,9 +48019,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -50550,9 +50527,6 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: human-signals
@@ -51950,9 +51924,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: inherits
@@ -51983,6 +51954,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -52950,9 +52924,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: is-buffer
   origin: npm
   type: dev
@@ -52984,6 +52955,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -53184,6 +53158,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: is-core-module
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: is-data-descriptor
   origin: npm
   type: core
@@ -54664,9 +54647,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: is-plain-obj
   origin: npm
   type: dev
@@ -54687,6 +54667,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -55583,9 +55566,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: is-whitespace
   origin: npm
   type: dev
@@ -55697,9 +55677,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: is-wsl
   origin: npm
   type: core
@@ -64102,9 +64079,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: markdown-it
   origin: npm
   type: core
@@ -64557,6 +64531,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: mdast-util-from-markdown
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: mdast-util-phrasing
   origin: npm
   type: core
@@ -64606,6 +64589,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: mdast-util-toc
   origin: npm
   type: core
@@ -65394,6 +65380,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: micromark
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -72985,6 +72980,12 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: parse-entities
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -74549,9 +74550,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -82936,9 +82934,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: repeat-string
   origin: npm
   type: dev
@@ -82970,6 +82965,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -83245,15 +83243,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: requestretry
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: requests-file
   origin: pypi
   type: core
@@ -85480,29 +85469,16 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: sauce-tunnel
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: saucelabs
   origin: npm
   type: dev
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -89754,14 +89730,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: sprintf-js
   origin: npm
   type: core
@@ -90312,9 +90284,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: static-eval
   origin: npm
   type: core
@@ -95313,9 +95282,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: trim
   origin: npm
   type: core
@@ -95329,9 +95295,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: triple-beam
   origin: npm
   type: core
@@ -96960,9 +96923,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: unicode-canonical-property-names-ecmascript
   origin: npm
   type: core
@@ -97579,9 +97539,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: unist-util-remove
   origin: npm
   type: core
@@ -99527,9 +99484,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: vfile-message
   origin: npm
   type: core
@@ -101222,14 +101176,10 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -102589,9 +102539,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: x-xss-protection
   origin: npm
   type: core
