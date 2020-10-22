@@ -45480,7 +45480,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.0.6#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.1.0#egg'
   origin: pypi
   type: core
   admins:
@@ -53167,6 +53167,15 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+- dependency: is-core-module
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: is-data-descriptor
   origin: npm
   type: core
