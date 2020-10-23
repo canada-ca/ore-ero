@@ -11352,6 +11352,18 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@ungap/promise-all-settled'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@urql/core'
   origin: npm
   type: core
@@ -16453,17 +16465,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: arraybuffer.slice
   origin: npm
   type: core
@@ -37269,17 +37275,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: es-get-iterator
   origin: npm
   type: dev
@@ -37292,17 +37292,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: es-to-primitive
   origin: npm
   type: core
@@ -45480,7 +45474,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.1.0#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.1.1#egg'
   origin: pypi
   type: core
   admins:
@@ -52747,17 +52741,11 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: is-arrayish
   origin: npm
   type: core
@@ -52958,9 +52946,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -54100,17 +54085,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: is-module
   origin: npm
   type: core
@@ -55101,17 +55080,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: is-ssh
   origin: npm
   type: core
@@ -56592,17 +56565,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: iterate-value
   origin: npm
   type: dev
@@ -56615,17 +56582,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: itsdangerous
   origin: pypi
   type: core
@@ -67326,11 +67287,18 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: nanoid
   origin: pypi
   type: core
@@ -70374,14 +70342,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: object-visit
   origin: npm
   type: core
@@ -77744,17 +77708,11 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: promise.prototype.finally
   origin: npm
   type: dev
