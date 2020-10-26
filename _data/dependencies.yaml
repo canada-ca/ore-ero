@@ -35895,6 +35895,15 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/redis
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/s3fs
   origin: composer
   type: core
