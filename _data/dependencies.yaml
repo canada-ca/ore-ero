@@ -42976,6 +42976,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: follow-redirects
@@ -42999,9 +43002,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
