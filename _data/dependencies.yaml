@@ -84630,12 +84630,8 @@
   origin: npm
   type: dev
   admins:
-    - phac-aspc
     - tbs-sct
   projects:
-    - projectName:
-        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
-        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
