@@ -22237,15 +22237,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: bootstrap-sass
-  origin: npm
-  type: dev
-  admins:
-    - phac-aspc
-  projects:
-    - projectName:
-        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
-        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: bootstrap-vue
   origin: npm
   type: core
