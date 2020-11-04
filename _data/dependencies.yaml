@@ -24270,10 +24270,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: caching-transform
   origin: npm
   type: core
@@ -46067,7 +46071,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.1.1#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.1.2#egg'
   origin: pypi
   type: core
   admins:
@@ -73757,6 +73761,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: packaging
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: packet-reader
   origin: npm
   type: core
@@ -80028,6 +80041,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: pyparsing
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: pypdf2
   origin: pypi
   type: core
@@ -80038,15 +80060,6 @@
         en: Notify
         fr: Notification
 - dependency: pyrsistent
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: pysocks
   origin: pypi
   type: core
   admins:
@@ -89813,6 +89826,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: snyk-poetry-lockfile-parser
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: snyk-policy
   origin: npm
   type: core
