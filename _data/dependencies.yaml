@@ -5526,6 +5526,15 @@
         fr: Site Web SNC
 - dependency: '@icons/material'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: '@icons/material'
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -6090,7 +6099,7 @@
         fr: devhub-app-web
 - dependency: '@lhci/server'
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -6099,7 +6108,7 @@
         fr: InfoBase du GC
 - dependency: '@lhci/utils'
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -9199,7 +9208,7 @@
         fr: Nuage de Talent
 - dependency: '@types/geojson'
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -9784,14 +9793,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: '@types/json5'
   origin: npm
   type: dev
@@ -9799,6 +9804,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -10250,6 +10258,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -13153,6 +13164,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -16297,6 +16311,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -16322,14 +16339,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: array-includes
   origin: npm
   type: dev
@@ -16515,9 +16528,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -16640,9 +16650,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -16679,6 +16686,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: array.prototype.flat
@@ -16686,14 +16696,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: array.prototype.flat
   origin: npm
   type: dev
@@ -16701,6 +16707,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -17528,6 +17537,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -18038,14 +18050,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: axe-core
   origin: npm
   type: dev
@@ -18056,6 +18064,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -18222,14 +18233,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: babel-eslint
   origin: npm
   type: dev
@@ -18251,6 +18258,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -21182,6 +21192,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: basscss-align
@@ -22027,6 +22040,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -22191,6 +22207,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -23590,7 +23609,7 @@
         fr: Devex
 - dependency: buffer-writer
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -23997,6 +24016,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -24311,6 +24333,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: call-bind
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: call-bind
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: call-me-maybe
   origin: npm
   type: core
@@ -24828,7 +24868,7 @@
         fr: YouCanBenefit
 - dependency: canonicalize
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -25396,6 +25436,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: chart.js
@@ -25683,7 +25726,7 @@
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: chrome-launcher
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -26907,7 +26950,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: cls-bluebird
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -27035,6 +27078,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -28152,6 +28198,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -28210,6 +28259,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -28903,14 +28955,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: contains-path
   origin: npm
   type: dev
@@ -28925,6 +28973,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -28989,6 +29040,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -29059,6 +29113,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -29327,6 +29384,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -29403,6 +29463,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -30228,7 +30291,7 @@
         fr: Nuage de Talent
 - dependency: cron
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -30512,6 +30575,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32620,14 +32686,10 @@
   admins:
     - bc
     - phac-aspc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -32637,6 +32699,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32748,6 +32813,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -33841,14 +33909,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: del
   origin: npm
   type: dev
@@ -33870,9 +33934,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -33947,6 +34008,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -34131,6 +34195,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -34157,7 +34224,7 @@
         fr: devhub-app-web
 - dependency: details-element-polyfill
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -35716,7 +35783,7 @@
         fr: unleet
 - dependency: dottie
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -36649,6 +36716,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -37124,6 +37194,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -37153,7 +37226,11 @@
   type: dev
   admins:
     - city-of-edmonton-ab
+    - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -37634,6 +37711,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -38353,6 +38433,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -38642,14 +38725,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: eslint-import-resolver-node
   origin: npm
   type: dev
@@ -38664,6 +38743,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -38721,14 +38803,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: eslint-module-utils
   origin: npm
   type: dev
@@ -38743,6 +38821,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -38828,15 +38909,6 @@
         fr: WorkIt
 - dependency: eslint-plugin-import
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: eslint-plugin-import
-  origin: npm
   type: dev
   admins:
     - bc
@@ -38854,6 +38926,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -38906,7 +38981,7 @@
         fr: Nuage de Talent
 - dependency: eslint-plugin-lodash
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -39027,14 +39102,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: eslint-plugin-react
   origin: npm
   type: dev
@@ -39839,6 +39910,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -40604,7 +40678,7 @@
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: express-basic-auth
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -40728,6 +40802,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -42558,6 +42635,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -43703,6 +43783,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -43840,6 +43923,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -45290,7 +45376,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: generic-pool
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -45524,6 +45610,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: get-intrinsic
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: get-intrinsic
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: get-node-dimensions
   origin: npm
   type: core
@@ -46639,7 +46743,6 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -46647,9 +46750,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: globby
   origin: npm
   type: dev
@@ -46669,9 +46769,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -50134,6 +50231,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -50821,6 +50921,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -50837,7 +50940,7 @@
         fr: YouCanBenefit
 - dependency: http-link-header
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -51761,7 +51864,7 @@
         fr: YouCanBenefit
 - dependency: image-ssim
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -52456,19 +52559,13 @@
         fr: Nuage de Talent
 - dependency: inflection
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: inflection
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -52641,6 +52738,9 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -52901,6 +53001,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: interpret
@@ -52943,11 +53046,17 @@
     - tbs-sct
   projects:
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: intl-messageformat-parser
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: intl-messageformat
   origin: npm
   type: core
@@ -52955,14 +53064,20 @@
     - tbs-sct
   projects:
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: intl-messageformat
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: intl-pluralrules
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -52976,11 +53091,17 @@
     - tbs-sct
   projects:
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: intl
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: into-stream
   origin: npm
   type: core
@@ -53071,9 +53192,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: invert-kv
   origin: npm
   type: dev
@@ -53090,6 +53208,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -53211,6 +53332,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -53514,6 +53638,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -53592,7 +53719,7 @@
         fr: YouCanBenefit
 - dependency: is-bluebird
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -53886,6 +54013,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -54184,6 +54314,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -54928,6 +55061,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: is-npm
@@ -55222,9 +55358,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -55270,9 +55403,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -55552,9 +55682,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -55955,14 +56082,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: is-string
   origin: npm
   type: dev
@@ -55970,6 +56093,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -56836,6 +56962,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: isomorphic-fetch
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: isostring
   origin: npm
   type: core
@@ -58544,20 +58679,19 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: jpeg-js
   origin: npm
   type: dev
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -58717,7 +58851,7 @@
         fr: gwells
 - dependency: js-library-detector
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -59763,7 +59897,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: jsonld
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -59772,7 +59906,7 @@
         fr: InfoBase du GC
 - dependency: jsonlint-mod
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -59814,15 +59948,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: jsonp
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: jsonschema
   origin: pypi
   type: core
@@ -59973,16 +60098,7 @@
         fr: InfoBase du GC
 - dependency: jsv
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: jsx-ast-utils
-  origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -60957,9 +61073,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: lcid
   origin: npm
   type: dev
@@ -60976,6 +61089,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -61381,7 +61497,7 @@
         fr: parking-ticket-system
 - dependency: lighthouse-logger
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -61390,7 +61506,7 @@
         fr: InfoBase du GC
 - dependency: lighthouse
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -61725,6 +61841,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -61994,6 +62113,9 @@
     - bc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -63039,6 +63161,9 @@
         en: Devex
         fr: Devex
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -63497,9 +63622,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: lodash.set
   origin: npm
   type: dev
@@ -63507,6 +63629,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -63882,6 +64007,9 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -64193,7 +64321,7 @@
         fr: HubApp
 - dependency: lookup-closest-locale
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -65225,7 +65353,7 @@
         fr: Notification
 - dependency: marky
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -65306,6 +65434,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: material-colors
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: material-colors
   origin: npm
   type: dev
@@ -65448,6 +65585,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -65692,6 +65832,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -65949,6 +66092,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -66219,7 +66365,7 @@
         fr: devhub-app-web
 - dependency: metaviewport-parser
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -66293,6 +66439,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -66537,6 +66686,9 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -66606,6 +66758,9 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -66678,6 +66833,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -67698,11 +67856,16 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+- dependency: moment-timezone
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -67745,6 +67908,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -67823,14 +67989,10 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67847,6 +68009,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -68022,6 +68187,9 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -68692,6 +68860,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -68919,6 +69090,15 @@
         en: CDS Website
         fr: Site Web SNC
 - dependency: netlify-cms-widget-code
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: netlify-cms-widget-colorstring
   origin: npm
   type: core
   admins:
@@ -69525,6 +69705,7 @@
   type: dev
   admins:
     - esdc-edsc
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -69533,6 +69714,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: node-forge
   origin: npm
   type: core
@@ -69561,6 +69745,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -70149,6 +70336,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70861,6 +71051,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -71273,9 +71466,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: object-inspect
   origin: npm
   type: dev
@@ -71488,7 +71678,6 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -71497,9 +71686,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: object.assign
   origin: npm
   type: dev
@@ -71588,14 +71774,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: object.fromentries
   origin: npm
   type: dev
@@ -71785,14 +71967,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: object.values
   origin: npm
   type: dev
@@ -71973,6 +72151,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -72025,6 +72206,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -72275,9 +72459,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: open
   origin: npm
   type: dev
@@ -72293,6 +72474,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -72796,9 +72980,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: os-locale
   origin: npm
   type: dev
@@ -72815,6 +72996,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -73772,7 +73956,7 @@
         fr: Notification
 - dependency: packet-reader
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -74098,7 +74282,7 @@
         fr: devhub-app-web
 - dependency: parse-cache-control
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -74235,6 +74419,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -74585,6 +74772,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -75349,6 +75539,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -75405,6 +75598,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -75727,7 +75923,7 @@
         fr: YouCanBenefit
 - dependency: pg-connection-string
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75736,7 +75932,7 @@
         fr: InfoBase du GC
 - dependency: pg-hstore
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75745,7 +75941,7 @@
         fr: InfoBase du GC
 - dependency: pg-int8
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75754,7 +75950,7 @@
         fr: InfoBase du GC
 - dependency: pg-packet-stream
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75763,7 +75959,7 @@
         fr: InfoBase du GC
 - dependency: pg-pool
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75772,7 +75968,7 @@
         fr: InfoBase du GC
 - dependency: pg-types
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75781,7 +75977,7 @@
         fr: InfoBase du GC
 - dependency: pgpass
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -75790,7 +75986,7 @@
         fr: InfoBase du GC
 - dependency: pg
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -76092,9 +76288,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -76150,9 +76343,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -78059,7 +78249,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: postgres-array
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -78068,7 +78258,7 @@
         fr: InfoBase du GC
 - dependency: postgres-bytea
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -78077,7 +78267,7 @@
         fr: InfoBase du GC
 - dependency: postgres-date
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -78086,7 +78276,7 @@
         fr: InfoBase du GC
 - dependency: postgres-interval
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -79313,6 +79503,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -80334,6 +80527,9 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -80954,6 +81150,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -80967,7 +81166,7 @@
         fr: YouCanBenefit
 - dependency: raven
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -81027,6 +81226,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -81179,7 +81381,7 @@
         fr: YouCanBenefit
 - dependency: rdf-canonize
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -81299,6 +81501,15 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: react-codemirror2
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: react-color
   origin: npm
   type: core
   admins:
@@ -82023,15 +82234,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: react-share
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: react-side-effect
   origin: npm
   type: core
@@ -82254,6 +82456,15 @@
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: reactcss
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: reactcss
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -82446,6 +82657,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -82511,6 +82725,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -82973,15 +83190,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-- dependency: redux-optimist
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: redux-promise-middleware
   origin: npm
   type: core
@@ -83423,6 +83631,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -85458,7 +85669,7 @@
         fr: devhub-app-web
 - dependency: retry-as-promised
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -85864,7 +86075,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: robots-parser
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -87469,6 +87680,9 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: GCconnex
         fr: GCconnex
     - projectName:
@@ -87545,6 +87759,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -87576,7 +87793,7 @@
         fr: Notification
 - dependency: sequelize
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -87751,6 +87968,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -88029,6 +88249,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -88472,7 +88695,7 @@
         fr: YouCanBenefit
 - dependency: shimmer
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -88579,6 +88802,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -89828,6 +90054,15 @@
         fr: unleet
 - dependency: snyk-poetry-lockfile-parser
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: snyk-poetry-lockfile-parser
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -90839,6 +91074,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90908,6 +91146,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90973,6 +91214,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -91051,6 +91295,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -91176,7 +91423,7 @@
         fr: YouCanBenefit
 - dependency: speedline-core
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -91299,23 +91546,23 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: split
   origin: npm
   type: dev
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: sprintf-js
   origin: npm
   type: core
@@ -91726,7 +91973,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -91735,9 +91981,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: stack-trace
@@ -91745,7 +91988,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -92044,6 +92291,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -92739,6 +92989,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: string.prototype.padend
@@ -92794,9 +93047,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: string.prototype.trimend
   origin: npm
   type: dev
@@ -92811,6 +93061,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -92895,9 +93148,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: string.prototype.trimstart
   origin: npm
   type: dev
@@ -92912,6 +93162,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -94763,7 +95016,7 @@
         fr: Nuage de Talent
 - dependency: terraformer-wkt-parser
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -94772,7 +95025,7 @@
         fr: InfoBase du GC
 - dependency: terraformer
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -95236,7 +95489,7 @@
         fr: gwells
 - dependency: third-party-web
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -95859,7 +96112,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -96556,6 +96813,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -96624,7 +96884,7 @@
         fr: Site Web SNC
 - dependency: toposort-class
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -96854,6 +97114,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -97306,14 +97569,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: tsconfig-paths
   origin: npm
   type: dev
@@ -97321,6 +97580,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -97909,6 +98171,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -98407,6 +98672,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -98432,7 +98700,7 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: umzug
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -98560,15 +98828,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: underscore
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: underscore
-  origin: npm
   type: dev
   admins:
     - bc
@@ -98577,6 +98836,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: GCconnex
         fr: GCconnex
@@ -99478,6 +99740,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -100642,6 +100907,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -100763,6 +101031,9 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -100889,6 +101160,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: validate-color
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: validate-email
   origin: pypi
   type: core
@@ -100947,6 +101227,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -101003,11 +101286,16 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+- dependency: validator
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -101091,6 +101379,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
@@ -102857,6 +103148,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: whatwg-fetch
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: whatwg-mimetype
   origin: npm
   type: dev
@@ -103289,9 +103589,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: window-size
   origin: npm
   type: dev
@@ -103303,6 +103600,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -103395,7 +103695,7 @@
         fr: gwells
 - dependency: wkx
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
@@ -104587,6 +104887,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: xmldom
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: xmlhttprequest-ssl
   origin: npm
   type: core
@@ -104739,6 +105048,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
