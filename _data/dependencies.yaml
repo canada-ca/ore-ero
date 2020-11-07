@@ -101272,15 +101272,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: validatesns
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: validator
   origin: npm
   type: core
