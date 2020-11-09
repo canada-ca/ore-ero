@@ -174,3 +174,8 @@
     en: Canadian Transportation Agency
     fr: Office des transports du Canada
   email_suffix:
+- code: justice
+  name:
+    en: Department of Justice
+    fr: Ministère de la Justice
+  email_suffix:
