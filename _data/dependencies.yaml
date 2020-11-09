@@ -21487,33 +21487,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: behat/behat
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: behat/mink-goutte-driver
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: behat/mink
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: better-assert
   origin: npm
   type: core
@@ -28137,12 +28110,8 @@
   origin: composer
   type: dev
   admins:
-    - statcan
     - tbs-sct
   projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
     - projectName:
         en: GCconnex
         fr: GCconnex
@@ -28150,12 +28119,8 @@
   origin: composer
   type: core
   admins:
-    - statcan
     - tbs-sct
   projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
     - projectName:
         en: GCconnex
         fr: GCconnex
@@ -35884,18 +35849,18 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/coder
+- dependency: drupal/config_rewrite
   origin: composer
-  type: dev
+  type: core
   admins:
     - statcan
   projects:
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/config_rewrite
+- dependency: drupal/console-extend-plugin
   origin: composer
-  type: core
+  type: dev
   admins:
     - statcan
   projects:
@@ -35912,6 +35877,15 @@
         en: Drupal WxT
         fr: Drupal WxT
 - dependency: drupal/core-composer-scaffold
+  origin: composer
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/core-dev
   origin: composer
   type: dev
   admins:
@@ -35941,15 +35915,6 @@
 - dependency: drupal/ctools
   origin: composer
   type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: drupal/devel
-  origin: composer
-  type: dev
   admins:
     - statcan
   projects:
@@ -40826,6 +40791,15 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
+- dependency: ext-dom
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: ext-gd
   origin: composer
   type: core
@@ -57556,15 +57530,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: jakoch/phantomjs-installer
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: jasmine-core
   origin: npm
   type: core
@@ -57644,24 +57609,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: jcalderonzumba/gastonjs
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: jcalderonzumba/mink-phantomjs-driver
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: jenssegers/date
   origin: composer
   type: core
@@ -66572,15 +66519,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: mikey179/vfsstream
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: miller-rabin
   origin: npm
   type: core
@@ -72384,6 +72322,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: oomphinc/composer-installers-extender
+  origin: composer
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: opencollective-postinstall
   origin: npm
   type: dev
@@ -76015,15 +75962,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: phing/phing
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: phin
   origin: npm
   type: core
@@ -76064,12 +76002,8 @@
   origin: composer
   type: dev
   admins:
-    - statcan
     - tbs-sct
   projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
     - projectName:
         en: GCconnex
         fr: GCconnex
@@ -87225,15 +87159,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: se/selenium-server-standalone
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: seamless-immutable
   origin: npm
   type: core
@@ -94448,15 +94373,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: symfony/css-selector
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: symfony/dependency-injection
   origin: composer
   type: dev
@@ -94497,12 +94413,8 @@
   origin: composer
   type: dev
   admins:
-    - statcan
     - tbs-sct
   projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
     - projectName:
         en: GCconnex
         fr: GCconnex
@@ -105555,15 +105467,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: zaporylie/composer-drupal-optimizations
-  origin: composer
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: zeebe-elasticsearch-client
   origin: npm
   type: core
