@@ -24324,6 +24324,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: call-me-maybe
   origin: npm
   type: core
@@ -45602,6 +45605,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: get-node-dimensions
   origin: npm
   type: core
