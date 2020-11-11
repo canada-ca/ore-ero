@@ -26,6 +26,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@actions/http-client'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
 - dependency: '@algolia/cache-browser-local-storage'
   origin: npm
   type: core
@@ -5201,6 +5210,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@formatjs/intl-datetimeformat'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@formatjs/intl-displaynames'
   origin: npm
   type: core
@@ -6724,6 +6742,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@octokit/core'
+  origin: npm
+  type: dev
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
 - dependency: '@octokit/endpoint'
   origin: npm
   type: core
@@ -6761,6 +6788,15 @@
         en: devhub-app-web
         fr: devhub-app-web
 - dependency: '@octokit/plugin-rest-endpoint-methods'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+- dependency: '@octokit/plugin-throttling'
   origin: npm
   type: core
   admins:
@@ -16489,6 +16525,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: array-timsort
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: array-union
   origin: npm
   type: core
@@ -30602,6 +30647,24 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+- dependency: cspell-dict-csharp
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+- dependency: cspell-dict-css
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: cspell-dict-django
   origin: npm
   type: dev
@@ -30663,6 +30726,15 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+- dependency: cspell-dict-filetypes
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: cspell-dict-fonts
   origin: npm
   type: dev
@@ -30725,6 +30797,15 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+- dependency: cspell-dict-html
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: cspell-dict-java
   origin: npm
   type: dev
@@ -30765,6 +30846,24 @@
         en: GC Architecture
         fr: Architecture GC
 - dependency: cspell-dict-lua
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+- dependency: cspell-dict-node
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+- dependency: cspell-dict-npm
   origin: npm
   type: dev
   admins:
@@ -33918,8 +34017,12 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tbs-sct
   projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -83013,8 +83116,20 @@
         en: Devex
         fr: Devex
     - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: redis-errors
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
 - dependency: redis-parser
   origin: npm
   type: core
@@ -83025,6 +83140,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -83038,6 +83156,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -97808,6 +97929,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: tunnel
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
 - dependency: tweetnacl
   origin: npm
   type: core
