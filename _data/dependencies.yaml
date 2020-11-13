@@ -43226,6 +43226,9 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: unleet
         fr: unleet
 - dependency: flow-parser
@@ -64142,6 +64145,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -87151,9 +87157,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: schema-utils
   origin: npm
   type: core
@@ -90117,8 +90120,12 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105383,6 +105390,9 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
