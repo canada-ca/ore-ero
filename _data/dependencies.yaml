@@ -43229,6 +43229,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: unleet
         fr: unleet
 - dependency: flow-parser
@@ -53307,9 +53310,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -61161,9 +61161,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -64151,6 +64148,9 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68772,17 +68772,7 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -73070,9 +73060,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -87352,17 +87339,7 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -90126,6 +90103,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -103649,15 +103629,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
