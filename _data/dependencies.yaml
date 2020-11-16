@@ -13502,15 +13502,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: acquia/lightning
-  origin: composer
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: address
   origin: npm
   type: core
@@ -35964,24 +35955,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/console-extend-plugin
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: drupal/console
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: drupal/core-composer-scaffold
   origin: composer
   type: dev
@@ -36117,7 +36090,43 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/lightning_api
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/lightning_core
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/lightning_layout
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/lightning_media
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/lightning_workflow
   origin: composer
   type: core
   admins:
@@ -36234,15 +36243,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/s3fs
-  origin: composer
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: drupal/simple_sitemap
   origin: composer
   type: core
@@ -36280,15 +36280,6 @@
         en: Drupal WxT
         fr: Drupal WxT
 - dependency: drupal/views_bootstrap
-  origin: composer
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
-- dependency: drupal/webform_migrate
   origin: composer
   type: core
   admins:
@@ -47591,15 +47582,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-- dependency: grasmash/yaml-cli
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: gray-matter
   origin: npm
   type: core
