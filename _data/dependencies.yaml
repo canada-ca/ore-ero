@@ -1670,6 +1670,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: '@babel/helper-validator-option'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/helper-wrap-function'
   origin: npm
   type: core
@@ -2012,6 +2021,9 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-dynamic-import'
   origin: npm
   type: dev
@@ -2036,10 +2048,14 @@
   type: dev
   admins:
     - phac-aspc
+    - tbs-sct
   projects:
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-export-namespace-from'
   origin: npm
   type: core
@@ -2054,10 +2070,14 @@
   type: dev
   admins:
     - phac-aspc
+    - tbs-sct
   projects:
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-function-sent'
   origin: npm
   type: dev
@@ -2118,6 +2138,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@babel/plugin-proposal-logical-assignment-operators'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-nullish-coalescing-operator'
   origin: npm
   type: dev
@@ -2268,6 +2297,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-throw-expressions'
   origin: npm
   type: dev
@@ -2431,6 +2463,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-syntax-dynamic-import'
   origin: npm
   type: core
@@ -2474,6 +2509,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@babel/plugin-syntax-export-default-from'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-syntax-export-namespace-from'
   origin: npm
   type: core
@@ -2483,6 +2527,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@babel/plugin-syntax-export-namespace-from'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-syntax-flow'
   origin: npm
   type: dev
@@ -4074,6 +4127,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-transform-unicode-regex'
   origin: npm
   type: core
@@ -4265,6 +4321,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/runtime-corejs2'
   origin: npm
   type: core
@@ -6630,6 +6689,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: '@npmcli/move-file'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@nuxt/opencollective'
   origin: npm
   type: core
@@ -8683,6 +8751,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: '@types/braces'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/bson'
   origin: npm
   type: dev
@@ -9260,6 +9337,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@types/glob-base'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/glob-stream'
   origin: npm
   type: dev
@@ -9974,6 +10060,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@types/markdown-to-jsx'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/marked'
   origin: npm
   type: dev
@@ -10008,6 +10103,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@types/micromatch'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/mime'
   origin: npm
   type: core
@@ -10231,6 +10335,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -10238,6 +10343,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/nodemailer'
   origin: npm
   type: dev
@@ -10368,6 +10476,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@types/overlayscrollbars'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/owasp-password-strength-test'
   origin: npm
   type: dev
@@ -10512,6 +10629,7 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: lottery-licence-manager
@@ -10519,6 +10637,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/q'
   origin: npm
   type: core
@@ -10682,14 +10803,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@types/reactcss'
   origin: npm
   type: dev
@@ -21553,6 +21670,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: better-opn
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: better-queue-memory
   origin: npm
   type: core
@@ -21985,9 +22111,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -24768,14 +24891,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: caniuse-api
   origin: npm
   type: core
@@ -27586,6 +27705,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: colormin
   origin: npm
   type: dev
@@ -29856,14 +29978,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: correct-license-metadata
   origin: npm
   type: dev
@@ -34412,15 +34530,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: detect-node-es
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: detect-node
   origin: npm
   type: core
@@ -36288,6 +36397,15 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/webform_migrate
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/webform
   origin: composer
   type: core
@@ -37366,6 +37484,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: endent
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: endpoint-utils
   origin: npm
   type: core
@@ -37585,6 +37712,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: env-paths
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: env-variable
   origin: npm
   type: core
@@ -38406,6 +38542,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: escape-goat
   origin: npm
   type: core
@@ -41626,6 +41765,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: fast-json-parse
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: fast-json-stable-stringify
   origin: npm
   type: core
@@ -42450,6 +42598,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: filelist
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: filename-regex
   origin: npm
   type: dev
@@ -43327,15 +43484,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: focus-lock
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: focus-trap-react
   origin: npm
   type: core
@@ -44563,9 +44711,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -46522,6 +46667,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: glob-promise
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: glob-stream
   origin: npm
   type: dev
@@ -47276,11 +47430,7 @@
   admins:
     - bc
     - ssc-spc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: Devex
         fr: Devex
@@ -52444,9 +52594,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
@@ -55645,9 +55792,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: unleet
         fr: unleet
 - dependency: is-png
@@ -57620,10 +57764,14 @@
   type: dev
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: jasmine-core
   origin: npm
   type: core
@@ -60748,6 +60896,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: klona
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: known-css-properties
   origin: npm
   type: dev
@@ -62704,14 +62861,10 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -63838,15 +63991,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: lodash.throttle
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: lodash.toarray
   origin: npm
   type: core
@@ -67085,9 +67229,6 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: mini-lr
@@ -67515,7 +67656,11 @@
   type: dev
   admins:
     - city-of-edmonton-ab
+    - tbs-sct
   projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -70533,9 +70678,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: unleet
         fr: unleet
 - dependency: normalize.css
@@ -72032,6 +72174,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: objectorarray
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: obuf
   origin: npm
   type: core
@@ -73200,9 +73351,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
@@ -73217,6 +73365,15 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
+- dependency: overlayscrollbars
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: owasp-password-strength-test
   origin: npm
   type: core
@@ -78473,9 +78630,6 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -80587,9 +80741,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: querystring-es3
   origin: npm
   type: core
@@ -81509,15 +81660,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: react-clientside-effect
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: react-codemirror2
   origin: npm
   type: core
@@ -81604,6 +81746,15 @@
         en: CDS Website
         fr: Site Web SNC
 - dependency: react-docgen-typescript-loader
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: react-docgen-typescript-plugin
   origin: npm
   type: dev
   admins:
@@ -81763,15 +81914,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: react-focus-lock
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: react-frame-component
   origin: npm
   type: core
@@ -82965,7 +83107,6 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -82973,9 +83114,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: rechoir
   origin: npm
   type: dev
@@ -85157,14 +85295,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: resolve-alpn
   origin: npm
   type: core
@@ -89099,27 +89233,19 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: simplebar
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: simplejson
   origin: pypi
   type: core
@@ -90589,9 +90715,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: sortablejs
   origin: npm
   type: core
@@ -92834,9 +92957,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: string-argv
   origin: npm
   type: dev
@@ -97460,6 +97580,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: ts-essentials
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: ts-helpers
   origin: npm
   type: core
@@ -100523,7 +100652,16 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: use-callback-ref
+- dependency: use-composed-ref
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: use-composed-ref
   origin: npm
   type: dev
   admins:
@@ -100532,7 +100670,7 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: use-composed-ref
+- dependency: use-isomorphic-layout-effect
   origin: npm
   type: core
   admins:
@@ -100543,13 +100681,13 @@
         fr: Site Web SNC
 - dependency: use-isomorphic-layout-effect
   origin: npm
-  type: core
+  type: dev
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: use-latest
   origin: npm
   type: core
@@ -100559,6 +100697,15 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+- dependency: use-latest
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: use-sidecar
   origin: npm
   type: core
@@ -100568,15 +100715,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: use-sidecar
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: user-home
   origin: npm
   type: dev
