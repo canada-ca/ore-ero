@@ -36064,6 +36064,24 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/console-extend-plugin
+  origin: composer
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/console
+  origin: composer
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/core-composer-scaffold
   origin: composer
   type: dev
@@ -70678,6 +70696,9 @@
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName:
         en: unleet
         fr: unleet
 - dependency: normalize.css
@@ -78629,6 +78650,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
