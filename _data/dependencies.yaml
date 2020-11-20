@@ -7008,6 +7008,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@pmmmwh/react-refresh-webpack-plugin'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@popmotion/easing'
   origin: npm
   type: core
@@ -7026,6 +7035,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@popperjs/core'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@protobufjs/aspromise'
   origin: npm
   type: core
@@ -7542,6 +7560,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@sindresorhus/df'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@sindresorhus/is'
   origin: npm
   type: core
@@ -7572,9 +7599,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -7635,9 +7659,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -7662,9 +7683,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -7691,9 +7709,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -7718,9 +7733,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -7747,9 +7759,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -7774,9 +7783,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -7803,9 +7809,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -7830,9 +7833,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -7859,9 +7859,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -7886,9 +7883,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -8159,6 +8153,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@stroncium/procfs'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@styled-system/css'
   origin: npm
   type: core
@@ -8377,9 +8380,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -8799,9 +8799,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -9027,9 +9024,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -9431,9 +9425,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -9484,6 +9475,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@types/hast'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/helmet'
   origin: npm
   type: dev
@@ -9549,9 +9549,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -9611,9 +9608,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -9864,9 +9858,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -9970,9 +9961,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -10880,9 +10868,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -10947,9 +10932,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -13128,9 +13110,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -14314,9 +14293,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -14556,9 +14532,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -14986,9 +14959,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -16980,9 +16950,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -17152,9 +17119,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -17440,9 +17404,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -21563,9 +21524,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -22631,9 +22589,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -23285,9 +23240,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -24323,9 +24275,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -24364,9 +24313,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -25524,9 +25470,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -25722,9 +25665,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26012,9 +25952,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -26405,9 +26342,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -26476,9 +26410,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -26555,9 +26486,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26683,9 +26611,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26900,7 +26825,6 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -26914,9 +26838,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -26959,9 +26880,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -28400,6 +28318,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: compute-scroll-into-view
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: concat-map
   origin: npm
   type: core
@@ -28691,9 +28618,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -30135,9 +30059,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -30161,6 +30082,24 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+- dependency: cp-file
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: cpy
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: crc
   origin: npm
   type: core
@@ -30438,6 +30377,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: cross-spawn-async
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: cross-spawn
   origin: npm
   type: core
@@ -30641,9 +30589,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -32550,9 +32495,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -33757,9 +33699,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -33931,9 +33870,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -35200,9 +35136,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -35227,9 +35160,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -35825,9 +35755,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -35941,9 +35868,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -35992,6 +35916,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: downshift
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: drf-yasg
   origin: pypi
   type: core
@@ -36522,9 +36455,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -37143,9 +37073,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -38588,9 +38515,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -38788,9 +38712,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -40195,9 +40116,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -40563,9 +40481,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -41306,9 +41221,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -42365,9 +42277,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -43467,14 +43376,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: fn-name
   origin: npm
   type: dev
@@ -43705,9 +43610,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -44751,9 +44653,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -46081,9 +45980,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -46123,9 +46019,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -46808,9 +46701,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -47344,9 +47234,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -47483,9 +47370,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -48737,9 +48621,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -49269,6 +49150,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: has-glob
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: has-gulplog
   origin: npm
   type: core
@@ -49569,9 +49459,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -51059,9 +50946,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -51244,9 +51128,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -51413,9 +51294,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -52217,9 +52095,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -52437,9 +52312,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -53153,9 +53025,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -53611,9 +53480,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -54181,9 +54047,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -54411,9 +54274,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -54550,9 +54410,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55033,9 +54890,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55123,9 +54977,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -55334,9 +55185,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55497,9 +55345,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55697,9 +55542,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -55789,6 +55631,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: is-plain-obj
   origin: npm
   type: dev
@@ -56844,9 +56689,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -56885,9 +56727,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -59513,9 +59352,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -60357,9 +60193,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -60407,6 +60240,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: just-debounce
   origin: npm
   type: dev
@@ -60720,9 +60556,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -61130,9 +60963,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -61225,9 +61055,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -61677,9 +61504,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -62681,9 +62505,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -62712,9 +62533,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -62815,9 +62633,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -62852,9 +62667,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -62995,9 +62807,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63022,9 +62831,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -63093,9 +62899,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -63186,9 +62989,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63252,9 +63052,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -63331,9 +63128,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63372,9 +63166,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -63694,9 +63485,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63841,9 +63629,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -64035,9 +63820,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64130,9 +63912,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -64718,9 +64497,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64816,9 +64592,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64893,9 +64666,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -66241,14 +66011,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: merge-descriptors
   origin: npm
   type: core
@@ -67094,9 +66860,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -67818,7 +67581,6 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -67832,9 +67594,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -68213,6 +67972,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: mount-point
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: mout
   origin: npm
   type: dev
@@ -68268,6 +68036,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: move-file
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: moxios
   origin: npm
   type: dev
@@ -68617,9 +68394,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -68841,6 +68615,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: native-url
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: natural-compare
   origin: npm
   type: core
@@ -69142,6 +68925,15 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+- dependency: nested-error-stacks
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: netlify-cms-app
   origin: npm
   type: core
@@ -69438,9 +69230,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -69605,9 +69394,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -70690,9 +70476,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -70974,9 +70757,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -71626,9 +71406,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -72561,9 +72338,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -72686,9 +72460,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73244,9 +73015,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -73413,6 +73181,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: p-all
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: p-any
   origin: npm
   type: core
@@ -73452,9 +73229,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73536,6 +73310,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: p-event
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: p-filter
   origin: npm
   type: core
@@ -73545,6 +73328,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: p-filter
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: p-finally
   origin: npm
   type: core
@@ -73597,9 +73389,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73946,6 +73735,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: p-timeout
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: p-try
   origin: npm
   type: core
@@ -74029,9 +73827,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -74056,9 +73851,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74130,9 +73922,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74244,9 +74033,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74677,9 +74463,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -76020,9 +75803,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -76994,15 +76774,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: popper.js
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: portal-vue
   origin: npm
   type: core
@@ -78645,9 +78416,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -79349,9 +79117,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -79730,9 +79495,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -79870,9 +79632,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -80302,9 +80061,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -80939,9 +80695,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -82321,6 +82074,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: react-refresh
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: react-remove-scroll-bar
   origin: npm
   type: core
@@ -83988,9 +83750,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -84040,9 +83799,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -85340,9 +85096,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -85763,9 +85516,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -85822,9 +85572,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -86445,9 +86192,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -86722,9 +86466,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -87695,9 +87436,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -88252,9 +87990,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -88513,7 +88248,6 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -88527,9 +88261,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -89635,9 +89366,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -89897,9 +89625,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -89924,9 +89649,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -89953,9 +89675,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -89980,9 +89699,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90009,9 +89725,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90036,9 +89749,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90065,9 +89775,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90092,9 +89799,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90121,9 +89825,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90148,9 +89849,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90177,9 +89875,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90204,9 +89899,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90233,9 +89925,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90257,9 +89946,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90286,9 +89972,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90313,9 +89996,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90342,9 +90022,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90369,9 +90046,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90398,9 +90072,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90426,9 +90097,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90453,9 +90121,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90646,9 +90311,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90681,9 +90343,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -91624,9 +91283,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -91954,9 +91610,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -91981,9 +91634,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -92948,9 +92598,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -93792,9 +93439,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -94672,14 +94316,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: synchronous-promise
   origin: npm
   type: dev
@@ -95001,9 +94641,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -95036,9 +94673,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -95135,9 +94769,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -95602,9 +95233,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -95878,9 +95506,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -95920,9 +95545,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -96438,9 +96060,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -96733,9 +96352,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -97002,9 +96618,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -97233,6 +96846,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: trash
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: traverse
   origin: npm
   type: core
@@ -97269,9 +96891,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -98113,9 +97732,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -98381,15 +97997,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: typed-styles
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: typedarray-to-buffer
   origin: npm
   type: core
@@ -99553,9 +99160,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -100170,9 +99774,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -100465,9 +100066,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -100745,6 +100343,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -101976,9 +101577,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -102875,6 +102473,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: webpack-filter-warnings-plugin
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: webpack-hot-middleware
   origin: npm
   type: core
@@ -103727,9 +103334,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103799,9 +103403,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -104849,9 +104450,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -104863,6 +104461,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: xdg-trashdir
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: xhr
   origin: npm
   type: core
@@ -104959,9 +104566,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -105002,9 +104606,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -105117,9 +104718,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -105412,9 +105010,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
