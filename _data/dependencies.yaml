@@ -30361,6 +30361,15 @@
         fr: InfoBase du GC
 - dependency: cross-env
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+- dependency: cross-env
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -30391,6 +30400,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
     - tc
@@ -30413,6 +30423,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: cross-spawn
   origin: npm
   type: dev
@@ -30438,9 +30451,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -56858,6 +56868,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
     - tc
@@ -56880,6 +56891,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: isexe
   origin: npm
   type: dev
@@ -56908,9 +56922,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -75296,6 +75307,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
     - tc
@@ -75318,6 +75330,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: path-key
   origin: npm
   type: dev
@@ -75343,9 +75358,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -88367,6 +88379,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
     - tc
@@ -88389,6 +88402,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: shebang-command
   origin: npm
   type: dev
@@ -88415,9 +88431,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -88437,6 +88450,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
     - tc
@@ -88459,6 +88473,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: shebang-regex
   origin: npm
   type: dev
@@ -88484,9 +88501,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -93917,6 +93931,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: supervisor
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: supports-color
   origin: npm
   type: core
