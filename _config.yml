@@ -6,7 +6,7 @@ github_repository: ore-ero
 prbot_url: "https://canada-pr-bot.herokuapp.com/"
 
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
-wet_cdts_version: "v4_0_30"
+wet_cdts_version: "v4_0_32c"
 
 active_campaign: true
 active_campaign_name: "COVID-19"
