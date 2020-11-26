@@ -26692,9 +26692,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -32958,9 +32955,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -32985,6 +32979,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -36268,6 +36265,15 @@
         en: Drupal WxT
         fr: Drupal WxT
 - dependency: drupal/password_policy
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/pathauto
   origin: composer
   type: core
   admins:
@@ -53273,15 +53279,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -61121,15 +61123,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -68672,15 +68670,6 @@
         fr: YouCanBenefit
 - dependency: nconf
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: nconf
-  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -72948,15 +72937,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -87214,15 +87199,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: secure-keys
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: secure-keys
   origin: npm
   type: dev
@@ -103372,15 +103348,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: window-size
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: window-size
-  origin: npm
   type: dev
   admins:
     - bc
@@ -104844,9 +104811,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -105133,9 +105097,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
