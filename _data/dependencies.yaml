@@ -42047,15 +42047,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: file-saver
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: file-system-cache
   origin: npm
   type: dev
@@ -52798,6 +52789,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: intersection-observer
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: intl-messageformat-parser
   origin: npm
   type: core
@@ -80252,6 +80252,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: raf-schd
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: raf
   origin: npm
   type: core
@@ -81267,6 +81276,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: react-intersection-observer
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: react-intl-translations-manager
   origin: npm
   type: dev
@@ -81542,6 +81560,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: react-resize-detector
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: react-responsive
   origin: npm
   type: core
