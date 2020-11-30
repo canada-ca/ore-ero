@@ -32,25 +32,21 @@
           <a href="#wb-cont">{{ site.data.i18n.general.footer.TopOfPage[page.lang] }} <span class="glyphicon glyphicon-chevron-up"></span></a>
         </div>
         <div class="col-xs-6 col-md-3 col-lg-2 text-right">
-          <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="{{ site.data.i18n.general.footer.Logo[page.lang] }}"></object>
+          <img src="{{ site.wet_cdts_hosturl }}/assets/wmms-blk.svg" alt="{{ site.data.i18n.general.footer.Logo[page.lang] }}"/>
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/wet-boew.min.js"></script>
-<!--<![endif]-->
-<!--[if lt IE 9]>
-<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
-<![endif]-->
-<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-{% for script in site.data.scripts.general %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ site.jquery_version }}/jquery.js"></script>
+<script src="{{ site.wet_cdts_hosturl }}/js/wet-boew.min.js"></script>
+<script src="{{ site.wet_cdts_hosturl }}/js/theme.min.js"></script>
+
+{%- for script in site.data.scripts.general -%}
   <script src="{{script.scope.path}}"></script>
 {% endfor %}
-{% for script in site.data.scripts[page.ref] %}
+{%- for script in site.data.scripts[page.ref] -%}
   <script src="{{script.scope.path}}"></script>
 {% endfor %}
 <script>
