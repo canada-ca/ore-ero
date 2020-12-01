@@ -68411,6 +68411,15 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+- dependency: netlify-cms-backend-azure
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: netlify-cms-backend-bitbucket
   origin: npm
   type: core
