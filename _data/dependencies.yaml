@@ -413,6 +413,24 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@ava/babel'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: '@ava/require-precompiled'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: '@babel/cli'
   origin: npm
   type: dev
@@ -588,6 +606,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -609,9 +630,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -1329,6 +1347,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1551,7 +1572,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -1874,6 +1899,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1898,9 +1926,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2040,6 +2065,15 @@
         fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-dynamic-import'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: '@babel/plugin-proposal-dynamic-import'
+  origin: npm
   type: dev
   admins:
     - bc
@@ -2169,6 +2203,15 @@
         fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-nullish-coalescing-operator'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: '@babel/plugin-proposal-nullish-coalescing-operator'
+  origin: npm
   type: dev
   admins:
     - bc
@@ -2285,6 +2328,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@babel/plugin-proposal-optional-chaining'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: '@babel/plugin-proposal-optional-chaining'
   origin: npm
   type: dev
@@ -2509,6 +2561,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -2705,7 +2760,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -2840,7 +2899,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -3472,6 +3535,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -4606,6 +4672,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -4630,9 +4699,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -9922,7 +9988,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -19048,7 +19118,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -19101,6 +19175,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: babel-plugin-espower
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: babel-plugin-extract-export-names
   origin: npm
   type: core
@@ -22191,6 +22274,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: blueimp-md5
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: bl
   origin: npm
   type: core
@@ -24482,6 +24574,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: call-matcher
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: call-me-maybe
   origin: npm
   type: core
@@ -24518,6 +24619,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: call-signature
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: caller-callsite
   origin: npm
   type: core
@@ -28546,6 +28656,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: concordance
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: concurrently
   origin: npm
   type: core
@@ -32792,6 +32911,15 @@
         fr: YouCanBenefit
 - dependency: date-time
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: date-time
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -33352,11 +33480,15 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -37062,6 +37194,15 @@
         fr: Nuage de Talent
 - dependency: elfy
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: elfy
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -37318,6 +37459,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: empower-core
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: enabled
   origin: npm
   type: core
@@ -37508,6 +37658,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: endian-reader
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: endian-reader
   origin: npm
   type: dev
@@ -38251,11 +38410,15 @@
   type: core
   admins:
     - bc
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -39669,6 +39832,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: espower-location-detector
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: espree
   origin: npm
   type: core
@@ -39800,6 +39972,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: espurify
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: esquery
   origin: npm
   type: core
@@ -41684,7 +41865,11 @@
   type: core
   admins:
     - city-of-edmonton-ab
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -49648,11 +49833,15 @@
   type: core
   admins:
     - bc
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -53742,7 +53931,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -55932,6 +56125,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -55953,9 +56149,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -56510,7 +56703,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -56530,6 +56727,9 @@
     - bc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -59032,6 +59232,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: js-string-escape
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: js-tokens
   origin: npm
   type: core
@@ -62949,11 +63158,15 @@
   type: core
   admins:
     - bc
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -63334,6 +63547,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: lodash.islength
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: lodash.ismatch
   origin: npm
   type: core
@@ -65594,6 +65816,24 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: md5-hex
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: md5-o-matic
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: md5.js
   origin: npm
   type: core
@@ -71561,7 +71801,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71740,6 +71984,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71760,9 +72007,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -73968,11 +74212,15 @@
   origin: npm
   type: core
   admins:
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: package-hash
   origin: npm
   type: dev
@@ -76524,7 +76772,11 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -83721,6 +83973,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -84143,11 +84398,15 @@
   origin: npm
   type: core
   admins:
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: release-zalgo
   origin: npm
   type: dev
@@ -93383,6 +93642,15 @@
         fr: YouCanBenefit
 - dependency: strip-bom-buf
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: strip-bom-buf
+  origin: npm
   type: dev
   admins:
     - bc
@@ -93428,6 +93696,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -93452,9 +93723,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -95782,6 +96050,15 @@
         fr: Devex
 - dependency: time-zone
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: time-zone
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -97127,6 +97404,9 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: trim-right
@@ -97141,9 +97421,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -102975,6 +103252,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: well-known-symbols
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
 - dependency: werkzeug
   origin: pypi
   type: core
