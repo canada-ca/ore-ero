@@ -1,0 +1,62 @@
+---
+schemaVersion: '1.0'
+adminCode: justice
+releases:
+  - contact:
+      email: david.easton@justice.gc.ca
+      name: David Easton
+    date:
+      created: '2020-06-15'
+      metadataLastUpdated: '2020-12-04'
+    description:
+      whatItDoes:
+        en: >-
+          The app allows employees to request access to workplace sites and
+          managers to monitor, review and approve employee requests.
+        fr: >-
+          L'application permet aux employés de demander accès aux lieux de
+          travail et aux gestionnaires de surveiller, d'examiner et d'approuver
+          les demandes des employés.
+      howItWorks:
+        en: >-
+          Employees can submit requests to access specific workplace areas based
+          on predetermined building capacities. The manager will review the
+          requests in the app.
+        fr: >-
+          Les employés peuvent soumettre des demandes d‘entrée à des espaces de
+          travail spécifiques en fonction des capacités de bureau
+          prédéterminées. Le gestionnaire les examinera dans l’application.
+    category: '43231500'
+    name:
+      en: COVID-19 Office Entry App
+      fr: Application COVID-19 Entrée au bureau
+    licences:
+      - URL:
+          en: 'http://open.canada.ca/en/open-government-licence-canada'
+          fr: 'http://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/justicecanada/ogd-office-entry-am-entree-au-bureau'
+      fr: 'https://github.com/justicecanada/ogd-office-entry-am-entree-au-bureau'
+    tags:
+      en:
+        - app
+        - office
+        - building
+        - safety
+      fr:
+        - application
+        - bureau
+        - édifice
+        - sécurité
+    languages:
+      - PowerShell
+      - Power Apps
+      - Power Automate
+    status: Maintained
+    team:
+      en: Business Analytics Centre
+      fr: Centre analytique des affaires
