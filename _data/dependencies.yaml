@@ -413,24 +413,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: '@ava/babel'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@ava/require-precompiled'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@babel/cli'
   origin: npm
   type: dev
@@ -606,9 +588,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -630,6 +609,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -1347,9 +1329,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1572,11 +1551,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -1899,9 +1874,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1926,6 +1898,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2065,15 +2040,6 @@
         fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-dynamic-import'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@babel/plugin-proposal-dynamic-import'
-  origin: npm
   type: dev
   admins:
     - bc
@@ -2203,15 +2169,6 @@
         fr: Nuage de Talent
 - dependency: '@babel/plugin-proposal-nullish-coalescing-operator'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@babel/plugin-proposal-nullish-coalescing-operator'
-  origin: npm
   type: dev
   admins:
     - bc
@@ -2328,15 +2285,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@babel/plugin-proposal-optional-chaining'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@babel/plugin-proposal-optional-chaining'
   origin: npm
   type: dev
@@ -2561,9 +2509,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -2760,11 +2705,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -2899,11 +2840,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -3535,9 +3472,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -4672,9 +4606,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -4699,6 +4630,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -7720,9 +7654,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -7779,9 +7710,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -7803,9 +7731,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -7829,9 +7754,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -7853,9 +7775,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -7879,9 +7798,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -7903,9 +7819,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -7929,9 +7842,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -7953,9 +7863,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -7979,9 +7886,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -8003,9 +7907,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -8498,9 +8399,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -8916,9 +8814,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -9138,9 +9033,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -9542,9 +9434,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -9666,9 +9555,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -9725,9 +9611,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -9975,9 +9858,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -10082,9 +9962,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -10992,9 +10869,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -11056,9 +10930,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -13222,9 +13093,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -14408,9 +14276,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -14647,9 +14512,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -15071,9 +14933,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -17070,9 +16929,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -17239,9 +17095,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -17521,9 +17374,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -19118,11 +18968,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -19175,15 +19021,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: babel-plugin-espower
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: babel-plugin-extract-export-names
   origin: npm
   type: core
@@ -21657,9 +21494,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -22274,15 +22108,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: blueimp-md5
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: bl
   origin: npm
   type: core
@@ -22727,9 +22552,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -23379,9 +23201,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -24411,9 +24230,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -24455,9 +24271,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -24574,15 +24387,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: call-matcher
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: call-me-maybe
   origin: npm
   type: core
@@ -24619,15 +24423,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: call-signature
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: caller-callsite
   origin: npm
   type: core
@@ -25626,9 +25421,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -25818,9 +25610,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26111,9 +25900,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26501,9 +26287,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -26572,9 +26355,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26645,9 +26425,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26767,9 +26544,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -27039,9 +26813,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -28656,15 +28427,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: concordance
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: concurrently
   origin: npm
   type: core
@@ -28786,9 +28548,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -30224,9 +29983,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -30754,9 +30510,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32657,9 +32410,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -32909,15 +32659,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: date-time
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: date-time
   origin: npm
   type: dev
@@ -33480,15 +33221,11 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -33880,9 +33617,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -34051,9 +33785,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35317,9 +35048,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -35341,9 +35069,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35939,9 +35664,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -36051,9 +35773,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -36651,9 +36370,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -37285,9 +37001,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -37459,15 +37172,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: empower-core
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: enabled
   origin: npm
   type: core
@@ -38410,15 +38114,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -38528,9 +38228,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -38572,9 +38269,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -38759,9 +38453,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -38957,9 +38648,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -39832,15 +39520,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: espower-location-detector
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: espree
   origin: npm
   type: core
@@ -39972,15 +39651,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: espurify
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: esquery
   origin: npm
   type: core
@@ -40371,9 +40041,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -40736,9 +40403,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -41468,9 +41132,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -41865,11 +41526,7 @@
   type: core
   admins:
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -42521,9 +42178,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -44880,9 +44534,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -46256,9 +45907,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -46937,9 +46585,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -47470,9 +47115,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -47606,9 +47248,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -48857,9 +48496,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -49702,9 +49338,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -49833,15 +49466,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -51198,9 +50827,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -51380,9 +51006,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -51546,9 +51169,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -52351,9 +51971,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -52571,9 +52188,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -53281,9 +52895,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -53740,9 +53351,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -53931,11 +53539,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -54316,9 +53920,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -54543,9 +54144,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -54679,9 +54277,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -55156,9 +54751,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -55246,9 +54838,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -55457,9 +55046,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -55620,9 +55206,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -55819,9 +55402,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -56125,9 +55705,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -56149,6 +55726,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -56703,11 +56283,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -56727,9 +56303,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -56967,9 +56540,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -57011,9 +56581,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -59232,15 +58799,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: js-string-escape
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: js-tokens
   origin: npm
   type: core
@@ -59647,9 +59205,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -60504,9 +60059,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -60873,9 +60425,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -61282,9 +60831,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -61817,9 +61363,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -62818,9 +62361,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -62846,9 +62386,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -62946,9 +62483,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -62980,9 +62514,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63120,9 +62651,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63145,9 +62673,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63158,15 +62683,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -63216,9 +62737,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63309,9 +62827,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63372,9 +62887,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63448,9 +62960,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63486,9 +62995,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63547,15 +63053,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: lodash.islength
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.ismatch
   origin: npm
   type: core
@@ -63814,9 +63311,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63955,9 +63449,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -64146,9 +63637,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -64238,9 +63726,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -64820,9 +64305,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -64915,6 +64397,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64989,9 +64474,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -65816,24 +65298,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: md5-hex
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: md5-o-matic
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: md5.js
   origin: npm
   type: core
@@ -67203,9 +66667,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68717,9 +68178,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -69550,9 +69008,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -69714,9 +69169,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -70806,9 +70258,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -71090,9 +70539,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -71734,9 +71180,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -71801,11 +71244,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71984,9 +71423,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -72007,6 +71443,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -72690,9 +72129,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -72809,9 +72245,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -73360,9 +72793,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -73581,9 +73011,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -73740,9 +73167,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -74175,9 +73599,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -74200,9 +73621,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -74212,15 +73630,11 @@
   origin: npm
   type: core
   admins:
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: package-hash
   origin: npm
   type: dev
@@ -74277,9 +73691,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -74388,9 +73799,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -74818,9 +74226,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -76159,9 +75564,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -76772,11 +76174,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -78776,9 +78174,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -79474,9 +78869,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -79848,9 +79240,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -79994,9 +79383,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -80433,9 +79819,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -81067,9 +80450,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -83973,9 +83353,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -84149,9 +83526,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -84201,9 +83575,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -84398,15 +83769,11 @@
   origin: npm
   type: core
   admins:
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: release-zalgo
   origin: npm
   type: dev
@@ -85496,9 +84863,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -85922,9 +85286,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -85981,9 +85342,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -86598,9 +85956,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -86875,9 +86230,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -87836,9 +87188,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -88389,9 +87738,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -89766,9 +89112,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90025,9 +89368,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90049,9 +89389,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90075,9 +89412,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90099,9 +89433,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90125,9 +89456,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90149,9 +89477,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90175,9 +89500,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90199,9 +89521,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90225,9 +89544,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90249,9 +89565,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90275,9 +89588,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90300,9 +89610,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90321,12 +89628,8 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90346,9 +89649,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90372,9 +89672,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90396,9 +89693,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90422,9 +89716,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90446,9 +89737,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90472,9 +89760,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90497,9 +89782,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90521,9 +89803,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90711,9 +89990,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -90743,9 +90019,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -91683,9 +90956,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -92010,9 +91280,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -92034,9 +91301,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -93642,15 +92906,6 @@
         fr: YouCanBenefit
 - dependency: strip-bom-buf
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: strip-bom-buf
-  origin: npm
   type: dev
   admins:
     - bc
@@ -93696,9 +92951,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -93723,6 +92975,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -93845,9 +93100,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95044,9 +94296,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -95076,9 +94325,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95175,9 +94421,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95639,9 +94882,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -95949,9 +95189,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -96048,15 +95285,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: time-zone
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: time-zone
   origin: npm
   type: dev
@@ -96472,9 +95700,6 @@
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -96767,9 +95992,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -97032,9 +96254,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -97302,9 +96521,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -97404,9 +96620,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: trim-right
@@ -97421,6 +96634,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -98144,9 +97360,6 @@
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -99577,9 +98790,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -100187,9 +99397,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -100481,9 +99688,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -101990,9 +101194,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -103252,15 +102453,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: well-known-symbols
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: werkzeug
   origin: pypi
   type: core
@@ -103759,9 +102951,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -103819,9 +103008,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -104866,9 +104052,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -104973,9 +104156,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -105013,9 +104193,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105125,9 +104302,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105414,9 +104588,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
