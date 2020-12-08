@@ -1,0 +1,55 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      GeoNode is a web-based application and platform for developing geospatial
+      information systems (GIS) and for deploying spatial data infrastructures
+      (SDI). 
+    fr: >-
+      GeoNode est une application web et une plateforme pour le développement de
+      systèmes d'information géospatiale (SIG) et pour le déploiement
+      d'infrastructures de données spatiales (IDS). 
+  howItWorks:
+    en: |-
+      Developed with Django
+      Built on stable, mature open source geospatial projects
+      APIs for customization and connection
+      Seamless integration with third-party Django apps
+    fr: |-
+      Développé avec Django
+      Construit sur des projets géospatiaux à source ouverte stables et matures
+      API pour la personnalisation et la connexion
+      Intégration transparente avec les applications tierces
+category: '43232300'
+homepageURL:
+  en: 'https://geonode.org/'
+  fr: 'https://geonode.org/'
+licences:
+  - URL:
+      en: 'https://github.com/GeoNode/geonode/blob/master/license.txt'
+      fr: 'https://github.com/GeoNode/geonode/blob/master/license.txt'
+    spdxID: GPL-3.0-only
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: GeoNode
+  fr: GeoNode
+tags:
+  en:
+    - GIS
+  fr:
+    - SIG
+administrations:
+  - uses:
+      - contact:
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2020-04-01'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: 'National Environmental Emergencies Centre '
+          fr: 'Centre national des urgences environnementales '
+    adminCode: eccc
