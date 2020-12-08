@@ -1,0 +1,52 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Nextcloud is an on-premises content collaboration platform allowing to
+      share files and offering multiple collaboration tools as add-ons.
+    fr: >-
+      Nextcloud est une plateforme de collaboration de contenu sur site
+      permettant de partager des fichiers et offrant de multiples outils de
+      collaboration sous forme de modules complémentaires.
+  howItWorks:
+    en: >-
+      Nexcloud is developed in PHP and is installed on a Linux server with
+      different database web server configurations.
+    fr: >-
+      Nexcloud est développé en PHP et s'installe sur un serveur Linux avec
+      différentes configurations de serveur web de de base de données.
+category: '43233500'
+homepageURL:
+  en: 'https://nextcloud.com/'
+  fr: 'https://nextcloud.com/fr_FR/'
+licences:
+  - URL:
+      en: 'https://github.com/nextcloud/nextcloud.com/blob/master/LICENSE'
+      fr: 'https://github.com/nextcloud/nextcloud.com/blob/master/LICENSE'
+    spdxID: GPL-3.0-only
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Nextcloud
+  fr: Nextcloud
+tags:
+  en:
+    - cloud
+    - collaboration
+  fr:
+    - nuage
+    - collaboration
+administrations:
+  - uses:
+      - contact:
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2018-04-01'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: 'National Environmental Emergencies Centre '
+          fr: 'Centre national des urgences environnementales '
+    adminCode: eccc
