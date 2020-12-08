@@ -1,0 +1,59 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      OpenProject is the leading free and open source project management
+      software. Established in 2012, OpenProject supports your projects
+      throughout the whole life-cycle
+    fr: >-
+      OpenProject est le principal logiciel de gestion de projet libre et à code
+      source ouvert. Créé en 2012, OpenProject accompagne vos projets tout au
+      long de leur cycle de vie
+  howItWorks:
+    en: >-
+      It is 100% open source software to manage projects along the entire
+      project-lifecycle.
+
+      The web-based software can be downloaded and operated on major Linux
+      distributions
+
+      or via Docker container.
+    fr: >-
+      C'est un logiciel 100% open source pour gérer les projets tout au long de
+      leur cycle de vie.
+
+      Le logiciel basé sur le web peut être téléchargé et exploité sur les
+      principales distributions Linux.
+category: '43231500'
+homepageURL:
+  en: 'https://www.openproject.org/'
+  fr: 'https://www.openproject.org/fr/'
+licences:
+  - URL:
+      en: 'https://github.com/opf/openproject/blob/dev/docs/COPYRIGHT.rdoc'
+      fr: 'https://github.com/opf/openproject/blob/dev/docs/COPYRIGHT.rdoc'
+    spdxID: GPL-3.0-only
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: OpenProject
+  fr: OpenProject
+tags:
+  en:
+    - Project Management
+  fr:
+    - Gestion de projet
+administrations:
+  - uses:
+      - contact:
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2018-04-01'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: 'National Environmental Emergencies Centre '
+          fr: 'Centre national des urgences environnementales '
+    adminCode: eccc
