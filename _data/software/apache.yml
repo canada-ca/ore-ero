@@ -13,14 +13,17 @@ licences:
       en: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
       fr: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
     spdxID: Apache-2.0
+    level:
+      en: Main license
+      fr: License principale
 name:
   en: Apache
   fr: Apache
 tags:
   en:
-    - HTTP Server
+    - Web Server
   fr:
-    - Serveur HTTP
+    - Serveur Web
 administrations:
   - adminCode: gac-amc
     uses:
@@ -37,11 +40,14 @@ administrations:
         date:
           started: '2000-01-01'
           metadataLastUpdated: '2020-01-14'
-  - adminCode: eccc
-    uses:
+  - uses:
       - contact:
-          email: noreply@canada.ca
-          name: ECCC-ECCC
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
         date:
-          started: '2010-01-01'
-          metadataLastUpdated: '2020-01-30'
+          started: '2018-04-09'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: National Environmental Emergencies Centre
+          fr: Centre national des urgences environnementales
+    adminCode: eccc
