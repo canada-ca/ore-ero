@@ -1,0 +1,50 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Metabase is a simple and powerful analytics tool which lets anyone learn
+      and make decisions from their company’s data.
+    fr: >-
+      Metabase est un outil d'analyse simple et puissant qui permet à chacun
+      d'apprendre et de prendre des décisions à partir des données de son
+      entreprise.
+  howItWorks:
+    en: >-
+      Metabase is built and packaged as a Java jar file and can be run anywhere
+      that Java is available.
+    fr: >-
+      Metabase est construit et présenté sous la forme d'un fichier Java jar et
+      peut être exécuté partout où Java est disponible.
+category: '43232300'
+homepageURL:
+  en: 'https://www.metabase.com'
+  fr: 'https://www.metabase.com'
+licences:
+  - URL:
+      en: 'https://www.metabase.com/license/'
+      fr: 'https://www.metabase.com/license/'
+    spdxID: GPL-3.0-only
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Metabase
+  fr: Metabase
+tags:
+  en:
+    - Business Intelligence
+  fr:
+    - Intelligence d'affaires
+administrations:
+  - uses:
+      - contact:
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2018-04-01'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: 'National Environmental Emergencies Centre '
+          fr: 'Centre national des urgences environnementales '
+    adminCode: eccc
