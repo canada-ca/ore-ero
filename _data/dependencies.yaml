@@ -341,6 +341,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@ant-design/charts'
+  origin: npm
+  type: core
+  admins:
+    - phac-aspc
+  projects:
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: '@ant-design/icons'
   origin: npm
   type: core
@@ -3750,14 +3759,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@babel/plugin-transform-react-display-name'
   origin: npm
   type: core
@@ -5348,6 +5353,15 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@formatjs/intl-listformat'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@formatjs/intl-locale'
   origin: npm
   type: core
   admins:
@@ -8145,183 +8159,127 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-remove-jsx-attribute'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-remove-jsx-empty-expression'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-replace-jsx-attribute-value'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-svg-dynamic-title'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-svg-em-dimensions'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-transform-react-native-svg'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-plugin-transform-svg-component'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/babel-preset'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/core'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/hast-util-to-babel-ast'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/plugin-jsx'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/plugin-svgo'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@svgr/webpack'
   origin: npm
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@szmarczak/http-timer'
   origin: npm
   type: core
@@ -63902,6 +63860,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Open Resource Exchange
+        fr: Échange de Ressource Ouvert
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -92907,14 +92868,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: svg-tag-names
   origin: npm
   type: core
@@ -103005,9 +102962,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103616,6 +103570,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Open Resource Exchange
+        fr: Échange de Ressource Ouvert
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -103926,7 +103883,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
