@@ -13,6 +13,9 @@ licences:
       en: 'https://github.com/qgis/QGIS/blob/master/COPYING'
       fr: 'https://github.com/qgis/QGIS/blob/master/COPYING'
     spdxID: GPL-2.0-only
+    level:
+      en: Main license
+      fr: License principale
 name:
   en: QGIS
   fr: QGIS
@@ -37,3 +40,14 @@ administrations:
         date:
           started: '1900-01-01'
           metadataLastUpdated: '2020-01-28'
+  - uses:
+      - contact:
+          email: Anthony.Pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2020-04-01'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: National Environmental Emergencies Centre
+          fr: Centre national des urgences environnementales
+    adminCode: eccc
