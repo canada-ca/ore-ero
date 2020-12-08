@@ -108,3 +108,14 @@ administrations:
         date:
           started: '2013-08-01'
           metadataLastUpdated: '2020-04-28'
+  - uses:
+      - contact:
+          email: anthony.pouw@canada.ca
+          name: Anthony Pouw
+        date:
+          started: '2018-04-09'
+          metadataLastUpdated: '2020-12-08'
+        team:
+          en: National Environmental Emergencies Centre
+          fr: Centre national des urgences environnementales
+    adminCode: eccc
