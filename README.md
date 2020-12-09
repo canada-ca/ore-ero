@@ -39,11 +39,13 @@ npm install
 ```
 
 Now when you want to know if your code is following the guidelines, run
+
 ``` bash
 npm run lint
 ```
 
 We use [Prettier](https://www.npmjs.com/package/prettier) for code formatting. To automatically format your code, run
+
 ```bash
 npm run prettify
 ```
@@ -78,16 +80,19 @@ The core site is a GitHub Pages site, so it's updated whenever code is merged in
 This service is hosted in [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). We currently use Heroku's [git-based](https://devcenter.heroku.com/articles/git) method of updating the application. To do this, you will need Git and the Heroku CLI installed.
 
 First, clone PRB0t to your machine.
+
 ``` bash
 git clone https://github.com/PRB0t/PRB0t
 ```
 
 Next, add our app as a remote git repository.
+
 ``` bash
 heroku git:remote -a canada-pr-bot
 ```
 
 And finally, push your changes.
+
 ``` bash
 git push heroku master
 ```
@@ -131,11 +136,13 @@ npm install
 ```
 
 Lorsque vous voulez savoir si votre code suit les directives de style, exécutez
+
 ``` bash
 npm run lint
 ```
 
 Nous utilisons [Prettier](https://www.npmjs.com/package/prettier) pour le formatage du code. Pour formater automatiquement votre code, exécutez
+
 ```bash
 npm run prettify
 ```
@@ -170,16 +177,19 @@ Le site principal est un site GitHub Pages. Il est donc mis à jour chaque fois 
 Ce service est hébergé sur [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). Nous utilisons actuellement la méthode de mise à jour de l'application basée sur [Git](https://devcenter.heroku.com/articles/git) de Heroku. Pour ce faire, vous devez avoir installé Git et la CLI Heroku.
 
 Commencez par cloner PRB0t sur votre machine.
+
 ``` bash
 git clone https://github.com/PRB0t/PRB0t
 ```
 
 Ensuite, ajoutez notre application en tant que dépôt git distant.
+
 ``` bash
 heroku git:remote -a canada-pr-bot
 ```
 
 Et enfin, poussez vos modifications.
+
 ``` bash
 git push heroku master
 ```
