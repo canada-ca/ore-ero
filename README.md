@@ -25,6 +25,7 @@ To test your changes locally, run `jekyll serve`. For example using Docker:
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
 
 Notes:
+
 - For PowerShell users, replace the parentheses with brackets (Change `$(pwd)` to `${pwd}`)
 - If Jekyll is not automatically regenerating the site after files are modified, add the build command flags: `--watch` and `--force_polling` to the end of the above command
 
@@ -116,6 +117,7 @@ Pour tester vos modifications localement, exécuter `jekyll serve`. Par exemple 
 > docker run -p 4000:4000 -v $(pwd):/srv/jekyll -it --rm jekyll/jekyll jekyll serve
 
 Remarques:
+
 - Pour les utilisateurs de PowerShell, remplacez les parenthèses par des crochets (Modifiez `$(pwd)` en `${pwd}`)
 - Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: `--watch` et `--force_polling` à la fin de la commande ci-dessus
 

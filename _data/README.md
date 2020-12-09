@@ -5,6 +5,7 @@
 This folder contains all the data used to generate the [Open Resource Exchange Website](https://canada-ca.github.io/ore-ero/en/index.html).
 
 See [Documentation](https://canada-ca.github.io/ore-ero/en/docs.html) for how to update and contribute to data using the following forms:
+
 - The [Open Design Form](https://canada-ca.github.io/ore-ero/en/open-design-form.html)
 - The [Open Source Code Form](https://canada-ca.github.io/ore-ero/en/open-source-code-form.html)
 - The [Open Source Software Form](https://canada-ca.github.io/ore-ero/en/open-source-software-form.html)
@@ -98,6 +99,7 @@ List of Canadian federal, provincial, territorial, municipal and aboriginal admi
 ### Code
 
 A list of released open source code by administrations. Sub-folders contain data files. One file per administration
+
 - Federal
 - Provincial
 - Municipal
@@ -118,6 +120,7 @@ List of open standards endorsed or used by administrations.
 ### Partnership
 
 List of projects looking for partnership or investors by administrations. Sub-folders contain data files. One file per administration
+
 - Federal
 - Provincial
 - Municipal
@@ -130,6 +133,7 @@ ______________________
 Ce dossier contient toutes les données utilisées pour générer le [site Web de l'Échange de ressources ouvert](https://canada-ca.github.io/ore-ero/fr/index.html).
 
 Voir la [Documentation](https://canada-ca.github.io/ore-ero/fr/docs.html) pour savoir comment mettre à jour et contribuer aux données grâce à l'utilisation des formulaires suivants :
+
 - Le [formulaire de code source ouvert](https://canada-ca.github.io/ore-ero/fr/code-source-ouvert-formulaire.html)
 - Le [formulaire de design libre](https://canada-ca.github.io/ore-ero/fr/design-libre-formulaire.html)
 - Le [formulaire du logiciel libre](https://canada-ca.github.io/ore-ero/fr/logiciel-libre-formulaire.html)
@@ -223,6 +227,7 @@ Liste des administrations fédérales, provinciales, territoriales, municipales 
 ### Code
 
 Liste des codes sources ouverts publiés par les administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.
+
 - Federal
 - Provincial
 - Municipal
@@ -244,6 +249,7 @@ Liste des normes ouvertes approuvées ou utilisées par les administrations.
 
 Liste des projets en recherche d'investisseurs ou de partenaires par les administrations.
 List of projects looking for partnership or investors by administrations. Les sous-répertoire contiennent les fichiers de données. Un fichier par administration.
+
 - Federal
 - Provincial
 - Municipal
