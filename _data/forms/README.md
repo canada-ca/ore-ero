@@ -311,7 +311,7 @@ In this example,
  - `required`: indicates if the field is required or not. This parameter is *optional* and defaults to true.
  - `type`: defines the input type. Available values are the appropriate values for an html input tag (text, URL, email, tel, etc.) included in a way similar as `<input type="{{ widget.type }}">`. This parameter is *optional* and defaults to "text".
  - `rule`: specifies a custom rule of validation. Available rules can be found in `_data/forms/rules.yml`. You can use any of the key (`key: value`) you may find in this document as a value for the rule parameter. This parameter is *optional* and defaults to none.
-	 - To see how the rules work, see the following file: `assets/js/src/custom-form-validation.js`.
+    - To see how the rules work, see the following file: `assets/js/src/custom-form-validation.js`.
  - `more`: Specifies if a field or group of fields can be filled more than once. This allow the user to add more than one value. It is used for arrays element, and hooks a bunch of JavaScript.
 
 The following sections explain each of the available widgets:
