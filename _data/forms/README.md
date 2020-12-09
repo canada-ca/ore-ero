@@ -13,6 +13,7 @@ Found under the `_pages/` folder, pages must follow the template below so that a
 **WARNING** When creating or updating pages, make sure that changes are applied to both languages! Find the corresponding pages in `_pages/en` and `_pages/fr`. Look for pages that have the same `ref` value in their header.
 
 In general, pages have the header variables presented below. These header variables must be included in any form_or_schema page (an example is provided at the end of the list).
+
 - `layout`: defines which layout structure to follow. Its default value is "default". Layouts are defined in the `_layouts/` folder.
 - `ref`: defines the page's ID, which is unique between different pages. However, a french page must have the same `ref` value as its corresponding english page and vice versa, allowing the website to redirect to the proper page when switching between languages, as pages might not have the same name in both languages.
 - `lang`: defines the associated language of the page. Used mostly as `[page.lang]` throughout the templates, it selects the correct value for a translation. The accepted values are either `en` or `fr` (case is important).
@@ -31,6 +32,7 @@ permalink: /en/example.html
 ### Form page
 
 Form pages require a few adjustments:
+
 - `layout`: form pages use "form" as their layout value instead of "default".
 - `config`: refers to the name of the Yaml config file in `_data/forms/` associated with the current form. That's how the relation is created between the current layout and the required data for the form.
 
@@ -113,10 +115,12 @@ formGroups:
 ### Presets
 
 Found under `_includes/[form_or_schema]/presets/`, presets are a set of (mostly) static sections that rarely take in parameters and should be used as is. Preset are created in one of the following situations:
+
 - when a section is called from two or more forms, as it made more sense to have it predefined instead of having to specify the same parameters twice
 - when the section is too specific or doesn't fit in any of the widgets, either because it has some minor changes that would have been too specific to add as a parameter, or because the format is completely different from any widget
 
 The following sections explain each of the available presets:
+
 - adminCode
 - category
 - contact
@@ -164,7 +168,9 @@ This preset takes no additional parameters
 The contact preset displays a group of fields (name and email address) of the person or organization to contact for general inquiries regarding the open source project.
 
 This preset takes one *optional* parameter:
+
 - `phone`: specifies if the phone field should be added or not. Its default value is `false`.
+
 ```yaml
   - preset: contact
     phone: true  # bool
@@ -184,8 +190,10 @@ This preset takes no additional parameters.
 The empty preset does not display anything in the form, but rather serves only as an [array] wrapper in the schema when there is a list of elements that are only updated as individual elements in the form. For instance, for the "release" array of the code schema (`_data/schemaCode.yaml`), it makes no sense to change the layout of the form to adapt to an array since only one release can be updated at a time. However, this should still be displayed as an array in the schema page.
 
 This preset takes two **required** parameters:
+
 - `start` defines whether it is the start or the end of the array element in the schema (decides to add either the beginning or the ending html markup). Default value is `false`.
 - `title` defines the name of the array element in the schema (also used for the translations, see the widget section for more information about title parameters)
+
 ```yaml
   - preset: empty
     start: true  # bool
@@ -248,6 +256,7 @@ This preset takes no additional parameters.
 #### relatedCode
 
 The relatedCode preset displays four fields:
+
 - The URLs (english and french) of the related code
 - The Names (english and french) of the related code
 
@@ -325,8 +334,10 @@ Example: Widget
 #### Parameters and default values:
 
 The following example displays the list of all parameters and their default values
+
 - `~` indicates that there is no default values
 - `enum` indicates that there is a fixed list available values.
+
 ```yaml
   - widget: myWidget
     title: myTitle
@@ -338,6 +349,7 @@ The following example displays the list of all parameters and their default valu
     }
 ```
 In this example,
+
 - `widget`: specifies which widget to include. This parameter is **required**, otherwise the form will display an error message.
 - `title`: the title of the widget. Must be unique for every widget (exception applies for some available widgets). This parameter is **required**, otherwise the widget won't display any text. It is also used for translations, so its value should be the same as the corresponding element in the schema page. Further information is presented in the translation section.
 - `required`: indicates if the field is required or not. This parameter is *optional* and defaults to true.
@@ -347,6 +359,7 @@ In this example,
 - `more`: Specifies if a field or group of fields can be filled more than once. This allow the user to add more than one value. It is used for arrays element, and hooks a bunch of JavaScript.
 
 The following sections explain each of the available widgets:
+
 - group
 - select
 - string-i18n
@@ -357,7 +370,9 @@ The following sections explain each of the available widgets:
 The group widget displays a list of other widgets under a single title.
 
 This widget takes one additional parameter, in addition to the ones available to widgets.
+
 - `fields`: an array of widgets and their own parameters to display in the same logical group.
+
 ```yaml
   - widget: group
     title: example
@@ -382,7 +397,9 @@ This widget make use of the widget not specified in the above list of all widget
 The select widget allow to create a `<select>` tag with a list of options as parameters
 
 This widget takes one additional parameter in addition to the ones available to widgets.
+
 - `options`: a list of the options available as an array.
+
 ```yaml
   - widget: select
     title: example
@@ -401,6 +418,7 @@ This widget takes all the parameters available to widgets.
     title: example
 ```
 This widget takes also an additional parameter that was added to fix a duplicate id error in the html markup but was later made obsolete. We didn't bother to remove the code for it, so it's still available as a parameter but not used anywhere.
+
 - `prepend`: A string to prepend to the id when generating the html markup. It allows to keep the title parameter clear (since it's used in the schema as well as for translations) without creating conflicts in ids.
 
 #### string
@@ -450,6 +468,7 @@ Translations for the form and schema pages are located in `_data/i18n/form.yml`.
 #### Yaml Variables
 
 In general, you can create variables in Yaml files:
+
 - Use `&variable` for instantiation, where *variable* represents the name of the variable you wish to create
 - Use `*variable` when you intend to use the variable
 
@@ -486,13 +505,17 @@ When creating a new preset, it should be added under the presets first-level gro
 ### Translations for Widgets
 
 Here's how to translate widgets:
+
 - For each widget, add a second-level element (under the first-level named after `id`). Its name should be the same as the value you put under `title` in the config file. The title should be the same as the value in the schema page since it's included as is in the schema page.
+
 ```yaml
 first-level:  # either preset, admin, code, software, standard, etc...
   example:  # replace example with the title value of the widget
     [...]
 ```
+
 - You will also need to add a title element under it. Don't mistaken it for the second-level element, where title should be replaced with the title value of the current widget. This title is a third-level element named title which will hold the english and french value for the title. This value appears in the form page as a section's title and as the section description in the schema page:
+
 ```yaml
 first-level:
   example:
@@ -664,6 +687,7 @@ permalink: /fr/exemple.html
 ### Page de formulaire
 
 Les pages de formulaire nécessitent les ajustements suivants au niveau des variables :
+
 - `layout` : les pages de formulaire ont la valeur `form` par défaut pour la variable `layout`au lieu de la valeur "default".
 - `Config` : correspond au nom du fichier Yaml dans le dossier `_data/forms/` qui est associé au formulaire actuel. Ainsi, la relation entre le layout actuel et les données requises pour le formulaire est créée.
 
@@ -705,6 +729,7 @@ Situé dans le dossier `_layouts/form.html`, il hérite du *layout* par défaut 
 
 Tout d'abord, le contenu de la page est ajouté au *layout* via la ligne de code `{{ page.content }}`.
 Par la suite, se trouve le *form tag*. Celui-ci comprends :
+
 - Les *classes* et les *id* nécessaire pour le *plugin* de validation du formulaire (provient avec le modèle [WET-BOEW](https://wet-boew.github.io/wet-boew/docs/ref/formvalid/formvalid-en.html)).
 - La définition de la variable `idPresets`. Elle fait directement référence au groupe de premier niveau *presets* dans le fichier de traduction.
 - La "pièce de résistance" : un appel à la boucle du formulaire (`loop.html`), permettant de chercher les valeurs dans le fichier *config* et de les ajouter au formulaire, grâce à la fonctionnalité `include`.
@@ -746,6 +771,7 @@ Situé sous le dossier `_includes/[form_or_schema]/presets/`, les *presets* repr
 - lorsqu'une section est très spécifique et que les widgets déjà présents ne permettent pas sa création. Ceci est le cas si les modifications spécifiques ne peuvent pas être ajoutés en temps que paramètres, ou si le format correspondant est différent de tous les widgets déjà présents.
 
 Voici une liste des *presets* disponibles :
+
 - adminCode
 - category
 - contact
@@ -787,7 +813,9 @@ L'adminCode ne prend pas de paramètres additionnels :
 Ce *preset* affiche un ensemble de champs relatif aux coordonnées de la personne (ou de l'organisation) à contacter pour des informations générales sur le projet ouvert auquel le formulaire fait référence.
 
 Ce *preset* accepte un seul et unique paramètre (celui-ci est **optionnel** ) selon le type de formulaire :
+
 - `phone` : Paramètre booléen permettant de savoir si ce champ (phone/téléphone) devrait être ajouté. Sa valeur par défaut est `false`.
+
 ```yaml
 - preset: contact
   phone: true  #bool
@@ -810,6 +838,7 @@ Ce *preset* prend deux paramètre **obligatoires** :
 
 - `start` : Définit s'il s'agit du début ou de la fin de la structure de données dans le schéma.
 - `title` : Nom de la structure de donnée dans le schéma (également utilisé pour les traductions, voir la section des *widgets* pour plus d'informations).
+
 ```yaml
 - preset: empty
   start: false  # bool
@@ -870,6 +899,7 @@ Ce *preset* ne prends pas de paramètre additionnels.
 #### RelatedCode
 
 Ce *preset* affiche 4 champs :
+
 - Les URL (FR et EN) relatifs au code.
 - Les noms (FR et EN) relatifs au code.
 
@@ -945,8 +975,10 @@ Voici un exemple de *widget* :
 #### Paramètres et valeurs par défaut
 
 L'example suivant démontre la liste des paramètres et leur valeurs par défaut.
+
 - `~` indique qu'il n'y a pas de valeur par défaut
 - `enum` indique que seule certaines valeurs sont appropriées
+
 ```yaml
   - widget: unWidget  #enum
     title: unTitre
@@ -959,6 +991,7 @@ L'example suivant démontre la liste des paramètres et leur valeurs par défaut
 ```
 
 Dans cet example :
+
 - `widget` (**obligatoire**) : définit le type de *widget* à inclure. Ce paramètre doit impérativement être définit, sinon, le formulaire affichera un message d'erreur.
 - `title` (**obligatoire**) : définit le titre du *widget*. Il est unique à chaque *widget*, à l'Exemption de quelques uns. Ce paramètre est important puisqu'il affiche le texte relatif au *widget*. La valeur associée à ce paramètre doit être identique à l'élément correspondant dans la page de schéma, afin de rendre la traduction du *widget* possible.
 - `required` : définit si un champs dans le *widget* est obligatoire ou pas. Par défaut, tous les champs sont obligatoires. Il faut donc spécifier lorsqu'un champ est optionnel.
@@ -967,6 +1000,7 @@ Dans cet example :
 - `more` (**optionnel**) : Indique qu'un utilisateur peur remplir un champ ou un groupe de champs plusieurs fois. C'est utilisé pour les *arrays* et est associé à plusieurs fonctions JavaScript.
 
 Voici une liste des *widgets* disponible :
+
 - group
 - select
 - string-i18n
@@ -1004,7 +1038,9 @@ La déclaration des *sous-widgets* se fait de la même façon qu'un quelconque *
 Ce *widget* permet de générer le tag HTML `<select>` en définissant une liste d'option comme paramètres.
 
 Ce *widget* prend un paramètre  additionnel, incluant ceux présentés précédemment :
+
 - `options` : un tableau contenant les options disponibles.
+
 ```yaml
 - widget: select
   title: example
@@ -1021,6 +1057,7 @@ Ce *widget* affiche deux champs pour une seule valeur (français et anglais). Il
   title: example
 ```
 Un paramètre supplémentaire a été ajouté par la suite dans le but de corriger une erreur relative aux ID, mais qui en fin de compte n'a pas été utilisée. Nous ne l'avons pas retiré car la fonctionnalité que cela permet pourrait être utile dans le futur :
+
 - `prepend` : il s'agit d'un *string* à ajouter à l'ID lorsqu'on génère les balises HTML. Ceci permet d'avoir deux fois le même le paramètre `title` tout en évitant la création de conflits entre les ID.
 
 #### string
@@ -1069,6 +1106,7 @@ Les traductions pour les formulaires et schémas se trouvent dans le fichier `_d
 #### Variables YAML
 
 En général, il est possible de créer des variables dans les fichiers YAML :
+
 - Pour instancier, utilisez la syntaxe `&variable` (où *variable* représente le nom de votre variable YAML).
 - Pour utiliser la variable en question, utilisez la syntaxe `*variable`.
 
@@ -1109,12 +1147,15 @@ Lors de la création d'un nouveau *preset*, les traductions (pour les éléments
 Voici la bonne façon pour traduire un *widget* :
 
 - Pour chaque *widget*, ajoutez un élément au deuxième niveau (sachant que le premier niveau peut correspondre à *preset*, *admin*, *software*, etc.). Le nom de ce paramètre doit être identique à la valeur du paramètre `title` présente dans le fichier *config*.Par exemple :
+
 ```yaml
 first-level:  # soit preset, admin, code, software, standard, etc...
   example:  # remplacer example avec la valeur pour title du widget
    [...]
 ```
+
 - Vous aurez également besoin d'ajouter un paramètre au troisième niveau sous le nom de `title`. Ce paramètre renferme la version française et anglaise de la valeur qui le définit. Cette valeur (du paramètre `title`) apparaît en tant que titre d'une section dans la page de formulaire ainsi qu'en description dans la page de schéma. Voici un exemple permettant d'illustrer cette explication :
+
 ```yaml
 first-level:
   example:
