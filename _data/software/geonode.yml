@@ -5,11 +5,11 @@ description:
     en: >-
       GeoNode is a web-based application and platform for developing geospatial
       information systems (GIS) and for deploying spatial data infrastructures
-      (SDI). 
+      (SDI).
     fr: >-
       GeoNode est une application web et une plateforme pour le développement de
       systèmes d'information géospatiale (SIG) et pour le déploiement
-      d'infrastructures de données spatiales (IDS). 
+      d'infrastructures de données spatiales (IDS).
   howItWorks:
     en: |-
       Developed with Django
@@ -29,7 +29,7 @@ licences:
   - URL:
       en: 'https://github.com/GeoNode/geonode/blob/master/license.txt'
       fr: 'https://github.com/GeoNode/geonode/blob/master/license.txt'
-    spdxID: GPL-3.0-only
+    spdxID: GPL-3.0-or-later
     level:
       en: Main license
       fr: License principale
