@@ -884,7 +884,6 @@ Dans cet example :
 - `rule` (**optionnel**) : définit les règles de validation pour une entrée quelconque. Des règles sont disponibles dans le fichier `_data/forms/rules.yml`. Vous pouvez utiliser n'importe quel *key* (`key: value`) que vous trouverez dans ce document comme valeur pour ce paramètre. Sa valeur par défaut est "*none*".
 - `more` (**optionnel**) : Indique qu'un utilisateur peur remplir un champ ou un groupe de champs plusieurs fois. C'est utilisé pour les *arrays* et est associé à plusieurs fonctions JavaScript.
 
-
 Voici une liste des *widgets* disponible :
 - group
 - select
