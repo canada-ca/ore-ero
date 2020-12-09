@@ -20,6 +20,7 @@ In general, pages have the header variables presented below. These header variab
 - `permalink`: The permalink for the page (at least the part that will be appended to the base URL of the website). It overrides the file location in the folders when the website is compiled. Follow the convention `/[lang]/[page_name].html`.
 
 **Header example for a standard page**
+
 ```yaml
 ---
 layout: default
@@ -37,6 +38,7 @@ Form pages require a few adjustments:
 - `config`: refers to the name of the Yaml config file in `_data/forms/` associated with the current form. That's how the relation is created between the current layout and the required data for the form.
 
 **Header example for a form page**
+
 ```yaml
 ---
 layout: form
@@ -52,6 +54,7 @@ config: config-example  # Will fetch _data/forms/config-example.yml
 Schema pages use the same parameters as form pages, but the `layout` variable must be set to "schema". In addition, the schema and form pages that are associated to one another must have the same `config` value. That way, both pages can pull from the same data.
 
 **Header example for a schema page**
+
 ```yaml
 ---
 layout: schema
@@ -99,6 +102,7 @@ The config files are the backbone of the solution. They specify each component t
 **Here's an example file:**
 
 Note that the list of available presets and widgets, as well as their parameters, are presented later on, in their corresponding sections.
+
 ```yaml
 ---
 
@@ -150,6 +154,7 @@ The select widget is followed by a button, allowing the user to create a new adm
 When selecting the appropriate administration (depending on the type of the form), JavaScript should be added to auto-fill the administration section of the form. This follows the same logic as for the **selectCode**, **selectPartnership**, **selectSoftware**, and **selectStandard** presets.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: adminCode
 ```
@@ -159,6 +164,7 @@ This preset takes no additional parameters.
 The category preset display a `<select>` element with the different categories corresponding to the Family of the UNSPSC Taxonomy codes. The values for the options are located in `_data/i18n/categories.yml`.
 
 This preset takes no additional parameters
+
 ```yaml
   - preset: category
 ```
@@ -181,6 +187,7 @@ This preset takes one *optional* parameter:
 The description preset displays two categories (What it does, How it works) each having one field for each languages. This preset was created since all the forms made use of a description field.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: description
 ```
@@ -200,7 +207,9 @@ This preset takes two **required** parameters:
     title: example
 # Beginning a group / array
 ```
+
 OR
+
 ```yaml
   - preset: empty
 # Closing a group / array
@@ -211,6 +220,7 @@ OR
 The homepageUrl preset displays a duo of fields, one for the english and the other for the french homepage URL of the current project. This preset was created since at least two of the forms made use of a homepage URL.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: homepageUrl
 ```
@@ -220,6 +230,7 @@ This preset takes no additional parameters.
 The hr preset is a simple `<hr>` tag, but was created to specify sections in which the fields could be auto-completed when using a select input. For instance, in the Open Source Software form, selecting an already existing project would fill its information, leaving the user to fill only the remaining part of selecting their administration and updating its uses.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: hr
 ```
@@ -231,6 +242,7 @@ This preset does not appear in the schema. And even if there is a file for it in
 The languages preset displays a list of check boxes, allowing the user to select programming languages associated to the current project. It also allows the user to add other programming languages that are not listed. This preset was created since its html markup differed from the other components and widgets.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: languages
 ```
@@ -240,6 +252,7 @@ This preset takes no additional parameters.
 The licenses preset displays two fields for the license URLs (for english and french URLs) and a field for the spdxID of the license. The label for the spdxID contains a link to a list and definition of spdxIDs.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: licenses
 ```
@@ -249,6 +262,7 @@ This preset takes no additional parameters.
 The partners preset is one of the more complicated presets. It also has a lot of JavaScript associated with it. It allows a user to create a new administration or select an existing one to add as a partner for the project as well as adding specific contact informations for the administration.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: partners
 ```
@@ -261,6 +275,7 @@ The relatedCode preset displays four fields:
 - The Names (english and french) of the related code
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: relatedCode
 ```
@@ -274,6 +289,7 @@ In the schema, these usually display only the project name fields (english and f
 This follows a similar principle as the **adminCode** preset.
 
 These presets take no additional parameters.
+
 ```yaml
   - preset: selectCode
 ```
@@ -283,6 +299,7 @@ These presets take no additional parameters.
 The status preset displays a `<select>` input with the possible project status (Alpha, Beta, Maintained, Deprecated or Retired). It was created since at least two or more form used it.
 
 This preset takes no additional parameters.
+
 ```yaml
   - preset: status
 ```
@@ -298,6 +315,7 @@ The submitter preset shouldn't be added in the config files since it's already i
 The tags preset displays fields for adding tags to the current project. There are sections for both english and french tags, as well as a button to add more tags, other than the first required one.
 
 This preset takes one *optional* parameters.
+
 ```yaml
   - preset: tags
     param: {required: false}  # defaults to true
@@ -310,10 +328,12 @@ The steps to creating a new preset are presented below. But first, check whether
 #### Add your new preset in the form components
 
 Under `_includes/form/presets/`, create a file for your new preset. Its name should follow the camelCase convention. Fill it with html markup. Inspiration from other presets can help. Don't be afraid to simply include widgets in it using specific parameters, that's how most presets work when they are used in more than one form.
+
 ```yaml
   - preset: example
     param: {test: myValue}
 ```
+
 The value for `test` can then be accessed in your preset as `include.param.test`. In fact, include is the keyword used to access parameters declared in any file under the `_includes/` folder.
 
 #### Add your new preset in the schema components
@@ -325,6 +345,7 @@ Under `_includes/schema/presets/`, create a file for your new preset. Its name s
 Found under `_includes/[form_or_schema]/widgets/`, widgets are generic components that take more parameters and thus can be configured to fit different sections of a form.
 
 Example: Widget
+
 ```yaml
   - widget: example  # enum()
     title: ~
@@ -348,6 +369,7 @@ The following example displays the list of all parameters and their default valu
       more: false
     }
 ```
+
 In this example,
 
 - `widget`: specifies which widget to include. This parameter is **required**, otherwise the form will display an error message.
@@ -386,6 +408,7 @@ This widget takes one additional parameter, in addition to the ones available to
         param: {...}
       [...]
 ```
+
 The widget declaration under "fields" acts the same way as if they were declared as top-level fieldGroups.
 
 This widget make use of the widget not specified in the above list of all widgets: select-group, string-group and string-i18n-group. They're basically the same as their non-group counterparts but usually don't include a title.
@@ -406,6 +429,7 @@ This widget takes one additional parameter in addition to the ones available to 
     param:
       options: {a, b, c}
 ```
+
 The options values are also used for the value attribute of the option tag (`<option value="{{ option[i] }}"`). These options are also the keys used for the translations. For further information, check the translation section.
 
 #### string-i18n
@@ -413,10 +437,12 @@ The options values are also used for the value attribute of the option tag (`<op
 The string-i18n widget displays two fields for a single value (in english and french).
 
 This widget takes all the parameters available to widgets.
+
 ```yaml
   - widget: string-i18n
     title: example
 ```
+
 This widget takes also an additional parameter that was added to fix a duplicate id error in the html markup but was later made obsolete. We didn't bother to remove the code for it, so it's still available as a parameter but not used anywhere.
 
 - `prepend`: A string to prepend to the id when generating the html markup. It allows to keep the title parameter clear (since it's used in the schema as well as for translations) without creating conflicts in ids.
@@ -426,6 +452,7 @@ This widget takes also an additional parameter that was added to fix a duplicate
 The string widget displays a single field for values.
 
 This widget takes all the parameters available to widgets.
+
 ```yaml
   - widget: string
     title: example
@@ -443,6 +470,7 @@ Under `_includes/form/widgets/`, create a file for your new widget. Its name sho
   - widget: example
     param: {test: myValue}
 ```
+
 The value of `test` can then be accessed in your widget as `include.param.test`.
 
 #### Add your new widget in the schema components
@@ -473,6 +501,7 @@ In general, you can create variables in Yaml files:
 - Use `*variable` when you intend to use the variable
 
 In this particular project, variables are created to declare and to use generic values (name, email, URL, etc.). But the neat thing is that it can act as a string or as an object, so we can easily wrap translations inside a single variable. Here's an example of what it looks like in the files:
+
 ```yaml
 name: &name
   en: Name
@@ -481,7 +510,9 @@ name: &name
 example:
   label: *name
 ```
+
 It is equivalent to:
+
 ```yaml
 name:
   en: Name
@@ -523,11 +554,13 @@ first-level:
       en: Example
       fr: Exemple
 ```
+
 Each widget has also other specific elements that need to be added. The following sections describe each of theses elements.
 
 #### String Widget
 
 For a string widget, follow this template:
+
 ```yaml
 first-level:
   example:
@@ -542,6 +575,7 @@ first-level:
 #### String-i18n Widget
 
 For a string-i18n widget, follow this template:
+
 ```yaml
 first-level:
   example:
@@ -563,6 +597,7 @@ first-level:
 #### Select
 
 For a select widget, follow this template:
+
 ```yaml
 first-level:
     example:
@@ -579,6 +614,7 @@ first-level:
 #### Group
 
 For a group widget, the values under `labels` depends on the fields' widget type. Follow this template:
+
 ```yaml
 first-level:
   title:
@@ -614,6 +650,7 @@ All the scripts are located under `assets/js/src/`. The scripts for each form fo
 Links to the scripts are added in the footer include, located in `_includes/footer.html`.
 
 It is also possible to add a script only on certain pages as we did for specific forms. Use a condition on the page reference value to do so:
+
 ```html
 {%- if page.ref == "example" -%}
   <script src="path/to/file.js"></script>
@@ -675,6 +712,7 @@ Les variables à inclure au niveau de l'entête des pages sont présentées ci-d
 - `permalink` : correspond au permalien de la page (au moins la partie qui sera ajoutée au URL de base du site) qui remplacera l'emplacement du fichier dans les dossiers lorsque le site internet sera compilé. Suivre la convention suivante `/[lang]/[page_name]`.
 
 **Exemple d'entête pour une page normale**
+
 ```yaml
 ---
 layout: default
@@ -692,6 +730,7 @@ Les pages de formulaire nécessitent les ajustements suivants au niveau des vari
 - `Config` : correspond au nom du fichier Yaml dans le dossier `_data/forms/` qui est associé au formulaire actuel. Ainsi, la relation entre le layout actuel et les données requises pour le formulaire est créée.
 
 **Exemple d'entête pour une page de formulaire**
+
 ```yaml
 ---
 layout: form
@@ -707,6 +746,7 @@ config: exemple-config  # Ira chercher _data/forms/config-example.yml
 Les pages de schéma possèdent les même variables d'entête que les formulaires, mais plutôt, la valeur "schema" serait définie pour le paramètre `layout`. De plus, la page de formulaire et la page de schéma qui sont associées l'une à l'autre doivent avoir une même valeur pour le paramètre `config` pour permettre l'extraction des mêmes données.
 
 **Exemple d'entête pour une page de schéma**
+
 ```yaml
 ---
 layout: schema
@@ -752,6 +792,7 @@ Ces fichiers représentent le cerveau de la solution. Ils spécifient chaque com
 
 **Voici un exemple de fichier :**
 Note : Les "presets" et "widgets" disponibles, ainsi que leurs paramètres, seront présentés après cet exemple, dans leurs sections réservées
+
 ```yaml
 ---
 
@@ -826,6 +867,7 @@ Ce *preset* accepte un seul et unique paramètre (celui-ci est **optionnel** ) s
 La *description* regroupe deux catégories (Ce que ça fait, et comment ça fonctionne) qui chacune ont un champ pour les deux langues. Ce *preset* a été créé car tous les formulaires ont un champ description.
 
 Ce *preset* ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: description
 ```
@@ -845,17 +887,21 @@ Ce *preset* prend deux paramètre **obligatoires** :
   title: exemple
 # Beginning a group / array
 ```
+
 OU
+
 ```yaml
 - preset: empty
 # Closing a group / array
 ```
+
 Les balises de début et de fin sont situées dans les dossiers suivants : `_includes/schema/components/wrap_start.html` et `_includes/schema/components/wrap_end.html`. Ce sont les fichiers incluent dans les pages de **schéma**.
 
 #### HomepageUrl
 
 Ce *preset* affiche deux champs pour les deux langues, soit EN et FR. Chaque champ correspond à l'URL de la page d’accueil (pour chaque langue).
 Ce *preset* ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: homepageUrl
 ```
@@ -865,6 +911,7 @@ Ce *preset* ne prend pas de paramètres additionnels.
 Ce *preset* a été mis en place afin d'identifier les sections dont les champs peuvent se remplir automatiquement dépendamment de l'entrée. Par exemple, dans le formulaire pour les logiciels libres, la sélection d'un projet existant remplira automatiquement les champs déjà enregistrés (l'utilisateur n'aura qu'à compléter les parties manquantes)
 
 **NOTE** : Ce *preset* n’apparaît pas dans le schéma et ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: hr
 ```
@@ -874,6 +921,7 @@ Ce *preset* a été mis en place afin d'identifier les sections dont les champs 
 Ce *preset* permet d'afficher une liste de langages de programmation à sélectionner (l'utilisateur sélectionner ceux étant associé à son projet). De plus, celui-ci permet à un quelconque utilisateur d'ajouter son propre langage s'il ne le trouve pas dans la liste.
 
 Ce *preset* ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: languages
 ```
@@ -883,6 +931,7 @@ Ce *preset* ne prend pas de paramètres additionnels.
 Ce *preset* affiche deux zones de texte pour l'URL des licences selon chaque langue, soit EN et FR. On retrouve également un autre champ pour le spdxID de la licence. Le *label* pour le spdxID contient un lien vers une liste et définition de spdxID (juste au-dessus de la zone de texte).
 
 Ce *preset* ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: licenses
 ```
@@ -892,6 +941,7 @@ Ce *preset* ne prend pas de paramètres additionnels.
 Le *preset* *partners* est l'un des plus complexes. Il a aussi beaucoup de JavaScript associé. Il permet aux utilisateurs de créer de nouvelles administrations ou d'en sélectionner une existante pour l'ajouter en tant que partenaire en y ajoutant certaines informations de contact spécifique aux partenaires.
 
 Ce *preset* ne prends pas de paramètre additionnels.
+
 ```yaml
 - preset: partners
 ```
@@ -924,6 +974,7 @@ Ces trois *presets* ne prennent pas de paramètres supplémentaires.
 Ce *preset* affiche un `<select>` *input* correspondant aux possible statuts du projet (*alpha*, *bêta*, maintenu, déprécie ou retraité).
 
 Il ne prend pas de paramètres additionnels.
+
 ```yaml
 - preset: status
 ```
@@ -939,6 +990,7 @@ Affiche une section séparée du formulaire demandant à l'utilisateur ses infor
 Ce *preset* affichent des champs permettant d'ajouter des tags à un quelconque projet. Il existe des sections pour l'anglais et le français.
 
 Celui-ci ne prend un paramètre *optionnel*.
+
 ```yaml
   - preset: tags
     param: {required: false}  # defaults to true
@@ -951,10 +1003,12 @@ Cette section présente les étapes relatives à la création d'un nouveau *pres
 #### Ajoutez votre nouveau *preset* dans les composantes d'un formulaire
 
 Pour commencer, créer un nouveau fichier pour votre nouveau *preset* dans le dossier `_includes/form/presets/`. Le nom du fichier doit suivre la convention *camelCase*. Remplissez le d'un balisage HTML. N'hésitez pas d'utiliser les autres *presets* comme source d'inspiration et d'inclure alors des widgets en utilisant des paramètres spécifiques quand ils se répètent dans plusieurs formulaires.
+
 ```yaml
 - preset: example
   param: {test: uneValeur}
 ```
+
 Vous pourriez accéder à la valeur de `test` de cet exemple dans votre *preset* en utilisant `include.param.test`. En effet, *Include* est le terme employé pour accéder à tous les paramètres déclarés (dans tous les fichiers) dans le dossier `_includes/`. Notez que le même principe est applicable pour `page.test` dans `_pages/`. Les données sont cependant un peu différentes et l'utilisation de `site.data.test` (où "test" désigne un fichier ou un dossier dans `_data/`) est requise.
 
 #### Ajoutez votre nouveau *preset* dans les composantes d'un schéma
@@ -966,6 +1020,7 @@ Créez un nouveau fichier pour votre *preset* dans le dossier `_includes/schema/
 Contrairement aux *presets*, les *widgets* sont des sections beaucoup plus flexibles dont l'ajout de paramètres est beaucoup plus fréquent (le nombre de paramètres est également plus élevé). Ceux-ci peuvent ainsi être configurés afin d'être mieux adaptés aux différentes sections du formulaire.
 
 Voici un exemple de *widget* :
+
 ```yaml
 - widget: example  #enum
   title: ~
@@ -1015,6 +1070,7 @@ Ce widget correspond à une liste ou un groupe de *widgets*, disponible sous un 
 - `fields` : il s'agit d'un tableau de *widgets* et leurs paramètres à afficher dans un même groupe logique.
 
 Par exemple :
+
 ```yaml
 - widget: group
   title: example
@@ -1028,6 +1084,7 @@ Par exemple :
       param: {...}
    [...]
 ```
+
 La déclaration d'un *widget* sous "*fields*" est similaire à sa déclaration comme étant un haut niveau *fieldGroup*.
 La déclaration des *sous-widgets* se fait de la même façon qu'un quelconque *widget*.
 
@@ -1047,15 +1104,18 @@ Ce *widget* prend un paramètre  additionnel, incluant ceux présentés précéd
   param:
     options: {a, b, c}
 ```
+
 Les valeurs disponibles dans le tableau sont utilisées aussi pour la traduction (voir la section traduction pour plus d'informations). Elles peuvent aussi être utilisées pour l'attribut *value* du "tag *option*" (`<option value="{{ option[i] }}"`).
 
 #### string-i18n
 
 Ce *widget* affiche deux champs pour une seule valeur (français et anglais). Il prend tout les paramètres disponibles pour un *widget*.
+
 ```yaml
 - widget: string-i18n
   title: example
 ```
+
 Un paramètre supplémentaire a été ajouté par la suite dans le but de corriger une erreur relative aux ID, mais qui en fin de compte n'a pas été utilisée. Nous ne l'avons pas retiré car la fonctionnalité que cela permet pourrait être utile dans le futur :
 
 - `prepend` : il s'agit d'un *string* à ajouter à l'ID lorsqu'on génère les balises HTML. Ceci permet d'avoir deux fois le même le paramètre `title` tout en évitant la création de conflits entre les ID.
@@ -1063,6 +1123,7 @@ Un paramètre supplémentaire a été ajouté par la suite dans le but de corrig
 #### string
 
 Ce widget affiche un champ unique pour les valeurs ne nécessitant pas de traduction. Il prend tout les paramètres disponibles pour un *widget*.
+
 ```yaml
 - widget: string
   title: example
@@ -1113,6 +1174,7 @@ En général, il est possible de créer des variables dans les fichiers YAML :
 Pour ce projet en question, la création d'une variable dans les fichiers YAML a permit de déclarer et d'utiliser des valeurs plus génériques (*name*, *email*, URL, etc.). La particularité de cette fonctionnalité est que la variable peut agir en tant que *string* ou bien en tant qu'*objet*. Ainsi, il est possible d'envelopper des traductions dans une seule variable.
 
 Voici un exemple pouvant être retrouvé dans un quelconque fichier :
+
 ```yaml
 name: &name
   en: Name
@@ -1121,7 +1183,9 @@ name: &name
 example:
   label: *name
 ```
+
 Ce qui est l'équivalent de :
+
 ```yaml
 name:
   en: Name
@@ -1163,11 +1227,13 @@ first-level:
       en: Example
       fr: Exemple
 ```
+
 L'exemple ci-dessus représente le modèle de base associé à chaque *widget*. Cependant, chaque *widget* a ses éléments spécifiques à ajouter. Ces éléments sont présentés dans les quatre sections qui vont suivre.
 
 #### String
 
 Voici le modèle à appliquer à ce *widget* :
+
 ```yaml
 first-level:
   example:
@@ -1182,6 +1248,7 @@ first-level:
 #### String-i18n
 
 Voici le modèle à appliquer à ce *widget* :
+
 ```yaml
 first-level:
   example:
@@ -1203,6 +1270,7 @@ first-level:
 #### Select
 
 Voici le modèle à appliquer à ce *widget* :
+
 ```yaml
 first-level:
   example:
@@ -1219,6 +1287,7 @@ first-level:
 #### Group
 
 Voici le modèle à appliquer à ce *widget* :
+
 ```yaml
 first-level:
   title:
@@ -1254,6 +1323,7 @@ Tous les scripts se situent dans le dossier `assets/js/src/`. Les scripts de cha
 Les liens vers les scripts sont ajoutés dans le *footer* se trouvant dans le fichier HTML suivant : `_includes/footer.html`.
 
 Il est aussi possible d'ajouter un script seulement sur une page de formulaire spécifique. Il suffit d'utiliser un `if/else` sur le référence d'une page :
+
 ```html
 {%- if  page.ref == "example"  -%}
 <script  src="chemin/vers/le/fichier.js"></script>
