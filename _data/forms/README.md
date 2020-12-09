@@ -19,7 +19,7 @@ In general, pages have the header variables presented below. These header variab
 - `lang`: defines the associated language of the page. Used mostly as `[page.lang]` throughout the templates, it selects the correct value for a translation. The accepted values are either `en` or `fr` (case is important).
 - `permalink`: The permalink for the page (at least the part that will be appended to the base URL of the website). It overrides the file location in the folders when the website is compiled. Follow the convention `/[lang]/[page_name].html`.
 
-#### Header example for a standard page
+### Header example for a standard page
 
 ```yaml
 ---
@@ -493,7 +493,7 @@ Also, in the form components, you can find the admin folder which specifies the 
 
 Translations for the form and schema pages are located in `_data/i18n/form.yml`. They are separated in sections for more generic translations and in first-level groups for each of the forms.
 
-#### Yaml Variables
+## Yaml Variables
 
 In general, you can create variables in Yaml files:
 
@@ -711,7 +711,7 @@ Les variables à inclure au niveau de l'entête des pages sont présentées ci-d
 - `lang` : correspond à la langue associée à la page. Utilisée le plus souvent comme `[page.lang]`, cette variable permet de sélectionner la bonne valeur pour une traduction. Les valeurs acceptés sont `en` et `fr`.
 - `permalink` : correspond au permalien de la page (au moins la partie qui sera ajoutée au URL de base du site) qui remplacera l'emplacement du fichier dans les dossiers lorsque le site internet sera compilé. Suivre la convention suivante `/[lang]/[page_name]`.
 
-#### Exemple d'entête pour une page normale
+### Exemple d'entête pour une page normale
 
 ```yaml
 ---
@@ -1164,7 +1164,7 @@ De plus, dans le dossier `form/components`, on retrouve le dossier `admin` qui s
 
 Les traductions pour les formulaires et schémas se trouvent dans le fichier `_data/i18n/form.yml`. Elles sont séparées en sections pour les *presets* et pour tous les formulaires individuels.
 
-#### Variables YAML
+## Variables YAML
 
 En général, il est possible de créer des variables dans les fichiers YAML :
 

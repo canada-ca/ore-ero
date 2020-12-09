@@ -1,12 +1,12 @@
 ([Français](#échange-de-ressources-ouvert))
 
-## Open Resource Exchange
+# Open Resource Exchange
 
 <https://code.open.canada.ca/en/index.html>
 
 Explore how the Government of Canada creates greater transparency, accountability, increases citizen engagement, and drives innovation and economic opportunities through open Standards, open source software, open data, open information, open dialogue and open Government.
 
-### How to Contribute
+## How to Contribute
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
@@ -16,7 +16,7 @@ This site uses [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.
 
 Unless otherwise noted, the source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT Licence](LICENSE.txt).
 
-### Development
+## Development
 
 To test your changes locally, run `jekyll serve`. For example using Docker:
 
@@ -30,7 +30,7 @@ Notes:
 Site will be available at: <http://localhost:4000/ore-ero/>
 ______________________
 
-#### Javascript
+### Javascript
 
 If you're working on Javascript in the `/assets/js/src` folder, make sure your code follows the style guidelines. We use ES Lint for checking code style. Ensure you have a recent version of Node.js (>=10.15.3). Run the following to install dependencies.
 
@@ -52,7 +52,7 @@ npm run prettify
 
 YAML processing is done using the [js-yaml](https://github.com/nodeca/js-yaml) library.
 
-#### PRB0t - Docker
+### PRB0t - Docker
 
 You can choose to run PRB0t locally using Docker if you like. First, you need to generate a personal access token.
 
@@ -71,11 +71,11 @@ Now change prbot_url in `_config.yml` to `http://localhost:3000/`.
 
 Now when you fill out our forms, it'll submit the pull request using PRB0t running in your Docker container!
 
-### Release
+## Release
 
 The core site is a GitHub Pages site, so it's updated whenever code is merged into master. We also depend on an external service called PRB0t to allow users to submit pull requests to ORE without having a GitHub account.
 
-#### Updating PRB0t
+### Updating PRB0t
 
 This service is hosted in [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). We currently use Heroku's [git-based](https://devcenter.heroku.com/articles/git) method of updating the application. To do this, you will need Git and the Heroku CLI installed.
 
@@ -97,13 +97,13 @@ And finally, push your changes.
 git push heroku master
 ```
 
-## Échange de ressources ouvert
+# Échange de ressources ouvert
 
 <https://code.ouvert.canada.ca/ore-ero/fr/index.html>
 
 Découvrez comment le gouvernement du Canada crée davantage de transparence et de responsabilisation, augmente la mobilisation citoyenne et favorise l’innovation et les possibilités économiques au moyen de normes ouvertes, logiciels libres, données ouvertes, d’information ouverte, de dialogue ouvert et du Gouvernement ouvert.
 
-### Comment contribuer
+## Comment contribuer
 
 Voir [CONTRIBUTING.md](CONTRIBUTING.md)
 
@@ -113,7 +113,7 @@ Ce site utilise [Jekyll](https://jekyllrb.com/) et [Github Pages](https://pages.
 
 Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](LICENSE.txt).
 
-### Développement
+## Développement
 
 Pour tester vos modifications localement, exécuter `jekyll serve`. Par exemple avec Docker:
 
@@ -127,7 +127,7 @@ Remarques:
 Le site sera disponible au: <http://localhost:4000/ore-ero/>
 ______________________
 
-#### Javascript
+### Javascript
 
 Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances.
 
@@ -168,11 +168,11 @@ Maintenant, remplacez prbot_url dans `_config.yml` par `http://localhost:3000/`.
 
 Maintenant, lorsque vous remplissez nos formulaires, il soumet la demande de fusion à l'aide de PRB0t s'exécutant dans votre conteneur Docker!
 
-### Publication
+## Publication
 
 Le site principal est un site GitHub Pages. Il est donc mis à jour chaque fois que le code est fusionné dans le fichier maître. Nous dépendons également d'un service externe appelé PRB0t pour permettre aux utilisateurs de soumettre des demandes de fusion à ORE sans avoir de compte GitHub.
 
-#### Mise à jour PRB0t
+### Mise à jour PRB0t
 
 Ce service est hébergé sur [Heroku](https://dashboard.heroku.com/apps/canada-pr-bot). Nous utilisons actuellement la méthode de mise à jour de l'application basée sur [Git](https://devcenter.heroku.com/articles/git) de Heroku. Pour ce faire, vous devez avoir installé Git et la CLI Heroku.
 
