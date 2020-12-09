@@ -36,7 +36,7 @@ If your adminstration doesn't have a file under the [code](https://github.com/ca
 
 ### Adding Open Design Resource
 
-The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaDesign.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page] (https://raw.githubusercontent.com/canada-ca/ore-ero/open-design-schema.html)
+The [schema metadata file](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data/schemaDesign.yaml) shows how the file are structured. The structure of the file and the required fields are explained in the [metadata schema page] (<https://raw.githubusercontent.com/canada-ca/ore-ero/open-design-schema.html>)
 
 You can use the [design template with only mandatory fields](https://raw.githubusercontent.com/canada-ca/ore-ero/master/_data_templates/design_mandatory.yml) as an example
 
