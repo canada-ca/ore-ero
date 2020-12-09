@@ -24,7 +24,7 @@ licences:
   - URL:
       en: 'https://github.com/nextcloud/nextcloud.com/blob/master/LICENSE'
       fr: 'https://github.com/nextcloud/nextcloud.com/blob/master/LICENSE'
-    spdxID: GPL-3.0-only
+    spdxID: AGPL-3.0-or-later
     level:
       en: Main license
       fr: License principale
