@@ -4,7 +4,7 @@
 
 ## Open Resource Exchange
 
-https://code.open.canada.ca/en/index.html
+<https://code.open.canada.ca/en/index.html>
 
 Explore how the Government of Canada creates greater transparency, accountability, increases citizen engagement, and drives innovation and economic opportunities through open Standards, open source software, open data, open information, open dialogue and open Government.
 
@@ -29,7 +29,7 @@ Notes:
 - For PowerShell users, replace the parentheses with brackets (Change `$(pwd)` to `${pwd}`)
 - If Jekyll is not automatically regenerating the site after files are modified, add the build command flags: `--watch` and `--force_polling` to the end of the above command
 
-Site will be available at: http://localhost:4000/ore-ero/
+Site will be available at: <http://localhost:4000/ore-ero/>
 ______________________
 
 #### Javascript
@@ -96,7 +96,7 @@ git push heroku master
 
 ## Échange de ressources ouvert
 
-https://code.ouvert.canada.ca/ore-ero/fr/index.html
+<https://code.ouvert.canada.ca/ore-ero/fr/index.html>
 
 Découvrez comment le gouvernement du Canada crée davantage de transparence et de responsabilisation, augmente la mobilisation citoyenne et favorise l’innovation et les possibilités économiques au moyen de normes ouvertes, logiciels libres, données ouvertes, d’information ouverte, de dialogue ouvert et du Gouvernement ouvert.
 
@@ -121,7 +121,7 @@ Remarques:
 - Pour les utilisateurs de PowerShell, remplacez les parenthèses par des crochets (Modifiez `$(pwd)` en `${pwd}`)
 - Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: `--watch` et `--force_polling` à la fin de la commande ci-dessus
 
-Le site sera disponible au: http://localhost:4000/ore-ero/
+Le site sera disponible au: <http://localhost:4000/ore-ero/>
 ______________________
 
 #### Javascript

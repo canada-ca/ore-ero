@@ -12,7 +12,7 @@ Feel free to propose changes by creating Pull Requests. If you don't have write 
 
 If this is your first time contributing on GitHub, don't worry! Let us know if you have any questions.
 
-https://github.com/canada-ca/ore-ero/
+<https://github.com/canada-ca/ore-ero/>
 
 ______________________
 
@@ -26,4 +26,4 @@ N'hésitez pas à proposer des modifications en créant des demandes de tirage (
 
 Si c'est la première fois que vous contribuez à GitHub, ne vous en faites pas! Faites-nous part de vos questions.
 
-https://github.com/canada-ca/ore-ero/
+<https://github.com/canada-ca/ore-ero/>
