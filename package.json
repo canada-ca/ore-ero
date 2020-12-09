@@ -9,6 +9,7 @@
     "lint": "npm run lint:js && npm run lint:html",
     "lint:html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --no-langdetect --skip-non-html _site/",
     "lint:js": "eslint assets/js/src/**",
+    "lint:md": "markdownlint \"**/*.md\" -i node_modules/ -i _data/spdx/",
     "open-licences": "licensee --errors-only",
     "prettify": "eslint assets/js/src/** --fix",
     "test": "npm run lint && npm run open-licences"
@@ -34,6 +35,7 @@
     "eslint": "^7.21.0",
     "eslint-plugin-prettier": "^3.3.1",
     "licensee": "^8.1.0",
+    "markdownlint-cli": "^0.25.0",
     "prettier": "^2.2.1",
     "vnu-jar": "^21.2.5"
   },
