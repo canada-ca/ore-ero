@@ -19,7 +19,7 @@ In general, pages have the header variables presented below. These header variab
 - `lang`: defines the associated language of the page. Used mostly as `[page.lang]` throughout the templates, it selects the correct value for a translation. The accepted values are either `en` or `fr` (case is important).
 - `permalink`: The permalink for the page (at least the part that will be appended to the base URL of the website). It overrides the file location in the folders when the website is compiled. Follow the convention `/[lang]/[page_name].html`.
 
-**Header example for a standard page**
+#### Header example for a standard page
 
 ```yaml
 ---
@@ -37,7 +37,7 @@ Form pages require a few adjustments:
 - `layout`: form pages use "form" as their layout value instead of "default".
 - `config`: refers to the name of the Yaml config file in `_data/forms/` associated with the current form. That's how the relation is created between the current layout and the required data for the form.
 
-**Header example for a form page**
+#### Header example for a form page
 
 ```yaml
 ---
@@ -53,7 +53,7 @@ config: config-example  # Will fetch _data/forms/config-example.yml
 
 Schema pages use the same parameters as form pages, but the `layout` variable must be set to "schema". In addition, the schema and form pages that are associated to one another must have the same `config` value. That way, both pages can pull from the same data.
 
-**Header example for a schema page**
+#### Header example for a schema page
 
 ```yaml
 ---
@@ -711,7 +711,7 @@ Les variables à inclure au niveau de l'entête des pages sont présentées ci-d
 - `lang` : correspond à la langue associée à la page. Utilisée le plus souvent comme `[page.lang]`, cette variable permet de sélectionner la bonne valeur pour une traduction. Les valeurs acceptés sont `en` et `fr`.
 - `permalink` : correspond au permalien de la page (au moins la partie qui sera ajoutée au URL de base du site) qui remplacera l'emplacement du fichier dans les dossiers lorsque le site internet sera compilé. Suivre la convention suivante `/[lang]/[page_name]`.
 
-**Exemple d'entête pour une page normale**
+#### Exemple d'entête pour une page normale
 
 ```yaml
 ---
@@ -729,7 +729,7 @@ Les pages de formulaire nécessitent les ajustements suivants au niveau des vari
 - `layout` : les pages de formulaire ont la valeur `form` par défaut pour la variable `layout`au lieu de la valeur "default".
 - `Config` : correspond au nom du fichier Yaml dans le dossier `_data/forms/` qui est associé au formulaire actuel. Ainsi, la relation entre le layout actuel et les données requises pour le formulaire est créée.
 
-**Exemple d'entête pour une page de formulaire**
+#### Exemple d'entête pour une page de formulaire
 
 ```yaml
 ---
@@ -745,7 +745,7 @@ config: exemple-config  # Ira chercher _data/forms/config-example.yml
 
 Les pages de schéma possèdent les même variables d'entête que les formulaires, mais plutôt, la valeur "schema" serait définie pour le paramètre `layout`. De plus, la page de formulaire et la page de schéma qui sont associées l'une à l'autre doivent avoir une même valeur pour le paramètre `config` pour permettre l'extraction des mêmes données.
 
-**Exemple d'entête pour une page de schéma**
+#### Exemple d'entête pour une page de schéma
 
 ```yaml
 ---
