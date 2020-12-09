@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/canada-ca/ore-ero.svg?branch=master)](https://travis-ci.org/canada-ca/ore-ero)
-
 ([Français](#échange-de-ressources-ouvert))
 
 ## Open Resource Exchange
