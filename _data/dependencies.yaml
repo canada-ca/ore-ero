@@ -3812,14 +3812,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@babel/plugin-transform-react-jsx-source'
   origin: npm
   type: core
@@ -3834,14 +3830,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@babel/plugin-transform-react-jsx'
   origin: npm
   type: core
@@ -6451,9 +6443,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: '@mrmlnc/readdir-enhanced'
@@ -6470,6 +6459,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: gwells
         fr: gwells
@@ -24192,9 +24184,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: call-me-maybe
@@ -24211,6 +24200,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: gwells
         fr: gwells
@@ -25934,15 +25926,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: clean-css
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: clean-css
   origin: npm
   type: dev
@@ -44631,15 +44614,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: gatsby-plugin-prefetch-google-fonts
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: gatsby-plugin-react-helmet-canonical-urls
   origin: npm
   type: core
@@ -44703,6 +44677,15 @@
         en: devhub-app-web
         fr: devhub-app-web
 - dependency: gatsby-plugin-typography
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
+- dependency: gatsby-plugin-webfonts
   origin: npm
   type: core
   admins:
@@ -45554,15 +45537,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: get-urls
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: get-value
   origin: npm
   type: core
@@ -46137,9 +46111,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: glob-to-regexp
@@ -46156,6 +46127,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
     - projectName:
         en: gwells
         fr: gwells
@@ -46655,15 +46629,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: google-fonts-plugin
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: google-p12-pem
   origin: npm
   type: core
@@ -68106,15 +68071,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: neon-js
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: nerf-dart
   origin: npm
   type: core
@@ -74512,9 +74468,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: path-parse
@@ -74551,6 +74504,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
@@ -74760,15 +74716,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: path
-  origin: npm
-  type: core
-  admins:
-    - bc
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
 - dependency: pause-stream
   origin: npm
   type: dev
@@ -76291,6 +76238,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: postcss-js
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: devhub-app-web
+        fr: devhub-app-web
 - dependency: postcss-load-config
   origin: npm
   type: core
@@ -84501,9 +84457,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: resolve
@@ -84540,6 +84493,9 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: unleet
         fr: unleet
