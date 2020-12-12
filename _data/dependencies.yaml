@@ -11483,9 +11483,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@typescript-eslint/typescript-estree'
   origin: npm
   type: core
@@ -11522,9 +11519,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@typescript-eslint/types'
   origin: npm
   type: dev
@@ -11537,9 +11531,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@typescript-eslint/visitor-keys'
   origin: npm
   type: dev
@@ -11552,9 +11543,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-    - projectName:
-        en: unleet
-        fr: unleet
 - dependency: '@uirouter/angularjs'
   origin: npm
   type: core
@@ -69767,6 +69755,9 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: npm-normalize-package-bin
@@ -102888,7 +102879,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -102910,12 +102900,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
