@@ -8111,6 +8111,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@storybook/semver'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@storybook/theming'
   origin: npm
   type: dev
@@ -45796,7 +45805,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.2.2#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.3.0#egg'
   origin: pypi
   type: core
   admins:
