@@ -178,7 +178,13 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [0,5,6,8,9,10,11,12], "visible": false}], "paging": true}'>
+  <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+  <table class="wb-tables tbl-gridify dataTable no-footer"
+          id="dataset-filter"
+          data-wb-tables='{"order": [0, "asc"], "bPaginate": false, "columnDefs": [{"targets": [0,5,6,8,9,10,11,12], "visible": false}], "paging": true}'
+          aria-describedby="designlayout_info"
+          role="grid"
+          style="width: 0px;">
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
@@ -196,22 +202,22 @@
         <th>{{ site.data.i18n.form.presets.date.labels.created[page.lang] }}</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="row wb-eqht">
       {%- for govLevels in site.data.code -%}
         {%- assign govLevel = govLevels[0] -%}
         {%- for admin in govLevels[1] -%}
           {%- for release in admin[1].releases -%}
           {%- unless release.tags.en contains site.excludeTag -%}
-          <tr>
+          <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 349px;" role="row">
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             <td>{{ administration[0].name[page.lang] }}</td>
 
             <td><a href="#{{ release.name[page.lang] | slugify: "latin" }}" aria-controls="{{ release.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
-            <td>
+            <td class="text-muted">
               {{ site.data.i18n.categories[release.category][page.lang] }}
             </td>
             <td>{{ release.description.whatItDoes[page.lang] }}</td>
-            <td>
+            <td class="small">
               {%- for licence in release.licences -%}
                 <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
               {%- endfor -%}
@@ -247,6 +253,7 @@
       {%- endfor -%}
     </tbody>
   </table>
+  </div>
 </div>
 
 <!-- Modal Lightboxes -->
