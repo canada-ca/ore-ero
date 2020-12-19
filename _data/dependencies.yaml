@@ -5850,6 +5850,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: '@hydrogen-design-system/system'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@iarna/cli'
   origin: npm
   type: dev
@@ -11718,6 +11727,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@typescript-eslint/typescript-estree'
   origin: npm
   type: core
@@ -11754,6 +11766,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@typescript-eslint/types'
   origin: npm
   type: dev
@@ -11770,6 +11785,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@typescript-eslint/visitor-keys'
   origin: npm
   type: dev
@@ -11786,6 +11804,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
 - dependency: '@uirouter/angularjs'
   origin: npm
   type: core
@@ -45615,9 +45636,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -85960,10 +85978,14 @@
   type: dev
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: satooshi/php-coveralls
   origin: composer
   type: dev
