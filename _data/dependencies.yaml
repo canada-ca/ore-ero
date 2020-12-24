@@ -589,9 +589,6 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -651,9 +648,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -1029,9 +1023,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1092,9 +1083,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1184,9 +1172,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1239,9 +1224,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1290,9 +1272,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1340,9 +1319,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -1515,9 +1491,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -1565,9 +1538,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -1650,9 +1620,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -1815,9 +1782,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -1957,9 +1921,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -4691,9 +4652,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -4753,9 +4711,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -4819,9 +4774,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -4953,9 +4905,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: '@cityssm/bulma-webapp-css'
@@ -5012,9 +4961,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -5927,9 +5873,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -5952,9 +5895,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -11832,9 +11772,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -13880,9 +13817,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -15715,9 +15649,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -22968,9 +22899,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -23928,9 +23856,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: bulma-helpers
@@ -23939,9 +23864,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -23952,9 +23874,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: bulma-switch
@@ -23963,9 +23882,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -23976,9 +23892,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: bulma
@@ -23987,9 +23900,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -24368,9 +24278,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26204,9 +26111,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -27906,9 +27810,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -33448,9 +33349,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34580,9 +34478,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -38005,9 +37900,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -42607,9 +42499,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -43044,9 +42933,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -43396,9 +43282,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -43872,9 +43755,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -45299,9 +45179,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -45544,9 +45421,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -47428,9 +47302,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -49281,9 +49152,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -49685,9 +49553,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50302,9 +50167,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -52130,9 +51992,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -55176,9 +55035,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55643,9 +55499,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -56704,9 +56557,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -56745,9 +56595,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -56792,9 +56639,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -56814,9 +56658,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -56860,9 +56701,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -56914,9 +56752,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -56966,9 +56801,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -58781,9 +58613,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -62294,9 +62123,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63410,9 +63236,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -67036,9 +66859,6 @@
         en: GCconnex
         fr: GCconnex
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -67739,9 +67559,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -69211,9 +69028,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -70358,9 +70172,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -72806,9 +72617,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -73039,9 +72847,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -78028,9 +77833,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -80150,9 +79952,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -83168,9 +82967,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -86808,9 +86604,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -89703,9 +89496,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -93737,9 +93527,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -94978,9 +94765,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -99482,9 +99266,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -102602,9 +102383,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103679,9 +103457,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
