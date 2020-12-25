@@ -60566,10 +60566,14 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - phac-aspc
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -60579,10 +60583,14 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - phac-aspc
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -78263,6 +78271,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: properties-reader
+  origin: npm
+  type: dev
+  admins:
+    - phac-aspc
+  projects:
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: property-expr
   origin: npm
   type: core
