@@ -102892,6 +102892,15 @@
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: xml-js
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+- dependency: xml-js
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -103441,9 +103450,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
