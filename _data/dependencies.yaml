@@ -2661,6 +2661,9 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@babel/plugin-syntax-json-strings'
   origin: npm
   type: core
@@ -18282,9 +18285,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-eslint
   origin: npm
   type: core
@@ -18362,7 +18362,6 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -18370,9 +18369,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -18385,15 +18381,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-bindify-decorators
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-builder-binary-assignment-operator-visitor
   origin: npm
   type: core
@@ -18406,15 +18393,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-builder-binary-assignment-operator-visitor
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-builder-react-jsx
   origin: npm
   type: core
@@ -18424,37 +18402,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-builder-react-jsx
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-call-delegate
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-helper-call-delegate
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-helper-define-map
   origin: npm
   type: core
   admins:
@@ -18468,13 +18416,16 @@
         fr: InfoBase du GC
 - dependency: babel-helper-define-map
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-helper-evaluate-path
   origin: npm
   type: dev
@@ -18500,15 +18451,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-explode-assignable-expression
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-explode-class
   origin: npm
   type: core
@@ -18518,15 +18460,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-explode-class
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-flip-expressions
   origin: npm
   type: dev
@@ -18552,37 +18485,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-function-name
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-get-function-arity
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-helper-get-function-arity
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-helper-hoist-variables
   origin: npm
   type: core
   admins:
@@ -18596,13 +18499,16 @@
         fr: InfoBase du GC
 - dependency: babel-helper-hoist-variables
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-helper-is-nodes-equiv
   origin: npm
   type: dev
@@ -18654,37 +18560,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-optimise-call-expression
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-regex
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-helper-regex
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-helper-remap-async-to-generator
   origin: npm
   type: core
   admins:
@@ -18698,13 +18574,16 @@
         fr: InfoBase du GC
 - dependency: babel-helper-remap-async-to-generator
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-helper-remove-or-void
   origin: npm
   type: dev
@@ -18730,15 +18609,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-helper-replace-supers
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-helper-to-multiple-sequence-expressions
   origin: npm
   type: dev
@@ -18767,7 +18637,6 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -18775,9 +18644,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-jest
   origin: npm
   type: dev
@@ -18894,9 +18760,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: babel-plugin-add-module-exports
@@ -18942,15 +18805,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-check-es2015-constants
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-dynamic-import-node
   origin: npm
   type: core
@@ -19279,10 +19133,14 @@
   type: dev
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: babel-plugin-named-asset-import
   origin: npm
   type: dev
@@ -19348,34 +19206,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-syntax-async-functions
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-syntax-async-generators
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-plugin-syntax-async-generators
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-syntax-class-properties
   origin: npm
   type: core
   admins:
@@ -19386,15 +19217,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-syntax-class-properties
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-syntax-decorators
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19403,15 +19225,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-syntax-decorators
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-syntax-dynamic-import
   origin: npm
   type: core
   admins:
@@ -19422,13 +19235,13 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-syntax-dynamic-import
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-plugin-syntax-exponentiation-operator
   origin: npm
   type: core
@@ -19441,15 +19254,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-syntax-exponentiation-operator
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-syntax-flow
   origin: npm
   type: core
@@ -19459,15 +19263,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-syntax-flow
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-syntax-jsx
   origin: npm
   type: core
@@ -19523,9 +19318,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-syntax-trailing-function-commas
   origin: npm
   type: core
@@ -19556,15 +19348,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-transform-async-generator-functions
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-async-to-generator
   origin: npm
   type: core
@@ -19577,34 +19360,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-transform-async-to-generator
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-class-properties
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-plugin-transform-class-properties
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-decorators
   origin: npm
   type: core
   admins:
@@ -19615,35 +19371,14 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-decorators
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-arrow-functions
-  origin: npm
   type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-arrow-functions
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-block-scoped-functions
   origin: npm
   type: core
   admins:
@@ -19657,15 +19392,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-block-scoped-functions
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-block-scoping
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19677,15 +19403,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-block-scoping
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-classes
   origin: npm
   type: core
   admins:
@@ -19699,15 +19416,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-classes
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-computed-properties
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19719,15 +19427,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-computed-properties
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-destructuring
   origin: npm
   type: core
   admins:
@@ -19741,15 +19440,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-destructuring
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-duplicate-keys
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19761,15 +19451,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-duplicate-keys
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-for-of
   origin: npm
   type: core
   admins:
@@ -19783,15 +19464,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-for-of
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-function-name
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19803,15 +19475,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-function-name
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-literals
   origin: npm
   type: core
   admins:
@@ -19825,15 +19488,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-literals
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-modules-amd
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19846,13 +19500,16 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-modules-amd
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-modules-commonjs
   origin: npm
   type: core
@@ -19882,31 +19539,7 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-es2015-modules-systemjs
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-plugin-transform-es2015-modules-systemjs
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-modules-umd
   origin: npm
   type: core
   admins:
@@ -19920,15 +19553,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-modules-umd
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-object-super
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19940,15 +19564,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-object-super
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-parameters
   origin: npm
   type: core
   admins:
@@ -19962,15 +19577,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-parameters
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-shorthand-properties
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -19982,15 +19588,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-shorthand-properties
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-spread
   origin: npm
   type: core
   admins:
@@ -20004,15 +19601,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-spread
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-sticky-regex
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -20024,15 +19612,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-sticky-regex
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-template-literals
   origin: npm
   type: core
   admins:
@@ -20046,15 +19625,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-template-literals
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-typeof-symbol
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -20066,15 +19636,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-typeof-symbol
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-es2015-unicode-regex
   origin: npm
   type: core
   admins:
@@ -20088,15 +19649,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-es2015-unicode-regex
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-exponentiation-operator
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -20109,32 +19661,17 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-exponentiation-operator
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-flow-strip-types
-  origin: npm
   type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-flow-strip-types
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-for-of-as-array
   origin: npm
   type: core
   admins:
@@ -20145,13 +19682,13 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-for-of-as-array
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-plugin-transform-inline-consecutive-adds
   origin: npm
   type: dev
@@ -20230,9 +19767,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-property-literals
   origin: npm
   type: dev
@@ -20255,34 +19789,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-transform-react-display-name
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-react-jsx-self
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-plugin-transform-react-jsx-self
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-react-jsx-source
   origin: npm
   type: core
   admins:
@@ -20293,15 +19800,6 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-react-jsx-source
   origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-plugin-transform-react-jsx
-  origin: npm
   type: core
   admins:
     - tbs-sct
@@ -20311,13 +19809,13 @@
         fr: InfoBase du GC
 - dependency: babel-plugin-transform-react-jsx
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-plugin-transform-react-remove-prop-types
   origin: npm
   type: core
@@ -20339,15 +19837,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-transform-regenerator
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-regexp-constructors
   origin: npm
   type: dev
@@ -20409,15 +19898,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-plugin-transform-runtime
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-simplify-comparison-operators
   origin: npm
   type: dev
@@ -20460,9 +19940,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-plugin-transform-undefined-to-void
   origin: npm
   type: dev
@@ -20513,15 +19990,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-preset-env
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-preset-flow
   origin: npm
   type: core
@@ -20531,15 +19999,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-preset-flow
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-preset-gatsby
   origin: npm
   type: dev
@@ -20601,34 +20060,7 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: babel-preset-react
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-preset-stage-2
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: babel-preset-stage-2
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-- dependency: babel-preset-stage-3
   origin: npm
   type: core
   admins:
@@ -20639,13 +20071,13 @@
         fr: InfoBase du GC
 - dependency: babel-preset-stage-3
   origin: npm
-  type: dev
+  type: core
   admins:
     - tbs-sct
   projects:
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: babel-register
   origin: npm
   type: core
@@ -20661,7 +20093,6 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -20669,9 +20100,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: babel-runtime
   origin: npm
   type: core
@@ -20750,9 +20178,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: babel-traverse
@@ -20786,9 +20211,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: babel-types
@@ -20821,9 +20243,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -20874,9 +20293,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -34102,7 +33518,6 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -34110,9 +33525,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -42450,6 +41862,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: find-cache-dir
   origin: npm
   type: core
@@ -45508,6 +44923,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
@@ -46031,8 +45449,12 @@
   origin: bundler
   type: core
   admins:
+    - phac-aspc
     - tbs-sct
   projects:
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -49749,7 +49171,6 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -49757,9 +49178,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: homedir-polyfill
   origin: npm
   type: core
@@ -71970,9 +71388,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
@@ -83791,6 +83206,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -83801,6 +83217,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -95544,9 +94963,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
