@@ -4544,6 +4544,15 @@
         fr: gwells
 - dependency: '@babel/runtime-corejs3'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@babel/runtime-corejs3'
+  origin: npm
   type: dev
   admins:
     - bc
@@ -10731,6 +10740,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@types/raf'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@types/ramda'
   origin: npm
   type: core
@@ -13165,15 +13183,6 @@
         fr: YouCanBenefit
 - dependency: abab
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: abab
-  origin: npm
   type: dev
   admins:
     - bc
@@ -13396,15 +13405,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: acorn-globals
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: acorn-globals
   origin: npm
   type: dev
@@ -16231,15 +16231,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: array-equal
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: array-equal
   origin: npm
   type: dev
@@ -22760,6 +22751,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: btoa
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: buble-jsx-only
   origin: npm
   type: core
@@ -28924,10 +28924,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: core-js-pure
   origin: npm
   type: dev
@@ -30932,15 +30936,6 @@
         fr: Nuage de Talent
 - dependency: cssom
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: cssom
-  origin: npm
   type: dev
   admins:
     - bc
@@ -31005,15 +31000,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: cssstyle
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: cssstyle
   origin: npm
   type: dev
@@ -37794,9 +37780,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: escodegen
   origin: npm
   type: dev
@@ -41465,15 +41448,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: file-saver
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: file-system-cache
   origin: npm
   type: dev
@@ -57943,15 +57917,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: jsdom
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: jsdom
-  origin: npm
   type: dev
   admins:
     - bc
@@ -60092,9 +60057,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: levn
   origin: npm
   type: dev
@@ -69544,15 +69506,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: nwmatcher
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: nwsapi
   origin: npm
   type: dev
@@ -70535,14 +70488,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: omggif
   origin: npm
   type: dev
@@ -71085,9 +71034,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: optionator
   origin: npm
   type: dev
@@ -72397,6 +72343,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: pako
   origin: npm
   type: dev
@@ -76772,9 +76721,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: prelude-ls
   origin: npm
   type: dev
@@ -77462,15 +77408,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: promise-polyfill
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: promise-polyfill
   origin: npm
   type: dev
@@ -83218,6 +83155,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Open Resource Exchange
+        fr: Échange de Ressource Ouvert
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -83778,9 +83718,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -83811,6 +83748,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDS Website
+        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -92114,6 +92054,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: svg-pathdata
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: svg-tag-names
   origin: npm
   type: core
@@ -92237,15 +92186,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: symbol-tree
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: symbol-tree
   origin: npm
   type: dev
@@ -94768,15 +94708,6 @@
         fr: YouCanBenefit
 - dependency: tr46
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: tr46
-  origin: npm
   type: dev
   admins:
     - bc
@@ -95708,9 +95639,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: type-check
   origin: npm
   type: dev
@@ -100158,15 +100086,6 @@
         fr: ckanext-bcgov
 - dependency: webidl-conversions
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: webidl-conversions
-  origin: npm
   type: dev
   admins:
     - bc
@@ -100839,15 +100758,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: whatwg-url
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: whatwg-url
   origin: npm
   type: dev
@@ -102326,15 +102236,6 @@
         fr: Nuage de Talent
 - dependency: xml-name-validator
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
-- dependency: xml-name-validator
-  origin: npm
   type: dev
   admins:
     - bc
@@ -102462,15 +102363,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: xmldom
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: xmldom
   origin: npm
   type: dev
