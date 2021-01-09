@@ -68178,9 +68178,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: node-git-simple
@@ -85605,9 +85602,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: semantic-release
@@ -88315,9 +88309,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: sockjs
@@ -88347,9 +88338,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
