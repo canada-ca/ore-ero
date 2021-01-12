@@ -80094,6 +80094,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: react-iframe
+  origin: npm
+  type: core
+  admins:
+    - phac-aspc
+  projects:
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: react-image
   origin: npm
   type: core
@@ -83148,6 +83157,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -83161,11 +83171,17 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: unleet
+        fr: unleet
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
