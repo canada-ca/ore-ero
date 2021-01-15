@@ -81452,6 +81452,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDS Website
+        fr: Site Web SNC
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: redux-logger
