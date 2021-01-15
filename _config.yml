@@ -25,3 +25,4 @@ exclude:
   - "Gemfile*"
   - "package*.json"
   - "requirements.txt"
+  - "vendor"
