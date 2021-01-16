@@ -66884,6 +66884,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: mysql-connector-python
+  origin: pypi
+  type: core
+  admins:
+    - phac-aspc
+  projects:
+    - projectName:
+        en: Integrated Rapid Infectious Disease Analysis (IRIDA)
+        fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: mz
   origin: npm
   type: dev
