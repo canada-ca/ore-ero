@@ -8491,6 +8491,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@testing-library/react-hooks'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@testing-library/react'
   origin: npm
   type: dev
@@ -10858,6 +10867,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/react-test-renderer'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@types/react-textarea-autosize'
   origin: npm
   type: dev
@@ -11207,6 +11225,15 @@
         en: devhub-app-web
         fr: devhub-app-web
 - dependency: '@types/testing-library__jest-dom'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: '@types/testing-library__react-hooks'
   origin: npm
   type: dev
   admins:
