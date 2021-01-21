@@ -25354,9 +25354,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: ckanext-scheming
-        fr: ckanext-scheming
 - dependency: ckanext-pdfview
   origin: pypi
   type: core
@@ -25379,9 +25376,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: ckanext-scheming
-        fr: ckanext-scheming
 - dependency: clap
   origin: npm
   type: dev
@@ -77441,6 +77435,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: promise-queue
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: promise-retry
   origin: npm
   type: dev
@@ -78718,9 +78721,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: ckanext-scheming
-        fr: ckanext-scheming
     - projectName:
         en: Notify
         fr: Notification
@@ -87357,9 +87357,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: ckanext-scheming
-        fr: ckanext-scheming
     - projectName:
         en: Notify
         fr: Notification
