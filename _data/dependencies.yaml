@@ -45219,7 +45219,7 @@
     - projectName:
         en: Notify
         fr: Notification
-- dependency: 'git+https://github.com/bcgov/ckanext-bcgov-schema@04ec0945d21cb383511882836e248b0e8055536d#egg'
+- dependency: 'git+https://github.com/bcgov/ckanext-bcgov-schema@ed3a0a10fccaaf56447c5caacc450f732db93a43#egg'
   origin: pypi
   type: core
   admins:
@@ -45282,7 +45282,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.3.0#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@43.3.1#egg'
   origin: pypi
   type: core
   admins:
