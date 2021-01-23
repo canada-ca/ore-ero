@@ -8279,6 +8279,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@storybook/semver'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: '@storybook/theming'
   origin: npm
   type: dev
