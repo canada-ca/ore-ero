@@ -11242,15 +11242,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/testing-library__react-hooks'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: TalentCloud
-        fr: Nuage de Talent
 - dependency: '@types/testing-library__react'
   origin: npm
   type: dev
@@ -41755,6 +41746,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: filter-console
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
 - dependency: final-form-arrays
   origin: npm
   type: core
@@ -79986,6 +79986,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: TalentCloud
+        fr: Nuage de Talent
+- dependency: react-error-boundary
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
