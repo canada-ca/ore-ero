@@ -1,0 +1,40 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Network Security Services (NSS) is a set of libraries designed to support
+      cross-platform development of security-enabled client and server
+      applications.
+    fr: >-
+      Les services de sécurité réseau (NSS) sont un ensemble de bibliothèques
+      conçues pour prendre en charge le développement multiplateforme
+      d'applications client et serveur à sécurité activée.
+category: '43233200'
+homepageURL:
+  en: 'https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS'
+  fr: 'https://developer.mozilla.org/fr/docs/NSS'
+licences:
+  - URL:
+      en: 'https://www.mozilla.org/en-US/MPL/'
+      fr: 'https://www.mozilla.org/en-US/MPL/'
+    spdxID: MPL-2.0
+name:
+  en: Network Security Services (NSS)
+  fr: Network Security Services (NSS)
+tags:
+  en:
+    - Library
+    - Security
+  fr:
+    - Library
+    - Security
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-28'
