@@ -207,7 +207,7 @@
         {%- for admin in govLevels[1] -%}
           {%- for release in admin[1].releases -%}
           {%- unless release.tags.en contains site.excludeTag -%}
-          <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 349px;">
+          <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 350px;">
             {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
             <td>{{ administration[0].name[page.lang] }}</td>
 

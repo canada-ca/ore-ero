@@ -161,7 +161,7 @@
         <tbody class="row wb-eqht">
           {%- for designs in site.data.design -%}
             {%- assign design = designs[1] -%}
-            <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 349px;">
+            <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 350px;">
               <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
               <td>{{ design.description.whatItDoes[page.lang] }}</td>
               <td>
