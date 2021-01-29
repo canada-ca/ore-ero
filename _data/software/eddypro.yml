@@ -1,0 +1,36 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      EddyPro® Software is a powerful, free, and open source application for
+      processing eddy covariance data.
+    fr: >-
+      Le logiciel EddyPro® est une application open source puissante et gratuite
+      pour le traitement des données de covariance des courants de Foucault.
+category: '43232600'
+homepageURL:
+  en: 'https://www.licor.com/env/products/eddy_covariance/software.html'
+  fr: 'https://www.licor.com/env/products/eddy_covariance/software.html'
+licences:
+  - URL:
+      en: 'https://github.com/LI-COR/eddypro-engine/blob/master/LICENSE'
+      fr: 'https://github.com/LI-COR/eddypro-engine/blob/master/LICENSE'
+    spdxID: GPL-3.0-only
+name:
+  en: EddyPro
+  fr: EddyPro
+tags:
+  en:
+    - Computation
+  fr:
+    - Computation
+administrations:
+  - adminCode: aafc-aac
+    uses:
+      - contact:
+          email: noreply@canada.ca
+          name: AAFC-AAC
+        date:
+          started: '1900-01-01'
+          metadataLastUpdated: '2020-01-27'
