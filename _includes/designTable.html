@@ -14,7 +14,7 @@
               {%- endfor -%}
             </select>
           </div>
-    
+
           <div class="form-group hide">
             <label for="dt_department">{{ site.data.i18n.tables.administrations[page.lang] }}</label>
             <select class="form-control" id="dt_department" name="dt_department" data-column="8">
@@ -93,7 +93,7 @@
               {%- endfor -%}
             </select>
           </div>
-    
+
           <div class="form-group">
             <label for="dt_type">Type</label>
             <select class="form-control" id="dt_type" name="dt_type" data-column="3">
@@ -132,14 +132,19 @@
               <button type="reset" class="btn btn-default">{{ site.data.i18n.tables.clear[page.lang] }}</button>
             </div>
           </div>
-    
+
         </form>
       </details>
     </div>
-    
+
     <!-- Data Table -->
     <div class="col-md-9 mrgn-bttm-lg">
-      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [5,6,7,8], "visible": false}], "paging": true}'>
+      <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+      <table class="wb-tables tbl-gridify dataTable no-footer"
+             id="dataset-filter"
+             data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [4,5,6,7,8], "visible": false}], "paging": true, "lengthMenu": [12,24,48,96]}'
+             role="grid"
+             style="width: 0px;">
         <thead>
           <tr>
             <th>{{ site.data.i18n.tables.design[page.lang] }}</th>
@@ -153,10 +158,10 @@
             <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="row wb-eqht">
           {%- for designs in site.data.design -%}
             {%- assign design = designs[1] -%}
-            <tr>
+            <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 349px;">
               <td><a href="#{{ design.name[page.lang] | slugify: "latin" }}" aria-controls="{{ design.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ design.name[page.lang] }}</a></td>
               <td>{{ design.description.whatItDoes[page.lang] }}</td>
               <td>
@@ -197,8 +202,9 @@
           {%- endfor -%}
         </tbody>
       </table>
+      </div>
     </div>
-    
+
     <!-- Modal Lightboxes -->
     {%- for designs in site.data.design -%}
       {%- assign design = designs[1] -%}
@@ -253,6 +259,6 @@
           </div>
         </section>
     {%- endfor -%}
-    
+
     </div>
-    
+

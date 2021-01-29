@@ -109,7 +109,12 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4,5], "visible": false}], "paging": true}'>
+  <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+  <table class="wb-tables tbl-gridify dataTable no-footer"
+         id="dataset-filter"
+         data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,4,5], "visible": false}], "paging": true, "lengthMenu": [12,24,48,96]}'
+         role="grid"
+         style="width: 0px;">
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.standard[page.lang] }}</th>
@@ -120,10 +125,10 @@
         <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="row wb-eqht">
       {%- for standards in site.data.standard -%}
         {%- assign standard = standards[1] -%}
-        <tr>
+        <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 350px;">
           <td><a href="#{{ standard.name[page.lang] | slugify: "latin" }}" aria-controls="{{ standard.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ standard.name[page.lang] }}</a></td>
           <td>{{ standard.description.whatItDoes[page.lang] }}</td>
           <td><a href="{{ standard.specURL[page.lang] }}" target="_blank">{{ standard.standardOrg[page.lang] }}</a></td>
@@ -152,6 +157,7 @@
       {%- endfor -%}
     </tbody>
   </table>
+  </div>
 </div>
 
 <!-- Modal Lightboxes -->
