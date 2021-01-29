@@ -24,11 +24,11 @@
           {%- assign federal_arr = "" | split: ',' -%}
           {%- assign aboriginal_arr = "" | split: ',' -%}
           {%- assign other_arr = "" | split: ',' -%}
-          {%- assign level = 0 -%} 
+          {%- assign level = 0 -%}
           {%- assign partnership = site.data.partnership -%}
           {%- if partnership != nil -%}
             {%- assign partnership = partnership | sort -%}
-          {%- endif -%}   
+          {%- endif -%}
           {%- for govLevels in partnership -%}
             {%- assign govLevel = govLevels[0] -%}
             {% for admin in govLevels[1] %}
@@ -156,7 +156,12 @@
 
 <!-- Data Table -->
 <div class="col-md-9 mrgn-bttm-lg">
-  <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6,7,8], "visible": false}], "paging": true}'>
+  <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+  <table class="wb-tables tbl-gridify dataTable no-footer"
+         id="dataset-filter"
+         data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6,7,8], "visible": false}], "paging": true, "lengthMenu": [12,24,48,96]}'
+         role="grid"
+         style="width: 0px;">
     <thead>
       <tr>
         <th>{{ site.data.i18n.tables.partnership[page.lang] }}</th>
@@ -170,13 +175,13 @@
         <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="row wb-eqht">
     {%- for govLevels in site.data.partnership -%}
       {%- assign govLevel = govLevels[0] -%}
       {%- for admin in govLevels[1] -%}
         {%- for project in admin[1].projects -%}
         {%- assign project = projects[1] -%}
-      <tr>
+      <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 350px;">
         <td><a href="#{{ project.name[page.lang] | slugify: "latin" }}" aria-controls="{{ project.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button">{{ project.name[page.lang] }}</a></td>
         <td>{{ project.description.whatItDoes[page.lang] }}</td>
         <td>{{ site.data.i18n.categories[project.category][page.lang] }}</td>
@@ -197,6 +202,7 @@
     {%- endfor -%}
     </tbody>
   </table>
+  </div>
 </div>
 
 {%- for govLevels in site.data.partnership -%}
@@ -216,7 +222,7 @@
         {%- for tag in project.tags[page.lang] -%}
         <li>{{ tag }}</li>
         &nbsp; {%- endfor -%}
-      </ul>  
+      </ul>
       {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0].adminCode -%}
       <p><strong>{{ site.data.i18n.tables.administration[page.lang] }}:</strong> {{ administration[0].name[page.lang] }}</p>
       <p><strong> Contact:</strong> <a href="mailto:{{ project.contact.email }}" target="_blank">{{ project.contact.email }}</a></p>

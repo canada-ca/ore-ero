@@ -1,30 +1,36 @@
 <div class="row">
     <!-- Data Table -->
     <div class="col-md-12 mrgn-bttm-lg">
-      <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6], "visible": false}], "paging": true}'>
+      <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+      <table class="wb-tables tbl-gridify dataTable no-footer"
+             id="dataset-filter"
+             data-wb-tables='{"order": [0, "asc"], "columnDefs": [{"targets": [3,5,6], "visible": false}], "paging": true, "lengthMenu": [12,24,48,96]}'
+             role="grid"
+             style="width: 0px;">
         <thead>
           <tr>
-            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.projectName[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.description[page.lang] }}</th>
+            <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.licence[page.lang] }}(s)</th>
             <th>{{ site.data.i18n.tables.tag[page.lang] }}</th>
             <th>{{ site.data.i18n.tables.codeRepo[page.lang] }}</th>
             <th>{{ site.data.i18n.form.presets.orgLevel.title[page.lang] }}</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="row wb-eqht">
           {%- for govLevels in site.data.code -%}
             {%- assign govLevel = govLevels[0] -%}
             {%- for admin in govLevels[1] -%}
               {%- for release in admin[1].releases -%}
               {%- if release.tags.en contains site.active_campaign_name or release.tags.en contains site.high_value_tag -%}
-              <tr>
-                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
-                <td>{{ administration[0].name[page.lang] }}</td>
-    
+              <tr class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="vertical-align: top; min-height: 349px;">
                 <td><a href="#{{ release.name[page.lang] | slugify: "latin" }}" aria-controls="{{ release.name[page.lang] | slugify: "latin" }}" class="overlay-lnk" role="button" >{{ release.name[page.lang] }}</a></td>
                 <td>{{ release.description.whatItDoes[page.lang] }}</td>
+
+                {%- assign administration = site.data.administrations[govLevel] | where: "code", admin[0] -%}
+                <td><strong>{{ administration[0].name[page.lang] }}</strong></td>
+
                 <td>
                   {%- for licence in release.licences -%}
                     <a href="{{ licence.URL[page.lang] }}" target="_blank">{{ licence.spdxID }}</a>&nbsp;
@@ -50,7 +56,7 @@
             {%- endfor -%}
           {%- endfor -%}
 
-        {%- for softwares in site.data.software -%} 
+        {%- for softwares in site.data.software -%}
           {%- assign software = softwares[1] -%}
           {%- if software.tags.en contains site.active_campaign_name or software.tags.en contains site.high_value_tag -%}
         <tr>
@@ -65,11 +71,11 @@
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
-            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp; 
+            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp;
             {%- endfor -%}
           </td>
           <td>
-            {%- for tag in software.tags[page.lang] -%} 
+            {%- for tag in software.tags[page.lang] -%}
               {%- unless tag == site.excludeTag -%}
               {{ tag }}
               {%- endunless -%}
@@ -94,15 +100,16 @@
               {{ org }}&nbsp;
             {%- endfor -%}
           </td>
-          
+
         </tr>
         {%- endif -%}
         {%- endfor -%}
 
         </tbody>
       </table>
+      </div>
     </div>
-    
+
     <!-- Modal Lightboxes -->
     {%- for govLevels in site.data.code -%}
     {%- assign govLevel = govLevels[0] -%}
@@ -157,7 +164,7 @@
               <p><strong>{{ site.data.i18n.tables.status[page.lang] }}:</strong> {{ site.data.i18n.form.presets.status.options[status][page.lang] }}</p>
             {%- endif -%}
             <p><strong>{{ site.data.i18n.form.code.date.label[page.lang] }}:</strong> {{ release.date.created }}</p>
-    
+
             <h3>{{ site.data.i18n.tables.lightbox.contact[page.lang] }}</h3>
             {%- if release.contact.name != nil -%}
               <p>{{ release.contact.name }}</p>
@@ -178,7 +185,7 @@
     {%- endfor -%}
 
      <!-- Modal Lightboxes -->
-  {%- for softwares in site.data.software -%} 
+  {%- for softwares in site.data.software -%}
   {%- assign software = softwares[1]-%}
   <section id="{{ software.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
     <header class="modal-header">
@@ -231,6 +238,6 @@
     </div>
   </section>
 {%- endfor -%}
-    
+
     </div>
-    
+

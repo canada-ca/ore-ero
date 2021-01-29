@@ -80,13 +80,13 @@
           <label for="dt_category">{{ site.data.i18n.tables.category[page.lang] }}</label>
           <select class="form-control" id="dt_category" name="dt_category" data-column="1">
             <option value="">&nbsp;</option>
-            {%- assign cat_arr = "" | split: ',' -%} 
-            {%- for software in site.data.software -%} 
+            {%- assign cat_arr = "" | split: ',' -%}
+            {%- for software in site.data.software -%}
               {%- for category in software[1].category -%}
-                {%- assign cat_arr = cat_arr | push: category -%} 
-              {%- endfor -%} 
-            {%-endfor -%} 
-            {%- assign cat_arr = cat_arr | uniq -%} 
+                {%- assign cat_arr = cat_arr | push: category -%}
+              {%- endfor -%}
+            {%-endfor -%}
+            {%- assign cat_arr = cat_arr | uniq -%}
             {%- for cat in cat_arr -%}
             <option value="{{ site.data.i18n.categories[cat][page.lang] }}">{{ site.data.i18n.categories[cat][page.lang] }}</option>
             {%- endfor -%}
@@ -100,7 +100,7 @@
             {%- assign licence_arr = "" | split: ',' -%}
             {%- for software in site.data.software -%}
               {%- for licence in software[1].licences -%}
-                {%- assign licence_arr = licence_arr | push: licence.spdxID -%} 
+                {%- assign licence_arr = licence_arr | push: licence.spdxID -%}
               {%- endfor -%}
             {%- endfor -%}
             {%- assign licence_arr = licence_arr | group_by: "" | sort: "name" -%}
@@ -117,10 +117,10 @@
             {%- assign tag_arr = "" | split: ',' -%}
             {%- for software in site.data.software -%}
               {%- for tag in software[1].tags[page.lang] -%}
-                {%- assign tag_arr = tag_arr | push: tag -%} 
-              {%- endfor -%} 
+                {%- assign tag_arr = tag_arr | push: tag -%}
+              {%- endfor -%}
             {%- endfor -%}
-            {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%} 
+            {%- assign tag_arr = tag_arr | group_by: "" | sort:"name" -%}
 
             {%- for tag in tag_arr -%}
             <option value="{{ tag.name }}">{{ tag.name }}</option>
@@ -146,7 +146,12 @@
 
   <!-- Data Table -->
   <div class="col-md-9 mrgn-bttm-lg">
-    <table class="wb-tables table table-striped table-hover" id="dataset-filter" data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,6,7,8], "visible": false}], "paging": true}'>
+    <div id="designlayout_wrapper" class="dataTables_wrapper no-footer">
+    <table class="wb-tables tbl-gridify dataTable no-footer"
+           id="dataset-filter"
+           data-wb-tables='{"order": [1, "asc"], "columnDefs": [{"targets": [4,6,7,8], "visible": false}], "paging": true, "lengthMenu": [12,24,48,96]}'
+           role="grid"
+           style="width: 0px;">
       <thead>
         <tr>
           <th>{{ site.data.i18n.tables.software[page.lang] }}</th>
@@ -160,23 +165,23 @@
           <th>{{ site.data.i18n.tables.administration[page.lang] }}</th>
         </tr>
       </thead>
-      <tbody>
-        {%- for softwares in site.data.software -%} 
+      <tbody class="row wb-eqht">
+        {%- for softwares in site.data.software -%}
           {%- assign software = softwares[1] -%}
-        <tr>
+        <tr class="col-xs-12 col-sm-6 col-md-4" style="vertical-align: top; min-height: 350px;">
           <td>
             <a href="#{{ software.name[page.lang] | slugify }}" aria-controls="{{ software.name[page.lang] | slugify }}" class="overlay-lnk" role="button">{{ software.name[page.lang] }}</a></td>
-          <td>
+          <td class="text-muted">
             {{ site.data.i18n.categories[software.category][page.lang] }}
           </td>
           <td>{{ software.description.whatItDoes[page.lang] }}</td>
           <td>
             {%- for licence in software.licences -%}
-            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp; 
+            <a href="{{ licence.URL[page.lang] }}" target="_blank" >{{ licence.spdxID }}</a>&nbsp;
             {%- endfor -%}
           </td>
           <td>
-            {%- for tag in software.tags[page.lang] -%} 
+            {%- for tag in software.tags[page.lang] -%}
               {{ tag }}
             {%- endfor -%}
           </td>
@@ -209,10 +214,11 @@
         {%- endfor -%}
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- Modal Lightboxes -->
-  {%- for softwares in site.data.software -%} 
+  {%- for softwares in site.data.software -%}
     {%- assign software = softwares[1]-%}
     <section id="{{ software.name[page.lang] | slugify }}" class="wb-overlay modal-content overlay-def wb-popup-mid">
       <header class="modal-header">
