@@ -27,7 +27,7 @@ jobs:
         run: bundle exec htmlproofer --disable-external --allow-hash-href ./_site
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.4
+        uses: actions/setup-node@v2.1.5
 
       - name: Install NPM dependencies
         run: npm ci
