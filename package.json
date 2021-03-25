@@ -35,7 +35,7 @@
     "eslint": "^7.22.0",
     "eslint-plugin-prettier": "^3.3.1",
     "licensee": "^8.1.0",
-    "markdownlint-cli": "^0.25.0",
+    "markdownlint-cli": "^0.27.1",
     "prettier": "^2.2.1",
     "vnu-jar": "^21.2.5"
   },
