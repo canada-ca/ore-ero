@@ -37,7 +37,7 @@
     "licensee": "^8.2.0",
     "markdownlint-cli": "^0.27.1",
     "prettier": "^2.2.1",
-    "vnu-jar": "^21.2.5"
+    "vnu-jar": "^21.4.9"
   },
   "dependencies": {}
 }
