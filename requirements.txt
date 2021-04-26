@@ -1,2 +1,2 @@
-yamale==3.0.4
+yamale==3.0.6
 yamllint==1.26.1
