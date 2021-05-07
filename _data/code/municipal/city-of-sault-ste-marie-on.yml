@@ -225,3 +225,50 @@ releases:
       - JavaScript
       - TypeScript
     status: Maintained
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2021-01-29'
+      metadataLastUpdated: '2021-05-07'
+    description:
+      whatItDoes:
+        en: >-
+          A tool to programmatically scrape the clearance certificate status
+          from the WSIB Online Services website. 
+        fr: >-
+          Un outil pour extraire par programme le statut du certificat de
+          décharge du site Web des services en ligne de la WSIB.
+    category: '43232300'
+    name:
+      en: wsib-clearance-check
+      fr: wsib-clearance-check
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/wsib-clearance-check/blob/main/LICENSE'
+          fr: 'https://github.com/cityssm/wsib-clearance-check/blob/main/LICENSE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/wsib-clearance-check.git'
+      fr: 'https://github.com/cityssm/wsib-clearance-check.git'
+    tags:
+      en:
+        - wsib
+        - clearance
+        - certificate
+      fr:
+        - wsib
+        - 'décharge '
+        - certificat
+    downloadURL:
+      en: 'https://github.com/cityssm/wsib-clearance-check/releases'
+      fr: 'https://github.com/cityssm/wsib-clearance-check/releases'
+    homepageURL:
+      en: 'https://github.com/cityssm/wsib-clearance-check'
+      fr: 'https://github.com/cityssm/wsib-clearance-check'
+    languages:
+      - JavaScript
+      - TypeScript
