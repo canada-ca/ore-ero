@@ -235,7 +235,7 @@ releases:
       whatItDoes:
         en: >-
           A tool to programmatically scrape the clearance certificate status
-          from the WSIB Online Services website. 
+          from the WSIB Online Services website.
         fr: >-
           Un outil pour extraire par programme le statut du certificat de
           décharge du site Web des services en ligne de la WSIB.
