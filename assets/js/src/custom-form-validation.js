@@ -9,8 +9,7 @@ const lettersSpaceError = {
 };
 const alphanumericSpaceError = {
   en: 'Letters and numbers with spaces only please.',
-  fr:
-    'Veuillez fournir seulement des lettres et des chiffres avec des espaces.',
+  fr: 'Veuillez fournir seulement des lettres et des chiffres avec des espaces.',
 };
 const namesError = {
   en: 'Please enter a valid name.',

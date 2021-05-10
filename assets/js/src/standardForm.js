@@ -151,9 +151,8 @@ function getStandardObject() {
     standardObject.administrations[0].references = [];
     standardObject.administrations[0].adminCode = getAdminCode();
     if ($('#contactemail').val())
-      standardObject.administrations[0].contact.email = $(
-        '#contactemail'
-      ).val();
+      standardObject.administrations[0].contact.email =
+        $('#contactemail').val();
     if ($('#contactname').val()) {
       standardObject.administrations[0].contact.name = $('#contactname').val();
     }

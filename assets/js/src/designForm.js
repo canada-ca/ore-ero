@@ -105,13 +105,11 @@ function getDesignObject() {
     designObject.administrations[0].uses[0].designStatus = {};
     designObject.administrations[0].adminCode = getAdminCode();
     if ($('#contactemail').val())
-      designObject.administrations[0].uses[0].contact.email = $(
-        '#contactemail'
-      ).val();
+      designObject.administrations[0].uses[0].contact.email =
+        $('#contactemail').val();
     if ($('#contactname').val()) {
-      designObject.administrations[0].uses[0].contact.name = $(
-        '#contactname'
-      ).val();
+      designObject.administrations[0].uses[0].contact.name =
+        $('#contactname').val();
     }
     if ($('#enteam').val() || $('#frteam').val()) {
       designObject.administrations[0].uses[0].team = {};
@@ -122,14 +120,13 @@ function getDesignObject() {
     }
     if ($('#date').val())
       designObject.administrations[0].uses[0].date.started = $('#date').val();
-    designObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
+    designObject.administrations[0].uses[0].date.metadataLastUpdated =
+      getToday();
     if ($('#designStatus').val()) {
-      designObject.administrations[0].uses[0].designStatus.en = $(
-        '#designStatus'
-      ).val();
-      designObject.administrations[0].uses[0].designStatus.fr = $(
-        '#designStatus'
-      ).data('fr');
+      designObject.administrations[0].uses[0].designStatus.en =
+        $('#designStatus').val();
+      designObject.administrations[0].uses[0].designStatus.fr =
+        $('#designStatus').data('fr');
     }
   }
   if (
