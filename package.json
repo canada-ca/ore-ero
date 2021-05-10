@@ -36,7 +36,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "licensee": "^8.2.0",
     "markdownlint-cli": "^0.27.1",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "vnu-jar": "^21.4.9"
   },
   "dependencies": {}
