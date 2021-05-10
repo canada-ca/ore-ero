@@ -102,13 +102,11 @@ function getsoftwareObject() {
     softwareObject.administrations[0].uses[0].date = {};
     softwareObject.administrations[0].adminCode = getAdminCode();
     if ($('#contactemail').val())
-      softwareObject.administrations[0].uses[0].contact.email = $(
-        '#contactemail'
-      ).val();
+      softwareObject.administrations[0].uses[0].contact.email =
+        $('#contactemail').val();
     if ($('#contactname').val()) {
-      softwareObject.administrations[0].uses[0].contact.name = $(
-        '#contactname'
-      ).val();
+      softwareObject.administrations[0].uses[0].contact.name =
+        $('#contactname').val();
     }
     if ($('#enteam').val() || $('#frteam').val()) {
       softwareObject.administrations[0].uses[0].team = {};
@@ -119,7 +117,8 @@ function getsoftwareObject() {
     }
     if ($('#date').val())
       softwareObject.administrations[0].uses[0].date.started = $('#date').val();
-    softwareObject.administrations[0].uses[0].date.metadataLastUpdated = getToday();
+    softwareObject.administrations[0].uses[0].date.metadataLastUpdated =
+      getToday();
   }
 
   if (
