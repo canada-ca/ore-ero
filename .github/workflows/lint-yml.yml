@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Checkout Main repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2.2.2
