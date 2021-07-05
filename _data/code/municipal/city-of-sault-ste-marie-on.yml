@@ -272,3 +272,61 @@ releases:
     languages:
       - JavaScript
       - TypeScript
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2021-05-27'
+      metadataLastUpdated: '2021-07-05'
+    description:
+      whatItDoes:
+        en: >-
+          A system for tracking various corporate records administered by the
+          City Clerks Department.
+        fr: >-
+          Un système de suivi de divers dossiers d'entreprise administré par le
+          service des greffiers municipaux.
+    category: '43231500'
+    name:
+      en: corporate-records-manager
+      fr: corporate-records-manager
+    licences:
+      - URL:
+          en: >-
+            https://github.com/cityssm/corporate-records-manager/blob/main/LICENSE
+          fr: >-
+            https://github.com/cityssm/corporate-records-manager/blob/main/LICENSE
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/corporate-records-manager'
+      fr: 'https://github.com/cityssm/corporate-records-manager'
+    tags:
+      en:
+        - easement
+        - deed
+        - bylaw
+        - agreement
+        - records
+        - legal
+      fr:
+        - servitude
+        - acte
+        - arrêté
+        - accord
+        - enregistrements
+        - légal
+    downloadURL:
+      en: 'https://github.com/cityssm/corporate-records-manager/releases'
+      fr: 'https://github.com/cityssm/corporate-records-manager/releases'
+    homepageURL:
+      en: 'https://cityssm.github.io/corporate-records-manager/'
+      fr: 'https://cityssm.github.io/corporate-records-manager/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - TypeScript
+    status: Beta
