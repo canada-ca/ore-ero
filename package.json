@@ -8,10 +8,10 @@
     "cypress:run": "cypress run",
     "lint": "npm run lint:js && npm run lint:html",
     "lint:html": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --no-langdetect --skip-non-html _site/",
-    "lint:js": "eslint assets/js/src/**",
+    "lint:js": "eslint .",
     "lint:md": "markdownlint \"**/*.md\" -i node_modules/ -i _data/spdx/",
     "open-licences": "licensee --errors-only",
-    "prettify": "eslint assets/js/src/** --fix",
+    "prettify": "eslint . --fix",
     "test": "npm run lint && npm run open-licences"
   },
   "repository": {
@@ -32,7 +32,8 @@
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
     "cypress": "^8.7.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "licensee": "^8.2.0",
     "markdownlint-cli": "^0.29.0",
