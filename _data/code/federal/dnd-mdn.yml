@@ -1,0 +1,58 @@
+---
+schemaVersion: '1.0'
+adminCode: dnd-mdn
+releases:
+  - contact:
+      email: Matthew.MacLeod3@forces.gc.ca
+      name: Matthew MacLeod
+    date:
+      created: '2021-04-20'
+      metadataLastUpdated: '2021-11-02'
+    description:
+      whatItDoes:
+        en: >-
+          Maps age-stratified infection fatality rates from Italy, France and
+          the Diamond Princess Cruise Ship onto Canadian national and
+          sub-national demographics to generate estimates for those populations.
+        fr: >-
+          Associe les TLI par âge de l'Italie, de la France et du Diamond
+          Princess aux segments démographiques nationaux et infranationaux du
+          Canada afin de générer des estimations pour ces populations.
+    category: '43233500'
+    name:
+      en: >-
+        The Impact of Age Demographics on Interpreting and Applying
+        Population-Wide IFR for COVID-19
+      fr: >-
+        Incidence de l'âge sur l'interprétation et l'application du TLI à la
+        COVID-19 à toute la population
+    licences:
+      - URL:
+          en: >-
+            https://github.com/DND-DRDC-RDDC/OS_covid_IFR_Lombardy-MRM_DGH/blob/master/LICENSE
+          fr: >-
+            https://github.com/DND-DRDC-RDDC/OS_covid_IFR_Lombardy-MRM_DGH/blob/master/LICENSE
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/DND-DRDC-RDDC/OS_covid_IFR_Lombardy-MRM_DGH'
+      fr: 'https://github.com/DND-DRDC-RDDC/OS_covid_IFR_Lombardy-MRM_DGH'
+    tags:
+      en:
+        - COVID-19
+        - infection fatality rate
+        - demographics
+        - credible intervals
+      fr:
+        - COVID-19
+        - taux de létalité découlant de l’infection
+        - données démographiques
+        - intervalles crédibles
+    languages:
+      - R
+    status: Beta
+    team:
+      en: ADM DRDC
+      fr: SMA RDDC
