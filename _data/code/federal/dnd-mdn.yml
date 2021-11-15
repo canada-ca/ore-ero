@@ -102,3 +102,55 @@ releases:
     team:
       en: DRDC CORA
       fr: RDDC CARO
+  - contact:
+      email: stephen.okazawa@forces.gc.ca
+      name: Stephen Okazawa
+    date:
+      created: '2021-07-06'
+      metadataLastUpdated: '2021-11-15'
+    description:
+      whatItDoes:
+        en: >-
+          PyCoMod is a Python package for building and running
+          Susceptible-Infectious-Recovered (SIR) and similar compartment models
+          derived from systems of differential equations.
+        fr: >-
+          PyCoMod est un paquet Python pour construire et exécuter des modèles
+          compartimentaux Susceptible-Infectieux-Rétablis (SIR) et des modèles
+          similaires dérivés de systèmes d'équations différentielles.
+    category: '43232600'
+    name:
+      en: PyCoMod
+      fr: PyCoMod
+    licences:
+      - URL:
+          en: 'https://spdx.org/licenses/BSD-3-Clause.html'
+          fr: 'https://spdx.org/licenses/BSD-3-Clause.html'
+        spdxID: BSD-3-Clause
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/DND-DRDC-RDDC/OS_PyCoMod'
+      fr: 'https://github.com/DND-DRDC-RDDC/OS_PyCoMod'
+    tags:
+      en:
+        - COVID-19
+        - SIR
+        - compartment model
+        - modelling
+        - simulation
+        - Monte Carlo
+      fr:
+        - COVID-19
+        - SIR
+        - modèles compartimentaux
+        - modélisation
+        - simulation
+        - Monte Carlo
+    languages:
+      - Python
+    status: Beta
+    team:
+      en: DRDC CORA
+      fr: RDDC CARO
