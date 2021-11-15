@@ -56,3 +56,49 @@ releases:
     team:
       en: ADM DRDC
       fr: SMA RDDC
+  - contact:
+      email: emile.pelletier@forces.gc.ca
+      name: Emile Pelletier
+    date:
+      created: '2021-10-01'
+      metadataLastUpdated: '2021-11-15'
+    description:
+      whatItDoes:
+        en: >-
+          The actions could be Post, Test or Isolate. The observations are
+          either symptoms or COVID test results; then belief is if a COVID-19
+          infection exists
+        fr: >-
+          Les actions possibles : Post, Tester ou Isoler. Les observations sont
+          des symptômes ou des résultats de test; l’hypothèse est qu’il existe
+          une infection de COVID  
+    category: '43232600'
+    name:
+      en: COVID-19-POMDP-Dashboard
+      fr: Tableau de bord POMDP - COVID-19
+    licences:
+      - URL:
+          en: 'https://spdx.org/licenses/MIT.html'
+          fr: 'https://spdx.org/licenses/MIT.html'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/DND-DRDC-RDDC/OS_COVID-19-POMDP-Dashboard'
+      fr: 'https://github.com/DND-DRDC-RDDC/OS_COVID-19-POMDP-Dashboard'
+    tags:
+      en:
+        - COVID-19
+        - Maritime Operational Research and Analysis
+        - Partially Observable Markov Decision Processes
+      fr:
+        - COVID-19
+        - Analyse et recherche opérationnelle maritime
+        - processus décisionnel de Markov partiellement observable
+    languages:
+      - R
+    status: Alpha
+    team:
+      en: DRDC CORA
+      fr: RDDC CARO
