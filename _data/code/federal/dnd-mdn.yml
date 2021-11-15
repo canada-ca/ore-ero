@@ -71,7 +71,7 @@ releases:
         fr: >-
           Les actions possibles : Post, Tester ou Isoler. Les observations sont
           des symptômes ou des résultats de test; l’hypothèse est qu’il existe
-          une infection de COVID  
+          une infection de COVID
     category: '43232600'
     name:
       en: COVID-19-POMDP-Dashboard
