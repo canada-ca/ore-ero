@@ -102,3 +102,51 @@ releases:
       - CSS
       - CoffeeScript
     status: Maintained
+  - contact:
+      email: gigi.chang@servicecanada.gc.ca
+      name: Gigi Chang
+    date:
+      created: '2021-06-15'
+      metadataLastUpdated: '2021-11-15'
+    description:
+      whatItDoes:
+        en: >-
+          Build a relevant, usable and inclusive Design System that will enable
+          DECD Product Teams to deliver a new Service Canada Digital Centre
+          experience.
+        fr: >-
+          Construire un système de conception pertinent, utilisable et inclusif
+          qui permettra aux équipes de produits d'ENDC d'offrir une nouvelle
+          expérience du Centre numérique de Service Canada.
+    category: '43232400'
+    name:
+      en: DECD Design System
+      fr: Système De Conception D'ENDC
+    licences:
+      - URL:
+          en: >-
+            https://github.com/DTS-STN/DECD-Design-System/blob/develop/LICENSE.md
+          fr: >-
+            https://github.com/DTS-STN/DECD-Design-System/blob/develop/LICENSE.md
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/DTS-STN/DECD-Design-System'
+      fr: 'https://github.com/DTS-STN/DECD-Design-System'
+    tags:
+      en:
+        - design system
+        - react
+        - component library
+      fr:
+        - système de conception
+        - 'react '
+        - bibliothèque de composants
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - React
+      - TailwindCSS
