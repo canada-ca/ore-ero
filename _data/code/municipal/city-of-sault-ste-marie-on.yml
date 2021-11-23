@@ -43,7 +43,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2019-11-10'
-      metadataLastUpdated: '2020-04-27'
+      metadataLastUpdated: '2021-11-23'
     description:
       whatItDoes:
         en: >-
@@ -72,18 +72,42 @@ releases:
     tags:
       en:
         - lottery
+        - tickets
+        - raffle
+        - bingo
+        - nevada
       fr:
         - 'loterie '
+        - billets
+        - tombola
+        - bingo
+        - nevada
+    downloadURL:
+      en: 'https://github.com/cityssm/lottery-licence-manager/releases'
+      fr: 'https://github.com/cityssm/lottery-licence-manager/releases'
     homepageURL:
       en: 'https://cityssm.github.io/lottery-licence-manager/'
       fr: 'https://cityssm.github.io/lottery-licence-manager/'
     languages:
       - JavaScript
+      - TypeScript
       - HTML
       - CSS
-      - TypeScript
       - SQLite
-    status: Beta
+    relatedCode:
+      - URL:
+          en: 'https://nodejs.org/en/'
+          fr: 'https://nodejs.org/fr/'
+        name:
+          en: Node.js
+          fr: Node.js
+      - URL:
+          en: 'https://expressjs.com/'
+          fr: 'https://expressjs.com/fr/'
+        name:
+          en: Express
+          fr: Express
+    status: Maintained
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
