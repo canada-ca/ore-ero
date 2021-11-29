@@ -154,3 +154,50 @@ releases:
     team:
       en: DRDC CORA
       fr: RDDC CARO
+  - contact:
+      email: Matthew.MacLeod3@forces.gc.ca
+      name: Matthew R. MacLeod
+    date:
+      created: '2021-07-20'
+      metadataLastUpdated: '2021-11-29'
+    description:
+      whatItDoes:
+        en: >-
+          Calculates and produces figures for limiting lines of approach to a
+          ship by a submarine, where that submarine may sprint with an impact on
+          its endurance.
+        fr: >-
+          Calculs et production de chiffres pour limiter les voies d’approche
+          d’un navire par un sous-marin. Celui-ci peut avancer très vite sur une
+          courte distance, mais son endurance en subira le contrecoup.
+    category: '43232600'
+    name:
+      en: Endurance Limited Lines of Approach
+      fr: Voies d'approche limitées sur le plan de l'endurance
+    licences:
+      - URL:
+          en: 'https://github.com/DND-DRDC-RDDC/OS_ELLA/blob/master/LICENSE'
+          fr: 'https://github.com/DND-DRDC-RDDC/OS_ELLA/blob/master/LICENSE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/DND-DRDC-RDDC/OS_ELLA'
+      fr: 'https://github.com/DND-DRDC-RDDC/OS_ELLA'
+    tags:
+      en:
+        - Navy
+        - convoy
+        - submarine
+        - endurance
+      fr:
+        - Marine
+        - convoi
+        - sous-marin
+        - endurance
+    languages:
+      - R
+    team:
+      en: Health Services Operational Research Team CORA DRDC
+      fr: Équipe de recherche opérationnelle des Services de santé CARO RDDC
