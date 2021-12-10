@@ -7,7 +7,7 @@ releases:
       name: Matthew MacLeod
     date:
       created: '2021-04-20'
-      metadataLastUpdated: '2021-11-02'
+      metadataLastUpdated: '2021-12-10'
     description:
       whatItDoes:
         en: >-
@@ -54,8 +54,8 @@ releases:
       - R
     status: Beta
     team:
-      en: ADM DRDC
-      fr: SMA RDDC
+      en: DRDC CORA
+      fr: RDDC CARO
   - contact:
       email: emile.pelletier@forces.gc.ca
       name: Emile Pelletier
