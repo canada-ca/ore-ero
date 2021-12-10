@@ -159,7 +159,7 @@ releases:
       name: Matthew R. MacLeod
     date:
       created: '2021-07-20'
-      metadataLastUpdated: '2021-11-29'
+      metadataLastUpdated: '2021-12-10'
     description:
       whatItDoes:
         en: >-
@@ -199,5 +199,5 @@ releases:
     languages:
       - R
     team:
-      en: Health Services Operational Research Team CORA DRDC
-      fr: Équipe de recherche opérationnelle des Services de santé CARO RDDC
+      en: DRDC CORA
+      fr: RDDC CARO
