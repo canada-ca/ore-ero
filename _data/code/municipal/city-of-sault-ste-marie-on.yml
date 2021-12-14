@@ -354,3 +354,56 @@ releases:
       - CSS
       - TypeScript
     status: Beta
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2021-10-14'
+      metadataLastUpdated: '2021-12-14'
+    description:
+      whatItDoes:
+        en: >-
+          A tool to track the expiration of procurement projects and/or
+          contracts to help prepare for and be proactive on upcoming sourcing
+          requirements.
+        fr: >-
+          Un outil pour suivre l'expiration des projets d'approvisionnement
+          et/ou des contrats pour aider à se préparer et être proactif sur les
+          exigences d'approvisionnement à venir.
+    category: '43231500'
+    name:
+      en: contract-expiration-tracker
+      fr: contract-expiration-tracker
+    licences:
+      - URL:
+          en: >-
+            https://github.com/cityssm/contract-expiration-tracker/blob/main/LICENSE
+          fr: >-
+            https://github.com/cityssm/contract-expiration-tracker/blob/main/LICENSE
+        spdxID: MIT-0
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/contract-expiration-tracker'
+      fr: 'https://github.com/cityssm/contract-expiration-tracker'
+    tags:
+      en:
+        - contract
+        - expiration
+      fr:
+        - contrat
+        - expiration
+    downloadURL:
+      en: 'https://github.com/cityssm/contract-expiration-tracker/releases'
+      fr: 'https://github.com/cityssm/contract-expiration-tracker/releases'
+    homepageURL:
+      en: 'https://cityssm.github.io/contract-expiration-tracker/'
+      fr: 'https://cityssm.github.io/contract-expiration-tracker/'
+    languages:
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - SQLite
+    status: Alpha
