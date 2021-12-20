@@ -32,7 +32,7 @@
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
     "cypress": "^9.1.1",
-    "eslint": "^8.4.0",
+    "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "licensee": "^8.2.0",
