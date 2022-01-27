@@ -359,7 +359,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2021-10-14'
-      metadataLastUpdated: '2021-12-14'
+      metadataLastUpdated: '2022-01-27'
     description:
       whatItDoes:
         en: >-
@@ -380,7 +380,7 @@ releases:
             https://github.com/cityssm/contract-expiration-tracker/blob/main/LICENSE
           fr: >-
             https://github.com/cityssm/contract-expiration-tracker/blob/main/LICENSE
-        spdxID: MIT-0
+        spdxID: MIT
         level:
           en: Main license
           fr: License principale
@@ -391,9 +391,11 @@ releases:
       en:
         - contract
         - expiration
+        - procurement
       fr:
         - contrat
         - expiration
+        - approvisionnement
     downloadURL:
       en: 'https://github.com/cityssm/contract-expiration-tracker/releases'
       fr: 'https://github.com/cityssm/contract-expiration-tracker/releases'
@@ -406,4 +408,4 @@ releases:
       - HTML
       - CSS
       - SQLite
-    status: Alpha
+    status: Beta
