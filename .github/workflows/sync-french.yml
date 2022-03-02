@@ -18,11 +18,11 @@ jobs:
 
     steps:
       - name: Checkout Main repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: english
       - name: Checkout French mirror
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: canada-ca/ore-ero-fr
           path: french
