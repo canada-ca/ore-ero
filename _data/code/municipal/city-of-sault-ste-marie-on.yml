@@ -409,3 +409,57 @@ releases:
       - CSS
       - SQLite
     status: Beta
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2022-01-05'
+      metadataLastUpdated: '2022-05-11'
+    description:
+      whatItDoes:
+        en: >-
+          An application built to manage the general licences issued by
+          municipalities.
+        fr: >-
+          Une application conçue pour gérer les licences générales délivrées par
+          les municipalités.
+    category: '43231500'
+    name:
+      en: general-licence-manager
+      fr: general-licence-manager
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/general-licence-manager/blob/main/LICENSE'
+          fr: 'https://github.com/cityssm/general-licence-manager/blob/main/LICENSE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/general-licence-manager'
+      fr: 'https://github.com/cityssm/general-licence-manager'
+    tags:
+      en:
+        - licensing
+        - taxi
+        - vendor
+        - food
+      fr:
+        - licence
+        - taxi
+        - vendeur
+        - aliments
+    downloadURL:
+      en: 'https://github.com/cityssm/general-licence-manager/releases'
+      fr: 'https://github.com/cityssm/general-licence-manager/releases'
+    homepageURL:
+      en: 'https://cityssm.github.io/general-licence-manager/'
+      fr: 'https://cityssm.github.io/general-licence-manager/'
+    languages:
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - SQLite
+      - NodeJS
+    status: Beta
