@@ -271,6 +271,7 @@ releases:
           fr: 'https://gdal.org/license.html'
         name:
           en: GDAL License
+          fr: GDAL License
     status: Alpha
     team:
       en: DRDC ORC
