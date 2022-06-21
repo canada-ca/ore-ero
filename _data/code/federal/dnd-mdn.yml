@@ -201,3 +201,78 @@ releases:
     team:
       en: DRDC CORA
       fr: RDDC CARO
+  - contact:
+      email: jeff.secker@ecn.forces.gc.ca
+      name: Jeff Secker
+    date:
+      created: '2021-10-21'
+      metadataLastUpdated: '2022-06-21'
+    description:
+      whatItDoes:
+        en: >-
+          RADARSAT Constellation Mission (RCM) satellites collect both C-band
+          Synthetic Aperture Radar (SAR) image data and ship-self-reporting
+          Automatic Identification System (AIS) data from boats and ships.
+        fr: >-
+          The files provide: (i) GDAL C++ driver code to open and ingest the
+          C-band SAR images; and (ii) Python code to extract metadata from the
+          C-band SAR images and compute other relevant quantities.
+      howItWorks:
+        en: >-
+          Les satellites de la MCR recueillent les données d’image du radar à
+          synthèse d’ouverture (SAR) en bande C et les données provenant du
+          système d’identification automatique des bateaux et navires.
+        fr: >-
+          Les fichiers offrent i) le code du pilote C++ de la GDAL pour ouvrir
+          et intégrer les images du SAR en bande C et ii) le code Python pour
+          extraire les métadonnées des images et faire d’autres calculs.
+    category: '43233400'
+    name:
+      en: >-
+        RADARSAT Constellation Mission (RCM) C++ driver and Python metadata
+        extraction code
+      fr: >-
+        Pilote C++ et code d'extraction des métadonnées Python (mission de la
+        Constellation RADARSAT (MCR))
+    licences:
+      - URL:
+          en: 'https://spdx.org/licenses/Python-2.0.html'
+          fr: 'https://spdx.org/licenses/Python-2.0.html'
+        spdxID: Python-2.0
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: >-
+        https://github.com/DND-DRDC-RDDC/OS_DriverMetadataExtractionCodes_RCM_C-band_SARdata
+      fr: >-
+        https://github.com/DND-DRDC-RDDC/OS_DriverMetadataExtractionCodes_RCM_C-band_SARdata
+    tags:
+      en:
+        - RCM
+        - RADARSAT Constellation Mission
+        - GDAL
+        - Driver
+        - C++
+        - Python
+      fr:
+        - MCR
+        - mission de la Constellation RADARSAT
+        - GDAL
+        - pilote
+        - C++
+        - Python
+    languages:
+      - Python
+      - C++
+    relatedCode:
+      - URL:
+          en: 'https://gdal.org/license.html'
+          fr: 'https://gdal.org/license.html'
+        name:
+          en: GDAL License
+          fr: GDAL License
+    status: Alpha
+    team:
+      en: DRDC ORC
+      fr: RDDC CRO
