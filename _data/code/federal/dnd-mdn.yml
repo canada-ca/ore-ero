@@ -212,11 +212,11 @@ releases:
         en: >-
           RADARSAT Constellation Mission (RCM) satellites collect both C-band
           Synthetic Aperture Radar (SAR) image data and ship-self-reporting
-          Automatic Identification System (AIS) data from boats and ships. 
+          Automatic Identification System (AIS) data from boats and ships.
         fr: >-
           The files provide: (i) GDAL C++ driver code to open and ingest the
           C-band SAR images; and (ii) Python code to extract metadata from the
-          C-band SAR images and compute other relevant quantities. 
+          C-band SAR images and compute other relevant quantities.
       howItWorks:
         en: >-
           Les satellites de la MCR recueillent les données d’image du radar à
