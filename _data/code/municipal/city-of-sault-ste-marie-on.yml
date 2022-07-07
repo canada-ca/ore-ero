@@ -359,7 +359,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2021-10-14'
-      metadataLastUpdated: '2022-01-27'
+      metadataLastUpdated: '2022-07-07'
     description:
       whatItDoes:
         en: >-
@@ -404,11 +404,12 @@ releases:
       fr: 'https://cityssm.github.io/contract-expiration-tracker/'
     languages:
       - JavaScript
-      - TypeScript
       - HTML
       - CSS
+      - TypeScript
       - SQLite
-    status: Beta
+      - NodeJS
+    status: Maintained
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
