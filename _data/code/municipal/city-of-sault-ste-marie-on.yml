@@ -301,7 +301,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2021-05-27'
-      metadataLastUpdated: '2021-07-05'
+      metadataLastUpdated: '2022-07-07'
     description:
       whatItDoes:
         en: >-
@@ -353,7 +353,7 @@ releases:
       - HTML
       - CSS
       - TypeScript
-    status: Beta
+    status: Maintained
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
