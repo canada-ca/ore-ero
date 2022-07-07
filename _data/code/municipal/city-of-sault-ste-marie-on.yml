@@ -166,7 +166,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2020-02-19'
-      metadataLastUpdated: '2020-04-16'
+      metadataLastUpdated: '2022-07-07'
     description:
       whatItDoes:
         en: A tool for managing parking tickets issued by an Ontario municipality.
@@ -201,7 +201,7 @@ releases:
       - CSS
       - TypeScript
       - SQLite
-    status: Alpha
+    status: Beta
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
