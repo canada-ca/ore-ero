@@ -34,7 +34,7 @@
     "cypress": "^9.5.2",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "licensee": "^8.2.0",
     "markdownlint-cli": "^0.31.1",
     "prettier": "^2.7.1",
