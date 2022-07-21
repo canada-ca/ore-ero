@@ -1,4 +1,4 @@
-([Français](#données-pour-lÉchange-de-ressources-ouvert))
+([Français](#données-pour-léchange-de-ressources-ouvert))
 
 # Open Resource Exchange Data
 
