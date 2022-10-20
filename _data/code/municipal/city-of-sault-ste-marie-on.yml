@@ -464,3 +464,55 @@ releases:
       - SQLite
       - NodeJS
     status: Beta
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2022-07-11'
+      metadataLastUpdated: '2022-10-20'
+    description:
+      whatItDoes:
+        en: >-
+          A system for managing the occupancy of lots with a focus on cemetery
+          management.
+        fr: >-
+          Un système de gestion de l'occupation des lots avec un accent sur la
+          gestion des cimetières.
+    category: '43231500'
+    name:
+      en: lot-occupancy-system
+      fr: lot-occupancy-system
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/lot-occupancy-system/blob/main/LICENSE'
+          fr: 'https://github.com/cityssm/lot-occupancy-system/blob/main/LICENSE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/lot-occupancy-system'
+      fr: 'https://github.com/cityssm/lot-occupancy-system'
+    tags:
+      en:
+        - cemeteries
+        - marinas
+        - campgrounds
+      fr:
+        - cimetières
+        - ports de plaisance
+        - terrains de camping
+    downloadURL:
+      en: 'https://github.com/cityssm/lot-occupancy-system/releases'
+      fr: 'https://github.com/cityssm/lot-occupancy-system/releases'
+    homepageURL:
+      en: 'https://cityssm.github.io/lot-occupancy-system/'
+      fr: 'https://cityssm.github.io/lot-occupancy-system/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - TypeScript
+      - SQLite
+      - NodeJS
+    status: Alpha
