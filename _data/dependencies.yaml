@@ -7524,6 +7524,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
