@@ -11793,6 +11793,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -11805,6 +11806,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -13090,6 +13094,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -13099,6 +13104,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -32459,6 +32467,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -32471,6 +32480,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35410,6 +35422,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -35422,6 +35435,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43033,6 +43049,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -43042,6 +43059,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -46369,6 +46389,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -46381,6 +46402,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -55073,6 +55097,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: font-awesome-v5-icons
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: fontkit
   origin: npm
   type: core
@@ -59507,6 +59540,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -59519,6 +59553,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63542,6 +63579,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -71049,6 +71089,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
@@ -71057,6 +71098,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -71097,9 +71141,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -73874,6 +73915,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -73886,6 +73928,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75336,6 +75381,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -75348,6 +75394,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -80015,6 +80064,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -80027,6 +80077,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -86800,6 +86853,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -86809,6 +86863,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88425,6 +88482,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
@@ -88433,6 +88491,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88473,9 +88534,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -89910,6 +89968,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -89922,6 +89981,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -96237,6 +96299,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -96249,6 +96312,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104208,6 +104274,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -104220,6 +104287,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -116304,6 +116374,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -116313,6 +116384,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120756,6 +120830,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -120768,6 +120843,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -126682,6 +126760,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: yamljs
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: yamllint
   origin: pypi
   type: core
