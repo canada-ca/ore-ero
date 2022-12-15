@@ -8893,11 +8893,15 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -9036,11 +9040,15 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -11780,11 +11788,15 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -13888,15 +13900,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/caseless'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/chai-jquery'
   origin: npm
   type: core
@@ -14342,15 +14345,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: '@types/easy-table'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/ejs'
   origin: npm
   type: dev
@@ -14811,15 +14805,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/fs-extra'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/geojson'
   origin: npm
   type: dev
@@ -16620,12 +16605,16 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -17343,15 +17332,6 @@
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
-- dependency: '@types/request'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/resize-observer-browser'
   origin: npm
   type: core
@@ -17997,9 +17977,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -18442,6 +18419,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -19579,6 +19559,15 @@
         en: CDTS
         fr: SGDC
 - dependency: '@wdio/dot-reporter'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: '@wdio/globals'
   origin: npm
   type: dev
   admins:
@@ -23972,15 +23961,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: archiver
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: archy
   origin: npm
   type: core
@@ -25664,9 +25644,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -25759,9 +25736,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -26764,6 +26738,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: await-to-js
@@ -26826,9 +26803,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -26898,9 +26872,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -29289,9 +29260,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -33397,9 +33365,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -34330,6 +34295,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -37026,15 +36994,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: compress-commons
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: compressible
   origin: npm
   type: core
@@ -39285,15 +39244,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: crc32-stream
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: crc
   origin: npm
   type: core
@@ -39303,15 +39253,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: crc
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: create-ecdh
   origin: npm
   type: core
@@ -41635,9 +41576,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -42624,6 +42562,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -42817,6 +42758,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: deepmerge-ts
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: deepmerge
   origin: npm
   type: core
@@ -46658,6 +46608,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: eastasianwidth
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: easy-stack
   origin: npm
   type: dev
@@ -46717,9 +46676,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -48358,6 +48314,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -51545,15 +51504,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: exit-on-epipe
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: exit
   origin: npm
   type: core
@@ -52552,9 +52502,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -55135,6 +55082,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: for-in
@@ -55334,9 +55284,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -55420,8 +55367,12 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -55473,9 +55424,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -56765,6 +56713,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -58265,9 +58216,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -59533,6 +59481,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: got
@@ -60580,15 +60531,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-webdriver
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: grunt-wet-boew-postbuild
   origin: npm
   type: dev
@@ -61292,9 +61234,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -61344,9 +61283,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -61489,6 +61425,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -61730,6 +61669,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -61889,6 +61831,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -63960,9 +63905,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -65301,6 +65243,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: import-meta-resolve
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: imports-loader
   origin: npm
   type: dev
@@ -66803,6 +66754,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -66924,6 +66878,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67056,6 +67013,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67248,6 +67208,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -67568,6 +67531,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -68561,6 +68527,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -68795,6 +68764,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69574,6 +69546,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -69818,6 +69793,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -69986,6 +69964,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -70098,6 +70079,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -70179,6 +70163,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: is-typedarray
@@ -70240,9 +70227,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -70531,6 +70515,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: is-weakref
@@ -70592,6 +70579,9 @@
   admins:
     - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -71264,9 +71254,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72631,9 +72618,6 @@
         en: CDS Website
         fr: Site Web SNC
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -72961,6 +72945,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -73747,9 +73734,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -74085,11 +74069,15 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -74254,9 +74242,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -74942,9 +74927,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76722,6 +76704,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
@@ -76730,6 +76713,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -78425,12 +78411,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -87627,9 +87609,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -87985,6 +87964,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -88217,6 +88199,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -90667,9 +90652,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -93048,9 +93030,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -93661,9 +93640,6 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -96673,15 +96649,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: printj
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: prismjs
   origin: npm
   type: core
@@ -97835,9 +97802,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -102060,6 +102024,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -103381,9 +103348,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -104732,15 +104696,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: rgb2hex
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: rgba-regex
   origin: npm
   type: core
@@ -106879,12 +106834,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -111144,9 +111095,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -116854,9 +116802,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -117873,9 +117818,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -117972,9 +117914,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -122328,9 +122267,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -123510,15 +123446,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: webdriverio
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: webdriver
   origin: npm
   type: dev
@@ -124483,6 +124410,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -124524,6 +124454,9 @@
   admins:
     - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -124642,6 +124575,9 @@
   admins:
     - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -127310,15 +127246,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: zip-stream
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: zone.js
   origin: npm
   type: core
