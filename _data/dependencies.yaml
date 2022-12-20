@@ -23961,6 +23961,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: archiver
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: archy
   origin: npm
   type: core
@@ -30341,6 +30350,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: boom
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: bootlint
   origin: npm
   type: dev
@@ -32651,6 +32669,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: call-me-maybe
   origin: npm
   type: core
@@ -36994,6 +37015,15 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
+- dependency: compress-commons
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: compressible
   origin: npm
   type: core
@@ -39244,6 +39274,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: crc32-stream
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: crc
   origin: npm
   type: core
@@ -39644,6 +39683,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: cryptiles
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: crypto-browserify
   origin: npm
   type: core
@@ -57751,6 +57799,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: get-object
   origin: npm
   type: dev
@@ -61790,6 +61841,9 @@
         en: unleet
         fr: unleet
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: has-to-string-tag-x
@@ -62439,6 +62493,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: hawk
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: header-case
   origin: npm
   type: dev
@@ -62746,10 +62809,14 @@
   type: dev
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: hoist-non-react-statics
   origin: npm
   type: core
@@ -87940,6 +88007,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: object-is
   origin: npm
   type: core
@@ -98871,6 +98941,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: querystring
@@ -103664,6 +103737,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: requizzle
@@ -104696,6 +104772,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: rgb2hex
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: rgba-regex
   origin: npm
   type: core
@@ -106834,8 +106919,12 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -108027,6 +108116,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: sift
   origin: npm
   type: core
@@ -108985,6 +109077,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: sntp
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: snyk-config
   origin: npm
   type: core
@@ -120857,6 +120958,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: url-regex
@@ -123446,6 +123550,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: webdriverio
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: webdriver
   origin: npm
   type: dev
@@ -127246,6 +127359,15 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
+- dependency: zip-stream
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: zone.js
   origin: npm
   type: core
