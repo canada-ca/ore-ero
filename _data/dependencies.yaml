@@ -13897,6 +13897,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -13906,6 +13907,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -15219,6 +15223,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -15228,6 +15233,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -15769,6 +15777,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -15778,6 +15787,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -17022,7 +17034,7 @@
         fr: YouCanBenefit
 - dependency: '@types/randomcolor'
   origin: npm
-  type: core
+  type: dev
   admins:
     - city-of-sault-ste-marie-on
   projects:
@@ -17365,6 +17377,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -17374,6 +17387,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -19554,15 +19570,6 @@
         en: gwells
         fr: gwells
 - dependency: '@wdio/cli'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: '@wdio/config'
   origin: npm
   type: dev
   admins:
@@ -32436,6 +32443,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -32445,6 +32453,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44193,23 +44204,10 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - esdc-edsc
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: devtools
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: dezalgo
   origin: npm
   type: dev
@@ -46400,7 +46398,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -46413,9 +46410,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51427,6 +51421,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -64018,11 +64015,15 @@
   origin: npm
   type: core
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: http2-wrapper
   origin: npm
   type: dev
@@ -64176,6 +64177,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
@@ -64184,6 +64186,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -69983,6 +69988,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -82147,6 +82155,9 @@
         en: CDS Website
         fr: Site Web SNC
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -87232,6 +87243,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -96348,7 +96362,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -96361,9 +96374,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -99089,6 +99099,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -99100,6 +99111,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: quick-lru
   origin: npm
   type: dev
@@ -103810,11 +103824,15 @@
   origin: npm
   type: core
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: resolve-alpn
   origin: npm
   type: dev
@@ -113314,6 +113332,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
@@ -113322,6 +113341,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -116425,7 +116447,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -116435,9 +116456,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120872,7 +120890,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
@@ -120885,9 +120902,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -123553,15 +123567,6 @@
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: webdriverio
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: webdriver
   origin: npm
   type: dev
   admins:
