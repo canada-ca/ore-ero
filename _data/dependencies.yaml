@@ -759,6 +759,15 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+- dependency: '@azure/core-http-compat'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-http'
   origin: npm
   type: core
@@ -780,9 +789,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-lro'
   origin: npm
   type: core
@@ -10847,9 +10853,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: WorkIt
         fr: WorkIt
 - dependency: '@opentelemetry/core'
@@ -14462,9 +14465,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@types/eslint-scope'
   origin: npm
   type: core
@@ -16463,9 +16463,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -18060,9 +18057,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@types/ua-parser-js'
   origin: npm
   type: dev
@@ -59534,6 +59528,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -59542,6 +59537,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: got
   origin: npm
   type: core
@@ -96944,9 +96942,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -105752,11 +105747,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: safe-regex
   origin: npm
   type: core
@@ -106209,9 +106208,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -116941,9 +116937,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -117992,9 +117985,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -126305,9 +126295,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -126360,9 +126347,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
