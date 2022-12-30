@@ -46464,6 +46464,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -46482,6 +46483,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -51040,6 +51044,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -51047,6 +51052,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: event-target-polyfill
   origin: npm
   type: dev
@@ -55931,6 +55939,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -55938,6 +55947,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: front-matter
   origin: npm
   type: dev
@@ -60798,6 +60810,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: gulp-include
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: gulp-istanbul
   origin: npm
   type: dev
@@ -80883,6 +80904,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -80890,6 +80912,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: map-visit
   origin: npm
   type: core
@@ -92859,6 +92884,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -92866,6 +92892,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: pause
   origin: npm
   type: core
@@ -110919,10 +110948,14 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: sponge-case
   origin: npm
   type: dev
@@ -111954,6 +111987,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -111961,6 +111995,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: stream-each
   origin: npm
   type: core
