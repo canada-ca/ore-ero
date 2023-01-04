@@ -17608,6 +17608,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: '@wdio/config'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@wdio/dot-reporter'
   origin: npm
   type: dev
