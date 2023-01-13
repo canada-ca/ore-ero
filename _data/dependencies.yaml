@@ -25312,6 +25312,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -25321,6 +25322,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -54475,9 +54479,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -77350,9 +77351,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -78213,9 +78211,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: lodash.invert
   origin: npm
   type: core
@@ -78292,9 +78287,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78432,9 +78424,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: lodash.ismatch
   origin: npm
   type: core
@@ -78484,9 +78473,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78568,9 +78554,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: lodash.isstring
@@ -78617,9 +78600,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -85892,6 +85872,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -85899,6 +85880,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: node-abort-controller
   origin: npm
   type: dev
@@ -90370,9 +90354,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90453,9 +90434,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -90764,9 +90742,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -92231,9 +92206,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
