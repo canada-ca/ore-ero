@@ -16275,11 +16275,7 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - esdc-edsc
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -17473,15 +17469,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/selenium-standalone'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/selenium-webdriver'
   origin: npm
   type: dev
@@ -29873,6 +29860,15 @@
     - projectName:
         en: Notify
         fr: Notification
+- dependency: blinker
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: blob-util
   origin: npm
   type: dev
@@ -33850,15 +33846,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: chardet
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: charenc
   origin: npm
   type: core
@@ -58355,15 +58342,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: 'git+https://bitbucket.org/cse-assemblyline/assemblyline_client.git@v3.7.3#egg'
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: 'git+https://github.com/bcgov/ckanext-bcgov-schema@51defa9aec6e3bcfb89ff71805b9fe1800e4a061#egg'
   origin: pypi
   type: core
@@ -58418,7 +58396,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.0.0#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.0#egg'
   origin: pypi
   type: core
   admins:
@@ -65358,6 +65336,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: importlib-metadata
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: imports-loader
   origin: npm
   type: dev
@@ -98445,15 +98432,6 @@
     - projectName:
         en: Notify
         fr: Notification
-- dependency: pycryptodome
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pycurl
   origin: pypi
   type: core
@@ -98498,15 +98476,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: pyopenssl
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pypdf2
   origin: pypi
   type: core
@@ -103345,15 +103314,6 @@
     - projectName:
         en: Notify
         fr: Notification
-- dependency: requests[security]
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: requests
   origin: pypi
   type: core
@@ -106903,6 +106863,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: sentry-sdk[flask]
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: serialize-error
   origin: npm
   type: core
@@ -109561,15 +109530,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: socketio-client
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: sockjs-client
   origin: npm
   type: core
@@ -124116,15 +124076,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: websocket-client
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: websocket-driver
   origin: npm
   type: core
@@ -127331,6 +127282,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: zipp
+  origin: pypi
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: zone.js
   origin: npm
   type: core
