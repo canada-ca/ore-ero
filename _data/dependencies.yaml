@@ -35566,6 +35566,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: clone
@@ -35598,9 +35601,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -85944,6 +85944,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: node-cache
   origin: npm
   type: dev
