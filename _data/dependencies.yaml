@@ -58405,7 +58405,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.0#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.1#egg'
   origin: pypi
   type: core
   admins:
