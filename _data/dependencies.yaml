@@ -7537,6 +7537,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
@@ -15676,15 +15679,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: '@types/json-stringify-safe'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/json5'
   origin: npm
   type: core
@@ -18183,15 +18177,6 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
-- dependency: '@types/validator'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/vfile-message'
   origin: npm
   type: core
@@ -25313,6 +25298,9 @@
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: array.prototype.flat
@@ -26763,6 +26751,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -26771,6 +26760,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: await-to-js
   origin: npm
   type: core
@@ -48372,6 +48364,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: es-set-tostringtag
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: es-shim-unscopables
   origin: npm
   type: dev
@@ -48389,6 +48390,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: es-to-primitive
   origin: npm
   type: core
@@ -54475,9 +54479,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55120,6 +55121,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -55128,6 +55130,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: for-in
   origin: npm
   type: core
@@ -56676,6 +56681,9 @@
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: functional-red-black-tree
@@ -56781,6 +56789,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -58405,7 +58416,7 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.1#egg'
+- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.0#egg'
   origin: pypi
   type: core
   admins:
@@ -59194,6 +59205,9 @@
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: global
@@ -59538,6 +59552,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: got
   origin: npm
   type: core
@@ -61743,6 +61760,18 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+- dependency: has-proto
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: has-symbol-support-x
   origin: npm
   type: core
@@ -66854,6 +66883,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: is-array-buffer
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: is-arrayish
   origin: npm
   type: core
@@ -70245,6 +70283,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -70253,6 +70292,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: is-typedarray
   origin: npm
   type: core
@@ -73978,6 +74020,9 @@
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: jshint-stylish
@@ -77346,9 +77391,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -85225,6 +85267,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: natural-compare
   origin: npm
   type: core
@@ -90353,9 +90398,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90433,9 +90475,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90741,9 +90780,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -92205,9 +92241,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -102081,6 +102114,9 @@
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: regexpp
@@ -102416,6 +102452,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105708,6 +105747,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: safe-regex
   origin: npm
   type: core
@@ -118302,6 +118344,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: typed-array-length
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: typed-styles
   origin: npm
   type: core
@@ -122009,15 +122060,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: validator
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: value-equal
   origin: npm
   type: core
@@ -124620,6 +124662,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -124628,6 +124671,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: which
   origin: npm
   type: core
