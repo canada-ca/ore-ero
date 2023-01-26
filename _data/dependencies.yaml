@@ -43144,6 +43144,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: define-properties
@@ -43183,9 +43186,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48224,6 +48224,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: es-abstract
@@ -48260,9 +48263,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48419,6 +48419,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: es-to-primitive
@@ -48455,9 +48458,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -56656,6 +56656,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: function.prototype.name
   origin: npm
   type: dev
@@ -56677,9 +56680,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -56762,6 +56762,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: functions-have-names
   origin: npm
   type: dev
@@ -56786,9 +56789,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -58086,6 +58086,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: get-symbol-description
   origin: npm
   type: dev
@@ -58106,9 +58109,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -59538,6 +59538,15 @@
         fr: GCconnex
 - dependency: gopd
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+- dependency: gopd
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -59549,9 +59558,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61489,6 +61495,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: has-bigints
@@ -61514,9 +61523,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61737,6 +61743,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: has-property-descriptors
   origin: npm
   type: dev
@@ -61757,9 +61766,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61912,6 +61918,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: has-tostringtag
   origin: npm
   type: dev
@@ -61935,9 +61944,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66179,6 +66185,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: internal-slot
@@ -66201,9 +66210,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66995,6 +67001,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-bigint
@@ -67020,9 +67029,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67130,6 +67136,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-boolean-object
@@ -67155,9 +67164,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67319,6 +67325,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-callable
@@ -67358,9 +67367,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67643,6 +67649,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-date-object
@@ -67682,9 +67691,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68759,6 +68765,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-negative-zero
@@ -68781,9 +68790,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68871,6 +68877,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-number-object
@@ -68896,9 +68905,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -69647,6 +69653,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-regex
@@ -69686,9 +69695,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -69933,6 +69939,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: is-shared-array-buffer
   origin: npm
   type: dev
@@ -69953,9 +69962,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70073,6 +70079,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-string
@@ -70098,9 +70107,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70183,6 +70189,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-symbol
@@ -70222,9 +70231,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70659,6 +70665,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: is-weakref
   origin: npm
   type: dev
@@ -70679,9 +70688,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -88134,6 +88140,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: object-keys
@@ -88170,9 +88179,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -88311,6 +88317,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: object.assign
@@ -88349,9 +88358,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -88522,6 +88528,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: object.hasown
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: object.hasown
   origin: npm
   type: dev
@@ -102085,6 +102100,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: regexp.prototype.flags
@@ -102110,9 +102128,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -105736,6 +105751,15 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: safe-regex-test
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+- dependency: safe-regex-test
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -105744,9 +105768,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -112634,6 +112655,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: string.prototype.trimend
@@ -112660,9 +112684,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -112746,6 +112767,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: string.prototype.trimstart
@@ -112772,9 +112796,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -118905,6 +118926,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: unbox-primitive
@@ -118927,9 +118951,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -124485,6 +124506,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: which-boxed-primitive
@@ -124510,9 +124534,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
