@@ -26743,10 +26743,14 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: available-typed-arrays
   origin: npm
   type: dev
@@ -48366,6 +48370,15 @@
         fr: InfoBase du GC
 - dependency: es-set-tostringtag
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+- dependency: es-set-tostringtag
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -54479,6 +54492,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55109,11 +55125,15 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -56104,9 +56124,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -56143,6 +56160,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -59180,6 +59200,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: globalthis
   origin: npm
   type: dev
@@ -59201,9 +59224,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61769,6 +61789,15 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+- dependency: has-proto
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: has-proto
   origin: npm
   type: dev
@@ -65958,9 +65987,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -66004,6 +66030,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -66889,6 +66918,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: is-array-buffer
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: is-array-buffer
   origin: npm
   type: dev
@@ -70281,10 +70319,14 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: is-typed-array
   origin: npm
   type: dev
@@ -74796,9 +74838,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -74835,6 +74874,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -77397,6 +77439,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90413,6 +90458,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90490,6 +90538,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90795,6 +90846,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -92256,6 +92310,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -98760,9 +98817,6 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -98806,6 +98860,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -113967,9 +114024,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -114010,6 +114064,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -116946,6 +117003,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -118365,6 +118425,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: typed-array-length
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: typed-array-length
   origin: npm
   type: dev
@@ -120141,9 +120210,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -120183,6 +120249,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -124675,10 +124744,14 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: which-typed-array
   origin: npm
   type: dev
