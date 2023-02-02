@@ -17792,15 +17792,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@types/stream-buffers'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/string-hash'
   origin: npm
   type: dev
@@ -44174,10 +44165,23 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+- dependency: devtools
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: dezalgo
   origin: npm
   type: dev
@@ -123635,6 +123639,15 @@
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: webdriverio
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: webdriver
   origin: npm
   type: dev
   admins:
