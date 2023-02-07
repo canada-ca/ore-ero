@@ -14380,11 +14380,7 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - esdc-edsc
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -15301,15 +15297,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: '@types/inquirer'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/intl'
   origin: npm
   type: dev
@@ -15865,15 +15852,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/lodash.flattendeep'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/lodash.isempty'
   origin: npm
   type: core
@@ -15901,15 +15879,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/lodash.pickby'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/lodash.union'
   origin: npm
   type: core
@@ -15923,12 +15892,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -15977,9 +15942,6 @@
     - phac-aspc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -16269,7 +16231,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -17301,15 +17267,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: '@types/recursive-readdir'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/redis'
   origin: npm
   type: dev
@@ -17920,15 +17877,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: '@types/through'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/tinymce'
   origin: npm
   type: dev
