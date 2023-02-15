@@ -6127,6 +6127,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@braintree/sanitize-url'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@bundle-stats/cli-utils'
   origin: npm
   type: dev
@@ -13407,6 +13416,33 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: '@turf/helpers'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: '@turf/intersect'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: '@turf/invariant'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@turist/fetch'
   origin: npm
   type: core
@@ -26694,6 +26730,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -26703,6 +26740,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -32615,6 +32655,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -32631,6 +32672,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -48333,8 +48377,12 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -55093,6 +55141,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -55102,6 +55151,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -56653,6 +56705,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -56761,6 +56816,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -57759,6 +57817,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -57775,6 +57834,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -58065,6 +58127,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -58081,6 +58144,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -59177,6 +59243,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -59391,6 +59460,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -59521,6 +59593,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -59530,6 +59603,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61476,6 +61552,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -61495,6 +61572,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61722,6 +61802,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -61739,6 +61820,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
 - dependency: has-proto
@@ -61754,8 +61838,12 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61906,6 +61994,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -61925,6 +62014,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66175,6 +66267,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -66191,6 +66284,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66883,8 +66979,12 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67000,6 +67100,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -67019,6 +67120,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67135,6 +67239,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -67154,6 +67259,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68764,6 +68872,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -68780,6 +68889,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68876,6 +68988,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -68895,6 +69008,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -69936,6 +70052,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -69952,6 +70069,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70078,6 +70198,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -70097,6 +70218,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70283,6 +70407,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -70292,6 +70417,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -70666,6 +70794,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -70682,6 +70811,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -85797,15 +85929,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: nltk
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: ckanext-canada
-        fr: ckanext-canada
 - dependency: no-case
   origin: npm
   type: core
@@ -87818,6 +87941,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -88060,6 +88186,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -94094,6 +94223,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: polygon-clipping
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: popmotion-pose
   origin: npm
   type: core
@@ -102118,6 +102256,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -102137,6 +102276,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -105771,12 +105913,16 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -108144,6 +108290,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -108160,6 +108307,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -110782,6 +110932,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: splaytree
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: split-ca
   origin: npm
   type: core
@@ -112694,6 +112853,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -112805,6 +112967,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -118390,8 +118555,12 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -118956,6 +119125,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -118972,6 +119142,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -124545,6 +124718,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -124564,6 +124738,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -124717,6 +124894,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -124726,6 +124904,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
