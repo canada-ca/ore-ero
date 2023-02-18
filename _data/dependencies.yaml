@@ -107489,6 +107489,9 @@
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: set-value
