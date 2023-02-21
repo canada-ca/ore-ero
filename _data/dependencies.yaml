@@ -14393,15 +14393,6 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
-- dependency: '@types/diff'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/dompurify'
   origin: npm
   type: dev
@@ -16693,15 +16684,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: '@types/object-inspect'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/overlayscrollbars'
   origin: npm
   type: dev
@@ -17841,15 +17823,6 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
-- dependency: '@types/supports-color'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/tapable'
   origin: npm
   type: dev
@@ -17935,15 +17908,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: '@types/tmp'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/tough-cookie'
   origin: npm
   type: dev
