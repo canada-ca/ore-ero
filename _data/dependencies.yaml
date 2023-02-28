@@ -7626,6 +7626,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: '@eslint/js'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@fontsource/barlow'
   origin: npm
   type: core
