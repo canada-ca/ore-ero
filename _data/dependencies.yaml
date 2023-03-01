@@ -100739,12 +100739,8 @@
   origin: npm
   type: core
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
