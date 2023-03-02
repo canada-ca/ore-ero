@@ -7631,7 +7631,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
