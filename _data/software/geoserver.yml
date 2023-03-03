@@ -48,5 +48,5 @@ administrations:
           started: '2018-07-02'
           metadataLastUpdated: '2023-03-03'
         team:
-          en: 'CCMEO Canadian Geospat'
-          fr: 'CCCOT Infrastructure Can'
+          en: 'CCMEO Canadian Geospatial Data Infrastructure'
+          fr: 'CCCOT Infrastructure Canadienne de Données Géospatiales'
