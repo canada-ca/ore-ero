@@ -45,12 +45,12 @@ releases:
     languages:
       - Python
     relatedCode:
-      URL:
-        en: 'https://www.itu.int/rec/R-REC-P.1812/en'
-        fr: 'https://www.itu.int/rec/R-REC-P.1812/fr'
-      name:
-        en: P.1812
-        fr: P.1812
+      - URL:
+          en: 'https://www.itu.int/rec/R-REC-P.1812/en'
+          fr: 'https://www.itu.int/rec/R-REC-P.1812/fr'
+        name:
+          en: P.1812
+          fr: P.1812
     status: Beta
     team:
       en: Communication Research Centre Canada
