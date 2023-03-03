@@ -1,0 +1,52 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      GeoServer is a mature, standards-based open source geospatial content
+      management system. GeoServer implements Open Geospatial Consortium (OGC)
+      Web services and IPA, such as WMS, WMTS, WFS, WCS etc.
+    fr: >-
+      GeoServer est un système de gestion de contenu géospatial open source,
+      mature et basé sur des normes. GeoServer met en oeuvre les services Web
+      et IPA du Open Geospatial Consortium (OGC) tels que WMS, WMTS, WFS, WCS etc.
+  howItWorks:
+    en: >-
+      GeoServer is a Java Web application, capable of running in any compliant
+      servlet container, such as Apache Tomcat.
+    fr: >-
+      GeoServer est une application Web Java, capable de fonctionner dans
+      n'importe quel conteneur de servlets conforme, tel qu'Apache Tomcat.
+category: '43232200'
+homepageURL:
+  en: 'https://geoserver.org/'
+  fr: 'https://geoserver.org/'
+licences:
+  - URL:
+      en: 'https://geoserver.org/license/'
+      fr: 'https://geoserver.org/license/'
+    spdxID: GPL-2.0-or-later
+name:
+  en: GeoServer
+  fr: GeoServer
+tags:
+  en:
+    - Geospatial
+    - Maps
+    - Location
+  fr:
+    - Géospatiale
+    - Cartes
+    - Localisation
+administrations:
+  - adminCode: nrcan
+    uses:
+      - contact:
+          email: peter.rushforth@nrcan-rncan.gc.ca
+          name: Peter Rushforth
+        date:
+          started: '2018-07-02'
+          metadataLastUpdated: '2023-03-03'
+        team:
+          en: 'CCMEO Canadian Geospat'
+          fr: 'CCCOT Infrastructure Can'
