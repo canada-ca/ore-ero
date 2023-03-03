@@ -1,0 +1,57 @@
+---
+schemaVersion: '1.0'
+adminCode: ised-isde
+releases:
+  - contact:
+      email: rso-bar@ised-isde.gc.ca
+      name: CRC Research Support Office
+    date:
+      created: '2023-01-27'
+      metadataLastUpdated: '2023-03-03'
+    description:
+      whatItDoes:
+        en: >-
+          This source code provides predictions of radio frequency path loss in
+          foliage dominant environments.
+        fr: >-
+          Ce code source calcule des estimés de l'affaiblissement de propagation
+          pour les systèmes hertziens terrestres dans des zones rurales avec une
+          végétation abondante.
+      howItWorks:
+        en: >-
+          The tool provides path loss predictions by combining multiple open-source
+          propagation models with open-access, high resolution terrain and surface data.
+        fr: >-
+          Cet outil s'appuie sur des modèles de prévision de la propagation et des données
+          libres d'accès de haute résolution du terrain et des groupes d'obstacles à la
+          surface de la Terre.
+    category: '43232800'
+    name:
+      en: Signal Attenuation through Foliage Estimator (SAFE)
+      fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
+    licences:
+      - URL:
+          en: 'https://github.com/ic-crc/SAFE-Tool/blob/main/LICENCE.md'
+          fr: 'https://github.com/ic-crc/SAFE-Tool/blob/main/LICENCE.md'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/ic-crc/SAFE-Tool'
+      fr: 'https://github.com/ic-crc/SAFE-Tool'
+    tags:
+      en:
+        - Environment
+      fr:
+        - Environnement
+    languages:
+      - Python
+    relatedCode:
+      - URL:
+          en: 'https://www.itu.int/rec/R-REC-P.1812/en'
+          fr: 'https://www.itu.int/rec/R-REC-P.1812/fr'
+        name:
+          en: P.1812
+          fr: P.1812
+    status: Beta
+    team:
+      en: Communication Research Centre Canada
+      fr: Centre de recherches sur les communications Canada
