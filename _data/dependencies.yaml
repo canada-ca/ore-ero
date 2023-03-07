@@ -708,6 +708,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/abort-controller'
   origin: npm
   type: dev
@@ -717,9 +720,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-auth'
   origin: npm
   type: core
@@ -732,6 +732,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-auth'
   origin: npm
   type: dev
@@ -741,9 +744,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-client'
   origin: npm
   type: core
@@ -756,6 +756,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-client'
   origin: npm
   type: dev
@@ -765,12 +768,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-http-compat'
   origin: npm
-  type: dev
+  type: core
   admins:
     - city-of-sault-ste-marie-on
   projects:
@@ -810,6 +810,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-lro'
   origin: npm
   type: dev
@@ -819,9 +822,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-paging'
   origin: npm
   type: core
@@ -834,6 +834,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-paging'
   origin: npm
   type: dev
@@ -843,9 +846,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-rest-pipeline'
   origin: npm
   type: core
@@ -858,6 +858,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-rest-pipeline'
   origin: npm
   type: dev
@@ -867,9 +870,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-tracing'
   origin: npm
   type: core
@@ -882,6 +882,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-tracing'
   origin: npm
   type: dev
@@ -891,9 +894,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/core-util'
   origin: npm
   type: core
@@ -906,6 +906,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/core-util'
   origin: npm
   type: dev
@@ -915,9 +918,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/identity'
   origin: npm
   type: core
@@ -930,6 +930,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/identity'
   origin: npm
   type: dev
@@ -939,9 +942,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/keyvault-keys'
   origin: npm
   type: core
@@ -954,6 +954,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/keyvault-keys'
   origin: npm
   type: dev
@@ -963,9 +966,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/logger'
   origin: npm
   type: core
@@ -978,6 +978,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/logger'
   origin: npm
   type: dev
@@ -987,9 +990,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/msal-browser'
   origin: npm
   type: core
@@ -1002,6 +1002,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/msal-browser'
   origin: npm
   type: dev
@@ -1011,9 +1014,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/msal-common'
   origin: npm
   type: core
@@ -1026,6 +1026,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/msal-common'
   origin: npm
   type: dev
@@ -1035,9 +1038,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@azure/msal-node'
   origin: npm
   type: core
@@ -1050,6 +1050,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@azure/msal-node'
   origin: npm
   type: dev
@@ -1059,9 +1062,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@babel/cli'
   origin: npm
   type: dev
@@ -6352,6 +6352,15 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+- dependency: '@cityssm/dynamics-gp'
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@cityssm/express-abuse-points'
   origin: npm
   type: core
@@ -6430,6 +6439,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@cityssm/mssql-multi-pool'
   origin: npm
   type: dev
@@ -9726,6 +9738,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@js-joda/core'
   origin: npm
   type: dev
@@ -9735,9 +9750,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@leichtgewicht/ip-codec'
   origin: npm
   type: dev
@@ -13283,6 +13295,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@tediousjs/connection-string'
   origin: npm
   type: dev
@@ -13292,9 +13307,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: '@testing-library/dom'
   origin: npm
   type: dev
@@ -13396,6 +13408,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@tootallnate/once'
   origin: npm
   type: dev
@@ -13412,9 +13427,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -16404,6 +16416,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@types/ms'
   origin: npm
   type: dev
@@ -17921,6 +17936,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@types/testing-library__dom'
   origin: npm
   type: dev
@@ -26415,6 +26433,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: asynckit
@@ -26455,9 +26476,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -31599,6 +31617,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: buffer-equal-constant-time
   origin: npm
   type: dev
@@ -31616,9 +31637,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: buffer-equal
   origin: npm
   type: core
@@ -34326,6 +34344,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: chromium-bidi
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: chromium-pickle-js
   origin: npm
   type: dev
@@ -36564,6 +36591,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: combined-stream
@@ -36604,9 +36634,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -43153,6 +43180,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: define-lazy-prop
   origin: npm
   type: dev
@@ -43170,9 +43200,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: define-properties
   origin: npm
   type: core
@@ -43387,6 +43414,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: delayed-stream
@@ -43427,9 +43457,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -46816,6 +46843,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: ecdsa-sig-formatter
   origin: npm
   type: dev
@@ -46833,9 +46863,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: ecdsa
   origin: pypi
   type: core
@@ -48362,6 +48389,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: es-aggregate-error
   origin: npm
   type: dev
@@ -48371,9 +48401,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: es-array-method-boxes-properly
   origin: npm
   type: dev
@@ -51312,6 +51339,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: events
@@ -51351,9 +51381,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -64049,6 +64076,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: http-proxy-agent
   origin: npm
   type: dev
@@ -64066,9 +64096,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -68082,6 +68109,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-docker
@@ -68107,9 +68137,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -71131,6 +71158,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-wsl
@@ -71167,9 +71197,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -73746,12 +73773,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: js-md4
-  origin: npm
-  type: dev
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -74037,6 +74058,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: jsbi
   origin: npm
   type: dev
@@ -74046,9 +74070,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: jsbn
   origin: npm
   type: core
@@ -75211,6 +75232,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: jsonwebtoken
   origin: npm
   type: dev
@@ -75228,9 +75252,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: jspdf-autotable
   origin: npm
   type: core
@@ -75503,6 +75524,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: jwa
   origin: npm
   type: dev
@@ -75520,9 +75544,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: jws
   origin: npm
   type: core
@@ -75542,6 +75563,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: jws
   origin: npm
   type: dev
@@ -75559,9 +75583,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: jwt-decode
   origin: npm
   type: core
@@ -79756,6 +79777,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - phac-aspc
@@ -79786,6 +79808,9 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -79836,9 +79861,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -84230,6 +84252,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: mitt
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: mixin-deep
   origin: npm
   type: core
@@ -84819,6 +84850,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: mssql
   origin: npm
   type: dev
@@ -84828,9 +84862,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: ms
   origin: npm
   type: core
@@ -85443,6 +85474,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: native-duplexpair
   origin: npm
   type: dev
@@ -85452,9 +85486,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: native-url
   origin: npm
   type: core
@@ -86141,6 +86172,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: node-abort-controller
   origin: npm
   type: dev
@@ -86150,9 +86184,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: node-addon-api
   origin: npm
   type: core
@@ -89538,6 +89569,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: open
@@ -89565,9 +89599,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -98522,6 +98553,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -98565,9 +98599,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -104985,6 +105016,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: rfdc
   origin: npm
   type: dev
@@ -105003,9 +105037,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -111257,6 +111288,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: sprintf-js
@@ -111293,9 +111327,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -112102,6 +112133,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: stoppable
   origin: npm
   type: dev
@@ -112111,9 +112145,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: store2
   origin: npm
   type: dev
@@ -114966,6 +114997,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: tarn
   origin: npm
   type: dev
@@ -114975,9 +115009,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: tar
   origin: npm
   type: core
@@ -115036,6 +115067,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: tedious
   origin: npm
   type: dev
@@ -115045,9 +115079,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: tedivm/stash
   origin: composer
   type: core
@@ -117956,6 +117987,9 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -117998,9 +118032,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
