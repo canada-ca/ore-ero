@@ -7151,10 +7151,14 @@
   type: dev
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@cypress/code-coverage'
   origin: npm
   type: dev
@@ -7290,6 +7294,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: '@double-great/stylelint-a11y'
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@emotion/babel-plugin-jsx-pragmatic'
   origin: npm
   type: core
@@ -10467,6 +10480,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@nodelib/fs.stat'
   origin: npm
   type: core
@@ -10538,6 +10554,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@nodelib/fs.walk'
   origin: npm
   type: core
@@ -10596,6 +10615,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@npmcli/fs'
   origin: npm
   type: core
@@ -16843,6 +16865,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@types/parse5'
   origin: npm
   type: dev
@@ -36385,6 +36410,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: colorette
   origin: npm
   type: core
@@ -39241,6 +39269,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: coverage
@@ -40258,6 +40289,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: css-functions-list
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: css-has-pseudo
   origin: npm
   type: dev
@@ -40757,6 +40797,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: cssfilter
@@ -40781,14 +40824,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: cssnano-preset-default
   origin: npm
   type: core
@@ -44579,6 +44618,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -53013,6 +53055,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: fast-json-parse
   origin: npm
   type: dev
@@ -53256,6 +53301,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: fastest-levenshtein
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: fastparse
   origin: npm
   type: core
@@ -53347,6 +53401,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: fault
   origin: npm
   type: core
@@ -59492,6 +59549,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: globjoin
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: globule
   origin: npm
   type: dev
@@ -60485,9 +60551,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: grunt-contrib-cssmin
   origin: npm
   type: dev
@@ -60782,6 +60845,15 @@
         en: GCconnex
         fr: GCconnex
 - dependency: grunt-string-replace
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: grunt-stylelint
   origin: npm
   type: dev
   admins:
@@ -63654,6 +63726,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: html-tag
   origin: npm
   type: dev
@@ -65522,6 +65597,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -79615,6 +79693,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.unescape
   origin: npm
   type: dev
@@ -81561,6 +81642,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: mathml-tag-names
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: matplotlib
   origin: pypi
   type: core
@@ -82534,6 +82624,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: merge
   origin: npm
   type: dev
@@ -92004,14 +92097,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: parseuri
   origin: npm
   type: core
@@ -93121,6 +93210,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -95192,6 +95284,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: postcss-media-query-parser
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: postcss-merge-idents
   origin: npm
   type: dev
@@ -96230,6 +96331,24 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: postcss-resolve-nested-selector
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: postcss-safe-parser
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: postcss-selector-not
   origin: npm
   type: dev
@@ -96281,6 +96400,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: postcss-svgo
   origin: npm
   type: core
@@ -99360,6 +99482,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: queue
   origin: npm
   type: core
@@ -103863,6 +103988,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: require-main-filename
@@ -104968,6 +105096,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: rev-hash
   origin: npm
   type: dev
@@ -105658,6 +105789,9 @@
     - projectName:
         en: unleet
         fr: unleet
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: run-queue
   origin: npm
   type: core
@@ -108999,6 +109133,9 @@
         en: unleet
         fr: unleet
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: slevomat/coding-standard
@@ -110181,6 +110318,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: source-map-loader
   origin: npm
   type: dev
@@ -113972,6 +114112,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: style-search
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: style-to-object
   origin: npm
   type: core
@@ -114068,6 +114217,33 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: stylelint-config-recommended
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: stylelint-config-standard
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: stylelint
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: stylis
   origin: npm
   type: core
@@ -114387,6 +114563,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: supports-preserve-symlinks-flag
   origin: npm
   type: core
@@ -114527,6 +114706,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: svgo
   origin: npm
   type: core
@@ -126343,6 +126525,9 @@
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: write-json-file
@@ -127247,6 +127432,9 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+    - projectName:
+        en: Web Experience Toolkit (WET)
+        fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: yargs-parser
   origin: npm
   type: core
