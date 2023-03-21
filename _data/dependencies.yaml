@@ -7585,7 +7585,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -7595,6 +7599,15 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+- dependency: '@eslint-community/regexpp'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
@@ -19637,6 +19650,15 @@
         en: gwells
         fr: gwells
 - dependency: '@wdio/cli'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: '@wdio/config'
   origin: npm
   type: dev
   admins:
@@ -50267,9 +50289,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -84222,6 +84241,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -93039,6 +93061,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: path-scurry
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: path-to-regexp
   origin: npm
   type: core
@@ -102571,9 +102602,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
