@@ -6559,6 +6559,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: '@cityssm/utils-datetime'
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@cnakazawa/watch'
   origin: npm
   type: dev
@@ -7603,11 +7612,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
@@ -21842,24 +21855,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: aiohttp
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: aiosignal
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: airbnb-js-shims
   origin: npm
   type: dev
@@ -22096,15 +22091,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: alembic
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: algoliasearch
   origin: npm
   type: core
@@ -22210,15 +22196,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: amqp
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: angular-animate
   origin: npm
   type: core
@@ -23284,15 +23261,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: apig-wsgi
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: apollo-boost
   origin: npm
   type: core
@@ -26437,15 +26405,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: async-timeout
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: asynckit
   origin: npm
   type: core
@@ -26758,15 +26717,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: attrs
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: audio-extensions
   origin: npm
   type: core
@@ -26889,15 +26839,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: aws-embedded-metrics
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: aws-sdk
   origin: npm
   type: core
@@ -27045,24 +26986,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: awscli-cwlogs
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: awscli
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: axe-core
   origin: npm
   type: core
@@ -29435,15 +29358,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-- dependency: bcrypt
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: beakeredis
   origin: pypi
   type: core
@@ -29662,15 +29576,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: billiard
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: bin-build
   origin: npm
   type: core
@@ -29963,23 +29868,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: blinker
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: blob-util
   origin: npm
   type: dev
@@ -30542,33 +30434,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: boto3
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: botocore
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: boto
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: bottleneck
   origin: npm
   type: core
@@ -32681,28 +32546,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: cachelib
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: cachetools
   origin: pypi
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: caching-transform
   origin: npm
   type: core
@@ -33613,15 +33465,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: celery[sqs]
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: center-align
   origin: npm
   type: dev
@@ -33635,24 +33478,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: certifi
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: cffi
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: chai
   origin: npm
   type: core
@@ -33980,15 +33805,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: charset-normalizer
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: chart.js
   origin: npm
   type: core
@@ -35245,55 +35061,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: click-datetime
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: click-didyoumean
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: click-plugins
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: click-repl
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: click
   origin: pypi
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: clipanion
   origin: npm
   type: core
@@ -36392,15 +36168,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: colorama
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: colord
   origin: npm
   type: core
@@ -39937,14 +39704,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: crypto
   origin: npm
   type: core
@@ -44982,9 +44745,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: doctrine/dbal
   origin: composer
   type: core
@@ -45070,15 +44830,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: docutils
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: dom-accessibility-api
   origin: npm
   type: dev
@@ -48060,15 +47811,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: environs
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: enzyme-adapter-react-16
   origin: npm
   type: dev
@@ -53720,15 +53462,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: fido2
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: figgy-pudding
   origin: npm
   type: core
@@ -54133,15 +53866,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: filelock
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: filename-regex
   origin: npm
   type: dev
@@ -54855,55 +54579,15 @@
     - projectName:
         en: Assemblyline
         fr: Assemblyline
-- dependency: flask-bcrypt
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: flask-marshmallow
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: flask-migrate
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: flask-redis
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: flask
   origin: pypi
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: flat-cache
   origin: npm
   type: core
@@ -56155,15 +55839,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: frozenlist
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: fs-access
   origin: npm
   type: dev
@@ -57019,14 +56694,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: fuzzy
   origin: npm
   type: core
@@ -58565,7 +58236,6 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
@@ -58573,9 +58243,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: gif-encoder
   origin: npm
   type: dev
@@ -58661,15 +58328,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/cds-snc/notifier-utils.git@50.1.2#egg'
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: 'git+https://github.com/ckan/ckan.git@ckan-2.7.5#egg'
   origin: pypi
   type: core
@@ -58706,15 +58364,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: 'git+https://github.com/mitsuhiko/flask-sqlalchemy.git@500e732dd1b975a56ab06a46bd1a20a21e682262#egg'
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: 'git+https://github.com/okfn/ckanext-envvars.git@8602376a92a77b4f2d41763b6823d041469fa08e#egg'
   origin: pypi
   type: core
@@ -60355,14 +60004,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: grid-index
   origin: npm
   type: core
@@ -61334,7 +60979,6 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
@@ -61342,9 +60986,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: gunzip-maybe
   origin: npm
   type: core
@@ -64890,15 +64531,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: idna
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: ieee754
   origin: npm
   type: core
@@ -65675,15 +65307,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: importlib-metadata
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: imports-loader
   origin: npm
   type: dev
@@ -71552,15 +71175,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: iso8601
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: isobject
   origin: npm
   type: core
@@ -72209,14 +71823,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: i
   origin: npm
   type: core
@@ -73637,14 +73247,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: jmespath
   origin: npm
   type: core
@@ -73654,15 +73260,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-- dependency: jmespath
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: joblib
   origin: pypi
   type: core
@@ -75266,15 +74863,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: jsonschema
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: jsonstream
   origin: npm
   type: core
@@ -76129,15 +75717,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-- dependency: kombu
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: kruptein
   origin: npm
   type: core
@@ -81040,14 +80619,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: mamacro
   origin: npm
   type: dev
@@ -81505,7 +81080,6 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
@@ -81513,9 +81087,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: marky
   origin: npm
   type: dev
@@ -81525,24 +81096,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: marshmallow-sqlalchemy
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: marshmallow
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: match-url-wildcard
   origin: npm
   type: dev
@@ -84336,15 +83889,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: mistune
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: mitt
   origin: npm
   type: core
@@ -84805,15 +84349,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: more-itertools
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: morgan
   origin: npm
   type: core
@@ -85170,15 +84705,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: multidict
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: multimatch
   origin: npm
   type: core
@@ -85397,15 +84923,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: nanoid
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: nanomatch
   origin: npm
   type: core
@@ -85951,15 +85468,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: newrelic
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: nexmo
   origin: npm
   type: core
@@ -87375,15 +86883,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: notifications-python-client
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: noty
   origin: npm
   type: core
@@ -90014,15 +89513,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: ordered-set
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: ordereddict
   origin: pypi
   type: core
@@ -91235,15 +90725,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: packaging
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pacote
   origin: npm
   type: dev
@@ -93588,15 +93069,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: phonenumbers
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: phpdocumentor/reflection-common
   origin: composer
   type: core
@@ -97758,15 +97230,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: prompt-toolkit
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: prompts
   origin: npm
   type: core
@@ -98436,14 +97899,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: psycopg2
   origin: pypi
   type: core
@@ -98871,24 +98330,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: pwnedpasswords
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: py-w3c
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pyasn1-modules
   origin: pypi
   type: core
@@ -98903,36 +98344,19 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: pycparser
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pycurl
   origin: pypi
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pygments
   origin: pypi
   type: core
@@ -98947,14 +98371,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pylons
   origin: pypi
   type: core
@@ -98964,15 +98384,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: pypdf2
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pyproj
   origin: pypi
   type: core
@@ -98982,15 +98393,6 @@
     - projectName:
         en: Signal Attenuation through Foliage Estimator (SAFE)
         fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
-- dependency: pyrsistent
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pysolr
   origin: pypi
   type: core
@@ -99023,23 +98425,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: python-dotenv
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: python-jose
   origin: pypi
   type: core
@@ -99049,15 +98438,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: python-json-logger
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: python-keycloak-client
   origin: pypi
   type: core
@@ -99081,14 +98461,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pytz
   origin: pypi
   type: core
@@ -99102,9 +98478,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: pyutilib.component.core
   origin: pypi
   type: core
@@ -99123,9 +98496,6 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: qjobs
   origin: npm
   type: dev
@@ -101966,14 +101336,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: reduce-css-calc
   origin: npm
   type: dev
@@ -103799,15 +103165,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: requests-file
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: requests
   origin: pypi
   type: core
@@ -103829,9 +103186,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Signal Attenuation through Foliage Estimator (SAFE)
         fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
@@ -105622,14 +104976,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: rst-selector-parser
   origin: npm
   type: dev
@@ -106054,15 +105404,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: s3transfer
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: safe-buffer
   origin: npm
   type: core
@@ -107376,15 +106717,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: sentry-sdk[flask]
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: serialize-error
   origin: npm
   type: core
@@ -109073,9 +108405,6 @@
     - projectName:
         en: ckanext-fluent
         fr: ckanext-fluent
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: slash
   origin: npm
   type: core
@@ -109311,15 +108640,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: smartypants
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: smoothscroll
   origin: npm
   type: core
@@ -111527,14 +110847,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: sqlite3
   origin: npm
   type: core
@@ -112132,15 +111448,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: statsd
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: statuses
   origin: npm
   type: core
@@ -116588,15 +115895,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: tldextract
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: tmp-promise
   origin: npm
   type: dev
@@ -119221,15 +118519,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: typing-extensions
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: typography-normalize
   origin: npm
   type: core
@@ -120042,15 +119331,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: unidecode
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: unified
   origin: npm
   type: core
@@ -121619,14 +120899,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: url
   origin: npm
   type: core
@@ -123070,15 +122346,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: vine
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: vinyl-assign
   origin: npm
   type: dev
@@ -124040,15 +123307,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: wcwidth
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: web-animations-js
   origin: npm
   type: core
@@ -124162,15 +123420,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: webencodings
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: weberror
   origin: pypi
   type: core
@@ -124861,14 +124110,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: whatwg-encoding
   origin: npm
   type: core
@@ -127634,15 +126879,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: yarl
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: yarn-install
   origin: npm
   type: dev
@@ -127958,15 +127194,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: zipp
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: zone.js
   origin: npm
   type: core
@@ -127976,28 +127203,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: zope.event
-  origin: pypi
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: zope.interface
   origin: pypi
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: zwitch
   origin: npm
   type: core
