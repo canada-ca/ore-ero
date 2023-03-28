@@ -111531,6 +111531,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: stdin-discarder
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: stdout-stream
   origin: npm
   type: dev
