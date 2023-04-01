@@ -777,6 +777,15 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+- dependency: '@azure/core-http-compat'
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: '@azure/core-http'
   origin: npm
   type: core
@@ -789,15 +798,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: '@azure/core-http'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
 - dependency: '@azure/core-lro'
   origin: npm
   type: core
@@ -7619,6 +7619,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
 - dependency: '@eslint/eslintrc'
@@ -7687,6 +7690,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -10950,11 +10956,7 @@
   type: dev
   admins:
     - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -14603,15 +14605,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: '@types/es-aggregate-error'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
 - dependency: '@types/eslint-scope'
   origin: npm
   type: core
@@ -16571,9 +16564,6 @@
         en: Devex
         fr: Devex
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -18102,15 +18092,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: '@types/tunnel'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
 - dependency: '@types/ua-parser-js'
   origin: npm
   type: dev
@@ -24635,6 +24616,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: array-buffer-byte-length
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: array-differ
   origin: npm
   type: core
@@ -25371,6 +25361,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -26825,6 +26818,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -27081,15 +27077,11 @@
   type: dev
   admins:
     - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -48274,6 +48266,9 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -48293,6 +48288,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -50049,9 +50047,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -54380,9 +54375,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -54925,7 +54917,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -54944,9 +54935,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -55011,6 +54999,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -59469,6 +59460,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -61701,6 +61695,9 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -66828,6 +66825,9 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -70266,6 +70266,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -73461,6 +73464,15 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+- dependency: js-md4
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: js-message
   origin: npm
   type: dev
@@ -77282,9 +77294,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -78133,7 +78142,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -78142,9 +78150,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
 - dependency: lodash.invert
   origin: npm
   type: core
@@ -78209,7 +78214,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -78218,9 +78222,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78346,7 +78347,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -78355,9 +78355,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
 - dependency: lodash.ismatch
   origin: npm
   type: core
@@ -78398,15 +78395,11 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78471,7 +78464,6 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -78484,9 +78476,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78525,15 +78514,11 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -86057,9 +86042,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: node-forge
@@ -90254,9 +90236,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -90334,9 +90313,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -90638,9 +90614,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -92098,9 +92071,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -96835,7 +96805,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -96854,9 +96823,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -105547,6 +105513,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -105973,7 +105942,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -105992,9 +105960,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -112617,8 +112582,12 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -116775,9 +116744,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -116832,7 +116798,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -116851,9 +116816,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -117823,12 +117785,8 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118216,6 +118174,9 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -123487,7 +123448,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -123506,9 +123466,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -124262,7 +124219,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -124284,9 +124240,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -124540,6 +124493,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -126131,15 +126087,11 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -126180,7 +126132,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -126190,9 +126141,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
