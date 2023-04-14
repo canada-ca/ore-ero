@@ -1644,9 +1644,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -1776,6 +1773,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -2332,9 +2332,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -2638,9 +2635,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -2661,6 +2655,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -3359,9 +3356,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -3581,9 +3575,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -3604,9 +3595,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -4039,9 +4027,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -5755,15 +5740,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@babel/regjsgen'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: '@babel/runtime-corejs2'
   origin: npm
   type: dev
@@ -6118,9 +6094,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -6577,6 +6550,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -8843,9 +8819,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -8873,9 +8846,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -8976,6 +8946,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -9054,6 +9027,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -9084,9 +9060,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -9150,9 +9123,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -9179,6 +9149,9 @@
     - city-of-edmonton-ab
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -9273,6 +9246,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -9654,9 +9630,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -9678,9 +9651,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -9701,9 +9671,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -9739,9 +9706,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -9762,9 +9726,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -11489,6 +11450,15 @@
     - projectName:
         en: AppHub
         fr: HubApp
+- dependency: '@puppeteer/browsers'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@reach/router'
   origin: npm
   type: core
@@ -11870,38 +11840,7 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: '@sideway/address'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: '@sideway/formula'
-  origin: npm
-  type: core
-  admins:
-    - bc
-    - 'on'
-  projects:
-    - projectName:
-        en: devhub-app-web
-        fr: devhub-app-web
-    - projectName:
-        en: Ontario COVID-19 self-assessment
-        fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: '@sideway/formula'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: '@sideway/pinpoint'
   origin: npm
   type: core
   admins:
@@ -11916,13 +11855,17 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@sideway/pinpoint'
   origin: npm
-  type: dev
+  type: core
   admins:
-    - tbs-sct
+    - bc
+    - 'on'
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
+        en: devhub-app-web
+        fr: devhub-app-web
+    - projectName:
+        en: Ontario COVID-19 self-assessment
+        fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@sidvind/better-ajv-errors'
   origin: npm
   type: dev
@@ -11948,9 +11891,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -12051,9 +11991,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -12083,9 +12020,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -13469,9 +13403,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -14169,6 +14100,9 @@
   admins:
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -15106,9 +15040,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -16968,9 +16899,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -18657,6 +18585,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -18954,9 +18885,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -19038,9 +18966,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -19483,42 +19408,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: '@vue/compiler-core'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: '@vue/compiler-dom'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: '@vue/compiler-sfc'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: '@vue/compiler-ssr'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: '@vue/component-compiler-utils'
   origin: npm
   type: dev
@@ -19591,24 +19480,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: '@vue/reactivity-transform'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: '@vue/shared'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: '@vue/test-utils'
   origin: npm
   type: dev
@@ -21289,6 +21160,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -21442,6 +21316,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -21722,9 +21599,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDTS
         fr: SGDC
@@ -24696,6 +24570,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -27207,7 +27084,11 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -27592,6 +27473,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -28255,9 +28139,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -30056,9 +29937,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -30865,6 +30743,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -33257,6 +33138,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -33637,9 +33521,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -34387,9 +34268,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -35029,6 +34907,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -35765,9 +35646,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -40932,9 +40810,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -41594,6 +41469,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -42118,9 +41996,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -42399,9 +42274,6 @@
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -42996,11 +42868,7 @@
   admins:
     - city-of-sault-ste-marie-on
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -45137,6 +45005,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -47068,9 +46939,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -49065,6 +48933,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -49164,6 +49035,9 @@
     - phac-aspc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -49315,7 +49189,11 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -49850,15 +49728,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: eslint-plugin-typescript
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: eslint-plugin-unicorn
   origin: npm
   type: dev
@@ -50685,11 +50554,7 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -51251,6 +51116,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -57776,9 +57644,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -63186,6 +63051,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -63811,9 +63679,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -64111,9 +63976,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDTS
         fr: SGDC
@@ -68488,9 +68350,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -69440,9 +69299,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -70429,9 +70285,6 @@
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDTS
         fr: SGDC
@@ -71452,6 +71305,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -71520,6 +71376,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -72042,9 +71901,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -72135,6 +71991,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -72261,6 +72120,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: jest-environment-jsdom-fifteen
+  origin: npm
+  type: dev
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
 - dependency: jest-environment-jsdom
   origin: npm
   type: dev
@@ -72368,6 +72236,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -72400,6 +72271,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -72619,6 +72493,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -72906,6 +72783,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -73163,6 +73043,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -73294,11 +73177,7 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -73345,9 +73224,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: Devex
         fr: Devex
@@ -74142,9 +74018,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -76302,7 +76175,11 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -77054,6 +76931,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -79047,6 +78927,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -80334,11 +80217,7 @@
   admins:
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -84872,11 +84751,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -86255,6 +86130,9 @@
     - city-of-edmonton-ab
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -90014,6 +89892,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -90481,7 +90362,11 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -93117,11 +93002,7 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -93132,6 +93013,9 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -93854,6 +93738,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -100747,6 +100634,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -101077,6 +100967,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -102160,6 +102053,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -103075,6 +102971,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -103107,6 +103006,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -103449,11 +103351,7 @@
   admins:
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -103988,9 +103886,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -104965,6 +104860,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -105695,6 +105593,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -105896,6 +105797,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -108487,9 +108391,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -109591,11 +109492,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -109872,9 +109769,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -109908,6 +109802,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -109953,11 +109850,7 @@
   admins:
     - city-of-edmonton-ab
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -111546,6 +111439,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -113850,9 +113746,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -114759,9 +114652,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -114909,6 +114799,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -116802,6 +116695,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
+    - projectName:
         en: AppHub
         fr: HubApp
     - projectName:
@@ -117977,9 +117873,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDS Website
         fr: Site Web SNC
     - projectName:
@@ -118350,24 +118243,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: typescript-eslint-parser
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-- dependency: typescript-estree
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
 - dependency: typescript
   origin: npm
   type: core
@@ -120394,9 +120269,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: update-notifier
@@ -121648,9 +121520,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -121699,9 +121568,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: CDS Website
         fr: Site Web SNC
@@ -122646,11 +122512,7 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -122965,6 +122827,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -123451,6 +123316,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -124835,9 +124703,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -124909,6 +124774,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -125729,6 +125597,9 @@
     - ssc-spc
     - tbs-sct
   projects:
+    - projectName:
+        en: Algorithmic Impact Assessment
+        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
@@ -126788,9 +126659,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: Algorithmic Impact Assessment
-        fr: Évaluation de l'incidence algorithmique
     - projectName:
         en: AppHub
         fr: HubApp
