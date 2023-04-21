@@ -44780,15 +44780,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/console-extend-plugin
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: drupal/console
   origin: composer
   type: dev
