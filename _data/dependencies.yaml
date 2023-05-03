@@ -8700,6 +8700,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: '@isaacs/cliui'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@istanbuljs/load-nyc-config'
   origin: npm
   type: core
@@ -10974,6 +10983,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@pkgjs/parseargs'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@pmmmwh/react-refresh-webpack-plugin'
   origin: npm
   type: core
@@ -54086,6 +54104,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -70381,6 +70402,15 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
+- dependency: jackspeak
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: jake
   origin: npm
   type: core
@@ -110053,6 +110083,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: string-width-cjs
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: string-width
   origin: npm
   type: core
@@ -110570,6 +110609,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: strip-ansi-cjs
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: strip-ansi
   origin: npm
   type: core
@@ -123013,6 +123061,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: wrap-ansi-cjs
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: wrap-ansi
   origin: npm
   type: core
