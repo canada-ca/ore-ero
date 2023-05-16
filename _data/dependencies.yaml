@@ -13295,8 +13295,12 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -62576,8 +62580,12 @@
   admins:
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -109356,15 +109364,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: stdin-discarder
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: stdout-stream
   origin: npm
   type: dev
