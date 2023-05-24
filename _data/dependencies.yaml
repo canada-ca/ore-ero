@@ -58493,6 +58493,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: graphemer
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: graphlib
   origin: npm
   type: dev
@@ -72101,9 +72110,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
