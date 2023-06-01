@@ -43694,7 +43694,7 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: djangorestframework-jwt
+- dependency: djangorestframework-simplejwt
   origin: pypi
   type: core
   admins:
@@ -96455,6 +96455,9 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: pylons
   origin: pypi
   type: core
