@@ -44004,6 +44004,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: docutils
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: dom-accessibility-api
   origin: npm
   type: dev
@@ -51561,6 +51570,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: fakeredis[lua]
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
+- dependency: fakeredis
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: falafel
   origin: npm
   type: core
@@ -83581,6 +83608,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: nbsphinx
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: ndarray-ops
   origin: npm
   type: dev
@@ -96485,24 +96521,59 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: pytest-bug
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: pytest-cov
   origin: pypi
   type: core
   admins:
     - cse-cst
+    - ssc-spc
   projects:
     - projectName:
         en: Assemblyline
         fr: Assemblyline
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
+- dependency: pytest-depends
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
+- dependency: pytest-html
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: pytest
   origin: pypi
   type: core
   admins:
     - cse-cst
+    - ssc-spc
   projects:
     - projectName:
         en: Assemblyline
         fr: Assemblyline
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: python-dateutil
   origin: pypi
   type: core
@@ -96548,6 +96619,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: python-redis-lock
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: pytz
   origin: pypi
   type: core
@@ -108428,6 +108508,24 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: sphinx-rtd-theme
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
+- dependency: sphinx
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: splaytree
   origin: npm
   type: core
