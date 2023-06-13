@@ -13565,9 +13565,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -17824,15 +17821,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: '@types/ua-parser-js'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@types/uglify-js'
   origin: npm
   type: dev
@@ -43256,6 +43244,15 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+- dependency: devtools
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: dezalgo
   origin: npm
   type: dev
@@ -121065,6 +121062,15 @@
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: webdriverio
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: webdriver
   origin: npm
   type: dev
   admins:
