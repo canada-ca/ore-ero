@@ -1050,6 +1050,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@babel/code-frame'
@@ -1092,9 +1095,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -1145,6 +1145,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -1407,9 +1410,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: '@babel/helper-compilation-targets'
   origin: npm
   type: core
@@ -1442,6 +1442,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -1516,6 +1519,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -1537,9 +1543,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@babel/helper-define-polyfill-provider'
@@ -1559,6 +1562,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -1571,6 +1575,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -1587,6 +1594,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -1595,6 +1603,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@babel/helper-explode-assignable-expression'
   origin: npm
   type: core
@@ -1731,9 +1742,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -2042,9 +2050,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@babel/helper-remap-async-to-generator'
@@ -2191,6 +2196,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -2203,6 +2209,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -2276,15 +2285,20 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@babel/helper-validator-identifier'
   origin: npm
   type: core
   admins:
+    - bc
     - esdc-edsc
     - 'on'
     - tbs-sct
@@ -2292,6 +2306,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -2368,6 +2385,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -2379,6 +2397,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@babel/helper-wrap-function'
   origin: npm
   type: core
@@ -2489,6 +2510,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@babel/highlight'
@@ -2531,9 +2555,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -5680,6 +5701,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@babel/regjsgen'
+  origin: npm
+  type: dev
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@babel/runtime-corejs2'
   origin: npm
   type: dev
@@ -8389,11 +8419,15 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@hapi/formula'
   origin: npm
   type: dev
@@ -9534,6 +9568,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -9542,6 +9577,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@jridgewell/resolve-uri'
   origin: npm
   type: core
@@ -9555,6 +9593,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -9563,6 +9602,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@jridgewell/set-array'
   origin: npm
   type: core
@@ -9576,6 +9618,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -9584,6 +9627,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@jridgewell/source-map'
   origin: npm
   type: core
@@ -9615,6 +9661,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -9623,6 +9670,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@jridgewell/trace-mapping'
   origin: npm
   type: core
@@ -9636,6 +9686,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -9644,6 +9695,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@js-joda/core'
   origin: npm
   type: core
@@ -13115,6 +13169,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@szmarczak/http-timer'
@@ -13896,6 +13953,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@types/cacheable-request'
@@ -13947,6 +14007,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: '@types/chart.js'
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@types/cheerio'
   origin: npm
   type: dev
@@ -15173,6 +15242,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@types/http-cache-semantics'
@@ -15699,6 +15771,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@types/keyv'
@@ -16110,6 +16185,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@types/minimist'
   origin: npm
   type: dev
@@ -16404,6 +16482,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -16439,9 +16520,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -16479,6 +16557,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@types/normalize-package-data'
   origin: npm
   type: dev
@@ -16507,9 +16588,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -17217,6 +17295,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -18933,20 +19014,28 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@vue/babel-sugar-composition-api-render-instance'
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: '@vue/babel-sugar-functional-vue'
   origin: npm
   type: dev
@@ -21565,6 +21654,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -21595,9 +21687,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
     - projectName:
@@ -21624,6 +21713,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21668,9 +21760,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -22187,6 +22276,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: ansi-escapes
@@ -22217,9 +22309,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -22294,6 +22383,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -22303,6 +22393,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: ansi-html
   origin: npm
   type: core
@@ -22323,7 +22416,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -22331,9 +22423,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -22433,6 +22522,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -22471,9 +22563,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -23779,6 +23868,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: argparse
@@ -23822,9 +23914,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -24286,16 +24375,12 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -24309,9 +24394,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -24330,6 +24412,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -24453,6 +24538,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: array-includes
@@ -24485,9 +24573,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -24572,15 +24657,11 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - esdc-edsc
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: array-reduce
   origin: npm
   type: core
@@ -24594,15 +24675,11 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - esdc-edsc
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: array-slice
   origin: npm
   type: dev
@@ -25584,6 +25661,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: astral-regex
@@ -25614,9 +25694,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -25932,6 +26009,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: asynckit
@@ -25969,9 +26049,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -26296,11 +26373,13 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: available-typed-arrays
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -26313,9 +26392,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -26622,6 +26698,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: babel-code-frame
   origin: npm
   type: dev
@@ -26640,9 +26719,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -27343,6 +27419,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -27355,6 +27432,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -27375,6 +27455,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -27387,6 +27468,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -27407,6 +27491,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -27419,6 +27504,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -28235,6 +28323,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -28275,9 +28366,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -29298,6 +29386,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: binjumper
@@ -30026,6 +30117,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -30066,9 +30160,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -31829,6 +31920,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: cacheable-lookup
@@ -32005,6 +32099,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -32017,7 +32114,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -32034,9 +32130,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -32125,6 +32218,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: caller-path
   origin: npm
   type: dev
@@ -32145,9 +32241,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32177,6 +32270,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -32220,9 +32316,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -32407,6 +32500,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -32440,9 +32536,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -33122,6 +33215,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: chardet
@@ -33148,9 +33244,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -33725,6 +33818,15 @@
         fr: YouCanBenefit
 - dependency: circular-json
   origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: circular-json
+  origin: npm
   type: dev
   admins:
     - bc
@@ -33737,9 +33839,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -34131,6 +34230,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: cli-cursor
@@ -34164,9 +34266,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -34373,6 +34472,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: cli-width
@@ -34399,9 +34501,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35705,6 +35804,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: combined-stream
@@ -35742,9 +35844,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -36391,6 +36490,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -36431,9 +36533,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -37046,6 +37145,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: contains-path
   origin: npm
   type: dev
@@ -37059,9 +37161,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -37990,6 +38089,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: core-js-pure
@@ -38117,9 +38219,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -38158,6 +38257,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -38771,6 +38873,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -38804,9 +38909,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -39662,9 +39764,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: css-value
   origin: npm
   type: dev
@@ -40315,9 +40414,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: currently-unhandled
@@ -40335,6 +40431,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -41111,11 +41210,15 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: debounce
   origin: npm
   type: dev
@@ -41125,6 +41228,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: debug-log
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: debuglog
   origin: npm
   type: dev
@@ -41178,6 +41290,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
     - projectName:
@@ -41220,9 +41335,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -41384,9 +41496,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: decode-uri-component
@@ -41423,6 +41532,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -41823,6 +41935,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: deep-is
@@ -41859,9 +41974,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -42159,6 +42271,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: defer-to-connect
@@ -42240,6 +42355,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: define-properties
@@ -42276,9 +42394,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -42384,6 +42499,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: deglob
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: delaunator
   origin: npm
   type: core
@@ -42417,6 +42541,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -42455,9 +42582,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -43927,6 +44051,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: doctrine
@@ -43968,9 +44095,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -45429,9 +45553,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: duplexer3
@@ -46251,6 +46372,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -46292,9 +46416,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -46534,6 +46655,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -46576,9 +46700,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -47246,6 +47367,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: es-abstract
@@ -47279,9 +47403,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -47382,17 +47503,22 @@
         fr: InfoBase du GC
 - dependency: es-set-tostringtag
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: es-set-tostringtag
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -47442,6 +47568,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: es-to-primitive
@@ -47475,9 +47604,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -47932,6 +48058,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: escape-goat
@@ -48307,6 +48436,24 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: eslint-config-semistandard
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: eslint-config-standard-jsx
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: eslint-config-standard-with-typescript
   origin: npm
   type: dev
@@ -48318,7 +48465,7 @@
         fr: lot-occupancy-system
 - dependency: eslint-config-standard
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
   projects:
@@ -48329,8 +48476,12 @@
   origin: npm
   type: core
   admins:
+    - bc
     - 'on'
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48364,9 +48515,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48437,6 +48585,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: eslint-module-utils
@@ -48470,9 +48621,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -48504,9 +48652,17 @@
         fr: InfoBase du GC
 - dependency: eslint-plugin-es
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: eslint-plugin-es
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
@@ -48519,9 +48675,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48582,8 +48735,12 @@
   origin: npm
   type: core
   admins:
+    - bc
     - 'on'
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48618,9 +48775,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -48721,9 +48875,17 @@
         fr: InfoBase du GC
 - dependency: eslint-plugin-node
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: eslint-plugin-node
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
@@ -48739,9 +48901,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -48790,9 +48949,17 @@
         fr: WorkIt
 - dependency: eslint-plugin-promise
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: eslint-plugin-promise
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
@@ -48802,9 +48969,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
@@ -48865,6 +49029,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: eslint-plugin-react
@@ -48902,7 +49069,7 @@
         fr: Évaluation de l'incidence algorithmique
 - dependency: eslint-plugin-standard
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
   projects:
@@ -49013,6 +49180,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: eslint-scope
@@ -49053,9 +49223,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -49086,6 +49253,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49123,9 +49293,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -49153,6 +49320,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49195,9 +49365,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -49242,8 +49409,12 @@
   origin: npm
   type: core
   admins:
+    - bc
     - 'on'
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49494,6 +49665,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: esquery
@@ -49536,9 +49710,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -49570,6 +49741,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49610,9 +49784,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -49652,6 +49823,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: estraverse
@@ -49688,9 +49862,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -49770,6 +49941,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: esutils
@@ -49806,9 +49980,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -51210,6 +51381,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: external-editor
@@ -51236,9 +51410,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -51660,6 +51831,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -51699,9 +51873,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -51870,6 +52041,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -51914,9 +52088,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -51951,6 +52122,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51988,9 +52162,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -52524,6 +52695,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: figures
@@ -52555,9 +52729,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -52585,6 +52756,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -52627,9 +52801,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -52816,6 +52987,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -53286,6 +53460,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: find-root
   origin: npm
   type: dev
@@ -53564,6 +53741,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: flat-cache
@@ -53606,9 +53786,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -53640,6 +53817,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -53677,9 +53857,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -53867,6 +54044,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -53879,7 +54059,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -53899,9 +54078,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -53943,13 +54119,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: for-each
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -53962,9 +54140,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -54700,9 +54875,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: from2
@@ -54729,6 +54901,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -55169,6 +55344,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -55206,9 +55384,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -55376,6 +55551,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -55410,9 +55588,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -55431,6 +55606,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -55439,6 +55615,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: function.prototype.name
   origin: npm
   type: dev
@@ -55461,9 +55640,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -55479,6 +55655,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -55516,9 +55695,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -55537,6 +55713,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -55545,6 +55722,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: functions-have-names
   origin: npm
   type: dev
@@ -55569,9 +55749,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -56579,6 +56756,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -56591,7 +56771,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -56608,9 +56787,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -56879,6 +57055,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -56887,11 +57064,13 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: get-symbol-description
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -56908,9 +57087,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -57846,6 +58022,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -57892,9 +58071,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -57916,6 +58092,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
@@ -57928,6 +58105,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: globalthis
   origin: npm
   type: dev
@@ -57949,9 +58129,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -58132,6 +58309,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -58169,9 +58349,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -58289,9 +58466,17 @@
         fr: GCconnex
 - dependency: gopd
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: gopd
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -58304,9 +58489,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -60134,6 +60316,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: hard-rejection
   origin: npm
   type: dev
@@ -60177,6 +60362,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -60206,9 +60394,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -60232,13 +60417,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: has-bigints
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -60258,9 +60445,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -60470,6 +60654,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -60478,11 +60663,13 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: has-property-descriptors
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -60500,24 +60687,26 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
 - dependency: has-proto
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: has-proto
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -60531,9 +60720,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -60572,6 +60758,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -60613,9 +60802,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -60641,15 +60827,13 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: has-tostringtag
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -60658,11 +60842,13 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: has-tostringtag
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -60682,9 +60868,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -61223,6 +61406,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -61256,9 +61442,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -61960,9 +62143,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: html-element-map
   origin: npm
   type: dev
@@ -62781,11 +62961,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: http2-wrapper
   origin: npm
   type: dev
@@ -62954,6 +63138,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -63139,6 +63326,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -63178,9 +63368,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -64115,6 +64302,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -64155,9 +64345,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -64374,6 +64561,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -64437,6 +64627,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -64474,9 +64667,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -64854,13 +65044,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: internal-slot
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -64877,9 +65069,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -64997,9 +65186,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -65546,17 +65732,22 @@
         fr: Nuage de Talent
 - dependency: is-array-buffer
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: is-array-buffer
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -65660,13 +65851,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-bigint
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -65686,9 +65879,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -65794,13 +65984,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-boolean-object
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -65820,9 +66012,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -65978,6 +66167,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-callable
@@ -66014,9 +66206,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66149,6 +66338,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -66290,6 +66482,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-date-object
@@ -66326,9 +66521,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -66840,6 +67032,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -66872,9 +67067,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -67380,13 +67572,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-negative-zero
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -67403,9 +67597,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67493,13 +67684,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-number-object
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -67519,9 +67712,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67626,9 +67816,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -68132,6 +68319,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -68155,9 +68345,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -68255,6 +68442,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-regex
@@ -68291,9 +68481,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68393,6 +68580,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-resolvable
@@ -68412,9 +68602,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68440,9 +68627,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -68527,6 +68711,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -68535,11 +68720,13 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: is-shared-array-buffer
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -68556,9 +68743,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68673,13 +68857,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-string
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -68699,9 +68885,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68755,9 +68938,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
 - dependency: is-symbol
   origin: npm
   type: core
@@ -68783,6 +68963,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -68820,9 +69003,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -68877,11 +69057,13 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: is-typed-array
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -68894,9 +69076,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -69241,6 +69420,7 @@
   origin: npm
   type: core
   admins:
+    - bc
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
@@ -69249,11 +69429,13 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: is-weakref
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -69270,9 +69452,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -69711,6 +69890,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -69744,9 +69926,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -70309,9 +70488,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is
@@ -70658,6 +70834,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
@@ -70666,6 +70843,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: jest-config
   origin: npm
   type: core
@@ -71970,6 +72150,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -72172,6 +72355,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -72217,9 +72403,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -72267,6 +72450,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: js-yaml
@@ -72310,9 +72496,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -72711,12 +72894,16 @@
   origin: npm
   type: core
   admins:
+    - bc
     - esdc-edsc
     - 'on'
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72796,6 +72983,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -72839,9 +73029,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -72936,6 +73123,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: json-stable-stringify-without-jsonify
@@ -72977,9 +73167,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -73148,7 +73335,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -73159,9 +73345,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -73347,7 +73530,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -73360,9 +73542,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -73597,8 +73776,12 @@
   origin: npm
   type: core
   admins:
+    - bc
     - 'on'
   projects:
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -74079,6 +74262,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -74118,9 +74304,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -74966,6 +75149,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: levn
@@ -75005,9 +75191,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -75258,6 +75441,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -77959,6 +78145,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
@@ -78008,9 +78197,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -78391,6 +78577,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -78418,9 +78607,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: lost
@@ -78443,9 +78629,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: loud-rejection
@@ -78463,6 +78646,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -81150,6 +81336,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -81186,9 +81375,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -81239,6 +81425,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -81275,9 +81464,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -81395,6 +81581,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: mimic-fn
@@ -81425,9 +81614,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -81536,6 +81722,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -81812,6 +82001,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -81855,9 +82047,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -81941,6 +82130,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -81984,9 +82176,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -82471,6 +82660,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -82509,9 +82701,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -82933,6 +83122,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -82973,9 +83165,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -83180,6 +83369,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: mute-stream
@@ -83206,9 +83398,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -83527,6 +83716,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: natural-compare
@@ -83569,9 +83761,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -83959,6 +84148,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: nice-try
@@ -83988,9 +84180,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -84181,11 +84370,15 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: node-bitmap
   origin: npm
   type: dev
@@ -86202,6 +86395,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -86235,9 +86431,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -86314,6 +86507,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: object-keys
@@ -86347,9 +86543,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -86485,6 +86678,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: object.assign
@@ -86520,9 +86716,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -87213,6 +87406,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -87253,9 +87449,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -87305,6 +87498,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: onetime
@@ -87335,9 +87531,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -87565,7 +87758,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -87573,9 +87765,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -87631,6 +87820,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: optionator
@@ -87667,9 +87859,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -87811,7 +88000,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -87819,9 +88007,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -88053,6 +88238,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: os-tmpdir
@@ -88079,9 +88267,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -88382,9 +88567,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: p-finally
@@ -88405,6 +88587,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -88783,6 +88968,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - esdc-edsc
     - tbs-sct
   projects:
@@ -88792,6 +88978,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -88818,9 +89007,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89197,6 +89383,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: parent-module
@@ -89235,9 +89424,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -89493,6 +89679,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: parse-json
@@ -89529,9 +89718,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -90377,6 +90563,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90415,9 +90604,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
     - projectName:
@@ -90450,6 +90636,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: path-is-inside
@@ -90473,9 +90662,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -90524,6 +90710,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90557,9 +90746,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -90856,9 +91042,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: path-type
@@ -90898,6 +91081,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -91342,6 +91528,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
@@ -91357,6 +91544,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -91414,6 +91604,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -91735,6 +91928,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: pkg-config
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: pkg-conf
   origin: npm
   type: core
@@ -91744,6 +91946,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: pkg-dir
   origin: npm
   type: core
@@ -91895,11 +92100,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: pluralize
   origin: npm
   type: dev
@@ -91924,9 +92133,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -94367,6 +94573,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: prelude-ls
@@ -94407,9 +94616,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -94445,9 +94651,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: prepend-http
@@ -94475,6 +94678,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -94899,9 +95105,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -94937,6 +95140,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95053,6 +95259,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -95092,9 +95301,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95460,6 +95666,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -96182,6 +96391,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -96224,9 +96436,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -96281,6 +96490,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -96318,9 +96530,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -96793,9 +97002,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: query-string
@@ -96814,6 +97020,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: querystring-es3
   origin: npm
   type: core
@@ -96969,12 +97178,16 @@
   origin: npm
   type: core
   admins:
+    - bc
     - 'on'
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -98267,6 +98480,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -99046,9 +99262,6 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -99087,6 +99300,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -99966,7 +100182,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -99982,9 +100197,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -100012,13 +100224,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: regexp.prototype.flags
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -100038,9 +100252,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -100315,9 +100526,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -101527,6 +101735,15 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: require-uncached
   origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: require-uncached
+  origin: npm
   type: dev
   admins:
     - bc
@@ -101539,9 +101756,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -101691,11 +101905,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: resolve-alpn
   origin: npm
   type: dev
@@ -101841,6 +102059,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: resolve-from
@@ -101880,9 +102101,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -102249,6 +102467,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: restore-cursor
@@ -102282,9 +102503,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -102365,6 +102583,7 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - city-of-edmonton-ab
     - esdc-edsc
     - tbs-sct
@@ -102375,6 +102594,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -102714,6 +102936,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -102753,9 +102978,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -103063,6 +103285,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: run-async
@@ -103089,9 +103314,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -103140,6 +103362,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -103361,6 +103586,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -103403,9 +103631,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -103548,9 +103773,17 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: safe-regex-test
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: safe-regex-test
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -103560,9 +103793,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -103670,6 +103900,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -103709,9 +103942,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -104375,6 +104605,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: semistandard
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: semver-compare
   origin: npm
   type: core
@@ -105550,6 +105789,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -105583,9 +105825,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -105640,6 +105879,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -105673,9 +105915,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -105901,6 +106140,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -105913,7 +106155,6 @@
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -105930,9 +106171,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -106491,6 +106729,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: slice-ansi
@@ -106520,9 +106761,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -107520,9 +107758,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: sort-keys
@@ -107538,6 +107773,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: source-list-map
   origin: npm
   type: core
@@ -108707,6 +108945,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: sprintf-js
@@ -108740,9 +108981,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -109227,6 +109465,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: standard-engine
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: standard-version
   origin: npm
   type: dev
@@ -109999,9 +110246,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: strict-uri-encode
@@ -110020,6 +110264,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: string-argv
   origin: npm
   type: dev
@@ -110222,6 +110469,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -110254,9 +110504,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -110362,6 +110609,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: string.prototype.trimend
@@ -110388,9 +110638,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -110474,6 +110721,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: string.prototype.trimstart
@@ -110500,9 +110750,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -111070,6 +111317,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -111095,9 +111345,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111132,6 +111379,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -111172,6 +111422,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111216,9 +111469,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -111799,11 +112049,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: supports-preserve-symlinks-flag
   origin: npm
   type: dev
@@ -112010,6 +112264,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -112973,6 +113230,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: text-table
@@ -113014,9 +113274,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -113323,6 +113580,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: through
@@ -113356,9 +113616,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -113500,9 +113757,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -113830,6 +114084,9 @@
         en: Devex
         fr: Devex
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: tmp
@@ -113860,9 +114117,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -115728,6 +115982,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: type-check
@@ -115767,9 +116024,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -115990,17 +116244,22 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: typed-array-length
   origin: npm
-  type: dev
+  type: core
   admins:
     - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
+- dependency: typed-array-length
+  origin: npm
+  type: dev
+  admins:
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -116532,13 +116791,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: unbox-primitive
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -116555,9 +116816,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -117408,6 +117666,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: uniq
   origin: npm
   type: dev
@@ -117425,9 +117686,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118139,11 +118397,15 @@
   origin: npm
   type: dev
   admins:
+    - bc
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: update-notifier
   origin: npm
   type: core
@@ -118242,6 +118504,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -118285,9 +118550,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -118464,9 +118726,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: gwells
-        fr: gwells
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: url-parse-lax
@@ -118580,9 +118839,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120830,6 +121086,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: watchpack
@@ -121989,13 +122248,15 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: which-boxed-primitive
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
@@ -122015,9 +122276,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -122160,11 +122418,13 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: which-typed-array
   origin: npm
   type: dev
   admins:
-    - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
@@ -122177,9 +122437,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -122222,6 +122479,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -122255,9 +122515,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -122572,6 +122829,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: wordwrap
   origin: npm
   type: dev
@@ -122590,9 +122850,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -123294,6 +123551,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -123334,9 +123594,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -123464,6 +123721,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: write
   origin: npm
   type: dev
@@ -123484,9 +123744,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
