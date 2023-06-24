@@ -33892,15 +33892,6 @@
     - projectName:
         en: ckanext-fluent
         fr: ckanext-fluent
-- dependency: ckeditor/fakeobjects
-  origin: composer
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: clap
   origin: npm
   type: dev
@@ -44851,6 +44842,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: drupal-ckeditor-libraries-group/fakeobjects
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/admin_toolbar
   origin: composer
   type: core
