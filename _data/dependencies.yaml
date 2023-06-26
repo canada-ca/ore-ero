@@ -79009,6 +79009,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: magic
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: magnific-popup
   origin: npm
   type: core
@@ -96809,10 +96818,14 @@
   type: core
   admins:
     - bc
+    - ssc-spc
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: python-redis-lock
   origin: pypi
   type: core
