@@ -8,6 +8,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@aashutoshrathi/word-wrap'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@achrinza/node-ipc'
   origin: npm
   type: dev
@@ -122779,12 +122788,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
