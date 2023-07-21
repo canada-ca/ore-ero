@@ -197,6 +197,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@alloc/quick-lru'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@ampproject/remapping'
   origin: npm
   type: core
@@ -1638,9 +1647,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -5715,7 +5721,11 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -7260,7 +7270,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7273,6 +7287,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@emotion/cache'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@emotion/cache'
   origin: npm
   type: dev
@@ -7314,6 +7337,15 @@
         fr: Nuage de Talent
 - dependency: '@emotion/hash'
   origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+- dependency: '@emotion/hash'
+  origin: npm
   type: dev
   admins:
     - bc
@@ -7352,8 +7384,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7374,10 +7410,23 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@emotion/serialize'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@emotion/serialize'
   origin: npm
   type: dev
@@ -7391,6 +7440,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@emotion/sheet'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@emotion/sheet'
   origin: npm
   type: dev
@@ -7462,8 +7520,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7479,6 +7541,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@emotion/use-insertion-effect-with-fallbacks'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+- dependency: '@emotion/utils'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@emotion/utils'
   origin: npm
   type: dev
@@ -7497,7 +7577,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7534,6 +7618,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+    - projectName:
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
@@ -7549,6 +7636,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -7616,8 +7706,29 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+    - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+- dependency: '@floating-ui/core'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+- dependency: '@floating-ui/dom'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@fontsource/barlow'
   origin: npm
   type: core
@@ -7782,7 +7893,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7837,16 +7952,33 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@fortawesome/free-regular-svg-icons'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@fortawesome/free-solid-svg-icons'
   origin: npm
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7855,7 +7987,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -11103,8 +11239,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -11471,6 +11611,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: '@react-aria/ssr'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@react-keycloak/core'
   origin: npm
   type: core
@@ -11552,15 +11701,6 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
-- dependency: '@remix-run/router'
-  origin: npm
-  type: core
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
 - dependency: '@restart/context'
   origin: npm
   type: core
@@ -11574,11 +11714,24 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: '@restart/ui'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@rollup/plugin-babel'
   origin: npm
   type: dev
@@ -13163,6 +13316,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@swc/helpers'
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@szmarczak/http-timer'
   origin: npm
   type: core
@@ -16694,8 +16856,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16707,15 +16873,11 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16841,9 +17003,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -17159,8 +17325,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -17205,9 +17375,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -17376,9 +17550,13 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -17439,6 +17617,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@types/send'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: '@types/serve-favicon'
   origin: npm
   type: dev
@@ -18103,9 +18290,13 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -22844,11 +23035,15 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -24282,7 +24477,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -27252,8 +27451,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -27264,12 +27467,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -38366,8 +38565,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -38389,9 +38592,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -40282,9 +40482,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -42892,8 +43096,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -44204,8 +44412,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -47524,7 +47736,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -53465,7 +53681,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -54021,6 +54241,24 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: focus-trap-react
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+- dependency: focus-trap
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: folktale
   origin: npm
   type: dev
@@ -60712,7 +60950,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -61795,9 +62037,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -64048,8 +64294,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -64080,9 +64330,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -65203,9 +65450,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -65230,9 +65481,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -65753,7 +66001,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -72065,6 +72317,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: jiti
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: jmespath
   origin: npm
   type: core
@@ -74739,6 +75000,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -83439,11 +83703,15 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -89395,8 +89663,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -89430,9 +89702,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -91043,6 +91312,7 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
     - tc
@@ -91053,6 +91323,9 @@
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -91087,9 +91360,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -95661,8 +95931,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -96622,6 +96896,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: pure-rand
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: purgecss
   origin: npm
   type: dev
@@ -98039,8 +98322,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -98552,9 +98839,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -98717,13 +99008,9 @@
   origin: npm
   type: core
   admins:
-    - esdc-edsc
     - phac-aspc
     - tbs-sct
   projects:
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -98786,7 +99073,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -98923,8 +99214,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -100536,9 +100831,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -103674,6 +103966,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: safe-array-concat
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: safe-buffer
   origin: npm
   type: core
@@ -109784,6 +110085,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: stop-iteration-iterator
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: stoppable
   origin: npm
   type: core
@@ -110792,8 +111102,12 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -111756,7 +112070,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -111844,6 +112162,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: sucrase
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: sudo-prompt
   origin: npm
   type: core
@@ -112469,6 +112796,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: tabbable
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: table
   origin: npm
   type: core
@@ -113337,11 +113673,15 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -113350,11 +113690,15 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: gwells
         fr: gwells
@@ -115341,6 +115685,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: ts-interface-checker
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: ts-invariant
   origin: npm
   type: core
@@ -115578,6 +115931,9 @@
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
+    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -115614,9 +115970,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: Devex
         fr: Devex
@@ -116278,7 +116631,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -116931,8 +117288,12 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -118981,6 +119342,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: use-isomorphic-layout-effect
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
 - dependency: use-isomorphic-layout-effect
   origin: npm
   type: dev
@@ -121051,9 +121421,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -124549,12 +124923,16 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
     - projectName:
         en: CDS Website
         fr: Site Web SNC
+    - projectName:
+        en: DECD Design System
+        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -124566,15 +124944,11 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: DECD Design System
-        fr: Système De Conception D'ENDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
