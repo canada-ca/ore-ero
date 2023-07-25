@@ -42524,6 +42524,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -87950,6 +87953,9 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -87995,9 +88001,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
