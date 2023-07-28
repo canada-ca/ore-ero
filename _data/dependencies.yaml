@@ -222,9 +222,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: '@angular-devkit/architect'
@@ -667,15 +664,6 @@
         fr: HubApp
 - dependency: '@arcanis/slice-ansi'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@arcanis/slice-ansi'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -1090,9 +1078,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -1155,9 +1140,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1202,9 +1184,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -1287,9 +1266,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -1452,9 +1428,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -1616,9 +1589,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -1698,9 +1668,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -1791,9 +1758,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -1881,9 +1845,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -1925,9 +1886,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2020,9 +1978,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2177,9 +2132,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -2266,9 +2218,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2342,9 +2291,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -2407,9 +2353,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -2488,9 +2431,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -2546,9 +2486,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -2637,9 +2574,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -3298,9 +3232,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -3331,9 +3262,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -3370,9 +3298,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -3572,9 +3497,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -3611,9 +3533,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -3697,9 +3616,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -3736,9 +3652,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -3770,9 +3683,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -3814,9 +3724,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -3867,9 +3774,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -3912,9 +3816,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -3972,9 +3873,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -4003,9 +3901,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -5787,9 +5682,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -5887,9 +5779,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -5943,9 +5832,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -6004,9 +5890,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -6083,9 +5966,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -7220,15 +7100,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: '@deepcode/dcignore'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@deepcode/dcignore'
   origin: npm
   type: dev
@@ -8905,9 +8776,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -8932,9 +8800,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -8964,9 +8829,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -9000,9 +8862,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -9035,9 +8894,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -9066,9 +8922,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -9089,9 +8942,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -9116,9 +8966,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -9146,9 +8993,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -9179,9 +9023,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -9210,9 +9051,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -9238,9 +9076,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -9274,9 +9109,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -9308,9 +9140,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -9335,9 +9164,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -9375,9 +9201,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -9717,9 +9540,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -9742,9 +9562,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -9766,9 +9583,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -9810,9 +9624,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -9834,9 +9645,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -10529,11 +10337,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -10587,11 +10391,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -10658,11 +10458,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -10785,15 +10581,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@octetstream/promisify'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@octetstream/promisify'
   origin: npm
   type: dev
@@ -10977,15 +10764,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: '@open-policy-agent/opa-wasm'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@open-policy-agent/opa-wasm'
   origin: npm
   type: dev
@@ -12017,9 +11795,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -12031,11 +11806,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -12112,9 +11883,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -12142,9 +11910,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -12170,15 +11935,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: '@snyk/cli-interface'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/cli-interface'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12186,15 +11942,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/cloud-config-parser'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/cloud-config-parser'
   origin: npm
   type: dev
@@ -12206,15 +11953,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/cocoapods-lockfile-parser'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/cocoapods-lockfile-parser'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12222,15 +11960,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/code-client'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/code-client'
   origin: npm
   type: dev
@@ -12242,15 +11971,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/composer-lockfile-parser'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/composer-lockfile-parser'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12258,15 +11978,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/dep-graph'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/dep-graph'
   origin: npm
   type: dev
@@ -12278,15 +11989,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/docker-registry-v2-client'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/docker-registry-v2-client'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12296,15 +11998,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/fast-glob'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/fast-glob'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12312,24 +12005,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/fix-pipenv-pipfile'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/fix'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/fix'
   origin: npm
   type: dev
@@ -12341,15 +12016,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/gemfile'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/gemfile'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12357,15 +12023,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/glob-parent'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/glob-parent'
   origin: npm
   type: dev
@@ -12377,15 +12034,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/graphlib'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/graphlib'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12393,15 +12041,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/inquirer'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/inquirer'
   origin: npm
   type: dev
@@ -12413,15 +12052,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/java-call-graph-builder'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/java-call-graph-builder'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12429,15 +12059,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/mix-parser'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/mix-parser'
   origin: npm
   type: dev
@@ -12449,15 +12070,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/rpm-parser'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/rpm-parser'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12465,15 +12077,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/snyk-cocoapods-plugin'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/snyk-cocoapods-plugin'
   origin: npm
   type: dev
@@ -12485,15 +12088,6 @@
         fr: Nuage de Talent
 - dependency: '@snyk/snyk-docker-pull'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@snyk/snyk-docker-pull'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -12501,15 +12095,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@snyk/snyk-hex-plugin'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@snyk/snyk-hex-plugin'
   origin: npm
   type: dev
@@ -13331,11 +12916,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -13844,9 +13425,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -13879,9 +13457,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -13916,9 +13491,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -13951,9 +13523,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14115,11 +13684,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14532,11 +14097,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14617,15 +14178,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@types/emscripten'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/emscripten'
   origin: npm
   type: dev
@@ -14979,15 +14531,6 @@
         fr: Nuage de Talent
 - dependency: '@types/flat-cache'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@types/flat-cache'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -15146,9 +14689,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -15157,15 +14697,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/graphlib'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/graphlib'
   origin: npm
   type: dev
@@ -15404,11 +14935,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -15550,9 +15077,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -15597,9 +15121,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -15640,9 +15161,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -15740,15 +15258,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: '@types/js-yaml'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/js-yaml'
   origin: npm
   type: dev
@@ -15933,11 +15442,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16010,15 +15515,6 @@
         fr: lot-occupancy-system
 - dependency: '@types/lodash.chunk'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@types/lodash.chunk'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -16037,15 +15533,6 @@
         fr: Évaluation de l'incidence algorithmique
 - dependency: '@types/lodash.omit'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@types/lodash.omit'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -16053,15 +15540,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@types/lodash.union'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/lodash.union'
   origin: npm
   type: dev
@@ -16095,9 +15573,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16284,14 +15759,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16512,15 +15983,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: '@types/multimatch'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/ng-file-upload'
   origin: npm
   type: dev
@@ -16634,9 +16096,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -16973,9 +16432,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -17470,11 +16926,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -17530,15 +16982,6 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: '@types/sarif'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@types/sarif'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -17588,15 +17031,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@types/semver'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/semver'
   origin: npm
   type: dev
@@ -17884,9 +17318,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -18057,15 +17488,6 @@
         fr: InfoBase du GC
 - dependency: '@types/treeify'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@types/treeify'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -18194,15 +17616,11 @@
   origin: npm
   type: core
   admins:
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@types/uuid'
   origin: npm
   type: dev
@@ -18492,9 +17910,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -18531,9 +17946,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -20776,15 +20188,6 @@
         fr: YouCanBenefit
 - dependency: '@yarnpkg/core'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/core'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -20792,15 +20195,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@yarnpkg/fslib'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@yarnpkg/fslib'
   origin: npm
   type: dev
@@ -20812,15 +20206,6 @@
         fr: Nuage de Talent
 - dependency: '@yarnpkg/json-proxy'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/json-proxy'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -20830,15 +20215,6 @@
         fr: Nuage de Talent
 - dependency: '@yarnpkg/libzip'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/libzip'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -20846,15 +20222,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@yarnpkg/lockfile'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@yarnpkg/lockfile'
   origin: npm
   type: dev
@@ -20873,15 +20240,6 @@
         fr: YouCanBenefit
 - dependency: '@yarnpkg/parsers'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/parsers'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -20891,15 +20249,6 @@
         fr: Nuage de Talent
 - dependency: '@yarnpkg/pnp'
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: '@yarnpkg/pnp'
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -20907,15 +20256,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@yarnpkg/shell'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: '@yarnpkg/shell'
   origin: npm
   type: dev
@@ -20964,11 +20304,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -21089,9 +20425,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -21691,11 +21024,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -22201,11 +21530,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -22458,14 +21783,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -22694,7 +22015,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -22703,9 +22023,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -22811,9 +22128,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -22969,11 +22283,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -23021,15 +22331,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: any-promise
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: any-promise
   origin: npm
   type: dev
@@ -23083,9 +22384,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -23906,15 +23204,11 @@
   origin: npm
   type: core
   admins:
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: archy
   origin: npm
   type: dev
@@ -24056,15 +23350,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -24487,15 +23777,6 @@
         fr: general-licence-manager
 - dependency: array-differ
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: array-differ
-  origin: npm
   type: dev
   admins:
     - bc
@@ -24659,9 +23940,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -24961,11 +24239,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -25304,9 +24578,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -25352,11 +24623,7 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -25496,14 +24763,10 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -26283,14 +25546,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -26814,9 +26073,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -27136,9 +26392,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -27374,9 +26627,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -27415,9 +26665,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -28046,9 +27293,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -28108,9 +27352,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -28500,7 +27741,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -28509,9 +27749,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -28667,9 +27904,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -29040,14 +28274,10 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -29601,15 +28831,6 @@
         fr: Nuage de Talent
 - dependency: binjumper
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: binjumper
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -29779,11 +29000,7 @@
   admins:
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -29911,9 +29128,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -30082,15 +29296,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: boolean
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: boolean
-  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -30175,11 +29380,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -30234,11 +29435,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -30294,7 +29491,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -30303,9 +29499,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -30390,11 +29583,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -30898,11 +30087,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -30984,9 +30169,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -31077,9 +30259,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -31339,11 +30518,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -31539,9 +30714,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -31892,9 +31064,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -32119,11 +31288,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32152,11 +31317,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32288,9 +31449,6 @@
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -32501,9 +31659,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -32683,15 +31838,11 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -32879,9 +32030,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -33211,9 +32359,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -33324,9 +32469,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: character-entities-html4
@@ -33411,11 +32553,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -33638,15 +32776,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: child-process
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: child-process
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -33733,11 +32862,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -33891,14 +33016,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -34065,9 +33186,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -34279,11 +33397,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -34356,11 +33470,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -34414,14 +33524,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -34501,14 +33607,10 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: cli-spinners
   origin: npm
   type: dev
@@ -34538,15 +33640,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: cli-spinner
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: cli-spinner
   origin: npm
   type: dev
@@ -34659,11 +33752,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -34718,15 +33807,6 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-- dependency: clipanion
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: clipanion
   origin: npm
   type: dev
@@ -34828,9 +33908,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -34951,11 +34028,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -35068,11 +34141,7 @@
     - bc
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -35399,9 +34468,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -35528,9 +34594,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -35621,9 +34684,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -36658,7 +35718,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -36667,9 +35726,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -36930,11 +35986,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -37378,9 +36430,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -37460,9 +36509,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -37839,9 +36885,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -37922,9 +36965,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -38012,9 +37052,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -38339,9 +37376,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -38391,14 +37425,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -38654,9 +37684,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -39042,7 +38069,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -39051,9 +38077,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -39202,11 +38225,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -41470,9 +40489,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -41761,11 +40777,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -41948,9 +40960,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -42058,11 +41067,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -42275,9 +41280,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -42424,15 +41426,6 @@
         fr: parking-ticket-system
 - dependency: defaults
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: defaults
-  origin: npm
   type: dev
   admins:
     - bc
@@ -42466,11 +41459,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -42540,7 +41529,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -42549,9 +41537,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -42964,9 +41949,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -43176,9 +42158,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -43396,9 +42375,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -43428,11 +42404,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -43699,9 +42671,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -43768,15 +42737,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -43828,11 +42793,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -44187,15 +43148,6 @@
         fr: YouCanBenefit
 - dependency: docker-modem
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: docker-modem
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -44203,15 +43155,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: dockerfile-ast
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: dockerfile-ast
   origin: npm
   type: dev
@@ -44839,11 +43782,7 @@
   admins:
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -44995,15 +43934,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: dotnet-deps-parser
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: dotnet-deps-parser
   origin: npm
   type: dev
@@ -45768,11 +44698,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -45865,11 +44791,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -46225,9 +45147,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -46393,9 +45312,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -46456,15 +45372,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: elfy
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: elfy
   origin: npm
   type: dev
@@ -46530,15 +45437,6 @@
         fr: YouCanBenefit
 - dependency: email-validator
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: email-validator
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -46562,9 +45460,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -46577,15 +45472,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -46759,9 +45650,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -46860,15 +45748,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -46949,15 +45833,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: endian-reader
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: endian-reader
   origin: npm
   type: dev
@@ -47465,9 +46340,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -47930,15 +46802,11 @@
   type: core
   admins:
     - bc
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -48274,9 +47142,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -48297,11 +47162,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -48339,9 +47200,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -48422,9 +47280,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -49828,15 +48683,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -50244,9 +49095,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -50344,15 +49192,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: event-loop-spinner
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: event-loop-spinner
   origin: npm
   type: dev
@@ -50718,7 +49557,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -50727,9 +49565,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -50909,9 +49744,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -51142,9 +49974,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -51597,11 +50426,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -52157,11 +50982,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -52291,9 +51112,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -52507,11 +51325,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -52654,9 +51468,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -52905,14 +51716,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -53373,11 +52180,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -53522,9 +52325,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -53747,9 +52547,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -54281,9 +53078,6 @@
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -54861,9 +53655,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -55039,9 +53830,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -55232,11 +54020,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -55381,11 +54165,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -55563,7 +54343,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -55572,9 +54351,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -55699,9 +54475,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -55776,9 +54549,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -56793,9 +55563,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -56918,9 +55685,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -56987,9 +55751,6 @@
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -57106,9 +55867,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -57228,7 +55986,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -57237,9 +55994,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -57878,11 +56632,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -58061,15 +56811,6 @@
         fr: parking-ticket-system
 - dependency: global-agent
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: global-agent
-  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -58087,14 +56828,10 @@
   admins:
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -58297,9 +57034,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -58344,11 +57078,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -58417,11 +57147,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -58528,7 +57254,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -58537,9 +57262,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -58748,11 +57470,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -58814,9 +57532,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -58899,15 +57614,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: grapheme-splitter
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: grapheme-splitter
   origin: npm
   type: dev
@@ -60249,15 +58955,6 @@
         fr: gwells
 - dependency: gunzip-maybe
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: gunzip-maybe
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -60781,9 +59478,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -60994,9 +59688,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -61323,11 +60014,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -61635,9 +60322,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -62173,15 +60857,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -62506,9 +61186,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -62790,11 +61467,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -62895,9 +61568,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -63220,11 +61890,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: gwells
         fr: gwells
@@ -63381,9 +62047,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -63562,9 +62225,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -63762,9 +62422,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -63947,11 +62604,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -64163,11 +62816,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -64415,11 +63064,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -64490,9 +63135,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -64536,15 +63178,11 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -64643,14 +63281,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -64855,7 +63489,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -64864,9 +63497,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -64972,9 +63602,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -65058,14 +63685,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -65628,9 +64251,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -66059,9 +64679,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -66409,7 +65026,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -66418,9 +65034,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -66495,14 +65108,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -66619,9 +65228,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -66826,15 +65432,6 @@
         fr: Nuage de Talent
 - dependency: is-deflate
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: is-deflate
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -66953,11 +65550,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -67135,11 +65728,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67265,7 +65854,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -67274,9 +65862,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -67394,9 +65979,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -67427,11 +66009,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67504,15 +66082,6 @@
         fr: YouCanBenefit
 - dependency: is-gzip
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: is-gzip
-  origin: npm
   type: dev
   admins:
     - bc
@@ -67551,14 +66120,10 @@
   admins:
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67602,15 +66167,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: is-interactive
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: is-interactive
   origin: npm
   type: dev
@@ -67881,11 +66437,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67998,11 +66550,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -68103,11 +66651,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -68282,14 +66826,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -69036,7 +67576,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -69045,9 +67584,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69351,14 +67887,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -69474,15 +68006,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: is-unicode-supported
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: is-unicode-supported
   origin: npm
   type: dev
@@ -69902,11 +68425,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -69968,11 +68487,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -70023,9 +68538,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -70123,7 +68635,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -70132,9 +68643,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -70487,9 +68995,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -70558,9 +69063,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -70614,9 +69116,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -70660,9 +69159,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -70705,9 +69201,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -70754,15 +69247,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: is
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: is
   origin: npm
   type: dev
@@ -71047,9 +69531,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71079,9 +69560,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -71134,9 +69612,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71181,9 +69656,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -71225,9 +69697,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71276,9 +69745,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71370,9 +69836,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71425,9 +69888,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -71460,9 +69920,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -71545,9 +70002,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71596,9 +70050,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -71637,9 +70088,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -71683,9 +70131,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71720,9 +70165,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71751,9 +70193,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -71796,9 +70235,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71837,9 +70273,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -71880,9 +70313,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -71921,9 +70351,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72011,9 +70438,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -72079,9 +70503,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -72126,9 +70547,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72182,9 +70600,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -72231,9 +70646,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72653,9 +71065,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -72707,15 +71116,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -72979,9 +71384,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -73017,11 +71419,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -73064,15 +71462,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: json-file-plus
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: json-file-plus
   origin: npm
   type: dev
@@ -73189,9 +71578,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -73496,7 +71882,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -73505,9 +71890,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -73661,9 +72043,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -74086,11 +72465,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -74432,11 +72807,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -74658,9 +73029,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -74930,11 +73298,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -75394,9 +73758,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -75604,11 +73965,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -75735,9 +74092,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -76243,9 +74597,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -76423,15 +74774,6 @@
         fr: Devex
 - dependency: lodash.assignin
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.assignin
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -76442,15 +74784,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: lodash.assign
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.assign
   origin: npm
   type: dev
@@ -76473,15 +74806,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: lodash.camelcase
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.camelcase
   origin: npm
   type: dev
@@ -76530,11 +74854,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76554,15 +74874,11 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76605,15 +74921,6 @@
         fr: YouCanBenefit
 - dependency: lodash.clone
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.clone
-  origin: npm
   type: dev
   admins:
     - bc
@@ -76625,15 +74932,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.constant
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.constant
   origin: npm
   type: dev
@@ -76708,15 +75006,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: lodash.defaults
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.defaults
   origin: npm
   type: dev
@@ -76809,15 +75098,6 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: lodash.filter
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.filter
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -76830,15 +75110,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.findindex
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.findindex
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -76846,15 +75117,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.findkey
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.findkey
   origin: npm
   type: dev
@@ -76866,15 +75128,6 @@
         fr: Nuage de Talent
 - dependency: lodash.find
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.find
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -76882,15 +75135,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.flatmap
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.flatmap
   origin: npm
   type: dev
@@ -76906,15 +75150,11 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76943,11 +75183,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76983,11 +75219,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77013,11 +75245,7 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77048,15 +75276,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.groupby
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.groupby
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -77064,15 +75283,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.has
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.has
   origin: npm
   type: dev
@@ -77114,15 +75324,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: lodash.invert
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.invert
   origin: npm
   type: dev
@@ -77156,11 +75357,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -77200,9 +75397,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
 - dependency: lodash.isempty
@@ -77223,15 +75417,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: lodash.isequal
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.isequal
   origin: npm
   type: dev
@@ -77270,11 +75455,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77338,11 +75519,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -77369,15 +75546,6 @@
         fr: Nuage de Talent
 - dependency: lodash.isobject
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.isobject
-  origin: npm
   type: dev
   admins:
     - bc
@@ -77397,15 +75565,11 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -77450,15 +75614,11 @@
     - bc
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -77486,15 +75646,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.isundefined
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.isundefined
   origin: npm
   type: dev
@@ -77535,15 +75686,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.keys
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.keys
-  origin: npm
   type: dev
   admins:
     - bc
@@ -77555,15 +75697,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.last
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.last
   origin: npm
   type: dev
@@ -77599,11 +75732,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77705,9 +75834,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: lodash.merge
@@ -77760,15 +75886,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.omit
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.omit
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -77833,15 +75950,6 @@
         fr: parking-ticket-system
 - dependency: lodash.orderby
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.orderby
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -77885,15 +75993,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lodash.reduce
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.reduce
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -77927,11 +76026,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -77944,15 +76039,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.size
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.size
   origin: npm
   type: dev
@@ -77986,9 +76072,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -78028,15 +76111,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: lodash.sum
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.sum
   origin: npm
   type: dev
@@ -78152,15 +76226,6 @@
         fr: devhub-app-web
 - dependency: lodash.topairs
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.topairs
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -78177,15 +76242,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-- dependency: lodash.transform
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.transform
   origin: npm
   type: dev
@@ -78250,15 +76306,6 @@
         fr: devhub-app-web
 - dependency: lodash.union
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.union
-  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -78289,11 +76336,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -78331,15 +76374,6 @@
         fr: Nuage de Talent
 - dependency: lodash.upperfirst
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: lodash.upperfirst
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -78347,15 +76381,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: lodash.values
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: lodash.values
   origin: npm
   type: dev
@@ -78405,9 +76430,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -78514,7 +76536,6 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -78523,9 +76544,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: log-symbols
   origin: npm
   type: dev
@@ -78991,11 +77009,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -79100,9 +77114,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -79246,11 +77257,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -79311,15 +77318,11 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -79524,9 +77527,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -80050,15 +78050,6 @@
         fr: parking-ticket-system
 - dependency: matcher
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: matcher
-  origin: npm
   type: dev
   admins:
     - bc
@@ -80522,9 +78513,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -80837,9 +78825,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -80984,9 +78969,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -81025,11 +79007,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -81260,9 +79238,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -81457,11 +79432,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -81597,9 +79568,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -81686,9 +79654,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -81775,9 +79740,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -81847,15 +79809,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -81921,11 +79879,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -82255,7 +80209,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -82264,9 +80217,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -82635,11 +80585,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -82683,11 +80629,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -82917,7 +80859,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -82926,9 +80867,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -83383,9 +81321,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -83565,15 +81500,6 @@
         fr: YouCanBenefit
 - dependency: multimatch
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: multimatch
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -83642,11 +81568,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -84027,9 +81949,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -84122,11 +82041,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -84156,9 +82071,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -84421,7 +82333,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -84430,9 +82341,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -85022,9 +82930,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -85192,9 +83097,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -85262,15 +83164,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: node.extend
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: node.extend
   origin: npm
   type: dev
@@ -85550,9 +83443,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -85643,11 +83533,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -85910,7 +83796,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -85919,9 +83804,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -86622,11 +84504,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -86771,7 +84649,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -86780,9 +84657,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -86948,15 +84822,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -87521,9 +85391,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -87664,7 +85531,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -87673,9 +85539,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -87769,14 +85632,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -87922,11 +85781,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -88183,14 +86038,10 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: ora
   origin: npm
   type: dev
@@ -88488,11 +86339,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -88512,14 +86359,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -88682,11 +86525,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -88834,7 +86673,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -88843,9 +86681,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -88937,15 +86772,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -89047,9 +86878,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -89103,14 +86931,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -89315,15 +87139,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -89406,11 +87226,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -89485,11 +87301,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -89991,9 +87803,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -90032,15 +87841,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: parse-link-header
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: parse-link-header
   origin: npm
   type: dev
@@ -90343,9 +88143,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -90781,9 +88578,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -90822,7 +88616,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -90831,9 +88624,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -90969,7 +88759,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -90978,9 +88767,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -91098,9 +88884,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -91245,9 +89028,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -91317,15 +89097,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -91554,15 +89330,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: peek-stream
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: peek-stream
   origin: npm
   type: dev
@@ -91827,9 +89594,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -91851,11 +89615,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -92165,9 +89925,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -92272,9 +90029,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -92392,11 +90146,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: gwells
         fr: gwells
@@ -94933,11 +92683,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -95034,11 +92780,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -95092,11 +92834,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -95203,9 +92941,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -95372,14 +93107,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -95535,11 +93266,7 @@
     - city-of-montreal-qc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -95622,15 +93349,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: promise-deferred
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: promise-deferred
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -95638,15 +93356,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: promise-fs
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: promise-fs
   origin: npm
   type: dev
@@ -95717,15 +93426,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: promise-queue
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: promise-queue
   origin: npm
   type: dev
@@ -95809,15 +93509,6 @@
         fr: Système De Conception D'ENDC
 - dependency: promiseback
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: promiseback
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -95830,11 +93521,7 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -95894,9 +93581,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -96180,9 +93864,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -96244,11 +93925,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -96345,15 +94022,11 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -96603,11 +94276,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -96667,15 +94336,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -96849,11 +94514,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -97208,9 +94869,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -97488,11 +95146,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: gwells
         fr: gwells
@@ -97542,15 +95196,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: queue
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: queue
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -97563,11 +95208,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -97957,9 +95598,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -98045,9 +95683,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -98205,11 +95840,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -98813,9 +96444,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -99554,7 +97182,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -99563,9 +97190,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -100296,9 +97920,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -100716,11 +98337,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -100764,11 +98381,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -101888,9 +99501,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -102223,11 +99833,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: gwells
         fr: gwells
@@ -102276,9 +99882,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -102397,9 +100000,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -102615,9 +100215,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
 - dependency: resolve
@@ -102668,9 +100265,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -102715,11 +100309,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -102769,14 +100359,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -102994,11 +100580,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -103234,15 +100816,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -103379,15 +100957,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: roarr
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: roarr
   origin: npm
   type: dev
@@ -103590,11 +101159,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -103671,11 +101236,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -103891,14 +101452,10 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -103996,9 +101553,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -104204,9 +101758,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -104531,15 +102082,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -104942,15 +102489,6 @@
         fr: gwells
 - dependency: semver-compare
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: semver-compare
-  origin: npm
   type: dev
   admins:
     - bc
@@ -104981,11 +102519,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -105115,7 +102649,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -105124,9 +102657,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -105222,9 +102752,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -105299,15 +102826,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: serialize-error
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: serialize-error
   origin: npm
   type: dev
@@ -105472,9 +102990,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -105653,11 +103168,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -105815,9 +103326,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -106084,7 +103592,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -106093,9 +103600,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -106174,7 +103678,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -106183,9 +103686,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -106562,7 +104062,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -106571,9 +104070,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -106920,9 +104416,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -106959,11 +104452,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -107439,15 +104928,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: snyk-config
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-config
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107455,15 +104935,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-cpp-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-cpp-plugin
   origin: npm
   type: dev
@@ -107475,15 +104946,6 @@
         fr: Nuage de Talent
 - dependency: snyk-docker-plugin
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-docker-plugin
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107491,15 +104953,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-go-parser
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-go-parser
   origin: npm
   type: dev
@@ -107511,15 +104964,6 @@
         fr: Nuage de Talent
 - dependency: snyk-go-plugin
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-go-plugin
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107527,15 +104971,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-gradle-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-gradle-plugin
   origin: npm
   type: dev
@@ -107547,15 +104982,6 @@
         fr: Nuage de Talent
 - dependency: snyk-module
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-module
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107563,15 +104989,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-mvn-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-mvn-plugin
   origin: npm
   type: dev
@@ -107583,15 +105000,6 @@
         fr: Nuage de Talent
 - dependency: snyk-nodejs-lockfile-parser
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-nodejs-lockfile-parser
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107599,15 +105007,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-nuget-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-nuget-plugin
   origin: npm
   type: dev
@@ -107619,15 +105018,6 @@
         fr: Nuage de Talent
 - dependency: snyk-paket-parser
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-paket-parser
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107635,15 +105025,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-php-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-php-plugin
   origin: npm
   type: dev
@@ -107655,15 +105036,6 @@
         fr: Nuage de Talent
 - dependency: snyk-poetry-lockfile-parser
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-poetry-lockfile-parser
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107671,15 +105043,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-policy
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-policy
   origin: npm
   type: dev
@@ -107691,15 +105054,6 @@
         fr: Nuage de Talent
 - dependency: snyk-python-plugin
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-python-plugin
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107707,15 +105061,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-resolve-deps
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-resolve-deps
   origin: npm
   type: dev
@@ -107727,15 +105072,6 @@
         fr: Nuage de Talent
 - dependency: snyk-resolve
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-resolve
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107743,15 +105079,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk-sbt-plugin
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk-sbt-plugin
   origin: npm
   type: dev
@@ -107763,15 +105090,6 @@
         fr: Nuage de Talent
 - dependency: snyk-tree
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-tree
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107781,15 +105099,6 @@
         fr: Nuage de Talent
 - dependency: snyk-try-require
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: snyk-try-require
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -107797,15 +105106,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: snyk
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: snyk
   origin: npm
   type: dev
@@ -108272,11 +105572,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -108421,9 +105717,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -109086,15 +106379,6 @@
         fr: gwells
 - dependency: split-ca
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: split-ca
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -109249,15 +106533,11 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -109453,15 +106733,6 @@
         fr: devhub-app-web
 - dependency: ssh2-streams
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: ssh2-streams
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -109469,15 +106740,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: ssh2
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: ssh2
   origin: npm
   type: dev
@@ -109712,9 +106974,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -109964,9 +107223,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -110203,15 +107459,6 @@
         fr: YouCanBenefit
 - dependency: stream-buffers
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: stream-buffers
-  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -110387,11 +107634,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -110461,15 +107704,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: stream-to-array
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: stream-to-array
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -110497,15 +107731,6 @@
         fr: devhub-app-web
 - dependency: stream-to-promise
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: stream-to-promise
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -110531,14 +107756,10 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -110691,9 +107912,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -110773,7 +107991,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -110782,9 +107999,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -111126,7 +108340,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -111135,9 +108348,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -111304,7 +108514,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -111313,9 +108522,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -111461,9 +108667,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -111560,7 +108763,6 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -111569,9 +108771,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -111640,9 +108839,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -111746,15 +108942,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -112283,9 +109475,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -112380,9 +109569,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -112417,9 +109603,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -112961,11 +110144,7 @@
   admins:
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -113028,11 +110207,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -113131,11 +110306,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -113165,11 +110336,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -113283,9 +110450,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -113436,9 +110600,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -113655,15 +110816,6 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: then-fs
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: then-fs
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -113746,9 +110898,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -113864,11 +111013,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -113934,11 +111079,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -114417,9 +111558,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -114441,14 +111579,10 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -114652,9 +111786,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -114758,11 +111889,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -114796,11 +111923,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -115004,9 +112127,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -115075,15 +112195,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: toml
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: toml
   origin: npm
   type: dev
@@ -115323,15 +112434,6 @@
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: tree-kill
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: tree-kill
-  origin: npm
   type: dev
   admins:
     - city-of-edmonton-ab
@@ -115343,15 +112445,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: treeify
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: treeify
   origin: npm
   type: dev
@@ -115925,9 +113018,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -116244,11 +113334,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -116273,14 +113359,10 @@
   admins:
     - bc
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Devex
         fr: Devex
@@ -116448,9 +113530,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -116468,11 +113547,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -116547,9 +113622,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -116661,11 +113733,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -117994,11 +115062,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -118458,9 +115522,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -118710,11 +115771,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -118797,11 +115854,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -119103,11 +116156,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -119493,15 +116542,6 @@
         fr: Nuage de Talent
 - dependency: utf8
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: utf8
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -119531,7 +116571,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -119540,9 +116579,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -119736,9 +116772,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -119910,9 +116943,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -120075,9 +117105,6 @@
     - bc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -120372,9 +117399,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -120905,15 +117929,6 @@
         fr: YouCanBenefit
 - dependency: vscode-languageserver-types
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: vscode-languageserver-types
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -121371,9 +118386,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -121589,15 +118601,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: wcwidth
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
 - dependency: wcwidth
   origin: npm
   type: dev
@@ -122847,7 +119850,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -122856,9 +119858,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -123013,11 +120012,7 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -123091,11 +120086,7 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -123820,15 +120811,11 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -123915,7 +120902,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -123924,9 +120910,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124019,15 +121002,11 @@
   admins:
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124237,11 +121216,7 @@
   type: core
   admins:
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -124307,11 +121282,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124386,15 +121357,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124431,15 +121398,11 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124616,9 +121579,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -124732,9 +121692,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-    - projectName:
         en: CDTS
         fr: SGDC
     - projectName:
@@ -124787,9 +121744,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -124883,15 +121837,6 @@
         fr: InfoBase du GC
 - dependency: yaml-js
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
-- dependency: yaml-js
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -124928,11 +121873,7 @@
     - bc
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -125001,9 +121942,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
@@ -125096,9 +122034,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDS Website
-        fr: Site Web SNC
     - projectName:
         en: CDTS
         fr: SGDC
