@@ -1044,6 +1044,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -1058,6 +1059,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -2274,6 +2278,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -2453,6 +2460,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -2467,6 +2475,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -6424,6 +6435,15 @@
         fr: YouCanBenefit
 - dependency: '@colors/colors'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: '@colors/colors'
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -7027,6 +7047,15 @@
         fr: devhub-app-web
 - dependency: '@cypress/request'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: '@cypress/request'
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -7070,10 +7099,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@cypress/xvfb'
   origin: npm
   type: dev
@@ -8545,6 +8578,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: '@html-validate/stylish'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@html-validate/stylish'
   origin: npm
   type: dev
@@ -11604,6 +11646,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@selderee/plugin-htmlparser2'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@semantic-release/commit-analyzer'
   origin: npm
   type: core
@@ -11769,6 +11820,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: '@sidvind/better-ajv-errors'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@sidvind/better-ajv-errors'
   origin: npm
   type: dev
@@ -16115,6 +16175,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -17187,6 +17250,15 @@
         fr: HubApp
 - dependency: '@types/sinonjs__fake-timers'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: '@types/sinonjs__fake-timers'
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -17216,6 +17288,15 @@
     - projectName:
         en: AppHub
         fr: HubApp
+- dependency: '@types/sizzle'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@types/sizzle'
   origin: npm
   type: dev
@@ -17961,6 +18042,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@types/yauzl'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@types/yauzl'
   origin: npm
   type: dev
@@ -20588,7 +20678,11 @@
   type: core
   admins:
     - 'on'
+    - tbs-sct
   projects:
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20682,10 +20776,14 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: acorn-walk
   origin: npm
   type: dev
@@ -20728,6 +20826,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -20735,6 +20834,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21024,6 +21126,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -21034,6 +21137,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21245,6 +21351,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21673,6 +21782,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -21684,6 +21794,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21783,6 +21896,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -21799,6 +21913,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -22015,6 +22132,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -22044,6 +22162,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -22152,6 +22273,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -23247,10 +23371,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -24763,6 +24891,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -24785,6 +24914,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -24853,6 +24985,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -24875,6 +25008,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -25127,6 +25263,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
@@ -25134,6 +25271,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -25463,6 +25603,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -25482,6 +25623,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -25546,6 +25690,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -25568,6 +25713,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -25638,6 +25786,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -25886,6 +26037,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -25896,6 +26048,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: aws-sign2
   origin: npm
   type: dev
@@ -25952,6 +26107,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -25962,6 +26118,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: aws4
   origin: npm
   type: dev
@@ -26018,10 +26177,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -26054,6 +26217,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -27741,6 +27907,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -27773,6 +27940,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -27925,6 +28095,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -28274,6 +28447,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -28284,6 +28458,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: bcrypt-pbkdf
   origin: npm
   type: dev
@@ -28849,6 +29026,15 @@
         fr: ckanext-bcgov
 - dependency: blob-util
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: blob-util
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -28932,6 +29118,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -28942,6 +29129,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -29491,6 +29681,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -29523,6 +29714,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -30365,6 +30559,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -30384,6 +30579,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -30416,6 +30614,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -30429,6 +30628,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: buffer-equal-constant-time
   origin: npm
   type: dev
@@ -30729,6 +30931,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -31365,10 +31570,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: cachedir
   origin: npm
   type: dev
@@ -32181,6 +32390,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -32191,6 +32401,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: caseless
   origin: npm
   type: dev
@@ -32382,6 +32595,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -32681,10 +32897,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: check-more-types
   origin: npm
   type: dev
@@ -33016,6 +33236,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -33026,6 +33247,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33397,6 +33621,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -33407,6 +33632,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33524,6 +33752,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -33537,6 +33766,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33660,6 +33892,15 @@
         fr: Devex
 - dependency: cli-table3
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: cli-table3
+  origin: npm
   type: dev
   admins:
     - bc
@@ -33705,10 +33946,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: cli-truncate
   origin: npm
   type: dev
@@ -34618,6 +34863,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -34708,6 +34956,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -34866,10 +35117,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35046,6 +35301,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -35065,6 +35321,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35170,6 +35429,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -35184,6 +35444,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35287,6 +35550,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -35294,6 +35558,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35718,6 +35985,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -35750,6 +36018,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -37425,6 +37696,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -37450,6 +37722,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -38069,6 +38344,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -38101,6 +38377,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39765,6 +40044,15 @@
         fr: YouCanBenefit
 - dependency: cypress-axe
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: cypress-axe
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -39789,15 +40077,37 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: cypress-html-validate
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: cypress-recurse
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: cypress
   origin: npm
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: cypress
   origin: npm
   type: dev
@@ -39821,6 +40131,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Open Resource Exchange
         fr: Échange de Ressource Ouvert
@@ -40058,6 +40371,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -40068,6 +40382,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: dashdash
   origin: npm
   type: dev
@@ -40385,6 +40702,9 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: dayjs
@@ -40518,6 +40838,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -41260,6 +41583,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -41717,6 +42043,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -41736,6 +42063,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -42860,6 +43190,15 @@
         fr: YouCanBenefit
 - dependency: discontinuous-range
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: discontinuous-range
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -43387,6 +43726,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -43401,6 +43741,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43539,6 +43882,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -43553,6 +43897,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43626,6 +43973,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -43640,6 +43988,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43692,6 +44043,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -43706,6 +44058,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44983,6 +45338,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -44993,6 +45349,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: ecc-jsbn
   origin: npm
   type: dev
@@ -45049,6 +45408,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -45062,6 +45422,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: ecdsa-sig-formatter
   origin: npm
   type: dev
@@ -45472,6 +45835,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -45492,6 +45856,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -45712,6 +46079,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: encoding-japanese
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: encoding
   origin: npm
   type: core
@@ -45748,6 +46124,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -45768,6 +46145,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -45977,7 +46357,11 @@
   type: core
   admins:
     - 'on'
+    - tbs-sct
   projects:
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -46024,6 +46408,7 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -46035,6 +46420,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -47296,6 +47684,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -48399,6 +48790,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
@@ -48406,6 +48798,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48609,10 +49004,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49272,6 +49671,15 @@
         fr: InfoBase du GC
 - dependency: eventemitter2
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: eventemitter2
+  origin: npm
   type: dev
   admins:
     - bc
@@ -49557,6 +49965,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -49574,6 +49983,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49630,6 +50042,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -49637,6 +50050,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -50353,6 +50769,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -50592,6 +51011,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -50599,6 +51019,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: extract-zip
   origin: npm
   type: dev
@@ -50642,6 +51065,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -50664,6 +51088,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50886,6 +51313,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51509,6 +51939,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -51531,6 +51962,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51716,6 +52150,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -51732,6 +52167,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -53353,6 +53791,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -53363,6 +53802,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: forever-agent
   origin: npm
   type: dev
@@ -53479,6 +53921,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -53495,6 +53938,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -54091,6 +54537,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -54113,6 +54560,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -54343,6 +54793,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -54375,6 +54826,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -55986,6 +56440,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -56003,6 +56458,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -56192,10 +56650,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: getos
   origin: npm
   type: dev
@@ -56228,6 +56690,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -56238,6 +56701,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: getpass
   origin: npm
   type: dev
@@ -56828,10 +57294,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -57254,6 +57724,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -57286,6 +57757,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -57556,6 +58030,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -59502,6 +59979,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -60519,6 +60999,7 @@
     - bc
     - city-of-montreal-qc
     - esdc-edsc
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -60530,6 +61011,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -61314,19 +61798,36 @@
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: html-validate
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: html-validate
   origin: npm
   type: dev
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: html-void-elements
   origin: npm
   type: core
@@ -61417,6 +61918,7 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -61428,6 +61930,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -61825,6 +62330,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -61835,6 +62341,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: http-signature
   origin: npm
   type: dev
@@ -62025,6 +62534,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -62032,6 +62542,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -62250,6 +62763,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -62443,6 +62959,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -62604,6 +63123,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -62611,6 +63131,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -62802,6 +63325,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: imap-simple
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: imap
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: img-loader
   origin: npm
   type: dev
@@ -63281,6 +63822,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -63297,6 +63839,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63489,6 +64034,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -63521,6 +64067,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63629,6 +64178,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -63685,6 +64237,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -63704,6 +64257,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -65108,6 +65664,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -65115,6 +65672,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -65854,6 +66414,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -65886,6 +66447,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -66120,10 +66684,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -66826,6 +67394,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -66833,6 +67402,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67112,6 +67684,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -67125,6 +67698,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67576,6 +68152,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -67593,6 +68170,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67887,6 +68467,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -67909,6 +68490,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -68006,6 +68590,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: is-unicode-supported
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: is-unicode-supported
   origin: npm
   type: dev
@@ -68560,6 +69153,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -68635,6 +69231,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -68667,6 +69264,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -68868,6 +69468,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -68878,6 +69479,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -71043,6 +71647,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -71231,6 +71838,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -71241,6 +71849,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: jsbn
   origin: npm
   type: dev
@@ -71645,6 +72256,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -71712,6 +72326,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -71722,6 +72337,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: json-schema
   origin: npm
   type: dev
@@ -71882,6 +72500,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -71899,6 +72518,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72101,6 +72723,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -72123,6 +72746,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72301,6 +72927,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -72314,6 +72941,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: jsonwebtoken
   origin: npm
   type: dev
@@ -72355,6 +72985,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -72365,6 +72996,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: jsprim
   origin: npm
   type: dev
@@ -72584,6 +73218,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -72597,6 +73232,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: jwa
   origin: npm
   type: dev
@@ -72620,6 +73258,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -72633,6 +73272,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: jws
   origin: npm
   type: dev
@@ -73004,6 +73646,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -73011,6 +73654,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -73387,10 +74033,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lazy-ass
   origin: npm
   type: dev
@@ -73849,6 +74499,24 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: libbase64
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: libmime
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: libnpmaccess
   origin: npm
   type: dev
@@ -73942,6 +74610,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: libqp
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: license-webpack-plugin
   origin: npm
   type: dev
@@ -74136,6 +74813,15 @@
         fr: Architecture GC
 - dependency: linkify-it
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: linkify-it
+  origin: npm
   type: dev
   admins:
     - ssc-spc
@@ -74249,6 +74935,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: listr2
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: listr2
   origin: npm
   type: dev
@@ -75298,6 +75993,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -75311,6 +76007,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lodash.includes
   origin: npm
   type: dev
@@ -75357,6 +76056,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -75370,6 +76070,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lodash.isboolean
   origin: npm
   type: dev
@@ -75474,6 +76177,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -75487,6 +76191,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lodash.isinteger
   origin: npm
   type: dev
@@ -75519,6 +76226,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -75532,6 +76240,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lodash.isnumber
   origin: npm
   type: dev
@@ -75565,6 +76276,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -75582,6 +76294,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75614,6 +76329,7 @@
     - bc
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -75631,6 +76347,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -75906,6 +76625,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -75922,6 +76642,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lodash.once
   origin: npm
   type: dev
@@ -76449,6 +77172,9 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -76536,6 +77262,7 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -76544,6 +77271,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: log-symbols
   origin: npm
   type: dev
@@ -76607,10 +77337,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: log-update
   origin: npm
   type: dev
@@ -77139,6 +77873,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -77310,6 +78047,24 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: mailparser
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: mailsplit
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: make-dir
   origin: npm
   type: core
@@ -78942,6 +79697,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -78949,6 +79705,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -79595,6 +80354,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -79680,6 +80442,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -79809,6 +80574,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -79826,6 +80592,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -80209,6 +80978,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -80241,6 +81011,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -80370,6 +81143,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -81144,6 +81920,15 @@
         fr: InfoBase du GC
 - dependency: moo
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: moo
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -81347,6 +82132,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -82026,6 +82814,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: nearley
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: nearley
   origin: npm
   type: dev
@@ -83173,15 +83970,28 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: nodeify
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: nodemailer
   origin: npm
   type: core
   admins:
     - bc
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: nodemon
   origin: npm
   type: dev
@@ -83796,6 +84606,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -83813,6 +84624,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -85531,6 +86345,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -85563,6 +86378,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -85632,6 +86450,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -85648,6 +86467,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -86446,6 +87268,15 @@
         fr: YouCanBenefit
 - dependency: ospath
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: ospath
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -86931,6 +87762,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -86944,6 +87776,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88070,6 +88905,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: parseley
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: parseqs
   origin: npm
   type: core
@@ -88616,6 +89460,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -88648,6 +89493,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88759,6 +89607,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -88791,6 +89640,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89347,6 +90199,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -89369,6 +90222,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89419,6 +90275,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89689,6 +90548,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -89706,6 +90566,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92834,10 +93697,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93521,10 +94388,14 @@
   type: core
   admins:
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: promise
   origin: npm
   type: dev
@@ -93560,10 +94431,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93925,6 +94800,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: general-licence-manager
@@ -93932,6 +94808,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: proxy-from-env
   origin: npm
   type: dev
@@ -94075,6 +94954,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -94088,6 +94968,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: psl
   origin: npm
   type: dev
@@ -94336,6 +95219,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -94356,6 +95240,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94452,6 +95339,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94893,6 +95783,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -95279,6 +96172,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: quoted-printable
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: q
   origin: npm
   type: core
@@ -95355,6 +96257,15 @@
         fr: Nuage de Talent
 - dependency: railroad-diagrams
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: railroad-diagrams
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -95402,6 +96313,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: randexp
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: randexp
   origin: npm
   type: dev
@@ -99272,6 +100192,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -99279,6 +100200,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: request-progress
   origin: npm
   type: dev
@@ -99541,7 +100465,11 @@
   type: core
   admins:
     - 'on'
+    - tbs-sct
   projects:
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -100359,6 +101287,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -100372,6 +101301,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -100515,6 +101447,7 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -100522,6 +101455,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -100669,6 +101605,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -100676,6 +101613,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: rfdc
   origin: npm
   type: dev
@@ -100816,6 +101756,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -100836,6 +101777,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -101452,6 +102396,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -101462,6 +102407,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -101580,6 +102528,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -101782,6 +102733,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -102343,6 +103297,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: selderee
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: select-hose
   origin: npm
   type: core
@@ -102649,6 +103612,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -102681,6 +103645,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -103592,6 +104559,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -103624,6 +104592,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -103678,6 +104649,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -103710,6 +104682,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104062,6 +105037,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -104094,6 +105070,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104393,10 +105372,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104536,6 +105519,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -104546,6 +105530,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -106755,6 +107742,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -106765,6 +107753,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: sshpk
   origin: npm
   type: dev
@@ -107991,6 +108982,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -108023,6 +109015,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -108340,6 +109335,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -108372,6 +109368,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -108514,6 +109513,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -108540,6 +109540,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -108817,6 +109820,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -108824,6 +109828,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -109498,6 +110505,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -110939,6 +111949,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -110946,6 +111957,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: throttleit
   origin: npm
   type: dev
@@ -111079,6 +112093,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -111092,6 +112107,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111524,6 +112542,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: tlds
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: tmp-promise
   origin: npm
   type: dev
@@ -111579,6 +112606,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -111589,6 +112617,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -112295,6 +113326,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -112311,6 +113343,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: tough-cookie
   origin: npm
   type: dev
@@ -113039,6 +114074,9 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -113263,6 +114301,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -113282,6 +114321,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -113359,6 +114401,7 @@
   admins:
     - bc
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -113369,6 +114412,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: tweetnacl
   origin: npm
   type: dev
@@ -113547,10 +114593,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -114029,6 +115079,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: uc.micro
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: uc.micro
   origin: npm
   type: dev
@@ -115408,6 +116467,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -115427,6 +116487,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -115693,7 +116756,11 @@
   type: core
   admins:
     - 'on'
+    - tbs-sct
   projects:
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -115945,6 +117012,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -116531,6 +117601,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: utf7
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: utf8-byte-length
   origin: npm
   type: dev
@@ -116540,6 +117619,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: utf8
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: utf8
   origin: npm
   type: dev
@@ -116900,6 +117988,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: uuencode
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: uuid-browser
   origin: npm
   type: dev
@@ -116966,6 +118063,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -117547,6 +118647,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -117569,6 +118670,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -119850,6 +120954,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -119882,6 +120987,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120811,6 +121919,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -120825,6 +121934,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120902,6 +122014,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -120934,6 +122047,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -121769,6 +122885,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -122087,6 +123206,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -122109,6 +123229,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
