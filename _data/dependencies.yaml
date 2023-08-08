@@ -705,6 +705,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: '@assemblyscript/loader'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@aw-web-design/x-default-browser'
   origin: npm
   type: dev
@@ -10183,6 +10192,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: '@ljharb/through'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@loaders.gl/core'
   origin: npm
   type: core
@@ -13684,6 +13702,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: '@tootallnate/quickjs-emscripten'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@trysound/sax'
   origin: npm
   type: core
@@ -25757,6 +25784,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -26824,6 +26854,15 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
+- dependency: b4a
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: babel-code-frame
   origin: npm
   type: core
@@ -28767,6 +28806,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: basic-ftp
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: basscss-align
   origin: npm
   type: core
@@ -29180,6 +29228,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: big.js
@@ -29450,6 +29501,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: binary
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: bindings
   origin: npm
   type: core
@@ -29640,6 +29700,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -31256,6 +31319,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: buffer-indexof-polyfill
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: buffer-indexof
   origin: npm
   type: core
@@ -31371,6 +31443,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: buffers
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: buffer
   origin: npm
   type: core
@@ -32387,6 +32468,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: camaro
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: camel-case
   origin: npm
   type: core
@@ -32973,6 +33063,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: chainsaw
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: chai
   origin: npm
   type: core
@@ -40866,8 +40965,12 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -42437,6 +42540,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: degenerator
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: deglob
   origin: npm
   type: core
@@ -45440,8 +45552,12 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -45850,6 +45966,15 @@
         en: ckanext-bcgov
         fr: ckanext-bcgov
 - dependency: edge-paths
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: edgedriver
   origin: npm
   type: dev
   admins:
@@ -48196,6 +48321,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -50093,6 +50221,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: eventemitter-asyncresource
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: eventemitter2
   origin: npm
   type: core
@@ -51818,6 +51955,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: fast-fifo
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: fast-glob
   origin: npm
   type: core
@@ -52463,7 +52609,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -54454,7 +54604,11 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55367,7 +55521,11 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -56323,6 +56481,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: geckodriver
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: generate-function
   origin: npm
   type: dev
@@ -56771,6 +56938,9 @@
     - esdc-edsc
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
 - dependency: get-proxy
@@ -56982,6 +57152,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: get-uri
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: get-value
   origin: npm
   type: core
@@ -61264,6 +61443,24 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: hdr-histogram-js
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: hdr-histogram-percentiles-obj
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: header-case
   origin: npm
   type: dev
@@ -65258,6 +65455,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -75238,6 +75438,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: listenercount
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: listr-silent-renderer
   origin: npm
   type: core
@@ -83676,6 +83885,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: netmask
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: nexmo
   origin: npm
   type: core
@@ -83779,6 +83997,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: nice-napi
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: nice-try
   origin: npm
   type: core
@@ -84025,11 +84252,15 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
@@ -84108,8 +84339,12 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -84311,6 +84546,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: node-gyp-build
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: node-gyp
   origin: npm
   type: core
@@ -88675,6 +88919,24 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: pac-proxy-agent
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: pac-resolver
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: package-hash
   origin: npm
   type: core
@@ -88799,6 +89061,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -91436,6 +91701,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: piscina
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: pixelmatch
   origin: npm
   type: core
@@ -95418,6 +95692,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: proxy-agent
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: proxy-from-env
   origin: npm
   type: core
@@ -96710,6 +96993,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: queue-tick
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: queue
   origin: npm
   type: dev
@@ -103088,6 +103380,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: safaridriver
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: safe-array-concat
   origin: npm
   type: dev
@@ -106234,8 +106535,12 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -106880,8 +107185,12 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -106913,8 +107222,12 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -109342,6 +109655,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: streamx
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: strict-uri-encode
   origin: npm
   type: core
@@ -114003,6 +114325,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: traverse
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: tree-kill
   origin: npm
   type: dev
@@ -117327,6 +117658,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: unzipper
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: upath
   origin: npm
   type: core
@@ -119950,6 +120290,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: wait-port
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: walker
   origin: npm
   type: core
@@ -120253,8 +120602,12 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
