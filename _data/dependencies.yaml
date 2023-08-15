@@ -1065,6 +1065,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -1077,6 +1078,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -1262,6 +1266,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -1273,6 +1278,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -1602,10 +1610,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@babel/helper-environment-visitor'
   origin: npm
   type: dev
@@ -1664,6 +1676,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -1675,6 +1688,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -1761,10 +1777,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -2214,6 +2234,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -2225,6 +2246,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -2266,10 +2290,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@babel/helper-string-parser'
   origin: npm
   type: dev
@@ -2290,11 +2318,15 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -2481,6 +2513,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -2493,6 +2526,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -2573,6 +2609,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -2585,6 +2622,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -5935,6 +5975,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -5946,6 +5987,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -5989,6 +6033,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -6000,6 +6045,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -6043,6 +6091,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -6055,6 +6104,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -6584,6 +6636,141 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+- dependency: '@ckeditor/ckeditor5-clipboard'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-core'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-dev-utils'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-dev-webpack-plugin'
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-engine'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-enter'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-paragraph'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-select-all'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-theme-lark'
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-typing'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-ui'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-undo'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-upload'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-utils'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@ckeditor/ckeditor5-widget'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@cnakazawa/watch'
   origin: npm
   type: dev
@@ -7034,6 +7221,15 @@
         fr: Évaluation de l'incidence algorithmique
 - dependency: '@cspotcode/source-map-support'
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@cspotcode/source-map-support'
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -7178,6 +7374,15 @@
         fr: Système De Conception D'ENDC
 - dependency: '@csstools/selector-specificity'
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@csstools/selector-specificity'
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -7318,10 +7523,14 @@
   type: dev
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@double-great/stylelint-a11y'
   origin: npm
   type: dev
@@ -8282,6 +8491,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -8289,6 +8499,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@gar/promisify'
   origin: npm
   type: dev
@@ -9949,10 +10162,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/gen-mapping'
   origin: npm
   type: dev
@@ -9971,10 +10188,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/resolve-uri'
   origin: npm
   type: dev
@@ -9993,10 +10214,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/set-array'
   origin: npm
   type: dev
@@ -10015,10 +10240,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/source-map'
   origin: npm
   type: dev
@@ -10033,10 +10262,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/sourcemap-codec'
   origin: npm
   type: dev
@@ -10055,10 +10288,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@jridgewell/trace-mapping'
   origin: npm
   type: dev
@@ -10783,10 +11020,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -10837,6 +11078,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -10844,6 +11086,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -10904,10 +11149,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -10957,6 +11206,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -10964,6 +11214,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@npmcli/fs'
   origin: npm
   type: dev
@@ -10978,6 +11231,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -10985,6 +11239,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@npmcli/move-file'
   origin: npm
   type: dev
@@ -13716,7 +13973,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -13735,6 +13996,15 @@
         fr: InfoBase du GC
 - dependency: '@tsconfig/node10'
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@tsconfig/node10'
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -13742,6 +14012,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: '@tsconfig/node12'
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@tsconfig/node12'
   origin: npm
   type: dev
@@ -13753,6 +14032,15 @@
         fr: InfoBase du GC
 - dependency: '@tsconfig/node14'
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@tsconfig/node14'
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -13760,6 +14048,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: '@tsconfig/node16'
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@tsconfig/node16'
   origin: npm
   type: dev
@@ -14850,10 +15147,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -14890,10 +15191,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -14912,10 +15217,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -15250,10 +15559,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -15935,6 +16248,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -15942,6 +16256,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -16413,6 +16730,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: AppHub
@@ -16420,6 +16738,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -16745,6 +17066,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -16766,6 +17088,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -16978,6 +17303,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -16985,6 +17311,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -19780,6 +20109,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -19787,6 +20117,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -19830,6 +20163,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -19837,6 +20171,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -19880,6 +20217,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -19887,6 +20225,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -19930,6 +20271,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -19937,6 +20279,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20096,10 +20441,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20119,6 +20468,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20126,6 +20476,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20169,6 +20522,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20176,6 +20530,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20219,6 +20576,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20226,6 +20584,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20269,6 +20630,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20276,6 +20638,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20319,6 +20684,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20326,6 +20692,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20369,6 +20738,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20376,6 +20746,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20419,6 +20792,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20426,6 +20800,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20469,6 +20846,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20476,6 +20854,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20519,6 +20900,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20526,6 +20908,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20608,6 +20993,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20615,6 +21001,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20651,6 +21040,33 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: '@webpack-cli/configtest'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@webpack-cli/info'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: '@webpack-cli/serve'
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: '@webpack-contrib/schema-utils'
   origin: npm
   type: dev
@@ -20742,6 +21158,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20749,6 +21166,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -20792,6 +21212,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -20799,6 +21220,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21234,6 +21658,15 @@
         fr: Nuage de Talent
 - dependency: acorn-import-assertions
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: acorn-import-assertions
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -21344,11 +21777,15 @@
   type: core
   admins:
     - bc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -21394,6 +21831,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -21402,6 +21840,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -21694,6 +22135,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -21705,6 +22147,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -21841,6 +22286,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -21849,6 +22295,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -21895,6 +22344,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -21909,6 +22359,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -22798,6 +23251,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -22822,6 +23276,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -24032,6 +24489,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -24043,6 +24501,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -24135,10 +24596,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -24908,6 +25373,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -24915,6 +25381,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -28447,6 +28916,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -28471,6 +28941,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -29241,6 +29714,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -29248,6 +29722,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -29998,6 +30475,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -30005,6 +30483,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -30154,15 +30635,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: bower
-  origin: npm
-  type: core
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: bowser
   origin: npm
   type: dev
@@ -30231,6 +30703,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -30255,6 +30728,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -30327,6 +30803,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -30337,6 +30814,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -30869,6 +31349,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -30876,6 +31357,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -31255,6 +31739,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -31265,6 +31750,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -31893,6 +32381,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -31903,6 +32392,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: cacache
   origin: npm
   type: dev
@@ -32377,6 +32869,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -32384,6 +32877,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -32529,10 +33025,14 @@
   type: core
   admins:
     - bc
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: camelcase-css
   origin: npm
   type: dev
@@ -32710,10 +33210,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -32762,6 +33266,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -32769,6 +33274,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33052,6 +33560,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: cdubz/ckeditor5-source-editing-codemirror
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: center-align
   origin: npm
   type: dev
@@ -33116,6 +33633,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -33140,6 +33658,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -33636,6 +34157,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -33646,6 +34168,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -33722,6 +34247,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -33729,6 +34255,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33987,6 +34516,15 @@
     - projectName:
         en: ckanext-fluent
         fr: ckanext-fluent
+- dependency: ckeditor5
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: clap
   origin: npm
   type: dev
@@ -34163,6 +34701,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -34174,6 +34713,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -34291,6 +34833,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -34302,6 +34845,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -34378,10 +34924,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: cli-spinners
   origin: npm
   type: dev
@@ -34781,6 +35331,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: AppHub
@@ -34794,6 +35345,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -35171,6 +35725,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: codemirror/codemirror
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: codezero/laravel-unique-translation
   origin: composer
   type: core
@@ -35362,6 +35925,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -35386,6 +35950,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -35456,6 +36023,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -35480,6 +36048,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -35624,7 +36195,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35668,6 +36243,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -35676,6 +36252,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -35962,6 +36541,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -35977,6 +36557,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -36135,6 +36718,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -36143,6 +36727,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -36515,6 +37102,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -36539,6 +37127,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -38385,6 +38976,15 @@
         fr: InfoBase du GC
 - dependency: cosmiconfig-typescript-loader
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: cosmiconfig-typescript-loader
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -38399,6 +38999,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -38406,6 +39007,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -38763,10 +39367,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -38901,6 +39509,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -38915,6 +39524,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -39386,10 +39998,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39462,6 +40078,7 @@
     - bc
     - esdc-edsc
     - phac-aspc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -39479,6 +40096,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -39641,6 +40261,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -39648,6 +40269,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39704,10 +40328,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39785,6 +40413,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -39792,6 +40421,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39886,10 +40518,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39961,10 +40597,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -40115,7 +40755,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -40138,10 +40782,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -40213,10 +40861,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -41294,6 +41946,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -41318,6 +41971,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -41957,6 +42613,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -41967,6 +42624,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -42721,10 +43381,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43562,6 +44226,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -43576,6 +44241,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43618,6 +44286,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -43625,6 +44294,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44221,6 +44893,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -44236,6 +44909,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -44370,6 +45046,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -44385,6 +45062,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -44461,6 +45141,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -44476,6 +45157,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -44531,6 +45215,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -44546,6 +45231,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -44754,6 +45442,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -44911,6 +45602,15 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+- dependency: drupal/ckeditor4_codemirror
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: drupal/ckeditor_abbreviation
   origin: composer
   type: core
@@ -44947,18 +45647,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/console
-  origin: composer
-  type: dev
-  admins:
-    - statcan
-  projects:
-    - projectName:
-        en: Drupal WxT
-        fr: Drupal WxT
 - dependency: drupal/core-composer-scaffold
   origin: composer
-  type: dev
+  type: core
   admins:
     - statcan
   projects:
@@ -44974,7 +45665,7 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/core_context
+- dependency: drupal/core-recommended
   origin: composer
   type: core
   admins:
@@ -44983,7 +45674,7 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-- dependency: drupal/core
+- dependency: drupal/core_context
   origin: composer
   type: core
   admins:
@@ -45092,6 +45783,15 @@
         en: Drupal WxT
         fr: Drupal WxT
 - dependency: drupal/entityqueue
+  origin: composer
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: drupal/fakeobjects
   origin: composer
   type: core
   admins:
@@ -46153,10 +46853,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -46417,6 +47121,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -46424,6 +47129,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -46805,10 +47513,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: enhanced-resolve
   origin: npm
   type: dev
@@ -46903,6 +47615,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -46918,6 +47631,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -47043,6 +47759,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -47050,6 +47767,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: enzyme-adapter-react-16
   origin: npm
   type: dev
@@ -47190,6 +47910,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -47204,6 +47925,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -47468,10 +48192,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48026,6 +48754,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -48034,6 +48763,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48181,6 +48913,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -48199,6 +48932,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -48274,10 +49010,14 @@
   type: core
   admins:
     - bc
+    - statcan
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: escodegen
   origin: npm
   type: dev
@@ -49133,6 +49873,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -49140,6 +49881,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49565,6 +50309,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -49579,6 +50324,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49695,6 +50443,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -49702,6 +50451,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49773,6 +50525,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -49783,6 +50536,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49887,6 +50643,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -49901,6 +50658,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -50294,6 +51054,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -50311,6 +51072,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51776,6 +52540,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -51790,6 +52555,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -51901,6 +52669,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -51908,6 +52677,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -51991,6 +52763,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -52005,6 +52778,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -52077,6 +52853,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -52087,6 +52864,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -52200,8 +52980,12 @@
   origin: npm
   type: dev
   admins:
+    - statcan
     - tbs-sct
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -52244,10 +53028,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -53107,6 +53895,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -53117,6 +53906,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -53341,6 +54133,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -53349,6 +54142,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -53438,6 +54234,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -53449,6 +54246,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -55023,6 +55823,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -55040,6 +55841,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -55101,6 +55905,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -55111,6 +55916,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -55276,6 +56084,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -55300,6 +56109,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -55481,6 +56293,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -55505,6 +56318,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -57626,6 +58442,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -57633,6 +58450,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -57738,6 +58558,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -57745,6 +58566,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -57990,6 +58814,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -58002,6 +58827,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -58136,6 +58964,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -58143,6 +58972,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -58243,6 +59075,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -58267,6 +59100,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -58511,6 +59347,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -58535,6 +59372,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -60464,6 +61304,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -60488,6 +61329,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -61270,6 +62114,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -61294,6 +62139,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -63338,6 +64186,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -63355,6 +64204,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -63600,6 +64452,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -63608,6 +64461,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -63970,6 +64826,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -63977,6 +64834,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -64148,6 +65008,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -64162,6 +65023,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -64200,6 +65064,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -64217,6 +65082,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -64303,6 +65171,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -64320,6 +65189,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -64452,6 +65324,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -64462,6 +65335,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: infer-owner
   origin: npm
   type: dev
@@ -64511,6 +65387,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -64535,6 +65412,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -64618,6 +65498,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -64642,6 +65523,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -65015,6 +65899,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -65032,6 +65917,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -65668,6 +66556,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -65682,6 +66571,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -66237,6 +67129,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -66244,6 +67137,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -66752,6 +67648,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -66762,6 +67659,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67039,6 +67939,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -67049,6 +67950,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67205,6 +68109,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: is-interactive
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: is-interactive
   origin: npm
   type: dev
@@ -67602,6 +68515,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -67612,6 +68526,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67784,10 +68701,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -67874,6 +68795,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -67882,6 +68804,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -67971,6 +68896,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -67991,6 +68917,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -69754,6 +70683,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -69768,6 +70698,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -69822,6 +70755,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -69845,6 +70779,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -70543,6 +71480,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: javascript-stringify
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: javascript-stringify
   origin: npm
   type: dev
@@ -71711,6 +72657,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -71718,6 +72665,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72098,6 +73048,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -72110,6 +73061,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -72193,6 +73147,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -72204,6 +73159,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72434,6 +73392,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -72446,6 +73405,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72644,10 +73606,14 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -72712,6 +73678,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -72726,6 +73693,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -73109,6 +74079,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -73117,6 +74088,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -73197,6 +74171,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -73214,6 +74189,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -74030,6 +75008,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -74050,6 +75029,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -74166,6 +75148,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -74173,6 +75156,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -74902,6 +75888,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -74909,6 +75896,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75182,6 +76172,15 @@
         fr: SGDC
 - dependency: lilconfig
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: lilconfig
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -75218,6 +76217,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -75225,6 +76225,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -75642,6 +76645,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -75649,6 +76653,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75692,6 +76699,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -75699,6 +76707,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75741,6 +76752,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -75752,6 +76764,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -75834,8 +76849,12 @@
   type: core
   admins:
     - bc
+    - statcan
     - tbs-sct
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -76973,6 +77992,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -76980,6 +78000,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -77542,10 +78565,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -78330,6 +79357,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -78354,6 +79382,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -78564,6 +79595,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -78581,6 +79613,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -78650,6 +79685,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -78657,6 +79693,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -79733,10 +80772,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -80252,6 +81295,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -80260,6 +81304,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -80321,6 +81368,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -80328,6 +81376,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -80994,6 +82045,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -81004,6 +82056,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -81121,6 +82176,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -81141,6 +82197,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -81210,6 +82269,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -81230,6 +82290,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -81374,6 +82437,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -81389,6 +82453,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -81771,6 +82838,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -81795,6 +82863,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -82016,6 +83087,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -82026,6 +83098,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: minipass-collect
   origin: npm
   type: dev
@@ -82065,6 +83140,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -82075,6 +83151,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: minipass-flush
   origin: npm
   type: dev
@@ -82093,6 +83172,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -82103,6 +83183,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: minipass-pipeline
   origin: npm
   type: dev
@@ -82142,6 +83225,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -82152,6 +83236,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -82186,6 +83273,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -82193,6 +83281,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -82413,6 +83504,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -82433,6 +83525,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -82880,6 +83975,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -82904,6 +84000,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -83240,10 +84339,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -83720,6 +84823,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -83735,6 +84839,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -84694,10 +85801,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -85166,10 +86277,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -85602,6 +86717,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -85609,6 +86725,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -87159,6 +88278,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -87183,6 +88303,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -87264,6 +88387,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -87278,6 +88402,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -87588,6 +88715,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -87595,6 +88723,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88398,6 +89529,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -88412,6 +89544,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88470,6 +89605,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -88481,6 +89617,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -88557,6 +89696,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -88571,6 +89711,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -88769,6 +89912,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -88783,6 +89927,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89128,6 +90275,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -89135,6 +90283,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89411,6 +90562,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -89425,6 +90577,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -90193,6 +91348,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -90207,6 +91363,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -90268,6 +91427,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -90292,6 +91452,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -90462,6 +91625,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -90476,6 +91640,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -90505,6 +91672,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -90519,6 +91687,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -90757,6 +91928,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -90771,6 +91943,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -91258,10 +92433,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: picocolors
   origin: npm
   type: dev
@@ -91295,6 +92474,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -91302,6 +92482,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -91369,6 +92552,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -91387,6 +92571,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -91678,6 +92865,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -91686,6 +92874,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -91983,6 +93174,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: pofile
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: point-geometry
   origin: npm
   type: dev
@@ -92231,10 +93431,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92309,10 +93513,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92351,10 +93559,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92429,10 +93641,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92471,10 +93687,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92513,10 +93733,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92555,10 +93779,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92705,6 +93933,15 @@
         fr: Système De Conception D'ENDC
 - dependency: postcss-import
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: postcss-import
+  origin: npm
   type: dev
   admins:
     - city-of-edmonton-ab
@@ -92734,10 +93971,14 @@
   type: core
   admins:
     - bc
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: postcss-js
   origin: npm
   type: dev
@@ -92800,10 +94041,14 @@
   type: core
   admins:
     - bc
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: postcss-loader
   origin: npm
   type: dev
@@ -92880,10 +94125,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92922,10 +94171,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -92973,10 +94226,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93015,10 +94272,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93057,10 +94318,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93099,10 +94364,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93135,6 +94404,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: postcss-mixins
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: postcss-modules-extract-imports
   origin: npm
   type: core
@@ -93150,6 +94428,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -93167,6 +94446,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -93191,6 +94473,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -93208,6 +94491,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -93232,6 +94518,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -93249,6 +94536,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -93273,6 +94563,7 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -93290,6 +94581,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -93328,6 +94622,15 @@
         fr: Système De Conception D'ENDC
 - dependency: postcss-nesting
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: postcss-nesting
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -93341,10 +94644,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93383,10 +94690,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93422,10 +94733,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93461,10 +94776,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93500,10 +94819,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93539,10 +94862,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93578,10 +94905,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93617,10 +94948,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93659,10 +94994,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93716,10 +95055,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93816,10 +95159,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93858,10 +95205,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93936,10 +95287,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93975,16 +95330,29 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: postcss-simple-vars
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: postcss-svgo
   origin: npm
   type: core
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94023,10 +95391,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94074,10 +95446,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94133,6 +95509,7 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -94141,6 +95518,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -94272,6 +95652,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -94279,6 +95660,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -95041,6 +96425,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -95051,6 +96436,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: promise-inflight
   origin: npm
   type: dev
@@ -96107,6 +97495,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -96131,6 +97520,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -96836,7 +98228,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -97203,6 +98599,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -97210,6 +98607,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -97471,7 +98871,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -97481,11 +98885,15 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - statcan
     - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -98699,6 +100107,15 @@
         fr: Devex
 - dependency: read-cache
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: read-cache
+  origin: npm
   type: dev
   admins:
     - city-of-edmonton-ab
@@ -98922,6 +100339,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -98942,6 +100360,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -99178,6 +100599,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -99195,6 +100617,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -101594,6 +103019,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -101608,6 +103034,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -101709,6 +103138,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -101729,6 +103159,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -101942,6 +103375,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -101956,6 +103390,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -102076,6 +103513,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -102087,6 +103525,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -102302,10 +103743,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -102542,6 +103987,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -102557,6 +104003,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -102960,10 +104409,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -103284,6 +104737,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -103308,6 +104762,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -103895,6 +105352,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -103903,6 +105361,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104384,6 +105845,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -104408,6 +105870,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -104585,6 +106050,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -104592,6 +106058,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -105193,6 +106662,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: AppHub
@@ -105206,6 +106676,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -105365,6 +106838,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -105379,6 +106853,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -105455,6 +106932,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -105469,6 +106947,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -105543,10 +107024,14 @@
   admins:
     - city-of-montreal-qc
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -105797,6 +107282,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -105821,6 +107307,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -106199,6 +107688,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -106206,6 +107696,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -107163,10 +108656,14 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -107211,10 +108708,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -107323,6 +108824,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -107330,6 +108832,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -107458,6 +108963,7 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -107470,6 +108976,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -108569,6 +110078,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -108579,6 +110089,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: ssri
   origin: npm
   type: dev
@@ -108618,10 +110131,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -110069,6 +111586,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -110093,6 +111611,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -110835,7 +112356,11 @@
   type: core
   admins:
     - 'on'
+    - statcan
   projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -110929,10 +112454,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111117,6 +112646,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: sugarss
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: suggestions
   origin: npm
   type: core
@@ -111194,6 +112732,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -111218,6 +112757,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -111321,10 +112863,14 @@
   admins:
     - bc
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -111459,10 +113005,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111786,6 +113336,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -111793,6 +113344,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111939,6 +113493,7 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -111946,6 +113501,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -112204,10 +113762,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -112219,6 +113781,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - phac-aspc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -112230,6 +113793,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -112252,6 +113818,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -112259,6 +113826,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -112749,6 +114319,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -112759,6 +114330,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -113499,6 +115073,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -113511,6 +115086,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -113667,6 +115245,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -113677,6 +115256,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -114578,6 +116160,15 @@
         fr: YouCanBenefit
 - dependency: ts-loader
   origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
+- dependency: ts-loader
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -114616,10 +116207,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -115178,6 +116773,7 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: Devex
@@ -115185,6 +116781,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -115651,6 +117250,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -115658,6 +117258,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -116701,6 +118304,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -116711,6 +118315,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: unique-filename
   origin: npm
   type: dev
@@ -116750,6 +118357,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - statcan
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -116760,6 +118368,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: unique-slug
   origin: npm
   type: dev
@@ -117135,6 +118746,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -117149,6 +118761,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -117582,10 +119197,14 @@
   type: core
   admins:
     - esdc-edsc
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: update-browserslist-db
   origin: npm
   type: dev
@@ -117681,6 +119300,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -117692,6 +119312,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Notify
         fr: Notification
@@ -118339,6 +119962,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tc
   projects:
     - projectName:
@@ -118362,6 +119986,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -118810,6 +120437,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: v8-compile-cache-lib
+  origin: npm
+  type: core
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: v8-compile-cache-lib
   origin: npm
   type: dev
@@ -120290,10 +121926,14 @@
   admins:
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -120663,6 +122303,7 @@
   admins:
     - bc
     - phac-aspc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -120671,6 +122312,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -120881,6 +122525,7 @@
     - bc
     - city-of-edmonton-ab
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -120892,6 +122537,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: gwells
         fr: gwells
@@ -120926,6 +122574,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -120933,6 +122582,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -121033,6 +122685,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -121040,6 +122693,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -121051,6 +122707,7 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - phac-aspc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -121068,6 +122725,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -121676,6 +123336,7 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - esdc-edsc
+    - statcan
     - tbs-sct
   projects:
     - projectName:
@@ -121690,6 +123351,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -121839,6 +123503,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: wildcard
+  origin: npm
+  type: dev
+  admins:
+    - statcan
+  projects:
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
 - dependency: win-fork
   origin: npm
   type: dev
@@ -121920,6 +123593,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -121927,6 +123601,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -122679,6 +124356,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -122703,6 +124381,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
@@ -123508,6 +125189,7 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
+    - statcan
     - tbs-sct
     - tc
   projects:
@@ -123532,6 +125214,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -123649,6 +125334,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -123656,6 +125342,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -123967,10 +125656,14 @@
   admins:
     - bc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -123998,6 +125691,7 @@
     - bc
     - esdc-edsc
     - 'on'
+    - statcan
   projects:
     - projectName:
         en: DECD Design System
@@ -124005,6 +125699,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Drupal WxT
+        fr: Drupal WxT
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
