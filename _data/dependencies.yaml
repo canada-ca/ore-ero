@@ -97803,6 +97803,15 @@
     - projectName:
         en: MetPX-Sarracenia
         fr: MetPX-Sarracenia
+- dependency: pytest-mock
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: pytest
   origin: pypi
   type: core
@@ -97852,19 +97861,33 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: python-magic-bin; sys_platform
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
+- dependency: python-magic; sys_platform!
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: python-magic
   origin: pypi
   type: core
   admins:
     - bc
-    - ssc-spc
   projects:
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
-    - projectName:
-        en: MetPX-Sarracenia
-        fr: MetPX-Sarracenia
 - dependency: python-redis-lock
   origin: pypi
   type: core
@@ -124665,6 +124688,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: xattr; sys_platform!
+  origin: pypi
+  type: core
+  admins:
+    - ssc-spc
+  projects:
+    - projectName:
+        en: MetPX-Sarracenia
+        fr: MetPX-Sarracenia
 - dependency: xdg-basedir
   origin: npm
   type: core
