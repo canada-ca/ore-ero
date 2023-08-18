@@ -9381,6 +9381,15 @@
         fr: gwells
 - dependency: '@isaacs/cliui'
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: '@isaacs/cliui'
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -11664,6 +11673,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@pkgjs/parseargs'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: '@pkgjs/parseargs'
   origin: npm
   type: dev
@@ -32710,6 +32728,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -44357,15 +44378,6 @@
         fr: YouCanBenefit
 - dependency: discontinuous-range
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: discontinuous-range
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -46489,6 +46501,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: eastasianwidth
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: eastasianwidth
   origin: npm
   type: dev
@@ -55049,11 +55070,15 @@
   origin: npm
   type: core
   admins:
+    - tbs-sct
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: foreground-child
   origin: npm
   type: dev
@@ -56334,6 +56359,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: Notify
+        fr: Notification
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -57533,6 +57561,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -61474,6 +61505,15 @@
         fr: lottery-licence-manager
 - dependency: has-proto
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: has-proto
+  origin: npm
   type: dev
   admins:
     - bc
@@ -61540,6 +61580,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -62154,6 +62197,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63924,6 +63970,15 @@
     - projectName:
         en: MetPX-Sarracenia
         fr: MetPX-Sarracenia
+- dependency: humanize-duration
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: humanize-duration
   origin: npm
   type: dev
@@ -71366,6 +71421,15 @@
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
 - dependency: jackspeak
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: jackspeak
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -75694,6 +75758,15 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
+- dependency: leac
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: lead
   origin: npm
   type: dev
@@ -77495,7 +77568,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -77509,9 +77581,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: lodash.includes
   origin: npm
   type: dev
@@ -77558,7 +77627,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -77572,9 +77640,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: lodash.isboolean
   origin: npm
   type: dev
@@ -77679,7 +77744,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -77693,9 +77757,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: lodash.isinteger
   origin: npm
   type: dev
@@ -77728,7 +77789,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -77742,9 +77802,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: lodash.isnumber
   origin: npm
   type: dev
@@ -77778,7 +77835,6 @@
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -77796,9 +77852,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -77831,7 +77884,6 @@
     - bc
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -77849,9 +77901,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -83226,6 +83275,7 @@
     - bc
     - city-of-sault-ste-marie-on
     - statcan
+    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -83242,6 +83292,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: minipass
   origin: npm
   type: dev
@@ -83791,15 +83844,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: moo
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: moo
   origin: npm
   type: dev
@@ -84695,15 +84739,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: nearley
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: nearley
   origin: npm
   type: dev
@@ -87317,6 +87352,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -91837,6 +91875,15 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: path-scurry
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: path-scurry
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -92158,6 +92205,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: peberminta
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: peek-readable
   origin: npm
   type: core
@@ -98146,10 +98202,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -98479,15 +98539,6 @@
         fr: Nuage de Talent
 - dependency: railroad-diagrams
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: railroad-diagrams
-  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -98535,15 +98586,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: randexp
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: randexp
   origin: npm
   type: dev
@@ -102891,10 +102933,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -103700,7 +103746,6 @@
   admins:
     - bc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
@@ -103708,9 +103753,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -107210,6 +107252,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -111244,6 +111289,15 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: string-width-cjs
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
+- dependency: string-width-cjs
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -111773,6 +111827,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: strip-ansi-cjs
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: strip-ansi-cjs
   origin: npm
   type: dev
@@ -119593,10 +119656,14 @@
   admins:
     - bc
     - 'on'
+    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: Notify
+        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -124268,6 +124335,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: wrap-ansi-cjs
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: Notify
+        fr: Notification
 - dependency: wrap-ansi-cjs
   origin: npm
   type: dev
