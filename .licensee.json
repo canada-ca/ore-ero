@@ -8,6 +8,8 @@
     "osi": true
   },
   "packages": {
-    "docopt": "=0.6.2"
+    "docopt": "=0.6.2",
+    "jackspeak": "=2.3.0",
+    "path-scurry": "=1.10.1"
   }
 }
