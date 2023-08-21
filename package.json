@@ -33,7 +33,7 @@
   "devDependencies": {
     "cypress": "^9.5.2",
     "eslint": "^8.20.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "licensee": "^10.0.0",
     "markdownlint-cli": "^0.32.2",
