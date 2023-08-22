@@ -705,15 +705,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: '@assemblyscript/loader'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@aw-web-design/x-default-browser'
   origin: npm
   type: dev
@@ -6213,15 +6204,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: '@blueoak/list'
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: '@brainhubeu/react-carousel'
   origin: npm
   type: core
@@ -7447,9 +7429,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: '@cypress/snapshot'
@@ -7503,9 +7482,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -8162,9 +8138,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -9222,9 +9195,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -9300,9 +9270,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -17161,9 +17128,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -18215,9 +18179,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: '@types/sinon'
@@ -18261,9 +18222,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -18992,9 +18950,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -21751,9 +21706,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -21910,9 +21862,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -22199,9 +22148,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -22433,9 +22379,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -22870,9 +22813,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -22979,9 +22919,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -23231,9 +23168,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -23350,9 +23284,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: unleet
         fr: unleet
@@ -24439,9 +24370,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: are-we-there-yet
@@ -24572,9 +24500,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -25056,9 +24981,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -25798,9 +25720,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -25974,9 +25893,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -26067,9 +25983,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26333,9 +26246,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26693,9 +26603,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -26782,9 +26689,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -26843,9 +26747,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -27110,9 +27011,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -27179,9 +27077,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -29013,9 +28908,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -29165,9 +29057,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -29529,9 +29418,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -30095,9 +29981,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: blob
@@ -30217,9 +30100,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -30799,9 +30679,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -31637,9 +31514,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -32033,9 +31907,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32650,9 +32521,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: cachetools
@@ -32760,9 +32628,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32948,9 +32813,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -32987,15 +32849,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: camaro
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: camel-case
   origin: npm
   type: core
@@ -33514,9 +33367,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -33735,9 +33585,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: unleet
         fr: unleet
@@ -34021,9 +33868,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -34401,9 +34245,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34768,9 +34609,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34913,9 +34751,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -35037,9 +34872,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -35098,9 +34930,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -36027,9 +35856,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -36125,9 +35951,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -36286,9 +36109,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -36363,9 +36183,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -36498,9 +36315,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -36635,9 +36449,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -36727,9 +36538,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -37201,9 +37009,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -38904,9 +38709,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -38921,15 +38723,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-- dependency: correct-license-metadata
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: corser
   origin: npm
   type: dev
@@ -39554,9 +39347,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -41594,9 +41384,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -41901,9 +41688,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: de-indent
@@ -41948,15 +41732,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: debuglog
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: debug
   origin: npm
   type: core
@@ -42050,9 +41825,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -42616,9 +42388,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -42691,9 +42460,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -43101,9 +42867,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -43298,9 +43061,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -44073,15 +43833,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: dezalgo
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: dfa
   origin: npm
   type: core
@@ -44683,15 +44434,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: docopt
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-- dependency: docopt
   origin: pypi
   type: core
   admins:
@@ -44770,9 +44512,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -46601,9 +46340,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -47118,9 +46854,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -47412,9 +47145,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -47617,9 +47347,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -47688,9 +47415,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -48135,9 +47859,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -48338,9 +48059,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -49014,9 +48732,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -49952,9 +49667,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -50021,9 +49733,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50098,9 +49807,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50309,9 +50015,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -50443,9 +50146,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -50521,9 +50221,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50603,9 +50300,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50725,9 +50419,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50933,15 +50624,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: eventemitter-asyncresource
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: eventemitter2
   origin: npm
   type: core
@@ -50975,9 +50657,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -51295,9 +50974,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -51347,9 +51023,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -52093,9 +51766,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -52315,9 +51985,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -52387,9 +52054,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -52629,9 +52293,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -52669,9 +52330,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -52853,9 +52511,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -52931,9 +52586,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -53284,9 +52936,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -53507,9 +53156,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -53579,9 +53225,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -54563,9 +54206,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -54634,9 +54274,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55151,9 +54788,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55295,9 +54929,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55737,11 +55368,7 @@
   type: dev
   admins:
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -55912,9 +55539,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -56185,9 +55809,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -56393,9 +56014,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -56498,9 +56116,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -57595,9 +57210,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -57782,9 +57394,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -57861,9 +57470,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -58045,9 +57651,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: getpass
@@ -58105,9 +57708,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -58531,9 +58131,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -58715,9 +58312,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -58910,9 +58504,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -59181,9 +58772,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -59458,9 +59046,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -61263,9 +60848,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -61416,9 +60998,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: unleet
         fr: unleet
@@ -61623,9 +61202,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -62232,9 +61808,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -62255,24 +61828,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: hdr-histogram-js
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: hdr-histogram-percentiles-obj
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: header-case
   origin: npm
   type: dev
@@ -62781,9 +62336,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -63757,9 +63309,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63952,9 +63501,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -64385,9 +63931,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -64572,9 +64115,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -64935,9 +64475,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -65188,9 +64725,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -65284,9 +64818,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -65518,9 +65049,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -65634,9 +65162,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -65717,9 +65242,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -66738,9 +66260,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -66871,9 +66390,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -67066,9 +66582,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -67129,9 +66642,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -67230,9 +66740,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -67375,9 +66882,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -67761,9 +67265,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -67896,9 +67397,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68052,9 +67550,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -68152,9 +67647,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -68440,9 +67932,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -68551,9 +68040,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -68908,9 +68394,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -69339,9 +68822,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -69682,9 +69162,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -69743,9 +69220,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -69861,9 +69335,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -70007,9 +69478,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -70102,9 +69570,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -70763,9 +70228,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -70988,9 +70450,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73277,9 +72736,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -73379,9 +72835,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73654,15 +73107,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: json-parse-errback
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: json-parse-even-better-errors
   origin: npm
   type: core
@@ -73714,9 +73158,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73814,9 +73255,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -73882,9 +73320,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73955,9 +73390,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74070,9 +73502,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74223,9 +73652,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: jsonfile
   origin: npm
   type: core
@@ -74299,9 +73725,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -74550,9 +73973,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -75578,9 +74998,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: lazy-cache
@@ -76019,9 +75436,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -76384,9 +75798,6 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: lint-staged
@@ -76531,9 +75942,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -78144,9 +77552,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -78220,9 +77625,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -78784,9 +78186,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -78874,9 +78273,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -78935,9 +78331,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -79480,9 +78873,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -80169,9 +79559,6 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: markdown-link-check
@@ -80260,9 +79647,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: markdownlint
   origin: npm
   type: dev
@@ -80276,9 +79660,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -80888,9 +80269,6 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: meant
@@ -81399,9 +80777,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -82299,9 +81674,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -82391,9 +81763,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -82545,9 +81914,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -82969,9 +82335,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -83100,9 +82463,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: unleet
         fr: unleet
@@ -84101,9 +83461,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -84686,9 +84043,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -85052,15 +84406,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: nice-napi
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: nice-try
   origin: npm
   type: core
@@ -85307,15 +84652,11 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
@@ -85601,15 +84942,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: node-gyp-build
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: node-gyp
   origin: npm
   type: core
@@ -86171,9 +85503,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -86440,15 +85769,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: npm-license-corrections
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: npm-lifecycle
   origin: npm
   type: dev
@@ -86472,14 +85792,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: npm-package-arg
   origin: npm
   type: core
@@ -86637,9 +85953,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -86800,11 +86113,7 @@
   type: dev
   admins:
     - city-of-edmonton-ab
-    - tbs-sct
   projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -87389,9 +86698,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -87500,9 +86806,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -87666,9 +86969,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -87821,9 +87121,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -88395,9 +87692,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -88483,9 +87777,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -88810,9 +88101,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -89270,9 +88558,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -89796,9 +89081,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90160,9 +89442,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -90366,9 +89645,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -91541,9 +90817,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -91688,9 +90961,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -91774,9 +91044,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -92295,9 +91562,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -92365,9 +91629,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -92678,9 +91939,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -92857,15 +92115,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: piscina
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: pixelmatch
   origin: npm
   type: core
@@ -95766,9 +95015,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -95876,9 +95122,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: prettier
@@ -95984,9 +95227,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -97074,9 +96314,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -97254,9 +96491,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -97526,9 +96760,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -97629,9 +96860,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -98099,9 +97327,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -98348,9 +97573,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -100242,23 +99464,10 @@
   type: dev
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-- dependency: read-package-tree
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: read-pkg-up
   origin: npm
   type: core
@@ -100501,15 +99710,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: readdir-scoped-modules
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: readdirp
   origin: npm
   type: core
@@ -101486,9 +100686,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -102512,9 +101709,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: request-promise-core
@@ -103244,9 +102438,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103509,9 +102700,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103640,9 +102828,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -103934,9 +103119,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -104117,9 +103299,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -104456,9 +103635,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: run-node
   origin: npm
   type: dev
@@ -104514,9 +103690,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -104749,9 +103922,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -104884,9 +104054,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -105079,9 +104246,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105991,9 +105155,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -106928,9 +106089,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -107021,9 +106179,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -107425,9 +106580,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -107486,9 +106638,6 @@
   admins:
     - tbs-sct
   projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -107891,9 +107040,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -109220,15 +108366,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: spdx-compare
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: spdx-correct
   origin: npm
   type: core
@@ -109290,9 +108427,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -109370,9 +108504,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -109449,9 +108580,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -109466,15 +108594,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: spdx-expression-validate
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: spdx-license-ids
   origin: npm
   type: core
@@ -109537,9 +108656,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -109554,33 +108670,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: spdx-osi
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-- dependency: spdx-ranges
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-- dependency: spdx-whitelisted
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: spdy-transport
   origin: npm
   type: core
@@ -110125,9 +109214,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -111380,9 +110466,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -111514,9 +110597,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -111625,9 +110705,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -111925,9 +111002,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -112203,9 +111277,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -112348,9 +111419,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -112896,9 +111964,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -114192,9 +113257,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -114358,9 +113420,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -114529,9 +113588,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -115033,9 +114089,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -115759,9 +114812,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -116502,9 +115552,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -116738,9 +115785,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -116830,9 +115874,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -116916,9 +115957,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -117026,9 +116064,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -117511,9 +116546,6 @@
         en: GC Architecture
         fr: Architecture GC
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: uglify-js
@@ -117738,9 +116770,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -118897,9 +117926,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -119163,9 +118189,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -119454,9 +118477,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -120135,15 +119155,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: util-promisify
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
 - dependency: util.promisify
   origin: npm
   type: core
@@ -120507,9 +119518,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -120585,9 +119593,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -120757,9 +119762,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -121115,9 +120117,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -123210,9 +122209,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -123450,9 +122446,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -123723,9 +122716,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -124419,9 +123409,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -124533,9 +123520,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -125372,9 +124356,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -125706,9 +124687,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Open Resource Exchange
-        fr: Échange de Ressource Ouvert
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
