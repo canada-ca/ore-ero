@@ -26950,11 +26950,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: aws-sign2
   origin: npm
   type: core
@@ -29016,6 +29020,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -29054,9 +29061,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -66085,6 +66089,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: is-arguments
@@ -67467,6 +67474,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: is-generator-function
+  origin: npm
+  type: core
+  admins:
+    - bc
+  projects:
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: is-generator-function
   origin: npm
   type: dev
@@ -72308,11 +72324,15 @@
   origin: npm
   type: core
   admins:
+    - bc
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: gwells
+        fr: gwells
 - dependency: joblib
   origin: pypi
   type: core
@@ -97490,6 +97510,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: querystring
@@ -97519,9 +97542,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -104518,6 +104538,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: sax
@@ -104544,9 +104567,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: gwells
-        fr: gwells
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -123918,6 +123938,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: gwells
+        fr: gwells
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: xml2js
@@ -123958,6 +123981,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: gwells
+        fr: gwells
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
