@@ -76054,6 +76054,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: locate-app
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: locate-path
   origin: npm
   type: core
@@ -83532,6 +83541,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: n12
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: name-all-modules-plugin
   origin: npm
   type: core
@@ -118694,6 +118712,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: userhome
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: user
   origin: npm
   type: core
