@@ -12486,8 +12486,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -12503,12 +12507,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -13705,8 +13705,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -13722,12 +13726,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14522,8 +14522,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14537,12 +14541,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -15833,8 +15833,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -15848,12 +15852,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -16344,8 +16344,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -16359,12 +16363,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -17027,6 +17027,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -17071,9 +17074,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -17858,8 +17858,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -17873,12 +17877,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -22073,6 +22073,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -25624,6 +25627,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
@@ -28771,6 +28777,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -28820,9 +28829,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -28921,6 +28927,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tbs-sct
     - tc
@@ -28928,6 +28935,9 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -28973,9 +28983,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -30040,8 +30047,12 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -30066,9 +30077,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -30534,6 +30542,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -30583,9 +30594,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -31397,6 +31405,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -31422,9 +31433,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -31760,6 +31768,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tbs-sct
     - tc
@@ -31767,6 +31776,9 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -31804,9 +31816,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -32335,8 +32344,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32350,12 +32363,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32364,8 +32373,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32381,12 +32394,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -34507,6 +34516,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -35126,8 +35138,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -35143,12 +35159,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -36845,6 +36857,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -36894,9 +36909,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -41946,8 +41958,12 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -41974,12 +41990,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -42632,8 +42644,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -42649,12 +42665,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -46968,12 +46980,16 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -47011,9 +47027,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -52769,6 +52782,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -52797,9 +52813,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -53739,6 +53752,15 @@
     - projectName:
         en: AppHub
         fr: HubApp
+- dependency: find-process
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: find-root
   origin: npm
   type: core
@@ -53969,6 +53991,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: fkill
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: flagged-respawn
   origin: npm
   type: dev
@@ -54776,6 +54807,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -55270,8 +55304,12 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -55299,9 +55337,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -55612,6 +55647,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -55658,9 +55696,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -57286,6 +57321,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -57313,9 +57351,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -58571,6 +58606,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -58617,9 +58655,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -58775,8 +58810,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -58799,9 +58838,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -58839,6 +58875,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -58891,9 +58930,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -62749,8 +62785,12 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -62773,12 +62813,8 @@
     - bc
     - city-of-edmonton-ab
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -63173,7 +63209,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
@@ -63181,12 +63221,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63710,6 +63746,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tbs-sct
     - tc
@@ -63717,6 +63754,9 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -63759,9 +63799,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -64828,6 +64865,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -64874,9 +64914,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -64936,6 +64973,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -64993,9 +65033,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -70008,6 +70045,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -70051,9 +70091,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72821,8 +72858,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -72838,12 +72879,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -74211,8 +74248,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -74228,12 +74269,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -74383,7 +74420,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -77222,6 +77263,15 @@
         fr: Nuage de Talent
 - dependency: lodash.mapvalues
   origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: lodash.mapvalues
+  origin: npm
   type: dev
   admins:
     - bc
@@ -77234,9 +77284,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
@@ -77345,12 +77392,16 @@
   origin: npm
   type: core
   admins:
+    - esdc-edsc
     - 'on'
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -77363,9 +77414,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -78535,8 +78583,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -78559,9 +78611,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -81760,8 +81809,12 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -81788,12 +81841,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -82094,6 +82143,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -82143,9 +82195,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -82223,6 +82272,9 @@
         en: CDS Website
         fr: Site Web SNC
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -82278,9 +82330,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -85478,9 +85527,13 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
     - statcan
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -85505,9 +85558,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -87460,6 +87510,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -87512,9 +87565,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -88444,8 +88494,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -88461,12 +88515,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -88617,6 +88667,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -90579,6 +90632,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -90625,9 +90681,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -90725,6 +90778,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -90768,9 +90824,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -91341,6 +91394,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -91369,9 +91425,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -91673,6 +91726,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: pid-port
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: pidtree
   origin: npm
   type: dev
@@ -95266,6 +95328,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: process-exists
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: process-nextick-args
   origin: npm
   type: core
@@ -95433,8 +95504,12 @@
     - bc
     - city-of-montreal-qc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -95469,9 +95544,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -96184,6 +96256,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: ps-list
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: ps-tree
   origin: npm
   type: dev
@@ -96509,12 +96590,16 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - tc
   projects:
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -96552,9 +96637,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -97418,7 +97500,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -97432,9 +97518,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -102051,7 +102134,11 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: gwells
         fr: gwells
@@ -102059,12 +102146,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -102529,8 +102612,12 @@
   type: core
   admins:
     - bc
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -102546,12 +102633,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -103041,6 +103124,7 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
     - statcan
     - tc
@@ -103048,6 +103132,9 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -103082,9 +103169,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -103789,6 +103873,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -103848,9 +103935,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -105832,6 +105916,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -105876,9 +105963,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
@@ -105921,6 +106005,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -105965,9 +106052,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -110541,6 +110625,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -110593,9 +110680,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -112356,8 +112440,12 @@
   type: core
   admins:
     - city-of-sault-ste-marie-on
+    - esdc-edsc
     - 'on'
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -112382,9 +112470,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -112464,6 +112549,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: taskkill
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: tedious
   origin: npm
   type: core
@@ -118860,6 +118954,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -118909,9 +119006,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -120921,6 +121015,24 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: wdio-selenium-standalone-service
+  origin: npm
+  type: core
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: wdio-selenium-standalone-service
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: web-animations-js
   origin: npm
   type: core
@@ -123218,6 +123330,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -123270,9 +123385,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -124417,6 +124529,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
     - projectName:
@@ -124445,9 +124560,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
