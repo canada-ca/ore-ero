@@ -1118,9 +1118,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -2360,9 +2357,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -2564,9 +2558,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -6791,9 +6782,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@commitlint/cli'
   origin: npm
   type: dev
@@ -7412,9 +7400,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: '@cypress/snapshot'
@@ -7464,9 +7449,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -9128,14 +9110,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@humanwhocodes/config-array'
   origin: npm
   type: core
@@ -9331,14 +9309,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@istanbuljs/load-nyc-config'
   origin: npm
   type: core
@@ -11620,14 +11594,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@pmmmwh/react-refresh-webpack-plugin'
   origin: npm
   type: core
@@ -12272,15 +12242,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: '@selderee/plugin-htmlparser2'
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@semantic-release/commit-analyzer'
   origin: npm
   type: core
@@ -12451,14 +12412,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: '@sinclair/typebox'
   origin: npm
   type: core
@@ -17090,9 +17047,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -18135,9 +18089,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: '@types/sinon'
@@ -18172,9 +18123,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -18894,9 +18842,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -21649,9 +21594,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -21729,9 +21671,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -21803,9 +21742,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -22091,9 +22027,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -22322,9 +22255,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -22755,9 +22685,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -22860,9 +22787,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -23108,9 +23032,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -23224,9 +23145,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: unleet
         fr: unleet
@@ -24308,9 +24226,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -25834,9 +25749,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -25923,9 +25835,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26185,9 +26094,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26541,9 +26447,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -26626,9 +26529,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -26684,9 +26584,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -26951,9 +26848,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -27016,9 +26910,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -28842,9 +28733,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -28992,9 +28880,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -29352,9 +29237,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -29909,9 +29791,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: blob
@@ -30027,9 +29906,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -30606,9 +30482,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -31440,9 +31313,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -31454,7 +31324,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -31468,9 +31337,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: buffer-equal-constant-time
   origin: npm
   type: dev
@@ -31834,9 +31700,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32447,9 +32310,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: cachetools
@@ -32554,9 +32414,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -33292,9 +33149,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -33510,9 +33364,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: unleet
         fr: unleet
@@ -33792,9 +33643,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -34168,9 +34016,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34534,9 +34379,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34675,9 +34517,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34790,9 +34629,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -34844,9 +34680,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -35773,9 +35606,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -35868,9 +35698,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -36024,9 +35851,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -36231,9 +36055,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -36363,9 +36184,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -36451,9 +36269,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -36921,9 +36736,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -38555,7 +38367,6 @@
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -38581,9 +38392,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39258,9 +39066,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -41290,9 +41095,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -41594,9 +41396,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: de-indent
@@ -41731,9 +41530,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -42440,9 +42236,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -42966,9 +42759,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -44553,7 +44343,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -44571,9 +44360,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44706,7 +44492,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -44724,9 +44509,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44801,7 +44583,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -44819,9 +44600,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -44875,7 +44653,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -44893,9 +44670,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -46153,14 +45927,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: easy-stack
   origin: npm
   type: dev
@@ -46239,9 +46009,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -46259,7 +46026,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -46273,9 +46039,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: ecdsa-sig-formatter
   origin: npm
   type: dev
@@ -46752,9 +46515,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -46936,15 +46696,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: encoding-japanese
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: encoding
   origin: npm
   type: core
@@ -47042,9 +46793,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -47244,9 +46992,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -47264,7 +47009,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -47282,9 +47026,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -48630,9 +48371,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -49704,9 +49442,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -49909,9 +49644,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -50547,9 +50279,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -50862,9 +50591,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -50910,9 +50636,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -51653,9 +51376,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -51871,9 +51591,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -51939,9 +51656,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -52177,9 +51891,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -52820,9 +52531,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -53038,9 +52746,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -54632,9 +54337,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: forever-agent
   origin: npm
   type: core
@@ -54686,9 +54388,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -54830,9 +54529,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -55441,9 +55137,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55709,9 +55402,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -55913,9 +55603,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -57110,9 +56797,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -57370,9 +57054,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -57549,9 +57230,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: getpass
@@ -57605,9 +57283,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -58209,9 +57884,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -58668,9 +58340,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -58942,9 +58611,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -60895,9 +60561,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: unleet
         fr: unleet
     - projectName:
@@ -60988,7 +60651,6 @@
     - bc
     - city-of-sault-ste-marie-on
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
@@ -61002,9 +60664,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: has-symbol-support-x
   origin: npm
   type: core
@@ -61093,9 +60752,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -61699,9 +61355,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -61837,7 +61490,6 @@
     - bc
     - city-of-montreal-qc
     - esdc-edsc
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -61849,9 +61501,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -62630,14 +62279,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: html-validate
   origin: npm
   type: dev
@@ -62732,7 +62377,6 @@
     - bc
     - city-of-edmonton-ab
     - 'on'
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -62744,9 +62388,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63190,9 +62831,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63382,9 +63020,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -63399,15 +63034,6 @@
     - projectName:
         en: MetPX-Sarracenia
         fr: MetPX-Sarracenia
-- dependency: humanize-duration
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: humanize-duration
   origin: npm
   type: dev
@@ -63571,9 +63197,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -63812,9 +63435,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -63996,9 +63616,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64141,15 +63758,6 @@
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: imap-simple
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: imap
   origin: npm
   type: core
   admins:
@@ -64698,9 +64306,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -64927,9 +64532,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -65006,9 +64608,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -65119,9 +64718,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -66522,9 +66118,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -67276,9 +66869,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -67533,9 +67123,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -68280,9 +67867,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -68520,7 +68104,6 @@
     - city-of-edmonton-ab
     - esdc-edsc
     - 'on'
-    - tbs-sct
   projects:
     - projectName:
         en: AppHub
@@ -68531,9 +68114,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -69046,9 +68626,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -69361,9 +68938,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -69444,9 +69018,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -69955,9 +69526,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -70103,9 +69671,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -70325,9 +69890,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -70761,14 +70323,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: jake
   origin: npm
   type: core
@@ -72517,9 +72075,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -72708,9 +72263,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73128,9 +72680,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -73192,9 +72741,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73373,9 +72919,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73595,9 +73138,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -73843,9 +73383,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -74018,7 +73555,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -74032,9 +73568,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: jwa
   origin: npm
   type: dev
@@ -74058,7 +73591,6 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - tbs-sct
   projects:
     - projectName:
         en: contract-expiration-tracker
@@ -74072,9 +73604,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: jws
   origin: npm
   type: dev
@@ -74492,9 +74021,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -74869,9 +74395,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: lazy-cache
@@ -75049,15 +74572,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: leac
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: lead
   origin: npm
   type: dev
@@ -75324,24 +74838,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: libbase64
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: libmime
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: libnpmaccess
   origin: npm
   type: dev
@@ -75435,15 +74931,6 @@
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
-- dependency: libqp
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: license-webpack-plugin
   origin: npm
   type: dev
@@ -75651,15 +75138,6 @@
         fr: Architecture GC
 - dependency: linkify-it
   origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: linkify-it
-  origin: npm
   type: dev
   admins:
     - ssc-spc
@@ -75804,9 +75282,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -77506,9 +76981,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: lodash.orderby
@@ -78013,9 +77485,6 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -78149,9 +77618,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -78206,9 +77672,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -78719,9 +78182,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -78891,15 +78351,6 @@
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: mailparser
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
-- dependency: mailsplit
   origin: npm
   type: core
   admins:
@@ -80656,9 +80107,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -81552,9 +81000,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -81641,9 +81086,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -81791,9 +81233,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -82211,9 +81650,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -82339,9 +81775,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: unleet
         fr: unleet
@@ -82547,9 +81980,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -83294,9 +82724,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -85158,15 +84585,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: nodeify
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: nodemailer
   origin: npm
   type: core
@@ -85837,9 +85255,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -86581,9 +85996,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -87575,9 +86987,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -87659,9 +87068,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -88435,9 +87841,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: overlayscrollbars
@@ -88958,9 +88361,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -90069,15 +89469,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: parseley
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: parseqs
   origin: npm
   type: core
@@ -90694,9 +90085,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -90836,9 +90224,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -91024,14 +90409,10 @@
   type: dev
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: path-to-regexp
   origin: npm
   type: core
@@ -91346,15 +90727,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: peberminta
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: peek-readable
   origin: npm
   type: core
@@ -91432,9 +90804,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -91499,9 +90868,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -91816,9 +91182,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -95105,9 +94468,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -95754,14 +95114,10 @@
   type: core
   admins:
     - esdc-edsc
-    - tbs-sct
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: promise
   origin: npm
   type: dev
@@ -95830,9 +95186,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -96199,9 +95552,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -96384,9 +95734,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -96653,9 +96000,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -96753,9 +96097,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -97220,9 +96561,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -97351,9 +96689,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -97572,15 +96907,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: quoted-printable
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: q
   origin: npm
   type: core
@@ -101601,9 +100927,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: request-promise-core
@@ -101874,9 +101197,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -102052,9 +101372,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -102718,9 +102035,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103007,9 +102321,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103187,9 +102498,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -103809,9 +103117,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -103905,9 +103210,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104093,9 +103395,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -104658,15 +103957,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: selderee
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: select-hose
   origin: npm
   type: core
@@ -104965,7 +104255,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -105001,9 +104290,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -105975,9 +105261,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -106064,9 +105347,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -106326,9 +105606,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -106463,9 +105740,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -106764,9 +106038,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -106922,9 +106193,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -109096,9 +108364,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -110337,9 +109602,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -110615,7 +109877,6 @@
     - esdc-edsc
     - 'on'
     - statcan
-    - tbs-sct
     - tc
   projects:
     - projectName:
@@ -110654,9 +109915,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -110862,9 +110120,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -111136,9 +110391,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -111824,9 +111076,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -113290,9 +112539,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
 - dependency: through2-concurrent
@@ -113456,9 +112702,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -113848,15 +113091,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: tlds
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: tmp-promise
   origin: npm
   type: dev
@@ -113956,9 +113190,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -114678,9 +113909,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -115418,9 +114646,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -115650,9 +114875,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -115737,9 +114959,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -115927,9 +115146,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -116389,15 +115605,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: uc.micro
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: uc.micro
   origin: npm
   type: dev
@@ -117788,9 +116995,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -118050,9 +117254,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -118339,9 +117540,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -118568,9 +117766,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118886,15 +118081,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: utf7
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: utf8-byte-length
   origin: npm
   type: dev
@@ -118904,15 +118090,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: utf8
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: utf8
   origin: npm
   type: dev
@@ -119268,15 +118445,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: uuencode
-  origin: npm
-  type: core
-  admins:
-    - tbs-sct
-  projects:
-    - projectName:
-        en: Notify
-        fr: Notification
 - dependency: uuid-browser
   origin: npm
   type: dev
@@ -119386,9 +118554,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
@@ -119985,9 +119150,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -122332,9 +121494,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -123284,9 +122443,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
     - projectName:
@@ -123394,9 +122550,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -124202,9 +123355,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: Notify
-        fr: Notification
-    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -124566,9 +123716,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: Notify
-        fr: Notification
     - projectName:
         en: parking-ticket-system
         fr: parking-ticket-system
