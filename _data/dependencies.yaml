@@ -71746,14 +71746,10 @@
   type: core
   admins:
     - bc
-    - ised-isde
   projects:
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: Signal Attenuation through Foliage Estimator (SAFE)
-        fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
 - dependency: joi
   origin: npm
   type: core
@@ -94908,15 +94904,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: progress
-  origin: pypi
-  type: core
-  admins:
-    - ised-isde
-  projects:
-    - projectName:
-        en: Signal Attenuation through Foliage Estimator (SAFE)
-        fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
 - dependency: proj4
   origin: npm
   type: core
@@ -96266,6 +96253,15 @@
     - projectName:
         en: ckanext-bcgov
         fr: ckanext-bcgov
+- dependency: pystac-client
+  origin: pypi
+  type: core
+  admins:
+    - ised-isde
+  projects:
+    - projectName:
+        en: Signal Attenuation through Foliage Estimator (SAFE)
+        fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
 - dependency: pytest-bug
   origin: pypi
   type: core
@@ -118406,15 +118402,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: utm
-  origin: pypi
-  type: core
-  admins:
-    - ised-isde
-  projects:
-    - projectName:
-        en: Signal Attenuation through Foliage Estimator (SAFE)
-        fr: Estimateur de l'affaiblissement dû à la végétation (EAV)
 - dependency: utrie
   origin: npm
   type: core
