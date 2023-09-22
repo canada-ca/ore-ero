@@ -714,6 +714,285 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: '@aws-crypto/crc32'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-crypto/ie11-detection'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-crypto/sha256-browser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-crypto/sha256-js'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-crypto/supports-web-crypto'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-crypto/util'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/client-cognito-identity'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/client-sso'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/client-sts'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-cognito-identity'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-env'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-ini'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-node'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-process'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-sso'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-provider-web-identity'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/credential-providers'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-host-header'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-logger'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-recursion-detection'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-sdk-sts'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-signing'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/middleware-user-agent'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/region-config-resolver'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/token-providers'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/types'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/util-endpoints'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/util-locate-window'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/util-user-agent-browser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/util-user-agent-node'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@aws-sdk/util-utf8-browser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@azure/abort-controller'
   origin: npm
   type: core
@@ -10639,6 +10918,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: '@mongodb-js/saslprep'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@mrmlnc/readdir-enhanced'
   origin: npm
   type: core
@@ -12571,6 +12859,348 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: '@smithy/abort-controller'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/config-resolver'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/credential-provider-imds'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/eventstream-codec'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/fetch-http-handler'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/hash-node'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/invalid-dependency'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/is-array-buffer'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/middleware-content-length'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/middleware-endpoint'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/middleware-retry'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/middleware-serde'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/middleware-stack'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/node-config-provider'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/node-http-handler'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/property-provider'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/protocol-http'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/querystring-builder'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/querystring-parser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/service-error-classification'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/shared-ini-file-loader'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/signature-v4'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/smithy-client'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/types'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/url-parser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-base64'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-body-length-browser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-body-length-node'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-buffer-from'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-config-provider'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-defaults-mode-browser'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-defaults-mode-node'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-hex-encoding'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-middleware'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-retry'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-stream'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-uri-escape'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: '@smithy/util-utf8'
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: '@snyk/cli-interface'
   origin: npm
   type: dev
@@ -30340,6 +30970,15 @@
         fr: Boîte à outils de l'expérience Web (BOEW)
 - dependency: bowser
   origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+- dependency: bowser
+  origin: npm
   type: dev
   admins:
     - tbs-sct
@@ -42906,14 +43545,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: depd
   origin: npm
   type: core
@@ -52227,7 +52862,11 @@
   type: core
   admins:
     - city-of-montreal-qc
+    - tbs-sct
   projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
     - projectName:
         en: WorkIt
         fr: WorkIt
@@ -94808,6 +95447,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -96665,6 +97307,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -96998,9 +97643,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -103487,14 +104129,10 @@
   type: core
   admins:
     - bc
-    - tbs-sct
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
 - dependency: sass-graph
   origin: npm
   type: dev
@@ -110565,6 +111203,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: strnum
+  origin: npm
+  type: core
+  admins:
+    - tbs-sct
+  projects:
+    - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
 - dependency: strong-log-transformer
   origin: npm
   type: core
@@ -117739,6 +118386,9 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
+        en: GC InfoBase
+        fr: InfoBase du GC
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -117862,9 +118512,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: GC InfoBase
-        fr: InfoBase du GC
     - projectName:
         en: gwells
         fr: gwells
