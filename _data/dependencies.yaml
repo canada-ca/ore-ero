@@ -12,6 +12,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -20,6 +21,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: '@achrinza/node-ipc'
   origin: npm
   type: dev
@@ -1333,6 +1337,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -1350,6 +1355,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -1390,9 +1398,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -2582,6 +2587,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -2593,6 +2599,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -2629,9 +2638,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -2774,6 +2780,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -2791,6 +2798,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -2831,9 +2841,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -6691,6 +6698,15 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+- dependency: '@cityssm/eft-generator'
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: '@cityssm/express-abuse-points'
   origin: npm
   type: core
@@ -12259,6 +12275,15 @@
         fr: HubApp
 - dependency: '@puppeteer/browsers'
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: '@puppeteer/browsers'
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -14496,6 +14521,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: '@tootallnate/quickjs-emscripten'
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: '@tootallnate/quickjs-emscripten'
   origin: npm
   type: dev
@@ -17632,6 +17666,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -17667,9 +17704,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -19451,6 +19485,15 @@
         fr: YouCanBenefit
 - dependency: '@types/yauzl'
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: '@types/yauzl'
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -19466,9 +19509,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -19551,9 +19591,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -19738,9 +19775,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -19871,9 +19905,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -23620,6 +23651,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -23655,9 +23689,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -24688,9 +24719,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -24877,9 +24905,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -24920,6 +24945,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -24937,6 +24963,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -24978,9 +25007,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -25982,6 +26008,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: array.prototype.findlastindex
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: array.prototype.find
   origin: npm
   type: dev
@@ -26110,11 +26145,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: arraybuffer.slice
   origin: npm
   type: core
@@ -26653,10 +26692,14 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: ast-types
   origin: npm
   type: dev
@@ -26896,9 +26939,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -27696,6 +27736,15 @@
     - projectName:
         en: ckanext-canada
         fr: ckanext-canada
+- dependency: b4a
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: b4a
   origin: npm
   type: dev
@@ -29639,6 +29688,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: basic-ftp
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: basic-ftp
   origin: npm
   type: dev
@@ -32078,9 +32136,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -32123,6 +32178,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32454,10 +32512,14 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -33175,6 +33237,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -33188,6 +33251,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -33225,9 +33291,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -34572,6 +34635,15 @@
         fr: YouCanBenefit
 - dependency: chromium-bidi
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: chromium-bidi
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -35889,9 +35961,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -35906,12 +35975,16 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -36844,6 +36917,15 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
+- dependency: comment-parser
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: commitplease
   origin: npm
   type: dev
@@ -37404,9 +37486,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -37446,6 +37525,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -37822,9 +37904,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -39023,9 +39102,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -39042,6 +39118,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -39064,6 +39141,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -39170,6 +39250,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -39183,6 +39264,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -39602,11 +39686,15 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -41763,6 +41851,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: data-uri-to-buffer
   origin: npm
   type: dev
@@ -43108,6 +43199,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: define-data-property
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: define-lazy-prop
   origin: npm
   type: core
@@ -43311,6 +43411,15 @@
         fr: Système De Conception D'ENDC
 - dependency: degenerator
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: degenerator
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -43428,9 +43537,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -44141,6 +44247,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: devtools-protocol
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: devtools-protocol
   origin: npm
   type: dev
@@ -47102,6 +47217,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -47115,7 +47233,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -47140,9 +47257,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -47925,6 +48039,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -47945,6 +48060,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -47982,9 +48100,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48533,9 +48648,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
 - dependency: es6-promise
@@ -48565,9 +48677,6 @@
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48763,6 +48872,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -48777,6 +48887,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -49015,6 +49128,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - statcan
   projects:
     - projectName:
@@ -49023,6 +49137,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: escodegen
   origin: npm
   type: dev
@@ -49109,6 +49226,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: eslint-config-cityssm
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: eslint-config-jquery
   origin: npm
   type: dev
@@ -49194,7 +49320,11 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -49375,6 +49505,24 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: eslint-plugin-es-x
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: eslint-plugin-eslint-comments
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: eslint-plugin-es
   origin: npm
   type: dev
@@ -49389,9 +49537,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -49610,9 +49755,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -49630,6 +49772,15 @@
     - projectName:
         en: unleet
         fr: unleet
+- dependency: eslint-plugin-n
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: eslint-plugin-prettier
   origin: npm
   type: dev
@@ -49764,6 +49915,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: eslint-plugin-regexp
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: eslint-plugin-security
   origin: npm
   type: dev
@@ -49773,6 +49933,15 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+- dependency: eslint-plugin-sonarjs
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: eslint-plugin-standard
   origin: npm
   type: dev
@@ -50292,6 +50461,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -50312,6 +50482,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -50502,6 +50675,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -50518,6 +50692,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -50552,9 +50729,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -50617,6 +50791,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -50637,6 +50812,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -50671,9 +50849,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -52183,6 +52358,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -52191,6 +52367,9 @@
     - projectName:
         en: Devex
         fr: Devex
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: extract-zip
   origin: npm
   type: dev
@@ -52215,9 +52394,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -52563,6 +52739,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: fast-fifo
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: fast-fifo
   origin: npm
   type: dev
@@ -54185,6 +54370,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -55992,9 +56180,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -56032,6 +56217,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -57004,9 +57192,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -57628,6 +57813,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - tc
@@ -57647,6 +57833,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -57678,9 +57867,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -57750,6 +57936,24 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: get-tsconfig
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: get-uri
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: get-uri
   origin: npm
   type: dev
@@ -58930,9 +59134,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -58970,6 +59171,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -59289,6 +59493,7 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
@@ -59297,6 +59502,9 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: graphlib
   origin: npm
   type: dev
@@ -59911,15 +60119,6 @@
     - projectName:
         en: GCconnex
         fr: GCconnex
-    - projectName:
-        en: Web Experience Toolkit (WET)
-        fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: grunt-cssmin-ie8-clean
-  origin: npm
-  type: dev
-  admins:
-    - tbs-sct
-  projects:
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -61279,6 +61478,15 @@
         fr: lottery-licence-manager
 - dependency: has-proto
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: has-proto
+  origin: npm
   type: dev
   admins:
     - bc
@@ -61288,9 +61496,6 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -61479,9 +61684,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -64542,6 +64744,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -64555,6 +64758,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -64588,9 +64794,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -65120,9 +65323,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -65160,6 +65360,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -65933,6 +66136,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: ip
@@ -66242,6 +66448,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -66262,6 +66469,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -66299,9 +66509,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -67462,9 +67669,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -67479,6 +67683,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -67497,6 +67702,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -70152,9 +70360,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -70196,6 +70401,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -72613,9 +72821,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
 - dependency: js-sha256
@@ -72632,6 +72837,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -72653,6 +72859,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -72697,9 +72906,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -72728,6 +72934,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -72745,6 +72952,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -72786,9 +72996,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -72916,6 +73123,15 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+- dependency: jsdoctypeparser
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: jsdoc
   origin: npm
   type: dev
@@ -73168,6 +73384,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -73178,6 +73395,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -73208,9 +73428,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -75691,6 +75908,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -75704,6 +75922,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -75737,9 +75958,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -76265,6 +76483,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -82692,11 +82913,15 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -82869,9 +83094,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -84230,6 +84452,15 @@
         fr: Nuage de Talent
 - dependency: netmask
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: netmask
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -84791,6 +85022,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -85914,9 +86148,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -86141,9 +86372,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -86161,12 +86389,16 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -86976,6 +87208,7 @@
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -86988,6 +87221,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -87045,6 +87281,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: object.groupby
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: object.hasown
   origin: npm
   type: core
@@ -88809,6 +89054,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -88884,6 +89132,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -89182,6 +89433,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -89201,6 +89455,15 @@
         fr: YouCanBenefit
 - dependency: pac-proxy-agent
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: pac-proxy-agent
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -89208,6 +89471,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: pac-resolver
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: pac-resolver
   origin: npm
   type: dev
@@ -89490,6 +89762,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -89503,6 +89776,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89536,9 +89812,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -89774,6 +90047,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -89794,6 +90068,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -89825,9 +90102,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -90606,6 +90880,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -90660,9 +90937,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -90700,6 +90974,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -91114,6 +91391,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -91134,6 +91412,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -91168,9 +91449,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -95342,9 +95620,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -95380,6 +95655,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -95428,6 +95706,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -95449,6 +95728,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -96124,6 +96406,15 @@
         fr: YouCanBenefit
 - dependency: proxy-agent
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: proxy-agent
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -96752,6 +97043,15 @@
         fr: Nuage de Talent
 - dependency: puppeteer-core
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: puppeteer-core
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -96762,6 +97062,15 @@
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+- dependency: puppeteer
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: puppeteer
   origin: npm
   type: dev
@@ -97294,6 +97603,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -97309,6 +97619,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -97435,6 +97748,15 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
+- dependency: queue-tick
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: queue-tick
   origin: npm
   type: dev
@@ -99479,9 +99801,6 @@
         en: Drupal WxT
         fr: Drupal WxT
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -99520,6 +99839,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -100021,6 +100343,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: refa
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: referrer-policy
   origin: npm
   type: core
@@ -100382,6 +100713,15 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
+- dependency: regexp-ast-analysis
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: regexp-clone
   origin: npm
   type: core
@@ -100518,9 +100858,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -101708,6 +102045,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - tc
@@ -101724,6 +102062,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -101758,9 +102099,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -101973,6 +102311,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -101988,6 +102327,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -102203,6 +102545,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - tc
@@ -102219,6 +102562,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -102257,9 +102603,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -102336,6 +102679,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: resolve-pkg-maps
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: resolve-pkg
   origin: npm
   type: dev
@@ -103771,11 +104123,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: safe-buffer
   origin: npm
   type: core
@@ -104472,6 +104828,15 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
+- dependency: scslre
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: scss-tokenizer
   origin: npm
   type: dev
@@ -105330,9 +105695,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -105347,6 +105709,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -105363,6 +105726,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -105374,6 +105740,15 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
+- dependency: set-function-name
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: set-getter
   origin: npm
   type: dev
@@ -106867,6 +107242,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: smart-buffer
   origin: npm
   type: dev
@@ -107517,6 +107895,9 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: socks-proxy-agent
   origin: npm
   type: dev
@@ -107554,6 +107935,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: socks
   origin: npm
   type: dev
@@ -107943,6 +108327,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - 'on'
     - statcan
     - tbs-sct
@@ -107963,6 +108348,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -108006,9 +108394,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -109946,6 +110331,15 @@
         fr: Nuage de Talent
 - dependency: streamx
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+- dependency: streamx
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -110177,9 +110571,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -110194,6 +110585,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -110212,6 +110604,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -110692,6 +111087,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -110728,9 +111126,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -113272,6 +113667,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -113284,6 +113680,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -113315,9 +113714,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -114526,6 +114922,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -114559,6 +114958,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -114910,6 +115312,15 @@
     - projectName:
         en: Devex
         fr: Devex
+- dependency: ts-api-utils
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: ts-dedent
   origin: npm
   type: dev
@@ -115219,6 +115630,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -115261,9 +115675,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -115868,29 +116279,41 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: typed-array-byte-length
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: typed-array-byte-offset
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: typed-array-length
   origin: npm
   type: dev
@@ -115996,9 +116419,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -116042,6 +116462,9 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -116074,6 +116497,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - statcan
   projects:
@@ -116086,6 +116510,9 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -116122,9 +116549,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
@@ -116479,11 +116903,15 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - 'on'
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -118373,6 +118801,7 @@
   admins:
     - bc
     - city-of-edmonton-ab
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -118388,6 +118817,9 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -118467,6 +118899,15 @@
     - projectName:
         en: gwells
         fr: gwells
+- dependency: urlpattern-polyfill
+  origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: url
   origin: npm
   type: core
@@ -120948,6 +121389,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -121741,6 +122185,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -122153,9 +122600,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -122361,9 +122805,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -122990,6 +123431,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - tc
@@ -123006,6 +123448,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -123037,9 +123482,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: gwells
         fr: gwells
@@ -123306,6 +123748,7 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -123318,6 +123761,9 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
