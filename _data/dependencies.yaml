@@ -24,6 +24,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@achrinza/node-ipc'
   origin: npm
   type: dev
@@ -6189,9 +6192,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@babel/runtime'
@@ -8346,6 +8346,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@eslint-community/regexpp'
   origin: npm
   type: dev
@@ -8362,6 +8365,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
@@ -8428,6 +8434,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@fal-works/esbuild-plugin-global-externals'
   origin: npm
   type: dev
@@ -9485,6 +9494,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@humanwhocodes/object-schema'
   origin: npm
   type: core
@@ -12772,7 +12784,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -12785,9 +12796,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -14333,7 +14341,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -14346,9 +14353,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -18600,17 +18604,24 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@types/send'
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@types/serve-favicon'
   origin: npm
   type: dev
@@ -23164,7 +23175,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -23177,9 +23187,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -23660,9 +23667,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: ansi-regex
@@ -23692,6 +23696,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -24724,9 +24731,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: aproba
   origin: npm
   type: dev
@@ -24910,9 +24914,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: are-we-there-yet
   origin: npm
   type: dev
@@ -25369,6 +25370,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: array-differ
   origin: npm
   type: dev
@@ -26017,6 +26021,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: array.prototype.find
   origin: npm
   type: dev
@@ -26059,6 +26066,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -26154,6 +26164,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: arraybuffer.slice
   origin: npm
   type: core
@@ -27444,6 +27457,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: await-to-js
   origin: npm
   type: core
@@ -31063,7 +31079,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -31076,9 +31091,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32521,6 +32533,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: bulma-calendar
@@ -32950,7 +32965,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -32963,9 +32977,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -33492,7 +33503,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -33511,9 +33521,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35132,7 +35139,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -35145,9 +35151,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35695,7 +35698,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -35708,9 +35710,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -35966,9 +35965,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: code-point-at
   origin: npm
   type: dev
@@ -35988,6 +35984,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -36926,6 +36925,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: commitplease
   origin: npm
   type: dev
@@ -37659,7 +37661,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -37679,9 +37680,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -37910,9 +37908,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: console-control-strings
   origin: npm
   type: dev
@@ -39890,7 +39885,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -39913,9 +39907,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -43180,7 +43171,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -43194,9 +43184,6 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: define-data-property
@@ -43208,6 +43195,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: define-lazy-prop
   origin: npm
   type: core
@@ -43543,9 +43533,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: delegates
   origin: npm
   type: dev
@@ -45506,7 +45493,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -45529,9 +45515,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -46438,7 +46421,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -46454,9 +46436,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -47225,14 +47204,12 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: emoji-regex
   origin: npm
   type: dev
   admins:
     - bc
+    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -47260,6 +47237,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -48361,6 +48341,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: es-shim-unscopables
   origin: npm
   type: dev
@@ -48381,6 +48364,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: es-to-primitive
   origin: npm
   type: core
@@ -48940,15 +48926,11 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -49235,6 +49217,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-config-jquery
   origin: npm
   type: dev
@@ -49315,6 +49300,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-config-standard
   origin: npm
   type: dev
@@ -49328,6 +49316,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-import-resolver-node
   origin: npm
   type: core
@@ -49514,6 +49505,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-plugin-eslint-comments
   origin: npm
   type: dev
@@ -49523,6 +49517,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-plugin-es
   origin: npm
   type: dev
@@ -49543,9 +49540,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -49764,9 +49758,6 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -49781,6 +49772,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-plugin-prettier
   origin: npm
   type: dev
@@ -49924,6 +49918,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-plugin-security
   origin: npm
   type: dev
@@ -49942,6 +49939,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: eslint-plugin-standard
   origin: npm
   type: dev
@@ -50171,9 +50171,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -55003,6 +55000,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: for-in
   origin: npm
   type: core
@@ -56477,6 +56477,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: functional-red-black-tree
@@ -56529,9 +56532,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -56582,6 +56582,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -57197,9 +57200,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: gauge
   origin: npm
   type: dev
@@ -57945,6 +57945,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: get-uri
   origin: npm
   type: core
@@ -58965,6 +58968,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: global
@@ -59312,6 +59318,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: got
   origin: npm
   type: core
@@ -59334,7 +59343,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -59353,9 +59361,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -59487,6 +59492,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: graphemer
@@ -59505,6 +59513,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: graphlib
   origin: npm
   type: dev
@@ -61476,6 +61487,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: has-proto
   origin: npm
   type: core
@@ -61485,6 +61499,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: has-proto
   origin: npm
   type: dev
@@ -61690,9 +61707,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: has-unicode
   origin: npm
   type: dev
@@ -61858,15 +61872,11 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -63284,7 +63294,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -63297,9 +63306,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -64877,7 +64883,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -64890,9 +64895,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -66443,6 +66445,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: is-arrayish
   origin: npm
   type: core
@@ -67674,9 +67679,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: is-fullwidth-code-point
   origin: npm
   type: dev
@@ -67708,6 +67710,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68271,7 +68276,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -68284,9 +68288,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -68489,7 +68490,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -68512,9 +68512,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -69710,6 +69707,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: is-typedarray
   origin: npm
   type: core
@@ -70308,15 +70308,11 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -70626,15 +70622,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: isomorphic-unfetch
-  origin: npm
-  type: core
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: isomorphic-unfetch
   origin: npm
   type: dev
@@ -73132,6 +73119,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: jsdoc
   origin: npm
   type: dev
@@ -73237,6 +73227,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -75139,7 +75132,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -75155,9 +75147,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -78905,7 +78894,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -78924,9 +78912,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -84138,6 +84123,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: natural-compare
   origin: npm
   type: core
@@ -85816,7 +85804,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -85844,9 +85831,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -86153,9 +86137,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: npmlog
   origin: npm
   type: dev
@@ -86378,9 +86359,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: number-is-nan
@@ -86402,6 +86380,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -87225,6 +87206,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: object.getownpropertydescriptors
@@ -87290,6 +87274,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: object.hasown
   origin: npm
   type: core
@@ -88777,7 +88764,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -88790,9 +88776,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -89526,7 +89509,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -89542,9 +89524,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95189,7 +95168,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -95211,9 +95189,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95734,6 +95709,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -97029,15 +97007,11 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -97625,6 +97599,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -100352,6 +100329,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: referrer-policy
   origin: npm
   type: core
@@ -100544,9 +100524,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: regenerator-runtime
@@ -100722,6 +100699,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: regexp-clone
   origin: npm
   type: core
@@ -100810,6 +100790,9 @@
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: regexpp
@@ -100864,9 +100847,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -100957,7 +100937,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -100973,9 +100952,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -101001,7 +100977,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -101017,9 +100992,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -101119,6 +101091,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -102334,6 +102309,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -102688,6 +102666,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: resolve-pkg
   origin: npm
   type: dev
@@ -102916,7 +102897,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -102929,9 +102909,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -104132,6 +104109,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: safe-buffer
   origin: npm
   type: core
@@ -104269,6 +104249,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: safe-regex
   origin: npm
   type: core
@@ -104837,6 +104820,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: scss-tokenizer
   origin: npm
   type: dev
@@ -105113,7 +105099,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -105126,9 +105111,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -105700,9 +105682,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: set-blocking
   origin: npm
   type: dev
@@ -105732,6 +105711,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
     - projectName:
@@ -105749,6 +105731,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: set-getter
   origin: npm
   type: dev
@@ -106915,6 +106900,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: simplebar-react
   origin: npm
   type: dev
@@ -110576,9 +110564,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: string-width
   origin: npm
   type: dev
@@ -110610,6 +110595,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -110874,6 +110862,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: string_decoder
@@ -111096,9 +111087,6 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
-    - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: strip-ansi
@@ -111129,6 +111117,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -114481,7 +114472,6 @@
   type: dev
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
     - projectName:
@@ -114490,9 +114480,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -114964,9 +114951,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: tr46
   origin: npm
   type: dev
@@ -116288,6 +116272,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: typed-array-byte-length
   origin: npm
   type: dev
@@ -116301,6 +116288,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: typed-array-byte-offset
   origin: npm
   type: dev
@@ -116314,6 +116304,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: typed-array-length
   origin: npm
   type: dev
@@ -116334,6 +116327,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: typed-styles
   origin: npm
   type: core
@@ -117153,14 +117149,10 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: unfetch
   origin: npm
   type: dev
@@ -117686,7 +117678,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -117709,9 +117700,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118457,7 +118445,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -118470,9 +118457,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118757,7 +118741,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -118773,9 +118756,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -118823,6 +118803,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -119684,9 +119667,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -121394,9 +121374,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: webidl-conversions
   origin: npm
   type: dev
@@ -122190,9 +122167,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: whatwg-url
   origin: npm
   type: dev
@@ -122469,6 +122443,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: which
   origin: npm
   type: core
@@ -122605,9 +122582,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
 - dependency: wide-align
   origin: npm
   type: dev
@@ -122650,7 +122624,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - tbs-sct
   projects:
@@ -122663,9 +122636,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -122808,9 +122778,6 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -123852,7 +123819,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - ssc-spc
     - tbs-sct
@@ -123872,9 +123838,6 @@
     - projectName:
         en: GC Architecture
         fr: Architecture GC
-    - projectName:
-        en: parking-ticket-system
-        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -124896,6 +124859,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
