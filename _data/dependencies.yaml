@@ -6192,6 +6192,9 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: '@babel/runtime'
@@ -70624,6 +70627,15 @@
         fr: InfoBase du GC
 - dependency: isomorphic-unfetch
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+- dependency: isomorphic-unfetch
+  origin: npm
   type: dev
   admins:
     - esdc-edsc
@@ -100524,6 +100536,9 @@
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
+    - projectName:
         en: TalentCloud
         fr: Nuage de Talent
 - dependency: regenerator-runtime
@@ -114951,6 +114966,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: tr46
   origin: npm
   type: dev
@@ -117149,10 +117167,14 @@
   type: core
   admins:
     - bc
+    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: unfetch
   origin: npm
   type: dev
@@ -121374,6 +121396,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: webidl-conversions
   origin: npm
   type: dev
@@ -122167,6 +122192,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: whatwg-url
   origin: npm
   type: dev
