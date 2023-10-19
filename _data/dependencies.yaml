@@ -1007,9 +1007,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@azure/abort-controller'
@@ -1028,9 +1025,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@azure/core-auth'
@@ -1048,9 +1042,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1079,9 +1070,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@azure/core-lro'
@@ -1090,9 +1078,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1111,9 +1096,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1132,9 +1114,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1153,9 +1132,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1174,9 +1150,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1195,9 +1168,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1216,9 +1186,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1237,9 +1204,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1258,9 +1222,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1279,9 +1240,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -1300,9 +1258,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -6783,9 +6738,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@cityssm/mssql-multi-pool'
@@ -10551,9 +10503,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@js-joda/core'
@@ -11728,9 +11677,6 @@
     - city-of-montreal-qc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -14393,9 +14339,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: '@tediousjs/connection-string'
@@ -15704,9 +15647,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -17571,9 +17511,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -19065,9 +19002,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -24903,9 +24837,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -27077,9 +27008,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -27669,14 +27597,10 @@
     - bc
     - city-of-edmonton-ab
     - city-of-montreal-qc
-    - city-of-sault-ste-marie-on
     - 'on'
     - phac-aspc
     - tbs-sct
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32035,9 +31959,6 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -36710,9 +36631,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -39085,9 +39003,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -39130,6 +39045,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -43208,9 +43126,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: define-lazy-prop
@@ -43246,9 +43161,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -43276,6 +43188,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -43441,9 +43356,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -46757,9 +46669,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -48180,9 +48089,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -48207,6 +48113,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -48246,9 +48155,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -48387,9 +48293,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -48414,6 +48317,9 @@
     - projectName:
         en: AppHub
         fr: HubApp
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -51187,9 +51093,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -54889,13 +54792,9 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - 'on'
     - tbs-sct
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -55296,9 +55195,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -56447,9 +56343,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: function.prototype.name
@@ -56461,6 +56354,9 @@
     - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -56550,9 +56446,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: functions-have-names
@@ -56567,6 +56460,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -57188,9 +57084,6 @@
     - city-of-sault-ste-marie-on
     - 'on'
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -57892,9 +57785,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: get-symbol-description
@@ -57909,6 +57799,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -58937,9 +58830,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -61217,9 +61107,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -61243,6 +61130,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -61458,9 +61348,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: has-property-descriptors
@@ -61475,6 +61362,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -61642,9 +61532,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: has-tostringtag
@@ -61662,6 +61549,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -65718,9 +65608,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -65741,6 +65628,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -66544,9 +66434,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -66570,6 +66457,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -66675,9 +66565,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -66701,6 +66588,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -66856,9 +66746,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -66886,6 +66773,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67153,9 +67043,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -67183,6 +67070,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -67359,9 +67249,6 @@
     - city-of-sault-ste-marie-on
     - 'on'
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -68217,9 +68104,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -68240,6 +68124,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -68319,9 +68206,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -68345,6 +68229,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69078,9 +68965,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -69108,6 +68992,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69356,9 +69243,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: is-shared-array-buffer
@@ -69373,6 +69257,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69483,9 +69370,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -69509,6 +69393,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -69588,9 +69475,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -69618,6 +69502,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -70038,9 +69925,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: is-weakref
@@ -70055,6 +69939,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -70239,9 +70126,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -70347,9 +70231,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -70391,6 +70272,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -73032,9 +72916,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: jsbi
@@ -74132,9 +74013,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -74407,9 +74285,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -74442,9 +74317,6 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -77180,9 +77052,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -77238,9 +77107,6 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -77356,9 +77222,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -77400,9 +77263,6 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -77451,9 +77311,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -77499,9 +77356,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -77791,9 +77645,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -83503,9 +83354,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: mssql
@@ -84082,9 +83930,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -84767,9 +84612,6 @@
     - city-of-sault-ste-marie-on
     - tbs-sct
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -86135,9 +85977,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -86898,9 +86737,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -86931,6 +86767,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -87062,9 +86901,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -87091,6 +86927,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -88028,9 +87867,6 @@
     - city-of-sault-ste-marie-on
     - 'on'
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -95595,9 +95431,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -95637,6 +95470,9 @@
         en: CDTS
         fr: SGDC
     - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
+    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -95672,9 +95508,6 @@
     - 'on'
     - phac-aspc
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -96578,9 +96411,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -96925,9 +96755,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -96971,6 +96798,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -99775,9 +99605,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -99819,6 +99646,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -100763,9 +100593,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -100789,6 +100616,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -103256,9 +103086,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -109104,9 +108931,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -109906,9 +109730,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: stoppable
@@ -110703,9 +110524,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -110726,6 +110544,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -110812,9 +110633,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -110835,6 +110653,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -112761,9 +112582,6 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
 - dependency: tarn
@@ -112836,9 +112654,6 @@
   admins:
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -114883,9 +114698,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -115617,9 +115429,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -115925,9 +115734,6 @@
     - bc
     - city-of-sault-ste-marie-on
   projects:
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
@@ -116865,9 +116671,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -116888,6 +116691,9 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -122271,9 +122077,6 @@
     - 'on'
   projects:
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -122297,6 +122100,9 @@
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: contract-expiration-tracker
+        fr: contract-expiration-tracker
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -123980,9 +123786,6 @@
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
     - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -124023,9 +123826,6 @@
     - projectName:
         en: alexa-gc-recalls
         fr: alexa-gc-recalls
-    - projectName:
-        en: contract-expiration-tracker
-        fr: contract-expiration-tracker
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
