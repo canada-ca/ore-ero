@@ -17511,6 +17511,9 @@
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
+    - projectName:
+        en: parking-ticket-system
+        fr: parking-ticket-system
 - dependency: '@types/nodemailer'
   origin: npm
   type: dev
@@ -19444,6 +19447,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
@@ -19618,6 +19624,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -19740,6 +19749,9 @@
         en: GC InfoBase
         fr: InfoBase du GC
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -19830,11 +19842,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: CDTS
         fr: SGDC
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: '@villedemontreal/workit-bpm-client'
   origin: npm
   type: core
@@ -48590,6 +48606,9 @@
     - city-of-sault-ste-marie-on
   projects:
     - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
+    - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
 - dependency: eslint-config-standard
@@ -61000,6 +61019,15 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
+- dependency: hasown
+  origin: npm
+  type: dev
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: general-licence-manager
+        fr: general-licence-manager
 - dependency: hast-to-hyperscript
   origin: npm
   type: core
@@ -82628,9 +82656,6 @@
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
 - dependency: natural-compare
@@ -102407,9 +102432,6 @@
         en: devhub-app-web
         fr: devhub-app-web
     - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
-    - projectName:
         en: gwells
         fr: gwells
     - projectName:
@@ -113642,9 +113664,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: general-licence-manager
-        fr: general-licence-manager
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
