@@ -6756,6 +6756,9 @@
     - projectName:
         en: lot-occupancy-system
         fr: lot-occupancy-system
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: '@cityssm/random-words'
   origin: npm
   type: core
@@ -8291,6 +8294,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: '@eslint/eslintrc'
   origin: npm
   type: core
@@ -17566,6 +17572,9 @@
         en: gwells
         fr: gwells
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
     - projectName:
@@ -17601,9 +17610,6 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -18488,11 +18494,15 @@
   origin: npm
   type: dev
   admins:
+    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: '@types/serve-favicon'
   origin: npm
   type: dev
@@ -19350,6 +19360,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: '@types/yauzl'
   origin: npm
   type: dev
@@ -19367,9 +19380,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
 - dependency: '@types/yoga-layout'
   origin: npm
   type: core
@@ -26654,7 +26664,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -26667,9 +26676,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -31746,7 +31752,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -31766,9 +31771,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -31806,6 +31808,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -36959,7 +36964,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -36972,9 +36976,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -37015,6 +37016,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -39145,6 +39149,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -43631,6 +43638,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: devtools-protocol
   origin: npm
   type: dev
@@ -47945,7 +47955,6 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
@@ -47953,9 +47962,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
 - dependency: es6-promise
   origin: npm
   type: dev
@@ -47978,14 +47984,10 @@
   type: core
   admins:
     - bc
-    - city-of-sault-ste-marie-on
   projects:
     - projectName:
         en: Devex
         fr: Devex
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
 - dependency: es6-promisify
   origin: npm
   type: dev
@@ -49376,9 +49378,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -51588,6 +51587,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: extract-zip
   origin: npm
   type: dev
@@ -51612,9 +51614,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -56942,6 +56941,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: get-stream
@@ -56975,9 +56977,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -58552,6 +58551,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: graphlib
   origin: npm
   type: dev
@@ -69159,7 +69161,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - tbs-sct
@@ -69180,9 +69181,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -69228,6 +69226,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
@@ -82649,15 +82650,11 @@
   origin: npm
   type: dev
   admins:
-    - city-of-sault-ste-marie-on
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
 - dependency: natural-compare
   origin: npm
   type: core
@@ -89944,9 +89941,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
 - dependency: pdfkit
   origin: npm
   type: core
@@ -93894,7 +93888,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -93910,9 +93903,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -93952,6 +93942,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -95307,6 +95300,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: puppeteer-core
   origin: npm
   type: dev
@@ -95328,6 +95324,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: puppeteer
   origin: npm
   type: dev
@@ -98005,7 +98004,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
     - statcan
@@ -98029,9 +98027,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -98074,6 +98069,9 @@
     - projectName:
         en: gwells
         fr: gwells
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -111617,6 +111615,9 @@
         en: general-licence-manager
         fr: general-licence-manager
     - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
+    - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
 - dependency: through
@@ -111650,9 +111651,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -113211,6 +113209,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
 - dependency: ts-dedent
   origin: npm
   type: dev
@@ -113664,9 +113665,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -114256,7 +114254,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
   projects:
@@ -114272,9 +114269,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lottery-licence-manager
-        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -114312,6 +114306,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -114748,6 +114745,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
@@ -121476,6 +121476,9 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
+    - projectName:
+        en: lottery-licence-manager
+        fr: lottery-licence-manager
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
