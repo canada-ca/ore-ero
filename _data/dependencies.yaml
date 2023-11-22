@@ -14494,12 +14494,8 @@
   type: dev
   admins:
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -34248,9 +34244,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -34271,15 +34264,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: chrome-launcher
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: chrome-remote-interface
   origin: npm
   type: dev
@@ -43843,15 +43827,6 @@
     - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
-- dependency: devtools
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: dfa
   origin: npm
   type: core
@@ -72599,12 +72574,8 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -75015,15 +74986,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: lighthouse-logger
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: lilconfig
   origin: npm
   type: core
@@ -75098,15 +75060,11 @@
   admins:
     - bc
     - city-of-sault-ste-marie-on
-    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: contract-expiration-tracker
         fr: contract-expiration-tracker
@@ -76048,12 +76006,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -76072,15 +76026,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-- dependency: lodash.difference
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: lodash.endswith
   origin: npm
   type: dev
@@ -76232,15 +76177,11 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -76450,6 +76391,9 @@
     - tbs-sct
   projects:
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -76603,9 +76547,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -78992,15 +78933,6 @@
     - projectName:
         en: gwells
         fr: gwells
-- dependency: marky
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: match-url-wildcard
   origin: npm
   type: dev
@@ -87933,15 +87865,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: p-iteration
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: p-limit
   origin: npm
   type: core
@@ -115187,12 +115110,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -118124,9 +118043,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
