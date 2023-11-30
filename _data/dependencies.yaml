@@ -19510,9 +19510,6 @@
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -19604,9 +19601,6 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -48736,6 +48730,15 @@
         fr: Nuage de Talent
 - dependency: eslint-config-cityssm
   origin: npm
+  type: core
+  admins:
+    - city-of-sault-ste-marie-on
+  projects:
+    - projectName:
+        en: lot-occupancy-system
+        fr: lot-occupancy-system
+- dependency: eslint-config-cityssm
+  origin: npm
   type: dev
   admins:
     - city-of-sault-ste-marie-on
@@ -48826,9 +48829,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: eslint-config-standard
   origin: npm
   type: dev
@@ -49145,9 +49145,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -49260,9 +49257,6 @@
         en: gwells
         fr: gwells
     - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
-    - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
     - projectName:
@@ -49328,9 +49322,6 @@
     - projectName:
         en: gwells
         fr: gwells
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -49489,9 +49480,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -49816,9 +49804,6 @@
     - projectName:
         en: Integrated Rapid Infectious Disease Analysis (IRIDA)
         fr: Integrated Rapid Infectious Disease Analysis (IRIDA)
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
     - projectName:
         en: lottery-licence-manager
         fr: lottery-licence-manager
@@ -86204,15 +86189,6 @@
     - projectName:
         en: general-licence-manager
         fr: general-licence-manager
-- dependency: object.hasown
-  origin: npm
-  type: core
-  admins:
-    - city-of-sault-ste-marie-on
-  projects:
-    - projectName:
-        en: lot-occupancy-system
-        fr: lot-occupancy-system
 - dependency: object.hasown
   origin: npm
   type: dev
