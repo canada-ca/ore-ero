@@ -20397,15 +20397,6 @@
     - projectName:
         en: CDTS
         fr: SGDC
-- dependency: '@wdio/config'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: '@wdio/dot-reporter'
   origin: npm
   type: dev
@@ -20506,24 +20497,6 @@
         en: CDTS
         fr: SGDC
 - dependency: '@wdio/spec-reporter'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: '@wdio/types'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: '@wdio/utils'
   origin: npm
   type: dev
   admins:
@@ -119726,15 +119699,6 @@
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: webdriverio
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: webdriver
   origin: npm
   type: dev
   admins:
