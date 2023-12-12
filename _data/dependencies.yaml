@@ -20505,6 +20505,24 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: '@wdio/types'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: '@wdio/utils'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@webassemblyjs/ast'
   origin: npm
   type: core
