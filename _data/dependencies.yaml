@@ -14835,15 +14835,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: '@types/axios'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/babel__core'
   origin: npm
   type: core
@@ -15110,15 +15101,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: '@types/bytebuffer'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/cacheable-request'
   origin: npm
   type: core
@@ -15166,15 +15148,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-- dependency: '@types/chai'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/chalk'
   origin: npm
   type: dev
@@ -16334,15 +16307,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: '@types/he'
-  origin: npm
-  type: dev
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@types/history'
   origin: npm
   type: dev
@@ -19911,15 +19875,6 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
-- dependency: '@villedemontreal/workit-camunda'
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: '@villedemontreal/workit-core'
   origin: npm
   type: core
@@ -19938,16 +19893,7 @@
     - projectName:
         en: WorkIt
         fr: WorkIt
-- dependency: '@villedemontreal/workit-zeebe-client'
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
-- dependency: '@villedemontreal/zeebe-elasticsearch-client'
+- dependency: '@villedemontreal/workit'
   origin: npm
   type: core
   admins:
@@ -33154,7 +33100,6 @@
   type: core
   admins:
     - bc
-    - city-of-montreal-qc
     - city-of-sault-ste-marie-on
     - esdc-edsc
     - 'on'
@@ -33187,9 +33132,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: camelcase
   origin: npm
   type: dev
@@ -33396,15 +33338,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: caporal
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: capture-exit
   origin: npm
   type: dev
@@ -33654,7 +33587,6 @@
   type: dev
   admins:
     - bc
-    - city-of-montreal-qc
     - tbs-sct
     - tc
   projects:
@@ -33670,9 +33602,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: chalk
   origin: npm
   type: core
@@ -36240,7 +36169,6 @@
   admins:
     - bc
     - city-of-edmonton-ab
-    - city-of-montreal-qc
   projects:
     - projectName:
         en: Devex
@@ -36248,9 +36176,6 @@
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
@@ -37305,15 +37230,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: config
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: confusing-browser-globals
   origin: npm
   type: core
@@ -52485,15 +52401,11 @@
   origin: npm
   type: core
   admins:
-    - city-of-montreal-qc
     - tbs-sct
   projects:
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: fastest-levenshtein
   origin: npm
   type: core
@@ -61624,7 +61536,6 @@
   type: core
   admins:
     - bc
-    - city-of-montreal-qc
     - esdc-edsc
     - tbs-sct
     - tc
@@ -61641,9 +61552,6 @@
     - projectName:
         en: Notify
         fr: Notification
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: he
   origin: npm
   type: dev
@@ -94511,7 +94419,6 @@
   type: core
   admins:
     - bc
-    - city-of-montreal-qc
     - city-of-sault-ste-marie-on
     - 'on'
   projects:
@@ -94530,9 +94437,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: progress
   origin: npm
   type: dev
@@ -94835,15 +94739,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: prompt
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: prop-types-exact
   origin: npm
   type: dev
@@ -105022,7 +104917,6 @@
   origin: npm
   type: core
   admins:
-    - city-of-montreal-qc
     - esdc-edsc
     - statcan
   projects:
@@ -105032,9 +104926,6 @@
     - projectName:
         en: Drupal WxT
         fr: Drupal WxT
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: shelljs
   origin: npm
   type: dev
@@ -113933,15 +113824,6 @@
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
-- dependency: ts-morph
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: ts-node
   origin: npm
   type: core
@@ -118283,15 +118165,11 @@
   origin: npm
   type: core
   admins:
-    - city-of-montreal-qc
     - esdc-edsc
   projects:
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: validate-npm-package-name
   origin: npm
   type: dev
@@ -123282,15 +123160,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: zeebe-node
-  origin: npm
-  type: core
-  admins:
-    - city-of-montreal-qc
-  projects:
-    - projectName:
-        en: WorkIt
-        fr: WorkIt
 - dependency: zen-observable-ts
   origin: npm
   type: core
