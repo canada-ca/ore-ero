@@ -12771,12 +12771,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14328,12 +14324,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -15121,12 +15113,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -16895,12 +16883,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -18381,12 +18365,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -20343,6 +20323,15 @@
     - projectName:
         en: CDTS
         fr: SGDC
+- dependency: '@wdio/config'
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
 - dependency: '@wdio/dot-reporter'
   origin: npm
   type: dev
@@ -20425,15 +20414,6 @@
         en: CDTS
         fr: SGDC
 - dependency: '@wdio/runner'
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
-- dependency: '@wdio/selenium-standalone-service'
   origin: npm
   type: dev
   admins:
@@ -22522,9 +22502,6 @@
     - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -25977,9 +25954,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: GC InfoBase
         fr: InfoBase du GC
@@ -32590,12 +32564,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32620,12 +32590,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -34671,9 +34637,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -35287,12 +35250,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -43609,9 +43568,6 @@
   admins:
     - esdc-edsc
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -53605,15 +53561,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-- dependency: find-process
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: find-root
   origin: npm
   type: core
@@ -53838,15 +53785,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: fkill
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: flagged-respawn
   origin: npm
   type: dev
@@ -55134,9 +55072,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -55223,9 +55158,6 @@
     - projectName:
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -58566,9 +58498,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -62901,12 +62830,8 @@
   origin: npm
   type: dev
   admins:
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -67983,15 +67908,6 @@
     - projectName:
         en: Devex
         fr: Devex
-- dependency: is-port-reachable
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: is-posix-bracket
   origin: npm
   type: dev
@@ -73003,9 +72919,6 @@
         en: Algorithmic Impact Assessment
         fr: Évaluation de l'incidence algorithmique
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -73814,12 +73727,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -76545,9 +76454,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: gwells
         fr: gwells
 - dependency: lodash.map
@@ -77850,9 +77756,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: Devex
         fr: Devex
@@ -81009,12 +80912,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -82001,9 +81900,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -84657,9 +84553,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
@@ -87536,12 +87429,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -87689,9 +87578,6 @@
     - projectName:
         en: AppHub
         fr: HubApp
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -90692,15 +90578,6 @@
     - projectName:
         en: Web Experience Toolkit (WET)
         fr: Boîte à outils de l'expérience Web (BOEW)
-- dependency: pid-port
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: pidtree
   origin: npm
   type: dev
@@ -94248,15 +94125,6 @@
     - projectName:
         en: Ontario COVID-19 self-assessment
         fr: Ontario Autoévaluation - nouveau coronavirus 2019 (COVID-19)
-- dependency: process-exists
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: process-nextick-args
   origin: npm
   type: core
@@ -95153,15 +95021,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: ps-list
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: ps-tree
   origin: npm
   type: dev
@@ -101474,12 +101333,8 @@
   type: dev
   admins:
     - bc
-    - esdc-edsc
     - tbs-sct
   projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -103533,15 +103388,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: selenium-standalone
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: selenium-webdriver
   origin: npm
   type: dev
@@ -111140,9 +110986,6 @@
     - tbs-sct
   projects:
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: corporate-records-manager
         fr: corporate-records-manager
     - projectName:
@@ -111218,15 +111061,6 @@
     - projectName:
         en: YouCanBenefit
         fr: YouCanBenefit
-- dependency: taskkill
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: tedious
   origin: npm
   type: core
@@ -116322,9 +116156,6 @@
         en: AppHub
         fr: HubApp
     - projectName:
-        en: CDTS
-        fr: SGDC
-    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -119502,15 +119333,6 @@
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
-- dependency: wdio-selenium-standalone-service
-  origin: npm
-  type: dev
-  admins:
-    - esdc-edsc
-  projects:
-    - projectName:
-        en: CDTS
-        fr: SGDC
 - dependency: web-animations-js
   origin: npm
   type: core
@@ -119595,6 +119417,15 @@
         en: YouCanBenefit
         fr: YouCanBenefit
 - dependency: webdriverio
+  origin: npm
+  type: dev
+  admins:
+    - esdc-edsc
+  projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
+- dependency: webdriver
   origin: npm
   type: dev
   admins:
