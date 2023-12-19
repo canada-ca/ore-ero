@@ -12771,8 +12771,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -14324,8 +14328,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -32564,8 +32572,12 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -32590,8 +32602,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -58499,6 +58515,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -62830,8 +62849,12 @@
   origin: npm
   type: dev
   admins:
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: TalentCloud
         fr: Nuage de Talent
@@ -77757,6 +77780,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: Devex
         fr: Devex
     - projectName:
@@ -80912,8 +80938,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -84554,6 +84584,9 @@
         en: AppHub
         fr: HubApp
     - projectName:
+        en: CDTS
+        fr: SGDC
+    - projectName:
         en: DECD Design System
         fr: Système De Conception D'ENDC
     - projectName:
@@ -87429,8 +87462,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
@@ -101333,8 +101370,12 @@
   type: dev
   admins:
     - bc
+    - esdc-edsc
     - tbs-sct
   projects:
+    - projectName:
+        en: CDTS
+        fr: SGDC
     - projectName:
         en: devhub-app-web
         fr: devhub-app-web
