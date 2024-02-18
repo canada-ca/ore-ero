@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-/* global cy, context, it */
 
 context('Open Source Code', () => {
   it('Loads the English page', () => {

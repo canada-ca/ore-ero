@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-/* global cy, context, it */
 
 context('Home', () => {
   it('Loads the English page', () => {
