@@ -17,8 +17,19 @@
   "overrides": [
     {
       "files":[
+        "cypress.config.js",
         "cypress/**"
       ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:cypress/recommended",
+        "plugin:prettier/recommended"
+      ],
+
+      "env": {
+        "cypress/globals": true,
+        "node": true
+      },
       "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
