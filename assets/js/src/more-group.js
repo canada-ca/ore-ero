@@ -1,4 +1,4 @@
-/* exported addMoreLicences fillLicenceField fillUseField addMoreRelatedCode resetMoreGroup */
+/* exported addMoreLicences, fillLicenceField, fillUseField, addMoreRelatedCode, resetMoreGroup */
 
 $(document).ready(function () {
   $('.add-more-group').each(function () {

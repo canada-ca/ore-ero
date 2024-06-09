@@ -1,4 +1,4 @@
-/* exported validateRequired submitInit submitConclusion */
+/* exported validateRequired, submitInit, submitConclusion */
 
 /**
  * Validates the required fields in the codeForm

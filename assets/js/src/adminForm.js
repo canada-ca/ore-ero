@@ -1,4 +1,4 @@
-/* exported getAdminObject getAdminCode getSelectedOrgType getOrgLevel hideNewAdminForm*/
+/* exported getAdminObject, getAdminCode, getSelectedOrgType, getOrgLevel, hideNewAdminForm */
 
 /* global  slugify */
 
