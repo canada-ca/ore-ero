@@ -9,7 +9,7 @@ $(document).ready(function () {
       let length = $('#addMorepartners ul li').length;
       let index = length == 1 ? '' : length - 1;
       $('#partnersNewAdmin' + index).addClass('hide');
-    }
+    },
   );
 
   hideFieldsPartner('');
@@ -18,7 +18,7 @@ $(document).ready(function () {
     '.partnersAdminCodeSelect select',
     function () {
       selectPartners(this);
-    }
+    },
   );
   $('#addMorepartners').on(
     'click',
@@ -31,7 +31,7 @@ $(document).ready(function () {
       } else {
         $('#partnersNewAdmin' + index).removeClass('hide');
       }
-    }
+    },
   );
   $('#addMorepartners').on(
     'click',
@@ -40,7 +40,7 @@ $(document).ready(function () {
       removeNewPartner(this);
       let index = getmoreIndex($(this));
       $('#partnersNewAdmin' + index).addClass('hide');
-    }
+    },
   );
   $('#addMorepartners').on('change', '.orgLevelPartner select', function () {
     let index = getmoreIndex($(this));
@@ -63,7 +63,7 @@ function getAdminCodePartner(index) {
     $('#enpartnersname' + index).val() +
       ($('#provinceSelectPartner' + index).val() !== ''
         ? '-' + $('#provinceSelectPartner' + index).val()
-        : '')
+        : ''),
   );
 }
 
@@ -97,7 +97,7 @@ function addMorePartners(obj) {
       let first = suffix;
       if (suffix != '') {
         let suffixes = $(
-          'input[data-for="partners-suffixes' + id + '"][type="text"]'
+          'input[data-for="partners-suffixes' + id + '"][type="text"]',
         ).toArray();
         for (let item in suffixes) {
           let val = suffixes[item].value;
@@ -131,7 +131,7 @@ function getNewAdminPartnerPromise(obj, fileWriter, config) {
           `_data/administrations/${orgLevel}.yml`,
           newAdmins[orgLevel],
           '',
-          'code'
+          'code',
         )
         .then((result) => {
           config.body.files[config.body.files.length] = {
@@ -162,7 +162,7 @@ function getNewAdminPartnerObject(index) {
   let suffix = $('#partnerssuffix').val();
   if (suffix != '') {
     let suffixes = $(
-      'input[data-for="partners-suffixes' + index + '"][type="text"]'
+      'input[data-for="partners-suffixes' + index + '"][type="text"]',
     ).toArray();
     for (let item in suffixes) {
       suffix += ',' + suffixes[item].value;

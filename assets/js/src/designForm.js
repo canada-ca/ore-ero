@@ -137,12 +137,12 @@ function getDesignObject() {
   }
   if ($('#endescriptionhowItWorks').val()) {
     designObject.description.howItWorks.en = $(
-      '#endescriptionhowItWorks'
+      '#endescriptionhowItWorks',
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
     designObject.description.howItWorks.fr = $(
-      '#frdescriptionhowItWorks'
+      '#frdescriptionhowItWorks',
     ).val();
   }
 
@@ -165,7 +165,7 @@ function submitDesignFormNewAdmin() {
   let adminObject = getAdminObject();
   let designName = $('#enname').val();
   let adminName = slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -186,8 +186,8 @@ function submitDesignFormNewAdmin() {
               designFile,
               adminFile,
               designResult,
-              adminResult
-            )
+              adminResult,
+            ),
           );
         })
         .catch((err) => {
@@ -200,8 +200,8 @@ function submitDesignFormNewAdmin() {
                 designFile,
                 adminFile,
                 designObject,
-                adminResult
-              )
+                adminResult,
+              ),
             );
           } else throw err;
         })
@@ -221,7 +221,7 @@ function getConfigUpdateDesignNewAdmin(
   designFile,
   adminFile,
   designResult,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({
@@ -260,7 +260,7 @@ function getConfigNewDesignNewAdmin(
   designFile,
   adminFile,
   designObject,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({

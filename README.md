@@ -28,19 +28,20 @@ Notes:
 - If Jekyll is not automatically regenerating the site after files are modified, add the build command flags: `--watch` and `--force_polling` to the end of the above command
 
 Site will be available at: <http://localhost:4000/ore-ero/>
-______________________
+
+---
 
 ### Javascript
 
 If you're working on Javascript in the `/assets/js/src` folder, make sure your code follows the style guidelines. We use ES Lint for checking code style. Ensure you have a recent version of Node.js (>=10.15.3). Run the following to install dependencies.
 
-``` bash
+```bash
 npm install
 ```
 
 Now when you want to know if your code is following the guidelines, run
 
-``` bash
+```bash
 npm run lint
 ```
 
@@ -81,19 +82,19 @@ This service is hosted in [Heroku](https://dashboard.heroku.com/apps/canada-pr-b
 
 First, clone PRB0t to your machine.
 
-``` bash
+```bash
 git clone https://github.com/PRB0t/PRB0t
 ```
 
 Next, add our app as a remote git repository.
 
-``` bash
+```bash
 heroku git:remote -a canada-pr-bot
 ```
 
 And finally, push your changes.
 
-``` bash
+```bash
 git push heroku master
 ```
 
@@ -125,19 +126,20 @@ Remarques:
 - Si Jekyll ne régénère pas automatiquement le site une fois les fichiers modifiés, ajoutez les indicateurs: `--watch` et `--force_polling` à la fin de la commande ci-dessus
 
 Le site sera disponible au: <http://localhost:4000/ore-ero/>
-______________________
+
+---
 
 ### Javascript
 
 Si vous travaillez sur Javascript dans le dossier `/assets/js/src`, assurez-vous que votre code respecte les directives de style. Nous utilisons ES Lint pour vérifier le style de code. Assurez-vous de disposer d'une version récente de Node.js (>=10.15.3). Exécutez ce qui suit pour installer des dépendances.
 
-``` bash
+```bash
 npm install
 ```
 
 Lorsque vous voulez savoir si votre code suit les directives de style, exécutez
 
-``` bash
+```bash
 npm run lint
 ```
 
@@ -178,18 +180,18 @@ Ce service est hébergé sur [Heroku](https://dashboard.heroku.com/apps/canada-p
 
 Commencez par cloner PRB0t sur votre machine.
 
-``` bash
+```bash
 git clone https://github.com/PRB0t/PRB0t
 ```
 
 Ensuite, ajoutez notre application en tant que dépôt git distant.
 
-``` bash
+```bash
 heroku git:remote -a canada-pr-bot
 ```
 
 Et enfin, poussez vos modifications.
 
-``` bash
+```bash
 git push heroku master
 ```

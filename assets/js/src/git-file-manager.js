@@ -94,7 +94,7 @@ class YamlWriter extends FileWriter {
         result = this.mergeFirstLevel(
           DeepObject.get(result),
           newObject,
-          propPath
+          propPath,
         );
 
       // Update the object if there's a match.

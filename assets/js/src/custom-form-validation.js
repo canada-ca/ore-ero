@@ -47,7 +47,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(lettersSpaceError[lang])
+      jQuery.validator.format(lettersSpaceError[lang]),
     );
 
     /**
@@ -65,7 +65,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(lettersSpaceError[lang])
+      jQuery.validator.format(lettersSpaceError[lang]),
     );
 
     /**
@@ -83,7 +83,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(alphanumericSpaceError[lang])
+      jQuery.validator.format(alphanumericSpaceError[lang]),
     );
 
     /**
@@ -101,7 +101,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(namesError[lang])
+      jQuery.validator.format(namesError[lang]),
     );
 
     /**
@@ -119,7 +119,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(phoneError[lang])
+      jQuery.validator.format(phoneError[lang]),
     );
 
     /**
@@ -137,7 +137,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return true;
       },
-      jQuery.validator.format(uniqNewAdminError[lang])
+      jQuery.validator.format(uniqNewAdminError[lang]),
     );
 
     jQuery.validator.addMethod(
@@ -160,7 +160,7 @@ $(document).on('wb-ready.wb', function () {
         }
         return valid;
       },
-      jQuery.validator.format(emailSuffixError[lang])
+      jQuery.validator.format(emailSuffixError[lang]),
     );
   }
 });

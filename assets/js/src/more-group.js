@@ -64,11 +64,11 @@ function resetMoreGroup(group) {
 
 function addBtns(obj) {
   $(
-    '<button type="button" class="btn btn-primary btn-tabs-more mrgn-lft-md"><i class="glyphicon glyphicon-plus"></i> <span class="wb-inv">Add element</span></button>'
+    '<button type="button" class="btn btn-primary btn-tabs-more mrgn-lft-md"><i class="glyphicon glyphicon-plus"></i> <span class="wb-inv">Add element</span></button>',
   ).appendTo(obj);
 
   $(
-    '<button type="button" class="btn btn-primary btn-tabs-more-remove invisible mrgn-lft-md"><i class="glyphicon glyphicon-minus"></i> <span class="wb-inv">Remove element</span></button>'
+    '<button type="button" class="btn btn-primary btn-tabs-more-remove invisible mrgn-lft-md"><i class="glyphicon glyphicon-minus"></i> <span class="wb-inv">Remove element</span></button>',
   ).appendTo(obj);
 }
 

@@ -81,12 +81,12 @@ function getPartnershipObject() {
     partnershipObject.projects[0].description.howItWorks = {};
     if ($('#endescriptionhowItWorks').val()) {
       partnershipObject.projects[0].description.howItWorks.en = $(
-        '#endescriptionhowItWorks'
+        '#endescriptionhowItWorks',
       ).val();
     }
     if ($('#frdescriptionhowItWorks').val()) {
       partnershipObject.projects[0].description.howItWorks.fr = $(
-        '#frdescriptionhowItWorks'
+        '#frdescriptionhowItWorks',
       ).val();
     }
   }
@@ -146,7 +146,7 @@ function submitForm() {
         partnershipName,
         adminName,
         partnershipFile,
-        resultPartnership
+        resultPartnership,
       );
     })
     .catch((err) => {
@@ -156,7 +156,7 @@ function submitForm() {
           partnershipName,
           adminName,
           partnershipFile,
-          partnershipObject
+          partnershipObject,
         );
       else throw err;
     })
@@ -172,16 +172,16 @@ function submitForm() {
                 adminName,
                 adminCode,
                 adminFile,
-                resultAdmin
+                resultAdmin,
               );
-            })
+            }),
         );
       }
       Promise.all(adminPromise).then(function () {
         let newAdminPartnerPromise = getNewAdminPartnerPromise(
           partnershipObject.projects[0],
           fileWriter,
-          config
+          config,
         );
         Promise.all(newAdminPartnerPromise)
           .then(function () {
@@ -271,7 +271,7 @@ function selectAdmin() {
               project.name[lang] +
               '">' +
               project.name[lang] +
-              '</option>'
+              '</option>',
           ).appendTo('#nameselect');
         });
         $('#nameselect').prop('disabled', false).parent().removeClass('hide');

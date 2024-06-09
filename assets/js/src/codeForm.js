@@ -89,12 +89,12 @@ function getCodeObject() {
     codeObject.releases[0].description.howItWorks = {};
     if ($('#endescriptionhowItWorks').val()) {
       codeObject.releases[0].description.howItWorks.en = $(
-        '#endescriptionhowItWorks'
+        '#endescriptionhowItWorks',
       ).val();
     }
     if ($('#frdescriptionhowItWorks').val()) {
       codeObject.releases[0].description.howItWorks.fr = $(
-        '#frdescriptionhowItWorks'
+        '#frdescriptionhowItWorks',
       ).val();
     }
   }
@@ -161,12 +161,12 @@ function submitFormAdminCodeForm() {
 
   let codeName = codeObject.releases[0].name.en;
   let adminName = slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
   let codeFile = `_data/code/${$('#orgLevel').val()}/${slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
   )}.yml`;
   let adminFile = `_data/administrations/${getSelectedOrgType()}.yml`;
 
@@ -185,7 +185,7 @@ function submitFormAdminCodeForm() {
               codeFile,
               codeObject,
               adminFile,
-              resultAdmin
+              resultAdmin,
             );
           } else throw err;
         })
@@ -193,7 +193,7 @@ function submitFormAdminCodeForm() {
           let promises = getNewAdminPartnerPromise(
             codeObject.releases[0],
             fileWriter,
-            config
+            config,
           );
           Promise.all(promises)
             .then(function () {
@@ -217,7 +217,7 @@ function getConfigNewAdmin(
   codeFile,
   codeObject,
   adminFile,
-  resultAdmin
+  resultAdmin,
 ) {
   return {
     body: {
@@ -287,7 +287,7 @@ function submitCodeForm() {
       let promises = getNewAdminPartnerPromise(
         codeObject.releases[0],
         fileWriter,
-        config
+        config,
       );
       Promise.all(promises)
         .then(function () {
@@ -388,7 +388,7 @@ function selectAdmin() {
               release.name[lang] +
               '">' +
               release.name[lang] +
-              '</option>'
+              '</option>',
           ).appendTo('#nameselect');
         });
         $('#nameselect').prop('disabled', false).parent().removeClass('hide');

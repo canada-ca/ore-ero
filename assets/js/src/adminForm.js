@@ -66,7 +66,7 @@ function resetNewAdminForm() {
 function getAdminCode() {
   if ($('#adminCode').val() == '') {
     return slugify(
-      $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+      $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
     );
   }
   return $('#adminCode').val();

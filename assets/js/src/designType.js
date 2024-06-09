@@ -11,7 +11,7 @@ $(document).ready(function () {
       let length = $('#addMoredesignType ul li').length;
       let index = length == 1 ? '' : length - 1;
       $('#newType' + index).addClass('hide');
-    }
+    },
   );
   $('#addMoredesignType').on('click', '.newTypeButton button', function () {
     let index = getmoreIndex($(this));
@@ -29,7 +29,7 @@ $(document).ready(function () {
       let index = getmoreIndex($(this));
       hideType(index);
       resetType(index);
-    }
+    },
   );
   $('#addMoredesignType').on('change', '.designTypeSelect select', function () {
     let index = getmoreIndex($(this));
