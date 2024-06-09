@@ -1,4 +1,4 @@
-/* exported getTagsEN getTagsFR addTags resetTags */
+/* exported getTagsEN, getTagsFR, addTags, resetTags */
 
 const suggestions = $('#suggestions');
 

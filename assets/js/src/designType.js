@@ -1,4 +1,4 @@
-/* exported resetTypes addTypes fillTypeFields*/
+/* exported resetTypes, addTypes, fillTypeFields*/
 /*
   global
   addMoreGroup

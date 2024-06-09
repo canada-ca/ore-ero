@@ -1,4 +1,4 @@
-/* exported addMoreLanguages getLanguages selectLanguage resetLanguages */
+/* exported addMoreLanguages, getLanguages, selectLanguage, resetLanguages */
 
 function addMoreLanguages(value) {
   $(`<div class="control-group additional-languages input-group col-xs-2 mrgn-tp-md">
