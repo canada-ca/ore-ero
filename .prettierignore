@@ -1,0 +1,6 @@
+_data/
+_data_templates/
+_site/
+assets/js/lib/
+*.html
+.yamllint.yaml

@@ -12,8 +12,8 @@
 }
 
 .tbl-gridify td:first-child {
-  padding-top:15px;
-  background:#f5f5f5;
+  padding-top: 15px;
+  background: #f5f5f5;
   color: #333;
   border: 1px solid #8e8e8e;
   border-top-right-radius: 5px;
@@ -26,18 +26,22 @@
   border-bottom-left-radius: 5px;
 }
 
-.tbl-gridify td:first-child.dataTables_empty{
+.tbl-gridify td:first-child.dataTables_empty {
   background: none !important;
 }
 
-.tbl-gridify td:first-child + td{
-  padding-top:15px;
+.tbl-gridify td:first-child + td {
+  padding-top: 15px;
 }
 
-.tbl-gridify td:first-child a,.tbl-gridify td:first-child a:hover,.tbl-gridify td:first-child a:active,.tbl-gridify td:first-child a:focus,.tbl-gridify td:first-child a:visited{
-  color:#333 !important;
+.tbl-gridify td:first-child a,
+.tbl-gridify td:first-child a:hover,
+.tbl-gridify td:first-child a:active,
+.tbl-gridify td:first-child a:focus,
+.tbl-gridify td:first-child a:visited {
+  color: #333 !important;
 }
 
 .tbl-gridify td {
-  padding:0 15px 15px 15px;
+  padding: 0 15px 15px 15px;
 }

@@ -1,16 +1,16 @@
-.panel-design{
+.panel-design {
   color: inherit !important;
-  text-decoration: none !important
+  text-decoration: none !important;
 }
 
-.font-size-50{
-  font-size: 50px
+.font-size-50 {
+  font-size: 50px;
 }
 
 .hiddenText {
- height: 1px;
- width: 1px;
- position: absolute;
- overflow: hidden;
- top: -10px;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
 }

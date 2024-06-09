@@ -5,8 +5,8 @@ function addMoreLanguages(value) {
         <input type="text" id="${
           '_' + Math.random().toString(36).substr(2, 9)
         }" name="language" data-for="languages" class="form-control" required="required"${
-    value != undefined ? ' value="' + value + '"' : ''
-  }>
+          value != undefined ? ' value="' + value + '"' : ''
+        }>
         <div class="input-group-btn">
           <button class="btn btn-default remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
@@ -15,7 +15,7 @@ function addMoreLanguages(value) {
 
 function getLanguages() {
   return $(
-    'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]'
+    'input[data-for="languages"]:checked, input[data-for="languages"][type="text"]',
   )
     .toArray()
     .map((input) => input.value);

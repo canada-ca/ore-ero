@@ -14,7 +14,7 @@ If this is your first time contributing on GitHub, don't worry! Let us know if y
 
 <https://github.com/canada-ca/ore-ero/>
 
-______________________
+---
 
 ## Comment contribuer
 

@@ -191,11 +191,11 @@ function getStandardObject() {
     standardObject.description.howItWorks = {};
     if ($('#endescriptionhowItWorks').val())
       standardObject.description.howItWorks.en = $(
-        '#endescriptionhowItWorks'
+        '#endescriptionhowItWorks',
       ).val();
     if ($('#frdescriptionhowItWorks').val())
       standardObject.description.howItWorks.fr = $(
-        '#frdescriptionhowItWorks'
+        '#frdescriptionhowItWorks',
       ).val();
   }
   return standardObject;
@@ -216,7 +216,7 @@ function submitStandardForm() {
     .then((result) => {
       return fetch(
         PRBOT_URL,
-        getConfigUpdate(result, file, standardObject.standardAcronym)
+        getConfigUpdate(result, file, standardObject.standardAcronym),
       );
     })
     .catch((err) => {
@@ -290,7 +290,7 @@ function submitStandardFormNewAdmin() {
 
   let standardName = standardObject.standardAcronym.toLowerCase();
   let adminName = slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -311,8 +311,8 @@ function submitStandardFormNewAdmin() {
               standardFile,
               adminFile,
               standardResult,
-              adminResult
-            )
+              adminResult,
+            ),
           );
         })
         .catch((err) => {
@@ -325,8 +325,8 @@ function submitStandardFormNewAdmin() {
                 standardFile,
                 adminFile,
                 standardObject,
-                adminResult
-              )
+                adminResult,
+              ),
             );
           } else throw err;
         })
@@ -350,7 +350,7 @@ function getConfigUpdateStandardNewAdmin(
   standardFile,
   adminFile,
   standardResult,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({
@@ -389,7 +389,7 @@ function getConfigNewStandardNewAdmin(
   standardFile,
   adminFile,
   standardObject,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({

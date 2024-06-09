@@ -129,12 +129,12 @@ function getsoftwareObject() {
   }
   if ($('#endescriptionhowItWorks').val()) {
     softwareObject.description.howItWorks.en = $(
-      '#endescriptionhowItWorks'
+      '#endescriptionhowItWorks',
     ).val();
   }
   if ($('#frdescriptionhowItWorks').val()) {
     softwareObject.description.howItWorks.fr = $(
-      '#frdescriptionhowItWorks'
+      '#frdescriptionhowItWorks',
     ).val();
   }
 
@@ -157,7 +157,7 @@ function submitSoftwareFormNewAdmin() {
   let adminObject = getAdminObject();
   let softwareName = $('#enname').val();
   let adminName = slugify(
-    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val()
+    $('#ennewAdminName').val() + '-' + $('#provinceSelect').val(),
   );
 
   let fileWriter = new YamlWriter(USERNAME, REPO_NAME);
@@ -178,8 +178,8 @@ function submitSoftwareFormNewAdmin() {
               softwareFile,
               adminFile,
               softwareResult,
-              adminResult
-            )
+              adminResult,
+            ),
           );
         })
         .catch((err) => {
@@ -192,8 +192,8 @@ function submitSoftwareFormNewAdmin() {
                 softwareFile,
                 adminFile,
                 softwareObject,
-                adminResult
-              )
+                adminResult,
+              ),
             );
           } else throw err;
         })
@@ -213,7 +213,7 @@ function getConfigUpdateSoftwareNewAdmin(
   softwareFile,
   adminFile,
   softwareResult,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({
@@ -252,7 +252,7 @@ function getConfigNewSoftwareNewAdmin(
   softwareFile,
   adminFile,
   softwareObject,
-  adminObject
+  adminObject,
 ) {
   return {
     body: JSON.stringify({
@@ -305,7 +305,7 @@ function submitFormSoftware() {
       if (err.status == 404) {
         return fetch(
           PRBOT_URL,
-          getConfigNew(softwareObject, file, ProjectName)
+          getConfigNew(softwareObject, file, ProjectName),
         );
       } else throw err;
     })
