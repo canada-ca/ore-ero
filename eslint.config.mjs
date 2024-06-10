@@ -30,18 +30,21 @@ export default [
       sourceType: 'module',
     },
   },
-  cypress.configs.recommended,
   {
+    ...cypress.configs.recommended,
     files: ['cypress/', 'cypress.config.js'],
-    rules: {
-      ...cypress.configs.recommended.rules,
-    },
-    languageOptions: {
-      globals: {
-        ...globals.cypress,
-      },
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-    },
+    // plugins: {
+    //   cypress: cypress,
+    // },
+    // rules: {
+    //   ...cypress.configs.recommended.rules,
+    // },
+    // languageOptions: {
+    //   globals: {
+    //     ...cypress.plugins.globals,
+    //   },
+    //   ecmaVersion: 'latest',
+    //   sourceType: 'module',
+    // },
   },
 ];
