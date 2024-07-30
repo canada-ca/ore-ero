@@ -6,6 +6,13 @@ updates:
       interval: daily
       time: "11:00"
     open-pull-requests-limit: 99
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
