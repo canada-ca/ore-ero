@@ -23,7 +23,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Run HTMLProofer
-        run: bundle exec htmlproofer --enforce-https false --disable-external --allow-hash-href ./_site
+        run: bundle exec htmlproofer --no-enforce-https --disable-external --allow-hash-href ./_site
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
