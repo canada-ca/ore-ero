@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-/* global cy, context, it, before, expect */
 
 context('date_func.js', () => {
   const now = new Date();

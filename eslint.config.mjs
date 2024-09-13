@@ -1,5 +1,6 @@
 import globals from 'globals';
 import js from '@eslint/js';
+import cypress from 'eslint-plugin-cypress/flat'
 
 export default [
   js.configs.recommended,
@@ -22,11 +23,28 @@ export default [
     },
   },
   {
-    files: ['cypress/**', '**/*.mjs'],
+    files: ['**/*.mjs'],
 
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
+  },
+  {
+    ...cypress.configs.recommended,
+    files: ['cypress/', 'cypress.config.js'],
+    // plugins: {
+    //   cypress: cypress,
+    // },
+    // rules: {
+    //   ...cypress.configs.recommended.rules,
+    // },
+    // languageOptions: {
+    //   globals: {
+    //     ...cypress.plugins.globals,
+    //   },
+    //   ecmaVersion: 'latest',
+    //   sourceType: 'module',
+    // },
   },
 ];

@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-/* global cy, context, it, before, expect */
 
 context('deep-object.js', () => {
   const obj1 = {
