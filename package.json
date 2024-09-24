@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
+    "@eslint/js": "^9.11.1",
     "cypress": "^9.5.2",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.1",
     "globals": "^15.9.0",
     "licensee": "^11.1.0",
     "markdownlint-cli2": "^0.14.0",
