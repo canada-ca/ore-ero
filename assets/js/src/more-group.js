@@ -163,11 +163,13 @@ function fillLicenceField(licences) {
     $('#enlicencesURL' + id).val(licence.URL.en);
     $('#frlicencesURL' + id).val(licence.URL.fr);
     $('#licencesspdxID' + id).val(licence.spdxID);
-    if (licence.level.en == 'Sub licence') {
-      $('#licenceslevel' + id).prop('selectedIndex', 1);
-      $('#enlicencesscope' + id).val(licence.scope.en);
-      $('#frlicencesscope' + id).val(licence.scope.fr);
-    } else $('#licenceslevel' + id).prop('selectedIndex', 0);
+    if (licence.level) {
+      if (licence.level.en == 'Sub licence') {
+        $('#licenceslevel' + id).prop('selectedIndex', 1);
+        $('#enlicencesscope' + id).val(licence.scope.en);
+        $('#frlicencesscope' + id).val(licence.scope.fr);
+      } else $('#licenceslevel' + id).prop('selectedIndex', 0);
+    }
   });
 }
 
