@@ -1,2 +1,2 @@
 yamale==5.2.1
-yamllint==1.35.1
+yamllint==1.36.0
