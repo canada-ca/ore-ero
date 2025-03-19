@@ -31,13 +31,13 @@
   },
   "homepage": "https://github.com/canada-ca/ore-ero#readme",
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
+    "@eslint/js": "^9.22.0",
     "cypress": "^9.5.2",
-    "eslint": "^9.17.0",
+    "eslint": "^9.22.0",
     "globals": "^15.13.0",
     "licensee": "^11.1.1",
-    "markdownlint-cli2": "^0.16.0",
-    "prettier": "^3.4.2",
+    "markdownlint-cli2": "^0.17.2",
+    "prettier": "^3.5.3",
     "vnu-jar": "^24.10.17"
   }
 }
