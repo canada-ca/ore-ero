@@ -469,7 +469,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2022-07-11'
-      metadataLastUpdated: '2022-10-20'
+      metadataLastUpdated: '2025-04-03'
     description:
       whatItDoes:
         en: >-
@@ -488,8 +488,8 @@ releases:
           fr: 'https://github.com/cityssm/lot-occupancy-system/blob/main/LICENSE'
         spdxID: MIT
         level:
-          en: Main license
-          fr: License principale
+          en: ''
+          fr: !<tag:yaml.org,2002:js/undefined> ''
     repositoryURL:
       en: 'https://github.com/cityssm/lot-occupancy-system'
       fr: 'https://github.com/cityssm/lot-occupancy-system'
@@ -515,4 +515,4 @@ releases:
       - TypeScript
       - SQLite
       - NodeJS
-    status: Alpha
+    status: Deprecated
