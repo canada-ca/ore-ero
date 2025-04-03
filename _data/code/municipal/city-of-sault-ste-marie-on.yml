@@ -489,7 +489,7 @@ releases:
         spdxID: MIT
         level:
           en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
+          fr: ''
     repositoryURL:
       en: 'https://github.com/cityssm/lot-occupancy-system'
       fr: 'https://github.com/cityssm/lot-occupancy-system'
