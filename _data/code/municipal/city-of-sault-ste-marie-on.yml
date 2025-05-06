@@ -516,3 +516,54 @@ releases:
       - SQLite
       - NodeJS
     status: Alpha
+  - contact:
+      email: d.gowans@cityssm.on.ca
+      name: Dan Gowans
+    date:
+      created: '2022-07-11'
+      metadataLastUpdated: '2025-04-03'
+    description:
+      whatItDoes:
+        en: >-
+          A web-based application to assist cemetery managers with managing
+          their cemetery records.
+        fr: >-
+          Une application Web pour aider les gestionnaires de cimetière à gérer
+          leurs dossiers de cimetière.
+    category: '43231500'
+    name:
+      en: sunrise-cms
+      fr: sunrise-cms
+    licences:
+      - URL:
+          en: 'https://github.com/cityssm/sunrise-cms/blob/main/LICENSE.md'
+          fr: 'https://github.com/cityssm/sunrise-cms/blob/main/LICENSE.md'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/cityssm/sunrise-cms'
+      fr: 'https://github.com/cityssm/sunrise-cms'
+    tags:
+      en:
+        - cemetery
+      fr:
+        - cimetière
+    downloadURL:
+      en: 'https://github.com/cityssm/sunrise-cms/releases'
+      fr: 'https://github.com/cityssm/sunrise-cms/releases'
+    homepageURL:
+      en: 'https://cityssm.github.io/sunrise-cms/'
+      fr: 'https://cityssm.github.io/sunrise-cms/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - TypeScript
+      - SQLite
+      - NodeJS
+    status: Alpha
+    team:
+      en: Clerks Department
+      fr: Département des commis
