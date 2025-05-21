@@ -469,7 +469,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2022-07-11'
-      metadataLastUpdated: '2022-10-20'
+      metadataLastUpdated: '2025-04-03'
     description:
       whatItDoes:
         en: >-
@@ -515,7 +515,7 @@ releases:
       - TypeScript
       - SQLite
       - NodeJS
-    status: Alpha
+    status: Deprecated
   - contact:
       email: d.gowans@cityssm.on.ca
       name: Dan Gowans
