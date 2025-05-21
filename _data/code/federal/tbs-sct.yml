@@ -113,7 +113,7 @@ releases:
         - Site Web
   - contact:
       email: open-ouvert@tbs-sct.gc.ca
-      name: 'Open Government '
+      name: 'Open Government'
     date:
       created: '2012-12-09'
       metadataLastUpdated: '2025-05-21'
@@ -132,7 +132,7 @@ releases:
         spdxID: MIT
         level:
           en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
+          fr: ''
     repositoryURL:
       en: 'https://github.com/open-data/ckanext-canada'
       fr: 'https://github.com/open-data/ckanext-canada'
