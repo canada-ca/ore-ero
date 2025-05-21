@@ -488,8 +488,8 @@ releases:
           fr: 'https://github.com/cityssm/lot-occupancy-system/blob/main/LICENSE'
         spdxID: MIT
         level:
-          en: ''
-          fr: ''
+          en: Main license
+          fr: License principale
     repositoryURL:
       en: 'https://github.com/cityssm/lot-occupancy-system'
       fr: 'https://github.com/cityssm/lot-occupancy-system'
