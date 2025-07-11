@@ -131,8 +131,10 @@ releases:
     relatedCode:
       - URL:
           en: 'https://www.11ty.dev/'
+          fr: 'https://www.11ty.dev/'
         name:
           en: EleventyJS
+          fr: EleventyJS
       - URL:
           en: 'https://nodejs.org/en/'
           fr: 'https://nodejs.org/fr/'
