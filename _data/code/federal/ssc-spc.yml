@@ -80,7 +80,8 @@ releases:
         fr: >-
           C'est un espace de partage pour les ressources créées par les employés
           du gouvernement du Canada (GC) à promouvoir dans le cadre de la
-          transparence. Suite à la Directive sur le gouvernement ouvert du 
+          transparence. Suite à la Directive sur le gouvernement ouvert du
+          Secrétariat du Conseil du Trésor du Canada.
       howItWorks:
         en: >-
           Using Eleventy, to build a simple static site which uses nodeJS to
@@ -123,11 +124,6 @@ releases:
       - HTML
       - CSS
       - NodeJS
-    partners:
-      - adminCode: csps-efpc
-      - adminCode: tbs-sct
-      - adminCode: esdc-edsc
-      - adminCode: hc-sc
     relatedCode:
       - URL:
           en: 'https://www.11ty.dev/'
