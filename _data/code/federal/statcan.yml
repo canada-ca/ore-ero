@@ -148,8 +148,6 @@ releases:
         - Microservice
     languages:
       - Go
-    partners:
-      - adminCode: statcan
     relatedCode:
       - URL:
           en: 'https://github.com/kubeflow/kubeflow'
