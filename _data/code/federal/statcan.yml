@@ -137,7 +137,7 @@ releases:
         spdxID: AGPL-3.0-only
         level:
           en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
+          fr: ''
     repositoryURL:
       en: 'https://github.com/StatCan/volume-cleaner'
       fr: 'https://github.com/StatCan/volume-cleaner'
