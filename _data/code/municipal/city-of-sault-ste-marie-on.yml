@@ -521,7 +521,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2022-07-11'
-      metadataLastUpdated: '2025-04-03'
+      metadataLastUpdated: '2025-09-17'
     description:
       whatItDoes:
         en: >-
@@ -540,8 +540,8 @@ releases:
           fr: 'https://github.com/cityssm/sunrise-cms/blob/main/LICENSE.md'
         spdxID: MIT
         level:
-          en: Main license
-          fr: License principale
+          en: ''
+          fr: !<tag:yaml.org,2002:js/undefined> ''
     repositoryURL:
       en: 'https://github.com/cityssm/sunrise-cms'
       fr: 'https://github.com/cityssm/sunrise-cms'
@@ -560,10 +560,10 @@ releases:
       - JavaScript
       - HTML
       - CSS
+      - NodeJS
       - TypeScript
       - SQLite
-      - NodeJS
-    status: Alpha
+    status: Beta
     team:
       en: Clerks Department
       fr: Département des commis
