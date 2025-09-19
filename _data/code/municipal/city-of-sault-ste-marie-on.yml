@@ -540,8 +540,8 @@ releases:
           fr: 'https://github.com/cityssm/sunrise-cms/blob/main/LICENSE.md'
         spdxID: MIT
         level:
-          en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
+          en: Main license
+          fr: License principale
     repositoryURL:
       en: 'https://github.com/cityssm/sunrise-cms'
       fr: 'https://github.com/cityssm/sunrise-cms'
