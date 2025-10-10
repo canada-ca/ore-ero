@@ -151,3 +151,63 @@ releases:
     team:
       en: DSB Web Mapping
       fr: DGSN Applications de cartographie Web
+  - contact:
+      email: applicationsdecartographieweb-webmappingapplications@ec.gc.ca
+      name: ECCC DSB Web Mapping
+    date:
+      created: '2015-04-01'
+      metadataLastUpdated: '2025-10-10'
+    description:
+      whatItDoes:
+        en: >-
+          The Reusable Accessible Mapping Platform is a Vue3 JavaScript web
+          mapping visualization solution that provides a customizable and rich
+          WCAG 2.1 AA compliant GIS data viewer for the GoC.
+        fr: >-
+          La PCAR est une solution de visualisation de cartographie Web
+          JavaScript Vue3 qui fournit une visionneuse de données SIG compatible
+          WCAG 2.1 AA personnalisable et riche pour le GoC.
+    category: '43233500'
+    name:
+      en: Reusable Accessible Mapping Platform (RAMP)
+      fr: Platforme de Cartographie Accessible Réutilisable (PCAR)
+    licences:
+      - URL:
+          en: >-
+            https://github.com/ramp4-pcar4/ramp4-pcar4?tab=License-1-ov-file#readme
+          fr: >-
+            https://github.com/ramp4-pcar4/ramp4-pcar4?tab=License-1-ov-file#readme
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/ramp4-pcar4/ramp4-pcar4'
+      fr: 'https://github.com/ramp4-pcar4/ramp4-pcar4'
+    tags:
+      en:
+        - ramp
+        - mapping
+        - visualization
+        - JavaScript
+        - Vue3
+      fr:
+        - pcar
+        - cartographique
+        - visualisation
+        - JavaScript
+        - Vue3
+    homepageURL:
+      en: 'https://ramp4-pcar4.github.io/ramp-pcar/#/?lang=en'
+      fr: 'https://ramp4-pcar4.github.io/ramp-pcar/#/?lang=fr'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - NodeJS
+      - TypeScript
+      - Vue
+    status: Maintained
+    team:
+      en: DSB Web Mapping
+      fr: DGSN Applications de cartographie Web
