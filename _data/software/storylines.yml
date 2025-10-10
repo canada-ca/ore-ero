@@ -1,0 +1,58 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Use interactive maps and multimedia to share your project’s story in an
+      engaging, customizable way that meets GoC and TBS web and accessibility
+      standards.
+    fr: >-
+      Utilisez des cartes interactives et du multimédia pour raconter votre
+      projet de façon attrayante et personnalisable, conforme aux normes Web et
+      d’accessibilité du GC et du SCT.
+  howItWorks:
+    en: >-
+      Storylines is a Vue3 JavaScript-based library for quickly creating,
+      configuring, and deploying and rich and interactive online presentation
+      tools for a wide variety of communication needs. 
+    fr: >-
+      Scénarios est une bibliothèque basée sur Vue3 JS qui permet de créer,
+      configurer et déployer des outils de présentation en ligne riches et
+      interactifs pour une variété de besoins de communication.
+category: '43232100'
+homepageURL:
+  en: 'https://github.com/ramp4-pcar4/storylines'
+  fr: 'https://ramp4-pcar4.github.io/ramp-pcar/#/?lang=fr'
+licences:
+  - URL:
+      en: 'https://github.com/ramp4-pcar4/storylines?tab=MIT-1-ov-file#readme'
+      fr: 'https://github.com/ramp4-pcar4/storylines?tab=MIT-1-ov-file#readme'
+    spdxID: MIT
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Storylines
+  fr: Scénarios
+tags:
+  en:
+    - ramp
+    - storylines
+    - mapping
+    - JavaScript
+    - web presentation
+  fr:
+    - pcar
+    - scénarios
+    - cartographique
+    - JavaScript
+    - présentation web
+administrations:
+  - uses:
+      - contact:
+          email: applicationsdecartographieweb-webmappingapplications@ec.gc.ca
+          name: ECCC DSB Web Mapping
+        date:
+          started: '2022-04-01'
+          metadataLastUpdated: '2025-10-10'
+    adminCode: eccc
