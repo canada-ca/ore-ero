@@ -521,7 +521,7 @@ releases:
       name: Dan Gowans
     date:
       created: '2022-07-11'
-      metadataLastUpdated: '2025-04-03'
+      metadataLastUpdated: '2025-09-17'
     description:
       whatItDoes:
         en: >-
@@ -560,10 +560,10 @@ releases:
       - JavaScript
       - HTML
       - CSS
+      - NodeJS
       - TypeScript
       - SQLite
-      - NodeJS
-    status: Alpha
+    status: Beta
     team:
       en: Clerks Department
       fr: Département des commis

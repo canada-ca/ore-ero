@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout Main repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -26,7 +26,7 @@ jobs:
         run: bundle exec htmlproofer --no-enforce-https --disable-external --allow-hash-href ./_site
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           cache: npm
 
