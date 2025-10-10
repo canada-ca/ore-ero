@@ -1,0 +1,49 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      The Reusable Accessible Mapping Platform is a Vue3 JavaScript web mapping
+      visualization solution that provides a customizable and rich  WCAG 2.1 AA
+      compliant GIS data viewer for the GoC. 
+    fr: >-
+      La PCAR est une solution de visualisation de cartographie Web JavaScript
+      Vue3 qui fournit une visionneuse de données SIG compatible WCAG 2.1 AA
+      personnalisable et riche pour le GoC.
+category: '43232300'
+homepageURL:
+  en: 'https://ramp4-pcar4.github.io/ramp4-pcar4/main/docs/'
+  fr: 'https://ramp4-pcar4.github.io/ramp-pcar/#/?lang=fr'
+licences:
+  - URL:
+      en: 'https://github.com/ramp4-pcar4/ramp4-pcar4?tab=License-1-ov-file#readme'
+      fr: 'https://github.com/ramp4-pcar4/ramp4-pcar4?tab=License-1-ov-file#readme'
+    spdxID: MIT
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Reusable Accessible Mapping Platform (RAMP)
+  fr: Platforme de Cartographie Accessible Réutilisable (PCAR)
+tags:
+  en:
+    - ramp
+    - mapping
+    - visualization
+    - JavaScript
+    - Vue3
+  fr:
+    - pcar
+    - cartographique
+    - visualisation
+    - JavaScript
+    - Vue3
+administrations:
+  - uses:
+      - contact:
+          email: applicationsdecartographieweb-webmappingapplications@ec.gc.ca
+          name: ECCC DSB Web Mapping
+        date:
+          started: '2015-04-01'
+          metadataLastUpdated: '2025-10-10'
+    adminCode: eccc
