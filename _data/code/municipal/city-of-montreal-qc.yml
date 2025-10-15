@@ -65,9 +65,6 @@ releases:
           en: 'https://github.com/VilledeMontreal/workit/blob/master/LICENSE'
           fr: 'https://github.com/VilledeMontreal/workit/blob/master/LICENSE'
         spdxID: MIT
-        level:
-          en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
     repositoryURL:
       en: 'https://github.com/VilledeMontreal/workit'
       fr: 'https://github.com/VilledeMontreal/workit'
