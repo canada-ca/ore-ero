@@ -44,18 +44,18 @@ releases:
     status: Maintained
   - contact:
       email: olivier.albertini@montreal.ca
-      name: Albertini
+      name: Olivier Albertini
     date:
       created: '2019-06-17'
-      metadataLastUpdated: '2019-09-19'
+      metadataLastUpdated: '2025-10-14'
     description:
       whatItDoes:
         en: >-
-          Extensible worker for Node.js that works with both Zeebe and Camunda
-          BPM platforms powered by TypeScript
+          Extensible worker for Node.js that works with both AWS Step functions
+          and Camunda BPM platforms powered by TypeScript
         fr: >-
-          Worker extensible pour Node.js fonctionnant avec les plates-formes
-          Zeebe et Camunda BPM optimisées par TypeScript
+          Worker extensible pour Node.js fonctionnant avec les plates-formes AWS
+          Step functions et Camunda BPM optimisées par TypeScript
     category: '43232300'
     name:
       en: WorkIt
@@ -71,13 +71,13 @@ releases:
     tags:
       en:
         - Camunda BPM
-        - Zeebe
+        - AWS Step functions
         - Worker
         - Microservice
         - NodeJS
       fr:
         - Camunda BPM
-        - Zeebe
+        - AWS Step functions
         - Worker
         - Micro service
         - NodeJS
@@ -92,11 +92,11 @@ releases:
           en: Camunda BPM
           fr: Camunda BPM
       - URL:
-          en: 'https://zeebe.io/'
-          fr: 'https://zeebe.io/'
+          en: 'https://aws.amazon.com/step-functions/'
+          fr: 'https://aws.amazon.com/fr/step-functions/'
         name:
-          en: Zeebe
-          fr: Zeebe
+          en: AWS Step functions
+          fr: AWS Step functions
     status: Maintained
     team:
       en: ' Digital Solutions'
