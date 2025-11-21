@@ -17,12 +17,12 @@ jobs:
 
     steps:
       - name: Checkout Main repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           path: english
           submodules: true
       - name: Checkout French mirror
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: canada-ca/ore-ero-fr
           path: french
