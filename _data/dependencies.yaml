@@ -1,1 +1,37 @@
 ---
+- dependency: flaky
+  origin: pypi
+  type: core
+  admins:
+    - cse-cst
+  projects:
+    - projectName:
+        en: Assemblyline
+        fr: Assemblyline
+- dependency: pytest-cov
+  origin: pypi
+  type: core
+  admins:
+    - cse-cst
+  projects:
+    - projectName:
+        en: Assemblyline
+        fr: Assemblyline
+- dependency: pytest
+  origin: pypi
+  type: core
+  admins:
+    - cse-cst
+  projects:
+    - projectName:
+        en: Assemblyline
+        fr: Assemblyline
+- dependency: requests
+  origin: pypi
+  type: core
+  admins:
+    - cse-cst
+  projects:
+    - projectName:
+        en: Assemblyline
+        fr: Assemblyline
