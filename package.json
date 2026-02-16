@@ -34,9 +34,9 @@
     "@eslint/js": "^9.39.2",
     "cypress": "^9.5.2",
     "eslint": "^9.39.2",
-    "globals": "^17.1.0",
+    "globals": "^17.3.0",
     "licensee": "^11.1.1",
-    "markdownlint-cli2": "^0.20.0",
+    "markdownlint-cli2": "^0.21.0",
     "prettier": "^3.8.1",
     "vnu-jar": "^25.12.18"
   }
