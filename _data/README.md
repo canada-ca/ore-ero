@@ -102,8 +102,9 @@ A list of released open source code by administrations. Sub-folders contain data
 
 - Federal
 - Provincial
+- Territorial
 - Municipal
-- Aboriginal
+- Indigenous
 
 ### Design
 
