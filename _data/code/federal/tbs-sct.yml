@@ -112,11 +112,11 @@ releases:
         - Interface
         - Site Web
   - contact:
-      email: Christopher.Jaja@tbs-sct.gc.ca
-      name: Christopher Jaja
+      email: open-ouvert@tbs-sct.gc.ca
+      name: 'Open Government'
     date:
       created: '2012-12-09'
-      metadataLastUpdated: '2018-03-26'
+      metadataLastUpdated: '2025-05-21'
     description:
       whatItDoes:
         en: Government of Canada CKAN Extension
@@ -130,6 +130,9 @@ releases:
           en: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING'
           fr: 'https://github.com/open-data/ckanext-canada/blob/master/COPYING.fr'
         spdxID: MIT
+        level:
+          en: ''
+          fr: ''
     repositoryURL:
       en: 'https://github.com/open-data/ckanext-canada'
       fr: 'https://github.com/open-data/ckanext-canada'
@@ -140,9 +143,6 @@ releases:
         - Extension CKAN
     languages:
       - Python
-    team:
-      en: Open Government
-      fr: Gouvernement Ouvert
     relatedCode:
       - URL:
           en: 'https://github.com/ckan/ckan'
@@ -151,6 +151,9 @@ releases:
           en: CKAN
           fr: CKAN
     status: Maintained
+    team:
+      en: Open Government
+      fr: Gouvernement Ouvert
   - contact:
       email: Christopher.Jaja@tbs-sct.gc.ca
       name: Christopher Jaja
@@ -446,10 +449,8 @@ releases:
           fr: 'https://github.com/cds-snc/notification-api/blob/master/LICENSE'
         spdxID: MIT
     repositoryURL:
-      en: >-
-        https://github.com/cds-snc/notification-api
-      fr: >-
-        https://github.com/cds-snc/notification-api
+      en: 'https://github.com/cds-snc/notification-api'
+      fr: 'https://github.com/cds-snc/notification-api'
     tags:
       en:
         - Notify

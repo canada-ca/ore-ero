@@ -28,3 +28,54 @@ releases:
         - Data
       fr:
         - Données
+  - contact:
+      email: bryan.paget@statcan.gc.ca
+      name: Bryan Paget
+    date:
+      created: '2025-06-01'
+      metadataLastUpdated: '2025-08-11'
+    description:
+      whatItDoes:
+        en: >-
+          Looks for unused storage resources in the Zone clusters and
+          automatically removes them; saves cloud resources. Read more:
+          https://github.com/StatCan/volume-cleaner/blob/main/README.md
+        fr: >-
+          Recherche des ressources de stockage inutilisées dans les clusters de
+          Zone et les supprime automatiquement ; économise les ressources cloud.
+      howItWorks:
+        en: 'https://github.com/StatCan/volume-cleaner/blob/main/README.md'
+        fr: 'https://github.com/StatCan/volume-cleaner/blob/main/README.md'
+    category: '43232300'
+    name:
+      en: Volume Cleaner
+      fr: Nettoyeur de Volumes
+    licences:
+      - URL:
+          en: 'https://www.gnu.org/licenses/agpl-3.0'
+          fr: 'https://www.gnu.org/licenses/agpl-3.0.fr.html'
+        spdxID: AGPL-3.0-only
+        level:
+          en: ''
+          fr: ''
+    repositoryURL:
+      en: 'https://github.com/StatCan/volume-cleaner'
+      fr: 'https://github.com/StatCan/volume-cleaner'
+    tags:
+      en:
+        - Microservice
+      fr:
+        - Microservice
+    languages:
+      - Go
+    relatedCode:
+      - URL:
+          en: 'https://github.com/kubeflow/kubeflow'
+          fr: 'https://github.com/kubeflow/kubeflow'
+        name:
+          en: Kubeflow
+          fr: Kubeflow
+    status: Maintained
+    team:
+      en: The Zone
+      fr: La Zone

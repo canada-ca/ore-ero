@@ -6,12 +6,12 @@ description:
     fr: Le noyau Linux est un noyau de système d'exploitation de type UNIX.
 category: '43233000'
 homepageURL:
-  en: 'https://www.linux.org'
-  fr: 'https://www.linux.org'
+  en: 'https://kernel.org'
+  fr: 'https://kernel.org'
 licences:
   - URL:
-      en: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
-      fr: 'https://www.kernel.org/doc/html/v4.17/process/license-rules.html'
+      en: 'https://www.kernel.org/doc/html/latest/process/license-rules.html'
+      fr: 'https://www.kernel.org/doc/html/latest/process/license-rules.html'
     spdxID: GPL-2.0-only
 name:
   en: Linux

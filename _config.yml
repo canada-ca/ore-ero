@@ -3,7 +3,7 @@ baseurl: "/ore-ero"
 url: "https://canada-ca.github.io/ore-ero"
 github_username: canada-ca
 github_repository: ore-ero
-prbot_url: "https://canada-pr-bot.herokuapp.com/"
+prbot_url: "https://prb0t-dist.vercel.app/"
 
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/wet-boew"
 jquery_version: "2.2.4"

@@ -65,3 +65,76 @@ releases:
         - Architecture
       fr:
         - Architecture
+  - contact:
+      email: digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca
+      name: Digital A11y Toolkit
+    date:
+      created: '2021-04-08'
+      metadataLastUpdated: '2025-07-11'
+    description:
+      whatItDoes:
+        en: >-
+          A sharing space for resources created by employees of the Government
+          of Canada (GC) to promote in the open. Following the Treasury Board of
+          Canada Secretariat's Directive on Open Government.
+        fr: >-
+          C'est un espace de partage pour les ressources créées par les employés
+          du gouvernement du Canada (GC) à promouvoir dans le cadre de la
+          transparence. Suite à la Directive sur le gouvernement ouvert du
+          Secrétariat du Conseil du Trésor du Canada.
+      howItWorks:
+        en: >-
+          Using Eleventy, to build a simple static site which uses nodeJS to
+          generate and deploying with Github Actions to Github Pages hosts the
+          site.
+        fr: >-
+          En utilisant Eleventy, pour construire un site statique simple qui
+          utilise nodeJS pour générer et déployer avec Github Actions aux Github
+          Pages hébergeant le site.
+    category: '43233500'
+    name:
+      en: Digital Accessibility Toolkit
+      fr: Boîte à Outils d'Accessibilité Numérique
+    licences:
+      - URL:
+          en: 'https://github.com/gc-da11yn/gc-da11yn.github.io/blob/main/LICENSE'
+          fr: 'https://github.com/gc-da11yn/gc-da11yn.github.io/blob/main/LICENSE'
+        spdxID: MIT
+        level:
+          en: Main license
+          fr: License principale
+    repositoryURL:
+      en: 'https://github.com/gc-da11yn/gc-da11yn.github.io'
+      fr: 'https://github.com/gc-da11yn/gc-da11yn.github.io'
+    tags:
+      en:
+        - NodeJS
+      fr:
+        - NodeJS
+    downloadURL:
+      en: >-
+        https://github.com/gc-da11yn/gc-da11yn.github.io/archive/refs/heads/main.zip
+      fr: >-
+        https://github.com/gc-da11yn/gc-da11yn.github.io/archive/refs/heads/main.zip
+    homepageURL:
+      en: 'https://a11y.canada.ca/en/'
+      fr: 'https://a11y.canada.ca/fr/'
+    languages:
+      - JavaScript
+      - HTML
+      - CSS
+      - NodeJS
+    relatedCode:
+      - URL:
+          en: 'https://www.11ty.dev/'
+          fr: 'https://www.11ty.dev/'
+        name:
+          en: EleventyJS
+          fr: EleventyJS
+      - URL:
+          en: 'https://nodejs.org/en/'
+          fr: 'https://nodejs.org/fr/'
+        name:
+          en: NodeJS
+          fr: NodeJS
+    status: Maintained

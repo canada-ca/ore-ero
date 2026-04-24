@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: daily
+      interval: monthly
       time: "11:00"
     open-pull-requests-limit: 99
     groups:
@@ -22,18 +22,18 @@ updates:
   - package-ecosystem: gitsubmodule
     directory: "/"
     schedule:
-      interval: daily
+      interval: monthly
       time: "11:00"
     open-pull-requests-limit: 99
   - package-ecosystem: pip
     directory: "/"
     schedule:
-      interval: daily
+      interval: monthly
       time: "11:00"
     open-pull-requests-limit: 99
   - package-ecosystem: bundler
     directory: "/"
     schedule:
-      interval: daily
+      interval: monthly
       time: "11:00"
     open-pull-requests-limit: 99

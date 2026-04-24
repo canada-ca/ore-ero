@@ -1,0 +1,49 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: >-
+      Grafana allows you to query, visualize, alert on and understand your
+      metrics no matter where they are stored. Create, explore, and share
+      dashboards with your team and foster a data-driven culture.
+    fr: >-
+      Grafana vous permet d'interroger, de visualiser, de générer des alertes et
+      de comprendre vos indicateurs, peu importe où ils sont stockés. Créez,
+      explorez et partagez des tableaux de bord avec votre é
+  howItWorks:
+    en: >-
+      Grafana open source software enables you to query, visualize, alert on,
+      and explore your metrics, logs, and traces wherever they are stored.
+    fr: >-
+      Le logiciel libre Grafana vous permet d'interroger, de visualiser, de
+      générer des alertes et d'explorer vos métriques, journaux et traces, peu
+      importe où ils sont stockés.
+category: '43232300'
+homepageURL:
+  en: 'https://github.com/grafana/grafana'
+  fr: 'https://github.com/grafana/grafana'
+licences:
+  - URL:
+      en: 'https://github.com/grafana/grafana?tab=AGPL-3.0-1-ov-file#readme'
+      fr: 'https://github.com/grafana/grafana?tab=AGPL-3.0-1-ov-file#readme'
+    spdxID: AGPL-3.0-only
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: Grafana OSS
+  fr: Grafana OSS
+tags:
+  en:
+    - Data Science
+  fr:
+    - Science des données
+administrations:
+  - uses:
+      - contact:
+          email: john.garrett@ssc-spc.gc.ca
+          name: John Garrett
+        date:
+          started: '2025-10-16'
+          metadataLastUpdated: '2025-10-16'
+    adminCode: ssc-spc

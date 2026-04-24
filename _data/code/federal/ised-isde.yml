@@ -55,3 +55,58 @@ releases:
     team:
       en: Communication Research Centre Canada
       fr: Centre de recherches sur les communications Canada
+  - contact:
+      email: crc-external-engagement-externe@ised-isde.gc.ca
+      name: CRC External Engagement
+    date:
+      created: '2022-06-21'
+      metadataLastUpdated: '2024-10-10'
+    description:
+      whatItDoes:
+        en: >-
+          crc-covlib is an application programming interface (API) that facilitates the
+          use of a few different radio wave propagation models.
+        fr: >-
+          crc-covlib est une API (interface de programmation) facilitant l'usage de
+          différents modèles de propagation des ondes radio.
+      howItWorks:
+        en: >-
+          crc-covlib can be used from the C++ and python programming languages to generate
+          coverage or interference predictions.
+        fr: >-
+          crc-covlib peut être utilisée à partir des langages de programmation C++ et
+          python afin de générer des prédictions de couverture et d'interférence.
+    category: '43232600'
+    name:
+      en: crc-covlib
+      fr: crc-covlib
+    licences:
+      - URL:
+          en: 'https://github.com/ic-crc/crc-covlib/blob/main/LICENSE.txt'
+          fr: 'https://github.com/ic-crc/crc-covlib/blob/main/LICENSE.txt'
+        spdxID: MIT
+    repositoryURL:
+      en: 'https://github.com/ic-crc/crc-covlib'
+      fr: 'https://github.com/ic-crc/crc-covlib'
+    tags:
+      en:
+        - API
+        - propagation
+        - radio waves
+        - coverage
+        - interference
+        - prediction
+      fr:
+        - API
+        - propagation
+        - ondes radio
+        - couverture
+        - interférence
+        - prédiction
+    languages:
+      - Python
+      - C++
+    status: Maintained
+    team:
+      en: Communications Research Centre Canada
+      fr: Centre de recherches sur les communications Canada
