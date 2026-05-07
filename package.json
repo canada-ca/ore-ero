@@ -38,6 +38,6 @@
     "licensee": "^12.0.1",
     "markdownlint-cli2": "^0.22.1",
     "prettier": "^3.8.3",
-    "vnu-jar": "^25.12.18"
+    "vnu-jar": "^26.5.2"
   }
 }
