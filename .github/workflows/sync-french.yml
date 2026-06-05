@@ -17,12 +17,12 @@ jobs:
 
     steps:
       - name: Checkout Main repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           path: english
           submodules: true
       - name: Checkout French mirror
-        uses: actions/checkout@v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           repository: canada-ca/ore-ero-fr
           path: french
@@ -31,10 +31,13 @@ jobs:
           submodules: true
       - name: Copy files from English to French
         run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' english/ french
-      - name: Push back changes to French repo
-
+      - name: Sync SPDX submodule
+        working-directory: french/_data/spdx
         run: |
-          cd french
+          git checkout $(cat ../../../english/.git/modules/_data/spdx/HEAD)
+      - name: Push back changes to French repo
+        working-directory: french
+        run: |
           git config --global user.email "canada.pr.bot@gmail.com"
           git config --global user.name "canada-bot"
           git add -A
