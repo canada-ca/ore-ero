@@ -34,7 +34,7 @@ jobs:
       - name: Sync SPDX submodule
         working-directory: french/_data/spdx
         run: |
-          git fetch
+          git fetch --unshallow --all 2>/dev/null || git fetch --all
           git checkout $(cat ../../../english/.git/modules/_data/spdx/HEAD)
       - name: Push back changes to French repo
         working-directory: french
