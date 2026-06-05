@@ -30,10 +30,11 @@ jobs:
           token: ${{ secrets.PUSH_API_TOKEN }}
           submodules: true
       - name: Copy files from English to French
-        run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' english/ french
+        run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' --exclude='*_data/spdx' english/ french
       - name: Sync SPDX submodule
         working-directory: french/_data/spdx
         run: |
+          git fetch
           git checkout $(cat ../../../english/.git/modules/_data/spdx/HEAD)
       - name: Push back changes to French repo
         working-directory: french
