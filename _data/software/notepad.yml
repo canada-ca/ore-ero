@@ -37,18 +37,3 @@ administrations:
         date:
           started: '2019-05-06'
           metadataLastUpdated: '2019-05-16'
-  - adminCode: tbs-sct
-    uses:
-      - contact:
-          email: do-not-reply@tbs-sct.gc.ca
-        date:
-          started: '1900-01-01'
-          metadataLastUpdated: '2019-10-11'
-  - adminCode: aafc-aac
-    uses:
-      - contact:
-          email: noreply@canada.ca
-          name: AAFC-AAC
-        date:
-          started: '1900-01-01'
-          metadataLastUpdated: '2020-01-15'
