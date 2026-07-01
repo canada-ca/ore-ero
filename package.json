@@ -33,11 +33,11 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "cypress": "^9.5.2",
-    "eslint": "^10.4.1",
-    "globals": "^17.6.0",
+    "eslint": "^10.6.0",
+    "globals": "^17.7.0",
     "licensee": "^12.0.1",
-    "markdownlint-cli2": "^0.22.1",
-    "prettier": "^3.8.3",
+    "markdownlint-cli2": "^0.23.0",
+    "prettier": "^3.9.4",
     "vnu-jar": "^25.12.18"
   }
 }
