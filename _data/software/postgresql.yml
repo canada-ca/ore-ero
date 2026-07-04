@@ -1,0 +1,35 @@
+---
+schemaVersion: '1.0'
+description:
+  whatItDoes:
+    en: It is a relational database tool.
+    fr: C'est un outil de base de données relationnelle.
+category: '43232300'
+homepageURL:
+  en: 'https://www.postgresql.org/'
+  fr: 'https://www.postgresql.org/'
+licences:
+  - URL:
+      en: 'https://www.postgresql.org/'
+      fr: 'https://www.postgresql.org/'
+    spdxID: PostgreSQL
+    level:
+      en: Main license
+      fr: License principale
+name:
+  en: PostgreSQL
+  fr: PostgreSQL
+tags:
+  en:
+    - Data base
+  fr:
+    - Science des données
+administrations:
+  - uses:
+      - contact:
+          email: katie@herricane.ca
+          name: Katherine (Katie) McMillan
+        date:
+          started: '2025-01-28'
+          metadataLastUpdated: '2025-09-29'
+    adminCode: test (please remove)
