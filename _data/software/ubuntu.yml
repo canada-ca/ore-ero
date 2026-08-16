@@ -24,11 +24,10 @@ tags:
   fr:
     - Linux
 administrations:
-  - adminCode: aafc-aac
+  - adminCode: esdc-edsc
     uses:
       - contact:
-          email: noreply@canada.ca
-          name: AAFC-AAC
+          email: sebastien.lemay@hrsdc-hrdcc.ca
         date:
-          started: '1900-01-01'
-          metadataLastUpdated: '2020-01-30'
+          started: '2020-01-30'
+          metadataLastUpdated: '2024-10-10'
