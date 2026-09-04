@@ -31,6 +31,8 @@ jobs:
           submodules: true
       - name: Copy files from English to French
         run: rsync -avr --delete --exclude=*.git/* --exclude=*.github/* --exclude='*CNAME' --exclude='*_data/spdx' english/ french
+      - name: Copy Jekyll CI from English to French
+        run: cp english/.github/workflows/jekyll.yml french/.github/workflows/jekyll.yml
       - name: Sync SPDX submodule
         working-directory: french/_data/spdx
         run: |
