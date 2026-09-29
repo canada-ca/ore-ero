@@ -36,7 +36,7 @@
     "eslint": "^10.9.1",
     "globals": "^17.11.0",
     "licensee": "^12.0.1",
-    "markdownlint-cli2": "^0.23.2",
+    "markdownlint-cli2": "^0.23.3",
     "prettier": "^3.9.6",
     "vnu-jar": "^25.12.31"
   }
