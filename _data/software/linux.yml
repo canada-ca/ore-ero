@@ -44,11 +44,3 @@ administrations:
         date:
           started: '2017-09-01'
           metadataLastUpdated: '2019-10-07'
-  - adminCode: eccc
-    uses:
-      - contact:
-          email: noreply@canada.ca
-          name: ECCC-ECCC
-        date:
-          started: '2010-01-01'
-          metadataLastUpdated: '2020-01-30'
