@@ -147,7 +147,7 @@ releases:
         spdxID: MIT
         level:
           en: ''
-          fr: !<tag:yaml.org,2002:js/undefined> ''
+          fr: ''
     repositoryURL:
       en: 'https://github.com/ic-crc/propakai/'
       fr: 'https://github.com/ic-crc/propakai/'
