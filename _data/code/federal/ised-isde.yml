@@ -19,12 +19,13 @@ releases:
           végétation abondante.
       howItWorks:
         en: >-
-          The tool provides path loss predictions by combining multiple open-source
-          propagation models with open-access, high resolution terrain and surface data.
+          The tool provides path loss predictions by combining multiple
+          open-source propagation models with open-access, high resolution
+          terrain and surface data.
         fr: >-
-          Cet outil s'appuie sur des modèles de prévision de la propagation et des données
-          libres d'accès de haute résolution du terrain et des groupes d'obstacles à la
-          surface de la Terre.
+          Cet outil s'appuie sur des modèles de prévision de la propagation et
+          des données libres d'accès de haute résolution du terrain et des
+          groupes d'obstacles à la surface de la Terre.
     category: '43232800'
     name:
       en: Signal Attenuation through Foliage Estimator (SAFE)
@@ -64,18 +65,19 @@ releases:
     description:
       whatItDoes:
         en: >-
-          crc-covlib is an application programming interface (API) that facilitates the
-          use of a few different radio wave propagation models.
+          crc-covlib is an application programming interface (API) that
+          facilitates the use of a few different radio wave propagation models.
         fr: >-
-          crc-covlib est une API (interface de programmation) facilitant l'usage de
-          différents modèles de propagation des ondes radio.
+          crc-covlib est une API (interface de programmation) facilitant l'usage
+          de différents modèles de propagation des ondes radio.
       howItWorks:
         en: >-
-          crc-covlib can be used from the C++ and python programming languages to generate
-          coverage or interference predictions.
+          crc-covlib can be used from the C++ and python programming languages
+          to generate coverage or interference predictions.
         fr: >-
-          crc-covlib peut être utilisée à partir des langages de programmation C++ et
-          python afin de générer des prédictions de couverture et d'interférence.
+          crc-covlib peut être utilisée à partir des langages de programmation
+          C++ et python afin de générer des prédictions de couverture et
+          d'interférence.
     category: '43232600'
     name:
       en: crc-covlib
@@ -103,6 +105,63 @@ releases:
         - couverture
         - interférence
         - prédiction
+    languages:
+      - Python
+      - C++
+    status: Maintained
+    team:
+      en: Communications Research Centre Canada
+      fr: Centre de recherches sur les communications Canada
+  - contact:
+      email: crc-external-engagement-externe@ised-isde.gc.ca
+      name: CRC External Engagement
+    date:
+      created: '2026-10-27'
+      metadataLastUpdated: '2026-10-29'
+    description:
+      whatItDoes:
+        en: >-
+          PropaKai is a cohesive Python package for implementations of ITU-R P.
+          recommendations.
+        fr: >-
+          PropaKai est un paquet Python pour implémentations de recommandations
+          UIT-R P.
+      howItWorks:
+        en: >-
+          These recommendations, developed by the International
+          Telecommunication Union Radiocommunication Sector, provide
+          international standards and methods for predicting the propagation of
+          radio waves.
+        fr: >-
+          Ces recommandations, élaborées par l'Union internationale des
+          télécommunications, fournissent des normes et méthodes internationales
+          pour la prévision de la propagation des ondes radio.
+    category: '43232600'
+    name:
+      en: PropaKai
+      fr: PropaKai
+    licences:
+      - URL:
+          en: 'https://github.com/ic-crc/propakai/blob/main/LICENSE.txt'
+          fr: 'https://github.com/ic-crc/propakai/blob/main/LICENSE.txt'
+        spdxID: MIT
+        level:
+          en: ''
+          fr: ''
+    repositoryURL:
+      en: 'https://github.com/ic-crc/propakai/'
+      fr: 'https://github.com/ic-crc/propakai/'
+    tags:
+      en:
+        - ITU-R
+        - radiowave propagation
+        - telecommunications
+        - python
+      fr:
+        - UIT-R
+        - propagation radio
+        - télécommunications
+        - python
     languages:
       - Python
       - C++
