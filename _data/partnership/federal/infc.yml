@@ -1,0 +1,42 @@
+---
+schemaVersion: '1.0'
+adminCode: infc
+projects:
+  - contact:
+      email: info@ansahcorp.com
+      name: Lawrence Ansah Addo
+      phone: '4375050869'
+    category: '43232300'
+    date:
+      closed: '2026-12-31'
+      started: '2026-10-03'
+      metadataLastUpdated: '2026-10-03'
+    description:
+      whatItDoes:
+        en: >+
+          Canada's Digital Identity, Secure Mailbox and encrypted live chat
+          tool. Verify once. Access service securely. Stay private.
+
+        fr: >-
+          Identité numérique canadienne, boîte aux lettres sécurisée et outil de
+          clavardage en direct chiffré. Authentification unique. Accès sécurisé
+          au service. Protection de la vie privée garantie.
+      howItWorks:
+        en: >-
+          CanID verifies a person once — then that single verified identity
+          unlocks government services, financial correspondence, health data,
+          and digital credentials — replacing every fragmented login with on
+        fr: "CanID vérifie l'identité d'une personne une seule fois\_; cette identité unique et vérifiée donne accès aux services gouvernementaux, aux communications financières, aux données de santé et aux identif"
+    name:
+      en: CanID
+      fr: CanID
+    tags:
+      en:
+        - 'Identity, Mailbox, Livechat, Federal, Provincial, security'
+      fr:
+        - >-
+          Identité, boîte aux lettres, clavardage en direct, fédéral,
+          provincial, sécurité
+    team:
+      en: Ansah Corp
+      fr: Ansah Corp
